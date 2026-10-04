@@ -6,7 +6,7 @@ function studioSetRoom(id,key,value){
   if(is3D())void View3D.ensureInterior(({ 'RECP-01':'living','MBR-01':'master','BR-01':'bedroom1','BR-02':'bedroom2' })[id]);
 }
 function studioSetVariant(fid,value){const f=getF(fid);if(!f||!STUDIO_VARIANTS[f.type]?.includes(value))throw new Error('Invalid furniture shape.');mutate(()=>getF(fid).variant=value);}
-function studioReference(f){return STUDIO_CATALOG.find(p=>p.type===f.type&&p.variant===f.variant);}
+function studioReference(f){return f.product_reference_id?STUDIO_CATALOG.find(p=>p.id===f.product_reference_id):STUDIO_CATALOG.find(p=>p.type===f.type&&p.variant===f.variant);}
 function studioBrief(){return studioDesignBrief(state,MODEL,STUDIO_CATALOG,window.ApartmentCloud?.briefInfo());}
 function studioDownload(name,value){download(name,new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));}
 function studioApplyProposal(value){const next=studioValidateProposal(value,state,MODEL);const before=snap();state=next;commit(before);renderAll();return {applied:value.operations.length,scene_revision:studioSceneKey(state)};}
