@@ -16,7 +16,7 @@ const classic=scripts.find(m=>!m[1].trim())[2];
 const moduleScript=scripts.find(m=>m[1].includes('type="module"'))[2];
 new vm.Script(classic);
 // Check the entire actual module syntax, keeping its import declarations.
-fs.writeFileSync('/workspace/scratch/c3b983db68af/viewer-module-check.mjs',moduleScript);
+fs.writeFileSync(path.join(os.tmpdir(),'viewer-module-check.mjs'),moduleScript);
 const dom=new JSDOM(html,{url:'https://example.test/#2d',runScripts:'outside-only',pretendToBeVisual:true});
 const w=dom.window,context=dom.getInternalVMContext(),registered=new Map();
 w.structuredClone=globalThis.structuredClone;
