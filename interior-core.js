@@ -311,6 +311,13 @@ function interiorCirculation(room,model,solids){
   }}
   return targets.map(t=>({room_id:room.id,from:start.id,to:t.id,measured_clearance_mm:interiorRound(t.i<0||start.d>400||t.d>500?0:Math.min(scores[t.i],t.width)),preferred_clearance_mm:900,grid_resolution_mm:step,method:'Conservative widest sampled path; centreline widths minus 125 mm sampling allowance',message:'Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions.'}));
 }
+function interiorProposalFurnitureIds(operations){
+  const ids=new Set();for(const op of operations||[]){
+    if(['furniture-placement','furniture-variant','update-furniture','set-furniture-material','set-furniture-colour'].includes(op.type)&&op.furniture_id)ids.add(op.furniture_id);
+    if(op.type==='add-furniture'&&op.furniture?.id)ids.add(op.furniture.id);
+    if(op.type==='duplicate-furniture'&&op.new_id)ids.add(op.new_id);
+  }return [...ids];
+}
 function studioValidateProposal(p,layout,model){
   const next=interiorApplyProposal(p,layout,model);
   if(p.schema==='ApartmentDesignProposal/1'&&next.interior){
