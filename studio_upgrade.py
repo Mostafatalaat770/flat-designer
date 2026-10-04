@@ -82,6 +82,6 @@ function toggleScaleCheck(){scaleCheckVisible=!scaleCheckVisible;syncWalkCalibra
 function setMode(m){""")
     replace("opt.mode = m; syncModeBtns();", "opt.mode = m; syncModeBtns();if(m==='walk')setCameraFov(walkLens==='natural'?WALK_NATURAL_FOV:WALK_WIDE_FOV);else setCameraFov(WALK_WIDE_FOV);syncWalkCalibration();")
     replace("$('#studioOptions').onclick=studioOpen;", "$('#studioOptions').onclick=studioOpen;$('#walkNatural').onclick=()=>setWalkLens('natural');$('#walkWide').onclick=()=>setWalkLens('wide');$('#scaleCheck').onclick=toggleScaleCheck;")
-    replace("window.View3D={enter,exit,relang,sync:()=>sync(),shot,groundAt,flyToRoom:id=>active&&!anim&&flyToRoom(id),walking:()=>active&&opt.mode==='walk',", "window.View3D={enter,exit,relang,sync:()=>sync(),shot,groundAt,flyToRoom:id=>active&&!anim&&flyToRoom(id),walking:()=>active&&opt.mode==='walk',setWalkLens,walkLens:()=>walkLens,toggleScaleCheck,scaleCheck:()=>scaleCheckVisible,")
+    replace("  async focusRoom(id){", "  setWalkLens,walkLens:()=>walkLens,toggleScaleCheck,scaleCheck:()=>scaleCheckVisible,\n  async focusRoom(id){")
 
     return s
