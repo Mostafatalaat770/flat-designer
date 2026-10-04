@@ -77,7 +77,7 @@ function setDecorTheme(id){
   const before=snap();rememberDecor();
   const saved=state.decor.saved[id];state.decor.active=id;
   for(const r of ROOMS)state.rooms[r.id].mat=saved?.rooms?.[r.id]||decorFloor(r,theme);
-  for(const f of state.furniture)f.color=saved?.colours?.[f.id]||decorFurnitureColour(f,theme);
+  for(const f of state.furniture)f.color=f.material_id?(interiorMaterial(state,f.material_id)?.base_colour||f.color):(saved?.colours?.[f.id]||decorFurnitureColour(f,theme));
   commit(before);renderAll();
   if(is3D())void window.View3D?.ensureInterior();
   toast(theme.name+' · complete furniture and decor scene.');
