@@ -26,8 +26,6 @@ jobs:
         run: npm install --no-save @napi-rs/canvas
       - name: Build
         run: npm run build
-      - name: Prepare managed-test scratch path
-        run: mkdir -p /workspace/scratch/c3b983db68af
       - name: Check
         env:
           CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
