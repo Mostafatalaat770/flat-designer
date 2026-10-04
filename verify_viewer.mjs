@@ -384,7 +384,7 @@ const ceilingMapped=qa.interiorSurfaceMaterial('CEILING-BR-01',new THREE.MeshSta
 assert.equal(ceilingMapped,ceilingAgain);assert.notEqual(ceilingMapped,floorMapped);await new Promise(r=>setTimeout(r,0));assert.ok(ceilingMapped.map&&ceilingMapped.normalMap&&ceilingMapped.roughnessMap);assert.equal(ceilingMapped.userData.ceilingColourCompensation,true);
 evaluate("state.interior.materials.push({schema:'InteriorMaterial/1',id:'qa-fallback',name:'Unavailable map',category:'paint',source_status:'GENERIC',base_colour:'#abcdef',roughness:.8,albedo_texture:'./unavailable.png'});");
 const fallback=qa.interiorPbr('qa-fallback');await new Promise(r=>setTimeout(r,0));assert.equal(fallback.userData.textureFallback,true);assert.equal(fallback.color.getHexString(),'abcdef');
-qa.opt.cut=2.5;qa.opt.furn=true;qa.active=true;assert.equal(w.View3D.currentRoom(),'RECP-01');
+qa.opt.cut=2.5;qa.opt.furn=true;qa.active=true;qa.setMode('walk');assert.equal(qa.camera.fov,42);assert.equal(w.View3D.currentRoom(),'RECP-01');
 assert.equal(w.View3D.walkLens(),'natural');
 w.View3D.setWalkLens('wide');assert.equal(w.View3D.walkLens(),'wide');
 w.View3D.setWalkLens('natural');assert.equal(w.View3D.walkLens(),'natural');
