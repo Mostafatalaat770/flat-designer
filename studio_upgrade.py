@@ -13,6 +13,12 @@ def apply_studio(s):
     replace('rooms, decor:defaultDecor(), demolished:[]','rooms, decor:defaultDecor(), studio:studioDefaults(), demolished:[]')
     replace('  migrateSceneFinishes(safe,s.decor);','  migrateSceneFinishes(safe,s.decor);\n  safe.studio=studioNormalize(s.studio,ROOMS);\n  for(const f of safe.furniture)f.variant=STUDIO_VARIANTS[f.type]?.includes(f.variant)?f.variant:\'style\';')
     replace('<button class="btn outline" id="originalPlan">','<button class="btn primary" id="studioOptions">Design options</button><button class="btn outline" id="originalPlan">')
+    replace('<div class="grp only3d" id="toggles3d">', '''<div class="grp only3d walk-calibration" id="walkLensControls" role="group" aria-label="Walk camera lens">
+      <button class="btn chip on" id="walkNatural" title="Natural human-scale perspective · 42° vertical field of view">Natural view</button>
+      <button class="btn chip" id="walkWide" title="Wide-angle overview · 60° vertical field of view">Wide view</button>
+      <button class="btn chip" id="scaleCheck" title="Show a temporary 1.70 m human reference and 1.00 m ruler">Scale check</button>
+    </div>
+    <div class="grp only3d" id="toggles3d">''')
     replace('<div id="toast" role=', '''<dialog id="studioDialog"><div class="dialog-heading"><b>Design your room</b><button class="btn" id="studioClose">Close</button></div><div id="studioBody"></div></dialog>
 <dialog id="proposalDialog"><div class="dialog-heading"><b>Review agent proposal</b><button class="btn" id="proposalClose">Close</button></div><p>Validated against the current scene. Apply creates one undoable change.</p><pre id="proposalPreview"></pre><button class="btn primary" id="applyProposal">Apply proposal</button></dialog>
 <div id="toast" role=''')
@@ -42,4 +48,40 @@ def apply_studio(s):
     replace("t:[10600,1.12,1600]","t:[10600,1.50,1600]")
     replace("t:[14300,1.10,7400]","t:[14300,1.45,7400]")
     replace('FOV = 45','FOV = 60')
+    replace("let inited = false, active = false, raf = 0, anim = null, fly = null;", "const WALK_NATURAL_FOV=42,WALK_WIDE_FOV=60;let walkLens='natural',scaleCheckVisible=false;\nlet inited = false, active = false, raf = 0, anim = null, fly = null;")
+    replace("let archFloor, archUp, furnG, labelG, lampG, colliders = [], selKey = null, selHelper = null;", "let archFloor, archUp, furnG, labelG, lampG, scaleRefG, colliders = [], selKey = null, selHelper = null;")
+    replace("scene.add(archFloor, archUp, furnG, labelG, lampG);", "scene.add(archFloor, archUp, furnG, labelG, lampG);buildScaleReference();")
+    replace("function setMode(m){", """function setCameraFov(v){camera.fov=v;camera.updateProjectionMatrix();}
+function syncWalkCalibration(){
+  const natural=$('#walkNatural'),wide=$('#walkWide'),scale=$('#scaleCheck');
+  if(natural)natural.classList.toggle('on',walkLens==='natural');
+  if(wide)wide.classList.toggle('on',walkLens==='wide');
+  if(scale)scale.classList.toggle('on',scaleCheckVisible);
+  if(scaleRefG)scaleRefG.visible=scaleCheckVisible;
+}
+function setWalkLens(mode){
+  walkLens=mode==='wide'?'wide':'natural';
+  if(opt.mode==='walk')setCameraFov(walkLens==='natural'?WALK_NATURAL_FOV:WALK_WIDE_FOV);
+  syncWalkCalibration();
+  toast(walkLens==='natural'?'Natural view · 42° vertical FOV':'Wide view · 60° vertical FOV');
+}
+function buildScaleReference(){
+  scaleRefG=new THREE.Group();scaleRefG.visible=false;scaleRefG.userData.scaleReference=true;
+  const recp=ROOMS.find(r=>r.id==='RECP-01'),x=wx(recp.at[0]),z=wz(recp.at[1]);
+  const skin=mat('#d9c7b6',{roughness:.88}),dark=mat('#45515e',{roughness:.9}),mark=mat('#d55b4f',{roughness:.75});
+  const torso=new THREE.Mesh(new THREE.CapsuleGeometry(.16,.78,6,12),dark);torso.position.set(0,1.00,0);
+  const head=new THREE.Mesh(new THREE.SphereGeometry(.12,18,12),skin);head.position.set(0,1.58,0);
+  const legL=new THREE.Mesh(new THREE.CylinderGeometry(.045,.055,.72,10),dark);legL.position.set(-.07,.36,0);
+  const legR=legL.clone();legR.position.x=.07;
+  const ruler=new THREE.Mesh(new THREE.BoxGeometry(.045,1.0,.045),mark);ruler.position.set(.42,.50,0);
+  const cap1=new THREE.Mesh(new THREE.BoxGeometry(.18,.025,.05),mark);cap1.position.set(.42,1.0,0);
+  const cap0=cap1.clone();cap0.position.y=.01;
+  scaleRefG.add(torso,head,legL,legR,ruler,cap1,cap0);scaleRefG.position.set(x,0,z);scene.add(scaleRefG);
+}
+function toggleScaleCheck(){scaleCheckVisible=!scaleCheckVisible;syncWalkCalibration();toast(scaleCheckVisible?'Scale check on · human 1.70 m · ruler 1.00 m':'Scale check off');}
+function setMode(m){""")
+    replace("opt.mode = m; syncModeBtns();", "opt.mode = m; syncModeBtns();if(m==='walk')setCameraFov(walkLens==='natural'?WALK_NATURAL_FOV:WALK_WIDE_FOV);else setCameraFov(WALK_WIDE_FOV);syncWalkCalibration();")
+    replace("$('#studioOptions').onclick=studioOpen;", "$('#studioOptions').onclick=studioOpen;$('#walkNatural').onclick=()=>setWalkLens('natural');$('#walkWide').onclick=()=>setWalkLens('wide');$('#scaleCheck').onclick=toggleScaleCheck;")
+    replace("window.View3D={enter,exit,relang,sync:()=>sync(),shot,groundAt,flyToRoom:id=>active&&!anim&&flyToRoom(id),walking:()=>active&&opt.mode==='walk',", "window.View3D={enter,exit,relang,sync:()=>sync(),shot,groundAt,flyToRoom:id=>active&&!anim&&flyToRoom(id),walking:()=>active&&opt.mode==='walk',setWalkLens,walkLens:()=>walkLens,toggleScaleCheck,scaleCheck:()=>scaleCheckVisible,")
+
     return s
