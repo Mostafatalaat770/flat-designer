@@ -67,7 +67,7 @@ async function studioApplySaved(env,identity,args){
   // Validation is repeated against the actual stored layout at the write boundary.
   const layout=studioValidateProposal(args.proposal,JSON.parse(base.layout_json),HOST_MODEL);
   const saved=await studioWrite(env,identity,{expected_storage_revision:args.expected_storage_revision,expected_scene_revision:args.proposal.base_scene_revision,request_id:args.request_id},layout,'agent',String(args.proposal.author||'Design agent').slice(0,80)+' · '+args.proposal.operations.length+' changes');
-  return {...saved,validation:interiorValidation(layout,HOST_MODEL,args.proposal.operations.filter(o=>o.type==='furniture-placement').map(o=>o.furniture_id)),applied:true,operation_count:args.proposal.operations.length,previous_storage_revision:args.expected_storage_revision,next_step:'The open viewer syncs this revision automatically. Saved design → History can restore the previous revision.'};
+  return {...saved,validation:interiorValidation(layout,HOST_MODEL,interiorProposalFurnitureIds(args.proposal.operations)),applied:true,operation_count:args.proposal.operations.length,previous_storage_revision:args.expected_storage_revision,next_step:'The open viewer syncs this revision automatically. Saved design → History can restore the previous revision.'};
 }
 async function studioJsonBody(request){
   if(Number(request.headers.get('content-length')||0)>1500000)throw new StudioStorageError('Request exceeds 1.5 MB.',413,'request_too_large');
