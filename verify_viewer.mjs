@@ -346,8 +346,10 @@ for(const id of ['OP-HALL-RECP','OP-MBR-WIC']){
 qa.active=true;qa.setMode('walk');
 assert.equal(qa.opt.cut,2.5);
 assert.equal(qa.camera.position.y,1.7);
+assert.equal(qa.camera.fov,42,'Natural walk mode should use calibrated 42° vertical FOV');
 const sofa=evaluate("state.furniture.find(f=>f.type==='sofa')"),mw=evaluate('MODEL.width_mm'),md=evaluate('MODEL.depth_mm');
 assert.equal(qa.blocked((sofa.cx-mw/2)/1000,(sofa.cy-md/2)/1000),true);
+qa.setMode('orbit');assert.equal(qa.camera.fov,60,'Orbit framing should retain the existing 60° overview FOV');
 for(const aspect of [.65,900/700,2.5])for(const direction of [new THREE.Vector3(.3,.74,.6),new THREE.Vector3(0,1,.00001)]){
  const p=qa.fitWhole(direction,aspect),cam=new THREE.PerspectiveCamera(qa.camera.fov,aspect,.05,300);
  cam.position.copy(p.p);cam.lookAt(p.t);cam.updateMatrixWorld();
