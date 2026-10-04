@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "checks": [
+    "Generated Drizzle migration executes in SQLite",
+    "Existing MCP tools and saved design reads",
+    "Trusted identity required; per-user isolation; foreign restore denied",
+    "Canonical layout and height locks enforced at save and apply",
+    "Browser and validator candidate revisions agree",
+    "Agent apply retries are idempotent",
+    "Concurrent writes produce one success and one conflict",
+    "Current design and history commit atomically; failed history write rolls back",
+    "Previous revision restore creates a new revision",
+    "Actual viewer automatically creates its first saved design",
+    "Viewer edits persist and agent edits sync without import",
+    "Undo of received agent edits saves the previous scene",
+    "Conflicting device draft is preserved; both resolution choices work",
+    "Lost save response retries without duplicate history",
+    "Edits made during retry are saved after the retried commit",
+    "Reload adopts newer agent edits without a false key-order conflict",
+    "Account changes do not publish the previous account’s draft",
+    "150-revision retention and 30-entry history page",
+    "Offline drafts resume automatically when the saved base has not changed"
+  ],
+  "method": "Real Worker and browser DOM code with a local SQLite D1 adapter; no live identity headers fabricated"
+}

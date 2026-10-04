@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "access_date": "2026-10-03",
+  "purpose": "Primary-source asset/design references for an existing English apartment decor configurator. This is research only, not purchase advice.",
+  "catalog_count": 12,
+  "architecture_constraint": "Room geometry and apartment architecture remain locked. Adapt decor within the existing layout.",
+  "ui_guidance": [
+    "Use source links and names under Reference or Inspired by, rather than claiming official replicas.",
+    "Call rendered models approximate adaptations; no official furniture 3D assets were retrieved.",
+    "Do not call any listed furniture or appliance popular, trending, best-selling or Pinterest-endorsed.",
+    "Manufacturer 2026 colour selections are factual editorial design references, not evidence of sales or consumer popularity.",
+    "Unknown source publication dates, direct image URLs and dimensions are explicitly null.",
+    "Product dimensions are variant-specific references, not validated installation or fit checks."
+  ],
+  "pinterest_context": {
+    "name": "Pinterest Predicts 2026",
+    "official_url": "https://newsroom.pinterest.com/en-gb/news/pinterest-predicts-nonconformity-self-preservation-and-escapism-drive-21-trends-for-2026/",
+    "source_date": "2025-12-09",
+    "access_date": "2026-10-03",
+    "source_refs": [
+      "turn5view0",
+      "turn6view0",
+      "turn6view1"
+    ],
+    "classification": "Factual Pinterest category forecast; independent from the catalog products.",
+    "home_trends": [
+      {
+        "name": "FunHaus",
+        "factual_description": "Circus-inspired interiors, bold stripes and sculptural forms.",
+        "inspired_application": "A striped textile or sculptural decor option can nod to this without changing walls or room geometry."
+      },
+      {
+        "name": "Afrohemian Decor",
+        "factual_description": "African/bohemian mix, woven textures, textiles and natural-fibre elements.",
+        "inspired_application": "Cane/wood and woven accessories can be offered as a texture direction; do not equate generic wicker with the full cultural trend."
+      },
+      {
+        "name": "Neo Deco",
+        "factual_description": "Art Deco reinterpretation with geometric motifs and chrome/brass details.",
+        "inspired_application": "Tailored silhouettes and small brass/chrome details can provide an optional visual direction."
+      }
+    ],
+    "limitation": "Forecast is source-supported category context. It does not establish popularity of Pacha, Connect Soft, Outline, the beds, appliances or paint colours."
+  },
+  "rights_sources": [
+    {
+      "maker": "Bosch UK",
+      "official_url": "https://www.bosch-home.co.uk/products/terms-of-website-use",
+      "source_ref": "turn20view2",
+      "access_date": "2026-10-03",
+      "summary": "Copyright/material rights are reserved. Personal reference extracts are allowed. Downloaded copies cannot be modified, and photos/graphics cannot be used separately from accompanying text. Attribution is required. Commercial use requires a licence."
+    },
+    {
+      "maker": "GUBI",
+      "official_url": "https://gubi.com/en/int/products/pacha-sofa",
+      "source_ref": "turn16view0",
+      "access_date": "2026-10-03",
+      "summary": "Footer states © 2026 All rights reserved."
+    },
+    {
+      "maker": "West Elm",
+      "official_url": "https://www.westelm.ca/products/ida-bed-white-h6911/",
+      "source_ref": "turn19view1",
+      "access_date": "2026-10-03",
+      "summary": "Footer states © 2026 Williams-Sonoma Inc., All Rights Reserved."
+    },
+    {
+      "maker": "Muuto",
+      "official_url": "https://www.muuto.com/sofa-experience/outline/",
+      "source_ref": "turn17view5",
+      "access_date": "2026-10-03",
+      "summary": "Copyright notice on page; downloadable photos/architect files exist, but no permission or open licence was established during this research."
+    }
+  ],
+  "references": [
+    {
+      "id": "sofa-cloud",
+      "name": "Pacha Sofa, 3 seater",
+      "maker": "GUBI",
+      "designer": "Pierre Paulin",
+      "official_url": "https://gubi.com/en/int/products/pacha-sofa",
+      "type": "sofa",
+      "style_role": "Rounded / cloud-like",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Official page selects 3 seater; item 10089603.",
+        "Rounded, low-level form described by GUBI."
+      ],
+      "dimensions": null,
+      "dimension_note": "Not exposed on the current product page. An older 3-seater-with-armrests page is now 404, so its dimensions were excluded.",
+      "image": {
+        "url": "https://media.umbraco.io/gubi-com/rvelarie/0y7a8530.jpg?format=webp&upscale=false&width=1920",
+        "kind": "Official product-page lifestyle reference",
+        "source_ref": "turn17view2",
+        "variant_note": "Lifestyle reference; do not treat as an exact SKU packshot."
+      },
+      "source_refs": [
+        "turn16view0"
+      ],
+      "reuse": "GUBI product page states © 2026 All rights reserved. No open image or 3D licence was established."
+    },
+    {
+      "id": "sofa-modular",
+      "name": "Connect Soft Modular Sofa 2-Seater, Configuration 1",
+      "maker": "Muuto",
+      "designer": "Anderssen & Voll",
+      "official_url": "https://www.muuto.com/product/Connect-Soft-Modular-Sofa-2-Seater-Configurations/",
+      "type": "sofa",
+      "style_role": "Modular / low",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Default page item COS2SC1CD12 / old item 96001.",
+        "Geometric modular form with metal brackets joining modules."
+      ],
+      "dimensions": {
+        "width_cm": 207,
+        "depth_cm": 99,
+        "height_cm": 69,
+        "seat_height_cm": 40,
+        "seat_depth_cm": 66
+      },
+      "dimension_note": "Metric dimensions displayed on official page. Its accompanying height-in-inches value is internally inconsistent; metric value retained.",
+      "image": {
+        "url": "https://cdn.occtoo-media.com/4d81f22f-2795-41f2-b8bf-15e9abf03890/34be1cc3-107a-5c06-8fb1-93a20610a942/Connect-soft-2-seater-config-2-ecriture-910-w-cushion-Muuto-5000x5000-hi-res.webp?format=medium",
+        "kind": "Official family packshot",
+        "source_ref": "turn14view6",
+        "variant_note": "Image is Configuration 2 in Ecriture 910 with cushion, while dimensions above are the default Configuration 1."
+      },
+      "dimension_image_url": "https://cdn.occtoo-media.com/4d81f22f-2795-41f2-b8bf-15e9abf03890/da6b5ab5-a27e-53d2-afae-e7dd44218a02/Connect%20Soft%202-Seater%20-%20Configuration%201_WEB_Stregtegninger_5000x5000px.webp?format=medium",
+      "source_refs": [
+        "turn12view1",
+        "turn17view3"
+      ],
+      "reuse": "Muuto page carries a copyright notice. Image and architect downloads are offered, but their reuse terms were not established; no licensed 3D model was retrieved."
+    },
+    {
+      "id": "sofa-tailored",
+      "name": "Outline Sofa 3-Seater",
+      "maker": "Muuto",
+      "designer": "Anderssen & Voll",
+      "official_url": "https://www.muuto.com/product/Outline-Sofa-3-Seater",
+      "type": "sofa",
+      "style_role": "Classic tailored / Scandinavian",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Clean-lined design; official family text references Scandinavian sofas of the 1960s.",
+        "Default product page is Clay 12 / black base."
+      ],
+      "dimensions": {
+        "width_cm": 220,
+        "depth_cm": 84,
+        "height_cm": 71,
+        "seat_height_cm": 40,
+        "seat_depth_cm": 62
+      },
+      "dimension_note": "Dimensions displayed on official product page.",
+      "image": {
+        "url": "https://cdn.occtoo-media.com/4d81f22f-2795-41f2-b8bf-15e9abf03890/f998f5da-2585-5fba-aaf9-f8a62a5c62d1/Outline-3-seater-refine-leather-cognac-aluminum-base-Muuto-5000x5000-hi-res.webp?format=medium",
+        "kind": "Official family packshot",
+        "source_ref": "turn18view0",
+        "variant_note": "Refine leather cognac / aluminium base; different finish from default Clay 12 / black page variant."
+      },
+      "source_refs": [
+        "turn10view5",
+        "turn17view5"
+      ],
+      "reuse": "Muuto copyright notice; no open image or 3D licence established."
+    },
+    {
+      "id": "bed-upholstered",
+      "name": "TUFJORD Upholstered Bed Frame, Tallmyra white/black, Standard Double",
+      "maker": "IKEA",
+      "designer": "Ola Wihlborg",
+      "official_url": "https://www.ikea.com/gb/en/p/tufjord-upholstered-bed-frame-tallmyra-white-black-70573260/",
+      "type": "bed",
+      "style_role": "Upholstered / curved headboard",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Article 705.732.60.",
+        "Curved upholstered headboard and shaped metal legs."
+      ],
+      "dimensions": {
+        "length_cm": 213,
+        "width_cm": 159,
+        "headboard_height_cm": 109,
+        "footboard_height_cm": 38,
+        "mattress_length_cm": 190,
+        "mattress_width_cm": 135,
+        "under_bed_clearance_cm": 20
+      },
+      "dimension_note": "UK Standard Double variant only; dimensions displayed on official page.",
+      "image": null,
+      "image_note": "Gallery is present, but image links resolve to the product page instead of exposing a direct public image URL.",
+      "source_refs": [
+        "turn9view1"
+      ],
+      "reuse": "No open image or 3D licence established from the inspected page; link to source instead of assuming reusable product photography."
+    },
+    {
+      "id": "bed-oak-platform",
+      "name": "Nera Queen Low Profile Bed – Oak",
+      "maker": "Article (brand)",
+      "designer": null,
+      "official_url": "https://www.article.com/product/31363/nera-queen-low-profile-bed-oak",
+      "type": "bed",
+      "style_role": "Oak / low platform",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Official Article result confirms the product name, Queen size and Oak finish.",
+        "Physical factory/manufacturer is not disclosed by the retrieved source."
+      ],
+      "dimensions": null,
+      "dimension_note": "Full page could not be parsed. No dimensions were accepted from resale listings.",
+      "image": null,
+      "image_note": "No direct official image URL exposed by retrieved source.",
+      "source_refs": [
+        "turn14search0",
+        "turn16search0"
+      ],
+      "reuse": "No open image or 3D licence established. Verification is limited to the official search-indexed product record."
+    },
+    {
+      "id": "bed-cane-wood",
+      "name": "Ida Woven Bed, White/Natural",
+      "maker": "West Elm (brand)",
+      "designer": null,
+      "official_url": "https://www.westelm.com/products/ida-bed-white-h6911/",
+      "official_alternate_url": "https://www.westelm.ca/products/ida-bed-white-h6911/",
+      "type": "bed",
+      "style_role": "Cane / wood",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Official description identifies natural caning and a solid mango wood frame/legs in White.",
+        "Multiple sizes are available; no exact selected size is assumed.",
+        "Physical factory/manufacturer is not disclosed by the retrieved source."
+      ],
+      "dimensions": null,
+      "dimension_note": "Source exposes dimensions for several sizes, but a matching full set for a specific selected variant could not be confidently retrieved.",
+      "image": {
+        "url": "https://assets.weimgs.com/weimgs/ab/images/wcm/products/202637/0021/ida-woven-bed-f.jpg",
+        "kind": "Official product-page photo",
+        "source_ref": "turn20view1",
+        "variant_note": "Image from official Canadian gallery; size not identified."
+      },
+      "source_refs": [
+        "turn15search1",
+        "turn14search23",
+        "turn19view1"
+      ],
+      "reuse": "Official West Elm page states © 2026 Williams-Sonoma Inc., All Rights Reserved. No open image or 3D licence established."
+    },
+    {
+      "id": "appliance-oven",
+      "name": "Series 8 Built-in Oven HBG7741B1B, Black",
+      "maker": "Bosch / BSH Home Appliances",
+      "official_url": "https://www.bosch-home.co.uk/en/product/cooking-and-baking/ovens/built-in-ovens/HBG7741B1B",
+      "type": "appliance",
+      "style_role": "Integrated black oven front",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Official page names a 60 × 60 cm built-in oven.",
+        "TFT touch display with digital control ring."
+      ],
+      "dimensions": {
+        "raw_official": "595 × 594 × 548 mm",
+        "order": "Displayed order; axes not labelled in the parsed technical overview"
+      },
+      "dimension_note": "Outer appliance dimensions, not a validated cabinet opening or installation clearance.",
+      "image": {
+        "url": "https://media3.bsh-group.com/Product_Shots/20123431_HBA7741B1_STP_def.webp",
+        "kind": "Official linked product shot",
+        "source_ref": "turn14view3",
+        "variant_note": "Bosch links this shared shot on the HBG7741B1B page; filename names HBA7741B1."
+      },
+      "source_refs": [
+        "turn11view10"
+      ],
+      "reuse": "Bosch UK website terms reserve rights; personal reference extracts are allowed, modification/separate photo use is restricted, and commercial reuse requires a licence. See rights_sources."
+    },
+    {
+      "id": "appliance-dishwasher",
+      "name": "Series 6 Fully-integrated Dishwasher SMV6ZCX16E",
+      "maker": "Bosch / BSH Home Appliances",
+      "official_url": "https://www.bosch-home.com.sg/en/product/dishwashers/built-in-dishwashers/fully-integrated-dishwasher-60-cm/SMV6ZCX16E",
+      "official_specsheet_url": "https://media3.bosch-home.com/Documents/specsheet/en-SG/SMV6ZCX16E.pdf",
+      "type": "appliance",
+      "style_role": "Integrated / panel-hidden dishwasher",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "60 cm fully-integrated category; Singapore model reference.",
+        "Main colour is listed as not applicable; visible cabinet front should follow the chosen cabinetry."
+      ],
+      "dimensions": {
+        "height_mm": 815,
+        "maximum_foot_adjustment_mm": 60,
+        "nominal_category_width_cm": 60
+      },
+      "dimension_note": "Only height, foot adjustment and nominal category width were displayed in retrieved text. Packed-product dimensions were excluded.",
+      "image": {
+        "url": "https://media3.bsh-group.com/Product_Shots/22176379_SMV6ZCX16E_STP_def.webp",
+        "kind": "Official product shot",
+        "source_ref": "turn14view4",
+        "variant_note": "Bare appliance reference; cabinet panel is not represented by this photo."
+      },
+      "source_refs": [
+        "turn12view2",
+        "turn14view0"
+      ],
+      "reuse": "No open image or 3D licence established. Bosch UK restrictions apply to UK-site material; Singapore-site reuse terms were not inspected."
+    },
+    {
+      "id": "appliance-fridge",
+      "name": "Series 4 Built-in Fridge-freezer KIN86VSE0G",
+      "maker": "Bosch / BSH Home Appliances",
+      "official_url": "https://www.bosch-home.co.uk/en/product/cooling-and-freezing/fridge-freezers/built-in-fridge-freezers-freezer-at-bottom/KIN86VSE0G",
+      "type": "appliance",
+      "style_role": "Integrated tall fridge-freezer / sliding hinge",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual product reference; any configurator model is an inspired, approximate adaptation.",
+      "verified_facts": [
+        "Built-in fridge-freezer with bottom freezer and sliding hinge.",
+        "The appliance sits behind cabinet fronts in a finished integrated kitchen."
+      ],
+      "dimensions": {
+        "raw_official": "1772 × 541 × 548 mm",
+        "order": "Displayed order; axes not labelled in the parsed technical overview"
+      },
+      "dimension_note": "Outer appliance dimensions; cabinet niche and clearance are not validated.",
+      "image": {
+        "url": "https://media3.bsh-group.com/Product_Shots/21959069_KIN86VSE0G_STP_def.webp",
+        "kind": "Official product shot",
+        "source_ref": "turn19view2",
+        "variant_note": "Bare appliance reference; final cabinet fronts need to follow cabinetry choice."
+      },
+      "source_refs": [
+        "turn18view3"
+      ],
+      "reuse": "Bosch UK website terms reserve rights and require a licence for commercial reuse. See rights_sources."
+    },
+    {
+      "id": "wall-silhouette",
+      "name": "Silhouette AF-655",
+      "maker": "Benjamin Moore",
+      "official_url": "https://www.benjaminmoore.com/en-us/paint-colors/color/af-655/silhouette",
+      "type": "wall_colour",
+      "style_role": "Espresso / charcoal",
+      "source_date": "2025-10-16",
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual manufacturer 2026 Color of the Year reference; 3D colour appearance is an approximation.",
+      "verified_facts": [
+        "Benjamin Moore's 2026 Color of the Year.",
+        "Official colour page lists LRV 10.18."
+      ],
+      "dimensions": null,
+      "colour": {
+        "code": "AF-655",
+        "hex": null,
+        "rgb": null,
+        "lrv": 10.18
+      },
+      "image": null,
+      "image_note": "Official colour page exposes a painted-wall image but its direct URL could not be retrieved.",
+      "source_refs": [
+        "turn14view1",
+        "turn10view6"
+      ],
+      "reuse": "Official page warns that screen and printer representations may vary from actual paint. No open photography licence established."
+    },
+    {
+      "id": "wall-universal-khaki",
+      "name": "Universal Khaki SW 6150",
+      "maker": "Sherwin-Williams",
+      "official_url": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/sw6150-universal-khaki",
+      "official_2026_url": "https://www.sherwin-williams.com/en-us/color/color-of-the-year/2026",
+      "type": "wall_colour",
+      "style_role": "Warm khaki / midtone neutral",
+      "source_date": null,
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual manufacturer 2026 Color of the Year reference; 3D colour appearance is an approximation.",
+      "verified_facts": [
+        "Official 2026 page names Universal Khaki SW 6150.",
+        "Brand describes it as a midtone neutral with a slight yellow undertone."
+      ],
+      "dimensions": null,
+      "colour": {
+        "code": "SW 6150",
+        "hex": null,
+        "rgb": null,
+        "lrv": null
+      },
+      "image": null,
+      "image_note": "Official room photos are present, but direct public photo URLs were not successfully exposed.",
+      "source_refs": [
+        "turn11view11",
+        "turn18view1"
+      ],
+      "reuse": "Official pages carry © 2026 Sherwin-Williams. No open photography licence established; no third-party RGB values accepted."
+    },
+    {
+      "id": "wall-hidden-gem",
+      "name": "Hidden Gem N430-6A",
+      "maker": "Behr Paint Company",
+      "official_url": "https://www.behr.com/colors/color-detail/n430-6a",
+      "type": "wall_colour",
+      "style_role": "Smoky jade / blue-green",
+      "source_date": "2025-07-30",
+      "access_date": "2026-10-03",
+      "fact_vs_inspired": "Factual manufacturer 2026 Color of the Year reference; renderer lighting still changes its appearance.",
+      "verified_facts": [
+        "Behr's 2026 Color of the Year.",
+        "Official colour page displays HEX 596D69, RGB 89/109/105 and LRV 14."
+      ],
+      "dimensions": null,
+      "colour": {
+        "code": "N430-6A",
+        "hex": "#596D69",
+        "rgb": [
+          89,
+          109,
+          105
+        ],
+        "lrv": 14
+      },
+      "image": null,
+      "image_note": "Official living-room and bedroom galleries are present, but direct public photo URLs were not successfully exposed.",
+      "source_refs": [
+        "turn14view2",
+        "turn18view5"
+      ],
+      "reuse": "No open photography or 3D licence established; retain brand/source attribution for colour reference."
+    }
+  ]
+}

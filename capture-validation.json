@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "checks": [
+    "ten-tool contract",
+    "isolated production-renderer bundle syntax",
+    "all five camera presets and custom camera references",
+    "identity isolation",
+    "PNG image content and exact camera/revision metadata",
+    "current-scene render brief integration",
+    "retry idempotency and concurrent request lease",
+    "before/after-render stale revision rejection",
+    "atomic batch persistence and R2 cleanup",
+    "artwork embedding and literal hostile text",
+    "mismatched scenes/cameras/maps/renderer rejected",
+    "shared material/artwork readiness",
+    "canonical geometry and saved-design history unchanged by capture"
+  ],
+  "verification": "Node SQLite/R2 adapters with genuine PNG fixtures and a mocked Cloudflare provider; no actual headless WebGL or live provider capture was performed."
+}

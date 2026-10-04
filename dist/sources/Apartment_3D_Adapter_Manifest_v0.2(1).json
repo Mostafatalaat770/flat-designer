@@ -1,0 +1,85 @@
+{
+  "schema_name": "Apartment3DAdapterManifest",
+  "version": "0.2",
+  "canonical_source": "Apartment_Master_Spec_Type_B_v0.2.2_Geometry_Heights_Glazing.json",
+  "canonical_rule": "The canonical JSON always wins. Renderer/tool adaptations must never be written back as architectural facts.",
+  "walkmyplan": {
+    "plan_id": "c5cf398565fa45b48127ee",
+    "plan_name": "Type B Apartment — Canonical Geometry v0.2.1",
+    "ceiling_height_m": 2.5,
+    "furniture_status": "EMPTY_GEOMETRY_ONLY",
+    "validation": {
+      "room_count_expected": 13,
+      "room_count_built": 13,
+      "opening_count_expected": 16,
+      "opening_count_built": 16,
+      "wall_count": 48,
+      "topology_status": "PASS_AFTER_ADAPTER_FIXES",
+      "quality_check_status": "PASS_FOR_TOPOLOGY_WITH_GOOD_PRACTICE_FINDINGS",
+      "notes": [
+        "Quality checker recommendations about wider doors/daylight are design advice, not changes to the canonical plan.",
+        "No furniture was added during geometry validation."
+      ],
+      "living_glazing": {
+        "opening_id": 10061,
+        "width_m": 2.22,
+        "sill_m": 0.0,
+        "height_m": 2.5,
+        "window_type": "sliding",
+        "status": "VALIDATED_AFTER_UPDATE"
+      }
+    }
+  },
+  "renderer_adaptations": [
+    {
+      "canonical_id": "OP-HALL-RECP",
+      "canonical_value": "1.017 m open passage",
+      "renderer_value": "0.90 m door-like opening",
+      "reason": "WalkMyPlan requires approximately 0.15 m jamb each side and cannot encode a truly doorless passage in this case.",
+      "severity": "VISUAL_ONLY",
+      "write_back_to_canonical": false
+    },
+    {
+      "canonical_id": "GLZ-MBR-TER",
+      "canonical_value": "1.377 m glazed terrace opening",
+      "renderer_value": "1.36 m sliding glass opening",
+      "reason": "Renderer jamb-fit limitation on the 1.67 m host wall.",
+      "severity": "17 mm visualization normalization",
+      "write_back_to_canonical": false
+    },
+    {
+      "canonical_id": "DOOR_VERTICALS",
+      "canonical_value": "Door heights not verified",
+      "renderer_value": "2.10 m default door height",
+      "reason": "No door-height schedule is currently available.",
+      "severity": "UNVERIFIED_VERTICAL_PLACEHOLDER",
+      "write_back_to_canonical": false
+    },
+    {
+      "canonical_id": "TERRACE_PARAPETS",
+      "canonical_value": "Parapet/railing height and type TBD",
+      "renderer_value": "Not to be treated as verified in current 3D shell",
+      "reason": "No façade/parapet measurements are available yet.",
+      "severity": "DO_NOT_USE_FOR_DESIGN_DECISIONS",
+      "write_back_to_canonical": false
+    },
+    {
+      "canonical_id": "OTHER_WINDOW_VERTICALS",
+      "canonical_value": "BR-01/BR-02 window sill/head heights remain unverified",
+      "renderer_value": "Temporary defaults remain for those bedroom windows only",
+      "reason": "Only the living-room glazing vertical character has been verified by owner input.",
+      "severity": "UNVERIFIED_VERTICAL_PLACEHOLDER",
+      "write_back_to_canonical": false
+    }
+  ],
+  "workflow_gates": [
+    "1. Canonical JSON geometry",
+    "2. 3D adapter transformation",
+    "3. Empty-shell topology validation",
+    "4. Opening/count/height validation",
+    "5. Only then add furniture",
+    "6. Run plan-quality/circulation validation",
+    "7. Only then create realistic renders/walkthrough",
+    "8. Reject any render that visually contradicts the canonical model"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "name": "warm-contemporary",
+      "prompt": "Use case: stylized-concept\nAsset type: original portrait wall-art bitmap, used as a framed canvas texture in a real-time 3D apartment.\nPrimary request: An original Warm Contemporary abstract painting. Textured warm off-white and taupe ground, broad organically balanced muted olive forms, small restrained charcoal accents, subtly layered hand-painted surfaces.\nStyle/medium: tactile contemporary acrylic and plaster-like paint on canvas, understated gallery quality.\nComposition/framing: portrait aspect ratio 2:3, flat front-facing artwork fills the complete image edge to edge; calm asymmetrical abstract composition with breathing room.\nColor palette: warm off-white, taupe, muted olive, restrained charcoal.\nConstraints: Show only the original painting. No frame, mat, border, room, wall, furniture, interior, perspective, shadow from an external frame, typography, signature, logo, or watermark. Opaque image. The painted surface must fill every edge.",
+      "path": "/workspace/scratch/c3b983db68af/scene-assets/warm-contemporary.png",
+      "width": 1024,
+      "height": 1536,
+      "colorMode": "RGB"
+    },
+    {
+      "name": "japandi",
+      "prompt": "Use case: stylized-concept\nAsset type: original portrait wall-art bitmap, used as a framed canvas texture in a real-time 3D apartment.\nPrimary request: An original Japandi quiet ink-and-wash abstract landscape. A few softly layered charcoal horizon forms and one restrained muted green brush wash, set within abundant warm off-white negative space on handmade paper.\nStyle/medium: atmospheric, spare ink and mineral wash on subtly fibrous handmade paper; contemplative and elegant.\nComposition/framing: portrait aspect ratio 2:3, flat front-facing artwork fills the complete image edge to edge; landscape marks occupy a small lower-middle area with generous negative space above.\nColor palette: warm off-white paper, soft charcoal ink, restrained muted green.\nConstraints: Show only the original painting. No frame, mat, border, room, wall, furniture, interior, perspective, external cast shadow, typography, signature, logo, or watermark. Opaque image. Paper texture must fill every edge.",
+      "path": "/workspace/scratch/c3b983db68af/scene-assets/japandi.png",
+      "width": 1024,
+      "height": 1536,
+      "colorMode": "RGB"
+    },
+    {
+      "name": "modern-bohemian",
+      "prompt": "Use case: stylized-concept\nAsset type: original portrait wall-art bitmap, used as a framed canvas texture in a real-time 3D apartment.\nPrimary request: An original Modern Bohemian expressive abstract botanical and landscape painting. Energetic curved plant-like silhouettes, loose layered landscape shapes, and hand-painted gestural marks, with a warm expressive yet composed character.\nStyle/medium: richly textured acrylic, gouache and dry-brush marks on canvas, contemporary gallery painting.\nComposition/framing: portrait aspect ratio 2:3, flat front-facing artwork fills the complete image edge to edge; artful overlapping botanical and landscape abstractions.\nColor palette: terracotta, ochre, muted teal and cream, balanced rather than overly saturated.\nConstraints: Show only the original painting. No frame, mat, border, room, wall, furniture, interior, perspective, external cast shadow, typography, signature, logo, or watermark. Opaque image. The painted surface must fill every edge.",
+      "path": "/workspace/scratch/c3b983db68af/scene-assets/modern-bohemian.png",
+      "width": 1024,
+      "height": 1536,
+      "colorMode": "RGB"
+    }
+  ]
+}
+

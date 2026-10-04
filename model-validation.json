@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "rooms": 13,
+  "openings": 16,
+  "hinged_doors": 9,
+  "windows": 3,
+  "glazed_terrace_openings": 2,
+  "doorless_passages": 2,
+  "wall_segments": 64,
+  "all_spaces_reachable_from_entry": true,
+  "source_image_hash_matches": true,
+  "all_furniture_footprints_inside_rooms": true,
+  "source_room_polygons_preserved": true,
+  "ceiling_height_m": 2.5,
+  "living_glazing_sill_m": 0,
+  "living_glazing_head_m": 2.5,
+  "furniture_items": 44,
+  "limitations": [
+    "Image-calibrated concept model, not a measured survey.",
+    "Printed room dimensions are source annotations; pixel-calibrated geometry is approximate.",
+    "Wall thickness, door/window details and terrace parapets are visual placeholders.",
+    "Furniture footprint checks do not certify circulation, accessibility or MEP feasibility."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "checks": [
+    "MCP initialization and ten-tool discovery",
+    "private context blocked without trusted identity",
+    "canonical context and 12 source references",
+    "shared proposal validator",
+    "read-only candidate layout",
+    "ceiling height change rejected",
+    "room render brief",
+    "stale and malformed brief rejected",
+    "Worker asset routing"
+  ],
+  "live_authenticated_plugin_call": "Verified read-only context before upgrade; upgraded tools require published discovery"
+}

@@ -1,0 +1,3669 @@
+{
+  "schema": "apartment-viewer-adapter-v1",
+  "canonical_version": "0.2.2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_image_sha256": "3bf4cb625bb889fb9cbb574a80d9b092edde22f1554fd277cafdd76af804ebfe",
+  "px_per_m": 47.208,
+  "origin_source_px": [
+    257,
+    171
+  ],
+  "height_m": 2.5,
+  "pre_gypsum_height_m": 2.63,
+  "stated_gross_area_m2": 186,
+  "width_mm": 16035.418,
+  "depth_mm": 10231.317,
+  "rooms": [
+    {
+      "id": "TER-MBR",
+      "name": "Master terrace",
+      "full_name": "Master-side terrace",
+      "poly": [
+        [
+          0.0,
+          3431.622
+        ],
+        [
+          1970.005,
+          3431.622
+        ],
+        [
+          1970.005,
+          4999.153
+        ],
+        [
+          0.0,
+          4999.153
+        ]
+      ],
+      "at": [
+        985.003,
+        4215.387
+      ],
+      "kind": "terrace",
+      "isTerrace": true,
+      "mat": "antislip",
+      "printed": "TERRACE 1.50m x 1.80m",
+      "printed_dimensions_m": [
+        1.5,
+        1.8
+      ],
+      "callouts": [],
+      "area_estimate_m2": 3.088043907655001
+    },
+    {
+      "id": "BR-01",
+      "name": "Bedroom 1",
+      "full_name": "Secondary bedroom \u2014 west",
+      "poly": [
+        [
+          1970.005,
+          1503.982
+        ],
+        [
+          5465.175,
+          1503.982
+        ],
+        [
+          5465.175,
+          4999.153
+        ],
+        [
+          1970.005,
+          4999.153
+        ]
+      ],
+      "at": [
+        3717.59,
+        3251.568
+      ],
+      "kind": "bedroom",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "BED ROOM 3.50m x 3.50m",
+      "printed_dimensions_m": [
+        3.5,
+        3.5
+      ],
+      "callouts": [],
+      "area_estimate_m2": 12.21621682407
+    },
+    {
+      "id": "BR-02",
+      "name": "Bedroom 2",
+      "full_name": "Secondary bedroom \u2014 east",
+      "poly": [
+        [
+          5465.175,
+          1503.982
+        ],
+        [
+          8981.529,
+          1503.982
+        ],
+        [
+          8981.529,
+          4999.153
+        ],
+        [
+          5465.175,
+          4999.153
+        ]
+      ],
+      "at": [
+        7223.352,
+        3251.568
+      ],
+      "kind": "bedroom",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "BED ROOM 3.50m x 3.50m",
+      "printed_dimensions_m": [
+        3.5,
+        3.5
+      ],
+      "callouts": [],
+      "area_estimate_m2": 12.290258526534
+    },
+    {
+      "id": "MBR-01",
+      "name": "Master bedroom",
+      "full_name": "Master bedroom",
+      "poly": [
+        [
+          296.56,
+          4999.153
+        ],
+        [
+          4003.559,
+          4999.153
+        ],
+        [
+          4003.559,
+          8960.346
+        ],
+        [
+          296.56,
+          8960.346
+        ]
+      ],
+      "at": [
+        2150.059,
+        6979.749
+      ],
+      "kind": "bedroom",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "MASTER BED ROOM 4.00m x 3.80m",
+      "printed_dimensions_m": [
+        4.0,
+        3.8
+      ],
+      "callouts": [],
+      "area_estimate_m2": 14.684138489807
+    },
+    {
+      "id": "HALL-01",
+      "name": "Private hall",
+      "full_name": "Private lobby / bedroom corridor",
+      "poly": [
+        [
+          4003.559,
+          4999.153
+        ],
+        [
+          8981.529,
+          4999.153
+        ],
+        [
+          8981.529,
+          6206.575
+        ],
+        [
+          4003.559,
+          6206.575
+        ]
+      ],
+      "at": [
+        6492.544,
+        5602.864
+      ],
+      "kind": "circulation",
+      "isTerrace": false,
+      "mat": "tile800",
+      "printed": "LOBBY 5.05m x 1.15m",
+      "printed_dimensions_m": [
+        5.05,
+        1.15
+      ],
+      "callouts": [],
+      "area_estimate_m2": 6.010510493340001
+    },
+    {
+      "id": "WIC-01",
+      "name": "Dressing",
+      "full_name": "Master dressing",
+      "poly": [
+        [
+          4003.559,
+          6206.575
+        ],
+        [
+          5465.175,
+          6206.575
+        ],
+        [
+          5465.175,
+          8960.346
+        ],
+        [
+          4003.559,
+          8960.346
+        ]
+      ],
+      "at": [
+        4734.367,
+        7583.46
+      ],
+      "kind": "dressing",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "DRESSING 2.75m x 1.40m",
+      "printed_dimensions_m": [
+        2.75,
+        1.4
+      ],
+      "callouts": [],
+      "area_estimate_m2": 4.024955753936
+    },
+    {
+      "id": "BATH-M01",
+      "name": "Ensuite",
+      "full_name": "Master ensuite",
+      "poly": [
+        [
+          5465.175,
+          6206.575
+        ],
+        [
+          7180.986,
+          6206.575
+        ],
+        [
+          7180.986,
+          8960.346
+        ],
+        [
+          5465.175,
+          8960.346
+        ]
+      ],
+      "at": [
+        6323.081,
+        7583.46
+      ],
+      "kind": "bathroom",
+      "isTerrace": false,
+      "mat": "antislip",
+      "printed": "BATH ROOM 1.70m x 2.75m",
+      "printed_dimensions_m": [
+        1.7,
+        2.75
+      ],
+      "callouts": [],
+      "area_estimate_m2": 4.7249505732809975
+    },
+    {
+      "id": "BATH-C01",
+      "name": "Family bathroom",
+      "full_name": "Common full bathroom",
+      "poly": [
+        [
+          7180.986,
+          6206.575
+        ],
+        [
+          8981.529,
+          6206.575
+        ],
+        [
+          8981.529,
+          8960.346
+        ],
+        [
+          7180.986,
+          8960.346
+        ]
+      ],
+      "at": [
+        8081.257,
+        7583.46
+      ],
+      "kind": "bathroom",
+      "isTerrace": false,
+      "mat": "antislip",
+      "printed": "BATH ROOM 1.70m x 2.75m",
+      "printed_dimensions_m": [
+        1.7,
+        2.75
+      ],
+      "callouts": [],
+      "area_estimate_m2": 4.958283097653009
+    },
+    {
+      "id": "KIT-01",
+      "name": "Kitchen",
+      "full_name": "Enclosed kitchen",
+      "poly": [
+        [
+          8981.529,
+          6587.866
+        ],
+        [
+          12116.59,
+          6587.866
+        ],
+        [
+          12582.613,
+          6969.158
+        ],
+        [
+          12582.613,
+          8960.346
+        ],
+        [
+          8981.529,
+          8960.346
+        ]
+      ],
+      "at": [
+        10782.071,
+        7964.752
+      ],
+      "kind": "kitchen",
+      "isTerrace": false,
+      "mat": "tile800",
+      "printed": "KITCHEN 2.40m x 3.75m",
+      "printed_dimensions_m": [
+        2.4,
+        3.75
+      ],
+      "callouts": [],
+      "area_estimate_m2": 8.454654347461991
+    },
+    {
+      "id": "TER-SVC",
+      "name": "Service terrace",
+      "full_name": "Kitchen/service terrace",
+      "poly": [
+        [
+          8833.249,
+          8960.346
+        ],
+        [
+          10739.705,
+          8960.346
+        ],
+        [
+          10739.705,
+          10231.317
+        ],
+        [
+          8833.249,
+          10231.317
+        ]
+      ],
+      "at": [
+        9786.477,
+        9595.831
+      ],
+      "kind": "terrace",
+      "isTerrace": true,
+      "mat": "antislip",
+      "printed": "TERRACE 1.85m x 1.10m",
+      "printed_dimensions_m": [
+        1.85,
+        1.1
+      ],
+      "callouts": [],
+      "area_estimate_m2": 2.42305028877601
+    },
+    {
+      "id": "WC-01",
+      "name": "Guest WC",
+      "full_name": "Guest toilet",
+      "poly": [
+        [
+          10739.705,
+          8960.346
+        ],
+        [
+          12603.796,
+          8960.346
+        ],
+        [
+          12603.796,
+          10231.317
+        ],
+        [
+          10739.705,
+          10231.317
+        ]
+      ],
+      "at": [
+        11671.751,
+        9595.831
+      ],
+      "kind": "toilet",
+      "isTerrace": false,
+      "mat": "antislip",
+      "printed": "TOILET 1.30m x 1.90m",
+      "printed_dimensions_m": [
+        1.3,
+        1.9
+      ],
+      "callouts": [],
+      "area_estimate_m2": 2.3692056023610086
+    },
+    {
+      "id": "TER-MAIN",
+      "name": "Main terrace",
+      "full_name": "Main reception terrace",
+      "poly": [
+        [
+          12497.882,
+          0.0
+        ],
+        [
+          16035.418,
+          0.0
+        ],
+        [
+          16035.418,
+          2732.588
+        ],
+        [
+          12497.882,
+          2732.588
+        ]
+      ],
+      "at": [
+        14266.65,
+        1366.294
+      ],
+      "kind": "terrace",
+      "isTerrace": true,
+      "mat": "antislip",
+      "printed": "TERRACE 2.85m x 3.60m",
+      "printed_dimensions_m": [
+        2.85,
+        3.6
+      ],
+      "callouts": [],
+      "area_estimate_m2": 9.666628423168003
+    },
+    {
+      "id": "RECP-01",
+      "name": "Living & dining",
+      "full_name": "Continuous reception / living-dining social space",
+      "poly": [
+        [
+          8981.529,
+          550.754
+        ],
+        [
+          12497.882,
+          550.754
+        ],
+        [
+          12497.882,
+          2732.588
+        ],
+        [
+          16035.418,
+          2732.588
+        ],
+        [
+          16035.418,
+          10231.317
+        ],
+        [
+          12603.796,
+          10231.317
+        ],
+        [
+          12603.796,
+          6969.158
+        ],
+        [
+          12116.59,
+          6587.866
+        ],
+        [
+          8981.529,
+          6587.866
+        ]
+      ],
+      "at": [
+        10845.619,
+        4490.764
+      ],
+      "kind": "reception",
+      "isTerrace": false,
+      "mat": "tile800",
+      "printed": null,
+      "printed_dimensions_m": null,
+      "callouts": [
+        {
+          "id": "RECP-DIM-A",
+          "printed_text": "RECEPTION 3.45m x 6.00m",
+          "dimensions_m": [
+            3.45,
+            6.0
+          ],
+          "anchor_source_px": [
+            754,
+            402
+          ]
+        },
+        {
+          "id": "RECP-DIM-B",
+          "printed_text": "RECEPTION 3.50m x 7.65m",
+          "dimensions_m": [
+            3.5,
+            7.65
+          ],
+          "anchor_source_px": [
+            903,
+            492
+          ]
+        }
+      ],
+      "area_estimate_m2": 47.46263209014198
+    }
+  ],
+  "wall_segments": [
+    {
+      "from": [
+        0.0,
+        3431.622
+      ],
+      "to": [
+        1970.005,
+        3431.622
+      ],
+      "source_px": [
+        [
+          257,
+          333
+        ],
+        [
+          350,
+          333
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        1503.982
+      ],
+      "to": [
+        1970.005,
+        3431.622
+      ],
+      "source_px": [
+        [
+          350,
+          242
+        ],
+        [
+          350,
+          333
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        3431.622
+      ],
+      "to": [
+        1970.005,
+        4999.153
+      ],
+      "source_px": [
+        [
+          350,
+          333
+        ],
+        [
+          350,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        0.0,
+        4999.153
+      ],
+      "to": [
+        296.56,
+        4999.153
+      ],
+      "source_px": [
+        [
+          257,
+          407
+        ],
+        [
+          271,
+          407
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        296.56,
+        4999.153
+      ],
+      "to": [
+        466.023,
+        4999.153
+      ],
+      "source_px": [
+        [
+          271,
+          407
+        ],
+        [
+          279,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1842.908,
+        4999.153
+      ],
+      "to": [
+        1970.005,
+        4999.153
+      ],
+      "source_px": [
+        [
+          344,
+          407
+        ],
+        [
+          350,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        4999.153
+      ],
+      "to": [
+        4003.559,
+        4999.153
+      ],
+      "source_px": [
+        [
+          350,
+          407
+        ],
+        [
+          446,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        4999.153
+      ],
+      "to": [
+        4490.764,
+        4999.153
+      ],
+      "source_px": [
+        [
+          446,
+          407
+        ],
+        [
+          469,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        5210.981,
+        4999.153
+      ],
+      "to": [
+        5465.175,
+        4999.153
+      ],
+      "source_px": [
+        [
+          503,
+          407
+        ],
+        [
+          515,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        4999.153
+      ],
+      "to": [
+        5740.552,
+        4999.153
+      ],
+      "source_px": [
+        [
+          515,
+          407
+        ],
+        [
+          528,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        6439.587,
+        4999.153
+      ],
+      "to": [
+        8981.529,
+        4999.153
+      ],
+      "source_px": [
+        [
+          561,
+          407
+        ],
+        [
+          681,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        0.0,
+        3431.622
+      ],
+      "to": [
+        0.0,
+        4999.153
+      ],
+      "source_px": [
+        [
+          257,
+          333
+        ],
+        [
+          257,
+          407
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        1503.982
+      ],
+      "to": [
+        3770.547,
+        1503.982
+      ],
+      "source_px": [
+        [
+          350,
+          242
+        ],
+        [
+          435,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01"
+      ]
+    },
+    {
+      "from": [
+        5126.25,
+        1503.982
+      ],
+      "to": [
+        5465.175,
+        1503.982
+      ],
+      "source_px": [
+        [
+          499,
+          242
+        ],
+        [
+          515,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        1503.982
+      ],
+      "to": [
+        7202.169,
+        1503.982
+      ],
+      "source_px": [
+        [
+          515,
+          242
+        ],
+        [
+          597,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02"
+      ]
+    },
+    {
+      "from": [
+        8579.054,
+        1503.982
+      ],
+      "to": [
+        8981.529,
+        1503.982
+      ],
+      "source_px": [
+        [
+          662,
+          242
+        ],
+        [
+          681,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        1503.982
+      ],
+      "to": [
+        5465.175,
+        4999.153
+      ],
+      "source_px": [
+        [
+          515,
+          242
+        ],
+        [
+          515,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "BR-02"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        6206.575
+      ],
+      "to": [
+        5465.175,
+        7265.718
+      ],
+      "source_px": [
+        [
+          515,
+          464
+        ],
+        [
+          515,
+          514
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        7943.569
+      ],
+      "to": [
+        5465.175,
+        8960.346
+      ],
+      "source_px": [
+        [
+          515,
+          546
+        ],
+        [
+          515,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        550.754
+      ],
+      "to": [
+        8981.529,
+        1503.982
+      ],
+      "source_px": [
+        [
+          681,
+          197
+        ],
+        [
+          681,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        1503.982
+      ],
+      "to": [
+        8981.529,
+        4999.153
+      ],
+      "source_px": [
+        [
+          681,
+          242
+        ],
+        [
+          681,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6015.93
+      ],
+      "to": [
+        8981.529,
+        6206.575
+      ],
+      "source_px": [
+        [
+          681,
+          455
+        ],
+        [
+          681,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6206.575
+      ],
+      "to": [
+        8981.529,
+        6587.866
+      ],
+      "source_px": [
+        [
+          681,
+          464
+        ],
+        [
+          681,
+          482
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6587.866
+      ],
+      "to": [
+        8981.529,
+        8960.346
+      ],
+      "source_px": [
+        [
+          681,
+          482
+        ],
+        [
+          681,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "KIT-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        4999.153
+      ],
+      "to": [
+        4003.559,
+        5253.347
+      ],
+      "source_px": [
+        [
+          446,
+          407
+        ],
+        [
+          446,
+          419
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        5994.747
+      ],
+      "to": [
+        4003.559,
+        6206.575
+      ],
+      "source_px": [
+        [
+          446,
+          454
+        ],
+        [
+          446,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        6206.575
+      ],
+      "to": [
+        4003.559,
+        7435.18
+      ],
+      "source_px": [
+        [
+          446,
+          464
+        ],
+        [
+          446,
+          522
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        8155.397
+      ],
+      "to": [
+        4003.559,
+        8960.346
+      ],
+      "source_px": [
+        [
+          446,
+          556
+        ],
+        [
+          446,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        296.56,
+        8960.346
+      ],
+      "to": [
+        4003.559,
+        8960.346
+      ],
+      "source_px": [
+        [
+          271,
+          594
+        ],
+        [
+          446,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        8960.346
+      ],
+      "to": [
+        5465.175,
+        8960.346
+      ],
+      "source_px": [
+        [
+          446,
+          594
+        ],
+        [
+          515,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        8960.346
+      ],
+      "to": [
+        7180.986,
+        8960.346
+      ],
+      "source_px": [
+        [
+          515,
+          594
+        ],
+        [
+          596,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01"
+      ]
+    },
+    {
+      "from": [
+        7180.986,
+        8960.346
+      ],
+      "to": [
+        8833.249,
+        8960.346
+      ],
+      "source_px": [
+        [
+          596,
+          594
+        ],
+        [
+          674,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01"
+      ]
+    },
+    {
+      "from": [
+        8833.249,
+        8960.346
+      ],
+      "to": [
+        8981.529,
+        8960.346
+      ],
+      "source_px": [
+        [
+          674,
+          594
+        ],
+        [
+          681,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        8960.346
+      ],
+      "to": [
+        9765.294,
+        8960.346
+      ],
+      "source_px": [
+        [
+          681,
+          594
+        ],
+        [
+          718,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        10443.145,
+        8960.346
+      ],
+      "to": [
+        10739.705,
+        8960.346
+      ],
+      "source_px": [
+        [
+          750,
+          594
+        ],
+        [
+          764,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        10739.705,
+        8960.346
+      ],
+      "to": [
+        12582.613,
+        8960.346
+      ],
+      "source_px": [
+        [
+          764,
+          594
+        ],
+        [
+          851,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        8960.346
+      ],
+      "to": [
+        12603.796,
+        8960.346
+      ],
+      "source_px": [
+        [
+          851,
+          594
+        ],
+        [
+          852,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        296.56,
+        4999.153
+      ],
+      "to": [
+        296.56,
+        8960.346
+      ],
+      "source_px": [
+        [
+          271,
+          407
+        ],
+        [
+          271,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        6206.575
+      ],
+      "to": [
+        5465.175,
+        6206.575
+      ],
+      "source_px": [
+        [
+          446,
+          464
+        ],
+        [
+          515,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        6206.575
+      ],
+      "to": [
+        7180.986,
+        6206.575
+      ],
+      "source_px": [
+        [
+          515,
+          464
+        ],
+        [
+          596,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        7180.986,
+        6206.575
+      ],
+      "to": [
+        7413.998,
+        6206.575
+      ],
+      "source_px": [
+        [
+          596,
+          464
+        ],
+        [
+          607,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        8070.666,
+        6206.575
+      ],
+      "to": [
+        8981.529,
+        6206.575
+      ],
+      "source_px": [
+        [
+          638,
+          464
+        ],
+        [
+          681,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        7180.986,
+        6206.575
+      ],
+      "to": [
+        7180.986,
+        8960.346
+      ],
+      "source_px": [
+        [
+          596,
+          464
+        ],
+        [
+          596,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "BATH-M01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6587.866
+      ],
+      "to": [
+        12116.59,
+        6587.866
+      ],
+      "source_px": [
+        [
+          681,
+          482
+        ],
+        [
+          829,
+          482
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        6969.158
+      ],
+      "to": [
+        12582.613,
+        7456.363
+      ],
+      "source_px": [
+        [
+          851,
+          500
+        ],
+        [
+          851,
+          523
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        8176.58
+      ],
+      "to": [
+        12582.613,
+        8960.346
+      ],
+      "source_px": [
+        [
+          851,
+          557
+        ],
+        [
+          851,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        8960.346
+      ],
+      "to": [
+        12582.613,
+        9341.637
+      ],
+      "source_px": [
+        [
+          851,
+          594
+        ],
+        [
+          851,
+          612
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        9998.305
+      ],
+      "to": [
+        12582.613,
+        10231.317
+      ],
+      "source_px": [
+        [
+          851,
+          643
+        ],
+        [
+          851,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        10739.705,
+        8960.346
+      ],
+      "to": [
+        10739.705,
+        10231.317
+      ],
+      "source_px": [
+        [
+          764,
+          594
+        ],
+        [
+          764,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "TER-SVC",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        8833.249,
+        10231.317
+      ],
+      "to": [
+        10739.705,
+        10231.317
+      ],
+      "source_px": [
+        [
+          674,
+          654
+        ],
+        [
+          764,
+          654
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        10739.705,
+        10231.317
+      ],
+      "to": [
+        12603.796,
+        10231.317
+      ],
+      "source_px": [
+        [
+          764,
+          654
+        ],
+        [
+          852,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        12603.796,
+        10231.317
+      ],
+      "to": [
+        14340.79,
+        10231.317
+      ],
+      "source_px": [
+        [
+          852,
+          654
+        ],
+        [
+          934,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        15145.738,
+        10231.317
+      ],
+      "to": [
+        16035.418,
+        10231.317
+      ],
+      "source_px": [
+        [
+          972,
+          654
+        ],
+        [
+          1014,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8833.249,
+        8960.346
+      ],
+      "to": [
+        8833.249,
+        10231.317
+      ],
+      "source_px": [
+        [
+          674,
+          594
+        ],
+        [
+          674,
+          654
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        0.0
+      ],
+      "to": [
+        16035.418,
+        0.0
+      ],
+      "source_px": [
+        [
+          847,
+          171
+        ],
+        [
+          1014,
+          171
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        16035.418,
+        0.0
+      ],
+      "to": [
+        16035.418,
+        2732.588
+      ],
+      "source_px": [
+        [
+          1014,
+          171
+        ],
+        [
+          1014,
+          300
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        16035.418,
+        2732.588
+      ],
+      "to": [
+        16035.418,
+        10231.317
+      ],
+      "source_px": [
+        [
+          1014,
+          300
+        ],
+        [
+          1014,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        2732.588
+      ],
+      "to": [
+        13324.013,
+        2732.588
+      ],
+      "source_px": [
+        [
+          847,
+          300
+        ],
+        [
+          886,
+          300
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        15209.287,
+        2732.588
+      ],
+      "to": [
+        16035.418,
+        2732.588
+      ],
+      "source_px": [
+        [
+          975,
+          300
+        ],
+        [
+          1014,
+          300
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        0.0
+      ],
+      "to": [
+        12497.882,
+        550.754
+      ],
+      "source_px": [
+        [
+          847,
+          171
+        ],
+        [
+          847,
+          197
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1.0,
+      "rooms": [
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        550.754
+      ],
+      "to": [
+        12497.882,
+        2732.588
+      ],
+      "source_px": [
+        [
+          847,
+          197
+        ],
+        [
+          847,
+          300
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        550.754
+      ],
+      "to": [
+        9638.197,
+        550.754
+      ],
+      "source_px": [
+        [
+          681,
+          197
+        ],
+        [
+          712,
+          197
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        11862.396,
+        550.754
+      ],
+      "to": [
+        12497.882,
+        550.754
+      ],
+      "source_px": [
+        [
+          817,
+          197
+        ],
+        [
+          847,
+          197
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12116.59,
+        6587.866
+      ],
+      "to": [
+        12582.613,
+        6969.158
+      ],
+      "source_px": [
+        [
+          829,
+          482
+        ],
+        [
+          851,
+          500
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    }
+  ],
+  "wins": [
+    [
+      3770.547,
+      1413.982,
+      5126.25,
+      1593.982
+    ],
+    [
+      7202.169,
+      1413.982,
+      8579.054,
+      1593.982
+    ],
+    [
+      9638.197,
+      460.754,
+      11862.396,
+      640.754
+    ]
+  ],
+  "window_meta": [
+    {
+      "id": "GLZ-BR01-N",
+      "sill_m": 0.9,
+      "head_m": 2.1,
+      "status": "TBD"
+    },
+    {
+      "id": "GLZ-BR02-N",
+      "sill_m": 0.9,
+      "head_m": 2.1,
+      "status": "TBD"
+    },
+    {
+      "id": "GLZ-RECP-N",
+      "sill_m": 0,
+      "head_m": 2.5,
+      "status": "VERIFIED"
+    }
+  ],
+  "doors": [
+    {
+      "id": "OP-BR01-HALL",
+      "name": "OP-BR01-HALL",
+      "rect": [
+        4490.764,
+        4909.153,
+        5210.981,
+        5089.153
+      ],
+      "h": [
+        5210.981,
+        4999.153
+      ],
+      "c": [
+        -1.0,
+        0.0
+      ],
+      "o": [
+        0,
+        -1
+      ],
+      "len": 720.2169999999996,
+      "entry": false
+    },
+    {
+      "id": "OP-BR02-HALL",
+      "name": "OP-BR02-HALL",
+      "rect": [
+        5740.552,
+        4909.153,
+        6439.587,
+        5089.153
+      ],
+      "h": [
+        5740.552,
+        4999.153
+      ],
+      "c": [
+        1.0,
+        0.0
+      ],
+      "o": [
+        0,
+        -1
+      ],
+      "len": 699.0350000000008,
+      "entry": false
+    },
+    {
+      "id": "OP-MBR-HALL",
+      "name": "OP-MBR-HALL",
+      "rect": [
+        3913.559,
+        5253.347,
+        4093.559,
+        5994.747
+      ],
+      "h": [
+        4003.559,
+        5253.347
+      ],
+      "c": [
+        0.0,
+        1.0
+      ],
+      "o": [
+        -1,
+        0
+      ],
+      "len": 741.4000000000005,
+      "entry": false
+    },
+    {
+      "id": "OP-WIC-BATHM",
+      "name": "OP-WIC-BATHM",
+      "rect": [
+        5375.175,
+        7265.718,
+        5555.175,
+        7943.569
+      ],
+      "h": [
+        5465.175,
+        7265.718
+      ],
+      "c": [
+        0.0,
+        1.0
+      ],
+      "o": [
+        1,
+        0
+      ],
+      "len": 677.8510000000006,
+      "entry": false
+    },
+    {
+      "id": "OP-HALL-BATHC",
+      "name": "OP-HALL-BATHC",
+      "rect": [
+        7413.998,
+        6116.575,
+        8070.666,
+        6296.575
+      ],
+      "h": [
+        7413.998,
+        6206.575
+      ],
+      "c": [
+        1.0,
+        0.0
+      ],
+      "o": [
+        0,
+        1
+      ],
+      "len": 656.6680000000006,
+      "entry": false
+    },
+    {
+      "id": "OP-RECP-KIT",
+      "name": "OP-RECP-KIT",
+      "rect": [
+        12492.613,
+        7456.363,
+        12672.613,
+        8176.58
+      ],
+      "h": [
+        12582.613,
+        7456.363
+      ],
+      "c": [
+        0.0,
+        1.0
+      ],
+      "o": [
+        -1,
+        0
+      ],
+      "len": 720.2169999999996,
+      "entry": false
+    },
+    {
+      "id": "OP-KIT-TERSVC",
+      "name": "OP-KIT-TERSVC",
+      "rect": [
+        9765.294,
+        8870.346,
+        10443.145,
+        9050.346
+      ],
+      "h": [
+        9765.294,
+        8960.346
+      ],
+      "c": [
+        1.0,
+        0.0
+      ],
+      "o": [
+        0,
+        -1
+      ],
+      "len": 677.8510000000006,
+      "entry": false
+    },
+    {
+      "id": "OP-RECP-WC",
+      "name": "OP-RECP-WC",
+      "rect": [
+        12513.796,
+        9341.637,
+        12693.796,
+        9998.305
+      ],
+      "h": [
+        12603.796,
+        9341.637
+      ],
+      "c": [
+        0.0,
+        1.0
+      ],
+      "o": [
+        -1,
+        0
+      ],
+      "len": 656.6679999999997,
+      "entry": false
+    },
+    {
+      "id": "OP-ENT-01",
+      "name": "OP-ENT-01",
+      "rect": [
+        14340.79,
+        10141.317,
+        15145.738,
+        10321.317
+      ],
+      "h": [
+        15145.738,
+        10231.317
+      ],
+      "c": [
+        -1.0,
+        0.0
+      ],
+      "o": [
+        0,
+        -1
+      ],
+      "len": 804.9479999999985,
+      "entry": true
+    }
+  ],
+  "slides": [
+    {
+      "id": "GLZ-MBR-TER",
+      "rect": [
+        466.023,
+        4909.153,
+        1842.908,
+        5089.153
+      ],
+      "v": false,
+      "head_m": 2.1
+    },
+    {
+      "id": "GLZ-RECP-TERMAIN",
+      "rect": [
+        13324.013,
+        2642.588,
+        15209.287,
+        2822.588
+      ],
+      "v": false,
+      "head_m": 2.1
+    }
+  ],
+  "passages": [
+    {
+      "id": "OP-MBR-WIC",
+      "rect": [
+        3913.559,
+        7435.18,
+        4093.559,
+        8155.397
+      ],
+      "head_m": 2.5
+    },
+    {
+      "id": "OP-HALL-RECP",
+      "rect": [
+        8891.529,
+        4999.153,
+        9071.529,
+        6015.93
+      ],
+      "head_m": 2.5
+    }
+  ],
+  "openings": [
+    {
+      "id": "OP-BR01-HALL",
+      "type": "hinged_door",
+      "between": [
+        "BR-01",
+        "HALL-01"
+      ],
+      "from": [
+        4490.764,
+        4999.153
+      ],
+      "to": [
+        5210.981,
+        4999.153
+      ],
+      "rect": [
+        4490.764,
+        4909.153,
+        5210.981,
+        5089.153
+      ],
+      "length_mm": 720.2169999999996,
+      "source_px": [
+        [
+          469,
+          407
+        ],
+        [
+          503,
+          407
+        ]
+      ]
+    },
+    {
+      "id": "OP-BR02-HALL",
+      "type": "hinged_door",
+      "between": [
+        "BR-02",
+        "HALL-01"
+      ],
+      "from": [
+        5740.552,
+        4999.153
+      ],
+      "to": [
+        6439.587,
+        4999.153
+      ],
+      "rect": [
+        5740.552,
+        4909.153,
+        6439.587,
+        5089.153
+      ],
+      "length_mm": 699.0350000000008,
+      "source_px": [
+        [
+          528,
+          407
+        ],
+        [
+          561,
+          407
+        ]
+      ]
+    },
+    {
+      "id": "OP-MBR-HALL",
+      "type": "hinged_door",
+      "between": [
+        "MBR-01",
+        "HALL-01"
+      ],
+      "from": [
+        4003.559,
+        5253.347
+      ],
+      "to": [
+        4003.559,
+        5994.747
+      ],
+      "rect": [
+        3913.559,
+        5253.347,
+        4093.559,
+        5994.747
+      ],
+      "length_mm": 741.4000000000005,
+      "source_px": [
+        [
+          446,
+          419
+        ],
+        [
+          446,
+          454
+        ]
+      ]
+    },
+    {
+      "id": "OP-MBR-WIC",
+      "type": "open_or_doorway",
+      "between": [
+        "MBR-01",
+        "WIC-01"
+      ],
+      "from": [
+        4003.559,
+        7435.18
+      ],
+      "to": [
+        4003.559,
+        8155.397
+      ],
+      "rect": [
+        3913.559,
+        7435.18,
+        4093.559,
+        8155.397
+      ],
+      "length_mm": 720.2169999999996,
+      "source_px": [
+        [
+          446,
+          522
+        ],
+        [
+          446,
+          556
+        ]
+      ]
+    },
+    {
+      "id": "OP-WIC-BATHM",
+      "type": "hinged_door",
+      "between": [
+        "WIC-01",
+        "BATH-M01"
+      ],
+      "from": [
+        5465.175,
+        7265.718
+      ],
+      "to": [
+        5465.175,
+        7943.569
+      ],
+      "rect": [
+        5375.175,
+        7265.718,
+        5555.175,
+        7943.569
+      ],
+      "length_mm": 677.8510000000006,
+      "source_px": [
+        [
+          515,
+          514
+        ],
+        [
+          515,
+          546
+        ]
+      ]
+    },
+    {
+      "id": "OP-HALL-BATHC",
+      "type": "hinged_door",
+      "between": [
+        "HALL-01",
+        "BATH-C01"
+      ],
+      "from": [
+        7413.998,
+        6206.575
+      ],
+      "to": [
+        8070.666,
+        6206.575
+      ],
+      "rect": [
+        7413.998,
+        6116.575,
+        8070.666,
+        6296.575
+      ],
+      "length_mm": 656.6680000000006,
+      "source_px": [
+        [
+          607,
+          464
+        ],
+        [
+          638,
+          464
+        ]
+      ]
+    },
+    {
+      "id": "OP-HALL-RECP",
+      "type": "open_passage",
+      "between": [
+        "HALL-01",
+        "RECP-01"
+      ],
+      "from": [
+        8981.529,
+        4999.153
+      ],
+      "to": [
+        8981.529,
+        6015.93
+      ],
+      "rect": [
+        8891.529,
+        4999.153,
+        9071.529,
+        6015.93
+      ],
+      "length_mm": 1016.777,
+      "source_px": [
+        [
+          681,
+          407
+        ],
+        [
+          681,
+          455
+        ]
+      ]
+    },
+    {
+      "id": "OP-RECP-KIT",
+      "type": "hinged_door",
+      "between": [
+        "RECP-01",
+        "KIT-01"
+      ],
+      "from": [
+        12582.613,
+        7456.363
+      ],
+      "to": [
+        12582.613,
+        8176.58
+      ],
+      "rect": [
+        12492.613,
+        7456.363,
+        12672.613,
+        8176.58
+      ],
+      "length_mm": 720.2169999999996,
+      "source_px": [
+        [
+          851,
+          523
+        ],
+        [
+          851,
+          557
+        ]
+      ]
+    },
+    {
+      "id": "OP-KIT-TERSVC",
+      "type": "hinged_door",
+      "between": [
+        "KIT-01",
+        "TER-SVC"
+      ],
+      "from": [
+        9765.294,
+        8960.346
+      ],
+      "to": [
+        10443.145,
+        8960.346
+      ],
+      "rect": [
+        9765.294,
+        8870.346,
+        10443.145,
+        9050.346
+      ],
+      "length_mm": 677.8510000000006,
+      "source_px": [
+        [
+          718,
+          594
+        ],
+        [
+          750,
+          594
+        ]
+      ]
+    },
+    {
+      "id": "OP-RECP-WC",
+      "type": "hinged_door",
+      "between": [
+        "RECP-01",
+        "WC-01"
+      ],
+      "from": [
+        12603.796,
+        9341.637
+      ],
+      "to": [
+        12603.796,
+        9998.305
+      ],
+      "rect": [
+        12513.796,
+        9341.637,
+        12693.796,
+        9998.305
+      ],
+      "length_mm": 656.6679999999997,
+      "source_px": [
+        [
+          852,
+          612
+        ],
+        [
+          852,
+          643
+        ]
+      ]
+    },
+    {
+      "id": "OP-ENT-01",
+      "type": "main_entry_hinged_door",
+      "between": [
+        "EXTERIOR",
+        "RECP-01"
+      ],
+      "from": [
+        14340.79,
+        10231.317
+      ],
+      "to": [
+        15145.738,
+        10231.317
+      ],
+      "rect": [
+        14340.79,
+        10141.317,
+        15145.738,
+        10321.317
+      ],
+      "length_mm": 804.9479999999985,
+      "source_px": [
+        [
+          934,
+          654
+        ],
+        [
+          972,
+          654
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-MBR-TER",
+      "type": "glazed_terrace_opening",
+      "between": [
+        "MBR-01",
+        "TER-MBR"
+      ],
+      "from": [
+        466.023,
+        4999.153
+      ],
+      "to": [
+        1842.908,
+        4999.153
+      ],
+      "rect": [
+        466.023,
+        4909.153,
+        1842.908,
+        5089.153
+      ],
+      "length_mm": 1376.8849999999998,
+      "source_px": [
+        [
+          279,
+          407
+        ],
+        [
+          344,
+          407
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-BR01-N",
+      "type": "exterior_window",
+      "between": [
+        "BR-01",
+        "EXTERIOR"
+      ],
+      "from": [
+        3770.547,
+        1503.982
+      ],
+      "to": [
+        5126.25,
+        1503.982
+      ],
+      "rect": [
+        3770.547,
+        1413.982,
+        5126.25,
+        1593.982
+      ],
+      "length_mm": 1355.703,
+      "source_px": [
+        [
+          435,
+          242
+        ],
+        [
+          499,
+          242
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-BR02-N",
+      "type": "exterior_window",
+      "between": [
+        "BR-02",
+        "EXTERIOR"
+      ],
+      "from": [
+        7202.169,
+        1503.982
+      ],
+      "to": [
+        8579.054,
+        1503.982
+      ],
+      "rect": [
+        7202.169,
+        1413.982,
+        8579.054,
+        1593.982
+      ],
+      "length_mm": 1376.8850000000002,
+      "source_px": [
+        [
+          597,
+          242
+        ],
+        [
+          662,
+          242
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-RECP-N",
+      "type": "exterior_window",
+      "between": [
+        "RECP-01",
+        "EXTERIOR"
+      ],
+      "from": [
+        9638.197,
+        550.754
+      ],
+      "to": [
+        11862.396,
+        550.754
+      ],
+      "rect": [
+        9638.197,
+        460.754,
+        11862.396,
+        640.754
+      ],
+      "length_mm": 2224.1990000000005,
+      "source_px": [
+        [
+          712,
+          197
+        ],
+        [
+          817,
+          197
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-RECP-TERMAIN",
+      "type": "glazed_terrace_opening",
+      "between": [
+        "RECP-01",
+        "TER-MAIN"
+      ],
+      "from": [
+        13324.013,
+        2732.588
+      ],
+      "to": [
+        15209.287,
+        2732.588
+      ],
+      "rect": [
+        13324.013,
+        2642.588,
+        15209.287,
+        2822.588
+      ],
+      "length_mm": 1885.2739999999994,
+      "source_px": [
+        [
+          886,
+          300
+        ],
+        [
+          975,
+          300
+        ]
+      ]
+    }
+  ],
+  "starter_furniture": [
+    {
+      "id": "starter-1",
+      "type": "bed",
+      "name": "King bed",
+      "room_id": "MBR-01",
+      "cx": 1440.434,
+      "cy": 6651.415,
+      "w": 1800,
+      "d": 2000,
+      "rot": 270,
+      "color": "#c6d3df",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-2",
+      "type": "nightstand",
+      "name": "Nightstand",
+      "room_id": "MBR-01",
+      "cx": 656.668,
+      "cy": 5401.627,
+      "w": 450,
+      "d": 400,
+      "rot": 270,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-3",
+      "type": "nightstand",
+      "name": "Nightstand",
+      "room_id": "MBR-01",
+      "cx": 656.668,
+      "cy": 7922.386,
+      "w": 450,
+      "d": 400,
+      "rot": 270,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-4",
+      "type": "wardrobe",
+      "name": "Dressing wardrobe",
+      "room_id": "WIC-01",
+      "cx": 4723.776,
+      "cy": 6566.684,
+      "w": 1250,
+      "d": 550,
+      "rot": 0,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-5",
+      "type": "wardrobe",
+      "name": "Dressing wardrobe",
+      "room_id": "WIC-01",
+      "cx": 4723.776,
+      "cy": 8557.872,
+      "w": 1250,
+      "d": 550,
+      "rot": 180,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-6",
+      "type": "bed",
+      "name": "Single bed",
+      "room_id": "BR-01",
+      "cx": 2774.953,
+      "cy": 2732.588,
+      "w": 1200,
+      "d": 2000,
+      "rot": 0,
+      "color": "#adc2d2",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-7",
+      "type": "wardrobe",
+      "name": "Wardrobe",
+      "room_id": "BR-01",
+      "cx": 5062.701,
+      "cy": 2774.953,
+      "w": 1600,
+      "d": 550,
+      "rot": 90,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-8",
+      "type": "desk",
+      "name": "Desk",
+      "room_id": "BR-01",
+      "cx": 3325.708,
+      "cy": 4533.13,
+      "w": 1500,
+      "d": 500,
+      "rot": 180,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-9",
+      "type": "chair",
+      "name": "Chair",
+      "room_id": "BR-01",
+      "cx": 3325.708,
+      "cy": 3940.01,
+      "w": 450,
+      "d": 450,
+      "rot": 180,
+      "color": "#747f91",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-10",
+      "type": "bed",
+      "name": "Single bed",
+      "room_id": "BR-02",
+      "cx": 8049.483,
+      "cy": 2732.588,
+      "w": 1200,
+      "d": 2000,
+      "rot": 0,
+      "color": "#c4b9a9",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-11",
+      "type": "desk",
+      "name": "Work desk",
+      "room_id": "BR-02",
+      "cx": 6227.758,
+      "cy": 2075.919,
+      "w": 1200,
+      "d": 700,
+      "rot": 0,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-12",
+      "type": "officechair",
+      "name": "Office chair",
+      "room_id": "BR-02",
+      "cx": 6227.758,
+      "cy": 2859.685,
+      "w": 620,
+      "d": 620,
+      "rot": 0,
+      "color": "#3a465c",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-13",
+      "type": "wardrobe",
+      "name": "Wardrobe",
+      "room_id": "BR-02",
+      "cx": 8303.677,
+      "cy": 4533.13,
+      "w": 1050,
+      "d": 550,
+      "rot": 180,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-14",
+      "type": "bathtub",
+      "name": "Bathtub",
+      "room_id": "BATH-M01",
+      "cx": 6312.489,
+      "cy": 6757.329,
+      "w": 1500,
+      "d": 750,
+      "rot": 0,
+      "color": "#f6f8fa",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-15",
+      "type": "toilet",
+      "name": "WC",
+      "room_id": "BATH-M01",
+      "cx": 6714.964,
+      "cy": 8282.494,
+      "w": 400,
+      "d": 700,
+      "rot": 0,
+      "color": "#f6f8fa",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-16",
+      "type": "shower",
+      "name": "Shower",
+      "room_id": "BATH-C01",
+      "cx": 8409.592,
+      "cy": 8409.592,
+      "w": 900,
+      "d": 900,
+      "rot": 0,
+      "color": "#c0d6df",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-17",
+      "type": "toilet",
+      "name": "WC",
+      "room_id": "BATH-C01",
+      "cx": 8409.592,
+      "cy": 7413.998,
+      "w": 400,
+      "d": 700,
+      "rot": 0,
+      "color": "#f6f8fa",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-18",
+      "type": "vanity",
+      "name": "Vanity",
+      "room_id": "BATH-C01",
+      "cx": 8473.14,
+      "cy": 6587.866,
+      "w": 650,
+      "d": 400,
+      "rot": 0,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-19",
+      "type": "counter",
+      "name": "Kitchen counter",
+      "room_id": "KIT-01",
+      "cx": 10549.059,
+      "cy": 6990.341,
+      "w": 2700,
+      "d": 600,
+      "rot": 0,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-20",
+      "type": "counter",
+      "name": "Kitchen counter",
+      "room_id": "KIT-01",
+      "cx": 9362.82,
+      "cy": 7985.935,
+      "w": 1300,
+      "d": 600,
+      "rot": 270,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-21",
+      "type": "ksink",
+      "name": "Kitchen sink",
+      "room_id": "KIT-01",
+      "cx": 10760.888,
+      "cy": 6990.341,
+      "w": 750,
+      "d": 400,
+      "rot": 0,
+      "color": "#eef2f5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-22",
+      "type": "stove",
+      "name": "Hob",
+      "room_id": "KIT-01",
+      "cx": 9362.82,
+      "cy": 7985.935,
+      "w": 600,
+      "d": 400,
+      "rot": 270,
+      "color": "#424f61",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-23",
+      "type": "fridge",
+      "name": "Fridge",
+      "room_id": "KIT-01",
+      "cx": 12053.042,
+      "cy": 8557.872,
+      "w": 650,
+      "d": 650,
+      "rot": 180,
+      "color": "#bec7d0",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-24",
+      "type": "washer",
+      "name": "Washing machine",
+      "room_id": "TER-SVC",
+      "cx": 9278.088,
+      "cy": 9362.82,
+      "w": 600,
+      "d": 600,
+      "rot": 270,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-25",
+      "type": "toilet",
+      "name": "Guest WC",
+      "room_id": "WC-01",
+      "cx": 11269.276,
+      "cy": 9701.745,
+      "w": 400,
+      "d": 650,
+      "rot": 270,
+      "color": "#f6f8fa",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-26",
+      "type": "vanity",
+      "name": "Guest basin",
+      "room_id": "WC-01",
+      "cx": 11968.31,
+      "cy": 9214.54,
+      "w": 400,
+      "d": 300,
+      "rot": 0,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-27",
+      "type": "rug",
+      "name": "Living rug",
+      "room_id": "RECP-01",
+      "cx": 10930.351,
+      "cy": 2012.371,
+      "w": 2200,
+      "d": 1700,
+      "rot": 90,
+      "color": "#c0c6d0",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-28",
+      "type": "sofa",
+      "name": "Family sofa",
+      "room_id": "RECP-01",
+      "cx": 9595.831,
+      "cy": 1970.005,
+      "w": 2400,
+      "d": 900,
+      "rot": 270,
+      "color": "#536f8b",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-29",
+      "type": "coffeetable",
+      "name": "Coffee table",
+      "room_id": "RECP-01",
+      "cx": 11015.082,
+      "cy": 1885.274,
+      "w": 900,
+      "d": 550,
+      "rot": 90,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-30",
+      "type": "tvstand",
+      "name": "TV console",
+      "room_id": "RECP-01",
+      "cx": 12180.139,
+      "cy": 1779.359,
+      "w": 1600,
+      "d": 350,
+      "rot": 90,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-31",
+      "type": "tv",
+      "name": "TV",
+      "room_id": "RECP-01",
+      "cx": 12243.688,
+      "cy": 1779.359,
+      "w": 1230,
+      "d": 80,
+      "rot": 90,
+      "color": "#152034",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-32",
+      "type": "armchair",
+      "name": "Reading chair",
+      "room_id": "RECP-01",
+      "cx": 13387.561,
+      "cy": 4173.022,
+      "w": 750,
+      "d": 750,
+      "rot": 270,
+      "color": "#a89780",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-33",
+      "type": "armchair",
+      "name": "Reading chair",
+      "room_id": "RECP-01",
+      "cx": 15209.287,
+      "cy": 4173.022,
+      "w": 750,
+      "d": 750,
+      "rot": 90,
+      "color": "#a89780",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-34",
+      "type": "roundtable",
+      "name": "Side table",
+      "room_id": "RECP-01",
+      "cx": 14298.424,
+      "cy": 4173.022,
+      "w": 550,
+      "d": 550,
+      "rot": 0,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-35",
+      "type": "table",
+      "name": "Dining table",
+      "room_id": "RECP-01",
+      "cx": 14319.607,
+      "cy": 7985.935,
+      "w": 1600,
+      "d": 800,
+      "rot": 0,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-36",
+      "type": "chair",
+      "name": "Dining chair",
+      "room_id": "RECP-01",
+      "cx": 13832.401,
+      "cy": 7223.352,
+      "w": 450,
+      "d": 480,
+      "rot": 0,
+      "color": "#6a7888",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-37",
+      "type": "chair",
+      "name": "Dining chair",
+      "room_id": "RECP-01",
+      "cx": 14700.898,
+      "cy": 7223.352,
+      "w": 450,
+      "d": 480,
+      "rot": 0,
+      "color": "#6a7888",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-38",
+      "type": "chair",
+      "name": "Dining chair",
+      "room_id": "RECP-01",
+      "cx": 13832.401,
+      "cy": 8748.517,
+      "w": 450,
+      "d": 480,
+      "rot": 180,
+      "color": "#6a7888",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-39",
+      "type": "chair",
+      "name": "Dining chair",
+      "room_id": "RECP-01",
+      "cx": 14700.898,
+      "cy": 8748.517,
+      "w": 450,
+      "d": 480,
+      "rot": 180,
+      "color": "#6a7888",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-40",
+      "type": "shoecab",
+      "name": "Entry storage",
+      "room_id": "RECP-01",
+      "cx": 13387.561,
+      "cy": 9977.123,
+      "w": 1150,
+      "d": 300,
+      "rot": 180,
+      "color": "#d8dfe5",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-41",
+      "type": "roundtable",
+      "name": "Terrace table",
+      "room_id": "TER-MAIN",
+      "cx": 14256.058,
+      "cy": 1292.154,
+      "w": 600,
+      "d": 600,
+      "rot": 0,
+      "color": "#c7b299",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-42",
+      "type": "armchair",
+      "name": "Terrace chair",
+      "room_id": "TER-MAIN",
+      "cx": 13366.379,
+      "cy": 1292.154,
+      "w": 650,
+      "d": 650,
+      "rot": 270,
+      "color": "#8a9c9f",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-43",
+      "type": "armchair",
+      "name": "Terrace chair",
+      "room_id": "TER-MAIN",
+      "cx": 15145.738,
+      "cy": 1292.154,
+      "w": 650,
+      "d": 650,
+      "rot": 90,
+      "color": "#8a9c9f",
+      "status": "EXPLORATORY"
+    },
+    {
+      "id": "starter-44",
+      "type": "plant",
+      "name": "Plant",
+      "room_id": "TER-MBR",
+      "cx": 381.291,
+      "cy": 3834.096,
+      "w": 500,
+      "d": 500,
+      "rot": 0,
+      "color": "#799378",
+      "status": "EXPLORATORY"
+    }
+  ],
+  "status": {
+    "room_topology": "VERIFIED_FROM_CANONICAL",
+    "metric_geometry": "INFERRED_FROM_IMAGE",
+    "ceiling": "VERIFIED",
+    "living_glazing_height": "VERIFIED",
+    "furniture": "EXPLORATORY",
+    "wall_thickness": "TBD",
+    "bedroom_window_heights": "TBD",
+    "door_hinge_and_head": "TBD",
+    "terrace_parapets": "TBD",
+    "true_orientation": "TBD"
+  }
+}

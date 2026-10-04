@@ -1,0 +1,1499 @@
+{
+  "schema_name": "ApartmentPlanFoundation",
+  "schema_version": "0.2.2",
+  "document_status": "geometry-calibrated semantic foundation + verified vertical dimensions + living full-height glazing",
+  "project": {
+    "name": "Apartment Type B",
+    "developer_plan_title": "TYPE ( B ) — TYPICAL FLOOR PLAN",
+    "stated_area_sqm": 186,
+    "bedrooms": 3,
+    "full_bathrooms": 2,
+    "guest_toilets": 1,
+    "terraces": 3
+  },
+  "source": {
+    "filename": "C24E1E58-0BFF-4EE1-8FAF-4AC0B2F71EB7.jpeg",
+    "sha256": "3bf4cb625bb889fb9cbb574a80d9b092edde22f1554fd277cafdd76af804ebfe",
+    "image_dimensions_px": [
+      1280,
+      905
+    ],
+    "plan_outer_visual_bbox_source_px": [
+      257,
+      171,
+      1021,
+      656
+    ],
+    "coordinate_system": {
+      "origin": "top-left of original source image",
+      "x_axis": "positive to the right",
+      "y_axis": "positive downward",
+      "unit": "source image pixels"
+    }
+  },
+  "geometry_semantics": {
+    "method": "manual visual tracing + line-run validation against the original source image",
+    "space_polygons": "registered directly to original source pixels, approximately following wall centerlines / spatial envelopes",
+    "accuracy_class": "image-calibrated concept geometry; not construction/as-built geometry",
+    "visual_scale_estimate_px_per_m_median": 47.208,
+    "critical_rule": "Never rescale/crop first and then reuse coordinates. Transform from this original source coordinate frame only.",
+    "metric_rule": "Use printed room dimensions where available. Do not derive construction dimensions from pixels."
+  },
+  "orientation": {
+    "true_north_known": false,
+    "plan_north_definition": "top of source image only; not geographic north"
+  },
+  "spaces": {
+    "TER-MBR": {
+      "name": "Master-side terrace",
+      "kind": "terrace",
+      "section": "SEC-B",
+      "printed_label": "TERRACE 1.50m x 1.80m",
+      "printed_dimensions_m": [
+        1.5,
+        1.8
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 1.8,
+        "vertical": 1.5
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            257,
+            333
+          ],
+          [
+            350,
+            333
+          ],
+          [
+            350,
+            407
+          ],
+          [
+            257,
+            407
+          ]
+        ],
+        "bbox_source_px": [
+          257,
+          333,
+          350,
+          407
+        ],
+        "representative_point_source_px": [
+          303.5,
+          370.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.0,
+            0.334021
+          ],
+          [
+            0.121728,
+            0.334021
+          ],
+          [
+            0.121728,
+            0.486598
+          ],
+          [
+            0.0,
+            0.486598
+          ]
+        ]
+      }
+    },
+    "BR-01": {
+      "name": "Secondary bedroom — west",
+      "kind": "bedroom",
+      "section": "SEC-A",
+      "printed_label": "BED ROOM 3.50m x 3.50m",
+      "printed_dimensions_m": [
+        3.5,
+        3.5
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 3.5,
+        "vertical": 3.5
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            350,
+            242
+          ],
+          [
+            515,
+            242
+          ],
+          [
+            515,
+            407
+          ],
+          [
+            350,
+            407
+          ]
+        ],
+        "bbox_source_px": [
+          350,
+          242,
+          515,
+          407
+        ],
+        "representative_point_source_px": [
+          432.5,
+          324.5
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.121728,
+            0.146392
+          ],
+          [
+            0.337696,
+            0.146392
+          ],
+          [
+            0.337696,
+            0.486598
+          ],
+          [
+            0.121728,
+            0.486598
+          ]
+        ]
+      }
+    },
+    "BR-02": {
+      "name": "Secondary bedroom — east",
+      "kind": "bedroom",
+      "section": "SEC-A",
+      "printed_label": "BED ROOM 3.50m x 3.50m",
+      "printed_dimensions_m": [
+        3.5,
+        3.5
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 3.5,
+        "vertical": 3.5
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            515,
+            242
+          ],
+          [
+            681,
+            242
+          ],
+          [
+            681,
+            407
+          ],
+          [
+            515,
+            407
+          ]
+        ],
+        "bbox_source_px": [
+          515,
+          242,
+          681,
+          407
+        ],
+        "representative_point_source_px": [
+          598.0,
+          324.5
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.337696,
+            0.146392
+          ],
+          [
+            0.554974,
+            0.146392
+          ],
+          [
+            0.554974,
+            0.486598
+          ],
+          [
+            0.337696,
+            0.486598
+          ]
+        ]
+      }
+    },
+    "MBR-01": {
+      "name": "Master bedroom",
+      "kind": "bedroom",
+      "section": "SEC-B",
+      "printed_label": "MASTER BED ROOM 4.00m x 3.80m",
+      "printed_dimensions_m": [
+        4.0,
+        3.8
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 3.8,
+        "vertical": 4.0
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            271,
+            407
+          ],
+          [
+            446,
+            407
+          ],
+          [
+            446,
+            594
+          ],
+          [
+            271,
+            594
+          ]
+        ],
+        "bbox_source_px": [
+          271,
+          407,
+          446,
+          594
+        ],
+        "representative_point_source_px": [
+          358.5,
+          500.5
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.018325,
+            0.486598
+          ],
+          [
+            0.247382,
+            0.486598
+          ],
+          [
+            0.247382,
+            0.872165
+          ],
+          [
+            0.018325,
+            0.872165
+          ]
+        ]
+      }
+    },
+    "HALL-01": {
+      "name": "Private lobby / bedroom corridor",
+      "kind": "circulation",
+      "section": "SEC-C",
+      "printed_label": "LOBBY 5.05m x 1.15m",
+      "printed_dimensions_m": [
+        5.05,
+        1.15
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 5.05,
+        "vertical": 1.15
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            446,
+            407
+          ],
+          [
+            681,
+            407
+          ],
+          [
+            681,
+            464
+          ],
+          [
+            446,
+            464
+          ]
+        ],
+        "bbox_source_px": [
+          446,
+          407,
+          681,
+          464
+        ],
+        "representative_point_source_px": [
+          563.5,
+          435.5
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.247382,
+            0.486598
+          ],
+          [
+            0.554974,
+            0.486598
+          ],
+          [
+            0.554974,
+            0.604124
+          ],
+          [
+            0.247382,
+            0.604124
+          ]
+        ]
+      }
+    },
+    "WIC-01": {
+      "name": "Master dressing",
+      "kind": "dressing",
+      "section": "SEC-B",
+      "printed_label": "DRESSING 2.75m x 1.40m",
+      "printed_dimensions_m": [
+        2.75,
+        1.4
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 1.4,
+        "vertical": 2.75
+      },
+      "confidence": "high",
+      "notes": [
+        "Open/doorway relationship to the master is represented by OP-MBR-WIC."
+      ],
+      "geometry": {
+        "polygon_source_px": [
+          [
+            446,
+            464
+          ],
+          [
+            515,
+            464
+          ],
+          [
+            515,
+            594
+          ],
+          [
+            446,
+            594
+          ]
+        ],
+        "bbox_source_px": [
+          446,
+          464,
+          515,
+          594
+        ],
+        "representative_point_source_px": [
+          480.5,
+          529.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.247382,
+            0.604124
+          ],
+          [
+            0.337696,
+            0.604124
+          ],
+          [
+            0.337696,
+            0.872165
+          ],
+          [
+            0.247382,
+            0.872165
+          ]
+        ]
+      }
+    },
+    "BATH-M01": {
+      "name": "Master ensuite",
+      "kind": "bathroom",
+      "section": "SEC-B",
+      "printed_label": "BATH ROOM 1.70m x 2.75m",
+      "printed_dimensions_m": [
+        1.7,
+        2.75
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 1.7,
+        "vertical": 2.75
+      },
+      "confidence": "high",
+      "fixtures_from_plan": [
+        "bathtub",
+        "WC"
+      ],
+      "geometry": {
+        "polygon_source_px": [
+          [
+            515,
+            464
+          ],
+          [
+            596,
+            464
+          ],
+          [
+            596,
+            594
+          ],
+          [
+            515,
+            594
+          ]
+        ],
+        "bbox_source_px": [
+          515,
+          464,
+          596,
+          594
+        ],
+        "representative_point_source_px": [
+          555.5,
+          529.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.337696,
+            0.604124
+          ],
+          [
+            0.443717,
+            0.604124
+          ],
+          [
+            0.443717,
+            0.872165
+          ],
+          [
+            0.337696,
+            0.872165
+          ]
+        ]
+      }
+    },
+    "BATH-C01": {
+      "name": "Common full bathroom",
+      "kind": "bathroom",
+      "section": "SEC-C",
+      "printed_label": "BATH ROOM 1.70m x 2.75m",
+      "printed_dimensions_m": [
+        1.7,
+        2.75
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 1.7,
+        "vertical": 2.75
+      },
+      "confidence": "high",
+      "fixtures_from_plan": [
+        "basin",
+        "WC",
+        "shower"
+      ],
+      "geometry": {
+        "polygon_source_px": [
+          [
+            596,
+            464
+          ],
+          [
+            681,
+            464
+          ],
+          [
+            681,
+            594
+          ],
+          [
+            596,
+            594
+          ]
+        ],
+        "bbox_source_px": [
+          596,
+          464,
+          681,
+          594
+        ],
+        "representative_point_source_px": [
+          638.5,
+          529.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.443717,
+            0.604124
+          ],
+          [
+            0.554974,
+            0.604124
+          ],
+          [
+            0.554974,
+            0.872165
+          ],
+          [
+            0.443717,
+            0.872165
+          ]
+        ]
+      }
+    },
+    "KIT-01": {
+      "name": "Enclosed kitchen",
+      "kind": "kitchen",
+      "section": "SEC-E",
+      "printed_label": "KITCHEN 2.40m x 3.75m",
+      "printed_dimensions_m": [
+        2.4,
+        3.75
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 3.75,
+        "vertical": 2.4
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            681,
+            482
+          ],
+          [
+            829,
+            482
+          ],
+          [
+            851,
+            500
+          ],
+          [
+            851,
+            594
+          ],
+          [
+            681,
+            594
+          ]
+        ],
+        "bbox_source_px": [
+          681,
+          482,
+          851,
+          594
+        ],
+        "representative_point_source_px": [
+          766.0,
+          547.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.554974,
+            0.641237
+          ],
+          [
+            0.748691,
+            0.641237
+          ],
+          [
+            0.777487,
+            0.678351
+          ],
+          [
+            0.777487,
+            0.872165
+          ],
+          [
+            0.554974,
+            0.872165
+          ]
+        ]
+      }
+    },
+    "TER-SVC": {
+      "name": "Kitchen/service terrace",
+      "kind": "terrace",
+      "section": "SEC-E",
+      "printed_label": "TERRACE 1.85m x 1.10m",
+      "printed_dimensions_m": [
+        1.85,
+        1.1
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 1.85,
+        "vertical": 1.1
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            674,
+            594
+          ],
+          [
+            764,
+            594
+          ],
+          [
+            764,
+            654
+          ],
+          [
+            674,
+            654
+          ]
+        ],
+        "bbox_source_px": [
+          674,
+          594,
+          764,
+          654
+        ],
+        "representative_point_source_px": [
+          719.0,
+          624.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.545812,
+            0.872165
+          ],
+          [
+            0.663613,
+            0.872165
+          ],
+          [
+            0.663613,
+            0.995876
+          ],
+          [
+            0.545812,
+            0.995876
+          ]
+        ]
+      }
+    },
+    "WC-01": {
+      "name": "Guest toilet",
+      "kind": "toilet",
+      "section": "SEC-E",
+      "printed_label": "TOILET 1.30m x 1.90m",
+      "printed_dimensions_m": [
+        1.3,
+        1.9
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 1.9,
+        "vertical": 1.3
+      },
+      "confidence": "high",
+      "fixtures_from_plan": [
+        "basin",
+        "WC"
+      ],
+      "geometry": {
+        "polygon_source_px": [
+          [
+            764,
+            594
+          ],
+          [
+            852,
+            594
+          ],
+          [
+            852,
+            654
+          ],
+          [
+            764,
+            654
+          ]
+        ],
+        "bbox_source_px": [
+          764,
+          594,
+          852,
+          654
+        ],
+        "representative_point_source_px": [
+          808.0,
+          624.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.663613,
+            0.872165
+          ],
+          [
+            0.778796,
+            0.872165
+          ],
+          [
+            0.778796,
+            0.995876
+          ],
+          [
+            0.663613,
+            0.995876
+          ]
+        ]
+      }
+    },
+    "TER-MAIN": {
+      "name": "Main reception terrace",
+      "kind": "terrace",
+      "section": "SEC-D",
+      "printed_label": "TERRACE 2.85m x 3.60m",
+      "printed_dimensions_m": [
+        2.85,
+        3.6
+      ],
+      "axis_dimensions_m": {
+        "horizontal": 3.6,
+        "vertical": 2.85
+      },
+      "confidence": "high",
+      "geometry": {
+        "polygon_source_px": [
+          [
+            847,
+            171
+          ],
+          [
+            1014,
+            171
+          ],
+          [
+            1014,
+            300
+          ],
+          [
+            847,
+            300
+          ]
+        ],
+        "bbox_source_px": [
+          847,
+          171,
+          1014,
+          300
+        ],
+        "representative_point_source_px": [
+          930.5,
+          235.5
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.772251,
+            0.0
+          ],
+          [
+            0.990838,
+            0.0
+          ],
+          [
+            0.990838,
+            0.265979
+          ],
+          [
+            0.772251,
+            0.265979
+          ]
+        ]
+      }
+    },
+    "RECP-01": {
+      "name": "Continuous reception / living-dining social space",
+      "kind": "reception",
+      "section": "SEC-D",
+      "confidence": "high",
+      "dimension_callouts": [
+        {
+          "id": "RECP-DIM-A",
+          "printed_text": "RECEPTION 3.45m x 6.00m",
+          "dimensions_m": [
+            3.45,
+            6.0
+          ],
+          "anchor_source_px": [
+            754,
+            402
+          ]
+        },
+        {
+          "id": "RECP-DIM-B",
+          "printed_text": "RECEPTION 3.50m x 7.65m",
+          "dimensions_m": [
+            3.5,
+            7.65
+          ],
+          "anchor_source_px": [
+            903,
+            492
+          ]
+        }
+      ],
+      "notes": [
+        "This is ONE continuous open reception space in the drawing.",
+        "The two RECEPTION labels are retained as dimension callouts/zones, not modeled as enclosed rooms.",
+        "Legacy SOC-01 and SOC-02 are deprecated aliases, not separate rooms."
+      ],
+      "geometry": {
+        "polygon_source_px": [
+          [
+            681,
+            197
+          ],
+          [
+            847,
+            197
+          ],
+          [
+            847,
+            300
+          ],
+          [
+            1014,
+            300
+          ],
+          [
+            1014,
+            654
+          ],
+          [
+            852,
+            654
+          ],
+          [
+            852,
+            500
+          ],
+          [
+            829,
+            482
+          ],
+          [
+            681,
+            482
+          ]
+        ],
+        "bbox_source_px": [
+          681,
+          197,
+          1014,
+          654
+        ],
+        "representative_point_source_px": [
+          847.5,
+          391.0
+        ],
+        "polygon_plan_normalized": [
+          [
+            0.554974,
+            0.053608
+          ],
+          [
+            0.772251,
+            0.053608
+          ],
+          [
+            0.772251,
+            0.265979
+          ],
+          [
+            0.990838,
+            0.265979
+          ],
+          [
+            0.990838,
+            0.995876
+          ],
+          [
+            0.778796,
+            0.995876
+          ],
+          [
+            0.778796,
+            0.678351
+          ],
+          [
+            0.748691,
+            0.641237
+          ],
+          [
+            0.554974,
+            0.641237
+          ]
+        ]
+      }
+    }
+  },
+  "openings": {
+    "OP-BR01-HALL": {
+      "type": "hinged_door",
+      "between": [
+        "BR-01",
+        "HALL-01"
+      ],
+      "segment_source_px": [
+        [
+          469,
+          407
+        ],
+        [
+          503,
+          407
+        ]
+      ],
+      "swing": "into BR-01",
+      "confidence": "high"
+    },
+    "OP-BR02-HALL": {
+      "type": "hinged_door",
+      "between": [
+        "BR-02",
+        "HALL-01"
+      ],
+      "segment_source_px": [
+        [
+          528,
+          407
+        ],
+        [
+          561,
+          407
+        ]
+      ],
+      "swing": "into BR-02",
+      "confidence": "high"
+    },
+    "OP-MBR-HALL": {
+      "type": "hinged_door",
+      "between": [
+        "MBR-01",
+        "HALL-01"
+      ],
+      "segment_source_px": [
+        [
+          446,
+          419
+        ],
+        [
+          446,
+          454
+        ]
+      ],
+      "swing": "into MBR-01",
+      "confidence": "high"
+    },
+    "OP-MBR-WIC": {
+      "type": "open_or_doorway",
+      "between": [
+        "MBR-01",
+        "WIC-01"
+      ],
+      "segment_source_px": [
+        [
+          446,
+          522
+        ],
+        [
+          446,
+          556
+        ]
+      ],
+      "confidence": "high",
+      "notes": [
+        "Source plan shows a clear break in the shared wall; exact door hardware is not legible."
+      ]
+    },
+    "OP-WIC-BATHM": {
+      "type": "hinged_door",
+      "between": [
+        "WIC-01",
+        "BATH-M01"
+      ],
+      "segment_source_px": [
+        [
+          515,
+          514
+        ],
+        [
+          515,
+          546
+        ]
+      ],
+      "swing": "into BATH-M01",
+      "confidence": "high"
+    },
+    "OP-HALL-BATHC": {
+      "type": "hinged_door",
+      "between": [
+        "HALL-01",
+        "BATH-C01"
+      ],
+      "segment_source_px": [
+        [
+          607,
+          464
+        ],
+        [
+          638,
+          464
+        ]
+      ],
+      "swing": "into BATH-C01",
+      "confidence": "high"
+    },
+    "OP-HALL-RECP": {
+      "type": "open_passage",
+      "between": [
+        "HALL-01",
+        "RECP-01"
+      ],
+      "segment_source_px": [
+        [
+          681,
+          407
+        ],
+        [
+          681,
+          455
+        ]
+      ],
+      "confidence": "high"
+    },
+    "OP-RECP-KIT": {
+      "type": "hinged_door",
+      "between": [
+        "RECP-01",
+        "KIT-01"
+      ],
+      "segment_source_px": [
+        [
+          851,
+          523
+        ],
+        [
+          851,
+          557
+        ]
+      ],
+      "swing": "into KIT-01",
+      "confidence": "high"
+    },
+    "OP-KIT-TERSVC": {
+      "type": "hinged_door",
+      "between": [
+        "KIT-01",
+        "TER-SVC"
+      ],
+      "segment_source_px": [
+        [
+          718,
+          594
+        ],
+        [
+          750,
+          594
+        ]
+      ],
+      "swing": "into KIT-01",
+      "confidence": "high"
+    },
+    "OP-RECP-WC": {
+      "type": "hinged_door",
+      "between": [
+        "RECP-01",
+        "WC-01"
+      ],
+      "segment_source_px": [
+        [
+          852,
+          612
+        ],
+        [
+          852,
+          643
+        ]
+      ],
+      "swing": "into WC-01",
+      "confidence": "high"
+    },
+    "OP-ENT-01": {
+      "type": "main_entry_hinged_door",
+      "between": [
+        "EXTERIOR",
+        "RECP-01"
+      ],
+      "segment_source_px": [
+        [
+          934,
+          654
+        ],
+        [
+          972,
+          654
+        ]
+      ],
+      "swing": "into RECP-01",
+      "confidence": "high",
+      "notes": [
+        "There is no separately enclosed foyer in the developer plan."
+      ]
+    },
+    "GLZ-MBR-TER": {
+      "type": "glazed_terrace_opening",
+      "between": [
+        "MBR-01",
+        "TER-MBR"
+      ],
+      "segment_source_px": [
+        [
+          279,
+          407
+        ],
+        [
+          344,
+          407
+        ]
+      ],
+      "confidence": "high"
+    },
+    "GLZ-BR01-N": {
+      "type": "exterior_window",
+      "between": [
+        "BR-01",
+        "EXTERIOR"
+      ],
+      "segment_source_px": [
+        [
+          435,
+          242
+        ],
+        [
+          499,
+          242
+        ]
+      ],
+      "confidence": "high"
+    },
+    "GLZ-BR02-N": {
+      "type": "exterior_window",
+      "between": [
+        "BR-02",
+        "EXTERIOR"
+      ],
+      "segment_source_px": [
+        [
+          597,
+          242
+        ],
+        [
+          662,
+          242
+        ]
+      ],
+      "confidence": "high"
+    },
+    "GLZ-RECP-N": {
+      "type": "exterior_window",
+      "between": [
+        "RECP-01",
+        "EXTERIOR"
+      ],
+      "segment_source_px": [
+        [
+          712,
+          197
+        ],
+        [
+          817,
+          197
+        ]
+      ],
+      "confidence": "high",
+      "verified_vertical_character": {
+        "status": "VERIFIED_FROM_OWNER_INPUT",
+        "type": "full-height glazing / not conventional sill window",
+        "finished_model_sill_m": 0.0,
+        "finished_model_head_m": 2.5,
+        "finished_model_height_m": 2.5,
+        "note": "Modeled to the current finished clear ceiling height. Exact frame/head construction at slab level remains subject to site/CAD detail."
+      }
+    },
+    "GLZ-RECP-TERMAIN": {
+      "type": "glazed_terrace_opening",
+      "between": [
+        "RECP-01",
+        "TER-MAIN"
+      ],
+      "segment_source_px": [
+        [
+          886,
+          300
+        ],
+        [
+          975,
+          300
+        ]
+      ],
+      "confidence": "high"
+    }
+  },
+  "direct_access_graph": [
+    [
+      "BR-01",
+      "HALL-01"
+    ],
+    [
+      "BR-02",
+      "HALL-01"
+    ],
+    [
+      "MBR-01",
+      "HALL-01"
+    ],
+    [
+      "MBR-01",
+      "WIC-01"
+    ],
+    [
+      "WIC-01",
+      "BATH-M01"
+    ],
+    [
+      "HALL-01",
+      "BATH-C01"
+    ],
+    [
+      "HALL-01",
+      "RECP-01"
+    ],
+    [
+      "RECP-01",
+      "KIT-01"
+    ],
+    [
+      "KIT-01",
+      "TER-SVC"
+    ],
+    [
+      "RECP-01",
+      "WC-01"
+    ],
+    [
+      "RECP-01",
+      "TER-MAIN"
+    ],
+    [
+      "MBR-01",
+      "TER-MBR"
+    ],
+    [
+      "EXTERIOR",
+      "RECP-01"
+    ]
+  ],
+  "sections": {
+    "SEC-A": {
+      "name": "Secondary bedrooms",
+      "members": [
+        "BR-01",
+        "BR-02"
+      ],
+      "derived_bbox_source_px": [
+        332,
+        224,
+        699,
+        425
+      ],
+      "outline_rule": "union_of_member_space_polygons"
+    },
+    "SEC-B": {
+      "name": "Master suite",
+      "members": [
+        "TER-MBR",
+        "MBR-01",
+        "WIC-01",
+        "BATH-M01"
+      ],
+      "derived_bbox_source_px": [
+        239,
+        315,
+        614,
+        612
+      ],
+      "outline_rule": "union_of_member_space_polygons"
+    },
+    "SEC-C": {
+      "name": "Private circulation + common bath",
+      "members": [
+        "HALL-01",
+        "BATH-C01"
+      ],
+      "derived_bbox_source_px": [
+        428,
+        389,
+        699,
+        612
+      ],
+      "outline_rule": "union_of_member_space_polygons"
+    },
+    "SEC-D": {
+      "name": "Social / reception + main terrace",
+      "members": [
+        "RECP-01",
+        "TER-MAIN"
+      ],
+      "derived_bbox_source_px": [
+        663,
+        153,
+        1032,
+        672
+      ],
+      "outline_rule": "union_of_member_space_polygons"
+    },
+    "SEC-E": {
+      "name": "Kitchen / service / guest WC / entry edge",
+      "members": [
+        "KIT-01",
+        "TER-SVC",
+        "WC-01"
+      ],
+      "related_openings": [
+        "OP-ENT-01"
+      ],
+      "derived_bbox_source_px": [
+        656,
+        464,
+        870,
+        672
+      ],
+      "outline_rule": "union_of_member_space_polygons"
+    }
+  },
+  "legacy_aliases": {
+    "SOC-01": {
+      "maps_to": "RECP-01",
+      "status": "deprecated",
+      "reason": "The source plan shows one continuous open reception with two dimension callouts, not two enclosed rooms."
+    },
+    "SOC-02": {
+      "maps_to": "RECP-01",
+      "status": "deprecated",
+      "reason": "The source plan shows one continuous open reception with two dimension callouts, not two enclosed rooms."
+    },
+    "ENT-01": {
+      "maps_to": "OP-ENT-01",
+      "status": "retyped",
+      "reason": "The entrance is an exterior door/opening into RECP-01, not a separate room."
+    }
+  },
+  "developer_furniture": {
+    "status": "non-authoritative",
+    "rule": "Furniture drawn by the developer is indicative staging only and must not be treated as fixed geometry."
+  },
+  "technical_unknowns": [
+    "true geographic orientation / north",
+    "structural wall / column / beam classification",
+    "wall construction and exact thickness schedule",
+    "finished ceiling heights and drops",
+    "MEP shafts and stack centerlines",
+    "HVAC provisions and condenser locations",
+    "electrical panel/circuit capacity and existing points",
+    "exact plumbing/drain/gas points",
+    "door/window clear dimensions and sill heights",
+    "developer/building façade alteration rules"
+  ],
+  "agent_rules": [
+    "Read this file before proposing any plan modification.",
+    "Use source-pixel geometry for topology and location; use printed dimensions for metric sizing.",
+    "Do not split RECP-01 into rooms unless explicitly creating a design zone; there is no wall between the two printed reception labels.",
+    "Do not infer structural removability from line thickness.",
+    "Any proposed wall removal must be marked VERIFY STRUCTURE.",
+    "Any wet-room relocation must be marked VERIFY PLUMBING/STACKS.",
+    "Any terrace/façade modification must be marked VERIFY BUILDING RULES.",
+    "Sections are logical review groups; their crop boxes are derived and are not room boundaries.",
+    "Preserve room/opening IDs across future versions unless a revision log explicitly deprecates them.",
+    "Use 2.63 m as the current verified pre-gypsum clear height and 2.50 m as the planned post-gypsum clear height unless newer site/CAD data overrides them.",
+    "Do not design full concealed ducted HVAC inside the nominal 130 mm gypsum void without equipment-specific dimensional proof."
+  ],
+  "revision_from_v0_1": {
+    "supersedes": "Apartment Master Spec Type B v0.1",
+    "corrections": [
+      "Eliminated the crop/rescale coordinate error that caused shifted section overlays.",
+      "All geometry now uses coordinates from the original 1280x905 source image.",
+      "Corrected the wet-core geometry: WIC-01 is between x≈446–515; BATH-M01 x≈515–596; BATH-C01 x≈596–681 in the source frame.",
+      "RECP-01 is modeled as one continuous room with two printed RECEPTION dimension callouts; SOC-01/SOC-02 are deprecated aliases.",
+      "OP-ENT-01 is modeled as an entrance opening, not a room.",
+      "Section geometry is derived from member-room polygons rather than arbitrary hand-placed rectangles.",
+      "Added explicit doors/passages/windows/terrace openings registered to source pixels.",
+      "Removed the unsafe assumption that a redraw can be reconstructed from dimensions/adjacency alone.",
+      "Added verified vertical dimensions: 2.75 m concrete-to-concrete, 2.63 m clear to concrete underside from stated floor/reference level, and 2.50 m planned clear height after gypsum board."
+    ]
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": {
+      "source_image_dimensions_px": [
+        1280,
+        905
+      ],
+      "space_count": 13,
+      "opening_count": 16,
+      "unexpected_polygon_overlap_count": 0,
+      "all_opening_references_valid": true,
+      "all_section_members_valid": true,
+      "geometry_registered_to_original_source_pixels": true,
+      "sections_derived_from_member_geometry": true
+    },
+    "errors": [],
+    "warnings": [],
+    "visual_scale_estimate_px_per_m": {
+      "median": 47.208,
+      "note": "For visual reconstruction only. Printed dimensions override pixel-derived metric estimates."
+    }
+  },
+  "vertical_dimensions": {
+    "status": "VERIFIED_FROM_OWNER_INPUT",
+    "floor_to_floor_concrete_m": 2.75,
+    "clear_floor_reference_to_concrete_underside_m": 2.63,
+    "planned_clear_height_after_gypsum_board_m": 2.5,
+    "derived_gypsum_service_void_m": 0.13,
+    "notes": [
+      "The 0.13 m value is derived from 2.63 m - 2.50 m.",
+      "Do not assume the 0.13 m void is sufficient for concealed ducted HVAC; equipment-specific coordination is required.",
+      "If local bulkheads are introduced for HVAC/MEP, their clear heights must be modeled separately."
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "0.2.2",
+      "change": "Living-room exterior glazing GLZ-RECP-N confirmed by owner as full-height / not a conventional sill window. 3D representation updated to sill 0.00 m and head at 2.50 m finished ceiling.",
+      "status": "VERIFIED_OWNER_INPUT"
+    }
+  ]
+}

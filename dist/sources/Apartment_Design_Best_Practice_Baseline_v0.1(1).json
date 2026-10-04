@@ -1,0 +1,127 @@
+{
+  "schema_name": "ApartmentDesignBestPracticeBaseline",
+  "version": "0.1",
+  "purpose": "Reference layer between validated geometry and owner requirements",
+  "workflow": [
+    "validated_geometry",
+    "best_practice_baseline",
+    "owner_requirements",
+    "requirements_validation",
+    "space_planning_options",
+    "design_language",
+    "technical_coordination",
+    "detailed_design_execution"
+  ],
+  "requirement_statuses": [
+    "SUPPORTED",
+    "SUPPORTED_WITH_TRADEOFF",
+    "NEEDS_DESIGN_STUDY",
+    "NEEDS_TECHNICAL_VERIFICATION",
+    "CONFLICTS_WITH_PLAN",
+    "REJECT_NOT_RECOMMENDED"
+  ],
+  "reference_tiers": {
+    "A_primary": [
+      "RIBA",
+      "AIA",
+      "NKBA",
+      "ASHRAE",
+      "WELL/IWBI",
+      "US EPA",
+      "OSHA",
+      "WHO",
+      "HBRC/Egyptian codes"
+    ],
+    "B_soft_conventions": [
+      "ergonomic references",
+      "manufacturer dimensions",
+      "Dimensions.com or similar"
+    ]
+  },
+  "numeric_benchmarks": {
+    "kitchen_general_walkway_mm": {
+      "value": 914,
+      "source": "NKBA",
+      "type": "professional guideline, not Egyptian code"
+    },
+    "kitchen_perpendicular_access_walkway_mm": {
+      "value": 1067,
+      "source": "NKBA",
+      "type": "accessibility benchmark"
+    },
+    "refrigerator_landing_area_mm": {
+      "value": 381,
+      "source": "NKBA",
+      "type": "planning guideline"
+    },
+    "toilet_centerline_recommended_mm": {
+      "value": 457,
+      "source": "NKBA",
+      "type": "planning guideline"
+    },
+    "toilet_centerline_model_code_min_mm": {
+      "value": 381,
+      "source": "NKBA citing IRC",
+      "type": "foreign model-code reference"
+    },
+    "bed_clearance_soft_min_mm": {
+      "value": 760,
+      "source": "ergonomic convention",
+      "type": "soft benchmark"
+    },
+    "bed_clearance_comfortable_mm": {
+      "value": 900,
+      "source": "ergonomic convention",
+      "type": "soft benchmark"
+    },
+    "dining_total_clearance_soft_range_mm": {
+      "value": [
+        910,
+        1520
+      ],
+      "source": "ergonomic convention",
+      "type": "soft benchmark"
+    },
+    "home_office_monitor_view_distance_mm": {
+      "value": [
+        500,
+        1000
+      ],
+      "source": "OSHA",
+      "type": "ergonomic guidance"
+    },
+    "indoor_RH_ideal_percent": {
+      "value": [
+        30,
+        50
+      ],
+      "source": "US EPA",
+      "type": "IAQ guidance"
+    },
+    "indoor_RH_upper_percent": {
+      "value": 60,
+      "source": "US EPA",
+      "type": "IAQ guidance"
+    },
+    "mechanical_background_noise_high_performance_target_dBA": {
+      "value": 40,
+      "source": "WELL",
+      "type": "aspirational benchmark"
+    }
+  },
+  "validation_gates": [
+    "geometry",
+    "circulation",
+    "function",
+    "kitchen_bath",
+    "lighting",
+    "hvac_iaq",
+    "acoustics",
+    "electrical_data",
+    "storage",
+    "maintenance",
+    "future_proofing",
+    "technical_legal"
+  ],
+  "local_code_rule": "International standards are benchmarks. Final technical design must be checked against current Egyptian law/HBRC and building/developer rules."
+}

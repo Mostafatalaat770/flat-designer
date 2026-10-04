@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import worker from './dist/server/index.js';
+const auth={'oai-authenticated-user-id':'local-code-test','oai-authenticated-user-email':'local-test@example.test'};
+async function rpc(method,params={},authenticated=false){
+ const response=await worker.fetch(new Request('https://example.test/mcp',{method:'POST',headers:{'Content-Type':'application/json',...(authenticated?auth:{})},body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})}),{});
+ return {status:response.status,data:await response.json()};
+}
+assert.equal((await rpc('initialize',{protocolVersion:'2025-06-18'})).data.result.protocolVersion,'2025-06-18');
+const discovery=await rpc('tools/list');assert.equal(discovery.data.result.tools.length,10);assert.ok(!JSON.stringify(discovery).includes('room_polygon_mm'));
+assert.equal((await rpc('tools/call',{name:'get_apartment_design_context'})).status,401);
+const context=(await rpc('tools/call',{name:'get_apartment_design_context'},true)).data.result.structuredContent;
+assert.equal(context.canonical.rooms.length,13);assert.equal(context.canonical.openings.length,16);assert.equal(context.heights.clear_ceiling_m,2.5);assert.equal(context.reference_catalog.length,12);
+const brief=JSON.parse(fs.readFileSync(path.join(os.tmpdir(),'apartment-type-b-qa-brief.json'),'utf8'));
+const proposal={...brief.proposal_template,operations:[{type:'room-option',room_id:'BR-01',key:'lighting',value:'track'}]};
+const validation=(await rpc('tools/call',{name:'validate_apartment_design_proposal',arguments:{brief,proposal}},true)).data.result;
+assert.equal(validation.isError,false);assert.equal(validation.structuredContent.valid,true);assert.equal(validation.structuredContent.applied,false);
+const invalid=(await rpc('tools/call',{name:'validate_apartment_design_proposal',arguments:{brief,proposal:{...proposal,operations:[{type:'room-option',room_id:'BR-01',key:'height',value:2.8}]}}},true)).data.result;
+assert.equal(invalid.isError,true);
+const render=(await rpc('tools/call',{name:'create_apartment_render_brief',arguments:{brief,room_id:'RECP-01'}},true)).data.result;
+assert.equal(render.isError,false);assert.equal(render.structuredContent.clear_ceiling_m,2.5);assert.equal(render.structuredContent.options.flooring,'walnut');
+const corrupt=(await rpc('tools/call',{name:'create_apartment_render_brief',arguments:{brief:{...brief,scene_revision:'stale'},room_id:'RECP-01'}},true)).data.result;
+assert.equal(corrupt.isError,true);
+assert.equal((await worker.fetch(new Request('https://example.test/mcp'),{})).status,405);
+const assets={ASSETS:{fetch:async r=>new Response(new URL(r.url).pathname)}};
+assert.equal(await (await worker.fetch(new Request('https://example.test/art/warm.png'),assets)).text(),'/art/warm.png');
+assert.ok((await (await worker.fetch(new Request('https://example.test/'),{})).text()).includes('Design options'));
+const report={result:'PASS',checks:['MCP initialization and ten-tool discovery','private context blocked without trusted identity','canonical context and 12 source references','shared proposal validator','read-only candidate layout','ceiling height change rejected','room render brief','stale and malformed brief rejected','Worker asset routing'],live_authenticated_plugin_call:'Verified read-only context before upgrade; upgraded tools require published discovery'};
+fs.writeFileSync('worker-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

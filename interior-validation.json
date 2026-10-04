@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "checks": [
+    "Canonical v0.2.2 file hash unchanged",
+    "Stable wall/floor/ceiling/opening references",
+    "Analytic 700 mm pinch gap and 60 mm severe overlap",
+    "Object/wall and out-of-room hard failures",
+    "Full door swing and glazing frontage obstruction",
+    "Conservative circulation paths measured in mm",
+    "Host-relative artwork coordinates",
+    "All required generic types and divider variants",
+    "Proposal /2 surface/object/material/treatment operations; /1 remains compatible",
+    "Invalid host IDs, stale revisions, height/architecture mutations rejected",
+    "Map-free future materials and unsafe URL rejection",
+    "Shared validator and atomic agent writes",
+    "Private R2 PNG + D1 camera/revision metadata",
+    "PNG round trip, image-content MCP retrieval, account isolation",
+    "Capture retries idempotent; mismatched bytes/cameras conflict",
+    "Stale captures and stale render views rejected",
+    "Edit during image upload rejects capture and deletes orphan blob",
+    "Recoverable R2 failure",
+    "Actual DOM editor, wall offset save, 2D interior overlay and clearance report",
+    "Actual viewer Save view action uploads PNG/camera and follows the camera room",
+    "Named variants have independent scene/branch revisions and preserve other variants",
+    "Variant writes and activation reject stale edits; activation retains ordinary design history"
+  ],
+  "method": "Real shared contracts and Worker with local SQLite/R2 test adapters; PNG is a test fixture, not a live WebGL render."
+}

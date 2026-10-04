@@ -1,0 +1,251 @@
+[
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-wood",
+    "name": "Wood",
+    "category": "wood",
+    "source_status": "GENERIC",
+    "base_colour": "#ae8153",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "wood",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-walnut",
+    "name": "Walnut",
+    "category": "wood",
+    "source_status": "GENERIC",
+    "base_colour": "#60432e",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "walnut",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-tile800",
+    "name": "Tile 800",
+    "category": "stone",
+    "source_status": "GENERIC",
+    "base_colour": "#ddd9cf",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 800,
+      "height": 800
+    },
+    "fallback_generic_id": "tile800",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-tile600",
+    "name": "Tile 600",
+    "category": "stone",
+    "source_status": "GENERIC",
+    "base_colour": "#e5e0d7",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 600,
+      "height": 600
+    },
+    "fallback_generic_id": "tile600",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-marble",
+    "name": "Marble",
+    "category": "stone",
+    "source_status": "GENERIC",
+    "base_colour": "#ebe8e3",
+    "finish": "matte",
+    "roughness": 0.32,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1200,
+      "height": 1200
+    },
+    "fallback_generic_id": "marble",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-antislip",
+    "name": "Antislip",
+    "category": "stone",
+    "source_status": "GENERIC",
+    "base_colour": "#b1aca1",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "antislip",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-terrazzo",
+    "name": "Terrazzo",
+    "category": "stone",
+    "source_status": "GENERIC",
+    "base_colour": "#c9c1ae",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "terrazzo",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-carpet",
+    "name": "Carpet",
+    "category": "fabric",
+    "source_status": "GENERIC",
+    "base_colour": "#b6a797",
+    "finish": "matte",
+    "roughness": 0.92,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "carpet",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-lightoak",
+    "name": "Lightoak",
+    "category": "wood",
+    "source_status": "GENERIC",
+    "base_colour": "#d3b78b",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "lightoak",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-parquet",
+    "name": "Parquet",
+    "category": "wood",
+    "source_status": "GENERIC",
+    "base_colour": "#a97b4f",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1000,
+      "height": 1000
+    },
+    "fallback_generic_id": "parquet",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-travertine",
+    "name": "Travertine",
+    "category": "stone",
+    "source_status": "GENERIC",
+    "base_colour": "#d2bfa4",
+    "finish": "matte",
+    "roughness": 0.7,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 1200,
+      "height": 1200
+    },
+    "fallback_generic_id": "travertine",
+    "notes": "Procedural interpretation; no manufacturer or exact product match."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-linen",
+    "name": "Natural linen",
+    "category": "fabric",
+    "source_status": "GENERIC",
+    "base_colour": "#dfd3bb",
+    "finish": "woven",
+    "roughness": 0.95,
+    "metallic": 0,
+    "texture_scale_mm": {
+      "width": 300,
+      "height": 300
+    }
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-plaster",
+    "name": "Warm plaster",
+    "category": "paint",
+    "source_status": "GENERIC",
+    "base_colour": "#ebe6da",
+    "finish": "matte",
+    "roughness": 0.96,
+    "metallic": 0
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-brass",
+    "name": "Satin brass",
+    "category": "metal",
+    "source_status": "GENERIC",
+    "base_colour": "#b39860",
+    "finish": "satin",
+    "roughness": 0.36,
+    "metallic": 0.85
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "generic-glass",
+    "name": "Fluted glass concept",
+    "category": "glass",
+    "source_status": "GENERIC",
+    "base_colour": "#cbd9d8",
+    "finish": "fluted",
+    "roughness": 0.28,
+    "metallic": 0,
+    "notes": "Approximate translucent glass; not an exact optical simulation."
+  },
+  {
+    "schema": "InteriorMaterial/1",
+    "id": "reference-art-warm",
+    "name": "Organic abstract print",
+    "category": "artwork",
+    "source_status": "REFERENCE",
+    "base_colour": "#f1e4d0",
+    "finish": "matte",
+    "roughness": 0.92,
+    "metallic": 0,
+    "albedo_texture": "./art/warm.png",
+    "notes": "AI-created concept artwork, not a purchasable product."
+  }
+]

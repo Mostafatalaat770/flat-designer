@@ -1,0 +1,17 @@
+{
+  "name": "apartment-type-b-studio",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 generate_model.py && python3 make_app.py && node build_capture.mjs && python3 build_hosted.py",
+    "db:generate": "drizzle-kit generate",
+    "check": "node verify_viewer.mjs && node verify_worker.mjs && node verify_cloud.mjs && node verify_interior.mjs && node verify_capture.mjs"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2",
+    "esbuild": "0.25.12",
+    "jsdom": "26.1.0"
+  }
+}
