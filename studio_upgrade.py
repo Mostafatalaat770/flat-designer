@@ -50,7 +50,7 @@ def apply_studio(s):
     replace('FOV = 45','FOV = 60')
     replace("let inited = false, active = false, raf = 0, anim = null, fly = null;", "const WALK_NATURAL_FOV=42,WALK_WIDE_FOV=60;let walkLens='natural',scaleCheckVisible=false;\nlet inited = false, active = false, raf = 0, anim = null, fly = null;")
     replace("let archFloor, archUp, furnG, labelG, lampG, colliders = [], selKey = null, selHelper = null;", "let archFloor, archUp, furnG, labelG, lampG, scaleRefG, colliders = [], selKey = null, selHelper = null;")
-    replace("scene.add(archFloor, archUp, furnG, labelG, lampG);", "scene.add(archFloor, archUp, furnG, labelG, lampG);buildScaleReference();")
+    replace("scene.add(archFloor, archUp, furnG, labelG, lampG,sceneDecorG);", "scene.add(archFloor, archUp, furnG, labelG, lampG,sceneDecorG);buildScaleReference();")
     replace("function setMode(m){", """function setCameraFov(v){camera.fov=v;camera.updateProjectionMatrix();}
 function syncWalkCalibration(){
   const natural=$('#walkNatural'),wide=$('#walkWide'),scale=$('#scaleCheck');
@@ -69,7 +69,7 @@ function buildScaleReference(){
   scaleRefG=new THREE.Group();scaleRefG.visible=false;scaleRefG.userData.scaleReference=true;
   const recp=ROOMS.find(r=>r.id==='RECP-01'),x=wx(recp.at[0]),z=wz(recp.at[1]);
   const skin=mat('#d9c7b6',{roughness:.88}),dark=mat('#45515e',{roughness:.9}),mark=mat('#d55b4f',{roughness:.75});
-  const torso=new THREE.Mesh(new THREE.CapsuleGeometry(.16,.78,6,12),dark);torso.position.set(0,1.00,0);
+  const torso=new THREE.Mesh(new THREE.BoxGeometry(.32,.82,.18),dark);torso.position.set(0,1.00,0);
   const head=new THREE.Mesh(new THREE.SphereGeometry(.12,18,12),skin);head.position.set(0,1.58,0);
   const legL=new THREE.Mesh(new THREE.CylinderGeometry(.045,.055,.72,10),dark);legL.position.set(-.07,.36,0);
   const legR=legL.clone();legR.position.x=.07;
