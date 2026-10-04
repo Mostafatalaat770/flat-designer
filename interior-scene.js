@@ -19,7 +19,15 @@ function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=
   }
   interiorPbrCache.set(key,m);return m;
 }
-function interiorSurfaceMaterial(id,fallback,kind){const material=state.interior?.surface_materials[id];return material?interiorPbr(material,'#ffffff',{width:1000,height:1000},true):fallback;}
+function interiorSurfaceMaterial(id,fallback,kind){
+  const material=state.interior?.surface_materials[id];if(!material)return fallback;
+  const base=interiorPbr(material,'#ffffff',{width:1000,height:1000},true);if(kind!=='ceiling')return base;
+  // Ceiling faces point downward, so the viewer's warm lower hemisphere otherwise tints even a near-white finish brown.
+  // A restrained same-hue indirect component keeps the requested material legible without changing geometry or room lighting.
+  const descriptor=interiorMaterial(state,material),m=base.clone();
+  if(m.isMeshStandardMaterial&&descriptor?.base_colour){m.emissive=new THREE.Color(descriptor.base_colour);m.emissiveIntensity=.20;m.userData={...m.userData,ceilingColourCompensation:true};}
+  return m;
+}
 function interiorWallMaterials(segment,fallback,height){
   const refs=interiorSurfaces(MODEL).surfaces.filter(s=>s.type==='wall'&&s.source_wall_index===WALL_SEGMENTS.indexOf(segment)),out=[...fallback],dx=segment.to[0]-segment.from[0],dy=segment.to[1]-segment.from[1],L=Math.hypot(dx,dy);
   for(const ref of refs){const id=state.interior?.surface_materials[ref.id];if(!id)continue;const sign=(-dy/L*ref.inward_normal[0]+dx/L*ref.inward_normal[1]);out[sign>0?4:5]=interiorPbr(id,'#ffffff',{width:L,height:height*1000});}
