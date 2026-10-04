@@ -23,7 +23,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - name: Install managed-runtime canvas shim for repository QA
-        run: npm install --no-save @napi-rs/canvas
+        run: npm install --no-save @napi-rs/canvas@1.0.10
       - name: Build
         run: npm run build
       - name: Check
