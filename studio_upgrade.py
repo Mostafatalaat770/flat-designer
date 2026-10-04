@@ -81,7 +81,7 @@ function buildScaleReference(){
 function toggleScaleCheck(){scaleCheckVisible=!scaleCheckVisible;syncWalkCalibration();toast(scaleCheckVisible?'Scale check on · human 1.70 m · ruler 1.00 m':'Scale check off');}
 function setMode(m){""")
     replace("opt.mode = m; syncModeBtns();", "opt.mode = m; syncModeBtns();if(m==='walk')setCameraFov(walkLens==='natural'?WALK_NATURAL_FOV:WALK_WIDE_FOV);else setCameraFov(WALK_WIDE_FOV);syncWalkCalibration();")
-    replace("$('#studioOptions').onclick=studioOpen;", "$('#studioOptions').onclick=studioOpen;$('#walkNatural').onclick=()=>setWalkLens('natural');$('#walkWide').onclick=()=>setWalkLens('wide');$('#scaleCheck').onclick=toggleScaleCheck;")
+    replace("$('#studioOptions').onclick=studioOpen;", "$('#studioOptions').onclick=studioOpen;$('#walkNatural').onclick=()=>window.View3D?.setWalkLens('natural');$('#walkWide').onclick=()=>window.View3D?.setWalkLens('wide');$('#scaleCheck').onclick=()=>window.View3D?.toggleScaleCheck();")
     replace("  async focusRoom(id){", "  setWalkLens,walkLens:()=>walkLens,toggleScaleCheck,scaleCheck:()=>scaleCheckVisible,\n  async focusRoom(id){")
 
     return s
