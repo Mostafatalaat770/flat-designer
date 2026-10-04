@@ -2,7 +2,7 @@ const interiorUI={object:null,draft:null,lastReport:null,views:new Map(),loading
 const interiorLabel=s=>String(s).replaceAll('-',' ').replace(/\b\w/g,c=>c.toUpperCase());
 const interiorOptions=(items,value)=>items.map(([id,name])=>`<option value="${esc(id)}" ${id===value?'selected':''}>${esc(name)}</option>`).join('');
 function interiorReviewProposal(p){
-  try{const next=studioValidateProposal(p,state,MODEL),validation=interiorValidation(next,MODEL,p.operations.filter(o=>o.type==='furniture-placement').map(o=>o.furniture_id));return {valid:validation.valid,validation,candidate_scene_revision:studioSceneKey(next)};}
+  try{const next=studioValidateProposal(p,state,MODEL),validation=interiorValidation(next,MODEL,interiorProposalFurnitureIds(p.operations));return {valid:validation.valid,validation,candidate_scene_revision:studioSceneKey(next)};}
   catch(error){return {valid:false,validation:error.validation||{schema:'ApartmentInteriorValidation/1',status:'FAIL',valid:false,checks:[{kind:'contract',status:'FAIL',message:error.message}],summary:{pass:0,warning:0,fail:1}}};}
 }
 function interiorProposal(operations){return {schema:'ApartmentDesignProposal/2',canonical_sha256:MODEL.canonical_sha256,base_scene_revision:studioSceneKey(state),operations,author:'Viewer',notes:[]};}

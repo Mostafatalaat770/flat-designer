@@ -1,13 +1,14 @@
 /* Render the reversible overlay in the furniture group, using canonical host IDs. */
 const interiorPbrCache=new Map(),interiorPendingTextures=new Set();
-function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=false){
+function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=false,appearance='default'){
   const descriptor=interiorMaterial(state,id);if(!descriptor)return mat(colour,{roughness:.8});
-  const key=JSON.stringify([descriptor,colour,scale,surface]);if(interiorPbrCache.has(key))return interiorPbrCache.get(key);
+  const key=JSON.stringify([descriptor,colour,scale,surface,appearance]);if(interiorPbrCache.has(key))return interiorPbrCache.get(key);
   let m;
   if(surface&&descriptor.fallback_generic_id)m=floorMat(descriptor.fallback_generic_id).clone();
   else if(['wood','fabric','stone'].includes(descriptor.category))m=sceneSurface(descriptor.category==='fabric'?'linen':descriptor.category,descriptor.base_colour).clone();
   else m=new THREE.MeshStandardMaterial({color:descriptor.base_colour,roughness:.8});
   m.roughness=descriptor.roughness??.8;m.metalness=descriptor.metallic??0;m.side=THREE.DoubleSide;m.userData={interiorMaterialId:id,sourceStatus:descriptor.source_status};
+  if(appearance==='ceiling'&&m.isMeshStandardMaterial){m.emissive=new THREE.Color(descriptor.base_colour);m.emissiveIntensity=.20;m.userData.ceilingColourCompensation=true;}
   if(descriptor.category==='glass'){m.transparent=true;m.opacity=.45;m.depthWrite=false;}
   const tile=descriptor.texture_scale_mm||descriptor.physical_dimensions_mm||{width:1000,height:1000},repeat=[scale.width/(tile.width||1000),scale.height/(tile.height||tile.width||1000)];
   const configure=t=>{t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(...repeat);t.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());};
@@ -19,7 +20,12 @@ function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=
   }
   interiorPbrCache.set(key,m);return m;
 }
-function interiorSurfaceMaterial(id,fallback,kind){const material=state.interior?.surface_materials[id];return material?interiorPbr(material,'#ffffff',{width:1000,height:1000},true):fallback;}
+function interiorSurfaceMaterial(id,fallback,kind){
+  const material=state.interior?.surface_materials[id];if(!material)return fallback;
+  // Ceiling faces point downward, so the viewer's warm lower hemisphere otherwise tints even a near-white finish brown.
+  // Use a separate cached material rather than cloning: async texture callbacks must update the exact material on the mesh.
+  return interiorPbr(material,'#ffffff',{width:1000,height:1000},true,kind==='ceiling'?'ceiling':'surface');
+}
 function interiorWallMaterials(segment,fallback,height){
   const refs=interiorSurfaces(MODEL).surfaces.filter(s=>s.type==='wall'&&s.source_wall_index===WALL_SEGMENTS.indexOf(segment)),out=[...fallback],dx=segment.to[0]-segment.from[0],dy=segment.to[1]-segment.from[1],L=Math.hypot(dx,dy);
   for(const ref of refs){const id=state.interior?.surface_materials[ref.id];if(!id)continue;const sign=(-dy/L*ref.inward_normal[0]+dx/L*ref.inward_normal[1]);out[sign>0?4:5]=interiorPbr(id,'#ffffff',{width:L,height:height*1000});}

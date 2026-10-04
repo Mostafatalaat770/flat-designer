@@ -51,7 +51,7 @@ function currentDecor(){return DECOR_THEMES.find(t=>t.id===state.decor.active)||
 function decorSurface(key,fallback){return currentDecor()[key]||fallback;}
 function captureDecor(){
   return {rooms:Object.fromEntries(ROOMS.map(r=>[r.id,state.rooms[r.id].mat])),
-    colours:Object.fromEntries(state.furniture.map(f=>[f.id,f.color]))};
+    colours:Object.fromEntries(state.furniture.filter(f=>!f.material_id).map(f=>[f.id,f.color]))};
 }
 function rememberDecor(){state.decor.saved[state.decor.active]=captureDecor();}
 function decorFurnitureColour(f,theme){
@@ -77,7 +77,7 @@ function setDecorTheme(id){
   const before=snap();rememberDecor();
   const saved=state.decor.saved[id];state.decor.active=id;
   for(const r of ROOMS)state.rooms[r.id].mat=saved?.rooms?.[r.id]||decorFloor(r,theme);
-  for(const f of state.furniture)f.color=saved?.colours?.[f.id]||decorFurnitureColour(f,theme);
+  for(const f of state.furniture)f.color=f.material_id?(interiorMaterial(state,f.material_id)?.base_colour||f.color):(saved?.colours?.[f.id]||decorFurnitureColour(f,theme));
   commit(before);renderAll();
   if(is3D())void window.View3D?.ensureInterior();
   toast(theme.name+' · complete furniture and decor scene.');

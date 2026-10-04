@@ -15,6 +15,7 @@ const INTERIOR_OBJECT_TYPES={
   'table-lamp':{variants:['shade','globe'],modes:['floor'],size:[260,260,420]},
   plant:{variants:['potted'],modes:['floor'],size:[450,450,1300]}
 };
+const INTERIOR_FURNITURE_TYPES=['bed','crib','nightstand','wardrobe','dresser','desk','chair','bookshelf','baycushion','sofa','cornersofa','armchair','beanbag','coffeetable','sidetable','tvstand','rug','shoecab','floorlamp','plant','table','roundtable','island','barstool','counter','stove','ksink','fridge','cabinet','toilet','vanity','shower','bathtub','washer','waterheater','tv','aircon','acwall','dishwasher','ovencol','dryer','purifier','officechair','piano','treadmill'];
 const interiorObjectId=v=>typeof v==='string'&&/^[a-zA-Z0-9_-]{1,100}$/.test(v)&&!['__proto__','prototype','constructor'].includes(v);
 const interiorObject=v=>v&&typeof v==='object'&&!Array.isArray(v);
 const interiorColour=v=>typeof v==='string'&&/^#[0-9a-f]{6}$/i.test(v);
@@ -58,6 +59,21 @@ function interiorAssertMaterial(m){
   if(m.fallback_generic_id!==undefined&&!STUDIO_OPTIONS.flooring.includes(m.fallback_generic_id))throw new Error('Unknown generic fallback material.');
   if(m.source_status==='REAL_PRODUCT'&&(!m.manufacturer||!m.product_name||!m.product_url))throw new Error('Real products need manufacturer, product name and source URL.');
 }
+function interiorAssertFurniture(f,layout,model){
+  if(!interiorObject(f)||!interiorObjectId(f.id)||f.id.length>80||!INTERIOR_FURNITURE_TYPES.includes(f.type)||typeof f.name!=='string'||!f.name.trim()||f.name.length>80||!interiorColour(f.color)||!['cx','cy','w','d','rot'].every(k=>Number.isFinite(f[k]))||f.w<50||f.d<50||f.w>10000||f.d>10000||Math.abs(f.cx)>100000||Math.abs(f.cy)>100000||Math.abs(f.rot)>360000)throw new Error('Invalid furniture record.');
+  if(f.variant!==undefined&&f.variant!=='style'&&!STUDIO_VARIANTS[f.type]?.includes(f.variant))throw new Error('Invalid furniture shape.');
+  if(f.status!==undefined&&!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(f.status))throw new Error('Invalid furniture status.');
+  if(f.material_id!==undefined&&f.material_id!==null&&(typeof f.material_id!=='string'||!interiorMaterial(layout,f.material_id)))throw new Error('Unknown furniture material.');
+  if(f.product_reference_id!==undefined&&f.product_reference_id!==null&&(!interiorObjectId(f.product_reference_id)||f.product_reference_id.length>100))throw new Error('Invalid furniture product reference.');
+  const room=studioFit(f,model);if(!room)throw new Error('Furniture footprint must fit an interior room.');return room;
+}
+function interiorFurnitureMaterial(layout,f,id){
+  if(id===null){delete f.material_id;return;}
+  if(typeof id!=='string')throw new Error('Invalid furniture material.');const material=interiorMaterial(layout,id);if(!material)throw new Error('Unknown furniture material.');f.material_id=id;f.color=material.base_colour;
+}
+function interiorForgetFurniture(layout,id){
+  for(const saved of Object.values(layout.decor?.saved||{}))if(saved?.colours)delete saved.colours[id];
+}
 function interiorResolved(o,model){
   const p=o.placement,room=model.rooms.find(r=>r.id===o.room_id),w=o.width_mm,d=o.depth_mm,h=o.height_mm;
   let cx=o.cx,cy=o.cy,rotation=o.rotation||0,bottom=p.elevation_mm||0,host=null;
@@ -80,6 +96,11 @@ function interiorAssertLayer(layout,model){
   if(!interiorObject(layer)||layer.version!==1||Object.keys(layer).some(k=>!['version','objects','materials','surface_materials','opening_treatments'].includes(k))||!Array.isArray(layer.objects)||layer.objects.length>150||!Array.isArray(layer.materials)||layer.materials.length>100||!interiorObject(layer.surface_materials)||!interiorObject(layer.opening_treatments))throw new Error('Invalid InteriorDesign/1 overlay.');
   const materialIds=new Set(INTERIOR_MATERIALS.map(m=>m.id));for(const m of layer.materials){interiorAssertMaterial(m);if(materialIds.has(m.id))throw new Error('Duplicate material ID.');materialIds.add(m.id);}
   const ids=new Set(layout.furniture.map(f=>f.id));
+  for(const f of layout.furniture){
+    if(f.material_id!==undefined&&f.material_id!==null&&!materialIds.has(f.material_id))throw new Error('Invalid furniture material reference.');
+    if(f.status!==undefined&&!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(f.status))throw new Error('Invalid furniture status.');
+    if(f.product_reference_id!==undefined&&f.product_reference_id!==null&&(!interiorObjectId(f.product_reference_id)||f.product_reference_id.length>100))throw new Error('Invalid furniture product reference.');
+  }
   for(const o of layer.objects){
     const spec=INTERIOR_OBJECT_TYPES[o.type];
     if(!interiorObject(o)||!spec||!interiorObjectId(o.id)||ids.has(o.id)||!spec.variants.includes(o.variant)||!model.rooms.some(r=>r.id===o.room_id&&!r.isTerrace)||!interiorObject(o.placement)||!spec.modes.includes(o.placement.mode)||!['width_mm','depth_mm','height_mm'].every(k=>Number.isFinite(o[k])&&o[k]>=5&&o[k]<=10000)||!Number.isFinite(o.rotation)||!interiorColour(o.colour)||!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(o.status))throw new Error('Invalid interior object.');
@@ -229,7 +250,20 @@ function interiorApplyProposal(p,layout,model){
     }else if(op.type==='furniture-placement'){
       fields(op,['type','furniture_id','cx','cy','w','d','rot']);const f=next.furniture.find(f=>f.id===op.furniture_id);if(!f)throw new Error('Unknown furniture ID.');
       for(const k of ['cx','cy','w','d','rot'])if(op[k]!==undefined){if(!Number.isFinite(op[k]))throw new Error('Invalid placement.');f[k]=op[k];}
-      if(f.w<50||f.d<50||f.w>10000||f.d>10000||!studioFit(f,model))throw new Error('Furniture footprint must fit an interior room.');changed.add(f.id);
+      interiorAssertFurniture(f,next,model);changed.add(f.id);
+    }else if(op.type==='add-furniture'){
+      fields(op,['type','furniture']);if(next.furniture.length>=300)throw new Error('Furniture limit reached.');const f=interiorClone(op.furniture);f.variant??='style';f.status??='EXPLORATORY';if(next.furniture.some(x=>x.id===f.id)||next.interior.objects.some(x=>x.id===f.id))throw new Error('Furniture ID already exists.');if(f.material_id)interiorFurnitureMaterial(next,f,f.material_id);interiorAssertFurniture(f,next,model);next.furniture.push(f);changed.add(f.id);
+    }else if(op.type==='update-furniture'){
+      fields(op,['type','furniture_id','changes']);const i=next.furniture.findIndex(f=>f.id===op.furniture_id);if(i<0||!interiorObject(op.changes)||Object.keys(op.changes).some(k=>!['name','cx','cy','w','d','rot','color','variant','status','material_id','product_reference_id'].includes(k)))throw new Error('Invalid furniture update.');
+      const before=next.furniture[i],f={...before,...interiorClone(op.changes)};if(op.changes.material_id===null)delete f.material_id;else if(op.changes.material_id!==undefined)interiorFurnitureMaterial(next,f,op.changes.material_id);else if(op.changes.color!==undefined)delete f.material_id;if(op.changes.product_reference_id===null)delete f.product_reference_id;interiorAssertFurniture(f,next,model);next.furniture[i]=f;if(['cx','cy','w','d','rot'].some(k=>op.changes[k]!==undefined))changed.add(f.id);
+    }else if(op.type==='remove-furniture'){
+      fields(op,['type','furniture_id']);const i=next.furniture.findIndex(f=>f.id===op.furniture_id);if(i<0)throw new Error('Unknown furniture ID.');next.furniture.splice(i,1);interiorForgetFurniture(next,op.furniture_id);
+    }else if(op.type==='duplicate-furniture'){
+      fields(op,['type','furniture_id','new_id','cx','cy','rot']);const source=next.furniture.find(f=>f.id===op.furniture_id);if(!source)throw new Error('Unknown furniture ID.');if(next.furniture.length>=300||next.furniture.some(f=>f.id===op.new_id)||next.interior.objects.some(o=>o.id===op.new_id))throw new Error('Invalid or duplicate new furniture ID.');const f=interiorClone(source);f.id=op.new_id;f.name=(String(source.name||source.type)+' copy').slice(0,80);for(const k of ['cx','cy','rot'])if(op[k]!==undefined){if(!Number.isFinite(op[k]))throw new Error('Invalid duplicate placement.');f[k]=op[k];}interiorAssertFurniture(f,next,model);next.furniture.push(f);changed.add(f.id);
+    }else if(op.type==='set-furniture-material'){
+      fields(op,['type','furniture_id','material_id']);const f=next.furniture.find(f=>f.id===op.furniture_id);if(!f)throw new Error('Unknown furniture ID.');interiorFurnitureMaterial(next,f,op.material_id);interiorAssertFurniture(f,next,model);
+    }else if(op.type==='set-furniture-colour'){
+      fields(op,['type','furniture_id','colour']);const f=next.furniture.find(f=>f.id===op.furniture_id);if(!f||!interiorColour(op.colour))throw new Error('Invalid furniture colour.');f.color=op.colour;delete f.material_id;interiorAssertFurniture(f,next,model);
     }else if(op.type==='add-object'){
       fields(op,['type','object']);next.interior.objects.push(interiorClone(op.object));changed.add(op.object.id);
     }else if(op.type==='update-object'){
@@ -277,6 +311,14 @@ function interiorCirculation(room,model,solids){
   }}
   return targets.map(t=>({room_id:room.id,from:start.id,to:t.id,measured_clearance_mm:interiorRound(t.i<0||start.d>400||t.d>500?0:Math.min(scores[t.i],t.width)),preferred_clearance_mm:900,grid_resolution_mm:step,method:'Conservative widest sampled path; centreline widths minus 125 mm sampling allowance',message:'Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions.'}));
 }
+function interiorProposalFurnitureIds(operations){
+  const ids=new Set();for(const op of operations||[]){
+    if(op.type==='furniture-placement'&&op.furniture_id)ids.add(op.furniture_id);
+    if(op.type==='add-furniture'&&op.furniture?.id)ids.add(op.furniture.id);
+    if(op.type==='duplicate-furniture'&&op.new_id)ids.add(op.new_id);
+    if(op.type==='update-furniture'&&op.furniture_id&&['cx','cy','w','d','rot'].some(k=>op.changes?.[k]!==undefined))ids.add(op.furniture_id);
+  }return [...ids];
+}
 function studioValidateProposal(p,layout,model){
   const next=interiorApplyProposal(p,layout,model);
   if(p.schema==='ApartmentDesignProposal/1'&&next.interior){
@@ -287,11 +329,11 @@ function studioValidateProposal(p,layout,model){
 function interiorContext(model,layout){
   const number={type:'number'},dimension={type:'number',minimum:5,maximum:10000},text={type:'string'};
   const object_schema={type:'object',additionalProperties:false,required:['id','type','variant','room_id','placement','rotation','width_mm','depth_mm','height_mm','material_references','colour','status','metadata'],properties:{id:{type:'string',pattern:'^[a-zA-Z0-9_-]{1,100}$'},type:{type:'string',enum:Object.keys(INTERIOR_OBJECT_TYPES)},variant:text,room_id:{type:'string',enum:model.rooms.filter(r=>!r.isTerrace).map(r=>r.id)},placement:{type:'object',additionalProperties:false,required:['mode'],properties:{mode:{type:'string',enum:['floor','wall','ceiling','opening']},host_wall_id:text,host_opening_id:text,offset_mm:number,inset_mm:number,elevation_mm:number,drop_mm:number}},cx:number,cy:number,rotation:number,width_mm:dimension,depth_mm:dimension,height_mm:dimension,material_references:{type:'object',additionalProperties:text},colour:{type:'string',pattern:'^#[0-9a-fA-F]{6}$'},status:{type:'string',enum:['EXPLORATORY','INFERRED','TBD','VERIFIED']},metadata:{type:'object'}}};
-  const operation_fields={'room-option':['room_id','key','value'],'furniture-variant':['furniture_id','variant'],'furniture-placement':['furniture_id','cx?','cy?','w?','d?','rot?'],'add-object':['object'],'update-object':['object_id','changes (partial object; id immutable; nested fields replace)'],'remove-object':['object_id'],'upsert-material':['material (InteriorMaterial/1)'],'set-room-surface-material':['room_id','surface (floor|ceiling)','material_id (ID|null)'],'set-wall-surface-material':['host_wall_id','material_id (ID|null)'],'set-opening-treatment':['opening_id','treatment ({type,variant,material_id,colour,openness,room_id}|null)']};
-  return {schema:'ApartmentInteriorDesignContext/1',architecture_mutable:false,surfaces:interiorSurfaces(model),object_types:INTERIOR_OBJECT_TYPES,object_schema,materials:layout?interiorMaterials(layout):INTERIOR_MATERIALS,material_schema:'InteriorMaterial/1',material_template:{schema:'InteriorMaterial/1',id:'custom-material-01',name:'Custom matte finish',category:'paint',source_status:'GENERIC',base_colour:'#e8e0d2',roughness:.9,metallic:0,finish:'matte',notes:'No texture maps required.'},material_optional_fields:['manufacturer','product_name','product_url','physical_dimensions_mm: {width,height,depth}','texture_scale_mm: {width,height}','albedo_texture','normal_map','roughness_map','reference_images','notes','fallback_generic_id'],overlay_schema:'InteriorDesign/1',proposal_versions:['ApartmentDesignProposal/1','ApartmentDesignProposal/2'],proposal_v2_contract:{required:['schema','canonical_sha256','base_scene_revision','operations'],optional:['author','notes'],maximum_operations:100,operation_fields},operations:Object.keys(operation_fields),placement:{modes:['floor','wall','ceiling','opening'],wall:'placement.host_wall_id, offset_mm from segment midpoint, elevation_mm at object bottom, inset_mm from finished wall face',ceiling:'cx/cy in canonical mm; drop_mm from the fixed 2500 mm ceiling to the object top',opening:'placement.host_opening_id, offset_mm, elevation_mm; reversible treatment only'},representation:'Approximate conceptual 3D objects; real product references do not certify dimensions or fit.'};
+  const operation_fields={'room-option':['room_id','key','value'],'furniture-variant':['furniture_id','variant'],'furniture-placement':['furniture_id','cx?','cy?','w?','d?','rot?'],'add-furniture':['furniture'],'update-furniture':['furniture_id','changes'],'remove-furniture':['furniture_id'],'duplicate-furniture':['furniture_id','new_id','cx?','cy?','rot?'],'set-furniture-material':['furniture_id','material_id (ID|null)'],'set-furniture-colour':['furniture_id','colour'],'add-object':['object'],'update-object':['object_id','changes (partial object; id immutable; nested fields replace)'],'remove-object':['object_id'],'upsert-material':['material (InteriorMaterial/1)'],'set-room-surface-material':['room_id','surface (floor|ceiling)','material_id (ID|null)'],'set-wall-surface-material':['host_wall_id','material_id (ID|null)'],'set-opening-treatment':['opening_id','treatment ({type,variant,material_id,colour,openness,room_id}|null)']};
+  return {schema:'ApartmentInteriorDesignContext/1',architecture_mutable:false,surfaces:interiorSurfaces(model),object_types:INTERIOR_OBJECT_TYPES,object_schema,furniture_types:INTERIOR_FURNITURE_TYPES,furniture_template:{id:'agent-chair-01',type:'chair',name:'Dining chair',cx:0,cy:0,w:480,d:520,rot:0,color:'#d8d0c4',variant:'style',status:'EXPLORATORY',material_id:null,product_reference_id:null},furniture_optional_fields:['variant','status','material_id','product_reference_id'],materials:layout?interiorMaterials(layout):INTERIOR_MATERIALS,material_schema:'InteriorMaterial/1',material_template:{schema:'InteriorMaterial/1',id:'custom-material-01',name:'Custom matte finish',category:'paint',source_status:'GENERIC',base_colour:'#e8e0d2',roughness:.9,metallic:0,finish:'matte',notes:'No texture maps required.'},material_optional_fields:['manufacturer','product_name','product_url','physical_dimensions_mm: {width,height,depth}','texture_scale_mm: {width,height}','albedo_texture','normal_map','roughness_map','reference_images','notes','fallback_generic_id'],overlay_schema:'InteriorDesign/1',proposal_versions:['ApartmentDesignProposal/1','ApartmentDesignProposal/2'],proposal_v2_contract:{required:['schema','canonical_sha256','base_scene_revision','operations'],optional:['author','notes'],maximum_operations:100,operation_fields},operations:Object.keys(operation_fields),placement:{modes:['floor','wall','ceiling','opening'],wall:'placement.host_wall_id, offset_mm from segment midpoint, elevation_mm at object bottom, inset_mm from finished wall face',ceiling:'cx/cy in canonical mm; drop_mm from the fixed 2500 mm ceiling to the object top',opening:'placement.host_opening_id, offset_mm, elevation_mm; reversible treatment only'},representation:'Approximate conceptual 3D objects and furniture; material/product references constrain intent but do not certify manufacturer CAD or fit.'};
 }
 function interiorRenderBrief(layout,model,roomId,catalog,view){
   const result=studioRenderBrief(layout,model,roomId,catalog),objects=interiorLayer(layout).objects.filter(o=>o.room_id===roomId),surfaces=interiorLayer(layout).surface_materials,treatments=Object.fromEntries(Object.entries(interiorLayer(layout).opening_treatments).filter(([,t])=>t.room_id===roomId));
-  const materialIds=new Set([...objects.flatMap(o=>Object.values(o.material_references)),...Object.entries(surfaces).filter(([id])=>interiorSurfaces(model).surfaces.find(s=>s.id===id)?.room_id===roomId).map(([,id])=>id),...Object.values(treatments).map(t=>t.material_id)]);
+  const materialIds=new Set([...objects.flatMap(o=>Object.values(o.material_references)),...result.items.map(f=>f.material_id).filter(Boolean),...Object.entries(surfaces).filter(([id])=>interiorSurfaces(model).surfaces.find(s=>s.id===id)?.room_id===roomId).map(([,id])=>id),...Object.values(treatments).map(t=>t.material_id)]);
   return {...result,schema:'ApartmentRenderBrief/2',interior_objects:objects,surface_materials:surfaces,opening_treatments:treatments,materials:interiorMaterials(layout).filter(m=>materialIds.has(m.id)),validation:interiorValidation(layout,model),saved_view:view||null,camera_reference_required:!view,prompt:result.prompt+' Reversible interior objects: '+JSON.stringify(objects)+'. Assigned surfaces: '+JSON.stringify(surfaces)+'. Opening treatments: '+JSON.stringify(treatments)+'. '+(view?'Use the saved PNG as the exact visual constraint. Preserve its projection, framing, object placements and visible openings. Camera: '+JSON.stringify(view.camera)+'. Saved view '+view.view_id+' at '+view.scene_revision+'.':'A matching current WebGL screenshot is still required before image generation. Do not infer an exact camera from this brief alone.')};
 }

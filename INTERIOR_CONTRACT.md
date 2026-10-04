@@ -58,6 +58,12 @@ Mounted object faces point into the room. Wall width must fit the usable segment
 | room-option | Existing `room_id`, `key`, `value` |
 | furniture-variant | Existing `furniture_id`, `variant` |
 | furniture-placement | Existing `furniture_id`, optional `cx`, `cy`, `w`, `d`, `rot` |
+| add-furniture | Full reversible furniture record: `id`, `type`, `name`, `cx`, `cy`, `w`, `d`, `rot`, `color`; optional `variant`, `status`, `material_id`, `product_reference_id` |
+| update-furniture | `furniture_id` plus partial `changes` to name/placement/size/rotation/color/variant/status/material/product reference |
+| remove-furniture | Existing `furniture_id`; removes furnishing only, never architecture |
+| duplicate-furniture | Existing `furniture_id`, unique `new_id`, optional `cx`, `cy`, `rot` |
+| set-furniture-material | `furniture_id`, `material_id` or `null`; material base colour also becomes the WebGL fallback colour |
+| set-furniture-colour | `furniture_id`, hex `colour`; clears an explicit material assignment |
 | add-object | Full `object` DTO |
 | update-object | `object_id`, `changes`; IDs cannot be changed; nested `placement` or material references replace those fields |
 | remove-object | `object_id` |
@@ -71,6 +77,8 @@ Unknown operations/fields and architectural edits are rejected. Operations run o
 ## Materials
 
 `InteriorMaterial/1` supports `id`, `name`, `category`, `manufacturer`, `product_name`, `product_url`, `source_status` (REAL_PRODUCT / REAL_MATERIAL / REFERENCE / GENERIC), `physical_dimensions_mm`, `texture_scale_mm`, `base_colour`, `finish`, `roughness`, `metallic`, `albedo_texture`, `normal_map`, `roughness_map`, `reference_images`, and `notes`. Dimensions/scales use `{width,height,depth}` where applicable. A real product record requires its manufacturer, product name and source URL. References are not automatically verified manufacturer CAD.
+
+Furniture may reference the same material registry through `material_id`. The conceptual WebGL scene always uses the material's base colour as a safe fallback; render briefs also carry the exact material descriptor and optional product reference so photorealistic rendering can honor texture/finish intent. `product_reference_id` is a reference hint, not manufacturer CAD certification.
 
 Texture maps are optional. Maps use HTTPS or relative asset paths; albedo is sRGB, normal/roughness linear. Texture scale is applied in millimetres. Missing or failed maps leave physically sensible procedural/simple PBR materials visible. Existing eleven generic floor finishes remain usable through compatibility records. New material definitions can be imported in the viewer or proposed with `upsert-material`, without hard-coded room options. Cross-origin textures must permit anonymous CORS; otherwise they fall back so the canvas remains exportable. Built-in artwork is AI-created concept art and is labeled REFERENCE.
 

@@ -17,6 +17,9 @@ function studioAssertLayout(l,model,types){
   for(const f of l.furniture){
     if(!object(f)||!safeId(f.id)||ids.has(f.id)||!types.includes(f.type)||typeof f.name!=='string'||f.name.length>80||!colour(f.color)||!['cx','cy','w','d','rot'].every(k=>Number.isFinite(f[k]))||f.w<50||f.d<50||f.w>10000||f.d>10000||Math.abs(f.cx)>100000||Math.abs(f.cy)>100000||Math.abs(f.rot)>360000)throw new Error('Invalid furniture records.');
     if(f.variant!==undefined&&f.variant!=='style'&&!STUDIO_VARIANTS[f.type]?.includes(f.variant))throw new Error('Invalid furniture shape.');
+    if(f.status!==undefined&&!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(f.status))throw new Error('Invalid furniture status.');
+    if(f.material_id!==undefined&&f.material_id!==null&&(typeof f.material_id!=='string'||!interiorMaterial(l,f.material_id)))throw new Error('Invalid furniture material reference.');
+    if(f.product_reference_id!==undefined&&f.product_reference_id!==null&&(typeof f.product_reference_id!=='string'||!/^[a-zA-Z0-9_-]{1,100}$/.test(f.product_reference_id)))throw new Error('Invalid furniture product reference.');
     ids.add(f.id);
   }
   if(!object(l.studio)||l.studio.version!==1||!object(l.studio.rooms)||Object.keys(l.studio).some(k=>!['version','rooms'].includes(k)))throw new Error('Invalid room options.');
