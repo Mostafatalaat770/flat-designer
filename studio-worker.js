@@ -34,7 +34,7 @@ async function agentCall(name,args,env,identity){
   if(name==='validate_apartment_design_proposal'){
     if(Object.keys(args).some(k=>!['brief','proposal'].includes(k)))throw new Error('Unknown argument.');
     const layout=validBrief(args.brief);let next;try{next=studioPrepareCloudLayout(studioValidateProposal(args.proposal,layout,HOST_MODEL),HOST_MODEL,HOST_FURNITURE_TYPES);}catch(error){if(error.validation)return {valid:false,status:'FAIL',validation:error.validation,applied:false};throw error;}
-    const validation=interiorValidation(next,HOST_MODEL,args.proposal.operations.filter(o=>o.type==='furniture-placement').map(o=>o.furniture_id));
+    const validation=interiorValidation(next,HOST_MODEL,interiorProposalFurnitureIds(args.proposal.operations));
     return {valid:true,status:validation.status,validation,operation_count:args.proposal.operations.length,candidate_scene_revision:studioSceneKey(next),candidate_layout:next,applied:false,next_step:'Apply with apply_apartment_design_proposal using the current cloud.storage_revision, or import the proposal in the viewer.'};
   }
   if(name==='create_apartment_render_brief'){
