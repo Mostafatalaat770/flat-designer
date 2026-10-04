@@ -45,6 +45,19 @@ for(const type of Object.keys(evaluate('INTERIOR_OBJECT_TYPES')))assert.ok(evalu
 const material={schema:'InteriorMaterial/1',id:'future-material',name:'Future porcelain reference',category:'stone',source_status:'REFERENCE',product_url:'https://example.test/material',physical_dimensions_mm:{width:600,height:1200,depth:9},texture_scale_mm:{width:600,height:1200},base_colour:'#cfc7ba',roughness:.6,metallic:0,finish:'matte',notes:'No maps required.'};
 assert.equal(apply(p2([{type:'upsert-material',material},{type:'set-room-surface-material',room_id:'BR-01',surface:'floor',material_id:material.id}])).interior.materials.length,1);
 assert.throws(()=>apply(p2([{type:'upsert-material',material:{...material,albedo_texture:'javascript:alert(1)'}}])));
+const agentChair={id:'agent-chair-a',type:'chair',name:'Agent dining chair',cx:3200,cy:3000,w:480,d:520,rot:0,color:'#d8d0c4',variant:'style',status:'EXPLORATORY',material_id:'generic-linen',product_reference_id:'chair-reference-01'};
+let furnitureEdit=apply(p2([{type:'add-furniture',furniture:agentChair},{type:'duplicate-furniture',furniture_id:'agent-chair-a',new_id:'agent-chair-b',cx:3200,cy:3900,rot:180},{type:'update-furniture',furniture_id:'agent-chair-b',changes:{cx:3600,cy:4000,status:'INFERRED'}}]));
+assert.equal(furnitureEdit.furniture.length,2);assert.equal(furnitureEdit.furniture.find(f=>f.id==='agent-chair-a').color,evaluate("interiorMaterial(base,'generic-linen').base_colour"));assert.equal(furnitureEdit.furniture.find(f=>f.id==='agent-chair-b').status,'INFERRED');
+furnitureEdit=apply(p2([{type:'add-furniture',furniture:{...agentChair,material_id:undefined,product_reference_id:undefined}},{type:'set-furniture-material',furniture_id:'agent-chair-a',material_id:'generic-lightoak'}]));
+assert.equal(furnitureEdit.furniture[0].material_id,'generic-lightoak');assert.equal(furnitureEdit.furniture[0].color,evaluate("interiorMaterial(base,'generic-lightoak').base_colour"));
+furnitureEdit=apply(p2([{type:'add-furniture',furniture:agentChair},{type:'set-furniture-colour',furniture_id:'agent-chair-a',colour:'#eee7dc'}]));
+assert.equal(furnitureEdit.furniture[0].color,'#eee7dc');assert.equal(furnitureEdit.furniture[0].material_id,undefined);
+furnitureEdit=apply(p2([{type:'add-furniture',furniture:agentChair},{type:'remove-furniture',furniture_id:'agent-chair-a'}]));assert.equal(furnitureEdit.furniture.length,0);
+assert.throws(()=>apply(p2([{type:'add-furniture',furniture:agentChair},{type:'duplicate-furniture',furniture_id:'agent-chair-a',new_id:'agent-chair-a',cx:3200,cy:3900}])));
+assert.throws(()=>apply(p2([{type:'add-furniture',furniture:{...agentChair,material_id:'missing-material'}}])));
+assert.throws(()=>apply(p2([{type:'add-furniture',furniture:{...agentChair,cx:1900}}])));
+assert.deepEqual(clone(evaluate("interiorProposalFurnitureIds([{type:'add-furniture',furniture:{id:'x'}},{type:'duplicate-furniture',furniture_id:'x',new_id:'y'},{type:'update-furniture',furniture_id:'y',changes:{cx:1}}])")),['x','y']);
+
 class R2Memory{constructor(){this.files=new Map();this.failPut=false;this.afterPut=null;}async put(k,bytes){if(this.failPut)throw new Error('Local R2 write failure');this.files.set(k,Uint8Array.from(bytes));if(this.afterPut){const f=this.afterPut;this.afterPut=null;await f();}}async get(k){const b=this.files.get(k);return b?{arrayBuffer:async()=>b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength)}:null;}async delete(k){this.files.delete(k);}}
 const env={DB:new LocalD1(),BUCKET:new R2Memory()},owner='interior-qa';let saved=(await api(env,owner,'/api/design','PUT',saveInput({initialized:false},fixture.layout,'qa-interior-start'))).data;
 const proposal={...p2([{type:'add-object',object:art}]),base_scene_revision:saved.scene_revision};
