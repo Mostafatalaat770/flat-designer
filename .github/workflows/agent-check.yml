@@ -3,6 +3,7 @@ name: Agent branch verification
 on:
   push:
     branches:
+      - master
       - agent/furniture-surface-control
   pull_request:
     branches:
