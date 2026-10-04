@@ -51,7 +51,7 @@ function currentDecor(){return DECOR_THEMES.find(t=>t.id===state.decor.active)||
 function decorSurface(key,fallback){return currentDecor()[key]||fallback;}
 function captureDecor(){
   return {rooms:Object.fromEntries(ROOMS.map(r=>[r.id,state.rooms[r.id].mat])),
-    colours:Object.fromEntries(state.furniture.map(f=>[f.id,f.color]))};
+    colours:Object.fromEntries(state.furniture.filter(f=>!f.material_id).map(f=>[f.id,f.color]))};
 }
 function rememberDecor(){state.decor.saved[state.decor.active]=captureDecor();}
 function decorFurnitureColour(f,theme){
