@@ -313,9 +313,10 @@ function interiorCirculation(room,model,solids){
 }
 function interiorProposalFurnitureIds(operations){
   const ids=new Set();for(const op of operations||[]){
-    if(['furniture-placement','furniture-variant','update-furniture','set-furniture-material','set-furniture-colour'].includes(op.type)&&op.furniture_id)ids.add(op.furniture_id);
+    if(op.type==='furniture-placement'&&op.furniture_id)ids.add(op.furniture_id);
     if(op.type==='add-furniture'&&op.furniture?.id)ids.add(op.furniture.id);
     if(op.type==='duplicate-furniture'&&op.new_id)ids.add(op.new_id);
+    if(op.type==='update-furniture'&&op.furniture_id&&['cx','cy','w','d','rot'].some(k=>op.changes?.[k]!==undefined))ids.add(op.furniture_id);
   }return [...ids];
 }
 function studioValidateProposal(p,layout,model){
