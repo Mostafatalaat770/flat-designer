@@ -9,7 +9,9 @@ const outDir=process.env.RENDER_OUT_DIR||'renders';
 await fs.mkdir(outDir,{recursive:true});
 
 function safeJson(value){
-  return JSON.stringify(value).replace(/</g,'\\u003c').replace(/<\\/script/gi,'<\\/script');
+  // Escaping every "<" is sufficient to prevent an embedded </script> from
+  // terminating the JSON script tag, and avoids regex escaping differences.
+  return JSON.stringify(value).replace(/</g,'\\u003c');
 }
 function fnv1a(str){
   let h=0x811c9dc5;
