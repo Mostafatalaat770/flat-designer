@@ -21,6 +21,46 @@ function fnv1a(str){
 const snapshotJson=JSON.stringify(snapshot.layout);
 const snapshotHash='branch-'+fnv1a(snapshotJson);
 
+function mimeFor(file){
+  const ext=path.extname(file).toLowerCase();
+  if(ext==='.png') return 'image/png';
+  if(ext==='.jpg'||ext==='.jpeg') return 'image/jpeg';
+  if(ext==='.webp') return 'image/webp';
+  throw new Error('Unsupported local render asset: '+file);
+}
+async function addAsset(assetUrls,logicalPath){
+  if(!logicalPath.startsWith('./')) return;
+  if(assetUrls[logicalPath]) return;
+  const file=path.resolve('dist',logicalPath.slice(2));
+  const bytes=await fs.readFile(file);
+  if(bytes.length>8*1024*1024) throw new Error('Render asset exceeds 8 MB: '+logicalPath);
+  assetUrls[logicalPath]=`data:${mimeFor(file)};base64,${bytes.toString('base64')}`;
+}
+async function collectLocalAssets(layout){
+  const assetUrls={};
+  // Procedural Studio artwork is referenced dynamically as ./art/<theme>.png,
+  // so embed every bundled art image just like the production capture worker.
+  try{
+    const names=await fs.readdir(path.resolve('dist/art'));
+    for(const name of names){
+      if(/\.(png|jpe?g|webp)$/i.test(name)) await addAsset(assetUrls,'./art/'+name);
+    }
+  }catch(error){
+    if(error?.code!=='ENOENT') throw error;
+  }
+  // Also embed relative maps saved directly on materials.
+  const visit=value=>{
+    if(typeof value==='string'&&value.startsWith('./')) return [value];
+    if(Array.isArray(value)) return value.flatMap(visit);
+    if(value&&typeof value==='object') return Object.values(value).flatMap(visit);
+    return [];
+  };
+  for(const logicalPath of new Set(visit(layout))) await addAsset(assetUrls,logicalPath);
+  return assetUrls;
+}
+const assetUrls=await collectLocalAssets(snapshot.layout);
+console.log(`embedded ${Object.keys(assetUrls).length} local render assets`);
+
 const browser=await chromium.launch({headless:true,args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist']});
 try{
   for(const view of snapshot.views){
@@ -34,7 +74,8 @@ try{
       scene_revision:snapshot.scene_revision,
       storage_revision:snapshot.storage_revision,
       layout:snapshot.layout,
-      camera:view.camera
+      camera:view.camera,
+      asset_urls:assetUrls
     };
     const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
     await page.setContent(html,{waitUntil:'load'});
