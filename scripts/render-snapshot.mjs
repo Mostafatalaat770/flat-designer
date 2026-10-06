@@ -77,7 +77,8 @@ try{
       storage_revision:snapshot.storage_revision,
       layout:snapshot.layout,
       camera:view.camera,
-      asset_urls:assetUrls
+      asset_urls:assetUrls,
+      architecture_variant:snapshot.architecture_variant||null
     };
     const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
     await page.setContent(html,{waitUntil:'load'});
@@ -99,7 +100,8 @@ try{
     name:snapshot.name,
     scene_revision:snapshot.scene_revision,
     canonical_sha256:snapshot.canonical_sha256,
-    views:snapshot.views.map(v=>v.id)
+    views:snapshot.views.map(v=>v.id),
+    architecture_variant:snapshot.architecture_variant||null
   },null,2));
 } finally {
   await browser.close();
