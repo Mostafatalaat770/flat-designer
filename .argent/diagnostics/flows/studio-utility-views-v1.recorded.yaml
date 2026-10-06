@@ -1,0 +1,31 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=workspace-kitchen
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-workspace-kitchen
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=workspace-family-bath
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-workspace-family-bath
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=workspace-bath-m01
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-workspace-bath-m01
+      timeoutMs: 15000
+executionPrerequisite: Dedicated Chromium 1600x857 at CDP9222; isolated loopback
+  QA server at127.0.0.1:4174. Curated Family A.7 standing cameras generated.
+  Production disconnected.

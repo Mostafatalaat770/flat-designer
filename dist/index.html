@@ -240,6 +240,11 @@ select:focus-visible{outline:3px solid #69addd;outline-offset:3px}
 #proposalDialog{width:min(740px,calc(100vw - 28px));max-height:90vh;border:1px solid #a8bfd8;border-radius:8px;padding:20px;background:#f7faff}#proposalPreview{white-space:pre-wrap;overflow-wrap:anywhere;max-height:50vh;overflow:auto;background:white;border:1px solid #d5dfeb;padding:12px;font-size:14px}
 @media(max-width:650px){.studio-grid,.studio-items,.studio-references{grid-template-columns:1fr}.studio-room{display:block}.studio-tabs .btn{flex:1 1 45%}#studioDialog{padding:14px}}
 
+.walk-calibration .btn{white-space:nowrap}
+#walkNatural.on,#walkWide.on{background:var(--accent-soft);color:var(--accent);border-color:#9bbce0}
+#scaleCheck.on{background:#fff0e8;color:#8b4029;border-color:#d8a58f}
+@media(max-width:900px){.walk-calibration{display:flex}.walk-calibration .btn{font-size:12px;padding:5px 7px}}
+
 #cloudDialog{width:min(620px,calc(100vw - 28px));max-height:85vh;overflow:auto;border-radius:16px;padding:20px;background:#fff;color:#263750;border:1px solid #dce5ef}#cloudDialog::backdrop{background:#14253b80}#cloudDialog .dialog-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}#cloudStatus{font-weight:650}#cloudError:empty{display:none}.cloud-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.cloud-history-row{display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid #e3e9ee;padding:12px 0}.cloud-history-row span{white-space:pre-line;font-size:13px;line-height:1.5}#cloudIndicator[data-state="conflict"]{color:#9a531b}#cloudIndicator[data-state="draft"]{color:#4a6386}#cloudConflict{background:#fff8ed;padding:12px;border-radius:10px}#cloudConflict[hidden]{display:none}#cloudDesign{font-size:11px;max-width:180px;overflow:hidden;text-overflow:ellipsis}
 /* Type B studio */
 :root{--bg:#e9eff5;--paper:#edf3f8;--panel:#fff;--line:#d5dfeb;--ink:#172c46;--muted:#5f7087;--accent:#2862a4;--accent-soft:#dfebf9;--teal:#1f718f}
@@ -332,6 +337,11 @@ dialog{border:1px solid var(--line);border-radius:8px;padding:0;width:min(1000px
     <div class="grp only3d">
       <button class="btn chip" data-cut="2.5" data-en="Full walls">全高墙</button>
       <button class="btn chip on" data-cut="1.05" data-en="Cut walls">剖切墙</button>
+    </div>
+    <div class="grp only3d walk-calibration" id="walkLensControls" role="group" aria-label="Walk camera lens">
+      <button class="btn chip on" id="walkNatural" title="Natural human-scale perspective · 42° vertical field of view">Natural view</button>
+      <button class="btn chip" id="walkWide" title="Wide-angle overview · 60° vertical field of view">Wide view</button>
+      <button class="btn chip" id="scaleCheck" title="Show a temporary 1.70 m human reference and 1.00 m ruler">Scale check</button>
     </div>
     <div class="grp only3d" id="toggles3d">
       <button class="btn chip on" data-t="furn" data-en="Furniture">家具</button>
@@ -596,8 +606,8 @@ function studioRenderBrief(layout,model,roomId,catalog=[]){
   const room=model.rooms.find(r=>r.id===roomId&&!r.isTerrace);if(!room)throw new Error('Choose an interior room.');
   const options={...studioRoomOptions(layout,roomId),flooring:layout.rooms[roomId].mat},items=layout.furniture.filter(f=>studioInside([f.cx,f.cy],room.poly));
   return {schema:'ApartmentRenderBrief/1',room_id:roomId,canonical_sha256:model.canonical_sha256,scene_revision:studioSceneKey(layout),status:'EXPLORATORY',room_polygon_mm:room.poly,printed_dimensions_m:room.printed_dimensions_m||room.callouts,clear_ceiling_m:2.50,options,items,
-    reference_products:catalog.filter(p=>items.some(f=>(p.variant===f.variant&&p.type===f.type))),
-    prompt:`Create a photorealistic architectural interior concept of ${room.name}, Apartment Type B. Use the attached 3D screenshot as the exact geometry and camera reference, and the original plan as the topology reference. Preserve the room footprint, all doors and windows, furniture footprints and camera. Clear finished ceiling stays 2.50 m. Living glazing GLZ-RECP-N stays full-height. Decor style: ${layout.decor?.active||'custom'}. Room options: ${JSON.stringify(options)}. Furniture: ${JSON.stringify(items.map(({type,variant,w,d,rot,color})=>({type,variant:variant||'style',w_mm:w,d_mm:d,rotation:rot,color})))}. Show physically plausible fabric, wood, stone and paint textures, soft daylight, contact shadows and layered ${options.temperature} K lighting. ${options.hvac==='concealed-slots'?'Show only conceptual supply/return grille faces; do not invent a lowered ceiling or claim the hidden equipment fits the 130 mm void.':''} Do not add rooms, move glazing, raise or lower the ceiling, widen walls, or invent fitted cabinetry. No text or watermark. Treat this as an exploratory visual, not a construction drawing or exact branded product replica.`,
+    reference_products:catalog.filter(p=>items.some(f=>f.product_reference_id?p.id===f.product_reference_id:(p.variant===f.variant&&p.type===f.type))),
+    prompt:`Create a photorealistic architectural interior concept of ${room.name}, Apartment Type B. Use the attached 3D screenshot as the exact geometry and camera reference, and the original plan as the topology reference. Preserve the room footprint, all doors and windows, furniture footprints and camera. Clear finished ceiling stays 2.50 m. Living glazing GLZ-RECP-N stays full-height. Decor style: ${layout.decor?.active||'custom'}. Room options: ${JSON.stringify(options)}. Furniture: ${JSON.stringify(items.map(({type,variant,w,d,rot,color,material_id,product_reference_id,status})=>({type,variant:variant||'style',w_mm:w,d_mm:d,rotation:rot,color,material_id:material_id||null,product_reference_id:product_reference_id||null,status:status||'EXPLORATORY'})))}. Show physically plausible fabric, wood, stone and paint textures, soft daylight, contact shadows and layered ${options.temperature} K lighting. ${options.hvac==='concealed-slots'?'Show only conceptual supply/return grille faces; do not invent a lowered ceiling or claim the hidden equipment fits the 130 mm void.':''} Do not add rooms, move glazing, raise or lower the ceiling, widen walls, or invent fitted cabinetry. No text or watermark. Treat this as an exploratory visual, not a construction drawing or exact branded product replica.`,
     required_references:['Current 3D room screenshot (use the viewer Screenshot control)','Original plan ./source-plan.jpeg'],
     validation:['Compare opening positions and proportions with the 3D screenshot','Check ceiling and furniture scale','Mark any generated geometry drift as unverified']};
 }
@@ -620,6 +630,7 @@ const INTERIOR_OBJECT_TYPES={
   'table-lamp':{variants:['shade','globe'],modes:['floor'],size:[260,260,420]},
   plant:{variants:['potted'],modes:['floor'],size:[450,450,1300]}
 };
+const INTERIOR_FURNITURE_TYPES=['bed','crib','nightstand','wardrobe','dresser','desk','chair','bookshelf','baycushion','sofa','cornersofa','armchair','beanbag','coffeetable','sidetable','tvstand','rug','shoecab','floorlamp','plant','table','roundtable','island','barstool','counter','stove','ksink','fridge','cabinet','toilet','vanity','shower','bathtub','washer','waterheater','tv','aircon','acwall','dishwasher','ovencol','dryer','purifier','officechair','piano','treadmill'];
 const interiorObjectId=v=>typeof v==='string'&&/^[a-zA-Z0-9_-]{1,100}$/.test(v)&&!['__proto__','prototype','constructor'].includes(v);
 const interiorObject=v=>v&&typeof v==='object'&&!Array.isArray(v);
 const interiorColour=v=>typeof v==='string'&&/^#[0-9a-f]{6}$/i.test(v);
@@ -663,6 +674,21 @@ function interiorAssertMaterial(m){
   if(m.fallback_generic_id!==undefined&&!STUDIO_OPTIONS.flooring.includes(m.fallback_generic_id))throw new Error('Unknown generic fallback material.');
   if(m.source_status==='REAL_PRODUCT'&&(!m.manufacturer||!m.product_name||!m.product_url))throw new Error('Real products need manufacturer, product name and source URL.');
 }
+function interiorAssertFurniture(f,layout,model){
+  if(!interiorObject(f)||!interiorObjectId(f.id)||f.id.length>80||!INTERIOR_FURNITURE_TYPES.includes(f.type)||typeof f.name!=='string'||!f.name.trim()||f.name.length>80||!interiorColour(f.color)||!['cx','cy','w','d','rot'].every(k=>Number.isFinite(f[k]))||f.w<50||f.d<50||f.w>10000||f.d>10000||Math.abs(f.cx)>100000||Math.abs(f.cy)>100000||Math.abs(f.rot)>360000)throw new Error('Invalid furniture record.');
+  if(f.variant!==undefined&&f.variant!=='style'&&!STUDIO_VARIANTS[f.type]?.includes(f.variant))throw new Error('Invalid furniture shape.');
+  if(f.status!==undefined&&!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(f.status))throw new Error('Invalid furniture status.');
+  if(f.material_id!==undefined&&f.material_id!==null&&(typeof f.material_id!=='string'||!interiorMaterial(layout,f.material_id)))throw new Error('Unknown furniture material.');
+  if(f.product_reference_id!==undefined&&f.product_reference_id!==null&&(!interiorObjectId(f.product_reference_id)||f.product_reference_id.length>100))throw new Error('Invalid furniture product reference.');
+  const room=studioFit(f,model);if(!room)throw new Error('Furniture footprint must fit an interior room.');return room;
+}
+function interiorFurnitureMaterial(layout,f,id){
+  if(id===null){delete f.material_id;return;}
+  if(typeof id!=='string')throw new Error('Invalid furniture material.');const material=interiorMaterial(layout,id);if(!material)throw new Error('Unknown furniture material.');f.material_id=id;f.color=material.base_colour;
+}
+function interiorForgetFurniture(layout,id){
+  for(const saved of Object.values(layout.decor?.saved||{}))if(saved?.colours)delete saved.colours[id];
+}
 function interiorResolved(o,model){
   const p=o.placement,room=model.rooms.find(r=>r.id===o.room_id),w=o.width_mm,d=o.depth_mm,h=o.height_mm;
   let cx=o.cx,cy=o.cy,rotation=o.rotation||0,bottom=p.elevation_mm||0,host=null;
@@ -685,6 +711,11 @@ function interiorAssertLayer(layout,model){
   if(!interiorObject(layer)||layer.version!==1||Object.keys(layer).some(k=>!['version','objects','materials','surface_materials','opening_treatments'].includes(k))||!Array.isArray(layer.objects)||layer.objects.length>150||!Array.isArray(layer.materials)||layer.materials.length>100||!interiorObject(layer.surface_materials)||!interiorObject(layer.opening_treatments))throw new Error('Invalid InteriorDesign/1 overlay.');
   const materialIds=new Set(INTERIOR_MATERIALS.map(m=>m.id));for(const m of layer.materials){interiorAssertMaterial(m);if(materialIds.has(m.id))throw new Error('Duplicate material ID.');materialIds.add(m.id);}
   const ids=new Set(layout.furniture.map(f=>f.id));
+  for(const f of layout.furniture){
+    if(f.material_id!==undefined&&f.material_id!==null&&!materialIds.has(f.material_id))throw new Error('Invalid furniture material reference.');
+    if(f.status!==undefined&&!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(f.status))throw new Error('Invalid furniture status.');
+    if(f.product_reference_id!==undefined&&f.product_reference_id!==null&&(!interiorObjectId(f.product_reference_id)||f.product_reference_id.length>100))throw new Error('Invalid furniture product reference.');
+  }
   for(const o of layer.objects){
     const spec=INTERIOR_OBJECT_TYPES[o.type];
     if(!interiorObject(o)||!spec||!interiorObjectId(o.id)||ids.has(o.id)||!spec.variants.includes(o.variant)||!model.rooms.some(r=>r.id===o.room_id&&!r.isTerrace)||!interiorObject(o.placement)||!spec.modes.includes(o.placement.mode)||!['width_mm','depth_mm','height_mm'].every(k=>Number.isFinite(o[k])&&o[k]>=5&&o[k]<=10000)||!Number.isFinite(o.rotation)||!interiorColour(o.colour)||!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(o.status))throw new Error('Invalid interior object.');
@@ -834,7 +865,20 @@ function interiorApplyProposal(p,layout,model){
     }else if(op.type==='furniture-placement'){
       fields(op,['type','furniture_id','cx','cy','w','d','rot']);const f=next.furniture.find(f=>f.id===op.furniture_id);if(!f)throw new Error('Unknown furniture ID.');
       for(const k of ['cx','cy','w','d','rot'])if(op[k]!==undefined){if(!Number.isFinite(op[k]))throw new Error('Invalid placement.');f[k]=op[k];}
-      if(f.w<50||f.d<50||f.w>10000||f.d>10000||!studioFit(f,model))throw new Error('Furniture footprint must fit an interior room.');changed.add(f.id);
+      interiorAssertFurniture(f,next,model);changed.add(f.id);
+    }else if(op.type==='add-furniture'){
+      fields(op,['type','furniture']);if(next.furniture.length>=300)throw new Error('Furniture limit reached.');const f=interiorClone(op.furniture);f.variant??='style';f.status??='EXPLORATORY';if(next.furniture.some(x=>x.id===f.id)||next.interior.objects.some(x=>x.id===f.id))throw new Error('Furniture ID already exists.');if(f.material_id)interiorFurnitureMaterial(next,f,f.material_id);interiorAssertFurniture(f,next,model);next.furniture.push(f);changed.add(f.id);
+    }else if(op.type==='update-furniture'){
+      fields(op,['type','furniture_id','changes']);const i=next.furniture.findIndex(f=>f.id===op.furniture_id);if(i<0||!interiorObject(op.changes)||Object.keys(op.changes).some(k=>!['name','cx','cy','w','d','rot','color','variant','status','material_id','product_reference_id'].includes(k)))throw new Error('Invalid furniture update.');
+      const before=next.furniture[i],f={...before,...interiorClone(op.changes)};if(op.changes.material_id===null)delete f.material_id;else if(op.changes.material_id!==undefined)interiorFurnitureMaterial(next,f,op.changes.material_id);else if(op.changes.color!==undefined)delete f.material_id;if(op.changes.product_reference_id===null)delete f.product_reference_id;interiorAssertFurniture(f,next,model);next.furniture[i]=f;if(['cx','cy','w','d','rot'].some(k=>op.changes[k]!==undefined))changed.add(f.id);
+    }else if(op.type==='remove-furniture'){
+      fields(op,['type','furniture_id']);const i=next.furniture.findIndex(f=>f.id===op.furniture_id);if(i<0)throw new Error('Unknown furniture ID.');next.furniture.splice(i,1);interiorForgetFurniture(next,op.furniture_id);
+    }else if(op.type==='duplicate-furniture'){
+      fields(op,['type','furniture_id','new_id','cx','cy','rot']);const source=next.furniture.find(f=>f.id===op.furniture_id);if(!source)throw new Error('Unknown furniture ID.');if(next.furniture.length>=300||next.furniture.some(f=>f.id===op.new_id)||next.interior.objects.some(o=>o.id===op.new_id))throw new Error('Invalid or duplicate new furniture ID.');const f=interiorClone(source);f.id=op.new_id;f.name=(String(source.name||source.type)+' copy').slice(0,80);for(const k of ['cx','cy','rot'])if(op[k]!==undefined){if(!Number.isFinite(op[k]))throw new Error('Invalid duplicate placement.');f[k]=op[k];}interiorAssertFurniture(f,next,model);next.furniture.push(f);changed.add(f.id);
+    }else if(op.type==='set-furniture-material'){
+      fields(op,['type','furniture_id','material_id']);const f=next.furniture.find(f=>f.id===op.furniture_id);if(!f)throw new Error('Unknown furniture ID.');interiorFurnitureMaterial(next,f,op.material_id);interiorAssertFurniture(f,next,model);
+    }else if(op.type==='set-furniture-colour'){
+      fields(op,['type','furniture_id','colour']);const f=next.furniture.find(f=>f.id===op.furniture_id);if(!f||!interiorColour(op.colour))throw new Error('Invalid furniture colour.');f.color=op.colour;delete f.material_id;interiorAssertFurniture(f,next,model);
     }else if(op.type==='add-object'){
       fields(op,['type','object']);next.interior.objects.push(interiorClone(op.object));changed.add(op.object.id);
     }else if(op.type==='update-object'){
@@ -882,6 +926,14 @@ function interiorCirculation(room,model,solids){
   }}
   return targets.map(t=>({room_id:room.id,from:start.id,to:t.id,measured_clearance_mm:interiorRound(t.i<0||start.d>400||t.d>500?0:Math.min(scores[t.i],t.width)),preferred_clearance_mm:900,grid_resolution_mm:step,method:'Conservative widest sampled path; centreline widths minus 125 mm sampling allowance',message:'Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions.'}));
 }
+function interiorProposalFurnitureIds(operations){
+  const ids=new Set();for(const op of operations||[]){
+    if(op.type==='furniture-placement'&&op.furniture_id)ids.add(op.furniture_id);
+    if(op.type==='add-furniture'&&op.furniture?.id)ids.add(op.furniture.id);
+    if(op.type==='duplicate-furniture'&&op.new_id)ids.add(op.new_id);
+    if(op.type==='update-furniture'&&op.furniture_id&&['cx','cy','w','d','rot'].some(k=>op.changes?.[k]!==undefined))ids.add(op.furniture_id);
+  }return [...ids];
+}
 function studioValidateProposal(p,layout,model){
   const next=interiorApplyProposal(p,layout,model);
   if(p.schema==='ApartmentDesignProposal/1'&&next.interior){
@@ -892,12 +944,12 @@ function studioValidateProposal(p,layout,model){
 function interiorContext(model,layout){
   const number={type:'number'},dimension={type:'number',minimum:5,maximum:10000},text={type:'string'};
   const object_schema={type:'object',additionalProperties:false,required:['id','type','variant','room_id','placement','rotation','width_mm','depth_mm','height_mm','material_references','colour','status','metadata'],properties:{id:{type:'string',pattern:'^[a-zA-Z0-9_-]{1,100}$'},type:{type:'string',enum:Object.keys(INTERIOR_OBJECT_TYPES)},variant:text,room_id:{type:'string',enum:model.rooms.filter(r=>!r.isTerrace).map(r=>r.id)},placement:{type:'object',additionalProperties:false,required:['mode'],properties:{mode:{type:'string',enum:['floor','wall','ceiling','opening']},host_wall_id:text,host_opening_id:text,offset_mm:number,inset_mm:number,elevation_mm:number,drop_mm:number}},cx:number,cy:number,rotation:number,width_mm:dimension,depth_mm:dimension,height_mm:dimension,material_references:{type:'object',additionalProperties:text},colour:{type:'string',pattern:'^#[0-9a-fA-F]{6}$'},status:{type:'string',enum:['EXPLORATORY','INFERRED','TBD','VERIFIED']},metadata:{type:'object'}}};
-  const operation_fields={'room-option':['room_id','key','value'],'furniture-variant':['furniture_id','variant'],'furniture-placement':['furniture_id','cx?','cy?','w?','d?','rot?'],'add-object':['object'],'update-object':['object_id','changes (partial object; id immutable; nested fields replace)'],'remove-object':['object_id'],'upsert-material':['material (InteriorMaterial/1)'],'set-room-surface-material':['room_id','surface (floor|ceiling)','material_id (ID|null)'],'set-wall-surface-material':['host_wall_id','material_id (ID|null)'],'set-opening-treatment':['opening_id','treatment ({type,variant,material_id,colour,openness,room_id}|null)']};
-  return {schema:'ApartmentInteriorDesignContext/1',architecture_mutable:false,surfaces:interiorSurfaces(model),object_types:INTERIOR_OBJECT_TYPES,object_schema,materials:layout?interiorMaterials(layout):INTERIOR_MATERIALS,material_schema:'InteriorMaterial/1',material_template:{schema:'InteriorMaterial/1',id:'custom-material-01',name:'Custom matte finish',category:'paint',source_status:'GENERIC',base_colour:'#e8e0d2',roughness:.9,metallic:0,finish:'matte',notes:'No texture maps required.'},material_optional_fields:['manufacturer','product_name','product_url','physical_dimensions_mm: {width,height,depth}','texture_scale_mm: {width,height}','albedo_texture','normal_map','roughness_map','reference_images','notes','fallback_generic_id'],overlay_schema:'InteriorDesign/1',proposal_versions:['ApartmentDesignProposal/1','ApartmentDesignProposal/2'],proposal_v2_contract:{required:['schema','canonical_sha256','base_scene_revision','operations'],optional:['author','notes'],maximum_operations:100,operation_fields},operations:Object.keys(operation_fields),placement:{modes:['floor','wall','ceiling','opening'],wall:'placement.host_wall_id, offset_mm from segment midpoint, elevation_mm at object bottom, inset_mm from finished wall face',ceiling:'cx/cy in canonical mm; drop_mm from the fixed 2500 mm ceiling to the object top',opening:'placement.host_opening_id, offset_mm, elevation_mm; reversible treatment only'},representation:'Approximate conceptual 3D objects; real product references do not certify dimensions or fit.'};
+  const operation_fields={'room-option':['room_id','key','value'],'furniture-variant':['furniture_id','variant'],'furniture-placement':['furniture_id','cx?','cy?','w?','d?','rot?'],'add-furniture':['furniture'],'update-furniture':['furniture_id','changes'],'remove-furniture':['furniture_id'],'duplicate-furniture':['furniture_id','new_id','cx?','cy?','rot?'],'set-furniture-material':['furniture_id','material_id (ID|null)'],'set-furniture-colour':['furniture_id','colour'],'add-object':['object'],'update-object':['object_id','changes (partial object; id immutable; nested fields replace)'],'remove-object':['object_id'],'upsert-material':['material (InteriorMaterial/1)'],'set-room-surface-material':['room_id','surface (floor|ceiling)','material_id (ID|null)'],'set-wall-surface-material':['host_wall_id','material_id (ID|null)'],'set-opening-treatment':['opening_id','treatment ({type,variant,material_id,colour,openness,room_id}|null)']};
+  return {schema:'ApartmentInteriorDesignContext/1',architecture_mutable:false,surfaces:interiorSurfaces(model),object_types:INTERIOR_OBJECT_TYPES,object_schema,furniture_types:INTERIOR_FURNITURE_TYPES,furniture_template:{id:'agent-chair-01',type:'chair',name:'Dining chair',cx:0,cy:0,w:480,d:520,rot:0,color:'#d8d0c4',variant:'style',status:'EXPLORATORY',material_id:null,product_reference_id:null},furniture_optional_fields:['variant','status','material_id','product_reference_id'],materials:layout?interiorMaterials(layout):INTERIOR_MATERIALS,material_schema:'InteriorMaterial/1',material_template:{schema:'InteriorMaterial/1',id:'custom-material-01',name:'Custom matte finish',category:'paint',source_status:'GENERIC',base_colour:'#e8e0d2',roughness:.9,metallic:0,finish:'matte',notes:'No texture maps required.'},material_optional_fields:['manufacturer','product_name','product_url','physical_dimensions_mm: {width,height,depth}','texture_scale_mm: {width,height}','albedo_texture','normal_map','roughness_map','reference_images','notes','fallback_generic_id'],overlay_schema:'InteriorDesign/1',proposal_versions:['ApartmentDesignProposal/1','ApartmentDesignProposal/2'],proposal_v2_contract:{required:['schema','canonical_sha256','base_scene_revision','operations'],optional:['author','notes'],maximum_operations:100,operation_fields},operations:Object.keys(operation_fields),placement:{modes:['floor','wall','ceiling','opening'],wall:'placement.host_wall_id, offset_mm from segment midpoint, elevation_mm at object bottom, inset_mm from finished wall face',ceiling:'cx/cy in canonical mm; drop_mm from the fixed 2500 mm ceiling to the object top',opening:'placement.host_opening_id, offset_mm, elevation_mm; reversible treatment only'},representation:'Approximate conceptual 3D objects and furniture; material/product references constrain intent but do not certify manufacturer CAD or fit.'};
 }
 function interiorRenderBrief(layout,model,roomId,catalog,view){
   const result=studioRenderBrief(layout,model,roomId,catalog),objects=interiorLayer(layout).objects.filter(o=>o.room_id===roomId),surfaces=interiorLayer(layout).surface_materials,treatments=Object.fromEntries(Object.entries(interiorLayer(layout).opening_treatments).filter(([,t])=>t.room_id===roomId));
-  const materialIds=new Set([...objects.flatMap(o=>Object.values(o.material_references)),...Object.entries(surfaces).filter(([id])=>interiorSurfaces(model).surfaces.find(s=>s.id===id)?.room_id===roomId).map(([,id])=>id),...Object.values(treatments).map(t=>t.material_id)]);
+  const materialIds=new Set([...objects.flatMap(o=>Object.values(o.material_references)),...result.items.map(f=>f.material_id).filter(Boolean),...Object.entries(surfaces).filter(([id])=>interiorSurfaces(model).surfaces.find(s=>s.id===id)?.room_id===roomId).map(([,id])=>id),...Object.values(treatments).map(t=>t.material_id)]);
   return {...result,schema:'ApartmentRenderBrief/2',interior_objects:objects,surface_materials:surfaces,opening_treatments:treatments,materials:interiorMaterials(layout).filter(m=>materialIds.has(m.id)),validation:interiorValidation(layout,model),saved_view:view||null,camera_reference_required:!view,prompt:result.prompt+' Reversible interior objects: '+JSON.stringify(objects)+'. Assigned surfaces: '+JSON.stringify(surfaces)+'. Opening treatments: '+JSON.stringify(treatments)+'. '+(view?'Use the saved PNG as the exact visual constraint. Preserve its projection, framing, object placements and visible openings. Camera: '+JSON.stringify(view.camera)+'. Saved view '+view.view_id+' at '+view.scene_revision+'.':'A matching current WebGL screenshot is still required before image generation. Do not infer an exact camera from this brief alone.')};
 }
 
@@ -920,6 +972,9 @@ function studioAssertLayout(l,model,types){
   for(const f of l.furniture){
     if(!object(f)||!safeId(f.id)||ids.has(f.id)||!types.includes(f.type)||typeof f.name!=='string'||f.name.length>80||!colour(f.color)||!['cx','cy','w','d','rot'].every(k=>Number.isFinite(f[k]))||f.w<50||f.d<50||f.w>10000||f.d>10000||Math.abs(f.cx)>100000||Math.abs(f.cy)>100000||Math.abs(f.rot)>360000)throw new Error('Invalid furniture records.');
     if(f.variant!==undefined&&f.variant!=='style'&&!STUDIO_VARIANTS[f.type]?.includes(f.variant))throw new Error('Invalid furniture shape.');
+    if(f.status!==undefined&&!['EXPLORATORY','INFERRED','TBD','VERIFIED'].includes(f.status))throw new Error('Invalid furniture status.');
+    if(f.material_id!==undefined&&f.material_id!==null&&(typeof f.material_id!=='string'||!interiorMaterial(l,f.material_id)))throw new Error('Invalid furniture material reference.');
+    if(f.product_reference_id!==undefined&&f.product_reference_id!==null&&(typeof f.product_reference_id!=='string'||!/^[a-zA-Z0-9_-]{1,100}$/.test(f.product_reference_id)))throw new Error('Invalid furniture product reference.');
     ids.add(f.id);
   }
   if(!object(l.studio)||l.studio.version!==1||!object(l.studio.rooms)||Object.keys(l.studio).some(k=>!['version','rooms'].includes(k)))throw new Error('Invalid room options.');
@@ -951,7 +1006,7 @@ function studioDesignBrief(layout,model,catalog,cloud){
   return {schema:'ApartmentDesignBrief/1',canonical_sha256:model.canonical_sha256,scene_revision:revision,canonical_source:'./sources/Apartment_Master_Spec_Type_B_v0.2.2_Geometry_Heights_Glazing(1).json',layout:JSON.parse(JSON.stringify(layout)),rooms:model.rooms,openings:model.openings,wall_segments:model.wall_segments,reference_catalog:catalog,verified:{clear_ceiling_m:2.50,concrete_underside_m:2.63,service_void_mm:130,living_glazing:'GLZ-RECP-N: sill 0.00 m, head 2.50 m'},rules:['Architecture and ceiling height are locked','Owner/family comfort and circulation first','Use exact IDs and source-pixel topology','Concealed HVAC faces are visual only; validate equipment, ducts, drains and access separately','Return ApartmentDesignProposal/1 or /2 with the same canonical hash and base_scene_revision'],interior_contract:interiorContext(model,layout),proposal_v2_template:{schema:'ApartmentDesignProposal/2',canonical_sha256:model.canonical_sha256,base_scene_revision:revision,operations:[],notes:[]},proposal_template:{schema:'ApartmentDesignProposal/1',canonical_sha256:model.canonical_sha256,base_scene_revision:revision,author:'designer-agent',operations:[],notes:[]},...(cloud?{cloud}:{})};
 }
 
-const STUDIO_CATALOG=[{"id":"sofa-cloud","name":"Pacha Sofa, 3 seater","maker":"GUBI","url":"https://gubi.com/en/int/products/pacha-sofa","type":"sofa","variant":"cocoon","description":"Rounded / cloud-like. Official page selects 3 seater; item 10089603.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"sofa-modular","name":"Connect Soft Modular Sofa 2-Seater, Configuration 1","maker":"Muuto","url":"https://www.muuto.com/product/Connect-Soft-Modular-Sofa-2-Seater-Configurations/","type":"sofa","variant":"modular","description":"Modular / low. Default page item COS2SC1CD12 / old item 96001.","dimensions_mm":[2070,990,690],"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"sofa-tailored","name":"Outline Sofa 3-Seater","maker":"Muuto","url":"https://www.muuto.com/product/Outline-Sofa-3-Seater","type":"sofa","variant":"tailored","description":"Classic tailored / Scandinavian. Clean-lined design; official family text references Scandinavian sofas of the 1960s.","dimensions_mm":[2200,840,710],"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"bed-upholstered","name":"TUFJORD Upholstered Bed Frame, Tallmyra white/black, Standard Double","maker":"IKEA","url":"https://www.ikea.com/gb/en/p/tufjord-upholstered-bed-frame-tallmyra-white-black-70573260/","type":"bed","variant":"upholstered","description":"Upholstered / curved headboard. Article 705.732.60.","dimensions_mm":[1590,2130,1090],"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"bed-oak-platform","name":"Nera Queen Low Profile Bed \u2013 Oak","maker":"Article (brand)","url":"https://www.article.com/product/31363/nera-queen-low-profile-bed-oak","type":"bed","variant":"oak-platform","description":"Oak / low platform. Official Article result confirms the product name, Queen size and Oak finish.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"bed-cane-wood","name":"Ida Woven Bed, White/Natural","maker":"West Elm (brand)","url":"https://www.westelm.com/products/ida-bed-white-h6911/","type":"bed","variant":"woven-headboard","description":"Cane / wood. Official description identifies natural caning and a solid mango wood frame/legs in White.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"appliance-oven","name":"Series 8 Built-in Oven HBG7741B1B, Black","maker":"Bosch / BSH Home Appliances","url":"https://www.bosch-home.co.uk/en/product/cooking-and-baking/ovens/built-in-ovens/HBG7741B1B","type":"ovencol","variant":"black-glass","description":"Integrated black oven front. Official page names a 60 \u00d7 60 cm built-in oven.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"appliance-dishwasher","name":"Series 6 Fully-integrated Dishwasher SMV6ZCX16E","maker":"Bosch / BSH Home Appliances","url":"https://www.bosch-home.com.sg/en/product/dishwashers/built-in-dishwashers/fully-integrated-dishwasher-60-cm/SMV6ZCX16E","type":"dishwasher","variant":"integrated","description":"Integrated / panel-hidden dishwasher. 60 cm fully-integrated category; Singapore model reference.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"appliance-fridge","name":"Series 4 Built-in Fridge-freezer KIN86VSE0G","maker":"Bosch / BSH Home Appliances","url":"https://www.bosch-home.co.uk/en/product/cooling-and-freezing/fridge-freezers/built-in-fridge-freezers-freezer-at-bottom/KIN86VSE0G","type":"fridge","variant":"integrated","description":"Integrated tall fridge-freezer / sliding hinge. Built-in fridge-freezer with bottom freezer and sliding hinge.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"wall-silhouette","name":"Silhouette AF-655","maker":"Benjamin Moore","url":"https://www.benjaminmoore.com/en-us/paint-colors/color/af-655/silhouette","type":"paint","variant":null,"description":"Espresso / charcoal. Benjamin Moore's 2026 Color of the Year.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"wall-universal-khaki","name":"Universal Khaki SW 6150","maker":"Sherwin-Williams","url":"https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/sw6150-universal-khaki","type":"paint","variant":null,"description":"Warm khaki / midtone neutral. Official 2026 page names Universal Khaki SW 6150.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"wall-hidden-gem","name":"Hidden Gem N430-6A","maker":"Behr Paint Company","url":"https://www.behr.com/colors/color-detail/n430-6a","type":"paint","variant":null,"description":"Smoky jade / blue-green. Behr's 2026 Color of the Year.","dimensions_mm":null,"hex":"#596d69","image":null,"checked_on":"2026-10-03"}];
+const STUDIO_CATALOG=[{"id":"sofa-cloud","name":"Pacha Sofa, 3 seater","maker":"GUBI","url":"https://gubi.com/en/int/products/pacha-sofa","type":"sofa","variant":"cocoon","description":"Rounded / cloud-like. Official page selects 3 seater; item 10089603.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"sofa-modular","name":"Connect Soft Modular Sofa 2-Seater, Configuration 1","maker":"Muuto","url":"https://www.muuto.com/product/Connect-Soft-Modular-Sofa-2-Seater-Configurations/","type":"sofa","variant":"modular","description":"Modular / low. Default page item COS2SC1CD12 / old item 96001.","dimensions_mm":[2070,990,690],"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"sofa-tailored","name":"Outline Sofa 3-Seater","maker":"Muuto","url":"https://www.muuto.com/product/Outline-Sofa-3-Seater","type":"sofa","variant":"tailored","description":"Classic tailored / Scandinavian. Clean-lined design; official family text references Scandinavian sofas of the 1960s.","dimensions_mm":[2200,840,710],"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"bed-upholstered","name":"TUFJORD Upholstered Bed Frame, Tallmyra white/black, Standard Double","maker":"IKEA","url":"https://www.ikea.com/gb/en/p/tufjord-upholstered-bed-frame-tallmyra-white-black-70573260/","type":"bed","variant":"upholstered","description":"Upholstered / curved headboard. Article 705.732.60.","dimensions_mm":[1590,2130,1090],"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"bed-oak-platform","name":"Nera Queen Low Profile Bed \u2013 Oak","maker":"Article (brand)","url":"https://www.article.com/product/31363/nera-queen-low-profile-bed-oak","type":"bed","variant":"oak-platform","description":"Oak / low platform. Official Article result confirms the product name, Queen size and Oak finish.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"bed-cane-wood","name":"Ida Woven Bed, White/Natural","maker":"West Elm (brand)","url":"https://www.westelm.com/products/ida-bed-white-h6911/","type":"bed","variant":"woven-headboard","description":"Cane / wood. Official description identifies natural caning and a solid mango wood frame/legs in White.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"appliance-oven","name":"Series 8 Built-in Oven HBG7741B1B, Black","maker":"Bosch / BSH Home Appliances","url":"https://www.bosch-home.co.uk/en/product/cooking-and-baking/ovens/built-in-ovens/HBG7741B1B","type":"ovencol","variant":"black-glass","description":"Integrated black oven front. Official page names a 60 \u00d7 60 cm built-in oven.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"appliance-dishwasher","name":"Series 6 Fully-integrated Dishwasher SMV6ZCX16E","maker":"Bosch / BSH Home Appliances","url":"https://www.bosch-home.com.sg/en/product/dishwashers/built-in-dishwashers/fully-integrated-dishwasher-60-cm/SMV6ZCX16E","type":"dishwasher","variant":"integrated","description":"Integrated / panel-hidden dishwasher. 60 cm fully-integrated category; Singapore model reference.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"appliance-fridge","name":"Series 4 Built-in Fridge-freezer KIN86VSE0G","maker":"Bosch / BSH Home Appliances","url":"https://www.bosch-home.co.uk/en/product/cooling-and-freezing/fridge-freezers/built-in-fridge-freezers-freezer-at-bottom/KIN86VSE0G","type":"fridge","variant":"integrated","description":"Integrated tall fridge-freezer / sliding hinge. Built-in fridge-freezer with bottom freezer and sliding hinge.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"wall-silhouette","name":"Silhouette AF-655","maker":"Benjamin Moore","url":"https://www.benjaminmoore.com/en-us/paint-colors/color/af-655/silhouette","type":"paint","variant":null,"description":"Espresso / charcoal. Benjamin Moore's 2026 Color of the Year.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"wall-universal-khaki","name":"Universal Khaki SW 6150","maker":"Sherwin-Williams","url":"https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/sw6150-universal-khaki","type":"paint","variant":null,"description":"Warm khaki / midtone neutral. Official 2026 page names Universal Khaki SW 6150.","dimensions_mm":null,"hex":null,"image":null,"checked_on":"2026-10-03"},{"id":"wall-hidden-gem","name":"Hidden Gem N430-6A","maker":"Behr Paint Company","url":"https://www.behr.com/colors/color-detail/n430-6a","type":"paint","variant":null,"description":"Smoky jade / blue-green. Behr's 2026 Color of the Year.","dimensions_mm":null,"hex":"#596d69","image":null,"checked_on":"2026-10-03"},{"id":"sofa-connect-soft-3","name":"Connect Soft Modular Sofa 3-Seater, Configuration 1","maker":"Muuto","url":"https://www.muuto.com/product/Connect-Soft-Modular-Sofa-3-Seater-Configurations","type":"sofa","variant":"modular","description":"REAL_PRODUCT dimensional reference. COS3SC1CD12 / 96016: 2880 \u00d7 990 \u00d7 690 mm. Manufacturer describes assembled dimensions as indicative. Viewer is an approximate reference model; natural linen is GENERIC, not verified Clay 12 upholstery.","dimensions_mm":[2880,990,690],"hex":null,"image":null,"checked_on":"2026-10-04"}];
 /* Finish experiments share one furniture layout and one canonical apartment. */
 const DECOR_THEMES = [
   {id:'custom',name:'Your design',description:'Your own finishes and furniture colours.',
@@ -1005,7 +1060,7 @@ function currentDecor(){return DECOR_THEMES.find(t=>t.id===state.decor.active)||
 function decorSurface(key,fallback){return currentDecor()[key]||fallback;}
 function captureDecor(){
   return {rooms:Object.fromEntries(ROOMS.map(r=>[r.id,state.rooms[r.id].mat])),
-    colours:Object.fromEntries(state.furniture.map(f=>[f.id,f.color]))};
+    colours:Object.fromEntries(state.furniture.filter(f=>!f.material_id).map(f=>[f.id,f.color]))};
 }
 function rememberDecor(){state.decor.saved[state.decor.active]=captureDecor();}
 function decorFurnitureColour(f,theme){
@@ -1031,7 +1086,7 @@ function setDecorTheme(id){
   const before=snap();rememberDecor();
   const saved=state.decor.saved[id];state.decor.active=id;
   for(const r of ROOMS)state.rooms[r.id].mat=saved?.rooms?.[r.id]||decorFloor(r,theme);
-  for(const f of state.furniture)f.color=saved?.colours?.[f.id]||decorFurnitureColour(f,theme);
+  for(const f of state.furniture)f.color=f.material_id?(interiorMaterial(state,f.material_id)?.base_colour||f.color):(saved?.colours?.[f.id]||decorFurnitureColour(f,theme));
   commit(before);renderAll();
   if(is3D())void window.View3D?.ensureInterior();
   toast(theme.name+' · complete furniture and decor scene.');
@@ -1995,7 +2050,7 @@ function studioSetRoom(id,key,value){
   if(is3D())void View3D.ensureInterior(({ 'RECP-01':'living','MBR-01':'master','BR-01':'bedroom1','BR-02':'bedroom2' })[id]);
 }
 function studioSetVariant(fid,value){const f=getF(fid);if(!f||!STUDIO_VARIANTS[f.type]?.includes(value))throw new Error('Invalid furniture shape.');mutate(()=>getF(fid).variant=value);}
-function studioReference(f){return STUDIO_CATALOG.find(p=>p.type===f.type&&p.variant===f.variant);}
+function studioReference(f){return f.product_reference_id?STUDIO_CATALOG.find(p=>p.id===f.product_reference_id):STUDIO_CATALOG.find(p=>p.type===f.type&&p.variant===f.variant);}
 function studioBrief(){return studioDesignBrief(state,MODEL,STUDIO_CATALOG,window.ApartmentCloud?.briefInfo());}
 function studioDownload(name,value){download(name,new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));}
 function studioApplyProposal(value){const next=studioValidateProposal(value,state,MODEL);const before=snap();state=next;commit(before);renderAll();return {applied:value.operations.length,scene_revision:studioSceneKey(state)};}
@@ -2024,7 +2079,7 @@ const interiorUI={object:null,draft:null,lastReport:null,views:new Map(),loading
 const interiorLabel=s=>String(s).replaceAll('-',' ').replace(/\b\w/g,c=>c.toUpperCase());
 const interiorOptions=(items,value)=>items.map(([id,name])=>`<option value="${esc(id)}" ${id===value?'selected':''}>${esc(name)}</option>`).join('');
 function interiorReviewProposal(p){
-  try{const next=studioValidateProposal(p,state,MODEL),validation=interiorValidation(next,MODEL,p.operations.filter(o=>o.type==='furniture-placement').map(o=>o.furniture_id));return {valid:validation.valid,validation,candidate_scene_revision:studioSceneKey(next)};}
+  try{const next=studioValidateProposal(p,state,MODEL),validation=interiorValidation(next,MODEL,interiorProposalFurnitureIds(p.operations));return {valid:validation.valid,validation,candidate_scene_revision:studioSceneKey(next)};}
   catch(error){return {valid:false,validation:error.validation||{schema:'ApartmentInteriorValidation/1',status:'FAIL',valid:false,checks:[{kind:'contract',status:'FAIL',message:error.message}],summary:{pass:0,warning:0,fail:1}}};}
 }
 function interiorProposal(operations){return {schema:'ApartmentDesignProposal/2',canonical_sha256:MODEL.canonical_sha256,base_scene_revision:studioSceneKey(state),operations,author:'Viewer',notes:[]};}
@@ -2162,7 +2217,7 @@ $('#saveAiView').onclick=interiorSaveView;
 
 window.ApartmentStudio={selectInterior:interiorSelect,surfaces:()=>interiorSurfaces(MODEL),materials:()=>interiorMaterials(state),validateInterior:()=>interiorValidation(state,MODEL),saveView:interiorSaveView,exportBrief:studioBrief,renderBrief:rid=>interiorRenderBrief(state,MODEL,rid,STUDIO_CATALOG,interiorMatchingView(rid)),validateProposal:p=>{const review=interiorReviewProposal(p);if(!review.valid){const error=new Error(review.validation.checks.find(c=>c.status==='FAIL')?.message||'Invalid proposal');error.validation=review.validation;throw error;}return review;},applyProposal:studioApplyProposal};
 
-$('#studioOptions').onclick=studioOpen;document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#studioDialog').open){$('#studioDialog').close();$('#studioOptions').focus();}});$('#studioClose').onclick=()=>$('#studioDialog').close();$('#proposalClose').onclick=()=>$('#proposalDialog').close();
+$('#studioOptions').onclick=studioOpen;$('#walkNatural').onclick=()=>window.View3D?.setWalkLens('natural');$('#walkWide').onclick=()=>window.View3D?.setWalkLens('wide');$('#scaleCheck').onclick=()=>window.View3D?.toggleScaleCheck();document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#studioDialog').open){$('#studioDialog').close();$('#studioOptions').focus();}});$('#studioClose').onclick=()=>$('#studioDialog').close();$('#proposalClose').onclick=()=>$('#proposalDialog').close();
 $('#decorTheme').onchange=e=>setDecorTheme(e.target.value);
 $('#shellPreset').onclick=()=>applyPreset('shell');
 $('#starterPreset').onclick=()=>applyPreset('starter');
@@ -2396,9 +2451,10 @@ const wx = x => (x - OX) / 1000, wz = y => (y - OY) / 1000, M = v => v / 1000;
 const SW = () => stage.clientWidth, SH = () => stage.clientHeight;
 const opt = {cut:state.decor.active==='custom'?1.05:H, furn:true, labels:false, night:false, hour:10, mode:'orbit'};
 
+const WALK_NATURAL_FOV=42,WALK_WIDE_FOV=60;let walkLens='natural',scaleCheckVisible=false;
 let inited = false, active = false, raf = 0, anim = null, fly = null;
 let renderer, labelRenderer, scene, camera, orbit, walkCtl, hemi, sun, ground, glassMat, wallMat, capMat, frameMat;
-let archFloor, archUp, furnG, labelG, lampG, colliders = [], selKey = null, selHelper = null;
+let archFloor, archUp, furnG, labelG, lampG, scaleRefG, colliders = [], selKey = null, selHelper = null;
 let sigArch = '', sigFurn = '', sigLabels = '', grow = 1, furnGrow = 1;
 let sceneDecorG,sigSceneDecor='';
 const doors = [], keys = {};
@@ -2441,7 +2497,7 @@ function init(){
 
   archFloor = new THREE.Group(); archUp = new THREE.Group(); furnG = new THREE.Group(); labelG = new THREE.Group(); lampG = new THREE.Group();
   sceneDecorG=new THREE.Group();sceneDecorG.name='Style decor';
-  scene.add(archFloor, archUp, furnG, labelG, lampG,sceneDecorG);
+  scene.add(archFloor, archUp, furnG, labelG, lampG,sceneDecorG);buildScaleReference();
 
   const cv = renderer.domElement; let downAt = null, look = null;
   cv.addEventListener('pointerdown', e => {
@@ -2700,7 +2756,7 @@ function microMap(kind){
   for(let y=0;y<256;y++)for(let x=0;x<256;x++){
     const n=R(),cloth=kind==='linen'||kind==='wool';
     let v=cloth?212+25*Math.sin(x*Math.PI/3)*Math.sin(y*Math.PI/3)+(n-.5)*25:
-      kind==='wood'?221+19*Math.sin(y*.22+Math.sin(x*.035)*1.7)+(n-.5)*10:233+(n-.5)*30;
+      kind==='wood'?235+6*Math.sin(y*.22+Math.sin(x*.035)*1.7)+(n-.5)*6:233+(n-.5)*30;
     if(kind==='wool')v=204+40*n;
     const k=(y*256+x)*4;im.data[k]=im.data[k+1]=im.data[k+2]=Math.max(0,Math.min(255,v));im.data[k+3]=255;
   }
@@ -2863,10 +2919,11 @@ function makeStyleFurniture(f){
     cushion(g,w-.06,.018,.43,t.accent,0,y+.30,d*.30);
     g.userData.modelForm=t.id==='warm'?'channel-headboard':t.id==='japandi'?'low-slat-platform':'arched-cane-headboard';
   }else if(f.type==='chair'){
-    const h=.46;legs(g,w-.015,d-.015,h-.05,wm,.025,.018);
+    const fiber=f.product_reference_id==='r1-fiber-side-tube',h=.46;legs(g,w-.015,d-.015,h-.05,fiber?mat('#3c3b38',{metalness:.6,roughness:.45}):wm,.025,.018);
     if(t.id==='warm'){
-      cushion(g,w,.065,d-.03,c,0,h-.055,.015);
-      g.add(rbox(w,.38,.045,fab,0,h-.02,z0+.025,.04));
+      const seat=cushion(g,w,fiber?.055:.065,d-.03,c,0,h-.055,.015);
+      g.add(rbox(w,fiber?.33:.38,.045,fab,0,h-.02,z0+.025,.04));
+      if(fiber){g.updateMatrixWorld(true);g.userData.referenceGeometry={product_reference_id:f.product_reference_id,seat_top_mm:new THREE.Box3().setFromObject(seat).max.y*1000};}
     }else if(t.id==='japandi'){
       g.add(rbox(w,.03,d,wm,0,h-.035,0,.015));
       cushion(g,w-.045,.035,d-.055,'#e3ddce',0,h-.005,.02);
@@ -3067,7 +3124,9 @@ function studioLightColour(k){return k===2700?'#ffd5a0':k===4000?'#fff4e6':'#ffe
 function studioFurnitureTheme(f){
   const current=currentDecor(),base=current.id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):current;
   const id={'upholstered':'warm','oak-platform':'japandi','woven-headboard':'boho'}[f.variant];
-  return id?{...base,id}:current;
+  const theme=id?{...base,id}:current,material=interiorMaterial(state,f.material_id);
+  // A primary wood assignment controls the wood components of mixed furniture.
+  return material?.category==='wood'?{...theme,wood:material.base_colour,woodDark:darker(material.base_colour,.76)}:theme;
 }
 function studioWallMaterials(s,base,cap){
   const [a,b]=[s.from,s.to],dx=b[0]-a[0],dz=b[1]-a[1],L=Math.hypot(dx,dz),mid=[(a[0]+b[0])/2,(a[1]+b[1])/2];
@@ -3077,8 +3136,9 @@ function studioWallMaterials(s,base,cap){
 function makeStudioVariant(f){
   if(!f.variant||f.variant==='style'||!STUDIO_VARIANTS[f.type]?.includes(f.variant)||f.type==='bed')return null;
   const t=currentDecor().id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):currentDecor(),g=new THREE.Group(),w=M(f.w),d=M(f.d),c=f.color,fab=fabric(c),wood=woodM(t.wood);
+  const connect=f.type==='sofa'&&f.variant==='modular'&&f.product_reference_id==='sofa-connect-soft-3',seats=[];
   if(['sofa','armchair'].includes(f.type)){
-    const n=f.type==='armchair'?1:2,sw=w/n;
+    const n=f.type==='armchair'?1:f.variant==='modular'?Math.max(2,Math.round(w/.96)):2,sw=w/n;
     if(f.variant==='cocoon'){
       for(let i=0;i<n;i++){const x=-w/2+sw*(i+.5);
         g.add(rbox(sw-.025,.48,d-.02,fab,x,.09,0,.16));
@@ -3088,11 +3148,11 @@ function makeStudioVariant(f){
       for(const side of [-1,1])g.add(rbox(Math.min(.16,w*.18),.45,d*.80,fab,side*(w/2-.08),.24,.05,.075));
     }else if(f.variant==='modular'){
       for(let i=0;i<n;i++){const x=-w/2+sw*(i+.5);
-        g.add(rbox(sw-.02,.25,d,fabric(darker(c,.86)),x,.045,0,.055));
-        cushion(g,sw-.03,.17,d-.23,c,x,.295,.105);
-        cushion(g,sw-.04,.36,.20,c,x,.35,-d/2+.11,-.06);
+        g.add(rbox(sw-.02,connect?.20:.25,d,fabric(darker(c,.86)),x,connect?.02:.045,0,.055));
+        seats.push(cushion(g,sw-.03,.17,d-.23,c,x,connect?.23:.295,.105));
+        cushion(g,sw-.04,.36,.20,c,x,connect?.3282:.35,-d/2+.11,-.06);
       }
-      for(const side of [-1,1])g.add(rbox(.12,.34,d*.86,fab,side*(w/2-.06),.27,.04,.04));
+      for(const side of [-1,1])g.add(rbox(.12,connect?.28:.34,d*.86,fab,side*(w/2-.06),connect?.25:.27,.04,.04));
     }else{
       legs(g,w-.03,d-.03,.17,mat(t.metal,{metalness:.65,roughness:.38}),.025,.013);
       g.add(rbox(w-.06,.12,d,fab,0,.17,0,.022));
@@ -3100,7 +3160,7 @@ function makeStudioVariant(f){
       for(const side of [-1,1])g.add(rbox(.085,.40,d,fab,side*(w/2-.0425),.29,0,.022));
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
-    if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,.43,-d*.14,-.09);
+    if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
   }else if(f.type==='fridge'){
     const m=f.variant==='integrated'?wood:mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
@@ -3115,6 +3175,7 @@ function makeStudioVariant(f){
     g.add(box(w-.04,.60,.025,m,0,.87,d/2+.002));g.add(box(w*.74,.37,.012,mat('#0c1218',{roughness:.08,metalness:.3}),0,.97,d/2+.025));
     g.add(box(w*.68,.021,.030,mat('#b7bec1',{metalness:.8,roughness:.25}),0,1.30,d/2+.04));
   }
+  if(connect){g.updateMatrixWorld(true);g.userData.referenceGeometry={product_reference_id:f.product_reference_id,seat_top_mm:Math.max(...seats.map(s=>new THREE.Box3().setFromObject(s).max.y))*1000};}
   batchSceneMeshes(g);g.position.set(wx(f.cx),0,wz(f.cy));g.rotation.y=-f.rot*Math.PI/180;g.userData.fid=f.id;g.userData.modelForm='independent-'+f.variant;g.userData.referenceVariant=f.variant;
   g.traverse(o=>o.userData.fid=f.id);return g;
 }
@@ -3126,7 +3187,7 @@ function studioSpot(options,power,x,y,z,rid,shadows=false){
 }
 function studioRoomTrack(room,options){
   const candidates=state.furniture.filter(f=>['coffeetable','table','bed'].includes(f.type)&&pointInRoom([f.cx,f.cy],room.poly));
-  const anchors=candidates.length?candidates.map(f=>[f.cx,f.cy]):[room.at];
+  const anchors=candidates.length?candidates.filter(f=>!interiorLayer(state).objects.some(o=>o.type==='pendant'&&o.room_id===room.id&&Math.hypot(o.cx-f.cx,o.cy-f.cy)<600)).map(f=>[f.cx,f.cy]):[room.at];
   for(const [x,z] of anchors){
     let alongX=true,L=1.65;
     if(!pointInRoom([x-L*500,z],room.poly)||!pointInRoom([x+L*500,z],room.poly))alongX=false;
@@ -3214,7 +3275,11 @@ function buildSceneDecor(){
     const bed=state.furniture.find(f=>f.type==='bed'&&pointInRoom([f.cx,f.cy],r.poly));
     if(bed)artItems.push({rid:r.id,f:bed,w:.55,y:1.76});
   }
-  for(const {rid,f,w,y} of artItems){const mount=nearestSolidMount(rid,[f.cx,f.cy],w);if(mount)framedArtwork(mount,theme,w,y);}
+  for(const {rid,f,w,y} of artItems){
+    // An explicit, host-mounted artwork replaces automatic style artwork here.
+    if(interiorLayer(state).objects.some(o=>o.type==='artwork'&&o.room_id===rid))continue;
+    const mount=nearestSolidMount(rid,[f.cx,f.cy],w);if(mount)framedArtwork(mount,theme,w,y);
+  }
   const coffee=state.furniture.find(f=>f.type==='coffeetable'&&pointInRoom([f.cx,f.cy],ROOMS.find(r=>r.id==='RECP-01').poly));
   if(coffee)pendantAt(wx(coffee.cx),wz(coffee.cy),theme,'RECP-01');
   if(dining)pendantAt(wx(dining.cx),wz(dining.cy),theme,'RECP-01',true);
@@ -3852,14 +3917,15 @@ function positionSlide(d){
 
 /* Render the reversible overlay in the furniture group, using canonical host IDs. */
 const interiorPbrCache=new Map(),interiorPendingTextures=new Set();
-function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=false){
+function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=false,appearance='default'){
   const descriptor=interiorMaterial(state,id);if(!descriptor)return mat(colour,{roughness:.8});
-  const key=JSON.stringify([descriptor,colour,scale,surface]);if(interiorPbrCache.has(key))return interiorPbrCache.get(key);
+  const key=JSON.stringify([descriptor,colour,scale,surface,appearance]);if(interiorPbrCache.has(key))return interiorPbrCache.get(key);
   let m;
   if(surface&&descriptor.fallback_generic_id)m=floorMat(descriptor.fallback_generic_id).clone();
   else if(['wood','fabric','stone'].includes(descriptor.category))m=sceneSurface(descriptor.category==='fabric'?'linen':descriptor.category,descriptor.base_colour).clone();
   else m=new THREE.MeshStandardMaterial({color:descriptor.base_colour,roughness:.8});
   m.roughness=descriptor.roughness??.8;m.metalness=descriptor.metallic??0;m.side=THREE.DoubleSide;m.userData={interiorMaterialId:id,sourceStatus:descriptor.source_status};
+  if(appearance==='ceiling'&&m.isMeshStandardMaterial){m.emissive=new THREE.Color(descriptor.base_colour);m.emissiveIntensity=.20;m.userData.ceilingColourCompensation=true;}
   if(descriptor.category==='glass'){m.transparent=true;m.opacity=.45;m.depthWrite=false;}
   const tile=descriptor.texture_scale_mm||descriptor.physical_dimensions_mm||{width:1000,height:1000},repeat=[scale.width/(tile.width||1000),scale.height/(tile.height||tile.width||1000)];
   const configure=t=>{t.wrapS=t.wrapT=THREE.RepeatWrapping;t.repeat.set(...repeat);t.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());};
@@ -3871,7 +3937,12 @@ function interiorPbr(id,colour='#ddd5c8',scale={width:1000,height:1000},surface=
   }
   interiorPbrCache.set(key,m);return m;
 }
-function interiorSurfaceMaterial(id,fallback,kind){const material=state.interior?.surface_materials[id];return material?interiorPbr(material,'#ffffff',{width:1000,height:1000},true):fallback;}
+function interiorSurfaceMaterial(id,fallback,kind){
+  const material=state.interior?.surface_materials[id];if(!material)return fallback;
+  // Ceiling faces point downward, so the viewer's warm lower hemisphere otherwise tints even a near-white finish brown.
+  // Use a separate cached material rather than cloning: async texture callbacks must update the exact material on the mesh.
+  return interiorPbr(material,'#ffffff',{width:1000,height:1000},true,kind==='ceiling'?'ceiling':'surface');
+}
 function interiorWallMaterials(segment,fallback,height){
   const refs=interiorSurfaces(MODEL).surfaces.filter(s=>s.type==='wall'&&s.source_wall_index===WALL_SEGMENTS.indexOf(segment)),out=[...fallback],dx=segment.to[0]-segment.from[0],dy=segment.to[1]-segment.from[1],L=Math.hypot(dx,dy);
   for(const ref of refs){const id=state.interior?.surface_materials[ref.id];if(!id)continue;const sign=(-dy/L*ref.inward_normal[0]+dx/L*ref.inward_normal[1]);out[sign>0?4:5]=interiorPbr(id,'#ffffff',{width:L,height:height*1000});}
@@ -4193,9 +4264,37 @@ function bindJoystick(){
   const end = e => { if (e.pointerId !== joy.id) return; joy.id = null; joy.x = joy.y = 0; knob.style.transform = ''; };
   el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
 }
+function setCameraFov(v){camera.fov=v;camera.updateProjectionMatrix();}
+function syncWalkCalibration(){
+  const natural=$('#walkNatural'),wide=$('#walkWide'),scale=$('#scaleCheck');
+  if(natural)natural.classList.toggle('on',walkLens==='natural');
+  if(wide)wide.classList.toggle('on',walkLens==='wide');
+  if(scale)scale.classList.toggle('on',scaleCheckVisible);
+  if(scaleRefG)scaleRefG.visible=scaleCheckVisible;
+}
+function setWalkLens(mode){
+  walkLens=mode==='wide'?'wide':'natural';
+  if(opt.mode==='walk')setCameraFov(walkLens==='natural'?WALK_NATURAL_FOV:WALK_WIDE_FOV);
+  syncWalkCalibration();
+  toast(walkLens==='natural'?'Natural view · 42° vertical FOV':'Wide view · 60° vertical FOV');
+}
+function buildScaleReference(){
+  scaleRefG=new THREE.Group();scaleRefG.visible=false;scaleRefG.userData.scaleReference=true;
+  const recp=ROOMS.find(r=>r.id==='RECP-01'),x=wx(recp.at[0]),z=wz(recp.at[1]);
+  const skin=mat('#d9c7b6',{roughness:.88}),dark=mat('#45515e',{roughness:.9}),mark=mat('#d55b4f',{roughness:.75});
+  const torso=new THREE.Mesh(new THREE.BoxGeometry(.32,.82,.18),dark);torso.position.set(0,1.00,0);
+  const head=new THREE.Mesh(new THREE.SphereGeometry(.12,18,12),skin);head.position.set(0,1.58,0);
+  const legL=new THREE.Mesh(new THREE.CylinderGeometry(.045,.055,.72,10),dark);legL.position.set(-.07,.36,0);
+  const legR=legL.clone();legR.position.x=.07;
+  const ruler=new THREE.Mesh(new THREE.BoxGeometry(.045,1.0,.045),mark);ruler.position.set(.42,.50,0);
+  const cap1=new THREE.Mesh(new THREE.BoxGeometry(.18,.025,.05),mark);cap1.position.set(.42,1.0,0);
+  const cap0=cap1.clone();cap0.position.y=.01;
+  scaleRefG.add(torso,head,legL,legR,ruler,cap1,cap0);scaleRefG.position.set(x,0,z);scene.add(scaleRefG);
+}
+function toggleScaleCheck(){scaleCheckVisible=!scaleCheckVisible;syncWalkCalibration();toast(scaleCheckVisible?'Scale check on · human 1.70 m · ruler 1.00 m':'Scale check off');}
 function setMode(m){
   if (anim) return;
-  opt.mode = m; syncModeBtns();
+  opt.mode = m; syncModeBtns();if(m==='walk')setCameraFov(walkLens==='natural'?WALK_NATURAL_FOV:WALK_WIDE_FOV);else setCameraFov(WALK_WIDE_FOV);syncWalkCalibration();
   if (m === 'walk'){
     window.select(null);
     if (opt.cut < H){ opt.cut = H; syncCutBtns(); sync(); }
@@ -4317,6 +4416,7 @@ function relang(){ syncWalkTexts(); if (inited) buildLabels(); }
 window.View3D={enter,exit,relang,captureAiView,currentRoom:currentInteriorRoom,
   async ensureInterior(id){if(opt.cut<H||id&&$('#interiorView').value!==id){while(anim)await wait(80);showInterior(id||'living');}},
   interior:id=>showInterior(id),sync:()=>sync(),shot,groundAt,flyToRoom:id=>active&&!anim&&flyToRoom(id),walking:()=>active&&opt.mode==='walk',
+  setWalkLens,walkLens:()=>walkLens,toggleScaleCheck,scaleCheck:()=>scaleCheckVisible,
   async focusRoom(id){if(!ROOMS.some(r=>r.id===id))throw new Error('Unknown room.');if(opt.mode==='walk')setMode('orbit');flyToRoom(id);await wait(950);},
 };
 if(location.hash!=='#2d')void setView('3d');

@@ -1,0 +1,8 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-dc971196",
+  "author": "Whole-apartment local study",
+  "notes": "Same canonical rooms and fixed viewpoints before the organization refinement.",
+  "operations": []
+}

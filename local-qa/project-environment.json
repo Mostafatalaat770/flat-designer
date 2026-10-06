@@ -1,0 +1,40 @@
+{
+  "actual_path": "/private/tmp/flat-designer-work",
+  "name": "apartment-type-b-studio",
+  "version": "1.3.0",
+  "project_type": "plain JavaScript / Three.js web application",
+  "is_react_native": false,
+  "is_native_ios": false,
+  "is_native_android": false,
+  "has_git_repository": true,
+  "dependencies_installed": true,
+  "local_qa_path": "/private/tmp/flat-designer-work/local-qa",
+  "startup": "python3 local-qa/serve.py",
+  "local_url": "http://127.0.0.1:4174/",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "canonical_version": "0.2.2",
+  "rooms": 13,
+  "openings": 16,
+  "cloud_persistence": false,
+  "full_check_limitations": [],
+  "qa_device": "chromium-cdp-9222",
+  "browser": "Chrome 151, Apple Metal",
+  "viewport": [
+    1600,
+    857,
+    1
+  ],
+  "flow": ".argent/flows/reception-a3-local.yaml",
+  "qa_passed_steps": 32,
+  "snapshot_diff_percent": 0.0,
+  "source_commit": "a7706c1e70fbc96711fc47c8a74a5cbad3706f08",
+  "gallery_url": "http://127.0.0.1:4174/_qa/gallery.html",
+  "full_check_result": "PASS",
+  "node_version": "26.0.0",
+  "live_baseline": {
+    "scene_revision": "scene-c286be16",
+    "storage_revision": 9
+  },
+  "local_candidate": "scene-2ad8493e",
+  "snapshots": 8
+}

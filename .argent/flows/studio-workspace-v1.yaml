@@ -1,0 +1,94 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: verified source
+      timeoutMs: 15000
+  - await: { idle: true }
+  - tap:
+      id: compare-versions
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Comparison version
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-2, maxMismatch: 0.1 }
+  - echo: Open Spatial review and check its destination heading
+  - echo: Open Spatial review and check its destination heading
+  - tap:
+      id: tab-checks
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Spatial review
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-3, maxMismatch: 0.1 }
+  - echo: Open Local design history and check its destination heading
+  - tap:
+      id: tab-versions
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Local design history
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-4, maxMismatch: 0.1 }
+  - echo: Open Design decisions and check its destination heading
+  - tap:
+      id: tab-log
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Design decisions
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-5, maxMismatch: 0.1 }
+  - echo: Open Master bedroom and check its destination heading
+  - tap:
+      id: room-MBR-01
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Master bedroom
+        role: h2
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-6, maxMismatch: 0.1 }
+  - echo: Open Living & dining and check its destination heading
+  - tap:
+      id: room-RECP-01
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Living & dining
+        role: h2
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-7, maxMismatch: 0.1 }
+  - echo: Open Furniture in this room and check its destination heading
+  - tap:
+      id: tab-furniture
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Furniture in this room
+      timeoutMs: 15000
+  - await: { idle: true }
+  - snapshot: { name: workspace-8, maxMismatch: 0.1 }
+executionPrerequisite: Dedicated Chromium browser at 1600x857 and local QA
+  server on 127.0.0.1:4174. Workspace starts with the verified Family A.7 local
+  draft; production disconnected.

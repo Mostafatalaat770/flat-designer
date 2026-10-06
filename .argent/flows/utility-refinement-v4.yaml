@@ -1,0 +1,62 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/k3-oak-laundry-kitchen.html
+  - await: { visible: { id: capture-k3-oak-laundry-kitchen }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: k3-oak-laundry-kitchen
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/k3-oak-laundry-laundry.html
+  - await: { visible: { id: capture-k3-oak-laundry-laundry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: k3-oak-laundry-laundry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/k3-olive-laundry-kitchen.html
+  - await: { visible: { id: capture-k3-olive-laundry-kitchen }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: k3-olive-laundry-kitchen
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/k3-olive-laundry-laundry.html
+  - await: { visible: { id: capture-k3-olive-laundry-laundry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: k3-olive-laundry-laundry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-entry.html
+  - await: { visible: { id: capture-home-a-utility-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: home-a-utility-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-family.html
+  - await: { visible: { id: capture-home-a-utility-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: home-a-utility-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-dining.html
+  - await: { visible: { id: capture-home-a-utility-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: home-a-utility-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-kitchen.html
+  - await: { visible: { id: capture-home-a-utility-kitchen }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: home-a-utility-kitchen
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-laundry.html
+  - await: { visible: { id: capture-home-a-utility-laundry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: home-a-utility-laundry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-family-bath.html
+  - await: { visible: { id: capture-home-a-utility-family-bath }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: home-a-utility-family-bath
+executionPrerequisite: Loopback4174, immutable project-studies-v4 captures, Chromium1600x857 DPR1. Cloud storage disabled.

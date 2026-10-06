@@ -1,0 +1,59 @@
+Prerequisite: Loopback isolated Studio port4174, immutable realism-r1 pages, Chromium viewport1600x857 DPR1. Independent capture pages; no production access.
+Running flow "realism-r1-local" on chromium-cdp-9222 (28 steps)
+[1] ✓ open-url (0.0s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/living-family-natural.html"
+}
+[2] ✓ await visible id=capture-living-family-natural (0.6s)
+[3] ✓ idle (0.5s)
+[4] ✓ snapshot "living-family-natural" (0.6s) — diff 0.00% ≤ 0.5% (living-family-natural__chromium-1600x857.png)
+[5] ✓ open-url (0.0s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/dining-to-living.html"
+}
+[6] ✓ await visible id=capture-dining-to-living (0.5s)
+[7] ✓ idle (0.5s)
+[8] ✓ snapshot "dining-to-living" (0.6s) — diff 0.00% ≤ 0.5% (dining-to-living__chromium-1600x857.png)
+[9] ✓ open-url (0.0s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/dining-eye.html"
+}
+[10] ✓ await visible id=capture-dining-eye (0.5s)
+[11] ✓ idle (0.5s)
+[12] ✓ snapshot "dining-eye" (0.6s) — diff 0.00% ≤ 0.5% (dining-eye__chromium-1600x857.png)
+[13] ✓ open-url (0.0s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/ensuite-natural.html"
+}
+[14] ✓ await visible id=capture-ensuite-natural (0.5s)
+[15] ✓ idle (0.5s)
+[16] ✓ snapshot "ensuite-natural" (0.7s) — diff 0.00% ≤ 0.5% (ensuite-natural__chromium-1600x857.png)
+[17] ✓ open-url (0.0s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/ensuite-wide.html"
+}
+[18] ✓ await visible id=capture-ensuite-wide (0.5s)
+[19] ✓ idle (0.5s)
+[20] ✓ snapshot "ensuite-wide" (0.7s) — diff 0.00% ≤ 0.5% (ensuite-wide__chromium-1600x857.png)
+[21] ✓ open-url (0.1s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/family-vanity-natural.html"
+}
+[22] ✓ await visible id=capture-family-vanity-natural (0.5s)
+[23] ✓ idle (0.5s)
+[24] ✓ snapshot "family-vanity-natural" (0.7s) — diff 0.00% ≤ 0.5% (family-vanity-natural__chromium-1600x857.png)
+[25] ✓ open-url (0.0s)
+{
+  "opened": true,
+  "url": "http://127.0.0.1:4174/_qa/realism-r1/family-shower-natural.html"
+}
+[26] ✓ await visible id=capture-family-shower-natural (0.5s)
+[27] ✓ idle (0.5s)
+[28] ✓ snapshot "family-shower-natural" (0.8s) — diff 0.00% ≤ 0.5% (family-shower-natural__chromium-1600x857.png)
+PASS — 28 passed, 0 failed, 0 errored, 0 skipped (12.1s)

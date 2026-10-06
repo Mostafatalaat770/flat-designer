@@ -3,7 +3,7 @@
   "checks": [
     "MCP initialization and ten-tool discovery",
     "private context blocked without trusted identity",
-    "canonical context and 12 source references",
+    "canonical context and 13 source references",
     "shared proposal validator",
     "read-only candidate layout",
     "ceiling height change rejected",

@@ -17,17 +17,19 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: npm ci
-      - name: Install managed-runtime canvas shim for repository QA
-        run: npm install --no-save @napi-rs/canvas@1.0.10
       - name: Build
         run: npm run build
       - name: Check
         env:
           CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
         run: npm run check
+      - name: Build isolated React workspace from the pinned snapshot
+        run: npm run studio:build
+      - name: Verify local domains, assets, seed isolation and saved history
+        run: npm run check:study && npm run check:studio && npm run check:workspace

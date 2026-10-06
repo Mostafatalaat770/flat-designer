@@ -1,0 +1,8616 @@
+{
+  "schema": "ApartmentDesignBrief/1",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "scene_revision": "scene-d8790704",
+  "canonical_source": "./sources/Apartment_Master_Spec_Type_B_v0.2.2_Geometry_Heights_Glazing(1).json",
+  "layout": {
+    "modelVersion": "0.2.2",
+    "furniture": [
+      {
+        "id": "starter-1",
+        "type": "bed",
+        "name": "King bed",
+        "room_id": "MBR-01",
+        "cx": 1440.434,
+        "cy": 6651.415,
+        "w": 1800,
+        "d": 2000,
+        "rot": 270,
+        "color": "#c8b8a3",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-2",
+        "type": "nightstand",
+        "name": "Nightstand",
+        "room_id": "MBR-01",
+        "cx": 656.668,
+        "cy": 5401.627,
+        "w": 450,
+        "d": 400,
+        "rot": 270,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-3",
+        "type": "nightstand",
+        "name": "Nightstand",
+        "room_id": "MBR-01",
+        "cx": 656.668,
+        "cy": 7922.386,
+        "w": 450,
+        "d": 400,
+        "rot": 270,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-4",
+        "type": "wardrobe",
+        "name": "Dressing wardrobe",
+        "room_id": "WIC-01",
+        "cx": 4723.776,
+        "cy": 6566.684,
+        "w": 1250,
+        "d": 550,
+        "rot": 0,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-5",
+        "type": "wardrobe",
+        "name": "Dressing wardrobe",
+        "room_id": "WIC-01",
+        "cx": 4723.776,
+        "cy": 8557.872,
+        "w": 1250,
+        "d": 550,
+        "rot": 180,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-6",
+        "type": "bed",
+        "name": "Single bed",
+        "room_id": "BR-01",
+        "cx": 2774.953,
+        "cy": 2732.588,
+        "w": 1200,
+        "d": 2000,
+        "rot": 0,
+        "color": "#c8b8a3",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-7",
+        "type": "wardrobe",
+        "name": "Wardrobe",
+        "room_id": "BR-01",
+        "cx": 5062.701,
+        "cy": 2774.953,
+        "w": 1600,
+        "d": 550,
+        "rot": 90,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-8",
+        "type": "desk",
+        "name": "Desk",
+        "room_id": "BR-01",
+        "cx": 3325.708,
+        "cy": 4533.13,
+        "w": 1500,
+        "d": 500,
+        "rot": 180,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-9",
+        "type": "chair",
+        "name": "Chair",
+        "room_id": "BR-01",
+        "cx": 3325.708,
+        "cy": 3940.01,
+        "w": 450,
+        "d": 450,
+        "rot": 180,
+        "color": "#69755c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-10",
+        "type": "bed",
+        "name": "Single bed",
+        "room_id": "BR-02",
+        "cx": 8049.483,
+        "cy": 2732.588,
+        "w": 1200,
+        "d": 2000,
+        "rot": 0,
+        "color": "#c8b8a3",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-11",
+        "type": "desk",
+        "name": "Work desk",
+        "room_id": "BR-02",
+        "cx": 6227.758,
+        "cy": 2075.919,
+        "w": 1200,
+        "d": 700,
+        "rot": 0,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-12",
+        "type": "officechair",
+        "name": "Office chair",
+        "room_id": "BR-02",
+        "cx": 6227.758,
+        "cy": 2859.685,
+        "w": 620,
+        "d": 620,
+        "rot": 0,
+        "color": "#3a465c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-13",
+        "type": "wardrobe",
+        "name": "Wardrobe",
+        "room_id": "BR-02",
+        "cx": 8303.677,
+        "cy": 4533.13,
+        "w": 1050,
+        "d": 550,
+        "rot": 180,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-14",
+        "type": "bathtub",
+        "name": "Bathtub",
+        "room_id": "BATH-M01",
+        "cx": 6312.489,
+        "cy": 6757.329,
+        "w": 1500,
+        "d": 750,
+        "rot": 0,
+        "color": "#f6f8fa",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-15",
+        "type": "toilet",
+        "name": "Ensuite WC · rear toward south wall · plumbing TBD",
+        "room_id": "BATH-M01",
+        "cx": 6714.964,
+        "cy": 8520,
+        "w": 400,
+        "d": 700,
+        "rot": 180,
+        "color": "#f6f8fa",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-16",
+        "type": "shower",
+        "name": "Shower",
+        "room_id": "BATH-C01",
+        "cx": 8409.592,
+        "cy": 8409.592,
+        "w": 900,
+        "d": 900,
+        "rot": 0,
+        "color": "#c0d6df",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-17",
+        "type": "toilet",
+        "name": "Family WC · rear toward east wall · plumbing TBD",
+        "room_id": "BATH-C01",
+        "cx": 8541,
+        "cy": 7440,
+        "w": 400,
+        "d": 700,
+        "rot": 90,
+        "color": "#f6f8fa",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-18",
+        "type": "vanity",
+        "name": "600 mm D-Neo basin reference on custom closed vanity",
+        "room_id": "BATH-C01",
+        "cx": 8500,
+        "cy": 6526,
+        "w": 600,
+        "d": 460,
+        "rot": 0,
+        "color": "#C6B18F",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
+      },
+      {
+        "id": "starter-20",
+        "type": "counter",
+        "name": "1500 mm west hob counter · custom concept",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 8038,
+        "w": 1500,
+        "d": 600,
+        "rot": 270,
+        "color": "#C6B18F",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-21",
+        "type": "ksink",
+        "name": "750 mm sink · plumbing location TBD",
+        "room_id": "KIT-01",
+        "cx": 11081,
+        "cy": 6988,
+        "w": 750,
+        "d": 400,
+        "rot": 0,
+        "color": "#eef2f5",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-22",
+        "type": "stove",
+        "name": "Hob",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 8048,
+        "w": 600,
+        "d": 400,
+        "rot": 270,
+        "color": "#424f61",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-23",
+        "type": "fridge",
+        "name": "650 mm fridge envelope · door/ventilation SKU TBD",
+        "room_id": "KIT-01",
+        "cx": 10850,
+        "cy": 8530,
+        "w": 650,
+        "d": 650,
+        "rot": 180,
+        "color": "#bec7d0",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-24",
+        "type": "washer",
+        "name": "Washing machine",
+        "room_id": "TER-SVC",
+        "cx": 9278.088,
+        "cy": 9362.82,
+        "w": 600,
+        "d": 600,
+        "rot": 270,
+        "color": "#d8dfe5",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-25",
+        "type": "toilet",
+        "name": "Guest WC",
+        "room_id": "WC-01",
+        "cx": 11269.276,
+        "cy": 9701.745,
+        "w": 400,
+        "d": 650,
+        "rot": 270,
+        "color": "#f6f8fa",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-26",
+        "type": "vanity",
+        "name": "Guest basin",
+        "room_id": "WC-01",
+        "cx": 11968.31,
+        "cy": 9214.54,
+        "w": 400,
+        "d": 300,
+        "rot": 0,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-27",
+        "type": "rug",
+        "name": "Living rug · generous front-leg coverage",
+        "room_id": "RECP-01",
+        "cx": 11000,
+        "cy": 2700,
+        "w": 3400,
+        "d": 2100,
+        "rot": 90,
+        "color": "#DED7C9",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-28",
+        "type": "sofa",
+        "name": "Family sofa · 2880 × 990 mm · Connect Soft 3-seat reference",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 2460,
+        "w": 2880,
+        "d": 990,
+        "rot": 270,
+        "color": "#dfd3bb",
+        "status": "EXPLORATORY",
+        "variant": "modular",
+        "material_id": "generic-linen",
+        "product_reference_id": "sofa-connect-soft-3"
+      },
+      {
+        "id": "starter-29",
+        "type": "coffeetable",
+        "name": "Coffee table",
+        "room_id": "RECP-01",
+        "cx": 10900,
+        "cy": 2350,
+        "w": 950,
+        "d": 580,
+        "rot": 90,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-30",
+        "type": "tvstand",
+        "name": "TV console",
+        "room_id": "RECP-01",
+        "cx": 12180,
+        "cy": 1800,
+        "w": 1800,
+        "d": 380,
+        "rot": 90,
+        "color": "#C6B18F",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a3-pale-oak"
+      },
+      {
+        "id": "starter-31",
+        "type": "tv",
+        "name": "TV",
+        "room_id": "RECP-01",
+        "cx": 12243.688,
+        "cy": 1779.359,
+        "w": 1230,
+        "d": 80,
+        "rot": 90,
+        "color": "#152034",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-32",
+        "type": "armchair",
+        "name": "Single olive lounge chair · linked to family living",
+        "room_id": "RECP-01",
+        "cx": 11650,
+        "cy": 4250,
+        "w": 700,
+        "d": 720,
+        "rot": 135,
+        "color": "#7D856F",
+        "status": "EXPLORATORY",
+        "variant": "tailored"
+      },
+      {
+        "id": "starter-35",
+        "type": "table",
+        "name": "Oval dining · six seats · 2000 × 950 mm",
+        "room_id": "RECP-01",
+        "cx": 14570,
+        "cy": 7750,
+        "w": 2000,
+        "d": 950,
+        "rot": 0,
+        "color": "#C6B18F",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a3-pale-oak"
+      },
+      {
+        "id": "starter-36",
+        "type": "chair",
+        "name": "Fiber side chair dimensional reference · mushroom concept",
+        "room_id": "RECP-01",
+        "cx": 13870,
+        "cy": 7050,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-fiber-side-tube"
+      },
+      {
+        "id": "starter-37",
+        "type": "chair",
+        "name": "Fiber side chair dimensional reference · mushroom concept",
+        "room_id": "RECP-01",
+        "cx": 15270,
+        "cy": 7050,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-fiber-side-tube"
+      },
+      {
+        "id": "starter-38",
+        "type": "chair",
+        "name": "Fiber side chair dimensional reference · mushroom concept",
+        "room_id": "RECP-01",
+        "cx": 13870,
+        "cy": 8450,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-fiber-side-tube"
+      },
+      {
+        "id": "starter-39",
+        "type": "chair",
+        "name": "Fiber side chair dimensional reference · mushroom concept",
+        "room_id": "RECP-01",
+        "cx": 15270,
+        "cy": 8450,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-fiber-side-tube"
+      },
+      {
+        "id": "starter-40",
+        "type": "shoecab",
+        "name": "Entry storage",
+        "room_id": "RECP-01",
+        "cx": 15740,
+        "cy": 9650,
+        "w": 900,
+        "d": 300,
+        "rot": 90,
+        "color": "#C6B18F",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a3-pale-oak"
+      },
+      {
+        "id": "starter-41",
+        "type": "roundtable",
+        "name": "Terrace table",
+        "room_id": "TER-MAIN",
+        "cx": 14256.058,
+        "cy": 1292.154,
+        "w": 600,
+        "d": 600,
+        "rot": 0,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-42",
+        "type": "armchair",
+        "name": "Terrace chair",
+        "room_id": "TER-MAIN",
+        "cx": 13366.379,
+        "cy": 1292.154,
+        "w": 650,
+        "d": 650,
+        "rot": 270,
+        "color": "#69755c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-43",
+        "type": "armchair",
+        "name": "Terrace chair",
+        "room_id": "TER-MAIN",
+        "cx": 15145.738,
+        "cy": 1292.154,
+        "w": 650,
+        "d": 650,
+        "rot": 90,
+        "color": "#69755c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-44",
+        "type": "plant",
+        "name": "Plant",
+        "room_id": "TER-MBR",
+        "cx": 381.291,
+        "cy": 3834.096,
+        "w": 500,
+        "d": 500,
+        "rot": 0,
+        "color": "#799378",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "A2-dining-chair-north-centre",
+        "type": "chair",
+        "name": "Fiber side chair dimensional reference · mushroom concept",
+        "room_id": "RECP-01",
+        "cx": 14570,
+        "cy": 7050,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-fiber-side-tube"
+      },
+      {
+        "id": "A2-dining-chair-south-centre",
+        "type": "chair",
+        "name": "Fiber side chair dimensional reference · mushroom concept",
+        "room_id": "RECP-01",
+        "cx": 14570,
+        "cy": 8450,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-fiber-side-tube"
+      },
+      {
+        "id": "R1-ensuite-vanity",
+        "type": "vanity",
+        "room_id": "BATH-M01",
+        "cx": 5980,
+        "cy": 8620,
+        "w": 600,
+        "d": 460,
+        "rot": 180,
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "name": "600 mm D-Neo basin reference on custom closed vanity",
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
+      },
+      {
+        "id": "K-corner",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 6988,
+        "w": 600,
+        "d": 600,
+        "rot": 0,
+        "name": "600 mm closed corner base · access solution TBD",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K-prep",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 10181,
+        "cy": 6988,
+        "w": 1000,
+        "d": 600,
+        "rot": 0,
+        "name": "1000 mm continuous preparation counter",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K-sink-base",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 11081,
+        "cy": 6988,
+        "w": 800,
+        "d": 600,
+        "rot": 0,
+        "name": "800 mm sink/waste cabinet",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K-dishwasher",
+        "type": "dishwasher",
+        "room_id": "KIT-01",
+        "cx": 11781,
+        "cy": 6988,
+        "w": 600,
+        "d": 600,
+        "rot": 0,
+        "name": "600 mm dishwasher envelope · appliance SKU TBD",
+        "color": "#C6B18F",
+        "variant": "integrated",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K-landing",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 11570,
+        "cy": 8575,
+        "w": 600,
+        "d": 410,
+        "rot": 180,
+        "name": "600 × 410 mm fridge landing counter",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    ],
+    "rooms": {
+      "TER-MBR": {
+        "name": "Master terrace",
+        "mat": "antislip"
+      },
+      "BR-01": {
+        "name": "Bedroom 1",
+        "mat": "parquet"
+      },
+      "BR-02": {
+        "name": "Bedroom 2",
+        "mat": "parquet"
+      },
+      "MBR-01": {
+        "name": "Master bedroom",
+        "mat": "parquet"
+      },
+      "HALL-01": {
+        "name": "Private hall",
+        "mat": "parquet"
+      },
+      "WIC-01": {
+        "name": "Dressing",
+        "mat": "parquet"
+      },
+      "BATH-M01": {
+        "name": "Ensuite",
+        "mat": "tile800"
+      },
+      "BATH-C01": {
+        "name": "Family bathroom",
+        "mat": "tile800"
+      },
+      "KIT-01": {
+        "name": "Kitchen",
+        "mat": "tile800"
+      },
+      "TER-SVC": {
+        "name": "Service terrace",
+        "mat": "antislip"
+      },
+      "WC-01": {
+        "name": "Guest WC",
+        "mat": "tile800"
+      },
+      "TER-MAIN": {
+        "name": "Main terrace",
+        "mat": "antislip"
+      },
+      "RECP-01": {
+        "name": "Living & dining",
+        "mat": "parquet"
+      }
+    },
+    "decor": {
+      "active": "warm",
+      "sceneVersion": 2,
+      "saved": {
+        "custom": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "wood",
+            "BR-02": "wood",
+            "MBR-01": "wood",
+            "HALL-01": "tile800",
+            "WIC-01": "wood",
+            "BATH-M01": "antislip",
+            "BATH-C01": "antislip",
+            "KIT-01": "tile800",
+            "TER-SVC": "antislip",
+            "WC-01": "antislip",
+            "TER-MAIN": "antislip",
+            "RECP-01": "tile800"
+          },
+          "colours": {
+            "starter-1": "#c6d3df",
+            "starter-2": "#c7b299",
+            "starter-3": "#c7b299",
+            "starter-4": "#d8dfe5",
+            "starter-5": "#d8dfe5",
+            "starter-6": "#adc2d2",
+            "starter-7": "#d8dfe5",
+            "starter-8": "#c7b299",
+            "starter-9": "#747f91",
+            "starter-10": "#c4b9a9",
+            "starter-11": "#c7b299",
+            "starter-12": "#3a465c",
+            "starter-13": "#d8dfe5",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#d8dfe5",
+            "starter-20": "#d8dfe5",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-24": "#d8dfe5",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#d8dfe5",
+            "starter-27": "#c0c6d0",
+            "starter-28": "#536f8b",
+            "starter-29": "#c7b299",
+            "starter-30": "#c7b299",
+            "starter-31": "#152034",
+            "starter-32": "#a89780",
+            "starter-35": "#c7b299",
+            "starter-36": "#6a7888",
+            "starter-37": "#6a7888",
+            "starter-38": "#6a7888",
+            "starter-39": "#6a7888",
+            "starter-40": "#d8dfe5",
+            "starter-41": "#c7b299",
+            "starter-42": "#8a9c9f",
+            "starter-43": "#8a9c9f",
+            "starter-44": "#799378"
+          }
+        },
+        "warm": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "parquet",
+            "BR-02": "parquet",
+            "MBR-01": "parquet",
+            "HALL-01": "parquet",
+            "WIC-01": "parquet",
+            "BATH-M01": "tile800",
+            "BATH-C01": "tile800",
+            "KIT-01": "tile800",
+            "TER-SVC": "antislip",
+            "WC-01": "tile800",
+            "TER-MAIN": "antislip",
+            "RECP-01": "parquet"
+          },
+          "colours": {
+            "starter-1": "#c8b8a3",
+            "starter-2": "#a5825c",
+            "starter-3": "#a5825c",
+            "starter-4": "#a5825c",
+            "starter-5": "#a5825c",
+            "starter-6": "#c8b8a3",
+            "starter-7": "#a5825c",
+            "starter-8": "#a5825c",
+            "starter-9": "#69755c",
+            "starter-10": "#c8b8a3",
+            "starter-11": "#a5825c",
+            "starter-12": "#3a465c",
+            "starter-13": "#a5825c",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#a5825c",
+            "starter-20": "#a5825c",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-24": "#d8dfe5",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#a5825c",
+            "starter-27": "#d9c7ab",
+            "starter-28": "#dfd3bb",
+            "starter-29": "#a5825c",
+            "starter-30": "#a5825c",
+            "starter-31": "#152034",
+            "starter-32": "#7D856F",
+            "starter-35": "#a5825c",
+            "starter-36": "#8C8274",
+            "starter-37": "#8C8274",
+            "starter-38": "#8C8274",
+            "starter-39": "#8C8274",
+            "starter-40": "#a5825c",
+            "starter-41": "#a5825c",
+            "starter-42": "#69755c",
+            "starter-43": "#69755c",
+            "starter-44": "#799378",
+            "A2-dining-chair-north-centre": "#8C8274",
+            "A2-dining-chair-south-centre": "#8C8274"
+          }
+        },
+        "boho": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "travertine",
+            "BR-02": "travertine",
+            "MBR-01": "travertine",
+            "HALL-01": "travertine",
+            "WIC-01": "travertine",
+            "BATH-M01": "terrazzo",
+            "BATH-C01": "terrazzo",
+            "KIT-01": "terrazzo",
+            "TER-SVC": "antislip",
+            "WC-01": "terrazzo",
+            "TER-MAIN": "antislip",
+            "RECP-01": "travertine"
+          },
+          "colours": {
+            "starter-1": "#dfc99f",
+            "starter-2": "#996f49",
+            "starter-3": "#996f49",
+            "starter-4": "#996f49",
+            "starter-5": "#996f49",
+            "starter-6": "#dfc99f",
+            "starter-7": "#996f49",
+            "starter-8": "#996f49",
+            "starter-9": "#ac6348",
+            "starter-10": "#dfc99f",
+            "starter-11": "#996f49",
+            "starter-12": "#3a465c",
+            "starter-13": "#996f49",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#996f49",
+            "starter-20": "#996f49",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-24": "#d8dfe5",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#996f49",
+            "starter-27": "#bb6c48",
+            "starter-28": "#dfc99f",
+            "starter-29": "#996f49",
+            "starter-30": "#996f49",
+            "starter-31": "#152034",
+            "starter-32": "#ac6348",
+            "starter-35": "#996f49",
+            "starter-36": "#ac6348",
+            "starter-37": "#ac6348",
+            "starter-38": "#ac6348",
+            "starter-39": "#ac6348",
+            "starter-40": "#996f49",
+            "starter-41": "#996f49",
+            "starter-42": "#ac6348",
+            "starter-43": "#ac6348",
+            "starter-44": "#799378"
+          }
+        },
+        "japandi": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "lightoak",
+            "BR-02": "lightoak",
+            "MBR-01": "lightoak",
+            "HALL-01": "lightoak",
+            "WIC-01": "lightoak",
+            "BATH-M01": "tile600",
+            "BATH-C01": "tile600",
+            "KIT-01": "tile600",
+            "TER-SVC": "antislip",
+            "WC-01": "tile600",
+            "TER-MAIN": "antislip",
+            "RECP-01": "lightoak"
+          },
+          "colours": {
+            "starter-1": "#d5d0c5",
+            "starter-2": "#c4ad86",
+            "starter-3": "#c4ad86",
+            "starter-4": "#c4ad86",
+            "starter-5": "#c4ad86",
+            "starter-6": "#d5d0c5",
+            "starter-7": "#c4ad86",
+            "starter-8": "#c4ad86",
+            "starter-9": "#565f54",
+            "starter-10": "#d5d0c5",
+            "starter-11": "#c4ad86",
+            "starter-12": "#3a465c",
+            "starter-13": "#c4ad86",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#c4ad86",
+            "starter-20": "#c4ad86",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-24": "#d8dfe5",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#c4ad86",
+            "starter-27": "#cbc8bc",
+            "starter-28": "#d5d0c5",
+            "starter-29": "#c4ad86",
+            "starter-30": "#c4ad86",
+            "starter-31": "#152034",
+            "starter-32": "#565f54",
+            "starter-35": "#c4ad86",
+            "starter-36": "#565f54",
+            "starter-37": "#565f54",
+            "starter-38": "#565f54",
+            "starter-39": "#565f54",
+            "starter-40": "#c4ad86",
+            "starter-41": "#c4ad86",
+            "starter-42": "#565f54",
+            "starter-43": "#565f54",
+            "starter-44": "#799378"
+          }
+        }
+      }
+    },
+    "studio": {
+      "version": 1,
+      "rooms": {
+        "KIT-01": {
+          "lighting": "downlights",
+          "temperature": 3000
+        },
+        "RECP-01": {
+          "hvac": "concealed-slots",
+          "ceiling": "plain",
+          "lighting": "track-lamps",
+          "temperature": 3000,
+          "brightness": 76
+        }
+      }
+    },
+    "demolished": [],
+    "measures": [],
+    "interior": {
+      "version": 1,
+      "objects": [
+        {
+          "id": "A-dining-sideboard",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 15760,
+          "cy": 5800,
+          "rotation": 90,
+          "width_mm": 1300,
+          "depth_mm": 300,
+          "height_mm": 760,
+          "material_references": {
+            "primary": "a3-pale-oak"
+          },
+          "colour": "#C6B18F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "low closed dining storage"
+          }
+        },
+        {
+          "id": "A-dining-pendant",
+          "type": "pendant",
+          "variant": "globe",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "ceiling",
+            "drop_mm": 280
+          },
+          "cx": 14570,
+          "cy": 7750,
+          "rotation": 0,
+          "width_mm": 420,
+          "depth_mm": 420,
+          "height_mm": 240,
+          "material_references": {
+            "metal": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "restrained dining focal pendant",
+            "temperature_k": 2700
+          }
+        },
+        {
+          "id": "A1-entry-mirror",
+          "type": "mirror",
+          "variant": "round",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-RECP-01-16",
+            "offset_mm": 0,
+            "inset_mm": 10,
+            "elevation_mm": 1100
+          },
+          "rotation": 0,
+          "width_mm": 620,
+          "depth_mm": 35,
+          "height_mm": 620,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "entry definition above slim shoe storage"
+          }
+        },
+        {
+          "id": "A2-living-plant",
+          "type": "plant",
+          "variant": "potted",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 15550,
+          "cy": 3250,
+          "rotation": 0,
+          "width_mm": 420,
+          "depth_mm": 420,
+          "height_mm": 1350,
+          "material_references": {
+            "pot": "a1-natural-oak"
+          },
+          "colour": "#738064",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "single sculptural living plant; avoid clutter"
+          }
+        },
+        {
+          "id": "A3-living-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-RECP-01-03",
+            "offset_mm": -791.5675,
+            "elevation_mm": 1080,
+            "inset_mm": 12
+          },
+          "rotation": 0,
+          "width_mm": 1200,
+          "depth_mm": 30,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "reference-art-warm",
+            "artwork": "reference-art-warm",
+            "accent": "a3-pale-oak"
+          },
+          "colour": "#E8E0D3",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "notes": "Single large concept artwork; existing AI concept image, not a purchasable print."
+          }
+        }
+      ],
+      "materials": [
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-wall-plaster",
+          "name": "Soft warm ivory plaster",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#F3EEE6",
+          "roughness": 0.96,
+          "metallic": 0,
+          "finish": "matte"
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-ceiling-ivory",
+          "name": "Soft warm ivory ceiling",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#F5F1E9",
+          "finish": "ultra-matte",
+          "roughness": 0.98,
+          "metallic": 0,
+          "notes": "Light ceiling tone to preserve perceived height."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-limestone-honed",
+          "name": "Quiet warm limestone-look floor concept",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E0D8CB",
+          "finish": "honed",
+          "roughness": 0.76,
+          "metallic": 0,
+          "physical_dimensions_mm": {
+            "width": 1200,
+            "height": 600,
+            "depth": 10
+          },
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "notes": "GENERIC stone finish, no SKU. Tile texture is rescaled to the nominal 1200 × 600 mm format; subtle grout. Final material and slip rating TBD.",
+          "fallback_generic_id": "tile800"
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-natural-oak",
+          "name": "Natural light oak",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#B88C5E",
+          "finish": "matte",
+          "roughness": 0.72,
+          "metallic": 0,
+          "fallback_generic_id": "lightoak"
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a2-ceiling-softwhite",
+          "name": "Soft white ceiling",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#FEFCF7",
+          "finish": "ultra-matte",
+          "roughness": 0.98,
+          "metallic": 0,
+          "notes": "Near-white ceiling intended to read warm-neutral under 3000 K lighting."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a2-curtain-linen",
+          "name": "Warm light linen curtain",
+          "category": "fabric",
+          "source_status": "GENERIC",
+          "base_colour": "#DED7CB",
+          "finish": "woven",
+          "roughness": 0.94,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 300,
+            "height": 300
+          },
+          "notes": "Light warm linen concept; layered treatment, not a selected SKU."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a3-pale-oak",
+          "name": "Pale smoked oak concept",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#C6B18F",
+          "roughness": 0.78,
+          "metallic": 0,
+          "finish": "matte",
+          "notes": "Generic oak interpretation, no real finish SKU."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "r1-bath-porcelain",
+          "name": "Warm ivory bathroom porcelain concept",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E5DFD3",
+          "finish": "matte",
+          "roughness": 0.72,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 600,
+            "height": 600
+          },
+          "fallback_generic_id": "tile600",
+          "notes": "No selected SKU; wet-area slip rating and waterproofing TBD."
+        }
+      ],
+      "surface_materials": {
+        "FLOOR-RECP-01": "a1-limestone-honed",
+        "CEILING-RECP-01": "a2-ceiling-softwhite",
+        "WALL-RECP-01-01": "a1-wall-plaster",
+        "WALL-RECP-01-02": "a1-wall-plaster",
+        "WALL-RECP-01-03": "a1-wall-plaster",
+        "WALL-RECP-01-04": "a1-wall-plaster",
+        "WALL-RECP-01-05": "a1-wall-plaster",
+        "WALL-RECP-01-06": "a1-wall-plaster",
+        "WALL-RECP-01-07": "a1-wall-plaster",
+        "WALL-RECP-01-08": "a1-wall-plaster",
+        "WALL-RECP-01-09": "a1-wall-plaster",
+        "WALL-RECP-01-10": "a1-wall-plaster",
+        "WALL-RECP-01-11": "a1-wall-plaster",
+        "WALL-RECP-01-12": "a1-wall-plaster",
+        "WALL-RECP-01-13": "a1-wall-plaster",
+        "WALL-RECP-01-14": "a1-wall-plaster",
+        "WALL-RECP-01-15": "a1-wall-plaster",
+        "WALL-RECP-01-16": "a1-wall-plaster",
+        "WALL-RECP-01-17": "a1-wall-plaster",
+        "WALL-RECP-01-18": "a1-wall-plaster",
+        "FLOOR-BATH-M01": "r1-bath-porcelain",
+        "WALL-BATH-M01-01": "r1-bath-porcelain",
+        "WALL-BATH-M01-02": "r1-bath-porcelain",
+        "WALL-BATH-M01-03": "r1-bath-porcelain",
+        "WALL-BATH-M01-04": "r1-bath-porcelain",
+        "WALL-BATH-M01-05": "r1-bath-porcelain",
+        "FLOOR-BATH-C01": "r1-bath-porcelain",
+        "WALL-BATH-C01-01": "r1-bath-porcelain",
+        "WALL-BATH-C01-02": "r1-bath-porcelain",
+        "WALL-BATH-C01-03": "r1-bath-porcelain",
+        "WALL-BATH-C01-04": "r1-bath-porcelain",
+        "WALL-BATH-C01-05": "r1-bath-porcelain",
+        "WALL-BATH-C01-06": "r1-bath-porcelain",
+        "WALL-BATH-C01-07": "r1-bath-porcelain",
+        "FLOOR-WC-01": "r1-bath-porcelain",
+        "WALL-WC-01-01": "r1-bath-porcelain",
+        "WALL-WC-01-02": "r1-bath-porcelain",
+        "WALL-WC-01-03": "r1-bath-porcelain",
+        "WALL-WC-01-04": "r1-bath-porcelain",
+        "WALL-WC-01-05": "r1-bath-porcelain",
+        "WALL-WC-01-06": "r1-bath-porcelain"
+      },
+      "opening_treatments": {
+        "GLZ-RECP-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.72,
+          "room_id": "RECP-01"
+        },
+        "GLZ-RECP-TERMAIN": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.78,
+          "room_id": "RECP-01"
+        }
+      }
+    }
+  },
+  "rooms": [
+    {
+      "id": "TER-MBR",
+      "name": "Master terrace",
+      "full_name": "Master-side terrace",
+      "poly": [
+        [
+          0,
+          3431.622
+        ],
+        [
+          1970.005,
+          3431.622
+        ],
+        [
+          1970.005,
+          4999.153
+        ],
+        [
+          0,
+          4999.153
+        ]
+      ],
+      "at": [
+        985.003,
+        4215.387
+      ],
+      "kind": "terrace",
+      "isTerrace": true,
+      "mat": "antislip",
+      "printed": "TERRACE 1.50m x 1.80m",
+      "printed_dimensions_m": [
+        1.5,
+        1.8
+      ],
+      "callouts": [],
+      "area_estimate_m2": 3.088043907655001
+    },
+    {
+      "id": "BR-01",
+      "name": "Bedroom 1",
+      "full_name": "Secondary bedroom — west",
+      "poly": [
+        [
+          1970.005,
+          1503.982
+        ],
+        [
+          5465.175,
+          1503.982
+        ],
+        [
+          5465.175,
+          4999.153
+        ],
+        [
+          1970.005,
+          4999.153
+        ]
+      ],
+      "at": [
+        3717.59,
+        3251.568
+      ],
+      "kind": "bedroom",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "BED ROOM 3.50m x 3.50m",
+      "printed_dimensions_m": [
+        3.5,
+        3.5
+      ],
+      "callouts": [],
+      "area_estimate_m2": 12.21621682407
+    },
+    {
+      "id": "BR-02",
+      "name": "Bedroom 2",
+      "full_name": "Secondary bedroom — east",
+      "poly": [
+        [
+          5465.175,
+          1503.982
+        ],
+        [
+          8981.529,
+          1503.982
+        ],
+        [
+          8981.529,
+          4999.153
+        ],
+        [
+          5465.175,
+          4999.153
+        ]
+      ],
+      "at": [
+        7223.352,
+        3251.568
+      ],
+      "kind": "bedroom",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "BED ROOM 3.50m x 3.50m",
+      "printed_dimensions_m": [
+        3.5,
+        3.5
+      ],
+      "callouts": [],
+      "area_estimate_m2": 12.290258526534
+    },
+    {
+      "id": "MBR-01",
+      "name": "Master bedroom",
+      "full_name": "Master bedroom",
+      "poly": [
+        [
+          296.56,
+          4999.153
+        ],
+        [
+          4003.559,
+          4999.153
+        ],
+        [
+          4003.559,
+          8960.346
+        ],
+        [
+          296.56,
+          8960.346
+        ]
+      ],
+      "at": [
+        2150.059,
+        6979.749
+      ],
+      "kind": "bedroom",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "MASTER BED ROOM 4.00m x 3.80m",
+      "printed_dimensions_m": [
+        4,
+        3.8
+      ],
+      "callouts": [],
+      "area_estimate_m2": 14.684138489807
+    },
+    {
+      "id": "HALL-01",
+      "name": "Private hall",
+      "full_name": "Private lobby / bedroom corridor",
+      "poly": [
+        [
+          4003.559,
+          4999.153
+        ],
+        [
+          8981.529,
+          4999.153
+        ],
+        [
+          8981.529,
+          6206.575
+        ],
+        [
+          4003.559,
+          6206.575
+        ]
+      ],
+      "at": [
+        6492.544,
+        5602.864
+      ],
+      "kind": "circulation",
+      "isTerrace": false,
+      "mat": "tile800",
+      "printed": "LOBBY 5.05m x 1.15m",
+      "printed_dimensions_m": [
+        5.05,
+        1.15
+      ],
+      "callouts": [],
+      "area_estimate_m2": 6.010510493340001
+    },
+    {
+      "id": "WIC-01",
+      "name": "Dressing",
+      "full_name": "Master dressing",
+      "poly": [
+        [
+          4003.559,
+          6206.575
+        ],
+        [
+          5465.175,
+          6206.575
+        ],
+        [
+          5465.175,
+          8960.346
+        ],
+        [
+          4003.559,
+          8960.346
+        ]
+      ],
+      "at": [
+        4734.367,
+        7583.46
+      ],
+      "kind": "dressing",
+      "isTerrace": false,
+      "mat": "wood",
+      "printed": "DRESSING 2.75m x 1.40m",
+      "printed_dimensions_m": [
+        2.75,
+        1.4
+      ],
+      "callouts": [],
+      "area_estimate_m2": 4.024955753936
+    },
+    {
+      "id": "BATH-M01",
+      "name": "Ensuite",
+      "full_name": "Master ensuite",
+      "poly": [
+        [
+          5465.175,
+          6206.575
+        ],
+        [
+          7180.986,
+          6206.575
+        ],
+        [
+          7180.986,
+          8960.346
+        ],
+        [
+          5465.175,
+          8960.346
+        ]
+      ],
+      "at": [
+        6323.081,
+        7583.46
+      ],
+      "kind": "bathroom",
+      "isTerrace": false,
+      "mat": "antislip",
+      "printed": "BATH ROOM 1.70m x 2.75m",
+      "printed_dimensions_m": [
+        1.7,
+        2.75
+      ],
+      "callouts": [],
+      "area_estimate_m2": 4.7249505732809975
+    },
+    {
+      "id": "BATH-C01",
+      "name": "Family bathroom",
+      "full_name": "Common full bathroom",
+      "poly": [
+        [
+          7180.986,
+          6206.575
+        ],
+        [
+          8981.529,
+          6206.575
+        ],
+        [
+          8981.529,
+          8960.346
+        ],
+        [
+          7180.986,
+          8960.346
+        ]
+      ],
+      "at": [
+        8081.257,
+        7583.46
+      ],
+      "kind": "bathroom",
+      "isTerrace": false,
+      "mat": "antislip",
+      "printed": "BATH ROOM 1.70m x 2.75m",
+      "printed_dimensions_m": [
+        1.7,
+        2.75
+      ],
+      "callouts": [],
+      "area_estimate_m2": 4.958283097653009
+    },
+    {
+      "id": "KIT-01",
+      "name": "Kitchen",
+      "full_name": "Enclosed kitchen",
+      "poly": [
+        [
+          8981.529,
+          6587.866
+        ],
+        [
+          12116.59,
+          6587.866
+        ],
+        [
+          12582.613,
+          6969.158
+        ],
+        [
+          12582.613,
+          8960.346
+        ],
+        [
+          8981.529,
+          8960.346
+        ]
+      ],
+      "at": [
+        10782.071,
+        7964.752
+      ],
+      "kind": "kitchen",
+      "isTerrace": false,
+      "mat": "tile800",
+      "printed": "KITCHEN 2.40m x 3.75m",
+      "printed_dimensions_m": [
+        2.4,
+        3.75
+      ],
+      "callouts": [],
+      "area_estimate_m2": 8.454654347461991
+    },
+    {
+      "id": "TER-SVC",
+      "name": "Service terrace",
+      "full_name": "Kitchen/service terrace",
+      "poly": [
+        [
+          8833.249,
+          8960.346
+        ],
+        [
+          10739.705,
+          8960.346
+        ],
+        [
+          10739.705,
+          10231.317
+        ],
+        [
+          8833.249,
+          10231.317
+        ]
+      ],
+      "at": [
+        9786.477,
+        9595.831
+      ],
+      "kind": "terrace",
+      "isTerrace": true,
+      "mat": "antislip",
+      "printed": "TERRACE 1.85m x 1.10m",
+      "printed_dimensions_m": [
+        1.85,
+        1.1
+      ],
+      "callouts": [],
+      "area_estimate_m2": 2.42305028877601
+    },
+    {
+      "id": "WC-01",
+      "name": "Guest WC",
+      "full_name": "Guest toilet",
+      "poly": [
+        [
+          10739.705,
+          8960.346
+        ],
+        [
+          12603.796,
+          8960.346
+        ],
+        [
+          12603.796,
+          10231.317
+        ],
+        [
+          10739.705,
+          10231.317
+        ]
+      ],
+      "at": [
+        11671.751,
+        9595.831
+      ],
+      "kind": "toilet",
+      "isTerrace": false,
+      "mat": "antislip",
+      "printed": "TOILET 1.30m x 1.90m",
+      "printed_dimensions_m": [
+        1.3,
+        1.9
+      ],
+      "callouts": [],
+      "area_estimate_m2": 2.3692056023610086
+    },
+    {
+      "id": "TER-MAIN",
+      "name": "Main terrace",
+      "full_name": "Main reception terrace",
+      "poly": [
+        [
+          12497.882,
+          0
+        ],
+        [
+          16035.418,
+          0
+        ],
+        [
+          16035.418,
+          2732.588
+        ],
+        [
+          12497.882,
+          2732.588
+        ]
+      ],
+      "at": [
+        14266.65,
+        1366.294
+      ],
+      "kind": "terrace",
+      "isTerrace": true,
+      "mat": "antislip",
+      "printed": "TERRACE 2.85m x 3.60m",
+      "printed_dimensions_m": [
+        2.85,
+        3.6
+      ],
+      "callouts": [],
+      "area_estimate_m2": 9.666628423168003
+    },
+    {
+      "id": "RECP-01",
+      "name": "Living & dining",
+      "full_name": "Continuous reception / living-dining social space",
+      "poly": [
+        [
+          8981.529,
+          550.754
+        ],
+        [
+          12497.882,
+          550.754
+        ],
+        [
+          12497.882,
+          2732.588
+        ],
+        [
+          16035.418,
+          2732.588
+        ],
+        [
+          16035.418,
+          10231.317
+        ],
+        [
+          12603.796,
+          10231.317
+        ],
+        [
+          12603.796,
+          6969.158
+        ],
+        [
+          12116.59,
+          6587.866
+        ],
+        [
+          8981.529,
+          6587.866
+        ]
+      ],
+      "at": [
+        10845.619,
+        4490.764
+      ],
+      "kind": "reception",
+      "isTerrace": false,
+      "mat": "tile800",
+      "printed": null,
+      "printed_dimensions_m": null,
+      "callouts": [
+        {
+          "id": "RECP-DIM-A",
+          "printed_text": "RECEPTION 3.45m x 6.00m",
+          "dimensions_m": [
+            3.45,
+            6
+          ],
+          "anchor_source_px": [
+            754,
+            402
+          ]
+        },
+        {
+          "id": "RECP-DIM-B",
+          "printed_text": "RECEPTION 3.50m x 7.65m",
+          "dimensions_m": [
+            3.5,
+            7.65
+          ],
+          "anchor_source_px": [
+            903,
+            492
+          ]
+        }
+      ],
+      "area_estimate_m2": 47.46263209014198
+    }
+  ],
+  "openings": [
+    {
+      "id": "OP-BR01-HALL",
+      "type": "hinged_door",
+      "between": [
+        "BR-01",
+        "HALL-01"
+      ],
+      "from": [
+        4490.764,
+        4999.153
+      ],
+      "to": [
+        5210.981,
+        4999.153
+      ],
+      "rect": [
+        4490.764,
+        4909.153,
+        5210.981,
+        5089.153
+      ],
+      "length_mm": 720.2169999999996,
+      "source_px": [
+        [
+          469,
+          407
+        ],
+        [
+          503,
+          407
+        ]
+      ]
+    },
+    {
+      "id": "OP-BR02-HALL",
+      "type": "hinged_door",
+      "between": [
+        "BR-02",
+        "HALL-01"
+      ],
+      "from": [
+        5740.552,
+        4999.153
+      ],
+      "to": [
+        6439.587,
+        4999.153
+      ],
+      "rect": [
+        5740.552,
+        4909.153,
+        6439.587,
+        5089.153
+      ],
+      "length_mm": 699.0350000000008,
+      "source_px": [
+        [
+          528,
+          407
+        ],
+        [
+          561,
+          407
+        ]
+      ]
+    },
+    {
+      "id": "OP-MBR-HALL",
+      "type": "hinged_door",
+      "between": [
+        "MBR-01",
+        "HALL-01"
+      ],
+      "from": [
+        4003.559,
+        5253.347
+      ],
+      "to": [
+        4003.559,
+        5994.747
+      ],
+      "rect": [
+        3913.559,
+        5253.347,
+        4093.559,
+        5994.747
+      ],
+      "length_mm": 741.4000000000005,
+      "source_px": [
+        [
+          446,
+          419
+        ],
+        [
+          446,
+          454
+        ]
+      ]
+    },
+    {
+      "id": "OP-MBR-WIC",
+      "type": "open_or_doorway",
+      "between": [
+        "MBR-01",
+        "WIC-01"
+      ],
+      "from": [
+        4003.559,
+        7435.18
+      ],
+      "to": [
+        4003.559,
+        8155.397
+      ],
+      "rect": [
+        3913.559,
+        7435.18,
+        4093.559,
+        8155.397
+      ],
+      "length_mm": 720.2169999999996,
+      "source_px": [
+        [
+          446,
+          522
+        ],
+        [
+          446,
+          556
+        ]
+      ]
+    },
+    {
+      "id": "OP-WIC-BATHM",
+      "type": "hinged_door",
+      "between": [
+        "WIC-01",
+        "BATH-M01"
+      ],
+      "from": [
+        5465.175,
+        7265.718
+      ],
+      "to": [
+        5465.175,
+        7943.569
+      ],
+      "rect": [
+        5375.175,
+        7265.718,
+        5555.175,
+        7943.569
+      ],
+      "length_mm": 677.8510000000006,
+      "source_px": [
+        [
+          515,
+          514
+        ],
+        [
+          515,
+          546
+        ]
+      ]
+    },
+    {
+      "id": "OP-HALL-BATHC",
+      "type": "hinged_door",
+      "between": [
+        "HALL-01",
+        "BATH-C01"
+      ],
+      "from": [
+        7413.998,
+        6206.575
+      ],
+      "to": [
+        8070.666,
+        6206.575
+      ],
+      "rect": [
+        7413.998,
+        6116.575,
+        8070.666,
+        6296.575
+      ],
+      "length_mm": 656.6680000000006,
+      "source_px": [
+        [
+          607,
+          464
+        ],
+        [
+          638,
+          464
+        ]
+      ]
+    },
+    {
+      "id": "OP-HALL-RECP",
+      "type": "open_passage",
+      "between": [
+        "HALL-01",
+        "RECP-01"
+      ],
+      "from": [
+        8981.529,
+        4999.153
+      ],
+      "to": [
+        8981.529,
+        6015.93
+      ],
+      "rect": [
+        8891.529,
+        4999.153,
+        9071.529,
+        6015.93
+      ],
+      "length_mm": 1016.777,
+      "source_px": [
+        [
+          681,
+          407
+        ],
+        [
+          681,
+          455
+        ]
+      ]
+    },
+    {
+      "id": "OP-RECP-KIT",
+      "type": "hinged_door",
+      "between": [
+        "RECP-01",
+        "KIT-01"
+      ],
+      "from": [
+        12582.613,
+        7456.363
+      ],
+      "to": [
+        12582.613,
+        8176.58
+      ],
+      "rect": [
+        12492.613,
+        7456.363,
+        12672.613,
+        8176.58
+      ],
+      "length_mm": 720.2169999999996,
+      "source_px": [
+        [
+          851,
+          523
+        ],
+        [
+          851,
+          557
+        ]
+      ]
+    },
+    {
+      "id": "OP-KIT-TERSVC",
+      "type": "hinged_door",
+      "between": [
+        "KIT-01",
+        "TER-SVC"
+      ],
+      "from": [
+        9765.294,
+        8960.346
+      ],
+      "to": [
+        10443.145,
+        8960.346
+      ],
+      "rect": [
+        9765.294,
+        8870.346,
+        10443.145,
+        9050.346
+      ],
+      "length_mm": 677.8510000000006,
+      "source_px": [
+        [
+          718,
+          594
+        ],
+        [
+          750,
+          594
+        ]
+      ]
+    },
+    {
+      "id": "OP-RECP-WC",
+      "type": "hinged_door",
+      "between": [
+        "RECP-01",
+        "WC-01"
+      ],
+      "from": [
+        12603.796,
+        9341.637
+      ],
+      "to": [
+        12603.796,
+        9998.305
+      ],
+      "rect": [
+        12513.796,
+        9341.637,
+        12693.796,
+        9998.305
+      ],
+      "length_mm": 656.6679999999997,
+      "source_px": [
+        [
+          852,
+          612
+        ],
+        [
+          852,
+          643
+        ]
+      ]
+    },
+    {
+      "id": "OP-ENT-01",
+      "type": "main_entry_hinged_door",
+      "between": [
+        "EXTERIOR",
+        "RECP-01"
+      ],
+      "from": [
+        14340.79,
+        10231.317
+      ],
+      "to": [
+        15145.738,
+        10231.317
+      ],
+      "rect": [
+        14340.79,
+        10141.317,
+        15145.738,
+        10321.317
+      ],
+      "length_mm": 804.9479999999985,
+      "source_px": [
+        [
+          934,
+          654
+        ],
+        [
+          972,
+          654
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-MBR-TER",
+      "type": "glazed_terrace_opening",
+      "between": [
+        "MBR-01",
+        "TER-MBR"
+      ],
+      "from": [
+        466.023,
+        4999.153
+      ],
+      "to": [
+        1842.908,
+        4999.153
+      ],
+      "rect": [
+        466.023,
+        4909.153,
+        1842.908,
+        5089.153
+      ],
+      "length_mm": 1376.8849999999998,
+      "source_px": [
+        [
+          279,
+          407
+        ],
+        [
+          344,
+          407
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-BR01-N",
+      "type": "exterior_window",
+      "between": [
+        "BR-01",
+        "EXTERIOR"
+      ],
+      "from": [
+        3770.547,
+        1503.982
+      ],
+      "to": [
+        5126.25,
+        1503.982
+      ],
+      "rect": [
+        3770.547,
+        1413.982,
+        5126.25,
+        1593.982
+      ],
+      "length_mm": 1355.703,
+      "source_px": [
+        [
+          435,
+          242
+        ],
+        [
+          499,
+          242
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-BR02-N",
+      "type": "exterior_window",
+      "between": [
+        "BR-02",
+        "EXTERIOR"
+      ],
+      "from": [
+        7202.169,
+        1503.982
+      ],
+      "to": [
+        8579.054,
+        1503.982
+      ],
+      "rect": [
+        7202.169,
+        1413.982,
+        8579.054,
+        1593.982
+      ],
+      "length_mm": 1376.8850000000002,
+      "source_px": [
+        [
+          597,
+          242
+        ],
+        [
+          662,
+          242
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-RECP-N",
+      "type": "exterior_window",
+      "between": [
+        "RECP-01",
+        "EXTERIOR"
+      ],
+      "from": [
+        9638.197,
+        550.754
+      ],
+      "to": [
+        11862.396,
+        550.754
+      ],
+      "rect": [
+        9638.197,
+        460.754,
+        11862.396,
+        640.754
+      ],
+      "length_mm": 2224.1990000000005,
+      "source_px": [
+        [
+          712,
+          197
+        ],
+        [
+          817,
+          197
+        ]
+      ]
+    },
+    {
+      "id": "GLZ-RECP-TERMAIN",
+      "type": "glazed_terrace_opening",
+      "between": [
+        "RECP-01",
+        "TER-MAIN"
+      ],
+      "from": [
+        13324.013,
+        2732.588
+      ],
+      "to": [
+        15209.287,
+        2732.588
+      ],
+      "rect": [
+        13324.013,
+        2642.588,
+        15209.287,
+        2822.588
+      ],
+      "length_mm": 1885.2739999999994,
+      "source_px": [
+        [
+          886,
+          300
+        ],
+        [
+          975,
+          300
+        ]
+      ]
+    }
+  ],
+  "wall_segments": [
+    {
+      "from": [
+        0,
+        3431.622
+      ],
+      "to": [
+        1970.005,
+        3431.622
+      ],
+      "source_px": [
+        [
+          257,
+          333
+        ],
+        [
+          350,
+          333
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        1503.982
+      ],
+      "to": [
+        1970.005,
+        3431.622
+      ],
+      "source_px": [
+        [
+          350,
+          242
+        ],
+        [
+          350,
+          333
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        3431.622
+      ],
+      "to": [
+        1970.005,
+        4999.153
+      ],
+      "source_px": [
+        [
+          350,
+          333
+        ],
+        [
+          350,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        0,
+        4999.153
+      ],
+      "to": [
+        296.56,
+        4999.153
+      ],
+      "source_px": [
+        [
+          257,
+          407
+        ],
+        [
+          271,
+          407
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        296.56,
+        4999.153
+      ],
+      "to": [
+        466.023,
+        4999.153
+      ],
+      "source_px": [
+        [
+          271,
+          407
+        ],
+        [
+          279,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1842.908,
+        4999.153
+      ],
+      "to": [
+        1970.005,
+        4999.153
+      ],
+      "source_px": [
+        [
+          344,
+          407
+        ],
+        [
+          350,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        4999.153
+      ],
+      "to": [
+        4003.559,
+        4999.153
+      ],
+      "source_px": [
+        [
+          350,
+          407
+        ],
+        [
+          446,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        4999.153
+      ],
+      "to": [
+        4490.764,
+        4999.153
+      ],
+      "source_px": [
+        [
+          446,
+          407
+        ],
+        [
+          469,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        5210.981,
+        4999.153
+      ],
+      "to": [
+        5465.175,
+        4999.153
+      ],
+      "source_px": [
+        [
+          503,
+          407
+        ],
+        [
+          515,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        4999.153
+      ],
+      "to": [
+        5740.552,
+        4999.153
+      ],
+      "source_px": [
+        [
+          515,
+          407
+        ],
+        [
+          528,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        6439.587,
+        4999.153
+      ],
+      "to": [
+        8981.529,
+        4999.153
+      ],
+      "source_px": [
+        [
+          561,
+          407
+        ],
+        [
+          681,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        0,
+        3431.622
+      ],
+      "to": [
+        0,
+        4999.153
+      ],
+      "source_px": [
+        [
+          257,
+          333
+        ],
+        [
+          257,
+          407
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-MBR"
+      ]
+    },
+    {
+      "from": [
+        1970.005,
+        1503.982
+      ],
+      "to": [
+        3770.547,
+        1503.982
+      ],
+      "source_px": [
+        [
+          350,
+          242
+        ],
+        [
+          435,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01"
+      ]
+    },
+    {
+      "from": [
+        5126.25,
+        1503.982
+      ],
+      "to": [
+        5465.175,
+        1503.982
+      ],
+      "source_px": [
+        [
+          499,
+          242
+        ],
+        [
+          515,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        1503.982
+      ],
+      "to": [
+        7202.169,
+        1503.982
+      ],
+      "source_px": [
+        [
+          515,
+          242
+        ],
+        [
+          597,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02"
+      ]
+    },
+    {
+      "from": [
+        8579.054,
+        1503.982
+      ],
+      "to": [
+        8981.529,
+        1503.982
+      ],
+      "source_px": [
+        [
+          662,
+          242
+        ],
+        [
+          681,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        1503.982
+      ],
+      "to": [
+        5465.175,
+        4999.153
+      ],
+      "source_px": [
+        [
+          515,
+          242
+        ],
+        [
+          515,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-01",
+        "BR-02"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        6206.575
+      ],
+      "to": [
+        5465.175,
+        7265.718
+      ],
+      "source_px": [
+        [
+          515,
+          464
+        ],
+        [
+          515,
+          514
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        7943.569
+      ],
+      "to": [
+        5465.175,
+        8960.346
+      ],
+      "source_px": [
+        [
+          515,
+          546
+        ],
+        [
+          515,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        550.754
+      ],
+      "to": [
+        8981.529,
+        1503.982
+      ],
+      "source_px": [
+        [
+          681,
+          197
+        ],
+        [
+          681,
+          242
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        1503.982
+      ],
+      "to": [
+        8981.529,
+        4999.153
+      ],
+      "source_px": [
+        [
+          681,
+          242
+        ],
+        [
+          681,
+          407
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BR-02",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6015.93
+      ],
+      "to": [
+        8981.529,
+        6206.575
+      ],
+      "source_px": [
+        [
+          681,
+          455
+        ],
+        [
+          681,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6206.575
+      ],
+      "to": [
+        8981.529,
+        6587.866
+      ],
+      "source_px": [
+        [
+          681,
+          464
+        ],
+        [
+          681,
+          482
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6587.866
+      ],
+      "to": [
+        8981.529,
+        8960.346
+      ],
+      "source_px": [
+        [
+          681,
+          482
+        ],
+        [
+          681,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "KIT-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        4999.153
+      ],
+      "to": [
+        4003.559,
+        5253.347
+      ],
+      "source_px": [
+        [
+          446,
+          407
+        ],
+        [
+          446,
+          419
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        5994.747
+      ],
+      "to": [
+        4003.559,
+        6206.575
+      ],
+      "source_px": [
+        [
+          446,
+          454
+        ],
+        [
+          446,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        6206.575
+      ],
+      "to": [
+        4003.559,
+        7435.18
+      ],
+      "source_px": [
+        [
+          446,
+          464
+        ],
+        [
+          446,
+          522
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        8155.397
+      ],
+      "to": [
+        4003.559,
+        8960.346
+      ],
+      "source_px": [
+        [
+          446,
+          556
+        ],
+        [
+          446,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        296.56,
+        8960.346
+      ],
+      "to": [
+        4003.559,
+        8960.346
+      ],
+      "source_px": [
+        [
+          271,
+          594
+        ],
+        [
+          446,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        8960.346
+      ],
+      "to": [
+        5465.175,
+        8960.346
+      ],
+      "source_px": [
+        [
+          446,
+          594
+        ],
+        [
+          515,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        8960.346
+      ],
+      "to": [
+        7180.986,
+        8960.346
+      ],
+      "source_px": [
+        [
+          515,
+          594
+        ],
+        [
+          596,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01"
+      ]
+    },
+    {
+      "from": [
+        7180.986,
+        8960.346
+      ],
+      "to": [
+        8833.249,
+        8960.346
+      ],
+      "source_px": [
+        [
+          596,
+          594
+        ],
+        [
+          674,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01"
+      ]
+    },
+    {
+      "from": [
+        8833.249,
+        8960.346
+      ],
+      "to": [
+        8981.529,
+        8960.346
+      ],
+      "source_px": [
+        [
+          674,
+          594
+        ],
+        [
+          681,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        8960.346
+      ],
+      "to": [
+        9765.294,
+        8960.346
+      ],
+      "source_px": [
+        [
+          681,
+          594
+        ],
+        [
+          718,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        10443.145,
+        8960.346
+      ],
+      "to": [
+        10739.705,
+        8960.346
+      ],
+      "source_px": [
+        [
+          750,
+          594
+        ],
+        [
+          764,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        10739.705,
+        8960.346
+      ],
+      "to": [
+        12582.613,
+        8960.346
+      ],
+      "source_px": [
+        [
+          764,
+          594
+        ],
+        [
+          851,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        8960.346
+      ],
+      "to": [
+        12603.796,
+        8960.346
+      ],
+      "source_px": [
+        [
+          851,
+          594
+        ],
+        [
+          852,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        296.56,
+        4999.153
+      ],
+      "to": [
+        296.56,
+        8960.346
+      ],
+      "source_px": [
+        [
+          271,
+          407
+        ],
+        [
+          271,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "MBR-01"
+      ]
+    },
+    {
+      "from": [
+        4003.559,
+        6206.575
+      ],
+      "to": [
+        5465.175,
+        6206.575
+      ],
+      "source_px": [
+        [
+          446,
+          464
+        ],
+        [
+          515,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "HALL-01",
+        "WIC-01"
+      ]
+    },
+    {
+      "from": [
+        5465.175,
+        6206.575
+      ],
+      "to": [
+        7180.986,
+        6206.575
+      ],
+      "source_px": [
+        [
+          515,
+          464
+        ],
+        [
+          596,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-M01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        7180.986,
+        6206.575
+      ],
+      "to": [
+        7413.998,
+        6206.575
+      ],
+      "source_px": [
+        [
+          596,
+          464
+        ],
+        [
+          607,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        8070.666,
+        6206.575
+      ],
+      "to": [
+        8981.529,
+        6206.575
+      ],
+      "source_px": [
+        [
+          638,
+          464
+        ],
+        [
+          681,
+          464
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "HALL-01"
+      ]
+    },
+    {
+      "from": [
+        7180.986,
+        6206.575
+      ],
+      "to": [
+        7180.986,
+        8960.346
+      ],
+      "source_px": [
+        [
+          596,
+          464
+        ],
+        [
+          596,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "BATH-C01",
+        "BATH-M01"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        6587.866
+      ],
+      "to": [
+        12116.59,
+        6587.866
+      ],
+      "source_px": [
+        [
+          681,
+          482
+        ],
+        [
+          829,
+          482
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        6969.158
+      ],
+      "to": [
+        12582.613,
+        7456.363
+      ],
+      "source_px": [
+        [
+          851,
+          500
+        ],
+        [
+          851,
+          523
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        8176.58
+      ],
+      "to": [
+        12582.613,
+        8960.346
+      ],
+      "source_px": [
+        [
+          851,
+          557
+        ],
+        [
+          851,
+          594
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        8960.346
+      ],
+      "to": [
+        12582.613,
+        9341.637
+      ],
+      "source_px": [
+        [
+          851,
+          594
+        ],
+        [
+          851,
+          612
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        12582.613,
+        9998.305
+      ],
+      "to": [
+        12582.613,
+        10231.317
+      ],
+      "source_px": [
+        [
+          851,
+          643
+        ],
+        [
+          851,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        10739.705,
+        8960.346
+      ],
+      "to": [
+        10739.705,
+        10231.317
+      ],
+      "source_px": [
+        [
+          764,
+          594
+        ],
+        [
+          764,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "TER-SVC",
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        8833.249,
+        10231.317
+      ],
+      "to": [
+        10739.705,
+        10231.317
+      ],
+      "source_px": [
+        [
+          674,
+          654
+        ],
+        [
+          764,
+          654
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        10739.705,
+        10231.317
+      ],
+      "to": [
+        12603.796,
+        10231.317
+      ],
+      "source_px": [
+        [
+          764,
+          654
+        ],
+        [
+          852,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "WC-01"
+      ]
+    },
+    {
+      "from": [
+        12603.796,
+        10231.317
+      ],
+      "to": [
+        14340.79,
+        10231.317
+      ],
+      "source_px": [
+        [
+          852,
+          654
+        ],
+        [
+          934,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        15145.738,
+        10231.317
+      ],
+      "to": [
+        16035.418,
+        10231.317
+      ],
+      "source_px": [
+        [
+          972,
+          654
+        ],
+        [
+          1014,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        8833.249,
+        8960.346
+      ],
+      "to": [
+        8833.249,
+        10231.317
+      ],
+      "source_px": [
+        [
+          674,
+          594
+        ],
+        [
+          674,
+          654
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-SVC"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        0
+      ],
+      "to": [
+        16035.418,
+        0
+      ],
+      "source_px": [
+        [
+          847,
+          171
+        ],
+        [
+          1014,
+          171
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        16035.418,
+        0
+      ],
+      "to": [
+        16035.418,
+        2732.588
+      ],
+      "source_px": [
+        [
+          1014,
+          171
+        ],
+        [
+          1014,
+          300
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        16035.418,
+        2732.588
+      ],
+      "to": [
+        16035.418,
+        10231.317
+      ],
+      "source_px": [
+        [
+          1014,
+          300
+        ],
+        [
+          1014,
+          654
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        2732.588
+      ],
+      "to": [
+        13324.013,
+        2732.588
+      ],
+      "source_px": [
+        [
+          847,
+          300
+        ],
+        [
+          886,
+          300
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        15209.287,
+        2732.588
+      ],
+      "to": [
+        16035.418,
+        2732.588
+      ],
+      "source_px": [
+        [
+          975,
+          300
+        ],
+        [
+          1014,
+          300
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        0
+      ],
+      "to": [
+        12497.882,
+        550.754
+      ],
+      "source_px": [
+        [
+          847,
+          171
+        ],
+        [
+          847,
+          197
+        ]
+      ],
+      "kind": "low",
+      "thickness_mm": 180,
+      "height_m": 1,
+      "rooms": [
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        12497.882,
+        550.754
+      ],
+      "to": [
+        12497.882,
+        2732.588
+      ],
+      "source_px": [
+        [
+          847,
+          197
+        ],
+        [
+          847,
+          300
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01",
+        "TER-MAIN"
+      ]
+    },
+    {
+      "from": [
+        8981.529,
+        550.754
+      ],
+      "to": [
+        9638.197,
+        550.754
+      ],
+      "source_px": [
+        [
+          681,
+          197
+        ],
+        [
+          712,
+          197
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        11862.396,
+        550.754
+      ],
+      "to": [
+        12497.882,
+        550.754
+      ],
+      "source_px": [
+        [
+          817,
+          197
+        ],
+        [
+          847,
+          197
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "RECP-01"
+      ]
+    },
+    {
+      "from": [
+        12116.59,
+        6587.866
+      ],
+      "to": [
+        12582.613,
+        6969.158
+      ],
+      "source_px": [
+        [
+          829,
+          482
+        ],
+        [
+          851,
+          500
+        ]
+      ],
+      "kind": "unclassified",
+      "thickness_mm": 180,
+      "height_m": 2.5,
+      "rooms": [
+        "KIT-01",
+        "RECP-01"
+      ]
+    }
+  ],
+  "reference_catalog": [
+    {
+      "id": "sofa-cloud",
+      "name": "Pacha Sofa, 3 seater",
+      "maker": "GUBI",
+      "url": "https://gubi.com/en/int/products/pacha-sofa",
+      "type": "sofa",
+      "variant": "cocoon",
+      "description": "Rounded / cloud-like. Official page selects 3 seater; item 10089603.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "sofa-modular",
+      "name": "Connect Soft Modular Sofa 2-Seater, Configuration 1",
+      "maker": "Muuto",
+      "url": "https://www.muuto.com/product/Connect-Soft-Modular-Sofa-2-Seater-Configurations/",
+      "type": "sofa",
+      "variant": "modular",
+      "description": "Modular / low. Default page item COS2SC1CD12 / old item 96001.",
+      "dimensions_mm": [
+        2070,
+        990,
+        690
+      ],
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "sofa-tailored",
+      "name": "Outline Sofa 3-Seater",
+      "maker": "Muuto",
+      "url": "https://www.muuto.com/product/Outline-Sofa-3-Seater",
+      "type": "sofa",
+      "variant": "tailored",
+      "description": "Classic tailored / Scandinavian. Clean-lined design; official family text references Scandinavian sofas of the 1960s.",
+      "dimensions_mm": [
+        2200,
+        840,
+        710
+      ],
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "bed-upholstered",
+      "name": "TUFJORD Upholstered Bed Frame, Tallmyra white/black, Standard Double",
+      "maker": "IKEA",
+      "url": "https://www.ikea.com/gb/en/p/tufjord-upholstered-bed-frame-tallmyra-white-black-70573260/",
+      "type": "bed",
+      "variant": "upholstered",
+      "description": "Upholstered / curved headboard. Article 705.732.60.",
+      "dimensions_mm": [
+        1590,
+        2130,
+        1090
+      ],
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "bed-oak-platform",
+      "name": "Nera Queen Low Profile Bed – Oak",
+      "maker": "Article (brand)",
+      "url": "https://www.article.com/product/31363/nera-queen-low-profile-bed-oak",
+      "type": "bed",
+      "variant": "oak-platform",
+      "description": "Oak / low platform. Official Article result confirms the product name, Queen size and Oak finish.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "bed-cane-wood",
+      "name": "Ida Woven Bed, White/Natural",
+      "maker": "West Elm (brand)",
+      "url": "https://www.westelm.com/products/ida-bed-white-h6911/",
+      "type": "bed",
+      "variant": "woven-headboard",
+      "description": "Cane / wood. Official description identifies natural caning and a solid mango wood frame/legs in White.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "appliance-oven",
+      "name": "Series 8 Built-in Oven HBG7741B1B, Black",
+      "maker": "Bosch / BSH Home Appliances",
+      "url": "https://www.bosch-home.co.uk/en/product/cooking-and-baking/ovens/built-in-ovens/HBG7741B1B",
+      "type": "ovencol",
+      "variant": "black-glass",
+      "description": "Integrated black oven front. Official page names a 60 × 60 cm built-in oven.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "appliance-dishwasher",
+      "name": "Series 6 Fully-integrated Dishwasher SMV6ZCX16E",
+      "maker": "Bosch / BSH Home Appliances",
+      "url": "https://www.bosch-home.com.sg/en/product/dishwashers/built-in-dishwashers/fully-integrated-dishwasher-60-cm/SMV6ZCX16E",
+      "type": "dishwasher",
+      "variant": "integrated",
+      "description": "Integrated / panel-hidden dishwasher. 60 cm fully-integrated category; Singapore model reference.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "appliance-fridge",
+      "name": "Series 4 Built-in Fridge-freezer KIN86VSE0G",
+      "maker": "Bosch / BSH Home Appliances",
+      "url": "https://www.bosch-home.co.uk/en/product/cooling-and-freezing/fridge-freezers/built-in-fridge-freezers-freezer-at-bottom/KIN86VSE0G",
+      "type": "fridge",
+      "variant": "integrated",
+      "description": "Integrated tall fridge-freezer / sliding hinge. Built-in fridge-freezer with bottom freezer and sliding hinge.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "wall-silhouette",
+      "name": "Silhouette AF-655",
+      "maker": "Benjamin Moore",
+      "url": "https://www.benjaminmoore.com/en-us/paint-colors/color/af-655/silhouette",
+      "type": "paint",
+      "variant": null,
+      "description": "Espresso / charcoal. Benjamin Moore's 2026 Color of the Year.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "wall-universal-khaki",
+      "name": "Universal Khaki SW 6150",
+      "maker": "Sherwin-Williams",
+      "url": "https://www.sherwin-williams.com/en-us/color/color-family/neutral-paint-colors/sw6150-universal-khaki",
+      "type": "paint",
+      "variant": null,
+      "description": "Warm khaki / midtone neutral. Official 2026 page names Universal Khaki SW 6150.",
+      "dimensions_mm": null,
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "wall-hidden-gem",
+      "name": "Hidden Gem N430-6A",
+      "maker": "Behr Paint Company",
+      "url": "https://www.behr.com/colors/color-detail/n430-6a",
+      "type": "paint",
+      "variant": null,
+      "description": "Smoky jade / blue-green. Behr's 2026 Color of the Year.",
+      "dimensions_mm": null,
+      "hex": "#596d69",
+      "image": null,
+      "checked_on": "2026-10-03"
+    },
+    {
+      "id": "sofa-connect-soft-3",
+      "name": "Connect Soft Modular Sofa 3-Seater, Configuration 1",
+      "maker": "Muuto",
+      "url": "https://www.muuto.com/product/Connect-Soft-Modular-Sofa-3-Seater-Configurations",
+      "type": "sofa",
+      "variant": "modular",
+      "description": "REAL_PRODUCT dimensional reference. COS3SC1CD12 / 96016: 2880 × 990 × 690 mm. Manufacturer describes assembled dimensions as indicative. Viewer is an approximate reference model; natural linen is GENERIC, not verified Clay 12 upholstery.",
+      "dimensions_mm": [
+        2880,
+        990,
+        690
+      ],
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-04"
+    },
+    {
+      "id": "r1-fiber-side-tube",
+      "name": "Fiber Side Chair Tube Base",
+      "maker": "Muuto",
+      "url": "https://www.muuto.com/product/fiber-side-chair-tube-base-p3089/23216-whit_dkye/",
+      "type": "chair",
+      "dimensions_mm": [
+        510,
+        530,
+        770
+      ],
+      "variant": "style",
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-04",
+      "description": "REAL_PRODUCT footprint reference, official seat height460mm. Viewer mesh REFERENCE approximation, mushroom upholstery GENERIC; exact upholstered variant SKU and local availability TBD."
+    },
+    {
+      "id": "r1-dneo-basin-custom-vanity",
+      "name": "Duravit D-Neo 236660 basin reference + exploratory custom vanity",
+      "maker": "Duravit / custom cabinet",
+      "url": "https://la.pro.duravit.com/pro/content/homepage/productos/series/resumen/productos~402880943a1b6e1b013a1bd20b39003d.es-es.html?ncat=washbasins&nser=0998&product=6434569",
+      "type": "vanity",
+      "dimensions_mm": [
+        600,
+        460,
+        930
+      ],
+      "variant": "style",
+      "hex": null,
+      "image": null,
+      "checked_on": "2026-10-04",
+      "description": "REFERENCE custom assembly, not a purchasable Duravit vanity SKU. REAL_PRODUCT basin2366600000 dimensions600x440x165mm. Custom cabinet envelope600x460mm; mounting height and actual basin/mesh TBD."
+    }
+  ],
+  "verified": {
+    "clear_ceiling_m": 2.5,
+    "concrete_underside_m": 2.63,
+    "service_void_mm": 130,
+    "living_glazing": "GLZ-RECP-N: sill 0.00 m, head 2.50 m"
+  },
+  "rules": [
+    "Architecture and ceiling height are locked",
+    "Owner/family comfort and circulation first",
+    "Use exact IDs and source-pixel topology",
+    "Concealed HVAC faces are visual only; validate equipment, ducts, drains and access separately",
+    "Return ApartmentDesignProposal/1 or /2 with the same canonical hash and base_scene_revision"
+  ],
+  "interior_contract": {
+    "schema": "ApartmentInteriorDesignContext/1",
+    "architecture_mutable": false,
+    "surfaces": {
+      "schema": "ApartmentInteriorSurfaces/1",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "coordinate_system": "canonical plan x/y millimetres; wall offsets measured from segment midpoint",
+      "surfaces": [
+        {
+          "id": "FLOOR-TER-MBR",
+          "type": "floor",
+          "room_id": "TER-MBR",
+          "polygon_mm": [
+            [
+              0,
+              3431.622
+            ],
+            [
+              1970.005,
+              3431.622
+            ],
+            [
+              1970.005,
+              4999.153
+            ],
+            [
+              0,
+              4999.153
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "WALL-TER-MBR-01",
+          "type": "wall",
+          "room_id": "TER-MBR",
+          "source_wall_index": 4,
+          "from": [
+            296.56,
+            4999.153
+          ],
+          "to": [
+            466.023,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 169.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-MBR-02",
+          "type": "wall",
+          "room_id": "TER-MBR",
+          "source_wall_index": 5,
+          "from": [
+            1842.908,
+            4999.153
+          ],
+          "to": [
+            1970.005,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 127.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-MBR-03",
+          "type": "wall",
+          "room_id": "TER-MBR",
+          "source_wall_index": 2,
+          "from": [
+            1970.005,
+            3431.622
+          ],
+          "to": [
+            1970.005,
+            4999.153
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 1567.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-BR-01",
+          "type": "floor",
+          "room_id": "BR-01",
+          "polygon_mm": [
+            [
+              1970.005,
+              1503.982
+            ],
+            [
+              5465.175,
+              1503.982
+            ],
+            [
+              5465.175,
+              4999.153
+            ],
+            [
+              1970.005,
+              4999.153
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-BR-01",
+          "type": "ceiling",
+          "room_id": "BR-01",
+          "polygon_mm": [
+            [
+              1970.005,
+              1503.982
+            ],
+            [
+              5465.175,
+              1503.982
+            ],
+            [
+              5465.175,
+              4999.153
+            ],
+            [
+              1970.005,
+              4999.153
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-BR-01-01",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 1,
+          "from": [
+            1970.005,
+            1503.982
+          ],
+          "to": [
+            1970.005,
+            3431.622
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 1927.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-02",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 12,
+          "from": [
+            1970.005,
+            1503.982
+          ],
+          "to": [
+            3770.547,
+            1503.982
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 1800.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-03",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 2,
+          "from": [
+            1970.005,
+            3431.622
+          ],
+          "to": [
+            1970.005,
+            4999.153
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 1567.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-04",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 6,
+          "from": [
+            1970.005,
+            4999.153
+          ],
+          "to": [
+            4003.559,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 2033.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-05",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 7,
+          "from": [
+            4003.559,
+            4999.153
+          ],
+          "to": [
+            4490.764,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 487.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-06",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 13,
+          "from": [
+            5126.25,
+            1503.982
+          ],
+          "to": [
+            5465.175,
+            1503.982
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 338.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-07",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 8,
+          "from": [
+            5210.981,
+            4999.153
+          ],
+          "to": [
+            5465.175,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 254.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-01-08",
+          "type": "wall",
+          "room_id": "BR-01",
+          "source_wall_index": 16,
+          "from": [
+            5465.175,
+            1503.982
+          ],
+          "to": [
+            5465.175,
+            4999.153
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 3495.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-BR-02",
+          "type": "floor",
+          "room_id": "BR-02",
+          "polygon_mm": [
+            [
+              5465.175,
+              1503.982
+            ],
+            [
+              8981.529,
+              1503.982
+            ],
+            [
+              8981.529,
+              4999.153
+            ],
+            [
+              5465.175,
+              4999.153
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-BR-02",
+          "type": "ceiling",
+          "room_id": "BR-02",
+          "polygon_mm": [
+            [
+              5465.175,
+              1503.982
+            ],
+            [
+              8981.529,
+              1503.982
+            ],
+            [
+              8981.529,
+              4999.153
+            ],
+            [
+              5465.175,
+              4999.153
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-BR-02-01",
+          "type": "wall",
+          "room_id": "BR-02",
+          "source_wall_index": 16,
+          "from": [
+            5465.175,
+            1503.982
+          ],
+          "to": [
+            5465.175,
+            4999.153
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 3495.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-02-02",
+          "type": "wall",
+          "room_id": "BR-02",
+          "source_wall_index": 14,
+          "from": [
+            5465.175,
+            1503.982
+          ],
+          "to": [
+            7202.169,
+            1503.982
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 1737,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-02-03",
+          "type": "wall",
+          "room_id": "BR-02",
+          "source_wall_index": 9,
+          "from": [
+            5465.175,
+            4999.153
+          ],
+          "to": [
+            5740.552,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 275.4,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-02-04",
+          "type": "wall",
+          "room_id": "BR-02",
+          "source_wall_index": 10,
+          "from": [
+            6439.587,
+            4999.153
+          ],
+          "to": [
+            8981.529,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 2541.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-02-05",
+          "type": "wall",
+          "room_id": "BR-02",
+          "source_wall_index": 15,
+          "from": [
+            8579.054,
+            1503.982
+          ],
+          "to": [
+            8981.529,
+            1503.982
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 402.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BR-02-06",
+          "type": "wall",
+          "room_id": "BR-02",
+          "source_wall_index": 20,
+          "from": [
+            8981.529,
+            1503.982
+          ],
+          "to": [
+            8981.529,
+            4999.153
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 3495.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-MBR-01",
+          "type": "floor",
+          "room_id": "MBR-01",
+          "polygon_mm": [
+            [
+              296.56,
+              4999.153
+            ],
+            [
+              4003.559,
+              4999.153
+            ],
+            [
+              4003.559,
+              8960.346
+            ],
+            [
+              296.56,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-MBR-01",
+          "type": "ceiling",
+          "room_id": "MBR-01",
+          "polygon_mm": [
+            [
+              296.56,
+              4999.153
+            ],
+            [
+              4003.559,
+              4999.153
+            ],
+            [
+              4003.559,
+              8960.346
+            ],
+            [
+              296.56,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-MBR-01-01",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 37,
+          "from": [
+            296.56,
+            4999.153
+          ],
+          "to": [
+            296.56,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 3961.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-02",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 4,
+          "from": [
+            296.56,
+            4999.153
+          ],
+          "to": [
+            466.023,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 169.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-03",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 28,
+          "from": [
+            296.56,
+            8960.346
+          ],
+          "to": [
+            4003.559,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 3707,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-04",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 5,
+          "from": [
+            1842.908,
+            4999.153
+          ],
+          "to": [
+            1970.005,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 127.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-05",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 6,
+          "from": [
+            1970.005,
+            4999.153
+          ],
+          "to": [
+            4003.559,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 2033.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-06",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 24,
+          "from": [
+            4003.559,
+            4999.153
+          ],
+          "to": [
+            4003.559,
+            5253.347
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 254.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-07",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 25,
+          "from": [
+            4003.559,
+            5994.747
+          ],
+          "to": [
+            4003.559,
+            6206.575
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 211.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-08",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 26,
+          "from": [
+            4003.559,
+            6206.575
+          ],
+          "to": [
+            4003.559,
+            7435.18
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 1228.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-MBR-01-09",
+          "type": "wall",
+          "room_id": "MBR-01",
+          "source_wall_index": 27,
+          "from": [
+            4003.559,
+            8155.397
+          ],
+          "to": [
+            4003.559,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 804.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-HALL-01",
+          "type": "floor",
+          "room_id": "HALL-01",
+          "polygon_mm": [
+            [
+              4003.559,
+              4999.153
+            ],
+            [
+              8981.529,
+              4999.153
+            ],
+            [
+              8981.529,
+              6206.575
+            ],
+            [
+              4003.559,
+              6206.575
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-HALL-01",
+          "type": "ceiling",
+          "room_id": "HALL-01",
+          "polygon_mm": [
+            [
+              4003.559,
+              4999.153
+            ],
+            [
+              8981.529,
+              4999.153
+            ],
+            [
+              8981.529,
+              6206.575
+            ],
+            [
+              4003.559,
+              6206.575
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-HALL-01-01",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 24,
+          "from": [
+            4003.559,
+            4999.153
+          ],
+          "to": [
+            4003.559,
+            5253.347
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 254.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-02",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 7,
+          "from": [
+            4003.559,
+            4999.153
+          ],
+          "to": [
+            4490.764,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 487.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-03",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 25,
+          "from": [
+            4003.559,
+            5994.747
+          ],
+          "to": [
+            4003.559,
+            6206.575
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 211.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-04",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 38,
+          "from": [
+            4003.559,
+            6206.575
+          ],
+          "to": [
+            5465.175,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1461.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-05",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 8,
+          "from": [
+            5210.981,
+            4999.153
+          ],
+          "to": [
+            5465.175,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 254.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-06",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 9,
+          "from": [
+            5465.175,
+            4999.153
+          ],
+          "to": [
+            5740.552,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 275.4,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-07",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 39,
+          "from": [
+            5465.175,
+            6206.575
+          ],
+          "to": [
+            7180.986,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1715.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-08",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 10,
+          "from": [
+            6439.587,
+            4999.153
+          ],
+          "to": [
+            8981.529,
+            4999.153
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 2541.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-09",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 40,
+          "from": [
+            7180.986,
+            6206.575
+          ],
+          "to": [
+            7413.998,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 233,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-10",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 41,
+          "from": [
+            8070.666,
+            6206.575
+          ],
+          "to": [
+            8981.529,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 910.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-HALL-01-11",
+          "type": "wall",
+          "room_id": "HALL-01",
+          "source_wall_index": 21,
+          "from": [
+            8981.529,
+            6015.93
+          ],
+          "to": [
+            8981.529,
+            6206.575
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 190.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-WIC-01",
+          "type": "floor",
+          "room_id": "WIC-01",
+          "polygon_mm": [
+            [
+              4003.559,
+              6206.575
+            ],
+            [
+              5465.175,
+              6206.575
+            ],
+            [
+              5465.175,
+              8960.346
+            ],
+            [
+              4003.559,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-WIC-01",
+          "type": "ceiling",
+          "room_id": "WIC-01",
+          "polygon_mm": [
+            [
+              4003.559,
+              6206.575
+            ],
+            [
+              5465.175,
+              6206.575
+            ],
+            [
+              5465.175,
+              8960.346
+            ],
+            [
+              4003.559,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-WIC-01-01",
+          "type": "wall",
+          "room_id": "WIC-01",
+          "source_wall_index": 26,
+          "from": [
+            4003.559,
+            6206.575
+          ],
+          "to": [
+            4003.559,
+            7435.18
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 1228.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WIC-01-02",
+          "type": "wall",
+          "room_id": "WIC-01",
+          "source_wall_index": 38,
+          "from": [
+            4003.559,
+            6206.575
+          ],
+          "to": [
+            5465.175,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 1461.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WIC-01-03",
+          "type": "wall",
+          "room_id": "WIC-01",
+          "source_wall_index": 27,
+          "from": [
+            4003.559,
+            8155.397
+          ],
+          "to": [
+            4003.559,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 804.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WIC-01-04",
+          "type": "wall",
+          "room_id": "WIC-01",
+          "source_wall_index": 29,
+          "from": [
+            4003.559,
+            8960.346
+          ],
+          "to": [
+            5465.175,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1461.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WIC-01-05",
+          "type": "wall",
+          "room_id": "WIC-01",
+          "source_wall_index": 17,
+          "from": [
+            5465.175,
+            6206.575
+          ],
+          "to": [
+            5465.175,
+            7265.718
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 1059.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WIC-01-06",
+          "type": "wall",
+          "room_id": "WIC-01",
+          "source_wall_index": 18,
+          "from": [
+            5465.175,
+            7943.569
+          ],
+          "to": [
+            5465.175,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 1016.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-BATH-M01",
+          "type": "floor",
+          "room_id": "BATH-M01",
+          "polygon_mm": [
+            [
+              5465.175,
+              6206.575
+            ],
+            [
+              7180.986,
+              6206.575
+            ],
+            [
+              7180.986,
+              8960.346
+            ],
+            [
+              5465.175,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-BATH-M01",
+          "type": "ceiling",
+          "room_id": "BATH-M01",
+          "polygon_mm": [
+            [
+              5465.175,
+              6206.575
+            ],
+            [
+              7180.986,
+              6206.575
+            ],
+            [
+              7180.986,
+              8960.346
+            ],
+            [
+              5465.175,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-BATH-M01-01",
+          "type": "wall",
+          "room_id": "BATH-M01",
+          "source_wall_index": 17,
+          "from": [
+            5465.175,
+            6206.575
+          ],
+          "to": [
+            5465.175,
+            7265.718
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 1059.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-M01-02",
+          "type": "wall",
+          "room_id": "BATH-M01",
+          "source_wall_index": 39,
+          "from": [
+            5465.175,
+            6206.575
+          ],
+          "to": [
+            7180.986,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 1715.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-M01-03",
+          "type": "wall",
+          "room_id": "BATH-M01",
+          "source_wall_index": 18,
+          "from": [
+            5465.175,
+            7943.569
+          ],
+          "to": [
+            5465.175,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 1016.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-M01-04",
+          "type": "wall",
+          "room_id": "BATH-M01",
+          "source_wall_index": 30,
+          "from": [
+            5465.175,
+            8960.346
+          ],
+          "to": [
+            7180.986,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1715.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-M01-05",
+          "type": "wall",
+          "room_id": "BATH-M01",
+          "source_wall_index": 42,
+          "from": [
+            7180.986,
+            6206.575
+          ],
+          "to": [
+            7180.986,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 2753.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-BATH-C01",
+          "type": "floor",
+          "room_id": "BATH-C01",
+          "polygon_mm": [
+            [
+              7180.986,
+              6206.575
+            ],
+            [
+              8981.529,
+              6206.575
+            ],
+            [
+              8981.529,
+              8960.346
+            ],
+            [
+              7180.986,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-BATH-C01",
+          "type": "ceiling",
+          "room_id": "BATH-C01",
+          "polygon_mm": [
+            [
+              7180.986,
+              6206.575
+            ],
+            [
+              8981.529,
+              6206.575
+            ],
+            [
+              8981.529,
+              8960.346
+            ],
+            [
+              7180.986,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-BATH-C01-01",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 42,
+          "from": [
+            7180.986,
+            6206.575
+          ],
+          "to": [
+            7180.986,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 2753.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-C01-02",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 40,
+          "from": [
+            7180.986,
+            6206.575
+          ],
+          "to": [
+            7413.998,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 233,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-C01-03",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 31,
+          "from": [
+            7180.986,
+            8960.346
+          ],
+          "to": [
+            8833.249,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1652.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-C01-04",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 41,
+          "from": [
+            8070.666,
+            6206.575
+          ],
+          "to": [
+            8981.529,
+            6206.575
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 910.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-C01-05",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 32,
+          "from": [
+            8833.249,
+            8960.346
+          ],
+          "to": [
+            8981.529,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 148.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-C01-06",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 22,
+          "from": [
+            8981.529,
+            6206.575
+          ],
+          "to": [
+            8981.529,
+            6587.866
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 381.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-BATH-C01-07",
+          "type": "wall",
+          "room_id": "BATH-C01",
+          "source_wall_index": 23,
+          "from": [
+            8981.529,
+            6587.866
+          ],
+          "to": [
+            8981.529,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 2372.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-KIT-01",
+          "type": "floor",
+          "room_id": "KIT-01",
+          "polygon_mm": [
+            [
+              8981.529,
+              6587.866
+            ],
+            [
+              12116.59,
+              6587.866
+            ],
+            [
+              12582.613,
+              6969.158
+            ],
+            [
+              12582.613,
+              8960.346
+            ],
+            [
+              8981.529,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-KIT-01",
+          "type": "ceiling",
+          "room_id": "KIT-01",
+          "polygon_mm": [
+            [
+              8981.529,
+              6587.866
+            ],
+            [
+              12116.59,
+              6587.866
+            ],
+            [
+              12582.613,
+              6969.158
+            ],
+            [
+              12582.613,
+              8960.346
+            ],
+            [
+              8981.529,
+              8960.346
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-KIT-01-01",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 23,
+          "from": [
+            8981.529,
+            6587.866
+          ],
+          "to": [
+            8981.529,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 2372.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-02",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 43,
+          "from": [
+            8981.529,
+            6587.866
+          ],
+          "to": [
+            12116.59,
+            6587.866
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 3135.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-03",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 33,
+          "from": [
+            8981.529,
+            8960.346
+          ],
+          "to": [
+            9765.294,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 783.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-04",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 34,
+          "from": [
+            10443.145,
+            8960.346
+          ],
+          "to": [
+            10739.705,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 296.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-05",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 35,
+          "from": [
+            10739.705,
+            8960.346
+          ],
+          "to": [
+            12582.613,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1842.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-06",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 63,
+          "from": [
+            12116.59,
+            6587.866
+          ],
+          "to": [
+            12582.613,
+            6969.158
+          ],
+          "tangent": [
+            0.7739569292297156,
+            0.6332382424469555
+          ],
+          "inward_normal": [
+            -0.6332382424469555,
+            0.7739569292297156
+          ],
+          "length_mm": 602.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-07",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 44,
+          "from": [
+            12582.613,
+            6969.158
+          ],
+          "to": [
+            12582.613,
+            7456.363
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 487.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-KIT-01-08",
+          "type": "wall",
+          "room_id": "KIT-01",
+          "source_wall_index": 45,
+          "from": [
+            12582.613,
+            8176.58
+          ],
+          "to": [
+            12582.613,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 783.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-TER-SVC",
+          "type": "floor",
+          "room_id": "TER-SVC",
+          "polygon_mm": [
+            [
+              8833.249,
+              8960.346
+            ],
+            [
+              10739.705,
+              8960.346
+            ],
+            [
+              10739.705,
+              10231.317
+            ],
+            [
+              8833.249,
+              10231.317
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "WALL-TER-SVC-01",
+          "type": "wall",
+          "room_id": "TER-SVC",
+          "source_wall_index": 32,
+          "from": [
+            8833.249,
+            8960.346
+          ],
+          "to": [
+            8981.529,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 148.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-SVC-02",
+          "type": "wall",
+          "room_id": "TER-SVC",
+          "source_wall_index": 33,
+          "from": [
+            8981.529,
+            8960.346
+          ],
+          "to": [
+            9765.294,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 783.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-SVC-03",
+          "type": "wall",
+          "room_id": "TER-SVC",
+          "source_wall_index": 34,
+          "from": [
+            10443.145,
+            8960.346
+          ],
+          "to": [
+            10739.705,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 296.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-SVC-04",
+          "type": "wall",
+          "room_id": "TER-SVC",
+          "source_wall_index": 48,
+          "from": [
+            10739.705,
+            8960.346
+          ],
+          "to": [
+            10739.705,
+            10231.317
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 1271,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-WC-01",
+          "type": "floor",
+          "room_id": "WC-01",
+          "polygon_mm": [
+            [
+              10739.705,
+              8960.346
+            ],
+            [
+              12603.796,
+              8960.346
+            ],
+            [
+              12603.796,
+              10231.317
+            ],
+            [
+              10739.705,
+              10231.317
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-WC-01",
+          "type": "ceiling",
+          "room_id": "WC-01",
+          "polygon_mm": [
+            [
+              10739.705,
+              8960.346
+            ],
+            [
+              12603.796,
+              8960.346
+            ],
+            [
+              12603.796,
+              10231.317
+            ],
+            [
+              10739.705,
+              10231.317
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-WC-01-01",
+          "type": "wall",
+          "room_id": "WC-01",
+          "source_wall_index": 48,
+          "from": [
+            10739.705,
+            8960.346
+          ],
+          "to": [
+            10739.705,
+            10231.317
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 1271,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WC-01-02",
+          "type": "wall",
+          "room_id": "WC-01",
+          "source_wall_index": 35,
+          "from": [
+            10739.705,
+            8960.346
+          ],
+          "to": [
+            12582.613,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 1842.9,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WC-01-03",
+          "type": "wall",
+          "room_id": "WC-01",
+          "source_wall_index": 50,
+          "from": [
+            10739.705,
+            10231.317
+          ],
+          "to": [
+            12603.796,
+            10231.317
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1864.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WC-01-04",
+          "type": "wall",
+          "room_id": "WC-01",
+          "source_wall_index": 46,
+          "from": [
+            12582.613,
+            8960.346
+          ],
+          "to": [
+            12582.613,
+            9341.637
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 381.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WC-01-05",
+          "type": "wall",
+          "room_id": "WC-01",
+          "source_wall_index": 36,
+          "from": [
+            12582.613,
+            8960.346
+          ],
+          "to": [
+            12603.796,
+            8960.346
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 21.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-WC-01-06",
+          "type": "wall",
+          "room_id": "WC-01",
+          "source_wall_index": 47,
+          "from": [
+            12582.613,
+            9998.305
+          ],
+          "to": [
+            12582.613,
+            10231.317
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 233,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-TER-MAIN",
+          "type": "floor",
+          "room_id": "TER-MAIN",
+          "polygon_mm": [
+            [
+              12497.882,
+              0
+            ],
+            [
+              16035.418,
+              0
+            ],
+            [
+              16035.418,
+              2732.588
+            ],
+            [
+              12497.882,
+              2732.588
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "WALL-TER-MAIN-01",
+          "type": "wall",
+          "room_id": "TER-MAIN",
+          "source_wall_index": 60,
+          "from": [
+            12497.882,
+            550.754
+          ],
+          "to": [
+            12497.882,
+            2732.588
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 2181.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-MAIN-02",
+          "type": "wall",
+          "room_id": "TER-MAIN",
+          "source_wall_index": 57,
+          "from": [
+            12497.882,
+            2732.588
+          ],
+          "to": [
+            13324.013,
+            2732.588
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 826.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-TER-MAIN-03",
+          "type": "wall",
+          "room_id": "TER-MAIN",
+          "source_wall_index": 58,
+          "from": [
+            15209.287,
+            2732.588
+          ],
+          "to": [
+            16035.418,
+            2732.588
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 826.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "FLOOR-RECP-01",
+          "type": "floor",
+          "room_id": "RECP-01",
+          "polygon_mm": [
+            [
+              8981.529,
+              550.754
+            ],
+            [
+              12497.882,
+              550.754
+            ],
+            [
+              12497.882,
+              2732.588
+            ],
+            [
+              16035.418,
+              2732.588
+            ],
+            [
+              16035.418,
+              10231.317
+            ],
+            [
+              12603.796,
+              10231.317
+            ],
+            [
+              12603.796,
+              6969.158
+            ],
+            [
+              12116.59,
+              6587.866
+            ],
+            [
+              8981.529,
+              6587.866
+            ]
+          ],
+          "elevation_mm": 0
+        },
+        {
+          "id": "CEILING-RECP-01",
+          "type": "ceiling",
+          "room_id": "RECP-01",
+          "polygon_mm": [
+            [
+              8981.529,
+              550.754
+            ],
+            [
+              12497.882,
+              550.754
+            ],
+            [
+              12497.882,
+              2732.588
+            ],
+            [
+              16035.418,
+              2732.588
+            ],
+            [
+              16035.418,
+              10231.317
+            ],
+            [
+              12603.796,
+              10231.317
+            ],
+            [
+              12603.796,
+              6969.158
+            ],
+            [
+              12116.59,
+              6587.866
+            ],
+            [
+              8981.529,
+              6587.866
+            ]
+          ],
+          "elevation_mm": 2500
+        },
+        {
+          "id": "WALL-RECP-01-01",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 19,
+          "from": [
+            8981.529,
+            550.754
+          ],
+          "to": [
+            8981.529,
+            1503.982
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 953.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-02",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 61,
+          "from": [
+            8981.529,
+            550.754
+          ],
+          "to": [
+            9638.197,
+            550.754
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 656.7,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-03",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 20,
+          "from": [
+            8981.529,
+            1503.982
+          ],
+          "to": [
+            8981.529,
+            4999.153
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 3495.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-04",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 21,
+          "from": [
+            8981.529,
+            6015.93
+          ],
+          "to": [
+            8981.529,
+            6206.575
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 190.6,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-05",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 22,
+          "from": [
+            8981.529,
+            6206.575
+          ],
+          "to": [
+            8981.529,
+            6587.866
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 381.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-06",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 43,
+          "from": [
+            8981.529,
+            6587.866
+          ],
+          "to": [
+            12116.59,
+            6587.866
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 3135.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-07",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 62,
+          "from": [
+            11862.396,
+            550.754
+          ],
+          "to": [
+            12497.882,
+            550.754
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 635.5,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-08",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 63,
+          "from": [
+            12116.59,
+            6587.866
+          ],
+          "to": [
+            12582.613,
+            6969.158
+          ],
+          "tangent": [
+            0.7739569292297156,
+            0.6332382424469555
+          ],
+          "inward_normal": [
+            0.6332382424469555,
+            -0.7739569292297156
+          ],
+          "length_mm": 602.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-09",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 60,
+          "from": [
+            12497.882,
+            550.754
+          ],
+          "to": [
+            12497.882,
+            2732.588
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 2181.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-10",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 57,
+          "from": [
+            12497.882,
+            2732.588
+          ],
+          "to": [
+            13324.013,
+            2732.588
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 826.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-11",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 44,
+          "from": [
+            12582.613,
+            6969.158
+          ],
+          "to": [
+            12582.613,
+            7456.363
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 487.2,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-12",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 45,
+          "from": [
+            12582.613,
+            8176.58
+          ],
+          "to": [
+            12582.613,
+            8960.346
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 783.8,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-13",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 46,
+          "from": [
+            12582.613,
+            8960.346
+          ],
+          "to": [
+            12582.613,
+            9341.637
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 381.3,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-14",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 47,
+          "from": [
+            12582.613,
+            9998.305
+          ],
+          "to": [
+            12582.613,
+            10231.317
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            1,
+            0
+          ],
+          "length_mm": 233,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-15",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 51,
+          "from": [
+            12603.796,
+            10231.317
+          ],
+          "to": [
+            14340.79,
+            10231.317
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 1737,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-16",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 52,
+          "from": [
+            15145.738,
+            10231.317
+          ],
+          "to": [
+            16035.418,
+            10231.317
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            -1
+          ],
+          "length_mm": 889.7,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-17",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 58,
+          "from": [
+            15209.287,
+            2732.588
+          ],
+          "to": [
+            16035.418,
+            2732.588
+          ],
+          "tangent": [
+            1,
+            0
+          ],
+          "inward_normal": [
+            0,
+            1
+          ],
+          "length_mm": 826.1,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "WALL-RECP-01-18",
+          "type": "wall",
+          "room_id": "RECP-01",
+          "source_wall_index": 56,
+          "from": [
+            16035.418,
+            2732.588
+          ],
+          "to": [
+            16035.418,
+            10231.317
+          ],
+          "tangent": [
+            0,
+            1
+          ],
+          "inward_normal": [
+            -1,
+            0
+          ],
+          "length_mm": 7498.7,
+          "height_mm": 2500,
+          "wall_half_mm": 90,
+          "status": "INFERRED"
+        },
+        {
+          "id": "OP-BR01-HALL",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "BR-01",
+            "HALL-01"
+          ],
+          "from": [
+            4490.764,
+            4999.153
+          ],
+          "to": [
+            5210.981,
+            4999.153
+          ],
+          "length_mm": 720.2
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "BR-02",
+            "HALL-01"
+          ],
+          "from": [
+            5740.552,
+            4999.153
+          ],
+          "to": [
+            6439.587,
+            4999.153
+          ],
+          "length_mm": 699
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "MBR-01",
+            "HALL-01"
+          ],
+          "from": [
+            4003.559,
+            5253.347
+          ],
+          "to": [
+            4003.559,
+            5994.747
+          ],
+          "length_mm": 741.4
+        },
+        {
+          "id": "OP-MBR-WIC",
+          "type": "opening",
+          "opening_type": "open_or_doorway",
+          "room_ids": [
+            "MBR-01",
+            "WIC-01"
+          ],
+          "from": [
+            4003.559,
+            7435.18
+          ],
+          "to": [
+            4003.559,
+            8155.397
+          ],
+          "length_mm": 720.2
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "WIC-01",
+            "BATH-M01"
+          ],
+          "from": [
+            5465.175,
+            7265.718
+          ],
+          "to": [
+            5465.175,
+            7943.569
+          ],
+          "length_mm": 677.9
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "HALL-01",
+            "BATH-C01"
+          ],
+          "from": [
+            7413.998,
+            6206.575
+          ],
+          "to": [
+            8070.666,
+            6206.575
+          ],
+          "length_mm": 656.7
+        },
+        {
+          "id": "OP-HALL-RECP",
+          "type": "opening",
+          "opening_type": "open_passage",
+          "room_ids": [
+            "HALL-01",
+            "RECP-01"
+          ],
+          "from": [
+            8981.529,
+            4999.153
+          ],
+          "to": [
+            8981.529,
+            6015.93
+          ],
+          "length_mm": 1016.8
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "RECP-01",
+            "KIT-01"
+          ],
+          "from": [
+            12582.613,
+            7456.363
+          ],
+          "to": [
+            12582.613,
+            8176.58
+          ],
+          "length_mm": 720.2
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "KIT-01",
+            "TER-SVC"
+          ],
+          "from": [
+            9765.294,
+            8960.346
+          ],
+          "to": [
+            10443.145,
+            8960.346
+          ],
+          "length_mm": 677.9
+        },
+        {
+          "id": "OP-RECP-WC",
+          "type": "opening",
+          "opening_type": "hinged_door",
+          "room_ids": [
+            "RECP-01",
+            "WC-01"
+          ],
+          "from": [
+            12603.796,
+            9341.637
+          ],
+          "to": [
+            12603.796,
+            9998.305
+          ],
+          "length_mm": 656.7
+        },
+        {
+          "id": "OP-ENT-01",
+          "type": "opening",
+          "opening_type": "main_entry_hinged_door",
+          "room_ids": [
+            "RECP-01"
+          ],
+          "from": [
+            14340.79,
+            10231.317
+          ],
+          "to": [
+            15145.738,
+            10231.317
+          ],
+          "length_mm": 804.9
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "type": "opening",
+          "opening_type": "glazed_terrace_opening",
+          "room_ids": [
+            "MBR-01",
+            "TER-MBR"
+          ],
+          "from": [
+            466.023,
+            4999.153
+          ],
+          "to": [
+            1842.908,
+            4999.153
+          ],
+          "length_mm": 1376.9
+        },
+        {
+          "id": "GLZ-BR01-N",
+          "type": "opening",
+          "opening_type": "exterior_window",
+          "room_ids": [
+            "BR-01"
+          ],
+          "from": [
+            3770.547,
+            1503.982
+          ],
+          "to": [
+            5126.25,
+            1503.982
+          ],
+          "length_mm": 1355.7
+        },
+        {
+          "id": "GLZ-BR02-N",
+          "type": "opening",
+          "opening_type": "exterior_window",
+          "room_ids": [
+            "BR-02"
+          ],
+          "from": [
+            7202.169,
+            1503.982
+          ],
+          "to": [
+            8579.054,
+            1503.982
+          ],
+          "length_mm": 1376.9
+        },
+        {
+          "id": "GLZ-RECP-N",
+          "type": "opening",
+          "opening_type": "exterior_window",
+          "room_ids": [
+            "RECP-01"
+          ],
+          "from": [
+            9638.197,
+            550.754
+          ],
+          "to": [
+            11862.396,
+            550.754
+          ],
+          "length_mm": 2224.2
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "type": "opening",
+          "opening_type": "glazed_terrace_opening",
+          "room_ids": [
+            "RECP-01",
+            "TER-MAIN"
+          ],
+          "from": [
+            13324.013,
+            2732.588
+          ],
+          "to": [
+            15209.287,
+            2732.588
+          ],
+          "length_mm": 1885.3
+        }
+      ]
+    },
+    "object_types": {
+      "divider": {
+        "variants": [
+          "vertical-slats",
+          "fluted-glass",
+          "open-shelf",
+          "storage-screen",
+          "solid-panel"
+        ],
+        "modes": [
+          "floor"
+        ],
+        "size": [
+          1200,
+          180,
+          2200
+        ]
+      },
+      "console": {
+        "variants": [
+          "plain"
+        ],
+        "modes": [
+          "floor",
+          "wall"
+        ],
+        "size": [
+          1100,
+          350,
+          800
+        ],
+        "operating": 600
+      },
+      "sideboard": {
+        "variants": [
+          "plain"
+        ],
+        "modes": [
+          "floor",
+          "wall"
+        ],
+        "size": [
+          1500,
+          450,
+          800
+        ],
+        "operating": 800
+      },
+      "bench": {
+        "variants": [
+          "plain",
+          "upholstered"
+        ],
+        "modes": [
+          "floor"
+        ],
+        "size": [
+          1100,
+          420,
+          450
+        ],
+        "operating": 600
+      },
+      "artwork": {
+        "variants": [
+          "framed",
+          "canvas"
+        ],
+        "modes": [
+          "wall"
+        ],
+        "size": [
+          800,
+          40,
+          650
+        ]
+      },
+      "mirror": {
+        "variants": [
+          "rectangle",
+          "round"
+        ],
+        "modes": [
+          "wall"
+        ],
+        "size": [
+          650,
+          40,
+          1000
+        ]
+      },
+      "wall-panel": {
+        "variants": [
+          "plain",
+          "fluted"
+        ],
+        "modes": [
+          "wall"
+        ],
+        "size": [
+          1000,
+          35,
+          2200
+        ]
+      },
+      "media-unit": {
+        "variants": [
+          "plain",
+          "floating"
+        ],
+        "modes": [
+          "floor",
+          "wall"
+        ],
+        "size": [
+          1800,
+          380,
+          500
+        ],
+        "operating": 600
+      },
+      "shelf": {
+        "variants": [
+          "open",
+          "floating"
+        ],
+        "modes": [
+          "wall",
+          "floor"
+        ],
+        "size": [
+          900,
+          280,
+          450
+        ],
+        "operating": 600
+      },
+      "curtain": {
+        "variants": [
+          "sheer",
+          "drapery",
+          "layered"
+        ],
+        "modes": [
+          "opening",
+          "ceiling"
+        ],
+        "size": [
+          1600,
+          120,
+          2450
+        ]
+      },
+      "pendant": {
+        "variants": [
+          "globe",
+          "linear"
+        ],
+        "modes": [
+          "ceiling"
+        ],
+        "size": [
+          360,
+          360,
+          650
+        ]
+      },
+      "floor-lamp": {
+        "variants": [
+          "shade",
+          "arc"
+        ],
+        "modes": [
+          "floor"
+        ],
+        "size": [
+          380,
+          380,
+          1650
+        ]
+      },
+      "table-lamp": {
+        "variants": [
+          "shade",
+          "globe"
+        ],
+        "modes": [
+          "floor"
+        ],
+        "size": [
+          260,
+          260,
+          420
+        ]
+      },
+      "plant": {
+        "variants": [
+          "potted"
+        ],
+        "modes": [
+          "floor"
+        ],
+        "size": [
+          450,
+          450,
+          1300
+        ]
+      }
+    },
+    "object_schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "variant",
+        "room_id",
+        "placement",
+        "rotation",
+        "width_mm",
+        "depth_mm",
+        "height_mm",
+        "material_references",
+        "colour",
+        "status",
+        "metadata"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "divider",
+            "console",
+            "sideboard",
+            "bench",
+            "artwork",
+            "mirror",
+            "wall-panel",
+            "media-unit",
+            "shelf",
+            "curtain",
+            "pendant",
+            "floor-lamp",
+            "table-lamp",
+            "plant"
+          ]
+        },
+        "variant": {
+          "type": "string"
+        },
+        "room_id": {
+          "type": "string",
+          "enum": [
+            "BR-01",
+            "BR-02",
+            "MBR-01",
+            "HALL-01",
+            "WIC-01",
+            "BATH-M01",
+            "BATH-C01",
+            "KIT-01",
+            "WC-01",
+            "RECP-01"
+          ]
+        },
+        "placement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode"
+          ],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": [
+                "floor",
+                "wall",
+                "ceiling",
+                "opening"
+              ]
+            },
+            "host_wall_id": {
+              "type": "string"
+            },
+            "host_opening_id": {
+              "type": "string"
+            },
+            "offset_mm": {
+              "type": "number"
+            },
+            "inset_mm": {
+              "type": "number"
+            },
+            "elevation_mm": {
+              "type": "number"
+            },
+            "drop_mm": {
+              "type": "number"
+            }
+          }
+        },
+        "cx": {
+          "type": "number"
+        },
+        "cy": {
+          "type": "number"
+        },
+        "rotation": {
+          "type": "number"
+        },
+        "width_mm": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 10000
+        },
+        "depth_mm": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 10000
+        },
+        "height_mm": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 10000
+        },
+        "material_references": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "colour": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "EXPLORATORY",
+            "INFERRED",
+            "TBD",
+            "VERIFIED"
+          ]
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    },
+    "furniture_types": [
+      "bed",
+      "crib",
+      "nightstand",
+      "wardrobe",
+      "dresser",
+      "desk",
+      "chair",
+      "bookshelf",
+      "baycushion",
+      "sofa",
+      "cornersofa",
+      "armchair",
+      "beanbag",
+      "coffeetable",
+      "sidetable",
+      "tvstand",
+      "rug",
+      "shoecab",
+      "floorlamp",
+      "plant",
+      "table",
+      "roundtable",
+      "island",
+      "barstool",
+      "counter",
+      "stove",
+      "ksink",
+      "fridge",
+      "cabinet",
+      "toilet",
+      "vanity",
+      "shower",
+      "bathtub",
+      "washer",
+      "waterheater",
+      "tv",
+      "aircon",
+      "acwall",
+      "dishwasher",
+      "ovencol",
+      "dryer",
+      "purifier",
+      "officechair",
+      "piano",
+      "treadmill"
+    ],
+    "furniture_template": {
+      "id": "agent-chair-01",
+      "type": "chair",
+      "name": "Dining chair",
+      "cx": 0,
+      "cy": 0,
+      "w": 480,
+      "d": 520,
+      "rot": 0,
+      "color": "#d8d0c4",
+      "variant": "style",
+      "status": "EXPLORATORY",
+      "material_id": null,
+      "product_reference_id": null
+    },
+    "furniture_optional_fields": [
+      "variant",
+      "status",
+      "material_id",
+      "product_reference_id"
+    ],
+    "materials": [
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-wood",
+        "name": "Wood",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#ae8153",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "wood",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-walnut",
+        "name": "Walnut",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#60432e",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "walnut",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-tile800",
+        "name": "Tile 800",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#ddd9cf",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 800,
+          "height": 800
+        },
+        "fallback_generic_id": "tile800",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-tile600",
+        "name": "Tile 600",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#e5e0d7",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 600,
+          "height": 600
+        },
+        "fallback_generic_id": "tile600",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-marble",
+        "name": "Marble",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#ebe8e3",
+        "finish": "matte",
+        "roughness": 0.32,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1200,
+          "height": 1200
+        },
+        "fallback_generic_id": "marble",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-antislip",
+        "name": "Antislip",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#b1aca1",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "antislip",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-terrazzo",
+        "name": "Terrazzo",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#c9c1ae",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "terrazzo",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-carpet",
+        "name": "Carpet",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#b6a797",
+        "finish": "matte",
+        "roughness": 0.92,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "carpet",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-lightoak",
+        "name": "Lightoak",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#d3b78b",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "lightoak",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-parquet",
+        "name": "Parquet",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#a97b4f",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        },
+        "fallback_generic_id": "parquet",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-travertine",
+        "name": "Travertine",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#d2bfa4",
+        "finish": "matte",
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 1200,
+          "height": 1200
+        },
+        "fallback_generic_id": "travertine",
+        "notes": "Procedural interpretation; no manufacturer or exact product match."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-linen",
+        "name": "Natural linen",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#dfd3bb",
+        "finish": "woven",
+        "roughness": 0.95,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 300,
+          "height": 300
+        }
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-plaster",
+        "name": "Warm plaster",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#ebe6da",
+        "finish": "matte",
+        "roughness": 0.96,
+        "metallic": 0
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-brass",
+        "name": "Satin brass",
+        "category": "metal",
+        "source_status": "GENERIC",
+        "base_colour": "#b39860",
+        "finish": "satin",
+        "roughness": 0.36,
+        "metallic": 0.85
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "generic-glass",
+        "name": "Fluted glass concept",
+        "category": "glass",
+        "source_status": "GENERIC",
+        "base_colour": "#cbd9d8",
+        "finish": "fluted",
+        "roughness": 0.28,
+        "metallic": 0,
+        "notes": "Approximate translucent glass; not an exact optical simulation."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "reference-art-warm",
+        "name": "Organic abstract print",
+        "category": "artwork",
+        "source_status": "REFERENCE",
+        "base_colour": "#f1e4d0",
+        "finish": "matte",
+        "roughness": 0.92,
+        "metallic": 0,
+        "albedo_texture": "./art/warm.png",
+        "notes": "AI-created concept artwork, not a purchasable product."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a1-wall-plaster",
+        "name": "Soft warm ivory plaster",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#F3EEE6",
+        "roughness": 0.96,
+        "metallic": 0,
+        "finish": "matte"
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a1-ceiling-ivory",
+        "name": "Soft warm ivory ceiling",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#F5F1E9",
+        "finish": "ultra-matte",
+        "roughness": 0.98,
+        "metallic": 0,
+        "notes": "Light ceiling tone to preserve perceived height."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a1-limestone-honed",
+        "name": "Quiet warm limestone-look floor concept",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#E0D8CB",
+        "finish": "honed",
+        "roughness": 0.76,
+        "metallic": 0,
+        "physical_dimensions_mm": {
+          "width": 1200,
+          "height": 600,
+          "depth": 10
+        },
+        "texture_scale_mm": {
+          "width": 1200,
+          "height": 600
+        },
+        "notes": "GENERIC stone finish, no SKU. Tile texture is rescaled to the nominal 1200 × 600 mm format; subtle grout. Final material and slip rating TBD.",
+        "fallback_generic_id": "tile800"
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a1-natural-oak",
+        "name": "Natural light oak",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#B88C5E",
+        "finish": "matte",
+        "roughness": 0.72,
+        "metallic": 0,
+        "fallback_generic_id": "lightoak"
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a2-ceiling-softwhite",
+        "name": "Soft white ceiling",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#FEFCF7",
+        "finish": "ultra-matte",
+        "roughness": 0.98,
+        "metallic": 0,
+        "notes": "Near-white ceiling intended to read warm-neutral under 3000 K lighting."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a2-curtain-linen",
+        "name": "Warm light linen curtain",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#DED7CB",
+        "finish": "woven",
+        "roughness": 0.94,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 300,
+          "height": 300
+        },
+        "notes": "Light warm linen concept; layered treatment, not a selected SKU."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "a3-pale-oak",
+        "name": "Pale smoked oak concept",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#C6B18F",
+        "roughness": 0.78,
+        "metallic": 0,
+        "finish": "matte",
+        "notes": "Generic oak interpretation, no real finish SKU."
+      },
+      {
+        "schema": "InteriorMaterial/1",
+        "id": "r1-bath-porcelain",
+        "name": "Warm ivory bathroom porcelain concept",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#E5DFD3",
+        "finish": "matte",
+        "roughness": 0.72,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 600,
+          "height": 600
+        },
+        "fallback_generic_id": "tile600",
+        "notes": "No selected SKU; wet-area slip rating and waterproofing TBD."
+      }
+    ],
+    "material_schema": "InteriorMaterial/1",
+    "material_template": {
+      "schema": "InteriorMaterial/1",
+      "id": "custom-material-01",
+      "name": "Custom matte finish",
+      "category": "paint",
+      "source_status": "GENERIC",
+      "base_colour": "#e8e0d2",
+      "roughness": 0.9,
+      "metallic": 0,
+      "finish": "matte",
+      "notes": "No texture maps required."
+    },
+    "material_optional_fields": [
+      "manufacturer",
+      "product_name",
+      "product_url",
+      "physical_dimensions_mm: {width,height,depth}",
+      "texture_scale_mm: {width,height}",
+      "albedo_texture",
+      "normal_map",
+      "roughness_map",
+      "reference_images",
+      "notes",
+      "fallback_generic_id"
+    ],
+    "overlay_schema": "InteriorDesign/1",
+    "proposal_versions": [
+      "ApartmentDesignProposal/1",
+      "ApartmentDesignProposal/2"
+    ],
+    "proposal_v2_contract": {
+      "required": [
+        "schema",
+        "canonical_sha256",
+        "base_scene_revision",
+        "operations"
+      ],
+      "optional": [
+        "author",
+        "notes"
+      ],
+      "maximum_operations": 100,
+      "operation_fields": {
+        "room-option": [
+          "room_id",
+          "key",
+          "value"
+        ],
+        "furniture-variant": [
+          "furniture_id",
+          "variant"
+        ],
+        "furniture-placement": [
+          "furniture_id",
+          "cx?",
+          "cy?",
+          "w?",
+          "d?",
+          "rot?"
+        ],
+        "add-furniture": [
+          "furniture"
+        ],
+        "update-furniture": [
+          "furniture_id",
+          "changes"
+        ],
+        "remove-furniture": [
+          "furniture_id"
+        ],
+        "duplicate-furniture": [
+          "furniture_id",
+          "new_id",
+          "cx?",
+          "cy?",
+          "rot?"
+        ],
+        "set-furniture-material": [
+          "furniture_id",
+          "material_id (ID|null)"
+        ],
+        "set-furniture-colour": [
+          "furniture_id",
+          "colour"
+        ],
+        "add-object": [
+          "object"
+        ],
+        "update-object": [
+          "object_id",
+          "changes (partial object; id immutable; nested fields replace)"
+        ],
+        "remove-object": [
+          "object_id"
+        ],
+        "upsert-material": [
+          "material (InteriorMaterial/1)"
+        ],
+        "set-room-surface-material": [
+          "room_id",
+          "surface (floor|ceiling)",
+          "material_id (ID|null)"
+        ],
+        "set-wall-surface-material": [
+          "host_wall_id",
+          "material_id (ID|null)"
+        ],
+        "set-opening-treatment": [
+          "opening_id",
+          "treatment ({type,variant,material_id,colour,openness,room_id}|null)"
+        ]
+      }
+    },
+    "operations": [
+      "room-option",
+      "furniture-variant",
+      "furniture-placement",
+      "add-furniture",
+      "update-furniture",
+      "remove-furniture",
+      "duplicate-furniture",
+      "set-furniture-material",
+      "set-furniture-colour",
+      "add-object",
+      "update-object",
+      "remove-object",
+      "upsert-material",
+      "set-room-surface-material",
+      "set-wall-surface-material",
+      "set-opening-treatment"
+    ],
+    "placement": {
+      "modes": [
+        "floor",
+        "wall",
+        "ceiling",
+        "opening"
+      ],
+      "wall": "placement.host_wall_id, offset_mm from segment midpoint, elevation_mm at object bottom, inset_mm from finished wall face",
+      "ceiling": "cx/cy in canonical mm; drop_mm from the fixed 2500 mm ceiling to the object top",
+      "opening": "placement.host_opening_id, offset_mm, elevation_mm; reversible treatment only"
+    },
+    "representation": "Approximate conceptual 3D objects and furniture; material/product references constrain intent but do not certify manufacturer CAD or fit."
+  },
+  "proposal_v2_template": {
+    "schema": "ApartmentDesignProposal/2",
+    "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "base_scene_revision": "scene-d8790704",
+    "operations": [],
+    "notes": []
+  },
+  "proposal_template": {
+    "schema": "ApartmentDesignProposal/1",
+    "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "base_scene_revision": "scene-d8790704",
+    "author": "designer-agent",
+    "operations": [],
+    "notes": []
+  }
+}

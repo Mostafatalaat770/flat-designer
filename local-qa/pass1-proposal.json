@@ -1,0 +1,137 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-c286be16",
+  "author": "Local reception refinement",
+  "operations": [
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-28",
+      "changes": {
+        "name": "Family sofa · 2880 × 990 mm · Connect Soft 3-seat reference",
+        "cy": 2460,
+        "w": 2880,
+        "d": 990,
+        "product_reference_id": null
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-27",
+      "changes": {
+        "name": "Living rug · generous front-leg coverage",
+        "cx": 11000,
+        "cy": 2700,
+        "w": 3400,
+        "d": 2100,
+        "color": "#DED7C9"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-29",
+      "changes": {
+        "cx": 10900,
+        "cy": 2350
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-32",
+      "changes": {
+        "name": "Single olive lounge chair · linked to family living",
+        "cx": 11650,
+        "cy": 4250,
+        "rot": 135
+      }
+    },
+    {
+      "type": "remove-furniture",
+      "furniture_id": "starter-34"
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-35",
+      "changes": {
+        "name": "Oval dining · six seats · 2000 × 950 mm",
+        "cx": 14570,
+        "w": 2000,
+        "d": 950
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A-dining-pendant",
+      "changes": {
+        "cx": 14570
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A-dining-sideboard",
+      "changes": {
+        "cx": 15760,
+        "cy": 5800,
+        "depth_mm": 300
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-36",
+      "changes": {
+        "cx": 13870,
+        "cy": 7050,
+        "color": "#A89E90"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-north-centre",
+      "changes": {
+        "cx": 14570,
+        "cy": 7050,
+        "color": "#A89E90"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-37",
+      "changes": {
+        "cx": 15270,
+        "cy": 7050,
+        "color": "#A89E90"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-38",
+      "changes": {
+        "cx": 13870,
+        "cy": 8450,
+        "color": "#A89E90"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-south-centre",
+      "changes": {
+        "cx": 14570,
+        "cy": 8450,
+        "color": "#A89E90"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-39",
+      "changes": {
+        "cx": 15270,
+        "cy": 8450,
+        "color": "#A89E90"
+      }
+    }
+  ],
+  "notes": [
+    "EXPLORATORY local only. 2880 × 990 mm dimensions from Muuto Connect Soft 3-seat Configuration 1; upholstery generic warm linen, reference ID withheld until catalog record is added.",
+    "Kitchen-side table end remains empty. Chair moved toward family living; redundant remote side table removed."
+  ]
+}

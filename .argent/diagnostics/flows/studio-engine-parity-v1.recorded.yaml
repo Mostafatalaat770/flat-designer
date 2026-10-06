@@ -1,0 +1,130 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-entry
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-entry
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-entry
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-entry
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-family
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-family
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-dining
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-dining
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-hall
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-hall
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-master
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master-entry
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-master-entry
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom1
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-bedroom1
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom1-study
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-bedroom1-study
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom2
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-bedroom2
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom2-window
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-bedroom2-window
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-dressing
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-dressing
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master-storage
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-master-storage
+      timeoutMs: 15000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master-wide
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-family-v7-master-wide
+      timeoutMs: 15000
+executionPrerequisite: Dedicated Chromium CDP browser at 1600x857; isolated
+  loopback QA server on 127.0.0.1:4174; Family A.7 workspace build generated. No
+  production connection.

@@ -1,0 +1,14 @@
+steps:
+  - tap:
+      text: Try generic GLB sample
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Dimension-checked generic GLB
+      timeoutMs: 10000
+executionPrerequisite: Family A.7 local workspace; dining table starter-35
+  selected (2000 x 950 mm), Furniture inspector scrolled until Try generic GLB
+  sample is visible; comparison off; no imported assets. Chromium 1600x857. This
+  sample is GENERIC, not a manufacturer product.

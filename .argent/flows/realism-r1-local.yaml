@@ -1,0 +1,44 @@
+executionPrerequisite: Loopback isolated Studio port4174, immutable realism-r1 pages, Chromium viewport1600x857 DPR1. Independent capture pages; no production access.
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/living-family-natural.html
+  - await: { visible: { id: capture-living-family-natural } }
+  - await: { idle: true }
+  - snapshot: living-family-natural
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/dining-to-living.html
+  - await: { visible: { id: capture-dining-to-living } }
+  - await: { idle: true }
+  - snapshot: dining-to-living
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/dining-eye.html
+  - await: { visible: { id: capture-dining-eye } }
+  - await: { idle: true }
+  - snapshot: dining-eye
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/ensuite-natural.html
+  - await: { visible: { id: capture-ensuite-natural } }
+  - await: { idle: true }
+  - snapshot: ensuite-natural
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/ensuite-wide.html
+  - await: { visible: { id: capture-ensuite-wide } }
+  - await: { idle: true }
+  - snapshot: ensuite-wide
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/family-vanity-natural.html
+  - await: { visible: { id: capture-family-vanity-natural } }
+  - await: { idle: true }
+  - snapshot: family-vanity-natural
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/realism-r1/family-shower-natural.html
+  - await: { visible: { id: capture-family-shower-natural } }
+  - await: { idle: true }
+  - snapshot: family-shower-natural

@@ -1,0 +1,446 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-dc971196",
+  "author": "Whole-apartment local study",
+  "notes": "Reposition one large reception artwork over the sideboard, increase the single plant scale, add one surface lamp; keep hall free with mirror/light; organize all bedrooms and dressing; replace vanity proxies with closed drawers; reserve actual king-frame dimensions and conservative single-frame envelopes; move the bench to the south wall. Preserve kitchen, baths, six dining seats, TV and main sofa.",
+  "operations": [
+    {
+      "type": "update-object",
+      "object_id": "A3-living-art",
+      "changes": {
+        "width_mm": 1400,
+        "height_mm": 900,
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-RECP-01-18",
+          "offset_mm": -1731.9524999999994,
+          "elevation_mm": 1040,
+          "inset_mm": 12
+        },
+        "metadata": {
+          "role": "One large artwork centered above useful closed sideboard; generic concept art"
+        }
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A2-living-plant",
+      "changes": {
+        "width_mm": 500,
+        "depth_mm": 500,
+        "height_mm": 1650,
+        "metadata": {
+          "role": "One taller specimen; species / daylight / pet compatibility TBD, glazing kept clear"
+        }
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "V5-sideboard-lamp",
+        "type": "table-lamp",
+        "variant": "shade",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "floor",
+          "elevation_mm": 800
+        },
+        "cx": 15720,
+        "cy": 5450,
+        "rotation": 0,
+        "width_mm": 260,
+        "depth_mm": 260,
+        "height_mm": 400,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#D9CEBC",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "One practical sideboard lamp; surface-supported concept"
+        }
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "HALL-01",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "HALL-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "HALL-01",
+      "key": "brightness",
+      "value": 70
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "V5-hall-mirror",
+        "type": "mirror",
+        "variant": "rectangle",
+        "room_id": "HALL-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-HALL-01-07",
+          "offset_mm": 200,
+          "inset_mm": 12,
+          "elevation_mm": 750
+        },
+        "rotation": 0,
+        "width_mm": 500,
+        "depth_mm": 35,
+        "height_mm": 1100,
+        "material_references": {
+          "frame": "a3-pale-oak"
+        },
+        "colour": "#C6B18F",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Functional wall furnishing; no architectural change"
+        }
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-1",
+      "changes": {
+        "cx": 1516,
+        "cy": 6835,
+        "w": 1870,
+        "d": 2220,
+        "color": "#DDD3C4",
+        "product_reference_id": "bed-idanas-180-reference",
+        "name": "King frame 1870 × 2220 · mattress 1800 × 2000"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-2",
+      "changes": {
+        "cy": 5650,
+        "color": "#C6B18F"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-3",
+      "changes": {
+        "cy": 8050,
+        "color": "#C6B18F"
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "V7-master-drawers",
+        "type": "sideboard",
+        "variant": "plain",
+        "room_id": "MBR-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 3340,
+        "cy": 8650,
+        "rotation": 180,
+        "width_mm": 1000,
+        "depth_mm": 400,
+        "height_mm": 800,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#C6B18F",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Closed master drawer chest; generic custom joinery, not a vanity"
+        }
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "V5-master-bench",
+        "type": "bench",
+        "variant": "upholstered",
+        "room_id": "MBR-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 1700,
+        "cy": 8610,
+        "rotation": 180,
+        "width_mm": 1000,
+        "depth_mm": 350,
+        "height_mm": 440,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#DDD3C4",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "South-wall dressing bench; leave the entire east-side main path open"
+        }
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "V5-master-rug",
+        "type": "rug",
+        "room_id": "MBR-01",
+        "cx": 1900,
+        "cy": 6800,
+        "w": 2600,
+        "d": 3000,
+        "rot": 270,
+        "name": "Quiet master rug · generic 2600 × 3000",
+        "color": "#D9D1C3",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "brightness",
+      "value": 70
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "flooring",
+      "value": "lightoak"
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-4",
+      "changes": {
+        "cx": 4734,
+        "cy": 6615,
+        "w": 1250,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "North dressing wardrobe · 1250 × 600 mm"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-5",
+      "changes": {
+        "cx": 4734,
+        "cy": 8550,
+        "w": 1250,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "South dressing wardrobe · 1250 × 600 mm"
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "WIC-01",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "WIC-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "WIC-01",
+      "key": "brightness",
+      "value": 70
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-7",
+      "changes": {
+        "cx": 5060,
+        "cy": 3150,
+        "w": 1800,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "Bedroom 1 wardrobe · 1800 × 600 mm"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-8",
+      "changes": {
+        "cx": 3800,
+        "cy": 4590,
+        "w": 1200,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "Bedroom 1 study desk · 1200 × 600 mm"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-9",
+      "changes": {
+        "cx": 3720,
+        "cy": 3930,
+        "w": 480,
+        "d": 500,
+        "color": "#8D9381",
+        "name": "Bedroom 1 study chair · bed overlap corrected"
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "V7-bedroom1-drawers",
+        "type": "sideboard",
+        "variant": "plain",
+        "room_id": "BR-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 2675,
+        "cy": 4720,
+        "rotation": 180,
+        "width_mm": 1000,
+        "depth_mm": 350,
+        "height_mm": 800,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#C6B18F",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Closed books / toys / daily drawers; generic custom joinery"
+        }
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-6",
+      "changes": {
+        "cy": 2680,
+        "w": 1280,
+        "d": 2100,
+        "color": "#DDD3C4",
+        "name": "Single frame reserve 1280 × 2100 · mattress 1200 × 2000"
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-01",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-01",
+      "key": "brightness",
+      "value": 70
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-01",
+      "key": "flooring",
+      "value": "lightoak"
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-10",
+      "changes": {
+        "cx": 7820,
+        "cy": 2800,
+        "w": 1280,
+        "d": 2100,
+        "rot": 90,
+        "color": "#DDD3C4",
+        "name": "1280 × 2100 frame reserve · headboard on east wall"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-11",
+      "changes": {
+        "cx": 6140,
+        "cy": 1920,
+        "w": 1000,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "Bedroom 2 study desk · 1000 × 600 mm"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-12",
+      "changes": {
+        "cx": 6140,
+        "cy": 2730,
+        "w": 560,
+        "d": 560,
+        "color": "#8A8F82",
+        "name": "Bedroom 2 compact task chair · generic"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-13",
+      "changes": {
+        "cx": 7990,
+        "cy": 4589,
+        "w": 1600,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "1600 mm closed wardrobe · one family-linen bay"
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-02",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-02",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-02",
+      "key": "brightness",
+      "value": 70
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-02",
+      "key": "flooring",
+      "value": "lightoak"
+    }
+  ]
+}

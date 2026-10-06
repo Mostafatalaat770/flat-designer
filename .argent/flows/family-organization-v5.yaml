@@ -1,0 +1,21 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v5/v4-control-dressing.html
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: capture-v4-control-dressing
+      timeoutMs: 10000
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v5/family-v5-dressing.html
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: capture-family-v5-dressing
+      timeoutMs: 10000
+executionPrerequisite: Loopback4174, immutable project-studies-v5 captures,
+  Chromium1600x857 DPR1. All production state disconnected.

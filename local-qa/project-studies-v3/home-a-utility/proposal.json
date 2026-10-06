@@ -1,0 +1,299 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-776b85c5",
+  "author": "Whole-apartment local study",
+  "notes": "Current recommended local study: fuller straight-sofa reception, six dining seats, pale oak kitchen with gas, dishwasher and indoor laundry, retained master bathtub and closed family-bathroom storage. Bedrooms and bathroom engineering are still development work.",
+  "operations": [
+    {
+      "type": "room-option",
+      "room_id": "RECP-01",
+      "key": "lighting",
+      "value": "track"
+    },
+    {
+      "type": "update-object",
+      "object_id": "A-dining-sideboard",
+      "changes": {
+        "cx": 15720,
+        "cy": 4750,
+        "width_mm": 2400,
+        "depth_mm": 400,
+        "height_mm": 800,
+        "metadata": {
+          "role": "Closed family storage: dining linens, games, school supplies; custom concept"
+        }
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A2-living-plant",
+      "changes": {
+        "cx": 15480,
+        "cy": 3250
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-40",
+      "changes": {
+        "w": 1200,
+        "cy": 9450,
+        "name": "1200 mm closed entry shoe storage"
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "S1-entry-bench",
+        "type": "bench",
+        "variant": "upholstered",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 13420,
+        "cy": 9950,
+        "rotation": 0,
+        "width_mm": 1000,
+        "depth_mm": 340,
+        "height_mm": 440,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#DDD3C4",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Useful family furniture; custom generic concept"
+        }
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "S1-living-side-table",
+        "type": "sidetable",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 4240,
+        "w": 460,
+        "d": 460,
+        "rot": 0,
+        "name": "Living side table · remote, drink and book",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "S1-reading-lamp",
+        "type": "floor-lamp",
+        "variant": "shade",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 10230,
+        "cy": 4430,
+        "rotation": 0,
+        "width_mm": 360,
+        "depth_mm": 360,
+        "height_mm": 1500,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#B39860",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Useful family furniture; custom generic concept"
+        }
+      }
+    },
+    {
+      "type": "remove-furniture",
+      "furniture_id": "starter-19"
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-20",
+      "changes": {
+        "cx": 9381,
+        "cy": 7743.5,
+        "w": 907,
+        "d": 600,
+        "color": "#C6B18F",
+        "name": "West cooking counter · 907 mm · oven reserved, SKU TBD"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-corner",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "name": "600 mm closed corner cabinet · access hardware TBD",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-prep-drawer",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 9881,
+        "cy": 6993,
+        "w": 400,
+        "d": 610,
+        "rot": 0,
+        "name": "400 mm preparation drawers",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-dishwasher",
+        "type": "dishwasher",
+        "room_id": "KIT-01",
+        "cx": 10381,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "name": "600 mm integrated dishwasher niche · SKU TBD",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "furniture-variant",
+      "furniture_id": "K3-dishwasher",
+      "variant": "integrated"
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-sink-base",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 11081,
+        "cy": 6993,
+        "w": 800,
+        "d": 610,
+        "rot": 0,
+        "name": "800 mm sink / waste cabinet",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-end-landing",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 11781,
+        "cy": 6893,
+        "w": 600,
+        "d": 410,
+        "rot": 0,
+        "name": "Shallow 600 × 410 mm refrigerator landing",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-21",
+      "changes": {
+        "cx": 11081,
+        "cy": 6993,
+        "name": "750 mm sink · drain/water positions TBD"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-22",
+      "changes": {
+        "cx": 9381,
+        "cy": 7895,
+        "name": "600 mm gas hob · ventilation and clearances TBD"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-23",
+      "changes": {
+        "cx": 12120,
+        "cy": 8520,
+        "rot": 180,
+        "name": "650 mm fridge envelope · door/ventilation TBD"
+      }
+    },
+    {
+      "type": "remove-furniture",
+      "furniture_id": "starter-24"
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-laundry-niche",
+        "type": "washer",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 8532,
+        "w": 650,
+        "d": 610,
+        "rot": 270,
+        "name": "650 × 610 mm indoor laundry niche · generic envelope",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "KIT-01",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "KIT-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "B-family-storage",
+        "type": "cabinet",
+        "room_id": "BATH-C01",
+        "cx": 7430,
+        "cy": 8640,
+        "w": 300,
+        "d": 300,
+        "rot": 0,
+        "name": "Closed towel and cleaning storage · 300 mm",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    }
+  ]
+}

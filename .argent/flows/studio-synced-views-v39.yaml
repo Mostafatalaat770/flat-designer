@@ -1,0 +1,88 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/parity.html?source=synced&view=synced-reception-entry
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-synced-reception-entry
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/parity.html?source=synced&view=synced-reception-living
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-synced-reception-living
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/parity.html?source=synced&view=synced-reception-dining
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-synced-reception-dining
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/parity.html?source=synced&view=synced-kitchen-work-run
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-synced-kitchen-work-run
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/parity.html?source=synced&view=synced-guest-wc-use-closed
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-synced-guest-wc-use-closed
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/parity.html?source=synced&view=synced-master-ensuite
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-synced-master-ensuite
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+executionPrerequisite: Chromium CDP browser at 1600 × 857 DPR1 and isolated
+  local server on 127.0.0.1:4176 serving the generated scene-29d4aa6d workspace.
+  Render pages use the immutable pinned seed, no production access.

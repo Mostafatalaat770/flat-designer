@@ -1,0 +1,72 @@
+[
+  {
+    "id": "v4-control",
+    "title": "Before · Family A / utility v4",
+    "scope": [
+      "RECP-01",
+      "HALL-01",
+      "MBR-01",
+      "BR-01",
+      "BR-02",
+      "WIC-01"
+    ],
+    "assessment": "Same canonical rooms and fixed viewpoints before the organization refinement.",
+    "revision": "scene-dc971196",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 106,
+      "warning": 67,
+      "fail": 0
+    },
+    "footprint_area_m2": 24.06,
+    "furniture_count": 30,
+    "views": [
+      "v4-control-entry",
+      "v4-control-family",
+      "v4-control-dining",
+      "v4-control-hall",
+      "v4-control-master",
+      "v4-control-master-entry",
+      "v4-control-bedroom1",
+      "v4-control-bedroom1-study",
+      "v4-control-bedroom2",
+      "v4-control-bedroom2-window",
+      "v4-control-dressing"
+    ]
+  },
+  {
+    "id": "family-v5",
+    "title": "Family A.5 · Useful density, clear routes",
+    "scope": [
+      "RECP-01",
+      "HALL-01",
+      "MBR-01",
+      "BR-01",
+      "BR-02",
+      "WIC-01"
+    ],
+    "assessment": "Reposition one large reception artwork over the sideboard, increase the single plant scale, add one surface lamp; keep hall free with mirror/light; organize all bedrooms and dressing; preserve kitchen, baths, six dining seats, TV and main sofa.",
+    "revision": "scene-6910899c",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 122,
+      "warning": 74,
+      "fail": 0
+    },
+    "footprint_area_m2": 25.94,
+    "furniture_count": 34,
+    "views": [
+      "family-v5-entry",
+      "family-v5-family",
+      "family-v5-dining",
+      "family-v5-hall",
+      "family-v5-master",
+      "family-v5-master-entry",
+      "family-v5-bedroom1",
+      "family-v5-bedroom1-study",
+      "family-v5-bedroom2",
+      "family-v5-bedroom2-window",
+      "family-v5-dressing"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-776b85c5",
+  "author": "Whole-apartment local study",
+  "notes": "Retain ensuite 1500 × 750 tub and family 900 × 900 shower; complete closed towel storage. Existing drainage, falls and ventilation remain TBD.",
+  "operations": [
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "B-family-storage",
+        "type": "cabinet",
+        "room_id": "BATH-C01",
+        "cx": 7430,
+        "cy": 8640,
+        "w": 300,
+        "d": 300,
+        "rot": 0,
+        "name": "Closed towel and cleaning storage · 300 mm",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    }
+  ]
+}

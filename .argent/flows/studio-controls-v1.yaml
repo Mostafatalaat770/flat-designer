@@ -1,0 +1,53 @@
+steps:
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Comparison version
+  - echo: Activate id="compare-versions" and verify Comparison version
+  - tap:
+      id: compare-versions
+  - tool: await-ui-element
+    args:
+      condition: hidden
+      selector:
+        text: Comparison version
+  - echo: Activate value="Wide 60°" and verify Wide 60° lens
+  - tap:
+      text: Wide 60°
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Wide 60° lens
+  - echo: Activate id="scale-check" and verify Scale reference on
+  - tap:
+      id: scale-check
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Scale reference on
+  - echo: Activate value="Natural 42°" and verify Natural 42° lens
+  - tap:
+      text: Natural 42°
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Natural 42° lens
+  - echo: Activate id="scale-check" and verify Scale reference off
+  - tap:
+      id: scale-check
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Scale reference off
+executionPrerequisite: Local Family A.7 workspace open, matching-camera
+  comparison on, Furniture inspector active with reception dining table
+  starter-35 selected. Dedicated Chromium 1600x857. Production disconnected.

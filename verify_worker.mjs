@@ -12,7 +12,8 @@ assert.equal((await rpc('initialize',{protocolVersion:'2025-06-18'})).data.resul
 const discovery=await rpc('tools/list');assert.equal(discovery.data.result.tools.length,10);assert.ok(!JSON.stringify(discovery).includes('room_polygon_mm'));
 assert.equal((await rpc('tools/call',{name:'get_apartment_design_context'})).status,401);
 const context=(await rpc('tools/call',{name:'get_apartment_design_context'},true)).data.result.structuredContent;
-assert.equal(context.canonical.rooms.length,13);assert.equal(context.canonical.openings.length,16);assert.equal(context.heights.clear_ceiling_m,2.5);assert.equal(context.reference_catalog.length,12);
+assert.equal(context.canonical.rooms.length,13);assert.equal(context.canonical.openings.length,16);assert.equal(context.heights.clear_ceiling_m,2.5);assert.equal(context.reference_catalog.length,13);
+assert.deepEqual(context.reference_catalog.find(p=>p.id==='sofa-connect-soft-3').dimensions_mm,[2880,990,690]);
 const brief=JSON.parse(fs.readFileSync(path.join(os.tmpdir(),'apartment-type-b-qa-brief.json'),'utf8'));
 const proposal={...brief.proposal_template,operations:[{type:'room-option',room_id:'BR-01',key:'lighting',value:'track'}]};
 const validation=(await rpc('tools/call',{name:'validate_apartment_design_proposal',arguments:{brief,proposal}},true)).data.result;
@@ -27,5 +28,5 @@ assert.equal((await worker.fetch(new Request('https://example.test/mcp'),{})).st
 const assets={ASSETS:{fetch:async r=>new Response(new URL(r.url).pathname)}};
 assert.equal(await (await worker.fetch(new Request('https://example.test/art/warm.png'),assets)).text(),'/art/warm.png');
 assert.ok((await (await worker.fetch(new Request('https://example.test/'),{})).text()).includes('Design options'));
-const report={result:'PASS',checks:['MCP initialization and ten-tool discovery','private context blocked without trusted identity','canonical context and 12 source references','shared proposal validator','read-only candidate layout','ceiling height change rejected','room render brief','stale and malformed brief rejected','Worker asset routing'],live_authenticated_plugin_call:'Verified read-only context before upgrade; upgraded tools require published discovery'};
+const report={result:'PASS',checks:['MCP initialization and ten-tool discovery','private context blocked without trusted identity','canonical context and 13 source references','shared proposal validator','read-only candidate layout','ceiling height change rejected','room render brief','stale and malformed brief rejected','Worker asset routing'],live_authenticated_plugin_call:'Verified read-only context before upgrade; upgraded tools require published discovery'};
 fs.writeFileSync('worker-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

@@ -1,0 +1,160 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-776b85c5",
+  "author": "Whole-apartment local study",
+  "notes": "Gas cooking on the west run, dishwasher beneath the continuous 1200 mm preparation zone, sink next to it, southeast fridge, shallow landing opposite, and indoor washer niche. Appliance bodies, fitted countertops, cabinet doors, gas/oven heat separation and services still require installation design. Generic viewer meshes show reserved envelopes, not approved cabinet construction.",
+  "operations": [
+    {
+      "type": "remove-furniture",
+      "furniture_id": "starter-19"
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-20",
+      "changes": {
+        "cx": 9381,
+        "cy": 8038,
+        "w": 1500,
+        "d": 600,
+        "color": "#969B87",
+        "name": "West cooking counter · 1500 mm · oven reserved, SKU TBD"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-corner",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "name": "600 mm closed corner cabinet · access hardware TBD",
+        "color": "#969B87",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-dishwasher",
+        "type": "dishwasher",
+        "room_id": "KIT-01",
+        "cx": 10581,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "name": "600 mm integrated dishwasher niche · SKU TBD",
+        "color": "#969B87",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "furniture-variant",
+      "furniture_id": "K3-dishwasher",
+      "variant": "integrated"
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-sink-base",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 11181,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "name": "600 mm sink / waste cabinet",
+        "color": "#969B87",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-end-landing",
+        "type": "counter",
+        "room_id": "KIT-01",
+        "cx": 11781,
+        "cy": 6893,
+        "w": 600,
+        "d": 410,
+        "rot": 0,
+        "name": "Shallow 600 × 410 mm refrigerator landing",
+        "color": "#969B87",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-21",
+      "changes": {
+        "cx": 11181,
+        "cy": 6993,
+        "w": 550,
+        "name": "550 mm sink · drain/water positions TBD"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-22",
+      "changes": {
+        "cx": 9381,
+        "cy": 7895,
+        "name": "600 mm gas hob · ventilation and clearances TBD"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-23",
+      "changes": {
+        "cx": 12120,
+        "cy": 8520,
+        "rot": 180,
+        "name": "650 mm fridge envelope · door/ventilation TBD"
+      }
+    },
+    {
+      "type": "remove-furniture",
+      "furniture_id": "starter-24"
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "K3-laundry-niche",
+        "type": "washer",
+        "room_id": "KIT-01",
+        "cx": 9981,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "name": "600 × 610 mm indoor laundry niche · generic envelope",
+        "color": "#969B87",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "KIT-01",
+      "key": "lighting",
+      "value": "downlights"
+    },
+    {
+      "type": "room-option",
+      "room_id": "KIT-01",
+      "key": "temperature",
+      "value": 3000
+    }
+  ]
+}

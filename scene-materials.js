@@ -40,7 +40,7 @@ function microMap(kind){
   for(let y=0;y<256;y++)for(let x=0;x<256;x++){
     const n=R(),cloth=kind==='linen'||kind==='wool';
     let v=cloth?212+25*Math.sin(x*Math.PI/3)*Math.sin(y*Math.PI/3)+(n-.5)*25:
-      kind==='wood'?221+19*Math.sin(y*.22+Math.sin(x*.035)*1.7)+(n-.5)*10:233+(n-.5)*30;
+      kind==='wood'?235+6*Math.sin(y*.22+Math.sin(x*.035)*1.7)+(n-.5)*6:233+(n-.5)*30;
     if(kind==='wool')v=204+40*n;
     const k=(y*256+x)*4;im.data[k]=im.data[k+1]=im.data[k+2]=Math.max(0,Math.min(255,v));im.data[k+3]=255;
   }

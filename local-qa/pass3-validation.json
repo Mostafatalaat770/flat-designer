@@ -1,0 +1,1473 @@
+{
+  "schema": "ApartmentInteriorValidation/1",
+  "status": "WARNING",
+  "valid": true,
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "checks": [
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-1",
+      "room_id": "MBR-01",
+      "measured_clearance_mm": 143.9,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-2",
+      "room_id": "MBR-01",
+      "measured_clearance_mm": 160.1,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-3",
+      "room_id": "MBR-01",
+      "measured_clearance_mm": 160.1,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-4",
+      "room_id": "WIC-01",
+      "measured_clearance_mm": 85.1,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-5",
+      "room_id": "WIC-01",
+      "measured_clearance_mm": 95.2,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-6",
+      "room_id": "BR-01",
+      "measured_clearance_mm": 204.9,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-7",
+      "room_id": "BR-01",
+      "measured_clearance_mm": 127.5,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-8",
+      "room_id": "BR-01",
+      "measured_clearance_mm": 216,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-9",
+      "room_id": "BR-01",
+      "measured_clearance_mm": 834.1,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-10",
+      "room_id": "BR-02",
+      "measured_clearance_mm": 228.6,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-11",
+      "room_id": "BR-02",
+      "measured_clearance_mm": 162.6,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-12",
+      "room_id": "BR-02",
+      "measured_clearance_mm": 452.6,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-13",
+      "room_id": "BR-02",
+      "measured_clearance_mm": 152.9,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-14",
+      "room_id": "BATH-M01",
+      "measured_clearance_mm": 97.3,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-15",
+      "room_id": "BATH-M01",
+      "measured_clearance_mm": 266,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-16",
+      "room_id": "BATH-C01",
+      "measured_clearance_mm": 100.8,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-17",
+      "room_id": "BATH-C01",
+      "measured_clearance_mm": 371.9,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-18",
+      "room_id": "BATH-C01",
+      "measured_clearance_mm": 181.3,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-19",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 102.5,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-20",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 81.3,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-23",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 77.5,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-24",
+      "room_id": "TER-SVC",
+      "measured_clearance_mm": 102.5,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-25",
+      "room_id": "WC-01",
+      "measured_clearance_mm": 204.6,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-26",
+      "room_id": "WC-01",
+      "measured_clearance_mm": 104.2,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-28",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 108.5,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-29",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1307.9,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-30",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 127.9,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-32",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1327.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-35",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 465.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-36",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1041.2,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-37",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 540.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-38",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1041.2,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-39",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 540.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-40",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 131.3,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-41",
+      "room_id": "TER-MAIN",
+      "measured_clearance_mm": 992.2,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-42",
+      "room_id": "TER-MAIN",
+      "measured_clearance_mm": 543.5,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-43",
+      "room_id": "TER-MAIN",
+      "measured_clearance_mm": 564.7,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "starter-44",
+      "room_id": "TER-MBR",
+      "measured_clearance_mm": 131.3,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A2-dining-chair-north-centre",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1240.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A2-dining-chair-south-centre",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1240.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A-dining-sideboard",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 125.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "object-wall",
+      "status": "PASS",
+      "object_id": "A-dining-sideboard",
+      "source_wall_index": 56,
+      "measured_clearance_mm": 35.4,
+      "message": "Clearance to the displayed wall face."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A-dining-pendant",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 1255.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A1-entry-mirror",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 100,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "host-clearance",
+      "status": "PASS",
+      "object_id": "A1-entry-mirror",
+      "host_wall_id": "WALL-RECP-01-16",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 10,
+      "message": "Mounting gap to the room-facing modeled host wall face."
+    },
+    {
+      "kind": "object-wall",
+      "status": "PASS",
+      "object_id": "A1-entry-mirror",
+      "source_wall_index": 56,
+      "measured_clearance_mm": 44.8,
+      "message": "Clearance to the displayed wall face."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A2-living-plant",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 275.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "placement",
+      "status": "PASS",
+      "object_id": "A3-living-art",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 102,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "host-clearance",
+      "status": "PASS",
+      "object_id": "A3-living-art",
+      "host_wall_id": "WALL-RECP-01-03",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 12,
+      "message": "Mounting gap to the room-facing modeled host wall face."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-1",
+        "starter-2"
+      ],
+      "measured_clearance_mm": 124.8,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-1",
+        "starter-3"
+      ],
+      "measured_clearance_mm": 146,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-6",
+        "starter-8"
+      ],
+      "measured_clearance_mm": 550.5,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-6",
+        "starter-9"
+      ],
+      "measured_clearance_mm": -17.6,
+      "baseline_issue": true,
+      "message": "Overlapping occupied volumes."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-8",
+        "starter-9"
+      ],
+      "measured_clearance_mm": 118.1,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-10",
+        "starter-11"
+      ],
+      "measured_clearance_mm": 621.7,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-10",
+        "starter-12"
+      ],
+      "measured_clearance_mm": 911.7,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-10",
+        "starter-13"
+      ],
+      "measured_clearance_mm": 525.5,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-11",
+        "starter-12"
+      ],
+      "measured_clearance_mm": 123.8,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-14",
+        "starter-15"
+      ],
+      "measured_clearance_mm": 800.2,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-16",
+        "starter-17"
+      ],
+      "measured_clearance_mm": 195.6,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-17",
+        "starter-18"
+      ],
+      "measured_clearance_mm": 276.1,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-19",
+        "starter-20"
+      ],
+      "measured_clearance_mm": 45.6,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-19",
+        "starter-23"
+      ],
+      "measured_clearance_mm": 942.5,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-25",
+        "starter-26"
+      ],
+      "measured_clearance_mm": 221.6,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-28",
+        "starter-29"
+      ],
+      "measured_clearance_mm": 530,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-29",
+        "starter-30"
+      ],
+      "measured_clearance_mm": 800,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-35",
+        "starter-36"
+      ],
+      "measured_clearance_mm": -15,
+      "baseline_issue": true,
+      "message": "Furniture footprint interface: inspect the actual leg/seat geometry."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-35",
+        "starter-37"
+      ],
+      "measured_clearance_mm": -15,
+      "baseline_issue": true,
+      "message": "Furniture footprint interface: inspect the actual leg/seat geometry."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-35",
+        "starter-38"
+      ],
+      "measured_clearance_mm": -15,
+      "baseline_issue": true,
+      "message": "Furniture footprint interface: inspect the actual leg/seat geometry."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-35",
+        "starter-39"
+      ],
+      "measured_clearance_mm": -15,
+      "baseline_issue": true,
+      "message": "Furniture footprint interface: inspect the actual leg/seat geometry."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-35",
+        "A2-dining-chair-north-centre"
+      ],
+      "measured_clearance_mm": -15,
+      "baseline_issue": true,
+      "message": "Furniture footprint interface: inspect the actual leg/seat geometry."
+    },
+    {
+      "kind": "object-object",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-35",
+        "A2-dining-chair-south-centre"
+      ],
+      "measured_clearance_mm": -15,
+      "baseline_issue": true,
+      "message": "Furniture footprint interface: inspect the actual leg/seat geometry."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-35",
+        "A-dining-sideboard"
+      ],
+      "measured_clearance_mm": 826,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-36",
+        "starter-38"
+      ],
+      "measured_clearance_mm": 920,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-36",
+        "A2-dining-chair-north-centre"
+      ],
+      "measured_clearance_mm": 250,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-37",
+        "starter-39"
+      ],
+      "measured_clearance_mm": 920,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-37",
+        "A2-dining-chair-north-centre"
+      ],
+      "measured_clearance_mm": 250,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-37",
+        "A-dining-sideboard"
+      ],
+      "measured_clearance_mm": 377.9,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-38",
+        "A2-dining-chair-south-centre"
+      ],
+      "measured_clearance_mm": 250,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-39",
+        "starter-40"
+      ],
+      "measured_clearance_mm": 518.8,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-39",
+        "A2-dining-chair-south-centre"
+      ],
+      "measured_clearance_mm": 250,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "starter-40",
+        "A2-dining-chair-south-centre"
+      ],
+      "measured_clearance_mm": 944.5,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-41",
+        "starter-42"
+      ],
+      "measured_clearance_mm": 264.7,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "WARNING",
+      "object_ids": [
+        "starter-41",
+        "starter-43"
+      ],
+      "measured_clearance_mm": 264.7,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "A2-dining-chair-north-centre",
+        "A2-dining-chair-south-centre"
+      ],
+      "measured_clearance_mm": 920,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "pinch-point",
+      "status": "PASS",
+      "object_ids": [
+        "A2-dining-chair-north-centre",
+        "A-dining-sideboard"
+      ],
+      "measured_clearance_mm": 891,
+      "preferred_clearance_mm": 900,
+      "message": "Nearest edge gap, not automatically a designated walking route."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-BR01-HALL",
+      "room_id": "BR-01",
+      "object_ids": [],
+      "measured_clearance_mm": 720.2,
+      "canonical_opening_width_mm": 720.2,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-BR01-HALL",
+      "room_id": "HALL-01",
+      "object_ids": [],
+      "measured_clearance_mm": 720.2,
+      "canonical_opening_width_mm": 720.2,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-BR02-HALL",
+      "room_id": "BR-02",
+      "object_ids": [],
+      "measured_clearance_mm": 699,
+      "canonical_opening_width_mm": 699,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-BR02-HALL",
+      "room_id": "HALL-01",
+      "object_ids": [],
+      "measured_clearance_mm": 699,
+      "canonical_opening_width_mm": 699,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-MBR-HALL",
+      "room_id": "MBR-01",
+      "object_ids": [],
+      "measured_clearance_mm": 741.4,
+      "canonical_opening_width_mm": 741.4,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-MBR-HALL",
+      "room_id": "HALL-01",
+      "object_ids": [],
+      "measured_clearance_mm": 741.4,
+      "canonical_opening_width_mm": 741.4,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-MBR-WIC",
+      "room_id": "MBR-01",
+      "object_ids": [],
+      "measured_clearance_mm": 720.2,
+      "canonical_opening_width_mm": 720.2,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-MBR-WIC",
+      "room_id": "WIC-01",
+      "object_ids": [],
+      "measured_clearance_mm": 720.2,
+      "canonical_opening_width_mm": 720.2,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-WIC-BATHM",
+      "room_id": "WIC-01",
+      "object_ids": [],
+      "measured_clearance_mm": 677.9,
+      "canonical_opening_width_mm": 677.9,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-WIC-BATHM",
+      "room_id": "BATH-M01",
+      "object_ids": [],
+      "measured_clearance_mm": 677.9,
+      "canonical_opening_width_mm": 677.9,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-HALL-BATHC",
+      "room_id": "HALL-01",
+      "object_ids": [],
+      "measured_clearance_mm": 656.7,
+      "canonical_opening_width_mm": 656.7,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-HALL-BATHC",
+      "room_id": "BATH-C01",
+      "object_ids": [],
+      "measured_clearance_mm": 656.7,
+      "canonical_opening_width_mm": 656.7,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-HALL-RECP",
+      "room_id": "HALL-01",
+      "object_ids": [],
+      "measured_clearance_mm": 1016.8,
+      "canonical_opening_width_mm": 1016.8,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-HALL-RECP",
+      "room_id": "RECP-01",
+      "object_ids": [],
+      "measured_clearance_mm": 1016.8,
+      "canonical_opening_width_mm": 1016.8,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-RECP-KIT",
+      "room_id": "RECP-01",
+      "object_ids": [],
+      "measured_clearance_mm": 720.2,
+      "canonical_opening_width_mm": 720.2,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-RECP-KIT",
+      "room_id": "KIT-01",
+      "object_ids": [],
+      "measured_clearance_mm": 720.2,
+      "canonical_opening_width_mm": 720.2,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-KIT-TERSVC",
+      "room_id": "KIT-01",
+      "object_ids": [],
+      "measured_clearance_mm": 677.9,
+      "canonical_opening_width_mm": 677.9,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-KIT-TERSVC",
+      "room_id": "TER-SVC",
+      "object_ids": [],
+      "measured_clearance_mm": 677.9,
+      "canonical_opening_width_mm": 677.9,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-RECP-WC",
+      "room_id": "RECP-01",
+      "object_ids": [],
+      "measured_clearance_mm": 656.7,
+      "canonical_opening_width_mm": 656.7,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "WARNING",
+      "opening_id": "OP-RECP-WC",
+      "room_id": "WC-01",
+      "object_ids": [
+        "starter-26"
+      ],
+      "measured_clearance_mm": 633.8,
+      "canonical_opening_width_mm": 656.7,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "opening-obstruction",
+      "status": "PASS",
+      "opening_id": "OP-ENT-01",
+      "room_id": "RECP-01",
+      "object_ids": [],
+      "measured_clearance_mm": 804.9,
+      "canonical_opening_width_mm": 804.9,
+      "assessment_depth_mm": 600,
+      "message": "Conservative free width through the 600 mm approach band."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "PASS",
+      "opening_id": "GLZ-MBR-TER",
+      "room_id": "MBR-01",
+      "object_ids": [
+        "starter-2"
+      ],
+      "measured_clearance_mm": 986.2,
+      "canonical_opening_width_mm": 1376.9,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "PASS",
+      "opening_id": "GLZ-MBR-TER",
+      "room_id": "TER-MBR",
+      "object_ids": [],
+      "measured_clearance_mm": 1376.9,
+      "canonical_opening_width_mm": 1376.9,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "PASS",
+      "opening_id": "GLZ-BR01-N",
+      "room_id": "BR-01",
+      "object_ids": [
+        "starter-7"
+      ],
+      "measured_clearance_mm": 1017.2,
+      "canonical_opening_width_mm": 1355.7,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "WARNING",
+      "opening_id": "GLZ-BR02-N",
+      "room_id": "BR-02",
+      "object_ids": [
+        "starter-10"
+      ],
+      "measured_clearance_mm": 247.3,
+      "canonical_opening_width_mm": 1376.9,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "PASS",
+      "opening_id": "GLZ-RECP-N",
+      "room_id": "RECP-01",
+      "object_ids": [
+        "starter-28"
+      ],
+      "measured_clearance_mm": 1782.4,
+      "canonical_opening_width_mm": 2224.2,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "PASS",
+      "opening_id": "GLZ-RECP-TERMAIN",
+      "room_id": "RECP-01",
+      "object_ids": [],
+      "measured_clearance_mm": 1885.3,
+      "canonical_opening_width_mm": 1885.3,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "glazing-obstruction",
+      "status": "PASS",
+      "opening_id": "GLZ-RECP-TERMAIN",
+      "room_id": "TER-MAIN",
+      "object_ids": [],
+      "measured_clearance_mm": 1885.3,
+      "canonical_opening_width_mm": 1885.3,
+      "assessment_depth_mm": 600,
+      "message": "Free frontage at glazing; curtains are intentional treatments."
+    },
+    {
+      "kind": "door-swing",
+      "status": "PASS",
+      "object_id": "starter-4",
+      "opening_id": "OP-MBR-HALL",
+      "measured_clearance_mm": 311.8,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "PASS",
+      "object_id": "starter-14",
+      "opening_id": "OP-WIC-BATHM",
+      "measured_clearance_mm": 133.4,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "WARNING",
+      "object_id": "starter-18",
+      "opening_id": "OP-HALL-BATHC",
+      "measured_clearance_mm": 99.5,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "PASS",
+      "object_id": "starter-19",
+      "opening_id": "OP-RECP-KIT",
+      "measured_clearance_mm": 166,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "WARNING",
+      "object_id": "starter-23",
+      "opening_id": "OP-RECP-KIT",
+      "measured_clearance_mm": 82.9,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "PASS",
+      "object_id": "starter-20",
+      "opening_id": "OP-KIT-TERSVC",
+      "measured_clearance_mm": 102.5,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "PASS",
+      "object_id": "starter-24",
+      "opening_id": "OP-KIT-TERSVC",
+      "measured_clearance_mm": 213.4,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "WARNING",
+      "object_id": "starter-26",
+      "opening_id": "OP-RECP-WC",
+      "measured_clearance_mm": -22.9,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "door-swing",
+      "status": "PASS",
+      "object_id": "A1-entry-mirror",
+      "opening_id": "OP-ENT-01",
+      "measured_clearance_mm": 134.8,
+      "status_of_hinge_geometry": "INFERRED",
+      "angular_sample_degrees": 2,
+      "message": "Clearance to the displayed full door sweep; hinge convention is inferred."
+    },
+    {
+      "kind": "operating-clearance",
+      "status": "PASS",
+      "object_id": "starter-4",
+      "room_id": "WIC-01",
+      "measured_clearance_mm": 1441.2,
+      "preferred_clearance_mm": 800,
+      "front_convention": "Full front width, local +depth; review manufacturer opening direction",
+      "message": "Measured free depth to the first footprint, wall face or room boundary. Preferred depth is a planning assumption."
+    },
+    {
+      "kind": "operating-clearance",
+      "status": "PASS",
+      "object_id": "starter-5",
+      "room_id": "WIC-01",
+      "measured_clearance_mm": 1441.2,
+      "preferred_clearance_mm": 800,
+      "front_convention": "Full front width, local +depth; review manufacturer opening direction",
+      "message": "Measured free depth to the first footprint, wall face or room boundary. Preferred depth is a planning assumption."
+    },
+    {
+      "kind": "operating-clearance",
+      "status": "PASS",
+      "object_id": "starter-7",
+      "room_id": "BR-01",
+      "measured_clearance_mm": 1412.7,
+      "preferred_clearance_mm": 800,
+      "front_convention": "Full front width, local +depth; review manufacturer opening direction",
+      "message": "Measured free depth to the first footprint, wall face or room boundary. Preferred depth is a planning assumption."
+    },
+    {
+      "kind": "operating-clearance",
+      "status": "WARNING",
+      "object_id": "starter-13",
+      "room_id": "BR-02",
+      "measured_clearance_mm": 525.5,
+      "preferred_clearance_mm": 800,
+      "front_convention": "Full front width, local +depth; review manufacturer opening direction",
+      "message": "Measured free depth to the first footprint, wall face or room boundary. Preferred depth is a planning assumption."
+    },
+    {
+      "kind": "operating-clearance",
+      "status": "PASS",
+      "object_id": "starter-23",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 942.5,
+      "preferred_clearance_mm": 900,
+      "front_convention": "Full front width, local +depth; review manufacturer opening direction",
+      "message": "Measured free depth to the first footprint, wall face or room boundary. Preferred depth is a planning assumption."
+    },
+    {
+      "kind": "operating-clearance",
+      "status": "PASS",
+      "object_id": "A-dining-sideboard",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 6538.5,
+      "preferred_clearance_mm": 800,
+      "front_convention": "Full front width, local +depth; review manufacturer opening direction",
+      "message": "Measured free depth to the first footprint, wall face or room boundary. Preferred depth is a planning assumption."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "BR-01",
+      "from": "OP-BR01-HALL",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 440.1,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "BR-02",
+      "from": "OP-BR02-HALL",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 218.6,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "MBR-01",
+      "from": "OP-MBR-HALL",
+      "to": "OP-MBR-WIC",
+      "measured_clearance_mm": 720.2,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "HALL-01",
+      "from": "OP-BR01-HALL",
+      "to": "OP-BR02-HALL",
+      "measured_clearance_mm": 699,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "HALL-01",
+      "from": "OP-BR01-HALL",
+      "to": "OP-MBR-HALL",
+      "measured_clearance_mm": 720.2,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "HALL-01",
+      "from": "OP-BR01-HALL",
+      "to": "OP-HALL-BATHC",
+      "measured_clearance_mm": 656.7,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "HALL-01",
+      "from": "OP-BR01-HALL",
+      "to": "OP-HALL-RECP",
+      "measured_clearance_mm": 720.2,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "WIC-01",
+      "from": "OP-MBR-WIC",
+      "to": "OP-WIC-BATHM",
+      "measured_clearance_mm": 677.9,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "BATH-M01",
+      "from": "OP-WIC-BATHM",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 622,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "BATH-C01",
+      "from": "OP-HALL-BATHC",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 57.2,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "KIT-01",
+      "from": "OP-RECP-KIT",
+      "to": "OP-KIT-TERSVC",
+      "measured_clearance_mm": 637.4,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "WC-01",
+      "from": "OP-RECP-WC",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 40.9,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "RECP-01",
+      "from": "OP-HALL-RECP",
+      "to": "OP-RECP-KIT",
+      "measured_clearance_mm": 676.9,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "RECP-01",
+      "from": "OP-HALL-RECP",
+      "to": "OP-RECP-WC",
+      "measured_clearance_mm": 656.7,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "RECP-01",
+      "from": "OP-HALL-RECP",
+      "to": "OP-ENT-01",
+      "measured_clearance_mm": 676.9,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    }
+  ],
+  "summary": {
+    "pass": 96,
+    "warning": 48,
+    "fail": 0
+  },
+  "policy": {
+    "preferred_circulation_mm": 900,
+    "review_circulation_mm": 750,
+    "severe_overlap_mm": 40
+  },
+  "limitations": [
+    "Distances come from the conceptual millimetre geometry, not a site survey.",
+    "Nearest pair gaps identify pinch candidates; route analysis is reported separately.",
+    "Legacy table/chair interfaces and existing coarse footprints are review warnings.",
+    "Door hinge/swing conventions and operating depths are inferred, not manufacturer-certified."
+  ]
+}

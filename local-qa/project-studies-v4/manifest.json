@@ -1,0 +1,74 @@
+[
+  {
+    "id": "k3-oak-laundry",
+    "title": "Kitchen 3 · Pale oak + indoor laundry",
+    "scope": [
+      "KIT-01",
+      "TER-SVC"
+    ],
+    "assessment": "Gas cooking on the west run, dishwasher beneath the continuous 1200 mm preparation zone, sink next to it, southeast fridge, shallow landing opposite, and indoor washer niche. Appliance bodies, fitted countertops, cabinet doors, gas/oven heat separation and services still require installation design. Generic viewer meshes show reserved envelopes, not approved cabinet construction.",
+    "revision": "scene-49508d12",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 102,
+      "warning": 59,
+      "fail": 0
+    },
+    "footprint_area_m2": 3.03,
+    "furniture_count": 7,
+    "views": [
+      "k3-oak-laundry-kitchen",
+      "k3-oak-laundry-laundry"
+    ]
+  },
+  {
+    "id": "k3-olive-laundry",
+    "title": "Kitchen 3 · Muted olive + indoor laundry",
+    "scope": [
+      "KIT-01",
+      "TER-SVC"
+    ],
+    "assessment": "Gas cooking on the west run, dishwasher beneath the continuous 1200 mm preparation zone, sink next to it, southeast fridge, shallow landing opposite, and indoor washer niche. Appliance bodies, fitted countertops, cabinet doors, gas/oven heat separation and services still require installation design. Generic viewer meshes show reserved envelopes, not approved cabinet construction.",
+    "revision": "scene-385f1d90",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 102,
+      "warning": 59,
+      "fail": 0
+    },
+    "footprint_area_m2": 3.03,
+    "furniture_count": 7,
+    "views": [
+      "k3-olive-laundry-kitchen",
+      "k3-olive-laundry-laundry"
+    ]
+  },
+  {
+    "id": "home-a-utility",
+    "title": "Coordinated candidate · Family A + indoor utility",
+    "scope": [
+      "RECP-01",
+      "KIT-01",
+      "TER-SVC",
+      "BATH-C01"
+    ],
+    "assessment": "Current recommended local study: fuller straight-sofa reception, six dining seats, pale oak kitchen with gas, dishwasher and indoor laundry, retained master bathtub and closed family-bathroom storage. Bedrooms and bathroom engineering are still development work.",
+    "revision": "scene-dc971196",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 106,
+      "warning": 67,
+      "fail": 0
+    },
+    "footprint_area_m2": 14.78,
+    "furniture_count": 28,
+    "views": [
+      "home-a-utility-entry",
+      "home-a-utility-family",
+      "home-a-utility-dining",
+      "home-a-utility-kitchen",
+      "home-a-utility-laundry",
+      "home-a-utility-family-bath"
+    ]
+  }
+]

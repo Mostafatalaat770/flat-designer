@@ -1,0 +1,174 @@
+[
+  {
+    "id": "r0-reference",
+    "title": "R0 · Calibrated existing layout",
+    "scope": [
+      "RECP-01"
+    ],
+    "assessment": "Control view: R1 layout, now with manufacturer seat/back height corrections.",
+    "revision": "scene-776b85c5",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 103,
+      "warning": 48,
+      "fail": 0
+    },
+    "footprint_area_m2": 8.95,
+    "furniture_count": 14,
+    "views": [
+      "r0-reference-entry",
+      "r0-reference-family",
+      "r0-reference-dining"
+    ]
+  },
+  {
+    "id": "rA-layered",
+    "title": "A · Layered warm family",
+    "scope": [
+      "RECP-01"
+    ],
+    "assessment": "Recommended starting direction: add useful storage, entry bench, side table and reading light while keeping straight sofa and open centre.",
+    "revision": "scene-9f4427fb",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 106,
+      "warning": 55,
+      "fail": 0
+    },
+    "footprint_area_m2": 10.29,
+    "furniture_count": 17,
+    "views": [
+      "rA-layered-entry",
+      "rA-layered-family",
+      "rA-layered-dining"
+    ]
+  },
+  {
+    "id": "rB-chaise",
+    "title": "B · Compact chaise family lounge",
+    "scope": [
+      "RECP-01"
+    ],
+    "assessment": "More relaxed lounging and higher occupied footprint. Generic 2880 × 1545 composition, not a verified Muuto SKU. Inspect sofa-to-coffee and coffee-to-TV gaps before selection.",
+    "revision": "scene-88cc194c",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 106,
+      "warning": 57,
+      "fail": 0
+    },
+    "footprint_area_m2": 11.89,
+    "furniture_count": 17,
+    "views": [
+      "rB-chaise-entry",
+      "rB-chaise-family",
+      "rB-chaise-dining"
+    ]
+  },
+  {
+    "id": "rC-reversed",
+    "title": "C · Soft sculptural, reversed TV wall",
+    "scope": [
+      "RECP-01"
+    ],
+    "assessment": "More expressive cocoon silhouette with television west and sofa east. Tests a real change in visual hierarchy; Marenco is an aesthetic reference only. Fixed 42° views allow a fair comparison.",
+    "revision": "scene-71dcdf51",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 106,
+      "warning": 54,
+      "fail": 0
+    },
+    "footprint_area_m2": 10.24,
+    "furniture_count": 17,
+    "views": [
+      "rC-reversed-entry",
+      "rC-reversed-family",
+      "rC-reversed-dining"
+    ]
+  },
+  {
+    "id": "kA-oak",
+    "title": "Kitchen A · Pale oak working L",
+    "scope": [
+      "KIT-01"
+    ],
+    "assessment": "Dedicated 1000 mm prep section; sink and adjacent dishwasher; west cooking run; south fridge and shallow landing. Open-appliance envelopes are separately checked. Appliance choices and plumbing are TBD.",
+    "revision": "scene-4bff3215",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 109,
+      "warning": 55,
+      "fail": 0
+    },
+    "footprint_area_m2": 3.39,
+    "furniture_count": 7,
+    "views": [
+      "kA-oak-kitchen"
+    ]
+  },
+  {
+    "id": "kB-olive",
+    "title": "Kitchen B · Muted olive working L",
+    "scope": [
+      "KIT-01"
+    ],
+    "assessment": "Same working geometry as kitchen A, alternative quieter olive cabinet finish. Pale worktop concept with Dekton Aeris as real material reference, not a specified installation.",
+    "revision": "scene-51ecc453",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 109,
+      "warning": 55,
+      "fail": 0
+    },
+    "footprint_area_m2": 3.39,
+    "furniture_count": 7,
+    "views": [
+      "kB-olive-kitchen"
+    ]
+  },
+  {
+    "id": "bA-tub",
+    "title": "Bathroom A · Retain family bathtub",
+    "scope": [
+      "BATH-M01",
+      "BATH-C01"
+    ],
+    "assessment": "Retain ensuite 1500 × 750 tub and family 900 × 900 shower; complete closed towel storage. Existing drainage, falls and ventilation remain TBD.",
+    "revision": "scene-fefcab61",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 104,
+      "warning": 49,
+      "fail": 0
+    },
+    "footprint_area_m2": 3.14,
+    "furniture_count": 7,
+    "views": [
+      "bA-tub-ensuite",
+      "bA-tub-family-bath"
+    ]
+  },
+  {
+    "id": "bB-shower",
+    "title": "Bathroom B · Ensuite walk-in shower study",
+    "scope": [
+      "BATH-M01",
+      "BATH-C01"
+    ],
+    "assessment": "Exploratory replacement of movable bathtub fixture with generous shower; walls and bathroom door unchanged. Wet-area engineering and actual shower screen specification not yet approved.",
+    "revision": "scene-d957dead",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "summary": {
+      "pass": 104,
+      "warning": 49,
+      "fail": 0
+    },
+    "footprint_area_m2": 3.21,
+    "furniture_count": 7,
+    "views": [
+      "bB-shower-ensuite",
+      "bB-shower-family-bath"
+    ]
+  }
+]

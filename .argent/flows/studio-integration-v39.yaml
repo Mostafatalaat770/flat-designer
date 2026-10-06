@@ -1,0 +1,75 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4176/_qa/workspace/
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: verified source
+      timeoutMs: 20000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      includeImageInContext: false
+      scale: 1
+  - tap:
+      id: scale-check
+  - tap:
+      id: scale-check
+  - tap:
+      id: tab-versions
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Local design history
+        role: h3
+      timeoutMs: 10000
+  - await: { idle: true }
+  - tap:
+      id: room-KIT-01
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Kitchen
+        role: h2
+      timeoutMs: 10000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      includeImageInContext: false
+      scale: 1
+  - tap:
+      id: room-WC-01
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Guest WC
+        role: h2
+      timeoutMs: 10000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      includeImageInContext: false
+      scale: 1
+  - tap:
+      id: room-RECP-01
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Living & dining
+        role: h2
+      timeoutMs: 10000
+  - await: { idle: true }
+  - tool: screenshot
+    args:
+      includeImageInContext: false
+      scale: 1
+executionPrerequisite: Running Chromium CDP browser and isolated integration
+  server on 127.0.0.1:4176. Workspace draft for source scene-29d4aa6d is
+  unchanged; production routes disconnected.

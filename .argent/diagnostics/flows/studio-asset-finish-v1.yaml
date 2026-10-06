@@ -1,0 +1,12 @@
+steps:
+  - tap:
+      id: asset-material-variant
+  - tool: keyboard
+    args:
+      key: escape
+  - tool: keyboard
+    args:
+      key: arrow-down
+executionPrerequisite: Generic table GLB loaded through studio-asset-v1; Asset
+  material variant selector visible, no selected finish; local Family A.7 scene.
+  Chromium 1600x857.

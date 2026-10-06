@@ -1,0 +1,247 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-2ad8493e",
+  "author": "Local realism R1",
+  "notes": "Exploratory fixture completion and real chair footprint audit. Architecture locked. Drain/soil-stack positions unverified; plumbing wall feasibility TBD.",
+  "operations": [
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-36",
+      "changes": {
+        "w": 510,
+        "d": 530,
+        "product_reference_id": "r1-fiber-side-tube",
+        "name": "Fiber side chair dimensional reference · mushroom concept"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-37",
+      "changes": {
+        "w": 510,
+        "d": 530,
+        "product_reference_id": "r1-fiber-side-tube",
+        "name": "Fiber side chair dimensional reference · mushroom concept"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-38",
+      "changes": {
+        "w": 510,
+        "d": 530,
+        "product_reference_id": "r1-fiber-side-tube",
+        "name": "Fiber side chair dimensional reference · mushroom concept"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-39",
+      "changes": {
+        "w": 510,
+        "d": 530,
+        "product_reference_id": "r1-fiber-side-tube",
+        "name": "Fiber side chair dimensional reference · mushroom concept"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-north-centre",
+      "changes": {
+        "w": 510,
+        "d": 530,
+        "product_reference_id": "r1-fiber-side-tube",
+        "name": "Fiber side chair dimensional reference · mushroom concept"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-south-centre",
+      "changes": {
+        "w": 510,
+        "d": 530,
+        "product_reference_id": "r1-fiber-side-tube",
+        "name": "Fiber side chair dimensional reference · mushroom concept"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-15",
+      "changes": {
+        "cy": 8520,
+        "rot": 180,
+        "name": "Ensuite WC · rear toward south wall · plumbing TBD"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-17",
+      "changes": {
+        "cx": 8541,
+        "cy": 7440,
+        "rot": 90,
+        "name": "Family WC · rear toward east wall · plumbing TBD"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-18",
+      "changes": {
+        "w": 600,
+        "d": 460,
+        "cx": 8500,
+        "cy": 6526,
+        "color": "#C6B18F",
+        "name": "600 mm D-Neo basin reference on custom closed vanity",
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "R1-ensuite-vanity",
+        "type": "vanity",
+        "room_id": "BATH-M01",
+        "cx": 5980,
+        "cy": 8620,
+        "w": 600,
+        "d": 460,
+        "rot": 180,
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "name": "600 mm D-Neo basin reference on custom closed vanity",
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "r1-bath-porcelain",
+        "name": "Warm ivory bathroom porcelain concept",
+        "category": "stone",
+        "source_status": "GENERIC",
+        "base_colour": "#E5DFD3",
+        "finish": "matte",
+        "roughness": 0.72,
+        "metallic": 0,
+        "texture_scale_mm": {
+          "width": 600,
+          "height": 600
+        },
+        "fallback_generic_id": "tile600",
+        "notes": "No selected SKU; wet-area slip rating and waterproofing TBD."
+      }
+    },
+    {
+      "type": "set-room-surface-material",
+      "room_id": "BATH-M01",
+      "surface": "floor",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-M01-01",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-M01-02",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-M01-03",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-M01-04",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-M01-05",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-room-surface-material",
+      "room_id": "BATH-C01",
+      "surface": "floor",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-01",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-02",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-03",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-04",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-05",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-06",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BATH-C01-07",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-room-surface-material",
+      "room_id": "WC-01",
+      "surface": "floor",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-WC-01-01",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-WC-01-02",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-WC-01-03",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-WC-01-04",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-WC-01-05",
+      "material_id": "r1-bath-porcelain"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-WC-01-06",
+      "material_id": "r1-bath-porcelain"
+    }
+  ]
+}

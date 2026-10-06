@@ -4,7 +4,9 @@ function studioLightColour(k){return k===2700?'#ffd5a0':k===4000?'#fff4e6':'#ffe
 function studioFurnitureTheme(f){
   const current=currentDecor(),base=current.id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):current;
   const id={'upholstered':'warm','oak-platform':'japandi','woven-headboard':'boho'}[f.variant];
-  return id?{...base,id}:current;
+  const theme=id?{...base,id}:current,material=interiorMaterial(state,f.material_id);
+  // A primary wood assignment controls the wood components of mixed furniture.
+  return material?.category==='wood'?{...theme,wood:material.base_colour,woodDark:darker(material.base_colour,.76)}:theme;
 }
 function studioWallMaterials(s,base,cap){
   const [a,b]=[s.from,s.to],dx=b[0]-a[0],dz=b[1]-a[1],L=Math.hypot(dx,dz),mid=[(a[0]+b[0])/2,(a[1]+b[1])/2];
@@ -14,8 +16,9 @@ function studioWallMaterials(s,base,cap){
 function makeStudioVariant(f){
   if(!f.variant||f.variant==='style'||!STUDIO_VARIANTS[f.type]?.includes(f.variant)||f.type==='bed')return null;
   const t=currentDecor().id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):currentDecor(),g=new THREE.Group(),w=M(f.w),d=M(f.d),c=f.color,fab=fabric(c),wood=woodM(t.wood);
+  const connect=f.type==='sofa'&&f.variant==='modular'&&f.product_reference_id==='sofa-connect-soft-3',seats=[];
   if(['sofa','armchair'].includes(f.type)){
-    const n=f.type==='armchair'?1:2,sw=w/n;
+    const n=f.type==='armchair'?1:f.variant==='modular'?Math.max(2,Math.round(w/.96)):2,sw=w/n;
     if(f.variant==='cocoon'){
       for(let i=0;i<n;i++){const x=-w/2+sw*(i+.5);
         g.add(rbox(sw-.025,.48,d-.02,fab,x,.09,0,.16));
@@ -25,11 +28,11 @@ function makeStudioVariant(f){
       for(const side of [-1,1])g.add(rbox(Math.min(.16,w*.18),.45,d*.80,fab,side*(w/2-.08),.24,.05,.075));
     }else if(f.variant==='modular'){
       for(let i=0;i<n;i++){const x=-w/2+sw*(i+.5);
-        g.add(rbox(sw-.02,.25,d,fabric(darker(c,.86)),x,.045,0,.055));
-        cushion(g,sw-.03,.17,d-.23,c,x,.295,.105);
-        cushion(g,sw-.04,.36,.20,c,x,.35,-d/2+.11,-.06);
+        g.add(rbox(sw-.02,connect?.20:.25,d,fabric(darker(c,.86)),x,connect?.02:.045,0,.055));
+        seats.push(cushion(g,sw-.03,.17,d-.23,c,x,connect?.23:.295,.105));
+        cushion(g,sw-.04,.36,.20,c,x,connect?.3282:.35,-d/2+.11,-.06);
       }
-      for(const side of [-1,1])g.add(rbox(.12,.34,d*.86,fab,side*(w/2-.06),.27,.04,.04));
+      for(const side of [-1,1])g.add(rbox(.12,connect?.28:.34,d*.86,fab,side*(w/2-.06),connect?.25:.27,.04,.04));
     }else{
       legs(g,w-.03,d-.03,.17,mat(t.metal,{metalness:.65,roughness:.38}),.025,.013);
       g.add(rbox(w-.06,.12,d,fab,0,.17,0,.022));
@@ -37,7 +40,7 @@ function makeStudioVariant(f){
       for(const side of [-1,1])g.add(rbox(.085,.40,d,fab,side*(w/2-.0425),.29,0,.022));
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
-    if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,.43,-d*.14,-.09);
+    if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
   }else if(f.type==='fridge'){
     const m=f.variant==='integrated'?wood:mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
@@ -52,6 +55,7 @@ function makeStudioVariant(f){
     g.add(box(w-.04,.60,.025,m,0,.87,d/2+.002));g.add(box(w*.74,.37,.012,mat('#0c1218',{roughness:.08,metalness:.3}),0,.97,d/2+.025));
     g.add(box(w*.68,.021,.030,mat('#b7bec1',{metalness:.8,roughness:.25}),0,1.30,d/2+.04));
   }
+  if(connect){g.updateMatrixWorld(true);g.userData.referenceGeometry={product_reference_id:f.product_reference_id,seat_top_mm:Math.max(...seats.map(s=>new THREE.Box3().setFromObject(s).max.y))*1000};}
   batchSceneMeshes(g);g.position.set(wx(f.cx),0,wz(f.cy));g.rotation.y=-f.rot*Math.PI/180;g.userData.fid=f.id;g.userData.modelForm='independent-'+f.variant;g.userData.referenceVariant=f.variant;
   g.traverse(o=>o.userData.fid=f.id);return g;
 }
@@ -63,7 +67,7 @@ function studioSpot(options,power,x,y,z,rid,shadows=false){
 }
 function studioRoomTrack(room,options){
   const candidates=state.furniture.filter(f=>['coffeetable','table','bed'].includes(f.type)&&pointInRoom([f.cx,f.cy],room.poly));
-  const anchors=candidates.length?candidates.map(f=>[f.cx,f.cy]):[room.at];
+  const anchors=candidates.length?candidates.filter(f=>!interiorLayer(state).objects.some(o=>o.type==='pendant'&&o.room_id===room.id&&Math.hypot(o.cx-f.cx,o.cy-f.cy)<600)).map(f=>[f.cx,f.cy]):[room.at];
   for(const [x,z] of anchors){
     let alongX=true,L=1.65;
     if(!pointInRoom([x-L*500,z],room.poly)||!pointInRoom([x+L*500,z],room.poly))alongX=false;
