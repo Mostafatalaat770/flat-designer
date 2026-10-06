@@ -648,21 +648,6 @@
         "status": "EXPLORATORY"
       },
       {
-        "id": "E2-pantry",
-        "type": "wardrobe",
-        "name": "E2 600 mm full-height pantry",
-        "room_id": "KIT-01",
-        "cx": 11050,
-        "cy": 8660,
-        "w": 600,
-        "d": 600,
-        "rot": 0,
-        "color": "#E8E2D7",
-        "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
-      },
-      {
         "id": "E2-oven-column",
         "type": "ovencol",
         "name": "E2 600 mm oven + appliance/storage column",
@@ -694,16 +679,16 @@
       },
       {
         "id": "E2-island",
-        "type": "island",
-        "name": "E2 longitudinal island · 1800 × 900 mm · sink/DW/storage",
+        "type": "counter",
+        "name": "E2 double-sided storage island · 1800 × 900 mm · 600+300 concept",
         "room_id": "RECP-01",
         "cx": 11250,
         "cy": 6310,
         "w": 1800,
         "d": 900,
-        "rot": 270,
+        "rot": 90,
         "color": "#E8E2D7",
-        "variant": "style",
+        "variant": "base-only",
         "status": "EXPLORATORY",
         "material_id": "kitchen-soft-ivory"
       },
@@ -720,21 +705,6 @@
         "color": "#eef2f5",
         "variant": "style",
         "status": "EXPLORATORY"
-      },
-      {
-        "id": "E2-island-dw",
-        "type": "dishwasher",
-        "name": "E2 600 mm fully integrated dishwasher · island middle module",
-        "room_id": "RECP-01",
-        "cx": 11250,
-        "cy": 6310,
-        "w": 600,
-        "d": 600,
-        "rot": 270,
-        "color": "#E8E2D7",
-        "variant": "integrated",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
       }
     ],
     "rooms": {
@@ -1579,6 +1549,29 @@
           "metadata": {
             "role": "600 mm upper cabinet south of hood; exact hood/fire clearance TBD"
           }
+        },
+        {
+          "id": "E2-pantry-tall",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 11050,
+          "cy": 8660,
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 600,
+          "height_mm": 2200,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "600 mm full-height pantry; plain integrated joinery massing"
+          }
         }
       ],
       "materials": [
@@ -1876,17 +1869,17 @@
   },
   "views": [
     {
-      "id": "E2-living-to-kitchen",
+      "id": "E2-open-overview",
       "room_id": "RECP-01",
       "camera": {
         "position": [
-          5.2,
-          1.7,
-          4.35
+          5,
+          1.68,
+          0.8
         ],
         "target": [
-          3.15,
-          1.18,
+          3.2,
+          1.16,
           1.55
         ],
         "fov": 62,
@@ -2056,20 +2049,20 @@
       }
     },
     {
-      "id": "E2-kitchen-work-zone",
+      "id": "E2-work-aisle",
       "room_id": "KIT-01",
       "camera": {
         "position": [
-          1.35,
-          1.7,
-          3.45
+          3.9,
+          1.65,
+          3
         ],
         "target": [
-          3.2,
-          1.15,
-          1.65
+          2.35,
+          1.13,
+          1.35
         ],
-        "fov": 62,
+        "fov": 63,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2277,7 +2270,10 @@
     "Exact appliance installation, ventilation, hinge clearances, electrical outlets, hood duct routing, gas shutoff/access and fire clearances must follow selected manufacturer manuals and Egyptian/local requirements.",
     "The canonical model contains no explicit column/beam/pier object at the removed separator; all removed pieces are 180 mm unclassified wall segments. This remains insufficient evidence for demolition approval.",
     "E2 circulation repair: living armchair shifted ~360 mm north after a bounding-box check found only ~740 mm to the island. Revised approximate chair-to-island gap is >1000 mm; exact rotated-mesh clearance remains render/QA-dependent.",
-    "E2 aisle refinement: island shifted 80 mm north. Approximate south work aisle to tall-unit fronts increases to 1150 mm; island-to-shifted-living-armchair bounding-box gap remains about 1018 mm."
+    "E2 aisle refinement: island shifted 80 mm north. Approximate south work aisle to tall-unit fronts increases to 1150 mm; island-to-shifted-living-armchair bounding-box gap remains about 1018 mm.",
+    "E2 visual refinement: island changed from generic breakfast-bar mesh to a full 1800 × 900 base-only storage mass, representing approximately 600 mm working-side cabinetry plus 300 mm shallow reception-side storage. No stools.",
+    "Integrated dishwasher remains reserved inside one 600 mm island module but its separate appliance mesh is suppressed so the external joinery reads as a continuous integrated front.",
+    "Pantry changed from stylized wardrobe furniture to plain 600 × 600 × 2200 mm ivory tall joinery for a more truthful kitchen elevation."
   ],
   "architecture_variant": {
     "id": "E2-developed-full-open",
