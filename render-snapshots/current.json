@@ -3208,6 +3208,7 @@
     "Dishwasher layout unchanged. Official validator still reports 0 mm from zero-width tangent polygons at neighbouring cabinet boundaries. Independently measured positive-width front strip: 1572.346 mm to south wall; not manufacturer fit certification.",
     "Original eleven A2 camera poses, FOV and viewer settings retained for direct before/after comparison. Added kitchen work-run and guest WC entry/use angles.",
     "guest-wc-use-closed changes only the visible door pose for usability review; the door geometry and hinge convention remain unchanged and INFERRED.",
-    "Exact WebGL concept views, not photorealistic product CAD and not construction or accessibility approval."
+    "Exact WebGL concept views, not photorealistic product CAD and not construction or accessibility approval.",
+    "Branch render template fixes compact vanity bowl depth only for envelopes below 300 mm: the A3 400 x 220 mm generic basin bowl now stays within its top. The correction is a branch renderer change, not a production Studio deployment or manufacturer CAD."
   ]
 }
