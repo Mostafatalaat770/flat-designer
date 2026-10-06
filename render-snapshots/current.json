@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Architecture Pass 01 · Main 3.14 m kitchen-reception opening",
+  "name": "Architecture Pass 01 · Main 3.14 m kitchen-reception opening · dedicated opening cameras",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -1939,20 +1939,10 @@
   },
   "views": [
     {
-      "id": "kitchen-work-run",
-      "room_id": "KIT-01",
+      "id": "arch-reception-to-kitchen",
+      "room_id": "RECP-01",
       "camera": {
-        "position": [
-          3.232291,
-          1.65,
-          3.0843415000000003
-        ],
-        "target": [
-          2.232291,
-          1.15,
-          2.1843415000000004
-        ],
-        "fov": 70,
+        "fov": 42,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2025,204 +2015,24 @@
               "position": 1
             }
           ]
-        }
-      }
-    },
-    {
-      "id": "reception-entry",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.932291,
-          1.68,
-          4.5643415
-        ],
-        "target": [
-          6.682291,
-          1.4,
-          0.3343415
-        ],
-        "fov": 70,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
         },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "reception-dining",
-      "room_id": "RECP-01",
-      "camera": {
         "position": [
-          5.232291,
-          1.62,
-          4.3243415
+          2.632291,
+          1.7,
+          0.4843415
         ],
         "target": [
-          6.282291,
+          2.632291,
           1.45,
-          2.2843415
-        ],
-        "fov": 60,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
+          2.5843415
+        ]
       }
     },
     {
-      "id": "kitchen",
+      "id": "arch-kitchen-to-reception",
       "room_id": "KIT-01",
       "camera": {
-        "position": [
-          1.5138200000000006,
-          1.68,
-          2.0222075000000004
-        ],
-        "target": [
-          2.764362,
-          1.4,
-          2.849093500000001
-        ],
-        "fov": 70,
+        "fov": 42,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2295,7 +2105,17 @@
               "position": 1
             }
           ]
-        }
+        },
+        "position": [
+          2.732291,
+          1.7,
+          2.7343415
+        ],
+        "target": [
+          2.732291,
+          1.45,
+          0.5843415
+        ]
       }
     }
   ],
