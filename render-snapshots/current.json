@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Design Pass I1 — master ensuite walk-in shower",
+  "name": "Design Pass I2 — master shower + family bathtub",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -212,20 +212,6 @@
         "d": 700,
         "rot": 180,
         "color": "#F5F4F0",
-        "status": "EXPLORATORY",
-        "variant": "style"
-      },
-      {
-        "id": "starter-16",
-        "type": "shower",
-        "name": "Shower · 900 × 900 mm",
-        "room_id": "BATH-C01",
-        "cx": 8409.592,
-        "cy": 8409.592,
-        "w": 900,
-        "d": 900,
-        "rot": 0,
-        "color": "#C9D6D8",
         "status": "EXPLORATORY",
         "variant": "style"
       },
@@ -590,21 +576,6 @@
         "material_id": "a1-natural-oak"
       },
       {
-        "id": "B-family-storage",
-        "type": "cabinet",
-        "name": "Closed towel and cleaning storage · 300 mm",
-        "room_id": "BATH-C01",
-        "cx": 7430,
-        "cy": 8640,
-        "w": 300,
-        "d": 300,
-        "rot": 0,
-        "color": "#B88C5E",
-        "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
-      },
-      {
         "id": "E2-cooking-base",
         "type": "counter",
         "name": "E2 west cooking/prep run · 1950 mm · drawers + prep",
@@ -703,6 +674,20 @@
         "d": 800,
         "rot": 0,
         "color": "#C0D6DF",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "I2-family-tub",
+        "type": "bathtub",
+        "name": "Family bathtub · 1500 × 750 mm · kid/family capability",
+        "room_id": "BATH-C01",
+        "cx": 8081.257,
+        "cy": 8585.346,
+        "w": 1500,
+        "d": 750,
+        "rot": 0,
+        "color": "#F5F4F0",
         "variant": "style",
         "status": "EXPLORATORY"
       }
@@ -1845,7 +1830,7 @@
   },
   "views": [
     {
-      "id": "I1-master-shower-from-dressing",
+      "id": "I2-master-shower",
       "room_id": "WIC-01",
       "camera": {
         "position": [
@@ -1857,6 +1842,96 @@
           -1.72,
           1.1,
           2.48
+        ],
+        "fov": 61,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "I2-family-tub-from-hall",
+      "room_id": "BATH-C01",
+      "camera": {
+        "position": [
+          0.1,
+          1.62,
+          0.55
+        ],
+        "target": [
+          0.1,
+          1.08,
+          2.55
         ],
         "fov": 61,
         "projection_type": "perspective",
@@ -1995,7 +2070,11 @@
     "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling.",
     "I1 replaces the 1500 × 750 master bathtub with a 1500 × 800 walk-in shower envelope while preserving toilet, vanity and the F1 widened/pocket-door strategy.",
     "Earlier repository studies found both tub and shower options at 104 PASS / 49 WARNING / 0 FAIL; this pass is for direct spatial/usage comparison, not proof of waterproofing or drainage.",
-    "If shower is preferred, final design needs falls, drain type/location, glass swing/fixed-panel strategy, niche, mixer/handshower, anti-slip finish and waterproofing details."
+    "If shower is preferred, final design needs falls, drain type/location, glass swing/fixed-panel strategy, niche, mixer/handshower, anti-slip finish and waterproofing details.",
+    "I2 family-first bathroom strategy: keep a 1500 × 800 walk-in shower in the master ensuite for daily use, and move the home's bathtub capability to the common family bathroom with a 1500 × 750 tub.",
+    "The former 900 × 900 common-bath shower and 300 mm floor cabinet are removed in this study. Vanity and WC remain in place.",
+    "Rationale: master gets easier daily access and a more open wet zone; common bath retains a tub for children/family/soaking rather than eliminating bathtub capability from the apartment.",
+    "Tub/shower waterproofing, floor falls, glass/screen strategy, anti-slip surfaces, taps, drain position and exact clear standing zones remain TBD."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
