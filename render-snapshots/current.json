@@ -2573,16 +2573,16 @@
       "room_id": "WIC-01",
       "camera": {
         "position": [
-          -3.767709,
-          1.6,
-          2.2643415000000005
+          -3.2777089999999998,
+          1.55,
+          1.9443415000000004
         ],
         "target": [
-          -2.9677089999999997,
-          1.25,
-          2.9543415000000004
+          -3.2777089999999998,
+          1.1,
+          3.0343415000000005
         ],
-        "fov": 70,
+        "fov": 65,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2663,16 +2663,16 @@
       "room_id": "BATH-M01",
       "camera": {
         "position": [
-          -1.217709,
-          1.6,
-          2.5143415000000005
+          -1.717709,
+          1.55,
+          2.2343415000000006
         ],
         "target": [
-          -1.937709,
-          1.15,
-          1.6543415000000004
+          -1.717709,
+          1.1,
+          3.3843415000000006
         ],
-        "fov": 70,
+        "fov": 65,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2935,6 +2935,7 @@
     "Render output is an artifact; the workflow does not commit PNGs.",
     "Whole-apartment camera pack expanded from current validated Studio captures on scene-ddc3139a; canonical geometry unchanged.",
     "2026-10-06: camera-only framing iteration for BR1, dressing, ensuite and family bathroom. Custom cameras await visual QA; layout and canonical geometry unchanged.",
-    "EXPLORATORY branch preview, not a saved Studio revision: kitchen upper cabinetry warm ivory; fridge shifted 270 mm west. Door-sweep clearance 31.2→123.5 mm (hinge INFERRED); front operating depth stays 1097 mm. Original Studio base scene-ddc3139a/storage 36. Apply proposal only after PNG QA."
+    "EXPLORATORY branch preview, not a saved Studio revision: kitchen upper cabinetry warm ivory; fridge shifted 270 mm west. Door-sweep clearance 31.2→123.5 mm (hinge INFERRED); front operating depth stays 1097 mm. Original Studio base scene-ddc3139a/storage 36. Apply proposal only after PNG QA.",
+    "Visual QA iteration 2: dressing aligned along aisle from north cabinet; ensuite faces south vanity/WC away from the open leaf. BR1 and family-bath framing accepted."
   ]
 }
