@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - "design/j1-integrated-candidate"
-    paths:
-      - "**"
   workflow_dispatch:
 
 permissions:
@@ -20,20 +18,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
+          cache: npm
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
       - name: Build
         run: npm run build
       - name: Core verification
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
         run: npm run check
-      - name: Domain study tests
-        run: npm run check:study
-      - name: Asset tests
-        run: npm run check:assets
-      - name: Studio tests
-        run: npm run check:studio
-      - name: Workspace tests
-        run: npm run check:workspace
+      - name: Build isolated React workspace
+        run: npm run studio:build
+      - name: Verify domains, assets, workspace isolation and saved history
+        run: npm run check:study && npm run check:studio && npm run check:workspace
