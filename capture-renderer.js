@@ -1,6 +1,6 @@
 /* Render-only architectural study overlay. Canonical geometry remains untouched. */
 function applyApartmentArchitectureVariant(variant){
-  if(!variant)return {wall_segments_hidden:0,openings_hidden:0};
+  if(!variant)return {wall_segments_hidden:0,wall_segments_added:0,wall_boxes_added:0,openings_hidden:0,door_overrides:0};
   if(variant.render_only!==true)throw new Error('Architecture variant must be explicitly render-only.');
   const samePoint=(a,b)=>Math.abs(a[0]-b[0])<0.6&&Math.abs(a[1]-b[1])<0.6;
   const sameSegment=(s,r)=>(samePoint(s.from,r.from)&&samePoint(s.to,r.to))||(samePoint(s.from,r.to)&&samePoint(s.to,r.from));
@@ -10,6 +10,24 @@ function applyApartmentArchitectureVariant(variant){
     const s=o.userData?.wallSegment;
     if(s&&removals.some(r=>sameSegment(s,r))){o.visible=false;wallSegmentsHidden++;}
   });
+
+  let wallSegmentsAdded=0;
+  for(const s of Array.isArray(variant.add_wall_segments)?variant.add_wall_segments:[]){
+    const [x0,z0]=s.from,[x1,z1]=s.to,dx=M(x1-x0),dz=M(z1-z0),height=s.height_m??2.5,thickness=s.thickness_mm??180;
+    const o=new THREE.Mesh(new THREE.BoxGeometry(Math.hypot(dx,dz),height,M(thickness)),[wallMat,wallMat,capMat,wallMat,wallMat,wallMat]);
+    o.position.set(wx((x0+x1)/2),height/2,wz((z0+z1)/2));o.rotation.y=-Math.atan2(dz,dx);o.castShadow=o.receiveShadow=true;
+    o.userData.architectureStudyWall=s;archUp.add(o);wallSegmentsAdded++;
+  }
+
+  let wallBoxesAdded=0;
+  for(const b of Array.isArray(variant.add_wall_boxes)?variant.add_wall_boxes:[]){
+    const [x0,z0,x1,z1]=b.rect,bottom=b.bottom_m??0,top=b.top_m??2.5,h=Math.max(0,top-bottom);
+    if(h<=0)continue;
+    const o=new THREE.Mesh(new THREE.BoxGeometry(M(x1-x0),h,M(z1-z0)),[wallMat,wallMat,capMat,wallMat,wallMat,wallMat]);
+    o.position.set(wx((x0+x1)/2),bottom+h/2,wz((z0+z1)/2));o.castShadow=o.receiveShadow=true;
+    o.userData.architectureStudyWallBox=b;archUp.add(o);wallBoxesAdded++;
+  }
+
   const hiddenIds=new Set(Array.isArray(variant.hide_openings)?variant.hide_openings:[]);
   let openingsHidden=0;
   for(const d of doors){
@@ -18,7 +36,25 @@ function applyApartmentArchitectureVariant(variant){
     if(d.sliding)d.panels?.forEach(p=>p.visible=false);
     else if(d.pivot)d.pivot.visible=false;
   }
-  return {wall_segments_hidden:wallSegmentsHidden,openings_hidden:openingsHidden};
+  return {wall_segments_hidden:wallSegmentsHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,openings_hidden:openingsHidden,door_overrides:0};
+}
+function applyApartmentDoorOverrides(variant,result){
+  const overrides=Array.isArray(variant?.door_overrides)?variant.door_overrides:[];
+  const ang=v=>Math.atan2(-v[1],v[0]);
+  let count=0;
+  for(const spec of overrides){
+    const d=doors.find(x=>x.id===spec.id);
+    if(!d||d.sliding)continue;
+    if(Array.isArray(spec.open_vector)&&spec.open_vector.length===2){
+      d.a1=ang(spec.open_vector);
+      if(d.a1-d.a0>Math.PI)d.a1-=Math.PI*2;
+      if(d.a0-d.a1>Math.PI)d.a1+=Math.PI*2;
+    }
+    if(typeof spec.force_open==='boolean')d.open=spec.force_open;
+    d.cur=d.open?d.a1:d.a0;d.pivot.rotation.y=d.cur;count++;
+  }
+  if(result)result.door_overrides=count;
+  return count;
 }
 
 /* This boot runs only in an isolated headless page made from the real viewer. */
@@ -35,6 +71,7 @@ async function bootApartmentAgentCapture(){
     camera.fov=input.camera.fov;camera.aspect=input.camera.aspect;camera.near=input.camera.near;camera.far=input.camera.far;camera.updateProjectionMatrix();camera.lookAt(orbit.target);
     opt.night=input.camera.viewer.night;opt.hour=input.camera.viewer.hour;
     for(const d of doors){const recorded=input.camera.viewer.doors.find(v=>v.id===d.id);if(!recorded)throw new Error('Missing door state.');d.open=recorded.open;d.cur=recorded.position;if(d.sliding)positionSlide(d);else d.pivot.rotation.y=d.cur;}
+    applyApartmentDoorOverrides(input.architecture_variant,architectureResult);
     applyLight();
     await waitApartmentSceneAssets(25000);
     if(document.fonts?.ready)await document.fonts.ready;
