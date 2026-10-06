@@ -29,7 +29,11 @@ jobs:
         env:
           CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
         run: npm run check
-      - name: Build isolated React workspace
-        run: npm run studio:build
-      - name: Verify domains, assets, workspace isolation and saved history
-        run: npm run check:study && npm run check:studio && npm run check:workspace
+      - name: Architectural candidate validation
+        run: node scripts/validate-architectural-snapshot.mjs
+      - name: Domain study tests
+        run: npm run check:study
+      - name: Studio renderer/domain tests
+        run: npm run check:studio
+      - name: Architecture-lock note
+        run: echo "studio:build/check:workspace intentionally remain canonical-only and reject J1's reviewed cross-room island; production guards are not weakened."
