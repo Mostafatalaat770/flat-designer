@@ -1845,110 +1845,20 @@
   },
   "views": [
     {
-      "id": "H2-entry-to-dining",
+      "id": "H2-entry-clearance-proof",
       "room_id": "RECP-01",
       "camera": {
         "position": [
-          8.85,
+          6.72,
           1.67,
-          4.65
+          4.7
         ],
         "target": [
-          7.25,
-          1.1,
-          2.15
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "H2-dining-context",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
           6.65,
-          1.68,
-          3.05
+          1.1,
+          2.45
         ],
-        "target": [
-          7.15,
-          1.05,
-          2.2
-        ],
-        "fov": 60,
+        "fov": 58,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2085,7 +1995,8 @@
     "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling.",
     "H2 circulation repair: shift the complete dining set 150 mm north, preserving table/chair relationships.",
     "Approximate closed-chair gap between the open entry door leaf tip and the southeast dining chair improves from about 811 mm to about 961 mm, moving the route above the project's 900 mm comfort target.",
-    "This is a low-cost furniture-layout correction; no architecture changes required. Chair pull-out during active dining can still temporarily narrow the entry route and should remain a behavioral/operational consideration."
+    "This is a low-cost furniture-layout correction; no architecture changes required. Chair pull-out during active dining can still temporarily narrow the entry route and should remain a behavioral/operational consideration.",
+    "H2 camera QA: original entry camera was outside/inside wall geometry and was rejected. Revised camera sits just inside the entry, looking north along the dining route."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
