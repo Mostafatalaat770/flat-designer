@@ -364,6 +364,12 @@ dialog{border:1px solid var(--line);border-radius:8px;padding:0;width:min(1000px
 '''
 replace('</style>','\n'+css+'\n</style>')
 
+# Open-kitchen architectural studies need base cabinets without the upstream demo's forced backsplash/upper-cabinet stack.
+replace(
+    "g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004), box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));",
+    "if(['base-only','peninsula'].includes(f.variant)){g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));break;} g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004), box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));"
+)
+
 # Keep compact conceptual vanity bowls inside the saved depth envelope.
 # Only depths below 300 mm change; this is not manufacturer CAD.
 replace("const rb = Math.min(.19, w/nb*.36);", "const rb = Math.min(.19, w/nb*.36), bowlZ = d < .30 ? 0 : .03, bowlScaleZ = d < .30 ? Math.min(1, (d - .04)/(2*rb)) : 1;")
