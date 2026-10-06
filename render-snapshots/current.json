@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Architecture Pass 01 · D — Main opening + wide screened access",
+  "name": "Architecture Pass 01 · D2 — functional open kitchen",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -276,10 +276,10 @@
       {
         "id": "starter-20",
         "type": "counter",
-        "name": "West cooking counter · 1500 mm · oven reserved, SKU TBD",
+        "name": "West cooking counter · D2 · 1500 mm · oven reserved, SKU TBD",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 8038,
+        "cy": 7948,
         "w": 1500,
         "d": 600,
         "rot": 270,
@@ -291,10 +291,10 @@
       {
         "id": "starter-21",
         "type": "ksink",
-        "name": "550 mm sink · drain/water positions TBD",
+        "name": "550 mm sink · D2 peninsula · drain/water routing TBD",
         "room_id": "KIT-01",
-        "cx": 11181,
-        "cy": 6993,
+        "cx": 9981,
+        "cy": 6893,
         "w": 550,
         "d": 400,
         "rot": 0,
@@ -305,10 +305,10 @@
       {
         "id": "starter-22",
         "type": "stove",
-        "name": "600 mm gas hob · ventilation and clearances TBD",
+        "name": "600 mm gas hob · D2 west run · extraction route TBD",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 7895,
+        "cy": 7805,
         "w": 600,
         "d": 400,
         "rot": 270,
@@ -319,10 +319,10 @@
       {
         "id": "starter-23",
         "type": "fridge",
-        "name": "650 mm fridge envelope · door/ventilation TBD",
+        "name": "650 mm fridge envelope · D2 screened position · hinge/ventilation TBD",
         "room_id": "KIT-01",
-        "cx": 11850,
-        "cy": 8520,
+        "cx": 12200,
+        "cy": 8590,
         "w": 650,
         "d": 650,
         "rot": 180,
@@ -632,10 +632,10 @@
       {
         "id": "K3-corner",
         "type": "counter",
-        "name": "600 mm closed corner cabinet · access hardware TBD",
+        "name": "600 mm closed corner cabinet · D2 peninsula junction",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 6993,
+        "cy": 6893,
         "w": 600,
         "d": 610,
         "rot": 0,
@@ -647,10 +647,10 @@
       {
         "id": "K3-dishwasher",
         "type": "dishwasher",
-        "name": "600 mm integrated dishwasher niche · SKU TBD",
+        "name": "600 mm integrated dishwasher · adjacent to sink · SKU TBD",
         "room_id": "KIT-01",
         "cx": 10581,
-        "cy": 6993,
+        "cy": 6893,
         "w": 600,
         "d": 610,
         "rot": 0,
@@ -662,10 +662,10 @@
       {
         "id": "K3-sink-base",
         "type": "counter",
-        "name": "600 mm sink / waste cabinet",
+        "name": "600 mm sink / waste cabinet · nearer wet-wall side",
         "room_id": "KIT-01",
-        "cx": 11181,
-        "cy": 6993,
+        "cx": 9981,
+        "cy": 6893,
         "w": 600,
         "d": 610,
         "rot": 0,
@@ -675,27 +675,12 @@
         "material_id": "a1-natural-oak"
       },
       {
-        "id": "K3-end-landing",
-        "type": "counter",
-        "name": "Shallow 600 × 410 mm refrigerator landing",
-        "room_id": "KIT-01",
-        "cx": 11781,
-        "cy": 6893,
-        "w": 600,
-        "d": 410,
-        "rot": 0,
-        "color": "#B88C5E",
-        "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
-      },
-      {
         "id": "K3-laundry-niche",
         "type": "washer",
-        "name": "600 × 610 mm indoor laundry niche · generic envelope",
+        "name": "600 mm integrated laundry niche · peninsula end · acoustic/service review TBD",
         "room_id": "KIT-01",
-        "cx": 9981,
-        "cy": 6993,
+        "cx": 11181,
+        "cy": 6893,
         "w": 600,
         "d": 610,
         "rot": 0,
@@ -1442,31 +1427,6 @@
           }
         },
         {
-          "id": "KIT-A1-north-backsplash",
-          "type": "wall-panel",
-          "variant": "plain",
-          "room_id": "KIT-01",
-          "placement": {
-            "mode": "wall",
-            "host_wall_id": "WALL-KIT-01-02",
-            "offset_mm": 0,
-            "elevation_mm": 930,
-            "inset_mm": 0
-          },
-          "rotation": 0,
-          "width_mm": 2800,
-          "depth_mm": 5,
-          "height_mm": 520,
-          "material_references": {
-            "primary": "kitchen-warm-quartz"
-          },
-          "colour": "#E5DED1",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "Thin quartz backsplash skin; modeled thin to avoid false appliance-footprint collision"
-          }
-        },
-        {
           "id": "KIT-A1-west-backsplash",
           "type": "wall-panel",
           "variant": "plain",
@@ -1489,31 +1449,6 @@
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Thin quartz backsplash skin behind cooking run"
-          }
-        },
-        {
-          "id": "KIT-A1-upper-north",
-          "type": "sideboard",
-          "variant": "plain",
-          "room_id": "KIT-01",
-          "placement": {
-            "mode": "wall",
-            "host_wall_id": "WALL-KIT-01-02",
-            "offset_mm": -228.1,
-            "elevation_mm": 1480,
-            "inset_mm": 8
-          },
-          "rotation": 0,
-          "width_mm": 1800,
-          "depth_mm": 330,
-          "height_mm": 700,
-          "material_references": {
-            "primary": "kitchen-soft-ivory"
-          },
-          "colour": "#E8E2D7",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "Flush pale-oak upper cabinet run with 40 mm blind-corner relief at west junction"
           }
         },
         {
@@ -2131,7 +2066,12 @@
     "Exact WebGL concept views, not photorealistic product CAD and not construction or accessibility approval.",
     "Branch render template fixes compact vanity bowl depth only for envelopes below 300 mm: the A3 400 x 220 mm generic basin bowl now stays within its top. The correction is a branch renderer change, not a production Studio deployment or manufacturer CAD.",
     "ARCHITECTURE STUDY ONLY: D removes the main shared kitchen/reception wall and the 487 mm wall segment immediately north of the existing kitchen door while retaining the diagonal return and the 784 mm south/fridge-side wall segment.",
-    "The modeled continuous access from y=6969.158 to y=8176.58 is ~1207 mm before construction/frame/tolerance review. Structural, MEP, gas and developer approval remain TBD."
+    "The modeled continuous access from y=6969.158 to y=8176.58 is ~1207 mm before construction/frame/tolerance review. Structural, MEP, gas and developer approval remain TBD.",
+    "D2 FUNCTIONAL TEST: north peninsula reduced to four 600 mm modules (~2400 mm), shallow east landing removed, peninsula shifted ~100 mm toward the former wall line.",
+    "Sink moved nearer the west wet/service side; dishwasher remains directly adjacent; integrated laundry moves to peninsula end. Exact drainage route and acoustic treatment remain TBD.",
+    "Fridge moved behind the retained east/south screen wall. Generic envelope leaves ~57 mm modeled side gap; exact manufacturer ventilation/hinge/service clearances remain TBD.",
+    "Modeled clear depth between peninsula front (~7198 mm plan Y) and fridge north face (~8265 mm) is ~1067 mm at the fridge zone, matching the public NKBA one-cook work-aisle planning target used for this study.",
+    "Usable east-side passage beside the shortened peninsula is ~1100 mm in the rectangular zone, above the project 900 mm comfort circulation target. Structural/MEP/gas/developer approval remains TBD."
   ],
   "architecture_variant": {
     "id": "D-main-opening-wide-access",
