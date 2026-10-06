@@ -33,6 +33,8 @@ jobs:
         run: node scripts/validate-architectural-snapshot.mjs
       - name: Domain study tests
         run: npm run check:study
+      - name: Provide canonical renderer fixture
+        run: cp studio/app/data/family-a7.brief.json studio/app/data/workspace-seed.json
       - name: Studio renderer/domain tests
         run: npm run check:studio
       - name: Architecture-lock note
