@@ -1939,10 +1939,10 @@
   },
   "views": [
     {
-      "id": "arch-reception-to-kitchen",
+      "id": "arch-reception-to-kitchen-v2",
       "room_id": "RECP-01",
       "camera": {
-        "fov": 42,
+        "fov": 60,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2017,22 +2017,22 @@
           ]
         },
         "position": [
-          2.632291,
+          4.932291,
           1.7,
-          0.4843415
+          4.5643415
         ],
         "target": [
-          2.632291,
-          1.45,
-          2.5843415
+          2.55,
+          1.4,
+          1.35
         ]
       }
     },
     {
-      "id": "arch-kitchen-to-reception",
+      "id": "arch-kitchen-to-reception-v2",
       "room_id": "KIT-01",
       "camera": {
-        "fov": 42,
+        "fov": 60,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2107,14 +2107,14 @@
           ]
         },
         "position": [
-          2.732291,
+          1.5138200000000006,
           1.7,
-          2.7343415
+          2.0222075000000004
         ],
         "target": [
-          2.732291,
-          1.45,
-          0.5843415
+          2.65,
+          1.4,
+          0.65
         ]
       }
     }
