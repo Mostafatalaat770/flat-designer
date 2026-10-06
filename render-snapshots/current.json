@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "J1 Integrated Candidate — whole-apartment developed direction",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-82b418e6",
+  "scene_revision": "scene-742d9c08",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -1386,7 +1386,7 @@
             "inset_mm": 0
           },
           "rotation": 0,
-          "width_mm": 1950,
+          "width_mm": 1800,
           "depth_mm": 5,
           "height_mm": 520,
           "material_references": {
@@ -1395,7 +1395,7 @@
           "colour": "#E5DED1",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "E2 quartz backsplash behind 1950 mm west cooking/prep run"
+            "role": "J1 quartz backsplash behind the west cooking/prep run; shortened to stay fully within the verified usable wall segment"
           }
         },
         {
@@ -2639,7 +2639,8 @@
     "J1 final aisle refinement: island and sink shifted 100 mm east and 70 mm north. Approximate west cooking aisle becomes ~1219 mm and south/tall-unit aisle ~1220 mm, while the island-to-living-chair envelope remains ~948 mm.",
     "Island sink centre is now about 228 mm from the earlier sink centre; still a compact wet-service relocation subject to plumbing confirmation.",
     "Master dressing-to-ensuite render-only wall gap increased from 800 mm to 900 mm to target a more useful pocket-door clear opening after frame/system losses. Exact clear opening remains product-dependent.",
-    "J1 QA repair: removed H1-terrace-upper. Its provisional host WALL-TER-SVC-03 is only 296.6 mm long; the 800 mm cabinet exceeded the usable segment. No overhead terrace storage is approved until an as-built/full-height host is confirmed."
+    "J1 QA repair: removed H1-terrace-upper. Its provisional host WALL-TER-SVC-03 is only 296.6 mm long; the 800 mm cabinet exceeded the usable segment. No overhead terrace storage is approved until an as-built/full-height host is confirmed.",
+    "J1 QA repair: west kitchen backsplash reduced from 1950 mm to 1800 mm. At the existing 263.9 mm host offset, 1950 mm exceeded WALL-KIT-01-01 by ~52.7 mm; 1800 mm stays within the usable segment."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
