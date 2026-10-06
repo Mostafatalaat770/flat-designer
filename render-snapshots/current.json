@@ -1889,16 +1889,16 @@
       "room_id": "TER-SVC",
       "camera": {
         "position": [
-          2.75,
+          2.42,
           1.62,
-          4.55
+          4.52
         ],
         "target": [
-          3.15,
-          1.1,
-          4.25
+          1.15,
+          1.05,
+          4.48
         ],
-        "fov": 64,
+        "fov": 58,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2036,7 +2036,8 @@
     "H1 laundry concept: place a 600 × 650 mm washer on the west wall of the 1.85 × 1.10 m service terrace. Because the terrace door swings into the kitchen, the modeled washer does not consume the door swing.",
     "Approximate clear width from the washer front to the opposite terrace wall is about 1240 mm, leaving a strong access/drying strip.",
     "Outdoor/service-terrace placement is NOT approved until drainage, trapped floor drain, dedicated electrical protection, water supply, sun/rain exposure, ventilation, corrosion risk and selected washer manufacturer limits are verified.",
-    "If weather/manufacturer conditions are poor, fallback is an indoor concealed utility niche; do not force an outdoor washer for aesthetics."
+    "If weather/manufacturer conditions are poor, fallback is an indoor concealed utility niche; do not force an outdoor washer for aesthetics.",
+    "H1 camera QA: original terrace view looked through the adjacent WC wall and was rejected. Revised camera is placed on the east side of the terrace facing the west-wall washer directly."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
