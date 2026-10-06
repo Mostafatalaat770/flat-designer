@@ -1,0 +1,94 @@
+{
+  "schema": "ApartmentArchitectureStudy/1",
+  "baseline": {
+    "scene_revision": "scene-29d4aa6d",
+    "storage_revision": 39,
+    "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658"
+  },
+  "status": "EXPLORATORY",
+  "structural_status": "TBD",
+  "variants": [
+    {
+      "id": "A-doorless-control",
+      "name": "Doorless existing kitchen opening",
+      "render_only": true,
+      "remove_wall_segments": [],
+      "hide_openings": [
+        "OP-RECP-KIT"
+      ],
+      "hypothesis": "Removing the leaf may improve daily flow without demolition; likely limited spatial gain because the modeled opening is only ~720 mm."
+    },
+    {
+      "id": "B-main-opening",
+      "name": "Main 3.14 m kitchen-reception opening",
+      "render_only": true,
+      "remove_wall_segments": [
+        {
+          "from": [
+            8981.529,
+            6587.866
+          ],
+          "to": [
+            12116.59,
+            6587.866
+          ]
+        }
+      ],
+      "hide_openings": [
+        "OP-RECP-KIT"
+      ],
+      "hypothesis": "A single large dining-facing opening may deliver most of the openness while retaining useful separator wall at the southeast side."
+    },
+    {
+      "id": "C-broad-open",
+      "name": "Broad open kitchen",
+      "render_only": true,
+      "remove_wall_segments": [
+        {
+          "from": [
+            8981.529,
+            6587.866
+          ],
+          "to": [
+            12116.59,
+            6587.866
+          ]
+        },
+        {
+          "from": [
+            12116.59,
+            6587.866
+          ],
+          "to": [
+            12582.613,
+            6969.158
+          ]
+        },
+        {
+          "from": [
+            12582.613,
+            6969.158
+          ],
+          "to": [
+            12582.613,
+            7456.363
+          ]
+        },
+        {
+          "from": [
+            12582.613,
+            8176.58
+          ],
+          "to": [
+            12582.613,
+            8960.346
+          ]
+        }
+      ],
+      "hide_openings": [
+        "OP-RECP-KIT"
+      ],
+      "hypothesis": "Maximum openness may improve perceived area and family interaction, but creates the greatest extraction, storage, visual-clutter, and engineering burden."
+    }
+  ]
+}
