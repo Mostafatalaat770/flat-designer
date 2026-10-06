@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "J1 Integrated Candidate — whole-apartment developed direction",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-742d9c08",
+  "scene_revision": "scene-766c6975",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -581,7 +581,7 @@
         "name": "E2 west cooking/prep run · 1950 mm · drawers + prep",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 7985,
+        "cy": 7895,
         "w": 1950,
         "d": 600,
         "rot": 270,
@@ -610,7 +610,7 @@
         "name": "E2 600 mm oven + appliance/storage column",
         "room_id": "KIT-01",
         "cx": 11650,
-        "cy": 8660,
+        "cy": 8570,
         "w": 600,
         "d": 600,
         "rot": 0,
@@ -625,7 +625,7 @@
         "name": "E2 600 mm integrated-fridge housing · exact SKU/ventilation TBD",
         "room_id": "KIT-01",
         "cx": 12250,
-        "cy": 8660,
+        "cy": 8570,
         "w": 600,
         "d": 600,
         "rot": 0,
@@ -637,11 +637,11 @@
       {
         "id": "E2-island",
         "type": "counter",
-        "name": "E2 double-sided storage island · 1800 × 900 mm · 600+300 concept",
+        "name": "J1 double-sided storage island · 1700 × 900 mm · 600+300 concept",
         "room_id": "RECP-01",
         "cx": 11350,
-        "cy": 6240,
-        "w": 1800,
+        "cy": 6200,
+        "w": 1700,
         "d": 900,
         "rot": 90,
         "color": "#E8E2D7",
@@ -652,10 +652,10 @@
       {
         "id": "E2-island-sink",
         "type": "ksink",
-        "name": "E2 550 mm island sink · south module · drainage route TBD",
+        "name": "J1 550 mm island sink · south module · drainage route TBD",
         "room_id": "RECP-01",
         "cx": 11350,
-        "cy": 6840,
+        "cy": 6770,
         "w": 550,
         "d": 400,
         "rot": 270,
@@ -1381,12 +1381,12 @@
           "placement": {
             "mode": "wall",
             "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": 263.9,
+            "offset_mm": 120,
             "elevation_mm": 930,
             "inset_mm": 0
           },
           "rotation": 0,
-          "width_mm": 1800,
+          "width_mm": 1700,
           "depth_mm": 5,
           "height_mm": 520,
           "material_references": {
@@ -1395,7 +1395,7 @@
           "colour": "#E5DED1",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "J1 quartz backsplash behind the west cooking/prep run; shortened to stay fully within the verified usable wall segment"
+            "role": "J1 quartz backsplash centred on west hob/prep run; clear of the south wall junction"
           }
         },
         {
@@ -1534,7 +1534,7 @@
             "mode": "floor"
           },
           "cx": 11050,
-          "cy": 8660,
+          "cy": 8570,
           "rotation": 0,
           "width_mm": 600,
           "depth_mm": 600,
@@ -2640,7 +2640,11 @@
     "Island sink centre is now about 228 mm from the earlier sink centre; still a compact wet-service relocation subject to plumbing confirmation.",
     "Master dressing-to-ensuite render-only wall gap increased from 800 mm to 900 mm to target a more useful pocket-door clear opening after frame/system losses. Exact clear opening remains product-dependent.",
     "J1 QA repair: removed H1-terrace-upper. Its provisional host WALL-TER-SVC-03 is only 296.6 mm long; the 800 mm cabinet exceeded the usable segment. No overhead terrace storage is approved until an as-built/full-height host is confirmed.",
-    "J1 QA repair: west kitchen backsplash reduced from 1950 mm to 1800 mm. At the existing 263.9 mm host offset, 1950 mm exceeded WALL-KIT-01-01 by ~52.7 mm; 1800 mm stays within the usable segment."
+    "J1 QA repair: west kitchen backsplash reduced from 1950 mm to 1800 mm. At the existing 263.9 mm host offset, 1950 mm exceeded WALL-KIT-01-01 by ~52.7 mm; 1800 mm stays within the usable segment.",
+    "J1 geometry correction: west cooking base and the three south tall units were moved 90 mm off modeled wall centrelines to the approximate room-facing wall faces.",
+    "J1 island finalized at 1700 × 900 mm, centre y=6200. With the corrected cabinet faces, approximate west cooking aisle is ~1219 mm and south/tall-unit aisle ~1220 mm; island-to-living-chair envelope remains about ~958 mm.",
+    "Island sink moved to y=6770 to remain within the shorter island. Its centre is about 280 mm from the earlier sink centre, still a compact service relocation pending plumbing design.",
+    "West backsplash finalized at 1700 mm with 120 mm host offset to avoid the perpendicular service-wall junction."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
