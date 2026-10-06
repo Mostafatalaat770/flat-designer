@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Design Pass I2 — master shower + family bathtub",
+  "name": "J1 Integrated Candidate — whole-apartment developed direction",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -367,7 +367,7 @@
         "name": "Dining table · six seats · 2000 × 950 mm",
         "room_id": "RECP-01",
         "cx": 14670,
-        "cy": 7650,
+        "cy": 7500,
         "w": 2000,
         "d": 950,
         "rot": 0,
@@ -381,7 +381,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 13970,
-        "cy": 6950,
+        "cy": 6800,
         "w": 510,
         "d": 530,
         "rot": 0,
@@ -395,7 +395,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 15370,
-        "cy": 6950,
+        "cy": 6800,
         "w": 510,
         "d": 530,
         "rot": 0,
@@ -409,7 +409,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 13970,
-        "cy": 8350,
+        "cy": 8200,
         "w": 510,
         "d": 530,
         "rot": 180,
@@ -423,7 +423,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 15370,
-        "cy": 8350,
+        "cy": 8200,
         "w": 510,
         "d": 530,
         "rot": 180,
@@ -508,7 +508,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 14670,
-        "cy": 6950,
+        "cy": 6800,
         "w": 510,
         "d": 530,
         "rot": 0,
@@ -522,7 +522,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 14670,
-        "cy": 8350,
+        "cy": 8200,
         "w": 510,
         "d": 530,
         "rot": 180,
@@ -688,6 +688,20 @@
         "d": 750,
         "rot": 0,
         "color": "#F5F4F0",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "H1-terrace-washer",
+        "type": "washer",
+        "name": "Service-terrace washer envelope · 600 × 650 mm · weather-protection TBD",
+        "room_id": "TER-SVC",
+        "cx": 9170,
+        "cy": 9600,
+        "w": 600,
+        "d": 650,
+        "rot": 90,
+        "color": "#E6E8EA",
         "variant": "style",
         "status": "EXPLORATORY"
       }
@@ -1533,6 +1547,32 @@
           "metadata": {
             "role": "600 mm full-height pantry; plain integrated joinery massing"
           }
+        },
+        {
+          "id": "H1-terrace-upper",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "TER-SVC",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-TER-SVC-03",
+            "offset_mm": -250,
+            "elevation_mm": 1450,
+            "inset_mm": 8
+          },
+          "rotation": 90,
+          "width_mm": 800,
+          "depth_mm": 300,
+          "height_mm": 650,
+          "material_references": {
+            "primary": "utility-moisture-resistant"
+          },
+          "colour": "#D9DDD9",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Shallow overhead utility storage above washer; moisture-resistant fabrication required",
+            "note": "Exact wall host/orientation to be verified in model/site before fabrication"
+          }
         }
       ],
       "materials": [
@@ -1830,7 +1870,547 @@
   },
   "views": [
     {
-      "id": "I2-master-shower",
+      "id": "J1-entry-dining",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          6.72,
+          1.67,
+          4.7
+        ],
+        "target": [
+          6.65,
+          1.1,
+          2.45
+        ],
+        "fov": 58,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-dining-kitchen",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          6.35,
+          1.68,
+          2.8
+        ],
+        "target": [
+          3.55,
+          1.3,
+          1.35
+        ],
+        "fov": 61,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-living-kitchen",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          4.85,
+          1.67,
+          0.55
+        ],
+        "target": [
+          3.25,
+          1.22,
+          1.45
+        ],
+        "fov": 62,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-kitchen-work",
+      "room_id": "KIT-01",
+      "camera": {
+        "position": [
+          3.9,
+          1.65,
+          3
+        ],
+        "target": [
+          2.35,
+          1.13,
+          1.35
+        ],
+        "fov": 63,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-guest-wc",
+      "room_id": "WC-01",
+      "camera": {
+        "position": [
+          5.25,
+          1.62,
+          4.42
+        ],
+        "target": [
+          3.65,
+          1.1,
+          4.45
+        ],
+        "fov": 60,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-family-bath",
+      "room_id": "BATH-C01",
+      "camera": {
+        "position": [
+          0.45,
+          1.58,
+          1.4
+        ],
+        "target": [
+          0.08,
+          1.05,
+          3.35
+        ],
+        "fov": 60,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-master-ensuite",
       "room_id": "WIC-01",
       "camera": {
         "position": [
@@ -1920,20 +2500,20 @@
       }
     },
     {
-      "id": "I2-family-tub-from-hall",
-      "room_id": "BATH-C01",
+      "id": "J1-service-laundry",
+      "room_id": "TER-SVC",
       "camera": {
         "position": [
-          0.1,
+          2.42,
           1.62,
-          0.55
+          4.52
         ],
         "target": [
-          0.1,
-          1.08,
-          2.55
+          1.15,
+          1.05,
+          4.48
         ],
-        "fov": 61,
+        "fov": 58,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2074,7 +2654,13 @@
     "I2 family-first bathroom strategy: keep a 1500 × 800 walk-in shower in the master ensuite for daily use, and move the home's bathtub capability to the common family bathroom with a 1500 × 750 tub.",
     "The former 900 × 900 common-bath shower and 300 mm floor cabinet are removed in this study. Vanity and WC remain in place.",
     "Rationale: master gets easier daily access and a more open wet zone; common bath retains a tub for children/family/soaking rather than eliminating bathtub capability from the apartment.",
-    "Tub/shower waterproofing, floor falls, glass/screen strategy, anti-slip surfaces, taps, drain position and exact clear standing zones remain TBD."
+    "Tub/shower waterproofing, floor falls, glass/screen strategy, anti-slip surfaces, taps, drain position and exact clear standing zones remain TBD.",
+    "J1 INTEGRATION: combines only previously reviewed directions: E2 full-open kitchen, F1 bathroom-door strategy, G2 localized HVAC pockets, H1 service-terrace laundry, H2 dining-entry clearance repair, and I2 master-shower/family-tub strategy.",
+    "H2 retained: complete dining group shifted 150 mm north; approximate open-entry-door-tip to southeast dining-chair closed-envelope gap improves from ~811 mm to ~961 mm.",
+    "H1 retained conditionally: 600 × 650 mm washer on service-terrace west wall with ~1240 mm approximate clear width to opposite wall. Outdoor exposure/drain/electrical/manufacturer approval remains mandatory.",
+    "E2 plumbing coordination improved by geometry: island sink centre is only about 108 mm from the earlier sink centre, reducing but not eliminating drainage/water-routing risk.",
+    "Bedrooms and private hall receive no new architectural changes in J1; prior developed furniture/storage layouts are retained because no higher-value wall intervention was established.",
+    "J1 is a coordinated design candidate, not a construction package. Structural removability, MEP sizing, waterproofing, exact clear door openings, appliance manuals, site tolerances and developer approvals remain hard gates."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
