@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Design Pass G2 — localized HVAC pockets",
+  "name": "Design Pass I1 — master ensuite walk-in shower",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -200,20 +200,6 @@
         "status": "EXPLORATORY",
         "variant": "style",
         "material_id": "a1-natural-oak"
-      },
-      {
-        "id": "starter-14",
-        "type": "bathtub",
-        "name": "Retained bathtub · 1500 × 750 mm",
-        "room_id": "BATH-M01",
-        "cx": 6312.489,
-        "cy": 6757.329,
-        "w": 1500,
-        "d": 750,
-        "rot": 0,
-        "color": "#F5F4F0",
-        "status": "EXPLORATORY",
-        "variant": "style"
       },
       {
         "id": "starter-15",
@@ -703,6 +689,20 @@
         "d": 400,
         "rot": 270,
         "color": "#eef2f5",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "I1-master-shower",
+        "type": "shower",
+        "name": "Master walk-in shower · 1500 × 800 mm · glass/drain TBD",
+        "room_id": "BATH-M01",
+        "cx": 6312,
+        "cy": 6707,
+        "w": 1500,
+        "d": 800,
+        "rot": 0,
+        "color": "#C0D6DF",
         "variant": "style",
         "status": "EXPLORATORY"
       }
@@ -1845,290 +1845,20 @@
   },
   "views": [
     {
-      "id": "G2-dining-overview",
-      "room_id": "RECP-01",
+      "id": "I1-master-shower-from-dressing",
+      "room_id": "WIC-01",
       "camera": {
         "position": [
-          6.35,
-          1.68,
-          2.8
+          -3.2,
+          1.62,
+          2.4
         ],
         "target": [
-          3.55,
-          1.48,
-          0.6
+          -1.72,
+          1.1,
+          2.48
         ],
         "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-living-pocket",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          1.8,
-          1.64,
-          -1.75
-        ],
-        "target": [
-          4.05,
-          1.7,
-          -1.1
-        ],
-        "fov": 60,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-kitchen-pocket",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          5.2,
-          1.66,
-          3.1
-        ],
-        "target": [
-          3.55,
-          1.55,
-          1.8
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-open-plan-height",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.8,
-          1.66,
-          4.15
-        ],
-        "target": [
-          3.2,
-          1.35,
-          0.2
-        ],
-        "fov": 62,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2262,7 +1992,10 @@
     "Goal: preserve the 2.50 m clear ceiling through the main living/dining field and avoid a beam-like soffit across the room.",
     "Both pockets are modeled with soffit underside at 2.34 m, giving approximately 290 mm from the verified 2.63 m underside of concrete. This is only a reservation envelope, not installation approval.",
     "Reception lighting stays track + lamps at 3000 K; no dining pendant in this pass so ceiling massing can be judged without decorative distraction.",
-    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling."
+    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling.",
+    "I1 replaces the 1500 × 750 master bathtub with a 1500 × 800 walk-in shower envelope while preserving toilet, vanity and the F1 widened/pocket-door strategy.",
+    "Earlier repository studies found both tub and shower options at 104 PASS / 49 WARNING / 0 FAIL; this pass is for direct spatial/usage comparison, not proof of waterproofing or drainage.",
+    "If shower is preferred, final design needs falls, drain type/location, glass swing/fixed-panel strategy, niche, mixer/handshower, anti-slip finish and waterproofing details."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
