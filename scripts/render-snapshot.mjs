@@ -4,6 +4,8 @@ import { chromium } from 'playwright';
 
 const snapshotPath=process.argv[2]||'render-snapshots/current.json';
 const snapshot=JSON.parse(await fs.readFile(snapshotPath,'utf8'));
+function sceneKey(scene){let h=2166136261;for(const c of JSON.stringify(scene)){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return 'scene-'+(h>>>0).toString(16);}
+snapshot.scene_revision=sceneKey(snapshot.layout);
 const template=JSON.parse(await fs.readFile('dist/capture-template.json','utf8')).html;
 const outDir=process.env.RENDER_OUT_DIR||'renders';
 await fs.mkdir(outDir,{recursive:true});
