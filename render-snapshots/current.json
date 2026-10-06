@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Design Pass G2 — localized HVAC pockets",
+  "name": "Design Pass H1 — service terrace laundry",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -703,6 +703,20 @@
         "d": 400,
         "rot": 270,
         "color": "#eef2f5",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "H1-terrace-washer",
+        "type": "washer",
+        "name": "Service-terrace washer envelope · 600 × 650 mm · weather-protection TBD",
+        "room_id": "TER-SVC",
+        "cx": 9170,
+        "cy": 9600,
+        "w": 600,
+        "d": 650,
+        "rot": 90,
+        "color": "#E6E8EA",
         "variant": "style",
         "status": "EXPLORATORY"
       }
@@ -1548,6 +1562,32 @@
           "metadata": {
             "role": "600 mm full-height pantry; plain integrated joinery massing"
           }
+        },
+        {
+          "id": "H1-terrace-upper",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "TER-SVC",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-TER-SVC-03",
+            "offset_mm": -250,
+            "elevation_mm": 1450,
+            "inset_mm": 8
+          },
+          "rotation": 90,
+          "width_mm": 800,
+          "depth_mm": 300,
+          "height_mm": 650,
+          "material_references": {
+            "primary": "utility-moisture-resistant"
+          },
+          "colour": "#D9DDD9",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Shallow overhead utility storage above washer; moisture-resistant fabrication required",
+            "note": "Exact wall host/orientation to be verified in model/site before fabrication"
+          }
         }
       ],
       "materials": [
@@ -1845,290 +1885,20 @@
   },
   "views": [
     {
-      "id": "G2-dining-overview",
-      "room_id": "RECP-01",
+      "id": "H1-service-terrace-laundry",
+      "room_id": "TER-SVC",
       "camera": {
         "position": [
-          6.35,
-          1.68,
-          2.8
+          2.75,
+          1.62,
+          4.55
         ],
         "target": [
-          3.55,
-          1.48,
-          0.6
+          3.15,
+          1.1,
+          4.25
         ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-living-pocket",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          1.8,
-          1.64,
-          -1.75
-        ],
-        "target": [
-          4.05,
-          1.7,
-          -1.1
-        ],
-        "fov": 60,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-kitchen-pocket",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          5.2,
-          1.66,
-          3.1
-        ],
-        "target": [
-          3.55,
-          1.55,
-          1.8
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-open-plan-height",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.8,
-          1.66,
-          4.15
-        ],
-        "target": [
-          3.2,
-          1.35,
-          0.2
-        ],
-        "fov": 62,
+        "fov": 64,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2262,7 +2032,11 @@
     "Goal: preserve the 2.50 m clear ceiling through the main living/dining field and avoid a beam-like soffit across the room.",
     "Both pockets are modeled with soffit underside at 2.34 m, giving approximately 290 mm from the verified 2.63 m underside of concrete. This is only a reservation envelope, not installation approval.",
     "Reception lighting stays track + lamps at 3000 K; no dining pendant in this pass so ceiling massing can be judged without decorative distraction.",
-    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling."
+    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling.",
+    "H1 laundry concept: place a 600 × 650 mm washer on the west wall of the 1.85 × 1.10 m service terrace. Because the terrace door swings into the kitchen, the modeled washer does not consume the door swing.",
+    "Approximate clear width from the washer front to the opposite terrace wall is about 1240 mm, leaving a strong access/drying strip.",
+    "Outdoor/service-terrace placement is NOT approved until drainage, trapped floor drain, dedicated electrical protection, water supply, sun/rain exposure, ventilation, corrosion risk and selected washer manufacturer limits are verified.",
+    "If weather/manufacturer conditions are poor, fallback is an indoor concealed utility niche; do not force an outdoor washer for aesthetics."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
