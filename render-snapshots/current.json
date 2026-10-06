@@ -1939,7 +1939,7 @@
   },
   "views": [
     {
-      "id": "arch-reception-to-kitchen-v2",
+      "id": "arch-reception-frontal-v3",
       "room_id": "RECP-01",
       "camera": {
         "fov": 60,
@@ -2017,19 +2017,19 @@
           ]
         },
         "position": [
-          4.932291,
+          2.58,
           1.7,
-          4.5643415
+          -0.8
         ],
         "target": [
-          2.55,
-          1.4,
-          1.35
+          2.58,
+          1.35,
+          1.75
         ]
       }
     },
     {
-      "id": "arch-kitchen-to-reception-v2",
+      "id": "arch-kitchen-frontal-v3",
       "room_id": "KIT-01",
       "camera": {
         "fov": 60,
@@ -2107,14 +2107,14 @@
           ]
         },
         "position": [
-          1.5138200000000006,
+          2.68,
           1.7,
-          2.0222075000000004
+          3.08
         ],
         "target": [
-          2.65,
-          1.4,
-          0.65
+          2.68,
+          1.35,
+          0.9
         ]
       }
     }
