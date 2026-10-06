@@ -1,9 +1,9 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Whole Apartment A2 — Kitchen Refinement + Review Cameras",
+  "name": "Whole Apartment A3 — Guest WC + Kitchen Usability",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-da408f6d",
-  "storage_revision": 37,
+  "scene_revision": "scene-4701fce4",
+  "storage_revision": 38,
   "layout": {
     "modelVersion": "0.2.2",
     "furniture": [
@@ -347,12 +347,12 @@
       {
         "id": "starter-26",
         "type": "vanity",
-        "name": "Guest basin",
+        "name": "Compact guest handrinse 400 x 220 · dimensional reference",
         "room_id": "WC-01",
         "cx": 11968.31,
-        "cy": 9214.54,
+        "cy": 9174.54,
         "w": 400,
-        "d": 300,
+        "d": 220,
         "rot": 0,
         "color": "#60432E",
         "status": "EXPLORATORY",
@@ -1524,7 +1524,7 @@
           "placement": {
             "mode": "wall",
             "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": -594.2,
+            "offset_mm": -464.2,
             "elevation_mm": 1480,
             "inset_mm": 8
           },
@@ -1938,6 +1938,276 @@
     }
   },
   "views": [
+    {
+      "id": "kitchen-work-run",
+      "room_id": "KIT-01",
+      "camera": {
+        "position": [
+          3.232291,
+          1.65,
+          3.0843415000000003
+        ],
+        "target": [
+          2.232291,
+          1.15,
+          2.1843415000000004
+        ],
+        "fov": 70,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "guest-wc-entry-open",
+      "room_id": "WC-01",
+      "camera": {
+        "position": [
+          4.202291,
+          1.5,
+          4.884341500000001
+        ],
+        "target": [
+          3.682291,
+          0.95,
+          4.2843415
+        ],
+        "fov": 70,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "guest-wc-use-closed",
+      "room_id": "WC-01",
+      "camera": {
+        "position": [
+          4.202291,
+          1.5,
+          4.884341500000001
+        ],
+        "target": [
+          3.682291,
+          0.95,
+          4.2843415
+        ],
+        "fov": 70,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": false,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
     {
       "id": "reception-entry",
       "room_id": "RECP-01",
@@ -2930,13 +3200,14 @@
     }
   ],
   "notes": [
-    "Frozen branch-local snapshot for GitHub Actions rendering.",
-    "Generated from the active Whole Apartment A — Detailed Geometry Controlled scene.",
-    "Render output is an artifact; the workflow does not commit PNGs.",
-    "Whole-apartment camera pack expanded from current validated Studio captures on scene-ddc3139a; canonical geometry unchanged.",
-    "2026-10-06: camera-only framing iteration for BR1, dressing, ensuite and family bathroom. Custom cameras await visual QA; layout and canonical geometry unchanged.",
-    "EXPLORATORY branch preview, not a saved Studio revision: kitchen upper cabinetry warm ivory; fridge shifted 270 mm west. Door-sweep clearance 31.2→123.5 mm (hinge INFERRED); front operating depth stays 1097 mm. Original Studio base scene-ddc3139a/storage 36. Apply proposal only after PNG QA.",
-    "Visual QA iteration 2: dressing aligned along aisle from north cabinet; ensuite faces south vanity/WC away from the open leaf. BR1 and family-bath framing accepted.",
-    "Kitchen refinement passed PNG review and saved to Studio revision 37 / scene-da408f6d as independent whole-apartment-a2-kitchen-refinement variant. Original A detailed variant retained. This snapshot now matches the saved Studio layout."
+    "Exact saved Studio layout: scene-4701fce4 / storage 38; independent whole-apartment-a3-usability variant revision 1. A2 variant preserved.",
+    "Canonical walls, openings, glazing, room polygons and 2500 mm clear ceiling are unchanged.",
+    "Guest basin envelope: 400 x 220 mm, original x centre and rear face retained. Generic conceptual joinery/bowl; Duravit D-Neo 073940 is a dimensional reference only. Fit, services and hardware TBD.",
+    "Guest basin full inferred door sweep clearance improved from -22.9 mm overlap to +57.1 mm gap. Still a review warning below 100 mm planning buffer. Entry approach width 633.8 to 656.7 mm. Door must be closed for normal basin use.",
+    "Kitchen west-north upper cabinet moved 130 mm south. Corner front-strip obstruction removed; operation depth 11.4 to 3083.1 mm. Cabinet hardware, hood and gas-hob clearances TBD.",
+    "Dishwasher layout unchanged. Official validator still reports 0 mm from zero-width tangent polygons at neighbouring cabinet boundaries. Independently measured positive-width front strip: 1572.346 mm to south wall; not manufacturer fit certification.",
+    "Original eleven A2 camera poses, FOV and viewer settings retained for direct before/after comparison. Added kitchen work-run and guest WC entry/use angles.",
+    "guest-wc-use-closed changes only the visible door pose for usability review; the door geometry and hinge convention remain unchanged and INFERRED.",
+    "Exact WebGL concept views, not photorealistic product CAD and not construction or accessibility approval."
   ]
 }
