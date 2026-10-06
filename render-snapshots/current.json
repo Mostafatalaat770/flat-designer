@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Design Pass G1 — localized ceiling service zones",
+  "name": "Design Pass G1 — localized ceiling zones + layered lighting",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -1036,10 +1036,11 @@
           "wall": "#EEE9DF"
         },
         "HALL-01": {
-          "lighting": "downlights",
+          "lighting": "track",
           "temperature": 3000,
           "wall": "#EEE9DF",
-          "brightness": 80
+          "brightness": 78,
+          "ceiling": "plain"
         },
         "WIC-01": {
           "lighting": "downlights",
@@ -1060,9 +1061,9 @@
         "KIT-01": {
           "hvac": "none",
           "ceiling": "plain",
-          "lighting": "downlights",
+          "lighting": "track",
           "temperature": 3000,
-          "brightness": 82,
+          "brightness": 84,
           "wall": "#EEE9DF"
         },
         "WC-01": {
@@ -1073,10 +1074,10 @@
         },
         "RECP-01": {
           "hvac": "concealed-slots",
-          "ceiling": "plain",
-          "lighting": "downlights",
+          "ceiling": "gypsum-shadow-gap",
+          "lighting": "track-lamps",
           "temperature": 3000,
-          "brightness": 76,
+          "brightness": 74,
           "wall": "#E4DED4"
         }
       }
@@ -1107,31 +1108,6 @@
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Closed family dining storage / buffet with intentionally darker walnut tone"
-          }
-        },
-        {
-          "id": "A-dining-pendant",
-          "type": "pendant",
-          "variant": "globe",
-          "room_id": "RECP-01",
-          "placement": {
-            "mode": "ceiling",
-            "drop_mm": 620
-          },
-          "cx": 14670,
-          "cy": 7650,
-          "rotation": 0,
-          "width_mm": 650,
-          "depth_mm": 650,
-          "height_mm": 240,
-          "material_references": {
-            "metal": "generic-brass"
-          },
-          "colour": "#B39860",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "low sculptural dining focal pendant",
-            "temperature_k": 2700
           }
         },
         {
@@ -1869,18 +1845,18 @@
   },
   "views": [
     {
-      "id": "F1-guest-wc-from-reception",
-      "room_id": "WC-01",
+      "id": "G1-dining-ceiling",
+      "room_id": "RECP-01",
       "camera": {
         "position": [
-          5.25,
-          1.62,
-          4.42
+          6.45,
+          1.68,
+          2.65
         ],
         "target": [
-          3.65,
-          1.1,
-          4.45
+          3.6,
+          1.45,
+          0.15
         ],
         "fov": 60,
         "projection_type": "perspective",
@@ -1959,200 +1935,110 @@
       }
     },
     {
-      "id": "F1-family-bath-from-hall",
-      "room_id": "BATH-C01",
-      "camera": {
-        "position": [
-          0.1,
-          1.62,
-          0.55
-        ],
-        "target": [
-          0.1,
-          1.12,
-          2.45
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "F1-master-dressing-to-ensuite",
-      "room_id": "WIC-01",
-      "camera": {
-        "position": [
-          -3.2,
-          1.62,
-          2.4
-        ],
-        "target": [
-          -1.72,
-          1.1,
-          2.48
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "F1-e2-dining-context",
+      "id": "G1-living-ceiling",
       "room_id": "RECP-01",
       "camera": {
         "position": [
-          6.65,
-          1.68,
-          2.95
+          2,
+          1.65,
+          -1.9
         ],
         "target": [
-          3.55,
-          1.18,
-          1.4
+          4.2,
+          1.75,
+          -1.2
         ],
-        "fov": 64,
+        "fov": 60,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "G1-kitchen-ceiling",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          5.35,
+          1.67,
+          3.15
+        ],
+        "target": [
+          3.45,
+          1.55,
+          1.6
+        ],
+        "fov": 61,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2279,7 +2165,9 @@
     "F1 MASTER ENSUITE: render-only wall-gap study widens the dressing-to-ensuite opening to 800 mm and hides the hinged leaf to represent a pocket door stored in the longer south wall segment. Wet-area wall build-up and pocket-system feasibility remain TBD.",
     "No bathroom wall change is construction-approved. Local/Egyptian requirements, structural/as-built drawings, plumbing/electrical routes and selected door-system shop drawings control.",
     "G1 concept: keep most ceiling at 2.50 m; test a 600 mm perimeter service band at 2.38 m and a deeper local zone at 2.34 m above the kitchen tall units.",
-    "This is a space-reservation study only; equipment selection, access, condensate, insulation and duct routing remain TBD."
+    "This is a space-reservation study only; equipment selection, access, condensate, insulation and duct routing remain TBD.",
+    "G1 lighting concept: social space uses track plus lamps at 3000 K instead of a uniform downlight field; dining globe pendant removed for this comparison. Kitchen uses aimed track/task lighting.",
+    "Final lighting levels, glare control, colour rendering, switching and dimming are not established by this render."
   ],
   "architecture_variant": {
     "id": "G1-local-service-spine",
