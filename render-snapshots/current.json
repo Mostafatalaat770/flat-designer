@@ -2,8 +2,8 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "Whole Apartment A3 — Guest WC + Kitchen Usability",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-4701fce4",
-  "storage_revision": 38,
+  "scene_revision": "scene-29d4aa6d",
+  "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
     "furniture": [
@@ -1524,12 +1524,12 @@
           "placement": {
             "mode": "wall",
             "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": -464.2,
+            "offset_mm": -544.2,
             "elevation_mm": 1480,
             "inset_mm": 8
           },
           "rotation": 0,
-          "width_mm": 450,
+          "width_mm": 300,
           "depth_mm": 330,
           "height_mm": 700,
           "material_references": {
@@ -1538,7 +1538,7 @@
           "colour": "#E8E2D7",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "Upper cabinet flanking cooking zone; hood zone kept open"
+            "role": "Compact 300 mm upper cupboard; clear north-run front strip, hob/exhaust heat clearances TBD"
           }
         },
         {
@@ -3200,11 +3200,11 @@
     }
   ],
   "notes": [
-    "Exact saved Studio layout: scene-4701fce4 / storage 38; independent whole-apartment-a3-usability variant revision 1. A2 variant preserved.",
+    "Exact saved Studio layout: scene-29d4aa6d / storage 39; independent whole-apartment-a3-usability variant revision 2. A2 variant preserved.",
     "Canonical walls, openings, glazing, room polygons and 2500 mm clear ceiling are unchanged.",
     "Guest basin envelope: 400 x 220 mm, original x centre and rear face retained. Generic conceptual joinery/bowl; Duravit D-Neo 073940 is a dimensional reference only. Fit, services and hardware TBD.",
     "Guest basin full inferred door sweep clearance improved from -22.9 mm overlap to +57.1 mm gap. Still a review warning below 100 mm planning buffer. Entry approach width 633.8 to 656.7 mm. Door must be closed for normal basin use.",
-    "Kitchen west-north upper cabinet moved 130 mm south. Corner front-strip obstruction removed; operation depth 11.4 to 3083.1 mm. Cabinet hardware, hood and gas-hob clearances TBD.",
+    "Kitchen west-north upper: width 450 to 300 mm; centre 50 mm south of A2. Corner front-strip obstruction removed; operation depth 11.4 to 3083.1 mm. Hob-side edge reserve 190.1 to 215.1 mm; not manufacturer heat-clearance certification. Reduced cupboard capacity is the trade-off.",
     "Dishwasher layout unchanged. Official validator still reports 0 mm from zero-width tangent polygons at neighbouring cabinet boundaries. Independently measured positive-width front strip: 1572.346 mm to south wall; not manufacturer fit certification.",
     "Original eleven A2 camera poses, FOV and viewer settings retained for direct before/after comparison. Added kitchen work-run and guest WC entry/use angles.",
     "guest-wc-use-closed changes only the visible door pose for usability review; the door geometry and hinge convention remain unchanged and INFERRED.",
