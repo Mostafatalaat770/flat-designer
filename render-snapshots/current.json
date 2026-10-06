@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "J1 Integrated Candidate — whole-apartment developed direction",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-29d4aa6d",
+  "scene_revision": "scene-bc0ef10e",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -2660,7 +2660,8 @@
     "H1 retained conditionally: 600 × 650 mm washer on service-terrace west wall with ~1240 mm approximate clear width to opposite wall. Outdoor exposure/drain/electrical/manufacturer approval remains mandatory.",
     "E2 plumbing coordination improved by geometry: island sink centre is only about 108 mm from the earlier sink centre, reducing but not eliminating drainage/water-routing risk.",
     "Bedrooms and private hall receive no new architectural changes in J1; prior developed furniture/storage layouts are retained because no higher-value wall intervention was established.",
-    "J1 is a coordinated design candidate, not a construction package. Structural removability, MEP sizing, waterproofing, exact clear door openings, appliance manuals, site tolerances and developer approvals remain hard gates."
+    "J1 is a coordinated design candidate, not a construction package. Structural removability, MEP sizing, waterproofing, exact clear door openings, appliance manuals, site tolerances and developer approvals remain hard gates.",
+    "J1 metadata repair: scene_revision updated from stale scene-29d4aa6d to scene-bc0ef10e to match the integrated layout hash required by the Studio workspace seed."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
