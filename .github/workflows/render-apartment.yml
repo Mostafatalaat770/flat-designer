@@ -1,0 +1,69 @@
+name: Render Apartment
+
+on:
+  push:
+    branches:
+      - "**"
+    paths:
+      - "render-snapshots/current.json"
+      - "scripts/render-snapshot.mjs"
+      - ".github/workflows/render-apartment.yml"
+      - "capture-renderer.js"
+      - "build_capture.mjs"
+      - "make_app.py"
+      - "generate_model.py"
+      - "scene-decor.js"
+      - "studio-core.js"
+      - "studio-catalog.json"
+  workflow_dispatch:
+    inputs:
+      snapshot:
+        description: "Snapshot JSON path"
+        required: false
+        default: "render-snapshots/current.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: apartment-render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+
+      - name: Build exact Studio capture template
+        run: npm run build
+
+      - name: Render branch snapshot
+        env:
+          SNAPSHOT_PATH: ${{ github.event.inputs.snapshot || 'render-snapshots/current.json' }}
+        run: node scripts/render-snapshot.mjs "$SNAPSHOT_PATH"
+
+      - name: Upload PNGs and metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: apartment-renders-${{ github.run_id }}-${{ github.sha }}
+          path: renders/
+          if-no-files-found: error
+          retention-days: 14

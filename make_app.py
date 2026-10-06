@@ -364,6 +364,11 @@ dialog{border:1px solid var(--line);border-radius:8px;padding:0;width:min(1000px
 '''
 replace('</style>','\n'+css+'\n</style>')
 
+# Keep compact conceptual vanity bowls inside the saved depth envelope.
+# Only depths below 300 mm change; this is not manufacturer CAD.
+replace("const rb = Math.min(.19, w/nb*.36);", "const rb = Math.min(.19, w/nb*.36), bowlZ = d < .30 ? 0 : .03, bowlScaleZ = d < .30 ? Math.min(1, (d - .04)/(2*rb)) : 1;")
+replace("g.add(lathe([[0, 0], [rb*.55, 0], [rb*.85, .03], [rb, .1], [rb*.97, .12]], ceramic({side:THREE.DoubleSide}), x, .81, .03, 40), cyl(.018, .018, .003, cm, x, .812, .03, 16));", "const basinBowl = lathe([[0, 0], [rb*.55, 0], [rb*.85, .03], [rb, .1], [rb*.97, .12]], ceramic({side:THREE.DoubleSide}), x, .81, bowlZ, 40); basinBowl.scale.z = bowlScaleZ; g.add(basinBowl, cyl(.018, .018, .003, cm, x, .812, bowlZ, 16));")
+
 from decor_styles import apply_decor
 s=apply_decor(s)
 from scene_upgrade import apply_scenes

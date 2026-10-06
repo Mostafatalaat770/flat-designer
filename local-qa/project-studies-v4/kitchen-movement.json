@@ -1,0 +1,87 @@
+{
+  "status": "EXPLORATORY",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "guidance_source": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf",
+  "guidance_is_not_local_code": true,
+  "verified_user_choices": {
+    "hob": "gas",
+    "dishwasher": true
+  },
+  "measured_plan": {
+    "fridge_front_y": 8195,
+    "opposing_shallow_landing_front_y": 7098,
+    "fridge_working_gap_mm": 1097,
+    "one_cook_guideline_mm": 1067,
+    "multiple_cooks_guideline_mm": 1219,
+    "prep_total_width_mm": 1200,
+    "prep_depth_mm": 610,
+    "prep_note": "600 washer + 600 dishwasher under a continuous countertop; no joinery fabrication approved",
+    "sink_landing_left_mm": 1200,
+    "sink_landing_right_mm": 600,
+    "right_landing_depth_mm": 410,
+    "hob_landing_north_mm": 307,
+    "hob_landing_south_mm": 593,
+    "sink_dishwasher_edge_gap_mm": 0,
+    "fridge_to_landing_distance_mm": 1097,
+    "kitchen_entrance_fridge_plan_separation_mm": 18.42,
+    "dishwasher_side_to_perpendicular_west_counter_mm": 600
+  },
+  "assumed_open_envelopes": {
+    "dishwasher": [
+      10281,
+      7298,
+      10881,
+      7898
+    ],
+    "fridge": [
+      11795,
+      7595,
+      12445,
+      8195
+    ],
+    "washer": [
+      9683,
+      7298,
+      10279,
+      7710
+    ],
+    "mutual_overlap": false,
+    "scope": "Approximate door envelopes only; no simultaneous user occupancy, door-hinge collision, tolerance or installation certification"
+  },
+  "washer_reference": {
+    "source_status": "REFERENCE",
+    "manufacturer": "Bosch",
+    "model": "WIW28302GB",
+    "product_body_mm": [
+      596,
+      544,
+      818
+    ],
+    "depth_with_front_door_mm": 574,
+    "planned_niche_mm": [
+      600,
+      610
+    ],
+    "url": "https://media3.bosch-home.com/Documents/specsheet/en-GB/WIW28302GB.pdf",
+    "viewer": "Generic niche envelope, not product mesh. Continuous worktop / door / service void construction TBD",
+    "local_availability": "TBD"
+  },
+  "laundry_decision": "Indoor installation preferred. Service balcony reserved for drying and utility use; roof alone does not satisfy the manufacturer indoor-use condition.",
+  "rejected": [
+    "Old central fridge: approximately 907 mm to full-depth north run.",
+    "Full opposing 600 mm cabinet runs: approximately 992 mm, below one-cook 1067 mm guidance.",
+    "Northwest corner fridge: either front orientation conflicts with an adjacent L-run when opened.",
+    "West-run washer: open service-balcony door obscures access; rejected after actual screenshot review.",
+    "Island: blocks useful routes."
+  ],
+  "unresolved": [
+    "Gas supply, ventilation and manufacturer installation clearances",
+    "Oven/hob appliance clearances and gas installation",
+    "Continuous fitted countertop and service access",
+    "Fridge SKU/hinge/ventilation; 18 mm proximity to entrance requires construction-tolerance review",
+    "600 mm DW door projection is assumed; user standing zone and door interaction need selected SKU",
+    "Water/drain/electrical connections; washer door beside the west return: verify usable opening with selected installation, do not assume full 130° swing",
+    "Sink tap position and actual usable uninterrupted preparation surface",
+    "Existing canonical door widths remain fixed; these plans do not enlarge them"
+  ]
+}

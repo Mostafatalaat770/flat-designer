@@ -1,0 +1,112 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/r0-reference-entry.html
+  - await: { visible: { id: capture-r0-reference-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: r0-reference-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/r0-reference-family.html
+  - await: { visible: { id: capture-r0-reference-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: r0-reference-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/r0-reference-dining.html
+  - await: { visible: { id: capture-r0-reference-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: r0-reference-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rA-layered-entry.html
+  - await: { visible: { id: capture-rA-layered-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rA-layered-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rA-layered-family.html
+  - await: { visible: { id: capture-rA-layered-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rA-layered-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rA-layered-dining.html
+  - await: { visible: { id: capture-rA-layered-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rA-layered-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rB-chaise-entry.html
+  - await: { visible: { id: capture-rB-chaise-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rB-chaise-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rB-chaise-family.html
+  - await: { visible: { id: capture-rB-chaise-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rB-chaise-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rB-chaise-dining.html
+  - await: { visible: { id: capture-rB-chaise-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rB-chaise-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rC-reversed-entry.html
+  - await: { visible: { id: capture-rC-reversed-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rC-reversed-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rC-reversed-family.html
+  - await: { visible: { id: capture-rC-reversed-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rC-reversed-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/rC-reversed-dining.html
+  - await: { visible: { id: capture-rC-reversed-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: rC-reversed-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/kA-oak-kitchen.html
+  - await: { visible: { id: capture-kA-oak-kitchen }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: kA-oak-kitchen
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/kB-olive-kitchen.html
+  - await: { visible: { id: capture-kB-olive-kitchen }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: kB-olive-kitchen
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/bA-tub-ensuite.html
+  - await: { visible: { id: capture-bA-tub-ensuite }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: bA-tub-ensuite
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/bA-tub-family-bath.html
+  - await: { visible: { id: capture-bA-tub-family-bath }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: bA-tub-family-bath
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/bB-shower-ensuite.html
+  - await: { visible: { id: capture-bB-shower-ensuite }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: bB-shower-ensuite
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v2/bB-shower-family-bath.html
+  - await: { visible: { id: capture-bB-shower-family-bath }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: bB-shower-family-bath
+executionPrerequisite: Loopback4174, immutable project-studies-v2 captures,
+  Chromium1600x857 DPR1. Independent renderer pages; all cloud state
+  disconnected.

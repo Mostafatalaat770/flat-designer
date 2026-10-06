@@ -1,0 +1,62 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-ddc3139a",
+  "author": "designer-agent",
+  "notes": [
+    "Exploratory kitchen finish refinement. Fixed architecture, appliance positions and service assumptions retained. Upper cabinetry warm matte ivory to reduce visual wood mass.",
+    "Move fridge 270 mm west along the south wall; retain appliance envelope and front operating space. Actual socket, ventilation and hinge remain TBD/INFERRED."
+  ],
+  "operations": [
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "kitchen-soft-ivory",
+        "name": "Kitchen soft ivory matte lacquer",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#E8E2D7",
+        "finish": "matte",
+        "roughness": 0.82,
+        "metallic": 0,
+        "notes": "Conceptual joinery finish; manufacturer and sample TBD."
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "KIT-A1-upper-north",
+      "changes": {
+        "material_references": {
+          "primary": "kitchen-soft-ivory"
+        },
+        "colour": "#E8E2D7"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "KIT-A1-upper-west-low",
+      "changes": {
+        "material_references": {
+          "primary": "kitchen-soft-ivory"
+        },
+        "colour": "#E8E2D7"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "KIT-A1-upper-west-high",
+      "changes": {
+        "material_references": {
+          "primary": "kitchen-soft-ivory"
+        },
+        "colour": "#E8E2D7"
+      }
+    },
+    {
+      "type": "furniture-placement",
+      "furniture_id": "starter-23",
+      "cx": 11850
+    }
+  ]
+}

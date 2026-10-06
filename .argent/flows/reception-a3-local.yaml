@@ -1,0 +1,50 @@
+executionPrerequisite: Loopback Studio at 127.0.0.1:4174, pass3 immutable views prepared, Chromium viewport 1600x857 DPR1. No production access.
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/entry-natural.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: entry-natural
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/living-to-dining.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: living-to-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/dining-to-living.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: dining-to-living
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/living-eye.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: living-eye
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/dining-eye.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: dining-eye
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/wide-corner.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: wide-corner
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/living-family-natural.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: living-family-natural
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/pass3/living-family-wide.html
+  - await: { visible: { id: apartment-capture-canvas } }
+  - await: { idle: true }
+  - snapshot: living-family-wide

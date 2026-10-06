@@ -1,0 +1,20 @@
+steps:
+  - tap:
+      id: asset-finish-warm-stone
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Asset finish applied locally
+  - tap:
+      id: asset-finish-ivory-walnut
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Asset finish applied locally
+executionPrerequisite: Generic table GLB loaded through studio-asset-v1; finish
+  buttons visible in Furniture inspector; Family A.7 local draft. Chromium
+  1600x857.

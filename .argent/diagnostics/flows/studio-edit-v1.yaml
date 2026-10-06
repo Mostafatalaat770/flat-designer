@@ -1,0 +1,34 @@
+steps:
+  - tap:
+      id: furniture-w
+  - tool: keyboard
+    args:
+      key: arrow-up
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: furniture-w
+      expectedText: "2010"
+      textMatch: equals
+  - tap:
+      id: apply-furniture
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: validated locally
+      timeoutMs: 15000
+  - scroll-to: { target: { text: Undo }, direction: down }
+  - tap:
+      text: Undo
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Restored previous local draft
+executionPrerequisite: Local Family A.7 draft with Furniture inspector and
+  dining table starter-35 selected; comparison off; width 2000 mm. Dedicated
+  Chromium 1600x857. Inspector scrolled to the top. Changes are reverted through Undo at the end.

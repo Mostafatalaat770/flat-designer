@@ -1,0 +1,42 @@
+{
+  "status": "EXPLORATORY",
+  "wall_face_allowance_mm": 90,
+  "full_opposing_600_runs_clear_mm": 992,
+  "nkba_planning_reference_url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf",
+  "guidance_not_local_code": true,
+  "working_L": {
+    "prep_mm": 1000,
+    "prep_depth_mm": 610,
+    "preferred_guideline_depth_mm": 610,
+    "prep_depth_shortfall_mm": 0,
+    "hob_landing_north_mm": 460,
+    "hob_landing_south_mm": 440,
+    "dishwasher_adjacent_sink": true,
+    "dishwasher_open_envelope_mm": [
+      11481,
+      7288,
+      12081,
+      7888
+    ],
+    "fridge_open_envelope_mm": [
+      10525,
+      7605,
+      11175,
+      8205
+    ],
+    "open_envelopes_overlap": false,
+    "between_north_front_and_south_landing_mm": 1072,
+    "entrance_to_service_route": "East entry through centre, then west of south fridge to service opening. Exact door hinges, ventilation clearances, and person + open-appliance interaction need appliance specs."
+  },
+  "rejected": [
+    "Full-depth opposing north/south run: approximately 992 mm aisle, below 1067 mm one-cook planning guidance.",
+    "Island: reduces the existing working and through routes."
+  ],
+  "assumptions": [
+    "650 mm wide fridge envelope, not selected SKU",
+    "600 mm integrated dishwasher",
+    "600 mm hob; gas/electric TBD",
+    "Washing machine retained on service terrace",
+    "North prep/sink/corner counters610 mm deep; exact joinery and corner access hardware TBD"
+  ]
+}

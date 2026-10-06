@@ -1,0 +1,49 @@
+steps:
+  - echo: Increase table width by 10 mm; validate; scroll within the furniture
+      inspector and undo.
+  - tap:
+      id: furniture-w
+  - tool: keyboard
+    args:
+      key: arrow-up
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: furniture-w
+      expectedText: "2010"
+      textMatch: equals
+  - tap:
+      id: apply-furniture
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: validated locally
+      timeoutMs: 15000
+  - echo: The native scroller cannot target the nested inspector semantically; a
+      normalized wheel anchor inside this discovered inspector scrolls its own
+      contents.
+  - tool: gesture-scroll
+    args:
+      x: 0.887
+      y: 0.7
+      deltaY: 0.7
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        text: Undo
+        role: button
+  - tap:
+      text: Undo
+  - tool: await-ui-element
+    args:
+      condition: text
+      selector:
+        identifier: workspace-status
+      expectedText: Restored previous local draft
+executionPrerequisite: Family A.7 local draft; dining table starter-35 selected
+  in Furniture inspector; comparison off; width 2000 mm; inspector at top.
+  Chromium 1600x857. Test changes are undone.

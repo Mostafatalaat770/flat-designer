@@ -1,0 +1,39 @@
+{
+  "candidate": "scene-776b85c5",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "validation": {
+    "pass": 103,
+    "warning": 48,
+    "fail": 0
+  },
+  "image_generation": "built-in image_gen.imagegen",
+  "photographs": "EXPLORATORY, not manufacturer replicas or geometry evidence",
+  "flow": {
+    "steps": 28,
+    "passed": 28,
+    "failed": 0,
+    "errored": 0,
+    "views": 7,
+    "replay_difference_percent": 0
+  },
+  "seated_view": {
+    "eye_m": 1.1,
+    "fov": 42,
+    "flow_included": false
+  },
+  "files": {
+    "family-shower-natural.png": "c67067c6eeaeb2c7fe7045d3c5d54f912f1af98c3852634ff67991d7673158f3",
+    "dining-to-living.png": "809ce505d724b2d0a5e277d53701b3e4d64058cf555e63245d28499c4d046196",
+    "living-photo-draft.png": "bafd7513dcf56b6a33b66e381d5f5545727d7934a2b05bc473b95da9e5fb481a",
+    "living-seated-natural.png": "f9e76d478ccdbde5ed407fefaa089182abd7b999601bd907c7fb54d51eae3082",
+    "family-vanity-natural.png": "419bdcd87587d4566f10b13cb698f9923268b6efe61598d6940882e62746676e",
+    "dining-photo-draft.png": "de522bb9529e6a22730210d9eea6b2b27de7503d442e6b5bdd5076aa1fb4a705",
+    "bath-photo.png": "c31e4605e1eb3737b0a4c74b6e9c84a8565652b917139f9e153fd7e5c3fb0e96",
+    "ensuite-natural.png": "97bf98d58733d4f631aa977655df7158597ff1a709c186db4f240c50ec86e670",
+    "living-photo.png": "31226f6f060bf3dfdfb9a66fa330af0e5a1b121bae82695b6348a447c6d70de6",
+    "ensuite-wide.png": "a90cf5021faa0331abb8f69f486572fef39c61e06c4c0a6039de9372b2439b08",
+    "living-family-natural.png": "7f357e620b1f189fe521688e4af1417b03473502cc73a6efec9271da484a4f3b",
+    "dining-photo.png": "42b327498321a77d4bc3fa8385177dfa4c3aad8047bddf0c98a4fd20f246dba7",
+    "dining-eye.png": "a7b15ad8097cd871ddba69cb81d8552ed5d78036d909c93cf705c1c8947de7e9"
+  }
+}

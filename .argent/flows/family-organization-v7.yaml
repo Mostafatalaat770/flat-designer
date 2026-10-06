@@ -1,0 +1,80 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-entry.html
+  - await: { visible: { id: capture-family-v7-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-family.html
+  - await: { visible: { id: capture-family-v7-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-dining.html
+  - await: { visible: { id: capture-family-v7-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-hall.html
+  - await: { visible: { id: capture-family-v7-hall }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-hall
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-master.html
+  - await: { visible: { id: capture-family-v7-master }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-master
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-master-entry.html
+  - await: { visible: { id: capture-family-v7-master-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-master-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-bedroom1.html
+  - await: { visible: { id: capture-family-v7-bedroom1 }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-bedroom1
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-bedroom1-study.html
+  - await: { visible: { id: capture-family-v7-bedroom1-study }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-bedroom1-study
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-bedroom2.html
+  - await: { visible: { id: capture-family-v7-bedroom2 }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-bedroom2
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-bedroom2-window.html
+  - await: { visible: { id: capture-family-v7-bedroom2-window }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-bedroom2-window
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-dressing.html
+  - await: { visible: { id: capture-family-v7-dressing }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-dressing
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-master-storage.html
+  - await: { visible: { id: capture-family-v7-master-storage }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-master-storage
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v7/family-v7-master-wide.html
+  - await: { visible: { id: capture-family-v7-master-wide }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v7-master-wide
+executionPrerequisite: Local isolated Studio server is running on 127.0.0.1:4174, private QA Chromium running on CDP9222, no production credentials or connected autosave.

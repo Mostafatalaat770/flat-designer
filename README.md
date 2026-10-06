@@ -4,6 +4,10 @@ English apartment viewer adapted from [wy51ai/floorplan-3d](https://github.com/w
 
 The canonical Type B JSON v0.2.2 is the architectural source of truth. The source image's SHA-256 is checked against it before the adapter is generated. Room polygons and opening IDs are retained. A uniform 47.208 px/m image calibration is used for the conceptual display. Printed room dimensions are presented separately and override image estimates for dimension references.
 
+## Isolated local design workspace
+
+The React/TypeScript Studio continues the pinned saved **Whole Apartment A3** design, `scene-29d4aa6d` / source storage revision 39, while retaining Family A.7 and all earlier studies. Follow [studio/README.md](studio/README.md) to build and run the local workspace on port 4176. [Integration evidence](local-qa/INTEGRATION_20261006.md) records branch reconciliation and multi-view QA. Canonical architecture remains locked; local experiments do not write to the production Site.
+
 ## Rebuild
 
 ```sh

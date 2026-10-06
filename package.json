@@ -6,12 +6,33 @@
   "scripts": {
     "build": "python3 generate_model.py && python3 make_app.py && node build_capture.mjs && python3 build_hosted.py",
     "db:generate": "drizzle-kit generate",
-    "check": "node verify_viewer.mjs && node verify_worker.mjs && node verify_cloud.mjs && node verify_interior.mjs && node verify_capture.mjs"
+    "check": "node verify_viewer.mjs && node verify_worker.mjs && node verify_cloud.mjs && node verify_interior.mjs && node verify_capture.mjs",
+    "study": "node studio/local/cli.mjs",
+    "check:study": "node --test studio/domain/apartment.test.mjs",
+    "studio:build": "node studio/local/workspace-data.mjs && node studio/build-domain.mjs && tsc -p studio/app/tsconfig.json && vite build --config studio/app/vite.config.ts",
+    "studio:dev": "node studio/local/workspace-data.mjs && node studio/build-domain.mjs && vite --config studio/app/vite.config.ts",
+    "check:assets": "node --test studio/assets/*.test.mjs",
+    "check:studio": "node studio/build-domain.mjs && node --test studio/domain/browser.test.mjs studio/assets/*.test.mjs studio/renderer/*.test.mjs",
+    "render:local": "node studio/render/run.mjs",
+    "check:workspace": "node studio/local/workspace-data.mjs && node studio/build-domain.mjs && node --test studio/local/workspace-seed.test.mjs studio/app/storage.test.mjs",
+    "studio:review": "node studio/local/integration-review.mjs"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "1.0.10",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "acorn": "8.18.0",
     "drizzle-kit": "0.31.10",
     "drizzle-orm": "0.45.2",
-    "esbuild": "0.25.12",
-    "jsdom": "26.1.0"
+    "esbuild": "0.28.1",
+    "jsdom": "26.1.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.6"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.160.0"
   }
 }

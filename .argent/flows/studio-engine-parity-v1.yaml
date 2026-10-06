@@ -1,0 +1,106 @@
+executionPrerequisite: Dedicated Chromium CDP browser at 1600x857 and the isolated loopback QA server on 127.0.0.1:4174. Production disconnected.
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-entry
+  - await:
+      visible: { id: ready-family-v7-entry }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-entry, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-family
+  - await:
+      visible: { id: ready-family-v7-family }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-family, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-dining
+  - await:
+      visible: { id: ready-family-v7-dining }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-dining, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-hall
+  - await:
+      visible: { id: ready-family-v7-hall }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-hall, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master
+  - await:
+      visible: { id: ready-family-v7-master }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-master, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master-entry
+  - await:
+      visible: { id: ready-family-v7-master-entry }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-master-entry, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom1
+  - await:
+      visible: { id: ready-family-v7-bedroom1 }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-bedroom1, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom1-study
+  - await:
+      visible: { id: ready-family-v7-bedroom1-study }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-bedroom1-study, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom2
+  - await:
+      visible: { id: ready-family-v7-bedroom2 }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-bedroom2, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-bedroom2-window
+  - await:
+      visible: { id: ready-family-v7-bedroom2-window }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-bedroom2-window, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-dressing
+  - await:
+      visible: { id: ready-family-v7-dressing }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-dressing, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master-storage
+  - await:
+      visible: { id: ready-family-v7-master-storage }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-master-storage, maxMismatch: 0.1 }
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/workspace/parity.html?view=family-v7-master-wide
+  - await:
+      visible: { id: ready-family-v7-master-wide }
+      timeout: 15000
+  - await: { idle: true }
+  - snapshot: { name: family-v7-master-wide, maxMismatch: 0.1 }

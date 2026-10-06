@@ -107,7 +107,11 @@ function buildSceneDecor(){
     const bed=state.furniture.find(f=>f.type==='bed'&&pointInRoom([f.cx,f.cy],r.poly));
     if(bed)artItems.push({rid:r.id,f:bed,w:.55,y:1.76});
   }
-  for(const {rid,f,w,y} of artItems){const mount=nearestSolidMount(rid,[f.cx,f.cy],w);if(mount)framedArtwork(mount,theme,w,y);}
+  for(const {rid,f,w,y} of artItems){
+    // An explicit, host-mounted artwork replaces automatic style artwork here.
+    if(interiorLayer(state).objects.some(o=>o.type==='artwork'&&o.room_id===rid))continue;
+    const mount=nearestSolidMount(rid,[f.cx,f.cy],w);if(mount)framedArtwork(mount,theme,w,y);
+  }
   const coffee=state.furniture.find(f=>f.type==='coffeetable'&&pointInRoom([f.cx,f.cy],ROOMS.find(r=>r.id==='RECP-01').poly));
   if(coffee)pendantAt(wx(coffee.cx),wz(coffee.cy),theme,'RECP-01');
   if(dining)pendantAt(wx(dining.cx),wz(dining.cy),theme,'RECP-01',true);

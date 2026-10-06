@@ -1,0 +1,109 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-776b85c5",
+  "author": "Whole-apartment local study",
+  "notes": "Recommended starting direction: add useful storage, entry bench, side table and reading light while keeping straight sofa and open centre.",
+  "operations": [
+    {
+      "type": "update-object",
+      "object_id": "A-dining-sideboard",
+      "changes": {
+        "cx": 15720,
+        "cy": 4750,
+        "width_mm": 2400,
+        "depth_mm": 400,
+        "height_mm": 800,
+        "metadata": {
+          "role": "Closed family storage: dining linens, games, school supplies; custom concept"
+        }
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A2-living-plant",
+      "changes": {
+        "cx": 15480,
+        "cy": 3250
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-40",
+      "changes": {
+        "w": 1200,
+        "cy": 9450,
+        "name": "1200 mm closed entry shoe storage"
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "S1-entry-bench",
+        "type": "bench",
+        "variant": "upholstered",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 13420,
+        "cy": 9950,
+        "rotation": 0,
+        "width_mm": 1000,
+        "depth_mm": 340,
+        "height_mm": 440,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#DDD3C4",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Useful family furniture; custom generic concept"
+        }
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "S1-living-side-table",
+        "type": "sidetable",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 4240,
+        "w": 460,
+        "d": 460,
+        "rot": 0,
+        "name": "Living side table · remote, drink and book",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "S1-reading-lamp",
+        "type": "floor-lamp",
+        "variant": "shade",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "floor"
+        },
+        "cx": 10230,
+        "cy": 4430,
+        "rotation": 0,
+        "width_mm": 360,
+        "depth_mm": 360,
+        "height_mm": 1500,
+        "material_references": {
+          "primary": "a3-pale-oak"
+        },
+        "colour": "#B39860",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Useful family furniture; custom generic concept"
+        }
+      }
+    }
+  ]
+}

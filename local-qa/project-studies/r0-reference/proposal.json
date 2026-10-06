@@ -1,0 +1,8 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-776b85c5",
+  "author": "Whole-apartment local study",
+  "notes": "Control view: R1 layout, now with manufacturer seat/back height corrections.",
+  "operations": []
+}

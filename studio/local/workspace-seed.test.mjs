@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { createWorkspaceSeed } from './workspace-seed.mjs';
+const root = path.resolve(import.meta.dirname, '../..');
+const source = () => JSON.parse(fs.readFileSync(path.join(root, 'render-snapshots/current.json')));
+test('workspace reproduces the pinned saved layout, retains A.7, and calibrates all 13 areas', () => {
+  const old = fs.readFileSync(path.join(root, 'studio/app/data/family-a7.brief.json'));
+  const snapshot = source(), before = JSON.stringify(snapshot);
+  const result = createWorkspaceSeed(root, snapshot);
+  assert.deepEqual(result.brief.layout, snapshot.layout);
+  assert.equal(result.brief.scene_revision, snapshot.scene_revision);
+  assert.equal(result.config.storage_revision, snapshot.storage_revision);
+  assert.equal(new Set(result.cameras.map(c => c.room_id)).size, 13);
+  assert.ok(result.cameras.every(c => c.fov === 42 && c.position[1] === 1.7));
+  assert.equal(result.cameras[0].id, 'synced-reception-entry');
+  assert.equal(JSON.stringify(snapshot), before);
+  assert.deepEqual(fs.readFileSync(path.join(root, 'studio/app/data/family-a7.brief.json')), old);
+  assert.equal(result.config.production_connected, false);
+  const open = result.cameras.find(c => c.id === 'synced-guest-wc-entry-open');
+  const closed = result.cameras.find(c => c.id === 'synced-guest-wc-use-closed');
+  assert.notDeepEqual(open.viewer.doors, closed.viewer.doors);
+});
+test('stale revisions, foreign geometry and blocked cameras stop workspace preparation', () => {
+  const stale = source(); stale.scene_revision = 'scene-stale';
+  assert.throws(() => createWorkspaceSeed(root, stale), /revision mismatch/);
+  const foreign = source(); foreign.canonical_sha256 = '0'.repeat(64);
+  assert.throws(() => createWorkspaceSeed(root, foreign));
+  const blocked = source(); blocked.views[0].camera.position = [0, 1.7, 0];
+  assert.throws(() => createWorkspaceSeed(root, blocked), /Camera must/);
+});

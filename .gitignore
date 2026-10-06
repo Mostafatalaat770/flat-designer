@@ -4,3 +4,16 @@ dist/client/
 dist/server/
 dist/capture-template.json
 node_modules/
+local-qa/private/
+local-qa/site/
+local-qa/screenshots/
+local-qa/reports/
+
+.DS_Store
+.argent/flows/__baselines__/
+.argent/flows/__runs__/
+renders/
+studio/app/data/workspace-seed.json
+studio/app/data/workspace-cameras.json
+studio/app/data/workspace-config.json
+studio/domain/browser.js

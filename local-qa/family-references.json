@@ -1,0 +1,19 @@
+[
+  {
+    "id": "bed-idanas-180-reference",
+    "name": "IDAN\u00c4S upholstered bed \u00b7 1800 \u00d7 2000 mattress",
+    "maker": "IKEA",
+    "url": "https://www.ikea.com.cy/en/products/idanas-upholstered-bed-180x200-cm/90458947/",
+    "type": "bed",
+    "dimensions_mm": [
+      1870,
+      2220,
+      1210
+    ],
+    "variant": "style",
+    "hex": null,
+    "image": null,
+    "checked_on": "2026-10-04",
+    "description": "REFERENCE: manufacturer outer footprint1870\u00d72220mm for mattress1800\u00d72000mm. Generic viewer mesh is NOT the manufacturer model; warm beige concept is not verified article90458947 upholstery. Egyptian availability / chosen finish / mattress and base TBD. Reference geometry only."
+  }
+]

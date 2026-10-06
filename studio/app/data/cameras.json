@@ -1,0 +1,1606 @@
+[
+  {
+    "position": [
+      6.722291,
+      1.7,
+      4.624341500000001
+    ],
+    "target": [
+      5.682291,
+      1.4,
+      -0.46565849999999953
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-entry",
+    "room_id": "RECP-01",
+    "label": "Reception / sideboard wall"
+  },
+  {
+    "position": [
+      5.582291000000001,
+      1.7,
+      0.4843415000000004
+    ],
+    "target": [
+      2.732291,
+      1.4,
+      -2.5656584999999996
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-family",
+    "room_id": "RECP-01",
+    "label": "Family approach / living"
+  },
+  {
+    "position": [
+      5.232291,
+      1.7,
+      4.3243415
+    ],
+    "target": [
+      6.382291,
+      1.4,
+      2.4843415000000006
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-dining",
+    "room_id": "RECP-01",
+    "label": "Dining / six seats"
+  },
+  {
+    "position": [
+      0.6322910000000002,
+      1.7,
+      0.4843415000000004
+    ],
+    "target": [
+      -3.417709,
+      1.45,
+      0.4843415000000004
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-hall",
+    "room_id": "HALL-01",
+    "label": "Private hall"
+  },
+  {
+    "position": [
+      -4.567709,
+      1.7,
+      3.2343415000000006
+    ],
+    "target": [
+      -6.617709,
+      1.25,
+      1.3843415000000006
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-master",
+    "room_id": "MBR-01",
+    "label": "Master / bed scale"
+  },
+  {
+    "position": [
+      -4.567709,
+      1.7,
+      0.5843415000000004
+    ],
+    "target": [
+      -6.317709,
+      1.25,
+      1.9343415000000004
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-master-entry",
+    "room_id": "MBR-01",
+    "label": "Master / entry approach"
+  },
+  {
+    "position": [
+      -3.2777089999999998,
+      1.7,
+      -0.5756584999999995
+    ],
+    "target": [
+      -5.167708999999999,
+      1.25,
+      -2.4156584999999997
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-bedroom1",
+    "room_id": "BR-01",
+    "label": "Bedroom1 / bed and wardrobe"
+  },
+  {
+    "position": [
+      -3.787709,
+      1.7,
+      -2.0656584999999996
+    ],
+    "target": [
+      -4.217709,
+      1,
+      -0.5956584999999995
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-bedroom1-study",
+    "room_id": "BR-01",
+    "label": "Bedroom1 / desk and closed storage"
+  },
+  {
+    "position": [
+      -1.2977089999999998,
+      1.7,
+      -0.5256584999999996
+    ],
+    "target": [
+      -0.16770899999999983,
+      1.2,
+      -2.3656584999999994
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-bedroom2",
+    "room_id": "BR-02",
+    "label": "Bedroom2 / solid-wall headboard"
+  },
+  {
+    "position": [
+      -1.5177089999999998,
+      1.7,
+      -1.4456584999999995
+    ],
+    "target": [
+      -0.7177089999999998,
+      1.25,
+      -3.0956584999999994
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-bedroom2-window",
+    "room_id": "BR-02",
+    "label": "Bedroom2 / clear glazing"
+  },
+  {
+    "position": [
+      -3.317709,
+      1.7,
+      2.3643415000000005
+    ],
+    "target": [
+      -3.957709,
+      1.2,
+      2.7543415000000007
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-dressing",
+    "room_id": "WIC-01",
+    "label": "Dressing / cross route"
+  },
+  {
+    "position": [
+      -4.567709,
+      1.7,
+      2.4643415000000006
+    ],
+    "target": [
+      -5.367709,
+      0.9,
+      3.5043415000000007
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-master-storage",
+    "room_id": "MBR-01",
+    "label": "Master / south-wall bench and closed storage"
+  },
+  {
+    "position": [
+      -4.567709,
+      1.7,
+      3.2343415000000006
+    ],
+    "target": [
+      -6.617709,
+      0.85,
+      1.4843415000000004
+    ],
+    "fov": 60,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "family-v7-master-wide",
+    "room_id": "MBR-01",
+    "label": "Master / wide overview"
+  },
+  {
+    "position": [
+      4.182291,
+      1.7,
+      2.7343415000000006
+    ],
+    "target": [
+      2.212291,
+      1.25,
+      2.1543415000000006
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "workspace-kitchen",
+    "room_id": "KIT-01",
+    "label": "Kitchen / work sequence"
+  },
+  {
+    "position": [
+      2.732291,
+      1.7,
+      3.1343415000000006
+    ],
+    "target": [
+      2.163291,
+      1.05,
+      1.8343415000000005
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "workspace-laundry",
+    "room_id": "KIT-01",
+    "label": "Kitchen / indoor laundry"
+  },
+  {
+    "position": [
+      -0.47770899999999983,
+      1.7,
+      2.9343415000000004
+    ],
+    "target": [
+      0.45229100000000017,
+      0.9,
+      1.4843415000000004
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "workspace-family-bath",
+    "room_id": "BATH-C01",
+    "label": "Family bathroom / storage"
+  },
+  {
+    "position": [
+      -2.267709,
+      1.7,
+      2.4043415000000006
+    ],
+    "target": [
+      -1.6377089999999999,
+      1.2,
+      3.4343415000000004
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "workspace-bath-m01",
+    "room_id": "BATH-M01",
+    "label": "Ensuite / vanity and WC",
+    "composition_status": "EXPLORATORY"
+  },
+  {
+    "position": [
+      4.162291,
+      1.7,
+      4.704341500000001
+    ],
+    "target": [
+      3.642291,
+      1.2,
+      4.3043415000000005
+    ],
+    "fov": 42,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.866977829638273,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1600,
+      "height": 857
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    },
+    "id": "workspace-wc-01",
+    "room_id": "WC-01",
+    "label": "Guest WC / basin and WC",
+    "composition_status": "EXPLORATORY"
+  }
+]

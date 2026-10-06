@@ -1,0 +1,47 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-776b85c5",
+  "author": "Whole-apartment local study",
+  "notes": "Exploratory replacement of movable bathtub fixture with generous shower; walls and bathroom door unchanged. Wet-area engineering and actual shower screen specification not yet approved.",
+  "operations": [
+    {
+      "type": "remove-furniture",
+      "furniture_id": "starter-14"
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "B-ensuite-shower",
+        "type": "shower",
+        "room_id": "BATH-M01",
+        "cx": 6312,
+        "cy": 6707,
+        "w": 1500,
+        "d": 800,
+        "rot": 0,
+        "name": "1500 × 800 shower envelope · drain/door/glass TBD",
+        "color": "#C0D6DF",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    },
+    {
+      "type": "add-furniture",
+      "furniture": {
+        "id": "B-family-storage",
+        "type": "cabinet",
+        "room_id": "BATH-C01",
+        "cx": 7430,
+        "cy": 8640,
+        "w": 300,
+        "d": 300,
+        "rot": 0,
+        "name": "Closed towel and cleaning storage · 300 mm",
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    }
+  ]
+}

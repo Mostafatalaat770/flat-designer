@@ -1,0 +1,335 @@
+{
+  "info": {
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "revision": "scene-776b85c5",
+    "fov": 60,
+    "eye": 1.6200000000000003,
+    "lens": "natural",
+    "scaleVisible": false,
+    "humanHeight": 1.699999997317791,
+    "rulerHeight": 1,
+    "objects": 45
+  },
+  "items": [
+    {
+      "id": "starter-14",
+      "type": "bathtub",
+      "room": "BATH-M01",
+      "footprint_mm": [
+        1500,
+        750
+      ],
+      "mesh_world_mm": [
+        1524.9999994039536,
+        703.317403793335,
+        749.9999999999998
+      ],
+      "top_mm": 703.317403793335,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-15",
+      "type": "toilet",
+      "room": "BATH-M01",
+      "footprint_mm": [
+        400,
+        700
+      ],
+      "mesh_world_mm": [
+        368.00000071525574,
+        796.000000026077,
+        695.589988678694
+      ],
+      "top_mm": 796.000000026077,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-16",
+      "type": "shower",
+      "room": "BATH-C01",
+      "footprint_mm": [
+        900,
+        900
+      ],
+      "mesh_world_mm": [
+        909.9999994412065,
+        2041.381836310029,
+        910.0000004097817
+      ],
+      "top_mm": 2041.3818359375,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-17",
+      "type": "toilet",
+      "room": "BATH-C01",
+      "footprint_mm": [
+        400,
+        700
+      ],
+      "mesh_world_mm": [
+        695.5899886786938,
+        796.000000026077,
+        368.00000071525574
+      ],
+      "top_mm": 796.000000026077,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-18",
+      "type": "vanity",
+      "room": "BATH-C01",
+      "footprint_mm": [
+        600,
+        460
+      ],
+      "mesh_world_mm": [
+        600.0000238418579,
+        1629.9999904632566,
+        460.00000834465027
+      ],
+      "top_mm": 1959.999996423721,
+      "product_reference_id": "r1-dneo-basin-custom-vanity"
+    },
+    {
+      "id": "starter-27",
+      "type": "rug",
+      "room": "RECP-01",
+      "footprint_mm": [
+        3400,
+        2100
+      ],
+      "mesh_world_mm": [
+        2099.999904632569,
+        12.000000104308128,
+        3400.0000953674326
+      ],
+      "top_mm": 18.000000052154064,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-28",
+      "type": "sofa",
+      "room": "RECP-01",
+      "footprint_mm": [
+        2880,
+        990
+      ],
+      "mesh_world_mm": [
+        990.0000095367436,
+        684.4827681779861,
+        2880.000114440918
+      ],
+      "top_mm": 729.4827699661255,
+      "product_reference_id": "sofa-connect-soft-3"
+    },
+    {
+      "id": "starter-29",
+      "type": "coffeetable",
+      "room": "RECP-01",
+      "footprint_mm": [
+        950,
+        580
+      ],
+      "mesh_world_mm": [
+        579.9999833106995,
+        776.3146823644638,
+        949.999988079071
+      ],
+      "top_mm": 776.3146758079529,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-30",
+      "type": "tvstand",
+      "room": "RECP-01",
+      "footprint_mm": [
+        1800,
+        380
+      ],
+      "mesh_world_mm": [
+        421.00000381469727,
+        927.4411788582802,
+        1799.9999523162842
+      ],
+      "top_mm": 927.4411797523499,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-31",
+      "type": "tv",
+      "room": "RECP-01",
+      "footprint_mm": [
+        1230,
+        80
+      ],
+      "mesh_world_mm": [
+        54.4999997122213,
+        691.8749809265137,
+        1230.0000190734863
+      ],
+      "top_mm": 1545.9374904632568,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-32",
+      "type": "armchair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        700,
+        720
+      ],
+      "mesh_world_mm": [
+        1004.0916410860152,
+        819.9999937415123,
+        1004.0916410860152
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-35",
+      "type": "table",
+      "room": "RECP-01",
+      "footprint_mm": [
+        2000,
+        950
+      ],
+      "mesh_world_mm": [
+        2000,
+        1131.5907180309296,
+        949.999988079071
+      ],
+      "top_mm": 1131.590723991394,
+      "product_reference_id": null
+    },
+    {
+      "id": "starter-36",
+      "type": "chair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        510,
+        530
+      ],
+      "mesh_world_mm": [
+        509.99999046325684,
+        819.9999910593032,
+        527.4999737739563
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": "r1-fiber-side-tube"
+    },
+    {
+      "id": "starter-37",
+      "type": "chair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        510,
+        530
+      ],
+      "mesh_world_mm": [
+        509.99999046325684,
+        819.9999910593032,
+        527.4999737739563
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": "r1-fiber-side-tube"
+    },
+    {
+      "id": "starter-38",
+      "type": "chair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        510,
+        530
+      ],
+      "mesh_world_mm": [
+        509.99999046325684,
+        819.9999910593032,
+        527.4999737739563
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": "r1-fiber-side-tube"
+    },
+    {
+      "id": "starter-39",
+      "type": "chair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        510,
+        530
+      ],
+      "mesh_world_mm": [
+        509.99999046325684,
+        819.9999910593032,
+        527.4999737739563
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": "r1-fiber-side-tube"
+    },
+    {
+      "id": "starter-40",
+      "type": "shoecab",
+      "room": "RECP-01",
+      "footprint_mm": [
+        900,
+        300
+      ],
+      "mesh_world_mm": [
+        341.0000056028366,
+        1019.999980032444,
+        899.9999761581421
+      ],
+      "top_mm": 1019.9999809265137,
+      "product_reference_id": null
+    },
+    {
+      "id": "A2-dining-chair-north-centre",
+      "type": "chair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        510,
+        530
+      ],
+      "mesh_world_mm": [
+        509.99999046325684,
+        819.9999910593032,
+        527.4999737739563
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": "r1-fiber-side-tube"
+    },
+    {
+      "id": "A2-dining-chair-south-centre",
+      "type": "chair",
+      "room": "RECP-01",
+      "footprint_mm": [
+        510,
+        530
+      ],
+      "mesh_world_mm": [
+        509.99999046325684,
+        819.9999910593032,
+        527.4999737739563
+      ],
+      "top_mm": 819.9999928474426,
+      "product_reference_id": "r1-fiber-side-tube"
+    },
+    {
+      "id": "R1-ensuite-vanity",
+      "type": "vanity",
+      "room": "BATH-M01",
+      "footprint_mm": [
+        600,
+        460
+      ],
+      "mesh_world_mm": [
+        600.0000238418579,
+        1629.9999904632566,
+        460.00000834465027
+      ],
+      "top_mm": 1959.999996423721,
+      "product_reference_id": "r1-dneo-basin-custom-vanity"
+    }
+  ]
+}

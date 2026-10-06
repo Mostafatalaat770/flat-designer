@@ -1,0 +1,39 @@
+{
+  "status": "EXPLORATORY",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "architectural_changes": [],
+  "private_hall": {
+    "canonical_depth_mm": 1207.4219999999996,
+    "modeled_wall_allowance_mm": 180,
+    "modeled_face_clear_mm": 1027.4219999999996,
+    "with_250_cabinet_mm": 777.4219999999996,
+    "decision": "No floor furniture. Mirror and ceiling lights; family linen in expanded bedroom wardrobe."
+  },
+  "kitchen_island": {
+    "canonical_depth_mm": 2372.4799999999996,
+    "modeled_face_depth_mm": 2192.4799999999996,
+    "north_run_depth_mm": 610,
+    "trial_island_depth_mm": 600,
+    "remaining_combined_aisles_mm": 982.4799999999996,
+    "one_cook_work_aisle_guideline_mm": 1067,
+    "rear_walkway_guideline_mm": 914,
+    "source": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf",
+    "assessment": "The longitudinal fit leaves only 982 mm for both aisles combined. Rotating a practical island would still require end access in the remaining 1582 mm depth and interfere with east entry / service flow. Reject an island inside the existing enclosed kitchen."
+  },
+  "open_kitchen": {
+    "status": "TBD architectural option, not approved",
+    "decision": "Do not change canonical geometry. A separate wall/structure/extraction and furniture study would be needed after explicit architectural approval. No island substituted for the comfortable six-seat dining arrangement."
+  },
+  "measured_candidate": {
+    "master_north_bedside_face_gap_mm": 810.8469999999998,
+    "master_east_main_path_beyond_bench_mm": 1038.5590000000002,
+    "bedroom2_wardrobe_front_gap_mm": 889,
+    "dressing_between_fronts_mm": 1335
+  },
+  "planting": {
+    "decision": "One 1650 mm high specimen in reception, not multiple small floor pots; exact species depends on daylight and household needs, TBD. No kitchen worktop or hall plant added."
+  },
+  "accessories": {
+    "decision": "Use the existing single large artwork, one sideboard lamp, purposeful rugs and bedroom closed storage. No gallery wall or third reception seating group."
+  }
+}

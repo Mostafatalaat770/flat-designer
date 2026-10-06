@@ -1,0 +1,376 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Prerequisite: Loopback4174, immutable project-studies-v2 captures, Chromium1600x857 DPR1. Independent renderer pages; all cloud state disconnected."
+    },
+    {
+      "type": "text",
+      "text": "Running flow \"whole-apartment-studies-v2\" on chromium-cdp-9222 (72 steps)"
+    },
+    {
+      "type": "text",
+      "text": "[1] ✓ open-url (0.1s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/r0-reference-entry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[2] ✓ await visible id=capture-r0-reference-entry (0.6s)"
+    },
+    {
+      "type": "text",
+      "text": "[3] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[4] ✓ snapshot \"r0-reference-entry\" (0.6s) — diff 0.00% ≤ 0.5% (r0-reference-entry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[5] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/r0-reference-family.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[6] ✓ await visible id=capture-r0-reference-family (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[7] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[8] ✓ snapshot \"r0-reference-family\" (0.6s) — diff 0.00% ≤ 0.5% (r0-reference-family__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[9] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/r0-reference-dining.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[10] ✓ await visible id=capture-r0-reference-dining (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[11] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[12] ✓ snapshot \"r0-reference-dining\" (0.6s) — diff 0.00% ≤ 0.5% (r0-reference-dining__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[13] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rA-layered-entry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[14] ✓ await visible id=capture-rA-layered-entry (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[15] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[16] ✓ snapshot \"rA-layered-entry\" (0.6s) — diff 0.00% ≤ 0.5% (rA-layered-entry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[17] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rA-layered-family.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[18] ✓ await visible id=capture-rA-layered-family (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[19] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[20] ✓ snapshot \"rA-layered-family\" (0.6s) — diff 0.00% ≤ 0.5% (rA-layered-family__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[21] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rA-layered-dining.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[22] ✓ await visible id=capture-rA-layered-dining (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[23] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[24] ✓ snapshot \"rA-layered-dining\" (0.6s) — diff 0.00% ≤ 0.5% (rA-layered-dining__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[25] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rB-chaise-entry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[26] ✓ await visible id=capture-rB-chaise-entry (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[27] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[28] ✓ snapshot \"rB-chaise-entry\" (0.6s) — diff 0.00% ≤ 0.5% (rB-chaise-entry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[29] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rB-chaise-family.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[30] ✓ await visible id=capture-rB-chaise-family (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[31] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[32] ✓ snapshot \"rB-chaise-family\" (0.6s) — diff 0.00% ≤ 0.5% (rB-chaise-family__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[33] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rB-chaise-dining.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[34] ✓ await visible id=capture-rB-chaise-dining (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[35] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[36] ✓ snapshot \"rB-chaise-dining\" (0.6s) — diff 0.00% ≤ 0.5% (rB-chaise-dining__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[37] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rC-reversed-entry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[38] ✓ await visible id=capture-rC-reversed-entry (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[39] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[40] ✓ snapshot \"rC-reversed-entry\" (0.6s) — diff 0.00% ≤ 0.5% (rC-reversed-entry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[41] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rC-reversed-family.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[42] ✓ await visible id=capture-rC-reversed-family (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[43] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[44] ✓ snapshot \"rC-reversed-family\" (0.6s) — diff 0.00% ≤ 0.5% (rC-reversed-family__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[45] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/rC-reversed-dining.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[46] ✓ await visible id=capture-rC-reversed-dining (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[47] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[48] ✓ snapshot \"rC-reversed-dining\" (0.6s) — diff 0.00% ≤ 0.5% (rC-reversed-dining__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[49] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/kA-oak-kitchen.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[50] ✓ await visible id=capture-kA-oak-kitchen (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[51] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[52] ✓ snapshot \"kA-oak-kitchen\" (0.5s) — diff 0.00% ≤ 0.5% (kA-oak-kitchen__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[53] ✓ open-url (0.1s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/kB-olive-kitchen.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[54] ✓ await visible id=capture-kB-olive-kitchen (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[55] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[56] ✓ snapshot \"kB-olive-kitchen\" (0.5s) — diff 0.00% ≤ 0.5% (kB-olive-kitchen__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[57] ✓ open-url (0.1s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/bA-tub-ensuite.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[58] ✓ await visible id=capture-bA-tub-ensuite (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[59] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[60] ✓ snapshot \"bA-tub-ensuite\" (0.7s) — diff 0.00% ≤ 0.5% (bA-tub-ensuite__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[61] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/bA-tub-family-bath.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[62] ✓ await visible id=capture-bA-tub-family-bath (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[63] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[64] ✓ snapshot \"bA-tub-family-bath\" (0.7s) — diff 0.00% ≤ 0.5% (bA-tub-family-bath__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[65] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/bB-shower-ensuite.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[66] ✓ await visible id=capture-bB-shower-ensuite (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[67] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[68] ✓ snapshot \"bB-shower-ensuite\" (0.8s) — diff 0.00% ≤ 0.5% (bB-shower-ensuite__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[69] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v2/bB-shower-family-bath.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[70] ✓ await visible id=capture-bB-shower-family-bath (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[71] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[72] ✓ snapshot \"bB-shower-family-bath\" (0.7s) — diff 0.00% ≤ 0.5% (bB-shower-family-bath__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "PASS — 72 passed, 0 failed, 0 errored, 0 skipped (29.4s)"
+    }
+  ]
+}

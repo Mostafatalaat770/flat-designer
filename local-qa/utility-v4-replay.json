@@ -1,0 +1,216 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Prerequisite: Loopback4174, immutable project-studies-v4 captures, Chromium1600x857 DPR1. Cloud storage disabled."
+    },
+    {
+      "type": "text",
+      "text": "Running flow \"utility-refinement-v4\" on chromium-cdp-9222 (40 steps)"
+    },
+    {
+      "type": "text",
+      "text": "[1] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/k3-oak-laundry-kitchen.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[2] ✓ await visible id=capture-k3-oak-laundry-kitchen (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[3] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[4] ✓ snapshot \"k3-oak-laundry-kitchen\" (0.5s) — diff 0.00% ≤ 0.5% (k3-oak-laundry-kitchen__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[5] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/k3-oak-laundry-laundry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[6] ✓ await visible id=capture-k3-oak-laundry-laundry (0.6s)"
+    },
+    {
+      "type": "text",
+      "text": "[7] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[8] ✓ snapshot \"k3-oak-laundry-laundry\" (0.6s) — diff 0.00% ≤ 0.5% (k3-oak-laundry-laundry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[9] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/k3-olive-laundry-kitchen.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[10] ✓ await visible id=capture-k3-olive-laundry-kitchen (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[11] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[12] ✓ snapshot \"k3-olive-laundry-kitchen\" (0.5s) — diff 0.00% ≤ 0.5% (k3-olive-laundry-kitchen__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[13] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/k3-olive-laundry-laundry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[14] ✓ await visible id=capture-k3-olive-laundry-laundry (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[15] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[16] ✓ snapshot \"k3-olive-laundry-laundry\" (0.5s) — diff 0.00% ≤ 0.5% (k3-olive-laundry-laundry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[17] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-entry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[18] ✓ await visible id=capture-home-a-utility-entry (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[19] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[20] ✓ snapshot \"home-a-utility-entry\" (0.6s) — diff 0.00% ≤ 0.5% (home-a-utility-entry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[21] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-family.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[22] ✓ await visible id=capture-home-a-utility-family (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[23] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[24] ✓ snapshot \"home-a-utility-family\" (0.6s) — diff 0.00% ≤ 0.5% (home-a-utility-family__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[25] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-dining.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[26] ✓ await visible id=capture-home-a-utility-dining (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[27] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[28] ✓ snapshot \"home-a-utility-dining\" (0.6s) — diff 0.00% ≤ 0.5% (home-a-utility-dining__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[29] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-kitchen.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[30] ✓ await visible id=capture-home-a-utility-kitchen (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[31] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[32] ✓ snapshot \"home-a-utility-kitchen\" (0.5s) — diff 0.00% ≤ 0.5% (home-a-utility-kitchen__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[33] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-laundry.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[34] ✓ await visible id=capture-home-a-utility-laundry (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[35] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[36] ✓ snapshot \"home-a-utility-laundry\" (0.5s) — diff 0.00% ≤ 0.5% (home-a-utility-laundry__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "[37] ✓ open-url (0.0s)"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"opened\": true,\n  \"url\": \"http://127.0.0.1:4174/_qa/project-studies-v4/home-a-utility-family-bath.html\"\n}"
+    },
+    {
+      "type": "text",
+      "text": "[38] ✓ await visible id=capture-home-a-utility-family-bath (0.4s)"
+    },
+    {
+      "type": "text",
+      "text": "[39] ✓ idle (0.5s)"
+    },
+    {
+      "type": "text",
+      "text": "[40] ✓ snapshot \"home-a-utility-family-bath\" (0.7s) — diff 0.00% ≤ 0.5% (home-a-utility-family-bath__chromium-1600x857.png)"
+    },
+    {
+      "type": "text",
+      "text": "PASS — 40 passed, 0 failed, 0 errored, 0 skipped (15.9s)"
+    }
+  ]
+}

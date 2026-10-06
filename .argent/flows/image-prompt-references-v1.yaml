@@ -1,0 +1,59 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/chatgpt-image-pack/capture-pages/guest-wc.html
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/chatgpt-image-pack/capture-pages/guest-wc.html
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-prompt-guest-wc
+      timeoutMs: 15000
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/chatgpt-image-pack/capture-pages/main-terrace.html
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-prompt-main-terrace
+      timeoutMs: 15000
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/chatgpt-image-pack/capture-pages/master-terrace.html
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-prompt-master-terrace
+      timeoutMs: 15000
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/chatgpt-image-pack/capture-pages/service-terrace.html
+  - tool: await-ui-element
+    args:
+      condition: visible
+      selector:
+        identifier: ready-prompt-service-terrace
+      timeoutMs: 15000
+  - tool: screenshot
+    args:
+      scale: 1
+      includeImageInContext: false
+executionPrerequisite: Dedicated Chromium CDP9222 at 1600x857; local-only QA
+  server4174 and canonical Family A.7 capture pages prepared. No production
+  state.

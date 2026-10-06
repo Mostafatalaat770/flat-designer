@@ -1,0 +1,50 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { build } from 'esbuild';
+import { JSDOM } from 'jsdom';
+const root = path.resolve(import.meta.dirname, '../..');
+const file = path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'apartment-storage-')), 'storage.mjs');
+await build({ entryPoints: [path.join(root, 'studio/app/src/storage.ts')], bundle: true, platform: 'node', format: 'esm', outfile: file });
+const storage = await import(file);
+const current = JSON.parse(fs.readFileSync(path.join(root, 'studio/app/data/workspace-seed.json')));
+const historical = JSON.parse(fs.readFileSync(path.join(root, 'studio/app/data/family-a7.brief.json')));
+const reset = () => { globalThis.localStorage = new JSDOM('', { url: 'http://127.0.0.1:4176', storageQuota: 100_000_000 }).window.localStorage; };
+test('new baseline drafts cannot auto-load or overwrite earlier drafts and histories', () => {
+  reset();
+  const earlierDraft = JSON.stringify({ brief: historical, log: [] });
+  localStorage.setItem('type-b-workspace-draft-v1', earlierDraft);
+  const row = { id: 'prior-version', name: 'Earlier local edit', brief: historical, log: [], created: '2026-10-05T00:00:00Z' };
+  localStorage.setItem('type-b-workspace-v1', JSON.stringify([row]));
+  const legacy = localStorage.getItem('type-b-workspace-v1');
+  assert.equal(storage.readDraft(), null);
+  assert.deepEqual(storage.readVariants(), [row]);
+  storage.writeDraft(current, []);
+  assert.equal(storage.readDraft().brief.scene_revision, current.scene_revision);
+  storage.saveVariant(storage.readVariants(), { ...row, id: 'new-version', name: 'New local edit', brief: current });
+  assert.equal(storage.readVariants().length, 2);
+  assert.equal(localStorage.getItem('type-b-workspace-draft-v1'), earlierDraft);
+  assert.equal(localStorage.getItem('type-b-workspace-v1'), legacy);
+  assert.throws(() => storage.saveVariant(storage.readVariants(), row), /overwritten/);
+});
+test('history remains accessible across synced baselines and corrupt data is retained', () => {
+  reset();
+  const row = { id: 'prior-sync-version', name: 'Previous sync', brief: historical, log: [], created: '2026-10-05T00:00:00Z' };
+  localStorage.setItem('type-b-workspace-scene-9e210720-v1', JSON.stringify([row]));
+  assert.deepEqual(storage.readVariants(), [row]);
+  localStorage.setItem('type-b-workspace-v1', '{bad json');
+  assert.throws(() => storage.readVariants(), /original data is retained/);
+  assert.equal(localStorage.getItem('type-b-workspace-v1'), '{bad json');
+});
+
+test('duplicated cross-seed history is counted after deduplication and saved versions stay bounded', () => {
+  reset();
+  const rows = Array.from({length: 60}, (_, i) => ({id: 'v-' + i, name: 'Saved ' + i, brief: historical, log: [], created: '2026-10-05T00:00:00Z'}));
+  localStorage.setItem('type-b-workspace-v1', JSON.stringify(rows));
+  localStorage.setItem('type-b-workspace-scene-9e210720-v1', JSON.stringify(rows));
+  assert.equal(storage.readVariants().length, 60);
+  const hundred = Array.from({length: 100}, (_, i) => ({...rows[0], id: 'v-' + i}));
+  assert.throws(() => storage.saveVariant(hundred, {...rows[0], id: 'v-new'}), /100/);
+});

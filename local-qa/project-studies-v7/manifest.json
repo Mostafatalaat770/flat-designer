@@ -1,0 +1,28 @@
+{
+  "schema": "ApartmentLocalStudyResult/1",
+  "id": "family-v7",
+  "title": "Family A.7 · useful density and honest scale",
+  "revision": "scene-9e210720",
+  "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "summary": {
+    "pass": 126,
+    "warning": 76,
+    "fail": 0
+  },
+  "views": [
+    "family-v7-entry",
+    "family-v7-family",
+    "family-v7-dining",
+    "family-v7-hall",
+    "family-v7-master",
+    "family-v7-master-entry",
+    "family-v7-bedroom1",
+    "family-v7-bedroom1-study",
+    "family-v7-bedroom2",
+    "family-v7-bedroom2-window",
+    "family-v7-dressing",
+    "family-v7-master-storage",
+    "family-v7-master-wide"
+  ],
+  "production_connected": false
+}

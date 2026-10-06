@@ -74,10 +74,11 @@ function makeStyleFurniture(f){
     cushion(g,w-.06,.018,.43,t.accent,0,y+.30,d*.30);
     g.userData.modelForm=t.id==='warm'?'channel-headboard':t.id==='japandi'?'low-slat-platform':'arched-cane-headboard';
   }else if(f.type==='chair'){
-    const h=.46;legs(g,w-.015,d-.015,h-.05,wm,.025,.018);
+    const fiber=f.product_reference_id==='r1-fiber-side-tube',h=.46;legs(g,w-.015,d-.015,h-.05,fiber?mat('#3c3b38',{metalness:.6,roughness:.45}):wm,.025,.018);
     if(t.id==='warm'){
-      cushion(g,w,.065,d-.03,c,0,h-.055,.015);
-      g.add(rbox(w,.38,.045,fab,0,h-.02,z0+.025,.04));
+      const seat=cushion(g,w,fiber?.055:.065,d-.03,c,0,h-.055,.015);
+      g.add(rbox(w,fiber?.33:.38,.045,fab,0,h-.02,z0+.025,.04));
+      if(fiber){g.updateMatrixWorld(true);g.userData.referenceGeometry={product_reference_id:f.product_reference_id,seat_top_mm:new THREE.Box3().setFromObject(seat).max.y*1000};}
     }else if(t.id==='japandi'){
       g.add(rbox(w,.03,d,wm,0,h-.035,0,.015));
       cushion(g,w-.045,.035,d-.055,'#e3ddce',0,h-.005,.02);

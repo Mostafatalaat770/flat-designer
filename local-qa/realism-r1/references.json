@@ -1,0 +1,36 @@
+[
+  {
+    "id": "r1-fiber-side-tube",
+    "name": "Fiber Side Chair Tube Base",
+    "maker": "Muuto",
+    "url": "https://www.muuto.com/product/fiber-side-chair-tube-base-p3089/23216-whit_dkye/",
+    "type": "chair",
+    "dimensions_mm": [
+      510,
+      530,
+      770
+    ],
+    "variant": "style",
+    "hex": null,
+    "image": null,
+    "checked_on": "2026-10-04",
+    "description": "REAL_PRODUCT footprint reference, official seat height460mm. Viewer mesh REFERENCE approximation, mushroom upholstery GENERIC; exact upholstered variant SKU and local availability TBD."
+  },
+  {
+    "id": "r1-dneo-basin-custom-vanity",
+    "name": "Duravit D-Neo 236660 basin reference + exploratory custom vanity",
+    "maker": "Duravit / custom cabinet",
+    "url": "https://la.pro.duravit.com/pro/content/homepage/productos/series/resumen/productos~402880943a1b6e1b013a1bd20b39003d.es-es.html?ncat=washbasins&nser=0998&product=6434569",
+    "type": "vanity",
+    "dimensions_mm": [
+      600,
+      460,
+      930
+    ],
+    "variant": "style",
+    "hex": null,
+    "image": null,
+    "checked_on": "2026-10-04",
+    "description": "REFERENCE custom assembly, not a purchasable Duravit vanity SKU. REAL_PRODUCT basin2366600000 dimensions600x440x165mm. Custom cabinet envelope600x460mm; mounting height and actual basin/mesh TBD."
+  }
+]

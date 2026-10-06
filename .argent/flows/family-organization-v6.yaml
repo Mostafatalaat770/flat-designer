@@ -1,0 +1,134 @@
+steps:
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-entry.html
+  - await: { visible: { id: capture-v4-control-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-family.html
+  - await: { visible: { id: capture-v4-control-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-dining.html
+  - await: { visible: { id: capture-v4-control-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-hall.html
+  - await: { visible: { id: capture-v4-control-hall }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-hall
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-master.html
+  - await: { visible: { id: capture-v4-control-master }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-master
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-master-entry.html
+  - await: { visible: { id: capture-v4-control-master-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-master-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-bedroom1.html
+  - await: { visible: { id: capture-v4-control-bedroom1 }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-bedroom1
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-bedroom1-study.html
+  - await: { visible: { id: capture-v4-control-bedroom1-study }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-bedroom1-study
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-bedroom2.html
+  - await: { visible: { id: capture-v4-control-bedroom2 }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-bedroom2
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-bedroom2-window.html
+  - await: { visible: { id: capture-v4-control-bedroom2-window }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-bedroom2-window
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/v4-control-dressing.html
+  - await: { visible: { id: capture-v4-control-dressing }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: v4-control-dressing
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-entry.html
+  - await: { visible: { id: capture-family-v6-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-family.html
+  - await: { visible: { id: capture-family-v6-family }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-family
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-dining.html
+  - await: { visible: { id: capture-family-v6-dining }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-dining
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-hall.html
+  - await: { visible: { id: capture-family-v6-hall }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-hall
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-master.html
+  - await: { visible: { id: capture-family-v6-master }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-master
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-master-entry.html
+  - await: { visible: { id: capture-family-v6-master-entry }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-master-entry
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-bedroom1.html
+  - await: { visible: { id: capture-family-v6-bedroom1 }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-bedroom1
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-bedroom1-study.html
+  - await: { visible: { id: capture-family-v6-bedroom1-study }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-bedroom1-study
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-bedroom2.html
+  - await: { visible: { id: capture-family-v6-bedroom2 }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-bedroom2
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-bedroom2-window.html
+  - await: { visible: { id: capture-family-v6-bedroom2-window }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-bedroom2-window
+  - tool: open-url
+    args:
+      url: http://127.0.0.1:4174/_qa/project-studies-v6/family-v6-dressing.html
+  - await: { visible: { id: capture-family-v6-dressing }, timeout: 10000 }
+  - await: { idle: true }
+  - snapshot: family-v6-dressing
+executionPrerequisite: Loopback4174, immutable project-studies-v6 captures, Chromium1600x857 DPR1. All production state disconnected.

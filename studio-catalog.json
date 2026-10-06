@@ -166,5 +166,22 @@
     "hex": "#596d69",
     "image": null,
     "checked_on": "2026-10-03"
+  },
+  {
+    "id": "sofa-connect-soft-3",
+    "name": "Connect Soft Modular Sofa 3-Seater, Configuration 1",
+    "maker": "Muuto",
+    "url": "https://www.muuto.com/product/Connect-Soft-Modular-Sofa-3-Seater-Configurations",
+    "type": "sofa",
+    "variant": "modular",
+    "description": "REAL_PRODUCT dimensional reference. COS3SC1CD12 / 96016: 2880 × 990 × 690 mm. Manufacturer describes assembled dimensions as indicative. Viewer is an approximate reference model; natural linen is GENERIC, not verified Clay 12 upholstery.",
+    "dimensions_mm": [
+      2880,
+      990,
+      690
+    ],
+    "hex": null,
+    "image": null,
+    "checked_on": "2026-10-04"
   }
 ]
