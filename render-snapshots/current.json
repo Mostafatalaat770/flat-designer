@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Architecture Pass 01 · E2 — developed full-open kitchen",
+  "name": "Architecture Pass 02 · F1 — E2 + bathroom door strategy",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -290,12 +290,12 @@
       {
         "id": "starter-26",
         "type": "vanity",
-        "name": "Compact guest handrinse 400 x 220 · dimensional reference",
+        "name": "Guest WC wall-hung handrinse · 350 × 180 mm · F1 dimensional envelope",
         "room_id": "WC-01",
-        "cx": 11968.31,
-        "cy": 9174.54,
-        "w": 400,
-        "d": 220,
+        "cx": 11990,
+        "cy": 9145,
+        "w": 350,
+        "d": 180,
         "rot": 0,
         "color": "#60432E",
         "status": "EXPLORATORY",
@@ -1242,7 +1242,7 @@
             "inset_mm": 8
           },
           "rotation": 0,
-          "width_mm": 550,
+          "width_mm": 450,
           "depth_mm": 35,
           "height_mm": 800,
           "material_references": {
@@ -1251,7 +1251,7 @@
           "colour": "#B39860",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "Guest WC mirror; restrained bronze frame over darker walnut vanity"
+            "role": "Guest WC mirror sized to 350 mm compact handrinse"
           }
         },
         {
@@ -1869,20 +1869,20 @@
   },
   "views": [
     {
-      "id": "E2-open-overview",
-      "room_id": "RECP-01",
+      "id": "F1-guest-wc-from-reception",
+      "room_id": "WC-01",
       "camera": {
         "position": [
-          5,
-          1.68,
-          0.8
+          5.25,
+          1.62,
+          4.42
         ],
         "target": [
-          3.2,
-          1.16,
-          1.55
+          3.65,
+          1.1,
+          4.45
         ],
-        "fov": 62,
+        "fov": 60,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -1959,7 +1959,187 @@
       }
     },
     {
-      "id": "E2-dining-to-kitchen",
+      "id": "F1-family-bath-from-hall",
+      "room_id": "BATH-C01",
+      "camera": {
+        "position": [
+          0.1,
+          1.62,
+          0.55
+        ],
+        "target": [
+          0.1,
+          1.12,
+          2.45
+        ],
+        "fov": 61,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "F1-master-dressing-to-ensuite",
+      "room_id": "WIC-01",
+      "camera": {
+        "position": [
+          -3.2,
+          1.62,
+          2.4
+        ],
+        "target": [
+          -1.72,
+          1.1,
+          2.48
+        ],
+        "fov": 61,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "F1-e2-dining-context",
       "room_id": "RECP-01",
       "camera": {
         "position": [
@@ -1971,186 +2151,6 @@
           3.55,
           1.18,
           1.4
-        ],
-        "fov": 64,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "E2-work-aisle",
-      "room_id": "KIT-01",
-      "camera": {
-        "position": [
-          3.9,
-          1.65,
-          3
-        ],
-        "target": [
-          2.35,
-          1.13,
-          1.35
-        ],
-        "fov": 63,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "E2-island-to-living",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          3.55,
-          1.68,
-          1.95
-        ],
-        "target": [
-          2.15,
-          1.2,
-          -2.05
         ],
         "fov": 64,
         "projection_type": "perspective",
@@ -2273,11 +2273,15 @@
     "E2 aisle refinement: island shifted 80 mm north. Approximate south work aisle to tall-unit fronts increases to 1150 mm; island-to-shifted-living-armchair bounding-box gap remains about 1018 mm.",
     "E2 visual refinement: island changed from generic breakfast-bar mesh to a full 1800 × 900 base-only storage mass, representing approximately 600 mm working-side cabinetry plus 300 mm shallow reception-side storage. No stools.",
     "Integrated dishwasher remains reserved inside one 600 mm island module but its separate appliance mesh is suppressed so the external joinery reads as a continuous integrated front.",
-    "Pantry changed from stylized wardrobe furniture to plain 600 × 600 × 2200 mm ivory tall joinery for a more truthful kitchen elevation."
+    "Pantry changed from stylized wardrobe furniture to plain 600 × 600 × 2200 mm ivory tall joinery for a more truthful kitchen elevation.",
+    "F1 GUEST WC: keep the modeled 656.7 mm opening in this pass, reverse the door leaf outward into the reception for a direct swing-conflict test, and shrink the handrinse envelope to 350 × 180 mm. The opening remains below the public NKBA 813 mm clear-opening planning recommendation and is therefore not treated as optimized accessibility.",
+    "F1 FAMILY BATH: render-only wall-gap study widens the modeled opening to 800 mm and hides the hinged leaf to represent a pocket/surface-sliding strategy. Exact frame system may reduce clear opening; pocket length, waterproofing, electrical/switch conflicts and wall classification remain TBD.",
+    "F1 MASTER ENSUITE: render-only wall-gap study widens the dressing-to-ensuite opening to 800 mm and hides the hinged leaf to represent a pocket door stored in the longer south wall segment. Wet-area wall build-up and pocket-system feasibility remain TBD.",
+    "No bathroom wall change is construction-approved. Local/Egyptian requirements, structural/as-built drawings, plumbing/electrical routes and selected door-system shop drawings control."
   ],
   "architecture_variant": {
-    "id": "E2-developed-full-open",
-    "name": "Developed full-open kitchen + longitudinal island",
+    "id": "F1-e2-plus-door-strategy",
+    "name": "E2 full-open kitchen + bathroom door strategy",
     "render_only": true,
     "structural_status": "TBD",
     "remove_wall_segments": [
@@ -2320,10 +2324,163 @@
           12582.613,
           8960.346
         ]
+      },
+      {
+        "from": [
+          7180.986,
+          6206.575
+        ],
+        "to": [
+          7413.998,
+          6206.575
+        ]
+      },
+      {
+        "from": [
+          8070.666,
+          6206.575
+        ],
+        "to": [
+          8981.529,
+          6206.575
+        ]
+      },
+      {
+        "from": [
+          5465.175,
+          6206.575
+        ],
+        "to": [
+          5465.175,
+          7265.718
+        ]
+      },
+      {
+        "from": [
+          5465.175,
+          7943.569
+        ],
+        "to": [
+          5465.175,
+          8960.346
+        ]
       }
     ],
     "hide_openings": [
-      "OP-RECP-KIT"
+      "OP-RECP-KIT",
+      "OP-HALL-BATHC",
+      "OP-WIC-BATHM"
+    ],
+    "add_wall_segments": [
+      {
+        "from": [
+          7180.986,
+          6206.575
+        ],
+        "to": [
+          7364,
+          6206.575
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          8164,
+          6206.575
+        ],
+        "to": [
+          8981.529,
+          6206.575
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          5465.175,
+          6206.575
+        ],
+        "to": [
+          5465.175,
+          7204.644
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          5465.175,
+          8004.644
+        ],
+        "to": [
+          5465.175,
+          8960.346
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      }
+    ],
+    "add_wall_boxes": [
+      {
+        "rect": [
+          7364,
+          6116.575,
+          7413.998,
+          6296.575
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "rect": [
+          8070.666,
+          6116.575,
+          8164,
+          6296.575
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "rect": [
+          5375.175,
+          7204.644,
+          5555.175,
+          7265.718
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "rect": [
+          5375.175,
+          7943.569,
+          5555.175,
+          8004.644
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      }
+    ],
+    "door_overrides": [
+      {
+        "id": "OP-RECP-WC",
+        "open_vector": [
+          1,
+          0
+        ],
+        "force_open": true,
+        "status": "EXPLORATORY"
+      }
     ]
   }
 }
