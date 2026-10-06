@@ -65,6 +65,8 @@ const browser=await chromium.launch({headless:true,args:['--use-gl=swiftshader',
 try{
   for(const view of snapshot.views){
     const page=await browser.newPage({viewport:view.camera.viewport});
+    page.on('pageerror', error=>console.error(`page error in ${view.id}: ${error.message}`));
+    console.log(`rendering ${view.id}`);
     const frameId=`${snapshot.scene_revision}-${view.id}`;
     const input={
       frame_id:frameId,
@@ -83,7 +85,7 @@ try{
       const err=document.body?.dataset?.captureError;
       if(err) throw new Error(err);
       return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
-    },frameId,{timeout:45000});
+    },frameId,{timeout:120000});
     const canvas=page.locator('#apartment-capture-canvas');
     await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
     const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
