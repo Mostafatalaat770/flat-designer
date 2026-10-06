@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "J1 Integrated Candidate — whole-apartment developed direction",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-bc0ef10e",
+  "scene_revision": "scene-34357be8",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -639,8 +639,8 @@
         "type": "counter",
         "name": "E2 double-sided storage island · 1800 × 900 mm · 600+300 concept",
         "room_id": "RECP-01",
-        "cx": 11250,
-        "cy": 6310,
+        "cx": 11350,
+        "cy": 6240,
         "w": 1800,
         "d": 900,
         "rot": 90,
@@ -654,8 +654,8 @@
         "type": "ksink",
         "name": "E2 550 mm island sink · south module · drainage route TBD",
         "room_id": "RECP-01",
-        "cx": 11250,
-        "cy": 6910,
+        "cx": 11350,
+        "cy": 6840,
         "w": 550,
         "d": 400,
         "rot": 270,
@@ -2661,7 +2661,10 @@
     "E2 plumbing coordination improved by geometry: island sink centre is only about 108 mm from the earlier sink centre, reducing but not eliminating drainage/water-routing risk.",
     "Bedrooms and private hall receive no new architectural changes in J1; prior developed furniture/storage layouts are retained because no higher-value wall intervention was established.",
     "J1 is a coordinated design candidate, not a construction package. Structural removability, MEP sizing, waterproofing, exact clear door openings, appliance manuals, site tolerances and developer approvals remain hard gates.",
-    "J1 metadata repair: scene_revision updated from stale scene-29d4aa6d to scene-bc0ef10e to match the integrated layout hash required by the Studio workspace seed."
+    "J1 metadata repair: scene_revision updated from stale scene-29d4aa6d to scene-bc0ef10e to match the integrated layout hash required by the Studio workspace seed.",
+    "J1 final aisle refinement: island and sink shifted 100 mm east and 70 mm north. Approximate west cooking aisle becomes ~1219 mm and south/tall-unit aisle ~1220 mm, while the island-to-living-chair envelope remains ~948 mm.",
+    "Island sink centre is now about 228 mm from the earlier sink centre; still a compact wet-service relocation subject to plumbing confirmation.",
+    "Master dressing-to-ensuite render-only wall gap increased from 800 mm to 900 mm to target a more useful pocket-door clear opening after frame/system losses. Exact clear opening remains product-dependent."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
@@ -2789,7 +2792,7 @@
         ],
         "to": [
           5465.175,
-          7204.644
+          7154.644
         ],
         "thickness_mm": 180,
         "height_m": 2.5,
@@ -2798,7 +2801,7 @@
       {
         "from": [
           5465.175,
-          8004.644
+          8054.644
         ],
         "to": [
           5465.175,
@@ -2835,7 +2838,7 @@
       {
         "rect": [
           5375.175,
-          7204.644,
+          7154.644,
           5555.175,
           7265.718
         ],
@@ -2848,7 +2851,7 @@
           5375.175,
           7943.569,
           5555.175,
-          8004.644
+          8054.644
         ],
         "bottom_m": 2.1,
         "top_m": 2.5,
