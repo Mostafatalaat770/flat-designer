@@ -1,6 +1,6 @@
 # Local Studio integration — 6 October 2026
 
-The working integration branch is `agent/local-studio-integration-20261006`, based on GitHub master `dd2e443` and `agent/whole-apartment-render-pack` through `0884fdf`. The original dirty Sites-export checkout and its generated evidence remain preserved separately. Use the integration checkout for subsequent work.
+The working integration branch is `agent/local-studio-integration-20261006`, based on GitHub master `dd2e443` and `agent/whole-apartment-render-pack` through `0884fdf`. The original dirty Sites-export checkout and its generated evidence remain preserved separately. Use the durable `/Users/bonuz/Repos/flat-designer-integration` checkout for subsequent work. The original `/Users/bonuz/Repos/flat-designer` remains preserved.
 
 The pinned local design is **Whole Apartment A3 — Guest WC + Kitchen Usability**, `scene-29d4aa6d`, source storage revision **39**. The connected Studio was read and its complete layout compared with `render-snapshots/current.json`; they matched. Builds use the committed snapshot offline, never production storage. Snapshot SHA-256: `6e8dd764ec3ac2388c26e16c86ea9f0af9c7ada5b4a4d3a6660f9af937520f9e`. Later live edits are not silently pulled into this checkout.
 
