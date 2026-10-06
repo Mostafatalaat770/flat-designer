@@ -12,7 +12,7 @@
     "studio:build": "node studio/local/workspace-data.mjs && node studio/build-domain.mjs && tsc -p studio/app/tsconfig.json && vite build --config studio/app/vite.config.ts",
     "studio:dev": "node studio/local/workspace-data.mjs && node studio/build-domain.mjs && vite --config studio/app/vite.config.ts",
     "check:assets": "node --test studio/assets/*.test.mjs",
-    "check:studio": "node studio/build-domain.mjs && node --test studio/domain/browser.test.mjs studio/assets/*.test.mjs",
+    "check:studio": "node studio/build-domain.mjs && node --test studio/domain/browser.test.mjs studio/assets/*.test.mjs studio/renderer/*.test.mjs",
     "render:local": "node studio/render/run.mjs",
     "check:workspace": "node studio/local/workspace-data.mjs && node studio/build-domain.mjs && node --test studio/local/workspace-seed.test.mjs studio/app/storage.test.mjs",
     "studio:review": "node studio/local/integration-review.mjs"

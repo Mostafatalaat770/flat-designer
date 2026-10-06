@@ -1,8 +1,8 @@
 # Local Studio integration — 6 October 2026
 
-The working integration branch is `agent/local-studio-integration-20261006`, based on GitHub master `dd2e443` and `agent/whole-apartment-render-pack` at `d611b1c`. The original dirty Sites-export checkout and its generated evidence remain preserved separately. Use the integration checkout for subsequent work.
+The working integration branch is `agent/local-studio-integration-20261006`, based on GitHub master `dd2e443` and `agent/whole-apartment-render-pack` through `0884fdf`. The original dirty Sites-export checkout and its generated evidence remain preserved separately. Use the integration checkout for subsequent work.
 
-The pinned local design is **Whole Apartment A3 — Guest WC + Kitchen Usability**, `scene-29d4aa6d`, source storage revision **39**. The connected Studio was read and its complete layout compared with `render-snapshots/current.json`; they matched. Builds use the committed snapshot offline, never production storage. Snapshot SHA-256: `7e8121bd968de5a2741bed38449f1ac9c1c3194c2d8e25ec8637a7c42a09ab89`. Later live edits are not silently pulled into this checkout.
+The pinned local design is **Whole Apartment A3 — Guest WC + Kitchen Usability**, `scene-29d4aa6d`, source storage revision **39**. The connected Studio was read and its complete layout compared with `render-snapshots/current.json`; they matched. Builds use the committed snapshot offline, never production storage. Snapshot SHA-256: `6e8dd764ec3ac2388c26e16c86ea9f0af9c7ada5b4a4d3a6660f9af937520f9e`. Later live edits are not silently pulled into this checkout.
 
 Canonical geometry hash remains `734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658`. No architectural or furniture changes were made during this integration. Family A.7 (`scene-9e210720`) and all earlier local studies are preserved as historical candidates. The earlier prompt/image pack depicts A.7, not revision 39.
 
@@ -12,7 +12,7 @@ Canonical geometry hash remains `734b1c36570f27baa930eec481eb109906a1f81684e6fb8
 | --- | --- |
 | Furniture-editing PR #2; camera/scale PR #3 | Already merged into master; do not remerge their old branches after squash merges. |
 | `infra/github-actions-renderer-v1` | Its four commits are ancestors of the whole-apartment render branch; integrate once through that branch. |
-| `agent/whole-apartment-render-pack` | Integrated through `d611b1c`, retaining snapshot, review history and GitHub rendering workflow. |
+| `agent/whole-apartment-render-pack` | Integrated through `0884fdf`, retaining snapshot, review history and GitHub rendering workflow. |
 | `chatgpt-reception-renders-20261005-v1` | Image evidence branch remains separate; no generated image assets copied over source files. |
 | Dependabot PR #1 | Incorporate exact esbuild 0.28.1 into the full workspace manifest and regenerate its lockfile. Do not take the old lockfile wholesale. The dependency PR remains open for separate review. |
 
@@ -35,7 +35,7 @@ The review generator accepts an ignored `local-qa/reports/integration-captures.j
 ## Verification
 
 - Classic build and all five original contract suites pass.
-- TypeScript/Vite build passes. Eight study/domain tests, seven browser-domain/GLB tests and five new seed/history tests pass: **20 targeted tests** in addition to the original suites.
+- TypeScript/Vite build passes. Eight study/domain tests, eight browser-domain/GLB/mesh-bounds tests and five new seed/history tests pass: **21 targeted tests** in addition to the original suites.
 - Current layout: **165 PASS / 74 WARNING / 0 FAIL**. Warnings remain subject to spatial and installation review.
 - Eighteen local camera views cover all 13 canonical areas at Natural **42° vertical FOV / 1.70 m eye**. Original source cameras remain unchanged in the branch snapshot; normalized local cameras retain its door presentation states.
 - Runtime inspection verifies 1.70 m human, 1.00 m ruler, no pending textures, texture errors or hard scene failures.
@@ -52,3 +52,5 @@ The review generator accepts an ignored `local-qa/reports/integration-captures.j
 | The design is ready for a refinement pass, not completion. | Capture and critique six unchanged baseline views. | 0 hard failures; two browser flows pass. | Reception sideboard is visually heavy and competes with pendant/art. Kitchen prep surface and fitted fronts need work. Bathroom bowl, mirror and accessories are generic and do not establish comfortable use. | Keep baseline as evidence; refine furniture/materials in a new named local study. |
 
 Next design work should establish family seating capacity and reception hierarchy, kitchen appliance/prep/use envelopes, and bathroom standing/access views before adding accessories. Any open-kitchen proposal remains an architectural investigation requiring explicit approval. The 130 mm ceiling void does not establish concealed HVAC feasibility. Detailed asset imports still belong to the renderer session; retain source GLB/metadata until per-version asset persistence is implemented.
+
+The final remote-head check found commit `0884fdf` after the initial sync. Its compact-vanity bowl correction was merged without conflicts and ported to the extracted renderer. The scene/storage revisions remain unchanged; only snapshot review notes and generic rendering change. A real Three.js mesh-bounds regression covers compact and standard single/double vanities. Both UI and six-view capture flows were replayed on the resulting build. This is still generic conceptual fixture geometry, not product CAD.

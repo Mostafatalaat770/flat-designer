@@ -4198,11 +4198,12 @@ export function createBuilders(scope) {
           "edge",
         );
         g.add(rbox(w, 0.03, d, stone, 0, 0.78, 0, 0.006));
-        const rb = Math.min(0.19, (w / nb) * 0.36);
+        const rb = Math.min(0.19, (w / nb) * 0.36),
+          bowlZ = d < 0.30 ? 0 : 0.03,
+          bowlScaleZ = d < 0.30 ? Math.min(1, (d - 0.04) / (2 * rb)) : 1;
         for (let i = 0; i < nb; i++) {
           const x = nb === 1 ? 0 : i ? w / 4 : -w / 4;
-          g.add(
-            lathe(
+          const basinBowl = lathe(
               [
                 [0, 0],
                 [rb * 0.55, 0],
@@ -4213,11 +4214,11 @@ export function createBuilders(scope) {
               ceramic({ side: THREE.DoubleSide }),
               x,
               0.81,
-              0.03,
+              bowlZ,
               40,
-            ),
-            cyl(0.018, 0.018, 0.003, cm, x, 0.812, 0.03, 16),
-          );
+            );
+          basinBowl.scale.z = bowlScaleZ;
+          g.add(basinBowl, cyl(0.018, 0.018, 0.003, cm, x, 0.812, bowlZ, 16));
           g.add(
             cyl(0.02, 0.022, 0.02, cm, x, 0.81, bz + 0.06, 16),
             tube(
