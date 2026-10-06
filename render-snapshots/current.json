@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Whole Apartment A — Detailed Geometry Controlled",
+  "name": "Whole Apartment A — Camera QA + Kitchen Refinement Preview",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-ddc3139a",
+  "scene_revision": "scene-da408f6d",
   "storage_revision": 36,
   "layout": {
     "modelVersion": "0.2.2",
@@ -321,7 +321,7 @@
         "type": "fridge",
         "name": "650 mm fridge envelope · door/ventilation TBD",
         "room_id": "KIT-01",
-        "cx": 12120,
+        "cx": 11850,
         "cy": 8520,
         "w": 650,
         "d": 650,
@@ -1508,9 +1508,9 @@
           "depth_mm": 330,
           "height_mm": 700,
           "material_references": {
-            "primary": "a1-natural-oak"
+            "primary": "kitchen-soft-ivory"
           },
-          "colour": "#B88C5E",
+          "colour": "#E8E2D7",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Flush pale-oak upper cabinet run with 40 mm blind-corner relief at west junction"
@@ -1533,9 +1533,9 @@
           "depth_mm": 330,
           "height_mm": 700,
           "material_references": {
-            "primary": "a1-natural-oak"
+            "primary": "kitchen-soft-ivory"
           },
-          "colour": "#B88C5E",
+          "colour": "#E8E2D7",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Upper cabinet flanking cooking zone; hood zone kept open"
@@ -1558,9 +1558,9 @@
           "depth_mm": 330,
           "height_mm": 700,
           "material_references": {
-            "primary": "a1-natural-oak"
+            "primary": "kitchen-soft-ivory"
           },
-          "colour": "#B88C5E",
+          "colour": "#E8E2D7",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Upper cabinet flanking cooking zone; hood/exhaust remains TBD"
@@ -1826,6 +1826,18 @@
           "roughness": 0.34,
           "metallic": 0.82,
           "notes": "Concept only; final fittings/SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-soft-ivory",
+          "name": "Kitchen soft ivory matte lacquer",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#E8E2D7",
+          "finish": "matte",
+          "roughness": 0.82,
+          "metallic": 0,
+          "notes": "Conceptual joinery finish; manufacturer and sample TBD."
         }
       ],
       "surface_materials": {
@@ -2922,6 +2934,7 @@
     "Generated from the active Whole Apartment A — Detailed Geometry Controlled scene.",
     "Render output is an artifact; the workflow does not commit PNGs.",
     "Whole-apartment camera pack expanded from current validated Studio captures on scene-ddc3139a; canonical geometry unchanged.",
-    "2026-10-06: camera-only framing iteration for BR1, dressing, ensuite and family bathroom. Custom cameras await visual QA; layout and canonical geometry unchanged."
+    "2026-10-06: camera-only framing iteration for BR1, dressing, ensuite and family bathroom. Custom cameras await visual QA; layout and canonical geometry unchanged.",
+    "EXPLORATORY branch preview, not a saved Studio revision: kitchen upper cabinetry warm ivory; fridge shifted 270 mm west. Door-sweep clearance 31.2→123.5 mm (hinge INFERRED); front operating depth stays 1097 mm. Original Studio base scene-ddc3139a/storage 36. Apply proposal only after PNG QA."
   ]
 }
