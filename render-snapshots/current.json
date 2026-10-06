@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Design Pass G2 — localized HVAC pockets",
+  "name": "Design Pass H2 — entry/dining clearance repair",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -395,7 +395,7 @@
         "name": "Dining table · six seats · 2000 × 950 mm",
         "room_id": "RECP-01",
         "cx": 14670,
-        "cy": 7650,
+        "cy": 7500,
         "w": 2000,
         "d": 950,
         "rot": 0,
@@ -409,7 +409,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 13970,
-        "cy": 6950,
+        "cy": 6800,
         "w": 510,
         "d": 530,
         "rot": 0,
@@ -423,7 +423,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 15370,
-        "cy": 6950,
+        "cy": 6800,
         "w": 510,
         "d": 530,
         "rot": 0,
@@ -437,7 +437,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 13970,
-        "cy": 8350,
+        "cy": 8200,
         "w": 510,
         "d": 530,
         "rot": 180,
@@ -451,7 +451,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 15370,
-        "cy": 8350,
+        "cy": 8200,
         "w": 510,
         "d": 530,
         "rot": 180,
@@ -536,7 +536,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 14670,
-        "cy": 6950,
+        "cy": 6800,
         "w": 510,
         "d": 530,
         "rot": 0,
@@ -550,7 +550,7 @@
         "name": "Dining chair · mushroom",
         "room_id": "RECP-01",
         "cx": 14670,
-        "cy": 8350,
+        "cy": 8200,
         "w": 510,
         "d": 530,
         "rot": 180,
@@ -1845,18 +1845,18 @@
   },
   "views": [
     {
-      "id": "G2-dining-overview",
+      "id": "H2-entry-to-dining",
       "room_id": "RECP-01",
       "camera": {
         "position": [
-          6.35,
-          1.68,
-          2.8
+          8.85,
+          1.67,
+          4.65
         ],
         "target": [
-          3.55,
-          1.48,
-          0.6
+          7.25,
+          1.1,
+          2.15
         ],
         "fov": 61,
         "projection_type": "perspective",
@@ -1935,200 +1935,20 @@
       }
     },
     {
-      "id": "G2-living-pocket",
+      "id": "H2-dining-context",
       "room_id": "RECP-01",
       "camera": {
         "position": [
-          1.8,
-          1.64,
-          -1.75
+          6.65,
+          1.68,
+          3.05
         ],
         "target": [
-          4.05,
-          1.7,
-          -1.1
+          7.15,
+          1.05,
+          2.2
         ],
         "fov": 60,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-kitchen-pocket",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          5.2,
-          1.66,
-          3.1
-        ],
-        "target": [
-          3.55,
-          1.55,
-          1.8
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "G2-open-plan-height",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.8,
-          1.66,
-          4.15
-        ],
-        "target": [
-          3.2,
-          1.35,
-          0.2
-        ],
-        "fov": 62,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2262,7 +2082,10 @@
     "Goal: preserve the 2.50 m clear ceiling through the main living/dining field and avoid a beam-like soffit across the room.",
     "Both pockets are modeled with soffit underside at 2.34 m, giving approximately 290 mm from the verified 2.63 m underside of concrete. This is only a reservation envelope, not installation approval.",
     "Reception lighting stays track + lamps at 3000 K; no dining pendant in this pass so ceiling massing can be judged without decorative distraction.",
-    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling."
+    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling.",
+    "H2 circulation repair: shift the complete dining set 150 mm north, preserving table/chair relationships.",
+    "Approximate closed-chair gap between the open entry door leaf tip and the southeast dining chair improves from about 811 mm to about 961 mm, moving the route above the project's 900 mm comfort target.",
+    "This is a low-cost furniture-layout correction; no architecture changes required. Chair pull-out during active dining can still temporarily narrow the entry route and should remain a behavioral/operational consideration."
   ],
   "architecture_variant": {
     "id": "G2-localized-hvac-pockets",
