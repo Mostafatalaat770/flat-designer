@@ -1,0 +1,37 @@
+{
+  "schema": "ApartmentDesignScorecard/1",
+  "principle": "Owner/family-first. Hard technical gates override weighted aesthetics.",
+  "hard_gates": [
+    "No construction approval while structural_status is TBD for altered walls/openings.",
+    "No developed open-kitchen option without a feasible gas/extraction/ventilation route or a separately approved appliance strategy.",
+    "No unresolved severe appliance/door operating collision.",
+    "No new primary-route clearance below the project 750 mm review threshold without an explicit justified exception.",
+    "No façade/shaft/riser/common-service change without authority/developer approval.",
+    "No wet-area change without waterproofing/drainage/service coordination."
+  ],
+  "weights": {
+    "daily_family_flow": 20,
+    "kitchen_workflow_and_appliances": 15,
+    "circulation_and_access": 15,
+    "privacy_odor_noise_control": 15,
+    "useful_storage_and_joinery": 10,
+    "mep_and_ventilation_feasibility": 10,
+    "structural_and_approval_risk": 10,
+    "construction_cost_and_reversibility": 5
+  },
+  "scoring": "Each category 1..5; weighted score normalized to 100. Render appearance is evidence for spatial review only and cannot clear hard gates.",
+  "variants": [
+    {
+      "id": "A-doorless-control",
+      "status": "PENDING_RENDER_REVIEW"
+    },
+    {
+      "id": "B-main-opening",
+      "status": "PENDING_RENDER_REVIEW"
+    },
+    {
+      "id": "C-broad-open",
+      "status": "PENDING_RENDER_REVIEW"
+    }
+  ]
+}
