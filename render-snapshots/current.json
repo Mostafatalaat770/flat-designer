@@ -2291,16 +2291,16 @@
       "room_id": "BR-01",
       "camera": {
         "position": [
-          -2.8977039999999996,
-          1.68,
-          -3.2616764999999996
+          -5.667708999999999,
+          1.6,
+          -0.5656584999999995
         ],
         "target": [
-          -4.300119,
-          1.4,
-          -1.8640904999999994
+          -4.267709,
+          1.25,
+          -2.4656584999999995
         ],
-        "fov": 70,
+        "fov": 65,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2561,14 +2561,14 @@
       "room_id": "WIC-01",
       "camera": {
         "position": [
-          -3.66415,
-          1.68,
-          3.0409165000000002
+          -3.767709,
+          1.6,
+          2.2643415000000005
         ],
         "target": [
-          -3.2833419999999998,
-          1.4,
-          2.4678015000000006
+          -2.9677089999999997,
+          1.25,
+          2.9543415000000004
         ],
         "fov": 70,
         "projection_type": "perspective",
@@ -2651,14 +2651,14 @@
       "room_id": "BATH-M01",
       "camera": {
         "position": [
-          -2.2025339999999995,
-          1.68,
-          3.640916500000001
+          -1.217709,
+          1.6,
+          2.5143415000000005
         ],
         "target": [
-          -1.6946279999999998,
-          1.4,
-          2.4678015000000006
+          -1.937709,
+          1.15,
+          1.6543415000000004
         ],
         "fov": 70,
         "projection_type": "perspective",
@@ -2741,14 +2741,14 @@
       "room_id": "BATH-C01",
       "camera": {
         "position": [
-          0.7132770000000009,
-          1.68,
-          3.640916500000001
+          -0.4677089999999998,
+          1.6,
+          1.6843415000000004
         ],
         "target": [
-          0.06354799999999977,
-          1.4,
-          2.4678015000000006
+          0.32229100000000016,
+          1.1,
+          2.9943415000000004
         ],
         "fov": 70,
         "projection_type": "perspective",
@@ -2921,6 +2921,7 @@
     "Frozen branch-local snapshot for GitHub Actions rendering.",
     "Generated from the active Whole Apartment A — Detailed Geometry Controlled scene.",
     "Render output is an artifact; the workflow does not commit PNGs.",
-    "Whole-apartment camera pack expanded from current validated Studio captures on scene-ddc3139a; canonical geometry unchanged."
+    "Whole-apartment camera pack expanded from current validated Studio captures on scene-ddc3139a; canonical geometry unchanged.",
+    "2026-10-06: camera-only framing iteration for BR1, dressing, ensuite and family bathroom. Custom cameras await visual QA; layout and canonical geometry unchanged."
   ]
 }
