@@ -3859,6 +3859,10 @@ export function createBuilders(scope) {
         );
         fronts(g, -w / 2, 0.64, w, 0.18, fz, n, 1, cm, "bar");
         fronts(g, -w / 2, 0.1, w, 0.54, fz, n, 1, cm, "bar", 0.56);
+        if (["base-only", "peninsula"].includes(f.variant)) {
+          g.add(rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004));
+          break;
+        }
         g.add(
           rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004),
           box(
