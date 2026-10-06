@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Architecture Pass 01 · D2 — functional open kitchen",
+  "name": "Architecture Pass 01 · D3 — clean open kitchen massing",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -319,16 +319,17 @@
       {
         "id": "starter-23",
         "type": "fridge",
-        "name": "650 mm fridge envelope · D2 screened position · hinge/ventilation TBD",
+        "name": "650 mm integrated-fridge envelope · D3 screened position · exact SKU TBD",
         "room_id": "KIT-01",
         "cx": 12200,
         "cy": 8590,
         "w": 650,
         "d": 650,
         "rot": 180,
-        "color": "#bec7d0",
+        "color": "#E8E2D7",
         "status": "EXPLORATORY",
-        "variant": "style"
+        "variant": "integrated",
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "starter-25",
@@ -676,17 +677,18 @@
       },
       {
         "id": "K3-laundry-niche",
-        "type": "washer",
-        "name": "600 mm integrated laundry niche · peninsula end · acoustic/service review TBD",
+        "type": "counter",
+        "name": "600 mm peninsula prep / closed storage · D3",
         "room_id": "KIT-01",
         "cx": 11181,
         "cy": 6893,
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#E6E0D7",
+        "color": "#B88C5E",
         "variant": "style",
-        "status": "EXPLORATORY"
+        "status": "EXPLORATORY",
+        "material_id": "a1-natural-oak"
       },
       {
         "id": "V5-master-rug",
@@ -1452,56 +1454,6 @@
           }
         },
         {
-          "id": "KIT-A1-upper-west-low",
-          "type": "sideboard",
-          "variant": "plain",
-          "room_id": "KIT-01",
-          "placement": {
-            "mode": "wall",
-            "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": -544.2,
-            "elevation_mm": 1480,
-            "inset_mm": 8
-          },
-          "rotation": 0,
-          "width_mm": 300,
-          "depth_mm": 330,
-          "height_mm": 700,
-          "material_references": {
-            "primary": "kitchen-soft-ivory"
-          },
-          "colour": "#E8E2D7",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "Compact 300 mm upper cupboard; clear north-run front strip, hob/exhaust heat clearances TBD"
-          }
-        },
-        {
-          "id": "KIT-A1-upper-west-high",
-          "type": "sideboard",
-          "variant": "plain",
-          "room_id": "KIT-01",
-          "placement": {
-            "mode": "wall",
-            "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": 805.8,
-            "elevation_mm": 1480,
-            "inset_mm": 8
-          },
-          "rotation": 0,
-          "width_mm": 450,
-          "depth_mm": 330,
-          "height_mm": 700,
-          "material_references": {
-            "primary": "kitchen-soft-ivory"
-          },
-          "colour": "#E8E2D7",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "Upper cabinet flanking cooking zone; hood/exhaust remains TBD"
-          }
-        },
-        {
           "id": "MBR-A1-art",
           "type": "artwork",
           "variant": "framed",
@@ -1576,6 +1528,30 @@
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Single taupe line artwork over east-wall bed; deliberately distinct from Bedroom 1"
+          }
+        },
+        {
+          "id": "D3-peninsula-back",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 10281,
+          "cy": 6537,
+          "rotation": 0,
+          "width_mm": 2400,
+          "depth_mm": 95,
+          "height_mm": 900,
+          "material_references": {
+            "primary": "a1-natural-oak"
+          },
+          "colour": "#B88C5E",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Reception-facing finished peninsula back; thin joinery skin / storage-front concept, not structural wall",
+            "note": "Exact panel build-up, toe-kick, countertop overhang and services TBD"
           }
         }
       ],
@@ -2071,7 +2047,12 @@
     "Sink moved nearer the west wet/service side; dishwasher remains directly adjacent; integrated laundry moves to peninsula end. Exact drainage route and acoustic treatment remain TBD.",
     "Fridge moved behind the retained east/south screen wall. Generic envelope leaves ~57 mm modeled side gap; exact manufacturer ventilation/hinge/service clearances remain TBD.",
     "Modeled clear depth between peninsula front (~7198 mm plan Y) and fridge north face (~8265 mm) is ~1067 mm at the fridge zone, matching the public NKBA one-cook work-aisle planning target used for this study.",
-    "Usable east-side passage beside the shortened peninsula is ~1100 mm in the rectangular zone, above the project 900 mm comfort circulation target. Structural/MEP/gas/developer approval remains TBD."
+    "Usable east-side passage beside the shortened peninsula is ~1100 mm in the rectangular zone, above the project 900 mm comfort circulation target. Structural/MEP/gas/developer approval remains TBD.",
+    "D3 VISUAL/FUNCTIONAL MASSING: preserve D2 aisle/access geometry but clean the social-space sightline.",
+    "Laundry is removed from the peninsula and represented as closed prep/storage. A protected service-terrace laundry concept will be studied separately with drainage/weather/electrical requirements; no relocation is approved yet.",
+    "Fridge uses an integrated visual variant to reduce appliance exposure from the reception; exact door swing, ventilation grille and service pull-out remain manufacturer-dependent.",
+    "Heavy west upper cabinets removed for this comparison. Storage capacity must be recovered in the developed joinery design before approval.",
+    "Reception-facing peninsula back is a thin exploratory joinery skin, not a wall and not final fabrication."
   ],
   "architecture_variant": {
     "id": "D-main-opening-wide-access",
