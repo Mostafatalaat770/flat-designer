@@ -698,7 +698,7 @@
         "name": "E2 longitudinal island · 1800 × 900 mm · sink/DW/storage",
         "room_id": "RECP-01",
         "cx": 11250,
-        "cy": 6390,
+        "cy": 6310,
         "w": 1800,
         "d": 900,
         "rot": 270,
@@ -713,7 +713,7 @@
         "name": "E2 550 mm island sink · south module · drainage route TBD",
         "room_id": "RECP-01",
         "cx": 11250,
-        "cy": 6990,
+        "cy": 6910,
         "w": 550,
         "d": 400,
         "rot": 270,
@@ -727,7 +727,7 @@
         "name": "E2 600 mm fully integrated dishwasher · island middle module",
         "room_id": "RECP-01",
         "cx": 11250,
-        "cy": 6390,
+        "cy": 6310,
         "w": 600,
         "d": 600,
         "rot": 270,
@@ -2276,7 +2276,8 @@
     "Gas hob stays on the west wall rather than the island so extraction can be ducted/screened more conventionally and the social face of the island remains clean.",
     "Exact appliance installation, ventilation, hinge clearances, electrical outlets, hood duct routing, gas shutoff/access and fire clearances must follow selected manufacturer manuals and Egyptian/local requirements.",
     "The canonical model contains no explicit column/beam/pier object at the removed separator; all removed pieces are 180 mm unclassified wall segments. This remains insufficient evidence for demolition approval.",
-    "E2 circulation repair: living armchair shifted ~360 mm north after a bounding-box check found only ~740 mm to the island. Revised approximate chair-to-island gap is >1000 mm; exact rotated-mesh clearance remains render/QA-dependent."
+    "E2 circulation repair: living armchair shifted ~360 mm north after a bounding-box check found only ~740 mm to the island. Revised approximate chair-to-island gap is >1000 mm; exact rotated-mesh clearance remains render/QA-dependent.",
+    "E2 aisle refinement: island shifted 80 mm north. Approximate south work aisle to tall-unit fronts increases to 1150 mm; island-to-shifted-living-armchair bounding-box gap remains about 1018 mm."
   ],
   "architecture_variant": {
     "id": "E2-developed-full-open",
