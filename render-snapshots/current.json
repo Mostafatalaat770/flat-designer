@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Architecture Pass 01 · D4 — corrected peninsula / base-cabinet massing",
+  "name": "Architecture Pass 01 · E — full-open island kitchen study",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -276,11 +276,11 @@
       {
         "id": "starter-20",
         "type": "counter",
-        "name": "West cooking counter · D2 · 1500 mm · oven reserved, SKU TBD",
+        "name": "West cooking wall · E · 1800 mm base run · drawers/storage",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 7948,
-        "w": 1500,
+        "cy": 7890,
+        "w": 1800,
         "d": 600,
         "rot": 270,
         "color": "#E8E2D7",
@@ -289,47 +289,18 @@
         "material_id": "kitchen-soft-ivory"
       },
       {
-        "id": "starter-21",
-        "type": "ksink",
-        "name": "550 mm sink · D2 peninsula · drain/water routing TBD",
-        "room_id": "KIT-01",
-        "cx": 9981,
-        "cy": 6893,
-        "w": 550,
-        "d": 400,
-        "rot": 0,
-        "color": "#eef2f5",
-        "status": "EXPLORATORY",
-        "variant": "style"
-      },
-      {
         "id": "starter-22",
         "type": "stove",
-        "name": "600 mm gas hob · D2 west run · extraction route TBD",
+        "name": "600 mm gas hob · E west wall · hood/extraction TBD",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 7805,
+        "cy": 7800,
         "w": 600,
         "d": 400,
         "rot": 270,
         "color": "#424f61",
         "status": "EXPLORATORY",
         "variant": "style"
-      },
-      {
-        "id": "starter-23",
-        "type": "fridge",
-        "name": "650 mm integrated-fridge envelope · D3 screened position · exact SKU TBD",
-        "room_id": "KIT-01",
-        "cx": 12200,
-        "cy": 8590,
-        "w": 650,
-        "d": 650,
-        "rot": 180,
-        "color": "#E8E2D7",
-        "status": "EXPLORATORY",
-        "variant": "integrated",
-        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "starter-25",
@@ -631,66 +602,6 @@
         "status": "EXPLORATORY"
       },
       {
-        "id": "K3-corner",
-        "type": "counter",
-        "name": "600 mm closed corner cabinet · D2 peninsula junction",
-        "room_id": "KIT-01",
-        "cx": 9381,
-        "cy": 6893,
-        "w": 600,
-        "d": 610,
-        "rot": 0,
-        "color": "#E8E2D7",
-        "variant": "base-only",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
-      },
-      {
-        "id": "K3-dishwasher",
-        "type": "dishwasher",
-        "name": "600 mm integrated dishwasher · adjacent to sink · SKU TBD",
-        "room_id": "KIT-01",
-        "cx": 10581,
-        "cy": 6893,
-        "w": 600,
-        "d": 610,
-        "rot": 0,
-        "color": "#E8E2D7",
-        "variant": "integrated",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
-      },
-      {
-        "id": "K3-sink-base",
-        "type": "counter",
-        "name": "600 mm sink / waste cabinet · nearer wet-wall side",
-        "room_id": "KIT-01",
-        "cx": 9981,
-        "cy": 6893,
-        "w": 600,
-        "d": 610,
-        "rot": 0,
-        "color": "#E8E2D7",
-        "variant": "base-only",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
-      },
-      {
-        "id": "K3-laundry-niche",
-        "type": "counter",
-        "name": "600 mm peninsula prep / closed storage · D3",
-        "room_id": "KIT-01",
-        "cx": 11181,
-        "cy": 6893,
-        "w": 600,
-        "d": 610,
-        "rot": 0,
-        "color": "#E8E2D7",
-        "variant": "base-only",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
-      },
-      {
         "id": "V5-master-rug",
         "type": "rug",
         "name": "Quiet master rug · generic 2600 × 3000",
@@ -735,6 +646,80 @@
         "variant": "style",
         "status": "EXPLORATORY",
         "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "E-tall-pantry",
+        "type": "wardrobe",
+        "name": "450 mm full-height pantry · E",
+        "room_id": "KIT-01",
+        "cx": 10980,
+        "cy": 8660,
+        "w": 450,
+        "d": 600,
+        "rot": 0,
+        "color": "#E8E2D7",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E-oven-column",
+        "type": "ovencol",
+        "name": "600 mm oven / tall storage column · E",
+        "room_id": "KIT-01",
+        "cx": 11525,
+        "cy": 8660,
+        "w": 600,
+        "d": 600,
+        "rot": 0,
+        "color": "#E8E2D7",
+        "variant": "black-glass",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E-fridge",
+        "type": "fridge",
+        "name": "650 mm integrated-fridge envelope · E · exact SKU TBD",
+        "room_id": "KIT-01",
+        "cx": 12185,
+        "cy": 8635,
+        "w": 650,
+        "d": 650,
+        "rot": 0,
+        "color": "#E8E2D7",
+        "variant": "integrated",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E-island",
+        "type": "island",
+        "name": "Freestanding island · E · 1800 × 950 mm · storage + prep",
+        "room_id": "RECP-01",
+        "cx": 10800,
+        "cy": 6100,
+        "w": 1800,
+        "d": 950,
+        "rot": 0,
+        "color": "#E8E2D7",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E-island-sink",
+        "type": "ksink",
+        "name": "550 mm island sink · E · drainage route TBD",
+        "room_id": "RECP-01",
+        "cx": 10480,
+        "cy": 6100,
+        "w": 550,
+        "d": 400,
+        "rot": 0,
+        "color": "#eef2f5",
+        "variant": "style",
+        "status": "EXPLORATORY"
       }
     ],
     "rooms": {
@@ -1441,7 +1426,7 @@
             "inset_mm": 0
           },
           "rotation": 0,
-          "width_mm": 1500,
+          "width_mm": 1800,
           "depth_mm": 5,
           "height_mm": 520,
           "material_references": {
@@ -1450,7 +1435,7 @@
           "colour": "#E5DED1",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "Thin quartz backsplash skin behind cooking run"
+            "role": "Quartz backsplash skin behind E cooking wall"
           }
         },
         {
@@ -1826,10 +1811,10 @@
   },
   "views": [
     {
-      "id": "arch-reception-frontal-v3",
+      "id": "E-reception-overview",
       "room_id": "RECP-01",
       "camera": {
-        "fov": 60,
+        "fov": 65,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -1904,22 +1889,22 @@
           ]
         },
         "position": [
-          2.58,
-          1.7,
-          -0.8
+          5.15,
+          1.72,
+          4.65
         ],
         "target": [
-          2.58,
-          1.35,
-          1.75
+          2.95,
+          1.2,
+          1.2
         ]
       }
     },
     {
-      "id": "arch-kitchen-frontal-v3",
+      "id": "E-kitchen-island",
       "room_id": "KIT-01",
       "camera": {
-        "fov": 60,
+        "fov": 65,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -1994,14 +1979,104 @@
           ]
         },
         "position": [
-          2.68,
-          1.7,
-          3.08
+          1.35,
+          1.72,
+          3.25
         ],
         "target": [
-          2.68,
-          1.35,
-          0.9
+          2.95,
+          1.18,
+          0.65
+        ]
+      }
+    },
+    {
+      "id": "E-dining-to-island",
+      "room_id": "RECP-01",
+      "camera": {
+        "fov": 65,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        },
+        "position": [
+          6.55,
+          1.68,
+          2.8
+        ],
+        "target": [
+          3.1,
+          1.2,
+          1
         ]
       }
     }
@@ -2031,11 +2106,17 @@
     "Reception-facing peninsula back is a thin exploratory joinery skin, not a wall and not final fabrication.",
     "D4 RENDERER CORRECTION: generic counter objects on this study branch can render as base-only/peninsula units, preventing false backsplash/upper cabinets on an open peninsula.",
     "Temporary D3 reception-side sideboard skin removed; the peninsula back is now the actual cabinet massing rather than a second overlapping object.",
-    "Base joinery shifted to soft ivory for a calmer reception sightline; final finish hierarchy remains exploratory."
+    "Base joinery shifted to soft ivory for a calmer reception sightline; final finish hierarchy remains exploratory.",
+    "E FULL-OPEN STUDY: all modeled kitchen↔reception separator wall segments are hidden in the render-only overlay. This does NOT prove they are structurally removable.",
+    "Canonical model contains no explicit column/beam/pier entity at this location; the removed pieces are all 180 mm 'unclassified' wall segments. Structural drawings/site engineer remain mandatory before demolition.",
+    "Storage strategy: ~1800 mm west base run + 1800 mm island cabinet mass + 450 mm full-height pantry + 600 mm oven/tall-storage column + integrated fridge. Island back-side shallow storage is a future joinery option, not yet modeled.",
+    "Island footprint 1800 × 950 mm is placed just north of the former kitchen wall. Modeled west-end passage is ~919 mm to the kitchen/hall boundary; east side is open to reception/dining.",
+    "Island sink is exploratory. Drainage/water routing, dishwasher integration, gas/extraction, exact appliance manuals and service access remain TBD.",
+    "Laundry is not placed in the island. Service-terrace laundry remains a separate MEP/weatherproofing study."
   ],
   "architecture_variant": {
-    "id": "D-main-opening-wide-access",
-    "name": "Main 3.14 m opening + ~1.21 m access, fridge-side screen retained",
+    "id": "E-full-open-island",
+    "name": "Full-open kitchen + freestanding island study",
     "render_only": true,
     "structural_status": "TBD",
     "remove_wall_segments": [
@@ -2051,12 +2132,32 @@
       },
       {
         "from": [
+          12116.59,
+          6587.866
+        ],
+        "to": [
+          12582.613,
+          6969.158
+        ]
+      },
+      {
+        "from": [
           12582.613,
           6969.158
         ],
         "to": [
           12582.613,
           7456.363
+        ]
+      },
+      {
+        "from": [
+          12582.613,
+          8176.58
+        ],
+        "to": [
+          12582.613,
+          8960.346
         ]
       }
     ],
