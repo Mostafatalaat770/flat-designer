@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Architecture Pass 01 · D3 — clean open kitchen massing",
+  "name": "Architecture Pass 01 · D4 — corrected peninsula / base-cabinet massing",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-29d4aa6d",
   "storage_revision": 39,
@@ -283,10 +283,10 @@
         "w": 1500,
         "d": 600,
         "rot": 270,
-        "color": "#B88C5E",
+        "color": "#E8E2D7",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "base-only",
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "starter-21",
@@ -640,10 +640,10 @@
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#B88C5E",
-        "variant": "style",
+        "color": "#E8E2D7",
+        "variant": "base-only",
         "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "K3-dishwasher",
@@ -655,10 +655,10 @@
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#E8E2D7",
         "variant": "integrated",
         "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "K3-sink-base",
@@ -670,10 +670,10 @@
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#B88C5E",
-        "variant": "style",
+        "color": "#E8E2D7",
+        "variant": "base-only",
         "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "K3-laundry-niche",
@@ -685,10 +685,10 @@
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#B88C5E",
-        "variant": "style",
+        "color": "#E8E2D7",
+        "variant": "base-only",
         "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "V5-master-rug",
@@ -1529,30 +1529,6 @@
           "metadata": {
             "role": "Single taupe line artwork over east-wall bed; deliberately distinct from Bedroom 1"
           }
-        },
-        {
-          "id": "D3-peninsula-back",
-          "type": "sideboard",
-          "variant": "plain",
-          "room_id": "RECP-01",
-          "placement": {
-            "mode": "floor"
-          },
-          "cx": 10281,
-          "cy": 6537,
-          "rotation": 0,
-          "width_mm": 2400,
-          "depth_mm": 95,
-          "height_mm": 900,
-          "material_references": {
-            "primary": "a1-natural-oak"
-          },
-          "colour": "#B88C5E",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "Reception-facing finished peninsula back; thin joinery skin / storage-front concept, not structural wall",
-            "note": "Exact panel build-up, toe-kick, countertop overhang and services TBD"
-          }
         }
       ],
       "materials": [
@@ -2052,7 +2028,10 @@
     "Laundry is removed from the peninsula and represented as closed prep/storage. A protected service-terrace laundry concept will be studied separately with drainage/weather/electrical requirements; no relocation is approved yet.",
     "Fridge uses an integrated visual variant to reduce appliance exposure from the reception; exact door swing, ventilation grille and service pull-out remain manufacturer-dependent.",
     "Heavy west upper cabinets removed for this comparison. Storage capacity must be recovered in the developed joinery design before approval.",
-    "Reception-facing peninsula back is a thin exploratory joinery skin, not a wall and not final fabrication."
+    "Reception-facing peninsula back is a thin exploratory joinery skin, not a wall and not final fabrication.",
+    "D4 RENDERER CORRECTION: generic counter objects on this study branch can render as base-only/peninsula units, preventing false backsplash/upper cabinets on an open peninsula.",
+    "Temporary D3 reception-side sideboard skin removed; the peninsula back is now the actual cabinet massing rather than a second overlapping object.",
+    "Base joinery shifted to soft ivory for a calmer reception sightline; final finish hierarchy remains exploratory."
   ],
   "architecture_variant": {
     "id": "D-main-opening-wide-access",
