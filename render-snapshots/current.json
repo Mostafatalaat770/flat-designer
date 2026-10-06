@@ -378,10 +378,10 @@
       {
         "id": "starter-32",
         "type": "armchair",
-        "name": "Single olive lounge chair · linked to family living",
+        "name": "Single olive lounge chair · E2 shifted north to protect island circulation",
         "room_id": "RECP-01",
-        "cx": 11650,
-        "cy": 4250,
+        "cx": 11620,
+        "cy": 3890,
         "w": 700,
         "d": 720,
         "rot": 135,
@@ -2275,7 +2275,8 @@
     "Island sink + integrated dishwasher are preferred for workflow but remain MEP-dependent. If floor drainage/water routing is impractical, E2 must branch to a dry-island alternative rather than forcing plumbing.",
     "Gas hob stays on the west wall rather than the island so extraction can be ducted/screened more conventionally and the social face of the island remains clean.",
     "Exact appliance installation, ventilation, hinge clearances, electrical outlets, hood duct routing, gas shutoff/access and fire clearances must follow selected manufacturer manuals and Egyptian/local requirements.",
-    "The canonical model contains no explicit column/beam/pier object at the removed separator; all removed pieces are 180 mm unclassified wall segments. This remains insufficient evidence for demolition approval."
+    "The canonical model contains no explicit column/beam/pier object at the removed separator; all removed pieces are 180 mm unclassified wall segments. This remains insufficient evidence for demolition approval.",
+    "E2 circulation repair: living armchair shifted ~360 mm north after a bounding-box check found only ~740 mm to the island. Revised approximate chair-to-island gap is >1000 mm; exact rotated-mesh clearance remains render/QA-dependent."
   ],
   "architecture_variant": {
     "id": "E2-developed-full-open",
