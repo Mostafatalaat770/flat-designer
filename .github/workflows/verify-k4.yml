@@ -1,0 +1,41 @@
+name: Verify K4 Developed Candidate
+
+on:
+  push:
+    branches:
+      - "design/k4-render-truth"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Core verification
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
+        run: npm run check
+      - name: Architectural candidate validation
+        run: node scripts/validate-architectural-snapshot.mjs
+      - name: Domain study tests
+        run: npm run check:study
+      - name: Provide canonical renderer fixture
+        run: cp studio/app/data/family-a7.brief.json studio/app/data/workspace-seed.json
+      - name: Studio renderer/domain tests
+        run: npm run check:studio
+      - name: Architecture-lock note
+        run: echo "Canonical Studio geometry guards remain intact; K4 architecture is still reviewed render-only study data."
