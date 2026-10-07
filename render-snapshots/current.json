@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "K2 — ceiling simplification + truthful island back",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-d4dac7c",
+  "scene_revision": "scene-837405f5",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -652,10 +652,10 @@
       {
         "id": "E2-island-sink",
         "type": "ksink",
-        "name": "J1 550 mm island sink · south module · drainage route TBD",
+        "name": "K2 550 mm island sink · centred in 600 mm south sink-base module",
         "room_id": "RECP-01",
         "cx": 11350,
-        "cy": 6770,
+        "cy": 6650,
         "w": 550,
         "d": 400,
         "rot": 270,
@@ -2312,7 +2312,9 @@
     "K2 VISUAL QA: remove the G2 living-side ceiling pocket because the integrated J1 renders showed it reading as a heavy beam/bulkhead. Retain only the local kitchen/tall-unit service pocket until room-by-room HVAC sizing and duct routes are established.",
     "K2 island back: add approximately 280 mm shallow reception-facing storage in natural-oak joinery so the 1700 × 900 island reads as furniture rather than a floating sink/worktop.",
     "Island fabrication logic for development: about 600 mm sink base + 600 mm fully-integrated dishwasher + about 500 mm drawer/storage module along the 1700 mm length; reception side uses shallow storage within the 900 mm overall depth. Exact fillers, carcass thicknesses, plumbing void and appliance front dimensions remain TBD.",
-    "Do not add bar stools: six-seat dining is adjacent, and the island volume is more valuable as storage/prep."
+    "Do not add bar stools: six-seat dining is adjacent, and the island volume is more valuable as storage/prep.",
+    "K2 island module correction: 1700 mm length allocated approximately as 400 mm storage + 600 mm integrated dishwasher + 600 mm sink base + 100 mm south end/filler. Sink-bowl centre moved to y=6650, leaving roughly 125 mm worktop from the 550 mm bowl envelope to the south island end.",
+    "This increases the sink-centre shift from the original kitchen sink to roughly 380 mm, still a compact wet-service relocation but requiring confirmed trap/drain route and floor build-up."
   ],
   "architecture_variant": {
     "id": "K2-kitchen-service-pocket-only",
