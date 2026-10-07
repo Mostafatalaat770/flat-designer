@@ -9,6 +9,7 @@ on:
       - "scripts/render-snapshot.mjs"
       - ".github/workflows/render-apartment.yml"
       - "capture-renderer.js"
+      - "scripts/verify-render-overlay.mjs"
       - "build_capture.mjs"
       - "make_app.py"
       - "generate_model.py"
@@ -32,7 +33,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -55,12 +56,16 @@ jobs:
       - name: Build exact Studio capture template
         run: npm run build
 
+      - name: Verify render-only finish repairs
+        run: node scripts/verify-render-overlay.mjs
+
       - name: Render branch snapshot
         env:
           SNAPSHOT_PATH: ${{ github.event.inputs.snapshot || 'render-snapshots/current.json' }}
         run: node scripts/render-snapshot.mjs "$SNAPSHOT_PATH"
 
       - name: Upload PNGs and metadata
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: apartment-renders-${{ github.run_id }}-${{ github.sha }}

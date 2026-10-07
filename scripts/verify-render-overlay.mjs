@@ -1,0 +1,50 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+import * as THREE from '../dist/vendor/three/build/three.module.js';
+
+const model=JSON.parse(fs.readFileSync('dist/apartment-model.json','utf8'));
+const snapshot=JSON.parse(fs.readFileSync('render-snapshots/current.json','utf8'));
+const original=JSON.stringify({model,snapshot});
+const source=fs.readFileSync('capture-renderer.js','utf8').split('/* This boot')[0];
+const groups={archUp:new THREE.Group(),archFloor:new THREE.Group(),sceneDecorG:new THREE.Group()};
+const removed=snapshot.architecture_variant.remove_wall_segments[0];
+const retained=model.wall_segments.find(s=>s.from[1]===550.754);
+assert.ok(retained);
+function fixture(group,key,value){const mesh=new THREE.Mesh(new THREE.BoxGeometry(.1,.1,.1),new THREE.MeshBasicMaterial());mesh.userData[key]=value;group.add(mesh);return mesh;}
+const removedWall=fixture(groups.archUp,'wallSegment',removed);
+const retainedWall=fixture(groups.archUp,'wallSegment',retained);
+const removedTrim=fixture(groups.sceneDecorG,'hostWallSegment',{from:removed.to,to:removed.from});
+const retainedTrim=fixture(groups.sceneDecorG,'hostWallSegment',retained);
+const freeFurniture=fixture(groups.sceneDecorG,'fid','independent-furniture');
+const hiddenThreshold=fixture(groups.archFloor,'openingId','OP-RECP-KIT');
+const entryThreshold=fixture(groups.archFloor,'openingId','OP-ENT-01');
+for(const id of ['RECP-01','KIT-01'])fixture(groups.archUp,'ceilingFor',id);
+const shapeOf=(poly,flip)=>{const s=new THREE.Shape();poly.forEach(([x,z],i)=>s[i?'lineTo':'moveTo']((x-model.width_mm/2)/1000,flip?(z-model.depth_mm/2)/1000:-(z-model.depth_mm/2)/1000));return s;};
+const context=vm.createContext({...groups,THREE,H:2.5,M:n=>n/1000,wx:n=>(n-model.width_mm/2)/1000,wz:n=>(n-model.depth_mm/2)/1000,shapeOf,doors:[],wallMat:new THREE.MeshBasicMaterial(),capMat:new THREE.MeshBasicMaterial()});
+vm.runInContext(source,context);
+const result=context.applyApartmentArchitectureVariant(snapshot.architecture_variant);
+assert.equal(removedWall.visible,false);
+assert.equal(removedTrim.visible,false,'A removed wall must not leave its skirting behind');
+assert.equal(hiddenThreshold.visible,false,'A hidden door must not leave its threshold behind');
+for(const o of [retainedWall,retainedTrim,entryThreshold,freeFurniture])assert.equal(o.visible,true,'Unrelated geometry must stay visible');
+assert.equal(result.wall_finishes_hidden,1);
+assert.equal(result.opening_thresholds_hidden,1);
+assert.throws(()=>context.applyApartmentArchitectureVariant({render_only:false}),/render-only/);
+
+const merged=groups.archUp.children.find(o=>o.userData.mergedCeilingStudy);
+assert.ok(merged);
+assert.equal(merged.position.y,2.5,'Keep the verified clear height');
+const raycaster=new THREE.Raycaster();
+function covered([x,z]){groups.archUp.updateMatrixWorld(true);raycaster.set(new THREE.Vector3((x-model.width_mm/2)/1000,1.7,(z-model.depth_mm/2)/1000),new THREE.Vector3(0,1,0));return raycaster.intersectObject(merged).length>0;}
+const recp=model.rooms.find(r=>r.id==='RECP-01').poly;
+const kit=model.rooms.find(r=>r.id==='KIT-01').poly;
+for(const z of [7050,7700,8850])assert.ok(covered([(recp[6][0]+kit[3][0])/2,z]),'The former traced separator seam must have a ceiling');
+assert.ok(covered([11000,6500]),'Interior kitchen/reception ceiling remains present');
+assert.equal(covered([14000,1500]),false,'Do not roof over the main terrace');
+assert.equal(covered([11000,9500]),false,'Do not enlarge the merged ceiling into service/WC rooms');
+assert.equal(JSON.stringify({model,snapshot}),original,'Overlay must not mutate model or saved layout');
+const canonical=fs.readFileSync('dist/sources/Apartment_Master_Spec_Type_B_v0.2.2_Geometry_Heights_Glazing(1).json');
+assert.equal(crypto.createHash('sha256').update(canonical).digest('hex'),snapshot.canonical_sha256);
+console.log(JSON.stringify({result:'PASS',checks:'wall-linked trims, opening thresholds, retained geometry, seam coverage, external exclusions, 2.50 m height and immutable canonical source',overlay:result}));

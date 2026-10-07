@@ -1,11 +1,10 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
 const snapshotPath=process.argv[2]||'render-snapshots/current.json';
 const snapshot=JSON.parse(await fs.readFile(snapshotPath,'utf8'));
-function sceneKey(scene){let h=2166136261;for(const c of JSON.stringify(scene)){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return 'scene-'+(h>>>0).toString(16);}
-snapshot.scene_revision=sceneKey(snapshot.layout);
 const template=JSON.parse(await fs.readFile('dist/capture-template.json','utf8')).html;
 const outDir=process.env.RENDER_OUT_DIR||'renders';
 await fs.mkdir(outDir,{recursive:true});
@@ -65,37 +64,66 @@ console.log(`embedded ${Object.keys(assetUrls).length} local render assets`);
 
 const browser=await chromium.launch({headless:true,args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist']});
 try{
-  for(const view of snapshot.views){
+  const renderView=async(view)=>{
     const page=await browser.newPage({viewport:view.camera.viewport});
-    page.on('pageerror', error=>console.error(`page error in ${view.id}: ${error.message}`));
-    console.log(`rendering ${view.id}`);
-    const frameId=`${snapshot.scene_revision}-${view.id}`;
-    const input={
-      frame_id:frameId,
-      room_id:view.room_id,
-      canonical_sha256:snapshot.canonical_sha256,
-      snapshot_sha256:snapshotHash,
-      scene_revision:snapshot.scene_revision,
-      storage_revision:snapshot.storage_revision,
-      layout:snapshot.layout,
-      camera:view.camera,
-      asset_urls:assetUrls,
-      architecture_variant:snapshot.architecture_variant||null
-    };
-    const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
-    await page.setContent(html,{waitUntil:'load'});
-    await page.waitForFunction((id)=>{
-      const err=document.body?.dataset?.captureError;
-      if(err) throw new Error(err);
-      return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
-    },frameId,{timeout:120000});
-    const canvas=page.locator('#apartment-capture-canvas');
-    await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
-    const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
-    await fs.writeFile(path.join(outDir,`${view.id}.json`),JSON.stringify(metadata,null,2));
-    await page.close();
-    console.log(`rendered ${view.id}`);
-  }
+    try{
+      page.on('pageerror', error=>console.error(`page error in ${view.id}: ${error.message}`));
+      console.log(`rendering ${view.id}`);
+      const frameId=`${snapshot.scene_revision}-${view.id}`;
+      const input={
+        frame_id:frameId,
+        room_id:view.room_id,
+        canonical_sha256:snapshot.canonical_sha256,
+        snapshot_sha256:snapshotHash,
+        scene_revision:snapshot.scene_revision,
+        storage_revision:snapshot.storage_revision,
+        layout:snapshot.layout,
+        camera:view.camera,
+        asset_urls:assetUrls,
+        architecture_variant:snapshot.architecture_variant||null
+      };
+      const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
+      await page.setContent(html,{waitUntil:'load'});
+      await page.waitForFunction((id)=>{
+        const err=document.body?.dataset?.captureError;
+        if(err) throw new Error(err);
+        return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
+      },frameId,{timeout:180000});
+      const canvas=page.locator('#apartment-capture-canvas');
+      await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
+      const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
+      assert.equal(metadata.scene_revision,snapshot.scene_revision);
+      assert.equal(metadata.canonical_sha256,snapshot.canonical_sha256);
+      assert.equal(metadata.rendered_layout_json,snapshotJson);
+      assert.equal(metadata.room_id,view.room_id);
+      assert.deepEqual(metadata.architecture_variant,input.architecture_variant);
+      for(const key of ['position','target','fov','aspect','near','far','viewport'])assert.deepEqual(metadata.camera[key],view.camera[key],`Capture camera ${key} changed for ${view.id}`);
+      assert.equal(metadata.assets.pending,0);
+      assert.deepEqual(metadata.assets.fallbacks,[]);
+      await fs.writeFile(path.join(outDir,`${view.id}.json`),JSON.stringify(metadata,null,2));
+      console.log(`rendered ${view.id}`);
+    } finally {
+      await page.close();
+    }
+  };
+
+  const concurrency=Math.max(1,Number(process.env.RENDER_CONCURRENCY||2));
+  let nextView=0;
+  const workers=Array.from({length:Math.min(concurrency,snapshot.views.length)},async()=>{
+    while(true){
+      const index=nextView++;
+      if(index>=snapshot.views.length) return;
+      try{
+        await renderView(snapshot.views[index]);
+      }catch(error){
+        if(error?.name!=='TimeoutError')throw error;
+        console.warn(`retrying ${snapshot.views[index].id} once after a renderer timeout`);
+        await renderView(snapshot.views[index]);
+      }
+    }
+  });
+  await Promise.all(workers);
+
   await fs.writeFile(path.join(outDir,'manifest.json'),JSON.stringify({
     schema:'ApartmentGitHubRenderManifest/1',
     snapshot:path.basename(snapshotPath),

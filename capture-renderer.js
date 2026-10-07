@@ -1,6 +1,6 @@
 /* Render-only architectural study overlay. Canonical geometry remains untouched. */
 function applyApartmentArchitectureVariant(variant){
-  if(!variant)return {wall_segments_hidden:0,wall_segments_added:0,wall_boxes_added:0,canonical_ceilings_hidden:0,merged_ceilings_added:0,openings_hidden:0,opening_headers_hidden:0,door_overrides:0};
+  if(!variant)return {wall_segments_hidden:0,wall_finishes_hidden:0,wall_segments_added:0,wall_boxes_added:0,canonical_ceilings_hidden:0,merged_ceilings_added:0,openings_hidden:0,opening_headers_hidden:0,opening_thresholds_hidden:0,door_overrides:0};
   if(variant.render_only!==true)throw new Error('Architecture variant must be explicitly render-only.');
   const samePoint=(a,b)=>Math.abs(a[0]-b[0])<0.6&&Math.abs(a[1]-b[1])<0.6;
   const sameSegment=(s,r)=>(samePoint(s.from,r.from)&&samePoint(s.to,r.to))||(samePoint(s.from,r.to)&&samePoint(s.to,r.from));
@@ -9,6 +9,11 @@ function applyApartmentArchitectureVariant(variant){
   archUp.traverse(o=>{
     const s=o.userData?.wallSegment;
     if(s&&removals.some(r=>sameSegment(s,r))){o.visible=false;wallSegmentsHidden++;}
+  });
+  let wallFinishesHidden=0;
+  sceneDecorG.traverse(o=>{
+    const host=o.userData?.hostWallSegment;
+    if(host&&removals.some(r=>sameSegment(host,r))){o.visible=false;wallFinishesHidden++;}
   });
 
   let wallSegmentsAdded=0;
@@ -56,7 +61,13 @@ function applyApartmentArchitectureVariant(variant){
       o.visible=false;openingHeadersHidden++;
     }
   });
-  return {wall_segments_hidden:wallSegmentsHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,canonical_ceilings_hidden:canonicalCeilingsHidden,merged_ceilings_added:mergedCeilingsAdded,openings_hidden:openingsHidden,opening_headers_hidden:openingHeadersHidden,door_overrides:0};
+  let openingThresholdsHidden=0;
+  archFloor.traverse(o=>{
+    if(o.userData?.openingId&&hiddenIds.has(o.userData.openingId)){
+      o.visible=false;openingThresholdsHidden++;
+    }
+  });
+  return {wall_segments_hidden:wallSegmentsHidden,wall_finishes_hidden:wallFinishesHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,canonical_ceilings_hidden:canonicalCeilingsHidden,merged_ceilings_added:mergedCeilingsAdded,openings_hidden:openingsHidden,opening_headers_hidden:openingHeadersHidden,opening_thresholds_hidden:openingThresholdsHidden,door_overrides:0};
 }
 function applyApartmentDoorOverrides(variant,result){
   const overrides=Array.isArray(variant?.door_overrides)?variant.door_overrides:[];

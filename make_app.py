@@ -215,7 +215,7 @@ function('buildArch','''function buildArch(){
   }
   [...DOORS,...SLIDES,...PASSAGES].forEach(d=>{
     const [x0,y0,x1,y1]=d.rect;
-    const threshold=box(M(x1-x0),.012,M(y1-y0),mat('#bfcad3',{roughness:.5}),wx((x0+x1)/2),0,wz((y0+y1)/2));threshold.castShadow=false;archFloor.add(threshold);
+    const threshold=box(M(x1-x0),.012,M(y1-y0),mat('#bfcad3',{roughness:.5}),wx((x0+x1)/2),0,wz((y0+y1)/2));threshold.castShadow=false;threshold.userData.openingId=d.id;archFloor.add(threshold);
   });
   WALL_SEGMENTS.forEach(s=>{
     const [x0,z0]=s.from,[x1,z1]=s.to,dx=M(x1-x0),dz=M(z1-z0),height=Math.min(s.height_m,top);
