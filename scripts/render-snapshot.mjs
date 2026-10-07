@@ -63,36 +63,51 @@ console.log(`embedded ${Object.keys(assetUrls).length} local render assets`);
 
 const browser=await chromium.launch({headless:true,args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist']});
 try{
-  for(const view of snapshot.views){
+  const renderView=async(view)=>{
     const page=await browser.newPage({viewport:view.camera.viewport});
-    page.on('pageerror', error=>console.error(`page error in ${view.id}: ${error.message}`));
-    console.log(`rendering ${view.id}`);
-    const frameId=`${snapshot.scene_revision}-${view.id}`;
-    const input={
-      frame_id:frameId,
-      room_id:view.room_id,
-      canonical_sha256:snapshot.canonical_sha256,
-      snapshot_sha256:snapshotHash,
-      scene_revision:snapshot.scene_revision,
-      storage_revision:snapshot.storage_revision,
-      layout:snapshot.layout,
-      camera:view.camera,
-      asset_urls:assetUrls
-    };
-    const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
-    await page.setContent(html,{waitUntil:'load'});
-    await page.waitForFunction((id)=>{
-      const err=document.body?.dataset?.captureError;
-      if(err) throw new Error(err);
-      return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
-    },frameId,{timeout:120000});
-    const canvas=page.locator('#apartment-capture-canvas');
-    await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
-    const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
-    await fs.writeFile(path.join(outDir,`${view.id}.json`),JSON.stringify(metadata,null,2));
-    await page.close();
-    console.log(`rendered ${view.id}`);
-  }
+    try{
+      page.on('pageerror', error=>console.error(`page error in ${view.id}: ${error.message}`));
+      console.log(`rendering ${view.id}`);
+      const frameId=`${snapshot.scene_revision}-${view.id}`;
+      const input={
+        frame_id:frameId,
+        room_id:view.room_id,
+        canonical_sha256:snapshot.canonical_sha256,
+        snapshot_sha256:snapshotHash,
+        scene_revision:snapshot.scene_revision,
+        storage_revision:snapshot.storage_revision,
+        layout:snapshot.layout,
+        camera:view.camera,
+        asset_urls:assetUrls
+      };
+      const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
+      await page.setContent(html,{waitUntil:'load'});
+      await page.waitForFunction((id)=>{
+        const err=document.body?.dataset?.captureError;
+        if(err) throw new Error(err);
+        return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
+      },frameId,{timeout:120000});
+      const canvas=page.locator('#apartment-capture-canvas');
+      await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
+      const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
+      await fs.writeFile(path.join(outDir,`${view.id}.json`),JSON.stringify(metadata,null,2));
+      console.log(`rendered ${view.id}`);
+    } finally {
+      await page.close();
+    }
+  };
+
+  const concurrency=Math.max(1,Number(process.env.RENDER_CONCURRENCY||2));
+  let nextView=0;
+  const workers=Array.from({length:Math.min(concurrency,snapshot.views.length)},async()=>{
+    while(true){
+      const index=nextView++;
+      if(index>=snapshot.views.length) return;
+      await renderView(snapshot.views[index]);
+    }
+  });
+  await Promise.all(workers);
+
   await fs.writeFile(path.join(outDir,'manifest.json'),JSON.stringify({
     schema:'ApartmentGitHubRenderManifest/1',
     snapshot:path.basename(snapshotPath),
