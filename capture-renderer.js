@@ -1,6 +1,6 @@
 /* Render-only architectural study overlay. Canonical geometry remains untouched. */
 function applyApartmentArchitectureVariant(variant){
-  if(!variant)return {wall_segments_hidden:0,wall_segments_added:0,wall_boxes_added:0,openings_hidden:0,door_overrides:0};
+  if(!variant)return {wall_segments_hidden:0,wall_segments_added:0,wall_boxes_added:0,openings_hidden:0,opening_headers_hidden:0,door_overrides:0};
   if(variant.render_only!==true)throw new Error('Architecture variant must be explicitly render-only.');
   const samePoint=(a,b)=>Math.abs(a[0]-b[0])<0.6&&Math.abs(a[1]-b[1])<0.6;
   const sameSegment=(s,r)=>(samePoint(s.from,r.from)&&samePoint(s.to,r.to))||(samePoint(s.from,r.to)&&samePoint(s.to,r.from));
@@ -36,7 +36,13 @@ function applyApartmentArchitectureVariant(variant){
     if(d.sliding)d.panels?.forEach(p=>p.visible=false);
     else if(d.pivot)d.pivot.visible=false;
   }
-  return {wall_segments_hidden:wallSegmentsHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,openings_hidden:openingsHidden,door_overrides:0};
+  let openingHeadersHidden=0;
+  archUp.traverse(o=>{
+    if(o.userData?.openingHeaderId&&hiddenIds.has(o.userData.openingHeaderId)){
+      o.visible=false;openingHeadersHidden++;
+    }
+  });
+  return {wall_segments_hidden:wallSegmentsHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,openings_hidden:openingsHidden,opening_headers_hidden:openingHeadersHidden,door_overrides:0};
 }
 function applyApartmentDoorOverrides(variant,result){
   const overrides=Array.isArray(variant?.door_overrides)?variant.door_overrides:[];
