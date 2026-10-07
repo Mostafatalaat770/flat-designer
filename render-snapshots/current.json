@@ -2300,7 +2300,8 @@
     "K4 VISUAL TRUTH: speculative HVAC pocket boxes are removed from the architectural render. The reception/kitchen ceiling is shown at the verified 2.50 m clear design plane until exact MEP equipment, return/supply layout, condensate route and access requirements are selected.",
     "HVAC feasibility remains an engineering workstream, not deleted: prior G2 reserved localized service space as a concept, but K4 refuses to show an unverified bulkhead as if it were final architecture.",
     "K4 capture renderer receives an explicit final-pass builder for base-only/peninsula counters so the island and west cooking base render as actual cabinet carcasses with fronts and worktops.",
-    "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged."
+    "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged.",
+    "K4 material-truth repair: integrated fridge and oven-column renderer now respect their assigned soft-ivory material; no layout dimensions changed."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
