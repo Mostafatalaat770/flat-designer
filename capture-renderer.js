@@ -38,7 +38,7 @@ function applyApartmentArchitectureVariant(variant){
     });
     if(!Array.isArray(spec.poly)||spec.poly.length<3)continue;
     const geo=new THREE.ShapeGeometry(shapeOf(spec.poly,true));geo.rotateX(Math.PI/2);
-    const ceil=new THREE.Mesh(geo,mat(spec.colour||'#fbfaf7',{roughness:1}));
+    const ceil=new THREE.Mesh(geo,new THREE.MeshBasicMaterial({color:spec.colour||'#fbfaf7',side:THREE.DoubleSide}));
     ceil.position.y=spec.height_m??H;ceil.userData.mergedCeilingStudy=spec;archUp.add(ceil);mergedCeilingsAdded++;
   }
 
