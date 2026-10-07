@@ -71,6 +71,13 @@ const operating=tall.map(o=>({id:o.id,mm:domainContext.interiorOperatingDistance
 for(const r of operating)assert.ok(r.mm>=900,r.id+' must have an unobstructed conceptual front approach');
 for(const id of ['E2-oven-column','E2-pantry-tall'])assert.ok(Math.abs(operating.find(r=>r.id===id).mm-1220)<.001,'Include the cross-room island in the approach calculation');
 
+const washer=solids.find(o=>o.id==='H1-terrace-washer');
+assert.ok(washer);
+assert.deepEqual([washer.cx,washer.cy,washer.w,washer.d,washer.rot],[9170,9600,600,650,270],'Preserve the laundry footprint and face its door toward the east use area');
+const washerOperating=domainContext.interiorOperatingDistance(washer,solids,model);
+assert.ok(Math.abs(washerOperating-1154.705)<.001,'Check the washer against the actual terrace parapets');
+assert.equal(domainContext.interiorOperatingDistance({...washer,rot:90},solids,model),0,'The old washer front faces the west parapet');
+
 // A flush adjacent cabinet is a tangent; a cabinet in front remains an obstacle.
 const cabinet={id:'test-unit',room_id:'TEST',cx:0,cy:0,w:600,d:600,rot:0,bottom_mm:0,top_mm:2200,type:'ovencol'};
 const testModel={wall_segments:[],rooms:[{id:'TEST',poly:[[-5000,-5000],[5000,-5000],[5000,5000],[-5000,5000]]}]};
@@ -79,4 +86,4 @@ assert.equal(domainContext.interiorOperatingDistance(cabinet,[cabinet,adjacent],
 const blocker={...cabinet,id:'front-unit',cy:1200};
 assert.equal(domainContext.interiorOperatingDistance(cabinet,[cabinet,adjacent,blocker],testModel),600,'Keep a real front obstruction');
 assert.equal(JSON.stringify({model,snapshot}),original,'Diagnostics must not alter the architectural source or candidate');
-console.log(JSON.stringify({result:'PASS',checks:'wall-linked trims, opening thresholds, retained geometry, seam coverage, external exclusions, 2.50 m height, tall-unit orientation, genuine operating obstructions and immutable canonical source',overlay:result,render_only_operating_diagnostic:operating}));
+console.log(JSON.stringify({result:'PASS',checks:'wall-linked trims, opening thresholds, retained geometry, seam coverage, external exclusions, 2.50 m height, tall-unit and washer orientation, genuine operating obstructions and immutable canonical source',overlay:result,render_only_operating_diagnostic:operating,washer_front_clearance_mm:washerOperating}));

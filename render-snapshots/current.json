@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "K8 — continuous ceiling and usable tall-unit fronts",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-210aba9b",
+  "scene_revision": "scene-ee04adb3",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -700,7 +700,7 @@
         "cy": 9600,
         "w": 600,
         "d": 650,
-        "rot": 90,
+        "rot": 270,
         "color": "#E6E8EA",
         "variant": "style",
         "status": "EXPLORATORY"
@@ -2671,7 +2671,8 @@
     "K8 ceiling repair: cap the 21.183 mm source-trace seam at the former separator using the canonical outer room contours. This affects the review finish mesh only; canonical source polygons, ceiling height and furniture are unchanged.",
     "K8 restores all eight locked J1 comparison cameras for a whole-candidate review, rather than treating one successful kitchen frame as complete evidence.",
     "K8 review correction: oven column, fridge and pantry rotate 180 degrees to face the north work aisle. Their centres, dimensions and footprints stay fixed; no room or wall geometry changes.",
-    "K8 operating-strip calculation uses the verified master tangent correction; edge-only contact with adjacent cabinets is excluded while real front obstructions remain. The canonical validator still sees the retained kitchen partition; the render-only merged-room diagnostic is recorded separately and does not certify installation."
+    "K8 operating-strip calculation uses the verified master tangent correction; edge-only contact with adjacent cabinets is excluded while real front obstructions remain. The canonical validator still sees the retained kitchen partition; the render-only merged-room diagnostic is recorded separately and does not certify installation.",
+    "K8 service-view correction: the terrace washer rotates 90 to 270 degrees to face the east use area. The existing 600 × 650 mm footprint and centre remain fixed; measured model-front space is 1154.705 mm. Outdoor exposure, weather protection, drainage and electrical/manufacturer requirements remain unapproved."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
