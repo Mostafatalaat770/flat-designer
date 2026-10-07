@@ -50,10 +50,11 @@ jobs:
       - name: Install project dependencies
         run: npm ci
 
-      - name: Install Playwright Chromium
+      - name: Install headless Chromium
+        timeout-minutes: 5
         run: |
-          npm install --no-save playwright
-          npx playwright install --with-deps chromium
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
 
       - name: Build exact Studio capture template
         run: npm run build
@@ -74,3 +75,4 @@ jobs:
           path: renders/
           if-no-files-found: error
           retention-days: 14
+
