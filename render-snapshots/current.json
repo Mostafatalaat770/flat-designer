@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K3 — indoor laundry tower + under-hob oven strategy",
+  "name": "K4 Refined Candidate — warm continuous floor + indoor laundry + truthful island",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-75ccf111",
+  "scene_revision": "scene-d85ca724",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -726,7 +726,7 @@
       },
       "KIT-01": {
         "name": "Kitchen",
-        "mat": "tile800"
+        "mat": "lightoak"
       },
       "TER-SVC": {
         "name": "Service terrace",
@@ -1853,18 +1853,18 @@
   },
   "views": [
     {
-      "id": "K3-tall-wall",
-      "room_id": "KIT-01",
+      "id": "K4-entry-dining",
+      "room_id": "RECP-01",
       "camera": {
         "position": [
-          3.65,
-          1.62,
-          2.2
+          6.72,
+          1.67,
+          4.7
         ],
         "target": [
-          3.55,
+          6.65,
           1.1,
-          3.55
+          2.45
         ],
         "fov": 58,
         "projection_type": "perspective",
@@ -1943,7 +1943,7 @@
       }
     },
     {
-      "id": "K3-dining-kitchen",
+      "id": "K4-dining-kitchen",
       "room_id": "RECP-01",
       "camera": {
         "position": [
@@ -2033,7 +2033,187 @@
       }
     },
     {
-      "id": "K3-kitchen-work",
+      "id": "K4-living-kitchen",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          4.85,
+          1.67,
+          0.55
+        ],
+        "target": [
+          3.25,
+          1.22,
+          1.45
+        ],
+        "fov": 62,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "K4-island-back",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          4.8,
+          1.55,
+          1.55
+        ],
+        "target": [
+          3.3,
+          1.05,
+          1.4
+        ],
+        "fov": 58,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "K4-kitchen-work",
       "room_id": "KIT-01",
       "camera": {
         "position": [
@@ -2123,7 +2303,7 @@
       }
     },
     {
-      "id": "K3-service-terrace",
+      "id": "K4-service-terrace",
       "room_id": "TER-SVC",
       "camera": {
         "position": [
@@ -2305,7 +2485,9 @@
     "K3 tall wall sequence west→east: 600 indoor laundry / 600 pantry / 600 integrated fridge. The available ~1843 mm wall segment leaves only modest fillers; site measurement and appliance ventilation/shop drawings are mandatory.",
     "Reference only: Bosch WIW28302GB previously used in the project is an indoor built-in washer reference. Exact local SKU, ventilation, water/drain, electrical isolation, service access and cabinet moisture protection remain TBD.",
     "This strategy is preferred over an exposed service-terrace washer if outdoor exposure or manufacturer warranty conditions cannot be made robust.",
-    "K3 renderer-truth refinement inherited: kitchen service pocket aligned to tall-unit front at y=8270; island back uses solid-panel joinery proxy with no fake furniture legs."
+    "K3 renderer-truth refinement inherited: kitchen service pocket aligned to tall-unit front at y=8270; island back uses solid-panel joinery proxy with no fake furniture legs.",
+    "K4 consolidates the preferred refinements: K3 indoor laundry/tall-wall strategy, K2 simplified ceiling and truthful island joinery representation, and K1B continuous warm floor across living/dining/kitchen.",
+    "The lightoak renderer material is a VISUAL PROXY. Final public-zone floor direction is premium wood-look porcelain/ceramic or equivalent kitchen-suitable hard finish, selected by full-size sample, slip/stain performance, rectification/joint quality and local availability."
   ],
   "architecture_variant": {
     "id": "K2-kitchen-service-pocket-only",
