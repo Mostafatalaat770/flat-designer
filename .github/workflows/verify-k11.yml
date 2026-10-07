@@ -1,0 +1,59 @@
+name: Verify K11 Daily-Use Kitchen Study
+
+on:
+  push:
+    branches:
+      - "design/k11-kitchen-daily-use"
+    paths:
+      - "*.js"
+      - "*.mjs"
+      - "*.py"
+      - "scripts/**"
+      - "studio/**"
+      - "design-development/k11/**"
+      - "render-snapshots/current.json"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Core verification
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
+        run: npm run check
+      - name: Reproduce both kitchen modes from frozen K10
+        run: |
+          cp -r design-development/k11 /tmp/k11-frozen
+          node scripts/prepare-k11-kitchen.mjs design-development/k10/snapshot.json
+          diff -u /tmp/k11-frozen/snapshot.json design-development/k11/snapshot.json
+          diff -u /tmp/k11-frozen/prep-mode.json design-development/k11/prep-mode.json
+          diff -u /tmp/k11-frozen/function-audit.json design-development/k11/function-audit.json
+          diff -u /tmp/k11-frozen/storage-allocation.json design-development/k11/storage-allocation.json
+          cmp design-development/k11/snapshot.json render-snapshots/current.json
+      - name: Disclosed architectural study validation
+        run: node scripts/validate-architectural-snapshot.mjs
+      - name: Render overlay regression checks
+        run: node scripts/verify-render-overlay.mjs
+      - name: Domain study tests
+        run: npm run check:study
+      - name: Provide canonical renderer fixture
+        run: cp studio/app/data/family-a7.brief.json studio/app/data/workspace-seed.json
+      - name: Actual Studio mesh and domain tests
+        run: npm run check:studio

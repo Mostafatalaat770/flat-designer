@@ -67,6 +67,12 @@ jobs:
           SNAPSHOT_PATH: ${{ github.event.inputs.snapshot || 'render-snapshots/current.json' }}
         run: node scripts/render-snapshot.mjs "$SNAPSHOT_PATH"
 
+      - name: Render K11 removable-cover preparation mode
+        if: github.ref == 'refs/heads/design/k11-kitchen-daily-use'
+        env:
+          RENDER_OUT_DIR: renders/prep-mode
+        run: node scripts/render-snapshot.mjs design-development/k11/prep-mode.json
+
       - name: Upload PNGs and metadata
         if: always()
         uses: actions/upload-artifact@v4

@@ -80,3 +80,79 @@ test('dimensioned island has working and reception fronts inside the unchanged f
     builders.dispose();
   }
 });
+
+test('K11 washing and prep modes build a real sink recess and a flush removable cover', () => {
+  for(const mode of ['snapshot','prep-mode']){
+    const source=JSON.parse(fs.readFileSync(path.join(root,'design-development/k11/'+mode+'.json')));
+    const layout=structuredClone(source.layout),originalIsland=layout.furniture.find(f=>f.id==='E2-island');
+    const dx=domain.MODEL.width_mm/2-originalIsland.cx,dz=domain.MODEL.depth_mm/2-originalIsland.cy;
+    layout.furniture=layout.furniture.filter(f=>['E2-island','E2-island-sink'].includes(f.id));
+    for(const f of layout.furniture){f.cx+=dx;f.cy+=dz;}
+    layout.interior.objects=[];
+    const builders=createBuilders({THREE:three,RoundedBoxGeometry,MODEL:domain.MODEL,domain,layout,
+      INTERIOR_MATERIALS:domain.INTERIOR_MATERIALS,scene:new THREE.Scene(),renderer:{capabilities:{getMaxAnisotropy:()=>1}},
+      camera:new THREE.PerspectiveCamera(),orbit:{target:new THREE.Vector3()},hemi:new THREE.HemisphereLight(),
+      sun:new THREE.DirectionalLight(),ground:new THREE.Mesh(new THREE.PlaneGeometry(),new THREE.MeshStandardMaterial()),envTex:new THREE.Texture()});
+    builders.build(layout,{cut:2.5,furn:true,labels:false,night:false,hour:10});
+    const island=builders.groups.furnG.children.find(o=>o.userData.fid==='E2-island'),sink=builders.groups.furnG.children.find(o=>o.userData.fid==='E2-island-sink');
+    assert.deepEqual(island.userData.counterJoinery.work_modules.map(m=>m.role),['waste','sink','dishwasher']);
+    assert.equal(island.userData.counterJoinery.work_modules[2].width_mm,600);
+    const slab=island.children.find(o=>o.userData.countertopCutout);
+    assert.ok(slab,'Actual perforated countertop mesh must be built');
+    assert.equal(slab.geometry.type,'ExtrudeGeometry');
+    const bounds=new THREE.Box3().setFromObject(island);
+    assert.ok(bounds.min.x>=-.856&&bounds.max.x<=.856&&bounds.min.z>=-.451&&bounds.max.z<=.451&&bounds.max.y<=.861);
+    const sinkBounds=new THREE.Box3().setFromObject(sink);
+    assert.ok(sinkBounds.min.x>=(-68-275)/1000-.001&&sinkBounds.max.x<=(-68+275)/1000+.001);
+    assert.ok(sinkBounds.min.z>=-.076&&sinkBounds.max.z<=.376,'Tap, rim and cover fit the 550 × 450 mm sink reserve');
+    const tap=sink.children.find(o=>o.userData.workstationTap),tapBounds=new THREE.Box3().setFromObject(tap);
+    assert.ok(tapBounds.max.x<(11668-11750)/1000,'Actual tap and lever mesh stay west of the cover-enabled prep rectangle');
+    const ray=new THREE.Raycaster(new THREE.Vector3(-.068,1.3,.160),new THREE.Vector3(0,-1,0));
+    builders.groups.furnG.updateMatrixWorld(true);
+    assert.equal(ray.intersectObject(slab,true).length,0,'The bowl cutout must not be filled by an opaque countertop');
+    const cover=sink.children.find(o=>o.userData.workstationCover);
+    if(mode==='prep-mode'){
+      assert.ok(cover,'Prep mode shows the actual removable cover mesh');
+      const cb=new THREE.Box3().setFromObject(cover);
+      assert.ok(Math.abs(cb.max.y-.86)<.0001,'Cover is flush with the counter top at concept level');
+      assert.deepEqual(cover.userData.workstationCover.nominal_mm,[480,350,16]);
+      assert.ok(ray.intersectObject(cover,true).length>0);
+    }else{
+      assert.equal(cover,undefined,'Washing mode must not imply a covered sink');
+      const bowl=sink.children.find(o=>o.userData.workstationBowl);
+      const hits=ray.intersectObject(bowl,true);
+      assert.ok(hits.length>0&&hits.every(hit=>hit.point.y<.7),'Visible bowl bottom lies below the worktop');
+    }
+    builders.dispose();
+  }
+});
+
+test('K11 cooking drawers and appliance niche retain the declared cabinet envelopes', () => {
+  const source=JSON.parse(fs.readFileSync(path.join(root,'design-development/k11/snapshot.json')));
+  for(const id of ['E2-cooking-base','E2-pantry-tall']){
+    const layout=structuredClone(source.layout);
+    layout.furniture=layout.furniture.filter(f=>f.id===id);layout.interior.objects=layout.interior.objects.filter(o=>o.id===id);
+    const f=layout.furniture[0]||layout.interior.objects[0];f.cx=domain.MODEL.width_mm/2;f.cy=domain.MODEL.depth_mm/2;
+    if(layout.furniture.length)f.rot=0;else f.rotation=0;
+    const builders=createBuilders({THREE:three,RoundedBoxGeometry,MODEL:domain.MODEL,domain,layout,
+      INTERIOR_MATERIALS:domain.INTERIOR_MATERIALS,scene:new THREE.Scene(),renderer:{capabilities:{getMaxAnisotropy:()=>1}},
+      camera:new THREE.PerspectiveCamera(),orbit:{target:new THREE.Vector3()},hemi:new THREE.HemisphereLight(),
+      sun:new THREE.DirectionalLight(),ground:new THREE.Mesh(new THREE.PlaneGeometry(),new THREE.MeshStandardMaterial()),envTex:new THREE.Texture()});
+    builders.build(layout,{cut:2.5,furn:true,labels:false,night:false,hour:10});
+    const object=builders.groups.furnG.children.find(o=>o.userData.fid===id||o.userData.interiorObjectId===id);
+    assert.ok(object);
+    const b=new THREE.Box3().setFromObject(object);
+    if(id==='E2-cooking-base'){
+      assert.deepEqual(object.userData.counterJoinery.work_modules.map(m=>m.width_mm),[582,600,582]);
+      assert.equal(object.userData.counterJoinery.rear_modules.length,0);
+      assert.ok(b.min.x>=-.906&&b.max.x<=.906&&b.min.z>=-.301&&b.max.z<=.301&&b.max.y<=.861);
+    }else{
+      assert.ok(object.userData.applianceStation,'Generic whole-cabinet box must be replaced by the explicit niche');
+      assert.ok(b.min.x>=-.301&&b.max.x<=.301&&b.min.z>=-.301&&b.max.z<=.301&&b.max.y<=2.201);
+      const units=object.children.filter(o=>o.userData.smallAppliance);
+      assert.equal(units.length,2);
+      for(const u of units){const a=new THREE.Box3().setFromObject(u);assert.ok(a.min.x>=-.282&&a.max.x<=.282&&a.min.z>=-.282&&a.max.z<=.282&&a.min.y>=.859&&a.max.y<=1.451);}
+    }
+    builders.dispose();
+  }
+});

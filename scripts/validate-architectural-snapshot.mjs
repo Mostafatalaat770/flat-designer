@@ -20,11 +20,23 @@ try{
   if(!report)throw error;
 }
 const fails=(report?.checks||[]).filter(c=>c.status==='FAIL');
-const allowed=fails.filter(c=>c.kind==='placement'&&c.object_id==='E2-island');
-const unexpected=fails.filter(c=>!(c.kind==='placement'&&c.object_id==='E2-island'));
+const k11=snapshot.name.startsWith('K11 —');
+function pantryStudyException(c){
+  if(!k11||c.kind!=='object-wall'||c.object_id!=='E2-pantry-tall'||c.source_wall_index!==45)return false;
+  const base=JSON.parse(fs.readFileSync(path.join(root,'design-development/k10/snapshot.json'),'utf8'));
+  assert.deepEqual(snapshot.architecture_variant,base.architecture_variant,'K11 must not change the earlier opening overlay');
+  const wall=domain.model.wall_segments[45],key=s=>[s.from,s.to].map(p=>p.join(',')).sort().join('|');
+  assert.ok(snapshot.architecture_variant.remove_wall_segments.some(s=>key(s)===key(wall)),'This exact wall must already be removed in the retained render-only overlay');
+  const p=snapshot.layout.interior.objects.find(o=>o.id==='E2-pantry-tall'),f=base.layout.furniture.find(o=>o.id==='E2-fridge');
+  assert.deepEqual([p.cx,p.cy,p.width_mm,p.depth_mm,p.rotation],[f.cx,f.cy,f.w,f.d,f.rot],'Pantry must exactly reuse the frozen K10 fridge envelope');
+  return true;
+}
+const isStudyException=c=>(c.kind==='placement'&&c.object_id==='E2-island')||pantryStudyException(c);
+const allowed=fails.filter(isStudyException);
+const unexpected=fails.filter(c=>!isStudyException(c));
 
 assert.equal(unexpected.length,0,'Unexpected hard validation failures: '+JSON.stringify(unexpected,null,2));
-assert.ok(allowed.length<=1,'Unexpected duplicate island exception');
+assert.ok(allowed.length<=(k11?2:1),'Unexpected duplicate architectural exception');
 if(allowed.length){
   const removed=snapshot.architecture_variant.remove_wall_segments||[];
   const main=removed.some(s=>{
@@ -43,5 +55,5 @@ console.log(JSON.stringify({
   hard_failures:fails,
   allowed_architectural_exceptions:allowed.map(c=>({kind:c.kind,object_id:c.object_id,message:c.message})),
   summary:report?.summary||null,
-  note:'Production/canonical domain remains architecture-locked; this validator allows only the reviewed render-only cross-room island exception.'
+  note:k11?'Production/canonical guards unchanged. Both reported canonical failures are disclosed: cross-room island and native pantry against an already removed wall. Pantry exactly reuses the frozen K10 fridge footprint. This is render-only study validation, not construction approval.':'Production/canonical domain remains architecture-locked; this validator allows only the reviewed render-only cross-room island exception.'
 },null,2));

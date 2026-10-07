@@ -2043,21 +2043,25 @@ export function createBuilders(scope) {
   function studioCounterJoinery(g,f,w,d,cm){
     const j=f.joinery;
     if(!j)return false;
-    const validModules=a=>Array.isArray(a)&&a.length>0&&a.every(m=>Number.isFinite(m.width_mm)&&m.width_mm>=100&&['dishwasher','sink','drawers','storage'].includes(m.role));
-    if(j.schema!=='CounterJoineryConcept/1'||j.status!=='EXPLORATORY'||!Number.isFinite(j.end_panel_mm)||j.end_panel_mm<12||j.end_panel_mm>30||!validModules(j.work_modules)||!validModules(j.rear_modules)||!Number.isFinite(j.working_depth_mm)||!Number.isFinite(j.rear_depth_mm)||j.working_depth_mm<500||j.rear_depth_mm<200)throw new Error('Invalid counter joinery concept.');
-    for(const modules of [j.work_modules,j.rear_modules])if(Math.abs(modules.reduce((n,m)=>n+m.width_mm,2*j.end_panel_mm)-f.w)>.01)throw new Error('Joinery widths exceed the declared counter.');
+    const validModules=a=>Array.isArray(a)&&a.every(m=>Number.isFinite(m.width_mm)&&m.width_mm>=100&&['dishwasher','sink','drawers','storage','hob','waste'].includes(m.role));
+    if(j.schema!=='CounterJoineryConcept/1'||j.status!=='EXPLORATORY'||!Number.isFinite(j.end_panel_mm)||j.end_panel_mm<12||j.end_panel_mm>30||!validModules(j.work_modules)||!j.work_modules.length||!validModules(j.rear_modules)||!Number.isFinite(j.working_depth_mm)||!Number.isFinite(j.rear_depth_mm)||j.working_depth_mm<500||(j.rear_depth_mm!==0&&j.rear_depth_mm<200)||(j.rear_depth_mm===0)!==(j.rear_modules.length===0))throw new Error('Invalid counter joinery concept.');
+    for(const modules of [j.work_modules,j.rear_modules].filter(a=>a.length))if(Math.abs(modules.reduce((n,m)=>n+m.width_mm,2*j.end_panel_mm)-f.w)>.01)throw new Error('Joinery widths exceed the declared counter.');
     if(Math.abs(j.working_depth_mm+j.rear_depth_mm-f.d)>.01)throw new Error('Joinery depths exceed the declared counter.');
     const p=M(j.end_panel_mm),work=M(j.working_depth_mm),rear=M(j.rear_depth_mm);
     g.add(box(w-.012,.08,d-.08,'#4a4641',0,0,0));
     for(const side of [-1,1])g.add(box(p,.74,d-.04,cm,side*(w/2-p/2),.08,0));
     // The rear mass is a shallow storage reservation. Plumbing access remains TBD.
-    g.add(box(w-2*p,.74,rear-.04,cm,0,.08,-d/2+rear/2));
+    if(rear>0)g.add(box(w-2*p,.74,rear-.04,cm,0,.08,-d/2+rear/2));
     const renderedModules=[];
     const record=front=>{g.updateMatrixWorld(true);const b=new THREE.Box3().setFromObject(front);renderedModules.push({...front.userData.counterModule,min_mm:b.min.toArray().map(n=>n*1000),max_mm:b.max.toArray().map(n=>n*1000)});};
     let x=-w/2+p;
     for(const [index,m] of j.work_modules.entries()){
       const mw=M(m.width_mm),front=new THREE.Group();
-      fronts(front,-mw/2,.08,mw,.72,0,m.role==='sink'?2:1,m.role==='drawers'?3:1,cm,'edge');
+      if(m.drawer_fronts_mm){
+        if(!Array.isArray(m.drawer_fronts_mm)||m.drawer_fronts_mm.some(h=>!Number.isFinite(h)||h<80)||Math.abs(m.drawer_fronts_mm.reduce((s,h)=>s+h,0)-720)>.01)throw new Error('Invalid dimensioned drawer fronts.');
+        let y=.08;
+        for(const height of m.drawer_fronts_mm){fronts(front,-mw/2,y,mw,M(height),0,1,1,cm,'edge');y+=M(height);}
+      }else fronts(front,-mw/2,.08,mw,.72,0,m.role==='sink'?2:1,m.role==='drawers'?3:1,cm,'edge');
       front.position.set(x+mw/2,0,d/2-.03);
       front.userData.counterModule={side:'working',index,role:m.role,width_mm:m.width_mm,depth_mm:j.working_depth_mm};
       g.add(front);record(front);
@@ -2080,6 +2084,38 @@ export function createBuilders(scope) {
     }
     g.userData.counterJoinery={module_geometry:renderedModules,schema:j.schema,working_depth_mm:j.working_depth_mm,rear_depth_mm:j.rear_depth_mm,end_panel_mm:j.end_panel_mm,work_modules:j.work_modules.map(m=>({...m})),rear_modules:j.rear_modules.map(m=>({...m}))};
     return true;
+  }
+
+  function studioCountertop(g,f,w,d,stone){
+    if(!f.countertop_cutouts){g.add(rbox(w+.01,.04,d,stone,0,.82,0,.004));return;}
+    if(!Array.isArray(f.countertop_cutouts)||f.countertop_cutouts.length!==1)throw new Error('Only the explicit workstation cutout is supported.');
+    const c=f.countertop_cutouts[0];
+    if(c.schema!=='CountertopCutoutConcept/1'||![c.x_mm,c.z_mm,c.width_mm,c.depth_mm].every(Number.isFinite)||c.width_mm<200||c.depth_mm<200||Math.abs(c.x_mm)+c.width_mm/2>f.w/2-18||Math.abs(c.z_mm)+c.depth_mm/2>f.d/2-18)throw new Error('Invalid countertop cutout.');
+    const shape=new THREE.Shape();
+    shape.moveTo(-w/2-.005,-d/2);shape.lineTo(w/2+.005,-d/2);shape.lineTo(w/2+.005,d/2);shape.lineTo(-w/2-.005,d/2);shape.closePath();
+    const hole=new THREE.Path(),x=M(c.x_mm),z=M(c.z_mm),cw=M(c.width_mm),cd=M(c.depth_mm);
+    hole.moveTo(x-cw/2,-z-cd/2);hole.lineTo(x-cw/2,-z+cd/2);hole.lineTo(x+cw/2,-z+cd/2);hole.lineTo(x+cw/2,-z-cd/2);hole.closePath();shape.holes.push(hole);
+    const geometry=new THREE.ExtrudeGeometry(shape,{depth:.04,bevelEnabled:false});geometry.rotateX(-Math.PI/2);
+    const top=mesh(geometry,stone);top.position.y=.82;top.userData.countertopCutout={...c};g.add(top);
+  }
+
+  function studioWorkstationSink(g,f,w,d){
+    const s=f.workstation;
+    if(s.schema!=='WorkstationSinkConcept/1'||s.status!=='EXPLORATORY'||!['washing','prep-covered'].includes(s.mode)||!Array.isArray(s.bowl_mm)||s.bowl_mm.length!==3||s.bowl_mm.some(n=>!Number.isFinite(n)||n<=0)||!Number.isFinite(s.bowl_z_offset_mm)||!Array.isArray(s.tap_position_mm)||s.tap_position_mm.length!==2||s.tap_position_mm.some(n=>!Number.isFinite(n)))throw new Error('Invalid workstation sink concept.');
+    const [bw,bd,bh]=s.bowl_mm.map(M),bz=M(s.bowl_z_offset_mm),[tx,tz]=s.tap_position_mm.map(M),st=mat('#c7ccd1',{metalness:.85,roughness:.28}),inside=mat('#939da5',{metalness:.8,roughness:.32});
+    if(bw>=w||Math.abs(bz)+bd/2>=d/2||Math.abs(tx)+.028>w/2||Math.abs(tz)+.028>d/2)throw new Error('Workstation sink exceeds its reserve.');
+    const back=d/2+bz-bd/2,front=d/2-bz-bd/2;
+    g.add(box((w-bw)/2,.002,d,st,-(w+bw)/4,.858,0),box((w-bw)/2,.002,d,st,(w+bw)/4,.858,0),box(bw,.002,back,st,0,.858,-d/2+back/2),box(bw,.002,front,st,0,.858,d/2-front/2));
+    const bowl=new THREE.Group();bowl.userData.workstationBowl={width_mm:s.bowl_mm[0],depth_mm:s.bowl_mm[1],height_mm:s.bowl_mm[2]};
+    bowl.add(box(bw,.008,bd,inside,0,.858-bh,bz),box(.008,bh,bd,st,-bw/2+.004,.858-bh,bz),box(.008,bh,bd,st,bw/2-.004,.858-bh,bz),box(bw,bh,.008,st,0,.858-bh,bz-bd/2+.004),box(bw,bh,.008,st,0,.858-bh,bz+bd/2-.004),cyl(.025,.025,.002,chrome(),0,.868-bh,bz,20));g.add(bowl);
+    const tap=new THREE.Group(),cm=chrome();
+    tap.add(cyl(.025,.028,.025,cm,tx,.86,tz,20),tube([[tx,.885,tz],[tx,1.12,tz],[tx,1.16,tz+.04],[tx,1.12,tz+.11],[tx,1.08,tz+.13]],.012,cm),box(.01,.01,.055,cm,tx+.035,.95,tz+.025));
+    tap.userData.workstationTap=true;g.add(tap);
+    if(s.mode==='prep-covered'){
+      const cover=rbox(bw,.016,bd,woodM('#C8B083'),0,.844,bz,.002);
+      cover.userData.workstationCover={nominal_mm:[...s.bowl_mm.slice(0,2),16],removable:true};g.add(cover);
+    }
+    g.userData.workstationSink={...s};
   }
   
   function makeStudioVariant(f) {
@@ -2254,7 +2290,7 @@ export function createBuilders(scope) {
         );
         fronts(g, -w / 2 + 0.005, 0.08, w - 0.01, 0.72, fz, n, 1, cm, "edge", 0.48);
       }
-      g.add(rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004));
+      studioCountertop(g,f,w,d,stone);
     } else if (f.type === "fridge") {
       const m =
         f.variant === "integrated"
@@ -4108,6 +4144,7 @@ export function createBuilders(scope) {
         break;
       }
       case "ksink": {
+        if(f.workstation){studioWorkstationSink(g,f,w,d);break;}
         const st = mat("#c7ccd1", { metalness: 0.85, roughness: 0.28 }),
           inner = mat("#9aa1a8", { metalness: 0.8, roughness: 0.35 }),
           two = w >= 0.75,
@@ -5868,6 +5905,28 @@ export function createBuilders(scope) {
             B(0.08, 0.012, 0.008, accent, x, 0.48, d / 2 + 0.004);
         }
       } else B(w, h, d, primary);
+    } else if(o.type==='sideboard'&&o.metadata?.appliance_station){
+      const s=o.metadata.appliance_station,p=.018,nb=M(s.counter_height_mm),nt=M(s.niche_top_mm);
+      if(s.schema!=='ApplianceStationConcept/1'||s.status!=='EXPLORATORY'||!Number.isFinite(nb)||!Number.isFinite(nt)||nb<.7||nt-nb<.5||nt>h-.3||w<.55||d<.55||!Array.isArray(s.appliances))throw new Error('Invalid appliance station concept.');
+      B(w,.08,d,mat('#4a4641'));B(p,h-.08,d,primary,-w/2+p/2,.08);B(p,h-.08,d,primary,w/2-p/2,.08);B(w-2*p,h-.08,p,primary,0,.08,-d/2+p/2);
+      B(w-2*p,.018,d-2*p,primary,0,.08);B(w-2*p,.018,d-2*p,primary,0,.45);B(w-2*p,.04,d-2*p,mat('#dcd7cf',{roughness:.22}),0,nb-.04);
+      fronts(g,-w/2+p,.08,w-2*p,nb-.12,d/2-.027,1,1,primary,'edge');
+      B(w-2*p,.018,d-2*p,primary,0,nt);B(w-2*p,.018,d-2*p,primary,0,(nt+h)/2);B(w-2*p,.018,d-2*p,primary,0,h-.018);
+      fronts(g,-w/2+p,nt+.02,w-2*p,h-nt-.04,d/2-.027,1,1,primary,'edge');
+      const appliances=[];
+      for(const a of s.appliances){
+        if(!['coffee-machine','kettle'].includes(a.type)||!Array.isArray(a.dimensions_mm)||a.dimensions_mm.length!==3||a.dimensions_mm.some(n=>!Number.isFinite(n)||n<=0)||!Array.isArray(a.position_mm)||a.position_mm.length!==2||a.position_mm.some(n=>!Number.isFinite(n)))throw new Error('Invalid small-appliance reservation.');
+        const [aw,ad,ah]=a.dimensions_mm.map(M),[ax,az]=a.position_mm.map(M);
+        if(Math.abs(ax)+aw/2>w/2-p||Math.abs(az)+ad/2>d/2-p||nb+ah>nt-.03)throw new Error('Small appliance does not fit the niche.');
+        const unit=new THREE.Group(),dark=mat('#303439',{roughness:.34,metalness:.35}),steel=mat('#a9b0b6',{metalness:.7,roughness:.25});
+        if(a.type==='coffee-machine'){
+          unit.add(rbox(aw,.035,ad,dark,0,0,0,.006),rbox(aw,ah-.035,ad*.57,steel,0,.035,-ad*.215,.01),box(aw*.82,ah*.35,.004,dark,0,ah*.55,ad*.073),box(.055,.024,.07,dark,0,ah*.46,ad*.15),cyl(.034,.031,.075,ceramic(),0,.035,ad*.29,20));
+        }else{
+          unit.add(cyl(aw/2,aw/2,.025,dark,0,0,0,24),cyl(aw*.4,aw*.43,ah-.045,steel,0,.025,0,24),cyl(aw*.31,aw*.31,.02,dark,0,ah-.02,0,24));
+        }
+        unit.position.set(ax,nb,az);unit.userData.smallAppliance={...a,placeholder:true};g.add(unit);appliances.push({...a});
+      }
+      g.userData.applianceStation={...s,clear_width_mm:o.width_mm-36,appliances};
     } else if (
       ["console", "sideboard", "media-unit", "shelf"].includes(o.type)
     ) {

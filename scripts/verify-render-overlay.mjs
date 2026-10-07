@@ -56,9 +56,10 @@ const solids=domainContext.interiorSolids(snapshot.layout,model);
 const tallIds=['E2-oven-column','E2-fridge','E2-pantry-tall'];
 const tall=solids.filter(o=>tallIds.includes(o.id));
 assert.equal(tall.length,3);
+const k11=snapshot.name.startsWith('K11 —');
 for(const o of tall){
   assert.equal(o.rot,180,o.id+' must face the north work aisle');
-  const expectedX={'E2-pantry-tall':11050,'E2-oven-column':11650,'E2-fridge':12250}[o.id];
+  const expectedX=(k11?{'E2-pantry-tall':12250,'E2-oven-column':11650,'E2-fridge':11050}:{'E2-pantry-tall':11050,'E2-oven-column':11650,'E2-fridge':12250})[o.id];
   assert.deepEqual([o.cx,o.cy,o.w,o.d],[expectedX,8570,600,600],'Preserve the existing cabinet footprint');
   assert.ok(domainContext.interiorOperatingDistance({...o,rot:0},solids,model)<1,'The previous orientation faces the wall');
 }
