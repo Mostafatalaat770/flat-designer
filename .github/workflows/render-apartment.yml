@@ -37,7 +37,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -69,6 +69,7 @@ jobs:
         run: node scripts/render-snapshot.mjs "$SNAPSHOT_PATH"
 
       - name: Upload PNGs and metadata
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: apartment-renders-${{ github.run_id }}-${{ github.sha }}
