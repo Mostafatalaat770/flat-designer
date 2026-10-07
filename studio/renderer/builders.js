@@ -1109,17 +1109,21 @@ export function createBuilders(scope) {
       return true;
     }
     if (kind === "travertine") {
-      for (let y = 0; y < Hh; y++) {
-        g.fillStyle = rgbK(
-          s.base,
-          0.94 + 0.055 * Math.sin(y * 0.032) + R() * 0.03,
-        );
-        g.fillRect(0, y, W, 1);
+      g.fillStyle = rgbK(s.base, 0.985);
+      g.fillRect(0, 0, W, Hh);
+      for (let k = 0; k < 1500; k++) {
+        const warm = R() > 0.5 ? "83,64,39" : "255,248,235";
+        const a = 0.008 + R() * 0.025;
+        const ww = 1 + R() * 8;
+        const hh = 0.5 + R() * 2;
+        g.fillStyle = `rgba(${warm},${a})`;
+        g.fillRect(R() * W, R() * Hh, ww, hh);
       }
-      for (let k = 0; k < 3000; k++) {
-        g.fillStyle = `rgba(83,64,39,${R() * 0.1})`;
-        g.fillRect(R() * W, R() * Hh, 1 + R() * 3, 1);
-      }
+      g.strokeStyle = s.grout || rgbK(s.base, 0.82);
+      g.globalAlpha = 0.42;
+      g.lineWidth = 2;
+      g.strokeRect(1, 1, W - 2, Hh - 2);
+      g.globalAlpha = 1;
       return true;
     }
     return false;
