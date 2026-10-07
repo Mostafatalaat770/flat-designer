@@ -63,7 +63,7 @@ async function bootApartmentAgentCapture(){
   try{
     if(studioSceneKey(state)!==input.scene_revision||MODEL.canonical_sha256!==input.canonical_sha256)throw new Error('Capture snapshot does not match its revision.');
     init();active=true;anim=fly=null;
-    Object.assign(opt,input.camera.viewer);opt.cut=H;opt.furn=true;opt.labels=false;opt.mode='orbit';
+    Object.assign(opt,input.camera.viewer);opt.cut=Math.min(H,Number.isFinite(input.camera.viewer?.cut_height_m)?input.camera.viewer.cut_height_m:H);opt.furn=true;opt.labels=false;opt.mode='orbit';
     // No animation, camera fitting, background sync or local draft loading.
     sync(true);const architectureResult=applyApartmentArchitectureVariant(input.architecture_variant);grow=furnGrow=1;applyGrow();showLabels(false);orbit.enabled=false;
     renderer.setPixelRatio(1);renderer.setSize(input.camera.viewport.width,input.camera.viewport.height);
