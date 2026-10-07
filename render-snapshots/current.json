@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K2 — unified warm-stone open plan + oak island + local HVAC pocket",
+  "name": "K3 — fabrication-grid kitchen development",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-fcb6143d",
+  "scene_revision": "scene-53d91241",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -578,11 +578,11 @@
       {
         "id": "E2-cooking-base",
         "type": "counter",
-        "name": "E2 west cooking/prep run · 1950 mm · drawers + prep",
+        "name": "K3 west cooking wall · 1800 mm · 600 prep drawers + 600 hob unit + 600 prep drawers",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 7895,
-        "w": 1950,
+        "cy": 7774.106,
+        "w": 1800,
         "d": 600,
         "rot": 270,
         "color": "#E8E2D7",
@@ -593,10 +593,10 @@
       {
         "id": "E2-hob",
         "type": "stove",
-        "name": "E2 600 mm gas hob · concealed/ducted hood route TBD",
+        "name": "K3 600 mm gas hob centered on 1800 mm cooking run · hood/extraction TBD",
         "room_id": "KIT-01",
         "cx": 9381,
-        "cy": 7760,
+        "cy": 7774.106,
         "w": 600,
         "d": 400,
         "rot": 270,
@@ -652,9 +652,9 @@
       {
         "id": "E2-island-sink",
         "type": "ksink",
-        "name": "J1 550 mm island sink · south module · drainage route TBD",
+        "name": "K3 550 mm island sink · working-side module · drainage route TBD",
         "room_id": "RECP-01",
-        "cx": 11350,
+        "cx": 11200,
         "cy": 6770,
         "w": 550,
         "d": 400,
@@ -1381,12 +1381,12 @@
           "placement": {
             "mode": "wall",
             "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": 120,
+            "offset_mm": 0,
             "elevation_mm": 930,
             "inset_mm": 0
           },
           "rotation": 0,
-          "width_mm": 1700,
+          "width_mm": 1800,
           "depth_mm": 5,
           "height_mm": 520,
           "material_references": {
@@ -1395,7 +1395,7 @@
           "colour": "#E5DED1",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "J1 quartz backsplash centred on west hob/prep run; clear of the south wall junction"
+            "role": "K3 backsplash aligned to full 1800 mm cooking-wall grid"
           }
         },
         {
@@ -1483,7 +1483,7 @@
           "placement": {
             "mode": "wall",
             "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": -650,
+            "offset_mm": -600,
             "elevation_mm": 1480,
             "inset_mm": 8
           },
@@ -1497,7 +1497,7 @@
           "colour": "#E8E2D7",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "600 mm upper cabinet north of hood; exact hood/fire clearance TBD"
+            "role": "K3 600 mm upper cabinet north of 600 mm hood zone"
           }
         },
         {
@@ -1508,7 +1508,7 @@
           "placement": {
             "mode": "wall",
             "host_wall_id": "WALL-KIT-01-01",
-            "offset_mm": 650,
+            "offset_mm": 600,
             "elevation_mm": 1480,
             "inset_mm": 8
           },
@@ -1522,7 +1522,7 @@
           "colour": "#E8E2D7",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "600 mm upper cabinet south of hood; exact hood/fire clearance TBD"
+            "role": "K3 600 mm upper cabinet south of 600 mm hood zone"
           }
         },
         {
@@ -2291,7 +2291,12 @@
     "K2 removes the G2 living-room ceiling pocket after visual QA found it too beam-like. The main reception ceiling returns to the full 2.50 m clear height in the design study.",
     "Only the compact kitchen-side pocket above the tall units is retained as a provisional MEP reservation; living-room concealed AC remains equipment/routing TBD.",
     "Island base changes to natural-oak direction so the 1700 × 900 mm double-sided storage island reads as furniture within the reception instead of visually disappearing into ivory cabinetry and a pale floor.",
-    "Unified open-plan floor remains a warm limestone/travertine-look porcelain direction; the current renderer texture is only a massing proxy, not the final tile pattern."
+    "Unified open-plan floor remains a warm limestone/travertine-look porcelain direction; the current renderer texture is only a massing proxy, not the final tile pattern.",
+    "K3 FABRICATION GRID: west cooking wall regularized from 1950 mm to 1800 mm, centered on the usable wall: 600 mm prep drawers + 600 mm gas-hob unit + 600 mm prep drawers.",
+    "Upper composition follows the same 1800 mm rhythm: 600 mm cabinet + 600 mm hood zone + 600 mm cabinet; backsplash aligns to the full run.",
+    "Island 1700 mm long is reserved as 550 mm sink module + 600 mm fully integrated dishwasher module + 550 mm drawer/bin module on the kitchen working side.",
+    "Island sink shifted 150 mm west within the 900 mm depth so it sits in the nominal 600 mm working-side cabinet zone, preserving the reception-side shallow-storage concept instead of centering plumbing through both cabinet depths.",
+    "Reception-side island storage remains conceptual at approximately 250–300 mm shallow depth; sink bowl/trap and services may reduce usable depth locally and require shop-drawing coordination."
   ],
   "architecture_variant": {
     "id": "K2-open-plan-refinement",
