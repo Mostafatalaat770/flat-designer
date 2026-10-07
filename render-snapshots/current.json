@@ -1,9 +1,9 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Whole Apartment A10 — Harmonized",
+  "name": "Whole Apartment A11 — Systems + Lighting · MEP feasibility pending",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-ee82acc0",
-  "storage_revision": 47,
+  "scene_revision": "scene-a88ea70c",
+  "storage_revision": 49,
   "layout": {
     "modelVersion": "0.2.2",
     "furniture": [
@@ -1042,21 +1042,24 @@
       "version": 1,
       "rooms": {
         "BR-01": {
+          "hvac": "wall-split",
           "lighting": "downlights",
-          "temperature": 3000,
-          "brightness": 76,
+          "temperature": 2700,
+          "brightness": 72,
           "wall": "#EEE9DF"
         },
         "BR-02": {
+          "hvac": "wall-split",
           "lighting": "downlights",
-          "temperature": 3000,
-          "brightness": 76,
+          "temperature": 2700,
+          "brightness": 72,
           "wall": "#EEE9DF"
         },
         "MBR-01": {
+          "hvac": "wall-split",
           "lighting": "downlights",
-          "temperature": 3000,
-          "brightness": 74,
+          "temperature": 2700,
+          "brightness": 70,
           "wall": "#EEE9DF"
         },
         "HALL-01": {
@@ -1096,7 +1099,7 @@
           "wall": "#EEE9DF"
         },
         "RECP-01": {
-          "hvac": "concealed-slots",
+          "hvac": "wall-split",
           "ceiling": "plain",
           "lighting": "downlights",
           "temperature": 3000,
@@ -3220,6 +3223,7 @@
     "Synced from Apartment Type B Studio A10 Harmonized.",
     "Final validated Studio state before GitHub render sign-off.",
     "Validation at sync: 150 PASS / 25 WARNING / 0 FAIL.",
-    "Kitchen and Bedroom 2 cameras updated to the latest visual-audit viewpoints."
+    "Kitchen and Bedroom 2 cameras updated to the latest visual-audit viewpoints.",
+    "2026-10-07: Synced saved A11 revision 49. Architecture and 2500 mm ceiling unchanged. Split HVAC visuals replace concealed slots. Equipment capacity, mount locations, drains, outdoor units and hood route remain TBD; renderer is not an MEP sign-off."
   ]
 }
