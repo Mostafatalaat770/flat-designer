@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K11 — daily-use kitchen / washing mode / appliance and storage allocation",
+  "name": "K11 — camera-only review of tall storage and coffee niche",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-fa8547b9",
   "storage_revision": 39,
@@ -1985,298 +1985,118 @@
   },
   "views": [
     {
-      "id": "J1-dining-kitchen",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          6.35,
-          1.68,
-          2.8
-        ],
-        "target": [
-          3.55,
-          1.3,
-          1.35
-        ],
-        "fov": 61,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "J1-living-kitchen",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.85,
-          1.67,
-          0.55
-        ],
-        "target": [
-          3.25,
-          1.22,
-          1.45
-        ],
-        "fov": 62,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "J1-kitchen-work",
+      "id": "K11-tallwall-coffee-detail",
       "room_id": "KIT-01",
       "camera": {
         "position": [
-          3.9,
-          1.65,
-          3
+          3.632291,
+          1.45,
+          1.995
         ],
         "target": [
-          2.35,
-          1.13,
-          1.35
+          3.632291,
+          1.1,
+          3.18
         ],
-        "fov": 63,
+        "fov": 82,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "K10-island-working-front",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          5.432291,
-          1.7,
-          3.2343415000000006
-        ],
-        "target": [
-          3.732291,
-          0.2,
-          1.2843415000000005
-        ],
-        "fov": 42,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.866977829638273,
+        "aspect": 1.6,
         "near": 0.05,
         "far": 300,
         "viewport": {
           "width": 1600,
-          "height": 857
+          "height": 1000
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "K11-coffee-niche-close",
+      "room_id": "KIT-01",
+      "camera": {
+        "position": [
+          4.232291,
+          1.16,
+          2.45
+        ],
+        "target": [
+          4.232291,
+          1.16,
+          3.205
+        ],
+        "fov": 60,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.6,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1600,
+          "height": 1000
         },
         "viewer": {
           "cut_height_m": 2.5,
@@ -2464,7 +2284,8 @@
     "The dishwasher now faces the pantry bay rather than the oven. With the same hypothetical 650 / 600 / 500 mm opening projections as K10, the recorded dishwasher/oven overlap becomes zero, with only 32 mm lateral separation. This is not verification of real hinges, handles, bodies or simultaneous human use. Dishwasher-open passage remains 570 mm.",
     "Coffee machine and kettle have explicit generic reservations in the 600 mm pantry niche. This sacrifices 620 mm of full-width pantry height. The 464 mm island drawer bank becomes one shallow utensil drawer plus a waste pullout. The 1800 mm cooking run gains explicit 582 / 600 / 582 mm drawer allocation; hob ventilation/services may exclude the upper central drawer.",
     "Dry storage is allocated to six side cooking drawers, two conditional lower hob drawers, three shallow rear island cabinets, two wall cabinets, and lower/upper pantry storage. Sink, dishwasher, cold storage, waste pullout and the coffee niche are excluded from general dry-storage counts. Capacity remains dependent on the family inventory and actual cabinet internals.",
-    "This is an isolated functional study. Structural/MEP approval for the retained opening overlay, exact equipment and site dimensions remain unresolved. No construction-ready or live-design approval is implied."
+    "This is an isolated functional study. Structural/MEP approval for the retained opening overlay, exact equipment and site dimensions remain unresolved. No construction-ready or live-design approval is implied.",
+    "Camera-only review supplement: furnishing layout, scene revision and architectural overlay are identical to K11 washing mode d7235b1. Tall-wall frame uses an 82 degree lens for fit inspection, not perceived room size."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
