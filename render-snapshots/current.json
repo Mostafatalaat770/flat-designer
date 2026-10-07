@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "K3 — indoor laundry tower + under-hob oven strategy",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-99ac598d",
+  "scene_revision": "scene-75ccf111",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -1512,8 +1512,8 @@
         },
         {
           "id": "K2-island-back-storage",
-          "type": "sideboard",
-          "variant": "plain",
+          "type": "divider",
+          "variant": "solid-panel",
           "room_id": "RECP-01",
           "placement": {
             "mode": "floor"
@@ -1530,7 +1530,7 @@
           "colour": "#C6B18F",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "Reception-facing shallow island storage / furniture back; approximately 280 mm deep",
+            "role": "Reception-facing solid oak joinery face / shallow-storage proxy within island",
             "note": "Conceptual 300 mm storage zone within the 900 mm island depth; exact carcass split and toe-kick TBD"
           }
         },
@@ -2304,7 +2304,8 @@
     "Move the oven from the tall wall to the 600 mm module directly under the gas hob. This frees the middle tall-wall module for a full-height pantry while retaining the east integrated-fridge module.",
     "K3 tall wall sequence west→east: 600 indoor laundry / 600 pantry / 600 integrated fridge. The available ~1843 mm wall segment leaves only modest fillers; site measurement and appliance ventilation/shop drawings are mandatory.",
     "Reference only: Bosch WIW28302GB previously used in the project is an indoor built-in washer reference. Exact local SKU, ventilation, water/drain, electrical isolation, service access and cabinet moisture protection remain TBD.",
-    "This strategy is preferred over an exposed service-terrace washer if outdoor exposure or manufacturer warranty conditions cannot be made robust."
+    "This strategy is preferred over an exposed service-terrace washer if outdoor exposure or manufacturer warranty conditions cannot be made robust.",
+    "K3 renderer-truth refinement inherited: kitchen service pocket aligned to tall-unit front at y=8270; island back uses solid-panel joinery proxy with no fake furniture legs."
   ],
   "architecture_variant": {
     "id": "K2-kitchen-service-pocket-only",
@@ -2501,7 +2502,7 @@
         "study_id": "G2-kitchen-pocket",
         "rect": [
           10740,
-          8200,
+          8270,
           12583,
           8960
         ],
