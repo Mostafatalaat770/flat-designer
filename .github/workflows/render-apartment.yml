@@ -14,6 +14,11 @@ on:
       - "generate_model.py"
       - "scene-decor.js"
       - "studio-core.js"
+      - "studio-scene.js"
+      - "interior-scene.js"
+      - "interior-core.js"
+      - "interior-materials.json"
+      - "verify_saved_materials.mjs"
       - "studio-catalog.json"
   workflow_dispatch:
     inputs:
@@ -32,7 +37,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -52,6 +57,9 @@ jobs:
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
+      - name: Check saved finish and appliance clearance regressions
+        run: node verify_saved_materials.mjs
+
       - name: Build exact Studio capture template
         run: npm run build
 
@@ -61,6 +69,7 @@ jobs:
         run: node scripts/render-snapshot.mjs "$SNAPSHOT_PATH"
 
       - name: Upload PNGs and metadata
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: apartment-renders-${{ github.run_id }}-${{ github.sha }}

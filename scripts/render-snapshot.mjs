@@ -86,7 +86,7 @@ try{
         const err=document.body?.dataset?.captureError;
         if(err) throw new Error(err);
         return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
-      },frameId,{timeout:120000});
+      },frameId,{timeout:180000});
       const canvas=page.locator('#apartment-capture-canvas');
       await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
       const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
@@ -103,7 +103,13 @@ try{
     while(true){
       const index=nextView++;
       if(index>=snapshot.views.length) return;
-      await renderView(snapshot.views[index]);
+      try{
+        await renderView(snapshot.views[index]);
+      }catch(error){
+        if(error?.name!=='TimeoutError')throw error;
+        console.warn(`retrying ${snapshot.views[index].id} once after a renderer timeout`);
+        await renderView(snapshot.views[index]);
+      }
     }
   });
   await Promise.all(workers);
