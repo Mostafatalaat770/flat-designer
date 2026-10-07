@@ -23,11 +23,11 @@ next.notes.push('Dishwasher 650 mm, oven 600 mm, fridge 600 mm and drawer 500 mm
 next.notes.push('This is an isolated, render-only functional refinement. Structural approval for the existing kitchen-opening study, exact appliances, service routes and site dimensions remain unresolved. It does not deploy, activate, merge or save a live design.');
 assert.deepEqual(next.architecture_variant,base.architecture_variant);
 assert.deepEqual(next.views,base.views);
-const supplementalCamera=domain.captureCamera(next.layout,{room_id:'KIT-01',position:[(11750-modelWidth())/1000,1.7,(7930-modelDepth())/1000],target:[(11750-modelWidth())/1000,.72,(6900-modelDepth())/1000],fov:42});
+const supplementalCamera=domain.captureCamera(next.layout,{room_id:'RECP-01',position:[(13450-modelWidth())/1000,1.7,(8350-modelDepth())/1000],target:[(11750-modelWidth())/1000,.20,(6400-modelDepth())/1000],fov:42});
 function modelWidth(){return domain.model.width_mm/2;}
 function modelDepth(){return domain.model.depth_mm/2;}
-next.views.push({id:'K10-island-working-front',room_id:'KIT-01',camera:supplementalCamera});
-next.notes.push('The original three comparison cameras are preserved exactly. One supplemental Natural42 standing view at 1.70 m is added from the south work aisle to show the complete island, working fronts and sink orientation. It is not a before/after comparison camera.');
+next.views.push({id:'K10-island-working-front',room_id:'RECP-01',camera:supplementalCamera});
+next.notes.push('The original three comparison cameras are preserved exactly. One supplemental Natural42 standing view at 1.70 m is added from the southeast passage to show the complete island, working fronts and sink/tap. It is not a before/after comparison camera.');
 assert.equal(next.canonical_sha256,base.canonical_sha256);
 const stripped=l=>({...l,furniture:l.furniture.filter(f=>!['E2-island','E2-island-sink'].includes(f.id))});
 assert.deepEqual(stripped(next.layout),stripped(base.layout));

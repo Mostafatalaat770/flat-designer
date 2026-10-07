@@ -2151,17 +2151,17 @@
     },
     {
       "id": "K10-island-working-front",
-      "room_id": "KIT-01",
+      "room_id": "RECP-01",
       "camera": {
         "position": [
-          3.732291,
+          5.432291,
           1.7,
-          2.8143415000000003
+          3.2343415000000006
         ],
         "target": [
           3.732291,
-          0.72,
-          1.7843415000000005
+          0.2,
+          1.2843415000000005
         ],
         "fov": 42,
         "projection_type": "perspective",
@@ -2357,7 +2357,7 @@
     "Actual 1700 mm joinery allocation is 18 mm end panel + 600 mm clear dishwasher reservation + 600 mm sink cabinet + 464 mm drawer cabinet + 18 mm end panel. The 600 / 600 / 500 shorthand is nominal; the remaining 500 mm includes 36 mm end panels. Depth is allocated 600 mm working side + 300 mm shallow reception-side storage. Internal panels, tap/trap access and storage usable depth are not fabrication-approved.",
     "Dishwasher 650 mm, oven 600 mm, fridge 600 mm and drawer 500 mm open-door envelopes are explicit hypothetical planning proxies, not exact manufacturer geometry. A dishwasher opened alone leaves 570 mm to the opposing closed tall fronts. Dishwasher and oven proxies overlap by 168 × 30 mm if simultaneously open; do not treat the arrangement as certified for simultaneous use.",
     "This is an isolated, render-only functional refinement. Structural approval for the existing kitchen-opening study, exact appliances, service routes and site dimensions remain unresolved. It does not deploy, activate, merge or save a live design.",
-    "The original three comparison cameras are preserved exactly. One supplemental Natural42 standing view at 1.70 m is added from the south work aisle to show the complete island, working fronts and sink orientation. It is not a before/after comparison camera."
+    "The original three comparison cameras are preserved exactly. One supplemental Natural42 standing view at 1.70 m is added from the southeast passage to show the complete island, working fronts and sink/tap. It is not a before/after comparison camera."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",

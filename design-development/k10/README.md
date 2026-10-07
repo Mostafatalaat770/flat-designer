@@ -32,7 +32,7 @@ With the conservative dishwasher and oven envelopes **both** open, they overlap 
 
 The canonical-domain report remains exactly equal to K9: **151 PASS / 50 WARNING / 1 FAIL**, with the retained E2-island room-placement exception across the original closed-kitchen room boundary. Only the unchanged render-only open-kitchen overlay makes this study geometrically relevant. No new canonical collision, circulation, doorway or warning result is introduced.
 
-The original three J1 comparison cameras are preserved exactly. An additional Natural42 view at 1.70 m standing eye height, from the south kitchen aisle, shows the working fronts and the full island. It is a supplemental view, not a matched before/after camera. Image inspection and CI results are recorded separately after rendering.
+The original three J1 comparison cameras are preserved exactly. An additional Natural42 view at 1.70 m standing eye height, from the southeast passage, shows the working fronts, full island and tap. It is a supplemental view, not a matched before/after camera. Image inspection and CI results are recorded separately after rendering.
 
 Regenerate from the frozen baseline in a complete checkout:
 
@@ -41,3 +41,4 @@ node scripts/prepare-k10-island.mjs design-development/k9/snapshot.json
 ```
 
 The isolated branch is for review. It does not deploy, activate, merge, modify canonical walls/openings/ceilings, or authorize the existing kitchen wall-removal study. Structural/developer approval, MEP routes and site measurements remain outstanding.
+
