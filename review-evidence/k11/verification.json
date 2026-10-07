@@ -1,0 +1,289 @@
+{
+  "schema": "K11ReviewedKitchenDelivery/1",
+  "reviewed_at_utc": "2026-10-07T21:51:33.081704+00:00",
+  "branch": "design/k11-kitchen-daily-use",
+  "code_commit_sha": "d7235b14102923da465aa779e768c47758d4ba51",
+  "source_snapshot_sha256": "8430ae53467ab23331c3a6050a60a4e6a446fc7bb117a36c39a3d396858f7047",
+  "prep_snapshot_sha256": "6e1866d4b8d8f6551e1c8e977a93766016989b43d8bb30e5e523ddf0ab95d933",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "washing_scene_revision": "scene-fa8547b9",
+  "prep_scene_revision": "scene-9a5d28fe",
+  "ci": {
+    "branch": "design/k11-kitchen-daily-use",
+    "code_commit_sha": "d7235b14102923da465aa779e768c47758d4ba51",
+    "verify_run": {
+      "id": 37690560405,
+      "job_id": 113029334858,
+      "head_sha": "d7235b14102923da465aa779e768c47758d4ba51",
+      "conclusion": "success",
+      "url": "https://github.com/Mostafatalaat770/flat-designer/actions/runs/37690560405",
+      "test_log_summary": [
+        "2026-10-07T21:37:18.6401290Z ℹ tests 8",
+        "2026-10-07T21:37:18.6410604Z ℹ pass 8",
+        "2026-10-07T21:37:18.6411118Z ℹ fail 0",
+        "2026-10-07T21:37:24.5407936Z ✔ K11 washing and prep modes build a real sink recess and a flush removable cover (142.549449ms)",
+        "2026-10-07T21:37:24.5431354Z ✔ K11 cooking drawers and appliance niche retain the declared cabinet envelopes (101.263211ms)",
+        "2026-10-07T21:37:24.5725924Z ℹ tests 11",
+        "2026-10-07T21:37:24.5732637Z ℹ pass 11",
+        "2026-10-07T21:37:24.5733212Z ℹ fail 0"
+      ]
+    },
+    "render_run": {
+      "id": 37690560413,
+      "job_id": 113029335780,
+      "head_sha": "d7235b14102923da465aa779e768c47758d4ba51",
+      "conclusion": "success",
+      "url": "https://github.com/Mostafatalaat770/flat-designer/actions/runs/37690560413",
+      "completed_at_utc": "2026-10-07T21:43:16Z",
+      "artifact_id": 11512514647,
+      "artifact_sha256": "488041c1ab48e403a395d3cf2dbe059aa487a182c03f27ccedb18f269aae51bf",
+      "render_log_summary": [
+        "2026-10-07T21:36:27.7878607Z rendering J1-dining-kitchen",
+        "2026-10-07T21:36:27.9487961Z rendering J1-living-kitchen",
+        "2026-10-07T21:38:14.6543441Z rendered J1-living-kitchen",
+        "2026-10-07T21:38:14.7350909Z rendering J1-kitchen-work",
+        "2026-10-07T21:38:39.5782647Z rendered J1-dining-kitchen",
+        "2026-10-07T21:38:39.7180373Z rendering K10-island-working-front",
+        "2026-10-07T21:40:27.3755823Z rendered K10-island-working-front",
+        "2026-10-07T21:40:53.4055896Z rendered J1-kitchen-work",
+        "2026-10-07T21:40:54.1218111Z rendering K10-island-working-front",
+        "2026-10-07T21:40:54.2887843Z rendering J1-dining-kitchen",
+        "2026-10-07T21:42:47.1049778Z rendered K10-island-working-front",
+        "2026-10-07T21:43:11.7342101Z rendered J1-dining-kitchen"
+      ]
+    }
+  },
+  "checks": {
+    "six_exact_render_metadata_matches": true,
+    "four_cameras_match_frozen_K10": true,
+    "canonical_and_opening_overlay_unchanged": true,
+    "same_1700x900_island_footprint": true,
+    "zero_recorded_proxy_door_overlaps": true,
+    "larger_prep_only_when_cover_fitted": true,
+    "pantry_and_waste_storage_tradeoffs_disclosed": true,
+    "visual_inspection": {
+      "six_primary_images_opened": true,
+      "sink_recess_is_visible": true,
+      "removable_cover_visible_only_in_prep_mode": true,
+      "island_working_fronts_match_waste_sink_dishwasher_allocation": true,
+      "cooking_drawer_fronts_visible": true,
+      "coffee_niche_partially_cropped_in_primary_views": true,
+      "dedicated_coffee_view_pending": false,
+      "complete_coffee_and_kettle_reservations_visible_in_supplemental_view": true,
+      "coffee_niche_was_open_and_free_of_appliance_mesh_overflow": true,
+      "seven_images_opened_and_visually_reviewed": true
+    },
+    "seven_render_images_and_exact_metadata_reviewed": true
+  },
+  "view_checks": [
+    {
+      "mode": "washing",
+      "view": "J1-dining-kitchen",
+      "scene_revision": "scene-fa8547b9",
+      "dimensions_px": [
+        1280,
+        720
+      ],
+      "image_sha256": "60a967b2ffd10bd18f895cd9e5d5086400200cc2bade3b61b7e0f436b13be966",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "snapshot_sha256_metadata_field": "branch-fa8547b9"
+    },
+    {
+      "mode": "washing",
+      "view": "J1-living-kitchen",
+      "scene_revision": "scene-fa8547b9",
+      "dimensions_px": [
+        1280,
+        720
+      ],
+      "image_sha256": "3c5ace88d757c4aab7bc16c4f0502cefc680cbb5f4c1464fdd4c4c08bafce4e0",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "snapshot_sha256_metadata_field": "branch-fa8547b9"
+    },
+    {
+      "mode": "washing",
+      "view": "J1-kitchen-work",
+      "scene_revision": "scene-fa8547b9",
+      "dimensions_px": [
+        1280,
+        720
+      ],
+      "image_sha256": "d6e0216fb4922be476923a706fb7413a62d4f80f656985cc6d5a2ff18f1066d0",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "snapshot_sha256_metadata_field": "branch-fa8547b9"
+    },
+    {
+      "mode": "washing",
+      "view": "K10-island-working-front",
+      "scene_revision": "scene-fa8547b9",
+      "dimensions_px": [
+        1600,
+        857
+      ],
+      "image_sha256": "fac0ba82d789971eaa14d52bdc62eeb20d776686500aedc860588f221113a4ef",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "snapshot_sha256_metadata_field": "branch-fa8547b9"
+    },
+    {
+      "mode": "prep-covered",
+      "view": "J1-dining-kitchen",
+      "scene_revision": "scene-9a5d28fe",
+      "dimensions_px": [
+        1280,
+        720
+      ],
+      "image_sha256": "e2a9989605e2d80633bba755790f4289c654d7a9285c40317c9bb606a9410ef7",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "snapshot_sha256_metadata_field": "branch-9a5d28fe"
+    },
+    {
+      "mode": "prep-covered",
+      "view": "K10-island-working-front",
+      "scene_revision": "scene-9a5d28fe",
+      "dimensions_px": [
+        1600,
+        857
+      ],
+      "image_sha256": "70dc6e48af574007702112fdf4e01c0f922573700689192e2c411e3c6e4db0d3",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "snapshot_sha256_metadata_field": "branch-9a5d28fe"
+    },
+    {
+      "mode": "coffee-detail",
+      "view": "K11-coffee-station",
+      "scene_revision": "scene-fa8547b9",
+      "dimensions_px": [
+        1600,
+        857
+      ],
+      "image_sha256": "cca45d369ccbf380a67feb35bdb3898368f6edd014b31776048a472c00ece452",
+      "exact_layout_and_camera_metadata_match": true,
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "eye_height_m": 1.7,
+      "fov": 42
+    }
+  ],
+  "canonical_summary": {
+    "pass": 152,
+    "warning": 49,
+    "fail": 2
+  },
+  "canonical_reported_failures": [
+    {
+      "kind": "placement",
+      "status": "FAIL",
+      "object_id": "E2-island",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 17.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "object-wall",
+      "status": "FAIL",
+      "object_id": "E2-pantry-tall",
+      "source_wall_index": 45,
+      "measured_clearance_mm": -57.4,
+      "message": "Object intersects a modeled wall."
+    }
+  ],
+  "planning_limits": [
+    "Two canonical failures remain disclosed: island cross-room placement and pantry against canonical wall 45, both dependent on the unchanged exploratory open-kitchen overlay.",
+    "32 mm separation is nominal and requires real door/handle tolerances.",
+    "570 mm dishwasher-open gap is restricted; passage and user bodies are not certified.",
+    "Uncovered sink still lacks the 914 × 610 mm continuous prep reference.",
+    "Cover is a hypothetical flush insert; purchase/fabrication measurements are unverified.",
+    "Coffee niche sacrifices some pantry space; actual user appliance dimensions are required.",
+    "No household stocktake was supplied; cabinet quantities do not prove sufficient capacity.",
+    "Structural approval, extraction, gas/electrical/water/drainage routes and site measurements remain unresolved."
+  ],
+  "notes": [
+    "The renderer snapshot_sha256 metadata field is a branch revision label; actual snapshot SHA-256 values are recorded separately above.",
+    "152 PASS / 49 WARNING / 2 FAIL in the unchanged canonical architecture. Both depend on the earlier exploratory opening overlay; they are not concealed by successful software checks.",
+    "Actual equipment, site measurements, household inventory, structural/MEP and joinery approval remain unresolved."
+  ],
+  "baseline_comparison": {
+    "folder": "baseline-K10",
+    "four_original_render_views_included": true,
+    "three_original_and_close_cameras_retained_in_K11": true
+  },
+  "supplemental_study_commit_sha": "1efe662f438b021c638f0860b9cfb7bc4f46f0c2",
+  "supplemental_coffee_ci": {
+    "head_sha": "1efe662f438b021c638f0860b9cfb7bc4f46f0c2",
+    "render_run": {
+      "id": 37691952538,
+      "job_id": 113034073661,
+      "conclusion": "success",
+      "completed_at_utc": "2026-10-07T21:49:42Z",
+      "url": "https://github.com/Mostafatalaat770/flat-designer/actions/runs/37691952538",
+      "artifact_id": 11514190505,
+      "artifact_sha256": "ba7962ae10c08e3a5b3ea55c858df25c5bc044d5d5f2f335c445b146bf35d226"
+    },
+    "verify_run": {
+      "id": 37691952433,
+      "job_id": 113034071761,
+      "conclusion": "success",
+      "url": "https://github.com/Mostafatalaat770/flat-designer/actions/runs/37691952433"
+    },
+    "source_changes_from_primary_render": [
+      ".github/workflows/render-k11-detail.yml",
+      "design-development/k11/coffee-detail.json"
+    ],
+    "primary_renderer_sources_unchanged": true
+  },
+  "visual_assessment": "K11 island work fronts, recessed bowl, west tap, flush cover, cooking drawers and coffee/kettle niche are visibly built. Primary cameras match frozen K10; the dedicated coffee camera is an additional standing close view. Frames are concept model images, not photorealistic product or construction evidence."
+}
