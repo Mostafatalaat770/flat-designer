@@ -2052,7 +2052,16 @@ export function createBuilders(scope) {
       d = M(f.d),
       c = f.color,
       fab = fabric(c),
-      wood = woodM(t.wood);
+      assigned = interiorMaterial(state, f.material_id),
+      wood = woodM(t.wood),
+      assignedMat = assigned
+        ? assigned.category === "wood"
+          ? woodM(assigned.base_colour)
+          : mat(assigned.base_colour, {
+              roughness: assigned.roughness ?? 0.7,
+              metalness: assigned.metallic ?? 0,
+            })
+        : null;
     const connect =
         f.type === "sofa" &&
         f.variant === "modular" &&
@@ -2200,7 +2209,7 @@ export function createBuilders(scope) {
     } else if (f.type === "fridge") {
       const m =
         f.variant === "integrated"
-          ? wood
+          ? assignedMat || wood
           : mat("#a4abb0", { metalness: 0.72, roughness: 0.3 });
       g.add(rbox(w, 1.94, d, m, 0, 0.015, 0, 0.025));
       g.add(box(w - 0.02, 0.006, 0.01, mat("#30343a"), 0, 0.67, d / 2 + 0.001));
@@ -2228,7 +2237,7 @@ export function createBuilders(scope) {
           box(w - 0.01, 0.07, 0.012, mat("#24282c"), 0, 0.8, d / 2 + 0.012),
         );
     } else if (f.type === "ovencol") {
-      g.add(rbox(w, 2.15, d, wood, 0, 0.025, 0, 0.008));
+      g.add(rbox(w, 2.15, d, assignedMat || wood, 0, 0.025, 0, 0.008));
       const m =
         f.variant === "steel"
           ? mat("#a7aeb2", { metalness: 0.75, roughness: 0.26 })
