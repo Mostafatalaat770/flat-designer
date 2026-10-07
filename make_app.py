@@ -225,7 +225,7 @@ function('buildArch','''function buildArch(){
     colliders.push({a:[wx(x0),wz(z0)],b:[wx(x1),wz(z1)],half:M(s.thickness_mm)/2});
     const edges=new THREE.LineSegments(new THREE.EdgesGeometry(o.geometry),edgeMat);edges.position.copy(o.position);edges.rotation.copy(o.rotation);edges.visible=opt.mode==='walk';edges.userData.walkOnly=true;archUp.add(edges);
   });
-  [...DOORS.map(d=>[d.rect,2.1]),...SLIDES.map(d=>[d.rect,d.head_m]),...PASSAGES.map(d=>[d.rect,d.head_m])].forEach(([r,h])=>{if(top>h)wallBox(r,h,top);});
+  [...DOORS.map(d=>[d.id,d.rect,2.1]),...SLIDES.map(d=>[d.id,d.rect,d.head_m]),...PASSAGES.map(d=>[d.id,d.rect,d.head_m])].forEach(([id,r,h])=>{if(top>h){const n0=archUp.children.length;wallBox(r,h,top);for(let k=n0;k<archUp.children.length;k++)archUp.children[k].userData.openingHeaderId=id;}});
   WINS.forEach((r,i)=>{
     const {sill_m:sill,head_m:head,id}=MODEL.window_meta[i];
     if(sill>0)wallBox(r,0,Math.min(sill,top));if(top>head)wallBox(r,head,top);
