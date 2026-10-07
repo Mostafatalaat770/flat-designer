@@ -97,10 +97,15 @@ test('K11 washing and prep modes build a real sink recess and a flush removable 
     const island=builders.groups.furnG.children.find(o=>o.userData.fid==='E2-island'),sink=builders.groups.furnG.children.find(o=>o.userData.fid==='E2-island-sink');
     assert.deepEqual(island.userData.counterJoinery.work_modules.map(m=>m.role),['waste','sink','dishwasher']);
     assert.equal(island.userData.counterJoinery.work_modules[2].width_mm,600);
-    const slab=island.children.find(o=>o.userData.countertopCutout);
-    assert.ok(slab,'Actual perforated countertop mesh must be built');
-    assert.equal(slab.geometry.type,'ExtrudeGeometry');
     const bounds=new THREE.Box3().setFromObject(island);
+    // The production builder batches the slab by material, replacing the source
+    // ExtrudeGeometry and its child metadata. Inspect the actual resulting mesh.
+    const slab=island.children.find(o=>{
+      if(!o.isMesh)return false;
+      const b=new THREE.Box3().setFromObject(o);
+      return b.min.y>=.819&&b.max.y<=.861;
+    });
+    assert.ok(slab,'Actual perforated countertop mesh must be built');
     assert.ok(bounds.min.x>=-.856&&bounds.max.x<=.856&&bounds.min.z>=-.451&&bounds.max.z<=.451&&bounds.max.y<=.861);
     const sinkBounds=new THREE.Box3().setFromObject(sink);
     assert.ok(sinkBounds.min.x>=(-68-275)/1000-.001&&sinkBounds.max.x<=(-68+275)/1000+.001);
@@ -110,6 +115,8 @@ test('K11 washing and prep modes build a real sink recess and a flush removable 
     const ray=new THREE.Raycaster(new THREE.Vector3(-.068,1.3,.160),new THREE.Vector3(0,-1,0));
     builders.groups.furnG.updateMatrixWorld(true);
     assert.equal(ray.intersectObject(slab,true).length,0,'The bowl cutout must not be filled by an opaque countertop');
+    const solidRay=new THREE.Raycaster(new THREE.Vector3(-.4,1.3,.160),new THREE.Vector3(0,-1,0));
+    assert.ok(solidRay.intersectObject(slab,true).some(hit=>Math.abs(hit.point.y-.86)<.0001),'The adjoining counter surface must still exist at the same height');
     const cover=sink.children.find(o=>o.userData.workstationCover);
     if(mode==='prep-mode'){
       assert.ok(cover,'Prep mode shows the actual removable cover mesh');
