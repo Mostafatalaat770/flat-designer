@@ -1,9 +1,9 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Whole Apartment A3 — Guest WC + Kitchen Usability",
+  "name": "Whole Apartment A10 — Harmonized",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-29d4aa6d",
-  "storage_revision": 39,
+  "scene_revision": "scene-ee82acc0",
+  "storage_revision": 47,
   "layout": {
     "modelVersion": "0.2.2",
     "furniture": [
@@ -19,7 +19,7 @@
         "rot": 270,
         "color": "#dfd3bb",
         "status": "EXPLORATORY",
-        "variant": "style",
+        "variant": "upholstered",
         "product_reference_id": "bed-idanas-180-reference",
         "material_id": "generic-linen"
       },
@@ -33,10 +33,9 @@
         "w": 450,
         "d": 400,
         "rot": 270,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-3",
@@ -48,10 +47,9 @@
         "w": 450,
         "d": 400,
         "rot": 270,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-4",
@@ -63,10 +61,9 @@
         "w": 1250,
         "d": 600,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-5",
@@ -78,10 +75,9 @@
         "w": 1250,
         "d": 600,
         "rot": 180,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-6",
@@ -93,10 +89,9 @@
         "w": 1280,
         "d": 2100,
         "rot": 0,
-        "color": "#dfd3bb",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "generic-linen"
+        "variant": "oak-platform"
       },
       {
         "id": "starter-7",
@@ -108,10 +103,9 @@
         "w": 1800,
         "d": 600,
         "rot": 90,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-8",
@@ -123,10 +117,9 @@
         "w": 1200,
         "d": 600,
         "rot": 180,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-9",
@@ -152,35 +145,33 @@
         "w": 1280,
         "d": 2100,
         "rot": 90,
-        "color": "#dfd3bb",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "generic-linen"
+        "variant": "oak-platform"
       },
       {
         "id": "starter-11",
         "type": "desk",
-        "name": "Bedroom 2 study desk · 1000 × 600 mm",
+        "name": "Bedroom 2 study desk · compact 900 × 500 mm",
         "room_id": "BR-02",
-        "cx": 6140,
+        "cx": 6020,
         "cy": 1920,
-        "w": 1000,
-        "d": 600,
+        "w": 900,
+        "d": 500,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-12",
         "type": "officechair",
-        "name": "Bedroom 2 compact task chair · generic",
+        "name": "Bedroom 2 compact task chair · 480 mm envelope",
         "room_id": "BR-02",
-        "cx": 6140,
-        "cy": 2730,
-        "w": 560,
-        "d": 560,
+        "cx": 6020,
+        "cy": 2450,
+        "w": 480,
+        "d": 480,
         "rot": 0,
         "color": "#8A8F82",
         "status": "EXPLORATORY",
@@ -196,10 +187,9 @@
         "w": 1600,
         "d": 600,
         "rot": 180,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-14",
@@ -267,11 +257,10 @@
         "w": 600,
         "d": 460,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
         "variant": "style",
-        "product_reference_id": "r1-dneo-basin-custom-vanity",
-        "material_id": "a1-natural-oak"
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
       },
       {
         "id": "starter-20",
@@ -283,10 +272,9 @@
         "w": 1500,
         "d": 600,
         "rot": 270,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-21",
@@ -326,9 +314,9 @@
         "w": 650,
         "d": 650,
         "rot": 180,
-        "color": "#bec7d0",
+        "color": "#E8E2D7",
         "status": "EXPLORATORY",
-        "variant": "style"
+        "variant": "integrated"
       },
       {
         "id": "starter-25",
@@ -347,12 +335,12 @@
       {
         "id": "starter-26",
         "type": "vanity",
-        "name": "Compact guest handrinse 400 x 220 · dimensional reference",
+        "name": "Compact guest handrinse 350 × 180 mm · slim wall basin/vanity concept",
         "room_id": "WC-01",
         "cx": 11968.31,
         "cy": 9174.54,
-        "w": 400,
-        "d": 220,
+        "w": 350,
+        "d": 180,
         "rot": 0,
         "color": "#60432E",
         "status": "EXPLORATORY",
@@ -526,10 +514,9 @@
         "w": 900,
         "d": 280,
         "rot": 90,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "status": "EXPLORATORY",
-        "variant": "style",
-        "material_id": "a1-natural-oak"
+        "variant": "style"
       },
       {
         "id": "starter-41",
@@ -637,12 +624,11 @@
         "cx": 9381,
         "cy": 6993,
         "w": 600,
-        "d": 610,
+        "d": 590,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "status": "EXPLORATORY"
       },
       {
         "id": "K3-dishwasher",
@@ -654,10 +640,9 @@
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "variant": "integrated",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "status": "EXPLORATORY"
       },
       {
         "id": "K3-sink-base",
@@ -669,10 +654,9 @@
         "w": 600,
         "d": 610,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "status": "EXPLORATORY"
       },
       {
         "id": "K3-end-landing",
@@ -684,10 +668,9 @@
         "w": 600,
         "d": 410,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "status": "EXPLORATORY"
       },
       {
         "id": "K3-laundry-niche",
@@ -728,11 +711,10 @@
         "w": 600,
         "d": 460,
         "rot": 180,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "variant": "style",
         "status": "EXPLORATORY",
-        "product_reference_id": "r1-dneo-basin-custom-vanity",
-        "material_id": "a1-natural-oak"
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
       },
       {
         "id": "B-family-storage",
@@ -744,10 +726,9 @@
         "w": 300,
         "d": 300,
         "rot": 0,
-        "color": "#B88C5E",
+        "color": "#BCA98F",
         "variant": "style",
-        "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "status": "EXPLORATORY"
       }
     ],
     "rooms": {
@@ -885,27 +866,27 @@
           },
           "colours": {
             "starter-1": "#dfd3bb",
-            "starter-2": "#B88C5E",
-            "starter-3": "#B88C5E",
-            "starter-4": "#B88C5E",
-            "starter-5": "#B88C5E",
-            "starter-6": "#dfd3bb",
-            "starter-7": "#B88C5E",
-            "starter-8": "#B88C5E",
+            "starter-2": "#BCA98F",
+            "starter-3": "#BCA98F",
+            "starter-4": "#BCA98F",
+            "starter-5": "#BCA98F",
+            "starter-6": "#BCA98F",
+            "starter-7": "#BCA98F",
+            "starter-8": "#BCA98F",
             "starter-9": "#8D9381",
-            "starter-10": "#dfd3bb",
-            "starter-11": "#B88C5E",
+            "starter-10": "#BCA98F",
+            "starter-11": "#BCA98F",
             "starter-12": "#8A8F82",
-            "starter-13": "#B88C5E",
+            "starter-13": "#BCA98F",
             "starter-14": "#F5F4F0",
             "starter-15": "#F5F4F0",
             "starter-16": "#C9D6D8",
             "starter-17": "#F5F4F0",
-            "starter-18": "#B88C5E",
-            "starter-20": "#B88C5E",
+            "starter-18": "#BCA98F",
+            "starter-20": "#BCA98F",
             "starter-21": "#eef2f5",
             "starter-22": "#424f61",
-            "starter-23": "#bec7d0",
+            "starter-23": "#E8E2D7",
             "starter-25": "#f6f8fa",
             "starter-26": "#60432E",
             "starter-27": "#b6a797",
@@ -919,7 +900,7 @@
             "starter-37": "#A89E90",
             "starter-38": "#A89E90",
             "starter-39": "#A89E90",
-            "starter-40": "#B88C5E",
+            "starter-40": "#BCA98F",
             "starter-41": "#a5825c",
             "starter-42": "#69755c",
             "starter-43": "#69755c",
@@ -927,14 +908,14 @@
             "A2-dining-chair-north-centre": "#A89E90",
             "A2-dining-chair-south-centre": "#A89E90",
             "S1-living-side-table": "#C6B18F",
-            "K3-corner": "#B88C5E",
-            "K3-dishwasher": "#B88C5E",
-            "K3-sink-base": "#B88C5E",
-            "K3-end-landing": "#B88C5E",
+            "K3-corner": "#BCA98F",
+            "K3-dishwasher": "#BCA98F",
+            "K3-sink-base": "#BCA98F",
+            "K3-end-landing": "#BCA98F",
             "K3-laundry-niche": "#E6E0D7",
             "V5-master-rug": "#b6a797",
-            "R1-ensuite-vanity": "#B88C5E",
-            "B-family-storage": "#B88C5E"
+            "R1-ensuite-vanity": "#BCA98F",
+            "B-family-storage": "#BCA98F"
           }
         },
         "boho": {
@@ -1081,8 +1062,8 @@
         "HALL-01": {
           "lighting": "downlights",
           "temperature": 3000,
-          "wall": "#EEE9DF",
-          "brightness": 80
+          "brightness": 80,
+          "wall": "#EEE9DF"
         },
         "WIC-01": {
           "lighting": "downlights",
@@ -1140,16 +1121,16 @@
           "cx": 15720,
           "cy": 4750,
           "rotation": 90,
-          "width_mm": 2400,
+          "width_mm": 2000,
           "depth_mm": 400,
           "height_mm": 800,
           "material_references": {
-            "body": "generic-walnut"
+            "body": "a1-natural-oak"
           },
-          "colour": "#60432E",
+          "colour": "#A77F58",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "Closed family dining storage / buffet with intentionally darker walnut tone"
+            "role": "Closed family dining storage / buffet; lighter medium-oak tone and reduced visual mass"
           }
         },
         {
@@ -1159,21 +1140,21 @@
           "room_id": "RECP-01",
           "placement": {
             "mode": "ceiling",
-            "drop_mm": 620
+            "drop_mm": 650
           },
           "cx": 14670,
           "cy": 7650,
           "rotation": 0,
-          "width_mm": 650,
-          "depth_mm": 650,
-          "height_mm": 240,
+          "width_mm": 500,
+          "depth_mm": 500,
+          "height_mm": 200,
           "material_references": {
             "metal": "generic-brass"
           },
           "colour": "#B39860",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "low sculptural dining focal pendant",
+            "role": "smaller sculptural dining pendant; visually lighter over 2000 x 950 table",
             "temperature_k": 2700
           }
         },
@@ -1285,7 +1266,7 @@
             "inset_mm": 8
           },
           "rotation": 0,
-          "width_mm": 550,
+          "width_mm": 500,
           "depth_mm": 35,
           "height_mm": 800,
           "material_references": {
@@ -1312,9 +1293,9 @@
           "depth_mm": 400,
           "height_mm": 800,
           "material_references": {
-            "primary": "a1-natural-oak"
+            "primary": "kitchen-muted-light-oak"
           },
-          "colour": "#C6B18F",
+          "colour": "#BCA98F",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Closed master drawer chest; generic custom joinery, not a vanity"
@@ -1335,9 +1316,9 @@
           "depth_mm": 350,
           "height_mm": 440,
           "material_references": {
-            "primary": "a1-natural-oak"
+            "primary": "kitchen-muted-light-oak"
           },
-          "colour": "#DDD3C4",
+          "colour": "#D8D0C4",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "South-wall dressing bench; leave the entire east-side main path open"
@@ -1383,9 +1364,9 @@
           "depth_mm": 350,
           "height_mm": 800,
           "material_references": {
-            "primary": "a1-natural-oak"
+            "primary": "kitchen-muted-light-oak"
           },
-          "colour": "#C6B18F",
+          "colour": "#BCA98F",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Closed books / toys / daily drawers; generic custom joinery"
@@ -1433,9 +1414,9 @@
           "depth_mm": 35,
           "height_mm": 1100,
           "material_references": {
-            "frame": "a1-natural-oak"
+            "frame": "kitchen-muted-light-oak"
           },
-          "colour": "#C6B18F",
+          "colour": "#BCA98F",
           "status": "EXPLORATORY",
           "metadata": {
             "role": "Functional wall mirror; no architectural change"
@@ -1642,6 +1623,29 @@
           "metadata": {
             "role": "Single taupe line artwork over east-wall bed; deliberately distinct from Bedroom 1"
           }
+        },
+        {
+          "id": "KIT-fridge-end-panel",
+          "type": "divider",
+          "variant": "solid-panel",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 12186,
+          "cy": 8520,
+          "rotation": 90,
+          "width_mm": 650,
+          "depth_mm": 18,
+          "height_mm": 2200,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Ivory cabinetry end panel masking the exposed side of the integrated refrigerator from the kitchen entry; 18 mm concept panel."
+          }
         }
       ],
       "materials": [
@@ -1838,6 +1842,19 @@
           "roughness": 0.82,
           "metallic": 0,
           "notes": "Conceptual joinery finish; manufacturer and sample TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-muted-light-oak",
+          "name": "Kitchen muted light oak",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#BCA98F",
+          "finish": "matte",
+          "roughness": 0.74,
+          "metallic": 0,
+          "fallback_generic_id": "lightoak",
+          "notes": "Muted low-saturation light oak for base cabinetry; concept only, final veneer/laminate sample TBD."
         }
       ],
       "surface_materials": {
@@ -2663,16 +2680,16 @@
       "room_id": "BR-02",
       "camera": {
         "position": [
-          0.7974659999999995,
-          1.68,
-          -3.2616764999999996
+          -1.9,
+          1.6,
+          -0.3
         ],
         "target": [
-          -0.794357,
-          1.4,
-          -1.8640904999999994
+          -0.8,
+          1.2,
+          -1.85
         ],
-        "fov": 70,
+        "fov": 72,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2753,16 +2770,16 @@
       "room_id": "KIT-01",
       "camera": {
         "position": [
-          1.5138200000000006,
-          1.68,
-          2.0222075000000004
+          4.3,
+          1.6,
+          2.7
         ],
         "target": [
-          2.764362,
-          1.4,
-          2.849093500000001
+          2.7,
+          1.3,
+          2.95
         ],
-        "fov": 70,
+        "fov": 72,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -3200,15 +3217,9 @@
     }
   ],
   "notes": [
-    "Exact saved Studio layout: scene-29d4aa6d / storage 39; independent whole-apartment-a3-usability variant revision 2. A2 variant preserved.",
-    "Canonical walls, openings, glazing, room polygons and 2500 mm clear ceiling are unchanged.",
-    "Guest basin envelope: 400 x 220 mm, original x centre and rear face retained. Generic conceptual joinery/bowl; Duravit D-Neo 073940 is a dimensional reference only. Fit, services and hardware TBD.",
-    "Guest basin full inferred door sweep clearance improved from -22.9 mm overlap to +57.1 mm gap. Still a review warning below 100 mm planning buffer. Entry approach width 633.8 to 656.7 mm. Door must be closed for normal basin use.",
-    "Kitchen west-north upper: width 450 to 300 mm; centre 50 mm south of A2. Corner front-strip obstruction removed; operation depth 11.4 to 3083.1 mm. Hob-side edge reserve 190.1 to 215.1 mm; not manufacturer heat-clearance certification. Reduced cupboard capacity is the trade-off.",
-    "Dishwasher layout unchanged. Official validator still reports 0 mm from zero-width tangent polygons at neighbouring cabinet boundaries. Independently measured positive-width front strip: 1572.346 mm to south wall; not manufacturer fit certification.",
-    "Original eleven A2 camera poses, FOV and viewer settings retained for direct before/after comparison. Added kitchen work-run and guest WC entry/use angles.",
-    "guest-wc-use-closed changes only the visible door pose for usability review; the door geometry and hinge convention remain unchanged and INFERRED.",
-    "Exact WebGL concept views, not photorealistic product CAD and not construction or accessibility approval.",
-    "Branch render template fixes compact vanity bowl depth only for envelopes below 300 mm: the A3 400 x 220 mm generic basin bowl now stays within its top. The correction is a branch renderer change, not a production Studio deployment or manufacturer CAD."
+    "Synced from Apartment Type B Studio A10 Harmonized.",
+    "Final validated Studio state before GitHub render sign-off.",
+    "Validation at sync: 150 PASS / 25 WARNING / 0 FAIL.",
+    "Kitchen and Bedroom 2 cameras updated to the latest visual-audit viewpoints."
   ]
 }
