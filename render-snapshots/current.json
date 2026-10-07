@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K1 — unified warm-stone open-plan floor",
+  "name": "K2 — unified warm-stone open plan + oak island + local HVAC pocket",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-c241b48c",
+  "scene_revision": "scene-fcb6143d",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -637,17 +637,17 @@
       {
         "id": "E2-island",
         "type": "counter",
-        "name": "J1 double-sided storage island · 1700 × 900 mm · 600+300 concept",
+        "name": "K2 double-sided oak storage island · 1700 × 900 mm",
         "room_id": "RECP-01",
         "cx": 11350,
         "cy": 6200,
         "w": 1700,
         "d": 900,
         "rot": 90,
-        "color": "#E8E2D7",
+        "color": "#B88C5E",
         "variant": "base-only",
         "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
+        "material_id": "a1-natural-oak"
       },
       {
         "id": "E2-island-sink",
@@ -2287,11 +2287,15 @@
     "West backsplash finalized at 1700 mm with 120 mm host offset to avoid the perpendicular service-wall junction.",
     "K1 FINISH STUDY: unify RECP-01 and KIT-01 flooring as a warm travertine/limestone-look porcelain direction so the full-open kitchen reads as one continuous social space.",
     "This is a finish direction, not a natural-stone specification. Final product should be porcelain/ceramic or another kitchen-suitable surface with verified slip resistance, stain resistance, joint layout and local availability.",
-    "Private bedrooms/hall remain parquet to preserve warmth and acoustic softness; the public/private threshold becomes intentional rather than leaving a kitchen-only tile patch."
+    "Private bedrooms/hall remain parquet to preserve warmth and acoustic softness; the public/private threshold becomes intentional rather than leaving a kitchen-only tile patch.",
+    "K2 removes the G2 living-room ceiling pocket after visual QA found it too beam-like. The main reception ceiling returns to the full 2.50 m clear height in the design study.",
+    "Only the compact kitchen-side pocket above the tall units is retained as a provisional MEP reservation; living-room concealed AC remains equipment/routing TBD.",
+    "Island base changes to natural-oak direction so the 1700 × 900 mm double-sided storage island reads as furniture within the reception instead of visually disappearing into ivory cabinetry and a pale floor.",
+    "Unified open-plan floor remains a warm limestone/travertine-look porcelain direction; the current renderer texture is only a massing proxy, not the final tile pattern."
   ],
   "architecture_variant": {
-    "id": "G2-localized-hvac-pockets",
-    "name": "Localized concealed-HVAC pockets; preserve 2.50 m ceiling elsewhere",
+    "id": "K2-open-plan-refinement",
+    "name": "Open-plan refinement: local kitchen HVAC pocket only",
     "render_only": true,
     "structural_status": "TBD",
     "remove_wall_segments": [
@@ -2481,20 +2485,7 @@
         "status": "EXPLORATORY"
       },
       {
-        "study_id": "G2-living-pocket",
-        "rect": [
-          11850,
-          950,
-          12500,
-          2700
-        ],
-        "bottom_m": 2.34,
-        "top_m": 2.5,
-        "status": "EXPLORATORY",
-        "role": "Compact concealed-unit / plenum pocket above TV-side edge of living zone"
-      },
-      {
-        "study_id": "G2-kitchen-pocket",
+        "study_id": "K2-kitchen-pocket",
         "rect": [
           10740,
           8200,
@@ -2504,7 +2495,7 @@
         "bottom_m": 2.34,
         "top_m": 2.5,
         "status": "EXPLORATORY",
-        "role": "Kitchen-side service pocket above tall units for secondary duct/return/plenum study"
+        "role": "Compact service pocket above kitchen tall units only; final indoor-unit/return/supply layout TBD"
       }
     ],
     "door_overrides": [
