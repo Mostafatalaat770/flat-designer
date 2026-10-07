@@ -32,7 +32,7 @@ function interiorWallMaterials(segment,fallback,height){
   return out;
 }
 function interiorMesh(o){
-  const r=interiorResolved(o,MODEL),w=M(o.width_mm),d=M(o.depth_mm),h=M(o.height_mm),g=new THREE.Group(),primary=interiorPbr(o.material_references.primary,o.colour,{width:o.width_mm,height:o.height_mm}),accent=interiorPbr(o.material_references.accent||'generic-brass',o.colour),white=mat('#f4f0e5',{roughness:.85});
+  const r=interiorResolved(o,MODEL),w=M(o.width_mm),d=M(o.depth_mm),h=M(o.height_mm),g=new THREE.Group(),primary=interiorPbr(o.material_references.primary||o.material_references.body,o.colour,{width:o.width_mm,height:o.height_mm}),accent=interiorPbr(o.material_references.accent||o.material_references.frame||o.material_references.metal||'generic-brass',o.colour),white=mat('#f4f0e5',{roughness:.85});
   const B=(ww,hh,dd,m=primary,x=0,y=0,z=0)=>g.add(box(Math.max(.003,ww),Math.max(.003,hh),Math.max(.003,dd),m,x,y,z));
   if(o.type==='divider'){
     const frame=Math.min(.03,w*.08,d*.25);B(w,frame,d,primary,0,0);B(w,frame,d,primary,0,h-frame);
@@ -53,7 +53,7 @@ function interiorMesh(o){
   }else if(o.type==='wall-panel'){
     B(w,h,d,primary);if(o.variant==='fluted')for(let x=-w/2+.018;x<w/2;x+=.035)B(.012,h,.009,primary,x,0,d/2-.005);
   }else if(o.type==='artwork'){
-    const frame=Math.min(.028,w*.05,h*.05);B(w,h,d,accent);const art=interiorPbr(o.material_references.artwork||o.material_references.primary||'reference-art-warm',o.colour,{width:1000,height:1000});
+    const frame=Math.min(.028,w*.05,h*.05);B(w,h,d,accent);const art=interiorPbr(o.material_references.artwork||o.material_references.art||o.material_references.primary||'reference-art-warm',o.colour,{width:1000,height:1000});
     const face=new THREE.Mesh(new THREE.PlaneGeometry(w-2*frame,h-2*frame),art);face.position.set(0,h/2,d/2+.001);g.add(face);
   }else if(o.type==='mirror'){
     const mirror=new THREE.MeshStandardMaterial({color:'#b9c8ce',metalness:.98,roughness:.07,envMap:envTex,envMapIntensity:1});

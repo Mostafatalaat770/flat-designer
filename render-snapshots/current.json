@@ -1,9 +1,9 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "Whole Apartment A11 — Systems + Lighting · MEP feasibility pending",
+  "name": "Whole Apartment A11.1 — Explicit Joinery Materials · MEP TBD",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-a88ea70c",
-  "storage_revision": 49,
+  "scene_revision": "scene-85fd2cac",
+  "storage_revision": 50,
   "layout": {
     "modelVersion": "0.2.2",
     "furniture": [
@@ -316,7 +316,8 @@
         "rot": 180,
         "color": "#E8E2D7",
         "status": "EXPLORATORY",
-        "variant": "integrated"
+        "variant": "integrated",
+        "material_id": "kitchen-soft-ivory"
       },
       {
         "id": "starter-25",
@@ -642,7 +643,8 @@
         "rot": 0,
         "color": "#BCA98F",
         "variant": "integrated",
-        "status": "EXPLORATORY"
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-muted-light-oak"
       },
       {
         "id": "K3-sink-base",
@@ -3224,6 +3226,7 @@
     "Final validated Studio state before GitHub render sign-off.",
     "Validation at sync: 150 PASS / 25 WARNING / 0 FAIL.",
     "Kitchen and Bedroom 2 cameras updated to the latest visual-audit viewpoints.",
-    "2026-10-07: Synced saved A11 revision 49. Architecture and 2500 mm ceiling unchanged. Split HVAC visuals replace concealed slots. Equipment capacity, mount locations, drains, outdoor units and hood route remain TBD; renderer is not an MEP sign-off."
+    "2026-10-07: Synced saved A11 revision 49. Architecture and 2500 mm ceiling unchanged. Split HVAC visuals replace concealed slots. Equipment capacity, mount locations, drains, outdoor units and hood route remain TBD; renderer is not an MEP sign-off.",
+    "A11.1: Explicit ivory refrigerator / muted oak dishwasher materials. Renderer now honors integrated material and overlay body/art/frame aliases. Validation front-strip tangent bug corrected in this branch. No architecture or furniture dimensions changed."
   ]
 }

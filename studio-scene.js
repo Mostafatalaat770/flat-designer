@@ -8,6 +8,10 @@ function studioFurnitureTheme(f){
   // A primary wood assignment controls the wood components of mixed furniture.
   return material?.category==='wood'?{...theme,wood:material.base_colour,woodDark:darker(material.base_colour,.76)}:theme;
 }
+function studioIntegratedMaterial(f){
+  // Integrated fronts follow the saved joinery finish, independently of the room theme.
+  return f.material_id?interiorPbr(f.material_id,f.color,{width:f.w,height:f.type==='fridge'?1940:840}):mat(f.color||'#ddd5c8',{roughness:.8});
+}
 function studioWallMaterials(s,base,cap){
   const [a,b]=[s.from,s.to],dx=b[0]-a[0],dz=b[1]-a[1],L=Math.hypot(dx,dz),mid=[(a[0]+b[0])/2,(a[1]+b[1])/2];
   const face=sign=>{const point=[mid[0]-sign*dz/L*180,mid[1]+sign*dx/L*180],r=ROOMS.find(r=>pointInRoom(point,r.poly));const color=r&&studioRoomOptions(state,r.id).wall;return color?mat(color,{roughness:.92}):base;};
@@ -42,12 +46,12 @@ function makeStudioVariant(f){
     }
     if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
   }else if(f.type==='fridge'){
-    const m=f.variant==='integrated'?wood:mat('#a4abb0',{metalness:.72,roughness:.30});
+    const m=f.variant==='integrated'?studioIntegratedMaterial(f):mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
     g.add(box(w-.02,.006,.01,mat('#30343a'),0,.67,d/2+.001));
     for(const y of [.32,1.13])g.add(box(.025,.25,.033,mat(t.metal,{metalness:.8,roughness:.32}),w*.34,y,d/2+.01));
   }else if(f.type==='dishwasher'){
-    const m=f.variant==='integrated'?wood:mat('#a8afb4',{metalness:.7,roughness:.3});
+    const m=f.variant==='integrated'?studioIntegratedMaterial(f):mat('#a8afb4',{metalness:.7,roughness:.3});
     g.add(rbox(w,.84,d,m,0,.035,0,.014));g.add(box(w*.80,.014,.025,mat('#383b40'),0,.75,d/2+.005));
     if(f.variant==='steel')g.add(box(w-.01,.07,.012,mat('#24282c'),0,.80,d/2+.012));
   }else if(f.type==='ovencol'){

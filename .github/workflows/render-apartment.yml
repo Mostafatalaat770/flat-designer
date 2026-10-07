@@ -14,6 +14,11 @@ on:
       - "generate_model.py"
       - "scene-decor.js"
       - "studio-core.js"
+      - "studio-scene.js"
+      - "interior-scene.js"
+      - "interior-core.js"
+      - "interior-materials.json"
+      - "verify_saved_materials.mjs"
       - "studio-catalog.json"
   workflow_dispatch:
     inputs:
@@ -51,6 +56,9 @@ jobs:
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
+
+      - name: Check saved finish and appliance clearance regressions
+        run: node verify_saved_materials.mjs
 
       - name: Build exact Studio capture template
         run: npm run build
