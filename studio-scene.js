@@ -41,6 +41,11 @@ function makeStudioVariant(f){
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
     if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
+  }else if(f.type==='counter'){
+    const assigned=interiorMaterial(state,f.material_id),cm=assigned?.category==='wood'?woodM(assigned.base_colour):mat(c,{roughness:.45}),stone=mat('#dcd7cf',{roughness:.22}),n=Math.max(1,Math.round(w/.6)),fz=d/2-.04;
+    g.add(box(w-.01,.08,d-.08,'#4a4641',0,0,-.04),box(w,.74,d-.04,cm,0,.08,-.02));
+    fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
+    g.add(rbox(w+.01,.04,d,stone,0,.82,0,.004));
   }else if(f.type==='fridge'){
     const m=f.variant==='integrated'?wood:mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
