@@ -83,7 +83,22 @@ async function bootApartmentAgentCapture(){
     // Freeze one exact frame. The provider screenshots this canvas after ready.
     camera.position.fromArray(input.camera.position);orbit.target.fromArray(input.camera.target);camera.lookAt(orbit.target);renderer.render(scene,camera);
     if(renderer.getContext().isContextLost())throw new Error('WebGL context lost during capture.');
-    const result={schema:'ApartmentSceneCaptureFrame/1',canonical_sha256:MODEL.canonical_sha256,snapshot_sha256:input.snapshot_sha256,rendered_layout_json:JSON.stringify(state),scene_revision:input.scene_revision,storage_revision:input.storage_revision,room_id:input.room_id,camera:{...input.camera,position:camera.position.toArray(),target:orbit.target.toArray(),fov:camera.fov,aspect:camera.aspect,viewer:{...input.camera.viewer,doors:doors.map(d=>({id:d.id,open:d.open,position:d.cur}))}},timestamp:new Date().toISOString(),assets:{pending:apartmentSceneAssetsPending.size,fallbacks:[...apartmentSceneAssetsFailed]},renderer:{engine:'Three.js WebGL',revision:THREE.REVISION},architecture_variant:input.architecture_variant||null,architecture_result:architectureResult};
+    const furnitureDiagnostic=id=>{
+      const g=furnG.children.find(o=>o.userData?.fid===id);
+      if(!g)return null;
+      let meshes=0;g.traverse(o=>{if(o.isMesh)meshes++;});
+      const b=new THREE.Box3().setFromObject(g),s=new THREE.Vector3(),ctr=new THREE.Vector3();b.getSize(s);b.getCenter(ctr);
+      return {id,meshes,group_position:g.position.toArray(),group_rotation_y:g.rotation.y,bbox_min:b.min.toArray(),bbox_max:b.max.toArray(),bbox_size:s.toArray(),bbox_center:ctr.toArray()};
+    };
+    const nearArch=[];
+    archUp.traverse(o=>{
+      if(!o.visible||!o.isMesh)return;
+      const b=new THREE.Box3().setFromObject(o),pt=b.clampPoint(camera.position.clone(),new THREE.Vector3());
+      const dist=pt.distanceTo(camera.position);
+      if(dist<1.2)nearArch.push({dist,box_min:b.min.toArray(),box_max:b.max.toArray(),wall:o.userData?.wallSegment||null,study_box:o.userData?.architectureStudyWallBox||null});
+    });
+    nearArch.sort((a,b)=>a.dist-b.dist);
+    const result={schema:'ApartmentSceneCaptureFrame/1',canonical_sha256:MODEL.canonical_sha256,snapshot_sha256:input.snapshot_sha256,rendered_layout_json:JSON.stringify(state),scene_revision:input.scene_revision,storage_revision:input.storage_revision,room_id:input.room_id,camera:{...input.camera,position:camera.position.toArray(),target:orbit.target.toArray(),fov:camera.fov,aspect:camera.aspect,viewer:{...input.camera.viewer,doors:doors.map(d=>({id:d.id,open:d.open,position:d.cur}))}},timestamp:new Date().toISOString(),assets:{pending:apartmentSceneAssetsPending.size,fallbacks:[...apartmentSceneAssetsFailed]},renderer:{engine:'Three.js WebGL',revision:THREE.REVISION},architecture_variant:input.architecture_variant||null,architecture_result:architectureResult,diagnostics:{furniture:[furnitureDiagnostic('E2-island'),furnitureDiagnostic('E2-cooking-base')],near_architecture:nearArch.slice(0,12)}};
     const cv=renderer.domElement;cv.id='apartment-capture-canvas';
     // Drop large inline scripts/snapshot data from the provider's HTML result.
     document.querySelectorAll('script').forEach(s=>s.remove());
