@@ -2302,7 +2302,8 @@
     "K4 capture renderer receives an explicit final-pass builder for base-only/peninsula counters so the island and west cooking base render as actual cabinet carcasses with fronts and worktops.",
     "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged.",
     "K4 material-truth repair: integrated fridge and oven-column renderer now respect their assigned soft-ivory material; no layout dimensions changed.",
-    "K4 opening-header truth fix: architectural variants that hide OP-RECP-KIT / bathroom doors now also hide their obsolete canonical lintel/header geometry in capture. No canonical geometry is mutated."
+    "K4 opening-header truth fix: architectural variants that hide OP-RECP-KIT / bathroom doors now also hide their obsolete canonical lintel/header geometry in capture. No canonical geometry is mutated.",
+    "K4 final visual pass: rerender after quiet large-format limestone/travertine procedural floor refinement. Layout and material direction are unchanged."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
