@@ -2034,7 +2034,8 @@
     "K4 material-truth repair: integrated fridge and oven-column renderer now respect their assigned soft-ivory material; no layout dimensions changed.",
     "K4 opening-header truth fix: architectural variants that hide OP-RECP-KIT / bathroom doors now also hide their obsolete canonical lintel/header geometry in capture. No canonical geometry is mutated.",
     "K4 final visual pass: rerender after quiet large-format limestone/travertine procedural floor refinement. Layout and material direction are unchanged.",
-    "K7 render-only ceiling truth study: hide the separate canonical RECP-01 and KIT-01 ceiling meshes and replace them with their exact polygon union at 2.50 m. Canonical room geometry remains unchanged."
+    "K7 render-only ceiling truth study: hide the separate canonical RECP-01 and KIT-01 ceiling meshes and replace them with their exact polygon union at 2.50 m. Canonical room geometry remains unchanged.",
+    "K7 final proof: merged review ceiling uses a neutral double-sided unlit material to avoid winding/shading artifacts; geometry and 2.50 m height are unchanged."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
