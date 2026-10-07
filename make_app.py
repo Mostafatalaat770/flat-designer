@@ -385,5 +385,21 @@ from cloud_upgrade import apply_cloud
 s=apply_cloud(s)
 from interior_upgrade import apply_interior
 s=apply_interior(s)
+
+# Final truth-render pass: base-only / peninsula counters must render as real cabinet masses.
+# Apply after all upgrade layers so no later transformer can overwrite the branch-specific builder.
+counter_old = """case 'counter': {
+      const cm = mat(c, {roughness:.45}), stone = mat('#dcd7cf', {roughness:.22}), n = Math.max(1, Math.round(w/.6)), fz = d/2 - .04;"""
+counter_new = """case 'counter': {
+      const cm = mat(c, {roughness:.45}), stone = mat('#dcd7cf', {roughness:.22}), n = Math.max(1, Math.round(w/.6)), fz = d/2 - .04;
+      if(['base-only','peninsula'].includes(f.variant)){
+        g.add(box(w - .01, .08, d - .08, '#4a4641', 0, 0, -.04), box(w, .74, d - .04, cm, 0, .08, -.02));
+        fronts(g, -w/2 + .005, .08, w - .01, .72, fz, n, 1, cm, 'edge', .48);
+        g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));
+        break;
+      }"""
+assert counter_old in s, 'final counter builder target missing'
+s=s.replace(counter_old,counter_new,1)
+
 (ROOT/"dist"/"index.html").write_text(s)
 print({"index_bytes":len(s.encode()),"output":str(ROOT/"dist"/"index.html")})
