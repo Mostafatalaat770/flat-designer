@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K3 — fabrication-grid kitchen development",
+  "name": "K4 — truthful open-plan render + fabrication-grid kitchen",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-53d91241",
   "storage_revision": 39,
@@ -2296,11 +2296,14 @@
     "Upper composition follows the same 1800 mm rhythm: 600 mm cabinet + 600 mm hood zone + 600 mm cabinet; backsplash aligns to the full run.",
     "Island 1700 mm long is reserved as 550 mm sink module + 600 mm fully integrated dishwasher module + 550 mm drawer/bin module on the kitchen working side.",
     "Island sink shifted 150 mm west within the 900 mm depth so it sits in the nominal 600 mm working-side cabinet zone, preserving the reception-side shallow-storage concept instead of centering plumbing through both cabinet depths.",
-    "Reception-side island storage remains conceptual at approximately 250–300 mm shallow depth; sink bowl/trap and services may reduce usable depth locally and require shop-drawing coordination."
+    "Reception-side island storage remains conceptual at approximately 250–300 mm shallow depth; sink bowl/trap and services may reduce usable depth locally and require shop-drawing coordination.",
+    "K4 VISUAL TRUTH: speculative HVAC pocket boxes are removed from the architectural render. The reception/kitchen ceiling is shown at the verified 2.50 m clear design plane until exact MEP equipment, return/supply layout, condensate route and access requirements are selected.",
+    "HVAC feasibility remains an engineering workstream, not deleted: prior G2 reserved localized service space as a concept, but K4 refuses to show an unverified bulkhead as if it were final architecture.",
+    "K4 capture renderer receives an explicit final-pass builder for base-only/peninsula counters so the island and west cooking base render as actual cabinet carcasses with fronts and worktops."
   ],
   "architecture_variant": {
-    "id": "K2-open-plan-refinement",
-    "name": "Open-plan refinement: local kitchen HVAC pocket only",
+    "id": "K4-render-truth",
+    "name": "K4 truth render — no speculative HVAC bulkhead geometry",
     "render_only": true,
     "structural_status": "TBD",
     "remove_wall_segments": [
@@ -2488,19 +2491,6 @@
         "bottom_m": 2.1,
         "top_m": 2.5,
         "status": "EXPLORATORY"
-      },
-      {
-        "study_id": "K2-kitchen-pocket",
-        "rect": [
-          10740,
-          8200,
-          12583,
-          8960
-        ],
-        "bottom_m": 2.34,
-        "top_m": 2.5,
-        "status": "EXPLORATORY",
-        "role": "Compact service pocket above kitchen tall units only; final indoor-unit/return/supply layout TBD"
       }
     ],
     "door_overrides": [
