@@ -1,6 +1,6 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K4 — truthful open-plan render + fabrication-grid kitchen",
+  "name": "K5 — truthful cabinetry + bridged open-plan surfaces",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "scene_revision": "scene-a539474",
   "storage_revision": 39,
@@ -2300,7 +2300,9 @@
     "K4 VISUAL TRUTH: speculative HVAC pocket boxes are removed from the architectural render. The reception/kitchen ceiling is shown at the verified 2.50 m clear design plane until exact MEP equipment, return/supply layout, condensate route and access requirements are selected.",
     "HVAC feasibility remains an engineering workstream, not deleted: prior G2 reserved localized service space as a concept, but K4 refuses to show an unverified bulkhead as if it were final architecture.",
     "K4 capture renderer receives an explicit final-pass builder for base-only/peninsula counters so the island and west cooking base render as actual cabinet carcasses with fronts and worktops.",
-    "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged."
+    "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged.",
+    "K5 surface continuity study: add thin render-only floor and ceiling bridge strips across the footprints of the four removed kitchen/reception separator segments. This closes the visual void left by canonical room polygons after demolition without changing canonical geometry.",
+    "Floor bridges use the same travertine-look material as RECP-01 and KIT-01; ceiling bridges use the plain ceiling material at the verified 2.50 m design plane."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
@@ -2502,6 +2504,60 @@
           0
         ],
         "force_open": true,
+        "status": "EXPLORATORY"
+      }
+    ],
+    "bridge_surface_segments": [
+      {
+        "from": [
+          8981.529,
+          6587.866
+        ],
+        "to": [
+          12116.59,
+          6587.866
+        ],
+        "width_mm": 180,
+        "floor_mat": "travertine",
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          12116.59,
+          6587.866
+        ],
+        "to": [
+          12582.613,
+          6969.158
+        ],
+        "width_mm": 180,
+        "floor_mat": "travertine",
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          12582.613,
+          6969.158
+        ],
+        "to": [
+          12582.613,
+          7456.363
+        ],
+        "width_mm": 180,
+        "floor_mat": "travertine",
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          12582.613,
+          8176.58
+        ],
+        "to": [
+          12582.613,
+          8960.346
+        ],
+        "width_mm": 180,
+        "floor_mat": "travertine",
         "status": "EXPLORATORY"
       }
     ]
