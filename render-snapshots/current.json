@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "K2 — ceiling simplification + truthful island back",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-837405f5",
+  "scene_revision": "scene-4e3e5519",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -1550,8 +1550,8 @@
         },
         {
           "id": "K2-island-back-storage",
-          "type": "sideboard",
-          "variant": "plain",
+          "type": "divider",
+          "variant": "solid-panel",
           "room_id": "RECP-01",
           "placement": {
             "mode": "floor"
@@ -1568,7 +1568,7 @@
           "colour": "#C6B18F",
           "status": "EXPLORATORY",
           "metadata": {
-            "role": "Reception-facing shallow island storage / furniture back; approximately 280 mm deep",
+            "role": "Reception-facing solid oak joinery face / shallow-storage proxy within island",
             "note": "Conceptual 300 mm storage zone within the 900 mm island depth; exact carcass split and toe-kick TBD"
           }
         }
@@ -2314,7 +2314,9 @@
     "Island fabrication logic for development: about 600 mm sink base + 600 mm fully-integrated dishwasher + about 500 mm drawer/storage module along the 1700 mm length; reception side uses shallow storage within the 900 mm overall depth. Exact fillers, carcass thicknesses, plumbing void and appliance front dimensions remain TBD.",
     "Do not add bar stools: six-seat dining is adjacent, and the island volume is more valuable as storage/prep.",
     "K2 island module correction: 1700 mm length allocated approximately as 400 mm storage + 600 mm integrated dishwasher + 600 mm sink base + 100 mm south end/filler. Sink-bowl centre moved to y=6650, leaving roughly 125 mm worktop from the 550 mm bowl envelope to the south island end.",
-    "This increases the sink-centre shift from the original kitchen sink to roughly 380 mm, still a compact wet-service relocation but requiring confirmed trap/drain route and floor build-up."
+    "This increases the sink-centre shift from the original kitchen sink to roughly 380 mm, still a compact wet-service relocation but requiring confirmed trap/drain route and floor build-up.",
+    "K2 renderer-truth refinement: kitchen service pocket front edge aligned to the tall-unit front (plan y=8270) so it reads as a cabinet-top soffit rather than a projecting room beam.",
+    "Island reception face changed from sideboard proxy to solid-panel joinery proxy to remove fake furniture legs from the capture renderer."
   ],
   "architecture_variant": {
     "id": "K2-kitchen-service-pocket-only",
@@ -2511,7 +2513,7 @@
         "study_id": "G2-kitchen-pocket",
         "rect": [
           10740,
-          8200,
+          8270,
           12583,
           8960
         ],
