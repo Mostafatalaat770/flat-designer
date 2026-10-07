@@ -1,0 +1,35 @@
+{
+  "scenario": "400 mm chair pull-out away from table, footprint proxy only",
+  "chairs": [
+    {
+      "id": "starter-36",
+      "static_gap_mm": 1115,
+      "pulled_400mm_gap_mm": 1115
+    },
+    {
+      "id": "starter-37",
+      "static_gap_mm": 2515,
+      "pulled_400mm_gap_mm": 2515
+    },
+    {
+      "id": "starter-38",
+      "static_gap_mm": 1424,
+      "pulled_400mm_gap_mm": 1701
+    },
+    {
+      "id": "starter-39",
+      "static_gap_mm": 2666,
+      "pulled_400mm_gap_mm": 2824
+    },
+    {
+      "id": "A2-dining-chair-north-centre",
+      "static_gap_mm": 1815,
+      "pulled_400mm_gap_mm": 1815
+    },
+    {
+      "id": "A2-dining-chair-south-centre",
+      "static_gap_mm": 2019,
+      "pulled_400mm_gap_mm": 2224
+    }
+  ]
+}
