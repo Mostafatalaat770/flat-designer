@@ -2031,7 +2031,8 @@
     "HVAC feasibility remains an engineering workstream, not deleted: prior G2 reserved localized service space as a concept, but K4 refuses to show an unverified bulkhead as if it were final architecture.",
     "K4 capture renderer receives an explicit final-pass builder for base-only/peninsula counters so the island and west cooking base render as actual cabinet carcasses with fronts and worktops.",
     "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged.",
-    "K6 capture-only review mode: walls remain at 2.49 m while the canonical 2.50 m ceiling plane is hidden from this design-review camera. This changes neither the verified 2.50 m clear ceiling nor construction geometry; it only removes renderer occlusion caused by the legacy room ceiling polygon."
+    "K6 capture-only review mode: walls remain at 2.49 m while the canonical 2.50 m ceiling plane is hidden from this design-review camera. This changes neither the verified 2.50 m clear ceiling nor construction geometry; it only removes renderer occlusion caused by the legacy room ceiling polygon.",
+    "K6 review-camera fix: set cut_height_m=2.49 for design-review captures only, 10 mm below the verified 2.50 m ceiling plane, to suppress ceiling-plane occlusion without changing architecture."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",
