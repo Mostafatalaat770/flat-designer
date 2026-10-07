@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K2 — ceiling simplification + truthful island back",
+  "name": "K3 — indoor laundry tower + under-hob oven strategy",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-837405f5",
+  "scene_revision": "scene-99ac598d",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -578,7 +578,7 @@
       {
         "id": "E2-cooking-base",
         "type": "counter",
-        "name": "E2 west cooking/prep run · 1950 mm · drawers + prep",
+        "name": "K3 west cooking/prep run · 1950 mm · 600 mm oven under hob + drawer/prep storage",
         "room_id": "KIT-01",
         "cx": 9381,
         "cy": 7895,
@@ -605,24 +605,9 @@
         "status": "EXPLORATORY"
       },
       {
-        "id": "E2-oven-column",
-        "type": "ovencol",
-        "name": "E2 600 mm oven + appliance/storage column",
-        "room_id": "KIT-01",
-        "cx": 11650,
-        "cy": 8570,
-        "w": 600,
-        "d": 600,
-        "rot": 0,
-        "color": "#E8E2D7",
-        "variant": "black-glass",
-        "status": "EXPLORATORY",
-        "material_id": "kitchen-soft-ivory"
-      },
-      {
         "id": "E2-fridge",
         "type": "fridge",
-        "name": "E2 600 mm integrated-fridge housing · exact SKU/ventilation TBD",
+        "name": "K3 600 mm integrated fridge housing · east tall-wall module · exact SKU/ventilation TBD",
         "room_id": "KIT-01",
         "cx": 12250,
         "cy": 8570,
@@ -692,16 +677,16 @@
         "status": "EXPLORATORY"
       },
       {
-        "id": "H1-terrace-washer",
+        "id": "K3-indoor-washer",
         "type": "washer",
-        "name": "Service-terrace washer envelope · 600 × 650 mm · weather-protection TBD",
-        "room_id": "TER-SVC",
-        "cx": 9170,
-        "cy": 9600,
+        "name": "K3 integrated indoor washer envelope · 600 mm tall-wall module · shelves above TBD",
+        "room_id": "KIT-01",
+        "cx": 11050,
+        "cy": 8570,
         "w": 600,
-        "d": 650,
-        "rot": 90,
-        "color": "#E6E8EA",
+        "d": 600,
+        "rot": 0,
+        "color": "#E8E2D7",
         "variant": "style",
         "status": "EXPLORATORY"
       }
@@ -1526,29 +1511,6 @@
           }
         },
         {
-          "id": "E2-pantry-tall",
-          "type": "sideboard",
-          "variant": "plain",
-          "room_id": "KIT-01",
-          "placement": {
-            "mode": "floor"
-          },
-          "cx": 11050,
-          "cy": 8570,
-          "rotation": 0,
-          "width_mm": 600,
-          "depth_mm": 600,
-          "height_mm": 2200,
-          "material_references": {
-            "primary": "kitchen-soft-ivory"
-          },
-          "colour": "#E8E2D7",
-          "status": "EXPLORATORY",
-          "metadata": {
-            "role": "600 mm full-height pantry; plain integrated joinery massing"
-          }
-        },
-        {
           "id": "K2-island-back-storage",
           "type": "sideboard",
           "variant": "plain",
@@ -1570,6 +1532,29 @@
           "metadata": {
             "role": "Reception-facing shallow island storage / furniture back; approximately 280 mm deep",
             "note": "Conceptual 300 mm storage zone within the 900 mm island depth; exact carcass split and toe-kick TBD"
+          }
+        },
+        {
+          "id": "K3-pantry-tall",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 11650,
+          "cy": 8570,
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 600,
+          "height_mm": 2200,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "600 mm full-height pantry moved to middle tall-wall module"
           }
         }
       ],
@@ -1868,7 +1853,97 @@
   },
   "views": [
     {
-      "id": "K2-dining-kitchen",
+      "id": "K3-tall-wall",
+      "room_id": "KIT-01",
+      "camera": {
+        "position": [
+          3.65,
+          1.62,
+          2.2
+        ],
+        "target": [
+          3.55,
+          1.1,
+          3.55
+        ],
+        "fov": 58,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "K3-dining-kitchen",
       "room_id": "RECP-01",
       "camera": {
         "position": [
@@ -1958,187 +2033,7 @@
       }
     },
     {
-      "id": "K2-living-kitchen",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.85,
-          1.67,
-          0.55
-        ],
-        "target": [
-          3.25,
-          1.22,
-          1.45
-        ],
-        "fov": 62,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "K2-island-back",
-      "room_id": "RECP-01",
-      "camera": {
-        "position": [
-          4.8,
-          1.55,
-          1.55
-        ],
-        "target": [
-          3.3,
-          1.05,
-          1.4
-        ],
-        "fov": 58,
-        "projection_type": "perspective",
-        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
-        "aspect": 1.7777777777777777,
-        "near": 0.05,
-        "far": 300,
-        "viewport": {
-          "width": 1280,
-          "height": 720
-        },
-        "viewer": {
-          "cut_height_m": 2.5,
-          "furnishings_visible": true,
-          "night": false,
-          "hour": 10,
-          "mode": "orbit",
-          "doors": [
-            {
-              "id": "OP-BR01-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-BR02-HALL",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-MBR-HALL",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-WIC-BATHM",
-              "open": true,
-              "position": 0
-            },
-            {
-              "id": "OP-HALL-BATHC",
-              "open": true,
-              "position": -1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-KIT",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-KIT-TERSVC",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "OP-RECP-WC",
-              "open": true,
-              "position": -3.141592653589793
-            },
-            {
-              "id": "OP-ENT-01",
-              "open": true,
-              "position": 1.5707963267948966
-            },
-            {
-              "id": "GLZ-MBR-TER",
-              "open": true,
-              "position": 1
-            },
-            {
-              "id": "GLZ-RECP-TERMAIN",
-              "open": true,
-              "position": 1
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "K2-kitchen-work",
+      "id": "K3-kitchen-work",
       "room_id": "KIT-01",
       "camera": {
         "position": [
@@ -2152,6 +2047,96 @@
           1.35
         ],
         "fov": 63,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "K3-service-terrace",
+      "room_id": "TER-SVC",
+      "camera": {
+        "position": [
+          2.42,
+          1.62,
+          4.52
+        ],
+        "target": [
+          1.15,
+          1.05,
+          4.48
+        ],
+        "fov": 58,
         "projection_type": "perspective",
         "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
         "aspect": 1.7777777777777777,
@@ -2314,7 +2299,12 @@
     "Island fabrication logic for development: about 600 mm sink base + 600 mm fully-integrated dishwasher + about 500 mm drawer/storage module along the 1700 mm length; reception side uses shallow storage within the 900 mm overall depth. Exact fillers, carcass thicknesses, plumbing void and appliance front dimensions remain TBD.",
     "Do not add bar stools: six-seat dining is adjacent, and the island volume is more valuable as storage/prep.",
     "K2 island module correction: 1700 mm length allocated approximately as 400 mm storage + 600 mm integrated dishwasher + 600 mm sink base + 100 mm south end/filler. Sink-bowl centre moved to y=6650, leaving roughly 125 mm worktop from the 550 mm bowl envelope to the south island end.",
-    "This increases the sink-centre shift from the original kitchen sink to roughly 380 mm, still a compact wet-service relocation but requiring confirmed trap/drain route and floor build-up."
+    "This increases the sink-centre shift from the original kitchen sink to roughly 380 mm, still a compact wet-service relocation but requiring confirmed trap/drain route and floor build-up.",
+    "K3 LAUNDRY STRATEGY: supersede the H1 service-terrace washer. Reserve the west 600 mm tall-wall kitchen module for an integrated indoor washer with storage/shelves above; keep the service terrace for drying and utility.",
+    "Move the oven from the tall wall to the 600 mm module directly under the gas hob. This frees the middle tall-wall module for a full-height pantry while retaining the east integrated-fridge module.",
+    "K3 tall wall sequence west→east: 600 indoor laundry / 600 pantry / 600 integrated fridge. The available ~1843 mm wall segment leaves only modest fillers; site measurement and appliance ventilation/shop drawings are mandatory.",
+    "Reference only: Bosch WIW28302GB previously used in the project is an indoor built-in washer reference. Exact local SKU, ventilation, water/drain, electrical isolation, service access and cabinet moisture protection remain TBD.",
+    "This strategy is preferred over an exposed service-terrace washer if outdoor exposure or manufacturer warranty conditions cannot be made robust."
   ],
   "architecture_variant": {
     "id": "K2-kitchen-service-pocket-only",
