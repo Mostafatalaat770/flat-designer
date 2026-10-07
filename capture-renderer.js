@@ -1,6 +1,6 @@
 /* Render-only architectural study overlay. Canonical geometry remains untouched. */
 function applyApartmentArchitectureVariant(variant){
-  if(!variant)return {wall_segments_hidden:0,wall_segments_added:0,wall_boxes_added:0,openings_hidden:0,door_overrides:0};
+  if(!variant)return {wall_segments_hidden:0,wall_segments_added:0,wall_boxes_added:0,surface_bridges_added:0,openings_hidden:0,door_overrides:0};
   if(variant.render_only!==true)throw new Error('Architecture variant must be explicitly render-only.');
   const samePoint=(a,b)=>Math.abs(a[0]-b[0])<0.6&&Math.abs(a[1]-b[1])<0.6;
   const sameSegment=(s,r)=>(samePoint(s.from,r.from)&&samePoint(s.to,r.to))||(samePoint(s.from,r.to)&&samePoint(s.to,r.from));
@@ -28,6 +28,20 @@ function applyApartmentArchitectureVariant(variant){
     o.userData.architectureStudyWallBox=b;archUp.add(o);wallBoxesAdded++;
   }
 
+  let surfaceBridgesAdded=0;
+  for(const p of Array.isArray(variant.bridge_surface_segments)?variant.bridge_surface_segments:[]){
+    const [x0,z0]=p.from,[x1,z1]=p.to,dx=M(x1-x0),dz=M(z1-z0),L=Math.hypot(dx,dz),width=M(p.width_mm??180),angle=-Math.atan2(dz,dx);
+    if(L<=0||width<=0)continue;
+    const floorKey=p.floor_mat||state.rooms?.[p.floor_room_id||'RECP-01']?.mat||'travertine';
+    const floor=new THREE.Mesh(new THREE.BoxGeometry(L,.012,width),floorMat(floorKey));
+    floor.position.set(wx((x0+x1)/2),.006,wz((z0+z1)/2));floor.rotation.y=angle;floor.receiveShadow=true;floor.castShadow=false;
+    floor.userData.architectureSurfaceBridge={...p,surface:'floor'};archFloor.add(floor);
+    const ceil=new THREE.Mesh(new THREE.BoxGeometry(L,.012,width),mat('#fbfaf7',{roughness:1}));
+    ceil.position.set(wx((x0+x1)/2),H-.006,wz((z0+z1)/2));ceil.rotation.y=angle;ceil.receiveShadow=true;ceil.castShadow=false;
+    ceil.userData.architectureSurfaceBridge={...p,surface:'ceiling'};archUp.add(ceil);
+    surfaceBridgesAdded++;
+  }
+
   const hiddenIds=new Set(Array.isArray(variant.hide_openings)?variant.hide_openings:[]);
   let openingsHidden=0;
   for(const d of doors){
@@ -36,7 +50,7 @@ function applyApartmentArchitectureVariant(variant){
     if(d.sliding)d.panels?.forEach(p=>p.visible=false);
     else if(d.pivot)d.pivot.visible=false;
   }
-  return {wall_segments_hidden:wallSegmentsHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,openings_hidden:openingsHidden,door_overrides:0};
+  return {wall_segments_hidden:wallSegmentsHidden,wall_segments_added:wallSegmentsAdded,wall_boxes_added:wallBoxesAdded,surface_bridges_added:surfaceBridgesAdded,openings_hidden:openingsHidden,door_overrides:0};
 }
 function applyApartmentDoorOverrides(variant,result){
   const overrides=Array.isArray(variant?.door_overrides)?variant.door_overrides:[];
