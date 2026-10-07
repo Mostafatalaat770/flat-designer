@@ -2,7 +2,7 @@
   "schema": "ApartmentGitHubRenderSnapshot/1",
   "name": "K4 — truthful open-plan render + fabrication-grid kitchen",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-53d91241",
+  "scene_revision": "scene-a539474",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -578,7 +578,7 @@
       {
         "id": "E2-cooking-base",
         "type": "counter",
-        "name": "K3 west cooking wall · 1800 mm · 600 prep drawers + 600 hob unit + 600 prep drawers",
+        "name": "K4 cooking run · 1800 mm · 600 drawers + 600 hob + 600 drawers",
         "room_id": "KIT-01",
         "cx": 9381,
         "cy": 7774.106,
