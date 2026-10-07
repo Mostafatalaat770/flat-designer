@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K9 — rotated island with balanced kitchen and dining clearance",
+  "name": "K10 — balanced island with centred sink and usable cabinet reservations",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-35cd91ea",
+  "scene_revision": "scene-967b6681",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -637,7 +637,7 @@
       {
         "id": "E2-island",
         "type": "counter",
-        "name": "K9 rotated oak storage island · 1700 × 900 mm",
+        "name": "K10 oak island · dishwasher, sink, drawers · 1700 × 900 mm",
         "room_id": "RECP-01",
         "cx": 11750,
         "cy": 6600,
@@ -647,18 +647,54 @@
         "color": "#B88C5E",
         "variant": "base-only",
         "status": "EXPLORATORY",
-        "material_id": "a1-natural-oak"
+        "material_id": "a1-natural-oak",
+        "joinery": {
+          "schema": "CounterJoineryConcept/1",
+          "status": "EXPLORATORY",
+          "end_panel_mm": 18,
+          "working_depth_mm": 600,
+          "rear_depth_mm": 300,
+          "work_modules": [
+            {
+              "role": "dishwasher",
+              "width_mm": 600,
+              "clear_appliance_reservation": true
+            },
+            {
+              "role": "sink",
+              "width_mm": 600
+            },
+            {
+              "role": "drawers",
+              "width_mm": 464
+            }
+          ],
+          "rear_modules": [
+            {
+              "role": "storage",
+              "width_mm": 600
+            },
+            {
+              "role": "storage",
+              "width_mm": 600
+            },
+            {
+              "role": "storage",
+              "width_mm": 464
+            }
+          ]
+        }
       },
       {
         "id": "E2-island-sink",
         "type": "ksink",
-        "name": "K9 550 mm island sink · working side · plumbing TBD",
+        "name": "K10 550 mm centred island sink · tap north / work face south · TBD",
         "room_id": "RECP-01",
-        "cx": 12250,
+        "cx": 11800,
         "cy": 6750,
         "w": 550,
         "d": 400,
-        "rot": 180,
+        "rot": 0,
         "color": "#eef2f5",
         "variant": "style",
         "status": "EXPLORATORY"
@@ -2112,6 +2148,96 @@
           ]
         }
       }
+    },
+    {
+      "id": "K10-island-working-front",
+      "room_id": "KIT-01",
+      "camera": {
+        "position": [
+          3.732291,
+          1.7,
+          2.8143415000000003
+        ],
+        "target": [
+          3.732291,
+          0.72,
+          1.7843415000000005
+        ],
+        "fov": 42,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.866977829638273,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1600,
+          "height": 857
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
     }
   ],
   "notes": [
@@ -2225,8 +2351,13 @@
     "K8 service-view correction: the terrace washer rotates 90 to 270 degrees to face the east use area. The existing 600 × 650 mm footprint and centre remain fixed; measured model-front space is 1154.705 mm. Outdoor exposure, weather protection, drainage and electrical/manufacturer requirements remain unapproved.",
     "K9 OWNER-REQUESTED EXPLORATION: rotate the 1700 × 900 mm island 90 degrees and translate its centre 400 mm toward the south tall units and 400 mm toward dining. Keep all architecture, ceiling, other furniture and the three original comparison cameras unchanged.",
     "The 1620 mm gap was from the rotation-only trial to the oven/fridge fronts, not to dining. This translated alternative returns the south front gap to 1220 mm and west cooking-run edge gap to 1219 mm. Dining table edge is 1070 mm and nearest stored dining-chair edge is 1115 mm away; chair pull-out is not included in those static distances.",
-    "The sink rotates with the island and its 550 × 400 mm reserve moves to the south working side. A further 70 mm inset from the rigidly rotated position leaves 75 mm from its outer modeled edge to the east island edge. Cabinet modules, actual basin cutout, tap/trap access and service routes remain TBD.",
-    "K9 is a render-only comparison candidate. It does not activate a saved production variant, change canonical architecture, merge or deploy. The existing kitchen wall-removal study remains conditional on structural/developer approval."
+    "K9 is a render-only comparison candidate. It does not activate a saved production variant, change canonical architecture, merge or deploy. The existing kitchen wall-removal study remains conditional on structural/developer approval.",
+    "K10 retains the approved K9 island position, rotation and 1700 × 900 mm footprint. Only its internal cabinet concept and the sink position change; all other furniture, finishes, architecture overlays and comparison cameras are unchanged.",
+    "Sink outer reserve is 550 × 400 mm at (11800,6750), leaving 625 mm west and 525 mm east landing widths. Both landings improve the former 75 mm east-end margin. The west clear surface is 625 × 900 mm; this is a compact prep compromise and does not provide the NKBA published 914 × 610 mm continuous preparation rectangle alongside an uncovered sink.",
+    "Actual 1700 mm joinery allocation is 18 mm end panel + 600 mm clear dishwasher reservation + 600 mm sink cabinet + 464 mm drawer cabinet + 18 mm end panel. The 600 / 600 / 500 shorthand is nominal; the remaining 500 mm includes 36 mm end panels. Depth is allocated 600 mm working side + 300 mm shallow reception-side storage. Internal panels, tap/trap access and storage usable depth are not fabrication-approved.",
+    "Dishwasher 650 mm, oven 600 mm, fridge 600 mm and drawer 500 mm open-door envelopes are explicit hypothetical planning proxies, not exact manufacturer geometry. A dishwasher opened alone leaves 570 mm to the opposing closed tall fronts. Dishwasher and oven proxies overlap by 168 × 30 mm if simultaneously open; do not treat the arrangement as certified for simultaneous use.",
+    "This is an isolated, render-only functional refinement. Structural approval for the existing kitchen-opening study, exact appliances, service routes and site dimensions remain unresolved. It does not deploy, activate, merge or save a live design.",
+    "The original three comparison cameras are preserved exactly. One supplemental Natural42 standing view at 1.70 m is added from the south work aisle to show the complete island, working fronts and sink orientation. It is not a before/after comparison camera."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",

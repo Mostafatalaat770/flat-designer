@@ -2039,6 +2039,49 @@ export function createBuilders(scope) {
     };
     return [base, base, cap, base, face(1), face(-1)];
   }
+  /* Explicit, dimensioned closed-front joinery concept; not a manufacturer model. */
+  function studioCounterJoinery(g,f,w,d,cm){
+    const j=f.joinery;
+    if(!j)return false;
+    const validModules=a=>Array.isArray(a)&&a.length>0&&a.every(m=>Number.isFinite(m.width_mm)&&m.width_mm>=100&&['dishwasher','sink','drawers','storage'].includes(m.role));
+    if(j.schema!=='CounterJoineryConcept/1'||j.status!=='EXPLORATORY'||!Number.isFinite(j.end_panel_mm)||j.end_panel_mm<12||j.end_panel_mm>30||!validModules(j.work_modules)||!validModules(j.rear_modules)||!Number.isFinite(j.working_depth_mm)||!Number.isFinite(j.rear_depth_mm)||j.working_depth_mm<500||j.rear_depth_mm<200)throw new Error('Invalid counter joinery concept.');
+    for(const modules of [j.work_modules,j.rear_modules])if(Math.abs(modules.reduce((n,m)=>n+m.width_mm,2*j.end_panel_mm)-f.w)>.01)throw new Error('Joinery widths exceed the declared counter.');
+    if(Math.abs(j.working_depth_mm+j.rear_depth_mm-f.d)>.01)throw new Error('Joinery depths exceed the declared counter.');
+    const p=M(j.end_panel_mm),work=M(j.working_depth_mm),rear=M(j.rear_depth_mm);
+    g.add(box(w-.012,.08,d-.08,'#4a4641',0,0,0));
+    for(const side of [-1,1])g.add(box(p,.74,d-.04,cm,side*(w/2-p/2),.08,0));
+    // The rear mass is a shallow storage reservation. Plumbing access remains TBD.
+    g.add(box(w-2*p,.74,rear-.04,cm,0,.08,-d/2+rear/2));
+    const renderedModules=[];
+    const record=front=>{g.updateMatrixWorld(true);const b=new THREE.Box3().setFromObject(front);renderedModules.push({...front.userData.counterModule,min_mm:b.min.toArray().map(n=>n*1000),max_mm:b.max.toArray().map(n=>n*1000)});};
+    let x=-w/2+p;
+    for(const [index,m] of j.work_modules.entries()){
+      const mw=M(m.width_mm),front=new THREE.Group();
+      fronts(front,-mw/2,.08,mw,.72,0,m.role==='sink'?2:1,m.role==='drawers'?3:1,cm,'edge');
+      front.position.set(x+mw/2,0,d/2-.03);
+      front.userData.counterModule={side:'working',index,role:m.role,width_mm:m.width_mm,depth_mm:j.working_depth_mm};
+      g.add(front);record(front);
+      if(m.role==='dishwasher'){
+        // Preserve a full 600 mm clear lateral bay; its closed integrated front is shown.
+        g.add(box(mw-.02,.70,work-.06,mat('#8b9297',{roughness:.5}),x+mw/2,.09,d/2-work/2-.02));
+      }else{
+        for(const sx of [x+p/2,x+mw-p/2])g.add(box(p,.74,work-.04,cm,sx,.08,d/2-work/2-.02));
+        g.add(box(mw,.018,work-.04,cm,x+mw/2,.08,d/2-work/2-.02));
+      }
+      x+=mw;
+    }
+    x=-w/2+p;
+    for(const [index,m] of j.rear_modules.entries()){
+      const mw=M(m.width_mm),front=new THREE.Group();
+      fronts(front,-mw/2,.08,mw,.72,0,1,1,cm,'edge');
+      front.position.set(x+mw/2,0,-d/2+.03);front.rotation.y=Math.PI;
+      front.userData.counterModule={side:'reception',index,role:m.role,width_mm:m.width_mm,depth_mm:j.rear_depth_mm};
+      g.add(front);record(front);x+=mw;
+    }
+    g.userData.counterJoinery={module_geometry:renderedModules,schema:j.schema,working_depth_mm:j.working_depth_mm,rear_depth_mm:j.rear_depth_mm,end_panel_mm:j.end_panel_mm,work_modules:j.work_modules.map(m=>({...m})),rear_modules:j.rear_modules.map(m=>({...m}))};
+    return true;
+  }
+  
   function makeStudioVariant(f) {
     if (
       !f.variant ||
@@ -2204,11 +2247,13 @@ export function createBuilders(scope) {
       const stone = mat("#dcd7cf", { roughness: 0.22 });
       const n = Math.max(1, Math.round(w / 0.6));
       const fz = d / 2 - 0.04;
-      g.add(
-        box(w - 0.01, 0.08, d - 0.08, "#4a4641", 0, 0, -0.04),
-        box(w, 0.74, d - 0.04, cm, 0, 0.08, -0.02),
-      );
-      fronts(g, -w / 2 + 0.005, 0.08, w - 0.01, 0.72, fz, n, 1, cm, "edge", 0.48);
+      if (!studioCounterJoinery(g,f,w,d,cm)) {
+        g.add(
+          box(w - 0.01, 0.08, d - 0.08, "#4a4641", 0, 0, -0.04),
+          box(w, 0.74, d - 0.04, cm, 0, 0.08, -0.02),
+        );
+        fronts(g, -w / 2 + 0.005, 0.08, w - 0.01, 0.72, fz, n, 1, cm, "edge", 0.48);
+      }
       g.add(rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004));
     } else if (f.type === "fridge") {
       const m =

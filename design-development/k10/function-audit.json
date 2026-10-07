@@ -1,0 +1,260 @@
+{
+  "schema": "K10IslandFunctionReview/1",
+  "status": "EXPLORATORY",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "scene_revision": "scene-967b6681",
+  "baseline_scene_revision": "scene-35cd91ea",
+  "geometry_status": "image-calibrated concept, not site or construction measurements",
+  "canonical_summary": {
+    "pass": 151,
+    "warning": 50,
+    "fail": 1
+  },
+  "canonical_retained_failures": [
+    {
+      "kind": "placement",
+      "status": "FAIL",
+      "object_id": "E2-island",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 17.4,
+      "message": "Full footprint must remain in its assigned room."
+    }
+  ],
+  "canonical_report_unchanged": true,
+  "island_bounds_mm": {
+    "x0": 10900,
+    "y0": 6150,
+    "x1": 12600,
+    "y1": 7050
+  },
+  "sink_outer_reserve_bounds_mm": {
+    "x0": 11525,
+    "y0": 6550,
+    "x1": 12075,
+    "y1": 6950
+  },
+  "sink_landings_mm": {
+    "west_mm": 625,
+    "east_mm": 525,
+    "front_mm": 100,
+    "rear_mm": 400
+  },
+  "working_modules_mm": [
+    {
+      "role": "dishwasher",
+      "width_mm": 600,
+      "clear_appliance_reservation": true,
+      "x0": 10918,
+      "x1": 11518,
+      "y0": 6450,
+      "y1": 7050
+    },
+    {
+      "role": "sink",
+      "width_mm": 600,
+      "x0": 11518,
+      "x1": 12118,
+      "y0": 6450,
+      "y1": 7050
+    },
+    {
+      "role": "drawers",
+      "width_mm": 464,
+      "x0": 12118,
+      "x1": 12582,
+      "y0": 6450,
+      "y1": 7050
+    }
+  ],
+  "rear_storage_nominal_depth_mm": 300,
+  "prep": {
+    "west_clear_surface_mm": [
+      625,
+      900
+    ],
+    "working_side_clear_rectangle_mm": [
+      610,
+      610
+    ],
+    "published_reference_rectangle_mm": [
+      914,
+      610
+    ],
+    "continuous_reference_met": false,
+    "required_island_length_with_550_sink_914_prep_457_landing_mm": 1921,
+    "decision": "Retain the accepted 1700 mm footprint; disclose the compact prep compromise rather than extending the island into dining."
+  },
+  "tall_front_clearances_mm": [
+    {
+      "id": "E2-oven-column",
+      "mm": 1219.9999999999998
+    },
+    {
+      "id": "E2-fridge",
+      "mm": 1220
+    },
+    {
+      "id": "E2-pantry-tall",
+      "mm": 1220
+    }
+  ],
+  "unchanged_static_gaps_mm": {
+    "E2-cooking-base": 1219,
+    "starter-32": 1757.954185357551,
+    "starter-35": 1070
+  },
+  "appliance_opening_proxy": {
+    "envelopes": [
+      {
+        "id": "dishwasher",
+        "assumed_projection_mm": 650,
+        "poly": [
+          [
+            10918,
+            7050
+          ],
+          [
+            11518,
+            7050
+          ],
+          [
+            11518,
+            7700
+          ],
+          [
+            10918,
+            7700
+          ]
+        ]
+      },
+      {
+        "id": "E2-oven-column",
+        "assumed_projection_mm": 600,
+        "poly": [
+          [
+            11350,
+            7670
+          ],
+          [
+            11950,
+            7670
+          ],
+          [
+            11950,
+            8270
+          ],
+          [
+            11350,
+            8270
+          ]
+        ]
+      },
+      {
+        "id": "E2-fridge",
+        "assumed_projection_mm": 600,
+        "poly": [
+          [
+            11950,
+            7670
+          ],
+          [
+            12550,
+            7670
+          ],
+          [
+            12550,
+            8270
+          ],
+          [
+            11950,
+            8270
+          ]
+        ]
+      },
+      {
+        "id": "drawers",
+        "assumed_projection_mm": 500,
+        "poly": [
+          [
+            12118,
+            7050
+          ],
+          [
+            12582,
+            7050
+          ],
+          [
+            12582,
+            7550
+          ],
+          [
+            12118,
+            7550
+          ]
+        ]
+      }
+    ],
+    "single_open": [
+      {
+        "id": "dishwasher",
+        "assumed_projection_mm": 650,
+        "min_gap_to_closed_other_solids_mm": 570,
+        "tangent_side_edges_ignored": []
+      },
+      {
+        "id": "E2-oven-column",
+        "assumed_projection_mm": 600,
+        "min_gap_to_closed_other_solids_mm": 620,
+        "tangent_side_edges_ignored": [
+          "E2-fridge",
+          "E2-pantry-tall"
+        ]
+      },
+      {
+        "id": "E2-fridge",
+        "assumed_projection_mm": 600,
+        "min_gap_to_closed_other_solids_mm": 600,
+        "tangent_side_edges_ignored": [
+          "E2-oven-column"
+        ]
+      },
+      {
+        "id": "drawers",
+        "assumed_projection_mm": 500,
+        "min_gap_to_closed_other_solids_mm": 720,
+        "tangent_side_edges_ignored": []
+      }
+    ],
+    "simultaneous_overlaps": [
+      {
+        "a": "dishwasher",
+        "b": "E2-oven-column",
+        "overlap_width_mm": 168,
+        "overlap_depth_mm": 30,
+        "area_mm2": 5040
+      }
+    ],
+    "dishwasher_open_remaining_to_closed_tall_front_mm": 570,
+    "assumption": "Hypothetical rectangular open-door envelopes; exact doors, hinges, bodies and reach are unverified. Zero-area tangent side edges are recorded separately. One door open at a time is not a simultaneous-use certification."
+  },
+  "reference": {
+    "publisher": "NKBA",
+    "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf",
+    "guidelines": [
+      11,
+      12,
+      13
+    ],
+    "status": "Published planning reference, not local code or claim of latest-edition compliance"
+  },
+  "limitations": [
+    "The retained canonical E2-island room-placement exception depends on the unchanged render-only open-kitchen study.",
+    "The 550 × 400 mm sink is an outer placeholder, not an exact cutout or selected product.",
+    "The 600 mm dishwasher is a clear lateral reservation; filler tolerances, height, ventilation and rear services await a real SKU.",
+    "The drawer cabinet is 464 mm before joinery/reveal allowances; 500 mm shorthand includes the two 18 mm island end panels.",
+    "Shallow rear storage is a nominal 300 mm allocation; internal usable depth depends on back panels and sink/trap/services.",
+    "Prep frontage is limited; no 914 × 610 mm uninterrupted rectangle beside the open sink is claimed.",
+    "A conservative dishwasher/oven simultaneous-open proxy overlaps; manufacturer door geometry may change this result.",
+    "No live activation, merge, deployment or construction approval."
+  ]
+}

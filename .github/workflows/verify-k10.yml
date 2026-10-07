@@ -1,0 +1,54 @@
+name: Verify K10 Island Study
+
+on:
+  push:
+    branches:
+      - "design/k10-island-function"
+    paths:
+      - "*.js"
+      - "*.mjs"
+      - "*.py"
+      - "scripts/**"
+      - "render-snapshots/current.json"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Core verification
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
+        run: npm run check
+      - name: Reproduce functional island from frozen K9
+        run: |
+          node scripts/prepare-k10-island.mjs design-development/k9/snapshot.json
+          node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; assert.deepEqual(JSON.parse(fs.readFileSync('design-development/k10/snapshot.json')),JSON.parse(fs.readFileSync('render-snapshots/current.json')));"
+      - name: Architectural candidate validation
+        run: node scripts/validate-architectural-snapshot.mjs
+      - name: Render overlay regression checks
+        run: node scripts/verify-render-overlay.mjs
+      - name: Domain study tests
+        run: npm run check:study
+      - name: Provide canonical renderer fixture
+        run: cp studio/app/data/family-a7.brief.json studio/app/data/workspace-seed.json
+      - name: Studio renderer/domain tests
+        run: npm run check:studio
+      - name: Architecture-lock note
+        run: echo "Canonical Studio geometry guards remain intact; K10 architecture is still reviewed render-only study data."
