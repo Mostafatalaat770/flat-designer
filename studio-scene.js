@@ -15,7 +15,7 @@ function studioWallMaterials(s,base,cap){
 }
 function makeStudioVariant(f){
   if(!f.variant||f.variant==='style'||!STUDIO_VARIANTS[f.type]?.includes(f.variant)||f.type==='bed')return null;
-  const t=currentDecor().id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):currentDecor(),g=new THREE.Group(),w=M(f.w),d=M(f.d),c=f.color,fab=fabric(c),wood=woodM(t.wood);
+  const t=currentDecor().id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):currentDecor(),g=new THREE.Group(),w=M(f.w),d=M(f.d),c=f.color,fab=fabric(c),assigned=interiorMaterial(state,f.material_id),wood=woodM(t.wood),assignedMat=assigned?(assigned.category==='wood'?woodM(assigned.base_colour):mat(assigned.base_colour,{roughness:assigned.roughness??.7,metalness:assigned.metallic??0})):null;
   const connect=f.type==='sofa'&&f.variant==='modular'&&f.product_reference_id==='sofa-connect-soft-3',seats=[];
   if(['sofa','armchair'].includes(f.type)){
     const n=f.type==='armchair'?1:f.variant==='modular'?Math.max(2,Math.round(w/.96)):2,sw=w/n;
@@ -47,7 +47,7 @@ function makeStudioVariant(f){
     fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
     g.add(rbox(w+.01,.04,d,stone,0,.82,0,.004));
   }else if(f.type==='fridge'){
-    const m=f.variant==='integrated'?wood:mat('#a4abb0',{metalness:.72,roughness:.30});
+    const m=f.variant==='integrated'?(assignedMat||wood):mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
     g.add(box(w-.02,.006,.01,mat('#30343a'),0,.67,d/2+.001));
     for(const y of [.32,1.13])g.add(box(.025,.25,.033,mat(t.metal,{metalness:.8,roughness:.32}),w*.34,y,d/2+.01));
@@ -56,7 +56,7 @@ function makeStudioVariant(f){
     g.add(rbox(w,.84,d,m,0,.035,0,.014));g.add(box(w*.80,.014,.025,mat('#383b40'),0,.75,d/2+.005));
     if(f.variant==='steel')g.add(box(w-.01,.07,.012,mat('#24282c'),0,.80,d/2+.012));
   }else if(f.type==='ovencol'){
-    g.add(rbox(w,2.15,d,wood,0,.025,0,.008));const m=f.variant==='steel'?mat('#a7aeb2',{metalness:.75,roughness:.26}):mat('#171b20',{roughness:.25,metalness:.2});
+    g.add(rbox(w,2.15,d,assignedMat||wood,0,.025,0,.008));const m=f.variant==='steel'?mat('#a7aeb2',{metalness:.75,roughness:.26}):mat('#171b20',{roughness:.25,metalness:.2});
     g.add(box(w-.04,.60,.025,m,0,.87,d/2+.002));g.add(box(w*.74,.37,.012,mat('#0c1218',{roughness:.08,metalness:.3}),0,.97,d/2+.025));
     g.add(box(w*.68,.021,.030,mat('#b7bec1',{metalness:.8,roughness:.25}),0,1.30,d/2+.04));
   }
