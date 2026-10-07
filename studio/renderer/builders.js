@@ -2182,6 +2182,21 @@ export function createBuilders(scope) {
           -d * 0.14,
           -0.09,
         );
+    } else if (f.type === "counter") {
+      const assigned = interiorMaterial(state, f.material_id);
+      const cm =
+        assigned?.category === "wood"
+          ? woodM(assigned.base_colour)
+          : mat(c, { roughness: 0.45 });
+      const stone = mat("#dcd7cf", { roughness: 0.22 });
+      const n = Math.max(1, Math.round(w / 0.6));
+      const fz = d / 2 - 0.04;
+      g.add(
+        box(w - 0.01, 0.08, d - 0.08, "#4a4641", 0, 0, -0.04),
+        box(w, 0.74, d - 0.04, cm, 0, 0.08, -0.02),
+      );
+      fronts(g, -w / 2 + 0.005, 0.08, w - 0.01, 0.72, fz, n, 1, cm, "edge", 0.48);
+      g.add(rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004));
     } else if (f.type === "fridge") {
       const m =
         f.variant === "integrated"
