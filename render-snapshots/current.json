@@ -1,8 +1,8 @@
 {
   "schema": "ApartmentGitHubRenderSnapshot/1",
-  "name": "K8 — wall-linked finishes and continuous review ceiling",
+  "name": "K8 — continuous ceiling and usable tall-unit fronts",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
-  "scene_revision": "scene-a539474",
+  "scene_revision": "scene-210aba9b",
   "storage_revision": 39,
   "layout": {
     "modelVersion": "0.2.2",
@@ -613,7 +613,7 @@
         "cy": 8570,
         "w": 600,
         "d": 600,
-        "rot": 0,
+        "rot": 180,
         "color": "#E8E2D7",
         "variant": "black-glass",
         "status": "EXPLORATORY",
@@ -628,7 +628,7 @@
         "cy": 8570,
         "w": 600,
         "d": 600,
-        "rot": 0,
+        "rot": 180,
         "color": "#E8E2D7",
         "variant": "integrated",
         "status": "EXPLORATORY",
@@ -1535,7 +1535,7 @@
           },
           "cx": 11050,
           "cy": 8570,
-          "rotation": 0,
+          "rotation": 180,
           "width_mm": 600,
           "depth_mm": 600,
           "height_mm": 2200,
@@ -2669,7 +2669,9 @@
     "K8 render repair: skirting retains its actual canonical host wall ID/segment and is hidden only when that host is removed in the render-only overlay. Retained wall skirting stays visible.",
     "K8 render repair: hidden openings also hide their floor thresholds; other openings remain unchanged.",
     "K8 ceiling repair: cap the 21.183 mm source-trace seam at the former separator using the canonical outer room contours. This affects the review finish mesh only; canonical source polygons, ceiling height and furniture are unchanged.",
-    "K8 restores all eight locked J1 comparison cameras for a whole-candidate review, rather than treating one successful kitchen frame as complete evidence."
+    "K8 restores all eight locked J1 comparison cameras for a whole-candidate review, rather than treating one successful kitchen frame as complete evidence.",
+    "K8 review correction: oven column, fridge and pantry rotate 180 degrees to face the north work aisle. Their centres, dimensions and footprints stay fixed; no room or wall geometry changes.",
+    "K8 operating-strip calculation uses the verified master tangent correction; edge-only contact with adjacent cabinets is excluded while real front obstructions remain. The canonical validator still sees the retained kitchen partition; the render-only merged-room diagnostic is recorded separately and does not certify installation."
   ],
   "architecture_variant": {
     "id": "K4-render-truth",

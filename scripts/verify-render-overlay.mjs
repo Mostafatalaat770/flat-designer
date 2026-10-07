@@ -47,4 +47,36 @@ assert.equal(covered([11000,9500]),false,'Do not enlarge the merged ceiling into
 assert.equal(JSON.stringify({model,snapshot}),original,'Overlay must not mutate model or saved layout');
 const canonical=fs.readFileSync('dist/sources/Apartment_Master_Spec_Type_B_v0.2.2_Geometry_Heights_Glazing(1).json');
 assert.equal(crypto.createHash('sha256').update(canonical).digest('hex'),snapshot.canonical_sha256);
-console.log(JSON.stringify({result:'PASS',checks:'wall-linked trims, opening thresholds, retained geometry, seam coverage, external exclusions, 2.50 m height and immutable canonical source',overlay:result}));
+
+// Cabinet fronts use local +depth. Check the actual snapshot, including the
+// island across the former room boundary, without editing the canonical model.
+const domainContext=vm.createContext({MODEL:model,INTERIOR_MATERIALS:JSON.parse(fs.readFileSync('interior-materials.json','utf8')),structuredClone});
+for(const file of ['studio-core.js','interior-core.js'])vm.runInContext(fs.readFileSync(file,'utf8'),domainContext);
+const solids=domainContext.interiorSolids(snapshot.layout,model);
+const tallIds=['E2-oven-column','E2-fridge','E2-pantry-tall'];
+const tall=solids.filter(o=>tallIds.includes(o.id));
+assert.equal(tall.length,3);
+for(const o of tall){
+  assert.equal(o.rot,180,o.id+' must face the north work aisle');
+  const expectedX={'E2-pantry-tall':11050,'E2-oven-column':11650,'E2-fridge':12250}[o.id];
+  assert.deepEqual([o.cx,o.cy,o.w,o.d],[expectedX,8570,600,600],'Preserve the existing cabinet footprint');
+  assert.ok(domainContext.interiorOperatingDistance({...o,rot:0},solids,model)<1,'The previous orientation faces the wall');
+}
+const overlayModel=structuredClone(model);
+overlayModel.rooms.find(r=>r.id==='KIT-01').poly=snapshot.architecture_variant.merged_ceilings[0].poly;
+const segmentKey=s=>[s.from,s.to].map(p=>p.join(',')).sort().join('|');
+overlayModel.wall_segments=overlayModel.wall_segments.filter(s=>!snapshot.architecture_variant.remove_wall_segments.some(r=>segmentKey(r)===segmentKey(s)));
+const mergedSolids=solids.map(o=>({...o,room_id:o.room_id==='RECP-01'?'KIT-01':o.room_id}));
+const operating=tall.map(o=>({id:o.id,mm:domainContext.interiorOperatingDistance(o,mergedSolids,overlayModel)}));
+for(const r of operating)assert.ok(r.mm>=900,r.id+' must have an unobstructed conceptual front approach');
+for(const id of ['E2-oven-column','E2-pantry-tall'])assert.ok(Math.abs(operating.find(r=>r.id===id).mm-1220)<.001,'Include the cross-room island in the approach calculation');
+
+// A flush adjacent cabinet is a tangent; a cabinet in front remains an obstacle.
+const cabinet={id:'test-unit',room_id:'TEST',cx:0,cy:0,w:600,d:600,rot:0,bottom_mm:0,top_mm:2200,type:'ovencol'};
+const testModel={wall_segments:[],rooms:[{id:'TEST',poly:[[-5000,-5000],[5000,-5000],[5000,5000],[-5000,5000]]}]};
+const adjacent={...cabinet,id:'side-unit',cx:600};
+assert.equal(domainContext.interiorOperatingDistance(cabinet,[cabinet,adjacent],testModel),4700,'Do not treat a shared side edge as a blocked front');
+const blocker={...cabinet,id:'front-unit',cy:1200};
+assert.equal(domainContext.interiorOperatingDistance(cabinet,[cabinet,adjacent,blocker],testModel),600,'Keep a real front obstruction');
+assert.equal(JSON.stringify({model,snapshot}),original,'Diagnostics must not alter the architectural source or candidate');
+console.log(JSON.stringify({result:'PASS',checks:'wall-linked trims, opening thresholds, retained geometry, seam coverage, external exclusions, 2.50 m height, tall-unit orientation, genuine operating obstructions and immutable canonical source',overlay:result,render_only_operating_diagnostic:operating}));
