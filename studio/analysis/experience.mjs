@@ -65,7 +65,7 @@ export function assessCleanAirProduct({room_area_m2,clear_height_m,cadr_m3h,assu
  const equivalent=round(cadr_m3h/req.room_volume_m3,2);
  return {required_reference:req,product_cadr_m3h:cadr_m3h,
   equivalent_clean_air_changes_h:equivalent,
-  meets_assumed_4_8_reference:equivalent>=4.8,
+  meets_assumed_4_8_reference:(cadr_m3h/(room_area_m2*clear_height_m))>=4.8,
   caveat:assumed_turbo
    ?'Rated CADR at high fan speed; real quiet-night speed CADR and noise unknown. Does not prove quiet sleeping operation.'
    :'Requires measured CADR and operating fan mode, filter availability, placement clearance and noise data.'};
