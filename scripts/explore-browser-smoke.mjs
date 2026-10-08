@@ -17,15 +17,15 @@ try{
  const response=await page.goto('http://127.0.0.1:4176/_qa/workspace/explore.html',
   {waitUntil:'domcontentloaded',timeout:40000});
  assert.equal(response?.status(),200,'Explore bundled page did not serve');
- await page.getByText('Explore', {exact:true}).waitFor({timeout:25000}).catch(()=>{});
- await page.waitForFunction(()=>document.querySelectorAll('.explore-canvas canvas').length===2,{timeout:50000});
+ await page.getByRole('heading',{name:'Explore & Verify'}).waitFor({timeout:25000});
+ await page.waitForFunction(()=>document.querySelectorAll('.explore-canvas canvas').length===2,null,{timeout:50000});
  await page.getByRole('button',{name:'Verify B against original Type B'}).waitFor({state:'visible',timeout:40000});
  const localBefore=await page.evaluate(()=>Object.keys(localStorage).sort());
  assert.equal(localBefore.length,0,'Fresh browser must start with no local versions/drafts');
  await page.getByRole('button',{name:'Warm Japandi'}).click();
  await page.getByLabel('Flooring option').selectOption('travertine');
  await page.getByLabel('Light temperature').selectOption('3000');
- await page.getByLabel('Visual brightness').fill('60');
+ await page.getByRole('slider',{name:'Visual brightness'}).press('ArrowLeft');
  await page.getByRole('button',{name:'Snapshot B → A'}).click();
  await page.getByRole('button',{name:'Calm Contemporary'}).click();
  await page.getByRole('checkbox',{name:'Side-by-side A/B'}).uncheck();
