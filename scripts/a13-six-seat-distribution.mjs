@@ -87,12 +87,50 @@ for(const inset of [0,60,75,100]){
 }
 assert.deepEqual(results.map(x=>x.end_prep_person_to_closest_seat_mm),[510,570,585,610]);
 assert.deepEqual(results.map(x=>x.adjacent_chair_shell_gap_mm),[190,130,115,90]);
+// VISUAL QA: previous kitchen-centered A12 cameras were valid but did not show
+// the six dining chairs. Compare combined +150 island with normal vs symmetric
+// +75 chair grouping from TWO deliberately aimed dining cameras. Coordinates
+// are transformed from immutable canonical Type B [x,y] mm to 3D metres.
+const model=domain.model;
+const world=(p,h)=>[(p[0]-model.width_mm/2)/1000,h,(p[1]-model.depth_mm/2)/1000];
+const cameraDefs=[
+ {id:'A13-living-to-six-seat',from:[10800,3350],aim:[14200,7950]},
+ {id:'A13-six-seat-eye',from:[13250,9440],aim:[14400,7600]},
+ {id:'A13-dining-to-island-end',from:[15050,9350],aim:[12900,6450]}
+];
+const combined=[];
+for(const inset of [0,75]){
+ const scene=structuredClone(source);
+ for(const id of sides.left)byId(scene.layout.furniture,id).cx+=inset;
+ for(const id of sides.right)byId(scene.layout.furniture,id).cx-=inset;
+ byId(scene.layout.furniture,'E2-island').cy-=150;
+ byId(scene.layout.furniture,'E2-island-sink').cy-=150;
+ scene.name='A13 combined island north 150mm, six seats symmetric inset '+inset+'mm';
+ scene.scene_revision=domain.revision(scene.layout);
+ assert.deepEqual(failure(scene.layout),originalFailures,'Visual comparison cannot alter unapproved architecture set');
+ scene.views=cameraDefs.map(d=>({id:d.id,room_id:'RECP-01',
+  camera:domain.captureCamera(scene.layout,{
+   room_id:'RECP-01',position:world(d.from,1.70),target:world(d.aim,1.35),fov:42
+  })
+ }));
+ assert.equal(scene.views.length,3);
+ const file='design-development/advisor/a13/combined-island150-seats'+inset+'.json';
+ fs.writeFileSync(file,JSON.stringify(scene,null,2)+'\n');
+ combined.push({inset_mm:inset,scene_revision:scene.scene_revision,file,
+  camera_ids:scene.views.map(x=>x.id),
+  cameras:scene.views.map(x=>x.camera)});
+}
+assert.deepEqual(combined[0].camera_ids,combined[1].camera_ids);
+assert.deepEqual(combined[0].cameras,combined[1].cameras,
+ 'Two scenarios must have EXACT same three real-camera views');
+
 const output={
  schema:'ApartmentA13SixSeatDistribution/1',
  status:'EXPLORATORY_INVISIBLE_LAYOUT_IMPROVEMENT_ONLY',
  canonical_sha256:source.canonical_sha256,parent_scene_revision:source.scene_revision,
  original_structural_failures:originalFailures,
  options:results,
+ combined_dining_focused_snapshots:combined.map(({cameras,...rest})=>rest),
  visual_design_tradeoff:'Maintain 2000×950 table, original six chairs, and architectural plan. Redistribute left/right endpoint seats symmetrically: 60/75/100mm inward. Actual centre-to-centre seating shrinks 700→600mm at 100mm inset. Not proof of 3 comfortable people per side.',
  context:'A12 K12→+150mm north improves DW loading but still leaves original 510mm nominal prep/nearest dining chair pinch. A13 aims at the seating problem WITHOUT altering island wet-service location or dining table.',
  decision:'Do not choose a seating shift until real chair arms/body widths and family mockup: 75mm seat inset gives nominal 585mm prep gap/625mm centre spacing; 100mm inset gives 610mm gap but only 600mm between adjacent chair centres. Either may be preferable but six adult comfort is TBD.',
