@@ -1,0 +1,65 @@
+name: Advisor A4 - factor-isolated sideboard camera
+
+on:
+  push:
+    branches:
+      - 'advisor/a4-reception-sideboard-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a4-sideboard-detail.mjs'
+      - '.github/workflows/verify-advisor-a4-detail.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a4-sideboard-detail.mjs'
+      - '.github/workflows/verify-advisor-a4-detail.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sideboard-focused-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Headless Chromium
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Rebuild A4 controlled source candidates
+        run: node scripts/prepare-advisor-a4-sideboard.mjs > /tmp/a4-original.json
+      - name: Validate sideboard camera and isolate material vs length
+        run: node scripts/prepare-advisor-a4-sideboard-detail.mjs
+      - name: Baseline dark walnut 2400
+        env:
+          RENDER_OUT_DIR: renders/walnut-2400
+        run: node scripts/render-snapshot.mjs design-development/advisor/a4/detail/walnut-2400.json
+      - name: Only lighten walnut to oak, retain 2400
+        env:
+          RENDER_OUT_DIR: renders/oak-2400
+        run: node scripts/render-snapshot.mjs design-development/advisor/a4/detail/oak-2400.json
+      - name: Light oak 2000
+        env:
+          RENDER_OUT_DIR: renders/oak-2000
+        run: node scripts/render-snapshot.mjs design-development/advisor/a4/detail/oak-2000.json
+      - name: Light oak 1800
+        env:
+          RENDER_OUT_DIR: renders/oak-1800
+        run: node scripts/render-snapshot.mjs design-development/advisor/a4/detail/oak-1800.json
+      - name: Attach focused comparison evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a4-sideboard-detail
+          path: renders/
+          if-no-files-found: error
+          retention-days: 14
