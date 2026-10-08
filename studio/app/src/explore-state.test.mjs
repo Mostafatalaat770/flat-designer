@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import {createApartmentDomain} from '../../domain/apartment.mjs';
 import {PALETTES,snapshotExplore,verifyExplore,assertExploreChoices} from './explore-state.mjs';
 const domain=createApartmentDomain(process.cwd());
-const snapshot=JSON.parse(fs.readFileSync('render-snapshots/current.json','utf8'));
+const snapshot=JSON.parse(fs.readFileSync('studio/local/sources/verified-master-v50.json','utf8'));
 const source=snapshot.layout;
 const make=k=>{const {name,...choices}=PALETTES[k];return choices};
 test('true saved Type B source is immutable when trying 2 different finishes',()=>{
