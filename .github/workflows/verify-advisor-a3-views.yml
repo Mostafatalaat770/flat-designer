@@ -1,0 +1,65 @@
+name: Advisor A3 - bedroom natural-camera review
+
+on:
+  push:
+    branches:
+      - 'advisor/a3-bedroom-one-functional-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a3-views.mjs'
+      - '.github/workflows/verify-advisor-a3-views.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a3-views.mjs'
+      - '.github/workflows/verify-advisor-a3-views.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bedroom-real-size:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Install headless browser
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Generate bedroom alternatives and reject extra collisions
+        run: node scripts/advisor-a3-bedroom-one.mjs > /tmp/advisor-a3-review.json
+      - name: Preflight identical human-scale views
+        run: node scripts/prepare-advisor-a3-views.mjs
+      - name: K12 current bedroom 1
+        env:
+          RENDER_OUT_DIR: renders/control
+        run: node scripts/render-snapshot.mjs design-development/advisor/a3/cameras/control.json
+      - name: 1000 mm desk preserving drawer chest
+        env:
+          RENDER_OUT_DIR: renders/desk-1000
+        run: node scripts/render-snapshot.mjs design-development/advisor/a3/cameras/desk-1000.json
+      - name: Full 1200 mm desk with optional chest removed
+        env:
+          RENDER_OUT_DIR: renders/desk-1200-no-extra-drawers
+        run: node scripts/render-snapshot.mjs design-development/advisor/a3/cameras/desk-1200-no-extra-drawers.json
+      - name: Full desk with narrower drawer chest
+        env:
+          RENDER_OUT_DIR: renders/desk-1200-smaller-drawers
+        run: node scripts/render-snapshot.mjs design-development/advisor/a3/cameras/desk-1200-smaller-drawers.json
+      - name: Store exact bedroom renders and camera metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a3-bedroom-views
+          path: renders/
+          if-no-files-found: error
+          retention-days: 14
