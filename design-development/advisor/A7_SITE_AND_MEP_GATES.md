@@ -20,6 +20,10 @@ Parent design: frozen K12 `scene-e2fcb932`. Island **1700 × 1000 mm** and sink 
 
 Numbers rely on a image-calibrated concept model and rectangular **hypothetical** appliance/user proxies. They are not full route, mobility, or statutory-accessibility clearances. All assertions must be rechecked with exact selected appliances and site survey.
 
+## Outside planning references — not Egyptian code approval
+
+The published [NKBA Kitchen Planning Guidelines, dishwasher placement #13](https://kb.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf) describe a **533 mm (21 in)** standing space for cabinets/appliances **at right angles** to the dishwasher, and the referenced ICC A117.1–2009 accessible floor space is **762 × 1219 mm (30 × 48 in)** positioned adjacent to its door. **Neither dimension can be copied blindly** onto our opposing-front K12 aisle, and the accessible rectangle must be unobstructed in its actual orientation. The updated [NKBA fifth-edition planning reference](https://nkba.org/planning-guidelines/) is North American guidance, not legal confirmation for Egypt. K12's 570 mm or A7's 720 mm gap alone is **not a pass/fail certification** for dishwasher usability.
+
 ## Sign-off gates before any physical works
 
 **Architect + developer / structural engineer**
