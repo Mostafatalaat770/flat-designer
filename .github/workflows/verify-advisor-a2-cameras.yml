@@ -1,0 +1,61 @@
+name: Advisor A2 - honest dining cameras
+
+on:
+  push:
+    branches:
+      - 'advisor/a2-dining-vs-k12-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a2-dining-views.mjs'
+      - '.github/workflows/verify-advisor-a2-cameras.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a2-dining-views.mjs'
+      - '.github/workflows/verify-advisor-a2-cameras.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dining-in-frame:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Headless browser
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Regenerate deterministic dining layouts, verify no new failures
+        run: node scripts/prepare-advisor-a2.mjs > /tmp/advisor-a2-functional.json
+      - name: Validate two fixed 42-degree dining cameras include the table AND island
+        run: node scripts/prepare-advisor-a2-dining-views.mjs
+      - name: K12 control — show dining
+        env:
+          RENDER_OUT_DIR: renders/control-k12
+        run: node scripts/render-snapshot.mjs design-development/advisor/a2/new-cameras/control-k12.json
+      - name: Compact six-seat — show dining
+        env:
+          RENDER_OUT_DIR: renders/compact-six
+        run: node scripts/render-snapshot.mjs design-development/advisor/a2/new-cameras/compact-six.json
+      - name: Shift original six-seat — show dining
+        env:
+          RENDER_OUT_DIR: renders/shift-six
+        run: node scripts/render-snapshot.mjs design-development/advisor/a2/new-cameras/shift-six.json
+      - name: Save geometry-true dining views
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a2-dining-comparison
+          path: renders/
+          if-no-files-found: error
+          retention-days: 14
