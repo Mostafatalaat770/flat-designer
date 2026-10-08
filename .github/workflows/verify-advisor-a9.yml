@@ -1,0 +1,43 @@
+name: Advisor A9 - dressing cabinet hardware candidates
+
+on:
+  push:
+    branches:
+      - 'advisor/a9-dressing-door-mechanisms-20261008'
+    paths:
+      - '.github/workflows/verify-advisor-a9.yml'
+      - 'scripts/advisor-a9-wardrobe-door-options.mjs'
+      - 'review-evidence/advisor-a9/**'
+  pull_request:
+    paths:
+      - '.github/workflows/verify-advisor-a9.yml'
+      - 'scripts/advisor-a9-wardrobe-door-options.mjs'
+      - 'review-evidence/advisor-a9/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  wardrobe-hardware-screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Generate A8 canonical private room evidence
+        run: node scripts/advisor-a8-private-wet-storage.mjs > /tmp/advisor-a8-private.json
+      - name: Compare sliding, hinged, folding and pocket systems
+        run: node scripts/advisor-a9-wardrobe-door-options.mjs
+      - name: Save hardware candidate and blocked dimensions
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a9-wardrobe-mechanism-tradeoffs
+          path: review-evidence/advisor-a9/
+          retention-days: 30
+          if-no-files-found: error
