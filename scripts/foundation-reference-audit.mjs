@@ -46,6 +46,7 @@ for(const shift of [0,150,200]){
  const islandPolygon=rectangle(island);
  const tallToIsland=polygonGap(islandPolygon,tall);
  const west=polygonGap(islandPolygon,cook);
+ const westProjected=Math.min(...islandPolygon.map(p=>p[0]))-Math.max(...cook.map(p=>p[0]));
  const diningToIsland=polygonGap(islandPolygon,dining);
  const livingToIsland=polygonGap(islandPolygon,chair);
  // This is a sensitivity analysis only: +/-50mm is not from on-site survey.
@@ -56,12 +57,14 @@ for(const shift of [0,150,200]){
   nominal_closed_tall_mm:+tallToIsland.toFixed(1),
   nominal_open_dw_mm:+dwFree.nominal_mm.toFixed(1),
   sensitivity_open_dw_range_mm:[+dwFree.low_mm.toFixed(1),+dwFree.high_mm.toFixed(1)],
-  west_cook_mm:+west.toFixed(1),island_to_dining_mm:+diningToIsland.toFixed(1),
+  west_cook_projected_mm:+westProjected.toFixed(1),west_cook_actual_polygon_gap_mm:+west.toFixed(1),island_to_dining_mm:+diningToIsland.toFixed(1),
   island_to_lounge_mm:+livingToIsland.toFixed(1),
   horizontal_spotlight:'Full stage simulation for pulled-out dining chairs is NOT present. This is a closed-footprint-only geometry comparison.'});
 }
 assert.deepEqual(kitchen.map(x=>x.nominal_open_dw_mm),[570,720,770]);
-assert.deepEqual(kitchen.map(x=>x.west_cook_mm),[1219,1219,1219]);
+assert.deepEqual(kitchen.map(x=>x.west_cook_projected_mm),[1219,1219,1219]);
+assert.ok(kitchen.every(x=>x.west_cook_actual_polygon_gap_mm>=x.west_cook_projected_mm-0.01),
+ 'A 2D nearest-corner Euclidean distance cannot be smaller than its horizontal projection');
 const objectiveModels=kitchen.map(k=>({
  id:k.id,gates:{architecture:'unknown',plumbing:k.shift_mm===0?'unknown':'unknown',
   site_measurements:'unknown'},
