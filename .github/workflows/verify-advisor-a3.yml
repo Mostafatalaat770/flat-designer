@@ -1,0 +1,37 @@
+name: Advisor A3 - private room usage
+
+on:
+  push:
+    branches:
+      - 'advisor/a3-bedroom-one-functional-20261008'
+  pull_request:
+    paths:
+      - 'scripts/advisor-a3-bedroom-one.mjs'
+      - 'design-development/advisor/a3/**'
+      - '.github/workflows/verify-advisor-a3.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  functional-bedroom-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Measure and validate bedroom desk alternatives
+        run: node scripts/advisor-a3-bedroom-one.mjs
+      - name: Preserve measurable options and review
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-bedroom-one-geometry
+          path: design-development/advisor/a3/
+          if-no-files-found: error
+          retention-days: 14
