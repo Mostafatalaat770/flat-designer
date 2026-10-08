@@ -939,7 +939,8 @@
       "scope": "room",
       "safety": "wet",
       "deps": [
-        "local wet-zone protection"
+        "local wet-zone protection",
+        "local electrician IP/RCD/wiring coordination for night route"
       ],
       "provision": "TBD",
       "provenance": "EXPLORATORY"
