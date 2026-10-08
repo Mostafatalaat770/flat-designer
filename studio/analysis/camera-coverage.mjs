@@ -39,7 +39,7 @@ export function assessLivingCameraCoverage({camera,model,furniture,ids,
  const result=ids.map(id=>{
   const f=furniture.find(x=>x.id===id);
   if(!f)throw new Error('Subject not in source furniture: '+id);
-  const h=f.type==='tv'?1.2:f.type==='coffeetable'?.42:.65;
+  const h=f.type==='tv' ? 1.2 : f.type==='coffeetable' ? 0.42 : 0.65;
   const p=project([f.cx,f.cy,h]);
   const inner=p.in_frustum&&Math.abs(p.ndc_x)<=1-min_inner_margin
     &&Math.abs(p.ndc_y)<=1-min_inner_margin;
