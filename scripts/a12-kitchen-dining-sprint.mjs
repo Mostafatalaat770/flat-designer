@@ -68,7 +68,7 @@ for(const shift of [0,150]){
  for(const pullback of [0,350]){
   for(const radius of [180,220]){
    const z=kitchenFamilyMetrics({layout:source.layout,audit:helper,island_shift_mm:shift,
-     chairs_pullback_mm:pullback,dining_agent_radius_mm:radius,route_grid_mm:100});
+     chairs_pullback_mm:pullback,dining_agent_radius_mm:radius,route_grid_mm:50});
    states.push(z);
   }
  }
@@ -99,6 +99,8 @@ for(const shift of [0,150]){
   modes:states.map(x=>({
    chair_pullback_mm:x.dining.chair_pullback_mm,
    assumed_person_radius_mm:x.dining.hypothetical_person_radius_mm,
+   reception_empty_control_status:x.dining.route_debug.no_furniture_control,
+   reception_with_furniture_without_prep_status:x.dining.route_debug.with_dining_and_island_only,
    reception_only_route_status:x.dining.local_reception_route.status,
    reception_only_route_length_mm:x.dining.local_reception_route.distance_mm,
    note:'In original canonical RECP polygon only. No unapproved kitchen threshold crossing permitted.'
