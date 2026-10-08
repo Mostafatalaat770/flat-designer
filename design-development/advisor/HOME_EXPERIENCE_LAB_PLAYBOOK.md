@@ -33,7 +33,7 @@
 
 - **Master:** dimmable low-glare ~3000K ambient; two separately switched warm ~2700K reading lamps; shielded ~2200K low-level night route with manual override. Color temperatures are **design explorations**, not quality/reliability standards; actual CRI, photometry and glare must be checked.
 - **Reception:** ambient/wallwashing general light, separate dining task scene, side reading lamp and accent light only if it improves warmth without clutter.
-- **Kitchen:** independent, wipeable under-cabinet worktop light; consistent food-prep visibility; extraction and task lighting independent from lounge dimming.
+- **Kitchen:** independent general ambient plus wipeable under-cabinet worktop light; consistent food-prep visibility; extraction and task lighting independent from lounge dimming.
 - **Entry/dressing/bathrooms:** later run night-path and mirror/task lighting studies, with moisture ratings and accessible drivers based on installed fixtures.
 
 ## Evidence pipeline — orchestrator's division of responsibilities
@@ -55,7 +55,7 @@ The reports include candidate source hash, object IDs, assumptions, hard blocker
 
 - Master air-cleaner nominal location (3500,7200) and reception (14900,5700): device bodies clear of currently modeled static furniture, but electric outlets, movement, drafts, actual product dimensions, service and nighttime sound are **not** confirmed.
 - Air fryer nominal 340×350 on west cooking counter at (9381,7115): body fits real 1800×600 concept; **189.1mm** to hob body, and operating clearances warn of vent/steam/near-hob hazards. **DEFER permanent cabinet/fixture.**
-- Eight lighting intents across master, reception and kitchen; none is a complete electrical/circuit/light-level drawing.
+- Nine lighting intents across master, reception and kitchen; none is a complete electrical/circuit/light-level drawing.
 - K12 still has **two unapproved architectural hard validation failures** associated with exploratory kitchen opening. Do not promote.
 
 ## Research references and limits
