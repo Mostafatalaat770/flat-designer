@@ -7,6 +7,10 @@ on:
     paths:
       - 'scripts/prepare-advisor-a11-master.mjs'
       - '.github/workflows/verify-advisor-a11.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a11-master.mjs'
+      - '.github/workflows/verify-advisor-a11.yml'
   workflow_dispatch:
 
 permissions:
