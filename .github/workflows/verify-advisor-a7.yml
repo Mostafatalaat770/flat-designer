@@ -1,0 +1,79 @@
+name: Advisor A7 - wet island shift and daily access
+
+on:
+  push:
+    branches:
+      - 'advisor/a7-island-service-aisle-shift-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a7-island-shift.mjs'
+      - '.github/workflows/verify-advisor-a7.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a7-island-shift.mjs'
+      - '.github/workflows/verify-advisor-a7.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  island-human-and-canonical:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: node scripts/advisor-a5-kitchen-scenarios.mjs
+      - name: Verify only island and sink move; no new hard fails
+        run: node scripts/prepare-advisor-a7-island-shift.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a7-island-clearance-variants
+          path: design-development/advisor/a7/
+          retention-days: 14
+          if-no-files-found: error
+
+  matched-human-visual:
+    needs: island-human-and-canonical
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - run: node scripts/prepare-advisor-a7-island-shift.mjs > /tmp/a7-measured.json
+      - name: Render frozen K12 baseline
+        env:
+          RENDER_OUT_DIR: renders/control
+        run: node scripts/render-snapshot.mjs design-development/advisor/a7/island-north-0.json
+      - name: Render island 150mm north
+        env:
+          RENDER_OUT_DIR: renders/north-150
+        run: node scripts/render-snapshot.mjs design-development/advisor/a7/island-north-150.json
+      - name: Render island 200mm north
+        env:
+          RENDER_OUT_DIR: renders/north-200
+        run: node scripts/render-snapshot.mjs design-development/advisor/a7/island-north-200.json
+      - name: Upload exact architecture images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a7-island-visual-comparison
+          path: renders/
+          retention-days: 14
+          if-no-files-found: error
