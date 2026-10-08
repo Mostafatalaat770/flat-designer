@@ -31,9 +31,9 @@ const baseline=failed(base.layout);
 assert.equal(baseline.length,2);
 const cameras=[
  {id:'A11-master-from-entry',room_id:'MBR-01',camera:domain.captureCamera(base.layout,
-  {room_id:'MBR-01',position:[-5.25,1.70,0.55],target:[-7.15,1.05,2.55],fov:42})},
+  {room_id:'MBR-01',position:[-4.52,1.70,1.08],target:[-5.82,1.05,3.13],fov:42})},
  {id:'A11-master-foot-zone',room_id:'MBR-01',camera:domain.captureCamera(base.layout,
-  {room_id:'MBR-01',position:[-8.35,1.70,1.0],target:[-6.75,1.08,3.0],fov:42})}
+  {room_id:'MBR-01',position:[-7.37,1.70,3.20],target:[-5.50,1.08,2.40],fov:42})}
 ];
 const options=[
  {id:'current',remove:[],claim:'Baseline with optional bedroom bench and 1000mm drawers'},
