@@ -150,3 +150,7 @@ body{margin:0}button,select,input{font:inherit}
   .explore-foot{display:none}
 }
 @media(prefers-reduced-motion:reduce){.explore-swatch,.explore-app button{transition:none!important}}
+
+.explore-gesture-hint{position:absolute;z-index:5;left:50%;bottom:60px;transform:translateX(-50%);pointer-events:none;border:1px solid #ffffffa1;border-radius:50px;padding:9px 15px;background:#242a26ab;backdrop-filter:blur(8px);color:#f5f1e8;font-size:11px;letter-spacing:.015em;white-space:nowrap}
+.explore-gesture-hint span{padding:0 4px;color:#aab9a5}
+@media(max-width:780px){.explore-gesture-hint{bottom:75px;left:auto;right:8px;transform:none;font-size:9px;padding:7px 9px}}
