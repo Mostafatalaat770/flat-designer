@@ -1,0 +1,108 @@
+{
+  "schema": "ApartmentFamilyActivityCase/1",
+  "name": "Master dressing two occupants crossing then opening a conceptual wardrobe leaf",
+  "snapshot": "design-development/k12/snapshot.json",
+  "room_id": "WIC-01",
+  "provenance": "Canonical Type B v0.2.2 room polygon and K12 furniture footprints, with completely hypothetical 175/150mm person radii, 625mm hinged wardrobe face and time durations; purpose is to validate movement detection, not certify actual comfort",
+  "static_furniture_ids": [
+    "starter-4",
+    "starter-5"
+  ],
+  "max_motion_sample_mm": 20,
+  "route_grid_mm": 50,
+  "collision_tolerance_mm": 0,
+  "frames": [
+    {
+      "id": "two-people-start",
+      "t_ms": 0,
+      "actors": [
+        {
+          "id": "walker",
+          "position": [
+            4734,
+            7200
+          ],
+          "radius_mm": 175,
+          "provenance": "Illustrative nominal circular person radius: NOT a measured person"
+        },
+        {
+          "id": "dresser",
+          "position": [
+            4480,
+            7560
+          ],
+          "radius_mm": 175,
+          "provenance": "Illustrative nominal circular person radius: NOT a measured person"
+        }
+      ],
+      "doors": []
+    },
+    {
+      "id": "two-people-finish",
+      "t_ms": 1000,
+      "actors": [
+        {
+          "id": "walker",
+          "position": [
+            4734,
+            7960
+          ],
+          "radius_mm": 175,
+          "provenance": "Illustrative nominal circular person radius: NOT a measured person"
+        },
+        {
+          "id": "dresser",
+          "position": [
+            4980,
+            7560
+          ],
+          "radius_mm": 175,
+          "provenance": "Illustrative nominal circular person radius: NOT a measured person"
+        }
+      ],
+      "doors": []
+    },
+    {
+      "id": "single-person-with-wardrobe-opening",
+      "t_ms": 1700,
+      "actors": [
+        {
+          "id": "walker",
+          "position": [
+            4734,
+            7580
+          ],
+          "radius_mm": 175,
+          "provenance": "Illustrative nominal circular person radius: NOT a measured person"
+        }
+      ],
+      "doors": [
+        {
+          "id": "north-wardrobe-conceptual-leaf",
+          "provenance": "Assumed unselected 625mm hinged panel; pivot on wardrobe front and full 0-90deg abstract opening",
+          "sweep": {
+            "hinge": [
+              4734,
+              6915
+            ],
+            "length_mm": 625,
+            "thickness_mm": 18,
+            "closed_angle_deg": 0,
+            "open_angle_deg": 90,
+            "step_deg": 2
+          }
+        }
+      ],
+      "routes": [
+        {
+          "actor_id": "walker",
+          "goal": [
+            4734,
+            7960
+          ]
+        }
+      ]
+    }
+  ],
+  "output": "review-evidence/foundation/wic-family-activity.json"
+}
