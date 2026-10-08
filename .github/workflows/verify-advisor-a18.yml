@@ -1,0 +1,96 @@
+name: Advisor A18 - family lighting and nonstructural TV panel options
+
+on:
+  push:
+    branches:
+      - 'advisor/a18-living-light-tv-wall-studies-20261008'
+    paths:
+      - 'scripts/a18-living-light-tv-wall.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  pull_request:
+    paths:
+      - 'scripts/a18-living-light-tv-wall.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-verified-decor:
+    name: Canonical unchanged, 2 original blockers and safe TV wall panel
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Validate historical structural and lighting rules
+        run: |
+          node scripts/audit-advisor-01.mjs
+          node --test studio/analysis/camera-coverage.test.mjs studio/analysis/experience.test.mjs
+      - name: Generate authentic A16/A17 base and 3 A18 light/panel variants
+        run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16.json
+          node scripts/a17-build-living-focused-views.mjs > /tmp/a17.json
+          node scripts/a18-living-light-tv-wall.mjs
+      - name: Assert nonstructural original fail count and 2D TV device separation
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const x=JSON.parse(fs.readFileSync('review-evidence/advisor-a18/lighting-tv-panel-audit.json','utf8'));assert.equal(x.original_k12_unapproved_failures.length,2);assert.equal(x.variants.length,3);assert.ok(x.tv_panel_2d_clearance_to_tv_mm>0);assert.ok(x.tv_panel_2d_clearance_to_stand_mm>=0);assert.ok(x.variants.every(v=>v.camera_ids.length===2&&v.visible_centres.every(c=>c===4)));assert.equal(x.variants[2].panel_enabled,true);console.log('PASS: 3 sources, no architecture change, no new canonical FAIL, TV/panel footprint safe')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a18-light-panel-source
+          path: |
+            design-development/advisor/a18/
+            review-evidence/advisor-a18/lighting-tv-panel-audit.json
+          retention-days: 30
+          if-no-files-found: error
+
+  actual-threejs-images:
+    needs: source-verified-decor
+    name: Six actual same-camera light / backdrop choice PNGs
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16.json
+          node scripts/a17-build-living-focused-views.mjs > /tmp/a17.json
+          node scripts/a18-living-light-tv-wall.mjs > /tmp/a18.json
+      - name: Batch six original-model frames, with verified unchanged cameras
+        env:
+          RENDER_OUT_DIR: renders/a18
+          RENDER_CONCURRENCY: '2'
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a18/a18-calm-reference.json \
+            design-development/advisor/a18/a18-soft-light.json \
+            design-development/advisor/a18/a18-soft-panel.json
+      - name: Demand verified 3 variants, 2 matched cameras, no fallback assets
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const x=JSON.parse(fs.readFileSync('renders/a18/batch-manifest.json','utf8'));assert.equal(x.status,'ALL_FRAMES_VERIFIED');assert.equal(x.browser_launches,1);assert.equal(x.frames.length,6);assert.equal(x.variants.length,3);assert.ok(x.frames.every(f=>f.validated));console.log('PASS: six true WebGL images with exact sources and camera manifests')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: advisor-a18-light-panel-real-webgl-comparison
+          path: |
+            renders/a18/
+            review-evidence/advisor-a18/lighting-tv-panel-audit.json
+          retention-days: 30
+          if-no-files-found: error
