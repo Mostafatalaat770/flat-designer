@@ -11,6 +11,9 @@ test('volumetric clean-air benchmark uses modeled clear ceiling, not marketing r
  const d=requiredCleanAirCadR({area_m2:14.684138489807,clear_height_m:2.5});
  assert.equal(d.room_volume_m3,36.71);
  assert.equal(d.theoretical_cadr_m3h,176.2);
+ const borderline=assessCleanAirProduct({room_area_m2:100,clear_height_m:2.5,cadr_m3h:1199});
+ assert.equal(borderline.equivalent_clean_air_changes_h,4.8);
+ assert.equal(borderline.meets_assumed_4_8_reference,false,'Do not accept just-below CADR after display rounding');
  const low=assessCleanAirProduct({room_area_m2:14.684138489807,clear_height_m:2.5,cadr_m3h:130});
  assert.equal(low.meets_assumed_4_8_reference,false);
  const enough=assessCleanAirProduct({room_area_m2:14.684138489807,clear_height_m:2.5,cadr_m3h:180});
