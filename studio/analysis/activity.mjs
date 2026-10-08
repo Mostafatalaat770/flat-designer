@@ -125,12 +125,15 @@ export function analyzeOccupancyTimeline({
  for(let i=1;i<stages.length;i++){
   const prev=stages[i-1],curr=stages[i];
   const shared=curr.actors.filter(a=>prev.actors.some(z=>z.id===a.id));
+  // Validate EVERY continuing actor, including stages where only one person is present.
+  for(const a of shared){
+   const ap=prev.actors.find(x=>x.id===a.id);
+   if(a.radius_mm!==ap.radius_mm)throw new Error('Actor radius cannot jump during a motion interval: '+a.id);
+  }
   const movement=[];
   for(let j=0;j<shared.length;j++)for(let k=j+1;k<shared.length;k++){
    const a=shared[j],b=shared[k];
    const ap=prev.actors.find(x=>x.id===a.id),bp=prev.actors.find(x=>x.id===b.id);
-   if(a.radius_mm!==ap.radius_mm||b.radius_mm!==bp.radius_mm)
-    throw new Error('Actor radius cannot jump during a motion interval');
    const near=closestApproachLinear(ap.position,a.position,bp.position,b.position);
    const clear=near.distance_mm-a.radius_mm-b.radius_mm;
    movement.push({a:a.id,b:b.id,min_clearance_mm:round(clear),
