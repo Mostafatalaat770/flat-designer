@@ -1,0 +1,44 @@
+name: Advisor A8 - bathrooms and dressing functional audit
+
+on:
+  push:
+    branches:
+      - 'advisor/a8-private-wet-storage-20261008'
+    paths:
+      - '.github/workflows/verify-advisor-a8.yml'
+      - 'scripts/advisor-a8-private-wet-storage.mjs'
+      - 'review-evidence/advisor-a8/**'
+  pull_request:
+    paths:
+      - '.github/workflows/verify-advisor-a8.yml'
+      - 'scripts/advisor-a8-private-wet-storage.mjs'
+      - 'review-evidence/advisor-a8/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  private-rooms:
+    name: Fixture, opening and wardrobe use envelopes
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Assert unchanged K11-K12 reference
+        run: node scripts/audit-advisor-01.mjs
+      - name: Compute canonical private room service/door scenarios
+        run: node scripts/advisor-a8-private-wet-storage.mjs
+      - name: Save review report
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a8-private-wet-and-wardrobe-report
+          path: review-evidence/advisor-a8/
+          if-no-files-found: error
+          retention-days: 30
