@@ -1,0 +1,46 @@
+name: Advisor A13 - six real seats, no smaller dining table
+
+on:
+  push:
+    branches:
+      - 'advisor/a13-six-seat-redistribution-20261008'
+    paths:
+      - 'scripts/a13-six-seat-distribution.mjs'
+      - '.github/workflows/verify-advisor-a13.yml'
+  pull_request:
+    paths:
+      - 'scripts/a13-six-seat-distribution.mjs'
+      - '.github/workflows/verify-advisor-a13.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seat-rebalance:
+    name: Six chair spacing vs east-island prep pinch
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Keep A12 source-level geometric regression
+        run: node --test studio/analysis/kitchen-dining.test.mjs
+      - name: Measure 0/60/75/100mm symmetric end-chair redistributions
+        run: node scripts/a13-six-seat-distribution.mjs
+      - name: Verify all six seats, unchanged dining table and no new canonical failures
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const z=JSON.parse(fs.readFileSync('review-evidence/advisor-a13-seat-options.json','utf8'));assert.equal(z.original_structural_failures.length,2);assert.deepEqual(z.options.map(x=>x.seats_retained),[6,6,6,6]);assert.deepEqual(z.options.map(x=>x.end_prep_person_to_closest_seat_mm),[510,570,585,610]);assert.deepEqual(z.options.map(x=>x.adjacent_chair_shell_gap_mm),[190,130,115,90]);console.log('PASS: measurable dining pinch gains, equal seat count and 2 disclosed canonical blockers')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a13-chair-spacing-options
+          path: |
+            review-evidence/advisor-a13-seat-options.json
+            design-development/advisor/a13/
+          if-no-files-found: error
+          retention-days: 30
