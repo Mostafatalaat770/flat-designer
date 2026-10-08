@@ -1,0 +1,38 @@
+name: Advisor Systems - dry island feasibility
+
+on:
+  push:
+    branches:
+      - 'advisor/a2-dry-island-feasibility-20261008'
+  pull_request:
+    paths:
+      - 'scripts/audit-dry-island-feasibility.mjs'
+      - 'design-development/advisor/dry/**'
+      - '.github/workflows/verify-advisor-dry.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  structural-and-kitchen-services-screen:
+    name: Dry island geometry + service tradeoffs
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Validate open-vs-dry spatial constraints
+        run: node scripts/audit-dry-island-feasibility.mjs
+      - name: Preserve feasibility findings
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-dry-island-feasibility
+          path: design-development/advisor/dry/feasibility.json
+          if-no-files-found: error
+          retention-days: 14
