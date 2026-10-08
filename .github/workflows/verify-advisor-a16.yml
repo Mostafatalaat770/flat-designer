@@ -1,0 +1,88 @@
+name: Advisor A16 - actual reception / kitchen finish palette comparison
+
+on:
+  push:
+    branches:
+      - 'advisor/a16-reception-finish-directions-20261008'
+    paths:
+      - 'scripts/a16-prepare-finish-directions.mjs'
+      - '.github/workflows/verify-advisor-a16.yml'
+  pull_request:
+    paths:
+      - 'scripts/a16-prepare-finish-directions.mjs'
+      - '.github/workflows/verify-advisor-a16.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-geometry-palette:
+    name: Three exact-source and same-camera style snapshots
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Preserve verified Type B canonical geometry
+        run: node scripts/audit-advisor-01.mjs
+      - name: Produce baseline and two reversible real-world colour/material directions
+        run: node scripts/a16-prepare-finish-directions.mjs
+      - name: Verify source provenance and no furniture or architecture changes
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const a=JSON.parse(fs.readFileSync('review-evidence/advisor-a16/finish-variants.json','utf8'));assert.equal(a.source.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');assert.equal(a.variants.length,3);assert.equal(a.original_unresolved_architecture_failures.length,2);assert.ok(a.variants.every(v=>v.only_finishes_changed&&v.camera_ids.length===2));console.log('PASS: 3 concepts, same exact model, no invented layout approval')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a16-finish-source-variants
+          path: |
+            design-development/advisor/a16/
+            review-evidence/advisor-a16/finish-variants.json
+          retention-days: 30
+          if-no-files-found: error
+
+  real-webgl-comparison:
+    needs: exact-geometry-palette
+    name: Six verified WebGL 3D images - same 2 cameras, baseline vs palettes
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - run: node scripts/a16-prepare-finish-directions.mjs
+      - name: Render unchanged baseline and two palettes in one verified Chromium
+        env:
+          RENDER_OUT_DIR: renders/a16
+          RENDER_CONCURRENCY: '2'
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a16/a16-current.json \
+            design-development/advisor/a16/a16-pale-stone.json \
+            design-development/advisor/a16/a16-olive-oak.json
+      - name: Check all real images were captured with exact match and no fallback
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const r=JSON.parse(fs.readFileSync('renders/a16/batch-manifest.json','utf8'));assert.equal(r.status,'ALL_FRAMES_VERIFIED');assert.equal(r.browser_launches,1);assert.equal(r.variants.length,3);assert.equal(r.frames.length,6);assert.ok(r.frames.every(f=>f.validated));console.log('PASS: 3 directions x 2 matching cameras, six genuine validated WebGL PNGs')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: advisor-a16-interior-finish-comparison-real-3d
+          path: |
+            renders/a16/
+            review-evidence/advisor-a16/finish-variants.json
+          if-no-files-found: error
+          retention-days: 30
