@@ -12,7 +12,7 @@ test('whole-home source-linked baseline covers all 13 rooms without approval',()
  assert.equal(r.validation.passed,true,JSON.stringify(r.validation.errors));
  assert.equal(r.source.original_rooms,13);
  assert.equal(r.source.locked_finished_ceiling_mm,2500);
- assert.equal(r.summary.service_intents,61);
+ assert.equal(r.summary.service_intents,65);
  assert.ok(r.summary.kinds.lighting>=15);
  assert.ok(r.summary.kinds.hvac>=4);
  assert.ok(r.summary.conceptual_light_groups['recp-dining']);
