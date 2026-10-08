@@ -1,0 +1,217 @@
+{
+  "schema": "ApartmentExperienceBrief/1",
+  "name": "Type B family-first comfort options: clean air, flexible hot cooking, layered lighting",
+  "snapshot": "design-development/k12/snapshot.json",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_status": "EXPLORATORY_K12_KITCHEN_ARCHITECTURE_NOT_APPROVED",
+  "clear_height_mm": 2500,
+  "clean_air": [
+    {
+      "id": "master-sleep-air",
+      "room_id": "MBR-01",
+      "design_eACH": 4.8,
+      "hypothetical_cadr_m3h": 180,
+      "note": "180 m3/h is a SELECTOR BENCHMARK and not a chosen model or guaranteed night-speed CADR"
+    },
+    {
+      "id": "reception-one-unit-air",
+      "room_id": "RECP-01",
+      "design_eACH": 4.8,
+      "hypothetical_cadr_m3h": 450,
+      "note": "450 m3/h is a counterexample; open L-shaped reception mixing and doors are not modeled, cannot assume one unit covers all"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "purifier-master-quiet-location",
+      "category": "air-quality",
+      "room_id": "MBR-01",
+      "source": "Illustrative 300x300 floor-standing unit, 150mm sides breathing space: no selected SKU or site measured position",
+      "position": {
+        "mode": "portable-floor",
+        "cx": 3500,
+        "cy": 7200,
+        "width_mm": 300,
+        "depth_mm": 300,
+        "rot": 0,
+        "operating_clearance_mm": {
+          "left_mm": 150,
+          "right_mm": 150,
+          "rear_mm": 150,
+          "front_mm": 150
+        }
+      },
+      "gates": {
+        "product_manual": "unknown",
+        "silent_sleep_mode": "unknown",
+        "replacement_filter_availability": "unknown",
+        "actual_outlet": "unknown",
+        "site_measured_location": "unknown"
+      },
+      "intent": "Reserve a possible portable, serviceable corner and test noise/draft vs bed; not install integrated purifier in gypsum"
+    },
+    {
+      "id": "purifier-reception-quiet-corner",
+      "category": "air-quality",
+      "room_id": "RECP-01",
+      "source": "Illustrative 300x300 floor-standing unit, 150mm sides; position near dining buffer; manual and route TBD",
+      "position": {
+        "mode": "portable-floor",
+        "cx": 14900,
+        "cy": 5700,
+        "width_mm": 300,
+        "depth_mm": 300,
+        "rot": 0,
+        "operating_clearance_mm": {
+          "left_mm": 150,
+          "right_mm": 150,
+          "rear_mm": 150,
+          "front_mm": 150
+        }
+      },
+      "gates": {
+        "product_manual": "unknown",
+        "room_mixing": "unknown",
+        "cadr_at_acceptable_noise": "unknown",
+        "real_outlet": "unknown",
+        "family_walkthrough": "unknown"
+      },
+      "intent": "Contrast one large reception unit against separately located bedroom unit; not a confirmed aesthetic position"
+    },
+    {
+      "id": "air-fryer-west-cooking-counter",
+      "category": "countertop-appliance",
+      "room_id": "KIT-01",
+      "heat_or_steam": true,
+      "source": "Illustrative 340x350 footprint rotated with cooking counter; 100mm side/rear ventilation from a Philips model example, NOT a universal air-fryer requirement. Drawer clearance/manual/electrics all TBD.",
+      "position": {
+        "mode": "worktop",
+        "support_id": "E2-cooking-base",
+        "cx": 9381,
+        "cy": 7115,
+        "width_mm": 340,
+        "depth_mm": 350,
+        "rot": 90,
+        "operating_clearance_mm": {
+          "left_mm": 100,
+          "right_mm": 100,
+          "rear_mm": 100,
+          "front_mm": 350
+        }
+      },
+      "gates": {
+        "device_manual": "unknown",
+        "adjacent_hot_hob_clearance": "unknown",
+        "hot_exhaust_height": "unknown",
+        "landing_zone": "unknown",
+        "kitchen_electrical_circuit": "unknown",
+        "drawer_open_person_access": "unknown"
+      },
+      "intent": "Test removable worktop use, never use inside closed coffee/oven cabinet. No permanent device parking on active prep area approved."
+    }
+  ],
+  "lighting_zones": [
+    {
+      "id": "master-soft-ambient",
+      "room_id": "MBR-01",
+      "function": "ambient",
+      "kelvin": 3000,
+      "connection": "wired",
+      "control": "entry switch + bedside two-way dimming",
+      "dimmable": true,
+      "electrical_verified": false
+    },
+    {
+      "id": "master-left-reading",
+      "room_id": "MBR-01",
+      "function": "task",
+      "kelvin": 2700,
+      "connection": "plug-in",
+      "control": "individual switch by left nightstand",
+      "dimmable": true
+    },
+    {
+      "id": "master-right-reading",
+      "room_id": "MBR-01",
+      "function": "task",
+      "kelvin": 2700,
+      "connection": "plug-in",
+      "control": "individual switch by right nightstand",
+      "dimmable": true
+    },
+    {
+      "id": "master-shielded-night",
+      "room_id": "MBR-01",
+      "function": "night",
+      "kelvin": 2200,
+      "connection": "battery",
+      "control": "motion with off override",
+      "dimmable": true
+    },
+    {
+      "id": "reception-layered-ambient",
+      "room_id": "RECP-01",
+      "function": "ambient",
+      "kelvin": 3000,
+      "connection": "wired",
+      "control": "scene dimmer at entry + sitting zone",
+      "dimmable": true,
+      "electrical_verified": false
+    },
+    {
+      "id": "dining-task-pendant-or-wallwash",
+      "room_id": "RECP-01",
+      "function": "task",
+      "kelvin": 3000,
+      "connection": "wired",
+      "control": "separate dining dimming group",
+      "dimmable": true,
+      "electrical_verified": false
+    },
+    {
+      "id": "living-reading-lamp",
+      "room_id": "RECP-01",
+      "function": "task",
+      "kelvin": 2700,
+      "connection": "plug-in",
+      "control": "local switch at reading armchair",
+      "dimmable": true
+    },
+    {
+      "id": "kitchen-under-cabinet-task",
+      "room_id": "KIT-01",
+      "function": "task",
+      "kelvin": 3500,
+      "connection": "wired",
+      "control": "washable separately switchable kitchen task lighting",
+      "dimmable": true,
+      "electrical_verified": false
+    }
+  ],
+  "selection_matrix": [
+    {
+      "id": "purifier-master-quiet-location",
+      "owner_value": "quiet cleaner-air option for sleep space",
+      "loss": "floor corner + socket + ongoing filters/noise",
+      "lifecycle": "cleanable filter access and 24/7 use, cost TBD"
+    },
+    {
+      "id": "purifier-reception-quiet-corner",
+      "owner_value": "potential airborne particle reduction in main living-dining zone",
+      "loss": "visible appliance, floor and outlet; high CADR at low noise may be costly",
+      "lifecycle": "filter supply, energy and noise TBD"
+    },
+    {
+      "id": "air-fryer-west-cooking-counter",
+      "owner_value": "more cooking methods without replacing built-in oven",
+      "loss": "~0.119 square metres appliance base plus operating space, heat/steam and fewer prep options",
+      "lifecycle": "remove for cleaning/put away if worktop congested, dedicated outlet check"
+    }
+  ],
+  "prerequisites": [
+    "No automatic purchases, structural changes or master/cloud writes",
+    "Qualified architect/MEP engineer approves any new wiring/HVAC/extraction; protect 2500mm clear height",
+    "Select exact equipment manuals/dimensions/fan-speed performance before permanent placement",
+    "Apply activity timeline with dishwasher, hob, two adults, dining chairs occupied; never equate support surface fit with safe operation"
+  ]
+}
