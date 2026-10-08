@@ -7,6 +7,8 @@ on:
     paths:
       - 'studio/analysis/**'
       - 'scripts/foundation-reference-audit.mjs'
+      - 'scripts/analyze-spatial-case.mjs'
+      - 'design-development/advisor/cases/**'
       - 'review-evidence/foundation/**'
       - '.github/workflows/verify-spatial-foundation.yml'
   pull_request:
@@ -51,12 +53,17 @@ jobs:
         run: node scripts/audit-advisor-01.mjs
       - name: Recompute live-proof K12/WIC spatial decision report
         run: node scripts/foundation-reference-audit.mjs
+      - name: Apply portable spatial case CLI on actual dressing room
+        run: node scripts/analyze-spatial-case.mjs design-development/advisor/cases/wic-access.json
+      - name: Confirm real room alternate activity stages differ
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const a=JSON.parse(fs.readFileSync('review-evidence/foundation/wic-activity-result.json','utf8'));assert.equal(a.pairs[0].measure.gap_mm,1335);assert.equal(a.routes[0].status,'MODEL_ROUTE_FOUND');assert.equal(a.routes[1].status,'NO_MODEL_ROUTE');console.log('PASS: furniture clear 1335mm, actual source room route open and blocked in occupied model')"
       - name: Assert incomplete construction signoffs remain blocking
         run: |
           node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const r=JSON.parse(fs.readFileSync('review-evidence/foundation/reference-audit.json','utf8'));assert.equal(r.hard_construction_blockers.inherited_canonical_failures.length,2);assert.equal(r.kitchen.length,3);assert.deepEqual(r.dressing.map(x=>x.nominal_tip_gap_mm),[85,710]);assert.ok(r.comparison.candidates.every(x=>x.unknown_gates.length>0));console.log('PASS: zero fabricated construction approvals; audited 3 kitchens, 2 cabinet mechanisms')"
       - uses: actions/upload-artifact@v4
         with:
           name: foundation-geometry-and-decision-report
-          path: review-evidence/foundation/reference-audit.json
+          path: review-evidence/foundation/
           if-no-files-found: error
           retention-days: 30
