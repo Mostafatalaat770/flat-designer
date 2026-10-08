@@ -39,13 +39,15 @@ const before=getReport(base.layout);
 const failures=r=>r.checks.filter(c=>c.status==='FAIL').map(c=>[c.kind,c.object_id,c.source_wall_index??null]);
 assert.equal(failures(before).length,2);
 const warnings=(rep,kind,id)=>rep.checks.filter(c=>c.status==='WARNING'&&c.kind===kind&&(id===null||c.object_id===id||c.room_id===id));
-const doorSweepWarning=rep=>warnings(rep,'door-swing','starter-8').map(c=>c.measured_clearance_mm)[0]??null;
+const doorSweepWarning=rep=>rep.checks.filter(c=>c.kind==='door-swing'&&c.object_id==='starter-8').map(c=>c.measured_clearance_mm)[0]??null;
 const routeWarn=rep=>warnings(rep,'circulation','BR-01').map(c=>c.measured_clearance_mm)[0]??null;
 const configs=[
  {name:'control',width:1200,depth:600,cx:3800,cy:4590},
  {name:'shift-1200',width:1200,depth:600,cx:3650,cy:4590},
  {name:'shift-1100',width:1100,depth:600,cx:3650,cy:4590},
- {name:'shift-1000',width:1000,depth:600,cx:3650,cy:4590}
+ {name:'shift-1000',width:1000,depth:600,cx:3650,cy:4590},
+ {name:'compact-1000-safe-gap',width:1000,depth:600,cx:3750,cy:4590},
+ {name:'compact-950-safe-gap',width:950,depth:600,cx:3700,cy:4590}
 ];
 const outDir='design-development/advisor/a3';
 fs.mkdirSync(outDir,{recursive:true});
@@ -60,7 +62,8 @@ for(const config of configs){
   assert.deepEqual(next.layout.rooms,base.layout.rooms);
   next.scene_revision=domain.revision(next.layout);
   const report=getReport(next.layout);
-  assert.deepEqual(failures(report),failures(before),'No new concealed architecture failures allowed.');
+  const safe=JSON.stringify(failures(report))===JSON.stringify(failures(before));
+  const newlyFailed=report.checks.filter(c=>c.status==='FAIL').filter(c=>!before.checks.some(b=>b.status==='FAIL'&&b.kind===c.kind&&b.object_id===c.object_id&&b.source_wall_index===c.source_wall_index));
   const source=bbox(bed),work=bbox(target),seat=bbox(chair),cabinet=bbox(wardrobe);
   const values={
     door_sweep_warning_mm:doorSweepWarning(report),
@@ -71,14 +74,15 @@ for(const config of configs){
     desk_right_edge_mm:work.x1,
     study_chair_remains_movable:'Real pulled-out chair + human access envelope must still be inspected.',
   };
-  candidates.push({variant:config.name,scene_revision:next.scene_revision,values,
+  candidates.push({variant:config.name,scene_revision:next.scene_revision,status:safe?'NO_NEW_FAIL':'REJECT_NEW_COLLISION',values,
+    newly_failed_checks:newlyFailed,
     known_canonical_failures:failures(report),
     caution:'Clearance numbers are model warnings, not a safety or accessibility signoff.'});
-  if(config.name!=='control')fs.writeFileSync(path.join(outDir,config.name+'.json'),JSON.stringify(next,null,2)+'\n');
+  if(config.name!=='control'&&safe)fs.writeFileSync(path.join(outDir,config.name+'.json'),JSON.stringify(next,null,2)+'\n');
 }
 const baseDoor=candidates[0].values.door_sweep_warning_mm;
 const options=candidates.slice(1);
-assert.ok(options.some(x=>x.values.door_sweep_warning_mm!==null&&x.values.door_sweep_warning_mm>baseDoor),'No improvement to desk/door proximity.');
+assert.ok(options.some(x=>x.status==='NO_NEW_FAIL'&&x.values.door_sweep_warning_mm!==null&&x.values.door_sweep_warning_mm>baseDoor),'No safe improvement to desk/door proximity.');
 const result={
   schema:'AdvisorBedroom1UseAudit/1',
   canonical_sha256:base.canonical_sha256,
