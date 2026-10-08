@@ -50,7 +50,9 @@ const configs=[
  {name:'compact-950-safe-gap',width:950,depth:600,cx:3700,cy:4590},
  {name:'north-1200-200',width:1200,depth:600,cx:3800,cy:4390,chairDY:-200},
  {name:'north-1200-300',width:1200,depth:600,cx:3800,cy:4290,chairDY:-300},
- {name:'north-1100-250',width:1100,depth:600,cx:3800,cy:4340,chairDY:-250}
+ {name:'north-1100-250',width:1100,depth:600,cx:3800,cy:4340,chairDY:-250},
+ {name:'1200-desk-drop-extra-drawers',width:1200,depth:600,cx:3500,cy:4590,removeDrawers:true},
+ {name:'1200-desk-smaller-drawers',width:1200,depth:600,cx:3600,cy:4590,drawerWidth:850,drawerCx:2525}
 ];
 const outDir='design-development/advisor/a3';
 fs.mkdirSync(outDir,{recursive:true});
@@ -62,6 +64,8 @@ for(const config of configs){
   if(config.name==='control')Object.assign(target,desk);
   const candidateChair=get(next.layout,'starter-9');
   candidateChair.cy+=(config.chairDY||0);
+  if(config.removeDrawers) next.layout.interior.objects=next.layout.interior.objects.filter(x=>x.id!=='V7-bedroom1-drawers');
+  if(config.drawerWidth){ const d=next.layout.interior.objects.find(x=>x.id==='V7-bedroom1-drawers');assert.ok(d);d.width_mm=config.drawerWidth;d.cx=config.drawerCx; }
   assert.equal(JSON.stringify(next.layout.furniture.filter(o=>!['starter-8','starter-9'].includes(o.id))),originalKey);
   assert.deepEqual(next.architecture_variant,base.architecture_variant);
   assert.deepEqual(next.layout.rooms,base.layout.rooms);
@@ -80,7 +84,7 @@ for(const config of configs){
     desk_right_edge_mm:work.x1,
     study_chair_remains_movable:'Real pulled-out chair + human access envelope must still be inspected.',
   };
-  candidates.push({variant:config.name,scene_revision:next.scene_revision,status:safe?'NO_NEW_FAIL':'REJECT_NEW_COLLISION',values,
+  candidates.push({variant:config.name,scene_revision:next.scene_revision,status:safe?'NO_NEW_FAIL':'REJECT_NEW_COLLISION',storage_tradeoff:config.removeDrawers?'Remove optional 1000x350 drawer chest':(config.drawerWidth?'Shrink optional chest 1000 to 850 mm':'Storage unchanged'),values,
     newly_failed_checks:newlyFailed,
     known_canonical_failures:failures(report),
     caution:'Clearance numbers are model warnings, not a safety or accessibility signoff.'});
@@ -100,7 +104,7 @@ const result={
   wardrobe:{envelope_mm:[wardrobe.w,wardrobe.d],centre_mm:[wardrobe.cx,wardrobe.cy]},
   chair:{envelope_mm:[chair.w,chair.d],centre_mm:[chair.cx,chair.cy]},
   candidates,
-  decision:'Review shifted 1100 desk as a reasonable function-preserving hypothesis; do not automatically select smallest desk from a better scalar clearance. Verify desk ergonomics for real equipment, chair pulled out, drawer, wardrobe and door swings on 1.70m natural views.',
+  decision:'Before shrinking a useful 1200 mm desk, compare removal or reduction of the OPTIONAL secondary drawer chest against keeping the 1800 wardrobe. No chest removal is approved until household storage inventory and actual chair/door use are checked. Validate candidate and render natural views.',
   blockers:['Door hinge orientation inferred','Chair-use envelope not certified','Actual furniture SKUs TBD','Room dimensions based on plan calibration until on-site survey'],
 };
 fs.writeFileSync(path.join(outDir,'functional-review.json'),JSON.stringify(result,null,2)+'\n');
