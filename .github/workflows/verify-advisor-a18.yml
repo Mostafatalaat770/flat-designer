@@ -1,0 +1,95 @@
+name: Advisor A18 - living evening light design before first-fix
+
+on:
+  push:
+    branches:
+      - 'advisor/a18-living-lighting-scenarios-20261008'
+    paths:
+      - 'scripts/a18-compare-evening-lighting.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  pull_request:
+    paths:
+      - 'scripts/a18-compare-evening-lighting.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evening-source-preflight:
+    name: No room or fixture geometry changes and true family seating cameras
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Recheck the canonical K12, true finish and verified lounge cameras
+        run: |
+          node scripts/audit-advisor-01.mjs
+          node scripts/a16-prepare-finish-directions.mjs >/tmp/a16.json
+          node --test studio/analysis/camera-coverage.test.mjs
+          node scripts/a17-build-living-focused-views.mjs >/tmp/a17.json
+      - name: Generate 3 evening light concepts only from exactly same A17 geometry
+        run: node scripts/a18-compare-evening-lighting.mjs
+      - name: Verify same true cameras and no false electrical approvals
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const x=JSON.parse(fs.readFileSync('review-evidence/advisor-a18/lighting-scene-audit.json','utf8'));assert.equal(x.schemes.length,3);assert.equal(x.canonical_kitchen_structural_failures_unwaived.length,2);assert.equal(x.independent_electrical_group_certified,false);assert.ok(x.schemes.every(v=>v.coverage.length===2&&v.coverage.every(x=>x.visible===4&&x.blockers.length===0)));console.log('PASS: 3 source-matched night scenes, 4 lounge anchors per camera, 2 K12 blockers')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a18-evening-source-verified
+          path: |
+            design-development/advisor/a18/
+            review-evidence/advisor-a18/lighting-scene-audit.json
+          retention-days: 30
+          if-no-files-found: error
+
+  evening-webgl:
+    needs: evening-source-preflight
+    name: Six verified evening light comparison images from same cameras
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Source-derived palettes and camera validation
+        run: |
+          node scripts/a16-prepare-finish-directions.mjs >/tmp/a16.json
+          node scripts/a17-build-living-focused-views.mjs >/tmp/a17.json
+          node scripts/a18-compare-evening-lighting.mjs >/tmp/a18.json
+      - name: Render 3 real night lighting variants (two identical camera positions each)
+        env:
+          RENDER_OUT_DIR: renders/a18
+          RENDER_CONCURRENCY: '2'
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a18/a18-night-track-current.json \
+            design-development/advisor/a18/a18-night-warm-lamps.json \
+            design-development/advisor/a18/a18-night-warm-track.json
+      - name: Validate six real WebGL frames, scene/camera/asset hashes
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const r=JSON.parse(fs.readFileSync('renders/a18/batch-manifest.json','utf8'));assert.equal(r.status,'ALL_FRAMES_VERIFIED');assert.equal(r.browser_launches,1);assert.equal(r.variants.length,3);assert.equal(r.frames.length,6);assert.ok(r.frames.every(f=>f.validated));console.log('PASS: 6 source-matched evening PNGs')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a18-living-evening-lighting-real-webgl
+          path: |
+            renders/a18/
+            review-evidence/advisor-a18/lighting-scene-audit.json
+          if-no-files-found: error
+          retention-days: 30
