@@ -1,0 +1,1177 @@
+{
+  "schema": "ApartmentFirstFixNeeds/1",
+  "name": "Owner-first whole-home lighting power HVAC first fix requirements",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_scene": "design-development/k12/snapshot.json",
+  "reference_scene_revision": "scene-e2fcb932",
+  "room_ids": [
+    "TER-MBR",
+    "BR-01",
+    "BR-02",
+    "MBR-01",
+    "HALL-01",
+    "WIC-01",
+    "BATH-M01",
+    "BATH-C01",
+    "KIT-01",
+    "TER-SVC",
+    "WC-01",
+    "TER-MAIN",
+    "RECP-01"
+  ],
+  "finished_ceiling_height_mm": 2500,
+  "pre_gypsum_clear_height_mm": 2630,
+  "project_status": "EARLY_COORDINATION_ONLY_NOT_ELECTRICAL_OR_HVAC_DRAWINGS",
+  "equipment_points": [
+    {
+      "id": "recp-general",
+      "room_id": "RECP-01",
+      "kind": "lighting",
+      "intent": "Layered general lighting independent from dining + TV scenes",
+      "anchor": null,
+      "control_group": "recp-ambient",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "measured reflected-ceiling plan",
+        "lighting photometry"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-dining",
+      "room_id": "RECP-01",
+      "kind": "lighting",
+      "intent": "Separate dimmable dining task scene over six-seat table without crossing fixed glazing/AC",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-35"
+      },
+      "control_group": "recp-dining",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "final table position",
+        "fixture glare/beam"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-reading",
+      "room_id": "RECP-01",
+      "kind": "power",
+      "intent": "Local switchable reading lamp beside armchair",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-32"
+      },
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "final chair and wall outlets"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-tv-data",
+      "room_id": "RECP-01",
+      "kind": "data",
+      "intent": "Serviceable TV, streaming and home network outlet/cable path",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-30"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "final TV/AV size",
+        "network topology"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-entry",
+      "room_id": "RECP-01",
+      "kind": "control",
+      "intent": "Entry controls for welcome/cleaning/night path; all basic functions must work manually",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-40"
+      },
+      "control_group": "recp-ambient",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "entry wall measured",
+        "switch placement"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-sideboard",
+      "room_id": "RECP-01",
+      "kind": "power",
+      "intent": "Optional presentation sideboard lamp/socket, no extension cord across walk route",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "furniture",
+      "safety": "dry",
+      "deps": [
+        "sideboard final depth"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-curtain",
+      "room_id": "RECP-01",
+      "kind": "low_voltage",
+      "intent": "Future motorised or manual curtain allowance; no committed motor voltage",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "full-height glazing exact survey",
+        "curtain pocket geometry",
+        "motor SKU"
+      ],
+      "provision": "CONCEPT_ONLY",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-purifier",
+      "room_id": "RECP-01",
+      "kind": "power",
+      "intent": "Optional floor air purifier powered where air in/out not obstructed",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "model CADR/noise/manual",
+        "circulation simulation"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-ambient",
+      "room_id": "KIT-01",
+      "kind": "lighting",
+      "intent": "Independently switched main kitchen general light",
+      "anchor": null,
+      "control_group": "kit-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "hood alignment",
+        "ceiling plan"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-task",
+      "room_id": "KIT-01",
+      "kind": "lighting",
+      "intent": "Wipeable undercabinet task light for food preparation, separately controlled",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-cooking-base"
+      },
+      "control_group": "kit-task",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "actual cabinetry",
+        "splash/heat-rated fixture",
+        "driver service"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-hood",
+      "room_id": "KIT-01",
+      "kind": "ventilation",
+      "intent": "Extraction hood with actual external exhaust route/grease service; not a recirculation assumption",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-hob"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "duct path/site approval",
+        "hood manufacturer",
+        "cooking fuel"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-hob",
+      "room_id": "KIT-01",
+      "kind": "appliance",
+      "intent": "Cooktop ignition/power/gas safety needs model-specific utility coordination",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-hob"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "selected cooktop manual",
+        "gas utility approval",
+        "cabinet heat separation"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-fridge",
+      "room_id": "KIT-01",
+      "kind": "appliance",
+      "intent": "Fridge supply/access, shutoff and service clearance per selected exact SKU",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-fridge"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "appliance selection",
+        "final tall-unit elevation"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-oven",
+      "room_id": "KIT-01",
+      "kind": "appliance",
+      "intent": "Oven load/isolator and heat/vent gaps at selected oven column",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-oven-column"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "model/nameplate amps",
+        "carpenter elevation",
+        "electrician circuit design"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-dw",
+      "room_id": "KIT-01",
+      "kind": "appliance",
+      "intent": "Dishwasher electric isolation away from leaks with water/drain coordination",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet_adjacency",
+      "deps": [
+        "selected dishwasher",
+        "actual cabinet installation",
+        "plumber and qualified electrician"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-counter",
+      "room_id": "KIT-01",
+      "kind": "power",
+      "intent": "Small-appliance sockets for coffee/kettle/future removable air fryer; plan real load diversity, don't assume shared high loads",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-cooking-base"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "real appliances wattage",
+        "dry safe socket positions",
+        "kitchen circuit/load plan"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-coffee",
+      "room_id": "KIT-01",
+      "kind": "power",
+      "intent": "Coffee nook utility and cleaning access; steam-safe ventilation and socket service",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "selected coffee machine",
+        "tall cabinet elevation",
+        "no sealed hot appliances"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "kit-island",
+      "room_id": "RECP-01",
+      "kind": "wet_service",
+      "intent": "Optional wet sink dishwasher relocation requires plumber/drain fall and developer structure signoff",
+      "anchor": {
+        "type": "furniture",
+        "id": "E2-island-sink"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet_adjacency",
+      "deps": [
+        "open kitchen structure approval",
+        "water supply",
+        "drainage gradient",
+        "waterproofing"
+      ],
+      "provision": "UNAPPROVED_K12",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-general",
+      "room_id": "MBR-01",
+      "kind": "lighting",
+      "intent": "Low-glare dimmable ambient light with entry and bedside independent control",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-1"
+      },
+      "control_group": "mbr-ambient",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "sleep-direction test",
+        "ceiling plan"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-bed-left",
+      "room_id": "MBR-01",
+      "kind": "power",
+      "intent": "Independent reading lamp/phone charging beside first nightstand",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-2"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "bed/nightstand exact heights",
+        "accessible switch positions"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-bed-right",
+      "room_id": "MBR-01",
+      "kind": "power",
+      "intent": "Independent reading lamp/phone charging beside other nightstand",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-3"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "bed/nightstand exact heights",
+        "accessible switch positions"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-night",
+      "room_id": "MBR-01",
+      "kind": "lighting",
+      "intent": "Shielded, dim low-level night route without waking sleeper",
+      "anchor": null,
+      "control_group": "mbr-night",
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "bathroom access route",
+        "glare test"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-hvac",
+      "room_id": "MBR-01",
+      "kind": "hvac",
+      "intent": "Quiet climate system: avoid direct jet to pillow, allow filter service",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-1"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "room heat-load survey",
+        "actual outdoor unit allocation",
+        "refrigerant/condensate path",
+        "acoustics"
+      ],
+      "provision": "CAPACITY_TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-blackout",
+      "room_id": "MBR-01",
+      "kind": "low_voltage",
+      "intent": "Blackout curtain/track + optional automation with manual override",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "terrace door/window/site survey",
+        "curtain/AC clash"
+      ],
+      "provision": "CONCEPT_ONLY",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "mbr-purifier",
+      "room_id": "MBR-01",
+      "kind": "power",
+      "intent": "Optional particle cleaner outlet away from pillow and direct AC airflow",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "quiet fan-mode CADR/noise",
+        "filter access",
+        "actual furniture"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br1-general",
+      "room_id": "BR-01",
+      "kind": "lighting",
+      "intent": "General diffuse light and independent bed reading task",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-6"
+      },
+      "control_group": "br1-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "bed placement retained",
+        "lighting glare"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br1-desk",
+      "room_id": "BR-01",
+      "kind": "power",
+      "intent": "Task light, laptop/monitor and data provision at first-bedroom desk",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-8"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "desk final position",
+        "device/charging inventory"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br1-data",
+      "room_id": "BR-01",
+      "kind": "data",
+      "intent": "Future home-office wired data option",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-8"
+      },
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "network topology"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br1-hvac",
+      "room_id": "BR-01",
+      "kind": "hvac",
+      "intent": "Quiet room cooling with filters/drain/airflow clear of bed and desk",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "actual heat load, glazing orientation",
+        "AC model",
+        "condensate route"
+      ],
+      "provision": "CAPACITY_TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br1-shading",
+      "room_id": "BR-01",
+      "kind": "low_voltage",
+      "intent": "Simple reliable manual blackout shade with possible future motor power",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "window measurement",
+        "clearance for rods/tracks"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br2-general",
+      "room_id": "BR-02",
+      "kind": "lighting",
+      "intent": "Separate ambient, reading and night-friendly controls adaptable between bedroom/work room",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-10"
+      },
+      "control_group": "br2-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "final family occupancy"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br2-desk",
+      "room_id": "BR-02",
+      "kind": "power",
+      "intent": "Workstation multiple device charging and task lighting (no extension trip hazards)",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-11"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "desk depth and actual monitors",
+        "wall socket coordinates"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br2-data",
+      "room_id": "BR-02",
+      "kind": "data",
+      "intent": "Network data/conduit option for desk",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-11"
+      },
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "network hub location"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br2-hvac",
+      "room_id": "BR-02",
+      "kind": "hvac",
+      "intent": "Quiet independent bedroom AC, pillow and work seat draught review",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "load survey",
+        "condenser allocation",
+        "condensate pipe"
+      ],
+      "provision": "CAPACITY_TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "br2-shading",
+      "room_id": "BR-02",
+      "kind": "low_voltage",
+      "intent": "Curtain/shading with potential motor outlet provision only if chosen",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "window survey",
+        "budget"
+      ],
+      "provision": "CONCEPT_ONLY",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "hall-general",
+      "room_id": "HALL-01",
+      "kind": "lighting",
+      "intent": "Discreet general hall light, controlled from useful ends without glare into bedrooms",
+      "anchor": null,
+      "control_group": "hall-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "actual hall switch landing"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "hall-night",
+      "room_id": "HALL-01",
+      "kind": "lighting",
+      "intent": "Very-low night passage to bathrooms, switch/motion override",
+      "anchor": null,
+      "control_group": "hall-night",
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "hall/door swing study",
+        "manual override"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "hall-control",
+      "room_id": "HALL-01",
+      "kind": "control",
+      "intent": "Locate hall/bedroom switching with actual door swings and accessible height",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "door position survey",
+        "electrician first-fix plan"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wic-general",
+      "room_id": "WIC-01",
+      "kind": "lighting",
+      "intent": "Even wardrobe vertical-face task illumination, good colour rendering without heat at garments",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-4"
+      },
+      "control_group": "wic-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "wardrobe leaf swing",
+        "joinery shelf elevations"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wic-opposing",
+      "room_id": "WIC-01",
+      "kind": "lighting",
+      "intent": "Opposite wardrobe task lighting coordinated with door openings",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-5"
+      },
+      "control_group": "wic-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "hinges/sliding decision",
+        "replaceable diffusers"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wic-controls",
+      "room_id": "WIC-01",
+      "kind": "control",
+      "intent": "Accessible local light control that works with doors opened",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "actual WIC door/wardrobe opening model",
+        "manual fallback"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathm-mirror",
+      "room_id": "BATH-M01",
+      "kind": "lighting",
+      "intent": "Task light on face at ensuite mirror, not a harsh overhead-only spot",
+      "anchor": {
+        "type": "furniture",
+        "id": "R1-ensuite-vanity"
+      },
+      "control_group": "bathm-task",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "real zones from electrician",
+        "mirror elevation",
+        "splash-rated equipment"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathm-exhaust",
+      "room_id": "BATH-M01",
+      "kind": "ventilation",
+      "intent": "Humidity exhaust/dehumidification and accessible service, verify duct outlet",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "real duct/exhaust route",
+        "ventilation performance",
+        "fire constraints"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathm-power",
+      "room_id": "BATH-M01",
+      "kind": "power",
+      "intent": "Only safe and code-compliant protected shaver/utility provision, location TBD",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "wet-zone classification",
+        "qualified electrician",
+        "RCD/earthing design"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathm-night",
+      "room_id": "BATH-M01",
+      "kind": "lighting",
+      "intent": "Gentle overnight orientation, no shower-zone unapproved wiring",
+      "anchor": null,
+      "control_group": "bathm-night",
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "wet zone",
+        "glare and accessibility"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathc-mirror",
+      "room_id": "BATH-C01",
+      "kind": "lighting",
+      "intent": "Family-bath mirror task and diffuse general lighting",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-18"
+      },
+      "control_group": "bathc-task",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "IP/wet zones",
+        "mirror elevation",
+        "electrical protection"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathc-exhaust",
+      "room_id": "BATH-C01",
+      "kind": "ventilation",
+      "intent": "Bathroom steam extraction, condensation and duct service",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "fan capacity/noise",
+        "real exhaust duct",
+        "local code"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathc-power",
+      "room_id": "BATH-C01",
+      "kind": "power",
+      "intent": "Protected grooming utility only in qualified approved dry/splash zone",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "qualified electrician wet-zone / RCD review",
+        "final vanity elevations"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathc-night",
+      "room_id": "BATH-C01",
+      "kind": "lighting",
+      "intent": "Low-glare bathroom overnight light control",
+      "anchor": null,
+      "control_group": "bathc-night",
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "local wet-zone protection"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wc-mirror",
+      "room_id": "WC-01",
+      "kind": "lighting",
+      "intent": "Compact vanity mirror face illumination",
+      "anchor": {
+        "type": "furniture",
+        "id": "starter-26"
+      },
+      "control_group": "wc-light",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "tiny WC splash zone",
+        "fixture IP rating"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wc-exhaust",
+      "room_id": "WC-01",
+      "kind": "ventilation",
+      "intent": "Guest-WC exhaust and service route",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "external duct path",
+        "local wet-zone rules"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wc-control",
+      "room_id": "WC-01",
+      "kind": "control",
+      "intent": "Guest WC light switch near actual door, not in splash zone",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "door swing",
+        "electrician zone review"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "svc-washer",
+      "room_id": "TER-SVC",
+      "kind": "appliance",
+      "intent": "Washing machine reliable protected circuit and accessible isolator; water + drain and anti-vibration",
+      "anchor": {
+        "type": "furniture",
+        "id": "H1-terrace-washer"
+      },
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "washer selected power",
+        "weather enclosure",
+        "RCD/earthing",
+        "plumbing",
+        "drainage"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "svc-light",
+      "room_id": "TER-SVC",
+      "kind": "lighting",
+      "intent": "Weather-safe service terrace light and manual control",
+      "anchor": null,
+      "control_group": "svc-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "IP rating",
+        "weather envelope"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "svc-leak",
+      "room_id": "TER-SVC",
+      "kind": "sensor",
+      "intent": "Optional leak sensor within reachable cleaning/service zone",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "floor water pooling",
+        "sensor/maintenance preference"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "svc-drying",
+      "room_id": "TER-SVC",
+      "kind": "low_voltage",
+      "intent": "Laundry drying ventilation and removable rack clearance, no dryer appliance assumed",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "wind/rain protection",
+        "service egress",
+        "dryer if chosen"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "main-terrace-light",
+      "room_id": "TER-MAIN",
+      "kind": "lighting",
+      "intent": "Low-glare outdoor seating area lighting, independent indoor lights",
+      "anchor": null,
+      "control_group": "main-terrace",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "waterproof/IP",
+        "façade permission",
+        "glare toward neighbors"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "main-terrace-power",
+      "room_id": "TER-MAIN",
+      "kind": "power",
+      "intent": "Optional weatherproof maintenance/recreation outlet if permitted",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "developer façade restrictions",
+        "electrician outdoor wiring/RCD"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "main-terrace-AC",
+      "room_id": "TER-MAIN",
+      "kind": "hvac",
+      "intent": "Study only whether approved external condenser/service position exists, do NOT presume terrace placement",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "developer external-unit rules",
+        "sound/vibration",
+        "service clearance",
+        "refrigerant routing"
+      ],
+      "provision": "NO_CONDENSER_LOCATION_APPROVED",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "master-terrace-light",
+      "room_id": "TER-MBR",
+      "kind": "lighting",
+      "intent": "Soft weatherproof master terrace night lighting",
+      "anchor": null,
+      "control_group": "master-terrace",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "developer restrictions",
+        "weatherproof control"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "master-terrace-power",
+      "room_id": "TER-MBR",
+      "kind": "power",
+      "intent": "Optional terrace outlet only if actual need and façade rules permit",
+      "anchor": null,
+      "control_group": null,
+      "phase": "reserve",
+      "scope": "room",
+      "safety": "outdoor_wet",
+      "deps": [
+        "safety/RCD",
+        "wall penetration approval"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    }
+  ],
+  "source_provenance": "Canonical rooms, exact K12 furnishing IDs and verified 2.50m planned finished ceiling; all proposed points location/loads and installation feasibility exploratory",
+  "approvals": {
+    "construction_geometry": "TBD_TWO_ORIGINAL_K12_FAILS",
+    "exact_site_dimensions": "TBD",
+    "developer_facade_and_condensers": "TBD",
+    "electrical_professional": "TBD",
+    "hvac_manual_J_heat_load": "TBD",
+    "plumbing_drainage": "TBD",
+    "final_RCP": "TBD",
+    "selected_appliances": "TBD"
+  },
+  "release_policy": "Do not produce an as-built XY outlet coordinate, breaker amperage, cable size, fixture lumen/quantity or AC tonnage from image calibrated room dimensions. Send to licensed Egyptian engineers with site survey and models."
+}
