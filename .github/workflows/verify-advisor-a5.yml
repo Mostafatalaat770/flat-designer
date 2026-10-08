@@ -1,0 +1,44 @@
+name: Advisor A5 - kitchen daily-use and storage gates
+
+on:
+  push:
+    branches:
+      - 'advisor/a5-kitchen-scenario-gates-20261008'
+    paths:
+      - 'scripts/advisor-a5-kitchen-scenarios.mjs'
+      - '.github/workflows/verify-advisor-a5.yml'
+      - 'review-evidence/advisor-a5/**'
+  pull_request:
+    paths:
+      - 'scripts/advisor-a5-kitchen-scenarios.mjs'
+      - '.github/workflows/verify-advisor-a5.yml'
+      - 'review-evidence/advisor-a5/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  human-workflow-safety:
+    name: K12 concurrent activity risk audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Revalidate frozen A1 K11/K12 baseline
+        run: node scripts/audit-advisor-01.mjs
+      - name: Independently calculate person/door/dining scenario collisions
+        run: node scripts/advisor-a5-kitchen-scenarios.mjs
+      - name: Preserve audit results
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a5-family-kitchen-scenarios
+          path: review-evidence/advisor-a5/
+          if-no-files-found: error
+          retention-days: 30
