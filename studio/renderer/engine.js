@@ -97,6 +97,7 @@ export function createEngine(host, layout, onSelect = () => {}) {
     currentCamera,
     raf,
     disposed = false,
+    paused = false,
     mode = "fixed",
     down = null,
     selected = null,
@@ -146,6 +147,7 @@ export function createEngine(host, layout, onSelect = () => {}) {
   function frame() {
     if (disposed) return;
     raf = requestAnimationFrame(frame);
+    if (paused) return;
     if (mode === "orbit") orbit.update();
     if (mode === "walk") {
       const v = new THREE.Vector3();
@@ -501,6 +503,7 @@ export function createEngine(host, layout, onSelect = () => {}) {
   return {
     update,
     setView,
+    setPaused(value) { paused = Boolean(value); },
     select,
     applyAssetMaterial(id, variantId) {
       const entry = imports.get(id);
