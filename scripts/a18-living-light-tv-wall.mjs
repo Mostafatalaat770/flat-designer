@@ -46,7 +46,7 @@ assert.equal(host.length,1,'TV must have a unique verified host solid wall, not 
 const backdrop={
  id:'A18-tv-backdrop',type:'wall-panel',variant:'plain',room_id:'RECP-01',
  placement:{mode:'wall',host_wall_id:host[0].id,
-  offset_mm:srcTV.cy-(host[0].from[1]+host[0].to[1])/2,
+  offset_mm:(srcTV.cx-(host[0].from[0]+host[0].to[0])/2)*host[0].tangent[0]+(srcTV.cy-(host[0].from[1]+host[0].to[1])/2)*host[0].tangent[1],
   inset_mm:8,elevation_mm:470},
  cx:srcTV.cx,cy:srcTV.cy,rotation:90,
  width_mm:1540,depth_mm:22,height_mm:1450,
