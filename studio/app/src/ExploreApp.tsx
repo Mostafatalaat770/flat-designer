@@ -78,9 +78,14 @@ export function ExploreApp(){
     try{right.current?.update(previewB);}catch(e){setError("B preview: "+(e as Error).message);}
     setProof(null);
   },[previewB]);
-  useEffect(()=>{left.current?.setPaused(!showBoth);},[showBoth]);
   useEffect(()=>{
-    try{left.current?.setView(view);right.current?.setView(view);}
+    left.current?.setPaused(!showBoth);
+    if(showBoth){left.current?.setView(viewRef.current);right.current?.setView(viewRef.current);}
+    right.current?.setMode(showBoth?"fixed":"orbit");
+  },[showBoth]);
+  useEffect(()=>{
+    try{left.current?.setView(view);right.current?.setView(view);
+      if(!showBoth)right.current?.setMode("orbit");}
     catch(e){setError("View: "+(e as Error).message);}
   },[view]);
   function changeRoom(id:string){
@@ -213,6 +218,7 @@ export function ExploreApp(){
               <span>{isVerified?"Geometry verified":"Visual preview · not verified"}</span></div>
             <div ref={bHost} className="explore-canvas" aria-label="Experimental Three.js 3D apartment viewport"/>
           </div>
+          {!showBoth&&<div className="explore-gesture-hint">Drag to look around <span>·</span> scroll to zoom</div>}
           {!ready&&<div className="explore-loading" role="status">Preparing local real-time 3D previews…</div>}
         </section>
 
