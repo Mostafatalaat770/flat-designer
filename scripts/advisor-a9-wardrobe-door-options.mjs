@@ -61,7 +61,7 @@ const options=[
   cabinet_nominal_retained_mm:1250,
   access:'Folding pairs could expose a wider cabinet opening than an ordinary 2-track slider, but center/hardware and drawer geometry unverified.'
  }),
- make('PO2','double-pocket slide-in doors within cabinet width',{panelWidthsMm:[550,550],swingProjectionPerCabinetMm:0},{
+ make('PO2','two-panel slide-in pocket system within cabinet width',{panelWidthsMm:[550,550],swingProjectionPerCabinetMm:0},{
   verdict:'LUXURY FEASIBILITY-ONLY, NOT RECOMMENDED DEFAULT: hardware complexity and likely lost cabinet width.',
   manufacturer_family:manufacturers.blumRevegoDuo,
   nominal_width_if_150mm_pocket_consumes_1250_mm_cabinet:1100,
