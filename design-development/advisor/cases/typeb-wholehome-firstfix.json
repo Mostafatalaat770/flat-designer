@@ -1160,6 +1160,76 @@
       ],
       "provision": "TBD",
       "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "recp-hvac",
+      "room_id": "RECP-01",
+      "kind": "hvac",
+      "intent": "Reception/L-shaped living and dining comfort: distribute air without draught onto seating or terrace glazing, with coordinated condenser/condensate routes",
+      "anchor": null,
+      "control_group": null,
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "dry",
+      "deps": [
+        "proper zoning and heating/cooling load assessment",
+        "outdoor unit approval",
+        "condensate gradient/drain",
+        "indoor head and electrical service"
+      ],
+      "provision": "CAPACITY_TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathm-general",
+      "room_id": "BATH-M01",
+      "kind": "lighting",
+      "intent": "Independent diffuse general ceiling/bathroom lighting so mirror task lights aren't the only source",
+      "anchor": null,
+      "control_group": "bathm-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "wet-zone IP zoning",
+        "ventilation and ceiling coordination"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "bathc-general",
+      "room_id": "BATH-C01",
+      "kind": "lighting",
+      "intent": "Independent family bathroom general illumination away from wet electrics",
+      "anchor": null,
+      "control_group": "bathc-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "bathroom moisture zone and electrician review",
+        "avoid glare toward tub"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
+    },
+    {
+      "id": "wc-general",
+      "room_id": "WC-01",
+      "kind": "lighting",
+      "intent": "Low-glare WC general lighting in addition to vanity face light",
+      "anchor": null,
+      "control_group": "wc-general",
+      "phase": "first_fix",
+      "scope": "room",
+      "safety": "wet",
+      "deps": [
+        "qualified wet-zone assessment",
+        "mirror and exhaust coordination"
+      ],
+      "provision": "TBD",
+      "provenance": "EXPLORATORY"
     }
   ],
   "source_provenance": "Canonical rooms, exact K12 furnishing IDs and verified 2.50m planned finished ceiling; all proposed points location/loads and installation feasibility exploratory",
