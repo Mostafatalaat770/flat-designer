@@ -1,0 +1,95 @@
+name: Advisor A18 - family TV wall and practical lighting scenes
+
+on:
+  push:
+    branches:
+      - 'advisor/a18-tv-wall-lighting-scenes-20261008'
+    paths:
+      - 'scripts/a18-tv-wall-lighting-study.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  pull_request:
+    paths:
+      - 'scripts/a18-tv-wall-lighting-study.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-decoration:
+    name: TV wall stays reversible, source fixtures preserved, lighting stays design-only
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Immutable apartment source and foundation regression
+        run: |
+          node scripts/audit-advisor-01.mjs
+          node --test studio/analysis/camera-coverage.test.mjs studio/analysis/experience.test.mjs
+      - name: Recreate pale-stone baseline from canonical, not an artist guess
+        run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16.json
+      - name: Make original + mineral + oak TV-wall alternatives using exact actual wall host
+        run: node scripts/a18-tv-wall-lighting-study.mjs
+      - name: Three designs cannot alter canonical, furniture or unresolved engineering failures
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const r=JSON.parse(fs.readFileSync('review-evidence/advisor-a18/tv-wall-lighting-decision.json','utf8'));assert.equal(r.original_k12_architecture_failures.length,2);assert.equal(r.options.length,3);assert.deepEqual(r.options.map(x=>x.wall_panel?.variant??'none'),['none','plain','fluted']);assert.equal(r.options[1].wall_panel.status,'EXPLORATORY_DECOR_ONLY');assert.ok(r.captures.every(c=>c.source_subject_projection.passed&&c.source_subject_projection.frame_blockers.length===0));console.log('PASS: actual TV host and visible cameras, reversible three finishes, two inherited K12 FAILs never waived')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a18-source-tv-wall-and-lights
+          path: |
+            design-development/advisor/a18/
+            review-evidence/advisor-a18/
+          if-no-files-found: error
+          retention-days: 30
+
+  webgl-visual-jury:
+    needs: source-and-decoration
+    name: Six true matched living/TV wall WebGL renders, three alternatives
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16.json
+          node scripts/a18-tv-wall-lighting-study.mjs > /tmp/a18.json
+      - name: Three variants times two identical source cameras
+        env:
+          RENDER_OUT_DIR: renders/a18
+          RENDER_CONCURRENCY: '2'
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a18/A18-base-light.json \
+            design-development/advisor/a18/A18-soft-mineral.json \
+            design-development/advisor/a18/A18-oak-fluted.json
+      - name: Validate PNG metadata and unchanged same-camera render identity
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const b=JSON.parse(fs.readFileSync('renders/a18/batch-manifest.json','utf8'));assert.equal(b.status,'ALL_FRAMES_VERIFIED');assert.equal(b.browser_launches,1);assert.equal(b.variants.length,3);assert.equal(b.frames.length,6);assert.ok(b.frames.every(f=>f.validated));console.log('PASS: six same-camera WebGL frames; source, fallback and scene QA verified')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: advisor-a18-family-tv-wall-actual-webgl
+          path: |
+            renders/a18/
+            review-evidence/advisor-a18/
+          if-no-files-found: error
+          retention-days: 30
