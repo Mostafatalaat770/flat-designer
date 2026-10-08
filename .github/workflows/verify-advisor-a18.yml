@@ -1,0 +1,98 @@
+name: Advisor A18 - lounge lighting mood alternatives
+
+on:
+  push:
+    branches:
+      - 'advisor/a18-living-lighting-scenes-20261008'
+    paths:
+      - 'scripts/a18-build-living-lighting-scenes.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  pull_request:
+    paths:
+      - 'scripts/a18-build-living-lighting-scenes.mjs'
+      - '.github/workflows/verify-advisor-a18.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-verified-intents:
+    name: A18 three fixture intents with unchanged Type B geometry
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Original architectural and lighting controls regression
+        run: |
+          node scripts/audit-advisor-01.mjs
+          node --test studio/analysis/camera-coverage.test.mjs studio/analysis/experience.test.mjs
+      - name: Freeze same K12/A16 finishes and A17 two verified lounge cameras
+        run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16-setup.json
+          node scripts/a17-build-living-focused-views.mjs > /tmp/a17-setup.json
+      - name: Auditable visual lighting concepts, no physical changes
+        run: node scripts/a18-build-living-lighting-scenes.mjs
+      - name: Fail unsafe or overclaimed lighting decisions
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const x=JSON.parse(fs.readFileSync('review-evidence/advisor-a18/lighting-options.json','utf8'));assert.equal(x.three_scenarios.length,3);assert.equal(x.source.finished_clear_ceiling_mm,2500);assert.equal(x.inherited_k12_failures.length,2);assert.deepEqual(x.three_scenarios.map(z=>z.lighting),['track-lamps','lamps','track']);assert.ok(x.three_scenarios.every(s=>s.file&&s.scene_revision));assert.ok(x.feasibility_gates.some(q=>q.includes('No photometric lux')));console.log('PASS: 3 exact-reception fixture options, no MEP or architecture approval')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a18-lighting-scenes-and-source
+          path: |
+            design-development/advisor/a18/
+            review-evidence/advisor-a18/lighting-options.json
+          if-no-files-found: error
+          retention-days: 30
+
+  actual-webgl-lighting:
+    name: Six actual WebGL frames of lounge light alternatives
+    needs: source-verified-intents
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Source-verified scenes
+        run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16-setup.json
+          node scripts/a17-build-living-focused-views.mjs > /tmp/a17-setup.json
+          node scripts/a18-build-living-lighting-scenes.mjs > /tmp/a18-setup.json
+      - name: Single browser real studio scene renders
+        env:
+          RENDER_OUT_DIR: renders/a18
+          RENDER_CONCURRENCY: '2'
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a18/a18-track-lamps.json \
+            design-development/advisor/a18/a18-soft-lamps.json \
+            design-development/advisor/a18/a18-clean-track.json
+      - name: Reject wrong camera, frame source or missing textures
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const m=JSON.parse(fs.readFileSync('renders/a18/batch-manifest.json','utf8'));assert.equal(m.status,'ALL_FRAMES_VERIFIED');assert.equal(m.browser_launches,1);assert.equal(m.frames.length,6);assert.equal(m.variants.length,3);assert.ok(m.frames.every(f=>f.validated));console.log('PASS: 3 fixture modes x 2 actual living cameras, exact-source assets/frames verified')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: advisor-a18-real-lounge-lighting-views
+          path: |
+            renders/a18/
+            review-evidence/advisor-a18/lighting-options.json
+          if-no-files-found: error
+          retention-days: 30
