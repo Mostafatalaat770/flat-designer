@@ -178,6 +178,16 @@
       "dimmable": true
     },
     {
+      "id": "kitchen-general-ambient",
+      "room_id": "KIT-01",
+      "function": "ambient",
+      "kelvin": 3000,
+      "connection": "wired",
+      "control": "separate kitchen main switch and dimming",
+      "dimmable": true,
+      "electrical_verified": false
+    },
+    {
       "id": "kitchen-under-cabinet-task",
       "room_id": "KIT-01",
       "function": "task",
