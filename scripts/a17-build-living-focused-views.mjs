@@ -20,9 +20,9 @@ const sourceObjects=original.layout.interior.objects.map(x=>({id:x.id,type:x.typ
  placement:x.placement,cx:x.cx,cy:x.cy,rotation:x.rotation,width_mm:x.width_mm,depth_mm:x.depth_mm,height_mm:x.height_mm}));
 const world=(p,h)=>[(p[0]-domain.model.width_mm/2)/1000,h,(p[1]-domain.model.depth_mm/2)/1000];
 const defs=[
- {id:'A17-lounge-sofa-tv',position_mm:[9900,5500],aim_mm:[11100,2400],
+ {id:'A17-lounge-sofa-tv',position_mm:[12400,5800],aim_mm:[11000,2200],
   purpose:'Whole family seating: sofa, coffee, armchair and TV all in view'},
- {id:'A17-lounge-second-eye',position_mm:[10400,5300],aim_mm:[11000,2100],
+ {id:'A17-lounge-second-eye',position_mm:[13600,5500],aim_mm:[11000,2500],
   purpose:'Second non-overlapping eye within lounge, cross-check finishes and seating scale'}
 ];
 const subjects=['starter-28','starter-29','starter-31','starter-32'];
@@ -53,10 +53,11 @@ for(const slug of files){
  const coverage=scene.views.map(v=>{
   const check=assessLivingCameraCoverage({
    camera:v.camera,model:domain.model,furniture:scene.layout.furniture,ids:subjects,
-   min_count:4,min_inner_margin:.15
+   min_count:4,min_inner_margin:.15,interior_objects:scene.layout.interior.objects
   });
   assert.equal(check.passed,true,'Reject camera that crops living essentials: '+v.id);
   assert.equal(check.proxy_visible_count,4);
+  assert.equal(check.frame_blockers.length,0,'No reading lamp should mask centre of lounge');
   return {view_id:v.id,purpose:defs.find(d=>d.id===v.id).purpose,...check};
  });
  const file='design-development/advisor/a17/'+slug+'.json';
