@@ -1,0 +1,67 @@
+name: Vercel Preview - source-verified static web bundle
+
+on:
+  push:
+    branches:
+      - 'platform/vercel-visual-preview-20261008'
+    paths:
+      - 'scripts/prepare-vercel-preview.mjs'
+      - 'vercel.json'
+      - '.github/workflows/verify-vercel-preview.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-vercel-preview.mjs'
+      - 'vercel.json'
+      - '.github/workflows/verify-vercel-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Build the real Type B canonical model
+        run: npm run build
+      - name: Compile interactive React/Three.js Studio (3 routes)
+        run: npm run studio:build
+      - name: Prepare production-path-compatible static assets (no cloud API)
+        run: node scripts/prepare-vercel-preview.mjs
+      - name: Validate Vercel routes, protect-by-default requirement, no raw files
+        run: |
+          node --input-type=module -e "
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const cfg=JSON.parse(fs.readFileSync('vercel.json','utf8'));
+          const report=JSON.parse(fs.readFileSync('vercel-preview/preview-manifest.json','utf8'));
+          assert.equal(cfg.outputDirectory,'vercel-preview');
+          assert.equal(cfg.redirects[0].destination,'/_qa/workspace/explore.html');
+          assert.equal(report.deployment_protection_required,true);
+          assert.equal(report.source_revision,'scene-85fd2cac');
+          assert.equal(report.art_assets_published,true);
+          assert.equal(report.asset_directory_exists,true);
+          assert.equal(report.entry_pages.length,3);
+          for(const url of report.entry_pages)assert.ok(fs.existsSync('vercel-preview'+url));
+          assert.ok(!fs.existsSync('vercel-preview/api'));
+          assert.ok(!fs.existsSync('vercel-preview/mcp'));
+          assert.ok(!fs.existsSync('vercel-preview/render-snapshots/current.json'));
+          assert.ok(!fs.existsSync('vercel-preview/studio/local/sources/verified-master-v50.json'));
+          console.log('PASS: verified source v50; all static app routes and art exist; no cloud API files bundled');
+          "
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vercel-static-preview-source-verified-build
+          path: vercel-preview/
+          retention-days: 7
+          if-no-files-found: error
