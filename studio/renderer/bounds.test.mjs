@@ -163,3 +163,44 @@ test('K11 cooking drawers and appliance niche retain the declared cabinet envelo
     builders.dispose();
   }
 });
+
+
+test('K12 provides a real continuous end-prep slab with the sink open and the deeper rear cabinets', () => {
+  const source=JSON.parse(fs.readFileSync(path.join(root,'design-development/k12/snapshot.json')));
+  const audit=JSON.parse(fs.readFileSync(path.join(root,'design-development/k12/function-audit.json')));
+  const layout=structuredClone(source.layout),item=layout.furniture.find(f=>f.id==='E2-island');
+  const ox=item.cx,oz=item.cy,dx=domain.MODEL.width_mm/2-ox,dz=domain.MODEL.depth_mm/2-oz;
+  layout.furniture=layout.furniture.filter(f=>['E2-island','E2-island-sink'].includes(f.id));
+  for(const f of layout.furniture){f.cx+=dx;f.cy+=dz;}
+  layout.interior.objects=[];
+  const builders=createBuilders({THREE:three,RoundedBoxGeometry,MODEL:domain.MODEL,domain,layout,
+    INTERIOR_MATERIALS:domain.INTERIOR_MATERIALS,scene:new THREE.Scene(),renderer:{capabilities:{getMaxAnisotropy:()=>1}},
+    camera:new THREE.PerspectiveCamera(),orbit:{target:new THREE.Vector3()},hemi:new THREE.HemisphereLight(),
+    sun:new THREE.DirectionalLight(),ground:new THREE.Mesh(new THREE.PlaneGeometry(),new THREE.MeshStandardMaterial()),envTex:new THREE.Texture()});
+  builders.build(layout,{cut:2.5,furn:true,labels:false,night:false,hour:10});
+  const island=builders.groups.furnG.children.find(o=>o.userData.fid==='E2-island'),sink=builders.groups.furnG.children.find(o=>o.userData.fid==='E2-island-sink');
+  const b=new THREE.Box3().setFromObject(island);
+  assert.ok(b.min.x>=-.856&&b.max.x<=.856&&b.min.z>=-.501&&b.max.z<=.501&&b.max.y<=.861);
+  assert.equal(island.userData.counterJoinery.rear_depth_mm,400);
+  assert.equal(island.userData.counterJoinery.working_depth_mm,600);
+  const faces=island.userData.counterJoinery.module_geometry;
+  for(const face of faces){
+    if(face.side==='working')assert.ok(face.min_mm[2]>=469&&face.max_mm[2]<=500);
+    else assert.ok(face.min_mm[2]>=-500&&face.max_mm[2]<=-469);
+  }
+  assert.equal(sink.children.find(o=>o.userData.workstationCover),undefined,'Permanent prep does not close the sink');
+  const slab=island.children.find(o=>o.isMesh&&new THREE.Box3().setFromObject(o).min.y>=.819&&new THREE.Box3().setFromObject(o).max.y<=.861);
+  assert.ok(slab);
+  builders.groups.furnG.updateMatrixWorld(true);
+  const ray=(x,z)=>new THREE.Raycaster(new THREE.Vector3((x-ox)/1000,1.3,(z-oz)/1000),new THREE.Vector3(0,-1,0));
+  assert.equal(ray(11682,6760).intersectObject(slab,true).length,0,'The actual bowl remains a hole');
+  const p=audit.prep.permanent_end_rectangle_mm;
+  for(const x of [p.x0+5,(p.x0+p.x1)/2,p.x1-5])for(const z of [p.y0+5,(p.y0+p.y1)/2,p.y1-5]){
+    const hits=ray(x,z).intersectObject(slab,true);
+    assert.ok(hits.some(h=>Math.abs(h.point.y-.86)<.0001),'Every sampled point of the end prep is continuous counter at 860 mm');
+    assert.equal(ray(x,z).intersectObject(sink,true).length,0,'The bowl/rim/tap cannot occupy the prep slab');
+  }
+  assert.ok(ray(11000,6070).intersectObject(slab,true).length>0,'The extra rear 100 mm is actually rendered');
+  assert.equal(audit.end_operator_remaining_to_table_edge_mm,465,'Restricted passage during end use remains disclosed');
+  builders.dispose();
+});

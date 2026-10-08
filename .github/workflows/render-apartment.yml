@@ -73,6 +73,18 @@ jobs:
           RENDER_OUT_DIR: renders/prep-mode
         run: node scripts/render-snapshot.mjs design-development/k11/prep-mode.json
 
+      - name: Render K12 standing end-prep view
+        if: github.ref == 'refs/heads/design/k12-permanent-end-prep'
+        env:
+          RENDER_OUT_DIR: renders/end-prep
+        run: node scripts/render-snapshot.mjs design-development/k12/end-prep-view.json
+
+      - name: Render frozen K11 comparison
+        if: github.ref == 'refs/heads/design/k12-permanent-end-prep'
+        env:
+          RENDER_OUT_DIR: renders/comparison-K11
+        run: node scripts/render-snapshot.mjs design-development/k12/k11-comparison.json
+
       - name: Upload PNGs and metadata
         if: always()
         uses: actions/upload-artifact@v4

@@ -20,7 +20,15 @@ try{
   if(!report)throw error;
 }
 const fails=(report?.checks||[]).filter(c=>c.status==='FAIL');
-const k11=snapshot.name.startsWith('K11 —');
+const k11=/^K(?:11|12) —/.test(snapshot.name);
+if(snapshot.name.startsWith('K12 —')){
+  const base=JSON.parse(fs.readFileSync(path.join(root,'design-development/k11/snapshot.json'),'utf8'));
+  const island=snapshot.layout.furniture.find(f=>f.id==='E2-island');
+  assert.deepEqual([island.cx,island.cy,island.w,island.d,island.rot],[11750,6550,1700,1000,0]);
+  const rest=l=>({...l,furniture:l.furniture.filter(f=>f.id!=='E2-island')});
+  assert.deepEqual(rest(snapshot.layout),rest(base.layout),'K12 may only change the island');
+  assert.deepEqual(snapshot.architecture_variant,base.architecture_variant);
+}
 function pantryStudyException(c){
   if(!k11||c.kind!=='object-wall'||c.object_id!=='E2-pantry-tall'||c.source_wall_index!==45)return false;
   const base=JSON.parse(fs.readFileSync(path.join(root,'design-development/k10/snapshot.json'),'utf8'));
