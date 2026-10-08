@@ -8,6 +8,11 @@ on:
       - 'scripts/prepare-advisor-a2.mjs'
       - 'design-development/advisor/**'
       - '.github/workflows/verify-advisor-a2.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a2.mjs'
+      - 'design-development/advisor/**'
+      - '.github/workflows/verify-advisor-a2.yml'
   workflow_dispatch:
 
 permissions:
