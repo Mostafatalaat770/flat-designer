@@ -67,7 +67,7 @@ for(const shift of [0,150]){
  const states=[];
  for(const pullback of [0,350]){
   for(const radius of [180,220]){
-   const z=kitchenFamilyMetrics({layout:next.layout,audit:helper,island_shift_mm:0,
+   const z=kitchenFamilyMetrics({layout:source.layout,audit:helper,island_shift_mm:shift,
      chairs_pullback_mm:pullback,dining_agent_radius_mm:radius,route_grid_mm:100});
    states.push(z);
   }
