@@ -1,0 +1,78 @@
+name: Advisor A2 - kitchen and dining alternatives
+
+on:
+  push:
+    branches:
+      - 'advisor/a2-dining-vs-k12-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a2.mjs'
+      - 'design-development/advisor/**'
+      - '.github/workflows/verify-advisor-a2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  functional-review:
+    name: Geometry + family use reviewer
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Re-run advisor A1 control
+        run: node scripts/audit-advisor-01.mjs
+      - name: Generate and test A2 variants from frozen K12
+        run: node scripts/prepare-advisor-a2.mjs
+      - name: Preserve measured comparison for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a2-measurements-${{ github.sha }}
+          path: design-development/advisor/a2/measurements.json
+          if-no-files-found: error
+          retention-days: 14
+
+  visual-review:
+    name: Consistent-angle renderer
+    needs: functional-review
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Install headless Chromium
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Reconstruct A2 from source and validate before rendering
+        run: node scripts/prepare-advisor-a2.mjs
+      - name: Render compact dining 6-seat layout
+        env:
+          RENDER_OUT_DIR: renders/dining-compact-six
+        run: node scripts/render-snapshot.mjs design-development/advisor/a2/dining-compact-six.json
+      - name: Render 2000-mm family dining shifted alternative
+        env:
+          RENDER_OUT_DIR: renders/dining-shift-six
+        run: node scripts/render-snapshot.mjs design-development/advisor/a2/dining-shift-six.json
+      - name: Publish exact geometry images and metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a2-renders-${{ github.sha }}
+          path: renders/
+          if-no-files-found: error
+          retention-days: 14
