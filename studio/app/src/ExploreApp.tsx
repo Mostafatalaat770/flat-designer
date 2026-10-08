@@ -27,7 +27,8 @@ export function ExploreApp(){
   const [view,setView]=useState<Camera>(cameras.find(x=>x.room_id==="RECP-01")||cameras[0]);
   const [a,setA]=useState<ExploreChoices>(originalA);
   const [b,setB]=useState<ExploreChoices>(originalB);
-  const [showBoth,setShowBoth]=useState(true);
+  const [showBoth,setShowBoth]=useState(false);
+  const [showTools,setShowTools]=useState(true);
   const [proof,setProof]=useState<ExploreVerification|null>(null);
   const [notice,setNotice]=useState("Explore previews are temporary. Your saved design is untouched.");
   const [error,setError]=useState("");
@@ -59,6 +60,7 @@ export function ExploreApp(){
       const second=createEngine(bHost.current,snapshotExplore(sourceRef.current,roomRef.current,bRef.current));
       left.current=first;right.current=second;
       first.setView(viewRef.current);second.setView(viewRef.current);
+      first.setPaused(true);
       void Promise.all([first.ready(),second.ready()]).then(()=>{
         if(mounted.current)setReady(true);
       }).catch(e=>{if(mounted.current)setError((e as Error).message)});
@@ -76,6 +78,7 @@ export function ExploreApp(){
     try{right.current?.update(previewB);}catch(e){setError("B preview: "+(e as Error).message);}
     setProof(null);
   },[previewB]);
+  useEffect(()=>{left.current?.setPaused(!showBoth);},[showBoth]);
   useEffect(()=>{
     try{left.current?.setView(view);right.current?.setView(view);}
     catch(e){setError("View: "+(e as Error).message);}
@@ -160,15 +163,18 @@ export function ExploreApp(){
   }
   const isVerified=!!proof&&proof.proposed_scene_revision===revision(previewB);
   return (
-    <div className="explore-app">
+    <div className={"explore-app"+(showTools?"":" tools-hidden")}>
       <header className="explore-topbar">
         <div>
           <a href="/_qa/workspace/" className="explore-back">← Design workspace</a>
           <h1>Explore <span>&</span> Verify</h1>
-          <p>Play with the atmosphere. Keep Type B geometry locked.</p>
+          <p className="explore-subtitle">Your apartment, in every mood. <span>Exact Type B geometry, always.</span></p>
         </div>
         <div className="explore-source">
-          <span className="explore-pill">LOCAL SANDBOX</span>
+          <div className="explore-top-actions">
+            <span className="explore-pill">PRIVATE DESIGN STUDY</span>
+            <button type="button" className="explore-tools-button" aria-expanded={showTools} onClick={()=>setShowTools(current=>!current)}>{showTools?"✕ Close moodboard":"◈ Open moodboard"}</button>
+          </div>
           <small>{sourceName}</small>
           <small>Canonical Type B v0.2.2 · 2.50 m finished height</small>
         </div>
@@ -210,25 +216,31 @@ export function ExploreApp(){
           {!ready&&<div className="explore-loading" role="status">Preparing local real-time 3D previews…</div>}
         </section>
 
-        <aside className="explore-inspector">
-          <h2>Material studio</h2>
-          <p className="explore-intro">Change B as often as you like. No writes until you explicitly save a verified version.</p>
+        <aside className="explore-inspector" aria-hidden={!showTools}>
+          <div className="explore-inspector-eyebrow">FINISHES & ATMOSPHERE</div>
+          <h2>Make it feel like home.</h2>
+          <p className="explore-intro">Try combinations freely. Your real apartment stays untouched until you verify and save.</p>
 
-          <fieldset>
-            <legend>Creative directions</legend>
+          <fieldset className="explore-presets-group">
+            <legend>Start with a look</legend>
             <div className="explore-presets">
               {(Object.keys(PALETTES) as Array<keyof typeof PALETTES>).map(key=>
-                <button key={key} onClick={()=>preset(key)}>{PALETTES[key].name}</button>)}
+                <button key={key} className={"explore-look-card"+(JSON.stringify(PALETTES[key])===JSON.stringify(b)?" is-current":"")} onClick={()=>preset(key)} aria-pressed={JSON.stringify(PALETTES[key])===JSON.stringify(b)}>
+                  <span className={"explore-look-art look-"+key} aria-hidden="true"/><span>{PALETTES[key].name}</span>
+                </button>)}
             </div>
           </fieldset>
 
           <fieldset>
-            <legend>Surface mood</legend>
+            <legend>Choose your surfaces</legend>
             <label>Floor (generic visual reference)
               <select aria-label="Flooring option" value={b.flooring}
                 onChange={e=>patchB({flooring:e.target.value as ExploreChoices["flooring"]})}>
                 {FLOORING_OPTIONS.map(x=><option key={x.id} value={x.id}>{x.name}</option>)}
               </select>
+              <div className="explore-swatch-row" aria-label="Flooring quick looks">
+                {FLOORING_OPTIONS.map((x,index)=><button key={x.id} type="button" className={"explore-swatch"+(b.flooring===x.id?" active":"")} style={{background:["#d7cbbd","#e3d1b5","#cda981","#bd9873","#b4aea3"][index]}} aria-label={x.name} title={x.name} aria-pressed={b.flooring===x.id} onClick={()=>patchB({flooring:x.id as ExploreChoices["flooring"]})}/>)}
+              </div>
             </label>
             <label>Wall paint
               <div className="explore-colour-row">
@@ -236,14 +248,17 @@ export function ExploreApp(){
                   onChange={e=>patchB({wall:e.target.value})}/>
                 <output>{b.wall.toUpperCase()}</output>
               </div>
+              <div className="explore-swatch-row" aria-label="Wall paint quick looks">
+                {["#F2EEE7","#EEE8DF","#E5DED3","#D9CFBF","#B8B0A5","#788475"].map(hex=><button key={hex} type="button" className={"explore-swatch"+(b.wall.toLowerCase()===hex.toLowerCase()?" active":"")} style={{background:hex}} aria-label={"Wall paint "+hex} title={hex} aria-pressed={b.wall.toLowerCase()===hex.toLowerCase()} onClick={()=>patchB({wall:hex})}/>)}
+              </div>
             </label>
           </fieldset>
           <fieldset>
-            <legend>Light ambience <span className="explore-proxy">conceptual only</span></legend>
+            <legend>Set the atmosphere <span className="explore-proxy">visual study</span></legend>
             <div className="explore-presets">
-              <button onClick={()=>atmosphere("bright")}>Bright mood</button>
-              <button onClick={()=>atmosphere("relax")}>Relax mood</button>
-              <button onClick={()=>atmosphere("night")}>Dim evening</button>
+              <button onClick={()=>atmosphere("bright")}>☀ Bright</button>
+              <button onClick={()=>atmosphere("relax")}>◒ Golden</button>
+              <button onClick={()=>atmosphere("night")}>☾ Evening</button>
             </div>
             <label>Lighting arrangement
               <select aria-label="Lighting arrangement" value={b.lighting}
