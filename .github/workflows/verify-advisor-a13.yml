@@ -44,3 +44,43 @@ jobs:
             design-development/advisor/a13/
           if-no-files-found: error
           retention-days: 30
+
+  matched-dining-visual:
+    name: Real six-seat / island-end model cameras
+    needs: seat-rebalance
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Make two source-backed dining-focused scenes with exact matched cameras
+        run: node scripts/a13-six-seat-distribution.mjs > /tmp/a13-metrics.json
+      - name: Original six seats (island +150mm conditional)
+        env:
+          RENDER_OUT_DIR: renders/seat-original
+        run: node scripts/render-snapshot.mjs design-development/advisor/a13/combined-island150-seats0.json
+      - name: Six seats redistributed 75mm inward (island +150mm conditional)
+        env:
+          RENDER_OUT_DIR: renders/seat-inward-75
+        run: node scripts/render-snapshot.mjs design-development/advisor/a13/combined-island150-seats75.json
+      - name: Upload original verified PNGs and camera manifests
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a13-six-seat-focused-visuals
+          path: |
+            renders/
+            review-evidence/advisor-a13-seat-options.json
+          if-no-files-found: error
+          retention-days: 30
