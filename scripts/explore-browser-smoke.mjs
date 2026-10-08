@@ -44,14 +44,29 @@ try{
  assert.equal(saved.canvasCount,2);
  assert.ok(saved.keys.some(k=>/^type-b-workspace-scene-.*-v1$/.test(k)),'No saved immutable local variant');
  assert.ok(saved.keys.every(k=>!k.includes('-draft-')),'Saved variant must not overwrite local workspace draft');
- await page.screenshot({path:'review-evidence/explore/explore-verify-browser-smoke.png',fullPage:true});
+ // Native WebGL canvas PNG is both faster and more faithful than asking
+ // SwiftShader Chromium to screenshot a continually repainting full page.
+ const canvases=await page.locator('.explore-canvas canvas').evaluateAll(elements=>
+   elements.map(el=>el.toDataURL('image/png')));
+ assert.equal(canvases.length,2);
+ for(let i=0;i<canvases.length;i++){
+   assert.match(canvases[i],/^data:image\/png;base64,/);
+   const bytes=Buffer.from(canvases[i].split(',')[1],'base64');
+   assert.ok(bytes.byteLength>2000,'Empty canvas capture in WebGL '+i);
+   await fs.writeFile('review-evidence/explore/webgl-'+(i===0?'A-reference':'B-choice')+'.png',bytes);
+ }
+ // Full-page screenshot is optional in a software-rendered CI browser.
+ // It must never invalidate a real canonical + interaction pass.
+ await page.screenshot({path:'review-evidence/explore/explore-ui-optional.png',
+   fullPage:false,timeout:7000}).catch(()=>{});
+ 
  assert.equal(errors.length,0,'Browser runtime error: '+JSON.stringify(errors));
  const report={schema:'ApartmentExploreBrowserQA/1',local_server_only:true,
   compare_real_threejs_canvases:2,canonical_verified:true,unverified_preview_wrote_nothing:true,
   wrote_immutable_local_version_after_explicit_verification:true,
   wrote_cloud:false,wrote_original_workspace_draft:false,
   accepted_controls:['floor','wall/visual palette','lighting','temperature','brightness','A/B snapshot','matched camera','verify','local immutable save'],
-  screenshot:'review-evidence/explore/explore-verify-browser-smoke.png',
+  screenshots:['review-evidence/explore/webgl-A-reference.png','review-evidence/explore/webgl-B-choice.png'],
   browser_errors:errors};
  await fs.writeFile('review-evidence/explore/explore-verify-browser-smoke.json',JSON.stringify(report,null,2)+'\n');
  console.log('PASS: real interactive two-canvas 3D page, live mood controls, no save until verified, immutable local snapshot');
