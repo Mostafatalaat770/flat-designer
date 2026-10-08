@@ -28,7 +28,7 @@ export function prepareSixSeatDining(furniture,{chair_pullback_mm=0}={}){
  return {chairIds,original:all,pulled,table,chair_pullback_mm};
 }
 export function kitchenFamilyMetrics({layout,audit,island_shift_mm=0,chairs_pullback_mm=350,
- dining_agent_radius_mm=180,route_grid_mm=100}){
+ dining_agent_radius_mm=180,route_grid_mm=50}){
  if(![0,100,150,200].includes(island_shift_mm))throw Error('Not a studied wet island shift');
  const get=id=>{const x=layout.furniture.find(f=>f.id===id);if(!x)throw Error('No furniture '+id);return x;};
  const originalIsland=get('E2-island'),originalSink=get('E2-island-sink');
@@ -63,10 +63,14 @@ export function kitchenFamilyMetrics({layout,audit,island_shift_mm=0,chairs_pull
  const northChairs=pulled.pulled.filter(x=>x.cy<7500);
  const diningRoom=audit.reception_room_polygon;
  if(!diningRoom)throw Error('Pass exact canonical reception poly for routes');
- const diningObstacles=[...chairPoly,tablePoly,rectangle(island),prepPoly];
  const start=[13350,5650],goal=[13350,8900];
- const route=findPlanRoute({room:diningRoom,obstacles:diningObstacles,
-   start,goal,agent_radius_mm:dining_agent_radius_mm,grid_mm:route_grid_mm});
+ const routeArgs={room:diningRoom,start,goal,agent_radius_mm:dining_agent_radius_mm,
+  grid_mm:route_grid_mm,max_cells:50000};
+ const control=findPlanRoute({...routeArgs,obstacles:[]});
+ if(control.status!=='MODEL_ROUTE_FOUND')
+  throw new Error('A12 control route fails without any furniture: check canonical polygon/endpoint/model resolution first.');
+ const furnished=findPlanRoute({...routeArgs,obstacles:[...chairPoly,tablePoly,rectangle(island)]});
+ const route=findPlanRoute({...routeArgs,obstacles:[...chairPoly,tablePoly,rectangle(island),prepPoly]});
  // The max-state route tests a FULL six-chair pullback; it is not a true
  // simultaneous physical dining-to-kitchen pathway through unapproved walls.
  return {
@@ -94,6 +98,7 @@ export function kitchenFamilyMetrics({layout,audit,island_shift_mm=0,chairs_pull
    closest_chair_to_reception_sideboard_mm:null,
    hypothetical_person_radius_mm:dining_agent_radius_mm,
    origin_mm:start,destination_mm:goal,
+   route_debug:{no_furniture_control:control.status,with_dining_and_island_only:furnished.status,with_prep_operator:route.status},
    local_reception_route:route,
    caveat:'A full-reception 2D path only, not permission to cross the original kitchen structural separator. Chairs pulled an assumed fixed 350mm, not product-specific movement; path does not model people seated on all chairs.'
   },
