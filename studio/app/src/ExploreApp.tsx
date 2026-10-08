@@ -225,7 +225,7 @@ export function ExploreApp(){
             <legend>Start with a look</legend>
             <div className="explore-presets">
               {(Object.keys(PALETTES) as Array<keyof typeof PALETTES>).map(key=>
-                <button key={key} className={"explore-look-card"+(JSON.stringify(PALETTES[key])===JSON.stringify(b)?" is-current":"")} onClick={()=>preset(key)} aria-pressed={JSON.stringify(PALETTES[key])===JSON.stringify(b)}>
+                <button key={key} className={"explore-look-card"+((PALETTES[key].wall===b.wall&&PALETTES[key].flooring===b.flooring&&PALETTES[key].lighting===b.lighting&&PALETTES[key].temperature===b.temperature&&PALETTES[key].brightness===b.brightness)?" is-current":"")} onClick={()=>preset(key)} aria-pressed={(PALETTES[key].wall===b.wall&&PALETTES[key].flooring===b.flooring&&PALETTES[key].lighting===b.lighting&&PALETTES[key].temperature===b.temperature&&PALETTES[key].brightness===b.brightness)}>
                   <span className={"explore-look-art look-"+key} aria-hidden="true"/><span>{PALETTES[key].name}</span>
                 </button>)}
             </div>
