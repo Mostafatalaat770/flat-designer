@@ -1,0 +1,54 @@
+name: Advisor A15 - whole home MEP first-fix coordination
+
+on:
+  push:
+    branches:
+      - 'advisor/a15-whole-home-mep-first-fix-20261008'
+    paths:
+      - 'studio/analysis/first-fix.mjs'
+      - 'studio/analysis/first-fix.test.mjs'
+      - 'scripts/a15-first-fix-audit.mjs'
+      - 'design-development/advisor/cases/typeb-wholehome-firstfix.json'
+      - '.github/workflows/verify-advisor-a15.yml'
+  pull_request:
+    paths:
+      - 'studio/analysis/first-fix.mjs'
+      - 'studio/analysis/first-fix.test.mjs'
+      - 'scripts/a15-first-fix-audit.mjs'
+      - 'design-development/advisor/cases/typeb-wholehome-firstfix.json'
+      - '.github/workflows/verify-advisor-a15.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canonical-family-first-fix:
+    name: 13-room electric, lighting, AC and wet-zone design gating
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Prove original Type B model and historical warnings remain intact
+        run: node scripts/audit-advisor-01.mjs
+      - name: Independently test 13-room coverage and no fraudulent electrical/AC ratings
+        run: node --test studio/analysis/first-fix.test.mjs
+      - name: Preserve geometry and family activity regressions
+        run: node --test studio/analysis/foundation.test.mjs studio/analysis/phase2.test.mjs studio/analysis/experience.test.mjs studio/analysis/dishwasher-storage.test.mjs
+      - name: Generate exact-source professional coordination report
+        run: node scripts/a15-first-fix-audit.mjs
+      - name: Assert report is NOT an engineer stamped installation plan
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const x=JSON.parse(fs.readFileSync('review-evidence/advisor-a15/first-fix-source-audit.json','utf8'));assert.equal(x.summary.room_count,13);assert.equal(x.summary.service_intents,65);assert.equal(x.source.locked_finished_ceiling_mm,2500);assert.equal(x.inherited_k12_architecture_failures.length,2);assert.equal(x.validation.passed,true);assert.equal(x.engineering_status,'NOT_APPROVED');assert.equal(x.governance.allow_exact_socket_xy_inference,false);assert.equal(x.governance.allow_aircon_tonnage_inference,false);console.log('PASS: all 13 canonical rooms, 65 intents, original 2 fails and no fake construction approvals')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a15-wholehome-firstfix-handoff
+          path: review-evidence/advisor-a15/
+          retention-days: 30
+          if-no-files-found: error
