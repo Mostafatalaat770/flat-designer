@@ -70,8 +70,8 @@ export function compareOptions({candidates,objectives,requiredGates=[]}){
  return {schema:'ApartmentMultiCriteriaDecision/1',
   objectives,required_gates:requiredGates,
   candidates:processed.map(p=>{
-   const dominated_by=eligible.filter(q=>q.id!==p.id&&strict(q,p)).map(q=>q.id);
-   const robustly_dominated_by=eligible.filter(q=>q.id!==p.id&&strict(q,p,{robust:true})).map(q=>q.id);
+   const dominated_by=eligible.filter(q=>q.id!==p.id&&strictly(q,p)).map(q=>q.id);
+   const robustly_dominated_by=eligible.filter(q=>q.id!==p.id&&strictly(q,p,{robust:true})).map(q=>q.id);
    return {id:p.id,hard_fail:p.hard_fail,unknown_gates:p.unknown_gates,
     missing_metrics:p.missing_metrics,dominated_by,robustly_dominated_by,
     status:p.hard_fail?'BLOCKED_HARD_GATE':p.missing_metrics.length?'MISSING_DATA':
