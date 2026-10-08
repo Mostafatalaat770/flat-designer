@@ -1,0 +1,581 @@
+{
+  "schema": "K12ReviewedDelivery/1",
+  "reviewed_at_cairo": "2026-10-08",
+  "design_status": "EXPLORATORY",
+  "source_commit": "2537dbfd3b927688a61ea0e06da83a1496332150",
+  "baseline_commit": "37005b2383a56247ded7e77b162dc6408a1dd4f7",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "scene_revision": "scene-e2fcb932",
+  "snapshot_actual_sha256": "4187bbf3e166d6ba98db5f7d5357111238cda34cdf3558b8b4e550eaf25df25e",
+  "source_storage_revision_not_live_state": 39,
+  "ci": {
+    "commit": "2537dbfd3b927688a61ea0e06da83a1496332150",
+    "branch": "design/k12-permanent-end-prep",
+    "verification": {
+      "run_id": 37736952827,
+      "job_id": 113178560972,
+      "conclusion": "success",
+      "url": "https://github.com/Mostafatalaat770/flat-designer/actions/runs/37736952827",
+      "domain_tests": 8,
+      "studio_tests": 12,
+      "reproduction": "Five K12 JSON files reproduced byte-exactly from frozen K11; current snapshot matches"
+    },
+    "render": {
+      "run_id": 37736952743,
+      "job_id": 113178561085,
+      "conclusion": "success",
+      "url": "https://github.com/Mostafatalaat770/flat-designer/actions/runs/37736952743"
+    },
+    "artifact": {
+      "id": 11531374456,
+      "name": "apartment-renders-37736952743-2537dbfd3b927688a61ea0e06da83a1496332150",
+      "size_in_bytes": 2229914,
+      "url": "https://api.github.com/repos/Mostafatalaat770/flat-designer/actions/artifacts/11531374456",
+      "archive_download_url": "https://api.github.com/repos/Mostafatalaat770/flat-designer/actions/artifacts/11531374456/zip",
+      "expired": false,
+      "created_at": "2026-10-08T06:25:30Z",
+      "expires_at": "2026-10-22T06:25:28Z",
+      "updated_at": "2026-10-08T06:25:30Z",
+      "digest": "sha256:02fd1937c2d18db6ea637f4ea2f444326eb1c4a69f077ca87291b6f72d8e919c",
+      "workflow_run": {
+        "id": 37736952743,
+        "repository_id": 1404228099,
+        "head_repository_id": 1404228099,
+        "head_branch": "design/k12-permanent-end-prep",
+        "head_sha": "2537dbfd3b927688a61ea0e06da83a1496332150"
+      }
+    }
+  },
+  "checks": [
+    {
+      "check": "Artifact ZIP digest",
+      "passed": true
+    },
+    {
+      "check": "Original plan source SHA-256",
+      "passed": true
+    },
+    {
+      "check": "Unchanged architecture overlay",
+      "passed": true
+    },
+    {
+      "check": "Four original comparison cameras retained",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: modelVersion",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: rooms",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: decor",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: studio",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: demolished",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: measures",
+      "passed": true
+    },
+    {
+      "check": "Layout field unchanged: interior",
+      "passed": true
+    },
+    {
+      "check": "Only island furniture changes",
+      "passed": true
+    },
+    {
+      "check": "Island exact 1700 x 1000 north extension",
+      "passed": true
+    },
+    {
+      "check": "Working edge held at 7050",
+      "passed": true
+    },
+    {
+      "check": "Cooking aisle independently recomputed",
+      "passed": true
+    },
+    {
+      "check": "Tall aisle independently recomputed",
+      "passed": true
+    },
+    {
+      "check": "Working joinery stays frozen",
+      "passed": true
+    },
+    {
+      "check": "Rear cabinet depth grows to 400",
+      "passed": true
+    },
+    {
+      "check": "Sink stays open and in original world position",
+      "passed": true
+    },
+    {
+      "check": "Cutout world coordinates unchanged",
+      "passed": true
+    },
+    {
+      "check": "End prep exact 914 x 610",
+      "passed": true
+    },
+    {
+      "check": "Prep fits nominal counter",
+      "passed": true
+    },
+    {
+      "check": "Prep clears whole sink reserve",
+      "passed": true
+    },
+    {
+      "check": "Unchanged appliance proxy study",
+      "passed": true
+    },
+    {
+      "check": "True distance to dining corner disclosed",
+      "passed": true
+    },
+    {
+      "check": "Nearest dining chair distance disclosed",
+      "passed": true
+    },
+    {
+      "check": "Two original failure types are still reported",
+      "passed": true
+    },
+    {
+      "check": "renders manifest revision",
+      "passed": true
+    },
+    {
+      "check": "renders exact view list",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen exact rendered layout",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen exact overlay",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen scene",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen canonical",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera position",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera target",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera fov",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera aspect",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera near",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera far",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen camera viewport",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen assets ready",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-dining-kitchen dimensions",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen exact rendered layout",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen exact overlay",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen scene",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen canonical",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera position",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera target",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera fov",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera aspect",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera near",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera far",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen camera viewport",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen assets ready",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-living-kitchen dimensions",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work exact rendered layout",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work exact overlay",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work scene",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work canonical",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera position",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera target",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera fov",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera aspect",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera near",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera far",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work camera viewport",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work assets ready",
+      "passed": true
+    },
+    {
+      "check": "renders/J1-kitchen-work dimensions",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front exact rendered layout",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front exact overlay",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front scene",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front canonical",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera position",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera target",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera fov",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera aspect",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera near",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera far",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front camera viewport",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front assets ready",
+      "passed": true
+    },
+    {
+      "check": "renders/K10-island-working-front dimensions",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep manifest revision",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep exact view list",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep exact rendered layout",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep exact overlay",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep scene",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep canonical",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera position",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera target",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera fov",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera aspect",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera near",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera far",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep camera viewport",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep assets ready",
+      "passed": true
+    },
+    {
+      "check": "renders/end-prep/K12-end-prep dimensions",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11 manifest revision",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11 exact view list",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen exact rendered layout",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen exact overlay",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen scene",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen canonical",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera position",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera target",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera fov",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera aspect",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera near",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera far",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen camera viewport",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen assets ready",
+      "passed": true
+    },
+    {
+      "check": "renders/comparison-K11/J1-dining-kitchen dimensions",
+      "passed": true
+    }
+  ],
+  "frames": [
+    {
+      "file": "renders/J1-dining-kitchen.png",
+      "scene_revision": "scene-e2fcb932",
+      "sha256": "99c942fc1074484eb7be0b26cd246a0aad46e3a20c8b055fcae1fa3627d904b3",
+      "camera_fov": 61
+    },
+    {
+      "file": "renders/J1-living-kitchen.png",
+      "scene_revision": "scene-e2fcb932",
+      "sha256": "c70f0361ab536fa00bf1de3473fe5b1add99a6082cb02f6a39cc53c63784e8b6",
+      "camera_fov": 62
+    },
+    {
+      "file": "renders/J1-kitchen-work.png",
+      "scene_revision": "scene-e2fcb932",
+      "sha256": "a2758fa8a817ef37b500250fe5f529fe322cdb74a9144c58d819471c89c98e47",
+      "camera_fov": 63
+    },
+    {
+      "file": "renders/K10-island-working-front.png",
+      "scene_revision": "scene-e2fcb932",
+      "sha256": "6e69a6148030991359a21428ca24f55fa9226a4f7ec6e8e2ef6fa450ab589f8b",
+      "camera_fov": 42
+    },
+    {
+      "file": "renders/end-prep/K12-end-prep.png",
+      "scene_revision": "scene-e2fcb932",
+      "sha256": "b38612fbb9b63f90205f93adc80486a5cb85b1562fef01d2f1b0c820c2acbf58",
+      "camera_fov": 42
+    },
+    {
+      "file": "renders/comparison-K11/J1-dining-kitchen.png",
+      "scene_revision": "scene-fa8547b9",
+      "sha256": "60a967b2ffd10bd18f895cd9e5d5086400200cc2bade3b61b7e0f436b13be966",
+      "camera_fov": 61
+    }
+  ],
+  "canonical_summary": {
+    "pass": 152,
+    "warning": 49,
+    "fail": 2
+  },
+  "canonical_reported_failures": [
+    {
+      "kind": "placement",
+      "status": "FAIL",
+      "object_id": "E2-island",
+      "room_id": "RECP-01",
+      "measured_clearance_mm": 3.8,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "object-wall",
+      "status": "FAIL",
+      "object_id": "E2-pantry-tall",
+      "source_wall_index": 45,
+      "measured_clearance_mm": -57.4,
+      "message": "Object intersects a modeled wall."
+    }
+  ],
+  "end_user_clearance_interpretation": {
+    "projected_horizontal_to_table_edge_mm": 465,
+    "actual_diagonal_to_table_corner_mm": 494.4178394839733,
+    "horizontal_to_nearest_closed_dining_chair_mm": 510,
+    "note": "All are distances from an illustrative 600 x 600 mm stationary person rectangle. They demonstrate restricted end circulation; they are not accessibility or human movement certification."
+  },
+  "visual_inspection_complete": true,
+  "report_browser_rendered_locally": false,
+  "limitations": [
+    "End prep requires standing between the island and dining table; the 465 mm remaining to table edge is restricted during use.",
+    "The normal south working face still has only 643 mm beside the sink; moving to the east end is part of the workflow.",
+    "Living-chair footprint gap reduces by 100 mm; bodies, chair movement and circulation are not certified.",
+    "The existing dishwasher-open 570 mm gap and nominal oven/DW 32 mm edge separation remain restricted and need exact appliances.",
+    "Rear storage estimates use unselected panels, shelves, hinges and dividers. A 280 mm plate circle is a geometric sample, not the household inventory.",
+    "Both unchanged canonical failures depend on the earlier render-only opening overlay. Structural/MEP approval and site dimensions remain unresolved."
+  ],
+  "visually_inspected_render_count": 6,
+  "visual_assessment": {
+    "same_camera_comparison": "K11 and K12 dining frames were opened side by side. The rear 100 mm extension is visible; the sink and working fronts keep their positions.",
+    "permanent_end_prep": "The standing end view shows the whole short frontage, continuous uncovered worktop, open recessed bowl and tap. The clear rectangle is established by dimensions and actual mesh ray checks, not painted onto the photo.",
+    "working_fronts": "Waste/cutlery, sink and dishwasher fronts remain as in K11. Cooking, fridge, oven, coffee niche, dining/living and architecture render overlay are unchanged in exact render metadata.",
+    "rear_storage": "The deeper rear envelope and fronts pass the actual Studio mesh checks. Cabinet interiors, shelf clearances and real household plate/cover storage are not visually demonstrated.",
+    "image_limits": "Primary cameras were deliberately retained, so some island edges are cropped. These are concept model frames with generic products and approximate finishes/light, not purchase or construction evidence."
+  },
+  "functional_verdict": "Permanent end-prep with an open sink and deeper rear storage is achieved in the concept model. It requires moving to the short end and restricts the adjoining dining passage during use; the normal sink-side south frontage is still 643 mm."
+}
