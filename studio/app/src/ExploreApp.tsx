@@ -17,7 +17,7 @@ type Engine=ReturnType<typeof createEngine>;
 const cameras=savedViews as unknown as Camera[];
 const rooms=model.rooms.filter((r:{isTerrace?:boolean})=>!r.isTerrace);
 const initial=seed as Brief;
-const copy=(o:ExploreChoices):ExploreChoices=>({...o});
+const copy=(o:ExploreChoices & {name?:string}):ExploreChoices=>{const {name,...choices}=o;return choices;};
 const originalA=copy(PALETTES.japandi),originalB=copy(PALETTES.calm);
 
 export function ExploreApp(){
