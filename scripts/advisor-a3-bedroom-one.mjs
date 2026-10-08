@@ -20,7 +20,7 @@ assert.ok(room);
 assert.equal(desk.room_id,'BR-01');
 assert.deepEqual([desk.cx,desk.cy,desk.w,desk.d,desk.rot],[3800,4590,1200,600,180]);
 assert.deepEqual([chair.cx,chair.cy,chair.w,chair.d],[3720,3930,480,500]);
-const originalKey=JSON.stringify(furniture.filter(o=>o.id!=='starter-8'));
+const originalKey=JSON.stringify(furniture.filter(o=>!['starter-8','starter-9'].includes(o.id)));
 const bbox=item=>{
   const flip=Math.abs(Math.round((item.rot||0)/90))%2===1;
   const w=flip?item.d:item.w,d=flip?item.w:item.d;
@@ -47,7 +47,10 @@ const configs=[
  {name:'shift-1100',width:1100,depth:600,cx:3650,cy:4590},
  {name:'shift-1000',width:1000,depth:600,cx:3650,cy:4590},
  {name:'compact-1000-safe-gap',width:1000,depth:600,cx:3750,cy:4590},
- {name:'compact-950-safe-gap',width:950,depth:600,cx:3700,cy:4590}
+ {name:'compact-950-safe-gap',width:950,depth:600,cx:3700,cy:4590},
+ {name:'north-1200-200',width:1200,depth:600,cx:3800,cy:4390,chairDY:-200},
+ {name:'north-1200-300',width:1200,depth:600,cx:3800,cy:4290,chairDY:-300},
+ {name:'north-1100-250',width:1100,depth:600,cx:3800,cy:4340,chairDY:-250}
 ];
 const outDir='design-development/advisor/a3';
 fs.mkdirSync(outDir,{recursive:true});
@@ -57,18 +60,21 @@ for(const config of configs){
   const target=get(next.layout,'starter-8');
   Object.assign(target,{cx:config.cx,cy:config.cy,w:config.width,d:config.depth,name:'A3 Bedroom 1 study desk '+config.width+' × '+config.depth+' mm ('+config.name+')'});
   if(config.name==='control')Object.assign(target,desk);
-  assert.equal(JSON.stringify(next.layout.furniture.filter(o=>o.id!=='starter-8')),originalKey);
+  const candidateChair=get(next.layout,'starter-9');
+  candidateChair.cy+=(config.chairDY||0);
+  assert.equal(JSON.stringify(next.layout.furniture.filter(o=>!['starter-8','starter-9'].includes(o.id))),originalKey);
   assert.deepEqual(next.architecture_variant,base.architecture_variant);
   assert.deepEqual(next.layout.rooms,base.layout.rooms);
   next.scene_revision=domain.revision(next.layout);
   const report=getReport(next.layout);
   const safe=JSON.stringify(failures(report))===JSON.stringify(failures(before));
   const newlyFailed=report.checks.filter(c=>c.status==='FAIL').filter(c=>!before.checks.some(b=>b.status==='FAIL'&&b.kind===c.kind&&b.object_id===c.object_id&&b.source_wall_index===c.source_wall_index));
-  const source=bbox(bed),work=bbox(target),seat=bbox(chair),cabinet=bbox(wardrobe);
+  const source=bbox(bed),work=bbox(target),seat=bbox(candidateChair),cabinet=bbox(wardrobe);
   const values={
     door_sweep_warning_mm:doorSweepWarning(report),
     conservative_route_sample_mm:routeWarn(report),
     chair_to_bed_footprint_gap_mm:Math.round(gap(source,seat)*10)/10,
+    chair_centre_y_mm:candidateChair.cy,
     desk_to_wardrobe_footprint_gap_mm:Math.round(gap(work,cabinet)*10)/10,
     actual_desk_mm:[target.w,target.d],
     desk_right_edge_mm:work.x1,
