@@ -13,6 +13,7 @@ Other sessions should fetch this branch before continuing the review and create 
 1. `design-development/circulation-v55/`: frozen 13-area, 31-scenario audit, six comparisons, Arabic report, saved-source inputs and portable verification.
 2. `design-development/bedroom1-r1/`: first west-wall desk comparison, retained as historical. Closed-furniture routes pass, but a full-front 300 mm storage reserve disconnects a tested route. Do not select R1 as the final study.
 3. `design-development/bedroom1-r4/`: preferred local study, scene `scene-a5c839c1`. West-wall desk 1100 × 600 mm; south-wall storage 800 × 350 × 1000 mm; wardrobe 120 mm north; bed retained. Storage outer volume equals the baseline; internal capacity is not established. Window frontage remains clear.
+4. `design-development/bathroom-door-sequence/`: current v55 baseline full-cycle door study. Master 500 mm body: closed outside → open/enter → close/use → reverse to reopen/exit/close, found at 50/25 mm grids, independently checked. Guest 500 mm: entry found, closure/use continuation not found under the declared fully-open intermediate pose and reach assumptions. A basin stance 400 mm in front works with the leaf open, unlike the old 300 mm endpoint. This is a model comparison, not physical impossibility or site approval. Frozen source geometry, paths, portable interactive Arabic review and desktop/mobile evidence are committed.
 
 R4 has 187 pass / 74 warning / 0 fail, no floor-furniture collisions, 12 passing core route checks, 24 passing door/occupation checks and 16 passing checks with 300/350 mm full-front storage reserves. The storage-opening and desk-occupation scenarios are separate; return the chair to its normal position before using the modeled full storage opening. A 500 mm circle and inferred door hinges remain nominal planning assumptions, not comfortable circulation or site certification.
 
@@ -27,6 +28,7 @@ node design-development/circulation-v55/verify.mjs
 node design-development/bedroom1-r1/verify.mjs
 node design-development/bedroom1-r4/verify.mjs
 node design-development/bedroom1-r4/verify-comparisons.mjs
+node design-development/bathroom-door-sequence/verify.mjs
 node design-development/bedroom-review.mjs verify-evidence bedroom1-r1
 node design-development/bedroom-review.mjs verify-evidence bedroom1-r4
 node design-development/bedroom-review.mjs prepare bedroom1-r4
@@ -35,4 +37,4 @@ python3 local-qa/serve.py --port 4174
 
 The standalone Arabic review files and committed images work without generated renderer bundles. The local viewer is served at `/_qa/bedroom1-r4/`. Browser capture/check commands and dependency setup are documented in each study's README; original evidence hashes and exact layouts/cameras are checked separately from regenerated captures.
 
-Next design task: test the bathroom entry/open/close/use sequence, especially the master shower approach and guest-basin standing space. Source audit door-closed tests start inside the room and do not resolve the complete entry sequence. Confirm actual chair, storage leaves, window sash and site joinery dimensions before treating R4 as a final fit.
+Next design task: compare the guest south-hinge inward door and north-hinge outward door at the unchanged canonical opening, then check neighbouring reception interference. The master now has a complete modeled entry/use/exit sequence; retain its current door for the next review rather than inheriting historical unapproved widened/pocket-door studies. Check actual hinges, frame/hardware and body posture before any final bathroom fit decision. Follow with kitchen appliance opening/loading and dining chair occupation, then confirm actual chair, storage leaves, window sash and site joinery dimensions before treating R4 as a final fit.

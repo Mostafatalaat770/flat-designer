@@ -1,0 +1,187 @@
+{
+  "schema": "ApartmentBathroomReviewBrowserCheck/1",
+  "source_scene": "scene-9cf45a73",
+  "storage_revision": 55,
+  "review_sha256": "6705ca661b2dfb9a77832a929f21dc18634e7599ca6a67c9eaa4d8382154a8ef",
+  "errors": [],
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "rows": [
+        {
+          "id": "master",
+          "index": 0,
+          "rendered": [
+            4866.059,
+            7594.075
+          ],
+          "expected": [
+            4866.059,
+            7594.075
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 295"
+        },
+        {
+          "id": "master",
+          "index": 147,
+          "rendered": [
+            5991.059,
+            6744.075
+          ],
+          "expected": [
+            5991.059,
+            6744.075
+          ],
+          "phase": "غلق الباب ثم الوصول للاستخدام · خطوة 148 / 295"
+        },
+        {
+          "id": "master",
+          "index": 294,
+          "rendered": [
+            4866.059,
+            7594.075
+          ],
+          "expected": [
+            4866.059,
+            7594.075
+          ],
+          "phase": "إعادة الفتح والخروج والغلق من الخارج · خطوة 295 / 295"
+        },
+        {
+          "id": "guest",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 67"
+        },
+        {
+          "id": "guest",
+          "index": 33,
+          "rendered": [
+            12652.205,
+            9672.846
+          ],
+          "expected": [
+            12652.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 34 / 67"
+        },
+        {
+          "id": "guest",
+          "index": 66,
+          "rendered": [
+            12002.205,
+            9672.846
+          ],
+          "expected": [
+            12002.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 67 / 67"
+        }
+      ],
+      "direction": "rtl",
+      "overflow": false,
+      "external_scripts": 0,
+      "playback": "advances and pauses"
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "rows": [
+        {
+          "id": "master",
+          "index": 0,
+          "rendered": [
+            4866.059,
+            7594.075
+          ],
+          "expected": [
+            4866.059,
+            7594.075
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 295"
+        },
+        {
+          "id": "master",
+          "index": 147,
+          "rendered": [
+            5991.059,
+            6744.075
+          ],
+          "expected": [
+            5991.059,
+            6744.075
+          ],
+          "phase": "غلق الباب ثم الوصول للاستخدام · خطوة 148 / 295"
+        },
+        {
+          "id": "master",
+          "index": 294,
+          "rendered": [
+            4866.059,
+            7594.075
+          ],
+          "expected": [
+            4866.059,
+            7594.075
+          ],
+          "phase": "إعادة الفتح والخروج والغلق من الخارج · خطوة 295 / 295"
+        },
+        {
+          "id": "guest",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 67"
+        },
+        {
+          "id": "guest",
+          "index": 33,
+          "rendered": [
+            12652.205,
+            9672.846
+          ],
+          "expected": [
+            12652.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 34 / 67"
+        },
+        {
+          "id": "guest",
+          "index": 66,
+          "rendered": [
+            12002.205,
+            9672.846
+          ],
+          "expected": [
+            12002.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 67 / 67"
+        }
+      ],
+      "direction": "rtl",
+      "overflow": false,
+      "external_scripts": 0,
+      "playback": "advances and pauses"
+    }
+  ]
+}
