@@ -1,0 +1,105 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-9cf45a73",
+  "operations": [
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-8",
+      "changes": {
+        "cx": 2380,
+        "cy": 4330,
+        "w": 1100,
+        "rot": 270,
+        "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-9",
+      "changes": {
+        "cx": 3020,
+        "cy": 4250,
+        "rot": 90,
+        "name": "Bedroom 1 study chair · facing west desk"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V7-bedroom1-drawers",
+      "changes": {
+        "cx": 3775,
+        "cy": 4720,
+        "rotation": 180,
+        "width_mm": 800,
+        "height_mm": 1000
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-7",
+      "changes": {
+        "cy": 3030
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-35",
+      "changes": {
+        "cy": 7500
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-36",
+      "changes": {
+        "cy": 6800
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-37",
+      "changes": {
+        "cy": 6800
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-38",
+      "changes": {
+        "cy": 8200
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-39",
+      "changes": {
+        "cy": 8200
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-north-centre",
+      "changes": {
+        "cy": 6800
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-south-centre",
+      "changes": {
+        "cy": 8200
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A-dining-pendant",
+      "changes": {
+        "cy": 7500
+      }
+    }
+  ],
+  "notes": [
+    "LOCAL combined furnishing review: bedroom R4 and dining group 150 mm north. Canonical architecture and current enclosed kitchen retained. Guest outward door is a separate analysis overlay, absent from this proposal."
+  ]
+}

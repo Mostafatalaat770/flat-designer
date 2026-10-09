@@ -1,0 +1,44 @@
+{
+  "schema": "ApartmentFurnishingComposition/1",
+  "source_scene": "scene-9cf45a73",
+  "saved_cloud_scene": "scene-4821689",
+  "source_storage_revision": 55,
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "candidate_scene": "scene-c9c055c1",
+  "components": [
+    {
+      "id": "bedroom1-r4",
+      "file": "../bedroom1-r4/proposal.json",
+      "sha256": "2e632ca9ee74da53407f446631a601308d97419c8a4cccb06ea9bf8cca4632f8"
+    },
+    {
+      "id": "table-north-150",
+      "file": "../dining-operation-v55/candidates/table-north-150/proposal.json",
+      "sha256": "cf1ef5c4e2df94815e0aeaaf4e3a42c3668d02ef3a8b6167ba300e2869c4704f"
+    }
+  ],
+  "operation_count": 12,
+  "target_ids": [
+    "starter-8",
+    "starter-9",
+    "V7-bedroom1-drawers",
+    "starter-7",
+    "starter-35",
+    "starter-36",
+    "starter-37",
+    "starter-38",
+    "starter-39",
+    "A2-dining-chair-north-centre",
+    "A2-dining-chair-south-centre",
+    "A-dining-pendant"
+  ],
+  "validation": {
+    "pass": 186,
+    "warning": 74,
+    "fail": 0
+  },
+  "operations_commute": true,
+  "unrelated_contents_unchanged": true,
+  "architecture_unchanged": true,
+  "production_connected": false
+}
