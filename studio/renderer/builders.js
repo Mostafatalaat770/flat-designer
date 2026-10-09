@@ -2182,6 +2182,20 @@ export function createBuilders(scope) {
           -d * 0.14,
           -0.09,
         );
+    } else if (f.type === "shower" && f.variant === "walk-in") {
+      // A flush wet area, not a second glass enclosure. Use the separate
+      // interior divider object for a fixed screen; permit an open entry.
+      const metal = mat("#b8c1c6", { metalness: 0.72, roughness: 0.26 });
+      const x = -w * 0.25;
+      const z = -d / 2 + 0.09;
+      g.add(
+        box(w, 0.008, d, mat("#e7e0d6", { roughness: 0.86 }), 0, 0.004, 0),
+        box(Math.min(0.60, w * 0.55), 0.006, 0.035, metal, 0, 0.011, -d / 2 + 0.11),
+        rbox(0.15, 0.095, 0.035, metal, x, 1.04, z, 0.012),
+        rod([x, 1.13, z], [x, 2.05, z], 0.012, metal),
+        rod([x, 2.05, z], [x, 2.05, z + 0.20], 0.012, metal),
+        box(0.24, 0.012, 0.24, metal, x, 2.04, z + 0.20),
+      );
     } else if (f.type === "fridge") {
       const m =
         f.variant === "integrated"
