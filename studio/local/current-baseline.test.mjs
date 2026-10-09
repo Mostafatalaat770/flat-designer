@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {createApartmentDomain} from "../domain/apartment.mjs";
 const source=JSON.parse(fs.readFileSync("render-snapshots/current.json","utf8"));
 const old=JSON.parse(fs.readFileSync("studio/local/sources/verified-master-v50.json","utf8"));
 const archive=JSON.parse(fs.readFileSync("render-snapshots/study-k12-unapproved-20261008.json","utf8"));
