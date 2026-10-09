@@ -1,0 +1,2230 @@
+{
+  "schema": "ApartmentOperationReviewBrowserCheck/1",
+  "source_scene": "scene-9cf45a73",
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "rows": [
+        {
+          "stage": "closed",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        }
+      ],
+      "direction": "rtl",
+      "overflow": false,
+      "external_scripts": 0,
+      "sequence": {
+        "rows": [
+          {
+            "index": 0,
+            "position": [
+              11970.749,
+              7825.366
+            ],
+            "expected": [
+              11970.749,
+              7825.366
+            ]
+          },
+          {
+            "index": 66,
+            "position": [
+              11845.749,
+              7850.366
+            ],
+            "expected": [
+              11845.749,
+              7850.366
+            ]
+          },
+          {
+            "index": 132,
+            "position": [
+              11970.749,
+              7825.366
+            ],
+            "expected": [
+              11970.749,
+              7825.366
+            ]
+          }
+        ],
+        "capture_state": {
+          "position_mm": [
+            11845.749,
+            7850.366
+          ],
+          "door_angle_deg": 270
+        },
+        "playback": "advances and pauses"
+      }
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "rows": [
+        {
+          "stage": "closed",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "closed",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 29,
+          "expected_obstacles": 29
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-600",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-open-650",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-600-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-650-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-open",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "laundry-loader-offset",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-500",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-open-600",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "oven-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 31,
+          "expected_obstacles": 31
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "dw-oven-loader",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "false",
+          "expected_valid": "false",
+          "rendered_obstacles": 32,
+          "expected_obstacles": 32
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-45",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "NO_MODEL_ROUTE",
+          "expected_status": "NO_MODEL_ROUTE",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-left-90",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "MODEL_ROUTE_FOUND",
+          "expected_status": "MODEL_ROUTE_FOUND",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-45",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 50,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 50,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 50,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 25,
+          "goal": "service-terrace",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 25,
+          "goal": "sink-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        },
+        {
+          "stage": "fridge-right-90",
+          "grid": 25,
+          "goal": "fridge-approach",
+          "rendered_status": "ENDPOINT_BLOCKED",
+          "expected_status": "ENDPOINT_BLOCKED",
+          "rendered_valid": "true",
+          "expected_valid": "true",
+          "rendered_obstacles": 30,
+          "expected_obstacles": 30
+        }
+      ],
+      "direction": "rtl",
+      "overflow": false,
+      "external_scripts": 0,
+      "sequence": {
+        "rows": [
+          {
+            "index": 0,
+            "position": [
+              11970.749,
+              7825.366
+            ],
+            "expected": [
+              11970.749,
+              7825.366
+            ]
+          },
+          {
+            "index": 66,
+            "position": [
+              11845.749,
+              7850.366
+            ],
+            "expected": [
+              11845.749,
+              7850.366
+            ]
+          },
+          {
+            "index": 132,
+            "position": [
+              11970.749,
+              7825.366
+            ],
+            "expected": [
+              11970.749,
+              7825.366
+            ]
+          }
+        ],
+        "capture_state": {
+          "position_mm": [
+            11845.749,
+            7850.366
+          ],
+          "door_angle_deg": 270
+        },
+        "playback": "advances and pauses"
+      }
+    }
+  ],
+  "errors": [],
+  "review_sha256": "d34adecfc729790d60da7491762a9f0380412822a8fc3886b327c773f30f2122"
+}
