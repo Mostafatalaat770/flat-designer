@@ -45,6 +45,18 @@ function makeStudioVariant(f){
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
     if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
+  }else if(f.type==='shower'&&f.variant==='walk-in'){
+    // True open wet area: no default glass cage or raised prefabricated tray.
+    // Any fixed splash panel is a separate validated interior object.
+    const cm=mat('#b8c1c6',{metalness:.72,roughness:.26}),x=-w*.25,z=-d/2+.09;
+    g.add(
+      box(w,.008,d,mat('#e7e0d6',{roughness:.86}),0,.004,0),
+      box(Math.min(.60,w*.55),.006,.035,cm,0,.011,-d/2+.11),
+      rbox(.15,.095,.035,cm,x,1.04,z,.012),
+      rod([x,1.13,z],[x,2.05,z],.012,cm),
+      rod([x,2.05,z],[x,2.05,z+.20],.012,cm),
+      box(.24,.012,.24,cm,x,2.04,z+.20)
+    );
   }else if(f.type==='fridge'){
     const m=f.variant==='integrated'?studioIntegratedMaterial(f):mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
