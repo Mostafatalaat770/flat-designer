@@ -28,6 +28,7 @@ export function conflicts(added,staticObs,boundary){
   }
  }
  for(let i=0;i<added.length;i++)for(let j=i+1;j<added.length;j++){
+  if(added[i].skip_collision_ids?.includes(added[j].id)||added[j].skip_collision_ids?.includes(added[i].id))continue;
   const r=relation(added[i].polygon,added[j].polygon);
   if(r.intersects_positive_area)result.push({a:added[i].id,b:added[j].id,...r});
  }

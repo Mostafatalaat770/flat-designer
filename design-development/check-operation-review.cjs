@@ -10,6 +10,7 @@ let operationBrowser;
  for(const [name,width,height] of [['desktop',1440,1000],['mobile',390,844]]){
   const page=await browser.newPage();page.on('pageerror',e=>errors.push(e.message));
   await page.setViewportSize({width,height});await page.setContent(html,{waitUntil:'load'});
+  const initialStage=await page.locator('#stage').inputValue();
   const checks=await page.evaluate(()=>{
    const {result}=JSON.parse(document.querySelector('#review-data').textContent),rows=[];
    for(const stage of result.stages)for(const grid of [50,25])for(const goal of result.input.goals){
@@ -25,7 +26,7 @@ let operationBrowser;
   });
   assert.equal(checks.direction,'rtl');assert.equal(checks.overflow,false);assert.equal(checks.external_scripts,0);
   for(const r of checks.rows){assert.equal(r.rendered_status,r.expected_status);assert.equal(r.rendered_valid,r.expected_valid);assert.equal(r.rendered_obstacles,r.expected_obstacles);}
-  await page.locator('#stage').selectOption(folder==='kitchen-operation-v55'?'dw-600-loader':results.stages[0].id);
+  await page.locator('#stage').selectOption(initialStage);
   await page.locator('#grid').selectOption('25');await page.locator('#goal').selectOption(results.input.goals[0].id);
   let sequence=null;
   if(await page.locator('#play').count()){

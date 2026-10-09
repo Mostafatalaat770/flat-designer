@@ -1,0 +1,38 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-9cf45a73",
+  "operations": [
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-36",
+      "changes": {
+        "cx": 14030
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-37",
+      "changes": {
+        "cx": 15310
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-38",
+      "changes": {
+        "cx": 14030
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-39",
+      "changes": {
+        "cx": 15310
+      }
+    }
+  ],
+  "notes": [
+    "LOCAL furnishing study: four end chairs 60 mm towards the centre; six chairs/table/pendant retained."
+  ]
+}
