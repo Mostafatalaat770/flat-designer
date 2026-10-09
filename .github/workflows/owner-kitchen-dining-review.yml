@@ -1,0 +1,45 @@
+name: Owner kitchen and dining - source comparison
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "scripts/owner-kitchen-decision.mjs"
+      - "studio/analysis/kitchen-owner-compare*"
+      - "render-snapshots/**"
+      - "design-development/decision-registry.json"
+      - ".github/workflows/owner-kitchen-dining-review.yml"
+  push:
+    branches: [master]
+    paths:
+      - "scripts/owner-kitchen-decision.mjs"
+      - "studio/analysis/kitchen-owner-compare*"
+      - "render-snapshots/**"
+      - "design-development/decision-registry.json"
+      - ".github/workflows/owner-kitchen-dining-review.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Check exact scenes and architecturally unresolved alternatives
+        run: node --test studio/local/current-baseline.test.mjs studio/analysis/kitchen-owner-compare.test.mjs
+      - name: Export accurate top-down review and evidence
+        run: node scripts/owner-kitchen-decision.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: owner-kitchen-v55-vs-historical-K12
+          path: review-evidence/owner-kitchen/
+          if-no-files-found: error
+          retention-days: 30

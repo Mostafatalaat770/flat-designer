@@ -1,0 +1,15 @@
+import fs from "node:fs";
+import assert from "node:assert/strict";
+import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {compareKitchen,kitchenComparisonSvg} from "../studio/analysis/kitchen-owner-compare.mjs";
+const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
+const registry=read("design-development/decision-registry.json");
+const domain=createApartmentDomain(process.cwd());
+const current=read(registry.working_source.path),archive=read(registry.historical_unapproved.path);
+const report=compareKitchen(domain,current,archive);
+assert.equal(report.source.current.scene,registry.working_source.scene_revision);
+assert.equal(report.source.historical.scene,registry.historical_unapproved.scene_revision);
+fs.mkdirSync("review-evidence/owner-kitchen",{recursive:true});
+fs.writeFileSync("review-evidence/owner-kitchen/source-comparison.json",JSON.stringify(report,null,2)+"\n");
+fs.writeFileSync("review-evidence/owner-kitchen/source-comparison.svg",kitchenComparisonSvg(domain,current,archive,report)+"\n");
+console.log(JSON.stringify({scenes:report.source,geometry:report.model,appliances:report.closed,dining:report.dining,verdict:report.verdict},null,2));
