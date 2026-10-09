@@ -1,0 +1,56 @@
+name: Bathrooms B3 · same-camera family-first finish jury
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio/analysis/bathroom-finish-jury*"
+      - "scripts/build-bathroom-finish-jury.mjs"
+      - ".github/workflows/bathrooms-b3-finish-jury.yml"
+      - "design-development/BATHROOMS_B3_DESIGN_REVIEW_20261010.md"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render-jury:
+    runs-on: ubuntu-latest
+    timeout-minutes: 42
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Pin source and assert no bathroom geometry or wet-service changes
+        run: node --test studio/analysis/bathroom-finish-jury.test.mjs studio/local/current-baseline.test.mjs
+      - name: Generate 2 room-identical candidate scenes and material palette
+        run: node scripts/build-bathroom-finish-jury.mjs
+      - name: Install Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: A - baseline 3 current-v55 bathroom camera images
+        env:
+          RENDER_OUT_DIR: renders/bathrooms-b3/A
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/bathrooms-b3/a-current-v55.json
+      - name: B - updated reversible finishes from exactly the same cameras
+        env:
+          RENDER_OUT_DIR: renders/bathrooms-b3/B
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/bathrooms-b3/b-refined-stone.json
+      - name: Verify 6 real frames and exact pixel-camera/fixture match
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';for(const opt of ['A','B']){const sc=JSON.parse(fs.readFileSync('review-evidence/bathrooms-b3/'+(opt==='A'?'a-current-v55.json':'b-refined-stone.json'),'utf8'));const dir='renders/bathrooms-b3/'+opt+'/';const m=JSON.parse(fs.readFileSync(dir+'manifest.json','utf8'));assert.equal(m.scene_revision,sc.scene_revision);assert.deepEqual(m.views,sc.views.map(x=>x.id));for(const v of sc.views){const p=dir+v.id;assert.ok(fs.statSync(p+'.png').size>15000);const f=JSON.parse(fs.readFileSync(p+'.json','utf8'));assert.equal(f.scene_revision,sc.scene_revision);assert.equal(f.renderer.engine,'Three.js WebGL');assert.deepEqual(f.assets.fallbacks,[]);assert.equal(f.assets.pending,0);assert.deepEqual(f.camera.position,v.camera.position);assert.deepEqual(f.camera.target,v.camera.target)}}console.log('All six image/provenance checks pass')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bathrooms-B3-source-locked-finish-review
+          path: |
+            renders/bathrooms-b3/
+            review-evidence/bathrooms-b3/
+          if-no-files-found: warn
+          retention-days: 30
