@@ -2,6 +2,7 @@ name: Integration v55 · single working review source
 on:
   push:
     branches:
+      - master
       - "integration/type-b-current-v55-20261009"
   pull_request:
     branches:
@@ -27,8 +28,8 @@ jobs:
         env:
           CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
         run: npm run check
-      - name: Verify one pinned v55 candidate
-        run: node --test studio/local/current-baseline.test.mjs
+      - name: Verify pinned v55 plus owner functional and construction gates
+        run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs
       - name: Build exact Explore bundle
         run: npm run studio:build
       - name: Test walk-in and isolated 3D workspace
