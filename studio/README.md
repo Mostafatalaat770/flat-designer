@@ -1,6 +1,6 @@
 # Local Apartment Type B workspace
 
-The isolated workspace in this experimental branch starts from a frozen **Whole Apartment A11.1 (scene-85fd2cac, storage revision 50)** snapshot from `master`, copied to `studio/local/sources/verified-master-v50.json`. It intentionally does **not** import the unapproved K12 kitchen-open study in this branch's `render-snapshots/current.json`, which still has two architectural hard failures. **Family A.7 / scene-9e210720** and all earlier studies are retained as historical candidates. Build-time seed generation is offline and validates the full layout before writing generated app data. See [integration evidence](../local-qa/INTEGRATION_20261006.md). Its architecture is the locked repository model:
+This integrated **owner review** starts from the latest saved cloud v55 (source `scene-4821689`), with a separate true walk-in shower *preview only* (candidate `scene-9cf45a73`). The single working review source is now `render-snapshots/current.json`. Historical v50 remains saved under `studio/local/sources/verified-master-v50.json`, while the unapproved K12 architectural study is archived at `render-snapshots/study-k12-unapproved-20261008.json`. Read `design-development/CURRENT_BASELINE.md` for design decisions, release gates and construction hold points. **Family A.7 / scene-9e210720** and all earlier studies are retained as historical candidates. Build-time seed generation is offline and validates the full layout before writing generated app data. See [integration evidence](../local-qa/INTEGRATION_20261006.md). Its architecture is the locked repository model:
 
 `734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658`
 
@@ -26,11 +26,11 @@ The server binds loopback only. Production API/MCP routes and cloud persistence 
 
 Select a room and a standing camera. Natural **42° vertical FOV / 1.70 m eye** is the primary spatial view; Wide 60° is for composition. Scale Check displays a 1.70 m human and a 1.00 m ruler. Saved, orbit and walking modes share the canonical scale; standing camera preflight rejects blocked viewpoints.
 
-Select furniture in the view or inspector. Dimensions mean its **outer footprint**. Apply edits through the existing `ApartmentDesignProposal/2` contract. Hard validation failures reject the whole proposal; warnings require spatial context. The current baseline counts are computed by the validator against the frozen v50 source, not copied from the old v39 report; historical A.7 retains its earlier evidence.
+Select furniture in the view or inspector. Dimensions mean its **outer footprint**. Apply edits through the existing `ApartmentDesignProposal/2` contract. Hard validation failures reject the whole proposal; warnings require spatial context. The current baseline counts are computed by the validator against the frozen v55 preview source, not copied from the old v39 report; historical A.7 retains its earlier evidence.
 
 Undo/redo works during the current session. Drafts and the design log persist separately in local browser storage. Versions are immutable named snapshots; import/export uses the existing `ApartmentDesignBrief/1`. Export important versions rather than relying solely on browser storage. The before/current comparison uses matching camera positions and lenses. Finish each controlled change by writing its observation and keep/revert decision after inspecting several Natural views.
 
-Browser keys are scoped to the v50 seed: `type-b-workspace-draft-scene-85fd2cac-v1` and `type-b-workspace-scene-85fd2cac-v1`. Older drafts are retained without auto-loading; versions from the legacy key and earlier seed keys remain available. Legacy study keys and production history remain separate. Malformed saved data is rejected rather than silently overwritten. Historical variants are retained.
+Browser keys are scoped to the v55 preview seed: `type-b-workspace-draft-scene-9cf45a73-v1` and `type-b-workspace-scene-9cf45a73-v1`. Older drafts are retained without auto-loading; versions from the legacy key and earlier seed keys remain available. Legacy study keys and production history remain separate. Malformed saved data is rejected rather than silently overwritten. Historical variants are retained.
 
 ## Detailed furniture
 

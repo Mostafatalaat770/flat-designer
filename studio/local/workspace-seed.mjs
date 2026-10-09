@@ -7,7 +7,7 @@ import { createApartmentDomain } from '../domain/apartment.mjs';
 // Derive an isolated workspace from a pinned Git snapshot. Never contact Site storage.
 export function createWorkspaceSeed(root, suppliedSnapshot) {
   const domain = createApartmentDomain(root);
-  const source = 'studio/local/sources/verified-master-v50.json';
+  const source = 'render-snapshots/current.json';
   const sourceBytes = fs.readFileSync(path.join(root, source));
   const snapshot = suppliedSnapshot || JSON.parse(sourceBytes);
   assert.equal(snapshot.schema, 'ApartmentGitHubRenderSnapshot/1');

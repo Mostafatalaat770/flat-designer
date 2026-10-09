@@ -42,9 +42,9 @@ assert.deepEqual(missing,[],"Vercel preview is missing bundled entry assets");
 const checks={
  schema:"ApartmentVercelPreviewManifest/1",
  static_only:true,
- canonical_source:"studio/local/sources/verified-master-v50.json",
+ canonical_source:"render-snapshots/current.json",
  source_status:"VERIFIED_GEOMETRY_ONLY_NOT_BUILD_APPROVAL",
- source_revision:"scene-85fd2cac",
+ source_revision:"scene-9cf45a73",
  entry_pages:["/_qa/workspace/explore.html","/_qa/workspace/index.html","/_qa/workspace/parity.html"],
  asset_directory_exists:fs.existsSync(path.join(webpath,"assets")),
  art_assets_published:fs.existsSync(path.join(out,"art")),

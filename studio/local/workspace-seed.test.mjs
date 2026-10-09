@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createWorkspaceSeed } from './workspace-seed.mjs';
 const root = path.resolve(import.meta.dirname, '../..');
-const source = () => JSON.parse(fs.readFileSync(path.join(root, 'studio/local/sources/verified-master-v50.json')));
+const source = () => JSON.parse(fs.readFileSync(path.join(root, 'render-snapshots/current.json')));
 test('workspace reproduces the pinned saved layout, retains A.7, and calibrates all 13 areas', () => {
   const old = fs.readFileSync(path.join(root, 'studio/app/data/family-a7.brief.json'));
   const snapshot = source(), before = JSON.stringify(snapshot);
