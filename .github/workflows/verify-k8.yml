@@ -21,7 +21,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      # Manual historical review must load the study's own code and source.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && '277d6f60ad480879122ea8d76c4943c6732b3d20' || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: "24"

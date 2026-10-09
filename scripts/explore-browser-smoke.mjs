@@ -8,18 +8,21 @@ import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
 await fs.mkdir('review-evidence/explore',{recursive:true});
 const browser=await chromium.launch({
- headless:true,args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--disable-dev-shm-usage']
+ headless:true,args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--disable-dev-shm-usage']
 });
 const page=await browser.newPage({viewport:{width:1280,height:760},deviceScaleFactor:1});
+// Software WebGL renders are slower than an interactive GPU browser.
+page.setDefaultTimeout(60000);
 const errors=[];
 page.on('pageerror',e=>errors.push(e.message));
 try{
  const response=await page.goto('http://127.0.0.1:4176/_qa/workspace/explore.html',
   {waitUntil:'domcontentloaded',timeout:40000});
  assert.equal(response?.status(),200,'Explore bundled page did not serve');
- await page.locator('.explore-app .explore-topbar h1').waitFor({timeout:30000});
+ await page.locator('.explore-app .explore-topbar h1').waitFor({timeout:60000});
  await page.waitForFunction(()=>document.querySelectorAll('.explore-canvas canvas').length===2,null,{timeout:50000});
  await page.getByRole('button',{name:'Verify B against original Type B'}).waitFor({state:'visible',timeout:40000});
+ await page.locator('.explore-loading').waitFor({state:'hidden',timeout:90000});
  const localBefore=await page.evaluate(()=>Object.keys(localStorage).sort());
  assert.equal(localBefore.length,0,'Fresh browser must start with no local versions/drafts');
  await page.getByRole('button',{name:'Warm Japandi'}).click();
@@ -74,6 +77,7 @@ try{
   const diag={error:String(e),browser_errors:errors,
     url:page.url(),visible_body:(await page.locator('body').innerText().catch(()=>'' )).slice(0,2600),
     canvases:await page.locator('.explore-canvas canvas').count().catch(()=>-1),
+    heading:await page.locator('.explore-topbar h1').evaluate(el=>({rect:el.getBoundingClientRect().toJSON(),visibility:getComputedStyle(el).visibility})).catch(()=>null),
     storage_keys:await page.evaluate(()=>Object.keys(localStorage)).catch(()=>[])
   };
   await fs.writeFile('review-evidence/explore/browser-failure-diagnostic.json',JSON.stringify(diag,null,2));
