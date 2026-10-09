@@ -1,0 +1,56 @@
+name: Kitchen P0 vs P1 - structurally conditional semi-open portal
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio/analysis/semi-open-portal*"
+      - "scripts/build-semi-open-portal.mjs"
+      - ".github/workflows/semi-open-portal-review.yml"
+      - "design-development/SEMI_OPEN_PORTAL_REVIEW.md"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  geometry-and-webgl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Validate v55 fidelity and opening geometry
+        run: node --test studio/analysis/semi-open-portal.test.mjs studio/local/current-baseline.test.mjs
+      - name: Build exact same-camera P0 and P1 snapshots
+        run: node scripts/build-semi-open-portal.mjs
+      - name: Install Chromium WebGL renderer
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: P0 unchanged kitchen reference, two human-eye cameras
+        env:
+          RENDER_OUT_DIR: renders/semi-open-portal/P0
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/semi-open-portal/closed.json
+      - name: P1 1.21m conceptual portal, exact same two cameras
+        env:
+          RENDER_OUT_DIR: renders/semi-open-portal/P1
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/semi-open-portal/portal.json
+      - name: Verify true PNGs, provenance, cameras and single wall-return difference
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict'; const base='review-evidence/semi-open-portal/';const p0=JSON.parse(fs.readFileSync(base+'closed.json','utf8'));const p1=JSON.parse(fs.readFileSync(base+'portal.json','utf8'));assert.deepEqual(p0.layout,p1.layout);assert.deepEqual(p0.views,p1.views);assert.equal(p1.architecture_variant.remove_wall_segments.length,1);for(const opt of ['P0','P1']){const root='renders/semi-open-portal/'+opt+'/';const m=JSON.parse(fs.readFileSync(root+'manifest.json','utf8'));const s=opt==='P0'?p0:p1;assert.deepEqual(m.architecture_variant,s.architecture_variant??null);assert.equal(m.views.length,2);for(const id of m.views){assert.ok(fs.statSync(root+id+'.png').size>10000);const f=JSON.parse(fs.readFileSync(root+id+'.json','utf8'));assert.equal(f.scene_revision,s.scene_revision);assert.deepEqual(f.assets.fallbacks,[]);assert.deepEqual(f.camera,s.views.find(x=>x.id===id).camera)}}console.log('P0/P1 source-identical two-view PNGs pass all metadata comparisons')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: semi-open-kitchen-portal-P0-vs-P1
+          path: |
+            renders/semi-open-portal/
+            review-evidence/semi-open-portal/
+          if-no-files-found: warn
+          retention-days: 30
