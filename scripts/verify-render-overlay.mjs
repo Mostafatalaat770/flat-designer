@@ -5,7 +5,7 @@ import crypto from 'node:crypto';
 import * as THREE from '../dist/vendor/three/build/three.module.js';
 
 const model=JSON.parse(fs.readFileSync('dist/apartment-model.json','utf8'));
-const snapshot=JSON.parse(fs.readFileSync('render-snapshots/current.json','utf8'));
+const snapshot=JSON.parse(fs.readFileSync(process.argv[2] || 'render-snapshots/current.json','utf8'));
 const original=JSON.stringify({model,snapshot});
 const source=fs.readFileSync('capture-renderer.js','utf8').split('/* This boot')[0];
 const groups={archUp:new THREE.Group(),archFloor:new THREE.Group(),sceneDecorG:new THREE.Group()};

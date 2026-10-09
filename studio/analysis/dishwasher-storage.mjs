@@ -11,6 +11,7 @@ export function evaluateDishWorkflow({
 }){
  check(production_source);
  if(!groups.has(washing_station_group))throw new Error('Unknown dishwasher working group');
+ if(washing_station_group!=='kitchen_work_side')throw new Error('Washing station must use the modeled kitchen work side');
  if(!Array.isArray(options)||options.length<2||!Array.isArray(sample_inventory)||!sample_inventory.length)
   throw new Error('Need option alternatives and explicit illustrative sample items');
  const ids=new Set();

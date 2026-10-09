@@ -60,4 +60,4 @@ node scripts/analyze-spatial-case.mjs design-development/advisor/cases/wic-acces
 
 **P2**: measured as-built dimensional data, signed structural & MEP review, local SKU/cost input and procurement package. Architectural site approval stays external to simulations.
 
-**Governance:** this is an advisor design branch and draft PR. No cloud Studio update, no merge to master, no procurement or demolition authorization.
+**Governance:** this experimental analysis library is included in the consolidated development baseline. Its results remain advisory; repository integration does not update cloud Studio or authorize procurement or demolition.

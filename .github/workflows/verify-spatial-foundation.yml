@@ -15,6 +15,8 @@ on:
     paths:
       - 'studio/analysis/**'
       - 'scripts/foundation-reference-audit.mjs'
+      - 'scripts/analyze-spatial-case.mjs'
+      - 'design-development/advisor/cases/**'
       - 'review-evidence/foundation/**'
       - '.github/workflows/verify-spatial-foundation.yml'
   workflow_dispatch:

@@ -43,3 +43,10 @@ test('fewer than two alternatives and unspecified source rejected',()=>{
  assert.throws(()=>evaluateDishWorkflow({options:[option('a','kitchen_work_side'),option('b','kitchen_work_side')],
   sample_inventory:inventory,production_source:''}),/provenance/);
 });
+
+test('unmodeled washing-station sides cannot receive a misleading kitchen-side topology',()=>{
+ for(const side of ['reception_presentation_side','upper_work_side']) {
+  assert.throws(()=>evaluateDishWorkflow({options:[option('a','kitchen_work_side'),option('b','reception_presentation_side')],
+   sample_inventory:inventory,production_source:'Source',washing_station_group:side}),/modeled kitchen work side/);
+ }
+});

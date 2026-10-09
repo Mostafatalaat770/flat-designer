@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
+import { captureCanvasPng } from './capture-canvas-png.mjs';
 
 const snapshotPath=process.argv[2]||'render-snapshots/current.json';
 const snapshot=JSON.parse(await fs.readFile(snapshotPath,'utf8'));
@@ -90,7 +91,7 @@ try{
         return document.querySelector('#apartment-capture-canvas')?.dataset?.captureReady===id;
       },frameId,{timeout:180000});
       const canvas=page.locator('#apartment-capture-canvas');
-      await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
+      await fs.writeFile(path.join(outDir,`${view.id}.png`),await captureCanvasPng(canvas));
       const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
       assert.equal(metadata.scene_revision,snapshot.scene_revision);
       assert.equal(metadata.canonical_sha256,snapshot.canonical_sha256);

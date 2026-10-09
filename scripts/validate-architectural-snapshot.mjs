@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { createApartmentDomain } from '../studio/domain/apartment.mjs';
 
 const root=path.resolve(import.meta.dirname,'..');
-const snapshot=JSON.parse(fs.readFileSync(path.join(root,'render-snapshots/current.json'),'utf8'));
+const snapshot=JSON.parse(fs.readFileSync(path.resolve(root,process.argv[2] || 'render-snapshots/current.json'),'utf8'));
 const domain=createApartmentDomain(root);
 
 assert.equal(snapshot.schema,'ApartmentGitHubRenderSnapshot/1');

@@ -48,9 +48,9 @@ jobs:
           diff -u /tmp/k11-frozen/storage-allocation.json design-development/k11/storage-allocation.json
           cmp design-development/k11/snapshot.json render-snapshots/current.json
       - name: Disclosed architectural study validation
-        run: node scripts/validate-architectural-snapshot.mjs
+        run: node scripts/validate-architectural-snapshot.mjs design-development/k11/snapshot.json
       - name: Render overlay regression checks
-        run: node scripts/verify-render-overlay.mjs
+        run: node scripts/verify-render-overlay.mjs design-development/k11/snapshot.json
       - name: Domain study tests
         run: npm run check:study
       - name: Provide canonical renderer fixture

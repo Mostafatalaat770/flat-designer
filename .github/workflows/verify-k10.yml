@@ -41,9 +41,9 @@ jobs:
           node scripts/prepare-k10-island.mjs design-development/k9/snapshot.json
           node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; assert.deepEqual(JSON.parse(fs.readFileSync('design-development/k10/snapshot.json')),JSON.parse(fs.readFileSync('render-snapshots/current.json')));"
       - name: Architectural candidate validation
-        run: node scripts/validate-architectural-snapshot.mjs
+        run: node scripts/validate-architectural-snapshot.mjs design-development/k10/snapshot.json
       - name: Render overlay regression checks
-        run: node scripts/verify-render-overlay.mjs
+        run: node scripts/verify-render-overlay.mjs design-development/k10/snapshot.json
       - name: Domain study tests
         run: npm run check:study
       - name: Provide canonical renderer fixture

@@ -44,7 +44,7 @@ jobs:
         run: npm run build
 
       - name: Verify render-only finish repairs
-        run: node scripts/verify-render-overlay.mjs
+        run: node scripts/verify-render-overlay.mjs design-development/k11/snapshot.json
 
       - name: Validate supplemental view against the primary scene
         run: |

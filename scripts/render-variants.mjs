@@ -12,6 +12,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import { chromium } from 'playwright';
+import { captureCanvasPng } from './capture-canvas-png.mjs';
 import { makeBatchPlan } from './render-batch-plan.mjs';
 import {createApartmentDomain} from '../studio/domain/apartment.mjs';
 
@@ -86,7 +87,7 @@ const preparedByKey=new Map(prepared.map(x=>[x.key,x]));
 console.log('Batch variants '+prepared.length+', frames '+plan.jobs.length+
  ', unique base64 assets '+assets.size+', one browser planned.');
 const timings=[];
-const browser=await chromium.launch({headless:true,args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist']});
+const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--enable-webgl','--ignore-gpu-blocklist','--disable-dev-shm-usage']});
 try{
  const render=async job=>{
   const v=preparedByKey.get(job.key);
@@ -117,7 +118,7 @@ try{
    },frame,{timeout:180000});
    const base=path.join(pathsByVariant.get(v.key),view.id);
    const canvas=page.locator('#apartment-capture-canvas');
-   await canvas.screenshot({path:base+'.png'});
+   await fs.writeFile(base+'.png',await captureCanvasPng(canvas));
    const meta=await page.evaluate(()=>window.__apartmentCaptureFrame);
    assert.ok(meta,'No capture metadata');
    assert.equal(meta.scene_revision,v.snapshot.scene_revision);

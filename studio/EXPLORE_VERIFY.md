@@ -10,7 +10,7 @@ Build `npm ci && npm run build && npm run studio:build`, serve using `python3 lo
 
 Or enter from the existing Workspace header using **Explore & Verify ✨**.
 
-The isolated page starts from the verified **Whole Apartment A11.1 (scene-85fd2cac, saved revision 50)** source copied without editing from `master` as `studio/local/sources/verified-master-v50.json`. This source is deliberately not the experimental K12 kitchen-open snapshot from the inherited design branch: K12 still has two architectural hard failures. The user may **explicitly import a validated exact-canonical brief** if desired; unapproved geometry is rejected.
+The isolated page starts from **render-snapshots/current.json**, pinned to storage revision 55: review candidate `scene-9cf45a73`, derived from saved source `scene-4821689`. The v50 snapshot in `studio/local/sources/verified-master-v50.json` is historical. This source is deliberately not the experimental K12 kitchen-open snapshot from the inherited design branch: K12 still has two architectural hard failures. The user may **explicitly import a validated exact-canonical brief** if desired; unapproved geometry is rejected.
 
 ## Workflow
 - Left A and right B are **real Three.js canvases**, same room and fixed source camera. Try different wall-paint colors, flooring visual look, decorative light mode, render CCT/brightness, or use Calm Contemporary / Warm Japandi / Soft & Bright presets.
@@ -26,7 +26,7 @@ The camera is an original saved source camera; the comparison engine uses identi
 
 ## Verification
 The workflow `.github/workflows/verify-studio-explore-mode.yml` checks:
-- Original canonical model, source v50 snapshot and no extra architectural/cross-room changes
+- Original canonical model, current pinned v55 snapshot and no extra architectural/cross-room changes
 - Playwright browser with two real canvases
 - Active material/light interactions and A/B snapshotting
 - **No localStorage writes before verified save**
