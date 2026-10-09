@@ -1,0 +1,46 @@
+{
+  "schema": "ApartmentReviewEvidenceFiles/1",
+  "study": "bedroom1-r4",
+  "files": {
+    "after-entry-to-desk.json": {
+      "bytes": 46919,
+      "sha256": "fa156ad65032361e56ad8c45f82206717547dafb29018d057a782ca5e5f18cb2"
+    },
+    "after-entry-to-desk.png": {
+      "bytes": 667674,
+      "sha256": "5c9e6f68434e9772dedc16c2dd422cbafaed5ad287d0c0e3e1d5c9a3b5d05e0b"
+    },
+    "after-window-to-study.json": {
+      "bytes": 46911,
+      "sha256": "98a865b4f543e4e989ab2bec2fb27be1de735052948110d43929cf34babc54c7"
+    },
+    "after-window-to-study.png": {
+      "bytes": 627189,
+      "sha256": "7a038eb799fafd00a215bbe7e0d781b496bec4da21965fd6ee783f138d6de41e"
+    },
+    "before-entry-to-desk.json": {
+      "bytes": 46902,
+      "sha256": "b3eae0cf3849a81ad2ecb5044926027d0901053e3a73efb1fd34ac0cbfdf8312"
+    },
+    "before-entry-to-desk.png": {
+      "bytes": 567713,
+      "sha256": "c344275a7b3af3f04a04ecb5097edbadc45f2314b898effc3fd088ba37b5e8a6"
+    },
+    "before-window-to-study.json": {
+      "bytes": 46894,
+      "sha256": "700229245a6e396b8fab08ae85e6aaa9f525e88e5242be3482588ec24e724e0f"
+    },
+    "before-window-to-study.png": {
+      "bytes": 597922,
+      "sha256": "7a6adc442d6b3fe3d8dec9625189d36c736ebe70cf297f0e8694624214825721"
+    },
+    "plan-comparison.png": {
+      "bytes": 103947,
+      "sha256": "a3b4613a3732f4db2f7749f98499cf9e3feaa677686713a60630012c93a10b1c"
+    },
+    "review-check.json": {
+      "bytes": 152,
+      "sha256": "db90a188f51da7f15d11c41a332965af1b9db31c0fcf4dcca6bf6834315ba2c9"
+    }
+  }
+}

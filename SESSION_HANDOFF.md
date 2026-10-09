@@ -1,0 +1,38 @@
+# Circulation review handoff — 9 October 2026
+
+Remote branch: `codex/v55-circulation-room1-20261009` in `Mostafatalaat770/flat-designer`. It starts from reconciled master `ec07fe90e402a8fdf7b359381fed64c3196312dd`. This branch preserves completed work without requiring a PR or promoting any design.
+
+## Owner's coordination instruction
+
+After every completed logical step, commit and push the working branch. Do this even when no PR exists. Use an isolated branch/worktree when sessions share a checkout, and verify the remote head after pushing. The durable instruction is in `AGENTS.md`.
+
+Other sessions should fetch this branch before continuing the review and create their own worktree/branch from it. Do not use the original shared checkout's untracked copies as the source of truth. The complete proposals, verification and committed review evidence are on this branch.
+
+## Completed work and current design decision
+
+1. `design-development/circulation-v55/`: frozen 13-area, 31-scenario audit, six comparisons, Arabic report, saved-source inputs and portable verification.
+2. `design-development/bedroom1-r1/`: first west-wall desk comparison, retained as historical. Closed-furniture routes pass, but a full-front 300 mm storage reserve disconnects a tested route. Do not select R1 as the final study.
+3. `design-development/bedroom1-r4/`: preferred local study, scene `scene-a5c839c1`. West-wall desk 1100 × 600 mm; south-wall storage 800 × 350 × 1000 mm; wardrobe 120 mm north; bed retained. Storage outer volume equals the baseline; internal capacity is not established. Window frontage remains clear.
+
+R4 has 187 pass / 74 warning / 0 fail, no floor-furniture collisions, 12 passing core route checks, 24 passing door/occupation checks and 16 passing checks with 300/350 mm full-front storage reserves. The storage-opening and desk-occupation scenarios are separate; return the chair to its normal position before using the modeled full storage opening. A 500 mm circle and inferred door hinges remain nominal planning assumptions, not comfortable circulation or site certification.
+
+The canonical architecture is unchanged. `render-snapshots/current.json` remains the v55 review source `scene-9cf45a73`, derived from saved cloud `scene-4821689`, storage 55. The active source, saved cloud design and deployment settings are not changed by this checkpoint branch.
+
+## Reproduce and continue
+
+```sh
+npm ci
+npm run build
+node design-development/circulation-v55/verify.mjs
+node design-development/bedroom1-r1/verify.mjs
+node design-development/bedroom1-r4/verify.mjs
+node design-development/bedroom1-r4/verify-comparisons.mjs
+node design-development/bedroom-review.mjs verify-evidence bedroom1-r1
+node design-development/bedroom-review.mjs verify-evidence bedroom1-r4
+node design-development/bedroom-review.mjs prepare bedroom1-r4
+python3 local-qa/serve.py --port 4174
+```
+
+The standalone Arabic review files and committed images work without generated renderer bundles. The local viewer is served at `/_qa/bedroom1-r4/`. Browser capture/check commands and dependency setup are documented in each study's README; original evidence hashes and exact layouts/cameras are checked separately from regenerated captures.
+
+Next design task: test the bathroom entry/open/close/use sequence, especially the master shower approach and guest-basin standing space. Source audit door-closed tests start inside the room and do not resolve the complete entry sequence. Confirm actual chair, storage leaves, window sash and site joinery dimensions before treating R4 as a final fit.

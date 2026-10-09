@@ -1,0 +1,49 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-9cf45a73",
+  "operations": [
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-8",
+      "changes": {
+        "cx": 2380,
+        "cy": 4330,
+        "w": 1100,
+        "rot": 270,
+        "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-9",
+      "changes": {
+        "cx": 3020,
+        "cy": 4250,
+        "rot": 90,
+        "name": "Bedroom 1 study chair · facing west desk"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V7-bedroom1-drawers",
+      "changes": {
+        "cx": 3775,
+        "cy": 4720,
+        "rotation": 180,
+        "width_mm": 800,
+        "height_mm": 1000
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-7",
+      "changes": {
+        "cy": 3030
+      }
+    }
+  ],
+  "notes": [
+    "LOCAL R4 comparison: desk 1100 × 600, storage 800 × 350 × 1000, wardrobe 120 mm north, bed unchanged. Storage outer volume equals baseline; internal capacity not guaranteed."
+  ]
+}

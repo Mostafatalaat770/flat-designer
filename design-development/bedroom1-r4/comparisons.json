@@ -1,0 +1,2710 @@
+{
+  "schema": "Bedroom1CirculationComparisons/1",
+  "source_scene": "scene-9cf45a73",
+  "source_storage_revision": 55,
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "trials": [
+    {
+      "id": "desk-1100",
+      "scene_revision": "scene-32a80894",
+      "proposal": {
+        "schema": "ApartmentDesignProposal/2",
+        "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+        "base_scene_revision": "scene-9cf45a73",
+        "operations": [
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-8",
+            "changes": {
+              "cx": 2380,
+              "cy": 4330,
+              "w": 1100,
+              "rot": 270,
+              "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-9",
+            "changes": {
+              "cx": 3020,
+              "cy": 4250,
+              "rot": 90,
+              "name": "Bedroom 1 study chair · facing west desk"
+            }
+          },
+          {
+            "type": "update-object",
+            "object_id": "V7-bedroom1-drawers",
+            "changes": {
+              "cx": 3850,
+              "cy": 4720,
+              "rotation": 180
+            }
+          }
+        ],
+        "notes": [
+          "LOCAL OWNER REVIEW: preserve bed, wardrobe, window frontage and canonical architecture."
+        ]
+      },
+      "validation_summary": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      },
+      "cases": [
+        {
+          "id": "bed-side",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "bed-side",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "drawers-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3850,
+            4140
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "drawers-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3850,
+            4140
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "note": "Standing approach east of the chair; fixed before comparing both desk sizes.",
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "note": "Standing approach east of the chair; fixed before comparing both desk sizes.",
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-seated-proxy",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3020,
+            4250
+          ],
+          "skip": [
+            "starter-9"
+          ],
+          "note": "Chair removed from obstacle set only for testing a seated-person centre; no chair kinematics.",
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-seated-proxy",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3020,
+            4250
+          ],
+          "skip": [
+            "starter-9"
+          ],
+          "note": "Chair removed from obstacle set only for testing a seated-person centre; no chair kinematics.",
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        }
+      ],
+      "decision": "1100 mm preferred; 1150 mm leaves only about 4 mm at the modeled south wall."
+    },
+    {
+      "id": "desk-1150",
+      "scene_revision": "scene-2ce5148",
+      "proposal": {
+        "schema": "ApartmentDesignProposal/2",
+        "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+        "base_scene_revision": "scene-9cf45a73",
+        "operations": [
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-8",
+            "changes": {
+              "cx": 2380,
+              "cy": 4330,
+              "w": 1150,
+              "rot": 270,
+              "name": "Bedroom 1 study desk · 1150 x 600 mm · west-wall comparison"
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-9",
+            "changes": {
+              "cx": 3020,
+              "cy": 4250,
+              "rot": 90,
+              "name": "Bedroom 1 study chair · facing west desk"
+            }
+          },
+          {
+            "type": "update-object",
+            "object_id": "V7-bedroom1-drawers",
+            "changes": {
+              "cx": 3850,
+              "cy": 4720,
+              "rotation": 180
+            }
+          }
+        ],
+        "notes": [
+          "LOCAL OWNER REVIEW: preserve bed, wardrobe, window frontage and canonical architecture."
+        ]
+      },
+      "validation_summary": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      },
+      "cases": [
+        {
+          "id": "bed-side",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "bed-side",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "drawers-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3850,
+            4140
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "drawers-use",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3850,
+            4140
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "note": "Standing approach east of the chair; fixed before comparing both desk sizes.",
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "note": "Standing approach east of the chair; fixed before comparing both desk sizes.",
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window-approach",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-seated-proxy",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3020,
+            4250
+          ],
+          "skip": [
+            "starter-9"
+          ],
+          "note": "Chair removed from obstacle set only for testing a seated-person centre; no chair kinematics.",
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 511,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk-seated-proxy",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3020,
+            4250
+          ],
+          "skip": [
+            "starter-9"
+          ],
+          "note": "Chair removed from obstacle set only for testing a seated-person centre; no chair kinematics.",
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 581,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        }
+      ],
+      "decision": "1100 mm preferred; 1150 mm leaves only about 4 mm at the modeled south wall."
+    },
+    {
+      "id": "R2",
+      "scene_revision": "scene-c1ad04e1",
+      "proposal": {
+        "schema": "ApartmentDesignProposal/2",
+        "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+        "base_scene_revision": "scene-9cf45a73",
+        "operations": [
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-8",
+            "changes": {
+              "cx": 2380,
+              "cy": 4330,
+              "w": 1100,
+              "rot": 270,
+              "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-9",
+            "changes": {
+              "cx": 3020,
+              "cy": 4250,
+              "rot": 90,
+              "name": "Bedroom 1 study chair · facing west desk"
+            }
+          },
+          {
+            "type": "update-object",
+            "object_id": "V7-bedroom1-drawers",
+            "changes": {
+              "cx": 3820,
+              "cy": 4720,
+              "rotation": 180,
+              "width_mm": 930,
+              "height_mm": 860
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-7",
+            "changes": {
+              "cy": 3010
+            }
+          }
+        ],
+        "notes": [
+          "LOCAL R2 comparison: desk 1100 × 600, storage 930 × 350 × 860, wardrobe 140 mm north. Nominal storage outer volume is 99.975% of baseline; internal capacity not guaranteed."
+        ]
+      },
+      "validation_summary": {
+        "pass": 186,
+        "warning": 74,
+        "fail": 0
+      },
+      "cases": [
+        {
+          "id": "bed",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "bed",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3250
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3250
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "storage",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3820,
+            4140
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "storage",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3820,
+            4140
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "full-front-open-300",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3820,
+            3850
+          ],
+          "extra": [
+            {
+              "id": "open-front-300",
+              "cx": 3820,
+              "cy": 4395,
+              "w": 930,
+              "d": 300,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": false,
+          "conservative_sampled_diameter_mm": 464,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-300"
+          ]
+        },
+        {
+          "id": "full-front-open-300",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3820,
+            3850
+          ],
+          "extra": [
+            {
+              "id": "open-front-300",
+              "cx": 3820,
+              "cy": 4395,
+              "w": 930,
+              "d": 300,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 516,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-300"
+          ]
+        },
+        {
+          "id": "full-front-open-350",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3820,
+            3800
+          ],
+          "extra": [
+            {
+              "id": "open-front-350",
+              "cx": 3820,
+              "cy": 4370,
+              "w": 930,
+              "d": 350,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": false,
+          "conservative_sampled_diameter_mm": 420,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-350"
+          ]
+        },
+        {
+          "id": "full-front-open-350",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3820,
+            3800
+          ],
+          "extra": [
+            {
+              "id": "open-front-350",
+              "cx": 3820,
+              "cy": 4370,
+              "w": 930,
+              "d": 350,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": false,
+          "conservative_sampled_diameter_mm": 490,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-350"
+          ]
+        }
+      ],
+      "decision": "Reject: 300 mm front opening is grid-sensitive; 350 mm fails both grids."
+    },
+    {
+      "id": "R3",
+      "scene_revision": "scene-4927a23a",
+      "proposal": {
+        "schema": "ApartmentDesignProposal/2",
+        "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+        "base_scene_revision": "scene-9cf45a73",
+        "operations": [
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-8",
+            "changes": {
+              "cx": 2380,
+              "cy": 4330,
+              "w": 1100,
+              "rot": 270,
+              "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-9",
+            "changes": {
+              "cx": 3020,
+              "cy": 4250,
+              "rot": 90,
+              "name": "Bedroom 1 study chair · facing west desk"
+            }
+          },
+          {
+            "type": "update-object",
+            "object_id": "V7-bedroom1-drawers",
+            "changes": {
+              "cx": 3775,
+              "cy": 4720,
+              "rotation": 180,
+              "width_mm": 800,
+              "height_mm": 1000
+            }
+          }
+        ],
+        "notes": [
+          "LOCAL R3 comparison: desk 1100 × 600, storage 800 × 350 × 1000, bed and wardrobe unchanged. Storage outer volume equals baseline; internal capacity not guaranteed."
+        ]
+      },
+      "validation_summary": {
+        "pass": 187,
+        "warning": 74,
+        "fail": 0
+      },
+      "cases": [
+        {
+          "id": "bed",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 587,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "bed",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 647,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 587,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 647,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "storage",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            4140
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 587,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "storage",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            4140
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 647,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 587,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 647,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 587,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 647,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "full-front-open-300",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3850
+          ],
+          "extra": [
+            {
+              "id": "open-front-300",
+              "cx": 3775,
+              "cy": 4395,
+              "w": 800,
+              "d": 300,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": false,
+          "conservative_sampled_diameter_mm": 485,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-300"
+          ]
+        },
+        {
+          "id": "full-front-open-300",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3850
+          ],
+          "extra": [
+            {
+              "id": "open-front-300",
+              "cx": 3775,
+              "cy": 4395,
+              "w": 800,
+              "d": 300,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 551,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-300"
+          ]
+        },
+        {
+          "id": "full-front-open-350",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3800
+          ],
+          "extra": [
+            {
+              "id": "open-front-350",
+              "cx": 3775,
+              "cy": 4370,
+              "w": 800,
+              "d": 350,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": false,
+          "conservative_sampled_diameter_mm": 482,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-350"
+          ]
+        },
+        {
+          "id": "full-front-open-350",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3800
+          ],
+          "extra": [
+            {
+              "id": "open-front-350",
+              "cx": 3775,
+              "cy": 4370,
+              "w": 800,
+              "d": 350,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 539,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-350"
+          ]
+        }
+      ],
+      "decision": "Reject: front-opening results depend on grid resolution."
+    },
+    {
+      "id": "R4",
+      "scene_revision": "scene-a5c839c1",
+      "proposal": {
+        "schema": "ApartmentDesignProposal/2",
+        "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+        "base_scene_revision": "scene-9cf45a73",
+        "operations": [
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-8",
+            "changes": {
+              "cx": 2380,
+              "cy": 4330,
+              "w": 1100,
+              "rot": 270,
+              "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-9",
+            "changes": {
+              "cx": 3020,
+              "cy": 4250,
+              "rot": 90,
+              "name": "Bedroom 1 study chair · facing west desk"
+            }
+          },
+          {
+            "type": "update-object",
+            "object_id": "V7-bedroom1-drawers",
+            "changes": {
+              "cx": 3775,
+              "cy": 4720,
+              "rotation": 180,
+              "width_mm": 800,
+              "height_mm": 1000
+            }
+          },
+          {
+            "type": "update-furniture",
+            "furniture_id": "starter-7",
+            "changes": {
+              "cy": 3030
+            }
+          }
+        ],
+        "notes": [
+          "LOCAL R4 comparison: desk 1100 × 600, storage 800 × 350 × 1000, wardrobe 120 mm north, bed unchanged. Storage outer volume equals baseline; internal capacity not guaranteed."
+        ]
+      },
+      "validation_summary": {
+        "pass": 187,
+        "warning": 74,
+        "fail": 0
+      },
+      "cases": [
+        {
+          "id": "bed",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "bed",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4100,
+            2800
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "wardrobe",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4380,
+            3350
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "storage",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            4140
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "storage",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            4140
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "window",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            4250,
+            2070
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "extra": [],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 643,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "desk",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3770,
+            4110
+          ],
+          "extra": [],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 653,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL"
+          ]
+        },
+        {
+          "id": "full-front-open-300",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3850
+          ],
+          "extra": [
+            {
+              "id": "open-front-300",
+              "cx": 3775,
+              "cy": 4395,
+              "w": 800,
+              "d": 300,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 537,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-300"
+          ]
+        },
+        {
+          "id": "full-front-open-300",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3850
+          ],
+          "extra": [
+            {
+              "id": "open-front-300",
+              "cx": 3775,
+              "cy": 4395,
+              "w": 800,
+              "d": 300,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 606,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-300"
+          ]
+        },
+        {
+          "id": "full-front-open-350",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3800
+          ],
+          "extra": [
+            {
+              "id": "open-front-350",
+              "cx": 3775,
+              "cy": 4370,
+              "w": 800,
+              "d": 350,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932737,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 517,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-350"
+          ]
+        },
+        {
+          "id": "full-front-open-350",
+          "room_id": "BR-01",
+          "start": [
+            4850.8724999999995,
+            4399.153
+          ],
+          "goal": [
+            3775,
+            3800
+          ],
+          "extra": [
+            {
+              "id": "open-front-350",
+              "cx": 3775,
+              "cy": 4370,
+              "w": 800,
+              "d": 350,
+              "rot": 0
+            }
+          ],
+          "grid_mm": 25,
+          "cell_safety_pad_mm": 17.677669529663685,
+          "assumed_circle_diameter_mm": 500,
+          "route_found_500mm": true,
+          "conservative_sampled_diameter_mm": 583,
+          "obstacle_ids": [
+            "starter-6",
+            "starter-7",
+            "starter-8",
+            "starter-9",
+            "V7-bedroom1-drawers",
+            "BR1-A1-art",
+            "wall-0",
+            "wall-1",
+            "wall-2",
+            "wall-3",
+            "wall-4",
+            "wall-5",
+            "wall-6",
+            "wall-7",
+            "open-leaf-OP-BR01-HALL",
+            "open-front-350"
+          ]
+        }
+      ],
+      "decision": "Preferred: closed and 300/350 mm full-front reserves pass at both grids."
+    }
+  ]
+}

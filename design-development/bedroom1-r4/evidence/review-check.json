@@ -1,0 +1,9 @@
+{
+  "desktop": true,
+  "mobile_viewport": true,
+  "rtl": true,
+  "toggles": true,
+  "images": 5,
+  "errors": [],
+  "scene_revision": "scene-a5c839c1"
+}
