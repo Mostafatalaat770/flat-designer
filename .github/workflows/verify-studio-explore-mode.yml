@@ -1,0 +1,94 @@
+name: Studio product - interactive Explore & Verify workspace
+
+on:
+  push:
+    branches:
+      - 'platform/explore-verify-interactive-workspace-20261008'
+    paths:
+      - 'studio/app/src/explore*'
+      - 'studio/app/src/ExploreApp.tsx'
+      - 'studio/app/src/App.tsx'
+      - 'studio/app/explore.html'
+      - 'studio/app/vite.config.ts'
+      - 'scripts/explore-browser-smoke.mjs'
+      - '.github/workflows/verify-studio-explore-mode.yml'
+  pull_request:
+    paths:
+      - 'studio/app/src/explore*'
+      - 'studio/app/src/ExploreApp.tsx'
+      - 'studio/app/src/App.tsx'
+      - 'studio/app/explore.html'
+      - 'studio/app/vite.config.ts'
+      - 'scripts/explore-browser-smoke.mjs'
+      - '.github/workflows/verify-studio-explore-mode.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  domain-and-types:
+    name: Type B source, reversible palette / state test and TypeScript production build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run build
+      - name: Pure state tests with real current source, no geometry mutations
+        run: node --test studio/app/src/explore-state.test.mjs
+      - name: Existing protected workspace contract regressions
+        run: npm run check:workspace
+      - name: Build React, all workspace routes incl Explore & Verify and parity
+        run: npm run studio:build
+      - name: Assert separate entry and no production project overwrites
+        run: |
+          test -s local-qa/site/workspace/explore.html
+          test -s local-qa/site/workspace/index.html
+          test -s local-qa/site/workspace/parity.html
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const s=fs.readFileSync('local-qa/site/workspace/explore.html','utf8');assert.match(s,/Explore &amp; Verify/);assert.match(s,/assets/);console.log('PASS: 3 built pages, separate reversible UI and no live Site deploy')"
+
+  real-browser:
+    name: Chromium two-canvas preview, Verify gate, no writes until explicit save
+    needs: domain-and-types
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run build
+      - run: npm run studio:build
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - name: Start isolated localhost server, not production Site
+        run: |
+          python3 local-qa/serve.py --port 4176 > /tmp/explore-local-server.log 2>&1 &
+          for i in $(seq 1 40); do
+            if curl --silent --fail http://127.0.0.1:4176/_qa/workspace/explore.html > /dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/explore-local-server.log
+          exit 1
+      - name: Browser proof and screenshot
+        run: node scripts/explore-browser-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: typeb-explore-verify-tested-interactive-product
+          path: review-evidence/explore/
+          retention-days: 30
+          if-no-files-found: error

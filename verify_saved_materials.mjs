@@ -6,7 +6,7 @@ const node=(material)=>({material,userData:{},position:{set(){}},rotation:{y:0},
 class Group {constructor(){Object.assign(this,node());}}
 class Mesh {constructor(geometry,material){Object.assign(this,node(material));}}
 const pbr=(id,colour)=>({id,colour}),mat=colour=>({colour});
-const c=vm.createContext({THREE:{Group,Mesh,PlaneGeometry:class {}},M:v=>v/1000,wx:v=>v/1000,wz:v=>v/1000,mat,fabric:mat,woodM:mat,box:(w,h,d,m)=>node(m),rbox:(w,h,d,m)=>node(m),batchSceneMeshes(){},currentDecor:()=>({id:'warm',wood:'#60432e',metal:'#999999'}),STUDIO_VARIANTS:{fridge:['integrated','steel'],dishwasher:['integrated','steel']},interiorPbr:pbr,interiorResolved:o=>({cx:0,cy:0,rot:0,bottom_mm:0}),MODEL:{},opt:{cut:2.5},H:2.5});
+const c=vm.createContext({THREE:{Group,Mesh,PlaneGeometry:class {}},M:v=>v/1000,wx:v=>v/1000,wz:v=>v/1000,mat,fabric:mat,woodM:mat,box:(w,h,d,m)=>node(m),rbox:(w,h,d,m)=>node(m),batchSceneMeshes(){},currentDecor:()=>({id:'warm',wood:'#60432e',metal:'#999999'}),STUDIO_VARIANTS:{fridge:['integrated','steel'],dishwasher:['integrated','steel']},interiorPbr:pbr,state:{},interiorMaterial:(_state,id)=>id?{base_colour:'#E8E2D7',category:'paint'}:null,interiorResolved:o=>({cx:0,cy:0,rot:0,bottom_mm:0}),MODEL:{},opt:{cut:2.5},H:2.5});
 vm.runInContext(fs.readFileSync('studio-scene.js','utf8')+'\n'+fs.readFileSync('interior-scene.js','utf8').replace('function interiorPbr(', 'function unusedInteriorPbr('),c);
 for(const type of ['fridge','dishwasher']){
   c.item={id:type,type,variant:'integrated',w:600,d:650,cx:0,cy:0,rot:0,color:'#E8E2D7',material_id:'kitchen-soft-ivory'};

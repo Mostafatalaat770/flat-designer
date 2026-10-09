@@ -17,9 +17,88 @@ function studioWallMaterials(s,base,cap){
   const face=sign=>{const point=[mid[0]-sign*dz/L*180,mid[1]+sign*dx/L*180],r=ROOMS.find(r=>pointInRoom(point,r.poly));const color=r&&studioRoomOptions(state,r.id).wall;return color?mat(color,{roughness:.92}):base;};
   return [base,base,cap,base,face(1),face(-1)];
 }
+/* Explicit, dimensioned closed-front joinery concept; not a manufacturer model. */
+function studioCounterJoinery(g,f,w,d,cm){
+  const j=f.joinery;
+  if(!j)return false;
+  const validModules=a=>Array.isArray(a)&&a.every(m=>Number.isFinite(m.width_mm)&&m.width_mm>=100&&['dishwasher','sink','drawers','storage','hob','waste'].includes(m.role));
+  if(j.schema!=='CounterJoineryConcept/1'||j.status!=='EXPLORATORY'||!Number.isFinite(j.end_panel_mm)||j.end_panel_mm<12||j.end_panel_mm>30||!validModules(j.work_modules)||!j.work_modules.length||!validModules(j.rear_modules)||!Number.isFinite(j.working_depth_mm)||!Number.isFinite(j.rear_depth_mm)||j.working_depth_mm<500||(j.rear_depth_mm!==0&&j.rear_depth_mm<200)||(j.rear_depth_mm===0)!==(j.rear_modules.length===0))throw new Error('Invalid counter joinery concept.');
+  for(const modules of [j.work_modules,j.rear_modules].filter(a=>a.length))if(Math.abs(modules.reduce((n,m)=>n+m.width_mm,2*j.end_panel_mm)-f.w)>.01)throw new Error('Joinery widths exceed the declared counter.');
+  if(Math.abs(j.working_depth_mm+j.rear_depth_mm-f.d)>.01)throw new Error('Joinery depths exceed the declared counter.');
+  const p=M(j.end_panel_mm),work=M(j.working_depth_mm),rear=M(j.rear_depth_mm);
+  g.add(box(w-.012,.08,d-.08,'#4a4641',0,0,0));
+  for(const side of [-1,1])g.add(box(p,.74,d-.04,cm,side*(w/2-p/2),.08,0));
+  // The rear mass is a shallow storage reservation. Plumbing access remains TBD.
+  if(rear>0)g.add(box(w-2*p,.74,rear-.04,cm,0,.08,-d/2+rear/2));
+  const renderedModules=[];
+  const record=front=>{g.updateMatrixWorld(true);const b=new THREE.Box3().setFromObject(front);renderedModules.push({...front.userData.counterModule,min_mm:b.min.toArray().map(n=>n*1000),max_mm:b.max.toArray().map(n=>n*1000)});};
+  let x=-w/2+p;
+  for(const [index,m] of j.work_modules.entries()){
+    const mw=M(m.width_mm),front=new THREE.Group();
+    if(m.drawer_fronts_mm){
+      if(!Array.isArray(m.drawer_fronts_mm)||m.drawer_fronts_mm.some(h=>!Number.isFinite(h)||h<80)||Math.abs(m.drawer_fronts_mm.reduce((s,h)=>s+h,0)-720)>.01)throw new Error('Invalid dimensioned drawer fronts.');
+      let y=.08;
+      for(const height of m.drawer_fronts_mm){fronts(front,-mw/2,y,mw,M(height),0,1,1,cm,'edge');y+=M(height);}
+    }else fronts(front,-mw/2,.08,mw,.72,0,m.role==='sink'?2:1,m.role==='drawers'?3:1,cm,'edge');
+    front.position.set(x+mw/2,0,d/2-.03);
+    front.userData.counterModule={side:'working',index,role:m.role,width_mm:m.width_mm,depth_mm:j.working_depth_mm};
+    g.add(front);record(front);
+    if(m.role==='dishwasher'){
+      // Preserve a full 600 mm clear lateral bay; its closed integrated front is shown.
+      g.add(box(mw-.02,.70,work-.06,mat('#8b9297',{roughness:.5}),x+mw/2,.09,d/2-work/2-.02));
+    }else{
+      for(const sx of [x+p/2,x+mw-p/2])g.add(box(p,.74,work-.04,cm,sx,.08,d/2-work/2-.02));
+      g.add(box(mw,.018,work-.04,cm,x+mw/2,.08,d/2-work/2-.02));
+    }
+    x+=mw;
+  }
+  x=-w/2+p;
+  for(const [index,m] of j.rear_modules.entries()){
+    const mw=M(m.width_mm),front=new THREE.Group();
+    fronts(front,-mw/2,.08,mw,.72,0,1,1,cm,'edge');
+    front.position.set(x+mw/2,0,-d/2+.03);front.rotation.y=Math.PI;
+    front.userData.counterModule={side:'reception',index,role:m.role,width_mm:m.width_mm,depth_mm:j.rear_depth_mm};
+    g.add(front);record(front);x+=mw;
+  }
+  g.userData.counterJoinery={module_geometry:renderedModules,schema:j.schema,working_depth_mm:j.working_depth_mm,rear_depth_mm:j.rear_depth_mm,end_panel_mm:j.end_panel_mm,work_modules:j.work_modules.map(m=>({...m})),rear_modules:j.rear_modules.map(m=>({...m}))};
+  return true;
+}
+
+function studioCountertop(g,f,w,d,stone){
+  if(!f.countertop_cutouts){g.add(rbox(w+.01,.04,d,stone,0,.82,0,.004));return;}
+  if(!Array.isArray(f.countertop_cutouts)||f.countertop_cutouts.length!==1)throw new Error('Only the explicit workstation cutout is supported.');
+  const c=f.countertop_cutouts[0];
+  if(c.schema!=='CountertopCutoutConcept/1'||![c.x_mm,c.z_mm,c.width_mm,c.depth_mm].every(Number.isFinite)||c.width_mm<200||c.depth_mm<200||Math.abs(c.x_mm)+c.width_mm/2>f.w/2-18||Math.abs(c.z_mm)+c.depth_mm/2>f.d/2-18)throw new Error('Invalid countertop cutout.');
+  const shape=new THREE.Shape();
+  shape.moveTo(-w/2-.005,-d/2);shape.lineTo(w/2+.005,-d/2);shape.lineTo(w/2+.005,d/2);shape.lineTo(-w/2-.005,d/2);shape.closePath();
+  const hole=new THREE.Path(),x=M(c.x_mm),z=M(c.z_mm),cw=M(c.width_mm),cd=M(c.depth_mm);
+  hole.moveTo(x-cw/2,-z-cd/2);hole.lineTo(x-cw/2,-z+cd/2);hole.lineTo(x+cw/2,-z+cd/2);hole.lineTo(x+cw/2,-z-cd/2);hole.closePath();shape.holes.push(hole);
+  const geometry=new THREE.ExtrudeGeometry(shape,{depth:.04,bevelEnabled:false});geometry.rotateX(-Math.PI/2);
+  const top=mesh(geometry,stone);top.position.y=.82;top.userData.countertopCutout={...c};g.add(top);
+}
+
+function studioWorkstationSink(g,f,w,d){
+  const s=f.workstation;
+  if(s.schema!=='WorkstationSinkConcept/1'||s.status!=='EXPLORATORY'||!['washing','prep-covered'].includes(s.mode)||!Array.isArray(s.bowl_mm)||s.bowl_mm.length!==3||s.bowl_mm.some(n=>!Number.isFinite(n)||n<=0)||!Number.isFinite(s.bowl_z_offset_mm)||!Array.isArray(s.tap_position_mm)||s.tap_position_mm.length!==2||s.tap_position_mm.some(n=>!Number.isFinite(n)))throw new Error('Invalid workstation sink concept.');
+  const [bw,bd,bh]=s.bowl_mm.map(M),bz=M(s.bowl_z_offset_mm),[tx,tz]=s.tap_position_mm.map(M),st=mat('#c7ccd1',{metalness:.85,roughness:.28}),inside=mat('#939da5',{metalness:.8,roughness:.32});
+  if(bw>=w||Math.abs(bz)+bd/2>=d/2||Math.abs(tx)+.028>w/2||Math.abs(tz)+.028>d/2)throw new Error('Workstation sink exceeds its reserve.');
+  const back=d/2+bz-bd/2,front=d/2-bz-bd/2;
+  g.add(box((w-bw)/2,.002,d,st,-(w+bw)/4,.858,0),box((w-bw)/2,.002,d,st,(w+bw)/4,.858,0),box(bw,.002,back,st,0,.858,-d/2+back/2),box(bw,.002,front,st,0,.858,d/2-front/2));
+  const bowl=new THREE.Group();bowl.userData.workstationBowl={width_mm:s.bowl_mm[0],depth_mm:s.bowl_mm[1],height_mm:s.bowl_mm[2]};
+  bowl.add(box(bw,.008,bd,inside,0,.858-bh,bz),box(.008,bh,bd,st,-bw/2+.004,.858-bh,bz),box(.008,bh,bd,st,bw/2-.004,.858-bh,bz),box(bw,bh,.008,st,0,.858-bh,bz-bd/2+.004),box(bw,bh,.008,st,0,.858-bh,bz+bd/2-.004),cyl(.025,.025,.002,chrome(),0,.868-bh,bz,20));g.add(bowl);
+  const tap=new THREE.Group(),cm=chrome();
+  tap.add(cyl(.025,.028,.025,cm,tx,.86,tz,20),tube([[tx,.885,tz],[tx,1.12,tz],[tx,1.16,tz+.04],[tx,1.12,tz+.11],[tx,1.08,tz+.13]],.012,cm),box(.01,.01,.055,cm,tx+.035,.95,tz+.025));
+  tap.userData.workstationTap=true;g.add(tap);
+  if(s.mode==='prep-covered'){
+    const cover=rbox(bw,.016,bd,woodM('#C8B083'),0,.844,bz,.002);
+    cover.userData.workstationCover={nominal_mm:[...s.bowl_mm.slice(0,2),16],removable:true};g.add(cover);
+  }
+  g.userData.workstationSink={...s};
+}
+
 function makeStudioVariant(f){
   if(!f.variant||f.variant==='style'||!STUDIO_VARIANTS[f.type]?.includes(f.variant)||f.type==='bed')return null;
-  const t=currentDecor().id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):currentDecor(),g=new THREE.Group(),w=M(f.w),d=M(f.d),c=f.color,fab=fabric(c),wood=woodM(t.wood);
+  const t=currentDecor().id==='custom'?DECOR_THEMES.find(t=>t.id==='warm'):currentDecor(),g=new THREE.Group(),w=M(f.w),d=M(f.d),c=f.color,fab=fabric(c),assigned=interiorMaterial(state,f.material_id),wood=woodM(t.wood),assignedMat=assigned?(assigned.category==='wood'?woodM(assigned.base_colour):mat(assigned.base_colour,{roughness:assigned.roughness??.7,metalness:assigned.metallic??0})):null;
   const connect=f.type==='sofa'&&f.variant==='modular'&&f.product_reference_id==='sofa-connect-soft-3',seats=[];
   if(['sofa','armchair'].includes(f.type)){
     const n=f.type==='armchair'?1:f.variant==='modular'?Math.max(2,Math.round(w/.96)):2,sw=w/n;
@@ -45,6 +124,25 @@ function makeStudioVariant(f){
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
     if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
+  }else if(f.type==='counter'){
+    const assigned=interiorMaterial(state,f.material_id),cm=assigned?.category==='wood'?woodM(assigned.base_colour):mat(c,{roughness:.45}),stone=mat('#dcd7cf',{roughness:.22}),n=Math.max(1,Math.round(w/.6)),fz=d/2-.04;
+    if(!studioCounterJoinery(g,f,w,d,cm)){
+      g.add(box(w-.01,.08,d-.08,'#4a4641',0,0,-.04),box(w,.74,d-.04,cm,0,.08,-.02));
+      fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
+    }
+    studioCountertop(g,f,w,d,stone);
+  }else if(f.type==='shower'&&f.variant==='walk-in'){
+    // True open wet area: no default glass cage or raised prefabricated tray.
+    // Any fixed splash panel is a separate validated interior object.
+    const cm=mat('#b8c1c6',{metalness:.72,roughness:.26}),x=-w*.25,z=-d/2+.09;
+    g.add(
+      box(w,.008,d,mat('#e7e0d6',{roughness:.86}),0,.004,0),
+      box(Math.min(.60,w*.55),.006,.035,cm,0,.011,-d/2+.11),
+      rbox(.15,.095,.035,cm,x,1.04,z,.012),
+      rod([x,1.13,z],[x,2.05,z],.012,cm),
+      rod([x,2.05,z],[x,2.05,z+.20],.012,cm),
+      box(.24,.012,.24,cm,x,2.04,z+.20)
+    );
   }else if(f.type==='fridge'){
     const m=f.variant==='integrated'?studioIntegratedMaterial(f):mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
@@ -55,7 +153,7 @@ function makeStudioVariant(f){
     g.add(rbox(w,.84,d,m,0,.035,0,.014));g.add(box(w*.80,.014,.025,mat('#383b40'),0,.75,d/2+.005));
     if(f.variant==='steel')g.add(box(w-.01,.07,.012,mat('#24282c'),0,.80,d/2+.012));
   }else if(f.type==='ovencol'){
-    g.add(rbox(w,2.15,d,wood,0,.025,0,.008));const m=f.variant==='steel'?mat('#a7aeb2',{metalness:.75,roughness:.26}):mat('#171b20',{roughness:.25,metalness:.2});
+    g.add(rbox(w,2.15,d,assignedMat||wood,0,.025,0,.008));const m=f.variant==='steel'?mat('#a7aeb2',{metalness:.75,roughness:.26}):mat('#171b20',{roughness:.25,metalness:.2});
     g.add(box(w-.04,.60,.025,m,0,.87,d/2+.002));g.add(box(w*.74,.37,.012,mat('#0c1218',{roughness:.08,metalness:.3}),0,.97,d/2+.025));
     g.add(box(w*.68,.021,.030,mat('#b7bec1',{metalness:.8,roughness:.25}),0,1.30,d/2+.04));
   }

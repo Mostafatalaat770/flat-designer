@@ -1,0 +1,98 @@
+name: Advisor A12 - kitchen plus six-seat dining family workflows
+
+on:
+  push:
+    branches:
+      - 'advisor/a12-kitchen-dining-family-sprint-20261008'
+    paths:
+      - 'scripts/a12-kitchen-dining-sprint.mjs'
+      - 'studio/analysis/kitchen-dining.mjs'
+      - 'studio/analysis/kitchen-dining.test.mjs'
+      - '.github/workflows/verify-advisor-a12.yml'
+      - 'review-evidence/advisor-a12/**'
+  pull_request:
+    paths:
+      - 'scripts/a12-kitchen-dining-sprint.mjs'
+      - 'studio/analysis/kitchen-dining.mjs'
+      - 'studio/analysis/kitchen-dining.test.mjs'
+      - '.github/workflows/verify-advisor-a12.yml'
+      - 'review-evidence/advisor-a12/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  family-geometry:
+    name: Source-verified six-seat and kitchen workflow metrics
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Regression-test current spatial/multi-person and new dining functions
+        run: |
+          node --test \
+            studio/analysis/foundation.test.mjs \
+            studio/analysis/phase2.test.mjs \
+            studio/analysis/experience.test.mjs \
+            studio/analysis/kitchen-dining.test.mjs
+      - name: Preserve canonical, baseline and historical K12
+        run: node scripts/audit-advisor-01.mjs
+      - name: Independent cook / dishwasher / dining review
+        run: node scripts/a12-kitchen-dining-sprint.mjs
+      - name: Test both real-source scenes and two unapproved structural blockers remain visible
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const x=JSON.parse(fs.readFileSync('review-evidence/advisor-a12-functional.json','utf8'));const [a,b]=x.functional_measures;assert.equal(x.original_canonical_failures.length,2);assert.deepEqual(x.changed_objects_for_150mm,['E2-island','E2-island-sink']);assert.equal(a.dishwasher_open_remain_mm,570);assert.equal(b.dishwasher_open_remain_mm,720);assert.equal(a.end_prep_to_closest_chair_gap_mm,510);assert.equal(b.end_prep_to_closest_chair_gap_mm,510);assert.equal(x.render_snapshots.length,2);assert.ok(x.pareto.candidates.every(y=>y.unknown_gates.length===4));console.log('PASS: source-matched two variants, family dining use and explicit non-approvals')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a12-kitchen-dining-geometry-and-scenes
+          path: |
+            design-development/advisor/a12/
+            review-evidence/advisor-a12-functional.json
+          retention-days: 30
+          if-no-files-found: error
+
+  matched-scene-visual:
+    name: True WebGL kitchen/dining views with exact camera match
+    needs: family-geometry
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - run: node scripts/a12-kitchen-dining-sprint.mjs > /tmp/a12-metrics.json
+      - name: K12 exact three-eye human camera render
+        env:
+          RENDER_OUT_DIR: renders/k12
+        run: node scripts/render-snapshot.mjs design-development/advisor/a12/a12-wet-island-0.json
+      - name: Conditional plus 150mm true-model three-eye render
+        env:
+          RENDER_OUT_DIR: renders/north-150
+        run: node scripts/render-snapshot.mjs design-development/advisor/a12/a12-wet-island-150.json
+      - name: Save original PNGs, camera/frame manifests and candidate report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a12-kitchen-dining-real-visuals
+          path: |
+            renders/
+            review-evidence/advisor-a12-functional.json
+          retention-days: 30
+          if-no-files-found: error

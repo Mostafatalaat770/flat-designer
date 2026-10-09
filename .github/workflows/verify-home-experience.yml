@@ -1,0 +1,65 @@
+name: Foundation phase 3 - family home experience options
+
+on:
+  push:
+    branches:
+      - 'foundation/phase3-home-experience-lab-20261008'
+    paths:
+      - 'studio/analysis/experience.mjs'
+      - 'studio/analysis/experience.test.mjs'
+      - 'scripts/evaluate-home-experience.mjs'
+      - 'design-development/advisor/cases/typeb-home-experience.json'
+      - '.github/workflows/verify-home-experience.yml'
+  pull_request:
+    paths:
+      - 'studio/analysis/experience.mjs'
+      - 'studio/analysis/experience.test.mjs'
+      - 'scripts/evaluate-home-experience.mjs'
+      - 'design-development/advisor/cases/typeb-home-experience.json'
+      - '.github/workflows/verify-home-experience.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  physics-and-intent:
+    name: Smoke, heat, clearances and lighting design tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: All preexisting foundation regressions
+        run: node --test studio/analysis/foundation.test.mjs studio/analysis/phase2.test.mjs
+      - name: Air cleaner volume, worktop and lighting unit tests
+        run: node --test studio/analysis/experience.test.mjs
+
+  real-apartment:
+    needs: physics-and-intent
+    name: Type B room size / K12 fixture sourced concept audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Preserve baseline canonical/K12 safety controls
+        run: node scripts/audit-advisor-01.mjs
+      - name: Execute experience brief without altering the apartment scene
+        run: node scripts/evaluate-home-experience.mjs design-development/advisor/cases/typeb-home-experience.json
+      - name: Verify air CADR estimates, concept limitations and preserved canonical errors
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const r=JSON.parse(fs.readFileSync('review-evidence/experience/idea-lab-evaluation.json','utf8'));assert.equal(r.source.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');assert.equal(r.clean_air.length,2);assert.ok(Math.abs(r.clean_air[0].reference.theoretical_cadr_m3h-176.2)<.1);assert.ok(Math.abs(r.clean_air[1].reference.theoretical_cadr_m3h-569.5)<.2);assert.equal(r.lighting.zones.length,9);assert.equal(r.blockers.canonical_hard_failures.length,2);assert.equal(r.no_auto_purchase_or_geometry_mutation,true);assert.ok(r.placement.every(x=>x.required_verification.length>0));console.log('PASS: 2 air scenarios, 3 placements, 9 lighting zones, no hidden hard approvals')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: typeb-home-experience-creative-audit
+          path: review-evidence/experience/
+          if-no-files-found: error
+          retention-days: 30

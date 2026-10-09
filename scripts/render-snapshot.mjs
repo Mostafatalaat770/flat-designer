@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 
 const snapshotPath=process.argv[2]||'render-snapshots/current.json';
@@ -61,7 +62,7 @@ async function collectLocalAssets(layout){
 const assetUrls=await collectLocalAssets(snapshot.layout);
 console.log(`embedded ${Object.keys(assetUrls).length} local render assets`);
 
-const browser=await chromium.launch({headless:true,args:['--use-gl=swiftshader','--enable-webgl','--ignore-gpu-blocklist']});
+const browser=await chromium.launch({headless:true,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--enable-webgl','--ignore-gpu-blocklist','--disable-dev-shm-usage']});
 try{
   const renderView=async(view)=>{
     const page=await browser.newPage({viewport:view.camera.viewport});
@@ -78,7 +79,8 @@ try{
         storage_revision:snapshot.storage_revision,
         layout:snapshot.layout,
         camera:view.camera,
-        asset_urls:assetUrls
+        asset_urls:assetUrls,
+        architecture_variant:snapshot.architecture_variant||null
       };
       const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
       await page.setContent(html,{waitUntil:'load'});
@@ -90,6 +92,14 @@ try{
       const canvas=page.locator('#apartment-capture-canvas');
       await canvas.screenshot({path:path.join(outDir,`${view.id}.png`)});
       const metadata=await page.evaluate(()=>window.__apartmentCaptureFrame);
+      assert.equal(metadata.scene_revision,snapshot.scene_revision);
+      assert.equal(metadata.canonical_sha256,snapshot.canonical_sha256);
+      assert.equal(metadata.rendered_layout_json,snapshotJson);
+      assert.equal(metadata.room_id,view.room_id);
+      assert.deepEqual(metadata.architecture_variant,input.architecture_variant);
+      for(const key of ['position','target','fov','aspect','near','far','viewport'])assert.deepEqual(metadata.camera[key],view.camera[key],`Capture camera ${key} changed for ${view.id}`);
+      assert.equal(metadata.assets.pending,0);
+      assert.deepEqual(metadata.assets.fallbacks,[]);
       await fs.writeFile(path.join(outDir,`${view.id}.json`),JSON.stringify(metadata,null,2));
       console.log(`rendered ${view.id}`);
     } finally {
@@ -120,7 +130,8 @@ try{
     name:snapshot.name,
     scene_revision:snapshot.scene_revision,
     canonical_sha256:snapshot.canonical_sha256,
-    views:snapshot.views.map(v=>v.id)
+    views:snapshot.views.map(v=>v.id),
+    architecture_variant:snapshot.architecture_variant||null
   },null,2));
 } finally {
   await browser.close();

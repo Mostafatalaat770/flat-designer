@@ -231,7 +231,7 @@ function interiorOperatingDistance(r,solids,model){
   const angle=r.rot*Math.PI/180,t=[Math.cos(angle),Math.sin(angle)],n=[-t[1],t[0]],front=[r.cx+n[0]*r.d/2,r.cy+n[1]*r.d/2],local=p=>[(p[0]-front[0])*t[0]+(p[1]-front[1])*t[1],(p[0]-front[0])*n[0]+(p[1]-front[1])*n[1]];
   const strip=poly=>interiorClip(interiorClip(interiorClip(poly.map(local),0,-r.w/2,true),0,r.w/2,false),1,0,true);
   let measured=Infinity;
-  // A flank touching the strip at a point/edge does not obstruct the appliance front.
+  // A shared side edge has no width in the operating strip. Keep actual front obstructions.
   const inspect=poly=>{const clipped=strip(poly);if(clipped.length&&Math.max(...clipped.map(p=>p[0]))-Math.min(...clipped.map(p=>p[0]))>.001)measured=Math.min(measured,Math.max(0,Math.min(...clipped.map(p=>p[1]))));};
   for(const g of solids)if(g.id!==r.id&&g.room_id===r.room_id&&g.bottom_mm<r.top_mm&&g.top_mm>r.bottom_mm&&g.type!=='curtain')inspect(studioFootprint(g));
   for(const w of model.wall_segments)if(r.bottom_mm<w.height_m*1000)inspect(studioFootprint({cx:(w.from[0]+w.to[0])/2,cy:(w.from[1]+w.to[1])/2,w:Math.hypot(w.to[0]-w.from[0],w.to[1]-w.from[1]),d:w.thickness_mm,rot:Math.atan2(w.to[1]-w.from[1],w.to[0]-w.from[0])*180/Math.PI}));

@@ -1,0 +1,37 @@
+name: Integration v55 · single working review source
+on:
+  push:
+    branches:
+      - "integration/type-b-current-v55-20261009"
+  pull_request:
+    branches:
+      - master
+permissions:
+  contents: read
+jobs:
+  source-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - name: Build canonical source
+        run: npm run build
+      - name: Source and viewer checks
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
+        run: npm run check
+      - name: Verify one pinned v55 candidate
+        run: node --test studio/local/current-baseline.test.mjs
+      - name: Build exact Explore bundle
+        run: npm run studio:build
+      - name: Test walk-in and isolated 3D workspace
+        run: npm run check:studio && node --test studio/local/workspace-seed.test.mjs studio/app/src/explore-state.test.mjs
+      - name: Check static protected preview bundle
+        run: node scripts/prepare-vercel-preview.mjs

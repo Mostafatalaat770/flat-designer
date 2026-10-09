@@ -1,0 +1,56 @@
+name: Advisor A14 - kitchen storage and dishwasher unloading
+
+on:
+  push:
+    branches:
+      - 'advisor/a14-dishwasher-storage-workflow-20261008'
+    paths:
+      - 'studio/analysis/dishwasher-storage.mjs'
+      - 'studio/analysis/dishwasher-storage.test.mjs'
+      - 'scripts/a14-kitchen-unloading.mjs'
+      - '.github/workflows/verify-advisor-a14.yml'
+  pull_request:
+    paths:
+      - 'studio/analysis/dishwasher-storage.mjs'
+      - 'studio/analysis/dishwasher-storage.test.mjs'
+      - 'scripts/a14-kitchen-unloading.mjs'
+      - '.github/workflows/verify-advisor-a14.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-storage-audit:
+    name: Real K12 drawer estimates and honest hypothetical inventory
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Verify preserved geometry, original analysis and source
+        run: node scripts/audit-advisor-01.mjs
+      - name: Verify complete previous storage and activity regressions
+        run: |
+          node --test \
+            studio/analysis/foundation.test.mjs \
+            studio/analysis/phase2.test.mjs \
+            studio/analysis/experience.test.mjs \
+            studio/analysis/kitchen-dining.test.mjs \
+            studio/analysis/dishwasher-storage.test.mjs
+      - name: Read original cabinet records and evaluate four unload/storage options
+        run: node scripts/a14-kitchen-unloading.mjs
+      - name: Assert no false construction release, no vanished cookware and plate fit rejection
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const q=JSON.parse(fs.readFileSync('review-evidence/advisor-a14/kitchen-unloading-audit.json','utf8'));assert.equal(q.original_kitchen_structure_failures.length,2);assert.equal(q.options.length,4);assert.equal(q.options[0].workflow.dry_plate_unloading_from_kitchen_side_requires_walk_around_island,true);assert.ok(q.options[1].displaced_functions.length>0);assert.equal(q.options[2].net_bay_mm.depth_mm,289);assert.equal(q.options[3].fit[0].status,'EXCEEDS_SINGLE_TYPE_UPPER_BOUND');assert.equal(q.hard_approvals.construction_ready,false);console.log('PASS: 4 cabinet scenarios, no false family inventory or structural signoff')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a14-family-kitchen-unloading
+          path: review-evidence/advisor-a14/
+          retention-days: 30
+          if-no-files-found: error

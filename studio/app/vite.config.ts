@@ -25,6 +25,7 @@ export default defineConfig({
       input: {
         workspace: path.join(import.meta.dirname, "index.html"),
         parity: path.join(import.meta.dirname, "parity.html"),
+        explore: path.join(import.meta.dirname, "explore.html"),
       },
     },
     outDir: path.join(root, "local-qa/site/workspace"),

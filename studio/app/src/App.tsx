@@ -429,6 +429,7 @@ export function App() {
         </div>
         <div className="header-actions">
           <span className="local">Local only</span>
+          <a className="button" href="/_qa/workspace/explore.html">Explore &amp; Verify ✨</a>
           <button
             onClick={() =>
               download(

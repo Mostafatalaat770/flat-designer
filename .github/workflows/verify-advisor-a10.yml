@@ -1,0 +1,82 @@
+name: Advisor A10 - secondary bedroom flexible use
+
+on:
+  push:
+    branches:
+      - 'advisor/a10-second-bedroom-flex-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a10-bedroom-flex.mjs'
+      - '.github/workflows/verify-advisor-a10.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a10-bedroom-flex.mjs'
+      - '.github/workflows/verify-advisor-a10.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  functional-room-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Verify Bedroom 2 options and unchanged architecture
+        run: node scripts/prepare-advisor-a10-bedroom-flex.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a10-room-options
+          path: design-development/advisor/a10/
+          if-no-files-found: error
+          retention-days: 30
+
+  matched-room-views:
+    needs: functional-room-comparison
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - run: node scripts/prepare-advisor-a10-bedroom-flex.mjs > /tmp/a10-options.json
+      - name: Original bed/wardrobe/desk
+        env:
+          RENDER_OUT_DIR: renders/current-1000
+        run: node scripts/render-snapshot.mjs design-development/advisor/a10/current-1000.json
+      - name: Full desk shifted 90mm
+        env:
+          RENDER_OUT_DIR: renders/shift-1000-west90
+        run: node scripts/render-snapshot.mjs design-development/advisor/a10/shift-1000-west90.json
+      - name: Compact desk 900mm
+        env:
+          RENDER_OUT_DIR: renders/shift-900-west120
+        run: node scripts/render-snapshot.mjs design-development/advisor/a10/shift-900-west120.json
+      - name: Flexible guest/child mode without desk yet
+        env:
+          RENDER_OUT_DIR: renders/flex-no-desk
+        run: node scripts/render-snapshot.mjs design-development/advisor/a10/flex-no-desk.json
+      - name: Keep actual images/scene manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a10-bedroom-matched-views
+          path: renders/
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,99 @@
+name: Advisor A17 - real family lounge composition not kitchen-focused camera
+
+on:
+  push:
+    branches:
+      - 'advisor/a17-family-living-view-qa-20261008'
+    paths:
+      - 'scripts/a17-build-living-focused-views.mjs'
+      - 'studio/analysis/camera-coverage.mjs'
+      - 'studio/analysis/camera-coverage.test.mjs'
+      - '.github/workflows/verify-advisor-a17.yml'
+  pull_request:
+    paths:
+      - 'scripts/a17-build-living-focused-views.mjs'
+      - 'studio/analysis/camera-coverage.mjs'
+      - 'studio/analysis/camera-coverage.test.mjs'
+      - '.github/workflows/verify-advisor-a17.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  living-subject-preflight:
+    name: Sofa/TV/coffee/armchair project correctly within camera frame
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Preserve canonical geometry and finish variants
+        run: |
+          node scripts/audit-advisor-01.mjs
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16-palettes.json
+      - name: Reject wrong-facing/cropped "living" cameras
+        run: node --test studio/analysis/camera-coverage.test.mjs
+      - name: Make two real target-coverage-tested family-seat views for all 3 palettes
+        run: node scripts/a17-build-living-focused-views.mjs
+      - name: Provenance and all physical elements frozen
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const q=JSON.parse(fs.readFileSync('review-evidence/advisor-a17/subject-visibility.json','utf8'));assert.equal(q.baseline_directions.length,3);assert.equal(q.original_k12_failures.length,2);assert.ok(q.baseline_directions.every(d=>d.source_camera_coverage.length===2&&d.source_camera_coverage.every(x=>x.proxy_visible_count===4)));console.log('PASS: both cameras show all 4 key living subjects for all three unchanged-layout finish directions')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisor-a17-living-camera-source-and-projection
+          path: |
+            design-development/advisor/a17/
+            review-evidence/advisor-a17/subject-visibility.json
+          retention-days: 30
+          if-no-files-found: error
+
+  true-living-webgl:
+    needs: living-subject-preflight
+    name: Six WebGL family lounge images with attested cameras and assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Regenerate frozen Type B palettes and inspect source-specific lounge camera coverage
+        run: |
+          node scripts/a16-prepare-finish-directions.mjs > /tmp/a16.json
+          node scripts/a17-build-living-focused-views.mjs > /tmp/a17.json
+      - name: One-browser source-true 3 x 2 lounge render and validate metadata
+        env:
+          RENDER_OUT_DIR: renders/a17
+          RENDER_CONCURRENCY: '2'
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a17/a16-current.json \
+            design-development/advisor/a17/a16-pale-stone.json \
+            design-development/advisor/a17/a16-olive-oak.json
+      - name: Reject missing/incorrect camera and corrupt/missing WebGL frames
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const b=JSON.parse(fs.readFileSync('renders/a17/batch-manifest.json','utf8'));assert.equal(b.status,'ALL_FRAMES_VERIFIED');assert.equal(b.browser_launches,1);assert.equal(b.variants.length,3);assert.equal(b.frames.length,6);assert.ok(b.frames.every(f=>f.validated));const c=JSON.parse(fs.readFileSync('review-evidence/advisor-a17/subject-visibility.json','utf8'));assert.ok(c.baseline_directions.every(v=>v.source_camera_coverage.every(x=>x.proxy_visible_count===4)));console.log('PASS: six real camera-matched images with verified lounge subject projections')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: advisor-a17-family-living-real-webgl-comparison
+          path: |
+            renders/a17/
+            review-evidence/advisor-a17/subject-visibility.json
+          retention-days: 30
+          if-no-files-found: error

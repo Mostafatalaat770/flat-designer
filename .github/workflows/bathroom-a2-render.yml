@@ -1,0 +1,71 @@
+name: Bathroom A2 · source-locked genuine WebGL preview
+on:
+  push:
+    branches:
+      - "design/walkin-shower-family-bath-v53-20261009"
+    paths:
+      - "studio-core.js"
+      - "studio-scene.js"
+      - "studio/renderer/builders.js"
+      - "studio/renderer/walk-in-shower.test.mjs"
+      - "render-snapshots/bathroom-a2-walkin-v55.json"
+      - "scripts/verify-bathroom-a2-visuals.mjs"
+      - ".github/workflows/bathroom-a2-render.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: bathroom-a2-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-and-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: npm ci
+      - name: Build source-locked apartment 3D
+        run: npm run build
+      - name: Build local source-locked Studio workbench
+        run: npm run studio:build
+      - name: Shared viewer integrity checks
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
+        run: npm run check
+      - name: Prepare the isolated React/Three.js workspace
+        run: npm run studio:build
+      - name: Validate renderer/domain regression suite
+        run: npm run check:studio
+      - name: Check cloud v53-derived source and canonical geometry
+        run: node scripts/verify-bathroom-a2-visuals.mjs
+      - name: Install headless Chromium
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render both real bathrooms from four fixed canonical cameras
+        env:
+          RENDER_OUT_DIR: renders/bathroom-a2
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs render-snapshots/bathroom-a2-walkin-v55.json
+      - name: Check real PNG frames and full metadata
+        run: node scripts/verify-bathroom-a2-visuals.mjs --check-images
+      - name: Upload source-pinned visual review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bathroom-a2-walkin-real-webgl-${{ github.sha }}
+          path: |
+            renders/bathroom-a2/
+            render-snapshots/bathroom-a2-walkin-v55.json
+          if-no-files-found: warn
+          retention-days: 30

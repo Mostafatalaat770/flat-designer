@@ -1,0 +1,63 @@
+{
+  "schema": "ApartmentSpatialCase/1",
+  "name": "WIC daily walking versus an assumed occupied central dressing zone",
+  "snapshot": "design-development/k12/snapshot.json",
+  "room_id": "WIC-01",
+  "provenance": "K12 2.75 x 1.40 dressing room (image-calibrated); body envelope is an EXPLORATORY planning proxy, NOT site measured",
+  "agent_radius_mm": 200,
+  "grid_mm": 50,
+  "pairs": [
+    {
+      "id": "opposing-wardrobe-clear-geometry",
+      "a": "starter-4",
+      "b": "starter-5"
+    }
+  ],
+  "routes": [
+    {
+      "id": "empty-walkway",
+      "start": [
+        4734,
+        7190
+      ],
+      "goal": [
+        4734,
+        7960
+      ],
+      "obstacle_ids": [
+        "starter-4",
+        "starter-5"
+      ],
+      "extra_obstacles": []
+    },
+    {
+      "id": "occupied-wide-center",
+      "start": [
+        4734,
+        7190
+      ],
+      "goal": [
+        4734,
+        7960
+      ],
+      "obstacle_ids": [
+        "starter-4",
+        "starter-5"
+      ],
+      "extra_obstacles": [
+        {
+          "id": "hypothetical-person-reaching-wardrobe",
+          "furniture": {
+            "cx": 4734,
+            "cy": 7570,
+            "w": 700,
+            "d": 250,
+            "rot": 0,
+            "note": "Hypothetical 700mm wide occupancy footprint at mid dressing, NOT a specific measured person/body or code requirement"
+          }
+        }
+      ]
+    }
+  ],
+  "output": "review-evidence/foundation/wic-activity-result.json"
+}

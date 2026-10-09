@@ -1,0 +1,52 @@
+{
+  "schema": "ApartmentDesignScorecard/1",
+  "candidate": "J1 Integrated Candidate",
+  "principle": "Owner/family-first. Hard technical gates override weighted aesthetics.",
+  "construction_status": "BLOCKED_BY_HARD_GATES",
+  "weighted_score_100": 74,
+  "scores_1_to_5": {
+    "daily_family_flow": 5,
+    "kitchen_workflow_and_appliances": 4,
+    "circulation_and_access": 4,
+    "privacy_odor_noise_control": 3,
+    "useful_storage_and_joinery": 4,
+    "mep_and_ventilation_feasibility": 3,
+    "structural_and_approval_risk": 2,
+    "construction_cost_and_reversibility": 3
+  },
+  "weights": {
+    "daily_family_flow": 20,
+    "kitchen_workflow_and_appliances": 15,
+    "circulation_and_access": 15,
+    "privacy_odor_noise_control": 15,
+    "useful_storage_and_joinery": 10,
+    "mep_and_ventilation_feasibility": 10,
+    "structural_and_approval_risk": 10,
+    "construction_cost_and_reversibility": 5
+  },
+  "keep": [
+    "E2 full-open kitchen layout",
+    "H2 dining shift 150 mm north",
+    "F1 guest-WC outward swing study",
+    "F1/I2 master pocket-door + walk-in shower direction",
+    "I2 family bathtub direction",
+    "G2 localized HVAC pockets",
+    "H1 service-terrace laundry reservation",
+    "existing developed bedroom/private-hall layouts"
+  ],
+  "conditional": [
+    "all wall/opening changes",
+    "family-bath pocket/sliding system",
+    "service-terrace washer",
+    "concealed HVAC equipment and ducting",
+    "island plumbing and dishwasher",
+    "gas hob/extraction strategy"
+  ],
+  "rejected": [
+    "G1 long beam-like service soffit",
+    "semi-open kitchen if the separator can be fully removed",
+    "laundry exposed on the reception-facing island",
+    "additional bedroom wall demolition without measurable multi-factor gain",
+    "blanket reduction of the full reception ceiling"
+  ]
+}
