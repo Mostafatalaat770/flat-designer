@@ -1,0 +1,51 @@
+name: Kitchen-only open · isolated same-dining-source WebGL review
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "scripts/build-kitchen-only-open.mjs"
+      - "studio/analysis/kitchen-only-open*"
+      - ".github/workflows/owner-kitchen-only-open.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Verify kitchen-only overlay, zero bath or dining changes
+        run: node --test studio/analysis/kitchen-only-open.test.mjs
+      - name: Produce isolated kitchen-only open candidate and strict audit
+        run: node scripts/build-kitchen-only-open.mjs
+      - name: Install Chromium renderer used in existing verified renders
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render three REAL matched current v55 camera views with the kitchen-only overlay
+        env:
+          RENDER_OUT_DIR: renders/kitchen-only-open
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/kitchen-only-open/candidate.json
+      - name: Confirm no partial fake screenshots and manifest exact architecture
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; const s=JSON.parse(fs.readFileSync('review-evidence/kitchen-only-open/candidate.json','utf8')); const m=JSON.parse(fs.readFileSync('renders/kitchen-only-open/manifest.json','utf8')); assert.equal(m.scene_revision,s.scene_revision); assert.deepEqual(m.architecture_variant,s.architecture_variant); assert.equal(m.views.length,3); for (const id of m.views){const p='renders/kitchen-only-open/'+id; assert.ok(fs.statSync(p+'.png').size>10000);const f=JSON.parse(fs.readFileSync(p+'.json','utf8'));assert.equal(f.scene_revision,s.scene_revision);assert.equal(f.assets.pending,0);assert.deepEqual(f.assets.fallbacks,[]);} console.log('Real WebGL frames and metadata verified');"
+      - name: Upload the exact renders, candidate JSON and unapproved issues
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v55-kitchen-only-open-review
+          path: |
+            renders/kitchen-only-open/
+            review-evidence/kitchen-only-open/
+          retention-days: 30
+          if-no-files-found: warn
