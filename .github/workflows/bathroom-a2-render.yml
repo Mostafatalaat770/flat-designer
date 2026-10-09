@@ -8,7 +8,7 @@ on:
       - "studio-scene.js"
       - "studio/renderer/builders.js"
       - "studio/renderer/walk-in-shower.test.mjs"
-      - "render-snapshots/bathroom-a2-walkin-v53.json"
+      - "render-snapshots/bathroom-a2-walkin-v55.json"
       - "scripts/verify-bathroom-a2-visuals.mjs"
       - ".github/workflows/bathroom-a2-render.yml"
   workflow_dispatch:
@@ -56,7 +56,7 @@ jobs:
         env:
           RENDER_OUT_DIR: renders/bathroom-a2
           RENDER_CONCURRENCY: "1"
-        run: node scripts/render-snapshot.mjs render-snapshots/bathroom-a2-walkin-v53.json
+        run: node scripts/render-snapshot.mjs render-snapshots/bathroom-a2-walkin-v55.json
       - name: Check real PNG frames and full metadata
         run: node scripts/verify-bathroom-a2-visuals.mjs --check-images
       - name: Upload source-pinned visual review evidence
@@ -66,6 +66,6 @@ jobs:
           name: bathroom-a2-walkin-real-webgl-${{ github.sha }}
           path: |
             renders/bathroom-a2/
-            render-snapshots/bathroom-a2-walkin-v53.json
+            render-snapshots/bathroom-a2-walkin-v55.json
           if-no-files-found: warn
           retention-days: 30
