@@ -18,6 +18,14 @@
 - Reception includes one **2000×950 mm** dining table with **six** chair objects. An actual occupied-six-person mockup and safe pulled-out-chair circulation are still required.
 - The study registry records **no** physical/structural/MEP/procurement approval. A green WebGL capture is *not* an installed-space inspection.
 
+## Current kitchen interior-direction milestone — P1/F1 (concept only)
+
+After direct image review of exact same-camera real P0/P1 WebGL, the **preferred design direction to develop** is **P1 semi-open kitchen portal**, with **F1 warm off-white narrow plaster return and simple, flush floor threshold**. This **does not approve demolition**. Original plan opening nominal **720.2mm**, conditional P1 nominal **1207.4mm** by render-only omission of kitchen-facing wall #44; finish and structural details may reduce this. The proposed floor/trim/lighting and any glazed screen are not installed or ordered.
+
+**Important:** `render-snapshots/current.json` and the saved cloud v55 **remain the unchanged enclosed baseline**, and the canonical architecture is unchanged. PR #49 is a comparative design package, not a production room mutation. Physical developer/qualified engineer confirmation for wall 44 and services, measured lintel/head, safe gas ventilation, true appliance-door and six-chair operation are mandatory. Full-width hidden pocket is not selected: the adjacent nominal return is only 783.8mm for a 1207.4mm opening.
+
+Source: [P1 conditional option](./SEMI_OPEN_PORTAL_REVIEW.md), [P1/F1 engineering & finishing gates](./P1_PORTAL_FINISH_AND_FUNCTION_20261010.md). Alternative historical full-open wet island K12/B1/B2 stays unapproved; do not import those kitchen+potential-bath demolition overlays.
+
 ## Workflow after PR #45 merge
 
 1. **Branch from current `master`** (not the historical integration branch). Base every review on `render-snapshots/current.json` and assert its provenance, canonical hash, active revision and registered construction hold points.
@@ -27,4 +35,4 @@
 5. Keep Vercel authenticated. Browser local `localStorage` saves do not sync to the original cloud Studio; verify source IDs. Cloud design mutations and structural alterations should not be conflated with GitHub merges.
 6. No fabrication, slab change, wet first-fix, MEP works, procurement or construction claim without measured survey and relevant Egyptian qualified professional and developer approvals.
 
-**Next design milestone:** source-safe **closed versus structurally feasible open/semi-open kitchen**, including 6-seat dining + appliance-storage/workflow. Then bathing circulation and reception/bedroom comfort; only then finalize the house-wide palette and coordinated installation package.
+**Next design milestone:** validate **P1/F1** through qualified structure/developer inspection, live appliance door and six-person dining operation, extractor/plumbing/storage and coherent floor transition; fallback P0 if partition opening is not permitted. Then return to bathroom circulation and other rooms.
