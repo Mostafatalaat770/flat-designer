@@ -1,0 +1,76 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import { createApartmentDomain } from "../domain/apartment.mjs";
+
+const read = path => JSON.parse(fs.readFileSync(path, "utf8"));
+const registry = read("design-development/decision-registry.json");
+const current = read(registry.working_source.path);
+const archived = read(registry.historical_unapproved.path);
+const domain = createApartmentDomain(process.cwd());
+
+test("owner review is pinned to the saved v55 cloud source and untouched canonical geometry", () => {
+  assert.equal(registry.schema, "ApartmentOwnerDecisionRegistry/1");
+  assert.equal(current.canonical_sha256, domain.model.canonical_sha256);
+  assert.equal(registry.canonical_sha256, current.canonical_sha256);
+  assert.equal(current.scene_revision, registry.working_source.scene_revision);
+  assert.equal(current.source_scene_revision, registry.working_source.cloud_source_scene_revision);
+  assert.equal(current.storage_revision, registry.working_source.cloud_storage_revision);
+  assert.equal(current.scene_revision, domain.revision(current.layout));
+  assert.deepEqual(current.layout.demolished, [], "No silently removed verified partition");
+  assert.equal(current.architecture_variant, undefined, "No K12 architectural overlay in current source");
+  assert.deepEqual(domain.validate(current.layout).checks.filter(c => c.status === "FAIL"), []);
+});
+
+test("historical K12 is clearly archived; it cannot silently become the active review source", () => {
+  assert.equal(archived.scene_revision, registry.historical_unapproved.scene_revision);
+  assert.notEqual(archived.scene_revision, current.scene_revision);
+  assert.ok(archived.architecture_variant, "Keep K12 overlay for traceable historical evidence");
+});
+
+test("six real dining chair objects stay linked to a 2000x950 nominal table", () => {
+  const furniture = current.layout.furniture;
+  const table = furniture.filter(f => f.room_id === "RECP-01" && f.type === "table");
+  const chairs = furniture.filter(f => f.room_id === "RECP-01" && f.type === "chair" && /dining/i.test(f.name));
+  assert.equal(table.length, 1);
+  assert.deepEqual([table[0].w, table[0].d], [2000, 950]);
+  assert.equal(chairs.length, 6, "Never hide a missing sixth chair behind camera angles");
+  for (const chair of chairs) assert.deepEqual([chair.w, chair.d], [510, 530]);
+  assert.equal(registry.decisions.dining.approved_for_construction, false);
+});
+
+test("enclosed current kitchen retains its actual dishwasher, sink and washer rather than an unapproved island", () => {
+  const f = current.layout.furniture.filter(f => f.room_id === "KIT-01");
+  const dw = f.filter(x => x.type === "dishwasher");
+  const sink = f.filter(x => x.type === "ksink");
+  const washer = f.filter(x => x.type === "washer");
+  assert.equal(dw.length, 1);
+  assert.equal(sink.length, 1);
+  assert.equal(washer.length, 1);
+  assert.equal(Math.abs(dw[0].cx - sink[0].cx), 600, "Nominal centres only, NOT actual door clearance");
+  assert.equal(registry.decisions.kitchen.approved_for_construction, false);
+});
+
+test("open shower render is separate from fixed glass and shelves; cloud remains a different revision", () => {
+  const fixtures = current.layout.furniture.filter(f => f.room_id === "BATH-M01" && f.type === "shower");
+  const objects = current.layout.interior.objects;
+  assert.equal(fixtures.length, 1);
+  assert.deepEqual([fixtures[0].w, fixtures[0].d], [1450, 800]);
+  assert.equal(fixtures[0].variant, "walk-in");
+  assert.equal(objects.filter(x => x.id === "BATHM-glass-600-A1" && x.type === "divider").length, 1);
+  assert.equal(objects.filter(x => /^BATHM-shampoo-shelf-A[12]$/.test(x.id) && x.type === "shelf").length, 2);
+  assert.notEqual(current.scene_revision, current.source_scene_revision, "Candidate rendering is NOT saved cloud state");
+  assert.equal(registry.decisions.master_shower.approved_for_construction, false);
+});
+
+test("no incomplete owner decision or external construction hold is described as approved", () => {
+  for (const [key, approved] of Object.entries(registry.approval_flags)) {
+    assert.equal(approved, false, key + " must have verified external evidence before a status change");
+  }
+  for (const [key, decision] of Object.entries(registry.decisions)) {
+    assert.equal(decision.approved_for_construction, false, key);
+    assert.ok(decision.active.length > 10, key);
+    assert.ok(Array.isArray(decision.hold_points) && decision.hold_points.length >= 2, key);
+    assert.notEqual(decision.status, "APPROVED", key);
+  }
+});

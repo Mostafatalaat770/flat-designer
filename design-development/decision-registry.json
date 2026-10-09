@@ -1,0 +1,93 @@
+{
+  "schema": "ApartmentOwnerDecisionRegistry/1",
+  "date": "2026-10-10",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "working_source": {
+    "path": "render-snapshots/current.json",
+    "scene_revision": "scene-9cf45a73",
+    "cloud_source_scene_revision": "scene-4821689",
+    "cloud_storage_revision": 55,
+    "architecture": "Type B v0.2.2, unchanged"
+  },
+  "historical_unapproved": {
+    "path": "render-snapshots/study-k12-unapproved-20261008.json",
+    "scene_revision": "scene-e2fcb932",
+    "role": "comparative study only; must not become review default"
+  },
+  "approval_flags": {
+    "as_built_verified": false,
+    "developer_or_structural_change_approved": false,
+    "kitchen_plumbing_hvac_approved": false,
+    "bathroom_waterproofing_drain_approved": false,
+    "physical_clearances_verified": false,
+    "owner_final_aesthetic_signoff": false
+  },
+  "decisions": {
+    "kitchen": {
+      "active": "enclosed v55 source-safe working reference",
+      "status": "DESIGN_ALTERNATIVES_OPEN",
+      "alternatives": [
+        "enclosed improved with existing partitions",
+        "semi/open kitchen only after genuine wall/opening and MEP feasibility"
+      ],
+      "hold_points": [
+        "developer and structural survey for proposed wall/opening changes",
+        "repair two inherited K12 model geometry failures before option comparison",
+        "exact dishwasher/fridge/oven opening envelopes and storage inventory",
+        "gas hood extract and makeup-air route; sink/DW/drain/slab feasibility",
+        "laundry service terrace weather and permitted installation"
+      ],
+      "approved_for_construction": false
+    },
+    "dining": {
+      "active": "2000x950 mm table; 6 nominal 510x530 mm chair envelopes",
+      "status": "MODEL_PRESENT_HUMAN_USE_UNVERIFIED",
+      "hold_points": [
+        "verify all six adults seated with chairs pulled out and door fully opened",
+        "check path for serving between kitchen and dining, terrace and entry"
+      ],
+      "approved_for_construction": false
+    },
+    "master_shower": {
+      "active": "1450x800 mm visually open walk-in with separate fixed glass panel",
+      "status": "RENDER_CONCEPT_ONLY",
+      "hold_points": [
+        "site-level actual finished door swing and entry clear width; evaluate if 900 mm depth feasible",
+        "screed/slab drain slope waterproofing and serviceable trap",
+        "certified wet-slip surfaces and screen glass; actual water splash mockup",
+        "confirm cloud production renderer accepts walk-in variant before sync"
+      ],
+      "approved_for_construction": false
+    },
+    "family_bath": {
+      "active": "900x900 mm shower plus shallow high-mounted dry-side cabinet",
+      "status": "HOLD_ON_OCCUPIED_CLEARANCE",
+      "hold_points": [
+        "verify 657 mm nominal door vs actual clear opening and occupant flow",
+        "check WC/vanity clearances, shower entry and realistic door swings",
+        "verify dry cabinet reach, rounded hardware and moisture-safe anchoring"
+      ],
+      "approved_for_construction": false
+    },
+    "reception": {
+      "active": "v55 furnished geometry, six seat dining, TV and sofa",
+      "status": "LAYOUT_VISUAL_REVIEW_PENDING",
+      "hold_points": [
+        "fresh current-v55 obstruction-free eye-height and dimension-overlay images",
+        "TV visibility and terrace glare from actual sofa positions",
+        "real 3000K fixture layers and supplier material samples before purchase"
+      ],
+      "approved_for_construction": false
+    },
+    "bedrooms_and_dressing": {
+      "active": "saved v55 family-first layouts",
+      "status": "JOINERY_AND_USE_CHECK_PENDING",
+      "hold_points": [
+        "site measure actual finished wall and door openings",
+        "verify bedside clearance and two-person dressing with wardrobe doors deployed",
+        "confirm lighting, airflow, power outlets and exact joinery hardware"
+      ],
+      "approved_for_construction": false
+    }
+  }
+}
