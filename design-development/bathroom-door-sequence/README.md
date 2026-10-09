@@ -1,4 +1,4 @@
-# Bathroom door sequence — v55 baseline
+# Bathroom door sequence — v55 baseline and guest alternatives
 
 The master bathroom has a modeled **closed outside → open and enter → close → shower approach → reopen, exit and close outside** sequence for a 500 mm circular body, at both 50 and 25 mm grids. With the door closed, the tested basin and toilet approach points are connected too. The fully open leaf blocks the selected shower route. This resolves the gap in the earlier review, whose closed-door cases started inside.
 
@@ -23,7 +23,7 @@ node design-development/bathroom-door-sequence/build-review.mjs
 
 `verify.mjs` reproduces every saved result, rejects changed source/architecture, verifies opening/closing continuity, independently samples successful trajectories and reversed exit, and checks fixed-open and fixture-sweep conclusions. No new production runtime or dependencies are required. `review.html` is a standalone Arabic interactive plan: move the slider to inspect the body, leaf and handle across each tested stage. Its guest baseline animation stops after opening/entry because the closing continuation is not established.
 
-Committed desktop/mobile PNGs, browser observations and five SHA-256 hashes are in `evidence/`. Both widths have no overflow or script errors; position/slider agreement and playback were checked. To regenerate this evidence, install development-only Playwright and Chromium, adjust the installed browser path in `check-browser.cjs` if required, and run `node design-development/bathroom-door-sequence/check-browser.cjs` from the repository root. This deliberately rewrites the evidence files; inspect and checkpoint any intended updates. Chromium uses `setContent` to render the self-contained report without a server or external scripts.
+Committed desktop/mobile PNGs, browser observations and five SHA-256 hashes are in `evidence/`. Both widths have no overflow or script errors; position/slider agreement and playback were checked. To regenerate this evidence, install development-only Playwright and Chromium, set `CHROMIUM_PATH` when using another installed browser, and run `node design-development/bathroom-door-sequence/check-browser.cjs` from the repository root. This deliberately rewrites the evidence files; inspect and checkpoint any intended updates. Chromium uses `setContent` to render the self-contained report without a server or external scripts.
 
 ## Geometry and operation assumptions
 
@@ -37,4 +37,29 @@ Committed desktop/mobile PNGs, browser observations and five SHA-256 hashes are 
 
 Source: `scene-9cf45a73`, derived from saved cloud `scene-4821689`, storage 55. Locked canonical SHA-256: `734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658`. No architecture, active layout, saved cloud design or deployment is changed.
 
-Next: compare the guest south-hinge inward leaf and north-hinge outward leaf at the **same current opening**, then test neighbouring reception interference. Historical widened/pocket-door studies are not approved architecture and are not inherited here.
+## Guest alternatives — preferred conditional study
+
+`comparisons.json` retains all three door overlays and twelve complete-cycle searches. The existing **656.668 mm opening** is retained in every overlay. The north hinge with an **outward** opening is the preferred candidate for a site/hardware review: it has a 500 mm full opening/entry/closure/use/exit sequence at both grids. The south-hinge inward overlay and current inward baseline do not achieve that sequence under these assumptions. Outward 550 mm succeeds at 25 mm only; the coarser result is not a physical impossibility claim.
+
+| Guest overlay | 500 mm / 50 | 500 mm / 25 | 550 mm / 50 | 550 mm / 25 |
+| --- | --- | --- | --- | --- |
+| Current north-hinge inward | Not found | Not found | Not found | Not found |
+| South-hinge inward | Not found | Not found | Not found | Not found |
+| North-hinge outward | Found | Found | Not found | Found |
+
+The comparison expands the floor domain into reception, retaining its full width and cropping 800 mm north of the guest bathroom top. Its L-shaped boundary contains only canonical bathroom/reception floor. The expansion aligns the grid origin with the baseline, so grid-phase changes do not determine the variant comparison. This wider domain matters: a narrow reception crop artificially prevents following or walking around an outward leaf.
+
+All three variants have nominal 90° sweeps and no sampled fixed-furniture collision. Successful outward paths independently clear the obstacles in both directions and connect the basin to the tested toilet approach. A circular body position farther from the swing is connected across the selected reception endpoints with the leaf closed, at 45°, and fully open, on both grids. The preserved **near-sweep endpoint is blocked at 45°**, although it works closed/fully open. The preserved chair-adjacent trial is blocked in all three angles even with the leaf closed. These selected fixed-angle route checks do not certify a second occupant moving near the door during operation.
+
+Open `comparison-review.html` for three interactive plans. Its evidence uses the `evidence/comparisons-*` prefix; the original baseline evidence remains intact. Reproduce with:
+
+```sh
+node design-development/bathroom-door-sequence/verify-comparisons.mjs
+node design-development/bathroom-door-sequence/comparisons.mjs --write
+node design-development/bathroom-door-sequence/build-comparisons.mjs
+node design-development/bathroom-door-sequence/check-browser.cjs --comparisons
+```
+
+Keep the current master door in this review. Treat the guest outward leaf as a **conditional analysis overlay**, not an architectural or construction decision. Confirm actual hinges, frame rebate, operating reach, neighbouring occupants and emergency access before selecting real hardware. Historical widened/pocket-door studies are not approved architecture and are not inherited here. The active design remains unchanged.
+
+Next apartment work: model appliance opening/loading in the kitchen and chair withdrawal/occupation at the dining table, then check actual products, family shower enclosure, joinery and window operating dimensions before a combined furnishing review.

@@ -21,8 +21,10 @@ function withinWindow(polygon,boundary){
  const a=bounds(polygon),b=bounds(boundary),pad=500;
  return a[0]<b[2]+pad&&a[2]>b[0]-pad&&a[1]<b[3]+pad&&a[3]>b[1]-pad;
 }
-export function inputs(){
- return cases.map(c=>{
+export function inputs({guestBoundary=null}={}){
+ return cases.map(original=>{
+  const c=original.id==='guest'&&guestBoundary?{...original,boundary:guestBoundary,
+   boundary_description:'Guest bathroom plus exact adjoining reception floor cropped 800 mm north of the bathroom top; full canonical reception width retained. North edge is an analysis crop; grid origin phase matches the baseline.'}:original;
   const ids=[c.bath,c.other],d=model.doors.find(d=>d.id===c.opening),bath=room(c.bath).poly;
   const fixtures=resolved(source.layout).filter(f=>ids.includes(f.room_id)&&f.type!=='rug'&&f.id!=='BATHM-WALKIN-A1'&&f.bottom_mm<1800&&f.top_mm>100)
    .map(f=>({id:f.id,polygon:rectangle(f),kind:'fixture',room_id:f.room_id}));

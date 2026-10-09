@@ -1,0 +1,323 @@
+{
+  "schema": "ApartmentBathroomReviewBrowserCheck/1",
+  "source_scene": "scene-9cf45a73",
+  "storage_revision": 55,
+  "review_sha256": "8f0eccb3d713d9dc75ccd80ef68bb6af33db31dc9ab3f1920aabd89a29c397db",
+  "errors": [],
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "rows": [
+        {
+          "id": "baseline",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 67"
+        },
+        {
+          "id": "baseline",
+          "index": 33,
+          "rendered": [
+            12652.205,
+            9672.846
+          ],
+          "expected": [
+            12652.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 34 / 67"
+        },
+        {
+          "id": "baseline",
+          "index": 66,
+          "rendered": [
+            12002.205,
+            9672.846
+          ],
+          "expected": [
+            12002.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 67 / 67"
+        },
+        {
+          "id": "south-hinge-inward",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 67"
+        },
+        {
+          "id": "south-hinge-inward",
+          "index": 33,
+          "rendered": [
+            12652.205,
+            9672.846
+          ],
+          "expected": [
+            12652.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 34 / 67"
+        },
+        {
+          "id": "south-hinge-inward",
+          "index": 66,
+          "rendered": [
+            12002.205,
+            9672.846
+          ],
+          "expected": [
+            12002.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 67 / 67"
+        },
+        {
+          "id": "north-hinge-outward",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 351"
+        },
+        {
+          "id": "north-hinge-outward",
+          "index": 175,
+          "rendered": [
+            11977.205,
+            9572.846
+          ],
+          "expected": [
+            11977.205,
+            9572.846
+          ],
+          "phase": "غلق الباب ثم الوصول للاستخدام · خطوة 176 / 351"
+        },
+        {
+          "id": "north-hinge-outward",
+          "index": 350,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "إعادة الفتح والخروج والغلق من الخارج · خطوة 351 / 351"
+        }
+      ],
+      "direction": "rtl",
+      "overflow": false,
+      "external_scripts": 0,
+      "capture_states": [
+        {
+          "variant": "baseline",
+          "index": 66,
+          "position_mm": [
+            12002.205,
+            9672.846
+          ],
+          "door_angle_deg": 180
+        },
+        {
+          "variant": "south-hinge-inward",
+          "index": 66,
+          "position_mm": [
+            12002.205,
+            9672.846
+          ],
+          "door_angle_deg": -180
+        },
+        {
+          "variant": "north-hinge-outward",
+          "index": 94,
+          "position_mm": [
+            12002.205,
+            9672.846
+          ],
+          "door_angle_deg": 0
+        }
+      ],
+      "playback": "advances and pauses"
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "rows": [
+        {
+          "id": "baseline",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 67"
+        },
+        {
+          "id": "baseline",
+          "index": 33,
+          "rendered": [
+            12652.205,
+            9672.846
+          ],
+          "expected": [
+            12652.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 34 / 67"
+        },
+        {
+          "id": "baseline",
+          "index": 66,
+          "rendered": [
+            12002.205,
+            9672.846
+          ],
+          "expected": [
+            12002.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 67 / 67"
+        },
+        {
+          "id": "south-hinge-inward",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 67"
+        },
+        {
+          "id": "south-hinge-inward",
+          "index": 33,
+          "rendered": [
+            12652.205,
+            9672.846
+          ],
+          "expected": [
+            12652.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 34 / 67"
+        },
+        {
+          "id": "south-hinge-inward",
+          "index": 66,
+          "rendered": [
+            12002.205,
+            9672.846
+          ],
+          "expected": [
+            12002.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 67 / 67"
+        },
+        {
+          "id": "north-hinge-outward",
+          "index": 0,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "فتح الباب والدخول · خطوة 1 / 351"
+        },
+        {
+          "id": "north-hinge-outward",
+          "index": 175,
+          "rendered": [
+            11977.205,
+            9572.846
+          ],
+          "expected": [
+            11977.205,
+            9572.846
+          ],
+          "phase": "غلق الباب ثم الوصول للاستخدام · خطوة 176 / 351"
+        },
+        {
+          "id": "north-hinge-outward",
+          "index": 350,
+          "rendered": [
+            13202.205,
+            9672.846
+          ],
+          "expected": [
+            13202.205,
+            9672.846
+          ],
+          "phase": "إعادة الفتح والخروج والغلق من الخارج · خطوة 351 / 351"
+        }
+      ],
+      "direction": "rtl",
+      "overflow": false,
+      "external_scripts": 0,
+      "capture_states": [
+        {
+          "variant": "baseline",
+          "index": 66,
+          "position_mm": [
+            12002.205,
+            9672.846
+          ],
+          "door_angle_deg": 180
+        },
+        {
+          "variant": "south-hinge-inward",
+          "index": 66,
+          "position_mm": [
+            12002.205,
+            9672.846
+          ],
+          "door_angle_deg": -180
+        },
+        {
+          "variant": "north-hinge-outward",
+          "index": 94,
+          "position_mm": [
+            12002.205,
+            9672.846
+          ],
+          "door_angle_deg": 0
+        }
+      ],
+      "playback": "advances and pauses"
+    }
+  ]
+}

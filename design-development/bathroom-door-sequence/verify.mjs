@@ -5,6 +5,7 @@ import {source,domain,model} from '../circulation-v55/route-library.mjs';
 import {runStudy,insideFor} from './study.mjs';
 import {auditSequence} from './planner.mjs';
 import {pointInPolygon} from '../../studio/analysis/geometry.mjs';
+import {html as regeneratedReview} from './build-review.mjs';
 
 assert.equal(source.scene_revision,'scene-9cf45a73','Rebase when the apartment review source changes.');
 assert.equal(source.storage_revision,55);
@@ -42,6 +43,7 @@ assert.equal(frozen.fixed_open.length,6);
 for(const r of frozen.fixed_open)assert.equal(r.status==='MODEL_ROUTE_FOUND',r.goal_id==='basin-front-400');
 for(const c of frozen.door_fixture_sweeps)assert.ok(c.fixture_checks.every(x=>!x.any_intersection));
 const hashes=JSON.parse(fs.readFileSync(new URL('./evidence/sha256.json',import.meta.url)));
+assert.equal(crypto.createHash('sha256').update(regeneratedReview).digest('hex'),hashes['review.html'],'Baseline renderer drifted.');
 for(const [file,hash] of Object.entries(hashes))assert.equal(crypto.createHash('sha256')
  .update(fs.readFileSync(new URL(file,import.meta.url))).digest('hex'),hash,'Evidence hash differs: '+file);
 console.log(JSON.stringify({source:source.scene_revision,complete_sequences:valid,

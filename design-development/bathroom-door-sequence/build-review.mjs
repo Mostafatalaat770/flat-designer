@@ -3,8 +3,8 @@ const dir=import.meta.dirname,result=JSON.parse(fs.readFileSync(dir+'/results.js
 const esc=x=>String(x).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const names={'starter-4':'دولاب','starter-5':'دولاب','starter-15':'WC','starter-25':'WC',
  'starter-26':'حوض','R1-ensuite-vanity':'حوض','BATHM-glass-600-A1':'زجاج'};
-function card(c){
- const s=result.sequences.find(s=>s.room===c.id&&s.parameters.grid_mm===25&&s.parameters.radius_mm===250);
+export function card(c,sequence=null,title=null,description=null){
+ const s=sequence||result.sequences.find(s=>s.room===c.id&&s.parameters.grid_mm===25&&s.parameters.radius_mm===250);
  const states=s.status==='SAMPLED_SEQUENCE_FOUND'?s.states:s.phase_evidence.opening.states;
  const cycle=s.status==='SAMPLED_SEQUENCE_FOUND'?[...states,...states.slice(0,-1).reverse()]:states;
  const xs=c.boundary.map(p=>p[0]),ys=c.boundary.map(p=>p[1]);
@@ -16,8 +16,8 @@ function card(c){
  }).join('');
  const serialized=JSON.stringify({door:c.door,states:cycle,opening_count:s.opening_phase_states||states.length,
   inward_count:states.length,complete:s.status==='SAMPLED_SEQUENCE_FOUND'}).replaceAll('<','\\u003c');
- return `<article id="${c.id}" class="card"><div class="card-head"><h2>${c.id==='master'?'حمام الماستر':'حمام الضيوف'}</h2><span class="badge ${s.status==='SAMPLED_SEQUENCE_FOUND'?'ok':'hold'}">${s.status==='SAMPLED_SEQUENCE_FOUND'?'تسلسل 50 سم موجود':'غلق الباب يحتاج مراجعة'}</span></div>
- <p>${c.id==='master'?'إقفال الباب بعد الدخول يفتح الوصول للدش. مسار الدخول والاستخدام والخروج موضح تحت.':'الدخول والباب مفتوح ممكن، لكن تسلسل الغلق ثم الاستخدام لم يثبت في النموذج. العرض تحت يتوقف عند الدخول.'}</p>
+ return `<article id="${c.id}" class="card"><div class="card-head"><h2>${title||(c.id==='master'?'حمام الماستر':'حمام الضيوف')}</h2><span class="badge ${s.status==='SAMPLED_SEQUENCE_FOUND'?'ok':'hold'}">${s.status==='SAMPLED_SEQUENCE_FOUND'?'تسلسل 50 سم موجود':'غلق الباب يحتاج مراجعة'}</span></div>
+ <p>${description||(c.id==='master'?'إقفال الباب بعد الدخول يفتح الوصول للدش. مسار الدخول والاستخدام والخروج موضح تحت.':'الدخول والباب مفتوح ممكن، لكن تسلسل الغلق ثم الاستخدام لم يثبت في النموذج. العرض تحت يتوقف عند الدخول.')}</p>
  <svg role="img" aria-label="مخطط حركة ${c.id==='master'?'حمام الماستر':'حمام الضيوف'}" viewBox="0 0 ${width} ${height}" direction="ltr"><g transform="translate(${-bounds[0]},${-bounds[1]})">
  <polygon points="${c.boundary.map(p=>p.join(',')).join(' ')}" fill="#f5f1e6"/>
  ${c.id==='master'?'<rect x="5598" y="6350" width="1450" height="800" fill="#dbe9e6"/><text x="6000" y="6650" font-size="70" text-anchor="middle" fill="#425d51">دش</text>':''}
@@ -29,9 +29,9 @@ function card(c){
  <p class="caption">الدائرة الزرقاء قطرها 50 سم. الخط المنقط للمقبض أثناء تحريك الباب. الحركة توضيحية؛ الزمن وسرعة الجسم غير محسوبين.</p><script type="application/json" class="sequence-data">${serialized}</script></article>`;
 }
 const rows=result.sequences.map(s=>`<tr><td>${s.room==='master'?'الماستر':'الضيوف'}</td><td>${s.parameters.radius_mm*2/10} سم</td><td>${s.parameters.grid_mm} مم</td><td class="${s.status==='SAMPLED_SEQUENCE_FOUND'?'pass':'warn'}">${s.status==='SAMPLED_SEQUENCE_FOUND'?'تسلسل موجود':'لم يثبت'}</td></tr>`).join('');
-const html=`<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>مراجعة حركة أبواب الحمامات · v55</title><style>
+export const html=`<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>مراجعة حركة أبواب الحمامات · v55</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f2f4ef;color:#233a30;font:16px/1.8 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:32px 20px}h1{font-size:clamp(25px,4vw,38px);line-height:1.3;margin:12px 0}h2{font-size:23px;margin:0}p{margin:10px 0}.eyebrow{color:#61776a;font-size:14px}.intro{max-width:850px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:28px 0}.card,.notes{padding:22px;background:white;border:1px solid #dbe3d9;border-radius:18px;min-width:0}.card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.badge{font-size:13px;padding:3px 12px;border-radius:20px}.ok{background:#e1f0e7;color:#23573d}.hold{background:#faebca;color:#795b17}svg{display:block;width:100%;margin:18px 0;border-radius:8px;border:1px solid #ddd}.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.controls input{flex:1;min-width:120px;accent-color:#355d9b}.controls output{width:100%;font-size:14px}button{border:0;border-radius:8px;padding:9px 14px;background:#233a30;color:white;font:inherit;cursor:pointer}.caption{font-size:13px;color:#64756b}table{width:100%;border-collapse:collapse;margin:15px 0}th,td{text-align:right;border-bottom:1px solid #e3e8e1;padding:9px}.pass{color:#286f43}.warn{color:#8b6419}code{direction:ltr;unicode-bidi:isolate;font-size:12px;overflow-wrap:anywhere}.notes{margin-top:22px}.notes li{margin:9px 0}a{color:#286f59}@media(max-width:740px){main{padding:20px 12px}.grid{grid-template-columns:1fr}.card,.notes{padding:17px}th,td{padding:7px;font-size:14px}}
-</style></head><body><main><div class="eyebrow">مراجعة التصميم والحركة · مصدر v55 · 9 أكتوبر 2026</div><h1>الدخول، غلق الباب، الاستخدام، ثم الخروج</h1><p class="intro">الماستر يجتاز تسلسل الحركة مع جسم افتراضي قطره 50 سم. حمام الضيوف يحتاج مقارنة لبدائل الباب؛ الوقفة أمام الحوض وحدها لا تحسم إمكانية غلقه بعد الدخول.</p><div class="grid">${result.data.map(card).join('')}</div>
+</style></head><body><main><div class="eyebrow">مراجعة التصميم والحركة · مصدر v55 · 9 أكتوبر 2026</div><h1>الدخول، غلق الباب، الاستخدام، ثم الخروج</h1><p class="intro">الماستر يجتاز تسلسل الحركة مع جسم افتراضي قطره 50 سم. حمام الضيوف يحتاج مقارنة لبدائل الباب؛ الوقفة أمام الحوض وحدها لا تحسم إمكانية غلقه بعد الدخول.</p><div class="grid">${result.data.map(c=>card(c)).join('')}</div>
 <section class="notes"><h2>نتائج النموذج</h2><table><thead><tr><th>الحمام</th><th>قطر الجسم</th><th>دقة الشبكة</th><th>الدخول ← غلق ← استخدام</th></tr></thead><tbody>${rows}</tbody></table>
 <p>في الماستر، الوصول للحوض وموضع أمام المرحاض نجح أيضًا بعد غلق الباب في الحالات الناجحة. نتيجة 55 سم تختلف مع دقة الشبكة ونقطة الوقوف الوسيطة؛ لا نستنتج منها استحالة الحركة الفعلية.</p>
 <p>في الضيوف، موضع يبعد 30 سم عن مقدمة الحوض يتعارض مع الباب المفتوح، بينما موضع يبعد 40 سم يمر على الدقتين. وضع الوقوف ومدى الوصول للحوض يحتاجان تجربة واقعية.</p></section>
@@ -50,5 +50,7 @@ for(const card of document.querySelectorAll('.card')){
  slider.addEventListener('input',draw);button.addEventListener('click',()=>{if(timer){clearInterval(timer);timer=null;button.textContent='تشغيل الحركة';return;}if(Number(slider.value)>=data.states.length-1)slider.value=0;button.textContent='إيقاف';timer=setInterval(()=>{slider.value=Math.min(data.states.length-1,Number(slider.value)+1);draw();if(Number(slider.value)>=data.states.length-1){clearInterval(timer);timer=null;button.textContent='تشغيل الحركة';}},60);});draw();
 }
 </script></body></html>`;
-fs.writeFileSync(dir+'/review.html',html);
-console.log('Wrote portable Arabic bathroom-door review.');
+if(process.argv[1]===new URL(import.meta.url).pathname){
+ fs.writeFileSync(dir+'/review.html',html);
+ console.log('Wrote portable Arabic bathroom-door review.');
+}
