@@ -4,7 +4,6 @@
  * Critically, do NOT transplant any bath/bedroom/corridor walls, furniture or decor.
  */
 import assert from "node:assert/strict";
-import {createApartmentDomain} from "../studio/domain/apartment.mjs";
 const clone=x=>structuredClone(x);
 export function buildKitchenOnlyOpen(current,k12,domain){
  assert.equal(current.canonical_sha256,domain.model.canonical_sha256);
