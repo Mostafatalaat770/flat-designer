@@ -4,7 +4,9 @@ on:
     branches: [master]
     paths:
       - "studio/analysis/semi-open-portal*"
+      - "studio/analysis/portal-detail*"
       - "scripts/build-semi-open-portal.mjs"
+      - "scripts/portal-detail-qa.mjs"
       - ".github/workflows/semi-open-portal-review.yml"
       - "design-development/SEMI_OPEN_PORTAL_REVIEW.md"
   workflow_dispatch:
@@ -25,9 +27,11 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Validate v55 fidelity and opening geometry
-        run: node --test studio/analysis/semi-open-portal.test.mjs studio/local/current-baseline.test.mjs
+        run: node --test studio/analysis/semi-open-portal.test.mjs studio/analysis/portal-detail.test.mjs studio/local/current-baseline.test.mjs
       - name: Build exact same-camera P0 and P1 snapshots
         run: node scripts/build-semi-open-portal.mjs
+      - name: Generate exact aperture detail and hold-point report
+        run: node scripts/portal-detail-qa.mjs
       - name: Install Chromium WebGL renderer
         run: |
           npm install --no-save playwright
