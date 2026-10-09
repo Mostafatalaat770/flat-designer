@@ -22,6 +22,7 @@ const selections=[
  ['kitchen','KIT-01',utility.find(v=>v.id==='home-a-utility-kitchen')],
  ['master','MBR-01',family.find(v=>v.id==='family-v7-master-wide')],
  ['bedroom1','BR-01',bedroom.find(v=>v.id==='window-to-study').camera],
+ ['bedroom1-bed','BR-01',family.find(v=>v.id==='family-v7-bedroom1')],
  ['bedroom2','BR-02',family.find(v=>v.id==='family-v7-bedroom2')],
  ['ensuite','BATH-M01',realism.find(v=>v.view==='ensuite-wide')],
  ['family-bath','BATH-C01',realism.find(v=>v.view==='family-vanity-natural')],

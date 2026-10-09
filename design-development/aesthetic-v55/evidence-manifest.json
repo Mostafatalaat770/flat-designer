@@ -1,0 +1,353 @@
+{
+  "schema": "ApartmentAestheticEvidence/1",
+  "source_scene": "scene-c9c055c1",
+  "candidate_scene": "scene-497a734f",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "views": 11,
+  "matched_native_frames": 22,
+  "native_template_sha256": "3d55ef2e16c8219bb370d37ba14d720b07d6a52b207362a0261c3b924031bcd6",
+  "renderer_assets": [
+    {
+      "file": "dist/art/warm.png",
+      "sha256": "305cb3572bc965d9ca5da767b3bbc01a4d1e12354a25c4e20edf4db0f320037d"
+    },
+    {
+      "file": "dist/art/japandi.png",
+      "sha256": "8db81471103333055b14dfc7be08c5b9487448bfdfe7ea67de96a29601c87677"
+    },
+    {
+      "file": "dist/art/boho.png",
+      "sha256": "d4820d60c2a27575ff2b76c86d78b3d97aeede147a3fd62b2b908f4d27b7607a"
+    }
+  ],
+  "browser_checks": 66,
+  "circulation_queries": 266,
+  "found_paths": 240,
+  "files": [
+    {
+      "file": "evidence/before-entry.png",
+      "bytes": 857971,
+      "sha256": "e69e70d38deccf2cf3f666a7567c74a60aa7597dc49491c1626c33065972bd20"
+    },
+    {
+      "file": "evidence/before-entry.json",
+      "bytes": 46884,
+      "sha256": "d9980573e0a03739a90cba1780a79a72abc71467862b41c43ef906a21bfbcec3"
+    },
+    {
+      "file": "evidence/before-living.png",
+      "bytes": 847164,
+      "sha256": "63eb4a62a2b629f500333ae0e32fe407841030e79689c53b522f1eb910e501e4"
+    },
+    {
+      "file": "evidence/before-living.json",
+      "bytes": 46893,
+      "sha256": "e860e8bb2cf564e248f0c7ef137f4de317e07f63cafb1335cbcbc7851d9dcfab"
+    },
+    {
+      "file": "evidence/before-dining.png",
+      "bytes": 1184570,
+      "sha256": "59f36f3b7ae7595c6ddaf54ed2c0a2a23a68a90dd3adcb301e717ec73dd4238b"
+    },
+    {
+      "file": "evidence/before-dining.json",
+      "bytes": 46874,
+      "sha256": "cfed7675cd93a6fdc5fa9dcccd0f33abc95ec6968c2c13b0355aa04b580f2c83"
+    },
+    {
+      "file": "evidence/before-kitchen.png",
+      "bytes": 605950,
+      "sha256": "76a66e71bf92d0aa8d93e7cef8729ecfef1cf5fe026df425ae5feb7064e3ed30"
+    },
+    {
+      "file": "evidence/before-kitchen.json",
+      "bytes": 46882,
+      "sha256": "aacba76c760f34f0113ac90a24b2e4536de852a31b3783dc1c9a9e3756193c0b"
+    },
+    {
+      "file": "evidence/before-master.png",
+      "bytes": 1034546,
+      "sha256": "9f3c4e84fdd26fc9264fe603e5721721f895100f1c76ec54ceb954f168f53927"
+    },
+    {
+      "file": "evidence/before-master.json",
+      "bytes": 46884,
+      "sha256": "868cc9f2bb3062d42cba7867020c16504bdfccfad29a9af73f0f67e650f149e8"
+    },
+    {
+      "file": "evidence/before-bedroom1.png",
+      "bytes": 627189,
+      "sha256": "7a038eb799fafd00a215bbe7e0d781b496bec4da21965fd6ee783f138d6de41e"
+    },
+    {
+      "file": "evidence/before-bedroom1.json",
+      "bytes": 46883,
+      "sha256": "a8334e048c380b965e6e46856e480a4aca67df11ab37d7b863e69f42542fa4a5"
+    },
+    {
+      "file": "evidence/before-bedroom1-bed.png",
+      "bytes": 860314,
+      "sha256": "06b7b44ef4c92ef30a55e457a71774fd52d65ebe906db2d57ff5ca041efdd258"
+    },
+    {
+      "file": "evidence/before-bedroom1-bed.json",
+      "bytes": 46903,
+      "sha256": "952f53a11d11887014cc5679165e5f0123c4629c476b7fdaa3be4955442c6e59"
+    },
+    {
+      "file": "evidence/before-bedroom2.png",
+      "bytes": 1169406,
+      "sha256": "3f683e0e0f3c11ee36675b2d8722e897061c4beab3bf934586ef957bee355d7b"
+    },
+    {
+      "file": "evidence/before-bedroom2.json",
+      "bytes": 46904,
+      "sha256": "aa03797ae5da5507ab762bda702d581669bcada263485b83ae8dbd80c3ce1899"
+    },
+    {
+      "file": "evidence/before-ensuite.png",
+      "bytes": 2002533,
+      "sha256": "678fdfc37d176186c72438ae938bf042dfb572ff29f87acda04f9ccecbe8fa9d"
+    },
+    {
+      "file": "evidence/before-ensuite.json",
+      "bytes": 46907,
+      "sha256": "059a27ac92e12ca80676997a6f905bf9d9b9d7b91389dd72ff96e93948d0a6fb"
+    },
+    {
+      "file": "evidence/before-family-bath.png",
+      "bytes": 1462399,
+      "sha256": "819ac60c8c4afd5a86670d9b16458021c6f57018f53f9c73075ee4309314e380"
+    },
+    {
+      "file": "evidence/before-family-bath.json",
+      "bytes": 46908,
+      "sha256": "479d7ea25f2bf9a18eb33c29121fba2f5e772b02c575b88cf1a3224085e4e173"
+    },
+    {
+      "file": "evidence/before-living-night.png",
+      "bytes": 922101,
+      "sha256": "cdae8a6ce99f4b19a5575ec9b12b3bcc20891294a0c17d82812301a30a55edc7"
+    },
+    {
+      "file": "evidence/before-living-night.json",
+      "bytes": 46892,
+      "sha256": "77962df55feed536e9279b1e187fcdaa71f1e50e0ca8317e13ad7b9a416852a7"
+    },
+    {
+      "file": "evidence/after-entry.png",
+      "bytes": 821151,
+      "sha256": "ebf579170783c17a9c6461d514a7e71568121bfbe3857783d0adae5e4c2d7b25"
+    },
+    {
+      "file": "evidence/after-entry.json",
+      "bytes": 51792,
+      "sha256": "ac1004ed263c85b3fb491dbf892ba6d71fa6e8ad1c2b2f89c9a26d6eae1fdf39"
+    },
+    {
+      "file": "evidence/after-living.png",
+      "bytes": 876748,
+      "sha256": "f056c400244565491aeb21feab0a8a65e96f7ba1a973f7fa3bb1395b0d20904c"
+    },
+    {
+      "file": "evidence/after-living.json",
+      "bytes": 51801,
+      "sha256": "0d35c93815efa5ffb97ad0d1789c3fff5b9cf2c437dc98545332b0215fbdb5fd"
+    },
+    {
+      "file": "evidence/after-dining.png",
+      "bytes": 881315,
+      "sha256": "f6db0f584b4803d200ab88d1c3fab50d8fc06d934e24ef22d192bc9abb3e1016"
+    },
+    {
+      "file": "evidence/after-dining.json",
+      "bytes": 51782,
+      "sha256": "5d23389b399786049a857e2ea191b1fb609d36de17b5caca384a48d50a27f8b0"
+    },
+    {
+      "file": "evidence/after-kitchen.png",
+      "bytes": 605653,
+      "sha256": "bf00fd9a846887fe9c8f1a57aa647d2ddf43efd6de0ba6e6ad89a69a58ef4536"
+    },
+    {
+      "file": "evidence/after-kitchen.json",
+      "bytes": 51790,
+      "sha256": "454d299485374ac66171ff23648be01e611dd568f591ab204e87a80c2800e0bb"
+    },
+    {
+      "file": "evidence/after-master.png",
+      "bytes": 1038987,
+      "sha256": "e77ea86c5ead6f74ffc1a8b1da2d6f27b8f3386b097ce9fe7672d98373a4c186"
+    },
+    {
+      "file": "evidence/after-master.json",
+      "bytes": 51792,
+      "sha256": "2d8da642d8bbdc5b56204b342b471b9137e3e0a4d20f09bdf720ae337459e783"
+    },
+    {
+      "file": "evidence/after-bedroom1.png",
+      "bytes": 681553,
+      "sha256": "8a24bb44a7024c2032444336d307dfefa24c60bc843104f745c293541203062e"
+    },
+    {
+      "file": "evidence/after-bedroom1.json",
+      "bytes": 51791,
+      "sha256": "8126ea504fe6f4707e575046a6e02d726ebbf3b73a77feeb8496ae0c98b3c355"
+    },
+    {
+      "file": "evidence/after-bedroom1-bed.png",
+      "bytes": 881213,
+      "sha256": "36283a5823af3077a90befedd14f870173ee40a32c39e4fd54a4d400aebd0402"
+    },
+    {
+      "file": "evidence/after-bedroom1-bed.json",
+      "bytes": 51811,
+      "sha256": "ae11b059676d8976dd5535f9d87ac17156b0d5412b6d6152ab58f8c21467cc19"
+    },
+    {
+      "file": "evidence/after-bedroom2.png",
+      "bytes": 1361965,
+      "sha256": "6f0fad94d46a8b21b88eea5915e7b6d834aeeb822f618c7f96b80c647bc3106a"
+    },
+    {
+      "file": "evidence/after-bedroom2.json",
+      "bytes": 51812,
+      "sha256": "3eb030653262768f90c6b766101909161dc5c52f5445587e02cf8420362dafb2"
+    },
+    {
+      "file": "evidence/after-ensuite.png",
+      "bytes": 2003484,
+      "sha256": "e366e20e2c6aabbe13570c7aefad1f8f7a3ead6492ebb048970bd9845c71fb59"
+    },
+    {
+      "file": "evidence/after-ensuite.json",
+      "bytes": 51815,
+      "sha256": "c2f4c9743027b80e40484abcc0516e50dc1cc409652ff4d8273c3ef92ab9176f"
+    },
+    {
+      "file": "evidence/after-family-bath.png",
+      "bytes": 1440905,
+      "sha256": "e0a5626f89895942b32e4461ce8a5188f5870f2734fa9cba280045d0d412c1cd"
+    },
+    {
+      "file": "evidence/after-family-bath.json",
+      "bytes": 51816,
+      "sha256": "ee0937b2d803ad2a9e186cc5bdb2220e962c773057dc9930f05c12bbfc3ac5a0"
+    },
+    {
+      "file": "evidence/after-living-night.png",
+      "bytes": 984327,
+      "sha256": "ac2589939e8719804d3ff47f00eab23703c6d8a40d44a8edbc26b0b29a34feaf"
+    },
+    {
+      "file": "evidence/after-living-night.json",
+      "bytes": 51800,
+      "sha256": "a8981e1fccf03f0b524bd9ce90f9fec6dd8f8a76acfd19522c038633515afee5"
+    },
+    {
+      "file": "build.mjs",
+      "bytes": 9034,
+      "sha256": "7a5d436d38ac9c11b0e9fa048a31ca0fb415211e1cbbb4e91c6c37bd264bed5b"
+    },
+    {
+      "file": "circulation.mjs",
+      "bytes": 2881,
+      "sha256": "8df1a0860537061b4dd57009696a7e95412d0da9a33f843759756afdf0cd5115"
+    },
+    {
+      "file": "capture.mjs",
+      "bytes": 4483,
+      "sha256": "6a37a7ad65edcd45e861d40d7236b615072e4fb6398d98af2ec44d9ac3744b13"
+    },
+    {
+      "file": "build-review.mjs",
+      "bytes": 15416,
+      "sha256": "15664652d0e3b0960a852ee9cb8b27590d4a1d43a0d1020e42812ba86bc0b241"
+    },
+    {
+      "file": "qa.mjs",
+      "bytes": 4087,
+      "sha256": "fb6240639113996c44fae328f7c34d12c19926b7582cd03f4e30cf310a0f2002"
+    },
+    {
+      "file": "verify.mjs",
+      "bytes": 4625,
+      "sha256": "ee68872bdf7a30cd452fba08a6fffe7056a384b26095d6e2b6ee3b27ed92b501"
+    },
+    {
+      "file": "cameras.json",
+      "bytes": 23320,
+      "sha256": "3c3dc9e7f7163eecc3103272d51669a7d7acb93f7a7f90f3aaf58c62da076469"
+    },
+    {
+      "file": "proposal.json",
+      "bytes": 20633,
+      "sha256": "b7a3806b565dcf69c76e148d1512d72c8182ec03ae930e6c51fa871ab57b2e7b"
+    },
+    {
+      "file": "snapshot.json",
+      "bytes": 68684,
+      "sha256": "3c4131ab208a32ef31b1c9ea556ccb6c678dc84d199104e86f76eb288e56de47"
+    },
+    {
+      "file": "brief.json",
+      "bytes": 214490,
+      "sha256": "e1d288169e18c3f7a005aac4fffcfa6f2f7c06596a7f5db399b520e30e63f092"
+    },
+    {
+      "file": "summary.json",
+      "bytes": 962,
+      "sha256": "b902db01feccddc766280b6a59fc9e6f5fec8f3021f74ae1a0cadcc9156abc24"
+    },
+    {
+      "file": "circulation.json",
+      "bytes": 1768274,
+      "sha256": "4a6ef390dd5dd178dca5ac92ebe346d7303425bdc37d24b3ea51b00421840917"
+    },
+    {
+      "file": "review.html",
+      "bytes": 13155,
+      "sha256": "7d03bf387a631ee2df6e8e0ab110872aba899686480aa5d0fa4682f2edaada44"
+    },
+    {
+      "file": "REVIEW_AR.md",
+      "bytes": 6991,
+      "sha256": "70e1bdd1ec08c2047fa4cee91fd728a854d56a01d7c5e9412190d87135103e34"
+    },
+    {
+      "file": "browser-qa.json",
+      "bytes": 7464,
+      "sha256": "63dc9b4d296d31834dbc35b8476db369740a1929339300e206f74540b3917ede"
+    },
+    {
+      "file": "VISUAL_REVIEW_AR.md",
+      "bytes": 5581,
+      "sha256": "97847c6fa5eee3cfdfe224afb719e37e8e1a54516dd66b45a70fce95dae011c5"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4546,
+      "sha256": "cff6644cfc86b6103f2f3653ed550abb364d160cbca08c0cf6d8b9af15e00e7a"
+    },
+    {
+      "file": "evidence/review-desktop-entry.png",
+      "bytes": 483767,
+      "sha256": "4e1994aad4d5c223365362ff49caed90005f52904748467678a9183b210aa2f3"
+    },
+    {
+      "file": "evidence/review-desktop-living.png",
+      "bytes": 337605,
+      "sha256": "1cb8e3ef42e202d619aeb8395f637e259f7df862a375044c05316eb9f6c1cbd0"
+    },
+    {
+      "file": "evidence/review-mobile-bedroom1.png",
+      "bytes": 223109,
+      "sha256": "7534b6a7fa20cfab9b4b1125420ff54342b1e0a6588d7d3f9b3f221e597f7651"
+    },
+    {
+      "file": "evidence/review-mobile-dining.png",
+      "bytes": 193584,
+      "sha256": "c0d9244cac057742a3a892f6e848ac10a969000e1955c5a4ad267ad0d2d2baa7"
+    }
+  ]
+}

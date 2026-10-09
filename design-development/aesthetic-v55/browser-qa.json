@@ -1,0 +1,405 @@
+{
+  "schema": "ApartmentAestheticBrowserQA/1",
+  "view_count": 11,
+  "review_html_sha256": "7d03bf387a631ee2df6e8e0ab110872aba899686480aa5d0fa4682f2edaada44",
+  "checks": [
+    {
+      "screen": "desktop",
+      "view": "entry",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "entry",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "entry",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "living",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "living",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "living",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "dining",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "dining",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "dining",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "kitchen",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "kitchen",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "kitchen",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "master",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "master",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "master",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom1",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom1",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom1",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom1-bed",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom1-bed",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom1-bed",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom2",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom2",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "bedroom2",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "ensuite",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "ensuite",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "ensuite",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "family-bath",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "family-bath",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "family-bath",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "living-night",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "living-night",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "desktop",
+      "view": "living-night",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "entry",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "entry",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "entry",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "living",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "living",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "living",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "dining",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "dining",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "dining",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "kitchen",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "kitchen",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "kitchen",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "master",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "master",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "master",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom1",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom1",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom1",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom1-bed",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom1-bed",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom1-bed",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom2",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom2",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "bedroom2",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "ensuite",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "ensuite",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "ensuite",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "family-bath",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "family-bath",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "family-bath",
+      "mode": "before",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "living-night",
+      "mode": "after",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "living-night",
+      "mode": "split",
+      "passed": true
+    },
+    {
+      "screen": "mobile",
+      "view": "living-night",
+      "mode": "before",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "overflow": false
+}

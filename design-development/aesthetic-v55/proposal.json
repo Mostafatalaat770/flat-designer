@@ -1,0 +1,806 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-c9c055c1",
+  "operations": [
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "a1-wall-plaster",
+        "name": "Warm chalk ivory plaster",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#F1EDE5",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "a1-natural-oak",
+        "name": "Quiet desaturated natural oak",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#B5A38B",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "kitchen-muted-light-oak",
+        "name": "Shared quiet oak joinery",
+        "category": "wood",
+        "source_status": "GENERIC",
+        "base_colour": "#B5A38B",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "kitchen-soft-ivory",
+        "name": "Warm ivory matte joinery",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#F1EDE5",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "a2-curtain-linen",
+        "name": "Pale natural linen curtains",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#E7E0D4",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "aesthetic-natural-linen",
+        "name": "Natural linen upholstery",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#E7E0D4",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "aesthetic-sand-rug",
+        "name": "Sand woven rug",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#D6CABB",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "aesthetic-olive",
+        "name": "Quiet olive upholstery",
+        "category": "fabric",
+        "source_status": "GENERIC",
+        "base_colour": "#818773",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "aesthetic-bronze",
+        "name": "Matte brushed bronze",
+        "category": "metal",
+        "source_status": "GENERIC",
+        "base_colour": "#74624E",
+        "finish": "matte",
+        "roughness": 0.48,
+        "metallic": 0.72,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "aesthetic-taupe",
+        "name": "Soft warm taupe plaster",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#D4CBC0",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "aesthetic-sage",
+        "name": "Pale sage plaster",
+        "category": "paint",
+        "source_status": "GENERIC",
+        "base_colour": "#DDE1D4",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Generic warm contemporary design intent. No selected manufacturer or product."
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "art-br1-soft-olive",
+        "name": "Quiet landscape artwork concept",
+        "category": "artwork",
+        "source_status": "GENERIC",
+        "base_colour": "#A6AA92",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Existing generated concept artwork; used as a visual placeholder, not selected art or a licensed product.",
+        "albedo_texture": "./art/japandi.png",
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        }
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "art-br2-taupe-line",
+        "name": "Warm abstract artwork concept",
+        "category": "artwork",
+        "source_status": "GENERIC",
+        "base_colour": "#B7A99A",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Existing generated concept artwork; used as a visual placeholder, not selected art or a licensed product.",
+        "albedo_texture": "./art/warm.png",
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        }
+      }
+    },
+    {
+      "type": "upsert-material",
+      "material": {
+        "schema": "InteriorMaterial/1",
+        "id": "art-master-warm-earth",
+        "name": "Quiet earth landscape artwork concept",
+        "category": "artwork",
+        "source_status": "GENERIC",
+        "base_colour": "#CDB9A1",
+        "finish": "matte",
+        "roughness": 0.86,
+        "metallic": 0,
+        "notes": "Existing generated concept artwork; used as a visual placeholder, not selected art or a licensed product.",
+        "albedo_texture": "./art/japandi.png",
+        "texture_scale_mm": {
+          "width": 1000,
+          "height": 1000
+        }
+      }
+    },
+    {
+      "type": "room-option",
+      "room_id": "RECP-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "HALL-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "WIC-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "KIT-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "WC-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-02",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "wall",
+      "value": "#F1EDE5"
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "BR-02",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "temperature",
+      "value": 3000
+    },
+    {
+      "type": "room-option",
+      "room_id": "RECP-01",
+      "key": "brightness",
+      "value": 80
+    },
+    {
+      "type": "room-option",
+      "room_id": "MBR-01",
+      "key": "brightness",
+      "value": 74
+    },
+    {
+      "type": "set-room-surface-material",
+      "room_id": "RECP-01",
+      "surface": "floor",
+      "material_id": "a1-limestone-honed"
+    },
+    {
+      "type": "set-room-surface-material",
+      "room_id": "HALL-01",
+      "surface": "floor",
+      "material_id": "a1-limestone-honed"
+    },
+    {
+      "type": "set-room-surface-material",
+      "room_id": "KIT-01",
+      "surface": "ceiling",
+      "material_id": "a2-ceiling-softwhite"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-RECP-01-09",
+      "material_id": "aesthetic-taupe"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-MBR-01-01",
+      "material_id": "aesthetic-taupe"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BR-01-02",
+      "material_id": "aesthetic-sage"
+    },
+    {
+      "type": "set-wall-surface-material",
+      "host_wall_id": "WALL-BR-02-06",
+      "material_id": "aesthetic-taupe"
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-2",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-3",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-6",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-8",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-11",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-18",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-20",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-30",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-35",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-40",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "S1-living-side-table",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "K3-corner",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "K3-dishwasher",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "K3-sink-base",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "K3-end-landing",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "R1-ensuite-vanity",
+      "changes": {
+        "material_id": "a1-natural-oak"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-4",
+      "changes": {
+        "material_id": "kitchen-soft-ivory"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-5",
+      "changes": {
+        "material_id": "kitchen-soft-ivory"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-7",
+      "changes": {
+        "material_id": "kitchen-soft-ivory"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-13",
+      "changes": {
+        "material_id": "kitchen-soft-ivory"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-1",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-28",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-36",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-37",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-38",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-39",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-north-centre",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "A2-dining-chair-south-centre",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-10",
+      "changes": {
+        "material_id": "aesthetic-natural-linen",
+        "variant": "upholstered"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-9",
+      "changes": {
+        "material_id": "aesthetic-olive"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-32",
+      "changes": {
+        "material_id": "aesthetic-olive"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-12",
+      "changes": {
+        "material_id": "aesthetic-natural-linen"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-27",
+      "changes": {
+        "material_id": "aesthetic-sand-rug"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "V5-master-rug",
+      "changes": {
+        "material_id": "aesthetic-sand-rug"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A-dining-sideboard",
+      "changes": {
+        "material_references": {
+          "body": "a1-natural-oak"
+        },
+        "colour": "#B5A38B"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V7-master-drawers",
+      "changes": {
+        "material_references": {
+          "body": "a1-natural-oak"
+        },
+        "colour": "#B5A38B"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V7-bedroom1-drawers",
+      "changes": {
+        "material_references": {
+          "body": "a1-natural-oak"
+        },
+        "colour": "#B5A38B"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V5-master-bench",
+      "changes": {
+        "material_references": {
+          "primary": "aesthetic-natural-linen",
+          "accent": "a1-natural-oak"
+        },
+        "colour": "#E7E0D4"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "S1-reading-lamp",
+      "changes": {
+        "material_references": {
+          "primary": "aesthetic-natural-linen",
+          "accent": "aesthetic-bronze"
+        },
+        "colour": "#E7E0D4"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V5-sideboard-lamp",
+      "changes": {
+        "material_references": {
+          "primary": "aesthetic-natural-linen",
+          "accent": "aesthetic-bronze"
+        },
+        "colour": "#E7E0D4"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A1-entry-mirror",
+      "changes": {
+        "material_references": {
+          "frame": "aesthetic-bronze"
+        },
+        "colour": "#74624E"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "WC-A1-mirror",
+      "changes": {
+        "material_references": {
+          "frame": "aesthetic-bronze"
+        },
+        "colour": "#74624E"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V5-hall-mirror",
+      "changes": {
+        "material_references": {
+          "frame": "a1-natural-oak"
+        },
+        "colour": "#B5A38B"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "A-dining-pendant",
+      "changes": {
+        "variant": "linear",
+        "width_mm": 1100,
+        "depth_mm": 100,
+        "height_mm": 120,
+        "placement": {
+          "mode": "ceiling",
+          "drop_mm": 700
+        },
+        "material_references": {
+          "metal": "aesthetic-bronze"
+        },
+        "colour": "#74624E",
+        "metadata": {
+          "role": "Slim longitudinal pendant centred on the unchanged 2000 x 950 dining table",
+          "temperature_k": 3000
+        }
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "BR1-A1-art",
+      "changes": {
+        "width_mm": 400,
+        "height_mm": 600,
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-BR-01-04",
+          "offset_mm": 788.218,
+          "elevation_mm": 1150,
+          "inset_mm": 10
+        },
+        "material_references": {
+          "art": "art-br1-soft-olive",
+          "frame": "a1-natural-oak"
+        },
+        "metadata": {
+          "role": "Portrait artwork centred on the R4 storage at x3775; remains within the solid host segment"
+        }
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "MBR-A1-art",
+      "changes": {
+        "material_references": {
+          "art": "art-master-warm-earth",
+          "frame": "a1-natural-oak"
+        }
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "BR2-A1-art",
+      "changes": {
+        "variant": "framed",
+        "material_references": {
+          "art": "art-br2-taupe-line",
+          "frame": "a1-natural-oak"
+        }
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "AEST-living-art",
+        "type": "artwork",
+        "variant": "framed",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-RECP-01-03",
+          "offset_mm": -791.5675,
+          "elevation_mm": 1150,
+          "inset_mm": 10
+        },
+        "rotation": 0,
+        "width_mm": 1500,
+        "depth_mm": 30,
+        "height_mm": 700,
+        "material_references": {
+          "art": "reference-art-warm",
+          "frame": "a1-natural-oak"
+        },
+        "colour": "#E7E0D4",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "One landscape artwork centred on the sofa; replaces automatic room artwork"
+        }
+      }
+    },
+    {
+      "type": "add-object",
+      "object": {
+        "id": "AEST-buffet-art",
+        "type": "artwork",
+        "variant": "framed",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-RECP-01-18",
+          "offset_mm": -1731.9525,
+          "elevation_mm": 1100,
+          "inset_mm": 10
+        },
+        "rotation": 0,
+        "width_mm": 1100,
+        "depth_mm": 30,
+        "height_mm": 750,
+        "material_references": {
+          "art": "art-br1-soft-olive",
+          "frame": "a1-natural-oak"
+        },
+        "colour": "#E7E0D4",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Artwork centred above the 2000 mm buffet; replaces unanchored automatic dining art"
+        }
+      }
+    }
+  ],
+  "notes": [
+    "LOCAL warm contemporary aesthetic candidate. Standard appliance envelopes, furniture plan geometry, enclosed kitchen and fixed architecture retained. Guest outward leaf remains a separate conditional study."
+  ]
+}

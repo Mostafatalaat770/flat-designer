@@ -1,7 +1,7 @@
 {
   "schema": "ApartmentAestheticBeforeEvidence/1",
   "scene": "scene-c9c055c1",
-  "views": 10,
+  "views": 11,
   "files": [
     {
       "file": "evidence/before-entry.png",
@@ -62,6 +62,16 @@
       "file": "evidence/before-bedroom1.json",
       "bytes": 46883,
       "sha256": "a8334e048c380b965e6e46856e480a4aca67df11ab37d7b863e69f42542fa4a5"
+    },
+    {
+      "file": "evidence/before-bedroom1-bed.png",
+      "bytes": 860314,
+      "sha256": "06b7b44ef4c92ef30a55e457a71774fd52d65ebe906db2d57ff5ca041efdd258"
+    },
+    {
+      "file": "evidence/before-bedroom1-bed.json",
+      "bytes": 46903,
+      "sha256": "952f53a11d11887014cc5679165e5f0123c4629c476b7fdaa3be4955442c6e59"
     },
     {
       "file": "evidence/before-bedroom2.png",

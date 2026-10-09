@@ -1,0 +1,43 @@
+{
+  "schema": "ApartmentAestheticValidation/1",
+  "source_scene": "scene-c9c055c1",
+  "candidate_scene": "scene-497a734f",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "operation_count": 83,
+  "validation": {
+    "pass": 192,
+    "warning": 76,
+    "fail": 0
+  },
+  "architecture_unchanged": true,
+  "all_furniture_plan_geometry_unchanged": true,
+  "opening_treatments_unchanged": true,
+  "standard_appliance_envelopes_unchanged": true,
+  "production_connected": false,
+  "palette": [
+    {
+      "name": "عاجي",
+      "colour": "#F1EDE5"
+    },
+    {
+      "name": "بلوط هادي",
+      "colour": "#B5A38B"
+    },
+    {
+      "name": "كتان طبيعي",
+      "colour": "#E7E0D4"
+    },
+    {
+      "name": "زيتوني",
+      "colour": "#818773"
+    },
+    {
+      "name": "تاوب",
+      "colour": "#D4CBC0"
+    },
+    {
+      "name": "برونز مطفي",
+      "colour": "#74624E"
+    }
+  ]
+}
