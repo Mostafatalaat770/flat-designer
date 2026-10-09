@@ -127,6 +127,18 @@ function makeStudioVariant(f){
       fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
     }
     studioCountertop(g,f,w,d,stone);
+  }else if(f.type==='shower'&&f.variant==='walk-in'){
+    // True open wet area: no default glass cage or raised prefabricated tray.
+    // Any fixed splash panel is a separate validated interior object.
+    const cm=mat('#b8c1c6',{metalness:.72,roughness:.26}),x=-w*.25,z=-d/2+.09;
+    g.add(
+      box(w,.008,d,mat('#e7e0d6',{roughness:.86}),0,.004,0),
+      box(Math.min(.60,w*.55),.006,.035,cm,0,.011,-d/2+.11),
+      rbox(.15,.095,.035,cm,x,1.04,z,.012),
+      rod([x,1.13,z],[x,2.05,z],.012,cm),
+      rod([x,2.05,z],[x,2.05,z+.20],.012,cm),
+      box(.24,.012,.24,cm,x,2.04,z+.20)
+    );
   }else if(f.type==='fridge'){
     const m=f.variant==='integrated'?(assignedMat||wood):mat('#a4abb0',{metalness:.72,roughness:.30});
     g.add(rbox(w,1.94,d,m,0,.015,0,.025));
