@@ -32,3 +32,11 @@ A home-spa feel, not a glossy hotel showroom: warm quiet porcelain walls, a sing
 New `studio/analysis/bathroom-finish-jury.mjs` creates 2 review snapshots and *three literally shared human-eye cameras*, one each for master, family and guest. CI builds six genuine Three.js/WebGL frames, a hex-swatch board and a machine-readable hold matrix. User selection happens only **after** actual side-by-side images are reviewed, not when a green GitHub build reports success.
 
 No edits to cloud saved v55 `scene-4821689`, canonical Type B v0.2.2 geometry, the production `render-snapshots/current.json`, rooms, plumbing appliances or net finished 2500mm ceiling.
+
+## 10 October actual-image jury — FIRST IMAGE SET REJECTED, CAMERA REVISION REQUIRED
+
+The first same-camera six-frame workflow passed all metadata and canonical geometry checks, but the resulting visuals **are not good enough to approve any finish**. From the original `bath55-master-walkin-correct-door` eye view, the master wet zone is largely hidden behind a foreground wall/door perspective (can't meaningfully evaluate true walk-in). From `guest-wc-entry-open`, the brown hinged guest door obscures much of the sink/mirror. The family view is readable but exposes a dark bulky framed cubicle, raised white tray and visible WC, which is **not** the design endpoint; the palette switch alone cannot solve that physical/renderer hardware limitation. The B3 subtle material shift is barely distinguishable, especially where camera occlusion dominates.
+
+**Design action:** replace only the REVIEW CAMERAS (no geometry) by the existing saved `bath55-master-walkin-deep-eye` and `guest-wc` interior presets, while retaining `bath55-family-entry`. Regenerate a strict 3-room A/B comparison with these better source cameras. If master/guest visibility remains poor, don't approve B3 or pretend that changing a swatch fixes the architecture. A dedicated approved low-threshold/splash enclosure specification and actual material samples still gate family bathroom. Future render passes should show an independent vanity/mirror view before requesting owner aesthetic signoff.
+
+**Decision remains HOLD.** This is a controlled camera-quality correction, not a preference switch or cloud state change.

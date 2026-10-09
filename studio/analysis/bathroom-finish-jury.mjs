@@ -6,7 +6,7 @@
 import assert from "node:assert/strict";
 const clone=x=>structuredClone(x);
 const BATH_ROOMS=["BATH-M01","BATH-C01","WC-01"];
-const CAMERA_IDS=["bath55-master-walkin-correct-door","bath55-family-entry","guest-wc-entry-open"];
+const CAMERA_IDS=["bath55-master-walkin-deep-eye","bath55-family-entry","guest-wc"];
 const material=(id,name,colour,size,notes)=>({
  schema:"InteriorMaterial/1",id,name,category:"stone",
  source_status:"GENERIC",base_colour:colour,finish:"matte",

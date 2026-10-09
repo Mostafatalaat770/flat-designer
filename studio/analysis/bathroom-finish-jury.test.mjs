@@ -10,7 +10,7 @@ test("camera-controlled honest finish comparison from CURRENT v55 scene",()=>{
  assert.equal(a.scene_revision,"scene-9cf45a73");
  assert.notEqual(b.scene_revision,a.scene_revision);
  assert.deepEqual(a.views,b.views);
- assert.equal(a.views.length,3);
+ assert.deepEqual(a.views.map(v=>v.id),["bath55-master-walkin-deep-eye","bath55-family-entry","guest-wc"]);
  assert.deepEqual(a.layout,current.layout);
  assert.equal(audit.cloud_saved_scene,"scene-4821689");
 });
