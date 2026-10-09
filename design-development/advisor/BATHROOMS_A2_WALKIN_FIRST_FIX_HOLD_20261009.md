@@ -5,7 +5,7 @@ Date: **2026-10-09**. Owner/family-first. Status: **DESIGN STUDY ONLY — NOT FO
 ## Immutable source / separation of concerns
 - Canonical: Type B v0.2.2, SHA `734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658`.
 - Original cloud design A11.1/v50 `scene-85fd2cac`; still saved as its prior design variant.
-- Active cloud Studio A2/v53 `scene-6baf7029`. Git branch does not change cloud site automatically.
+- Active cloud Studio A2/v54 `scene-74ac7e58`. Git branch does not change cloud site automatically.
 - Architecture, partitions, doors, apertures, glaze, 2.50 m clear ceiling **MUST NOT change** without explicit architectural/as-built approval.
 - **Proposed application patch:** a distinct `shower.variant = "walk-in"` preserves legacy `style` showers while drawing an open floor with a wall shower, no two full-height prefabricated glass walls and no 50 mm raised step. **Only** the separate interior divider forms the fixed clear splash screen. Do not claim this is deployed to live Studio yet.
 
@@ -39,7 +39,7 @@ Date: **2026-10-09**. Owner/family-first. Status: **DESIGN STUDY ONLY — NOT FO
 **DO NOT CERTIFY THE FLOW:** The conservative sampled centre-route analyzer reports approx 20.3 mm even after storage changes. This is a proxy/algorithm bottleneck, **not a physical clear-width measurement**, and alternative shifted WC studies improved the proxy but introduced fixture collisions or poor sink clearances. Resolve with exact finished wall measurements, hinge swing, full fixture SKUs/seat projections, door-open body study, and on-site 1:1 tape-out **before buying**.
 
 ## Guest WC · WC-01
-Current slim 350 × 180 mm handwash basin, closeable storage concept, WC and mirror retained. Consider easy-to-clean full porcelain/paint scheme, mirror task lighting, no sharp projecting corners. Review inward door swing and basin mounting with actual SKU.
+Current slim 350 × 180 mm handwash basin, WC and mirror retained. **v54 applies** the same sand-grip floor to guest WC and a soft-greige porcelain accent on the vanity/mirror wall (both generic, supplier sample TBD). Consider easy-to-clean full porcelain/paint scheme, mirror task lighting, no sharp projecting corners. Review inward door swing and basin mounting with actual SKU.
 
 ## Quality gates before any first-fix or purchasing
 1. **As-built survey**: finished dimensions (all three wet spaces), actual wall thickness, waste stacks/soil routing, slab/screed levels, door hinge / width, extractor duct exit, floor levels and falls. Record dated photos.
@@ -57,6 +57,6 @@ Current slim 350 × 180 mm handwash basin, closeable storage concept, WC and mir
 - Existing repo: `design-development/advisor/A15` engineering study for all 13 spaces, if approved later.
 
 ## Release status
-- Cloud saved v53 finish and storage changes validated **166 PASS / 25 WARNING / 0 FAIL**.
+- Cloud saved v54 including guest WC finish and bathroom A2 storage changes validated **166 PASS / 25 WARNING / 0 FAIL**.
 - Renderer PR code is a **candidate**, requires npm checks, real same-camera browser captures, no regression, separate authenticated Vercel preview, and explicit app/site deployment. Current cloud Studio still renders old shower mesh until rollout.
 - No structural, slab, plumbing/wet build, electric, installation or procurement signoff has been issued.
