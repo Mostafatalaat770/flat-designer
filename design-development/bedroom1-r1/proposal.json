@@ -1,0 +1,40 @@
+{
+  "schema": "ApartmentDesignProposal/2",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "base_scene_revision": "scene-9cf45a73",
+  "operations": [
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-8",
+      "changes": {
+        "cx": 2380,
+        "cy": 4330,
+        "w": 1100,
+        "rot": 270,
+        "name": "Bedroom 1 study desk · 1100 x 600 mm · west-wall comparison"
+      }
+    },
+    {
+      "type": "update-furniture",
+      "furniture_id": "starter-9",
+      "changes": {
+        "cx": 3020,
+        "cy": 4250,
+        "rot": 90,
+        "name": "Bedroom 1 study chair · facing west desk"
+      }
+    },
+    {
+      "type": "update-object",
+      "object_id": "V7-bedroom1-drawers",
+      "changes": {
+        "cx": 3850,
+        "cy": 4720,
+        "rotation": 180
+      }
+    }
+  ],
+  "notes": [
+    "LOCAL OWNER REVIEW: preserve bed, wardrobe, window frontage and canonical architecture."
+  ]
+}
