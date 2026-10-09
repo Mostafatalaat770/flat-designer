@@ -36,6 +36,8 @@ jobs:
         run: npm ci
       - name: Build source-locked apartment 3D
         run: npm run build
+      - name: Build local source-locked Studio workbench
+        run: npm run studio:build
       - name: Shared viewer integrity checks
         env:
           CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
