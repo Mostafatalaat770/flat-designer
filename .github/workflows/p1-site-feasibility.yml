@@ -1,0 +1,43 @@
+name: P1/F1 as-built field packet and daily-use sensitivity
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio/analysis/p1-site-feasibility*"
+      - "scripts/build-p1-site-packet.mjs"
+      - ".github/workflows/p1-site-feasibility.yml"
+      - "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md"
+  push:
+    branches: [master]
+    paths:
+      - "studio/analysis/p1-site-feasibility*"
+      - "scripts/build-p1-site-packet.mjs"
+      - ".github/workflows/p1-site-feasibility.yml"
+      - "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-field-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: P1 source, operational sensitivity and permission gates
+        run: node --test studio/analysis/p1-site-feasibility.test.mjs studio/analysis/portal-detail.test.mjs
+      - name: Generate engineering RFI and actual-furniture 2D evidence
+        run: node scripts/build-p1-site-packet.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: P1-F1-site-and-functional-hold-packet
+          path: review-evidence/p1-site/
+          if-no-files-found: error
+          retention-days: 30
