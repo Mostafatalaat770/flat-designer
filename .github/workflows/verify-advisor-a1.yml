@@ -1,0 +1,33 @@
+name: Advisor A1 - family-use gates
+
+on:
+  push:
+    branches:
+      - 'advisor/**'
+    paths:
+      - '.github/workflows/verify-advisor-a1.yml'
+      - 'scripts/audit-advisor-01.mjs'
+      - 'design-development/advisor/**'
+      - 'design-development/k11/**'
+      - 'design-development/k12/**'
+  pull_request:
+    paths:
+      - '.github/workflows/verify-advisor-a1.yml'
+      - 'scripts/audit-advisor-01.mjs'
+      - 'design-development/advisor/**'
+      - 'design-development/k11/**'
+      - 'design-development/k12/**'
+
+jobs:
+  family-use:
+    name: Baseline scenario measurements
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Recompute and verify K11/K12 geometry
+        run: node scripts/audit-advisor-01.mjs

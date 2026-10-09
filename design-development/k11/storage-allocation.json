@@ -1,0 +1,226 @@
+{
+  "schema": "KitchenStorageAllocation/1",
+  "status": "EXPLORATORY",
+  "not_a_family_inventory": true,
+  "assumptions": "18 mm panel allowance; actual fittings, shelves, bins and hob clearances unselected. Nominal cabinet widths are not usable storage widths.",
+  "allocations": [
+    {
+      "id": "cooking-side-drawers",
+      "nominal_mm": [
+        582,
+        600,
+        720
+      ],
+      "quantity": 2,
+      "proposed_compartments": 6,
+      "intent": [
+        "Deep: pots/lids",
+        "Middle: everyday pans/containers",
+        "Shallow: tools/spices"
+      ],
+      "usable_width_estimate_mm": 520,
+      "usable_depth_estimate_mm": 440,
+      "estimate_basis": "36 mm sides + 26 mm runner allowance, 440 mm conservative drawer box depth"
+    },
+    {
+      "id": "hob-lower-drawers",
+      "nominal_mm": [
+        600,
+        600,
+        560
+      ],
+      "quantity": 1,
+      "proposed_compartments": 2,
+      "conditional": true,
+      "intent": [
+        "Two lower deep drawers only; upper 160 mm frontage reserved for hob/services"
+      ],
+      "usable_width_estimate_mm": 538,
+      "usable_depth_estimate_mm": 440
+    },
+    {
+      "id": "island-cutlery",
+      "nominal_mm": [
+        464,
+        600,
+        160
+      ],
+      "quantity": 1,
+      "proposed_compartments": 1,
+      "intent": [
+        "Cutlery and frequently used small tools"
+      ],
+      "usable_width_estimate_mm": 402,
+      "usable_depth_estimate_mm": 440
+    },
+    {
+      "id": "island-waste",
+      "nominal_mm": [
+        464,
+        600,
+        560
+      ],
+      "quantity": 1,
+      "proposed_compartments": 0,
+      "general_dry_storage": false,
+      "intent": [
+        "Two small removable bins front/back; exact volumes/mechanism TBD"
+      ],
+      "bin_reservation_each_mm": [
+        240,
+        180,
+        300
+      ],
+      "bin_quantity": 2
+    },
+    {
+      "id": "island-sink",
+      "nominal_mm": [
+        600,
+        600,
+        720
+      ],
+      "quantity": 1,
+      "proposed_compartments": 0,
+      "general_dry_storage": false,
+      "intent": [
+        "Bowl/trap/services, small cleaning kit only; no dry-food claim"
+      ]
+    },
+    {
+      "id": "island-rear-wide",
+      "nominal_mm": [
+        600,
+        300,
+        720
+      ],
+      "quantity": 2,
+      "proposed_compartments": 4,
+      "usable_width_estimate_mm": 564,
+      "usable_depth_estimate_mm": 259,
+      "intent": [
+        "Mugs/glasses/small dishes; store removable sink cover upright in west unit"
+      ],
+      "plate_diameter_limit_note": "Do not assume standard 280 mm dinner plates fit the 259 mm depth allowance"
+    },
+    {
+      "id": "island-rear-narrow",
+      "nominal_mm": [
+        464,
+        300,
+        720
+      ],
+      "quantity": 1,
+      "proposed_compartments": 2,
+      "usable_width_estimate_mm": 428,
+      "usable_depth_estimate_mm": 259,
+      "intent": [
+        "Tea/coffee supplies or small serving items"
+      ]
+    },
+    {
+      "id": "wall-cabinets",
+      "nominal_mm": [
+        600,
+        330,
+        700
+      ],
+      "quantity": 2,
+      "proposed_compartments": 4,
+      "usable_width_estimate_mm": 564,
+      "usable_depth_estimate_mm": 289,
+      "intent": [
+        "Everyday cups/small bowls; shelf spacing and plate fit need inventory check"
+      ]
+    },
+    {
+      "id": "pantry-lower",
+      "nominal_mm": [
+        600,
+        600,
+        740
+      ],
+      "quantity": 1,
+      "proposed_compartments": 2,
+      "usable_width_estimate_mm": 564,
+      "usable_depth_estimate_mm": 564,
+      "intent": [
+        "Heavy dry groceries; adjustable shelf around 450 mm floor height"
+      ]
+    },
+    {
+      "id": "pantry-upper",
+      "nominal_mm": [
+        600,
+        600,
+        720
+      ],
+      "quantity": 1,
+      "proposed_compartments": 2,
+      "usable_width_estimate_mm": 564,
+      "usable_depth_estimate_mm": 564,
+      "intent": [
+        "Light reserve groceries/occasional items; reaching high shelves may require a step"
+      ]
+    },
+    {
+      "id": "coffee-niche",
+      "nominal_mm": [
+        600,
+        600,
+        620
+      ],
+      "quantity": 1,
+      "proposed_compartments": 0,
+      "general_dry_storage": false,
+      "intent": [
+        "Coffee machine + kettle; preparation/steam/cleaning space"
+      ],
+      "clear_width_mm": 564
+    },
+    {
+      "id": "oven-column",
+      "nominal_mm": [
+        600,
+        600,
+        2200
+      ],
+      "quantity": 1,
+      "proposed_compartments": 0,
+      "unassigned_storage": true,
+      "intent": [
+        "Oven and appliance/services zone; surrounding storage not counted until real SKU is fixed"
+      ]
+    }
+  ],
+  "tradeoffs": [
+    {
+      "change": "Pantry middle becomes coffee niche",
+      "gross_dry_storage_envelope_removed_mm": [
+        600,
+        600,
+        620
+      ],
+      "gross_envelope_litres": 223.2,
+      "note": "Gross bounding-box comparison, NOT lost usable capacity; excludes carcass, air gaps and shelves."
+    },
+    {
+      "change": "Island 464 mm drawer bank becomes waste + one shallow drawer",
+      "deep_general_drawers_removed": 2,
+      "shallow_utility_drawer_retained": 1
+    },
+    {
+      "change": "Cooking run drawer allocation becomes explicit",
+      "note": "Uses the existing 1800 × 600 mm footprint. Does not claim new exterior storage volume; hob lower drawers conditional."
+    }
+  ],
+  "excluded_from_dry_storage": [
+    "Fridge",
+    "Dishwasher",
+    "Sink/plumbing",
+    "Waste pullout",
+    "Coffee niche",
+    "Unverified oven-column spare space"
+  ],
+  "conclusion": "Organized compact storage, not proven generous storage. A family stocktake and selected hardware are required to validate quantities. Large dinner plates should use full-depth lower drawers rather than the shallow rear cabinets."
+}

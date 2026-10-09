@@ -1,8 +1,10 @@
 # Local Apartment Type B workspace
 
-The workspace opens **Whole Apartment A3 — Guest WC + Kitchen Usability / scene-29d4aa6d**, pinned to source storage revision **39** in `render-snapshots/current.json`. The live layout was read and matched before local import. **Family A.7 / scene-9e210720** and all earlier studies are retained as historical candidates. Build-time seed generation is offline and validates the full layout before writing generated app data. See [integration evidence](../local-qa/INTEGRATION_20261006.md). Its architecture is the locked repository model:
+This integrated **owner review** starts from the latest saved cloud v55 (source `scene-4821689`), with a separate true walk-in shower *preview only* (candidate `scene-9cf45a73`). The single working review source is now `render-snapshots/current.json`. Historical v50 remains saved under `studio/local/sources/verified-master-v50.json`, while the unapproved K12 architectural study is archived at `render-snapshots/study-k12-unapproved-20261008.json`. Read `design-development/CURRENT_BASELINE.md` for design decisions, release gates and construction hold points. **Family A.7 / scene-9e210720** and all earlier studies are retained as historical candidates. Build-time seed generation is offline and validates the full layout before writing generated app data. See [integration evidence](../local-qa/INTEGRATION_20261006.md). Its architecture is the locked repository model:
 
 `734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658`
+
+For the reversible design workbench, read [Explore & Verify](EXPLORE_VERIFY.md): A/B true Three.js views, live material/light settings, a hard canonical verification gate, and explicit new immutable local version saving. No public Site deployment is performed.
 
 ## Run
 
@@ -16,7 +18,7 @@ npm run studio:review
 python3 local-qa/serve.py --port 4176
 ```
 
-Open **http://127.0.0.1:4176/_qa/workspace/**. Review evidence at **http://127.0.0.1:4176/_qa/integration-review.html**. Historical generated evidence remains in the preserved earlier checkout on port 4174; its sources and complete study data are retained here. The integration review includes six new Natural views. For hot reload, leave the local server running and run `npm run studio:dev`; open http://127.0.0.1:4175/_qa/workspace/.
+Open **http://127.0.0.1:4176/_qa/workspace/** and **http://127.0.0.1:4176/_qa/workspace/explore.html** for live A/B materials and Verify Mode. Review evidence at **http://127.0.0.1:4176/_qa/integration-review.html**. Historical generated evidence remains in the preserved earlier checkout on port 4174; its sources and complete study data are retained here. The integration review includes six new Natural views. For hot reload, leave the local server running and run `npm run studio:dev`; open http://127.0.0.1:4175/_qa/workspace/.
 
 The server binds loopback only. Production API/MCP routes and cloud persistence are disconnected. The sole local POST route, `/_qa/workspace-export`, validates the brief, canonical geometry and binary GLB before saving an immutable local render export. It accepts the exact local origin, not production credentials. Export jobs, generated pages and private production recovery files are ignored by Git; keep backups of those local artifacts.
 
@@ -24,11 +26,11 @@ The server binds loopback only. Production API/MCP routes and cloud persistence 
 
 Select a room and a standing camera. Natural **42° vertical FOV / 1.70 m eye** is the primary spatial view; Wide 60° is for composition. Scale Check displays a 1.70 m human and a 1.00 m ruler. Saved, orbit and walking modes share the canonical scale; standing camera preflight rejects blocked viewpoints.
 
-Select furniture in the view or inspector. Dimensions mean its **outer footprint**. Apply edits through the existing `ApartmentDesignProposal/2` contract. Hard validation failures reject the whole proposal; warnings require spatial context. The pinned current baseline has **165 PASS / 74 WARNING / 0 FAIL**; historical A.7 retains its own earlier report.
+Select furniture in the view or inspector. Dimensions mean its **outer footprint**. Apply edits through the existing `ApartmentDesignProposal/2` contract. Hard validation failures reject the whole proposal; warnings require spatial context. The current baseline counts are computed by the validator against the frozen v55 preview source, not copied from the old v39 report; historical A.7 retains its earlier evidence.
 
 Undo/redo works during the current session. Drafts and the design log persist separately in local browser storage. Versions are immutable named snapshots; import/export uses the existing `ApartmentDesignBrief/1`. Export important versions rather than relying solely on browser storage. The before/current comparison uses matching camera positions and lenses. Finish each controlled change by writing its observation and keep/revert decision after inspecting several Natural views.
 
-Browser keys are scoped to the seed: `type-b-workspace-draft-scene-29d4aa6d-v1` and `type-b-workspace-scene-29d4aa6d-v1`. Older drafts are retained without auto-loading; versions from the legacy key and earlier seed keys remain available. Legacy study keys and production history remain separate. Malformed saved data is rejected rather than silently overwritten. Historical variants are retained.
+Browser keys are scoped to the v55 preview seed: `type-b-workspace-draft-scene-9cf45a73-v1` and `type-b-workspace-scene-9cf45a73-v1`. Older drafts are retained without auto-loading; versions from the legacy key and earlier seed keys remain available. Legacy study keys and production history remain separate. Malformed saved data is rejected rather than silently overwritten. Historical variants are retained.
 
 ## Detailed furniture
 

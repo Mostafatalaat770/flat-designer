@@ -9,6 +9,7 @@ on:
       - "scripts/render-snapshot.mjs"
       - ".github/workflows/render-apartment.yml"
       - "capture-renderer.js"
+      - "scripts/verify-render-overlay.mjs"
       - "build_capture.mjs"
       - "make_app.py"
       - "generate_model.py"
@@ -19,6 +20,7 @@ on:
       - "interior-core.js"
       - "interior-materials.json"
       - "verify_saved_materials.mjs"
+      - "studio/renderer/builders.js"
       - "studio-catalog.json"
   workflow_dispatch:
     inputs:
@@ -52,10 +54,11 @@ jobs:
       - name: Install project dependencies
         run: npm ci
 
-      - name: Install Playwright Chromium
+      - name: Install headless Chromium
+        timeout-minutes: 5
         run: |
-          npm install --no-save playwright
-          npx playwright install --with-deps chromium
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
 
       - name: Check saved finish and appliance clearance regressions
         run: node verify_saved_materials.mjs
@@ -63,10 +66,32 @@ jobs:
       - name: Build exact Studio capture template
         run: npm run build
 
+      - name: Verify render-only finish repairs (legacy K11/K12 branches)
+        if: contains(fromJSON('["refs/heads/design/k11-kitchen-daily-use","refs/heads/design/k12-permanent-end-prep"]'), github.ref)
+        run: node scripts/verify-render-overlay.mjs
+
       - name: Render branch snapshot
         env:
           SNAPSHOT_PATH: ${{ github.event.inputs.snapshot || 'render-snapshots/current.json' }}
         run: node scripts/render-snapshot.mjs "$SNAPSHOT_PATH"
+
+      - name: Render K11 removable-cover preparation mode
+        if: github.ref == 'refs/heads/design/k11-kitchen-daily-use'
+        env:
+          RENDER_OUT_DIR: renders/prep-mode
+        run: node scripts/render-snapshot.mjs design-development/k11/prep-mode.json
+
+      - name: Render K12 standing end-prep view
+        if: github.ref == 'refs/heads/design/k12-permanent-end-prep'
+        env:
+          RENDER_OUT_DIR: renders/end-prep
+        run: node scripts/render-snapshot.mjs design-development/k12/end-prep-view.json
+
+      - name: Render frozen K11 comparison
+        if: github.ref == 'refs/heads/design/k12-permanent-end-prep'
+        env:
+          RENDER_OUT_DIR: renders/comparison-K11
+        run: node scripts/render-snapshot.mjs design-development/k12/k11-comparison.json
 
       - name: Upload PNGs and metadata
         if: always()
@@ -76,3 +101,4 @@ jobs:
           path: renders/
           if-no-files-found: error
           retention-days: 14
+

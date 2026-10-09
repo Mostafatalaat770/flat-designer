@@ -1,0 +1,61 @@
+name: Advisor A11 - sleep-first master room with batch comparison
+
+on:
+  push:
+    branches:
+      - 'advisor/a11-master-bedroom-sleep-first-20261008'
+    paths:
+      - 'scripts/prepare-advisor-a11-master.mjs'
+      - '.github/workflows/verify-advisor-a11.yml'
+  pull_request:
+    paths:
+      - 'scripts/prepare-advisor-a11-master.mjs'
+      - '.github/workflows/verify-advisor-a11.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  master-room-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Verify source camera batch design contract
+        run: node --test scripts/render-batch-plan.test.mjs
+      - name: Independently measure sleeping zone vs optional joinery
+        run: node scripts/prepare-advisor-a11-master.mjs
+      - name: Render three master layouts in one verified browser
+        env:
+          RENDER_OUT_DIR: renders/a11
+          RENDER_CONCURRENCY: "2"
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a11/current.json \
+            design-development/advisor/a11/no-bench.json \
+            design-development/advisor/a11/open-foot-wall.json
+      - name: Assert six matching-camera outputs are verified
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const b=JSON.parse(fs.readFileSync('renders/a11/batch-manifest.json','utf8'));assert.equal(b.status,'ALL_FRAMES_VERIFIED');assert.equal(b.browser_launches,1);assert.equal(b.variants.length,3);assert.equal(b.frames.length,6);console.log('PASS: 3 reversible master furnishing schemes, 6 attested images')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: advisor-a11-master-sleep-first-images
+          path: |
+            renders/a11/
+            design-development/advisor/a11/review.json
+          if-no-files-found: error
+          retention-days: 30

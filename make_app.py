@@ -215,7 +215,7 @@ function('buildArch','''function buildArch(){
   }
   [...DOORS,...SLIDES,...PASSAGES].forEach(d=>{
     const [x0,y0,x1,y1]=d.rect;
-    const threshold=box(M(x1-x0),.012,M(y1-y0),mat('#bfcad3',{roughness:.5}),wx((x0+x1)/2),0,wz((y0+y1)/2));threshold.castShadow=false;archFloor.add(threshold);
+    const threshold=box(M(x1-x0),.012,M(y1-y0),mat('#bfcad3',{roughness:.5}),wx((x0+x1)/2),0,wz((y0+y1)/2));threshold.castShadow=false;threshold.userData.openingId=d.id;archFloor.add(threshold);
   });
   WALL_SEGMENTS.forEach(s=>{
     const [x0,z0]=s.from,[x1,z1]=s.to,dx=M(x1-x0),dz=M(z1-z0),height=Math.min(s.height_m,top);
@@ -225,7 +225,7 @@ function('buildArch','''function buildArch(){
     colliders.push({a:[wx(x0),wz(z0)],b:[wx(x1),wz(z1)],half:M(s.thickness_mm)/2});
     const edges=new THREE.LineSegments(new THREE.EdgesGeometry(o.geometry),edgeMat);edges.position.copy(o.position);edges.rotation.copy(o.rotation);edges.visible=opt.mode==='walk';edges.userData.walkOnly=true;archUp.add(edges);
   });
-  [...DOORS.map(d=>[d.rect,2.1]),...SLIDES.map(d=>[d.rect,d.head_m]),...PASSAGES.map(d=>[d.rect,d.head_m])].forEach(([r,h])=>{if(top>h)wallBox(r,h,top);});
+  [...DOORS.map(d=>[d.id,d.rect,2.1]),...SLIDES.map(d=>[d.id,d.rect,d.head_m]),...PASSAGES.map(d=>[d.id,d.rect,d.head_m])].forEach(([id,r,h])=>{if(top>h){const n0=archUp.children.length;wallBox(r,h,top);for(let k=n0;k<archUp.children.length;k++)archUp.children[k].userData.openingHeaderId=id;}});
   WINS.forEach((r,i)=>{
     const {sill_m:sill,head_m:head,id}=MODEL.window_meta[i];
     if(sill>0)wallBox(r,0,Math.min(sill,top));if(top>head)wallBox(r,head,top);
@@ -364,6 +364,12 @@ dialog{border:1px solid var(--line);border-radius:8px;padding:0;width:min(1000px
 '''
 replace('</style>','\n'+css+'\n</style>')
 
+# Open-kitchen architectural studies need base cabinets without the upstream demo's forced backsplash/upper-cabinet stack.
+replace(
+    "g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004), box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));",
+    "if(['base-only','peninsula'].includes(f.variant)){g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));break;} g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004), box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));"
+)
+
 # Keep compact conceptual vanity bowls inside the saved depth envelope.
 # Only depths below 300 mm change; this is not manufacturer CAD.
 replace("const rb = Math.min(.19, w/nb*.36);", "const rb = Math.min(.19, w/nb*.36), bowlZ = d < .30 ? 0 : .03, bowlScaleZ = d < .30 ? Math.min(1, (d - .04)/(2*rb)) : 1;")
@@ -379,5 +385,21 @@ from cloud_upgrade import apply_cloud
 s=apply_cloud(s)
 from interior_upgrade import apply_interior
 s=apply_interior(s)
+
+# Final truth-render pass: base-only / peninsula counters must render as real cabinet masses.
+# Apply after all upgrade layers so no later transformer can overwrite the branch-specific builder.
+counter_old = """case 'counter': {
+      const cm = mat(c, {roughness:.45}), stone = mat('#dcd7cf', {roughness:.22}), n = Math.max(1, Math.round(w/.6)), fz = d/2 - .04;"""
+counter_new = """case 'counter': {
+      const cm = mat(c, {roughness:.45}), stone = mat('#dcd7cf', {roughness:.22}), n = Math.max(1, Math.round(w/.6)), fz = d/2 - .04;
+      if(['base-only','peninsula'].includes(f.variant)){
+        g.add(box(w - .01, .08, d - .08, '#4a4641', 0, 0, -.04), box(w, .74, d - .04, cm, 0, .08, -.02));
+        fronts(g, -w/2 + .005, .08, w - .01, .72, fz, n, 1, cm, 'edge', .48);
+        g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));
+        break;
+      }"""
+assert counter_old in s, 'final counter builder target missing'
+s=s.replace(counter_old,counter_new,1)
+
 (ROOT/"dist"/"index.html").write_text(s)
 print({"index_bytes":len(s.encode()),"output":str(ROOT/"dist"/"index.html")})

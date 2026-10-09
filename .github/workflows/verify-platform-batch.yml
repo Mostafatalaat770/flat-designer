@@ -1,0 +1,78 @@
+name: Platform - verified batch renderer (A10 regression)
+
+on:
+  push:
+    branches:
+      - 'platform/batch-compare-and-verify-20261008'
+    paths:
+      - 'scripts/render-batch-plan.mjs'
+      - 'scripts/render-batch-plan.test.mjs'
+      - 'scripts/render-variants.mjs'
+      - '.github/workflows/verify-platform-batch.yml'
+  pull_request:
+    paths:
+      - 'scripts/render-batch-plan.mjs'
+      - 'scripts/render-batch-plan.test.mjs'
+      - 'scripts/render-variants.mjs'
+      - '.github/workflows/verify-platform-batch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pure-tests:
+    name: Scene/camera attestation unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test batch planner contracts
+        run: node --test scripts/render-batch-plan.test.mjs
+
+  integration:
+    name: Four-variant / eight-frame real WebGL integrity
+    needs: pure-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - name: Headless WebGL Chromium
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+      - run: npm run build
+      - name: Regenerate A10 exact canonical alternatives
+        run: node scripts/prepare-advisor-a10-bedroom-flex.mjs > /tmp/a10-prepared.json
+      - name: Batch render all four A10 variations using ONE browser
+        env:
+          RENDER_OUT_DIR: renders/verified-batch
+          RENDER_CONCURRENCY: "2"
+        run: |
+          node scripts/render-variants.mjs \
+            design-development/advisor/a10/current-1000.json \
+            design-development/advisor/a10/shift-1000-west90.json \
+            design-development/advisor/a10/shift-900-west120.json \
+            design-development/advisor/a10/flex-no-desk.json
+      - name: Validate complete manifest and frame count
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const b=JSON.parse(fs.readFileSync('renders/verified-batch/batch-manifest.json','utf8'));assert.equal(b.status,'ALL_FRAMES_VERIFIED');assert.equal(b.browser_launches,1);assert.equal(b.variants.length,4);assert.equal(b.frames.length,8);assert.ok(b.frames.every(x=>x.validated&&x.image_sha256.length===64));console.log('PASS: 4 variants / 8 attested PNGs / one Chromium instance. Total ms='+b.total_elapsed_ms)"
+      - name: Preserve exact output and timing evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: platform-a10-comparison-batch
+          path: renders/verified-batch/
+          if-no-files-found: error
+          retention-days: 30

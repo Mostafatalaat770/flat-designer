@@ -1,0 +1,70 @@
+name: Render K11 Coffee Detail
+
+on:
+  push:
+    branches:
+      - "design/k11-kitchen-daily-use"
+    paths:
+      - "design-development/k11/coffee-detail.json"
+      - ".github/workflows/render-k11-detail.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: k11-detail-render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install project dependencies
+        run: npm ci
+
+      - name: Install headless Chromium
+        timeout-minutes: 5
+        run: |
+          npm install --no-save --no-audit --no-fund playwright
+          npx playwright install --only-shell chromium
+
+      - name: Build exact Studio capture template
+        run: npm run build
+
+      - name: Verify render-only finish repairs
+        run: node scripts/verify-render-overlay.mjs design-development/k11/snapshot.json
+
+      - name: Validate supplemental view against the primary scene
+        run: |
+          node --input-type=module - <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';import {createApartmentDomain} from './studio/domain/apartment.mjs';
+          const main=JSON.parse(fs.readFileSync('design-development/k11/snapshot.json')),detail=JSON.parse(fs.readFileSync('design-development/k11/coffee-detail.json')),d=createApartmentDomain(process.cwd());
+          assert.deepEqual(detail.layout,main.layout);assert.deepEqual(detail.architecture_variant,main.architecture_variant);assert.equal(detail.scene_revision,main.scene_revision);
+          const v=detail.views[0];assert.equal(v.camera.position[1],1.7);assert.equal(v.camera.fov,42);
+          assert.deepEqual(v.camera,d.captureCamera(detail.layout,{room_id:v.room_id,position:v.camera.position,target:v.camera.target,fov:42}));
+          JS
+
+      - name: Render supplementary coffee station
+        run: node scripts/render-snapshot.mjs design-development/k11/coffee-detail.json
+
+      - name: Upload PNGs and metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k11-coffee-detail-${{ github.run_id }}-${{ github.sha }}
+          path: renders/
+          if-no-files-found: error
+          retention-days: 14
+

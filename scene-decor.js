@@ -127,7 +127,7 @@ function buildSceneDecor(){
     if(!mount)continue;
     const skirting=box(Math.max(.03,L-.02),.055,.012,woodM(theme.woodDark));
     skirting.position.set(mount.x,.004,mount.z);skirting.rotation.y=Math.atan2(mount.nx,mount.nz);
-    skirting.userData.sceneFeature='skirting';sceneDecorG.add(skirting);
+    skirting.userData.sceneFeature='skirting';skirting.userData.hostWallSegment=mount.wall;sceneDecorG.add(skirting);
   }
   applySceneLighting();
 }

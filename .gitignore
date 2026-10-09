@@ -17,3 +17,5 @@ studio/app/data/workspace-seed.json
 studio/app/data/workspace-cameras.json
 studio/app/data/workspace-config.json
 studio/domain/browser.js
+.vercel/
+vercel-preview/

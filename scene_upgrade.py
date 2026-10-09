@@ -17,6 +17,8 @@ def apply_scenes(s):
     replace('const woodM = c => mat(c, {roughness:.55});','const woodM = c => sceneSurface(\'wood\',c);')
     helper='\n'.join((ROOT/name).read_text() for name in ['scene-materials.js','scene-floors.js','scene-furniture.js','scene-decor.js'])
     replace('function buildFurniture(f){',helper+'\nfunction buildFurniture(f){\n  const styled=makeStyleFurniture(f);if(styled)return styled;')
+    # The classic capture path shares the explicit workstation model with Studio.
+    replace("case 'ksink': {\n      const st =", "case 'ksink': {\n      if(f.workstation){studioWorkstationSink(g,f,w,d);break;}\n      const st =")
     replace("lightoak:{sx:1.8,sy:.36,base:'#e0d0b3',rough:.65},", "parquet:{sx:1.2,sy:1.2,base:'#c9a678',rough:.58},travertine:{sx:1.2,sy:.6,base:'#dfcfb4',grout:'#c6b798',rough:.62},lightoak:{sx:2.2,sy:.40,base:'#e0d0b3',rough:.65},")
     replace('  if (wood){','  if(sceneFloorPaint(kind,g,W,Hh,s,R)){}else if (wood){')
     replace('new THREE.MeshStandardMaterial({map:t, roughness:s.rough})','sceneFloorMaterial(t,s)')

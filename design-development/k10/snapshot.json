@@ -1,0 +1,2612 @@
+{
+  "schema": "ApartmentGitHubRenderSnapshot/1",
+  "name": "K10 — balanced island with centred sink and usable cabinet reservations",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "scene_revision": "scene-967b6681",
+  "storage_revision": 39,
+  "layout": {
+    "modelVersion": "0.2.2",
+    "furniture": [
+      {
+        "id": "starter-1",
+        "type": "bed",
+        "name": "King frame 1870 × 2220 · mattress 1800 × 2000",
+        "room_id": "MBR-01",
+        "cx": 1516,
+        "cy": 6835,
+        "w": 1870,
+        "d": 2220,
+        "rot": 270,
+        "color": "#dfd3bb",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "bed-idanas-180-reference",
+        "material_id": "generic-linen"
+      },
+      {
+        "id": "starter-2",
+        "type": "nightstand",
+        "name": "Nightstand",
+        "room_id": "MBR-01",
+        "cx": 656.668,
+        "cy": 5650,
+        "w": 450,
+        "d": 400,
+        "rot": 270,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-3",
+        "type": "nightstand",
+        "name": "Nightstand",
+        "room_id": "MBR-01",
+        "cx": 656.668,
+        "cy": 8050,
+        "w": 450,
+        "d": 400,
+        "rot": 270,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-4",
+        "type": "wardrobe",
+        "name": "North dressing wardrobe · 1250 × 600 mm",
+        "room_id": "WIC-01",
+        "cx": 4734,
+        "cy": 6615,
+        "w": 1250,
+        "d": 600,
+        "rot": 0,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-5",
+        "type": "wardrobe",
+        "name": "South dressing wardrobe · 1250 × 600 mm",
+        "room_id": "WIC-01",
+        "cx": 4734,
+        "cy": 8550,
+        "w": 1250,
+        "d": 600,
+        "rot": 180,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-6",
+        "type": "bed",
+        "name": "Single frame reserve 1280 × 2100 · mattress 1200 × 2000",
+        "room_id": "BR-01",
+        "cx": 2774.953,
+        "cy": 2680,
+        "w": 1280,
+        "d": 2100,
+        "rot": 0,
+        "color": "#dfd3bb",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "generic-linen"
+      },
+      {
+        "id": "starter-7",
+        "type": "wardrobe",
+        "name": "Bedroom 1 wardrobe · 1800 × 600 mm",
+        "room_id": "BR-01",
+        "cx": 5060,
+        "cy": 3150,
+        "w": 1800,
+        "d": 600,
+        "rot": 90,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-8",
+        "type": "desk",
+        "name": "Bedroom 1 study desk · 1200 × 600 mm",
+        "room_id": "BR-01",
+        "cx": 3800,
+        "cy": 4590,
+        "w": 1200,
+        "d": 600,
+        "rot": 180,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-9",
+        "type": "chair",
+        "name": "Bedroom 1 study chair · bed overlap corrected",
+        "room_id": "BR-01",
+        "cx": 3720,
+        "cy": 3930,
+        "w": 480,
+        "d": 500,
+        "rot": 180,
+        "color": "#8D9381",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-10",
+        "type": "bed",
+        "name": "1280 × 2100 frame reserve · headboard on east wall",
+        "room_id": "BR-02",
+        "cx": 7820,
+        "cy": 2800,
+        "w": 1280,
+        "d": 2100,
+        "rot": 90,
+        "color": "#dfd3bb",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "generic-linen"
+      },
+      {
+        "id": "starter-11",
+        "type": "desk",
+        "name": "Bedroom 2 study desk · 1000 × 600 mm",
+        "room_id": "BR-02",
+        "cx": 6140,
+        "cy": 1920,
+        "w": 1000,
+        "d": 600,
+        "rot": 0,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-12",
+        "type": "officechair",
+        "name": "Bedroom 2 compact task chair · generic",
+        "room_id": "BR-02",
+        "cx": 6140,
+        "cy": 2730,
+        "w": 560,
+        "d": 560,
+        "rot": 0,
+        "color": "#8A8F82",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-13",
+        "type": "wardrobe",
+        "name": "1600 mm closed wardrobe · one family-linen bay",
+        "room_id": "BR-02",
+        "cx": 7990,
+        "cy": 4589,
+        "w": 1600,
+        "d": 600,
+        "rot": 180,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-15",
+        "type": "toilet",
+        "name": "Ensuite WC · rear toward south wall · plumbing TBD",
+        "room_id": "BATH-M01",
+        "cx": 6714.964,
+        "cy": 8520,
+        "w": 400,
+        "d": 700,
+        "rot": 180,
+        "color": "#F5F4F0",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-17",
+        "type": "toilet",
+        "name": "Family WC · rear toward east wall · plumbing TBD",
+        "room_id": "BATH-C01",
+        "cx": 8541,
+        "cy": 7440,
+        "w": 400,
+        "d": 700,
+        "rot": 90,
+        "color": "#F5F4F0",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-18",
+        "type": "vanity",
+        "name": "600 mm basin on custom closed vanity",
+        "room_id": "BATH-C01",
+        "cx": 8500,
+        "cy": 6526,
+        "w": 600,
+        "d": 460,
+        "rot": 0,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-dneo-basin-custom-vanity",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-25",
+        "type": "toilet",
+        "name": "Guest WC",
+        "room_id": "WC-01",
+        "cx": 11269.276,
+        "cy": 9701.745,
+        "w": 400,
+        "d": 650,
+        "rot": 270,
+        "color": "#f6f8fa",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-26",
+        "type": "vanity",
+        "name": "Guest WC wall-hung handrinse · 350 × 180 mm · F1 dimensional envelope",
+        "room_id": "WC-01",
+        "cx": 11990,
+        "cy": 9145,
+        "w": 350,
+        "d": 180,
+        "rot": 0,
+        "color": "#60432E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-27",
+        "type": "rug",
+        "name": "Living rug · generous front-leg coverage",
+        "room_id": "RECP-01",
+        "cx": 11000,
+        "cy": 2700,
+        "w": 3400,
+        "d": 2100,
+        "rot": 90,
+        "color": "#b6a797",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "generic-carpet"
+      },
+      {
+        "id": "starter-28",
+        "type": "sofa",
+        "name": "Family sofa · tailored straight · 2880 × 990 mm",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 2460,
+        "w": 2880,
+        "d": 990,
+        "rot": 270,
+        "color": "#dfd3bb",
+        "status": "EXPLORATORY",
+        "variant": "tailored",
+        "material_id": "generic-linen",
+        "product_reference_id": "sofa-tailored"
+      },
+      {
+        "id": "starter-29",
+        "type": "coffeetable",
+        "name": "Coffee table · Option A enlarged",
+        "room_id": "RECP-01",
+        "cx": 10900,
+        "cy": 2350,
+        "w": 1200,
+        "d": 600,
+        "rot": 90,
+        "color": "#D2BFA4",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-30",
+        "type": "tvstand",
+        "name": "TV console",
+        "room_id": "RECP-01",
+        "cx": 12180,
+        "cy": 1800,
+        "w": 1800,
+        "d": 380,
+        "rot": 90,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-31",
+        "type": "tv",
+        "name": "TV",
+        "room_id": "RECP-01",
+        "cx": 12243.688,
+        "cy": 1779.359,
+        "w": 1230,
+        "d": 80,
+        "rot": 90,
+        "color": "#152034",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-32",
+        "type": "armchair",
+        "name": "Single olive lounge chair · E2 shifted north to protect island circulation",
+        "room_id": "RECP-01",
+        "cx": 11620,
+        "cy": 3890,
+        "w": 700,
+        "d": 720,
+        "rot": 135,
+        "color": "#7D856F",
+        "status": "EXPLORATORY",
+        "variant": "tailored"
+      },
+      {
+        "id": "starter-35",
+        "type": "table",
+        "name": "Dining table · six seats · 2000 × 950 mm",
+        "room_id": "RECP-01",
+        "cx": 14670,
+        "cy": 7500,
+        "w": 2000,
+        "d": 950,
+        "rot": 0,
+        "color": "#D8CEC0",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-36",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 13970,
+        "cy": 6800,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-37",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 15370,
+        "cy": 6800,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-38",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 13970,
+        "cy": 8200,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-39",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 15370,
+        "cy": 8200,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-40",
+        "type": "shoecab",
+        "name": "Slim entry shoe storage · 900 × 280 mm",
+        "room_id": "RECP-01",
+        "cx": 15740,
+        "cy": 9450,
+        "w": 900,
+        "d": 280,
+        "rot": 90,
+        "color": "#B88C5E",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-41",
+        "type": "roundtable",
+        "name": "Terrace table",
+        "room_id": "TER-MAIN",
+        "cx": 14256.058,
+        "cy": 1292.154,
+        "w": 600,
+        "d": 600,
+        "rot": 0,
+        "color": "#a5825c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-42",
+        "type": "armchair",
+        "name": "Terrace chair",
+        "room_id": "TER-MAIN",
+        "cx": 13366.379,
+        "cy": 1292.154,
+        "w": 650,
+        "d": 650,
+        "rot": 270,
+        "color": "#69755c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-43",
+        "type": "armchair",
+        "name": "Terrace chair",
+        "room_id": "TER-MAIN",
+        "cx": 15145.738,
+        "cy": 1292.154,
+        "w": 650,
+        "d": 650,
+        "rot": 90,
+        "color": "#69755c",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-44",
+        "type": "plant",
+        "name": "Plant",
+        "room_id": "TER-MBR",
+        "cx": 381.291,
+        "cy": 3834.096,
+        "w": 500,
+        "d": 500,
+        "rot": 0,
+        "color": "#799378",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "A2-dining-chair-north-centre",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 14670,
+        "cy": 6800,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "A2-dining-chair-south-centre",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 14670,
+        "cy": 8200,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#A89E90",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "S1-living-side-table",
+        "type": "sidetable",
+        "name": "Living side table · remote, drink and book",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 4240,
+        "w": 460,
+        "d": 460,
+        "rot": 0,
+        "color": "#C6B18F",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "V5-master-rug",
+        "type": "rug",
+        "name": "Quiet master rug · generic 2600 × 3000",
+        "room_id": "MBR-01",
+        "cx": 1900,
+        "cy": 6800,
+        "w": 2600,
+        "d": 3000,
+        "rot": 270,
+        "color": "#b6a797",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "material_id": "generic-carpet"
+      },
+      {
+        "id": "R1-ensuite-vanity",
+        "type": "vanity",
+        "name": "600 mm basin on custom closed vanity",
+        "room_id": "BATH-M01",
+        "cx": 5980,
+        "cy": 8620,
+        "w": 600,
+        "d": 460,
+        "rot": 180,
+        "color": "#B88C5E",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "product_reference_id": "r1-dneo-basin-custom-vanity",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "E2-cooking-base",
+        "type": "counter",
+        "name": "K4 cooking run · 1800 mm · 600 drawers + 600 hob + 600 drawers",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 7774.106,
+        "w": 1800,
+        "d": 600,
+        "rot": 270,
+        "color": "#E8E2D7",
+        "variant": "base-only",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E2-hob",
+        "type": "stove",
+        "name": "K3 600 mm gas hob centered on 1800 mm cooking run · hood/extraction TBD",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 7774.106,
+        "w": 600,
+        "d": 400,
+        "rot": 270,
+        "color": "#424f61",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "E2-oven-column",
+        "type": "ovencol",
+        "name": "E2 600 mm oven + appliance/storage column",
+        "room_id": "KIT-01",
+        "cx": 11650,
+        "cy": 8570,
+        "w": 600,
+        "d": 600,
+        "rot": 180,
+        "color": "#E8E2D7",
+        "variant": "black-glass",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E2-fridge",
+        "type": "fridge",
+        "name": "E2 600 mm integrated-fridge housing · exact SKU/ventilation TBD",
+        "room_id": "KIT-01",
+        "cx": 12250,
+        "cy": 8570,
+        "w": 600,
+        "d": 600,
+        "rot": 180,
+        "color": "#E8E2D7",
+        "variant": "integrated",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "E2-island",
+        "type": "counter",
+        "name": "K10 oak island · dishwasher, sink, drawers · 1700 × 900 mm",
+        "room_id": "RECP-01",
+        "cx": 11750,
+        "cy": 6600,
+        "w": 1700,
+        "d": 900,
+        "rot": 0,
+        "color": "#B88C5E",
+        "variant": "base-only",
+        "status": "EXPLORATORY",
+        "material_id": "a1-natural-oak",
+        "joinery": {
+          "schema": "CounterJoineryConcept/1",
+          "status": "EXPLORATORY",
+          "end_panel_mm": 18,
+          "working_depth_mm": 600,
+          "rear_depth_mm": 300,
+          "work_modules": [
+            {
+              "role": "dishwasher",
+              "width_mm": 600,
+              "clear_appliance_reservation": true
+            },
+            {
+              "role": "sink",
+              "width_mm": 600
+            },
+            {
+              "role": "drawers",
+              "width_mm": 464
+            }
+          ],
+          "rear_modules": [
+            {
+              "role": "storage",
+              "width_mm": 600
+            },
+            {
+              "role": "storage",
+              "width_mm": 600
+            },
+            {
+              "role": "storage",
+              "width_mm": 464
+            }
+          ]
+        }
+      },
+      {
+        "id": "E2-island-sink",
+        "type": "ksink",
+        "name": "K10 550 mm centred island sink · tap north / work face south · TBD",
+        "room_id": "RECP-01",
+        "cx": 11800,
+        "cy": 6750,
+        "w": 550,
+        "d": 400,
+        "rot": 0,
+        "color": "#eef2f5",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "I1-master-shower",
+        "type": "shower",
+        "name": "Master walk-in shower · 1500 × 800 mm · glass/drain TBD",
+        "room_id": "BATH-M01",
+        "cx": 6312,
+        "cy": 6707,
+        "w": 1500,
+        "d": 800,
+        "rot": 0,
+        "color": "#C0D6DF",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "I2-family-tub",
+        "type": "bathtub",
+        "name": "Family bathtub · 1500 × 750 mm · kid/family capability",
+        "room_id": "BATH-C01",
+        "cx": 8081.257,
+        "cy": 8585.346,
+        "w": 1500,
+        "d": 750,
+        "rot": 0,
+        "color": "#F5F4F0",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "H1-terrace-washer",
+        "type": "washer",
+        "name": "Service-terrace washer envelope · 600 × 650 mm · weather-protection TBD",
+        "room_id": "TER-SVC",
+        "cx": 9170,
+        "cy": 9600,
+        "w": 600,
+        "d": 650,
+        "rot": 270,
+        "color": "#E6E8EA",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      }
+    ],
+    "rooms": {
+      "TER-MBR": {
+        "name": "Master terrace",
+        "mat": "antislip"
+      },
+      "BR-01": {
+        "name": "Bedroom 1",
+        "mat": "parquet"
+      },
+      "BR-02": {
+        "name": "Bedroom 2",
+        "mat": "parquet"
+      },
+      "MBR-01": {
+        "name": "Master bedroom",
+        "mat": "parquet"
+      },
+      "HALL-01": {
+        "name": "Private hall",
+        "mat": "parquet"
+      },
+      "WIC-01": {
+        "name": "Dressing",
+        "mat": "parquet"
+      },
+      "BATH-M01": {
+        "name": "Ensuite",
+        "mat": "tile800"
+      },
+      "BATH-C01": {
+        "name": "Family bathroom",
+        "mat": "tile800"
+      },
+      "KIT-01": {
+        "name": "Kitchen",
+        "mat": "travertine"
+      },
+      "TER-SVC": {
+        "name": "Service terrace",
+        "mat": "antislip"
+      },
+      "WC-01": {
+        "name": "Guest WC",
+        "mat": "tile800"
+      },
+      "TER-MAIN": {
+        "name": "Main terrace",
+        "mat": "antislip"
+      },
+      "RECP-01": {
+        "name": "Living & dining",
+        "mat": "travertine"
+      }
+    },
+    "decor": {
+      "active": "warm",
+      "sceneVersion": 2,
+      "saved": {
+        "custom": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "wood",
+            "BR-02": "wood",
+            "MBR-01": "wood",
+            "HALL-01": "tile800",
+            "WIC-01": "wood",
+            "BATH-M01": "antislip",
+            "BATH-C01": "antislip",
+            "KIT-01": "tile800",
+            "TER-SVC": "antislip",
+            "WC-01": "antislip",
+            "TER-MAIN": "antislip",
+            "RECP-01": "tile800"
+          },
+          "colours": {
+            "starter-1": "#c6d3df",
+            "starter-2": "#c7b299",
+            "starter-3": "#c7b299",
+            "starter-4": "#d8dfe5",
+            "starter-5": "#d8dfe5",
+            "starter-6": "#adc2d2",
+            "starter-7": "#d8dfe5",
+            "starter-8": "#c7b299",
+            "starter-9": "#747f91",
+            "starter-10": "#c4b9a9",
+            "starter-11": "#c7b299",
+            "starter-12": "#3a465c",
+            "starter-13": "#d8dfe5",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#d8dfe5",
+            "starter-20": "#d8dfe5",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#d8dfe5",
+            "starter-27": "#c0c6d0",
+            "starter-28": "#536f8b",
+            "starter-29": "#c7b299",
+            "starter-30": "#c7b299",
+            "starter-31": "#152034",
+            "starter-32": "#a89780",
+            "starter-35": "#c7b299",
+            "starter-36": "#6a7888",
+            "starter-37": "#6a7888",
+            "starter-38": "#6a7888",
+            "starter-39": "#6a7888",
+            "starter-40": "#d8dfe5",
+            "starter-41": "#c7b299",
+            "starter-42": "#8a9c9f",
+            "starter-43": "#8a9c9f",
+            "starter-44": "#799378"
+          }
+        },
+        "warm": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "parquet",
+            "BR-02": "parquet",
+            "MBR-01": "parquet",
+            "HALL-01": "parquet",
+            "WIC-01": "parquet",
+            "BATH-M01": "tile800",
+            "BATH-C01": "tile800",
+            "KIT-01": "tile800",
+            "TER-SVC": "antislip",
+            "WC-01": "tile800",
+            "TER-MAIN": "antislip",
+            "RECP-01": "lightoak"
+          },
+          "colours": {
+            "starter-1": "#dfd3bb",
+            "starter-2": "#B88C5E",
+            "starter-3": "#B88C5E",
+            "starter-4": "#B88C5E",
+            "starter-5": "#B88C5E",
+            "starter-6": "#dfd3bb",
+            "starter-7": "#B88C5E",
+            "starter-8": "#B88C5E",
+            "starter-9": "#8D9381",
+            "starter-10": "#dfd3bb",
+            "starter-11": "#B88C5E",
+            "starter-12": "#8A8F82",
+            "starter-13": "#B88C5E",
+            "starter-14": "#F5F4F0",
+            "starter-15": "#F5F4F0",
+            "starter-16": "#C9D6D8",
+            "starter-17": "#F5F4F0",
+            "starter-18": "#B88C5E",
+            "starter-20": "#B88C5E",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#60432E",
+            "starter-27": "#b6a797",
+            "starter-28": "#dfd3bb",
+            "starter-29": "#D2BFA4",
+            "starter-30": "#B88C5E",
+            "starter-31": "#152034",
+            "starter-32": "#7D856F",
+            "starter-35": "#D8CEC0",
+            "starter-36": "#A89E90",
+            "starter-37": "#A89E90",
+            "starter-38": "#A89E90",
+            "starter-39": "#A89E90",
+            "starter-40": "#B88C5E",
+            "starter-41": "#a5825c",
+            "starter-42": "#69755c",
+            "starter-43": "#69755c",
+            "starter-44": "#799378",
+            "A2-dining-chair-north-centre": "#A89E90",
+            "A2-dining-chair-south-centre": "#A89E90",
+            "S1-living-side-table": "#C6B18F",
+            "K3-corner": "#B88C5E",
+            "K3-dishwasher": "#B88C5E",
+            "K3-sink-base": "#B88C5E",
+            "K3-end-landing": "#B88C5E",
+            "K3-laundry-niche": "#E6E0D7",
+            "V5-master-rug": "#b6a797",
+            "R1-ensuite-vanity": "#B88C5E",
+            "B-family-storage": "#B88C5E"
+          }
+        },
+        "boho": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "travertine",
+            "BR-02": "travertine",
+            "MBR-01": "travertine",
+            "HALL-01": "travertine",
+            "WIC-01": "travertine",
+            "BATH-M01": "terrazzo",
+            "BATH-C01": "terrazzo",
+            "KIT-01": "terrazzo",
+            "TER-SVC": "antislip",
+            "WC-01": "terrazzo",
+            "TER-MAIN": "antislip",
+            "RECP-01": "travertine"
+          },
+          "colours": {
+            "starter-1": "#dfc99f",
+            "starter-2": "#996f49",
+            "starter-3": "#996f49",
+            "starter-4": "#996f49",
+            "starter-5": "#996f49",
+            "starter-6": "#dfc99f",
+            "starter-7": "#996f49",
+            "starter-8": "#996f49",
+            "starter-9": "#ac6348",
+            "starter-10": "#dfc99f",
+            "starter-11": "#996f49",
+            "starter-12": "#3a465c",
+            "starter-13": "#996f49",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#996f49",
+            "starter-20": "#996f49",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#996f49",
+            "starter-27": "#bb6c48",
+            "starter-28": "#dfc99f",
+            "starter-29": "#996f49",
+            "starter-30": "#996f49",
+            "starter-31": "#152034",
+            "starter-32": "#ac6348",
+            "starter-35": "#996f49",
+            "starter-36": "#ac6348",
+            "starter-37": "#ac6348",
+            "starter-38": "#ac6348",
+            "starter-39": "#ac6348",
+            "starter-40": "#996f49",
+            "starter-41": "#996f49",
+            "starter-42": "#ac6348",
+            "starter-43": "#ac6348",
+            "starter-44": "#799378"
+          }
+        },
+        "japandi": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "lightoak",
+            "BR-02": "lightoak",
+            "MBR-01": "lightoak",
+            "HALL-01": "lightoak",
+            "WIC-01": "lightoak",
+            "BATH-M01": "tile600",
+            "BATH-C01": "tile600",
+            "KIT-01": "tile600",
+            "TER-SVC": "antislip",
+            "WC-01": "tile600",
+            "TER-MAIN": "antislip",
+            "RECP-01": "lightoak"
+          },
+          "colours": {
+            "starter-1": "#d5d0c5",
+            "starter-2": "#c4ad86",
+            "starter-3": "#c4ad86",
+            "starter-4": "#c4ad86",
+            "starter-5": "#c4ad86",
+            "starter-6": "#d5d0c5",
+            "starter-7": "#c4ad86",
+            "starter-8": "#c4ad86",
+            "starter-9": "#565f54",
+            "starter-10": "#d5d0c5",
+            "starter-11": "#c4ad86",
+            "starter-12": "#3a465c",
+            "starter-13": "#c4ad86",
+            "starter-14": "#f6f8fa",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#c4ad86",
+            "starter-20": "#c4ad86",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#c4ad86",
+            "starter-27": "#cbc8bc",
+            "starter-28": "#d5d0c5",
+            "starter-29": "#c4ad86",
+            "starter-30": "#c4ad86",
+            "starter-31": "#152034",
+            "starter-32": "#565f54",
+            "starter-35": "#c4ad86",
+            "starter-36": "#565f54",
+            "starter-37": "#565f54",
+            "starter-38": "#565f54",
+            "starter-39": "#565f54",
+            "starter-40": "#c4ad86",
+            "starter-41": "#c4ad86",
+            "starter-42": "#565f54",
+            "starter-43": "#565f54",
+            "starter-44": "#799378"
+          }
+        }
+      }
+    },
+    "studio": {
+      "version": 1,
+      "rooms": {
+        "BR-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 76,
+          "wall": "#EEE9DF"
+        },
+        "BR-02": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 76,
+          "wall": "#EEE9DF"
+        },
+        "MBR-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 74,
+          "wall": "#EEE9DF"
+        },
+        "HALL-01": {
+          "lighting": "track",
+          "temperature": 3000,
+          "wall": "#EEE9DF",
+          "brightness": 78,
+          "ceiling": "plain"
+        },
+        "WIC-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 82,
+          "wall": "#EEE9DF"
+        },
+        "BATH-M01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 86
+        },
+        "BATH-C01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 86
+        },
+        "KIT-01": {
+          "hvac": "none",
+          "ceiling": "plain",
+          "lighting": "track",
+          "temperature": 3000,
+          "brightness": 84,
+          "wall": "#EEE9DF"
+        },
+        "WC-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 82,
+          "wall": "#EEE9DF"
+        },
+        "RECP-01": {
+          "hvac": "concealed-slots",
+          "ceiling": "plain",
+          "lighting": "track-lamps",
+          "temperature": 3000,
+          "brightness": 74,
+          "wall": "#E4DED4"
+        }
+      }
+    },
+    "demolished": [],
+    "measures": [],
+    "interior": {
+      "version": 1,
+      "objects": [
+        {
+          "id": "A-dining-sideboard",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 15720,
+          "cy": 4750,
+          "rotation": 90,
+          "width_mm": 2400,
+          "depth_mm": 400,
+          "height_mm": 800,
+          "material_references": {
+            "body": "generic-walnut"
+          },
+          "colour": "#60432E",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed family dining storage / buffet with intentionally darker walnut tone"
+          }
+        },
+        {
+          "id": "A1-entry-mirror",
+          "type": "mirror",
+          "variant": "round",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-RECP-01-16",
+            "offset_mm": 0,
+            "inset_mm": 10,
+            "elevation_mm": 1100
+          },
+          "rotation": 0,
+          "width_mm": 620,
+          "depth_mm": 35,
+          "height_mm": 620,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "entry definition above slim shoe storage"
+          }
+        },
+        {
+          "id": "A2-living-plant",
+          "type": "plant",
+          "variant": "potted",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 15480,
+          "cy": 3250,
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 500,
+          "height_mm": 1650,
+          "material_references": {
+            "pot": "a1-natural-oak"
+          },
+          "colour": "#738064",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "One taller specimen; glazing kept clear"
+          }
+        },
+        {
+          "id": "S1-reading-lamp",
+          "type": "floor-lamp",
+          "variant": "shade",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 10230,
+          "cy": 4430,
+          "rotation": 0,
+          "width_mm": 360,
+          "depth_mm": 360,
+          "height_mm": 1500,
+          "material_references": {
+            "primary": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Warm reading lamp; restrained bronze accent"
+          }
+        },
+        {
+          "id": "V5-sideboard-lamp",
+          "type": "table-lamp",
+          "variant": "shade",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor",
+            "elevation_mm": 800
+          },
+          "cx": 15720,
+          "cy": 5450,
+          "rotation": 0,
+          "width_mm": 260,
+          "depth_mm": 260,
+          "height_mm": 400,
+          "material_references": {
+            "primary": "generic-brass"
+          },
+          "colour": "#D9CEBC",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Warm ceramic/brass sideboard lamp; decorative lighting only"
+          }
+        },
+        {
+          "id": "WC-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "WC-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-WC-01-02",
+            "offset_mm": 307.15,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 450,
+          "depth_mm": 35,
+          "height_mm": 800,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Guest WC mirror sized to 350 mm compact handrinse"
+          }
+        },
+        {
+          "id": "V7-master-drawers",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 3340,
+          "cy": 8650,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 400,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "a1-natural-oak"
+          },
+          "colour": "#C6B18F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed master drawer chest; generic custom joinery, not a vanity"
+          }
+        },
+        {
+          "id": "V5-master-bench",
+          "type": "bench",
+          "variant": "upholstered",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 1700,
+          "cy": 8610,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 350,
+          "height_mm": 440,
+          "material_references": {
+            "primary": "a1-natural-oak"
+          },
+          "colour": "#DDD3C4",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "South-wall dressing bench; leave the entire east-side main path open"
+          }
+        },
+        {
+          "id": "BATHM-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-04",
+            "offset_mm": -343.08,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 35,
+          "height_mm": 850,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Ensuite mirror; pale oak vanity + restrained bronze detail"
+          }
+        },
+        {
+          "id": "V7-bedroom1-drawers",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "BR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 2675,
+          "cy": 4720,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 350,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "a1-natural-oak"
+          },
+          "colour": "#C6B18F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed books / toys / daily drawers; generic custom joinery"
+          }
+        },
+        {
+          "id": "BATHC-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-04",
+            "offset_mm": -26.3,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 35,
+          "height_mm": 800,
+          "material_references": {
+            "frame": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Family bathroom mirror; brushed-nickel/chrome direction"
+          }
+        },
+        {
+          "id": "V5-hall-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "HALL-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-HALL-01-07",
+            "offset_mm": 200,
+            "inset_mm": 12,
+            "elevation_mm": 750
+          },
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 35,
+          "height_mm": 1100,
+          "material_references": {
+            "frame": "a1-natural-oak"
+          },
+          "colour": "#C6B18F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Functional wall mirror; no architectural change"
+          }
+        },
+        {
+          "id": "KIT-A1-west-backsplash",
+          "type": "wall-panel",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 0,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 1800,
+          "depth_mm": 5,
+          "height_mm": 520,
+          "material_references": {
+            "primary": "kitchen-warm-quartz"
+          },
+          "colour": "#E5DED1",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "K3 backsplash aligned to full 1800 mm cooking-wall grid"
+          }
+        },
+        {
+          "id": "MBR-A1-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-MBR-01-03",
+            "offset_mm": 1189.9,
+            "elevation_mm": 1100,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 800,
+          "depth_mm": 30,
+          "height_mm": 600,
+          "material_references": {
+            "art": "art-master-warm-earth",
+            "frame": "generic-walnut"
+          },
+          "colour": "#CDB9A1",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single artwork above master chest; no gallery grouping"
+          }
+        },
+        {
+          "id": "BR1-A1-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "BR-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BR-01-04",
+            "offset_mm": -311.6,
+            "elevation_mm": 1100,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 650,
+          "depth_mm": 30,
+          "height_mm": 500,
+          "material_references": {
+            "art": "art-br1-soft-olive",
+            "frame": "a1-natural-oak"
+          },
+          "colour": "#A6AA92",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single adaptable muted-olive artwork above closed drawer storage"
+          }
+        },
+        {
+          "id": "BR2-A1-art",
+          "type": "artwork",
+          "variant": "canvas",
+          "room_id": "BR-02",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BR-02-06",
+            "offset_mm": -451.6,
+            "elevation_mm": 1150,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 800,
+          "depth_mm": 30,
+          "height_mm": 600,
+          "material_references": {
+            "art": "art-br2-taupe-line"
+          },
+          "colour": "#B7A99A",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single taupe line artwork over east-wall bed; deliberately distinct from Bedroom 1"
+          }
+        },
+        {
+          "id": "E2-upper-north",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": -600,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 330,
+          "height_mm": 700,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "K3 600 mm upper cabinet north of 600 mm hood zone"
+          }
+        },
+        {
+          "id": "E2-upper-south",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 600,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 330,
+          "height_mm": 700,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "K3 600 mm upper cabinet south of 600 mm hood zone"
+          }
+        },
+        {
+          "id": "E2-pantry-tall",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 11050,
+          "cy": 8570,
+          "rotation": 180,
+          "width_mm": 600,
+          "depth_mm": 600,
+          "height_mm": 2200,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "600 mm full-height pantry; plain integrated joinery massing"
+          }
+        }
+      ],
+      "materials": [
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-wall-plaster",
+          "name": "Warm ivory mineral plaster",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#EEE9DF",
+          "finish": "mineral-matte",
+          "roughness": 0.96,
+          "metallic": 0,
+          "notes": "Low-contrast warm plaster concept."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-ceiling-ivory",
+          "name": "Soft warm ivory ceiling",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#F5F1E9",
+          "finish": "ultra-matte",
+          "roughness": 0.98,
+          "metallic": 0,
+          "notes": "Light ceiling tone to preserve perceived height."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-limestone-honed",
+          "name": "Warm limestone-look porcelain, honed",
+          "category": "stone",
+          "source_status": "REFERENCE",
+          "base_colour": "#D8CEC0",
+          "finish": "honed",
+          "roughness": 0.66,
+          "metallic": 0,
+          "physical_dimensions_mm": {
+            "width": 1200,
+            "height": 600,
+            "depth": 10
+          },
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "fallback_generic_id": "travertine",
+          "notes": "Concept only; final SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-natural-oak",
+          "name": "Natural light oak",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#B88C5E",
+          "finish": "matte",
+          "roughness": 0.72,
+          "metallic": 0,
+          "fallback_generic_id": "lightoak"
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a2-ceiling-softwhite",
+          "name": "Soft white ceiling",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#FEFCF7",
+          "finish": "ultra-matte",
+          "roughness": 0.98,
+          "metallic": 0,
+          "notes": "Near-white ceiling intended to read warm-neutral under 3000 K lighting."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a2-curtain-linen",
+          "name": "Warm light linen curtain",
+          "category": "fabric",
+          "source_status": "GENERIC",
+          "base_colour": "#DED7CB",
+          "finish": "woven",
+          "roughness": 0.94,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 300,
+            "height": 300
+          },
+          "notes": "Light warm linen concept; layered treatment, not a selected SKU."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "wc-warm-ivory-porcelain",
+          "name": "Warm ivory matte porcelain",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E8E2D8",
+          "finish": "matte",
+          "roughness": 0.78,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 600,
+            "height": 600
+          },
+          "notes": "Guest WC concept; final porcelain SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-warm-ivory-porcelain",
+          "name": "Warm ivory matte porcelain",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E7E1D8",
+          "finish": "matte",
+          "roughness": 0.78,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 600,
+            "height": 600
+          },
+          "notes": "Bathroom porcelain concept; final SKU and waterproofing build-up TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-warm-quartz",
+          "name": "Warm ivory quartz composite",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E5DED1",
+          "finish": "honed",
+          "roughness": 0.5,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "notes": "Concept countertop/backsplash material; final slab/SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "art-master-warm-earth",
+          "name": "Master artwork · warm earth abstract",
+          "category": "artwork",
+          "source_status": "REFERENCE",
+          "base_colour": "#CDB9A1",
+          "finish": "matte",
+          "roughness": 0.94,
+          "metallic": 0,
+          "notes": "Concept artwork only; not a real purchasable piece."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "art-br1-soft-olive",
+          "name": "Bedroom 1 artwork · soft olive field",
+          "category": "artwork",
+          "source_status": "REFERENCE",
+          "base_colour": "#A6AA92",
+          "finish": "matte",
+          "roughness": 0.94,
+          "metallic": 0,
+          "notes": "Concept artwork only; subtle adaptable family-room accent."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "art-br2-taupe-line",
+          "name": "Bedroom 2 artwork · taupe line composition",
+          "category": "artwork",
+          "source_status": "REFERENCE",
+          "base_colour": "#B7A99A",
+          "finish": "matte",
+          "roughness": 0.94,
+          "metallic": 0,
+          "notes": "Concept artwork only; intentionally different from Bedroom 1."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-brushed-nickel",
+          "name": "Brushed nickel / chrome concept",
+          "category": "metal",
+          "source_status": "GENERIC",
+          "base_colour": "#B9BDC0",
+          "finish": "brushed",
+          "roughness": 0.34,
+          "metallic": 0.82,
+          "notes": "Concept only; final fittings/SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-soft-ivory",
+          "name": "Kitchen soft ivory matte lacquer",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#E8E2D7",
+          "finish": "matte",
+          "roughness": 0.82,
+          "metallic": 0,
+          "notes": "Conceptual joinery finish; manufacturer and sample TBD."
+        }
+      ],
+      "surface_materials": {
+        "CEILING-RECP-01": "a2-ceiling-softwhite",
+        "WALL-RECP-01-01": "a1-wall-plaster",
+        "WALL-RECP-01-02": "a1-wall-plaster",
+        "WALL-RECP-01-03": "a1-wall-plaster",
+        "WALL-RECP-01-04": "a1-wall-plaster",
+        "WALL-RECP-01-05": "a1-wall-plaster",
+        "WALL-RECP-01-06": "a1-wall-plaster",
+        "WALL-RECP-01-07": "a1-wall-plaster",
+        "WALL-RECP-01-08": "a1-wall-plaster",
+        "WALL-RECP-01-09": "a1-wall-plaster",
+        "WALL-RECP-01-10": "a1-wall-plaster",
+        "WALL-RECP-01-11": "a1-wall-plaster",
+        "WALL-RECP-01-12": "a1-wall-plaster",
+        "WALL-RECP-01-13": "a1-wall-plaster",
+        "WALL-RECP-01-14": "a1-wall-plaster",
+        "WALL-RECP-01-15": "a1-wall-plaster",
+        "WALL-RECP-01-16": "a1-wall-plaster",
+        "WALL-RECP-01-17": "a1-wall-plaster",
+        "WALL-RECP-01-18": "a1-wall-plaster",
+        "FLOOR-KIT-01": "a1-limestone-honed",
+        "FLOOR-WC-01": "wc-warm-ivory-porcelain",
+        "CEILING-WC-01": "a2-ceiling-softwhite",
+        "FLOOR-MBR-01": "generic-lightoak",
+        "CEILING-MBR-01": "a2-ceiling-softwhite",
+        "FLOOR-WIC-01": "generic-lightoak",
+        "CEILING-WIC-01": "a2-ceiling-softwhite",
+        "FLOOR-BATH-M01": "bath-warm-ivory-porcelain",
+        "CEILING-BATH-M01": "a2-ceiling-softwhite",
+        "WALL-BATH-M01-01": "bath-warm-ivory-porcelain",
+        "WALL-BATH-M01-02": "bath-warm-ivory-porcelain",
+        "WALL-BATH-M01-03": "bath-warm-ivory-porcelain",
+        "WALL-BATH-M01-04": "bath-warm-ivory-porcelain",
+        "WALL-BATH-M01-05": "bath-warm-ivory-porcelain",
+        "FLOOR-BR-01": "generic-lightoak",
+        "CEILING-BR-01": "a2-ceiling-softwhite",
+        "FLOOR-BR-02": "generic-lightoak",
+        "CEILING-BR-02": "a2-ceiling-softwhite",
+        "FLOOR-BATH-C01": "bath-warm-ivory-porcelain",
+        "CEILING-BATH-C01": "a2-ceiling-softwhite",
+        "WALL-BATH-C01-01": "bath-warm-ivory-porcelain",
+        "WALL-BATH-C01-02": "bath-warm-ivory-porcelain",
+        "WALL-BATH-C01-03": "bath-warm-ivory-porcelain",
+        "WALL-BATH-C01-04": "bath-warm-ivory-porcelain",
+        "WALL-BATH-C01-05": "bath-warm-ivory-porcelain",
+        "WALL-BATH-C01-06": "bath-warm-ivory-porcelain",
+        "WALL-BATH-C01-07": "bath-warm-ivory-porcelain",
+        "FLOOR-HALL-01": "generic-lightoak",
+        "CEILING-HALL-01": "a2-ceiling-softwhite",
+        "FLOOR-TER-MAIN": "generic-antislip",
+        "FLOOR-TER-MBR": "generic-antislip",
+        "FLOOR-TER-SVC": "generic-antislip"
+      },
+      "opening_treatments": {
+        "GLZ-RECP-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.72,
+          "room_id": "RECP-01"
+        },
+        "GLZ-RECP-TERMAIN": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.78,
+          "room_id": "RECP-01"
+        },
+        "GLZ-MBR-TER": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.78,
+          "room_id": "MBR-01"
+        },
+        "GLZ-BR01-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.8,
+          "room_id": "BR-01"
+        },
+        "GLZ-BR02-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#DED7CB",
+          "openness": 0.82,
+          "room_id": "BR-02"
+        }
+      }
+    }
+  },
+  "views": [
+    {
+      "id": "J1-dining-kitchen",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          6.35,
+          1.68,
+          2.8
+        ],
+        "target": [
+          3.55,
+          1.3,
+          1.35
+        ],
+        "fov": 61,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-living-kitchen",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          4.85,
+          1.67,
+          0.55
+        ],
+        "target": [
+          3.25,
+          1.22,
+          1.45
+        ],
+        "fov": 62,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "J1-kitchen-work",
+      "room_id": "KIT-01",
+      "camera": {
+        "position": [
+          3.9,
+          1.65,
+          3
+        ],
+        "target": [
+          2.35,
+          1.13,
+          1.35
+        ],
+        "fov": 63,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "K10-island-working-front",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          5.432291,
+          1.7,
+          3.2343415000000006
+        ],
+        "target": [
+          3.732291,
+          0.2,
+          1.2843415000000005
+        ],
+        "fov": 42,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.866977829638273,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1600,
+          "height": 857
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Exact saved Studio layout: scene-29d4aa6d / storage 39; independent whole-apartment-a3-usability variant revision 2. A2 variant preserved.",
+    "Canonical walls, openings, glazing, room polygons and 2500 mm clear ceiling are unchanged.",
+    "Guest basin envelope: 400 x 220 mm, original x centre and rear face retained. Generic conceptual joinery/bowl; Duravit D-Neo 073940 is a dimensional reference only. Fit, services and hardware TBD.",
+    "Guest basin full inferred door sweep clearance improved from -22.9 mm overlap to +57.1 mm gap. Still a review warning below 100 mm planning buffer. Entry approach width 633.8 to 656.7 mm. Door must be closed for normal basin use.",
+    "Kitchen west-north upper: width 450 to 300 mm; centre 50 mm south of A2. Corner front-strip obstruction removed; operation depth 11.4 to 3083.1 mm. Hob-side edge reserve 190.1 to 215.1 mm; not manufacturer heat-clearance certification. Reduced cupboard capacity is the trade-off.",
+    "Dishwasher layout unchanged. Official validator still reports 0 mm from zero-width tangent polygons at neighbouring cabinet boundaries. Independently measured positive-width front strip: 1572.346 mm to south wall; not manufacturer fit certification.",
+    "Original eleven A2 camera poses, FOV and viewer settings retained for direct before/after comparison. Added kitchen work-run and guest WC entry/use angles.",
+    "guest-wc-use-closed changes only the visible door pose for usability review; the door geometry and hinge convention remain unchanged and INFERRED.",
+    "Exact WebGL concept views, not photorealistic product CAD and not construction or accessibility approval.",
+    "Branch render template fixes compact vanity bowl depth only for envelopes below 300 mm: the A3 400 x 220 mm generic basin bowl now stays within its top. The correction is a branch renderer change, not a production Studio deployment or manufacturer CAD.",
+    "ARCHITECTURE STUDY ONLY: D removes the main shared kitchen/reception wall and the 487 mm wall segment immediately north of the existing kitchen door while retaining the diagonal return and the 784 mm south/fridge-side wall segment.",
+    "The modeled continuous access from y=6969.158 to y=8176.58 is ~1207 mm before construction/frame/tolerance review. Structural, MEP, gas and developer approval remain TBD.",
+    "D2 FUNCTIONAL TEST: north peninsula reduced to four 600 mm modules (~2400 mm), shallow east landing removed, peninsula shifted ~100 mm toward the former wall line.",
+    "Sink moved nearer the west wet/service side; dishwasher remains directly adjacent; integrated laundry moves to peninsula end. Exact drainage route and acoustic treatment remain TBD.",
+    "Fridge moved behind the retained east/south screen wall. Generic envelope leaves ~57 mm modeled side gap; exact manufacturer ventilation/hinge/service clearances remain TBD.",
+    "Modeled clear depth between peninsula front (~7198 mm plan Y) and fridge north face (~8265 mm) is ~1067 mm at the fridge zone, matching the public NKBA one-cook work-aisle planning target used for this study.",
+    "Usable east-side passage beside the shortened peninsula is ~1100 mm in the rectangular zone, above the project 900 mm comfort circulation target. Structural/MEP/gas/developer approval remains TBD.",
+    "D3 VISUAL/FUNCTIONAL MASSING: preserve D2 aisle/access geometry but clean the social-space sightline.",
+    "Laundry is removed from the peninsula and represented as closed prep/storage. A protected service-terrace laundry concept will be studied separately with drainage/weather/electrical requirements; no relocation is approved yet.",
+    "Fridge uses an integrated visual variant to reduce appliance exposure from the reception; exact door swing, ventilation grille and service pull-out remain manufacturer-dependent.",
+    "Heavy west upper cabinets removed for this comparison. Storage capacity must be recovered in the developed joinery design before approval.",
+    "Reception-facing peninsula back is a thin exploratory joinery skin, not a wall and not final fabrication.",
+    "D4 RENDERER CORRECTION: generic counter objects on this study branch can render as base-only/peninsula units, preventing false backsplash/upper cabinets on an open peninsula.",
+    "Temporary D3 reception-side sideboard skin removed; the peninsula back is now the actual cabinet massing rather than a second overlapping object.",
+    "Base joinery shifted to soft ivory for a calmer reception sightline; final finish hierarchy remains exploratory.",
+    "E FULL-OPEN STUDY: all modeled kitchen↔reception separator wall segments are hidden in the render-only overlay. This does NOT prove they are structurally removable.",
+    "Canonical model contains no explicit column/beam/pier entity at this location; the removed pieces are all 180 mm 'unclassified' wall segments. Structural drawings/site engineer remain mandatory before demolition.",
+    "Storage strategy: ~1800 mm west base run + 1800 mm island cabinet mass + 450 mm full-height pantry + 600 mm oven/tall-storage column + integrated fridge. Island back-side shallow storage is a future joinery option, not yet modeled.",
+    "Island footprint 1800 × 950 mm is placed just north of the former kitchen wall. Modeled west-end passage is ~919 mm to the kitchen/hall boundary; east side is open to reception/dining.",
+    "Island sink is exploratory. Drainage/water routing, dishwasher integration, gas/extraction, exact appliance manuals and service access remain TBD.",
+    "Laundry is not placed in the island. Service-terrace laundry remains a separate MEP/weatherproofing study.",
+    "E2 DEVELOPED DIRECTION: full-open kitchen is the preferred design study, conditional on structural/developer/MEP verification.",
+    "Longitudinal 1800 × 900 island chosen instead of the earlier transverse island because it produces materially better circulation: approximately 1119 mm between island and west cooking run, approximately 1070 mm between island and the north face of the tall-unit wall, and roughly 1945 mm toward the dining zone before chair envelopes.",
+    "Public NKBA planning guidance uses 1067 mm minimum work aisle for one cook and 1219 mm for multiple cooks; E2 targets the one-cook threshold while keeping the apartment's 900 mm comfort circulation target.",
+    "Storage strategy: 1950 mm west base run + 1200 mm west uppers + 1800 mm island + three 600 mm full-height south-wall modules (pantry / oven-storage / integrated fridge). No island stools are modeled because the six-seat dining table is adjacent; island volume is prioritized for storage and prep.",
+    "Island sink + integrated dishwasher are preferred for workflow but remain MEP-dependent. If floor drainage/water routing is impractical, E2 must branch to a dry-island alternative rather than forcing plumbing.",
+    "Gas hob stays on the west wall rather than the island so extraction can be ducted/screened more conventionally and the social face of the island remains clean.",
+    "Exact appliance installation, ventilation, hinge clearances, electrical outlets, hood duct routing, gas shutoff/access and fire clearances must follow selected manufacturer manuals and Egyptian/local requirements.",
+    "The canonical model contains no explicit column/beam/pier object at the removed separator; all removed pieces are 180 mm unclassified wall segments. This remains insufficient evidence for demolition approval.",
+    "E2 circulation repair: living armchair shifted ~360 mm north after a bounding-box check found only ~740 mm to the island. Revised approximate chair-to-island gap is >1000 mm; exact rotated-mesh clearance remains render/QA-dependent.",
+    "E2 aisle refinement: island shifted 80 mm north. Approximate south work aisle to tall-unit fronts increases to 1150 mm; island-to-shifted-living-armchair bounding-box gap remains about 1018 mm.",
+    "E2 visual refinement: island changed from generic breakfast-bar mesh to a full 1800 × 900 base-only storage mass, representing approximately 600 mm working-side cabinetry plus 300 mm shallow reception-side storage. No stools.",
+    "Integrated dishwasher remains reserved inside one 600 mm island module but its separate appliance mesh is suppressed so the external joinery reads as a continuous integrated front.",
+    "Pantry changed from stylized wardrobe furniture to plain 600 × 600 × 2200 mm ivory tall joinery for a more truthful kitchen elevation.",
+    "F1 GUEST WC: keep the modeled 656.7 mm opening in this pass, reverse the door leaf outward into the reception for a direct swing-conflict test, and shrink the handrinse envelope to 350 × 180 mm. The opening remains below the public NKBA 813 mm clear-opening planning recommendation and is therefore not treated as optimized accessibility.",
+    "F1 FAMILY BATH: render-only wall-gap study widens the modeled opening to 800 mm and hides the hinged leaf to represent a pocket/surface-sliding strategy. Exact frame system may reduce clear opening; pocket length, waterproofing, electrical/switch conflicts and wall classification remain TBD.",
+    "F1 MASTER ENSUITE: render-only wall-gap study widens the dressing-to-ensuite opening to 800 mm and hides the hinged leaf to represent a pocket door stored in the longer south wall segment. Wet-area wall build-up and pocket-system feasibility remain TBD.",
+    "No bathroom wall change is construction-approved. Local/Egyptian requirements, structural/as-built drawings, plumbing/electrical routes and selected door-system shop drawings control.",
+    "G1 concept: keep most ceiling at 2.50 m; test a 600 mm perimeter service band at 2.38 m and a deeper local zone at 2.34 m above the kitchen tall units.",
+    "This is a space-reservation study only; equipment selection, access, condensate, insulation and duct routing remain TBD.",
+    "G1 lighting concept: social space uses track plus lamps at 3000 K instead of a uniform downlight field; dining globe pendant removed for this comparison. Kitchen uses aimed track/task lighting.",
+    "Final lighting levels, glare control, colour rendering, switching and dimming are not established by this render.",
+    "G2 replaces G1's long continuous service spine with two compact ceiling pockets: one over the TV-side living edge and one over the kitchen tall-unit wall.",
+    "Goal: preserve the 2.50 m clear ceiling through the main living/dining field and avoid a beam-like soffit across the room.",
+    "Both pockets are modeled with soffit underside at 2.34 m, giving approximately 290 mm from the verified 2.63 m underside of concrete. This is only a reservation envelope, not installation approval.",
+    "Reception lighting stays track + lamps at 3000 K; no dining pendant in this pass so ceiling massing can be judged without decorative distraction.",
+    "If the living pocket still reads heavy, next fallback is exposed/high-wall split or a perimeter-only linear slot system with the indoor unit located elsewhere; do not lower the entire reception ceiling.",
+    "I1 replaces the 1500 × 750 master bathtub with a 1500 × 800 walk-in shower envelope while preserving toilet, vanity and the F1 widened/pocket-door strategy.",
+    "Earlier repository studies found both tub and shower options at 104 PASS / 49 WARNING / 0 FAIL; this pass is for direct spatial/usage comparison, not proof of waterproofing or drainage.",
+    "If shower is preferred, final design needs falls, drain type/location, glass swing/fixed-panel strategy, niche, mixer/handshower, anti-slip finish and waterproofing details.",
+    "I2 family-first bathroom strategy: keep a 1500 × 800 walk-in shower in the master ensuite for daily use, and move the home's bathtub capability to the common family bathroom with a 1500 × 750 tub.",
+    "The former 900 × 900 common-bath shower and 300 mm floor cabinet are removed in this study. Vanity and WC remain in place.",
+    "Rationale: master gets easier daily access and a more open wet zone; common bath retains a tub for children/family/soaking rather than eliminating bathtub capability from the apartment.",
+    "Tub/shower waterproofing, floor falls, glass/screen strategy, anti-slip surfaces, taps, drain position and exact clear standing zones remain TBD.",
+    "J1 INTEGRATION: combines only previously reviewed directions: E2 full-open kitchen, F1 bathroom-door strategy, G2 localized HVAC pockets, H1 service-terrace laundry, H2 dining-entry clearance repair, and I2 master-shower/family-tub strategy.",
+    "H2 retained: complete dining group shifted 150 mm north; approximate open-entry-door-tip to southeast dining-chair closed-envelope gap improves from ~811 mm to ~961 mm.",
+    "H1 retained conditionally: 600 × 650 mm washer on service-terrace west wall with ~1240 mm approximate clear width to opposite wall. Outdoor exposure/drain/electrical/manufacturer approval remains mandatory.",
+    "E2 plumbing coordination improved by geometry: island sink centre is only about 108 mm from the earlier sink centre, reducing but not eliminating drainage/water-routing risk.",
+    "Bedrooms and private hall receive no new architectural changes in J1; prior developed furniture/storage layouts are retained because no higher-value wall intervention was established.",
+    "J1 is a coordinated design candidate, not a construction package. Structural removability, MEP sizing, waterproofing, exact clear door openings, appliance manuals, site tolerances and developer approvals remain hard gates.",
+    "J1 metadata repair: scene_revision updated from stale scene-29d4aa6d to scene-bc0ef10e to match the integrated layout hash required by the Studio workspace seed.",
+    "J1 final aisle refinement: island and sink shifted 100 mm east and 70 mm north. Approximate west cooking aisle becomes ~1219 mm and south/tall-unit aisle ~1220 mm, while the island-to-living-chair envelope remains ~948 mm.",
+    "Island sink centre is now about 228 mm from the earlier sink centre; still a compact wet-service relocation subject to plumbing confirmation.",
+    "Master dressing-to-ensuite render-only wall gap increased from 800 mm to 900 mm to target a more useful pocket-door clear opening after frame/system losses. Exact clear opening remains product-dependent.",
+    "J1 QA repair: removed H1-terrace-upper. Its provisional host WALL-TER-SVC-03 is only 296.6 mm long; the 800 mm cabinet exceeded the usable segment. No overhead terrace storage is approved until an as-built/full-height host is confirmed.",
+    "J1 QA repair: west kitchen backsplash reduced from 1950 mm to 1800 mm. At the existing 263.9 mm host offset, 1950 mm exceeded WALL-KIT-01-01 by ~52.7 mm; 1800 mm stays within the usable segment.",
+    "J1 geometry correction: west cooking base and the three south tall units were moved 90 mm off modeled wall centrelines to the approximate room-facing wall faces.",
+    "J1 island finalized at 1700 × 900 mm, centre y=6200. With the corrected cabinet faces, approximate west cooking aisle is ~1219 mm and south/tall-unit aisle ~1220 mm; island-to-living-chair envelope remains about ~958 mm.",
+    "Island sink moved to y=6770 to remain within the shorter island. Its centre is about 280 mm from the earlier sink centre, still a compact service relocation pending plumbing design.",
+    "West backsplash finalized at 1700 mm with 120 mm host offset to avoid the perpendicular service-wall junction.",
+    "K1 FINISH STUDY: unify RECP-01 and KIT-01 flooring as a warm travertine/limestone-look porcelain direction so the full-open kitchen reads as one continuous social space.",
+    "This is a finish direction, not a natural-stone specification. Final product should be porcelain/ceramic or another kitchen-suitable surface with verified slip resistance, stain resistance, joint layout and local availability.",
+    "Private bedrooms/hall remain parquet to preserve warmth and acoustic softness; the public/private threshold becomes intentional rather than leaving a kitchen-only tile patch.",
+    "K2 removes the G2 living-room ceiling pocket after visual QA found it too beam-like. The main reception ceiling returns to the full 2.50 m clear height in the design study.",
+    "Only the compact kitchen-side pocket above the tall units is retained as a provisional MEP reservation; living-room concealed AC remains equipment/routing TBD.",
+    "Island base changes to natural-oak direction so the 1700 × 900 mm double-sided storage island reads as furniture within the reception instead of visually disappearing into ivory cabinetry and a pale floor.",
+    "Unified open-plan floor remains a warm limestone/travertine-look porcelain direction; the current renderer texture is only a massing proxy, not the final tile pattern.",
+    "K3 FABRICATION GRID: west cooking wall regularized from 1950 mm to 1800 mm, centered on the usable wall: 600 mm prep drawers + 600 mm gas-hob unit + 600 mm prep drawers.",
+    "Upper composition follows the same 1800 mm rhythm: 600 mm cabinet + 600 mm hood zone + 600 mm cabinet; backsplash aligns to the full run.",
+    "Island 1700 mm long is reserved as 550 mm sink module + 600 mm fully integrated dishwasher module + 550 mm drawer/bin module on the kitchen working side.",
+    "Island sink shifted 150 mm west within the 900 mm depth so it sits in the nominal 600 mm working-side cabinet zone, preserving the reception-side shallow-storage concept instead of centering plumbing through both cabinet depths.",
+    "Reception-side island storage remains conceptual at approximately 250–300 mm shallow depth; sink bowl/trap and services may reduce usable depth locally and require shop-drawing coordination.",
+    "K4 VISUAL TRUTH: speculative HVAC pocket boxes are removed from the architectural render. The reception/kitchen ceiling is shown at the verified 2.50 m clear design plane until exact MEP equipment, return/supply layout, condensate route and access requirements are selected.",
+    "HVAC feasibility remains an engineering workstream, not deleted: prior G2 reserved localized service space as a concept, but K4 refuses to show an unverified bulkhead as if it were final architecture.",
+    "K4 capture renderer receives an explicit final-pass builder for base-only/peninsula counters so the island and west cooking base render as actual cabinet carcasses with fronts and worktops.",
+    "K4 renderer root-cause repair: registered counter variants now have explicit Studio variant geometry instead of returning an empty group. Layout dimensions are unchanged.",
+    "K4 material-truth repair: integrated fridge and oven-column renderer now respect their assigned soft-ivory material; no layout dimensions changed.",
+    "K4 opening-header truth fix: architectural variants that hide OP-RECP-KIT / bathroom doors now also hide their obsolete canonical lintel/header geometry in capture. No canonical geometry is mutated.",
+    "K4 final visual pass: rerender after quiet large-format limestone/travertine procedural floor refinement. Layout and material direction are unchanged.",
+    "K7 render-only ceiling truth study: hide the separate canonical RECP-01 and KIT-01 ceiling meshes and replace them with their exact polygon union at 2.50 m. Canonical room geometry remains unchanged.",
+    "K7 final proof: merged review ceiling uses a neutral double-sided unlit material to avoid winding/shading artifacts; geometry and 2.50 m height are unchanged.",
+    "K8 render repair: skirting retains its actual canonical host wall ID/segment and is hidden only when that host is removed in the render-only overlay. Retained wall skirting stays visible.",
+    "K8 render repair: hidden openings also hide their floor thresholds; other openings remain unchanged.",
+    "K8 ceiling repair: cap the 21.183 mm source-trace seam at the former separator using the canonical outer room contours. This affects the review finish mesh only; canonical source polygons, ceiling height and furniture are unchanged.",
+    "K8 restores all eight locked J1 comparison cameras for a whole-candidate review, rather than treating one successful kitchen frame as complete evidence.",
+    "K8 review correction: oven column, fridge and pantry rotate 180 degrees to face the north work aisle. Their centres, dimensions and footprints stay fixed; no room or wall geometry changes.",
+    "K8 operating-strip calculation uses the verified master tangent correction; edge-only contact with adjacent cabinets is excluded while real front obstructions remain. The canonical validator still sees the retained kitchen partition; the render-only merged-room diagnostic is recorded separately and does not certify installation.",
+    "K8 service-view correction: the terrace washer rotates 90 to 270 degrees to face the east use area. The existing 600 × 650 mm footprint and centre remain fixed; measured model-front space is 1154.705 mm. Outdoor exposure, weather protection, drainage and electrical/manufacturer requirements remain unapproved.",
+    "K9 OWNER-REQUESTED EXPLORATION: rotate the 1700 × 900 mm island 90 degrees and translate its centre 400 mm toward the south tall units and 400 mm toward dining. Keep all architecture, ceiling, other furniture and the three original comparison cameras unchanged.",
+    "The 1620 mm gap was from the rotation-only trial to the oven/fridge fronts, not to dining. This translated alternative returns the south front gap to 1220 mm and west cooking-run edge gap to 1219 mm. Dining table edge is 1070 mm and nearest stored dining-chair edge is 1115 mm away; chair pull-out is not included in those static distances.",
+    "K9 is a render-only comparison candidate. It does not activate a saved production variant, change canonical architecture, merge or deploy. The existing kitchen wall-removal study remains conditional on structural/developer approval.",
+    "K10 retains the approved K9 island position, rotation and 1700 × 900 mm footprint. Only its internal cabinet concept and the sink position change; all other furniture, finishes, architecture overlays and comparison cameras are unchanged.",
+    "Sink outer reserve is 550 × 400 mm at (11800,6750), leaving 625 mm west and 525 mm east landing widths. Both landings improve the former 75 mm east-end margin. The west clear surface is 625 × 900 mm; this is a compact prep compromise and does not provide the NKBA published 914 × 610 mm continuous preparation rectangle alongside an uncovered sink.",
+    "Actual 1700 mm joinery allocation is 18 mm end panel + 600 mm clear dishwasher reservation + 600 mm sink cabinet + 464 mm drawer cabinet + 18 mm end panel. The 600 / 600 / 500 shorthand is nominal; the remaining 500 mm includes 36 mm end panels. Depth is allocated 600 mm working side + 300 mm shallow reception-side storage. Internal panels, tap/trap access and storage usable depth are not fabrication-approved.",
+    "Dishwasher 650 mm, oven 600 mm, fridge 600 mm and drawer 500 mm open-door envelopes are explicit hypothetical planning proxies, not exact manufacturer geometry. A dishwasher opened alone leaves 570 mm to the opposing closed tall fronts. Dishwasher and oven proxies overlap by 168 × 30 mm if simultaneously open; do not treat the arrangement as certified for simultaneous use.",
+    "This is an isolated, render-only functional refinement. Structural approval for the existing kitchen-opening study, exact appliances, service routes and site dimensions remain unresolved. It does not deploy, activate, merge or save a live design.",
+    "The original three comparison cameras are preserved exactly. One supplemental Natural42 standing view at 1.70 m is added from the southeast passage to show the complete island, working fronts and sink/tap. It is not a before/after comparison camera."
+  ],
+  "architecture_variant": {
+    "id": "K4-render-truth",
+    "name": "K4 truth render — no speculative HVAC bulkhead geometry",
+    "render_only": true,
+    "structural_status": "TBD",
+    "remove_wall_segments": [
+      {
+        "from": [
+          8981.529,
+          6587.866
+        ],
+        "to": [
+          12116.59,
+          6587.866
+        ]
+      },
+      {
+        "from": [
+          12116.59,
+          6587.866
+        ],
+        "to": [
+          12582.613,
+          6969.158
+        ]
+      },
+      {
+        "from": [
+          12582.613,
+          6969.158
+        ],
+        "to": [
+          12582.613,
+          7456.363
+        ]
+      },
+      {
+        "from": [
+          12582.613,
+          8176.58
+        ],
+        "to": [
+          12582.613,
+          8960.346
+        ]
+      },
+      {
+        "from": [
+          7180.986,
+          6206.575
+        ],
+        "to": [
+          7413.998,
+          6206.575
+        ]
+      },
+      {
+        "from": [
+          8070.666,
+          6206.575
+        ],
+        "to": [
+          8981.529,
+          6206.575
+        ]
+      },
+      {
+        "from": [
+          5465.175,
+          6206.575
+        ],
+        "to": [
+          5465.175,
+          7265.718
+        ]
+      },
+      {
+        "from": [
+          5465.175,
+          7943.569
+        ],
+        "to": [
+          5465.175,
+          8960.346
+        ]
+      }
+    ],
+    "hide_openings": [
+      "OP-RECP-KIT",
+      "OP-HALL-BATHC",
+      "OP-WIC-BATHM"
+    ],
+    "add_wall_segments": [
+      {
+        "from": [
+          7180.986,
+          6206.575
+        ],
+        "to": [
+          7364,
+          6206.575
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          8164,
+          6206.575
+        ],
+        "to": [
+          8981.529,
+          6206.575
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          5465.175,
+          6206.575
+        ],
+        "to": [
+          5465.175,
+          7154.644
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "from": [
+          5465.175,
+          8054.644
+        ],
+        "to": [
+          5465.175,
+          8960.346
+        ],
+        "thickness_mm": 180,
+        "height_m": 2.5,
+        "status": "EXPLORATORY"
+      }
+    ],
+    "add_wall_boxes": [
+      {
+        "rect": [
+          7364,
+          6116.575,
+          7413.998,
+          6296.575
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "rect": [
+          8070.666,
+          6116.575,
+          8164,
+          6296.575
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "rect": [
+          5375.175,
+          7154.644,
+          5555.175,
+          7265.718
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      },
+      {
+        "rect": [
+          5375.175,
+          7943.569,
+          5555.175,
+          8054.644
+        ],
+        "bottom_m": 2.1,
+        "top_m": 2.5,
+        "status": "EXPLORATORY"
+      }
+    ],
+    "door_overrides": [
+      {
+        "id": "OP-RECP-WC",
+        "open_vector": [
+          1,
+          0
+        ],
+        "force_open": true,
+        "status": "EXPLORATORY"
+      }
+    ],
+    "merged_ceilings": [
+      {
+        "room_ids": [
+          "RECP-01",
+          "KIT-01"
+        ],
+        "height_m": 2.5,
+        "colour": "#fbfaf7",
+        "status": "EXPLORATORY",
+        "poly": [
+          [
+            8981.529,
+            550.754
+          ],
+          [
+            12497.882,
+            550.754
+          ],
+          [
+            12497.882,
+            2732.588
+          ],
+          [
+            16035.418,
+            2732.588
+          ],
+          [
+            16035.418,
+            10231.317
+          ],
+          [
+            12603.796,
+            10231.317
+          ],
+          [
+            12603.796,
+            8960.346
+          ],
+          [
+            8981.529,
+            8960.346
+          ]
+        ],
+        "derivation": "Canonical outer room edges; the 21.183 mm raster seam is capped only inside the removed kitchen/reception separator and hidden opening envelope."
+      }
+    ]
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "schema": "K11KitchenFunctionReview/1",
+  "status": "EXPLORATORY",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "baseline_scene_revision": "scene-967b6681",
+  "washing_scene_revision": "scene-fa8547b9",
+  "prep_scene_revision": "scene-9a5d28fe",
+  "canonical_summary": {
+    "pass": 152,
+    "warning": 49,
+    "fail": 2
+  },
+  "canonical_reported_failures": [
+    {
+      "kind": "placement",
+      "status": "FAIL",
+      "object_id": "E2-island",
+      "room_id": "KIT-01",
+      "measured_clearance_mm": 17.4,
+      "message": "Full footprint must remain in its assigned room."
+    },
+    {
+      "kind": "object-wall",
+      "status": "FAIL",
+      "object_id": "E2-pantry-tall",
+      "source_wall_index": 45,
+      "measured_clearance_mm": -57.4,
+      "message": "Object intersects a modeled wall."
+    }
+  ],
+  "canonical_failure_count_increases_from_1_to_2": true,
+  "additional_reported_failure_basis": "Native pantry checker reports wall 45; pantry exactly reuses old fridge footprint. Wall 45 was already removed by the unchanged render-only overlay. No canonical guard has been weakened.",
+  "island_bounds_mm": {
+    "x0": 10900,
+    "y0": 6150,
+    "x1": 12600,
+    "y1": 7050
+  },
+  "sink_outer_reserve_bounds_mm": {
+    "x0": 11407,
+    "y0": 6525,
+    "x1": 11957,
+    "y1": 6975
+  },
+  "sink_landings_mm": {
+    "west_mm": 507,
+    "east_mm": 643,
+    "front_mm": 75,
+    "rear_mm": 375
+  },
+  "working_modules_mm": [
+    {
+      "role": "waste",
+      "width_mm": 464,
+      "drawer_fronts_mm": [
+        560,
+        160
+      ],
+      "storage_intent": "Lower waste pullout + shallow top utensil drawer; exact mechanism TBD",
+      "x0": 10918,
+      "x1": 11382,
+      "y0": 6450,
+      "y1": 7050
+    },
+    {
+      "role": "sink",
+      "width_mm": 600,
+      "x0": 11382,
+      "x1": 11982,
+      "y0": 6450,
+      "y1": 7050
+    },
+    {
+      "role": "dishwasher",
+      "width_mm": 600,
+      "clear_appliance_reservation": true,
+      "x0": 11982,
+      "x1": 12582,
+      "y0": 6450,
+      "y1": 7050
+    }
+  ],
+  "bowl_bounds_mm": {
+    "x0": 11442,
+    "x1": 11922,
+    "y0": 6585,
+    "y1": 6935
+  },
+  "tap_plan_envelope_mm": {
+    "x0": 11459,
+    "x1": 11532,
+    "y0": 6527,
+    "y1": 6700
+  },
+  "prep": {
+    "published_reference_mm": [
+      914,
+      610
+    ],
+    "washing_mode_reference_met": false,
+    "prep_covered_mode_reference_met_at_concept_level": true,
+    "cover_enabled_rectangle_mm": {
+      "x0": 11668,
+      "x1": 12582,
+      "y0": 6440,
+      "y1": 7050,
+      "width_mm": 914,
+      "depth_mm": 610
+    },
+    "cover_nominal_mm": [
+      480,
+      350,
+      16
+    ],
+    "cover_storage": {
+      "west_width_mm": 564,
+      "nominal_depth_mm": 300,
+      "assumed_clear_depth_mm": 259,
+      "assumed_clear_height_mm": 684
+    },
+    "condition": "Only with fitted removable flush cover. Sink unavailable for washing at that time; actual seams/rails/product fit unverified."
+  },
+  "tall_front_clearances_mm": [
+    {
+      "id": "E2-oven-column",
+      "mm": 1219.9999999999998
+    },
+    {
+      "id": "E2-fridge",
+      "mm": 1220
+    },
+    {
+      "id": "E2-pantry-tall",
+      "mm": 1220
+    }
+  ],
+  "unchanged_static_gaps_mm": {
+    "E2-cooking-base": 1219,
+    "starter-32": 1757.954185357551,
+    "starter-35": 1070
+  },
+  "appliance_opening_proxy": {
+    "envelopes": [
+      {
+        "id": "dishwasher",
+        "projection_mm": 650,
+        "poly": [
+          [
+            11982,
+            7050
+          ],
+          [
+            12582,
+            7050
+          ],
+          [
+            12582,
+            7700
+          ],
+          [
+            11982,
+            7700
+          ]
+        ]
+      },
+      {
+        "id": "E2-oven-column",
+        "projection_mm": 600,
+        "poly": [
+          [
+            11350,
+            7670
+          ],
+          [
+            11950,
+            7670
+          ],
+          [
+            11950,
+            8270
+          ],
+          [
+            11350,
+            8270
+          ]
+        ]
+      },
+      {
+        "id": "E2-fridge",
+        "projection_mm": 600,
+        "poly": [
+          [
+            10750,
+            7670
+          ],
+          [
+            11350,
+            7670
+          ],
+          [
+            11350,
+            8270
+          ],
+          [
+            10750,
+            8270
+          ]
+        ]
+      },
+      {
+        "id": "waste/cutlery",
+        "projection_mm": 500,
+        "poly": [
+          [
+            10918,
+            7050
+          ],
+          [
+            11382,
+            7050
+          ],
+          [
+            11382,
+            7550
+          ],
+          [
+            10918,
+            7550
+          ]
+        ]
+      }
+    ],
+    "single_open": [
+      {
+        "id": "dishwasher",
+        "projection_mm": 650,
+        "min_gap_to_closed_other_solids_mm": 570,
+        "tangent_edges_ignored": []
+      },
+      {
+        "id": "E2-oven-column",
+        "projection_mm": 600,
+        "min_gap_to_closed_other_solids_mm": 620,
+        "tangent_edges_ignored": [
+          "E2-fridge",
+          "E2-pantry-tall"
+        ]
+      },
+      {
+        "id": "E2-fridge",
+        "projection_mm": 600,
+        "min_gap_to_closed_other_solids_mm": 600,
+        "tangent_edges_ignored": [
+          "E2-oven-column"
+        ]
+      },
+      {
+        "id": "waste/cutlery",
+        "projection_mm": 500,
+        "min_gap_to_closed_other_solids_mm": 720,
+        "tangent_edges_ignored": []
+      }
+    ],
+    "simultaneous_overlaps": [],
+    "dishwasher_oven_lateral_separation_mm": 32,
+    "dishwasher_open_remaining_to_closed_tall_front_mm": 570,
+    "assumption": "Same hypothetical rectangular 650/600/500 mm projections as K10. Pantry/cupboard hinge sweeps, bodies and actual door geometry are unverified. Zero overlap of these proxies does not mean a person can pass between simultaneous open doors."
+  },
+  "appliance_station": {
+    "schema": "ApplianceStationConcept/1",
+    "status": "EXPLORATORY",
+    "counter_height_mm": 860,
+    "niche_top_mm": 1480,
+    "appliances": [
+      {
+        "type": "coffee-machine",
+        "dimensions_mm": [
+          250,
+          410,
+          370
+        ],
+        "position_mm": [
+          -145,
+          45
+        ],
+        "product_status": "Generic reservation, not a selected DeLonghi model"
+      },
+      {
+        "type": "kettle",
+        "dimensions_mm": [
+          160,
+          200,
+          260
+        ],
+        "position_mm": [
+          155,
+          45
+        ],
+        "product_status": "Generic reservation, not a selected product"
+      }
+    ],
+    "services": "Power, ventilation, steam protection, tank filling and cleaning access await exact products/site review."
+  },
+  "storage": {
+    "schema": "KitchenStorageAllocation/1",
+    "status": "EXPLORATORY",
+    "not_a_family_inventory": true,
+    "assumptions": "18 mm panel allowance; actual fittings, shelves, bins and hob clearances unselected. Nominal cabinet widths are not usable storage widths.",
+    "allocations": [
+      {
+        "id": "cooking-side-drawers",
+        "nominal_mm": [
+          582,
+          600,
+          720
+        ],
+        "quantity": 2,
+        "proposed_compartments": 6,
+        "intent": [
+          "Deep: pots/lids",
+          "Middle: everyday pans/containers",
+          "Shallow: tools/spices"
+        ],
+        "usable_width_estimate_mm": 520,
+        "usable_depth_estimate_mm": 440,
+        "estimate_basis": "36 mm sides + 26 mm runner allowance, 440 mm conservative drawer box depth"
+      },
+      {
+        "id": "hob-lower-drawers",
+        "nominal_mm": [
+          600,
+          600,
+          560
+        ],
+        "quantity": 1,
+        "proposed_compartments": 2,
+        "conditional": true,
+        "intent": [
+          "Two lower deep drawers only; upper 160 mm frontage reserved for hob/services"
+        ],
+        "usable_width_estimate_mm": 538,
+        "usable_depth_estimate_mm": 440
+      },
+      {
+        "id": "island-cutlery",
+        "nominal_mm": [
+          464,
+          600,
+          160
+        ],
+        "quantity": 1,
+        "proposed_compartments": 1,
+        "intent": [
+          "Cutlery and frequently used small tools"
+        ],
+        "usable_width_estimate_mm": 402,
+        "usable_depth_estimate_mm": 440
+      },
+      {
+        "id": "island-waste",
+        "nominal_mm": [
+          464,
+          600,
+          560
+        ],
+        "quantity": 1,
+        "proposed_compartments": 0,
+        "general_dry_storage": false,
+        "intent": [
+          "Two small removable bins front/back; exact volumes/mechanism TBD"
+        ],
+        "bin_reservation_each_mm": [
+          240,
+          180,
+          300
+        ],
+        "bin_quantity": 2
+      },
+      {
+        "id": "island-sink",
+        "nominal_mm": [
+          600,
+          600,
+          720
+        ],
+        "quantity": 1,
+        "proposed_compartments": 0,
+        "general_dry_storage": false,
+        "intent": [
+          "Bowl/trap/services, small cleaning kit only; no dry-food claim"
+        ]
+      },
+      {
+        "id": "island-rear-wide",
+        "nominal_mm": [
+          600,
+          300,
+          720
+        ],
+        "quantity": 2,
+        "proposed_compartments": 4,
+        "usable_width_estimate_mm": 564,
+        "usable_depth_estimate_mm": 259,
+        "intent": [
+          "Mugs/glasses/small dishes; store removable sink cover upright in west unit"
+        ],
+        "plate_diameter_limit_note": "Do not assume standard 280 mm dinner plates fit the 259 mm depth allowance"
+      },
+      {
+        "id": "island-rear-narrow",
+        "nominal_mm": [
+          464,
+          300,
+          720
+        ],
+        "quantity": 1,
+        "proposed_compartments": 2,
+        "usable_width_estimate_mm": 428,
+        "usable_depth_estimate_mm": 259,
+        "intent": [
+          "Tea/coffee supplies or small serving items"
+        ]
+      },
+      {
+        "id": "wall-cabinets",
+        "nominal_mm": [
+          600,
+          330,
+          700
+        ],
+        "quantity": 2,
+        "proposed_compartments": 4,
+        "usable_width_estimate_mm": 564,
+        "usable_depth_estimate_mm": 289,
+        "intent": [
+          "Everyday cups/small bowls; shelf spacing and plate fit need inventory check"
+        ]
+      },
+      {
+        "id": "pantry-lower",
+        "nominal_mm": [
+          600,
+          600,
+          740
+        ],
+        "quantity": 1,
+        "proposed_compartments": 2,
+        "usable_width_estimate_mm": 564,
+        "usable_depth_estimate_mm": 564,
+        "intent": [
+          "Heavy dry groceries; adjustable shelf around 450 mm floor height"
+        ]
+      },
+      {
+        "id": "pantry-upper",
+        "nominal_mm": [
+          600,
+          600,
+          720
+        ],
+        "quantity": 1,
+        "proposed_compartments": 2,
+        "usable_width_estimate_mm": 564,
+        "usable_depth_estimate_mm": 564,
+        "intent": [
+          "Light reserve groceries/occasional items; reaching high shelves may require a step"
+        ]
+      },
+      {
+        "id": "coffee-niche",
+        "nominal_mm": [
+          600,
+          600,
+          620
+        ],
+        "quantity": 1,
+        "proposed_compartments": 0,
+        "general_dry_storage": false,
+        "intent": [
+          "Coffee machine + kettle; preparation/steam/cleaning space"
+        ],
+        "clear_width_mm": 564
+      },
+      {
+        "id": "oven-column",
+        "nominal_mm": [
+          600,
+          600,
+          2200
+        ],
+        "quantity": 1,
+        "proposed_compartments": 0,
+        "unassigned_storage": true,
+        "intent": [
+          "Oven and appliance/services zone; surrounding storage not counted until real SKU is fixed"
+        ]
+      }
+    ],
+    "tradeoffs": [
+      {
+        "change": "Pantry middle becomes coffee niche",
+        "gross_dry_storage_envelope_removed_mm": [
+          600,
+          600,
+          620
+        ],
+        "gross_envelope_litres": 223.2,
+        "note": "Gross bounding-box comparison, NOT lost usable capacity; excludes carcass, air gaps and shelves."
+      },
+      {
+        "change": "Island 464 mm drawer bank becomes waste + one shallow drawer",
+        "deep_general_drawers_removed": 2,
+        "shallow_utility_drawer_retained": 1
+      },
+      {
+        "change": "Cooking run drawer allocation becomes explicit",
+        "note": "Uses the existing 1800 × 600 mm footprint. Does not claim new exterior storage volume; hob lower drawers conditional."
+      }
+    ],
+    "excluded_from_dry_storage": [
+      "Fridge",
+      "Dishwasher",
+      "Sink/plumbing",
+      "Waste pullout",
+      "Coffee niche",
+      "Unverified oven-column spare space"
+    ],
+    "conclusion": "Organized compact storage, not proven generous storage. A family stocktake and selected hardware are required to validate quantities. Large dinner plates should use full-depth lower drawers rather than the shallow rear cabinets."
+  },
+  "reference": {
+    "publisher": "NKBA",
+    "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf",
+    "guidelines": [
+      11,
+      12,
+      13
+    ],
+    "status": "Published planning reference, not local code or a claim of current-edition compliance"
+  },
+  "limitations": [
+    "Two canonical failures remain disclosed: island cross-room placement and pantry against canonical wall 45, both dependent on the unchanged exploratory open-kitchen overlay.",
+    "32 mm separation is nominal and requires real door/handle tolerances.",
+    "570 mm dishwasher-open gap is restricted; passage and user bodies are not certified.",
+    "Uncovered sink still lacks the 914 × 610 mm continuous prep reference.",
+    "Cover is a hypothetical flush insert; purchase/fabrication measurements are unverified.",
+    "Coffee niche sacrifices some pantry space; actual user appliance dimensions are required.",
+    "No household stocktake was supplied; cabinet quantities do not prove sufficient capacity.",
+    "Structural approval, extraction, gas/electrical/water/drainage routes and site measurements remain unresolved."
+  ]
+}

@@ -1,0 +1,72 @@
+name: Foundation phase 2 - multi-actor paths + cabinet access
+
+on:
+  push:
+    branches:
+      - 'foundation/phase2-multi-actor-storage-20261008'
+    paths:
+      - 'studio/analysis/**'
+      - 'scripts/foundation-phase2-reference.mjs'
+      - 'scripts/analyze-family-activity.mjs'
+      - 'design-development/advisor/cases/wic-two-person.json'
+      - '.github/workflows/verify-foundation-phase2.yml'
+  pull_request:
+    paths:
+      - 'studio/analysis/**'
+      - 'scripts/foundation-phase2-reference.mjs'
+      - 'scripts/analyze-family-activity.mjs'
+      - 'design-development/advisor/cases/wic-two-person.json'
+      - '.github/workflows/verify-foundation-phase2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  v2-pure:
+    name: Moving people, door sweeps, cabinet apertures — unit proofs
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Preserve all v1 mathematical behavior
+        run: node --test studio/analysis/foundation.test.mjs
+      - name: Verify crossing detection, door states and net storage fit
+        run: node --test studio/analysis/phase2.test.mjs
+
+  v2-reference:
+    name: Real canonical Type B/WIC/K12 integration evidence
+    needs: v2-pure
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Re-run frozen K11/K12 geometry reference
+        run: node scripts/audit-advisor-01.mjs
+      - name: Verify v1 WIC and kitchen metrics unchanged
+        run: node scripts/foundation-reference-audit.mjs
+      - name: Exercise timed crossing and actual-source cabinet width/depth
+        run: node scripts/foundation-phase2-reference.mjs
+      - name: Run declarative real-room two-person scenario and conceptual door open
+        run: node scripts/analyze-family-activity.mjs design-development/advisor/cases/wic-two-person.json
+      - name: Require time-between-frame collision and modeled door blockage
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const q=JSON.parse(fs.readFileSync('review-evidence/foundation/wic-family-activity.json','utf8'));const a=q.model_result;assert.equal(a.frames.length,3);assert.equal(a.frames[0].actor_pairs[0].collision,false);assert.equal(a.frames[1].actor_pairs[0].collision,false);assert.ok(a.intervals[0].actor_pair_swept_motion[0].collision);assert.ok(a.frames[2].actor_clearances[0].clearance_mm<0);assert.equal(q.construction_status,'NOT_VERIFIED');console.log('PASS: declarative real-room timeline, hidden crossing and door-opening interference')"
+      - name: Verify K12 source identity, transparent provenance and unresolved approvals
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const a=JSON.parse(fs.readFileSync('review-evidence/foundation/phase2-real-source-demo.json','utf8'));assert.equal(a.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');assert.ok(a.crossing.analytically_detected_between_samples.collision);assert.equal(a.kitchen_storage.narrow_access_result,'NO_ITEM_FIT');assert.equal(a.kitchen_storage.wide_access_result,'SINGLE_TYPE_FIT_PLAUSIBLE');assert.equal(a.hinged_leaf.product_hinge_selected,false);console.log('PASS: source-backed phase2 artifact and unknown product constraints retained')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: foundation-phase2-timed-people-and-storage
+          path: review-evidence/foundation/
+          if-no-files-found: error
+          retention-days: 30
