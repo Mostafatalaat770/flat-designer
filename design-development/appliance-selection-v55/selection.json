@@ -1,0 +1,261 @@
+{
+  "schema": "ApartmentApplianceSelectionBrief/1",
+  "source_scene": "scene-9cf45a73",
+  "source_storage_revision": 55,
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "local_furnishing_candidate_scene": "scene-c9c055c1",
+  "input_hashes": {
+    "render-snapshots/current.json": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+    "design-development/kitchen-operation-v55/results.json": "1f38caddea074db76a6607c7b54e52e36619d86007df9730b9039f8626ffc9b9",
+    "design-development/unified-furnishing-v55/snapshot.json": "2872d75393e2ba55594615a05fb7764dd6978865d1e704342475ccdf4497b0e4"
+  },
+  "owner_confirmation": {
+    "date": "2026-10-09",
+    "answer": "لسه هنختار الموديلات",
+    "models_selected": false
+  },
+  "buying_location": null,
+  "budget": null,
+  "measured_installation_dimensions_available": false,
+  "principles": [
+    "Compare body, installed connections/clearances and operating envelope separately.",
+    "A device fitting the nominal footprint is not installation approval. Heights and actual site dimensions remain unknown.",
+    "A different size, door type or position requires a new local proposal and operation review before adoption."
+  ],
+  "appliances": [
+    {
+      "id": "fridge",
+      "label": "الثلاجة",
+      "reservation": {
+        "source_object_id": "starter-23",
+        "width_mm": 650,
+        "depth_mm": 650,
+        "height_mm": null,
+        "cx_mm": 11850,
+        "cy_mm": 8520,
+        "rotation_deg": 180,
+        "meaning": "Nominal source-model reservation; not a measured installation opening or an approved product maximum."
+      },
+      "selection_basis": "Match the 650 × 650 mm nominal body reserve first; confirm actual integration type, hinge, ventilation and drawer-removal angle.",
+      "operation_evidence": {
+        "source": "kitchen-operation-v55/results.json",
+        "preferred_hinge_location_in_plan": "east",
+        "manufacturer_hinge_label": null,
+        "body_to_side_panel_gap_mm": 2,
+        "side_panel_id": "KIT-fridge-end-panel",
+        "sequences": [
+          {
+            "hinge_location": "west",
+            "grid_mm": 50,
+            "status": "NO_SAMPLED_SEQUENCE"
+          },
+          {
+            "hinge_location": "west",
+            "grid_mm": 25,
+            "status": "NO_SAMPLED_SEQUENCE"
+          },
+          {
+            "hinge_location": "east",
+            "grid_mm": 50,
+            "status": "SAMPLED_SEQUENCE_FOUND"
+          },
+          {
+            "hinge_location": "east",
+            "grid_mm": 25,
+            "status": "SAMPLED_SEQUENCE_FOUND"
+          }
+        ],
+        "interpretation": "The 2 mm modeled side gap is not a manufacturer-approved hinge or ventilation clearance. Plan east/west must be matched to the actual front-view manual."
+      },
+      "manual_fields": [
+        "Total installed depth including handle and rear ventilation",
+        "Hinge reversibility and required side clearance beside panel",
+        "Opening angle needed for drawers, shelves and removal",
+        "Approved integration/niche dimensions and ventilation route"
+      ],
+      "actual": {
+        "status": "UNSELECTED",
+        "manufacturer": null,
+        "model": null,
+        "manual_url": null,
+        "device_width_mm": null,
+        "device_height_mm": null,
+        "closed_depth_including_door_handle_mm": null,
+        "installation_opening_required_mm": null,
+        "rear_connection_space_mm": null,
+        "manufacturer_clearances_mm": null,
+        "open_door_projection_mm": null,
+        "fits_existing_layout": null
+      }
+    },
+    {
+      "id": "dishwasher",
+      "label": "غسالة الأطباق",
+      "reservation": {
+        "source_object_id": "K3-dishwasher",
+        "width_mm": 600,
+        "depth_mm": 610,
+        "height_mm": null,
+        "cx_mm": 10581,
+        "cy_mm": 6993,
+        "rotation_deg": 0,
+        "meaning": "Nominal source-model reservation; not a measured installation opening or an approved product maximum."
+      },
+      "selection_basis": "Start comparison with a 60 cm integrated-module class; the 600 × 610 reservation is not the clear installation niche.",
+      "operation_evidence": {
+        "source": "kitchen-operation-v55/results.json",
+        "door_projection_trials_mm": [
+          600,
+          650
+        ],
+        "loader_reserve_mm": [
+          600,
+          500
+        ],
+        "terrace_passage_during_loading": "NO_MODEL_ROUTE at both grids in the declared trial",
+        "interpretation": "Do not promise simultaneous loading and service-terrace passage."
+      },
+      "manual_fields": [
+        "Clear niche width, depth and height with adjustable feet",
+        "Water/drain/electrical connection space",
+        "Door and furniture-front projection, hinge system and plinth interference",
+        "Standing/loading position and actual terrace-passage trial"
+      ],
+      "actual": {
+        "status": "UNSELECTED",
+        "manufacturer": null,
+        "model": null,
+        "manual_url": null,
+        "device_width_mm": null,
+        "device_height_mm": null,
+        "closed_depth_including_door_handle_mm": null,
+        "installation_opening_required_mm": null,
+        "rear_connection_space_mm": null,
+        "manufacturer_clearances_mm": null,
+        "open_door_projection_mm": null,
+        "fits_existing_layout": null
+      }
+    },
+    {
+      "id": "washer",
+      "label": "الغسالة",
+      "reservation": {
+        "source_object_id": "K3-laundry-niche",
+        "width_mm": 600,
+        "depth_mm": 610,
+        "height_mm": null,
+        "cx_mm": 9981,
+        "cy_mm": 6993,
+        "rotation_deg": 0,
+        "meaning": "Nominal source-model reservation; not a measured installation opening or an approved product maximum."
+      },
+      "selection_basis": "Compare a front-loading candidate against the nominal 600 × 610 reserve; under-counter height, lid treatment and rear hoses require its manual.",
+      "operation_evidence": {
+        "source": "kitchen-operation-v55/results.json",
+        "opening_trial_projection_mm": 500,
+        "loader_east_offset_trial_mm": 150,
+        "interpretation": "Centered loading overlaps the open terrace leaf. The 150 mm-east stance removes that overlap but still disconnects terrace passage in the modeled stage."
+      },
+      "manual_fields": [
+        "Full closed depth including door and connections",
+        "Approved under-counter dimensions and any manufacturer-supported lid treatment",
+        "Actual door hinge, swing and loading stance",
+        "Specified side/rear installation and service clearances"
+      ],
+      "actual": {
+        "status": "UNSELECTED",
+        "manufacturer": null,
+        "model": null,
+        "manual_url": null,
+        "device_width_mm": null,
+        "device_height_mm": null,
+        "closed_depth_including_door_handle_mm": null,
+        "installation_opening_required_mm": null,
+        "rear_connection_space_mm": null,
+        "manufacturer_clearances_mm": null,
+        "open_door_projection_mm": null,
+        "fits_existing_layout": null
+      }
+    },
+    {
+      "id": "oven",
+      "label": "الفرن",
+      "reservation": {
+        "source_object_id": "starter-20",
+        "width_mm": null,
+        "depth_mm": null,
+        "height_mm": null,
+        "assumed_door_width_mm": 600,
+        "meaning": "No separate oven object or measured oven niche. The operation study assumes an under-hob oven in the west counter."
+      },
+      "selection_basis": "Confirm whether an under-hob oven is wanted before matching cabinet, support and services.",
+      "operation_evidence": {
+        "source": "kitchen-operation-v55/results.json",
+        "door_projection_trials_mm": [
+          500,
+          600
+        ],
+        "interpretation": "Oven/operator trial admits service passage; simultaneous open dishwasher overlaps that operator. These are assumed envelopes."
+      },
+      "manual_fields": [
+        "Actual installation niche dimensions and support",
+        "Total open-door projection and standing position",
+        "Compatibility and clearances with the selected hob",
+        "Electrical/services and ventilation requirements from the product manual"
+      ],
+      "actual": {
+        "status": "UNSELECTED",
+        "manufacturer": null,
+        "model": null,
+        "manual_url": null,
+        "device_width_mm": null,
+        "device_height_mm": null,
+        "closed_depth_including_door_handle_mm": null,
+        "installation_opening_required_mm": null,
+        "rear_connection_space_mm": null,
+        "manufacturer_clearances_mm": null,
+        "open_door_projection_mm": null,
+        "fits_existing_layout": null
+      }
+    },
+    {
+      "id": "hob",
+      "label": "الموقد والشفاط",
+      "reservation": {
+        "source_object_id": "starter-22",
+        "width_mm": 600,
+        "depth_mm": 400,
+        "height_mm": null,
+        "cx_mm": 9381,
+        "cy_mm": 7895,
+        "rotation_deg": 270,
+        "meaning": "Nominal source-model reservation; not a measured installation opening or an approved product maximum."
+      },
+      "selection_basis": "The 600 × 400 hob is a drawing placeholder. Match a real hob and hood using their installation drawings; the placeholder is not a worktop cutout.",
+      "operation_evidence": {
+        "source": "render-snapshots/current.json",
+        "interpretation": "Gas hob concept; hood/exhaust and heat clearances remain unresolved."
+      },
+      "manual_fields": [
+        "Hob overall dimensions and manufacturer worktop cutout",
+        "Worktop depth/thickness and edge clearances",
+        "Hob/oven compatibility and nearby upper-cabinet clearances",
+        "Hood width, installation height and exhaust route for the selected products"
+      ],
+      "actual": {
+        "status": "UNSELECTED",
+        "manufacturer": null,
+        "model": null,
+        "manual_url": null,
+        "device_width_mm": null,
+        "device_height_mm": null,
+        "closed_depth_including_door_handle_mm": null,
+        "installation_opening_required_mm": null,
+        "rear_connection_space_mm": null,
+        "manufacturer_clearances_mm": null,
+        "open_door_projection_mm": null,
+        "fits_existing_layout": null
+      }
+    }
+  ]
+}
