@@ -37,6 +37,8 @@ jobs:
       - name: Build source-locked apartment 3D
         run: npm run build
       - name: Shared viewer integrity checks
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
         run: npm run check && npm run check:studio
       - name: Check cloud v53-derived source and canonical geometry
         run: node scripts/verify-bathroom-a2-visuals.mjs
