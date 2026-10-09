@@ -1,0 +1,5352 @@
+{
+  "schema": "ApartmentUnifiedReviewBrowserCheck/1",
+  "source_scene": "scene-9cf45a73",
+  "candidate_scene": "scene-c9c055c1",
+  "views": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "cases": 266,
+      "overflow": false,
+      "direction": "rtl",
+      "external_scripts": 0,
+      "focus_changes_viewbox": true,
+      "rows": [
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "ENDPOINT_BLOCKED",
+          "expected": "ENDPOINT_BLOCKED",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "ENDPOINT_BLOCKED",
+          "expected": "ENDPOINT_BLOCKED",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "ENDPOINT_BLOCKED",
+          "expected": "ENDPOINT_BLOCKED",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "cases": 266,
+      "overflow": false,
+      "direction": "rtl",
+      "external_scripts": 0,
+      "focus_changes_viewbox": true,
+      "rows": [
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "ENDPOINT_BLOCKED",
+          "expected": "ENDPOINT_BLOCKED",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "baseline",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "unified",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 147,
+          "expected_obstacles": 147
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-six",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "ENDPOINT_BLOCKED",
+          "expected": "ENDPOINT_BLOCKED",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "ENDPOINT_BLOCKED",
+          "expected": "ENDPOINT_BLOCKED",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-storage",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-desk",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 153,
+          "expected_obstacles": 153
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "dining-dw-loading",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 154,
+          "expected_obstacles": 154
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 50,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "private-hall",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "living",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-wardrobe",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom1-storage",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom2-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "bedroom2-desk",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "master-bed",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "dressing",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "ensuite-vanity",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "ensuite-shower",
+          "status": "NO_MODEL_ROUTE",
+          "expected": "NO_MODEL_ROUTE",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "family-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "kitchen-sink",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "service-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "guest-WC",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "guest-basin",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "master-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        },
+        {
+          "stage": "conditional-guest",
+          "grid": 25,
+          "goal": "main-terrace",
+          "status": "MODEL_ROUTE_FOUND",
+          "expected": "MODEL_ROUTE_FOUND",
+          "path_matches": true,
+          "obstacles": 152,
+          "expected_obstacles": 152
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

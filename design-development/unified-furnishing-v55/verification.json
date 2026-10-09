@@ -1,0 +1,45 @@
+{
+  "schema": "ApartmentUnifiedCirculationVerification/1",
+  "source_scene": "scene-9cf45a73",
+  "candidate_scene": "scene-c9c055c1",
+  "results_sha256": "dc96a051942b76063a53a7073be9e8479349d38fcebf5820140ead7f217affb7",
+  "geometry_verified": true,
+  "stages": 7,
+  "route_cases": 266,
+  "found_routes": 240,
+  "independent_five_mm_path_samples": 719114,
+  "floor_union_samples": 262169,
+  "independent_repository_routes": [
+    {
+      "stage": "baseline",
+      "goal": "bedroom1-bed",
+      "grid_mm": 50,
+      "status": "NO_MODEL_ROUTE"
+    },
+    {
+      "stage": "unified",
+      "goal": "bedroom1-desk",
+      "grid_mm": 25,
+      "status": "MODEL_ROUTE_FOUND"
+    },
+    {
+      "stage": "dining-dw-loading",
+      "goal": "service-terrace",
+      "grid_mm": 50,
+      "status": "NO_MODEL_ROUTE"
+    },
+    {
+      "stage": "conditional-guest",
+      "goal": "guest-WC",
+      "grid_mm": 50,
+      "status": "MODEL_ROUTE_FOUND"
+    }
+  ],
+  "static_validation": {
+    "pass": 186,
+    "warning": 74,
+    "fail": 0
+  },
+  "architecture_unchanged": true,
+  "unrelated_contents_unchanged": true
+}

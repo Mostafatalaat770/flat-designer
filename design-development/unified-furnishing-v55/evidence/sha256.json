@@ -1,0 +1,21 @@
+{
+  "proposal.json": "9fed76fd9a7edabaf45cf952068fa2dc1ac0129d42328ebc9ec70a8400481959",
+  "snapshot.json": "2872d75393e2ba55594615a05fb7764dd6978865d1e704342475ccdf4497b0e4",
+  "brief.json": "1e8c1de998fb074e9bd07f0b604a4c124e0207a12b50954d6c290b1dae5c45f9",
+  "composition.json": "93c6db8653b40d1142614c6183c58ad7aff1fa72cbdbaa21d0a0e5d56af85942",
+  "compose.mjs": "df18c71e4c6b756b4a634bf0a173812461e6191a173ef02d8bb92ba32d502402",
+  "floor.mjs": "242a439ca31a271b086ea4ea926bad257a2c134fbfef9899fcb10911f6bab16c",
+  "study.mjs": "1e00c236a6e33403222ec01ac4c943c304ee062be33e943b3e69948bb764d5cf",
+  "verify.mjs": "7d8b87788620a5ad1a36056a65bacb2cd16479a1b9b8a71c47b52ea413d1aeb0",
+  "measurements.json": "9e1b2d47d6e5ff910872cff015c668ad51602228959b6de0a9a96fd97c8dd22c",
+  "build-review.mjs": "47853dee2b57036d14c03d63c086fe8d27214c9538e588baa8c4bfe4385185de",
+  "check-review.cjs": "484d0810ce7b23ab983bba89e28a4869dfeb327cba70f6273f733685510e0d0a",
+  "results.json": "dc96a051942b76063a53a7073be9e8479349d38fcebf5820140ead7f217affb7",
+  "verification.json": "a6009110531fd754d0b10f245f297fef40c03b2452cc50c5f356e70ac389815b",
+  "review.html": "8793f0a74dfc6242b0fc9f4428c770ce4f715f1551c5762162561dec2a27b30a",
+  "evidence/browser-check.json": "c2ec06fa9a8021d9ae39d711096760bd6476fea296eccad0cc260516cf218390",
+  "evidence/desktop.png": "cf35ba93a2cbc8b34b64dc56fc38a97f39e94994978b0ae4a434ca3d538510d1",
+  "evidence/desktop-bedroom.png": "7da6eb7a9b3f6f7db0e86fccce24b6df2296d5a339ece320299e4c9151b6f7e4",
+  "evidence/mobile.png": "2c511c4703db48ee05ac39a1f522f2a13de9929e9b17168e76f8a79eac8002f9",
+  "evidence/mobile-bedroom.png": "33af496ff2623ff4686c6a9f59d77795d84b5ee56f80825849f9debb7a2e0ba2"
+}
