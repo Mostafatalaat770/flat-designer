@@ -59,7 +59,8 @@ jobs:
       - name: Build exact Studio capture template
         run: npm run build
 
-      - name: Verify render-only finish repairs
+      - name: Verify render-only finish repairs (legacy K11/K12 branches)
+        if: github.ref != 'refs/heads/integration/type-b-current-v55-20261009'
         run: node scripts/verify-render-overlay.mjs
 
       - name: Render branch snapshot

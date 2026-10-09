@@ -24,6 +24,8 @@ jobs:
       - name: Build canonical source
         run: npm run build
       - name: Source and viewer checks
+        env:
+          CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
         run: npm run check
       - name: Verify one pinned v55 candidate
         run: node --test studio/local/current-baseline.test.mjs
