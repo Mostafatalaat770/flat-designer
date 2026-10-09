@@ -1,0 +1,13 @@
+import fs from "node:fs";
+import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {makeBathroomFinishStudy,finishPaletteSvg} from "../studio/analysis/bathroom-finish-jury.mjs";
+const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
+const current=read("render-snapshots/current.json");
+const domain=createApartmentDomain(process.cwd());
+const o=makeBathroomFinishStudy(current,domain);
+const dir="review-evidence/bathrooms-b3";fs.mkdirSync(dir,{recursive:true});
+fs.writeFileSync(dir+"/a-current-v55.json",JSON.stringify(o.a,null,2)+"\n");
+fs.writeFileSync(dir+"/b-refined-stone.json",JSON.stringify(o.b,null,2)+"\n");
+fs.writeFileSync(dir+"/jury.json",JSON.stringify(o.audit,null,2)+"\n");
+fs.writeFileSync(dir+"/material-board.svg",finishPaletteSvg(o.audit)+"\n");
+console.log(JSON.stringify({A:o.a.scene_revision,B:o.b.scene_revision,views:o.a.views.map(v=>v.id),known_holds:o.audit.known_holds.length,status:o.audit.status},null,2));
