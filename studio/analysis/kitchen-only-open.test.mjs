@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import {createApartmentDomain} from "../domain/apartment.mjs";
-import {buildKitchenOnlyOpen,auditKitchenOnlyCandidate} from "./kitchen-only-open.mjs";
+import {buildKitchenOnlyOpen,auditKitchenOnlyCandidate,adjustedKitchenOnlyOpen,auditKitchenB2} from "./kitchen-only-open.mjs";
 const read=p=>JSON.parse(fs.readFileSync(p,"utf8"));
 const current=read("render-snapshots/current.json");
 const old=read("render-snapshots/study-k12-unapproved-20261008.json");
@@ -42,4 +42,21 @@ test("candidate is clearly advisory and uses actual K12 workstation source, not 
  assert.equal(audit.changed_non_kitchen_v55_furniture,0);
  assert.ok(audit.blocking.length>=4);
  assert.equal(audit.status,"EXPLORATORY_MODEL_WITH_UNRESOLVED_CONSTRUCTION_GATES");
+});
+
+const b2=adjustedKitchenOnlyOpen(out,domain);
+const b2Audit=auditKitchenB2(out,b2,domain);
+test("B2 reduces prior two model layout failures while preserving the full canonical architecture",()=>{
+ assert.equal(b2Audit.domain_failures.length,0,JSON.stringify(b2Audit.domain_failures));
+ assert.equal(b2Audit.release_status,"UNAPPROVED_CONCEPT_ONLY");
+ assert.ok(b2Audit.nominal_lounge_buffer_lost_mm>500);
+ assert.ok(b2Audit.nominal_lounge_gap_after_mm>650);
+ assert.ok(b2Audit.nominal_pantry_wall45_face_gap_mm>=60);
+});
+test("B2 leaves v55 family/dining, baths and true room structure unchanged",()=>{
+ const untouched=x=>x.layout.furniture.filter(o=>o.room_id!=="KIT-01"&&!["E2-island","E2-island-sink"].includes(o.id));
+ assert.deepEqual(untouched(b2),untouched(out));
+ assert.deepEqual(b2.layout.interior.objects.filter(o=>o.room_id!=="KIT-01"),out.layout.interior.objects.filter(o=>o.room_id!=="KIT-01"));
+ assert.deepEqual(b2.layout.rooms,out.layout.rooms);
+ assert.deepEqual(b2.architecture_variant,out.architecture_variant);
 });

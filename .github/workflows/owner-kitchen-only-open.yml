@@ -31,21 +31,21 @@ jobs:
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
-      - name: Render three REAL matched current v55 camera views with the kitchen-only overlay
+      - name: Render two matched B2 WebGL views; original three B1 views remain in previous run
         env:
-          RENDER_OUT_DIR: renders/kitchen-only-open
+          RENDER_OUT_DIR: renders/kitchen-only-open-b2
           RENDER_CONCURRENCY: "1"
-        run: node scripts/render-snapshot.mjs review-evidence/kitchen-only-open/candidate.json
+        run: node scripts/render-snapshot.mjs review-evidence/kitchen-only-open/candidate-b2.json
       - name: Confirm no partial fake screenshots and manifest exact architecture
         run: |
-          node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; const s=JSON.parse(fs.readFileSync('review-evidence/kitchen-only-open/candidate.json','utf8')); const m=JSON.parse(fs.readFileSync('renders/kitchen-only-open/manifest.json','utf8')); assert.equal(m.scene_revision,s.scene_revision); assert.deepEqual(m.architecture_variant,s.architecture_variant); assert.equal(m.views.length,3); for (const id of m.views){const p='renders/kitchen-only-open/'+id; assert.ok(fs.statSync(p+'.png').size>10000);const f=JSON.parse(fs.readFileSync(p+'.json','utf8'));assert.equal(f.scene_revision,s.scene_revision);assert.equal(f.assets.pending,0);assert.deepEqual(f.assets.fallbacks,[]);} console.log('Real WebGL frames and metadata verified');"
+          node --input-type=module -e "import fs from 'node:fs'; import assert from 'node:assert/strict'; const s=JSON.parse(fs.readFileSync('review-evidence/kitchen-only-open/candidate-b2.json','utf8')); const m=JSON.parse(fs.readFileSync('renders/kitchen-only-open-b2/manifest.json','utf8')); assert.equal(m.scene_revision,s.scene_revision); assert.deepEqual(m.architecture_variant,s.architecture_variant); assert.equal(m.views.length,2); for (const id of m.views){const p='renders/kitchen-only-open-b2/'+id; assert.ok(fs.statSync(p+'.png').size>10000);const f=JSON.parse(fs.readFileSync(p+'.json','utf8'));assert.equal(f.scene_revision,s.scene_revision);assert.equal(f.assets.pending,0);assert.deepEqual(f.assets.fallbacks,[]);} console.log('Real WebGL frames and metadata verified');"
       - name: Upload the exact renders, candidate JSON and unapproved issues
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: v55-kitchen-only-open-review
+          name: v55-kitchen-only-open-b2-review
           path: |
-            renders/kitchen-only-open/
+            renders/kitchen-only-open-b2/
             review-evidence/kitchen-only-open/
           retention-days: 30
           if-no-files-found: warn

@@ -4,6 +4,7 @@
  * Critically, do NOT transplant any bath/bedroom/corridor walls, furniture or decor.
  */
 import assert from "node:assert/strict";
+import {rectangle,pointInPolygon,polygonGap} from "./geometry.mjs";
 const clone=x=>structuredClone(x);
 export function buildKitchenOnlyOpen(current,k12,domain){
  assert.equal(current.canonical_sha256,domain.model.canonical_sha256);
@@ -90,4 +91,48 @@ export function auditKitchenOnlyCandidate(current,k12,candidate,domain){
    "Render is for critique of separate kitchen-only intervention; no materials or orders approved"
   ]
  };
+}
+
+
+// B2 is a reversible engineering study only: keep the original B1 for A/B visual inspection.
+export function adjustedKitchenOnlyOpen(b1,domain){
+ const s=structuredClone(b1),get=id=>{const o=s.layout.furniture.find(f=>f.id===id);assert.ok(o,id);return o};
+ for(const id of ["E2-island","E2-island-sink"]) get(id).cy-=575;
+ for(const id of ["E2-oven-column","E2-fridge"]) get(id).cx-=150;
+ const pantry=s.layout.interior.objects.find(o=>o.id==="E2-pantry-tall");
+ assert.ok(pantry);pantry.cx-=150;
+ s.name="B2 study: shift whole wet island and tall appliance bank; no architecture change";
+ s.views=s.views.filter(v=>["kitchen-work-run","reception-dining"].includes(v.id));
+ s.scene_revision=domain.revision(s.layout);
+ s.notes.push("B2 exploratory: wet island moved 575mm towards reception; fridge, oven, pantry moved 150mm west TOGETHER. This trades lounge space for geometry margins and changes wet service route; no construction approval.");
+ assert.equal(s.architecture_variant.remove_wall_segments.length,4);
+ assert.deepEqual(s.architecture_variant.hide_openings,["OP-RECP-KIT"]);
+ const island=get("E2-island"),recep=domain.model.rooms.find(r=>r.id==="RECP-01");
+ assert.ok(rectangle(island).every(p=>pointInPolygon(p,recep.poly)),"B2 island must remain within model reception polygon");
+ return s;
+}
+export function auditKitchenB2(b1,b2,domain){
+ const check=auditKitchenOnlyCandidate(b1,b1,b2,domain);
+ const find=(s,id)=>s.layout.furniture.find(x=>x.id===id);
+ const priorGap=polygonGap(rectangle(find(b1,"E2-island")),rectangle(find(b1,"starter-32")));
+ const nextGap=polygonGap(rectangle(find(b2,"E2-island")),rectangle(find(b2,"starter-32")));
+ const p=b2.layout.interior.objects.find(o=>o.id==="E2-pantry-tall");
+ const wall=domain.model.wall_segments[45];
+ const wallFaceGap=wall.from[0]-wall.thickness_mm/2-(p.cx+p.width_mm/2);
+ assert.ok(wallFaceGap>=60,"B2 tall pantry needs nominal wall-face space");
+ assert.ok(nextGap>=650,"B2 lounge gap must stay above preliminary 650mm model guard");
+ const other=s=>s.layout.furniture.filter(o=>o.room_id!=="KIT-01"&&!["E2-island","E2-island-sink"].includes(o.id));
+ assert.deepEqual(other(b1),other(b2));
+ assert.deepEqual(b1.layout.rooms,b2.layout.rooms);
+ assert.deepEqual(b1.layout.demolished,b2.layout.demolished);
+ assert.deepEqual(b1.architecture_variant,b2.architecture_variant);
+ return {schema:"KitchenB2GeometryTradeoffs/1",
+  baseline_scene:b1.scene_revision,adjusted_scene:b2.scene_revision,
+  nominal_lounge_gap_before_mm:+priorGap.toFixed(1),
+  nominal_lounge_gap_after_mm:+nextGap.toFixed(1),
+  nominal_lounge_buffer_lost_mm:+(priorGap-nextGap).toFixed(1),
+  nominal_pantry_wall45_face_gap_mm:+wallFaceGap.toFixed(1),
+  domain_failures:check.domain_hard_failures,
+  release_status:"UNAPPROVED_CONCEPT_ONLY",
+  limitations:["A 575mm wet-island move increases plumbing-route uncertainty","Measured wall positions and site structural permission unknown","Nominal gap is NOT occupied-passage certification","Render-only removed walls are not a valid as-built design"]};
 }
