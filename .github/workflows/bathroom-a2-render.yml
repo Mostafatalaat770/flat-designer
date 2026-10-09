@@ -34,10 +34,10 @@ jobs:
           python-version: "3.12"
       - name: Install dependencies
         run: npm ci
-      - name: Shared viewer integrity checks
-        run: npm run check && npm run check:studio
       - name: Build source-locked apartment 3D
         run: npm run build
+      - name: Shared viewer integrity checks
+        run: npm run check && npm run check:studio
       - name: Check cloud v53-derived source and canonical geometry
         run: node scripts/verify-bathroom-a2-visuals.mjs
       - name: Install headless Chromium
