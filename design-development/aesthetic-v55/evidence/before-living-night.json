@@ -31,8 +31,8 @@
     "viewer": {
       "cut_height_m": 2.5,
       "furnishings_visible": true,
-      "night": false,
-      "hour": 10,
+      "night": true,
+      "hour": 21,
       "mode": "orbit",
       "doors": [
         {
@@ -93,7 +93,7 @@
       ]
     }
   },
-  "timestamp": "2026-10-09T21:03:15.393Z",
+  "timestamp": "2026-10-09T21:05:46.236Z",
   "assets": {
     "pending": 0,
     "fallbacks": []

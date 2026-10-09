@@ -836,8 +836,8 @@
       "viewer": {
         "cut_height_m": 2.5,
         "furnishings_visible": true,
-        "night": false,
-        "hour": 10,
+        "night": true,
+        "hour": 21,
         "mode": "orbit",
         "doors": [
           {

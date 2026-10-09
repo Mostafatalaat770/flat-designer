@@ -27,7 +27,12 @@ const selections=[
  ['family-bath','BATH-C01',realism.find(v=>v.view==='family-vanity-natural')],
  ['living-night','RECP-01',{...family.find(v=>v.id==='family-v7-family'),viewer:{...family.find(v=>v.id==='family-v7-family').viewer,night:true,hour:21}}]
 ];
-const views=selections.map(([id,room_id,c])=>({id,room_id,camera:domain.captureCamera(before.layout,{room_id,...c})}));
+const views=selections.map(([id,room_id,c])=>{
+ const camera=domain.captureCamera(before.layout,{room_id,...c});
+ // Camera normalization supplies daytime defaults; apply the named night state afterwards.
+ if(id==='living-night')camera.viewer={...camera.viewer,night:true,hour:21};
+ return {id,room_id,camera};
+});
 fs.mkdirSync(dir+'/evidence',{recursive:true});
 const camerasFile=dir+'/cameras.json';
 if(fs.existsSync(camerasFile))assert.deepEqual(read(camerasFile),views);else fs.writeFileSync(camerasFile,JSON.stringify(views,null,2)+'\n');

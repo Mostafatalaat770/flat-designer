@@ -95,13 +95,13 @@
     },
     {
       "file": "evidence/before-living-night.png",
-      "bytes": 847164,
-      "sha256": "63eb4a62a2b629f500333ae0e32fe407841030e79689c53b522f1eb910e501e4"
+      "bytes": 922101,
+      "sha256": "cdae8a6ce99f4b19a5575ec9b12b3bcc20891294a0c17d82812301a30a55edc7"
     },
     {
       "file": "evidence/before-living-night.json",
-      "bytes": 46893,
-      "sha256": "8db046fa10acfe0a197eeb933b5ad18fc243212c95422ff49600bb40be0672f6"
+      "bytes": 46892,
+      "sha256": "77962df55feed536e9279b1e187fcdaa71f1e50e0ca8317e13ad7b9a416852a7"
     }
   ]
 }
