@@ -37,3 +37,14 @@ test("architectural detail SVG states conditional engineering and no fabricated 
  assert.match(svg,/structural review REQUIRED/);
  assert.ok(svg.startsWith('<?xml'));
 });
+
+test("owner registry records P1/F1 as a visual direction only; enclosed source remains active",()=>{
+ const r=JSON.parse(fs.readFileSync("design-development/decision-registry.json","utf8"));
+ assert.equal(r.working_source.scene_revision,source.scene_revision);
+ assert.match(r.decisions.kitchen.active,/enclosed v55/);
+ assert.equal(r.decisions.kitchen.preferred_concept.id,"P1-F1");
+ assert.equal(r.decisions.kitchen.preferred_concept.selected_by_owner_for_development,true);
+ assert.equal(r.decisions.kitchen.preferred_concept.site_engineering_signoff,false);
+ assert.equal(r.decisions.kitchen.approved_for_construction,false);
+ assert.equal(r.approval_flags.developer_or_structural_change_approved,false);
+});
