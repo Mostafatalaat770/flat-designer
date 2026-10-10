@@ -107,7 +107,7 @@ export function masterWalkinDepthStudy(source,domain){
       screed_slope_trap_waterproofing_approved:false,
       certified_fixed_glass_anchor_supplier:false,
       wet_grip_and_extractor_verified:false,
-      1to1_daily_showering_and_dressing_use_test:false
+      full_scale_daily_showering_and_dressing_use_test:false
     }
   };
   return {base,deeper,audit};
