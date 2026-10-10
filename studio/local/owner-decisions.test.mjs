@@ -88,3 +88,18 @@ test("family F1 is the owner preferred visual direction, NEVER a physical door o
  assert.equal(current.layout.furniture.find(f=>f.id==="starter-16").variant,"style");
  assert.equal(current.source_scene_revision,"scene-4821689");
 });
+
+
+test("master M0 800mm is design preference only, larger depth blocked for engineering review",()=>{
+ const m=registry.decisions.master_shower;
+ assert.equal(m.preferred_concept.id,"M0-1450x800-open-walkin");
+ assert.deepEqual(m.preferred_concept.current_wet_footprint_mm,[1450,800]);
+ assert.deepEqual(m.preferred_concept.fixed_screen_nominal_mm,[600,2050]);
+ assert.equal(m.preferred_concept.modeled_west_entry_band_mm,832);
+ assert.equal(m.preferred_concept.current_y_projection_to_dressing_door_north_jamb_mm,115.7);
+ assert.equal(m.preferred_concept.alternate_900_y_projection_to_same_jamb_mm,15.7);
+ assert.equal(m.preferred_concept.alternate_M1_900mm_status,"UNSELECTED_PENDING_AS_BUILT_WET_DOOR_SURVEY");
+ for(const flag of ["construction_approval","approved_shower_splash","approved_wet_floor_buildup_drain","glass_supplier_selected"])assert.equal(m.preferred_concept[flag],false,flag);
+ assert.equal(m.approved_for_construction,false);
+ assert.equal(current.layout.furniture.find(f=>f.id==="BATHM-WALKIN-A1").d,800);
+});

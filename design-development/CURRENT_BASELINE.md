@@ -10,6 +10,10 @@
 | Historic v50 reference | `studio/local/sources/verified-master-v50.json` | ARCHIVED, not current |
 | Archived K12 open kitchen | `render-snapshots/study-k12-unapproved-20261008.json`, `scene-e2fcb932` | UNAPPROVED CONCEPT; model geometry gates failed |
 
+## Master shower current decision — M0 800mm retained after measured M1 900mm study
+
+[PR #56](https://github.com/Mostafatalaat770/flat-designer/pull/56) compared the current **1450×800mm** master walk-in (M0) with a conditional **1450×900mm** alternative (M1), moving the existing 600×2050mm independent fixed glass with its wet edge. Four true same-camera WebGL screenshots and exact-plan SVG are archived. **M0 is retained as design direction**, NOT a construction sign-off. M1 leaves only **15.7mm model Y-band projection** to the start of the dressing opening vs **115.7mm** in M0. Both have zero domain hard FAILs, but that does NOT validate wet-floor sloping, dressing splash or physical door swing. M1 stays unselected pending qualified site measurement and fully waterproof/door/mockup review. Model nominal entry 832mm is NOT installed clear walking width. Source snapshot and saved cloud v55 remain unchanged.
+
 ## Owner-preferred family shower — F1 frameless visual, NOT first-fix approved
 
 [PR #52](https://github.com/Mostafatalaat770/flat-designer/pull/52) introduced an opt-in transparent glass visual, and [PR #54](https://github.com/Mostafatalaat770/flat-designer/pull/54) corrected the glass to the exposed SOUTH and WEST shower faces using exact 900×900mm Type B model geometry. A two-view genuine same-camera WebGL comparison shows a significant visual improvement over the current heavy dark-framed shower. **Owner direction for DESIGN DEVELOPMENT: F1 frameless/minimal brushed nickel; current live v55 remains its original `style` variant.** The 35mm base is a conceptual visualization only and can be deeper in real construction.

@@ -66,14 +66,38 @@
     },
     "master_shower": {
       "active": "1450x800 mm visually open walk-in with separate fixed glass panel",
-      "status": "RENDER_CONCEPT_ONLY",
+      "status": "M0_800_PREFERRED_FOR_DESIGN_DEVELOPMENT_WET_BUILD_HOLD",
       "hold_points": [
-        "site-level actual finished door swing and entry clear width; evaluate if 900 mm depth feasible",
-        "screed/slab drain slope waterproofing and serviceable trap",
-        "certified wet-slip surfaces and screen glass; actual water splash mockup",
-        "confirm cloud production renderer accepts walk-in variant before sync"
+        "Measure dressing-room finished doorway, door leaf hinge and standing/turning paths with safe fixed glass screen",
+        "Shower splash mockup with current 600mm fixed screen and 832mm nominal open band, and dressing door open and closed",
+        "Qualified drain/trap, screed levels, gravity fall, complete waterproof membrane/upstands, wet-rated floor",
+        "Confirm real 1450×800 occupied comfort 1:1; larger 900 alternative has only 15.7mm model Y-band margin to dressing door",
+        "Specify safety glass, waterproof wall fixings, corrosion-resistant shelves, maintenance access and extractor",
+        "Keep source/cloud v55 unchanged until owner and engineering approvals"
       ],
-      "approved_for_construction": false
+      "approved_for_construction": false,
+      "preferred_concept": {
+        "id": "M0-1450x800-open-walkin",
+        "source": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+        "selected_for_further_visual_and_functional_development": true,
+        "construction_approval": false,
+        "current_wet_footprint_mm": [
+          1450,
+          800
+        ],
+        "fixed_screen_nominal_mm": [
+          600,
+          2050
+        ],
+        "modeled_west_entry_band_mm": 832,
+        "alternate_M1_900mm_status": "UNSELECTED_PENDING_AS_BUILT_WET_DOOR_SURVEY",
+        "current_y_projection_to_dressing_door_north_jamb_mm": 115.7,
+        "alternate_900_y_projection_to_same_jamb_mm": 15.7,
+        "measured_clearance_status": "NOT_MEASURED",
+        "approved_shower_splash": false,
+        "approved_wet_floor_buildup_drain": false,
+        "glass_supplier_selected": false
+      }
     },
     "family_bath": {
       "active": "900x900 mm shower plus shallow high-mounted dry-side cabinet",
