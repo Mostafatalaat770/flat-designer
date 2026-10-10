@@ -1,0 +1,31 @@
+name: Platform - image comparison artifact integrity
+
+on:
+  push:
+    branches:
+      - 'platform/batch-contact-sheet-20261008'
+    paths:
+      - 'scripts/make-render-contact-sheet.mjs'
+      - 'scripts/make-render-contact-sheet.test.mjs'
+      - '.github/workflows/verify-contact-sheet.yml'
+  pull_request:
+    paths:
+      - 'scripts/make-render-contact-sheet.mjs'
+      - 'scripts/make-render-contact-sheet.test.mjs'
+      - '.github/workflows/verify-contact-sheet.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  contact-sheet-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: node --test scripts/make-render-contact-sheet.test.mjs
