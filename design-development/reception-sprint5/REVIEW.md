@@ -44,6 +44,19 @@ Unlike the earlier purely assumed Sprint 4 `+500mm` washer envelope, the new 440
 
 The **two zero-width-slack alerts** are arithmetic against existing 600mm nominal *furniture boxes*, NOT field measurements of the clear installed recess. They are enough to block cabinet shop drawings until a site survey. Likewise, do not substitute a freestanding LG dishwasher for an integrated door-front and do not assume that Bosch's Iraq-market model can be sourced or installed under this gas hob in Egypt.
 
+## Genuine Egypt-market FULLY-INTEGRATED DW candidates (discovered after first screen)
+
+The freestanding LG DFC811FL must **not** be a substitute for a concept-matching kitchen front. Bosch's live Egypt catalogue independently identifies two **fully integrated** examples:
+
+| Vendor reference | Product class (Bosch Egypt) | Published Egypt price as seen 2026-10-10 | Essential gate |
+| --- | --- | ---: | --- |
+| [Bosch Series 2 SMV26DX00T](https://www.bosch-home.com/eg/en/product/SMV26DX00T) | Fully integrated dishwasher, nominal 60cm | EGP **35,999** VAT inclusive | Confirm actual manufacturer H×W×D, 600mm nominal source box versus real niche, door/front weight, toe kick and handle and original water/drain |
+| [Bosch Series 6 SMV4IMX62T](https://www.bosch-home.com/eg/en/product/SMV4IMX62T) | Fully integrated dishwasher, nominal 60cm | EGP **39,999** VAT inclusive | Same actual cutout/vent/open-door+lower-rack assessment; Home Connect and different basket arrangement do not validate kitchen operation |
+
+The price and catalogue ordering status are **snapshots, not quotes or inventory guarantees**. Bosch Egypt web product pages viewed in this research do not expose enough dimensional/hinge information in the crawled text for a certified installed fit. Accordingly these options **are not part of the 36-case numerical simulation**, which continues to use the transparent freestanding LG external-body benchmark. **Never silently replace numerical model dimensions by an unverified Bosch estimate.**
+
+**Practical procurement verdict:** shortlist Bosch integrated pair for *installation-manual acquisition and price/value review*, with lower-priced Series 2 the starting benchmark. Do not purchase either model before the free aperture, fully-open dishwasher/basket reach and door-panel templates are demonstrated on site.
+
 ## Release gates and next work
 
 1. Measure as-built finished clear appliance apertures, door swing and worktop height; re-evaluate equipment elevations and hoses rather than trusting model box width.
