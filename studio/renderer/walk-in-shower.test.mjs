@@ -25,7 +25,7 @@ test("both render pipelines draw no prefab cage for opt-in walk-in", () => {
 
 test("unchanged old shower remains an explicit fallback", () => {
   assert.match(read("studio/renderer/builders.js"), /case "shower"/);
-  assert.match(read("studio-core.js"), /shower:\['style','walk-in'\]/);
+  assert.match(read("studio-core.js"), /shower:\[.*minimal-glass.*\]/);
 });
 
 
