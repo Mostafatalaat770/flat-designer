@@ -1,0 +1,56 @@
+name: Master walk-in M0 800 versus conditional M1 900
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio/analysis/master-walkin-depth*"
+      - "scripts/build-master-walkin-depth.mjs"
+      - ".github/workflows/master-walkin-depth.yml"
+      - "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-true-geometry-and-visuals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 44
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Validate unchanged canonical plan and source-true 800/900 audit
+        run: node --test studio/analysis/master-walkin-depth.test.mjs studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs
+      - name: Produce real model audit, M0/M1 review scenes and 2D plan
+        run: node scripts/build-master-walkin-depth.mjs
+      - name: Install Chromium + WebGL
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render M0 original wet depth with two actual eye cameras
+        env:
+          RENDER_OUT_DIR: renders/master-depth/M0
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/master-walkin-depth/M0-current-800.json
+      - name: Render M1 900 wet depth with identical two cameras
+        env:
+          RENDER_OUT_DIR: renders/master-depth/M1
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/master-walkin-depth/M1-conditional-900.json
+      - name: Check four true images and room/camera/fixture provenance
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const base='review-evidence/master-walkin-depth/';const A=JSON.parse(fs.readFileSync(base+'M0-current-800.json'));const B=JSON.parse(fs.readFileSync(base+'M1-conditional-900.json'));assert.deepEqual(A.views,B.views);assert.equal(B.layout.furniture.find(x=>x.id==='BATHM-WALKIN-A1').d,900);for(const [opt,s] of [['M0',A],['M1',B]]){const p='renders/master-depth/'+opt+'/';const m=JSON.parse(fs.readFileSync(p+'manifest.json'));assert.equal(m.scene_revision,s.scene_revision);assert.deepEqual(m.views,s.views.map(v=>v.id));for(const view of s.views){const fn=p+view.id;assert.ok(fs.statSync(fn+'.png').size>15000);const f=JSON.parse(fs.readFileSync(fn+'.json'));assert.equal(f.scene_revision,s.scene_revision);assert.equal(f.renderer.engine,'Three.js WebGL');assert.equal(f.assets.pending,0);assert.deepEqual(f.assets.fallbacks,[]);assert.deepEqual(f.camera.position,view.camera.position);assert.deepEqual(f.camera.target,view.camera.target)}}console.log('Four verified same-camera 3D frames')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: master-M0-800-vs-M1-900-source-geometry
+          path: |
+            renders/master-depth/
+            review-evidence/master-walkin-depth/
+          retention-days: 30
+          if-no-files-found: warn
