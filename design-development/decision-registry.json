@@ -155,6 +155,46 @@
         "confirm lighting, airflow, power outlets and exact joinery hardware"
       ],
       "approved_for_construction": false
+    },
+    "guest_wc": {
+      "active": "Source current 350×180mm wall handrinse, WC, existing reception hinged door",
+      "status": "B_FLOATING_450x250_VISUAL_DIRECTION_ONLY",
+      "approved_for_construction": false,
+      "preferred_concept": {
+        "id": "B-floating-compact-450x250",
+        "research_pr": 58,
+        "source": "design-development/GUEST_WC_COMFORT_JURY_20261010.md",
+        "study_type": "conditional_guest_handwash_and_refined_vanity",
+        "selected_for_further_visual_development": true,
+        "selected_for_plumbing_first_fix": false,
+        "conditional_nominal_basin_mm": [
+          450,
+          250
+        ],
+        "conditional_basin_model_center_mm": [
+          11968.31,
+          9174.54
+        ],
+        "unchanged_toilet": true,
+        "unchanged_nominal_door_opening_mm": 656.7,
+        "source_base_350x180_front_to_door_y_projection_mm": 77.1,
+        "candidate_450x250_front_to_door_y_projection_mm": 42.1,
+        "candidate_footprint_to_toilet_model_gap_mm": 251.2,
+        "actual_basin_bowl_product_selected": false,
+        "actual_wall_load_trap_and_waterproofing_approved": false,
+        "actual_door_leaf_and_human_body_access_tested": false,
+        "actual_mirror_electric_circuit_lux_ip_approved": false,
+        "material_sample_approved": false
+      },
+      "hold_points": [
+        "Verify as-built bathroom wall-to-wall, 656.7mm nominal reception door actual installed clear and fully open leaf envelope",
+        "Trial a real 450×250mm actual compact basin with trap, tap throw and washing hands comfortably, without splashing",
+        "Inspect exact wall-hung vanity substrate, safely load-rated concealed brackets, moisture-proof joinery, tap service and accessible drain trap",
+        "Photometric and qualified electrician check for real 3000K mirror task lighting, IP/wet zone RCD and no glare",
+        "Confirm 450mm footprint against toilet use, cleaning, door movement and emergency exit by physical 1:1 mock-up",
+        "Choose warm mineral taupe floor/wall porcelain, grout and brushed nickel finish via real apartment samples; maintain spare parts",
+        "Current 350×180mm v55 working source remains unchanged until owner and engineer/SKU approvals"
+      ]
     }
   }
 }

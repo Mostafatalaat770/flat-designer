@@ -103,3 +103,19 @@ test("master M0 800mm is design preference only, larger depth blocked for engine
  assert.equal(m.approved_for_construction,false);
  assert.equal(current.layout.furniture.find(f=>f.id==="BATHM-WALKIN-A1").d,800);
 });
+
+
+test("guest floating handrinse B preferred for design only; current plumbing/layout not silently changed",()=>{
+ const g=registry.decisions.guest_wc;
+ assert.equal(g.preferred_concept.id,"B-floating-compact-450x250");
+ assert.equal(g.preferred_concept.research_pr,58);
+ assert.equal(g.preferred_concept.selected_for_plumbing_first_fix,false);
+ assert.equal(g.approved_for_construction,false);
+ assert.deepEqual(g.preferred_concept.conditional_nominal_basin_mm,[450,250]);
+ assert.equal(g.preferred_concept.candidate_footprint_to_toilet_model_gap_mm,251.2);
+ assert.equal(g.preferred_concept.candidate_450x250_front_to_door_y_projection_mm,42.1);
+ for(const k of ["actual_basin_bowl_product_selected","actual_wall_load_trap_and_waterproofing_approved","actual_door_leaf_and_human_body_access_tested","actual_mirror_electric_circuit_lux_ip_approved","material_sample_approved"])assert.equal(g.preferred_concept[k],false,k);
+ const source=current.layout.furniture.find(f=>f.id==="starter-26");
+ assert.deepEqual([source.w,source.d,source.variant],[350,180,"style"]);
+ assert.equal(current.source_scene_revision,"scene-4821689");
+});
