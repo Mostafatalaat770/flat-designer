@@ -1,0 +1,53 @@
+name: Sprint 6 - Bosch integrated DW manufacturer fit
+on:
+  push:
+    branches: ["design/sprint6-*"]
+  pull_request:
+    branches: ["design/sprint5-kitchen-product-fit-firstfix-20261010"]
+permissions:
+  contents: read
+jobs:
+  source-locked:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - run: node scripts/sprint6-bosch-dw-fit.mjs
+      - name: Check immutable scene and manufacturer evidence
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          const r=JSON.parse(fs.readFileSync('design-development/reception-sprint6/INTEGRATED_DW_INSTALLATION_SCREEN.json'));
+          const b=fs.readFileSync('design-development/reception-sprint/A-P0.json');
+          assert.equal(r.source.sha256,createHash('sha256').update(b).digest('hex'));
+          assert.equal(r.source.scene_revision,'scene-9e86635b');
+          assert.equal(r.source.cloud_source,'scene-4821689');
+          assert.equal(r.source.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');
+          assert.equal(r.cases.length,48);
+          assert.equal(r.model_references.length,2);
+          assert.equal(r.manufacturer_vs_source.product_body_width_mm,598);
+          assert.equal(r.manufacturer_vs_source.min_real_installed_clear_niche_width_mm,600);
+          assert.equal(r.nominal_front_align.occupied_to_nominal_south_wall_mm,372.3);
+          assert.ok(r.holds.every(x=>x.state==='HOLD'));
+          assert.ok(fs.statSync('design-development/reception-sprint6/DW_SOURCE_ALIGNMENT_COMPARISON.svg').size>1000);
+          JS
+          git diff --exit-code -- render-snapshots/current.json design-development/reception-sprint/A-P0.json dist/sources
+      - name: Save evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sprint6-integrated-bosch-dw-vendor-geometry
+          path: design-development/reception-sprint6/
+          retention-days: 45
+          if-no-files-found: warn
