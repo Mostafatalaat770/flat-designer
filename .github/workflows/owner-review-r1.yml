@@ -38,6 +38,8 @@ jobs:
         run: node scripts/verify-dailyware-r2.mjs
       - name: Verify source-locked P0 kitchen cooking run and zero build approvals
         run: node scripts/verify-p0-joinery-r3.mjs
+      - name: Verify kitchen R4 palette patch (NO source geometry changes)
+        run: node scripts/verify-kitchen-finish-r4.mjs
       - name: Verify gate integrity and source immutability
         run: |
           node --input-type=module <<'JS'
@@ -71,6 +73,15 @@ jobs:
           assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('visuals/AB-P0-contact.png'));
 
           assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
+          const kitchenR4=JSON.parse(fs.readFileSync(d+'KITCHEN_FINISH_R4_AUDIT.json'));
+          assert.equal(kitchenR4.schema,'TypeBKitchenFinishPatchAuditR4/1');
+          assert.equal(kitchenR4.source_sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.deepEqual(kitchenR4.changed_ids,['starter-20','K3-corner','K3-sink-base','K3-dishwasher']);
+          assert.equal(kitchenR4.geometry_drift,0);
+          assert.equal(kitchenR4.interior_surfaces_drift,0);
+          assert.equal(kitchenR4.arch_door_recolored,false);
+          assert.equal(kitchenR4.after_webgl_rendered,false);
+          assert.equal(kitchenR4.approval,false);
           const joineryR3=JSON.parse(fs.readFileSync(d+'P0_JOINERY_R3.json'));
           assert.equal(joineryR3.schema,'TypeBP0KitchenJoineryR3/1');
           assert.equal(joineryR3.source.sha256,h('design-development/reception-sprint/A-P0.json'));
