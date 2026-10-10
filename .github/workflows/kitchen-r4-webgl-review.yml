@@ -1,0 +1,65 @@
+name: Kitchen R4 - matched source-locked WebGL owner review
+on:
+  push:
+    branches: [integration/owner-review-gates-r1-20261010]
+    paths:
+      - 'design-development/kitchen-finish-r4/**'
+      - 'scripts/*kitchen-r4*'
+      - 'scripts/render-variants.mjs'
+      - '.github/workflows/kitchen-r4-webgl-review.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  matched-webgl-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: mkdir -p work/kitchen-r4
+      - run: npm ci 2>&1 | tee work/kitchen-r4/npm-ci.log
+      - run: npm run build 2>&1 | tee work/kitchen-r4/build.log
+      - run: npm run check 2>&1 | tee work/kitchen-r4/check.log
+      - run: npm run check:studio 2>&1 | tee work/kitchen-r4/check-studio.log
+      - run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs 2>&1 | tee work/kitchen-r4/baseline-tests.log
+      - run: node scripts/verify-kitchen-finish-r4.mjs 2>&1 | tee work/kitchen-r4/verify-r4.log
+      - run: node scripts/verify-p0-joinery-r3.mjs 2>&1 | tee work/kitchen-r4/verify-r3.log
+      - name: Reproduce committed candidate and verify full recursive diff
+        run: |
+          node scripts/build-kitchen-r4-candidate.mjs
+          git diff --exit-code -- design-development/kitchen-finish-r4/A-P0-IVORY.json design-development/kitchen-finish-r4/CANDIDATE_AUDIT.json
+          node --test scripts/kitchen-r4-candidate.test.mjs scripts/render-batch-plan.test.mjs 2>&1 | tee work/kitchen-r4/candidate-tests.log
+      - name: Install capture runtime
+        run: |
+          npm install --no-save --package-lock=false playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Capture all eight original cameras before and after
+        env:
+          RENDER_OUT_DIR: renders/kitchen-r4
+          RENDER_CONCURRENCY: '2'
+        run: node scripts/render-variants.mjs design-development/reception-sprint/A-P0.json design-development/kitchen-finish-r4/A-P0-IVORY.json 2>&1 | tee work/kitchen-r4/full-render.log
+      - name: Validate actual PNGs, full cameras, layout, topology and WebGL context
+        run: |
+          node scripts/verify-kitchen-r4-renders.mjs 2>&1 | tee work/kitchen-r4/render-verification.log
+          node --test scripts/kitchen-r4-render-verification.test.mjs 2>&1 | tee work/kitchen-r4/render-tests.log
+          node scripts/export-kitchen-r4-review.mjs
+          node scripts/verify-kitchen-r4-review.mjs
+          node scripts/verify-kitchen-r4-review-browser.mjs 2>&1 | tee work/kitchen-r4/browser-review.log
+          node scripts/export-kitchen-r4-review.mjs
+          node scripts/verify-kitchen-r4-review.mjs
+          git diff --exit-code -- design-development/reception-sprint/A-P0.json design-development/decision-registry.json render-snapshots/current.json dist/sources
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kitchen-r4-real-WebGL-offline-owner-review
+          path: |
+            renders/kitchen-r4/
+            work/kitchen-r4/*.log
+          if-no-files-found: error
+          retention-days: 90

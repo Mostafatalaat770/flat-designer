@@ -55,7 +55,7 @@ const decorated=source.layout.decor.saved[source.layout.decor.active].rooms;
 // vocabulary. The explicit interior floor material is the winning 3D layer.
 // If builders.js changes its precedence, fail instead of silently pricing tiles.
 const buildRenderer=read("studio/renderer/builders.js");
-const floorSourcePattern=/interiorSurfaceMaterial\s*\(\s*"FLOOR-"\s*\+\s*r\.id\s*,\s*floorMat\s*\(\s*state\.rooms\[r\.id\]\.mat\s*\)\s*,\s*"floor"\s*\)/;
+const floorSourcePattern=/interiorSurfaceMaterial\s*\(\s*"FLOOR-"\s*\+\s*r\.id\s*,\s*floorMat\s*\(\s*state\.rooms\[r\.id\]\.mat\s*\)\s*,\s*"floor"\s*,?\s*\)/;
 const surfaceOverridePattern=/const material = state\.interior\?\.surface_materials\[id\];\s*if \(!material\) return fallback;/;
 assert.match(buildRenderer,floorSourcePattern,"3D production floor source precedence changed");
 assert.match(buildRenderer,surfaceOverridePattern,"3D explicit-surface-over-fallback precedence changed");

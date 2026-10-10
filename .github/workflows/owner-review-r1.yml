@@ -40,6 +40,8 @@ jobs:
         run: node scripts/verify-p0-joinery-r3.mjs
       - name: Verify kitchen R4 palette patch (NO source geometry changes)
         run: node scripts/verify-kitchen-finish-r4.mjs
+      - name: Verify isolated R4 candidate and production warm-theme persistence
+        run: node --test scripts/kitchen-r4-candidate.test.mjs scripts/render-batch-plan.test.mjs
       - name: Verify gate integrity and source immutability
         run: |
           node --input-type=module <<'JS'
@@ -82,12 +84,14 @@ jobs:
           assert.equal(kitchenR4.arch_door_recolored,false);
           assert.equal(kitchenR4.warm_saved_colors_aligned,true);
           assert.equal(kitchenR4.other_decor_drift,0);
+          // Historical patch-only audit. Actual R4 captures have a separate,
+          // source-bound ALL_16_FRAMES_VERIFIED gate in kitchen-r4-webgl-review.yml.
           assert.equal(kitchenR4.after_webgl_rendered,false);
           assert.equal(kitchenR4.approval,false);
           const joineryR3=JSON.parse(fs.readFileSync(d+'P0_JOINERY_R3.json'));
           assert.equal(joineryR3.schema,'TypeBP0KitchenJoineryR3/1');
           assert.equal(joineryR3.source.sha256,h('design-development/reception-sprint/A-P0.json'));
-          assert.deepEqual(joineryR3.west_nominal_regions_mm,[307,600,593]);
+          assert.deepEqual(joineryR3.source_regions_mm,[307,600,593]);
           assert.equal(joineryR3.candidates.length,3);
           assert.ok(joineryR3.candidates.every(x=>x.status.startsWith('HOLD')));
           assert.ok(Object.values(joineryR3.approvals).every(x=>x===false));
@@ -129,8 +133,11 @@ jobs:
           assert.ok(fs.readFileSync(d+'Finishes-and-Joinery.html','utf8').includes('visuals/AB-P0-contact.png'));
           assert.ok(fs.statSync(d+'Finishes-and-Joinery.html').size>10000);
           assert.ok(fs.statSync(d+'JOINERY_CONCEPT_ELEVATIONS.svg').size>1000);
-          for(const name of ['FINISH_SAMPLES.csv','JOINERY_INTENT.csv','LIGHTING_INTENT.csv','JOINERY_INTERNAL_PROTOTYPES.csv','LIGHTING_SCENES.csv'])
-            assert.ok(fs.statSync(d+name).size>500);
+          for(const [name,rows] of [['FINISH_SAMPLES.csv',10],['JOINERY_INTENT.csv',6],['LIGHTING_INTENT.csv',8],['JOINERY_INTERNAL_PROTOTYPES.csv',2],['LIGHTING_SCENES.csv',4]]){
+            const lines=fs.readFileSync(d+name,'utf8').trim().split(/\r?\n/);
+            assert.equal(lines.length,rows+1,name+': header and expected source records');
+            assert.ok(lines.every(line=>line.length>0),name+': empty CSV record');
+          }
 
           JS
           git diff --exit-code -- render-snapshots/current.json design-development/decision-registry.json design-development/reception-sprint/A-P0.json dist/sources

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { CANDIDATE, createR4Candidate, verifyR4Candidate, sha256 } from './kitchen-r4-candidate.mjs';
+const root = process.cwd();
+const candidate = createR4Candidate(root);
+const audit = verifyR4Candidate(root, candidate);
+fs.mkdirSync(path.dirname(CANDIDATE), { recursive: true });
+fs.writeFileSync(CANDIDATE, JSON.stringify(candidate, null, 2) + '\n');
+audit.candidate_sha256 = sha256(fs.readFileSync(CANDIDATE));
+fs.writeFileSync(path.join(path.dirname(CANDIDATE), 'CANDIDATE_AUDIT.json'), JSON.stringify(audit, null, 2) + '\n');
+console.log(JSON.stringify(audit, null, 2));

@@ -1,5 +1,7 @@
 # Option A · Kitchen Soft-Ivory Refinement R4
 
+Historical proposal-only record. The isolated implementation, true candidate revision, matched WebGL evidence and current visual verdict are tracked in [Kitchen R4 implementation](../kitchen-finish-r4/README.md). The original A/P0 and this proposal's release flags remain unchanged.
+
 **Reversible style experiment ONLY, not applied to the source, not a true after-WebGL.**
 
 Lead recommendation: unify previously mixed brown lower front faces with the already-ivory upper cabinets and integrated fridge. Retain the existing small `K3-end-landing` 600x410 in muted oak for warmth. Existing quartz backsplash stays warm. Source P0 brown architectural kitchen/service door stays **untouched**, and may need a separately owner-approved repaint after product samples. Existing hardcoded counter top #dcd7cf is a renderer-only proxy, not a specification.
