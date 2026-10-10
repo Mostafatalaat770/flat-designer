@@ -1,5 +1,6 @@
 /** Exact source comparison: FAMILY shower style vs reversible frameless-low-profile visual. */
 import assert from "node:assert/strict";
+import {rectangle} from "./geometry.mjs";
 const clone=x=>structuredClone(x);
 const VIEWS=["bath55-family-entry","bath55-family-dry-cabinet"];
 const ALLOWED_ROOM="BATH-C01";
@@ -26,7 +27,10 @@ export function makeFamilyShowerOption(current,domain){
  assert.deepEqual(restore,a.layout,"Only the family-shower renderer variant may differ");
  assert.deepEqual(b.layout.demolished,[]);
  assert.equal(domain.validate(b.layout).checks.filter(x=>x.status==="FAIL").length,0);
- const nominalDoorMm=Math.min(580,opt.w*.68);
+ const nominalDoorMm=Math.min(580,opt.d*.68);
+ const box=f=>{const corners=rectangle(f);return {xmin:Math.min(...corners.map(x=>x[0])),xmax:Math.max(...corners.map(x=>x[0])),
+  ymin:Math.min(...corners.map(x=>x[1])),ymax:Math.max(...corners.map(x=>x[1]))};};
+ const showerBounds=box(opt),wcBounds=box(b.layout.furniture.find(x=>x.id==="starter-17"));
  const room=domain.model.rooms.find(r=>r.id===ALLOWED_ROOM);
  assert.ok(room);
  const audit={
@@ -41,10 +45,18 @@ export function makeFamilyShowerOption(current,domain){
   shower_nominal_floor_area_m2:+(opt.w*opt.d/1000000).toFixed(3),
   family_room_nominal_door_mm:+domain.model.openings.find(x=>x.id==="OP-HALL-BATHC").length_mm.toFixed(1),
   family_model_west_shower_footprint_gap_mm:+((opt.cx-opt.w/2)-Math.min(...room.poly.map(p=>p[0]))).toFixed(1),
+  south_splash_face_to_wc_footprint_gap_mm:+(showerBounds.ymin-wcBounds.ymax).toFixed(1),
+  if_south_580mm_door_swung_outward_gap_mm:+((showerBounds.ymin-wcBounds.ymax)-nominalDoorMm).toFixed(1),
+  if_west_580mm_door_swung_outward_remaining_mm:+((showerBounds.xmin-Math.min(...room.poly.map(p=>p[0])))-nominalDoorMm).toFixed(1),
+  actual_west_pivot_outward_approved:false,
+  shower_glass_access_side:"WEST",closed_glass_splash_side:"SOUTH",
+  swing_caveat:"The old south-facing door would intersect the toilet envelope if swung outward; the corrected west-facing concept also blocks the west strip at full outward leaf. No physical hinge/opening mechanism has been approved.",
   visual_geometry_only:{
    base_tray_height_mm:35,
    clear_glass_height_mm:1960,
    front_pivot_leaf_nominal_mm:+nominalDoorMm.toFixed(0),
+   west_entry_pivot_leaf_nominal_mm:+nominalDoorMm.toFixed(0),
+   south_wall_glazed_fixed:true,
    closed_door_rendered:true,
    actual_door_swing_rendered:false,
    door_leaf_sweep_certified:false,
@@ -69,7 +81,7 @@ export function makeFamilyShowerOption(current,domain){
   design_jury:{
    priority:"Compare existing dark bulky cage with transparent frameless/satin nickel glass. Avoid artificial top rails and high-profile staged tray.",
    not_solved:"Even real WebGL cannot confirm exit comfort with door open, water leakage, trap access, or constructability; visual improvement alone cannot select low-tray product.",
-   verdict:"Await real WebGL pair and manufacturer/site clearance evidence."
+   verdict:"Keep F1 visually preferred only after real WebGL side-by-side; west door shown CLOSED. Reject physical outward swing without a fabricator-verified entrance."
   }
  };
  return {a,b,audit};
