@@ -41,3 +41,7 @@ A further opt-in `vanity.floating-compact` variant is added only to candidate B:
 ## Visual design jury decision (conditional only)
 
 After a second source-identical A/B render with opt-in floating compact vanity, B is the **preferred direction for further DESIGN DEVELOPMENT**, not an instruction to renovate or order. The narrow deep brown generic vanity is visibly heavier than B, while B frees clear visible floor and offers a more plausible compact handrinse envelope. The large reception leaf still masks the room in the entry photos. The variant is physically unverified and might fail real water/tap/door tests. Keep v55 source 350×180 unaltered. No tap, drain, wall anchor, bronze/nickel manufacturer choice or wiring has been approved.
+
+## Closed-door everyday-use camera added to objective comparison
+
+The initial two original v55 cameras include conspicuous open hinged door occlusion. An additional THIRD camera, `guest-wc-use-closed`, is **already saved in original source v55** and represents the same installed reception door in its normal closed position, not a structural change and not a new invented viewpoint. All three original source camera presets are applied byte-for-byte to A and B (six WebGL frames total). This provides a fair audit of the mirror and basin when a person actually uses the WC, as well as the open-door/reception relationship; does not simulate hinge sweep or physical clearances.

@@ -35,7 +35,7 @@ jobs:
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
-      - name: Render exact original guest WC A, two original human-eye cameras
+      - name: Render exact original guest WC A, three original human-eye cameras
         env:
           RENDER_OUT_DIR: renders/guest-wc/A
           RENDER_CONCURRENCY: "1"
@@ -45,9 +45,9 @@ jobs:
           RENDER_OUT_DIR: renders/guest-wc/B
           RENDER_CONCURRENCY: "1"
         run: node scripts/render-snapshot.mjs review-evidence/guest-wc-jury/B-deeper-basin.json
-      - name: Verify 4 true-frame cameras, scene and WebGL provenance
+      - name: Verify 6 true-frame cameras, scene and WebGL provenance
         run: |
-          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const p='review-evidence/guest-wc-jury/';const A=JSON.parse(fs.readFileSync(p+'A-original.json'));const B=JSON.parse(fs.readFileSync(p+'B-deeper-basin.json'));assert.deepEqual(A.views,B.views);for(const [id,s] of [['A',A],['B',B]]){const dir='renders/guest-wc/'+id+'/';const m=JSON.parse(fs.readFileSync(dir+'manifest.json'));assert.equal(m.scene_revision,s.scene_revision);assert.deepEqual(m.views,s.views.map(v=>v.id));for(const view of s.views){const f=dir+view.id;assert.ok(fs.statSync(f+'.png').size>15000);const x=JSON.parse(fs.readFileSync(f+'.json'));assert.equal(x.scene_revision,s.scene_revision);assert.equal(x.renderer.engine,'Three.js WebGL');assert.equal(x.assets.pending,0);assert.deepEqual(x.assets.fallbacks,[]);assert.deepEqual(x.camera.position,view.camera.position);assert.deepEqual(x.camera.target,view.camera.target)}}console.log('Four source-faithful current guest WC A/B WebGL frames')"
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const p='review-evidence/guest-wc-jury/';const A=JSON.parse(fs.readFileSync(p+'A-original.json'));const B=JSON.parse(fs.readFileSync(p+'B-deeper-basin.json'));assert.deepEqual(A.views,B.views);for(const [id,s] of [['A',A],['B',B]]){const dir='renders/guest-wc/'+id+'/';const m=JSON.parse(fs.readFileSync(dir+'manifest.json'));assert.equal(m.scene_revision,s.scene_revision);assert.deepEqual(m.views,s.views.map(v=>v.id));for(const view of s.views){const f=dir+view.id;assert.ok(fs.statSync(f+'.png').size>15000);const x=JSON.parse(fs.readFileSync(f+'.json'));assert.equal(x.scene_revision,s.scene_revision);assert.equal(x.renderer.engine,'Three.js WebGL');assert.equal(x.assets.pending,0);assert.deepEqual(x.assets.fallbacks,[]);assert.deepEqual(x.camera.position,view.camera.position);assert.deepEqual(x.camera.target,view.camera.target)}}console.log('Six source-faithful current guest WC A/B WebGL frames')"
       - uses: actions/upload-artifact@v4
         if: always()
         with:

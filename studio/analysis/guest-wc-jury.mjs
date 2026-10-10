@@ -5,7 +5,7 @@ const copy=x=>structuredClone(x);
 const bounds=p=>({xmin:Math.min(...p.map(q=>q[0])),xmax:Math.max(...p.map(q=>q[0])),
  ymin:Math.min(...p.map(q=>q[1])),ymax:Math.max(...p.map(q=>q[1]))});
 const round=x=>+x.toFixed(1);
-const cameraIds=["guest-wc","guest-wc-entry-open"];
+const cameraIds=["guest-wc","guest-wc-entry-open","guest-wc-use-closed"];
 const surface="WALL-WC-01-02",materialId="wc2-mineral-taupe-matt";
 export function guestWcJury(source,domain){
  assert.equal(source.canonical_sha256,domain.model.canonical_sha256);

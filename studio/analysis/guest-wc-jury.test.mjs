@@ -12,7 +12,7 @@ test("source-identical current v55 and two real matching guest cameras",()=>{
  assert.equal(A.storage_revision,55);
  assert.deepEqual(A.layout,source.layout);
  assert.deepEqual(A.views,B.views);
- assert.deepEqual(audit.views,["guest-wc","guest-wc-entry-open"]);
+ assert.deepEqual(audit.views,["guest-wc","guest-wc-entry-open","guest-wc-use-closed"]);
 });
 test("B improves compact handwash within unchanged guest footprint, and no other room changes",()=>{
  const a=A.layout.furniture.find(f=>f.id==="starter-26");
@@ -70,4 +70,14 @@ test("opt-in floating vanity design is available in both real renderers and mark
   assert.match(t,/NOT_FOR_INSTALLATION/);
  }
  assert.equal(audit.drawer_brackets_and_waterproof_service_connection_approved,false);
+});
+
+
+test("owner-relevant guest closed-door camera is a REAL original v55 saved preset, not authored geometry",()=>{
+ const closed=source.views.find(v=>v.id==="guest-wc-use-closed");
+ assert.ok(closed);
+ assert.deepEqual(A.views[2],closed);
+ assert.deepEqual(B.views[2],closed);
+ assert.equal(closed.camera.viewer.doors.find(d=>d.id==="OP-RECP-WC").open,false);
+ assert.equal(A.views[1].camera.viewer.doors.find(d=>d.id==="OP-RECP-WC").open,true);
 });
