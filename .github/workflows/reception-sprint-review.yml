@@ -5,7 +5,9 @@ on:
     paths:
       - "studio/analysis/reception-sprint*"
       - "scripts/*reception-sprint*"
+      - "scripts/export-reception-review.mjs"
       - "design-development/reception-sprint/**"
+      - "!design-development/reception-sprint/*.md"
       - ".github/workflows/reception-sprint-review.yml"
   workflow_dispatch:
 permissions:
@@ -50,6 +52,8 @@ jobs:
           design-development/reception-sprint/B-P1-CONDITIONAL.json
       - name: Verify actual PNGs, scene, exact camera, architecture overlay and image checksums; build contact sheets
         run: node scripts/verify-reception-sprint-renders.mjs
+      - name: Export self-contained owner comparison with unchanged PNGs and source provenance
+        run: node scripts/export-reception-review.mjs . renders/reception-sprint/Review.html
       - uses: actions/upload-artifact@v4
         if: always()
         with:
