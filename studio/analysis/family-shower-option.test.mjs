@@ -34,3 +34,26 @@ test("nominal model dimensions and actual operational holds stay honest",()=>{
  assert.equal(audit.status,"DESIGN_ONLY_NOT_FOR_WET_INSTALLATION");
  assert.equal(audit.required_before_any_order.length,6);
 });
+
+
+test("safety-driven south-panel and west-access geometry corrected, no false door approval",()=>{
+ assert.equal(audit.family_model_west_shower_footprint_gap_mm,778.6);
+ assert.equal(audit.south_splash_face_to_wc_footprint_gap_mm,319.6);
+ assert.equal(audit.if_south_580mm_door_swung_outward_gap_mm,-260.4);
+ assert.equal(audit.if_west_580mm_door_swung_outward_remaining_mm,198.6);
+ assert.equal(audit.actual_west_pivot_outward_approved,false);
+ assert.equal(audit.shower_glass_access_side,"WEST");
+ assert.equal(audit.closed_glass_splash_side,"SOUTH");
+ assert.equal(audit.visual_geometry_only.actual_door_swing_rendered,false);
+});
+test("hosted and local render correct glazing orientations, not a door on WC-facing south",()=>{
+ const hosted=fs.readFileSync("studio-scene.js","utf8");
+ const local=fs.readFileSync("studio/renderer/builders.js","utf8");
+ for(const code of [hosted,local]){
+  assert.match(code,/familyEnclosure/);
+  assert.match(code,/accessFace:\s*["']WEST["']/);
+  assert.match(code,/splashFace:\s*["']SOUTH["']/);
+  assert.match(code,/realSwingApproved:\s*false/);
+  assert.match(code,/CLOSED_DOOR_NO_CLEARANCE_CERTIFICATION/);
+ }
+});

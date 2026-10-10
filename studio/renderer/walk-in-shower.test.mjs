@@ -32,10 +32,16 @@ test("both renderer paths support the optional frameless low-profile family stud
  const hosted=read("studio-scene.js"), local=read("studio/renderer/builders.js");
  assert.match(hosted, /f\.variant==='frameless-low-profile'/);
  assert.match(local, /f\.variant === "frameless-low-profile"/);
- assert.match(hosted,/nominal 580mm pivot leaf/);
- assert.match(local,/Pivot leaf and any shower threshold require vendor-specific/);
- assert.match(hosted,/opacity:\.18/);
- assert.match(local,/opacity: 0\.18/);
+ assert.match(hosted,/accessFace:'WEST'/);
+ assert.match(local,/accessFace: "WEST"/);
+ assert.match(hosted,/splashFace:'SOUTH'/);
+ assert.match(local,/splashFace: "SOUTH"/);
+ assert.match(hosted,/doorShownClosed:true/);
+ assert.match(local,/doorShownClosed: true/);
+ assert.match(hosted,/realSwingApproved:false/);
+ assert.match(local,/realSwingApproved: false/);
+ assert.match(hosted,/opacity:\.19/);
+ assert.match(local,/opacity: 0\.19/);
  // Retain true open wet-area behavior of the separate master walk-in.
  assert.match(hosted,/True open wet area: no default glass cage/);
  assert.match(local,/flush wet area, not a second glass enclosure/);

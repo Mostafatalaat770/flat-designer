@@ -2292,36 +2292,33 @@ export function createBuilders(scope) {
       }
       studioCountertop(g,f,w,d,stone);
     } else if (f.type === "shower" && f.variant === "frameless-low-profile") {
-      // FAMILY STUDY ONLY: low profile is a render surrogate, not an approved drain/build-up.
-      // Show slim clear glass side + closed pivot leaf without bulky full-height dark frames.
-      // Pivot leaf and any shower threshold require vendor-specific swing/access validation.
+      // North/east are true masonry; glass must be on exposed SOUTH and WEST.
+      // West pivot leaf is CLOSED. Hinge/swing clearance and 35mm base TBD.
       const cm = mat("#b5bebc", { metalness: 0.74, roughness: 0.27 });
       const porcelain = mat("#e7e1d8", { roughness: 0.84 });
-      const clear = mat("#d9eef0", {
-        transparent: true, opacity: 0.18, roughness: 0.08, metalness: 0.02,
-        depthWrite: false, side: THREE.DoubleSide,
-      });
-      const pivot = Math.min(0.58, w * 0.68);
-      const fixed = w - pivot, zFront = d / 2 - 0.006, hingeX = -w / 2 + fixed;
-      g.add(
-        rbox(w, 0.035, d, porcelain, 0, 0, 0, 0.006),
-        box(w * 0.62, 0.003, 0.028, cm, 0, 0.038, -d / 2 + 0.09),
-        box(0.008, 1.96, d - 0.014, clear, w / 2 - 0.007, 0.035, 0),
-      );
-      const sideLight = box(fixed, 1.96, 0.008, clear, -w / 2 + fixed / 2, 0.035, zFront);
-      const door = box(pivot, 1.96, 0.008, clear, hingeX + pivot / 2, 0.035, zFront);
-      sideLight.castShadow = false; door.castShadow = false;
-      g.add(sideLight, door);
-      for (const yy of [0.4, 1.63])
-        g.add(rbox(0.018, 0.078, 0.035, cm, hingeX, 0.035 + yy, zFront + 0.008, 0.004));
-      g.add(rbox(0.017, 0.21, 0.036, cm, w / 2 - 0.087, 1.03, zFront + 0.024, 0.006));
-      const x = -w * 0.25, z = -d / 2 + 0.09;
+      const glass = mat("#d9eef0", { transparent: true, opacity: 0.19, roughness: 0.08, metalness: 0.02, depthWrite: false, side: THREE.DoubleSide });
+      const h = 1.96, base = 0.035, pivot = Math.min(0.58, d * 0.68), fixed = d - pivot;
+      g.add(rbox(w, base, d, porcelain, 0, 0, 0, 0.006));
+      const south = box(w, h, 0.008, glass, 0, base, -d / 2 + 0.006);
+      const westFixed = box(0.008, h, fixed, glass, -w / 2 + 0.006, base, d / 2 - fixed / 2);
+      const westDoor = box(0.008, h, pivot, glass, -w / 2 + 0.006, base, -d / 2 + pivot / 2);
+      for (const panel of [south, westFixed, westDoor]) {
+        panel.castShadow = false;
+        panel.userData.hardwareStudy = "CLOSED_DOOR_NO_CLEARANCE_CERTIFICATION";
+        g.add(panel);
+      }
+      g.add(box(0.013, h, 0.013, cm, -w / 2 + 0.008, base, d / 2 - fixed));
+      for (const yy of [1.00, 1.20])
+        g.add(rbox(0.017, 0.11, 0.03, cm, -w / 2 - 0.018, yy, -d / 2 + pivot * 0.65, 0.004));
+      const x = -w * 0.25, z = d / 2 - 0.055;
       g.add(
         rbox(0.14, 0.090, 0.035, cm, x, 1.04, z, 0.012),
         rod([x, 1.13, z], [x, 2.01, z], 0.012, cm),
-        rod([x, 2.01, z], [x, 2.01, z + 0.18], 0.012, cm),
-        box(0.23, 0.012, 0.23, cm, x, 2.00, z + 0.18),
+        rod([x, 2.01, z], [x, 2.01, z - 0.18], 0.012, cm),
+        box(0.23, 0.012, 0.23, cm, x, 2.00, z - 0.18)
       );
+      g.userData.familyEnclosure = { status: "CONDITIONAL", accessFace: "WEST", splashFace: "SOUTH",
+        doorShownClosed: true, realSwingApproved: false, modelTrayHeightMm: 35, pivotLeafProxyMm: Math.round(pivot * 1000) };
     } else if (f.type === "shower" && f.variant === "walk-in") {
       // A flush wet area, not a second glass enclosure. Use the separate
       // interior divider object for a fixed screen; permit an open entry.

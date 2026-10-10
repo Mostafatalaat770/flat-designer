@@ -26,3 +26,11 @@ This study implements a **new opt-in `frameless-low-profile` rendering variant**
 ### Release
 
 Render API/GitHub tests guarantee only that both candidates render using the same locked source and cameras, and that other fixtures, walls and cloud scene are not touched. This change is a renderer **capability**, not a physical design or procurement signoff.
+
+## 10 October concurrent branch reconciliation and geometry correction
+
+Another design review exposed a **significant physical error**: the earlier opt-in frameless renderer portrayed its pivot door on the **south, WC-facing edge**, despite the WC's nominal northern footprint lying only **~319.6mm** south of the shower. A conceptual 580mm south-facing door opening outward would intersect the WC's modeled envelope by approximately **260.4mm**. It is unacceptable to infer a working south-entry pivot from that pleasing screenshot.
+
+The revised renderer places fixed clear splash glass on the south face, a 320mm fixed panel and 580mm **CLOSED** door on the **WEST-facing circulation edge**. This is a better location to *study*, not a final hinge selection: west shower edge to nominal west wall is **~778.6mm**, so a 580mm door swung outward would leave only **~198.6mm** at the pinch. Glass specialist must evaluate inward folding, inward pivot or other certified entry configurations and occupant/cleaning/spray envelopes from as-built measurements. We expressly do not select outward swing.
+
+This preserves the previously merged `frameless-low-profile` variant name, its 35mm low-tray and 1960mm glass visualization, all saved cameras, and the exact source layout; no duplicate rendering system is added. A tested audit reports both rejected naive swing directions and exact source geometry. The old separate alternative PR #53 is superseded by this focused correction rather than force-merged over the concurrently merged PR #52.
