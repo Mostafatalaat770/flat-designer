@@ -1,6 +1,8 @@
 # K4 Master Design-Development Checklist
 
-Current role of K4: **best developed apartment candidate**.  
+> **HISTORICAL CANDIDATE — NOT THE 2026-10-10 WORKING BASELINE.** K4 documents earlier full-open-kitchen, wet-island and family-bathtub studies, superseded by [CURRENT_BASELINE](./CURRENT_BASELINE.md), [OWNER_REVIEW](./OWNER_REVIEW_20261010.md), [decision-registry.json](./decision-registry.json), and the [active public-zone sprint](./RECEPTION_ENTRY_DINING_SPRINT_20261010.md). Keep this file as research history, **not** the current owner decision. Do not copy K4 geometry, coordinates or unverified approvals into `render-snapshots/current.json` or cloud v55. The current v55 family bathroom models a 900×900mm shower; P1 is a conditional, render-only semi-open kitchen study. Nothing here approves construction or changes Type B v0.2.2.
+
+At the time of the K4 study, this was the **then-best developed candidate**, not today's approved plan.  
 Canonical/master architecture remains untouched.
 
 Legend:
