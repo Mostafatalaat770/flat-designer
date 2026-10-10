@@ -1,14 +1,14 @@
 /* InteriorDesign/1 is a reversible overlay, never an architectural model. Units: mm. */
 const INTERIOR_OBJECT_TYPES={
-  divider:{variants:['vertical-slats','fluted-glass','open-shelf','storage-screen','solid-panel'],modes:['floor'],size:[1200,180,2200]},
+  divider:{variants:['vertical-slats','fluted-glass','open-shelf','storage-screen','solid-panel','fixed-clear-glass'],modes:['floor'],size:[1200,180,2200]},
   console:{variants:['plain'],modes:['floor','wall'],size:[1100,350,800],operating:600},
   sideboard:{variants:['plain'],modes:['floor','wall'],size:[1500,450,800],operating:800},
   bench:{variants:['plain','upholstered'],modes:['floor'],size:[1100,420,450],operating:600},
   artwork:{variants:['framed','canvas'],modes:['wall'],size:[800,40,650]},
-  mirror:{variants:['rectangle','round'],modes:['wall'],size:[650,40,1000]},
+  mirror:{variants:['rectangle','round','task-lit'],modes:['wall'],size:[650,40,1000]},
   'wall-panel':{variants:['plain','fluted'],modes:['wall'],size:[1000,35,2200]},
   'media-unit':{variants:['plain','floating'],modes:['floor','wall'],size:[1800,380,500],operating:600},
-  shelf:{variants:['open','floating'],modes:['wall','floor'],size:[900,280,450],operating:600},
+  shelf:{variants:['open','floating','wet-tray'],modes:['wall','floor'],size:[900,280,450],operating:600},
   curtain:{variants:['sheer','drapery','layered'],modes:['opening','ceiling'],size:[1600,120,2450]},
   pendant:{variants:['globe','linear'],modes:['ceiling'],size:[360,360,650]},
   'floor-lamp':{variants:['shade','arc'],modes:['floor'],size:[380,380,1650]},
