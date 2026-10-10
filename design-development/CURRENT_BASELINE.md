@@ -50,3 +50,7 @@ Source: [P1 conditional option](./SEMI_OPEN_PORTAL_REVIEW.md), [P1/F1 engineerin
 6. No fabrication, slab change, wet first-fix, MEP works, procurement or construction claim without measured survey and relevant Egyptian qualified professional and developer approvals.
 
 **Next public-zone design sprint (started 2026-10-10):** [Reception + entry + dining + kitchen connection](./RECEPTION_ENTRY_DINING_SPRINT_20261010.md) is the active visual/functional coordination brief. Test an arrival hierarchy, buffet material weight and two whole-zone lighting/finish concepts on v55, and compare conditional **P1/F1** against closed P0 using identical cameras and the six occupied-chair / appliance-door usage states. **P1 remains a structural/developer/MEP HOLD**, not a building change. Bathrooms remain documented technical holds; do not silently import historical K4/K12 or treat a scene comparison as an as-built drawing.
+
+## Reception Sprint 01 implementation review
+
+[Developed A/B interior and measured operating-state package](./reception-sprint/README.md) derives only from the pinned current review snapshot. The 2×2 P0/conditional-P1 render matrix, entry shoe prototype and buffet shift remain separate reversible studies, with all registry approval flags and the current/cloud scene unchanged. The design recommendation in that package does not constitute owner acceptance or a construction release.
