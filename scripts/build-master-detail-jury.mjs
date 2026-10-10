@@ -1,0 +1,13 @@
+import fs from "node:fs";
+import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {masterDetailJury,masterDetailBoardSvg} from "../studio/analysis/master-detail-jury.mjs";
+const domain=createApartmentDomain(process.cwd());
+const scene=JSON.parse(fs.readFileSync("render-snapshots/current.json","utf8"));
+const result=masterDetailJury(scene,domain);
+const dir="review-evidence/master-detail-jury";
+fs.mkdirSync(dir,{recursive:true});
+fs.writeFileSync(dir+"/M0-existing-details.json",JSON.stringify(result.a,null,2)+"\n");
+fs.writeFileSync(dir+"/M2-refined-details.json",JSON.stringify(result.b,null,2)+"\n");
+fs.writeFileSync(dir+"/audit.json",JSON.stringify(result.audit,null,2)+"\n");
+fs.writeFileSync(dir+"/detail-board.svg",masterDetailBoardSvg(result.audit)+"\n");
+console.log(JSON.stringify({A:result.a.scene_revision,B:result.b.scene_revision,views:result.audit.same_camera_ids,hold:Object.keys(result.audit.construction_holds)},null,2));

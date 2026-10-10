@@ -58,11 +58,37 @@ function interiorMesh(o) {
         z,
       ),
     );
-  if (o.type === "divider") {
+  if(o.type==="shelf"&&o.variant==="wet-tray"){
+    // Independent shallow wet tray, with easy-clean front retention lip.
+    // Nominal shelf is 380x115x40mm, not tested for product weight/wall substrate.
+    const nickel=mat("#b7bec0",{metalness:.79,roughness:.3});
+    B(w,.012,d,nickel,0,0,0);
+    B(w,.021,.009,nickel,0,0,d/2-.004);
+    B(w,.015,.009,nickel,0,0,-d/2+.004);
+    B(.012,.025,d,nickel,-w/2+.006,0,0);
+    B(.012,.025,d,nickel,w/2-.006,0,0);
+    g.userData.showerTrayConcept={status:"UNAPPROVED",nominal_capacity:"UNKNOWN",wet_fixing_details:"TBD"};
+  } else if (o.type === "divider") {
     const frame = Math.min(0.03, w * 0.08, d * 0.25);
     B(w, frame, d, primary, 0, 0);
     B(w, frame, d, primary, 0, h - frame);
-    if (o.variant === "vertical-slats") {
+    if (o.variant === "fixed-clear-glass") {
+      // Master ONLY opt-in: single transparent 600 x 2050 mm fixed glass,
+      // minimal removable lower clips, zero fabricated ceiling or top frame.
+      // No inference about actual safety glass, membrane penetrations or splash.
+      const clear = mat("#d6e8e8", {
+        transparent:true,opacity:0.19,roughness:0.085,metalness:0,
+        depthWrite:false,side:THREE.DoubleSide
+      });
+      const nickel = mat("#b8bdbe",{metalness:0.78,roughness:0.26});
+      B(w,h,Math.min(d,.009),clear,0,0);
+      for (const xpos of [-w*.37,w*.37]){
+        B(.045,.042,Math.max(d,.024),nickel,xpos,0,0);
+        B(.045,.009,Math.max(d,.024),nickel,xpos,.05,0);
+      }
+      g.userData.glassConcept = {status:"UNAPPROVED",type:"ONE_FIXED_PANEL",width_mm:o.width_mm,height_mm:o.height_mm,
+        clip_design:"VENDOR_REQUIRED",splash_validated:false};
+    } else if (o.variant === "vertical-slats") {
       const N = Math.max(3, Math.round(w / 0.085));
       for (let i = 0; i < N; i++)
         B(
@@ -182,7 +208,16 @@ function interiorMesh(o) {
       envMap: envTex,
       envMapIntensity: 1,
     });
-    if (o.variant === "round") {
+    if (o.variant === "task-lit") {
+      const mirror = new THREE.MeshStandardMaterial({color:"#b9c8ce",metalness:.98,roughness:.07,envMap:envTex,envMapIntensity:1});
+      const nickel=mat("#b7bec0",{metalness:.72,roughness:.3});
+      const glow=mat("#fff2dd",{emissive:"#ffdcb4",emissiveIntensity:.62,roughness:.28});
+      B(w,h,d,nickel);
+      B(w-.035,h-.035,.003,mirror,0,.016,d/2+.004);
+      // Non-photometric visual TASK lighting concept; actual lumens/zones TBD.
+      B(w*.82,.012,.014,glow,0,h-.056,d/2+.016);
+      g.userData.mirrorLightConcept={colour_temperature_k:3000,illuminance:"NOT_CALCULATED",wet_electrical_zone:"ENGINEER_REQUIRED"};
+    } else if (o.variant === "round") {
       g.add(blob(w / 2, h / 2, d / 2, accent, 0, h / 2, 0));
       g.add(blob(w * 0.47, h * 0.47, 0.002, mirror, 0, h / 2, d / 2));
     } else {

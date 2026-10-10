@@ -1,0 +1,59 @@
+name: Master bathroom M2 detail jury · exact v55 same cameras
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "interior-core.js"
+      - "interior-scene.js"
+      - "studio/renderer/builders.js"
+      - "studio/analysis/master-detail-jury*"
+      - "scripts/build-master-detail-jury.mjs"
+      - ".github/workflows/master-detail-jury.yml"
+      - "design-development/MASTER_DETAIL_JURY_20261010.md"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  master-detail-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Source lock, exact unchanged geometry and cross-renderer contracts
+        run: node --test studio/analysis/master-detail-jury.test.mjs studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs
+      - name: Generate independent 2 candidate scenes and detail/hold board
+        run: node scripts/build-master-detail-jury.mjs
+      - name: Install Chromium renderer
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render original M0 from two actual saved eye cameras
+        env:
+          RENDER_OUT_DIR: renders/master-detail/M0
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/master-detail-jury/M0-existing-details.json
+      - name: Render refined M2 from same two eye cameras
+        env:
+          RENDER_OUT_DIR: renders/master-detail/M2
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/master-detail-jury/M2-refined-details.json
+      - name: Verify actual WebGL and all camera / source provenance
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const p='review-evidence/master-detail-jury/';const A=JSON.parse(fs.readFileSync(p+'M0-existing-details.json'));const B=JSON.parse(fs.readFileSync(p+'M2-refined-details.json'));assert.deepEqual(A.views,B.views);assert.equal(A.layout.furniture.find(x=>x.id==='BATHM-WALKIN-A1').d,800);for(const [side,s] of [['M0',A],['M2',B]]){const dir='renders/master-detail/'+side+'/';const m=JSON.parse(fs.readFileSync(dir+'manifest.json'));assert.equal(m.scene_revision,s.scene_revision);assert.deepEqual(m.views,s.views.map(v=>v.id));for(const v of s.views){const fn=dir+v.id;assert.ok(fs.statSync(fn+'.png').size>15000);const frame=JSON.parse(fs.readFileSync(fn+'.json'));assert.equal(frame.scene_revision,s.scene_revision);assert.equal(frame.renderer.engine,'Three.js WebGL');assert.equal(frame.assets.pending,0);assert.deepEqual(frame.assets.fallbacks,[]);assert.deepEqual(frame.camera.position,v.camera.position);assert.deepEqual(frame.camera.target,v.camera.target)}}console.log('All four source-locked frames passed');"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: master-M2-glass-shelves-mirror-light-v55
+          path: |
+            renders/master-detail/
+            review-evidence/master-detail-jury/
+          if-no-files-found: warn
+          retention-days: 30
