@@ -34,6 +34,8 @@ jobs:
         run: node scripts/build-owner-finish-r1.mjs
       - name: Build kitchen P0 storage tests and site RFI
         run: node scripts/build-kitchen-storage-p0-r1.mjs
+      - name: Verify source-locked R2 plate-depth cases (not a build approval)
+        run: node scripts/verify-dailyware-r2.mjs
       - name: Verify gate integrity and source immutability
         run: |
           node --input-type=module <<'JS'
