@@ -1,0 +1,57 @@
+name: Owner R1 - unified release review and field RFI evidence
+on:
+  push:
+    branches: ["integration/owner-review-gates-r1-20261010"]
+  pull_request:
+    branches: ["design/sprint6-integrated-dw-manufacturer-fit-20261010"]
+permissions:
+  contents: read
+jobs:
+  build-release-board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - run: node scripts/build-owner-release-r1.mjs
+      - name: Verify gate integrity and source immutability
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          const d='review-evidence/owner-release-r1/';
+          const r=JSON.parse(fs.readFileSync(d+'OWNER_RELEASE_GATES.json'));
+          assert.equal(r.schema,'TypeBOwnerReviewR1/1');
+          assert.equal(r.gates.length,16);
+          assert.equal(r.summary.high_priority,12);
+          assert.equal(r.summary.approved_for_construction,0);
+          assert.equal(r.source.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');
+          assert.equal(r.source.github_current_scene,'scene-9cf45a73');
+          assert.equal(r.source.cloud_source_scene,'scene-4821689');
+          assert.equal(r.source.A_P0_scene,'scene-9e86635b');
+          const h=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+          assert.equal(r.source.current_snapshot_sha256,h('render-snapshots/current.json'));
+          assert.equal(r.source.reviewed_A_P0_sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.ok(Object.values(r.approvals).every(x=>x===false));
+          assert.ok(r.gates.every(x=>x.construction_approved===false));
+          assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('data-room="مطبخ"'));
+          assert.ok(fs.statSync(d+'Owner-Review.html').size>8000);
+          assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
+          JS
+          git diff --exit-code -- render-snapshots/current.json design-development/decision-registry.json design-development/reception-sprint/A-P0.json dist/sources
+      - name: Upload owner and field handoff
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apartment-typeb-owner-r1-complete-offline-review
+          path: review-evidence/owner-release-r1/
+          retention-days: 90
+          if-no-files-found: error
