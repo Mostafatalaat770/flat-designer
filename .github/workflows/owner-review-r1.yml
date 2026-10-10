@@ -6,6 +6,7 @@ on:
     branches: ["design/sprint6-integrated-dw-manufacturer-fit-20261010"]
 permissions:
   contents: read
+  actions: read
 jobs:
   build-release-board:
     runs-on: ubuntu-latest
@@ -21,6 +22,13 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - name: Import source-verified original PR62 WebGL capture
+        uses: actions/download-artifact@v4
+        with:
+          name: reception-final-reviewed-evidence
+          path: review-evidence/owner-source-capture
+          github-token: ${{ github.token }}
+          run-id: 38046581713
       - run: node scripts/build-owner-release-r1.mjs
       - name: Verify gate integrity and source immutability
         run: |
@@ -44,6 +52,16 @@ jobs:
           assert.ok(r.gates.every(x=>x.construction_approved===false));
           assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('data-room="مطبخ"'));
           assert.ok(fs.statSync(d+'Owner-Review.html').size>8000);
+          const vis=JSON.parse(fs.readFileSync(d+'VISUAL_PROVENANCE.json'));
+          assert.equal(vis.status,'SOURCE_HASH_VERIFIED');
+          assert.equal(vis.frames.length,7);
+          for(const f of vis.frames){
+            const p=d+'visuals/'+f.name;
+            assert.ok(fs.statSync(p).size>100000);
+            assert.equal(h(p),f.sha256);
+          }
+          assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('visuals/AB-P0-contact.png'));
+
           assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
           JS
           git diff --exit-code -- render-snapshots/current.json design-development/decision-registry.json design-development/reception-sprint/A-P0.json dist/sources

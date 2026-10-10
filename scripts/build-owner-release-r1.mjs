@@ -136,6 +136,56 @@ const csvCell=t=>'"'+String(t).replaceAll('"','""')+'"';
 const rows=[["ID","Area","Priority","Status","Reference measurement","Evidence required","Responsible","Source URL","Construction approval"],
 ...gates.map(g=>[g.id,g.room,g.priority,g.state,g.observed,g.action,g.by,g.source,"NO"])];
 fs.writeFileSync(out+"/SITE_RFI_MATRIX.csv",rows.map(x=>x.map(csvCell).join(",")).join("\r\n")+"\r\n");
+
+const captureRoot="review-evidence/owner-source-capture";
+const originalManifest=captureRoot+"/MANIFEST.sha256";
+const chosenVisuals=[
+ ["AB-P0-contact.png","renders/reception-sprint/AB-P0-contact.png","A مقابل B — نفس منظور ومدخل وكنبة"],
+ ["Kitchen-style-topology-matrix.png","renders/reception-sprint/Kitchen-style-topology-matrix.png","مطبخ P0 مقابل P1 المشروط، الخامات ثابتة"],
+ ["Day-evening-comparison.png","renders/reception-sprint/Day-evening-comparison.png","إضاءة النهار والمساء — مقارنة WebGL"],
+ ["A-P0-all-views.png","renders/reception-sprint/A-P0-all-views.png","A / P0 — كل زوايا الاستقبال"],
+ ["B-P0-all-views.png","renders/reception-sprint/B-P0-all-views.png","B / P0 — كل الزوايا"],
+ ["A-P1-CONDITIONAL-all-views.png","renders/reception-sprint/A-P1-CONDITIONAL-all-views.png","A / P1 — فتح المطبخ بصريًا فقط"],
+ ["B-P1-CONDITIONAL-all-views.png","renders/reception-sprint/B-P1-CONDITIONAL-all-views.png","B / P1 — فتح المطبخ بصريًا فقط"]
+];
+const visuals=[];
+if(fs.existsSync(originalManifest)){
+ const manifest=new Map(read(originalManifest).trim().split("\n").map(line=>{
+  const match=line.match(/^([a-f0-9]{64})  (.+)$/);
+  assert.ok(match,"Malformed original PR62 manifest");
+  return [match[2],match[1]];
+ }));
+ for(const [snapName,snapPath] of [
+  ["A-P0.json",review+"/A-P0.json"],
+  ["B-P0.json",review+"/B-P0.json"],
+  ["A-P1-CONDITIONAL.json",review+"/A-P1-CONDITIONAL.json"],
+  ["B-P1-CONDITIONAL.json",review+"/B-P1-CONDITIONAL.json"]
+ ]){
+  const archivePath="design-development/reception-sprint/"+snapName;
+  assert.equal(sha(snapPath),manifest.get(archivePath),"Captured renders must match reviewed exact snapshot "+snapName);
+  assert.equal(sha(captureRoot+"/"+archivePath),manifest.get(archivePath),"Original captured snapshot provenance mismatch");
+ }
+ fs.mkdirSync(out+"/visuals",{recursive:true});
+ for(const [name,sourcePath,title] of chosenVisuals){
+  const original=captureRoot+"/"+sourcePath;
+  assert.ok(fs.existsSync(original),"Missing original screenshot "+sourcePath);
+  assert.equal(sha(original),manifest.get(sourcePath),"WebGL original screenshot SHA does not match signed original manifest");
+  const result=out+"/visuals/"+name;
+  fs.copyFileSync(original,result);
+  visuals.push({name,title,source_path:sourcePath,sha256:sha(result),provenance:"Original PR62 reviewed WebGL capture; NOT regenerated, retouched or photorealistic"});
+ }
+}
+fs.writeFileSync(out+"/VISUAL_PROVENANCE.json",JSON.stringify({
+ origin_run_id:38046581713,origin_artifact_id:11667855554,
+ status:visuals.length===chosenVisuals.length?"SOURCE_HASH_VERIFIED":"IMAGES_NOT_COPIED_OPEN_ORIGINAL_ARTIFACT",
+ frames:visuals
+},null,2)+"\n");
+const imageCaption=visuals.length===chosenVisuals.length
+ ? '<section class="image-grid">'+visuals.slice(0,3).map((v,i)=>
+    '<figure class="'+(i===0?'lead-image':'')+'"><a href="visuals/'+escape(v.name)+'" target="_blank" rel="noopener"><img src="visuals/'+escape(v.name)+'" alt="'+escape(v.title)+'" loading="lazy"></a><figcaption>'+escape(v.title)+' · Verified source SHA · Original WebGL</figcaption></figure>'
+   ).join("")+'</section><p class="image-note">الصور للمراجعة الهندسية والذوقية فقط. بقية 4 contact sheets داخل مجلد visuals. المصدر الأصلي: 32 لقطة WebGL مرتبطة ببيانات كاميرا وهندسة موثقة.</p>'
+ : '<p class="image-note">لقطات المصدر الأصلي موجودة عبر رابط الـ32 صورة في قسم المصادر؛ لتضمينها داخل الحزمة شغّل GitHub Actions الذي يتحقق من البصمات الرقمية.</p>';
+
 const cards=gates.map(g=>
  '<article class="card" data-room="'+escape(g.room)+'">'+
  '<div class="head"><span class="code">'+escape(g.id)+'</span><h3>'+escape(g.label)+'</h3><span class="status">'+(g.state==="DESIGN_REVIEW"?"تصميم مقترح":g.state==="CONDITIONAL"?"موافقة هندسية مطلوبة":"معلّق")+'</span></div>'+
@@ -155,6 +205,7 @@ const template=read(root+"/release-r1/Owner-Review.template.html");
 const html=template.replace("<!-- OPTIONS -->",choices).replace("<!-- GATES -->",cards)
  .replaceAll("{{VISUAL}}",urls.images).replaceAll("{{CURRENT}}",urls.current)
  .replaceAll("{{SURVEY}}",urls.survey).replaceAll("{{REGISTRY}}",urls.registry)
+ .replace("<!-- IMAGE GALLERY -->",imageCaption)
  .replaceAll("{{GATE_COUNT}}",String(gates.length)).replaceAll("{{PRIORITY_COUNT}}",String(payload.summary.high_priority));
 assert.ok(!html.includes("<!-- GATES -->")&&!html.includes("<!-- OPTIONS -->"));
 fs.writeFileSync(out+"/Owner-Review.html",html);

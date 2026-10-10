@@ -10,7 +10,7 @@
 
 ## Evidence package
 
-Run `node scripts/build-owner-release-r1.mjs`, or download the GitHub Action output. Open **Owner-Review.html** offline for a 16-gate filtered decision view; **SITE_RFI_MATRIX.csv** is ready for trades, **OWNER_RELEASE_GATES.json** contains SHA, source metrics, provenance and approval flags. The genuine 32-WebGL A/B images stay in the linked original reviewed artifact (not recreated/rendered here).
+Run `node scripts/build-owner-release-r1.mjs`, or download the GitHub Action output. Open **Owner-Review.html** offline for a 16-gate filtered decision view; **SITE_RFI_MATRIX.csv** is ready for trades, **OWNER_RELEASE_GATES.json** contains SHA, source metrics, provenance and approval flags. The original 32-WebGL A/B images are linked, and GitHub Actions also copies **seven SHA-verified ORIGINAL WebGL contact sheets** into the offline review (no re-rendering, upscaling or fake images). Local generation without downloading that original artifact gracefully uses links only.
 
 Source hierarchy is checked automatically: original canonical -> current GitHub v55 source -> matching A/B furniture -> opt-in *render-only* P1 overlay -> model test measurements. No cloud saves or canonical layout writes.
 
