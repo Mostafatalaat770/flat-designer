@@ -145,7 +145,7 @@ const report={
 };
 fs.writeFileSync(out+"/ENTRY_SENSITIVITY.json",JSON.stringify(report,null,2)+"\n");
 // Visual report: not an architectural floor plan, and no fictitious furniture source.
-const height=430,width=980,margin=70;
+const height=430,width=980,margin=112;
 const bar=shifts.map((dy,i)=>{
  const row=experiments.find(r=>r.dining_shift_mm===dy&&r.buffet_shift_mm===0);
  const col=i%2?"#718071":"#9F8872";
@@ -161,7 +161,7 @@ const bar=shifts.map((dy,i)=>{
 const svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'">'+
 '<rect width="100%" height="100%" fill="#f7f5f1"/><text x="28" y="32" fill="#282925" font-family="sans-serif" font-size="22" font-weight="600">Dining shift sensitivity · model gaps only</text>'+
 '<text x="28" y="57" fill="#5a5954" font-family="sans-serif" font-size="13">All six chairs withdrawn +450mm; buffet remains fixed; numbers are mm, not passage widths</text>'+
-'<g font-family="sans-serif">'+bar+'</g><text x="28" y="416" fill="#5a5954" font-family="sans-serif" font-size="12">Brown = shoe user → chair  |  Gray = open buffet → chair  |  Pending full-size mockup</text></svg>';
+'<g font-family="sans-serif">'+bar+'</g><text x="28" y="416" fill="#5a5954" font-family="sans-serif" font-size="12">Brown = shoe user vs chair  |  Gray = open buffet vs chair  |  Pending full-size mockup</text></svg>';
 fs.writeFileSync(out+"/ENTRY_SENSITIVITY.svg",svg);
 console.log(JSON.stringify({sha256:inputSha,experiment_count:experiments.length,
  east_trials:eastTrials.length,east_pass:eastTrials.filter(x=>x.feasible_simultaneous_use).length,
