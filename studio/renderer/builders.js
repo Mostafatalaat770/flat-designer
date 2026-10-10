@@ -6072,13 +6072,14 @@ export function createBuilders(scope) {
         envMapIntensity: 1,
       });
       if (o.variant === "task-lit") {
-        const mirror = new THREE.MeshStandardMaterial({color:"#b9c8ce",metalness:.98,roughness:.07,envMap:envTex,envMapIntensity:1});
+        // Deterministic neutral-glass preview, NOT physical reflection. The old 98% metal mirror becomes almost black in headless captures without a stable environment map.
+      const mirror = new THREE.MeshBasicMaterial({color:"#B6C8C7",side:THREE.DoubleSide});
         const nickel=mat("#b7bec0",{metalness:.72,roughness:.3});
         const glow=mat("#fff2dd",{emissive:"#ffdcb4",emissiveIntensity:.62,roughness:.28});
         B(w,h,d,nickel);
         B(w-.035,h-.035,.003,mirror,0,.016,d/2+.004);
         B(w*.82,.012,.014,glow,0,h-.056,d/2+.016);
-        g.userData.mirrorLightConcept={colour_temperature_k:3000,illuminance:"NOT_CALCULATED",wet_electrical_zone:"ENGINEER_REQUIRED"};
+        g.userData.mirrorLightConcept={colour_temperature_k:3000,illuminance:"NOT_CALCULATED",wet_electrical_zone:"ENGINEER_REQUIRED",reflective_simulation:false,mirror_visual:"NEUTRAL_GREY_NON_PHOTOREAL_PROXY"};
       } else if (o.variant === "round") {
         g.add(blob(w / 2, h / 2, d / 2, accent, 0, h / 2, 0));
         g.add(blob(w * 0.47, h * 0.47, 0.002, mirror, 0, h / 2, d / 2));

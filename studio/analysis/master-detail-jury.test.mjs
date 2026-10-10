@@ -56,3 +56,21 @@ test("mood board explicitly flags unapproved vendor and waterproofing design",()
  assert.match(svg,/UNVERIFIED/);
  assert.match(svg,/cloud v55 unchanged/);
 });
+
+
+test("task-lit mirrors render visibly in headless WebGL with honest non-reflective optical proxy",()=>{
+ const host=fs.readFileSync("interior-scene.js","utf8");
+ const local=fs.readFileSync("studio/renderer/builders.js","utf8");
+ for(const renderer of [host,local]){
+  const i=renderer.indexOf('if (o.variant === "task-lit")');
+  assert.ok(i>0,"mirror task variant exists");
+  const block=renderer.slice(i,i+1250);
+  assert.match(block,/new THREE\.MeshBasicMaterial\(\{color:"#B6C8C7"/);
+  assert.match(block,/reflective_simulation:false/);
+  assert.match(block,/NEUTRAL_GREY_NON_PHOTOREAL_PROXY/);
+  assert.match(block,/illuminance:"NOT_CALCULATED"/);
+  assert.doesNotMatch(block,/metalness:\.98/);
+ }
+ assert.equal(source.layout.interior.objects.find(o=>o.id==="BATHM-A1-mirror").variant,"rectangle");
+ assert.equal(source.layout.interior.objects.find(o=>o.id==="WC-A1-mirror").variant,"rectangle");
+});
