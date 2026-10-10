@@ -1,0 +1,61 @@
+name: Sprint 2 - entry and dining feasibility audit
+on:
+  push:
+    branches:
+      - "design/sprint2-*"
+  pull_request:
+    branches:
+      - master
+      - design/reception-sprint-implementation-20261010
+    paths:
+      - "scripts/sprint2-entry-feasibility.mjs"
+      - "design-development/reception-sprint2/**"
+      - ".github/workflows/sprint2-entry-feasibility.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  measured-entry-options:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Verify existing source/owner controls and sensitive geometry
+        run: |
+          node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - name: Generate source-locked Sprint 2 entry/dining sensitivity study
+        run: node scripts/sprint2-entry-feasibility.mjs
+      - name: Verify assumptions, output identity and no canonical modifications
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          const r=JSON.parse(fs.readFileSync('design-development/reception-sprint2/ENTRY_SENSITIVITY.json'));
+          const input=fs.readFileSync('design-development/reception-sprint/A-P0.json');
+          assert.equal(r.input.sha256,createHash('sha256').update(input).digest('hex'));
+          assert.equal(r.input.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');
+          assert.equal(r.input.cloud_scene,'scene-4821689');
+          assert.equal(r.dining_shift_sensitivity.length,18);
+          assert.equal(r.originals.shoe_user_to_chair_mm,15);
+          assert.ok(r.dining_shift_sensitivity.every(x=>Array.isArray(x.domain_hard_failures)));
+          assert.ok(r.dining_shift_sensitivity.some(x=>x.dining_shift_mm===-300));
+          assert.equal(r.status,'EXPLORATORY_ANALYSIS_ONLY');
+          assert.ok(fs.statSync('design-development/reception-sprint2/ENTRY_SENSITIVITY.svg').size>1000);
+          JS
+          git diff --exit-code -- render-snapshots/current.json design-development/reception-sprint/A-P0.json dist/sources
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sprint2-entry-dining-source-locked-feasibility
+          path: design-development/reception-sprint2/
+          if-no-files-found: warn
+          retention-days: 30
