@@ -36,6 +36,8 @@ jobs:
         run: node scripts/build-kitchen-storage-p0-r1.mjs
       - name: Verify source-locked R2 plate-depth cases (not a build approval)
         run: node scripts/verify-dailyware-r2.mjs
+      - name: Verify source-locked P0 kitchen cooking run and zero build approvals
+        run: node scripts/verify-p0-joinery-r3.mjs
       - name: Verify gate integrity and source immutability
         run: |
           node --input-type=module <<'JS'
@@ -69,6 +71,13 @@ jobs:
           assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('visuals/AB-P0-contact.png'));
 
           assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
+          const joineryR3=JSON.parse(fs.readFileSync(d+'P0_JOINERY_R3.json'));
+          assert.equal(joineryR3.schema,'TypeBP0KitchenJoineryR3/1');
+          assert.equal(joineryR3.source.sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.deepEqual(joineryR3.west_nominal_regions_mm,[307,600,593]);
+          assert.equal(joineryR3.candidates.length,3);
+          assert.ok(joineryR3.candidates.every(x=>x.status.startsWith('HOLD')));
+          assert.ok(Object.values(joineryR3.approvals).every(x=>x===false));
           const kitchen=JSON.parse(fs.readFileSync(d+'P0_KITCHEN_STORAGE_R1.json'));
           assert.equal(kitchen.schema,'TypeBP0KitchenStorageR1/1');
           assert.equal(kitchen.source.sha256,h('design-development/reception-sprint/A-P0.json'));
