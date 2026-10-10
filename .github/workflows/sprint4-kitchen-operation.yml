@@ -1,0 +1,61 @@
+name: Sprint 4 - kitchen operating-envelope model gates
+on:
+  push:
+    branches:
+      - "design/sprint4-*"
+  pull_request:
+    branches:
+      - design/sprint3-real-shoe-storage-20261010
+    paths:
+      - "scripts/sprint4-kitchen-operation.mjs"
+      - "design-development/reception-sprint4/**"
+      - ".github/workflows/sprint4-kitchen-operation.yml"
+permissions:
+  contents: read
+jobs:
+  source-locked-operation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Existing geometry and owner gates
+        run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - name: Run kitchen operating-state matrix
+        run: node scripts/sprint4-kitchen-operation.mjs
+      - name: Verify immutable source and audit outputs
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          const root='design-development/reception-sprint4/';
+          const result=JSON.parse(fs.readFileSync(root+'KITCHEN_OPERATING_ENVELOPES.json'));
+          const source=fs.readFileSync('design-development/reception-sprint/A-P0.json');
+          assert.equal(result.source.sha256,createHash('sha256').update(source).digest('hex'));
+          assert.equal(result.source.scene,'scene-9e86635b');
+          assert.equal(result.source.cloud_source,'scene-4821689');
+          assert.equal(result.source.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');
+          assert.equal(result.status,'EXPLORATORY_MODEL_ONLY');
+          assert.equal(result.cases.length,108);
+          assert.equal(result.original_metrics.baseline.dishwasher_behind_user_mm,372.3);
+          assert.equal(result.original_metrics.baseline.oven_generic_service_leaf_overlaps,13);
+          assert.equal(result.original_metrics.baseline.washer_user_service_leaf_overlaps,18);
+          assert.equal(result.original_metrics.baseline.oven_washer_users_overlap_mm2,54000);
+          assert.ok(fs.statSync(root+'KITCHEN_OPERATION_PLAN.svg').size>1000);
+          JS
+          git diff --exit-code -- render-snapshots/current.json design-development/reception-sprint/A-P0.json dist/sources
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sprint4-kitchen-operation-source-locked
+          path: design-development/reception-sprint4/
+          retention-days: 45
+          if-no-files-found: warn
