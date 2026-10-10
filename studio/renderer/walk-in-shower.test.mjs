@@ -9,7 +9,7 @@ const read = (path) => readFileSync(new URL(path, root), "utf8");
 test("shower supports old enclosed style and opt-in walk-in variant", () => {
   const core = read("studio-core.js");
   const variants = runInNewContext(core + "\nSTUDIO_VARIANTS.shower");
-  assert.deepEqual(Array.from(variants), ["style", "walk-in"]);
+  assert.deepEqual(Array.from(variants), ["style", "walk-in", "minimal-glass"]);
 });
 
 test("both render pipelines draw no prefab cage for opt-in walk-in", () => {
