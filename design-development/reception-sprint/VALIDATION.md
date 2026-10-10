@@ -16,6 +16,8 @@
 
 The committed `source-contract.json` is the local generation template (`render_git_commit: null`). **Use the artifact's contract and frame metadata for exact capture provenance.** The final document/package commits do not change any rendered snapshot, audit, plan, camera, canonical input or capture implementation; package verification compares all four snapshot files, both audits and all six SVGs byte-for-byte against the reviewed artifact before release.
 
+The final narrative-only follow-up retains this reviewed capture on the unchanged master base. Its delivery workflow repeats source/frame integrity checks and packages the final documents; it does not claim that the document checkout rendered a new scene.
+
 ## Implementation and checks
 
 The implementation adds a source-locked A/B style study, a common measured furniture correction, explicit human-use/door/front states, six dimensioned vector plans, four controlled style/topology snapshots, eight matched human-eye views per snapshot, PNG/metadata/hash verification, labelled sheets and an offline comparison. The production viewer, existing `render-variants.mjs` and source canonical architecture remain authoritative. The PDF exporter and final artifact packager provide a reviewable document and complete downloadable evidence without modifying the capture.
