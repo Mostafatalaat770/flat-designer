@@ -1,0 +1,12 @@
+import fs from "node:fs";
+import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {masterWalkinDepthStudy,masterWalkinDepthSvg} from "../studio/analysis/master-walkin-depth.mjs";
+const source=JSON.parse(fs.readFileSync("render-snapshots/current.json","utf8"));
+const result=masterWalkinDepthStudy(source,createApartmentDomain(process.cwd()));
+const dir="review-evidence/master-walkin-depth";
+fs.mkdirSync(dir,{recursive:true});
+fs.writeFileSync(dir+"/M0-current-800.json",JSON.stringify(result.base,null,2)+"\n");
+fs.writeFileSync(dir+"/M1-conditional-900.json",JSON.stringify(result.deeper,null,2)+"\n");
+fs.writeFileSync(dir+"/audit.json",JSON.stringify(result.audit,null,2)+"\n");
+fs.writeFileSync(dir+"/plan.svg",masterWalkinDepthSvg(result)+"\n");
+console.log(JSON.stringify({source:result.audit.source_scene,alternatives:result.audit.variants,decision:result.audit.preferred_for_current_review},null,2));

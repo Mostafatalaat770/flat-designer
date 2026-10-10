@@ -1,0 +1,51 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import {createApartmentDomain} from "../domain/apartment.mjs";
+import {masterWalkinDepthStudy,masterWalkinDepthSvg} from "./master-walkin-depth.mjs";
+const source=JSON.parse(fs.readFileSync("render-snapshots/current.json","utf8"));
+const domain=createApartmentDomain(process.cwd());
+const s=masterWalkinDepthStudy(source,domain);
+test("source-locked exact v55 master 1450x800 and two same-eye cameras",()=>{
+ assert.equal(s.base.scene_revision,"scene-9cf45a73");
+ assert.equal(s.base.source_scene_revision,"scene-4821689");
+ assert.equal(s.base.storage_revision,55);
+ assert.equal(s.base.views.length,2);
+ assert.deepEqual(s.base.views,s.deeper.views);
+ assert.deepEqual(s.base.layout,source.layout);
+});
+test("M1 depth 900 extends south exactly 100mm, keeping north wet edge and same 600mm screen width",()=>{
+ const A=s.audit.variants.M0,B=s.audit.variants.M1;
+ assert.deepEqual(A.shower_wet_area_mm,[1450,800]);
+ assert.deepEqual(B.shower_wet_area_mm,[1450,900]);
+ assert.equal(A.north_edge_y_mm,B.north_edge_y_mm);
+ assert.equal(A.south_edge_y_mm,7150);
+ assert.equal(B.south_edge_y_mm,7250);
+ assert.equal(A.wet_south_edge_to_door_jamb_y_projection_mm,115.7);
+ assert.equal(B.wet_south_edge_to_door_jamb_y_projection_mm,15.7);
+ assert.equal(A.entry_band_west_of_fixed_glass_nominal_mm,832);
+ assert.equal(B.entry_band_west_of_fixed_glass_nominal_mm,832);
+ assert.deepEqual(B.fixed_glass_nominal_mm,[600,2050]);
+});
+test("candidate changes only shower footprint and its fixed glass placement/metadata",()=>{
+ const f=x=>x.layout.furniture.filter(o=>o.id!=="BATHM-WALKIN-A1");
+ const o=x=>x.layout.interior.objects.filter(y=>y.id!=="BATHM-glass-600-A1");
+ assert.deepEqual(f(s.base),f(s.deeper));
+ assert.deepEqual(o(s.base),o(s.deeper));
+ assert.deepEqual(s.base.layout.demolished,[]);
+ assert.deepEqual(s.base.layout.rooms,s.deeper.layout.rooms);
+ assert.equal(s.deeper.architecture_variant,undefined);
+ assert.deepEqual(s.audit.variants.M0.domain_hard_fails,[]);
+ assert.ok(Array.isArray(s.audit.variants.M1.domain_hard_fails));
+});
+test("M1 has no selected drainage or developer approval and can never be adopted silently",()=>{
+ assert.equal(s.audit.status,"ENGINEERING_HOLD_NOT_APPROVED");
+ assert.match(s.audit.preferred_for_current_review,/M0 retained/);
+ assert.equal(s.audit.hard_gates.qualified_wet_design_and_developer_approved,false);
+ assert.equal(s.audit.hard_gates.shower_splash_test_with_open_entry,false);
+ assert.equal(s.audit.hard_gates.finished_wall_door_swing_measured,false);
+ assert.deepEqual(s.audit.sensitivities.map(v=>v.nominal_open_entry_mm),[932,832,782,732]);
+ const svg=masterWalkinDepthSvg(s);
+ assert.match(svg,/115\.7mm/);assert.match(svg,/15\.7mm/);
+ assert.match(svg,/NOT a certified human route/);
+});
