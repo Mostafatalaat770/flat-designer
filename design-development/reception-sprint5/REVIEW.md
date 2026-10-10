@@ -24,6 +24,26 @@ Run: \`node scripts/sprint5-manufacturer-kitchen-fit.mjs\` after \`npm ci && npm
 
 **This is not a precise real-world collision simulation:** LG open-total-depth is a manufacturer **linear overall depth bound**, not a full plan-view hinged door polygon. The script uses simplified rectangle forward projections. Bosch oven/DW door projections and adult standing rectangles are **assumptions**, not verified product data.
 
+## Verified model result (GitHub Actions, 10 October 2026)
+
+**Full CI PASS:** [source-locked run #38055380328](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38055380328) verifies frozen original source, original owner decisions, 36 input scenarios, all seven HOLD flags and machine-generated source evidence. [Original JSON, SVG and document artifact](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38055380328/artifacts/11671205666).
+
+| 36 separate product-body/assumed-person/projection cases | Model result | Decision |
+| --- | ---: | --- |
+| Fridge **rectangular open-depth proxy** intersects P0 kitchen door sampled swing | **36 / 36** | Urgent hinge-side and actual appliance-door *arc* drawing; do not trust P0 frontal picture |
+| Washer open-user envelope intersects original service-door swing | **24 / 36** | Test exact washer hinge/water hoses with service door before locating sockets/drains |
+| Under-hob oven panel versus original service-door sweep | **0 / 36** | KEEP for compatible oven+gas hob supplier-template test only; not a construction clearance certificate |
+| Oven/washer operating-person positive polygon overlap | **36 / 36** | Assumed two-person simultaneous operation fails this model |
+| Oven/DW operating-person positive polygon overlap | **36 / 36** | Do not claim simultaneous unloaded dishwasher + oven comfort |
+| Dishwasher+washer operating-person overlap | **12 / 36** | Need manual basket movement/full-scale family-use test |
+| Refrigerator/DW operator-body overlap | **0 / 36** | Mere lack of body-box overlap does not clear the source kitchen leaf or through-route |
+
+**Nominal scenario** with assumed 600×600 mm person, 600 mm DW and 550 mm oven opening: washer body/service door collides in **12/46 sampled positions**; source-position fridge 595-mm-wide rectangle open-depth proxy hits the kitchen door in **19/46 sampled positions**; oven under-hob has a **90.2 mm** nominal minimum gap to the service-door sweep; DW occupied body leaves **379.3 mm** to the assumed room boundary. This is not a safe walking lane.
+
+Unlike the earlier purely assumed Sprint 4 `+500mm` washer envelope, the new 440mm forward increment comes from an actual 1030mm rear-to-fully-open-door LG size minus 590mm rear-to-front-closed-door. **Still, a single depth increment is not a real two-dimensional hinge arc; NO manufacturer says this full width blocks the entire rectangle.** Do not convert model overlaps to claims about real equipment without maker mounting diagrams.
+
+The **two zero-width-slack alerts** are arithmetic against existing 600mm nominal *furniture boxes*, NOT field measurements of the clear installed recess. They are enough to block cabinet shop drawings until a site survey. Likewise, do not substitute a freestanding LG dishwasher for an integrated door-front and do not assume that Bosch's Iraq-market model can be sourced or installed under this gas hob in Egypt.
+
 ## Release gates and next work
 
 1. Measure as-built finished clear appliance apertures, door swing and worktop height; re-evaluate equipment elevations and hoses rather than trusting model box width.
