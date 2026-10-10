@@ -68,7 +68,7 @@ Lighting:
 - Mirror/face lighting on a separate task circuit from general ceiling light.
 - Exhaust fan control coordinated with light/timer/humidity strategy.
 - Shaver/toothbrush outlet only where wet-zone rules permit.
-- Master shower and family tub zones: no outlet positioning until waterproofing and wet-zone drawings are frozen.
+- Master and family **shower** wet zones: no outlet positioning until waterproofing and wet-zone drawings are frozen. The earlier family bathtub is an archived K4 alternative, not the current 900×900mm shower source.
 - Guest WC: mirror task lighting prioritized because the handrinse is compact.
 
 ## Hall
