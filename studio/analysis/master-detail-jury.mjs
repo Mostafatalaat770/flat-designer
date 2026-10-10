@@ -18,6 +18,16 @@ export function masterDetailJury(current,domain){
  a.name="Master M0 / existing generic screen, shelves and rectangle mirror";
  b.name="Master M2 / slim fixed clear glass, wet trays and task-lit mirror / unapproved";
  a.views=cameraIds.map(id=>{const v=current.views.find(x=>x.id===id);assert.ok(v);return copy(v)});
+ // Authored camera ONLY for review: actual Type B room-plan point approximately
+ // x=6368, y=7776mm, eye=1620mm, looking toward the unchanged vanity/mirror.
+ // It is NOT a saved cloud view; camera is identical for A and B.
+ const vanity=copy(a.views[0]);
+ vanity.id="bath-master-dry-vanity-authored-review";
+ vanity.camera.position=[-1.65,1.62,2.66];
+ vanity.camera.target=[-1.98,1.33,3.52];
+ vanity.camera.fov=70;
+ vanity.camera.viewer={...vanity.camera.viewer,cut_height_m:2.5};
+ a.views.push(vanity);
  b.views=copy(a.views);
  const O=state=>state.layout.interior.objects;
  const get=(objects,id)=>{const obj=objects.find(x=>x.id===id);assert.ok(obj,"Source object missing "+id);return obj;};
@@ -68,7 +78,8 @@ export function masterDetailJury(current,domain){
   exact_unchanged_physical_geometry:true,unchanged_rooms:true,unchanged_wet_layout:true,unchanged_other_furniture:true,
   fixed_glass_mm:[600,18,2050],approximate_open_entry_mm:832,
   two_tray_sizes_mm:[[380,115,40],[380,115,40]],mirror_size_mm:[600,35,850],
-  optical_lighting_temperature_k:3000,same_camera_ids:cameraIds,
+  optical_lighting_temperature_k:3000,same_camera_ids:a.views.map(x=>x.id),
+  vanity_camera_provenance:"AUTHORED_FROM_SAME_CANONICAL_ROOM; NOT AN EXISTING CLOUD CAPTURE",
   construction_holds:{
    safe_glass_and_brackets_manufacturer:false,
    verified_splash_retention_open_dressing_door:false,

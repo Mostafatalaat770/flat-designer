@@ -11,7 +11,10 @@ test("M0 snapshot source pinned to real cloud v55 and same two cameras",()=>{
  assert.equal(a.source_scene_revision,"scene-4821689");
  assert.equal(a.storage_revision,55);
  assert.deepEqual(a.views,b.views);
- assert.equal(a.views.length,2);
+ assert.equal(a.views.length,3);
+ assert.equal(a.views[2].id,"bath-master-dry-vanity-authored-review");
+ assert.deepEqual(a.views[2].camera.position,[-1.65,1.62,2.66]);
+ assert.match(audit.vanity_camera_provenance,/NOT AN EXISTING CLOUD CAPTURE/);
  assert.deepEqual(a.layout,source.layout);
 });
 test("only four reversibly opt-in interior variants change; no spatial or plumbing drift",()=>{

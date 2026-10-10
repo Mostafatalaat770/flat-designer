@@ -19,6 +19,10 @@
 
 ## Exact deliverables
 
-`studio/analysis/master-detail-jury.mjs` generates M0 existing vs M2 detail variants from the same saved current v55 scene, with `a.layout` matching source bit-for-bit. Four precise same-camera WebGL image outputs, JSON audit, four unchanged physical envelope assertions and material/detail board. Both `interior-scene.js` and `studio/renderer/builders.js` support the three newly available opt-in interior variants, leaving existing variants untouched. Master M0 original remains saved in current snapshot and live cloud `scene-4821689` at revision55. Test evidence is not a substitute for manufacturer selected SKUs and installer/engineer signoff.
+`studio/analysis/master-detail-jury.mjs` generates M0 existing vs M2 detail variants from the same saved current v55 scene, with `a.layout` matching source bit-for-bit. Six precise same-camera WebGL image outputs (2 original saved master views plus a third review-only camera authored from calibrated interior coordinates, identical in A and B), JSON audit, four unchanged physical envelope assertions and material/detail board. Both `interior-scene.js` and `studio/renderer/builders.js` support the three newly available opt-in interior variants, leaving existing variants untouched. Master M0 original remains saved in current snapshot and live cloud `scene-4821689` at revision55. Test evidence is not a substitute for manufacturer selected SKUs and installer/engineer signoff.
 
 **No homeowner purchase / construction approval is being requested or implied.** Evaluate true rendered views before deciding whether to recommend the aesthetic M2 configuration.
+
+## Review visibility amendment
+
+The two original saved v55 master shower cameras point north and do not reliably expose the *south vanity mirror*. A third camera, `bath-master-dry-vanity-authored-review`, is a **newly authored camera for the A/B comparison only**: eye at world coordinates [-1.65, 1.62, 2.66]m, looking [-1.98, 1.33, 3.52]m, fov70; calibrated to the fixed Type B model origin. It is neither a claimed existing cloud capture nor a new wall/furniture position. All six WebGL frames use unchanged true source room geometry and matched camera parameters. Revisit if clip/no-see; do not pretend absence from a shot proves a product feature works.
