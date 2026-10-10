@@ -77,13 +77,40 @@
     },
     "family_bath": {
       "active": "900x900 mm shower plus shallow high-mounted dry-side cabinet",
-      "status": "HOLD_ON_OCCUPIED_CLEARANCE",
+      "status": "VISUAL_F1_PREFERRED_HINGE_AND_WET_BUILD_HOLD",
       "hold_points": [
-        "verify 657 mm nominal door vs actual clear opening and occupant flow",
-        "check WC/vanity clearances, shower entry and realistic door swings",
-        "verify dry cabinet reach, rounded hardware and moisture-safe anchoring"
+        "Verify the 656.7mm nominal family hall door actual clear opening, swing, and household occupied WC, basin and shower access",
+        "Select manufacturer-certified 900×900 external tray and safety glass with no outward collision; the 580mm nominal door must NOT be assumed to swing outward SOUTH or WEST",
+        "Verify real as-built west shower strip and south WC clearance, handle, door seals, safe opening and cleaning/maintenance reach",
+        "Structural screed/slab/wet floor levels, slope, trap, waterproofing membrane & upstands, wet-area grip and extraction to outdoors",
+        "Verify 520×170×420 dry-side cabinet height, wall anchorage and reach without restricting the family bathroom route",
+        "Only approve finishes after real porcelain/metal/glass samples in installed lighting, local Egypt suppliers and explicit homeowner release"
       ],
-      "approved_for_construction": false
+      "approved_for_construction": false,
+      "preferred_concept": {
+        "id": "F1-frameless-low-profile",
+        "scope": "VISUAL_DIRECTION_ONLY",
+        "source": "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md",
+        "review_pr": 54,
+        "source_working_scene": "scene-9cf45a73",
+        "existing_source_variant": "style",
+        "candidate_renderer_variant": "frameless-low-profile",
+        "shower_footprint_mm": [
+          900,
+          900
+        ],
+        "nominal_visual_tray_height_mm": 35,
+        "nominal_closed_west_glass_door_mm": 580,
+        "nominal_south_splash_gap_to_wc_mm": 319.6,
+        "nominal_west_strip_mm": 778.6,
+        "assumed_south_outward_overlap_into_wc_envelope_mm": 260.4,
+        "assumed_west_outward_remaining_mm": 198.6,
+        "actual_hinge_orientation_selected": false,
+        "safe_occupied_swing_approved": false,
+        "waterproofing_and_drain_approved": false,
+        "supplier_product_selected": false,
+        "selected_for_visual_development": true
+      }
     },
     "reception": {
       "active": "v55 furnished geometry, six seat dining, TV and sofa",

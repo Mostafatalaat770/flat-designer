@@ -10,6 +10,12 @@
 | Historic v50 reference | `studio/local/sources/verified-master-v50.json` | ARCHIVED, not current |
 | Archived K12 open kitchen | `render-snapshots/study-k12-unapproved-20261008.json`, `scene-e2fcb932` | UNAPPROVED CONCEPT; model geometry gates failed |
 
+## Owner-preferred family shower — F1 frameless visual, NOT first-fix approved
+
+[PR #52](https://github.com/Mostafatalaat770/flat-designer/pull/52) introduced an opt-in transparent glass visual, and [PR #54](https://github.com/Mostafatalaat770/flat-designer/pull/54) corrected the glass to the exposed SOUTH and WEST shower faces using exact 900×900mm Type B model geometry. A two-view genuine same-camera WebGL comparison shows a significant visual improvement over the current heavy dark-framed shower. **Owner direction for DESIGN DEVELOPMENT: F1 frameless/minimal brushed nickel; current live v55 remains its original `style` variant.** The 35mm base is a conceptual visualization only and can be deeper in real construction.
+
+Critical source risk: the 580mm visual door cannot be assumed to open outward to the WC-facing south (WC only 319.6mm away) or toward the west bathroom wall (nominal 778.6mm strip, only 198.6mm left with outward leaf). Manufacturer + competent qualified wet-zone/sanitary engineer must specify actual safe inward/bifold/pivot operation, sealed enclosure, usable width, drain/waterproofing and service. Existing family hall opening is 656.7mm **nominal**; effective finished clear width is not verified. No vendor, tile/glass purchase or structural change is approved. [Geometry and release matrix](./FAMILY_SHOWER_GLASS_STUDY_20261010.md).
+
 ## Verified in the current GitHub review snapshot
 
 - Canonical room geometry is preserved, with no demolition. Kitchen **is enclosed**, awaiting the two-option owner/engineer decision, not because an open layout has been permanently rejected.

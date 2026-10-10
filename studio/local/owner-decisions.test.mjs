@@ -74,3 +74,17 @@ test("no incomplete owner decision or external construction hold is described as
     assert.notEqual(decision.status, "APPROVED", key);
   }
 });
+
+
+test("family F1 is the owner preferred visual direction, NEVER a physical door or plumbing approval",()=>{
+ const family=registry.decisions.family_bath;
+ assert.equal(family.preferred_concept.id,"F1-frameless-low-profile");
+ assert.equal(family.preferred_concept.review_pr,54);
+ assert.deepEqual(family.preferred_concept.shower_footprint_mm,[900,900]);
+ assert.equal(family.preferred_concept.assumed_south_outward_overlap_into_wc_envelope_mm,260.4);
+ assert.equal(family.preferred_concept.assumed_west_outward_remaining_mm,198.6);
+ for(const key of ["actual_hinge_orientation_selected","safe_occupied_swing_approved","waterproofing_and_drain_approved","supplier_product_selected"]) assert.equal(family.preferred_concept[key],false,key);
+ assert.equal(family.approved_for_construction,false);
+ assert.equal(current.layout.furniture.find(f=>f.id==="starter-16").variant,"style");
+ assert.equal(current.source_scene_revision,"scene-4821689");
+});
