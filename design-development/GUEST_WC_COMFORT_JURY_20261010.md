@@ -31,3 +31,9 @@
 Two identical original v55 guest cameras `guest-wc` and `guest-wc-entry-open` are used in all comparative captures. A extra-close photo that moves a door or mirror is NOT accepted as geometry evidence. The technical audit reports 2D footprint gaps and signed door-jamb *Y projection*, never claims usable clear passage or official code compliance. The original v55 cloud scene is untouched and A is byte-identical layout. B is a scenario to judge from **actual 4-frame Three.js captures** and only then decide B if necessary.
 
 **HOLD:** no sink, plumbing, door, lighting wiring, finishes or joinery orders until actual measurements and manufacturer details prove comfort and safety.
+
+## Real first A/B image jury and floating response
+
+The initial 350×180 vs 450×250 A/B run (Github Actions #38036283594) passed; the **larger basin is moderately better**, but both images reveal the generic heavy dark walnut vanity down to ~330mm above the floor, oversized/open wooden reception door dominating the camera, and mirror that lacks genuine facial light. A tile swatch alone is NOT a luxury improvement.
+
+A further opt-in `vanity.floating-compact` variant is added only to candidate B: same 450×250mm footprint and center, with a slimmer visual suspended lower walnut drawer at an **illustrative** ~525mm elevation, a slim stone cap and a compact bowl/spout. Two renderers and the contract are updated together. It is **NOT a real selected product**, and not a promise that wall/substrate, hidden brackets, bowl drain and supply can be installed without cutting. The original A and current saved scene stay completely untouched. Follow-up photographs must be reviewed again. The guest door itself remains original and can be pictured open; the real hallway and guest door swing must be surveyed, not edited away for a desirable picture.

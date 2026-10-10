@@ -3,6 +3,9 @@ on:
   pull_request:
     branches: [master]
     paths:
+      - "studio-core.js"
+      - "studio-scene.js"
+      - "studio/renderer/builders.js"
       - "studio/analysis/guest-wc-jury*"
       - "scripts/build-guest-wc-jury.mjs"
       - "design-development/GUEST_WC_COMFORT_JURY_20261010.md"

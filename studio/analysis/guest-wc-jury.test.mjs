@@ -19,6 +19,8 @@ test("B improves compact handwash within unchanged guest footprint, and no other
  const b=B.layout.furniture.find(f=>f.id==="starter-26");
  assert.deepEqual([a.w,a.d],[350,180]);
  assert.deepEqual([b.w,b.d],[450,250]);
+ assert.equal(b.variant,"floating-compact");
+ assert.equal(a.variant,"style");
  assert.deepEqual([a.cx,a.cy,a.rot],[b.cx,b.cy,b.rot]);
  assert.deepEqual(A.layout.furniture.filter(f=>f.id!=="starter-26"),B.layout.furniture.filter(f=>f.id!=="starter-26"));
  assert.deepEqual(A.layout.rooms,B.layout.rooms);
@@ -53,4 +55,19 @@ test("board reports actual numeric model differences and not fake sweep",()=>{
  assert.match(svg,/450×250/);
  assert.match(svg,/door-jamb Y/);
  assert.match(svg,/NOT a simulated swing/);
+});
+
+
+test("opt-in floating vanity design is available in both real renderers and marked not installable",()=>{
+ const core=fs.readFileSync("studio-core.js","utf8");
+ const host=fs.readFileSync("studio-scene.js","utf8");
+ const server=fs.readFileSync("studio/renderer/builders.js","utf8");
+ assert.match(core,/vanity:\['style','floating-compact'\]/);
+ for(const t of [host,server]){
+  assert.match(t,/floating-compact/);
+  assert.match(t,/guestCompactVanity/);
+  assert.match(t,/real_wall_bracket_drain_and_bowl_fit_approved:false/);
+  assert.match(t,/NOT_FOR_INSTALLATION/);
+ }
+ assert.equal(audit.drawer_brackets_and_waterproof_service_connection_approved,false);
 });

@@ -29,7 +29,7 @@ export function guestWcJury(source,domain){
  A.views=cameraIds.map(id=>{const v=source.views.find(x=>x.id===id);assert.ok(v,"Missing existing v55 camera "+id);return copy(v)});
  B.views=copy(A.views);
  const expanded=B.layout.furniture.find(f=>f.id==="starter-26");
- expanded.w=450;expanded.d=250;
+ expanded.w=450;expanded.d=250;expanded.variant="floating-compact";
  expanded.name="Guest basin 450×250 · same pipe center · site approval needed";
  const lit=B.layout.interior.objects.find(o=>o.id==="WC-A1-mirror");
  lit.variant="task-lit";
@@ -99,6 +99,8 @@ export function guestWcJury(source,domain){
   door_opening_changed:false,
   mirror_envelope_unchanged:true,
   wall_material_change_one_surface:surface,
+  candidate_compact_vanity_variant:"floating-compact",
+  drawer_brackets_and_waterproof_service_connection_approved:false,
   sink_nominal_size_increase_mm:[100,70],
   practical_gates:{
    real_basins_350x180_and_450x250_trials_with_lather_and_splash:false,
