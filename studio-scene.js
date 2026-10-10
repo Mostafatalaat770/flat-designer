@@ -138,7 +138,7 @@ function makeStudioVariant(f){
       tube([[0,.815,z],[0,1.008,z],[0,1.051,z+.045],[0,1.018,z+.105]],.009,cm));
     g.userData.guestCompactVanity={concept:"floating-compact",status:"NOT_FOR_INSTALLATION",floor_clearance_mm:525,
       physical_sink_envelope_mm:[f.w,f.d],real_wall_bracket_drain_and_bowl_fit_approved:false};
-else if(f.type==='counter'){
+  }else if(f.type==='counter'){
     const assigned=interiorMaterial(state,f.material_id),cm=assigned?.category==='wood'?woodM(assigned.base_colour):mat(c,{roughness:.45}),stone=mat('#dcd7cf',{roughness:.22}),n=Math.max(1,Math.round(w/.6)),fz=d/2-.04;
     if(!studioCounterJoinery(g,f,w,d,cm)){
       g.add(box(w-.01,.08,d-.08,'#4a4641',0,0,-.04),box(w,.74,d-.04,cm,0,.08,-.02));
