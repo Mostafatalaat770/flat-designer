@@ -131,6 +131,31 @@ function makeStudioVariant(f){
       fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
     }
     studioCountertop(g,f,w,d,stone);
+  }else if(f.type==='shower'&&f.variant==='frameless-low-profile'){
+    // FAMILY STUDY ONLY: not a certified tray height, glass door or waterproofing system.
+    // 900x900 source footprint stays identical; a nominal 580mm pivot leaf is shown CLOSED.
+    // No obstructing black top-frame, invented curbless slab or full-door swing certification.
+    const cm=mat('#b5bebc',{metalness:.74,roughness:.27});
+    const porcelain=mat('#e7e1d8',{roughness:.84});
+    const clear=mat('#d9eef0',{transparent:true,opacity:.18,roughness:.08,metalness:.02,depthWrite:false,side:THREE.DoubleSide});
+    const pivot=Math.min(.58,w*.68),fixed=w-pivot,zFront=d/2-.006,hingeX=-w/2+fixed;
+    g.add(
+      rbox(w,.035,d,porcelain,0,0,0,.006),
+      box(w*.62,.003,.028,cm,0,.038,-d/2+.09),
+      box(.008,1.96,d-.014,clear,w/2-.007,.035,0),
+      box(.008,.006,.01,cm,0,.035,zFront)
+    );
+    // Fixed glazed front sidelight + closed glazed pivot leaf, minimal brushed nickel fittings.
+    const sideLight=box(fixed,1.96,.008,clear,-w/2+fixed/2,.035,zFront);
+    const door=box(pivot,1.96,.008,clear,hingeX+pivot/2,.035,zFront);
+    sideLight.castShadow=false;door.castShadow=false;g.add(sideLight,door);
+    for(const yy of [.40,1.63])g.add(rbox(.018,.078,.035,cm,hingeX,.035+yy,zFront+.008,.004));
+    g.add(rbox(.017,.21,.036,cm,w/2-.087,1.03,zFront+.024,.006));
+    const x=-w*.25,z=-d/2+.09;
+    g.add(rbox(.14,.090,.035,cm,x,1.04,z,.012),
+      rod([x,1.13,z],[x,2.01,z],.012,cm),
+      rod([x,2.01,z],[x,2.01,z+.18],.012,cm),
+      box(.23,.012,.23,cm,x,2.00,z+.18));
   }else if(f.type==='shower'&&f.variant==='walk-in'){
     // True open wet area: no default glass cage or raised prefabricated tray.
     // Any fixed splash panel is a separate validated interior object.
