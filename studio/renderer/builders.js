@@ -1,3 +1,4 @@
+import { kitchenCounterTruth } from '../../kitchen-render-truth.js';
 // One-time extraction of the existing r160 scene builders. Architecture is supplied by MODEL.
 // Do not regenerate this module from HTML: maintain source modules here. Classic stays as a parity reference.
 export function createBuilders(scope) {
@@ -4014,8 +4015,9 @@ export function createBuilders(scope) {
           g.add(rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004));
           break;
         }
-        g.add(
-          rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004),
+        const truth = kitchenCounterTruth(state, f, ROOMS);
+        g.add(rbox(w + 0.01, 0.04, d, stone, 0, 0.82, 0, 0.004));
+        if (!truth.backsplash_ids.length) g.add(
           box(
             w,
             0.62,
@@ -4026,9 +4028,10 @@ export function createBuilders(scope) {
             bz + 0.005,
           ),
         );
-        g.add(box(w, 0.7, 0.33, cm, 0, 1.48, bz + 0.165));
-        fronts(g, -w / 2, 1.48, w, 0.7, bz + 0.33, n, 1, cm, "bar", 1.56);
-        g.add(
+        if (!truth.upper_ids.length) {
+          g.add(box(w, 0.7, 0.33, cm, 0, 1.48, bz + 0.165));
+          fronts(g, -w / 2, 1.48, w, 0.7, bz + 0.33, n, 1, cm, "bar", 1.56);
+          g.add(
           box(
             w - 0.04,
             0.01,
@@ -4038,7 +4041,8 @@ export function createBuilders(scope) {
             1.47,
             bz + 0.29,
           ),
-        );
+          );
+        }
         if (w >= 0.8) {
           g.add(
             rbox(

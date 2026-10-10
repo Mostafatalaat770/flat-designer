@@ -40,3 +40,7 @@ test('rejects invalid/out-of-bounds filename or zero viewport',()=>{
 test('rejects missing inputs instead of rendering a misleading single-scene comparison',()=>{
  assert.throws(()=>makeBatchPlan([input('a.json')]),/at least two snapshots/);
 });
+test('an explicit standalone capture can render one scene while empty inputs still fail',()=>{
+ assert.equal(makeBatchPlan([input('a.json')],{allowSingle:true}).jobs.length,1);
+ assert.throws(()=>makeBatchPlan([],{allowSingle:true}));
+});

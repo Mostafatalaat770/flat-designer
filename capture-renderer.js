@@ -103,6 +103,7 @@ async function bootApartmentAgentCapture(){
     opt.night=input.camera.viewer.night;opt.hour=input.camera.viewer.hour;
     for(const d of doors){const recorded=input.camera.viewer.doors.find(v=>v.id===d.id);if(!recorded)throw new Error('Missing door state.');d.open=recorded.open;d.cur=recorded.position;if(d.sliding)positionSlide(d);else d.pivot.rotation.y=d.cur;}
     applyApartmentDoorOverrides(input.architecture_variant,architectureResult);
+    const doorFinishResult=applyKitchenDoorFinishExperiment(THREE,input.render_experiment,doors,woodM);
     applyLight();
     await waitApartmentSceneAssets(25000);
     if(document.fonts?.ready)await document.fonts.ready;
@@ -115,6 +116,9 @@ async function bootApartmentAgentCapture(){
     camera.position.fromArray(input.camera.position);orbit.target.fromArray(input.camera.target);camera.lookAt(orbit.target);renderer.render(scene,camera);
     if(renderer.getContext().isContextLost())throw new Error('WebGL context lost during capture.');
     const result={schema:'ApartmentSceneCaptureFrame/1',canonical_sha256:MODEL.canonical_sha256,snapshot_sha256:input.snapshot_sha256,rendered_layout_json:JSON.stringify(state),scene_revision:input.scene_revision,storage_revision:input.storage_revision,room_id:input.room_id,camera:{...input.camera,position:camera.position.toArray(),target:orbit.target.toArray(),fov:camera.fov,aspect:camera.aspect,viewer:{...input.camera.viewer,doors:doors.map(d=>({id:d.id,open:d.open,position:d.cur}))}},timestamp:new Date().toISOString(),assets:{pending:apartmentSceneAssetsPending.size,fallbacks:[...apartmentSceneAssetsFailed]},renderer:{engine:'Three.js WebGL',revision:THREE.REVISION},architecture_variant:input.architecture_variant||null,architecture_result:architectureResult};
+    result.render_experiment=input.render_experiment || null;
+    result.door_finish_result=doorFinishResult;
+    result.kitchen_geometry=kitchenGeometryEvidence(THREE,MODEL,state,furnG);
     const cv=renderer.domElement;cv.id='apartment-capture-canvas';
     // Drop large inline scripts/snapshot data from the provider's HTML result.
     document.querySelectorAll('script').forEach(s=>s.remove());

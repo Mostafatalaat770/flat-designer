@@ -20,7 +20,7 @@ const files=process.argv.slice(2);
 const inputs=await Promise.all(files.map(async file=>({
  file, snapshot:JSON.parse(await fs.readFile(file,'utf8'))
 })));
-const plan=makeBatchPlan(inputs);
+const plan=makeBatchPlan(inputs,{allowSingle:process.env.RENDER_SINGLE_VARIANT==='1'});
 const domain=createApartmentDomain(process.cwd());
 for (const v of plan.variants) {
  assert.equal(v.snapshot.canonical_sha256,domain.model.canonical_sha256,
@@ -109,10 +109,13 @@ try{
     layout:v.snapshot.layout,
     camera:view.camera,
     asset_urls:v.asset_urls,
-    architecture_variant:v.snapshot.architecture_variant||null
+    architecture_variant:v.snapshot.architecture_variant||null,
+    render_experiment:v.snapshot.render_experiment||null
    };
    const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
-   await page.setContent(html,{waitUntil:'load'});
+   // Software WebGL may compile its first shader while the inline page loads.
+   // Use the same explicit deadline as readiness, instead of Playwright's 30s.
+   await page.setContent(html,{waitUntil:'load',timeout:180000});
    await page.waitForFunction(id=>{
     const error=document.body?.dataset?.captureError;
     if(error)throw new Error(error);
@@ -128,6 +131,7 @@ try{
    assert.equal(meta.rendered_layout_json,v.layoutJson);
    assert.equal(meta.room_id,view.room_id);
    assert.deepEqual(meta.architecture_variant,input.architecture_variant);
+   assert.deepEqual(meta.render_experiment,input.render_experiment);
    for (const prop of ['position','target','fov','aspect','near','far','viewport']) {
     assert.deepEqual(meta.camera[prop],view.camera[prop],
       'Camera changed at '+job.key+'/'+view.id+': '+prop);
