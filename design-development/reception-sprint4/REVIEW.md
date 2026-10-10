@@ -45,6 +45,26 @@ The portal remains a **structural and services HOLD**. Design around **P0 as the
 
 The sensitivity scenarios are **not vendor dimensions**. They're compact/nominal/large hypothetical opening envelopes: dishwasher 500/600/700 mm, washer 400/500/600 mm, oven 400/500/600 mm, fridge 500/650/800 mm, with people 500–700 mm both axes. No purchasing decision follows from a "pass".
 
+## CI-verified sensitivity outcome — 10 October 2026
+
+**CI SUCCESS:** [Full source-locked run #38054315435](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38054315435), including old geometry/owner controls, 108 source-pinned operation scenarios, exact nominal regression, SVG drawing and immutable-snapshot checks. [Download original JSON, SVG and review brief](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38054315435/artifacts/11670388673).
+
+**108 generated scenarios ≠ 108 passing household scenarios.** They are model calculations covering three size profiles, three assumed person widths, three assumed person depths, two proposed oven locations and two topology comparisons. Any model-body intersection is reported, not hidden.
+
+| P0-only comparison across 27 person/projection combinations per oven option | Generic oven centre | Under-hob oven centre |
+| --- | ---: | ---: |
+| Oven panel intersects 46-position *service-door sample sweep* | **27 / 27** | **0 / 27** |
+| Oven and washer operator body proxies positively overlap | **21 / 27** | **21 / 27** |
+| Dishwasher and oven operator body proxies positively overlap | **27 / 27** | **27 / 27** |
+
+The oven re-centering is worthwhile for service-door opening, **but a two-person kitchen is not established**. Even in the proposed under-hob condition the model's oven operator and dishwasher operator still overlap in **all 27 P0 cases**. The washer conflicts remain even after removing the P0 kitchen leaf in P1.
+
+Nominal baseline-to-under-hob detail: service-door/oven-panel overlap changes **13 sampled angles → 0**; the minimum door-panel gap increases to **87.2 mm**. Oven/washer standing-body polygon overlap drops **54,000 → 39,700 mm²**. This does **not** prove a safe door-handle margin or real person clearance.
+
+Sensitivity of nominal *dishwasher behind-person wall band* spans **172.3–572.3 mm** across the assumed profiles and person depths (nominal original **372.3 mm**); it is never a confirmed two-person bypass. Fridge assumed door panel intersects P0 kitchen leaf in all **27/27** P0 combinations on the three size profiles; P1 merely *removes the tested leaf* and has no developer approval.
+
+**Decision:** accept under-hob oven **for a vendor-backed fit test only**. Keep the P0 architectural source. Hold final fridge handedness, oven and washer installation, service access/egress, DW unloading, cabinet door/rack access and any P1 structural change until professional survey, manuals, real door kinematics and household test.
+
 ## Decision and physical verification order
 
 1. **Freeze equipment schedule before joinery:** check fridge **actual swing/hinge/handle**, width/depth and required ventilation; full DW door and two racks extended; front-load washer depth/door; oven under-hob compatible SKU and heat, hob manufacturer instructions.
