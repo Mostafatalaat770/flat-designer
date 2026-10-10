@@ -1,0 +1,12 @@
+import fs from "node:fs";
+import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {guestWcJury,guestWcBoardSvg} from "../studio/analysis/guest-wc-jury.mjs";
+const source=JSON.parse(fs.readFileSync("render-snapshots/current.json","utf8"));
+const domain=createApartmentDomain(process.cwd());
+const r=guestWcJury(source,domain);
+const dir="review-evidence/guest-wc-jury";fs.mkdirSync(dir,{recursive:true});
+fs.writeFileSync(dir+"/A-original.json",JSON.stringify(r.A,null,2)+"\n");
+fs.writeFileSync(dir+"/B-deeper-basin.json",JSON.stringify(r.B,null,2)+"\n");
+fs.writeFileSync(dir+"/audit.json",JSON.stringify(r.audit,null,2)+"\n");
+fs.writeFileSync(dir+"/dimension-board.svg",guestWcBoardSvg(r.audit)+"\n");
+console.log(JSON.stringify({A:r.A.scene_revision,B:r.B.scene_revision,measures:r.audit.candidates,gates:r.audit.practical_gates},null,2));
