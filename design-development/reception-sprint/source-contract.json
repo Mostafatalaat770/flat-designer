@@ -1,7 +1,7 @@
 {
   "schema": "TypeBReceptionSprintContract/1",
   "base_git_commit": "cfb7e8dee8621280c87121b6e60f7bb908b12695",
-  "render_git_commit": "cfb7e8dee8621280c87121b6e60f7bb908b12695",
+  "render_git_commit": "6e939df0c8be86467c7b3b242cdefe2310f0397c",
   "source_path": "render-snapshots/current.json",
   "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
   "source_scene": "scene-9cf45a73",
@@ -214,9 +214,9 @@
       "room_id": "RECP-01",
       "camera": {
         "position": [
-          2.982291,
+          4.632291,
           1.68,
-          -0.3156584999999996
+          -0.2156584999999991
         ],
         "target": [
           6.652291,

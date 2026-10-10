@@ -57,6 +57,18 @@ export function chairState(scene, pullback_mm) {
     return f;
   });
 }
+export function seatedBodies(scene, pullback_mm) {
+  const table = get(scene, "starter-35");
+  return chairState(scene, pullback_mm).map((f) => ({
+    id: f.id + "-adult",
+    cx: f.cx,
+    cy: f.cy + (f.cy < table.cy ? 100 : -100),
+    w: 600,
+    d: 350,
+    rot: 0,
+    note: "Explicit seated torso/arm envelope, facing table. Chair retains the rear withdrawal envelope. Knees/table support and getting up need a physical test.",
+  }));
+}
 function doorStates(model, id) {
   const d = model.doors.find((x) => x.id === id);
   assert.ok(d);
@@ -132,6 +144,8 @@ export function auditReception(scene, domain) {
     return {
       pullback_mm: pull,
       chairs,
+      seated_bodies: pull === 0 ? [] : seatedBodies(scene, pull),
+      adjacent_seated_body_gap_mm: pull === 0 ? null : 100,
       shoe_to_nearest_chair: nearest(rectangle(shoes), chairs),
       shoe_open_to_nearest_chair: nearest(shoeOpen, chairs),
       shoe_user_to_nearest_chair: nearest(shoeUser, chairs),
@@ -148,7 +162,7 @@ export function auditReception(scene, domain) {
         pull === 0
           ? "Saved chair placement; not an occupied state"
           : pull === 200
-            ? "Six seated-adult chair/body union proxy (530mm depth); limbs under table not certified"
+            ? "Six explicit 600x350 torso/arm proxies plus deployed 510x530 chairs; knees/table support unverified"
             : "All six pulled out simultaneously; conservative movement state, not measured people.",
     };
   });
@@ -201,6 +215,7 @@ export function auditReception(scene, domain) {
             ...objectObstacles,
             ...wallFaces,
             ...chairState(scene, pull).map(rectangle),
+            ...seatedBodies(scene, pull).map(rectangle),
             entry.open,
             ...extra,
           ];
@@ -320,6 +335,7 @@ export function auditReception(scene, domain) {
             ...kitchenSolids,
             ...wallStrips,
             ...chairState(scene, 350).map(rectangle),
+            ...seatedBodies(scene, 350).map(rectangle),
             entry.open,
             svc.open,
             ...(topology === "P0" ? [kdoor.open] : []),
@@ -475,6 +491,8 @@ export function auditReception(scene, domain) {
     assumptions: {
       wall_half_mm: 90,
       seated_pullback_mm: 200,
+      seated_torso_arms_mm: [600, 350],
+      seated_torso_offset_toward_table_mm: 100,
       movement_pullback_mm: [350, 450],
       body_box_mm: [600, 600],
       circulating_diameters_mm: [500, 700],
@@ -791,7 +809,7 @@ export function makeSprintCameras(source, model) {
   });
   return [
     camera("entry-overview", [14600, 1.68, 9480], [14100, 1.4, 6700], 65),
-    camera("living-to-dining", [11000, 1.68, 4800], [14670, 1.25, 7650], 68),
+    camera("living-to-dining", [12650, 1.68, 4900], [14670, 1.25, 7650], 68),
     camera("dining-to-living", [14200, 1.68, 6250], [10700, 1.3, 2400], 68),
     camera("wide-reception", [15450, 1.68, 6200], [11100, 1.35, 3900], 72),
     camera("kitchen-relationship", [13500, 1.68, 7700], [11000, 1.4, 7700], 68),

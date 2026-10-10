@@ -101,6 +101,9 @@ export function receptionPlanSvg(scene, audit, domain, pull = 350) {
     art += poly(rectangle(f), "#aab3b8", "#3b626d");
     art += label([f.cx - 140, f.cy], f.cy < 7650 ? "N adult" : "S adult");
   }
+  for (const f of chairs.seated_bodies) {
+    art += poly(rectangle(f), "#71859122", "#3b626d", "2 2");
+  }
   for (const o of scene.layout.interior.objects.filter(
     (o) => o.room_id === "RECP-01" && o.placement.mode === "floor",
   ))

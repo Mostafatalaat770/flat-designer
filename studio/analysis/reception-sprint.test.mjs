@@ -119,6 +119,16 @@ test("six occupied and pull-out states expose baseline conflict and fix without 
     proposed = study.audits.proposed;
   assert.equal(chairState(source, 350).length, 6);
   assert.equal(
+    proposed.chairStates.find((x) => x.pullback_mm === 200).seated_bodies
+      .length,
+    6,
+  );
+  assert.equal(
+    proposed.chairStates.find((x) => x.pullback_mm === 200)
+      .adjacent_seated_body_gap_mm,
+    100,
+  );
+  assert.equal(
     baseline.chairStates.find((x) => x.pullback_mm === 350)
       .shoe_to_nearest_chair.gap_mm,
     35,
