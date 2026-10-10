@@ -1,0 +1,13 @@
+import fs from "node:fs";
+import {createApartmentDomain} from "../studio/domain/apartment.mjs";
+import {makeFamilyShowerHardwareStudy,familyShowerPlanSvg} from "../studio/analysis/family-glass-study.mjs";
+const scene=JSON.parse(fs.readFileSync("render-snapshots/current.json","utf8"));
+const domain=createApartmentDomain(process.cwd());
+const result=makeFamilyShowerHardwareStudy(scene,domain);
+const dir="review-evidence/family-shower-glass";
+fs.mkdirSync(dir,{recursive:true});
+fs.writeFileSync(dir+"/A-original.json",JSON.stringify(result.base,null,2)+"\n");
+fs.writeFileSync(dir+"/B-minimal-glass.json",JSON.stringify(result.candidate,null,2)+"\n");
+fs.writeFileSync(dir+"/functional-audit.json",JSON.stringify(result.audit,null,2)+"\n");
+fs.writeFileSync(dir+"/plan.svg",familyShowerPlanSvg(result,domain)+"\n");
+console.log(JSON.stringify({original:result.base.scene_revision,candidate:result.candidate.scene_revision,model:result.audit.dimensions,approval:result.audit.decision},null,2));

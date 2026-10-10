@@ -6,7 +6,7 @@ const STUDIO_OPTIONS={
   flooring:['wood','walnut','tile800','tile600','marble','antislip','terrazzo','carpet','lightoak','parquet','travertine'],
   temperature:[2700,3000,4000],brightness:[0,100]
 };
-const STUDIO_VARIANTS={sofa:['style','cocoon','modular','tailored'],armchair:['style','cocoon','tailored'],bed:['style','upholstered','oak-platform','woven-headboard'],fridge:['style','integrated','steel'],ovencol:['style','black-glass','steel'],dishwasher:['style','integrated','steel'],counter:['style','base-only','peninsula'],shower:['style','walk-in']};
+const STUDIO_VARIANTS={sofa:['style','cocoon','modular','tailored'],armchair:['style','cocoon','tailored'],bed:['style','upholstered','oak-platform','woven-headboard'],fridge:['style','integrated','steel'],ovencol:['style','black-glass','steel'],dishwasher:['style','integrated','steel'],counter:['style','base-only','peninsula'],shower:['style','walk-in','minimal-glass']};
 function studioDefaults(){return {version:1,rooms:{}};}
 function studioRoomDefaults(){return {hvac:'none',ceiling:'plain',lighting:'style',temperature:3000,brightness:75,wall:null};}
 function studioRoomOptions(scene,id){return {...studioRoomDefaults(),...scene.studio?.rooms?.[id]};}

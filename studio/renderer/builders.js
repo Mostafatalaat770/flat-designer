@@ -2291,7 +2291,40 @@ export function createBuilders(scope) {
         fronts(g, -w / 2 + 0.005, 0.08, w - 0.01, 0.72, fz, n, 1, cm, "edge", 0.48);
       }
       studioCountertop(g,f,w,d,stone);
-    } else if (f.type === "shower" && f.variant === "walk-in") {
+    } else if (f.type === "shower" && f.variant === "minimal-glass") {
+      // CONDITIONAL family shower: glass belongs to EXPOSED south and west,
+      // never fabricated over the two solid north/east bathroom walls.
+      // It is drawn CLOSED; the exact door hinge, splash and low threshold
+      // are supplier/MEP/engineer gates. No open-door physical claim.
+      const cm = mat("#b7bfc1", { metalness: 0.73, roughness: 0.28 });
+      const glass = mat("#d3e7e5", {roughness: 0.10, metalness: 0, transparent: true, opacity: 0.23, depthWrite: false, side: THREE.DoubleSide});
+      const tray = mat("#ebe9e3", { roughness: 0.68 });
+      const h = 1.98, base = 0.022, fixed = Math.min(0.33, d * 0.40), leaf = d - fixed;
+      g.add(box(w, base, d, tray, 0, 0, 0));
+      g.add(box(w, 0.006, h * 0.005, cm, 0, base, -d / 2 + 0.005));
+      const front = box(w, h, 0.009, glass, 0, base + 0.01, -d / 2 + 0.006);
+      const fixedPane = box(0.009, h, fixed, glass, -w / 2 + 0.006, base + 0.01, d / 2 - fixed / 2);
+      const closedDoor = box(0.009, h, leaf, glass, -w / 2 + 0.006, base + 0.01, -d / 2 + leaf / 2);
+      for (const pane of [front, fixedPane, closedDoor]) {
+        pane.castShadow = false;
+        pane.userData.glazingStatus = "CONCEPT_NOT_CERTIFIED";
+        g.add(pane);
+      }
+      g.add(box(0.013, h, 0.013, cm, -w / 2 + 0.01, base + 0.01, d / 2 - fixed));
+      g.add(
+        box(0.014, 0.22, 0.018, cm, -w / 2 - 0.025, 1.10, -d / 2 + leaf * 0.72),
+        box(0.014, 0.016, 0.016, cm, -w / 2 - 0.025, 1.00, -d / 2 + leaf * 0.72),
+        box(0.014, 0.016, 0.016, cm, -w / 2 - 0.025, 1.30, -d / 2 + leaf * 0.72)
+      );
+      const x = -w * 0.22, z = d / 2 - 0.045;
+      g.add(
+        rbox(0.13, 0.09, 0.035, cm, x, 1.03, z, 0.01),
+        rod([x, 1.12, z], [x, 2.05, z], 0.012, cm),
+        rod([x, 2.05, z], [x, 2.05, z - 0.21], 0.012, cm),
+        box(0.24, 0.012, 0.24, cm, x, 2.04, z - 0.21)
+      );
+      g.userData.hardwareStudy = { variant: "minimal-glass", door_closed: true, real_hinge_and_swing: "TBD", nominal_tray_mm: 22, glass_height_mm: 1980, west_glass_door_mm: Math.round(leaf * 1000) };
+ else if (f.type === "shower" && f.variant === "walk-in") {
       // A flush wet area, not a second glass enclosure. Use the separate
       // interior divider object for a fixed screen; permit an open entry.
       const metal = mat("#b8c1c6", { metalness: 0.72, roughness: 0.26 });

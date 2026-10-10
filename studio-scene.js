@@ -131,7 +131,34 @@ function makeStudioVariant(f){
       fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
     }
     studioCountertop(g,f,w,d,stone);
-  }else if(f.type==='shower'&&f.variant==='walk-in'){
+  }else if(f.type==='shower'&&f.variant==='minimal-glass'){
+    // CONDITIONAL family shower hardware study: glass on EXPOSED west/front
+    // faces, not against the existing north/east masonry. Door is SHOWN
+    // CLOSED; real pivot, swing, 22mm tray and splash cannot be certified here.
+    const cm=mat('#b7bfc1',{metalness:.73,roughness:.28}),glass=mat('#d3e7e5',{roughness:.10,metalness:0,transparent:true,opacity:.23,depthWrite:false,side:THREE.DoubleSide});
+    const tray=mat('#ebe9e3',{roughness:.68});
+    const h=1.98,base=.022,fixed=Math.min(.33,d*.40),leaf=d-fixed;
+    g.add(box(w,base,d,tray,0,0,0));
+    // Front (south) and west are exposed; east/north ARE physical room walls.
+    const face=box(w,.006,h*.005,cm,0,base,-d/2+.005); // slender threshold rail, NOT top frame
+    g.add(face);
+    const front=box(w,h,.009,glass,0,base+.01,-d/2+.006);
+    const fixedPane=box(.009,h,fixed,glass,-w/2+.006,base+.01,d/2-fixed/2);
+    const closedDoor=box(.009,h,leaf,glass,-w/2+.006,base+.01,-d/2+leaf/2);
+    for(const panel of [front,fixedPane,closedDoor]){panel.castShadow=false;panel.userData.glazingStatus='CONCEPT_NOT_CERTIFIED';g.add(panel);}
+    const zinc=box(.013,h,.013,cm,-w/2+.01,base+.01,d/2-fixed); // clipped joint, NO chunky cage
+    g.add(zinc);
+    g.add(
+      box(.014,.22,.018,cm,-w/2-.025,1.10,-d/2+leaf*.72),
+      box(.014,.016,.016,cm,-w/2-.025,1.0,-d/2+leaf*.72),
+      box(.014,.016,.016,cm,-w/2-.025,1.30,-d/2+leaf*.72)
+    );
+    const x=-w*.22,z=d/2-.045;
+    g.add(rbox(.13,.09,.035,cm,x,1.03,z,.01),rod([x,1.12,z],[x,2.05,z],.012,cm),
+      rod([x,2.05,z],[x,2.05,z-.21],.012,cm),
+      box(.24,.012,.24,cm,x,2.04,z-.21));
+    g.userData.hardwareStudy={variant:'minimal-glass',door_closed:true,real_hinge_and_swing:'TBD',nominal_tray_mm:22,glass_height_mm:1980,west_glass_door_mm:Math.round(leaf*1000)};
+else if(f.type==='shower'&&f.variant==='walk-in'){
     // True open wet area: no default glass cage or raised prefabricated tray.
     // Any fixed splash panel is a separate validated interior object.
     const cm=mat('#b8c1c6',{metalness:.72,roughness:.26}),x=-w*.25,z=-d/2+.09;
