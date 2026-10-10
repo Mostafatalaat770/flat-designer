@@ -22,6 +22,12 @@ Run `node scripts/build-owner-finish-r1.mjs` **after** the owner-board generator
 
 Added two **panel-assumption only** joinery internal studies (buffet and kitchen upper, 18mm sides/backs, two partitions/3 bays) with clear geometric empty boxes and explicit non-capacity disclaimer. Added four unprogrammed lighting scene intents; neither is a vendor quote or qualified MEP drawing.
 
+## P0 functional storage reality — no K4 island/pantry imports
+
+Run `node scripts/build-kitchen-storage-p0-r1.mjs`. Open **P0-Kitchen-Storage.html** in the owner offline ZIP, along with machine-verifiable `P0_KITCHEN_STORAGE_R1.json`, **120-case** one-item trial CSV and **7-site-RFI** CSV. Generator checks canonical/owner/scene and zero demolished walls. Each inventory count and size is an *illustrative sample*, not the owner's real kitchen contents or an approved supplier.
+
+**Important example:** 1800×330×700mm north upper yields 294mm hypothetical clear depth after two 18mm front/back allowances: a 285mm plate + 20mm sensitivity tolerance fails. The 2000×400×800mm buffet yields 364mm hypothetical depth and fits *one sample box only*, but is 5690mm from dishwasher in *straight-line centre-to-centre plan*, not a walkable route. No actual mixed family storage or unloading workflow is certified. K4's ~2.98m3 unapproved full-open cabinetry is excluded from P0. No procurement.
+
 ## Real release prerequisites
 
 1. Entry + six actual chairs with open buffet and shoe inventory/hinge mechanism.

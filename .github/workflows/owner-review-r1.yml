@@ -32,6 +32,8 @@ jobs:
       - run: node scripts/build-owner-release-r1.mjs
       - name: Build source-faithful Option A finishes, lighting and joinery board
         run: node scripts/build-owner-finish-r1.mjs
+      - name: Build kitchen P0 storage tests and site RFI
+        run: node scripts/build-kitchen-storage-p0-r1.mjs
       - name: Verify gate integrity and source immutability
         run: |
           node --input-type=module <<'JS'
@@ -65,6 +67,20 @@ jobs:
           assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('visuals/AB-P0-contact.png'));
 
           assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
+          const kitchen=JSON.parse(fs.readFileSync(d+'P0_KITCHEN_STORAGE_R1.json'));
+          assert.equal(kitchen.schema,'TypeBP0KitchenStorageR1/1');
+          assert.equal(kitchen.source.sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.equal(kitchen.one_item_box_tests.length,120);
+          assert.equal(kitchen.illustrative_item_inventory.length,12);
+          assert.equal(kitchen.site_holds.length,7);
+          assert.ok(kitchen.site_holds.every(x=>x.status==='HOLD'&&x.construction_approved===false));
+          assert.equal(kitchen.cabinets.find(x=>x.key==='north-upper').illustrative_empty_bay_mm.d,294);
+          assert.equal(kitchen.cabinets.find(x=>x.key==='dining-buffet').illustrative_empty_bay_mm.d,364);
+          assert.equal(kitchen.one_item_box_tests.find(x=>x.item_id==='dinner-plates'&&x.unit==='north-upper').status,'SINGLE_ITEM_BOX_FAIL');
+          assert.equal(kitchen.one_item_box_tests.find(x=>x.item_id==='dinner-plates'&&x.unit==='dining-buffet').status,'SINGLE_ITEM_BOX_FIT_ONLY');
+          assert.equal(kitchen.assumptions.real_family_stocktake_received,false);
+          assert.ok(fs.statSync(d+'P0-Kitchen-Storage.html').size>6000);
+          assert.ok(fs.statSync(d+'P0_KITCHEN_120_CASES.csv').size>2000);
           const f=JSON.parse(fs.readFileSync(d+'FINISH_AND_JOINERY_R1.json'));
           assert.equal(f.schema,'TypeBFinishAndLightingR1/1');
           assert.equal(f.status,'DESIGN_INTENT_NOT_SHOP_DRAWINGS');
