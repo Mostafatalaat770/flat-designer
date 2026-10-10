@@ -2291,6 +2291,37 @@ export function createBuilders(scope) {
         fronts(g, -w / 2 + 0.005, 0.08, w - 0.01, 0.72, fz, n, 1, cm, "edge", 0.48);
       }
       studioCountertop(g,f,w,d,stone);
+    } else if (f.type === "shower" && f.variant === "frameless-low-profile") {
+      // FAMILY STUDY ONLY: low profile is a render surrogate, not an approved drain/build-up.
+      // Show slim clear glass side + closed pivot leaf without bulky full-height dark frames.
+      // Pivot leaf and any shower threshold require vendor-specific swing/access validation.
+      const cm = mat("#b5bebc", { metalness: 0.74, roughness: 0.27 });
+      const porcelain = mat("#e7e1d8", { roughness: 0.84 });
+      const clear = mat("#d9eef0", {
+        transparent: true, opacity: 0.18, roughness: 0.08, metalness: 0.02,
+        depthWrite: false, side: THREE.DoubleSide,
+      });
+      const pivot = Math.min(0.58, w * 0.68);
+      const fixed = w - pivot, zFront = d / 2 - 0.006, hingeX = -w / 2 + fixed;
+      g.add(
+        rbox(w, 0.035, d, porcelain, 0, 0, 0, 0.006),
+        box(w * 0.62, 0.003, 0.028, cm, 0, 0.038, -d / 2 + 0.09),
+        box(0.008, 1.96, d - 0.014, clear, w / 2 - 0.007, 0.035, 0),
+      );
+      const sideLight = box(fixed, 1.96, 0.008, clear, -w / 2 + fixed / 2, 0.035, zFront);
+      const door = box(pivot, 1.96, 0.008, clear, hingeX + pivot / 2, 0.035, zFront);
+      sideLight.castShadow = false; door.castShadow = false;
+      g.add(sideLight, door);
+      for (const yy of [0.4, 1.63])
+        g.add(rbox(0.018, 0.078, 0.035, cm, hingeX, 0.035 + yy, zFront + 0.008, 0.004));
+      g.add(rbox(0.017, 0.21, 0.036, cm, w / 2 - 0.087, 1.03, zFront + 0.024, 0.006));
+      const x = -w * 0.25, z = -d / 2 + 0.09;
+      g.add(
+        rbox(0.14, 0.090, 0.035, cm, x, 1.04, z, 0.012),
+        rod([x, 1.13, z], [x, 2.01, z], 0.012, cm),
+        rod([x, 2.01, z], [x, 2.01, z + 0.18], 0.012, cm),
+        box(0.23, 0.012, 0.23, cm, x, 2.00, z + 0.18),
+      );
     } else if (f.type === "shower" && f.variant === "walk-in") {
       // A flush wet area, not a second glass enclosure. Use the separate
       // interior divider object for a fixed screen; permit an open entry.

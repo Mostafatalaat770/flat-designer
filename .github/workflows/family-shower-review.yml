@@ -1,0 +1,60 @@
+name: Family shower - source-identical clear glass vs original cage
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio-core.js"
+      - "studio-scene.js"
+      - "studio/renderer/builders.js"
+      - "studio/renderer/walk-in-shower.test.mjs"
+      - "studio/analysis/family-shower-option*"
+      - "scripts/build-family-shower-study.mjs"
+      - ".github/workflows/family-shower-review.yml"
+      - "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  true-visual-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Renderer compatibility and exact source safety
+        run: node --test studio/renderer/walk-in-shower.test.mjs studio/analysis/family-shower-option.test.mjs
+      - name: Generate exact current and B showroom view snapshots + audit
+        run: node scripts/build-family-shower-study.mjs
+      - name: Install Chrome renderer
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: A - original family shower from 2 current cameras
+        env:
+          RENDER_OUT_DIR: renders/family-shower/A
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/family-shower/A-existing.json
+      - name: B - opt-in frameless low-profile glass from SAME 2 cameras
+        env:
+          RENDER_OUT_DIR: renders/family-shower/B
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/family-shower/B-frameless.json
+      - name: Verify genuine image provenance and no other fixture changed
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const dir='review-evidence/family-shower/';const a=JSON.parse(fs.readFileSync(dir+'A-existing.json','utf8'));const b=JSON.parse(fs.readFileSync(dir+'B-frameless.json','utf8'));const audit=JSON.parse(fs.readFileSync(dir+'audit.json','utf8'));assert.deepEqual(a.views,b.views);assert.equal(audit.status,'DESIGN_ONLY_NOT_FOR_WET_INSTALLATION');for(const v of ['A','B']){const s=v==='A'?a:b;const p='renders/family-shower/'+v+'/';const m=JSON.parse(fs.readFileSync(p+'manifest.json','utf8'));assert.equal(m.scene_revision,s.scene_revision);assert.equal(m.views.length,2);for(const name of m.views){const f=JSON.parse(fs.readFileSync(p+name+'.json','utf8'));assert.equal(f.renderer.engine,'Three.js WebGL');assert.equal(f.scene_revision,s.scene_revision);assert.deepEqual(f.assets.fallbacks,[]);assert.equal(f.assets.pending,0);assert.ok(fs.statSync(p+name+'.png').size>15000);}}console.log('4 real PNGs verified')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: family-shower-original-vs-minimal-glass
+          path: |
+            renders/family-shower/
+            review-evidence/family-shower/
+          retention-days: 30
+          if-no-files-found: warn
