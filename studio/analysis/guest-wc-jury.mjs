@@ -30,7 +30,7 @@ export function guestWcJury(source,domain){
  B.views=copy(A.views);
  const expanded=B.layout.furniture.find(f=>f.id==="starter-26");
  expanded.w=450;expanded.d=250;
- expanded.name="Guest optional wall basin 450×250 / exact same nominal pipe center; as-built hold";
+ expanded.name="Guest basin 450×250 · same pipe center · site approval needed";
  const lit=B.layout.interior.objects.find(o=>o.id==="WC-A1-mirror");
  lit.variant="task-lit";
  lit.material_references.frame="bath-brushed-nickel";
