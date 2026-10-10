@@ -158,7 +158,7 @@ function makeStudioVariant(f){
       rod([x,2.05,z],[x,2.05,z-.21],.012,cm),
       box(.24,.012,.24,cm,x,2.04,z-.21));
     g.userData.hardwareStudy={variant:'minimal-glass',door_closed:true,real_hinge_and_swing:'TBD',nominal_tray_mm:22,glass_height_mm:1980,west_glass_door_mm:Math.round(leaf*1000)};
-else if(f.type==='shower'&&f.variant==='walk-in'){
+  }else if(f.type==='shower'&&f.variant==='walk-in'){
     // True open wet area: no default glass cage or raised prefabricated tray.
     // Any fixed splash panel is a separate validated interior object.
     const cm=mat('#b8c1c6',{metalness:.72,roughness:.26}),x=-w*.25,z=-d/2+.09;

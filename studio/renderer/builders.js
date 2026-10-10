@@ -2324,7 +2324,7 @@ export function createBuilders(scope) {
         box(0.24, 0.012, 0.24, cm, x, 2.04, z - 0.21)
       );
       g.userData.hardwareStudy = { variant: "minimal-glass", door_closed: true, real_hinge_and_swing: "TBD", nominal_tray_mm: 22, glass_height_mm: 1980, west_glass_door_mm: Math.round(leaf * 1000) };
- else if (f.type === "shower" && f.variant === "walk-in") {
+    } else if (f.type === "shower" && f.variant === "walk-in") {
       // A flush wet area, not a second glass enclosure. Use the separate
       // interior divider object for a fixed screen; permit an open entry.
       const metal = mat("#b8c1c6", { metalness: 0.72, roughness: 0.26 });
