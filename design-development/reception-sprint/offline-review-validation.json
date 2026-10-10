@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "frames_checked": 32,
+  "plans_checked": 6,
+  "desktop_and_mobile": true,
+  "javascript_errors": [],
+  "frames": [
+    {
+      "variant": "A-P0",
+      "view_id": "entry-overview",
+      "image_sha256": "ca2cfd44662ecae3e5ea5ff005dce5028bf07918da69ac686dbefa57dcc2da67",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "entry-overview",
+      "image_sha256": "bd3ecdb466aa8eca57d46e16feee6d90ec7596de9805a1dc2511ff07a7c25029",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "living-to-dining",
+      "image_sha256": "35aff812c36b77bc14b6159c65dbd3dfe871766b666c93e31e92e82ece7c227c",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "living-to-dining",
+      "image_sha256": "4118385d4fa6da6ab8fc0f754e4e1121de886d99d1ac68d10eb8c52f7abe7438",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "dining-to-living",
+      "image_sha256": "fef6378f19ed37948e7b8ca1fb7c9b1a453424fadc5bbd64834632766dab3ab0",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "dining-to-living",
+      "image_sha256": "d843707b9219744ed3fa405a78e11078b650c397221378862049c3ab366fa6f4",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "wide-reception",
+      "image_sha256": "c55cc729a3a6615e0560a1bb106407eae922a49febbd314ce3ca6ba37166c885",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "wide-reception",
+      "image_sha256": "12a3ec962e4d0a430d0d21d16fafa3e921e2b621aa4864c487aa03013e4094d2",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "wide-reception-evening",
+      "image_sha256": "2b0d070c2325861a76b375b010a284a7b7f9ed2d1480cea5b9ec9987861bd8e7",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "wide-reception-evening",
+      "image_sha256": "172181ab605dc7ad27a26088db1c0b59d9928138d3af1af2d99f3dd1bf9fbd1b",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "kitchen-relationship",
+      "image_sha256": "a74f488e7dec518de2d4e8cb4f2065043fa7282b6c350fdebc188db123d56ea8",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "kitchen-relationship",
+      "image_sha256": "63d536d5055b2b5a49fc23bd145cd0d05f2962f212fd94c1e2a6ffabbd25422f",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "kitchen-work",
+      "image_sha256": "ac3b9ab3da8170f1011dedaa05c05ccca2ef6bf19907e52bd683bd0ee6eb4e62",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "kitchen-work",
+      "image_sha256": "a24327ac4ae6837bff6cf400640f57c8f086c68b21f21e94dab1a53ad04c7f0f",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P0",
+      "view_id": "seated-tv",
+      "image_sha256": "d0e6f0b6ffa2b5bd6cbb4e80cd8c5bb423388ffa17a5ad8b63535cb8bc93c9cd",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P0",
+      "view_id": "seated-tv",
+      "image_sha256": "585b0138df6d2adbc3539f5334271573b6b81eebb014c650e0f80272db04a7a6",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "entry-overview",
+      "image_sha256": "98620e9d3af5e74acfa59228351fcd355e99c0ecc50f0ef9ef717587223988dc",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "entry-overview",
+      "image_sha256": "68f946208059696eded0a5b4201eaf5d3e493a59b33251b5721061068701506e",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "living-to-dining",
+      "image_sha256": "248391f7978aa25d5d4efdb469af935177fe658e02bf9a89cf723dc04128f4c0",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "living-to-dining",
+      "image_sha256": "007790c14c39f074033be81eaedb9e6c1e2d6b5f77ac715631a83f7c7ed1b58a",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "dining-to-living",
+      "image_sha256": "fef6378f19ed37948e7b8ca1fb7c9b1a453424fadc5bbd64834632766dab3ab0",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "dining-to-living",
+      "image_sha256": "d843707b9219744ed3fa405a78e11078b650c397221378862049c3ab366fa6f4",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "wide-reception",
+      "image_sha256": "0238202d3a4ff429bfc91cf03f16edb7d463e955c4aa485c36729674f456db34",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "wide-reception",
+      "image_sha256": "6e9c615401a5197750722c6039c738e35f36c483daf0d64e14f799fe26606349",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "wide-reception-evening",
+      "image_sha256": "393b3da5d66456ebc8608f72a8dd3d8097ca85dd7eb4cf0c786a7d93befcd31e",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "wide-reception-evening",
+      "image_sha256": "f64b82940c382b894f3a33bc5c12bd566d992c7df64e7afebd90b0e475544a58",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "kitchen-relationship",
+      "image_sha256": "298cd2a62449cee78aa47147bf4d217275efc00ee60cfa448b06de123b07ff7d",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "kitchen-relationship",
+      "image_sha256": "3ec9f7356ae76ff08fa30c1b6b8da05d6b3cca5ca0d35f34a9fb2a386025b996",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "kitchen-work",
+      "image_sha256": "ac3b9ab3da8170f1011dedaa05c05ccca2ef6bf19907e52bd683bd0ee6eb4e62",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "kitchen-work",
+      "image_sha256": "a24327ac4ae6837bff6cf400640f57c8f086c68b21f21e94dab1a53ad04c7f0f",
+      "scene_revision": "scene-a7da4c73"
+    },
+    {
+      "variant": "A-P1-CONDITIONAL",
+      "view_id": "seated-tv",
+      "image_sha256": "d0e6f0b6ffa2b5bd6cbb4e80cd8c5bb423388ffa17a5ad8b63535cb8bc93c9cd",
+      "scene_revision": "scene-9e86635b"
+    },
+    {
+      "variant": "B-P1-CONDITIONAL",
+      "view_id": "seated-tv",
+      "image_sha256": "585b0138df6d2adbc3539f5334271573b6b81eebb014c650e0f80272db04a7a6",
+      "scene_revision": "scene-a7da4c73"
+    }
+  ]
+}

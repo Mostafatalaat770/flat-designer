@@ -1,0 +1,92 @@
+name: Reception Sprint - exact A B and conditional P0 P1 WebGL
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio/analysis/reception-sprint*"
+      - "scripts/*reception-sprint*"
+      - "scripts/export-reception-review.mjs"
+      - "design-development/reception-sprint/**"
+      - "!design-development/reception-sprint/*.md"
+      - ".github/workflows/reception-sprint-review.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture-inputs:
+    runs-on: ubuntu-latest
+    outputs:
+      render: ${{ steps.changed.outputs.render }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 2
+      - id: changed
+        name: Avoid recapturing unchanged scenes for a final narrative-only review
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          node --input-type=module <<'JS'
+          import { execFileSync } from 'node:child_process';
+          import { appendFileSync } from 'node:fs';
+          const files = execFileSync('git', ['diff', '--name-only', 'HEAD^', 'HEAD'], { encoding: 'utf8' }).trim().split('\n').filter(Boolean);
+          const narrativeOnly = files.length > 0 && files.every(p => /^design-development\/reception-sprint\/[^/]+\.md$/.test(p));
+          const unchangedBase = process.env.BASE_SHA === 'cfb7e8dee8621280c87121b6e60f7bb908b12695';
+          const render = !(process.env.EVENT_NAME === 'pull_request' && unchangedBase && narrativeOnly);
+          appendFileSync(process.env.GITHUB_OUTPUT, `render=${render}\n`);
+          console.log(render ? 'Capture inputs or base may have changed: run complete validation and capture.' : 'Only final narrative changed on the same pinned base; retain the linked verified capture.');
+          JS
+  source-function-and-webgl:
+    needs: capture-inputs
+    if: needs.capture-inputs.outputs.render == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CODEX_PRIMARY_RUNTIME_NODE_MODULES: ${{ github.workspace }}/node_modules
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Validate immutable architecture, current decisions and operating-state regressions
+        run: |
+          npm run check
+          node studio/local/workspace-data.mjs
+          npm run check:studio
+          node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - name: Generate dimensioned plans, measured audits and four controlled snapshots
+        run: node scripts/build-reception-sprint.mjs
+      - name: Install existing Playwright WebGL capture runtime
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render exactly matched A B styles on P0 and conditional P1
+        env:
+          RENDER_OUT_DIR: renders/reception-sprint
+          RENDER_CONCURRENCY: "2"
+        run: >-
+          node scripts/render-variants.mjs
+          design-development/reception-sprint/A-P0.json
+          design-development/reception-sprint/B-P0.json
+          design-development/reception-sprint/A-P1-CONDITIONAL.json
+          design-development/reception-sprint/B-P1-CONDITIONAL.json
+      - name: Verify actual PNGs, scene, exact camera, architecture overlay and image checksums; build contact sheets
+        run: node scripts/verify-reception-sprint-renders.mjs
+      - name: Export self-contained owner comparison with unchanged PNGs and source provenance
+        run: node scripts/export-reception-review.mjs . renders/reception-sprint/Review.html
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reception-sprint-AB-P0-P1-source-locked-WebGL
+          path: |
+            renders/reception-sprint/
+            design-development/reception-sprint/
+          if-no-files-found: error
+          retention-days: 30

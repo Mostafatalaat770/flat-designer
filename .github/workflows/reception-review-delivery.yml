@@ -1,0 +1,43 @@
+name: Reception review - final offline evidence delivery
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "design-development/reception-sprint/**"
+      - "scripts/package-reception-review.mjs"
+      - "scripts/export-reception-review-pdf.mjs"
+      - ".github/workflows/reception-review-delivery.yml"
+  workflow_dispatch:
+    inputs:
+      reviewed_render_run:
+        description: "Successful, visually reviewed source-locked render run"
+        default: "38044887863"
+        required: true
+permissions:
+  contents: read
+  actions: read
+jobs:
+  package-reviewed-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      REVIEWED_RENDER_RUN: ${{ inputs.reviewed_render_run || '38044887863' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/download-artifact@v4
+        with:
+          name: reception-sprint-AB-P0-P1-source-locked-WebGL
+          run-id: ${{ env.REVIEWED_RENDER_RUN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: reviewed-capture
+      - name: Verify the exact reviewed capture against current inputs and package final documents
+        run: node scripts/package-reception-review.mjs reviewed-capture review-delivery "$REVIEWED_RENDER_RUN"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reception-final-reviewed-evidence
+          path: review-delivery/
+          if-no-files-found: error
+          retention-days: 90
