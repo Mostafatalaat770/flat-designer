@@ -74,6 +74,13 @@ jobs:
           assert.equal(f.joinery.length,6);
           assert.equal(f.lighting.length,8);
           assert.equal(f.source_floor_conflicts.length,2);
+          assert.ok(f.source_floor_conflicts.every(x=>x.rendered_material_id==='S1-stone'&&x.rendered_material_status==='PRODUCTION_RENDERER_CODE_PRECEDENCE_VERIFIED'));
+          assert.equal(f.illustrative_joinery_internal_prototypes.length,2);
+          assert.equal(f.lighting_scenes.length,4);
+          assert.deepEqual(f.illustrative_joinery_internal_prototypes.map(x=>x.illustrative_clear_per_bay_mm.w),[642.7,576]);
+          assert.ok(f.illustrative_joinery_internal_prototypes.every(x=>x.approved_for_fabrication===false));
+          assert.ok(f.lighting_scenes.every(x=>x.programmed===false));
+
           assert.ok(f.source_floor_conflicts.every(x=>x.assignment_mismatch&&x.material_for_boQ===null));
           assert.ok(f.material_samples.every(x=>x.purchased===false));
           assert.ok(f.lighting.every(x=>x.lumens===null&&x.wattage===null));
@@ -82,7 +89,7 @@ jobs:
           assert.ok(fs.readFileSync(d+'Finishes-and-Joinery.html','utf8').includes('visuals/AB-P0-contact.png'));
           assert.ok(fs.statSync(d+'Finishes-and-Joinery.html').size>10000);
           assert.ok(fs.statSync(d+'JOINERY_CONCEPT_ELEVATIONS.svg').size>1000);
-          for(const name of ['FINISH_SAMPLES.csv','JOINERY_INTENT.csv','LIGHTING_INTENT.csv'])
+          for(const name of ['FINISH_SAMPLES.csv','JOINERY_INTENT.csv','LIGHTING_INTENT.csv','JOINERY_INTERNAL_PROTOTYPES.csv','LIGHTING_SCENES.csv'])
             assert.ok(fs.statSync(d+name).size>500);
 
           JS

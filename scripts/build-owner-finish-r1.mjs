@@ -51,19 +51,33 @@ assert.equal(intent.length,10);
 for(const x of intent)assert.ok(/^#[a-fA-F0-9]{6}$/.test(x.color));
 const surface=source.layout.interior.surface_materials;
 const decorated=source.layout.decor.saved[source.layout.decor.active].rooms;
+// Verify the ACTUAL production renderer precedence, not merely the JSON
+// vocabulary. The explicit interior floor material is the winning 3D layer.
+// If builders.js changes its precedence, fail instead of silently pricing tiles.
+const buildRenderer=read("studio/renderer/builders.js");
+const floorSourcePattern=/interiorSurfaceMaterial\s*\(\s*"FLOOR-"\s*\+\s*r\.id\s*,\s*floorMat\s*\(\s*state\.rooms\[r\.id\]\.mat\s*\)\s*,\s*"floor"\s*\)/;
+const surfaceOverridePattern=/const material = state\.interior\?\.surface_materials\[id\];\s*if \(!material\) return fallback;/;
+assert.match(buildRenderer,floorSourcePattern,"3D production floor source precedence changed");
+assert.match(buildRenderer,surfaceOverridePattern,"3D explicit-surface-over-fallback precedence changed");
 const floors=["RECP-01","KIT-01"].map(room=>{
  const key="FLOOR-"+room;
- const srcMaterial=surface[key],decorPreset=decorated[room];
- const conflict=srcMaterial!==decorPreset;
+ const srcMaterial=surface[key],roomFallback=source.layout.rooms[room].mat,decorPreset=decorated[room];
  assert.equal(srcMaterial,"S1-stone");
- assert.ok(conflict,"Expected pre-existing discrepancy: do not quietly mark floor resolved");
- return {room,interior_surface_material_id:srcMaterial,active_decor_preset_material_id:decorPreset,
-   assignment_mismatch:true,
-   provisional_visual_direction:"S1-stone (from explicit interior surface map)",
+ assert.ok(mats[srcMaterial],"Renderer-referenced surface material must be in the material catalogue");
+ assert.equal(roomFallback,decorPreset,"Preset and room fallback expected to be aligned");
+ assert.notEqual(srcMaterial,roomFallback,"Known legacy layer mismatch must remain disclosed");
+ return {room,interior_surface_material_id:srcMaterial,room_state_fallback_material_id:roomFallback,
+   active_decor_preset_material_id:decorPreset,assignment_mismatch:true,
+   rendered_material_id:srcMaterial,rendered_material_status:"PRODUCTION_RENDERER_CODE_PRECEDENCE_VERIFIED",
+   rendering_precedence:"interior.surface_materials[FLOOR-room] -> otherwise layout.rooms[room].mat -> generic floorMat fallback",
+   original_renderer_source:"studio/renderer/builders.js buildArch/interiorSurfaceMaterial",
+   product_name:"Quiet limestone-look porcelain (generic shader; no SKU)",
+   nominal_colour_hex:mats[srcMaterial].base_colour, actual_vendor_product_selected:false,
    material_for_boQ:null,
-   required_action:"Resolve precedence and actual rendered surface ID, then confirm full-size real porcelain sample/transition before specifying quantity or supplier"};
+   required_action:"Renderer resolved to S1-stone, but field floor levels, tested tile sample, slip/grout transitions, manufacturer data and owner approval still pending"};
 });
 assert.deepEqual(floors.map(z=>z.active_decor_preset_material_id),["lightoak","tile800"]);
+assert.ok(floors.every(z=>z.rendered_material_id==="S1-stone"&&z.material_for_boQ===null));
 const isDim=(id,w,d)=>{const f=find(id);assert.equal(f.w??f.width_mm,w);assert.equal(f.d??f.depth_mm,d);return f};
 const table=isDim("starter-35",2000,950);
 const sofa=isDim("starter-28",2880,990);
@@ -104,6 +118,39 @@ const joinery=[
  check:"Finished apertures, exact SKU cutout, inlet/drain/accessibility, plinth fronts and appliance extraction"}
 ];
 assert.equal(joinery.length,6);
+// Nominal usable clear-box PROTOTYPE only; all 18mm widths/panels/backs,
+// doors, dividers and shelf allocations below are explicitly ASSUMED.
+// Never present computed volume as actual usable storage or shop-drawing size.
+const internals=[
+ {id:"I01",corresponding_unit:"J01",source_id:"A-dining-sideboard",
+  source_external_mm:{w:2000,d:400,h:800},
+  assumed_panel_mm:18,assumed_side_panels:2,assumed_internal_partitions:2,
+  assumed_top_bottom_panels:2,assumed_back_mm:18,assumed_front_allowance_mm:18,
+  nominal_bays:3,
+  sample_cubby_function:["Dining plates and serving bowls","Cutlery, napkins and frequently used tableware","Occasional hosting and low-frequency glassware"],
+  supplier_holds:["Real shelf thickness/spacing and drawer runners","Front swing vs all six chairs and buffet service access","Anchoring, usable clearances and weight of crockery","Actual buffet clearance is a polygon simulation only"]},
+ {id:"I02",corresponding_unit:"J04",source_id:"KIT-A1-upper-north",
+  source_external_mm:{w:1800,d:330,h:700},
+  assumed_panel_mm:18,assumed_side_panels:2,assumed_internal_partitions:2,
+  assumed_top_bottom_panels:2,assumed_back_mm:18,assumed_front_allowance_mm:18,
+  nominal_bays:3,
+  sample_cubby_function:["Everyday cups and mugs near sink (location must be confirmed)","Tea, coffee, lightweight dry goods","Less-used tableware; never heavy objects at difficult reach"],
+  supplier_holds:["Source notes a 40mm blind-corner relief at west junction, not deducted from calculation","Wall fixing strength, actual finished clearance and reachable shelf heights","Hood/service access and grease cleanup","No manufacturer hardware or usable storage capacity validated"]}
+].map(x=>{
+ const {w,d,h}=x.source_external_mm,p=x.assumed_panel_mm;
+ const internalWidth=w-p*x.assumed_side_panels-p*x.assumed_internal_partitions;
+ const usableD=d-x.assumed_back_mm-x.assumed_front_allowance_mm;
+ const usableH=h-p*x.assumed_top_bottom_panels;
+ assert.ok(internalWidth>0&&usableD>0&&usableH>0);
+ return {...x,illustrative_clear_per_bay_mm:{
+   w:Math.round(internalWidth/x.nominal_bays*10)/10,d:usableD,h:usableH},
+  illustrative_empty_volume_l:Math.round((internalWidth*usableD*usableH/1e6)*10)/10,
+  limit:"Bare geometric upper-bound based only on assumed panels; not actual shelves or certified storage capacity",
+  actual_hardware_selected:false,approved_for_fabrication:false};
+});
+assert.equal(internals.length,2);
+assert.deepEqual(internals.map(x=>x.illustrative_clear_per_bay_mm.w),[642.7,576]);
+assert.deepEqual(internals.map(x=>x.illustrative_clear_per_bay_mm.d),[364,294]);
 const lighting=[
  {id:"L01",zone:"Reception general",source_condition:"Source room lighting=track-lamps, 3000K; no as-built circuit",
  design:"Low-glare aimable ambient track/spot layers without lowering the already 2500mm net ceiling",
@@ -131,6 +178,13 @@ const lighting=[
  fixture_count:null,lumens:null,wattage:null,beam_angle:null,mounting_height:null,authority:"Qualified wet-area MEP",gate:"Wet-zone fixture rating, local code, safe isolation, actual ceiling and waterproofing"}
 ];
 assert.equal(lighting.length,8);
+const lightingScenes=[
+ {name:"Everyday home",layers:["L01","L02","L05","L06"],intent:"Gentle ambient + sofa task + kitchen worktop; no fixed dimmer percentages"},
+ {name:"Dinner with family or guests",layers:["L01","L03","L04","L05"],intent:"Comfortable six-person dining, soft buffet accent and safe kitchen food work"},
+ {name:"TV / relaxing",layers:["L02","L04"],intent:"Low reflection, sofa/task lighting and optional indirect accent; screen reflections must be tested"},
+ {name:"Night path",layers:["L07","L08"],intent:"Soft accessible navigation without opening additional walls; verify real switch routes and wet safety"}
+].map(x=>({...x,programmed:false,physical_circuit_approved:false,brightness_percent:null}));
+assert.equal(lightingScenes.length,4);
 assert.equal(source.layout.studio.rooms["RECP-01"].temperature,3000);
 assert.equal(source.layout.studio.rooms["KIT-01"].temperature,3000);
 assert.ok(lighting.every(z=>z.lumens===null&&z.wattage===null));
@@ -143,7 +197,7 @@ const design={
   tv_console_mm:[tv.w,tv.d],buffet_mm:[buffet.width_mm,buffet.depth_mm,buffet.height_mm],
   shoe_unit_model_only_mm:[shoe.w,shoe.d],kitchen_north_upper_mm:[upper.width_mm,upper.depth_mm,upper.height_mm],
   oven_run_mm:[ovenRun.w,ovenRun.d],DW_nominal_box_mm:[DW.w,DW.d],washer_nominal_box_mm:[washer.w,washer.d]},
- joinery,lighting,
+ joinery,illustrative_joinery_internal_prototypes:internals,lighting,lighting_scenes:lightingScenes,
  safety:{source_geometry_modified:false,wall44_demolition_authorized:false,actual_products_purchased:false,
   designer_sample_signoff:false,first_fix_or_covered_ceilings_authorized:false,
   actual_floor_boQ_released:false}
@@ -158,6 +212,14 @@ fs.writeFileSync(dest+"/JOINERY_INTENT.csv",csv([
  ["ID","Source object","Name","Exterior width mm","Exterior depth mm","Exterior height mm or TBD","Finish ID","Status","Shop drawing / operation gate"],
  ...joinery.map(j=>[j.id,j.source_id,j.name,j.width_mm,j.depth_mm,j.height_mm??"TBD",j.finish,j.status,j.check])
 ]));
+fs.writeFileSync(dest+"/JOINERY_INTERNAL_PROTOTYPES.csv",csv([
+ ["ID","Unit source","Assumption panel thickness mm","Assumed dividers","Illustrative empty bay clear W mm","Clear D mm","Clear H mm","Bare geometric sum liters NOT USABLE CAPACITY","Actual approval"],
+ ...internals.map(x=>[x.id,x.source_id,x.assumed_panel_mm,x.assumed_internal_partitions,x.illustrative_clear_per_bay_mm.w,x.illustrative_clear_per_bay_mm.d,x.illustrative_clear_per_bay_mm.h,x.illustrative_empty_volume_l,"NO"])
+]));
+fs.writeFileSync(dest+"/LIGHTING_SCENES.csv",csv([
+ ["Scene","Layer IDs","Intent","Actually wired/programmed?"],
+ ...lightingScenes.map(x=>[x.name,x.layers.join(" + "),x.intent,"NO"])
+]));
 fs.writeFileSync(dest+"/LIGHTING_INTENT.csv",csv([
  ["ID","Zone","Existing source lighting status","Design layer","Fixture count or TBD","Beam/lux/power specified?","Electrician/owner check"],
  ...lighting.map(x=>[x.id,x.zone,x.source_condition,x.design,x.fixture_count??"TBD","NO",x.gate])
@@ -166,9 +228,11 @@ const hex=x=>/^#[\da-f]{6}$/i.test(x)?x:"#ccc";
 const swatch=intent.map(x=>'<div class="swatch"><div class="color" style="background:'+hex(x.color)+'"></div><b>'+x.name+'</b><small>'+x.color+' · '+x.material_id+'</small><p>'+x.intention+'</p></div>').join("");
 const joinCards=joinery.map(j=>'<article class="unit"><div class="number">'+j.id+'</div><div><h3>'+j.name+'</h3><p>'+j.width_mm+' × '+j.depth_mm+' × '+(j.height_mm??"TBD")+' mm <small>(W × D × H)</small></p><p>'+j.intent+'</p><small>'+j.status+' · '+j.check+'</small></div></article>').join("");
 const lightCards=lighting.map(x=>'<article class="light"><b>'+x.id+' · '+x.zone+'</b><p>'+x.design+'</p><small>'+x.source_condition+'</small><small> / '+x.gate+'</small></article>').join("");
+const prototypes=internals.map(x=>'<article class="unit"><div class="number">'+x.id+'</div><div><h3>Assumption-based '+x.source_id+'</h3><p>Model external '+x.source_external_mm.w+'×'+x.source_external_mm.d+'×'+x.source_external_mm.h+' mm</p><p>Three empty bays ~'+x.illustrative_clear_per_bay_mm.w+' × '+x.illustrative_clear_per_bay_mm.d+' × '+x.illustrative_clear_per_bay_mm.h+' mm each <b>(assuming 18mm panels/back/front)</b></p><small>Not usable capacity, not shop drawing. Real shelf, hardware, blind corner, wall anchorage and door swing TBD.</small></div></article>').join("");
+const sceneCards=lightingScenes.map(x=>'<article class="light"><b>'+x.name+'</b><p>'+x.intent+'</p><small>Concept layers: '+x.layers.join(' + ')+' · NOT actual wiring or presets</small></article>').join("");
 const template=read("design-development/release-r1/Finishes-and-Joinery.template.html");
-let final=template.replace("<!-- SWATCHES -->",swatch).replace("<!-- JOINERY -->",joinCards).replace("<!-- LIGHTS -->",lightCards);
-assert.ok(!final.includes("<!-- SWATCHES -->")&&!final.includes("<!-- JOINERY -->")&&!final.includes("<!-- LIGHTS -->"));
+let final=template.replace("<!-- SWATCHES -->",swatch).replace("<!-- JOINERY -->",joinCards).replace("<!-- LIGHTS -->",lightCards).replace("<!-- INTERNALS -->",prototypes).replace("<!-- SCENES -->",sceneCards);
+assert.ok(!final.includes("<!-- SWATCHES -->")&&!final.includes("<!-- JOINERY -->")&&!final.includes("<!-- LIGHTS -->")&&!final.includes("<!-- INTERNALS -->")&&!final.includes("<!-- SCENES -->"));
 fs.writeFileSync(dest+"/Finishes-and-Joinery.html",final);
 function dim(a,b,y,desc){return '<line x1="'+a+'" y1="'+y+'" x2="'+b+'" y2="'+y+'" stroke="#5a6b61" stroke-width="1.4"/><path d="M'+a+' '+(y-7)+'v14 M'+b+' '+(y-7)+'v14" stroke="#5a6b61"/><text x="'+((a+b)/2)+'" y="'+(y-9)+'" font-size="16" text-anchor="middle">'+desc+'</text>';}
 function elevBox(x,y,w,h,label,id,width,depth,height){

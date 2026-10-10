@@ -18,7 +18,9 @@ Source hierarchy is checked automatically: original canonical -> current GitHub 
 
 Run `node scripts/build-owner-finish-r1.mjs` **after** the owner-board generator. In the same ZIP open **Finishes-and-Joinery.html** for original matched WebGL images, 10 material/color samples (generic visual proxies), 6 dimensioned joinery concept cards and SVG, and 8 lighting-layer intentions. Includes `FINISH_SAMPLES.csv`, `JOINERY_INTENT.csv`, `LIGHTING_INTENT.csv` and a machine-verifiable `FINISH_AND_JOINERY_R1.json` for workshop/supplier RFIs, not shop drawings.
 
-**Important source conflict:** `interior.surface_materials` calls both public floors `S1-stone`, while active `decor.saved.warm.rooms` still says reception `lightoak` and kitchen `tile800`. Our board favors stone as a *visual development direction* without asserting which field the active renderer prioritizes. **No floor BOQ, installation, supplier or thresholds** until a verified material ID and real sample reconciliation. All hex colors are generic simulations, not calibrated chips.
+**Renderer precedence VERIFIED in production builders:** `studio/renderer/builders.js` `buildArch()` uses `interiorSurfaceMaterial('FLOOR-' + roomId, floorMat(state.rooms[roomId].mat), 'floor')`; the explicit surface key takes priority, falling back to the saved room material only when not present. In A/P0 both `FLOOR-RECP-01` and `FLOOR-KIT-01` therefore **render S1-stone** (GENERIC material #DCD3C5). Legacy active decor preset still lists `lightoak` and `tile800` as dormant fallbacks. **No floor BOQ, installation, supplier or threshold approval**: rendered appearance is not a specified tile. The new generator asserts this renderer code contract and records which layer wins. All hex colors are generic simulations, not calibrated chips.
+
+Added two **panel-assumption only** joinery internal studies (buffet and kitchen upper, 18mm sides/backs, two partitions/3 bays) with clear geometric empty boxes and explicit non-capacity disclaimer. Added four unprogrammed lighting scene intents; neither is a vendor quote or qualified MEP drawing.
 
 ## Real release prerequisites
 
