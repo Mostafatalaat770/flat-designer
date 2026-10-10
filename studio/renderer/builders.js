@@ -4335,6 +4335,21 @@ export function createBuilders(scope) {
         break;
       }
       case "vanity": {
+        if (f.variant === "floating-compact") {
+          const wood=mat(c,{roughness:.53}),stone=mat("#faf8f3",{roughness:.22}),cm=mat("#b7bdbe",{metalness:.76,roughness:.27});
+          g.add(rbox(w,.225,Math.max(.13,d-.025),wood,0,.525,0,.012));
+          g.add(rbox(w+.005,.046,d,stone,0,.755,0,.008));
+          g.add(box(w*.58,.008,.012,cm,0,.655,d/2+.006));
+          const rb=Math.min(.12,w*.33,d*.45);
+          const bowl=lathe([[0,0],[rb*.50,0],[rb*.80,.017],[rb,.06],[rb,.08]],ceramic({side:THREE.DoubleSide}),0,.804,0,32);
+          bowl.scale.z=Math.min(1,(d-.045)/(rb*2));g.add(bowl);
+          const z=-d/2+.047;
+          g.add(cyl(.019,.02,.015,cm,0,.805,z,16),
+            tube([[0,.815,z],[0,1.008,z],[0,1.051,z+.045],[0,1.018,z+.105]],.009,cm));
+          g.userData.guestCompactVanity={concept:"floating-compact",status:"NOT_FOR_INSTALLATION",floor_clearance_mm:525,
+            physical_sink_envelope_mm:[f.w,f.d],real_wall_bracket_drain_and_bowl_fit_approved:false};
+          break;
+        }
         const vm = mat(c, { roughness: 0.5 }),
           stone = mat("#fafafa", { roughness: 0.18 }),
           nb = w >= 1.1 ? 2 : 1,

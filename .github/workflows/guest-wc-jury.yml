@@ -1,0 +1,59 @@
+name: Guest WC real-handwash A/B and exact v55 WebGL
+on:
+  pull_request:
+    branches: [master]
+    paths:
+      - "studio-core.js"
+      - "studio-scene.js"
+      - "studio/renderer/builders.js"
+      - "studio/analysis/guest-wc-jury*"
+      - "scripts/build-guest-wc-jury.mjs"
+      - "design-development/GUEST_WC_COMFORT_JURY_20261010.md"
+      - ".github/workflows/guest-wc-jury.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-matched-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 44
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - name: Source v55, room unchanged and practical WC geometry
+        run: node --test studio/analysis/guest-wc-jury.test.mjs studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs
+      - name: Generate A/B working room scenes and dimensional decision packet
+        run: node scripts/build-guest-wc-jury.mjs
+      - name: Install Chrome WebGL capture dependencies
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Render exact original guest WC A, three original human-eye cameras
+        env:
+          RENDER_OUT_DIR: renders/guest-wc/A
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/guest-wc-jury/A-original.json
+      - name: Render deeper guest basin B from literally same cameras
+        env:
+          RENDER_OUT_DIR: renders/guest-wc/B
+          RENDER_CONCURRENCY: "1"
+        run: node scripts/render-snapshot.mjs review-evidence/guest-wc-jury/B-deeper-basin.json
+      - name: Verify 6 true-frame cameras, scene and WebGL provenance
+        run: |
+          node --input-type=module -e "import fs from 'node:fs';import assert from 'node:assert/strict';const p='review-evidence/guest-wc-jury/';const A=JSON.parse(fs.readFileSync(p+'A-original.json'));const B=JSON.parse(fs.readFileSync(p+'B-deeper-basin.json'));assert.deepEqual(A.views,B.views);for(const [id,s] of [['A',A],['B',B]]){const dir='renders/guest-wc/'+id+'/';const m=JSON.parse(fs.readFileSync(dir+'manifest.json'));assert.equal(m.scene_revision,s.scene_revision);assert.deepEqual(m.views,s.views.map(v=>v.id));for(const view of s.views){const f=dir+view.id;assert.ok(fs.statSync(f+'.png').size>15000);const x=JSON.parse(fs.readFileSync(f+'.json'));assert.equal(x.scene_revision,s.scene_revision);assert.equal(x.renderer.engine,'Three.js WebGL');assert.equal(x.assets.pending,0);assert.deepEqual(x.assets.fallbacks,[]);assert.deepEqual(x.camera.position,view.camera.position);assert.deepEqual(x.camera.target,view.camera.target)}}console.log('Six source-faithful current guest WC A/B WebGL frames')"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: guest-WC-source-real-handwash-350-vs-450
+          path: |
+            renders/guest-wc/
+            review-evidence/guest-wc-jury/
+          retention-days: 30
+          if-no-files-found: warn

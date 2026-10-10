@@ -124,6 +124,20 @@ function makeStudioVariant(f){
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
     if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
+  }else if(f.type==='vanity'&&f.variant==='floating-compact'){
+    // Opt-in suspended compact guest vanity: footprint, tap/pipe center and wall remain
+    // unchanged; visual bracket, water supply and bowl fit are NOT engineer approved.
+    const wood=mat(c,{roughness:.53}),stone=mat('#faf8f3',{roughness:.22}),cm=mat('#b7bdbe',{metalness:.76,roughness:.27});
+    g.add(rbox(w,.225,Math.max(.13,d-.025),wood,0,.525,0,.012));
+    g.add(rbox(w+.005,.046,d,stone,0,.755,0,.008));
+    g.add(box(w*.58,.008,.012,cm,0,.655,d/2+.006));
+    const rb=Math.min(.12,w*.33,d*.45),bowl=lathe([[0,0],[rb*.50,0],[rb*.80,.017],[rb,.06],[rb,.08]],ceramic({side:THREE.DoubleSide}),0,.804,0,32);
+    bowl.scale.z=Math.min(1,(d-.045)/(rb*2));g.add(bowl);
+    const z=-d/2+.047;
+    g.add(cyl(.019,.02,.015,cm,0,.805,z,16),
+      tube([[0,.815,z],[0,1.008,z],[0,1.051,z+.045],[0,1.018,z+.105]],.009,cm));
+    g.userData.guestCompactVanity={concept:"floating-compact",status:"NOT_FOR_INSTALLATION",floor_clearance_mm:525,
+      physical_sink_envelope_mm:[f.w,f.d],real_wall_bracket_drain_and_bowl_fit_approved:false};
   }else if(f.type==='counter'){
     const assigned=interiorMaterial(state,f.material_id),cm=assigned?.category==='wood'?woodM(assigned.base_colour):mat(c,{roughness:.45}),stone=mat('#dcd7cf',{roughness:.22}),n=Math.max(1,Math.round(w/.6)),fz=d/2-.04;
     if(!studioCounterJoinery(g,f,w,d,cm)){
