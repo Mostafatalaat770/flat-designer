@@ -25,6 +25,23 @@ Run \`node scripts/sprint3-shoe-sku-screen.mjs\` after \`npm run build\` and \`n
 - Report independently: static cabinet/site-face fit, source domain hard failures, open-panel/main-door collision, user/main-door collision, and person-to-nearest-chair gap.
 - **500 mm is just a screening sensitivity** — neither a legal clearance nor proof of passage or emergency exit. A hypothetical green outcome would still need physical mockup.
 
+## Reproducible CI result (2026-10-10)
+
+**PASS:** [GitHub Actions run #38052569866](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38052569866). The generator completed with 544/544 scenario records and original-source regression at 15 mm. [Original evidence artifact](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38052569866/artifacts/11670001800) includes JSON with every trial and an SVG summary.
+
+**Core verdict: 0/544 scenarios satisfied the complete hypothetical 500mm screen.** Tested four cabinet categories, 17 centres each, four assumed door projections and two widths of standing user. This statement applies only to those discrete samples, not all possible shoe designs or household behaviours.
+
+| Product | Shoe-user vs +450mm chair at original centre (opening 200mm, person 600mm) | Best gap across sampled positions/projections for a 600mm user | Screen passes / 136 |
+| --- | ---: | ---: | ---: |
+| Unspecified 700×240 custom concept | 15mm | 135mm | 0 |
+| TRONES two stacked | **45mm** | 165mm | 0 |
+| TRONES three stacked | **45mm** | 165mm | 0 |
+| BISSA two compartments | **0mm, footprint contact in the proxy** | 115mm (some non-door-clear states); at most 95mm when static/open/user door screens clear | 0 |
+
+The first table measurement is a **polygon gap**, not a walking width. **Even 165mm is not a viable concurrent passing width.** Choosing TRONES just because it is slimmer improves the cabinet box and standing-user envelope slightly but **does not solve** simultaneous shoe use with all six chairs withdrawn. None of the calculated values certifies egress, accessible passage, real cabinet operation or legal compliance.
+
+**Design implication:** preserve the dining positions and buffet while prioritising an entry routine and a daily/reserve storage split. Candidate solution: four everyday pairs in two stacked TRONES-size units (or a comparably shallow custom case) and remaining pairs in **verified** closed storage outside the public entry, with a household policy of one person operating the shoe unit at a time. This is an operational proposal, not owner-approved installation. Three stacked TRONES units may interfere with the mirror; BISSA gains manufacturer-rated capacity but sacrifices depth. No unit should be purchased or built before physical verification.
+
 ## Recommendation / decision gate
 
 Keep **Option A Calm Contemporary** as the aesthetic lead and preserve the **2,000×950 mm six-seat dining table**. Do not shift the table/buffet or remove the wall just to make a green number.
