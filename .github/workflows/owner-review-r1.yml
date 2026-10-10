@@ -30,6 +30,8 @@ jobs:
           github-token: ${{ github.token }}
           run-id: 38046581713
       - run: node scripts/build-owner-release-r1.mjs
+      - name: Build source-faithful Option A finishes, lighting and joinery board
+        run: node scripts/build-owner-finish-r1.mjs
       - name: Verify gate integrity and source immutability
         run: |
           node --input-type=module <<'JS'
@@ -63,6 +65,26 @@ jobs:
           assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('visuals/AB-P0-contact.png'));
 
           assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
+          const f=JSON.parse(fs.readFileSync(d+'FINISH_AND_JOINERY_R1.json'));
+          assert.equal(f.schema,'TypeBFinishAndLightingR1/1');
+          assert.equal(f.status,'DESIGN_INTENT_NOT_SHOP_DRAWINGS');
+          assert.equal(f.provenance.source_sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.equal(f.provenance.net_ceiling_mm,2500);
+          assert.equal(f.material_samples.length,10);
+          assert.equal(f.joinery.length,6);
+          assert.equal(f.lighting.length,8);
+          assert.equal(f.source_floor_conflicts.length,2);
+          assert.ok(f.source_floor_conflicts.every(x=>x.assignment_mismatch&&x.material_for_boQ===null));
+          assert.ok(f.material_samples.every(x=>x.purchased===false));
+          assert.ok(f.lighting.every(x=>x.lumens===null&&x.wattage===null));
+          assert.ok(f.joinery.every(x=>x.status!=='APPROVED'));
+          assert.ok(Object.values(f.safety).every(x=>x===false));
+          assert.ok(fs.readFileSync(d+'Finishes-and-Joinery.html','utf8').includes('visuals/AB-P0-contact.png'));
+          assert.ok(fs.statSync(d+'Finishes-and-Joinery.html').size>10000);
+          assert.ok(fs.statSync(d+'JOINERY_CONCEPT_ELEVATIONS.svg').size>1000);
+          for(const name of ['FINISH_SAMPLES.csv','JOINERY_INTENT.csv','LIGHTING_INTENT.csv'])
+            assert.ok(fs.statSync(d+name).size>500);
+
           JS
           git diff --exit-code -- render-snapshots/current.json design-development/decision-registry.json design-development/reception-sprint/A-P0.json dist/sources
       - name: Upload owner and field handoff

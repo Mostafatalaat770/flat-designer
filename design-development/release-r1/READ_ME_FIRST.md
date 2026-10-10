@@ -14,6 +14,12 @@ Run `node scripts/build-owner-release-r1.mjs`, or download the GitHub Action out
 
 Source hierarchy is checked automatically: original canonical -> current GitHub v55 source -> matching A/B furniture -> opt-in *render-only* P1 overlay -> model test measurements. No cloud saves or canonical layout writes.
 
+## Source-faithful finishes and interior detailing
+
+Run `node scripts/build-owner-finish-r1.mjs` **after** the owner-board generator. In the same ZIP open **Finishes-and-Joinery.html** for original matched WebGL images, 10 material/color samples (generic visual proxies), 6 dimensioned joinery concept cards and SVG, and 8 lighting-layer intentions. Includes `FINISH_SAMPLES.csv`, `JOINERY_INTENT.csv`, `LIGHTING_INTENT.csv` and a machine-verifiable `FINISH_AND_JOINERY_R1.json` for workshop/supplier RFIs, not shop drawings.
+
+**Important source conflict:** `interior.surface_materials` calls both public floors `S1-stone`, while active `decor.saved.warm.rooms` still says reception `lightoak` and kitchen `tile800`. Our board favors stone as a *visual development direction* without asserting which field the active renderer prioritizes. **No floor BOQ, installation, supplier or thresholds** until a verified material ID and real sample reconciliation. All hex colors are generic simulations, not calibrated chips.
+
 ## Real release prerequisites
 
 1. Entry + six actual chairs with open buffet and shoe inventory/hinge mechanism.
