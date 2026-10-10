@@ -93,7 +93,7 @@ async function sheet(name, pairs, cols = 2) {
     53,
   );
   ctx.fillText(
-    "P1-CONDITIONAL = wall 44 render omission; NOT FOR CONSTRUCTION. Image pixels inside each panel are unchanged.",
+    "P1 = conditional wall 44 omission; NOT FOR CONSTRUCTION. Scaled, unretouched thumbnails; original PNGs retained.",
     22,
     75,
   );
@@ -107,7 +107,11 @@ async function sheet(name, pairs, cols = 2) {
     ctx.drawImage(img, x + 10, y + 58, 700, 394);
     ctx.fillStyle = "#302b25";
     ctx.font = "bold 15px sans-serif";
-    ctx.fillText(`${variant} · ${id} · ${r.scene_revision}`, x + 12, y + 19);
+    ctx.fillText(
+      `${variant.replace("P1-CONDITIONAL", "P1 HOLD")} · ${id} · ${r.scene_revision}`,
+      x + 12,
+      y + 19,
+    );
     ctx.font = "11px sans-serif";
     ctx.fillText(
       `PNG ${r.image_sha256.slice(0, 16)} | camera ${r.camera_signature_sha256.slice(0, 12)} | architecture ${r.architecture_sha256.slice(0, 12)}`,

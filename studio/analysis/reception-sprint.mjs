@@ -667,8 +667,12 @@ export function buildReceptionSprint(source, domain) {
     s.layout.interior.surface_materials["WALL-RECP-01-09"] = A
       ? "S1-stone"
       : "S1-taupe";
-    for (const id of ["starter-40", "starter-30"])
+    for (const id of ["starter-40", "starter-30"]) {
       get(s, id).material_id = A ? "S1-oak" : "S1-walnut";
+      // Catalog furniture uses its explicit colour; keep the semantic material
+      // and the production viewer's visible tint consistent.
+      get(s, id).color = A ? "#BBA184" : "#79624D";
+    }
     get(s, "starter-35").color = A ? "#DCD3C5" : "#BAAB95";
     get(s, "starter-29").color = A ? "#CDBBA4" : "#A99177";
     get(s, "starter-28").color = A ? "#E0D7C7" : "#D1C2AC";

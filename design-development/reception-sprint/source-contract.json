@@ -1,7 +1,7 @@
 {
   "schema": "TypeBReceptionSprintContract/1",
   "base_git_commit": "cfb7e8dee8621280c87121b6e60f7bb908b12695",
-  "render_git_commit": "6e939df0c8be86467c7b3b242cdefe2310f0397c",
+  "render_git_commit": null,
   "source_path": "render-snapshots/current.json",
   "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
   "source_scene": "scene-9cf45a73",
@@ -51,17 +51,17 @@
   "variants": [
     {
       "key": "A-P0",
-      "scene_revision": "scene-1eeecf9",
+      "scene_revision": "scene-9e86635b",
       "architecture_variant": null
     },
     {
       "key": "B-P0",
-      "scene_revision": "scene-4f7156f",
+      "scene_revision": "scene-a7da4c73",
       "architecture_variant": null
     },
     {
       "key": "A-P1-CONDITIONAL",
-      "scene_revision": "scene-1eeecf9",
+      "scene_revision": "scene-9e86635b",
       "architecture_variant": {
         "id": "semi-open-dry-portal-only-v55-20261010",
         "name": "P1 kitchen-facing upper door-return removal; conditional 1207mm aperture",
@@ -90,7 +90,7 @@
     },
     {
       "key": "B-P1-CONDITIONAL",
-      "scene_revision": "scene-4f7156f",
+      "scene_revision": "scene-a7da4c73",
       "architecture_variant": {
         "id": "semi-open-dry-portal-only-v55-20261010",
         "name": "P1 kitchen-facing upper door-return removal; conditional 1207mm aperture",

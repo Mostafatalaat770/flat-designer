@@ -3,7 +3,7 @@
   "name": "A Calm Contemporary / P1-F1 CONDITIONAL WALL-44 STUDY",
   "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
   "source_scene_revision": "scene-4821689",
-  "scene_revision": "scene-1eeecf9",
+  "scene_revision": "scene-9e86635b",
   "storage_revision": 55,
   "layout": {
     "modelVersion": "0.2.2",
@@ -389,7 +389,7 @@
         "w": 1800,
         "d": 380,
         "rot": 90,
-        "color": "#B88C5E",
+        "color": "#BBA184",
         "status": "EXPLORATORY",
         "variant": "style",
         "material_id": "S1-oak"
@@ -506,7 +506,7 @@
         "w": 700,
         "d": 240,
         "rot": 180,
-        "color": "#BCA98F",
+        "color": "#BBA184",
         "status": "EXPLORATORY",
         "variant": "style",
         "material_id": "S1-oak"

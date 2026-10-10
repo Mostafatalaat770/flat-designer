@@ -13,7 +13,34 @@ on:
 permissions:
   contents: read
 jobs:
+  capture-inputs:
+    runs-on: ubuntu-latest
+    outputs:
+      render: ${{ steps.changed.outputs.render }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 2
+      - id: changed
+        name: Avoid recapturing unchanged scenes for a final narrative-only review
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          node --input-type=module <<'JS'
+          import { execFileSync } from 'node:child_process';
+          import { appendFileSync } from 'node:fs';
+          const files = execFileSync('git', ['diff', '--name-only', 'HEAD^', 'HEAD'], { encoding: 'utf8' }).trim().split('\n').filter(Boolean);
+          const narrativeOnly = files.length > 0 && files.every(p => /^design-development\/reception-sprint\/[^/]+\.md$/.test(p));
+          const unchangedBase = process.env.BASE_SHA === 'cfb7e8dee8621280c87121b6e60f7bb908b12695';
+          const render = !(process.env.EVENT_NAME === 'pull_request' && unchangedBase && narrativeOnly);
+          appendFileSync(process.env.GITHUB_OUTPUT, `render=${render}\n`);
+          console.log(render ? 'Capture inputs or base may have changed: run complete validation and capture.' : 'Only final narrative changed on the same pinned base; retain the linked verified capture.');
+          JS
   source-function-and-webgl:
+    needs: capture-inputs
+    if: needs.capture-inputs.outputs.render == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
