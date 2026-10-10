@@ -26,6 +26,16 @@ All three standing-body gaps are uncomfortably constrained if someone needs to p
 
 **Model result:** upgrading from Series 2 to Series 6 does **not** improve the available space or remove dishwasher-unloading bottleneck. Series 6 may offer other functional benefits, but they're a separate cost-value question.
 
+## CI-verified envelope outcomes (2026-10-10)
+
+**PASS:** [full source-lock + owner + 48-case workflow](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38059550936). [Original JSON/SVG/evidence artifact](https://github.com/Mostafatalaat770/flat-designer/actions/runs/38059550936/artifacts/11672532341).
+
+**48/48 test cases calculated, NOT 48/48 clearance PASS.** Both Bosch models have identical geometry. Of the 48 scenarios, the assumed **standing-person** polygon intersects the original service-terrace leaf sweep in **8/48** (4/24 distinct geometries, repeated for the second model). This includes assumed adults 700mm deep. In the manufacturer's baseline front-aligned source, a 600×600mm person leaves **372.3mm** to the nominal wall and just **14.6mm minimum sampled polygon separation** from the service door. That door-user distance is *not* a real clearance, nor a safe hardware/handle margin.
+
+Nominal front-aligned model with a 600mm-wide adult and assumed depths 450/500/600/700mm gives remaining wall-band gaps of **522.3 / 472.3 / 372.3 / 272.3mm**. None has been field-surveyed, and the rack and lower basket opening are unmodeled.
+
+**Design decision:** keep original 600mm bay as a footprint reservation only; do **not** order a built-in kitchen shell. Ask the joinery fabricator whether the bay represents a genuine open **600mm clear opening between adjacent cabinet panels** (potential) or a **600mm outside carcass width containing two side panels** (not sufficient without redesign). This question requires an explicit dimensioned elevation, not a generic render.
+
 ## Implementation HOLD
 
 1. Site survey after/allowing for final wall/floor finishes: min **600mm clear niche width**, **815–875mm height**, and **550mm depth**, plus real opening to appliance front and toe kick.
