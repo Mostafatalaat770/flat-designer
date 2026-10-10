@@ -16,8 +16,10 @@ export function receptionPlanSvg(scene, audit, domain, pull = 350) {
       )
       .join(" ");
   const esc = (x) => String(x).replaceAll("&", "&amp;").replaceAll("<", "&lt;");
-  const poly = (v, fill, stroke = "#736858", dash = "") =>
-    `<polygon points="${points(v)}" fill="${fill}" stroke="${stroke}" stroke-width="1" ${dash ? 'stroke-dasharray="' + dash + '"' : ""}/>`;
+  const poly = (v, fill, stroke = "#736858", dash = "") => {
+    const alpha = /^#[0-9a-f]{8}$/i.test(fill);
+    return `<polygon points="${points(v)}" fill="${alpha ? fill.slice(0, 7) : fill}" ${alpha ? `fill-opacity="${parseInt(fill.slice(7), 16) / 255}"` : ""} stroke="${stroke}" stroke-width="1" ${dash ? 'stroke-dasharray="' + dash + '"' : ""}/>`;
+  };
   const text = (x, y, s, size = 11) =>
     `<text x="${x}" y="${y}" font-size="${size}" fill="#302a25">${esc(s)}</text>`;
   const label = (v, s) => {
@@ -30,12 +32,19 @@ export function receptionPlanSvg(scene, audit, domain, pull = 350) {
       mid = [(A[0] + B[0]) / 2, (A[1] + B[1]) / 2];
     return (
       `<path d="M${A} L${B}" stroke="#296a86" marker-start="url(#arrow)" marker-end="url(#arrow)"/>` +
-      text(mid[0] + 5, mid[1] - 5, s, 10)
+      (Math.abs(A[0] - B[0]) < 1
+        ? `<text x="${mid[0] + 6}" y="${mid[1]}" transform="rotate(90 ${mid[0] + 6} ${mid[1]})" font-size="10" fill="#296a86">${esc(s)}</text>`
+        : text(mid[0] + 5, mid[1] - 5, s, 10))
     );
   };
   let art = `<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1100" viewBox="0 0 1220 1100"><defs><marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto-start-reverse"><path d="M0 0 L6 3 L0 6Z" fill="#296a86"/></marker></defs><rect width="1220" height="1100" fill="#faf8f4"/><g font-family="Arial,sans-serif">`;
   art +=
-    text(40, 38, `${scene.name} · six chairs +${pull} mm`, 23) +
+    text(
+      40,
+      38,
+      `${scene.scene_revision === audit.source_scene ? "Baseline P0" : "Developed A / P0"} · six chairs +${pull} mm`,
+      23,
+    ) +
     text(
       40,
       65,
