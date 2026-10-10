@@ -63,9 +63,10 @@
       "KIT-A1-upper-west-high"
     ],
     "floor_material_id": "S1-stone",
-    "kitchen_architectural_door": "P0 original, brown until separate finish approval"
+    "kitchen_architectural_door": "P0 original, brown until separate finish approval",
+    "warm_decor": "Every other saved theme, colors, room and surface unchanged; only four saved warm theme colors intentionally change."
   },
-  "implementation_note": "Counter variant=style uses f.color in production WebGL builder; integrated dishwasher variant=integrated uses f.material_id. Patch applied only to a deep-copied exploratory view. Do not preserve old scene_revision while claiming a new validated full scene.",
+  "implementation_note": "Counter variant=style uses f.color in production WebGL builder; integrated dishwasher variant=integrated uses f.material_id. Patch applied only to a deep-copied exploratory view. Do not preserve old scene_revision while claiming a new validated full scene. IMPORTANT: saved `decor.saved.warm.colours` must change for all four in addition to furniture fields or theme switching can resurrect the original brown colors.",
   "release": {
     "geometry_modified": false,
     "cloud_saved": false,
@@ -74,5 +75,31 @@
     "construction_approved": false,
     "manufacturer_selected": false,
     "after_webgl_verified": false
-  }
+  },
+  "saved_theme_colour_changes": [
+    {
+      "id": "starter-20",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    },
+    {
+      "id": "K3-corner",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    },
+    {
+      "id": "K3-sink-base",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    },
+    {
+      "id": "K3-dishwasher",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    }
+  ]
 }

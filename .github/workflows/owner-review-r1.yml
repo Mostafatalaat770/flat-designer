@@ -80,6 +80,8 @@ jobs:
           assert.equal(kitchenR4.geometry_drift,0);
           assert.equal(kitchenR4.interior_surfaces_drift,0);
           assert.equal(kitchenR4.arch_door_recolored,false);
+          assert.equal(kitchenR4.warm_saved_colors_aligned,true);
+          assert.equal(kitchenR4.other_decor_drift,0);
           assert.equal(kitchenR4.after_webgl_rendered,false);
           assert.equal(kitchenR4.approval,false);
           const joineryR3=JSON.parse(fs.readFileSync(d+'P0_JOINERY_R3.json'));

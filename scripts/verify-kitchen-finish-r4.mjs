@@ -34,6 +34,16 @@ assert.equal(changesById.size,4);
 const allowedIds=['starter-20','K3-corner','K3-sink-base','K3-dishwasher'];
 assert.deepEqual([...changesById.keys()],allowedIds);
 const candidate=structuredClone(s);
+assert.equal(s.layout.decor.active,'warm');
+assert.equal(patch.saved_theme_colour_changes.length,4);
+assert.deepEqual(patch.saved_theme_colour_changes.map(x=>x.id),allowedIds);
+for(const item of patch.saved_theme_colour_changes){
+ assert.equal(item.theme,'warm');
+ assert.equal(item.expected,'#BCA98F');
+ assert.equal(item.set,'#E8E2D7');
+ assert.equal(s.layout.decor.saved.warm.colours[item.id],item.expected,item.id+': saved warm');
+}
+
 for(const m of patch.changes){
  const f=candidate.layout.furniture.find(x=>x.id===m.id);
  assert.ok(f, m.id);
@@ -52,6 +62,12 @@ for(const m of patch.changes){
   assert.equal(f.material_id,undefined);
  }
 }
+for(const m of patch.saved_theme_colour_changes)
+ candidate.layout.decor.saved.warm.colours[m.id]=m.set;
+const expectedDecor=structuredClone(s.layout.decor);
+for(const m of patch.saved_theme_colour_changes)
+ expectedDecor.saved.warm.colours[m.id]=m.set;
+assert.deepEqual(candidate.layout.decor,expectedDecor,'Only intended four warm saved colors may change');
 for(let i=0;i<s.layout.furniture.length;i++){
  const before=s.layout.furniture[i],after=candidate.layout.furniture[i];
  for(const key of geometryFields)assert.deepEqual(after[key],before[key],before.id+': geometry '+key);
@@ -60,7 +76,7 @@ for(let i=0;i<s.layout.furniture.length;i++){
   if(!Object.prototype.hasOwnProperty.call(allowed,key))
    assert.deepEqual(after[key],before[key],before.id+': forbidden field '+key);
 }
-for(const field of ['interior','rooms','decor','demolished','studio','hidden_segments','doors'])
+for(const field of ['interior','rooms','demolished','studio','hidden_segments','doors'])
  assert.deepEqual(candidate.layout[field],s.layout[field],field);
 const registry=JSON.parse(fs.readFileSync('design-development/decision-registry.json'));
 assert.ok(Object.values(registry.approval_flags).every(v=>v===false));
@@ -75,6 +91,7 @@ fs.mkdirSync(dir,{recursive:true});
 const audit={schema:'TypeBKitchenFinishPatchAuditR4/1',
  source_sha256:sha,changed_ids:allowedIds,allowed_changed_fields:['color','material_id'],
  geometry_drift:0,interior_surfaces_drift:0,arch_door_recolored:false,
+ warm_saved_colors_aligned:true, other_decor_drift:0,
  source_unchanged:true,after_webgl_rendered:false,approval:false};
 fs.writeFileSync(dir+'/KITCHEN_FINISH_R4_AUDIT.json',JSON.stringify(audit,null,2)+'\n');
 console.log('Kitchen finish R4 source-safe: 4 reversible finish-only assignments, no geometry edits');
