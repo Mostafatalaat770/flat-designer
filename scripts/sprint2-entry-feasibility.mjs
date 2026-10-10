@@ -61,14 +61,27 @@ for(const dy of shifts){
   const chairs=state.chairs.map(c=>rectangle({...c,cy:c.cy+dy}));
   const shoeUserGap=nearest(oldShoeUser,chairs);
   const buffetGap=nearest(offsetPoly(baseBuffetOpen,by),chairs);
-  const checked=domain.validate(scene.layout);
+  // The production validator intentionally throws on a hard placement FAIL.
+  // This is a feasibility matrix: preserve and report rejected candidates instead
+  // of crashing and hiding their precise model failures.
+  let checks;
+  try { checks=domain.validate(scene.layout).checks; }
+  catch(error) {
+    if (!error.validation?.checks) throw error;
+    checks=error.validation.checks;
+  }
+  const failures=checks.filter(x=>x.status==="FAIL");
   experiments.push({
     dining_shift_mm:dy,
     buffet_shift_mm:by,
     shoe_user_to_nearest_chair_mm:round(shoeUserGap),
     open_buffet_to_nearest_chair_mm:round(buffetGap),
-    domain_hard_failures:checked.checks.filter(x=>x.status==="FAIL")
-      .map(x=>({code:x.code||x.id||"FAIL",detail:x.message||x.description||"Check failed"})),
+    domain_hard_failures:failures.map(x=>({
+      code:x.kind||x.code||x.id||"FAIL",
+      object_id:x.object_id||null,
+      measured_clearance_mm:x.measured_clearance_mm??null,
+      detail:x.message||x.description||"Check failed"
+    })),
     caution:"2D model minimum distance between chosen polygons, not a human bypass width or approved furniture relocation."
   });
  }
