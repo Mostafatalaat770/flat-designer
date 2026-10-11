@@ -1,0 +1,23 @@
+# Type B apartment — persistent Codex instructions
+
+This repository is an **owner's real apartment design project**, not a product/SaaS backlog. **Always read** [design-development/WHOLE_HOME_MASTER_PLAN.md](design-development/WHOLE_HOME_MASTER_PLAN.md), then [GitHub Issue #41](https://github.com/Mostafatalaat770/flat-designer/issues/41) and the current **NEXT** issue before planning or editing. If a newer owner request conflicts with this file, seek or record the changed direction in the master plan; don't silently resurrect superseded work.
+
+## How to start any new session
+1. `git status --short --branch`, `git fetch`, inspect current HEAD/PR and existing edits. Never clobber local edits, rebase/force-push or merge without authorization.
+2. Check the live GitHub Issues: #41 is the index; **#69 is the first NEXT whole-home task** until its acceptance criteria are met and status updated. Continue a partially completed issue rather than start it again.
+3. Read `design-development/CURRENT_BASELINE.md`, `design-development/OWNER_REVIEW_20261010.md`, `design-development/decision-registry.json` and the files cited by the task. Do not confuse current cloud-derived v55 owner-review input (`render-snapshots/current.json` / `scene-9cf45a73`) with A/P0 kitchen visual lead (`scene-9e86635b`), R4 kitchen style candidate (`scene-3b86c557`), or archived K12/v50.
+4. Before creating a new issue, search existing Issues/PRs and evidence. Do not duplicate #19's future as-built/professional construction gate or #15's archived exploratory kitchen storage tasks.
+5. Execute one clear issue-sized outcome with evidence and an actual design critique. Update its issue, linked PR and [the master plan](design-development/WHOLE_HOME_MASTER_PLAN.md) **only when strategic direction actually changes**; issue board status is the operational source of truth. Link artifacts and source hashes. Record the next explicit issue/handoff.
+6. Distinguish **source-derived model facts**, **render/model tests**, **design preference**, **outside inspiration**, and **as-built/site HOLD**. Never claim building-code compliance based only on generic rules, simulated clearances or pictures.
+
+## Non-negotiable architecture and safety
+- Architectural Type B canonical `v0.2.2`, SHA256 `734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658`, model finished ceiling **2500mm**, original full-height living glazing. No wall/opening, wet services, balcony or ceiling geometry changes without explicit owner + appropriate engineer/developer permissions.
+- Source JSON and camera identity are **not** replaceable with plausible-looking AI imagery. Capture actual same-camera WebGL only when it answers the active decision; use model-matched 2D overlays for spatial/MEP concepts.
+- All owner/construction/procurement/cloud approvals **HOLD** unless explicitly signed off. Physical electrical, plumbing, HVAC, structural, fire, waterproofing and safety decisions must be checked by qualified practitioners against Egypt's applicable requirements and site survey. Never invent socket XY coordinates, lux, breaker sizing, cable capacities, AC tonnage or material SKUs.
+- R4 soft ivory, R5 D1 greige and R6 L2 task lighting are the **current kitchen visual lead**, NOT mandatory across the home or an approved kitchen build. Appliance SKU/manufacturer deep dives are **PARKED** until the user requests them or site requirements depend on them.
+- No unapproved merge, production deployment, live cloud scene save, invoice/billing changes or orders. GitHub Actions runner may be blocked before executing tests; local PASS is **not** remote CI PASS.
+
+## Design approach
+**Engineering coordination + strong aesthetics together.** Cover reception/dining, entry and hall, master/other bedrooms, WIC, master/family bathrooms and guest WC, kitchen, and terraces. Support research in actual designer work, Pinterest/Houzz references (attribute links; do not copy images without rights), 3 distinct cohesive interior languages, moodboards and tastefully chosen furnishings, textiles, greenery, lighting and accessories. Each scenario must fit the real canonical geometry, be practical to clean and maintain, and preserve daily family comfort.
+
+**Default workflow:** source audit → meaningful alternatives (usually max 2 per local decision, 3 home-wide design languages) → room/MEP/circulation checks → authentic matched-camera views where valuable → visual critique → conditional owner direction + HOLDs → tracked issue/PR update. Prefer clear, durable outputs over many analysis PDFs. In final responses use conversational Egyptian Arabic with concrete links and honest verification status.
