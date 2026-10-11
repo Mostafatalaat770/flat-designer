@@ -1,0 +1,146 @@
+{
+  "result": "PASS",
+  "method": "Chromium offline setContent, no browser server or external assets",
+  "html_sha256": "b71e687a463892f2eb2236794bb1149f96e654c449439d51c46edf4334f63d49",
+  "states": 24,
+  "checks": [
+    {
+      "viewport": "desktop",
+      "view": "entry-overview",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "view": "dining-to-living",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "view": "living-to-dining",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "view": "seated-tv",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "view": "living-to-dining-night",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "B-450",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "B-200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "A-450",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "A-200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "SOURCE-450",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "floor": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "floor": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "view": "entry-overview",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "view": "dining-to-living",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "view": "living-to-dining",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "view": "seated-tv",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "view": "living-to-dining-night",
+      "images": 2,
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "B-450",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "B-200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "A-450",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "A-200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "SOURCE-450",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "floor": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "floor": "dining-to-living",
+      "result": "PASS"
+    }
+  ],
+  "all_assets_decoded": {
+    "frames": 12,
+    "plans": 5
+  },
+  "zoom_and_escape": "PASS",
+  "svg_text_bounds": "5/5 PASS",
+  "page_errors": [],
+  "external_requests": []
+}

@@ -1,0 +1,13 @@
+render B-entry-overview
+render B-living-to-dining
+render B-dining-to-living
+render B-seated-tv
+render B-living-to-dining-night
+render A-entry-overview
+render A-living-to-dining
+render A-dining-to-living
+render A-seated-tv
+render A-living-to-dining-night
+render B-stone-living-to-dining
+render B-stone-dining-to-living
+Captured 12 actual WebGL canvases

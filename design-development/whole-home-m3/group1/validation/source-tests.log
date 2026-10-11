@@ -1,0 +1,48 @@
+✔ all 143 inherited sources, archived evidence and decision approvals remain byte-identical (21.294999ms)
+✔ complete deterministic extraction uses current, not kitchen lead or archived K12 (2716.79228ms)
+✔ every saved object appears once with exact source pointer, dimensions and placement; no invented height (8.524724ms)
+✔ all room polygons, printed dimensions and opening lengths retain distinct exact sources (0.850509ms)
+✔ source furniture collision remains visible while A/P0 feasibility evidence stays in its own lineage (0.157036ms)
+✔ A15 intent migration flags removed and changed anchors without proposing electrical coordinates (0.359601ms)
+✔ every recommendation has a known proof tag and source, and decisions never exceed two alternatives (0.344348ms)
+✔ reject omitted terrace, extra geometry alternatives and unsupported proof labels (5.825934ms)
+✔ offline document has every space, evidence, decision and working internal anchor (259.57761ms)
+✔ 751 pre-existing files including all M0 artifacts and approvals remain byte-identical (187.427067ms)
+✔ deterministic derivation uses 37e8844 and exact current M0 source, cloud lineage and P0 (249.219129ms)
+✔ all 65 originals survive exactly once with explicit decisions, scope, classification and current links (0.529947ms)
+✔ five missing kitchen functions map only to verified current objects and a stated service side (0.195644ms)
+✔ island, old oven column and terrace washer are parked; indoor niche is an explicit new functional need (42.835685ms)
+✔ five changed and fourteen same-envelope anchors have explicit operational re-evaluation, never reach approval (2.873243ms)
+✔ every source context object resolves to exact saved record, room, footprint, pointer and hash (11.253769ms)
+✔ all thirteen spaces receive all four services, confidence, reasons, survey and trade signoff (1.293957ms)
+✔ intent records contain no guessed construction coordinate, electrical sizing, light level or AC load (3.890762ms)
+✔ four standalone views have distinct layer content and every exact source room/object (419.582089ms)
+✔ terraces retain no modeled ceiling; interior finished target is separate from site measurement (0.181322ms)
+✔ no-draught zones follow exact existing bed/sofa shapes; floor A/B differ while architecture stays identical (79.886989ms)
+✔ all evidence paths/hashes are reproducible and point to inherited material, not invented links (806.288724ms)
+✔ offline review starts with complete disposition, offers four layers/13 crops and contains no network dependencies (377.007318ms)
+✔ 39 developed schedules cover all 13 rooms; all 77 source identities and all 68 M1 intents available (0.660713ms)
+✔ three distinct shapes, detailing, palettes and independent floor studies; all source geometry/approvals/MEP unchanged (142.579557ms)
+✔ attributed, verified external inspiration: 2 additional projects per style, precise years and no copied photographs (0.482095ms)
+✔ 14 genuine source camera canvases with geometry-zero, source/layout/image hashes, no fallbacks or outside requests (77.704904ms)
+✔ offline owner package embeds its own original visuals; no external resource dependencies (198.204257ms)
+✔ all 784 pre-existing tracked files preserved byte-for-byte including canonical, prior studies, approvals, M0/M1/cloud snapshots (176.468203ms)
+✔ one v55 working source: closed canonical walls, true independent walk-in visual (4340.746995ms)
+✔ K12 is archived and cannot silently reappear as the reference (0.130166ms)
+✔ owner review is pinned to the saved v55 cloud source and untouched canonical geometry (2696.478207ms)
+✔ historical K12 is clearly archived; it cannot silently become the active review source (0.10668ms)
+✔ six real dining chair objects stay linked to a 2000x950 nominal table (0.25245ms)
+✔ enclosed current kitchen retains its actual dishwasher, sink and washer rather than an unapproved island (0.156014ms)
+✔ open shower render is separate from fixed glass and shelves; cloud remains a different revision (0.203476ms)
+✔ no incomplete owner decision or external construction hold is described as approved (0.123515ms)
+✔ family F1 is the owner preferred visual direction, NEVER a physical door or plumbing approval (0.111087ms)
+✔ master M0 800mm is design preference only, larger depth blocked for engineering review (0.105188ms)
+✔ guest floating handrinse B preferred for design only; current plumbing/layout not silently changed (0.107462ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14182.21948
