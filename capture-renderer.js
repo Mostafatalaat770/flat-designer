@@ -105,6 +105,7 @@ async function bootApartmentAgentCapture(){
     applyApartmentDoorOverrides(input.architecture_variant,architectureResult);
     const doorFinishResult=applyKitchenDoorFinishExperiment(THREE,input.render_experiment,doors,woodM);
     applyLight();
+    const r6Result=applyKitchenR6Study(THREE,MODEL,state,furnG,scene,input.kitchen_r6_study);
     await waitApartmentSceneAssets(25000);
     if(document.fonts?.ready)await document.fonts.ready;
     if(studioSceneKey(state)!==input.scene_revision)throw new Error('The render snapshot changed while loading.');
@@ -119,6 +120,8 @@ async function bootApartmentAgentCapture(){
     result.render_experiment=input.render_experiment || null;
     result.door_finish_result=doorFinishResult;
     result.kitchen_geometry=kitchenGeometryEvidence(THREE,MODEL,state,furnG);
+    result.kitchen_r6_study=input.kitchen_r6_study || null;
+    result.kitchen_r6_result=r6Result;
     const cv=renderer.domElement;cv.id='apartment-capture-canvas';
     // Drop large inline scripts/snapshot data from the provider's HTML result.
     document.querySelectorAll('script').forEach(s=>s.remove());

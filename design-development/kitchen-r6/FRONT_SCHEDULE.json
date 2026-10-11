@@ -1,0 +1,942 @@
+{
+  "schema": "KitchenR6FrontSchedule/1",
+  "status": "SOURCE_INVENTORY_COMPLETE_EXECUTION_HOLD",
+  "rows": [
+    {
+      "source_id": "starter-20",
+      "category": "RENDERER_BASE_FRONTS",
+      "original_width_mm": 1500,
+      "original_depth_mm": 600,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 9381,
+        "cy": 8038,
+        "rotation_deg": 270
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9080.999988079071,
+          7283.000004768372,
+          -7.450580569168253e-7
+        ],
+        "max_mm": [
+          9691.999999888241,
+          8792.999995231628,
+          1100.9912637347638
+        ]
+      },
+      "intended_function": "West cooking base; oven reservation only. No oven object, cavity or under-hob drawer proven.",
+      "visible_renderer_fronts": [
+        {
+          "diagnostic_id": "starter-20::mesh-3",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            495.0000047683716,
+            174.99999701976776,
+            17.999999225139618
+          ],
+          "local_position": [
+            -0.5,
+            0.73,
+            0.269
+          ],
+          "bounds": {
+            "min_mm": [
+              9641.00000038743,
+              8290.499997615814,
+              642.5000014901161
+            ],
+            "max_mm": [
+              9658.99999961257,
+              8785.500002384186,
+              817.4999985098839
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "starter-20::mesh-5",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            495.0000047683716,
+            174.99999701976776,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.73,
+            0.269
+          ],
+          "bounds": {
+            "min_mm": [
+              9641.00000038743,
+              7790.499997615814,
+              642.5000014901161
+            ],
+            "max_mm": [
+              9658.99999961257,
+              8285.500002384186,
+              817.4999985098839
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "starter-20::mesh-7",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            495.0000047683716,
+            174.99999701976776,
+            17.999999225139618
+          ],
+          "local_position": [
+            0.5,
+            0.73,
+            0.269
+          ],
+          "bounds": {
+            "min_mm": [
+              9641.00000038743,
+              7290.499997615814,
+              642.5000014901161
+            ],
+            "max_mm": [
+              9658.99999961257,
+              7785.500002384186,
+              817.4999985098839
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "starter-20::mesh-10",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            495.0000047683716,
+            535.0000262260437,
+            17.999999225139618
+          ],
+          "local_position": [
+            -0.5,
+            0.37,
+            0.269
+          ],
+          "bounds": {
+            "min_mm": [
+              9641.00000038743,
+              8290.499997615814,
+              102.49998688697815
+            ],
+            "max_mm": [
+              9658.99999961257,
+              8785.500002384186,
+              637.5000131130219
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "starter-20::mesh-12",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            495.0000047683716,
+            535.0000262260437,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.37,
+            0.269
+          ],
+          "bounds": {
+            "min_mm": [
+              9641.00000038743,
+              7790.499997615814,
+              102.49998688697815
+            ],
+            "max_mm": [
+              9658.99999961257,
+              8285.500002384186,
+              637.5000131130219
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "starter-20::mesh-14",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            495.0000047683716,
+            535.0000262260437,
+            17.999999225139618
+          ],
+          "local_position": [
+            0.5,
+            0.37,
+            0.269
+          ],
+          "bounds": {
+            "min_mm": [
+              9641.00000038743,
+              7290.499997615814,
+              102.49998688697815
+            ],
+            "max_mm": [
+              9658.99999961257,
+              7785.500002384186,
+              637.5000131130219
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        }
+      ],
+      "visible_front_regions": [],
+      "division_note": "Generic rows/handles; functions not inferred from face shape.",
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "starter-21",
+      "category": "WET_APPLIANCE",
+      "original_width_mm": 550,
+      "original_depth_mm": 400,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 11181,
+        "cy": 6993,
+        "rotation_deg": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          10905.999994039536,
+          6792.999997019768,
+          861.9999998100102
+        ],
+        "max_mm": [
+          11456.000005960464,
+          7193.000002980232,
+          1182.4533939361572
+        ]
+      },
+      "intended_function": "Sink/tap envelope; bowl, cutout, clips, trap and supply/waste TBD.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [],
+      "division_note": null,
+      "finish_direction": "Retain source finish; no concealment",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "starter-22",
+      "category": "APPLIANCE_HOOD_PROXY",
+      "original_width_mm": 600,
+      "original_depth_mm": 400,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 9381,
+        "cy": 7895,
+        "rotation_deg": 270
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9180.999997019768,
+          7594.999988079071,
+          861.9999999478459
+        ],
+        "max_mm": [
+          9684.500000013039,
+          8195.000011920929,
+          2330.0000143051147
+        ]
+      },
+      "intended_function": "Gas hob and attached legacy hood envelope, no product selected.",
+      "visible_renderer_fronts": [
+        {
+          "diagnostic_id": "starter-22::mesh-21",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            579.9999833106995,
+            300.00001192092896,
+            8.00000037997961
+          ],
+          "local_position": [
+            0,
+            1.73,
+            0.18
+          ],
+          "bounds": {
+            "min_mm": [
+              9441.014518895703,
+              7605.00000834465,
+              1633.625193266982
+            ],
+            "max_mm": [
+              9680.985481104297,
+              8184.99999165535,
+              1826.374806733018
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        }
+      ],
+      "visible_front_regions": [],
+      "division_note": null,
+      "finish_direction": "Retain source finish; no concealment",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "starter-23",
+      "category": "APPLIANCE_FRONT",
+      "original_width_mm": 650,
+      "original_depth_mm": 650,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 11850,
+        "cy": 8520,
+        "rotation_deg": 180
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          11525.000011920929,
+          8168.499995470047,
+          14.999971725046635
+        ],
+        "max_mm": [
+          12174.999988079071,
+          8844.999988079071,
+          1955.0000429153442
+        ]
+      },
+      "intended_function": "Integrated-colour refrigerator envelope; hinge, panel, ventilation and door opening HOLD.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [
+        {
+          "id": "starter-23::lower-region",
+          "width_mm": 650,
+          "height_mm": 655
+        },
+        {
+          "id": "starter-23::upper-region",
+          "width_mm": 650,
+          "height_mm": 1279
+        }
+      ],
+      "division_note": null,
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "K3-corner",
+      "category": "CONDITIONAL_STORAGE",
+      "original_width_mm": 600,
+      "original_depth_mm": 590,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 9381,
+        "cy": 6993,
+        "rotation_deg": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9075.999992847443,
+          6697.9999940395355,
+          -7.450580569168253e-7
+        ],
+        "max_mm": [
+          9686.000007152557,
+          7298.999999888241,
+          859.9999995529652
+        ]
+      },
+      "intended_function": "Closed corner proxy; no proven access opening, corner hardware or usable capacity.",
+      "visible_renderer_fronts": [
+        {
+          "diagnostic_id": "K3-corner::mesh-3",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            595.0000286102295,
+            174.99999701976776,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.73,
+            0.264
+          ],
+          "bounds": {
+            "min_mm": [
+              9083.499985694885,
+              7248.00000038743,
+              642.5000014901161
+            ],
+            "max_mm": [
+              9678.500014305115,
+              7265.99999961257,
+              817.4999985098839
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "K3-corner::mesh-6",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            595.0000286102295,
+            535.0000262260437,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.37,
+            0.264
+          ],
+          "bounds": {
+            "min_mm": [
+              9083.499985694885,
+              7248.00000038743,
+              102.49998688697815
+            ],
+            "max_mm": [
+              9678.500014305115,
+              7265.99999961257,
+              637.5000131130219
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        }
+      ],
+      "visible_front_regions": [],
+      "division_note": "Generic rows/handles; functions not inferred from face shape.",
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "K3-dishwasher",
+      "category": "APPLIANCE_FRONT",
+      "original_width_mm": 600,
+      "original_depth_mm": 610,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 10581,
+        "cy": 6993,
+        "rotation_deg": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          10280.999988079071,
+          6687.999992847443,
+          35.00001132488251
+        ],
+        "max_mm": [
+          10881.000011920929,
+          7315.499990463257,
+          875
+        ]
+      },
+      "intended_function": "Integrated dishwasher envelope, not a measured cavity; custom fascia/hinge/toe-kick HOLD.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [
+        {
+          "id": "K3-dishwasher::integrated-front-region",
+          "width_mm": 600,
+          "height_mm": 840,
+          "status": "ONE_SOLID_ENVELOPE; not panel fabrication size"
+        }
+      ],
+      "division_note": null,
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "K3-sink-base",
+      "category": "WET_SERVICE_BASE",
+      "original_width_mm": 600,
+      "original_depth_mm": 610,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 11181,
+        "cy": 6993,
+        "rotation_deg": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          10875.999992847443,
+          6687.999992847443,
+          -7.450580569168253e-7
+        ],
+        "max_mm": [
+          11486.000007152557,
+          7308.999999888241,
+          859.9999995529652
+        ]
+      },
+      "intended_function": "Sink/waste/trap services. Generic drawer-looking top row is not usable drawer storage. Cleaning cupboard must separate chemicals from food and permit valve/trap access.",
+      "visible_renderer_fronts": [
+        {
+          "diagnostic_id": "K3-sink-base::mesh-3",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            595.0000286102295,
+            174.99999701976776,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.73,
+            0.274
+          ],
+          "bounds": {
+            "min_mm": [
+              10883.499985694885,
+              7258.00000038743,
+              642.5000014901161
+            ],
+            "max_mm": [
+              11478.500014305115,
+              7275.99999961257,
+              817.4999985098839
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "K3-sink-base::mesh-6",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            595.0000286102295,
+            535.0000262260437,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.37,
+            0.274
+          ],
+          "bounds": {
+            "min_mm": [
+              10883.499985694885,
+              7258.00000038743,
+              102.49998688697815
+            ],
+            "max_mm": [
+              11478.500014305115,
+              7275.99999961257,
+              637.5000131130219
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        }
+      ],
+      "visible_front_regions": [],
+      "division_note": "Generic rows/handles; functions not inferred from face shape.",
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "K3-end-landing",
+      "category": "RENDERER_BASE_FRONTS",
+      "original_width_mm": 600,
+      "original_depth_mm": 410,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 11781,
+        "cy": 6893,
+        "rotation_deg": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          11475.999992847443,
+          6687.999997615814,
+          -7.450580569168253e-7
+        ],
+        "max_mm": [
+          12086.000007152557,
+          7108.999999888241,
+          859.9999995529652
+        ]
+      },
+      "intended_function": "Shallow refrigerator landing; storage and handle accessibility conditional.",
+      "visible_renderer_fronts": [
+        {
+          "diagnostic_id": "K3-end-landing::mesh-3",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            595.0000286102295,
+            174.99999701976776,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.73,
+            0.174
+          ],
+          "bounds": {
+            "min_mm": [
+              11483.499985694885,
+              7058.00000038743,
+              642.5000014901161
+            ],
+            "max_mm": [
+              12078.500014305115,
+              7075.99999961257,
+              817.4999985098839
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        },
+        {
+          "diagnostic_id": "K3-end-landing::mesh-6",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            595.0000286102295,
+            535.0000262260437,
+            17.999999225139618
+          ],
+          "local_position": [
+            0,
+            0.37,
+            0.174
+          ],
+          "bounds": {
+            "min_mm": [
+              11483.499985694885,
+              7058.00000038743,
+              102.49998688697815
+            ],
+            "max_mm": [
+              12078.500014305115,
+              7075.99999961257,
+              637.5000131130219
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        }
+      ],
+      "visible_front_regions": [],
+      "division_note": "Generic rows/handles; functions not inferred from face shape.",
+      "finish_direction": "Retain source finish; no concealment",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "K3-laundry-niche",
+      "category": "APPLIANCE_FRONT",
+      "original_width_mm": 600,
+      "original_depth_mm": 610,
+      "original_height_mm": null,
+      "source_height_status": "NOT_STORED; builder height is a proxy",
+      "mounting": {
+        "mode": "floor-envelope",
+        "cx": 9981,
+        "cy": 6993,
+        "rotation_deg": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9680.999988079071,
+          6688.000003576279,
+          4.470348362317633e-7
+        ],
+        "max_mm": [
+          10281.000011920929,
+          7351.575415926548,
+          850.000001192093
+        ]
+      },
+      "intended_function": "Exposed washer; no hidden front/panel or added enclosure.",
+      "visible_renderer_fronts": [
+        {
+          "diagnostic_id": "K3-laundry-niche::mesh-3",
+          "type": "BoxGeometry",
+          "local_dimensions_mm": [
+            180.00000715255737,
+            70.00000029802322,
+            9.999999776482582
+          ],
+          "local_position": [
+            -0.18,
+            0.77,
+            0.291
+          ],
+          "bounds": {
+            "min_mm": [
+              9710.999996423721,
+              7279.000000111759,
+              734.9999998509884
+            ],
+            "max_mm": [
+              9891.000003576279,
+              7288.999999888241,
+              805.0000001490116
+            ]
+          },
+          "status": "DIAGNOSTIC_RENDERER_FACE_ID; not a saved door/cabinet ID or usable opening"
+        }
+      ],
+      "visible_front_regions": [
+        {
+          "id": "K3-laundry-niche::machine-front",
+          "width_mm": 600,
+          "height_mm": 810,
+          "status": "EXPOSED_MACHINE_PROXY; circular door has no operation kinematics"
+        }
+      ],
+      "division_note": null,
+      "finish_direction": "Retain source finish; no concealment",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "KIT-A1-north-backsplash",
+      "category": "EXPLICIT_FINISH_PANEL",
+      "original_width_mm": 2800,
+      "original_depth_mm": 5,
+      "original_height_mm": 520,
+      "source_height_status": "SAVED",
+      "mounting": {
+        "mode": "wall",
+        "host_wall_id": "WALL-KIT-01-02",
+        "offset_mm": 0,
+        "elevation_mm": 930,
+        "inset_mm": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9149.059523841857,
+          6677.866000055879,
+          930.0000095367432
+        ],
+        "max_mm": [
+          11949.059476158141,
+          6682.865999944121,
+          1449.9999904632568
+        ]
+      },
+      "intended_function": "Source backsplash north; F1 separate finish proposal.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [],
+      "division_note": null,
+      "finish_direction": "Retain source finish; no concealment",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "KIT-A1-west-backsplash",
+      "category": "EXPLICIT_FINISH_PANEL",
+      "original_width_mm": 1500,
+      "original_depth_mm": 5,
+      "original_height_mm": 520,
+      "source_height_status": "SAVED",
+      "mounting": {
+        "mode": "wall",
+        "host_wall_id": "WALL-KIT-01-01",
+        "offset_mm": 263.9,
+        "elevation_mm": 930,
+        "inset_mm": 0
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9071.52900005588,
+          7288.005999999999,
+          930.0000095367432
+        ],
+        "max_mm": [
+          9076.528999944121,
+          8788.006,
+          1449.9999904632568
+        ]
+      },
+      "intended_function": "Source backsplash west; F1 separate finish proposal.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [],
+      "division_note": null,
+      "finish_direction": "Retain source finish; no concealment",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "KIT-A1-upper-north",
+      "category": "EXPLICIT_SAVED_CABINET",
+      "original_width_mm": 1800,
+      "original_depth_mm": 330,
+      "original_height_mm": 700,
+      "source_height_status": "SAVED",
+      "mounting": {
+        "mode": "wall",
+        "host_wall_id": "WALL-KIT-01-02",
+        "offset_mm": -228.1,
+        "elevation_mm": 1480,
+        "inset_mm": 8
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9420.959523841857,
+          6685.865993443489,
+          1479.9999999869615
+        ],
+        "max_mm": [
+          11222.959500094994,
+          7022.365999806285,
+          2179.9999940395355
+        ]
+      },
+      "intended_function": "1800 mm upper run; actual door count/hinges/shelves/clear openings HOLD.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [
+        {
+          "id": "KIT-A1-upper-north::solid-front-region",
+          "width_mm": 1800,
+          "height_mm": 700,
+          "door_count": null,
+          "status": "SOLID_BOX_WITH_2_SEAMS_2_HANDLES; no movable doors"
+        }
+      ],
+      "division_note": "One solid box, two generic seams and two 55 mm handles; seams do not create actual doors.",
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "KIT-A1-upper-west-low",
+      "category": "EXPLICIT_SAVED_CABINET",
+      "original_width_mm": 300,
+      "original_depth_mm": 330,
+      "original_height_mm": 700,
+      "source_height_status": "SAVED",
+      "mounting": {
+        "mode": "wall",
+        "host_wall_id": "WALL-KIT-01-01",
+        "offset_mm": -544.2,
+        "elevation_mm": 1480,
+        "inset_mm": 8
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9079.52899344349,
+          7077.905999905005,
+          1479.9999999869615
+        ],
+        "max_mm": [
+          9416.028999806285,
+          7379.906005960464,
+          2179.9999940395355
+        ]
+      },
+      "intended_function": "300 mm flanking upper; proposed single-door direction subject to hardware/hood heat clearance.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [
+        {
+          "id": "KIT-A1-upper-west-low::solid-front-region",
+          "width_mm": 300,
+          "height_mm": 700,
+          "door_count": null,
+          "status": "SOLID_BOX_WITH_2_SEAMS_2_HANDLES; no movable doors"
+        }
+      ],
+      "division_note": "One solid box, two generic seams and two 55 mm handles; seams do not create actual doors.",
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "KIT-A1-upper-west-high",
+      "category": "EXPLICIT_SAVED_CABINET",
+      "original_width_mm": 450,
+      "original_depth_mm": 330,
+      "original_height_mm": 700,
+      "source_height_status": "SAVED",
+      "mounting": {
+        "mode": "wall",
+        "host_wall_id": "WALL-KIT-01-01",
+        "offset_mm": 805.8,
+        "elevation_mm": 1480,
+        "inset_mm": 8
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          9079.52899344349,
+          8352.905999905004,
+          1479.9999999869615
+        ],
+        "max_mm": [
+          9416.028999806285,
+          8804.905994039535,
+          2179.9999940395355
+        ]
+      },
+      "intended_function": "450 mm flanking upper; proposed single-door direction subject to hardware/hood heat clearance.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [
+        {
+          "id": "KIT-A1-upper-west-high::solid-front-region",
+          "width_mm": 450,
+          "height_mm": 700,
+          "door_count": null,
+          "status": "SOLID_BOX_WITH_2_SEAMS_2_HANDLES; no movable doors"
+        }
+      ],
+      "division_note": "One solid box, two generic seams and two 55 mm handles; seams do not create actual doors.",
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    },
+    {
+      "source_id": "KIT-fridge-end-panel",
+      "category": "EXPLICIT_FINISH_PANEL",
+      "original_width_mm": 650,
+      "original_depth_mm": 18,
+      "original_height_mm": 2200,
+      "source_height_status": "SAVED",
+      "mounting": {
+        "mode": "floor"
+      },
+      "rendered_bounds": {
+        "min_mm": [
+          12177.00000038743,
+          8195.000011920929,
+          -0.000023841857821338408
+        ],
+        "max_mm": [
+          12194.99999961257,
+          8844.999988079071,
+          2200.000023841858
+        ]
+      },
+      "intended_function": "18 mm side panel, not a storage cabinet or permission to restrict fridge ventilation.",
+      "visible_renderer_fronts": [],
+      "visible_front_regions": [],
+      "division_note": null,
+      "finish_direction": "Retain R4 ivory; easy-clean matte sample and edge sealing HOLD.",
+      "approval": "HOLD"
+    }
+  ],
+  "handle_direction": "Conservative proposal: one satin closed-ended pull family for cabinetry; rounded accessible ends, minimal recess dirt traps, position templates and screw fixing checked on real fronts. Keep appliance/door hardware maker-compatible. No handle relocation or source front change performed.",
+  "front_direction": "R4 ivory washable matte sample; stain/heat/moisture test and sealed edges required. D1 greige doors remain visual lead. Do not infer openings from countertop segments 307/600/593 mm or generic rendered seams.",
+  "conditional_concepts": [
+    {
+      "id": "CONCEPT-UNDER-HOB-DRAWERS",
+      "status": "HOLD",
+      "reason": "No oven/cutout/heat shield/cavity confirmed."
+    },
+    {
+      "id": "CONCEPT-CORNER-HARDWARE",
+      "status": "HOLD",
+      "reason": "No door clear aperture, carcass partitions or hardware sweep confirmed."
+    },
+    {
+      "id": "CONCEPT-WASHER-CONCEALMENT",
+      "status": "HOLD",
+      "reason": "No ventilation, hinge, hose depth, service path or operating clearances proven; not rendered."
+    }
+  ],
+  "owner_approved": false,
+  "construction_approved": false
+}

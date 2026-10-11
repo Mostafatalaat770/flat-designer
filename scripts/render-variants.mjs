@@ -110,7 +110,8 @@ try{
     camera:view.camera,
     asset_urls:v.asset_urls,
     architecture_variant:v.snapshot.architecture_variant||null,
-    render_experiment:v.snapshot.render_experiment||null
+    render_experiment:v.snapshot.render_experiment||null,
+    kitchen_r6_study:v.snapshot.kitchen_r6_study||null
    };
    const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
    // Software WebGL may compile its first shader while the inline page loads.
@@ -132,6 +133,7 @@ try{
    assert.equal(meta.room_id,view.room_id);
    assert.deepEqual(meta.architecture_variant,input.architecture_variant);
    assert.deepEqual(meta.render_experiment,input.render_experiment);
+   assert.deepEqual(meta.kitchen_r6_study,input.kitchen_r6_study);
    for (const prop of ['position','target','fov','aspect','near','far','viewport']) {
     assert.deepEqual(meta.camera[prop],view.camera[prop],
       'Camera changed at '+job.key+'/'+view.id+': '+prop);
