@@ -1,0 +1,9 @@
+{
+  "schema": "M3Group2Preservation/1",
+  "baseline_commit": "5fd6e9153e521f72a5c2a226a7aa3d90833b9fab",
+  "inherited_tracked_files": 1007,
+  "changed": [],
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "all_saved_snapshots_preserved": true,
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658"
+}

@@ -1,0 +1,5977 @@
+{
+  "schema": "M3Group2Operation/1",
+  "room": "BR-01",
+  "profile": "A",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "endpoints": {
+    "start": [
+      4800,
+      4500
+    ],
+    "bed": [
+      3990,
+      3190
+    ],
+    "desk": [
+      3790,
+      4040
+    ],
+    "glazing": [
+      4400,
+      1960
+    ]
+  },
+  "states": [
+    {
+      "id": "chair-0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-300",
+      "pull_mm": 300,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3350,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3425,
+              3825
+            ],
+            [
+              3425,
+              4475
+            ],
+            [
+              3075,
+              4475
+            ],
+            [
+              3075,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-450",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3500,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3575,
+              3825
+            ],
+            [
+              3575,
+              4475
+            ],
+            [
+              3225,
+              4475
+            ],
+            [
+              3225,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open0-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              2700
+            ],
+            [
+              4110,
+              2700
+            ],
+            [
+              4110,
+              2100
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open0-bay0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4710,
+              2700
+            ],
+            [
+              4710,
+              3300
+            ],
+            [
+              4110,
+              3300
+            ],
+            [
+              4110,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open0-bay600",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4710,
+              3300
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4110,
+              3900
+            ],
+            [
+              4110,
+              3300
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open300-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4410,
+              3900
+            ],
+            [
+              4410,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4410,
+              2100
+            ],
+            [
+              4410,
+              2700
+            ],
+            [
+              3810,
+              2700
+            ],
+            [
+              3810,
+              2100
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open300-bay0",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4410,
+              3900
+            ],
+            [
+              4410,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4410,
+              2700
+            ],
+            [
+              4410,
+              3300
+            ],
+            [
+              3810,
+              3300
+            ],
+            [
+              3810,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open300-bay600",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4410,
+              3900
+            ],
+            [
+              4410,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4410,
+              3300
+            ],
+            [
+              4410,
+              3900
+            ],
+            [
+              3810,
+              3900
+            ],
+            [
+              3810,
+              3300
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open450-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [
+        {
+          "a": "user-starter-7",
+          "b": "M3G2-BR01-nightstand",
+          "area_mm2": 18900
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4260,
+              3900
+            ],
+            [
+              4260,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4260,
+              2100
+            ],
+            [
+              4260,
+              2700
+            ],
+            [
+              3660,
+              2700
+            ],
+            [
+              3660,
+              2100
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open450-bay0",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4260,
+              3900
+            ],
+            [
+              4260,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4260,
+              2700
+            ],
+            [
+              4260,
+              3300
+            ],
+            [
+              3660,
+              3300
+            ],
+            [
+              3660,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open450-bay600",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4260,
+              3900
+            ],
+            [
+              4260,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4260,
+              3300
+            ],
+            [
+              4260,
+              3900
+            ],
+            [
+              3660,
+              3900
+            ],
+            [
+              3660,
+              3300
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open600-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [
+        {
+          "a": "user-starter-7",
+          "b": "M3G2-BR01-nightstand",
+          "area_mm2": 39150
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4110,
+              3900
+            ],
+            [
+              4110,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4110,
+              2100
+            ],
+            [
+              4110,
+              2700
+            ],
+            [
+              3510,
+              2700
+            ],
+            [
+              3510,
+              2100
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open600-bay0",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4110,
+              3900
+            ],
+            [
+              4110,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4110,
+              2700
+            ],
+            [
+              4110,
+              3300
+            ],
+            [
+              3510,
+              3300
+            ],
+            [
+              3510,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open600-bay600",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4110,
+              3900
+            ],
+            [
+              4110,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4110,
+              3300
+            ],
+            [
+              4110,
+              3900
+            ],
+            [
+              3510,
+              3900
+            ],
+            [
+              3510,
+              3300
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-chair450-open0",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3500,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4710,
+              2700
+            ],
+            [
+              4710,
+              3300
+            ],
+            [
+              4110,
+              3300
+            ],
+            [
+              4110,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3575,
+              3825
+            ],
+            [
+              3575,
+              4475
+            ],
+            [
+              3225,
+              4475
+            ],
+            [
+              3225,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-chair450-open300",
+      "pull_mm": 450,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3500,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4410,
+              3900
+            ],
+            [
+              4410,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4410,
+              2700
+            ],
+            [
+              4410,
+              3300
+            ],
+            [
+              3810,
+              3300
+            ],
+            [
+              3810,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3575,
+              3825
+            ],
+            [
+              3575,
+              4475
+            ],
+            [
+              3225,
+              4475
+            ],
+            [
+              3225,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-chair450-open450",
+      "pull_mm": 450,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3500,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4710,
+              2100
+            ],
+            [
+              4710,
+              3900
+            ],
+            [
+              4260,
+              3900
+            ],
+            [
+              4260,
+              2100
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4260,
+              2700
+            ],
+            [
+              4260,
+              3300
+            ],
+            [
+              3660,
+              3300
+            ],
+            [
+              3660,
+              2700
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3575,
+              3825
+            ],
+            [
+              3575,
+              4475
+            ],
+            [
+              3225,
+              4475
+            ],
+            [
+              3225,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V7-bedroom1-drawers-drawer300",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "V7-bedroom1-drawers",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              4450,
+              4535
+            ],
+            [
+              3850,
+              4535
+            ],
+            [
+              3850,
+              4235
+            ],
+            [
+              4450,
+              4235
+            ]
+          ]
+        },
+        {
+          "id": "user-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              4450,
+              4235
+            ],
+            [
+              3850,
+              4235
+            ],
+            [
+              3850,
+              3635
+            ],
+            [
+              4450,
+              3635
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V7-bedroom1-drawers-drawer500",
+      "pull_mm": 0,
+      "opening_mm": 500,
+      "cabinet": "V7-bedroom1-drawers",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "officechair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3050,
+          "cy": 4150,
+          "w": 580,
+          "d": 580,
+          "rot": 90,
+          "color": "#A57861",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              4450,
+              4535
+            ],
+            [
+              3850,
+              4535
+            ],
+            [
+              3850,
+              4035
+            ],
+            [
+              4450,
+              4035
+            ]
+          ]
+        },
+        {
+          "id": "user-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              4450,
+              4035
+            ],
+            [
+              3850,
+              4035
+            ],
+            [
+              3850,
+              3435
+            ],
+            [
+              4450,
+              3435
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              3125,
+              3825
+            ],
+            [
+              3125,
+              4475
+            ],
+            [
+              2775,
+              4475
+            ],
+            [
+              2775,
+              3825
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "state": "chair-0",
+      "goal": "bed",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4178.982
+        ],
+        [
+          3995.005,
+          4128.982
+        ],
+        [
+          3995.005,
+          4078.982
+        ],
+        [
+          3995.005,
+          4028.982
+        ],
+        [
+          3995.005,
+          3978.982
+        ],
+        [
+          3995.005,
+          3928.982
+        ],
+        [
+          3995.005,
+          3878.982
+        ],
+        [
+          3995.005,
+          3828.982
+        ],
+        [
+          3995.005,
+          3778.982
+        ],
+        [
+          3995.005,
+          3728.982
+        ],
+        [
+          3995.005,
+          3678.982
+        ],
+        [
+          3995.005,
+          3628.982
+        ],
+        [
+          3995.005,
+          3578.982
+        ],
+        [
+          3995.005,
+          3528.982
+        ],
+        [
+          3995.005,
+          3478.982
+        ],
+        [
+          3995.005,
+          3428.982
+        ],
+        [
+          3995.005,
+          3378.982
+        ],
+        [
+          3995.005,
+          3328.982
+        ],
+        [
+          3995.005,
+          3278.982
+        ],
+        [
+          3995.005,
+          3228.982
+        ],
+        [
+          3995.005,
+          3178.982
+        ]
+      ],
+      "distance_mm": 2100,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "glazing",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4178.982
+        ],
+        [
+          4395.005,
+          4128.982
+        ],
+        [
+          4395.005,
+          4078.982
+        ],
+        [
+          4395.005,
+          4028.982
+        ],
+        [
+          4395.005,
+          3978.982
+        ],
+        [
+          4395.005,
+          3928.982
+        ],
+        [
+          4395.005,
+          3878.982
+        ],
+        [
+          4395.005,
+          3828.982
+        ],
+        [
+          4395.005,
+          3778.982
+        ],
+        [
+          4395.005,
+          3728.982
+        ],
+        [
+          4395.005,
+          3678.982
+        ],
+        [
+          4395.005,
+          3628.982
+        ],
+        [
+          4395.005,
+          3578.982
+        ],
+        [
+          4395.005,
+          3528.982
+        ],
+        [
+          4395.005,
+          3478.982
+        ],
+        [
+          4395.005,
+          3428.982
+        ],
+        [
+          4395.005,
+          3378.982
+        ],
+        [
+          4395.005,
+          3328.982
+        ],
+        [
+          4395.005,
+          3278.982
+        ],
+        [
+          4395.005,
+          3228.982
+        ],
+        [
+          4395.005,
+          3178.982
+        ],
+        [
+          4395.005,
+          3128.982
+        ],
+        [
+          4395.005,
+          3078.982
+        ],
+        [
+          4395.005,
+          3028.982
+        ],
+        [
+          4395.005,
+          2978.982
+        ],
+        [
+          4395.005,
+          2928.982
+        ],
+        [
+          4395.005,
+          2878.982
+        ],
+        [
+          4395.005,
+          2828.982
+        ],
+        [
+          4395.005,
+          2778.982
+        ],
+        [
+          4395.005,
+          2728.982
+        ],
+        [
+          4395.005,
+          2678.982
+        ],
+        [
+          4395.005,
+          2628.982
+        ],
+        [
+          4395.005,
+          2578.982
+        ],
+        [
+          4395.005,
+          2528.982
+        ],
+        [
+          4395.005,
+          2478.982
+        ],
+        [
+          4395.005,
+          2428.982
+        ],
+        [
+          4395.005,
+          2378.982
+        ],
+        [
+          4395.005,
+          2328.982
+        ],
+        [
+          4395.005,
+          2278.982
+        ],
+        [
+          4395.005,
+          2228.982
+        ],
+        [
+          4395.005,
+          2178.982
+        ],
+        [
+          4395.005,
+          2128.982
+        ],
+        [
+          4395.005,
+          2078.982
+        ],
+        [
+          4395.005,
+          2028.982
+        ],
+        [
+          4395.005,
+          1978.982
+        ]
+      ],
+      "distance_mm": 2900,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "bed",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4178.982
+        ],
+        [
+          3995.005,
+          4128.982
+        ],
+        [
+          3995.005,
+          4078.982
+        ],
+        [
+          3995.005,
+          4028.982
+        ],
+        [
+          3995.005,
+          3978.982
+        ],
+        [
+          3995.005,
+          3928.982
+        ],
+        [
+          3995.005,
+          3878.982
+        ],
+        [
+          3995.005,
+          3828.982
+        ],
+        [
+          3995.005,
+          3778.982
+        ],
+        [
+          3995.005,
+          3728.982
+        ],
+        [
+          3995.005,
+          3678.982
+        ],
+        [
+          3995.005,
+          3628.982
+        ],
+        [
+          3995.005,
+          3578.982
+        ],
+        [
+          3995.005,
+          3528.982
+        ],
+        [
+          3995.005,
+          3478.982
+        ],
+        [
+          3995.005,
+          3428.982
+        ],
+        [
+          3995.005,
+          3378.982
+        ],
+        [
+          3995.005,
+          3328.982
+        ],
+        [
+          3995.005,
+          3278.982
+        ],
+        [
+          3995.005,
+          3228.982
+        ],
+        [
+          3995.005,
+          3178.982
+        ]
+      ],
+      "distance_mm": 2100,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "glazing",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4178.982
+        ],
+        [
+          4395.005,
+          4128.982
+        ],
+        [
+          4395.005,
+          4078.982
+        ],
+        [
+          4395.005,
+          4028.982
+        ],
+        [
+          4395.005,
+          3978.982
+        ],
+        [
+          4395.005,
+          3928.982
+        ],
+        [
+          4395.005,
+          3878.982
+        ],
+        [
+          4395.005,
+          3828.982
+        ],
+        [
+          4395.005,
+          3778.982
+        ],
+        [
+          4395.005,
+          3728.982
+        ],
+        [
+          4395.005,
+          3678.982
+        ],
+        [
+          4395.005,
+          3628.982
+        ],
+        [
+          4395.005,
+          3578.982
+        ],
+        [
+          4395.005,
+          3528.982
+        ],
+        [
+          4395.005,
+          3478.982
+        ],
+        [
+          4395.005,
+          3428.982
+        ],
+        [
+          4395.005,
+          3378.982
+        ],
+        [
+          4395.005,
+          3328.982
+        ],
+        [
+          4395.005,
+          3278.982
+        ],
+        [
+          4395.005,
+          3228.982
+        ],
+        [
+          4395.005,
+          3178.982
+        ],
+        [
+          4395.005,
+          3128.982
+        ],
+        [
+          4395.005,
+          3078.982
+        ],
+        [
+          4395.005,
+          3028.982
+        ],
+        [
+          4395.005,
+          2978.982
+        ],
+        [
+          4395.005,
+          2928.982
+        ],
+        [
+          4395.005,
+          2878.982
+        ],
+        [
+          4395.005,
+          2828.982
+        ],
+        [
+          4395.005,
+          2778.982
+        ],
+        [
+          4395.005,
+          2728.982
+        ],
+        [
+          4395.005,
+          2678.982
+        ],
+        [
+          4395.005,
+          2628.982
+        ],
+        [
+          4395.005,
+          2578.982
+        ],
+        [
+          4395.005,
+          2528.982
+        ],
+        [
+          4395.005,
+          2478.982
+        ],
+        [
+          4395.005,
+          2428.982
+        ],
+        [
+          4395.005,
+          2378.982
+        ],
+        [
+          4395.005,
+          2328.982
+        ],
+        [
+          4395.005,
+          2278.982
+        ],
+        [
+          4395.005,
+          2228.982
+        ],
+        [
+          4395.005,
+          2178.982
+        ],
+        [
+          4395.005,
+          2128.982
+        ],
+        [
+          4395.005,
+          2078.982
+        ],
+        [
+          4395.005,
+          2028.982
+        ],
+        [
+          4395.005,
+          1978.982
+        ]
+      ],
+      "distance_mm": 2900,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "bed",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4178.982
+        ],
+        [
+          4095.005,
+          4128.982
+        ],
+        [
+          4095.005,
+          4078.982
+        ],
+        [
+          4095.005,
+          4028.982
+        ],
+        [
+          4095.005,
+          3978.982
+        ],
+        [
+          4095.005,
+          3928.982
+        ],
+        [
+          4095.005,
+          3878.982
+        ],
+        [
+          4095.005,
+          3828.982
+        ],
+        [
+          4095.005,
+          3778.982
+        ],
+        [
+          4095.005,
+          3728.982
+        ],
+        [
+          4045.005,
+          3728.982
+        ],
+        [
+          4045.005,
+          3678.982
+        ],
+        [
+          4045.005,
+          3628.982
+        ],
+        [
+          3995.005,
+          3628.982
+        ],
+        [
+          3995.005,
+          3578.982
+        ],
+        [
+          3995.005,
+          3528.982
+        ],
+        [
+          3995.005,
+          3478.982
+        ],
+        [
+          3995.005,
+          3428.982
+        ],
+        [
+          3995.005,
+          3378.982
+        ],
+        [
+          3995.005,
+          3328.982
+        ],
+        [
+          3995.005,
+          3278.982
+        ],
+        [
+          3995.005,
+          3228.982
+        ],
+        [
+          3995.005,
+          3178.982
+        ]
+      ],
+      "distance_mm": 2100,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "glazing",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4178.982
+        ],
+        [
+          4395.005,
+          4128.982
+        ],
+        [
+          4395.005,
+          4078.982
+        ],
+        [
+          4395.005,
+          4028.982
+        ],
+        [
+          4395.005,
+          3978.982
+        ],
+        [
+          4395.005,
+          3928.982
+        ],
+        [
+          4395.005,
+          3878.982
+        ],
+        [
+          4395.005,
+          3828.982
+        ],
+        [
+          4395.005,
+          3778.982
+        ],
+        [
+          4395.005,
+          3728.982
+        ],
+        [
+          4395.005,
+          3678.982
+        ],
+        [
+          4395.005,
+          3628.982
+        ],
+        [
+          4395.005,
+          3578.982
+        ],
+        [
+          4395.005,
+          3528.982
+        ],
+        [
+          4395.005,
+          3478.982
+        ],
+        [
+          4395.005,
+          3428.982
+        ],
+        [
+          4395.005,
+          3378.982
+        ],
+        [
+          4395.005,
+          3328.982
+        ],
+        [
+          4395.005,
+          3278.982
+        ],
+        [
+          4395.005,
+          3228.982
+        ],
+        [
+          4395.005,
+          3178.982
+        ],
+        [
+          4395.005,
+          3128.982
+        ],
+        [
+          4395.005,
+          3078.982
+        ],
+        [
+          4395.005,
+          3028.982
+        ],
+        [
+          4395.005,
+          2978.982
+        ],
+        [
+          4395.005,
+          2928.982
+        ],
+        [
+          4395.005,
+          2878.982
+        ],
+        [
+          4395.005,
+          2828.982
+        ],
+        [
+          4395.005,
+          2778.982
+        ],
+        [
+          4395.005,
+          2728.982
+        ],
+        [
+          4395.005,
+          2678.982
+        ],
+        [
+          4395.005,
+          2628.982
+        ],
+        [
+          4395.005,
+          2578.982
+        ],
+        [
+          4395.005,
+          2528.982
+        ],
+        [
+          4395.005,
+          2478.982
+        ],
+        [
+          4395.005,
+          2428.982
+        ],
+        [
+          4395.005,
+          2378.982
+        ],
+        [
+          4395.005,
+          2328.982
+        ],
+        [
+          4395.005,
+          2278.982
+        ],
+        [
+          4395.005,
+          2228.982
+        ],
+        [
+          4395.005,
+          2178.982
+        ],
+        [
+          4395.005,
+          2128.982
+        ],
+        [
+          4395.005,
+          2078.982
+        ],
+        [
+          4395.005,
+          2028.982
+        ],
+        [
+          4395.005,
+          1978.982
+        ]
+      ],
+      "distance_mm": 2900,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "bed",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4178.982
+        ],
+        [
+          3995.005,
+          4128.982
+        ],
+        [
+          3995.005,
+          4078.982
+        ],
+        [
+          3995.005,
+          4028.982
+        ],
+        [
+          3995.005,
+          3978.982
+        ],
+        [
+          3995.005,
+          3928.982
+        ],
+        [
+          3995.005,
+          3878.982
+        ],
+        [
+          3995.005,
+          3828.982
+        ],
+        [
+          3995.005,
+          3778.982
+        ],
+        [
+          3995.005,
+          3728.982
+        ],
+        [
+          3995.005,
+          3678.982
+        ],
+        [
+          3995.005,
+          3628.982
+        ],
+        [
+          3995.005,
+          3578.982
+        ],
+        [
+          3995.005,
+          3528.982
+        ],
+        [
+          3995.005,
+          3478.982
+        ],
+        [
+          3995.005,
+          3428.982
+        ],
+        [
+          3995.005,
+          3378.982
+        ],
+        [
+          3995.005,
+          3328.982
+        ],
+        [
+          3995.005,
+          3278.982
+        ],
+        [
+          3995.005,
+          3228.982
+        ],
+        [
+          3995.005,
+          3178.982
+        ]
+      ],
+      "distance_mm": 2100,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "glazing",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ],
+        [
+          3795.005,
+          3978.982
+        ],
+        [
+          3795.005,
+          3928.982
+        ],
+        [
+          3795.005,
+          3878.982
+        ],
+        [
+          3795.005,
+          3828.982
+        ],
+        [
+          3795.005,
+          3778.982
+        ],
+        [
+          3795.005,
+          3728.982
+        ],
+        [
+          3795.005,
+          3678.982
+        ],
+        [
+          3795.005,
+          3628.982
+        ],
+        [
+          3795.005,
+          3578.982
+        ],
+        [
+          3795.005,
+          3528.982
+        ],
+        [
+          3795.005,
+          3478.982
+        ],
+        [
+          3795.005,
+          3428.982
+        ],
+        [
+          3795.005,
+          3378.982
+        ],
+        [
+          3795.005,
+          3328.982
+        ],
+        [
+          3795.005,
+          3278.982
+        ],
+        [
+          3795.005,
+          3228.982
+        ],
+        [
+          3795.005,
+          3178.982
+        ],
+        [
+          3845.005,
+          3178.982
+        ],
+        [
+          3845.005,
+          3128.982
+        ],
+        [
+          3845.005,
+          3078.982
+        ],
+        [
+          3895.005,
+          3078.982
+        ],
+        [
+          3895.005,
+          3028.982
+        ],
+        [
+          3945.005,
+          3028.982
+        ],
+        [
+          3995.005,
+          3028.982
+        ],
+        [
+          3995.005,
+          2978.982
+        ],
+        [
+          4045.005,
+          2978.982
+        ],
+        [
+          4095.005,
+          2978.982
+        ],
+        [
+          4145.005,
+          2978.982
+        ],
+        [
+          4195.005,
+          2978.982
+        ],
+        [
+          4245.005,
+          2978.982
+        ],
+        [
+          4295.005,
+          2978.982
+        ],
+        [
+          4345.005,
+          2978.982
+        ],
+        [
+          4395.005,
+          2978.982
+        ],
+        [
+          4395.005,
+          2928.982
+        ],
+        [
+          4395.005,
+          2878.982
+        ],
+        [
+          4395.005,
+          2828.982
+        ],
+        [
+          4395.005,
+          2778.982
+        ],
+        [
+          4395.005,
+          2728.982
+        ],
+        [
+          4395.005,
+          2678.982
+        ],
+        [
+          4395.005,
+          2628.982
+        ],
+        [
+          4395.005,
+          2578.982
+        ],
+        [
+          4395.005,
+          2528.982
+        ],
+        [
+          4395.005,
+          2478.982
+        ],
+        [
+          4395.005,
+          2428.982
+        ],
+        [
+          4395.005,
+          2378.982
+        ],
+        [
+          4395.005,
+          2328.982
+        ],
+        [
+          4395.005,
+          2278.982
+        ],
+        [
+          4395.005,
+          2228.982
+        ],
+        [
+          4395.005,
+          2178.982
+        ],
+        [
+          4395.005,
+          2128.982
+        ],
+        [
+          4395.005,
+          2078.982
+        ],
+        [
+          4395.005,
+          2028.982
+        ],
+        [
+          4395.005,
+          1978.982
+        ]
+      ],
+      "distance_mm": 4100,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "bed",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4178.982
+        ],
+        [
+          3995.005,
+          4128.982
+        ],
+        [
+          3995.005,
+          4078.982
+        ],
+        [
+          3995.005,
+          4028.982
+        ],
+        [
+          3995.005,
+          3978.982
+        ],
+        [
+          3995.005,
+          3928.982
+        ],
+        [
+          3995.005,
+          3878.982
+        ],
+        [
+          3995.005,
+          3828.982
+        ],
+        [
+          3995.005,
+          3778.982
+        ],
+        [
+          3995.005,
+          3728.982
+        ],
+        [
+          3995.005,
+          3678.982
+        ],
+        [
+          3995.005,
+          3628.982
+        ],
+        [
+          3995.005,
+          3578.982
+        ],
+        [
+          3995.005,
+          3528.982
+        ],
+        [
+          3995.005,
+          3478.982
+        ],
+        [
+          3995.005,
+          3428.982
+        ],
+        [
+          3995.005,
+          3378.982
+        ],
+        [
+          3995.005,
+          3328.982
+        ],
+        [
+          3995.005,
+          3278.982
+        ],
+        [
+          3995.005,
+          3228.982
+        ],
+        [
+          3995.005,
+          3178.982
+        ]
+      ],
+      "distance_mm": 2100,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "desk",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4795.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4478.982
+        ],
+        [
+          4745.005,
+          4428.982
+        ],
+        [
+          4745.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4378.982
+        ],
+        [
+          4695.005,
+          4328.982
+        ],
+        [
+          4695.005,
+          4278.982
+        ],
+        [
+          4645.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4278.982
+        ],
+        [
+          4595.005,
+          4228.982
+        ],
+        [
+          4545.005,
+          4228.982
+        ],
+        [
+          4495.005,
+          4228.982
+        ],
+        [
+          4445.005,
+          4228.982
+        ],
+        [
+          4395.005,
+          4228.982
+        ],
+        [
+          4345.005,
+          4228.982
+        ],
+        [
+          4295.005,
+          4228.982
+        ],
+        [
+          4245.005,
+          4228.982
+        ],
+        [
+          4195.005,
+          4228.982
+        ],
+        [
+          4145.005,
+          4228.982
+        ],
+        [
+          4095.005,
+          4228.982
+        ],
+        [
+          4045.005,
+          4228.982
+        ],
+        [
+          3995.005,
+          4228.982
+        ],
+        [
+          3945.005,
+          4228.982
+        ],
+        [
+          3895.005,
+          4228.982
+        ],
+        [
+          3845.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4228.982
+        ],
+        [
+          3795.005,
+          4178.982
+        ],
+        [
+          3795.005,
+          4128.982
+        ],
+        [
+          3795.005,
+          4078.982
+        ],
+        [
+          3795.005,
+          4028.982
+        ]
+      ],
+      "distance_mm": 1450,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    }
+  ],
+  "door_sweeps": [
+    {
+      "door": "OP-BR01-HALL",
+      "id": "starter-6",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 1858.926
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "starter-7",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 378.936
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "starter-8",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 2510.981
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "M3G2-BR01-nightstand",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 2472.348
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "V7-bedroom1-drawers",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 740.981
+    }
+  ],
+  "curtainSensitivity": [
+    {
+      "span_mm": 150,
+      "depth_mm": 150,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 150,
+      "depth_mm": 250,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 150,
+      "depth_mm": 350,
+      "finish_face_conflicts": [],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "M3G2-BR01-nightstand"
+        }
+      ]
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 150,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 250,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 350,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "M3G2-BR01-nightstand"
+        }
+      ]
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 150,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "starter-6"
+        }
+      ]
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 250,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "starter-6"
+        }
+      ]
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 350,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "starter-6"
+        },
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "M3G2-BR01-nightstand"
+        }
+      ]
+    }
+  ],
+  "solver_crosscheck": {
+    "result": "MATCH",
+    "status": "MODEL_ROUTE_FOUND"
+  },
+  "limitations": "2D circular-envelope paths from INSIDE each room. Seated650x350, standing600x600,50mm grid+35.36mm radial allowance; no physical thresholds, articulated bodies, code, manufacturer or comfort validation."
+}

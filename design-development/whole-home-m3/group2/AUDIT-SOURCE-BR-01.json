@@ -1,0 +1,3011 @@
+{
+  "schema": "M3Group2Operation/1",
+  "room": "BR-01",
+  "profile": "SOURCE",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "endpoints": {
+    "start": [
+      4800,
+      4500
+    ],
+    "bed": [
+      3990,
+      3190
+    ],
+    "desk": [
+      3790,
+      4040
+    ],
+    "glazing": [
+      4400,
+      1960
+    ]
+  },
+  "states": [
+    {
+      "id": "chair-0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-300",
+      "pull_mm": 300,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "chair-body-starter-9",
+          "b": "starter-8",
+          "area_mm2": 91200
+        },
+        {
+          "a": "seated-starter-9",
+          "b": "starter-8",
+          "area_mm2": 9750
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 4230,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4305
+            ],
+            [
+              3395,
+              4305
+            ],
+            [
+              3395,
+              3955
+            ],
+            [
+              4045,
+              3955
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chair-450",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "chair-body-starter-9",
+          "b": "starter-8",
+          "area_mm2": 163200
+        },
+        {
+          "a": "seated-starter-9",
+          "b": "starter-8",
+          "area_mm2": 107250
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 4380,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4455
+            ],
+            [
+              3395,
+              4455
+            ],
+            [
+              3395,
+              4105
+            ],
+            [
+              4045,
+              4105
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open0-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              2850
+            ],
+            [
+              4160,
+              2850
+            ],
+            [
+              4160,
+              2250
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open0-bay0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4760,
+              2850
+            ],
+            [
+              4760,
+              3450
+            ],
+            [
+              4160,
+              3450
+            ],
+            [
+              4160,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open0-bay600",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4760,
+              3450
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4160,
+              4050
+            ],
+            [
+              4160,
+              3450
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open300-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4460,
+              4050
+            ],
+            [
+              4460,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4460,
+              2250
+            ],
+            [
+              4460,
+              2850
+            ],
+            [
+              3860,
+              2850
+            ],
+            [
+              3860,
+              2250
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open300-bay0",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4460,
+              4050
+            ],
+            [
+              4460,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4460,
+              2850
+            ],
+            [
+              4460,
+              3450
+            ],
+            [
+              3860,
+              3450
+            ],
+            [
+              3860,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open300-bay600",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        },
+        {
+          "a": "user-starter-7",
+          "b": "starter-9",
+          "area_mm2": 37000
+        },
+        {
+          "a": "user-starter-7",
+          "b": "seated-starter-9",
+          "area_mm2": 64750
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4460,
+              4050
+            ],
+            [
+              4460,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4460,
+              3450
+            ],
+            [
+              4460,
+              4050
+            ],
+            [
+              3860,
+              4050
+            ],
+            [
+              3860,
+              3450
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open450-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4310,
+              4050
+            ],
+            [
+              4310,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4310,
+              2250
+            ],
+            [
+              4310,
+              2850
+            ],
+            [
+              3710,
+              2850
+            ],
+            [
+              3710,
+              2250
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open450-bay0",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4310,
+              4050
+            ],
+            [
+              4310,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4310,
+              2850
+            ],
+            [
+              4310,
+              3450
+            ],
+            [
+              3710,
+              3450
+            ],
+            [
+              3710,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open450-bay600",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        },
+        {
+          "a": "user-starter-7",
+          "b": "starter-9",
+          "area_mm2": 92500
+        },
+        {
+          "a": "user-starter-7",
+          "b": "seated-starter-9",
+          "area_mm2": 117250
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4310,
+              4050
+            ],
+            [
+              4310,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4310,
+              3450
+            ],
+            [
+              4310,
+              4050
+            ],
+            [
+              3710,
+              4050
+            ],
+            [
+              3710,
+              3450
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open600-bay-600",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-7",
+      "offset_mm": -600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4160,
+              4050
+            ],
+            [
+              4160,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4160,
+              2250
+            ],
+            [
+              4160,
+              2850
+            ],
+            [
+              3560,
+              2850
+            ],
+            [
+              3560,
+              2250
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open600-bay0",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4160,
+              4050
+            ],
+            [
+              4160,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4160,
+              2850
+            ],
+            [
+              4160,
+              3450
+            ],
+            [
+              3560,
+              3450
+            ],
+            [
+              3560,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-open600-bay600",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-7",
+      "offset_mm": 600,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        },
+        {
+          "a": "user-starter-7",
+          "b": "starter-9",
+          "area_mm2": 148000
+        },
+        {
+          "a": "user-starter-7",
+          "b": "seated-starter-9",
+          "area_mm2": 169750
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4160,
+              4050
+            ],
+            [
+              4160,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4160,
+              3450
+            ],
+            [
+              4160,
+              4050
+            ],
+            [
+              3560,
+              4050
+            ],
+            [
+              3560,
+              3450
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-chair450-open0",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "chair-body-starter-9",
+          "b": "starter-8",
+          "area_mm2": 163200
+        },
+        {
+          "a": "seated-starter-9",
+          "b": "starter-8",
+          "area_mm2": 107250
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 4380,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4760,
+              2850
+            ],
+            [
+              4760,
+              3450
+            ],
+            [
+              4160,
+              3450
+            ],
+            [
+              4160,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4455
+            ],
+            [
+              3395,
+              4455
+            ],
+            [
+              3395,
+              4105
+            ],
+            [
+              4045,
+              4105
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-chair450-open300",
+      "pull_mm": 450,
+      "opening_mm": 300,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "chair-body-starter-9",
+          "b": "starter-8",
+          "area_mm2": 163200
+        },
+        {
+          "a": "seated-starter-9",
+          "b": "starter-8",
+          "area_mm2": 107250
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 4380,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4460,
+              4050
+            ],
+            [
+              4460,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4460,
+              2850
+            ],
+            [
+              4460,
+              3450
+            ],
+            [
+              3860,
+              3450
+            ],
+            [
+              3860,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4455
+            ],
+            [
+              3395,
+              4455
+            ],
+            [
+              3395,
+              4105
+            ],
+            [
+              4045,
+              4105
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starter-7-chair450-open450",
+      "pull_mm": 450,
+      "opening_mm": 450,
+      "cabinet": "starter-7",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "chair-body-starter-9",
+          "b": "starter-8",
+          "area_mm2": 163200
+        },
+        {
+          "a": "seated-starter-9",
+          "b": "starter-8",
+          "area_mm2": 107250
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 4380,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-starter-7",
+          "polygon": [
+            [
+              4760,
+              2250
+            ],
+            [
+              4760,
+              4050
+            ],
+            [
+              4310,
+              4050
+            ],
+            [
+              4310,
+              2250
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-7",
+          "polygon": [
+            [
+              4310,
+              2850
+            ],
+            [
+              4310,
+              3450
+            ],
+            [
+              3710,
+              3450
+            ],
+            [
+              3710,
+              2850
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4455
+            ],
+            [
+              3395,
+              4455
+            ],
+            [
+              3395,
+              4105
+            ],
+            [
+              4045,
+              4105
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V7-bedroom1-drawers-drawer300",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "V7-bedroom1-drawers",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        },
+        {
+          "a": "user-V7-bedroom1-drawers",
+          "b": "starter-6",
+          "area_mm2": 51000
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              3175,
+              4545
+            ],
+            [
+              2175,
+              4545
+            ],
+            [
+              2175,
+              4245
+            ],
+            [
+              3175,
+              4245
+            ]
+          ]
+        },
+        {
+          "id": "user-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              2975,
+              4245
+            ],
+            [
+              2375,
+              4245
+            ],
+            [
+              2375,
+              3645
+            ],
+            [
+              2975,
+              3645
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V7-bedroom1-drawers-drawer500",
+      "pull_mm": 0,
+      "opening_mm": 500,
+      "cabinet": "V7-bedroom1-drawers",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "seated-starter-9",
+          "b": "starter-6",
+          "area_mm2": 1496.475
+        },
+        {
+          "a": "user-V7-bedroom1-drawers",
+          "b": "starter-6",
+          "area_mm2": 171000
+        }
+      ],
+      "chairs": [
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "use": [
+        {
+          "id": "open-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              3175,
+              4545
+            ],
+            [
+              2175,
+              4545
+            ],
+            [
+              2175,
+              4045
+            ],
+            [
+              3175,
+              4045
+            ]
+          ]
+        },
+        {
+          "id": "user-V7-bedroom1-drawers",
+          "polygon": [
+            [
+              2975,
+              4045
+            ],
+            [
+              2375,
+              4045
+            ],
+            [
+              2375,
+              3445
+            ],
+            [
+              2975,
+              3445
+            ]
+          ]
+        }
+      ],
+      "seated": [
+        {
+          "id": "seated-starter-9",
+          "polygon": [
+            [
+              4045,
+              4005
+            ],
+            [
+              3395,
+              4005
+            ],
+            [
+              3395,
+              3655
+            ],
+            [
+              4045,
+              3655
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "state": "chair-0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open0-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open300-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open450-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay-600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-open600-bay600",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open0",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-7-chair450-open450",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer300",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "bed",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "desk",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "V7-bedroom1-drawers-drawer500",
+      "goal": "glazing",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "DISCONNECTED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    }
+  ],
+  "door_sweeps": [
+    {
+      "door": "OP-BR01-HALL",
+      "id": "starter-6",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 1858.926
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "starter-7",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 228.936
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "starter-8",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 790.981
+    },
+    {
+      "door": "OP-BR01-HALL",
+      "id": "V7-bedroom1-drawers",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 2015.981
+    }
+  ],
+  "curtainSensitivity": [
+    {
+      "span_mm": 150,
+      "depth_mm": 150,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 150,
+      "depth_mm": 250,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 150,
+      "depth_mm": 350,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 150,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 250,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 350,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": []
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 150,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "starter-6"
+        }
+      ]
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 250,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "starter-6"
+        }
+      ]
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 350,
+      "finish_face_conflicts": [
+        "GLZ-BR01-N-stack1"
+      ],
+      "collisions": [
+        {
+          "curtain": "GLZ-BR01-N-stack0",
+          "item": "starter-6"
+        }
+      ]
+    }
+  ],
+  "solver_crosscheck": {
+    "result": "MATCH",
+    "status": "NO_MODEL_ROUTE"
+  },
+  "limitations": "2D circular-envelope paths from INSIDE each room. Seated650x350, standing600x600,50mm grid+35.36mm radial allowance; no physical thresholds, articulated bodies, code, manufacturer or comfort validation."
+}

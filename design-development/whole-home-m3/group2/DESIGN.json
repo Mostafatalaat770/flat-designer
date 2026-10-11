@@ -1,0 +1,1623 @@
+{
+  "schema": "M3Group2/1",
+  "baseline_head": "5fd6e9153e521f72a5c2a226a7aa3d90833b9fab",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "owner_inventory": "NOT_PROVIDED; every clothing/shoe quantity conditional",
+  "approvals": {
+    "owner": false,
+    "construction": false,
+    "procurement": false,
+    "cloud_save": false
+  },
+  "options": [
+    {
+      "id": "SOURCE",
+      "scene": "scene-9cf45a73",
+      "facts": {
+        "beds": [
+          {
+            "id": "starter-1",
+            "frame_mm": [
+              1870,
+              2220
+            ],
+            "mattress_mm": [
+              1800,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 19.43999999999977,
+              "east": 1287.5590000000002,
+              "north": 810.8469999999998,
+              "south": 1100.3459999999995
+            },
+            "mattress_height_mm": null,
+            "not_surveyed": true
+          },
+          {
+            "id": "starter-6",
+            "frame_mm": [
+              1280,
+              2100
+            ],
+            "mattress_mm": [
+              1200,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 74.94799999999987,
+              "east": 1960.2220000000002,
+              "north": 36.01800000000003,
+              "south": 1179.1530000000002
+            },
+            "mattress_height_mm": null,
+            "not_surveyed": true
+          },
+          {
+            "id": "starter-10",
+            "frame_mm": [
+              1280,
+              2100
+            ],
+            "mattress_mm": [
+              1200,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 1214.8249999999998,
+              "east": 21.52900000000045,
+              "north": 566.018,
+              "south": 1469.1530000000002
+            },
+            "mattress_height_mm": null,
+            "not_surveyed": true
+          }
+        ],
+        "wic_aisle_mm": 1335,
+        "BR02_table_mm": [
+          900,
+          500
+        ],
+        "BR02_wardrobe_width_relative_to_source": 1,
+        "master_chest_inner_width_relative_to_source": 1,
+        "BR01_chest_inner_width_relative_to_source": 1
+      },
+      "validation": {
+        "summary": {
+          "pass": 186,
+          "warning": 75,
+          "fail": 0
+        },
+        "failures": []
+      },
+      "rooms": [
+        {
+          "id": "BR-02",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1850,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1850,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "chair-300",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 124800
+                },
+                {
+                  "a": "seated-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 61750
+                }
+              ]
+            },
+            {
+              "id": "chair-450",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 196800
+                },
+                {
+                  "a": "seated-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 159250
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open300-bay-500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 30600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open300-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 30600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open300-bay500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 30600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open450-bay-500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 120600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open450-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 120600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open450-bay500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 120600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open600-bay-500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 210600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open600-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 210600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open600-bay500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 210600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-chair450-open0",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 196800
+                },
+                {
+                  "a": "seated-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 159250
+                }
+              ]
+            },
+            {
+              "id": "starter-13-chair450-open300",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 196800
+                },
+                {
+                  "a": "seated-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 159250
+                },
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 30600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-chair450-open450",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 196800
+                },
+                {
+                  "a": "seated-starter-12",
+                  "b": "starter-11",
+                  "area_mm2": 159250
+                },
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 120600
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        },
+        {
+          "id": "BR-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "chair-0",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "chair-300",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 91200
+                },
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 9750
+                }
+              ]
+            },
+            {
+              "id": "chair-450",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 163200
+                },
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 107250
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open0-bay-600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open0-bay0",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open0-bay600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open300-bay-600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open300-bay0",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open300-bay600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                },
+                {
+                  "a": "user-starter-7",
+                  "b": "starter-9",
+                  "area_mm2": 37000
+                },
+                {
+                  "a": "user-starter-7",
+                  "b": "seated-starter-9",
+                  "area_mm2": 64750
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open450-bay-600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open450-bay0",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open450-bay600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                },
+                {
+                  "a": "user-starter-7",
+                  "b": "starter-9",
+                  "area_mm2": 92500
+                },
+                {
+                  "a": "user-starter-7",
+                  "b": "seated-starter-9",
+                  "area_mm2": 117250
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open600-bay-600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open600-bay0",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open600-bay600",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                },
+                {
+                  "a": "user-starter-7",
+                  "b": "starter-9",
+                  "area_mm2": 148000
+                },
+                {
+                  "a": "user-starter-7",
+                  "b": "seated-starter-9",
+                  "area_mm2": 169750
+                }
+              ]
+            },
+            {
+              "id": "starter-7-chair450-open0",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 163200
+                },
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 107250
+                }
+              ]
+            },
+            {
+              "id": "starter-7-chair450-open300",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 163200
+                },
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 107250
+                }
+              ]
+            },
+            {
+              "id": "starter-7-chair450-open450",
+              "collisions": [
+                {
+                  "a": "chair-body-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 163200
+                },
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-8",
+                  "area_mm2": 107250
+                }
+              ]
+            },
+            {
+              "id": "V7-bedroom1-drawers-drawer300",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                },
+                {
+                  "a": "user-V7-bedroom1-drawers",
+                  "b": "starter-6",
+                  "area_mm2": 51000
+                }
+              ]
+            },
+            {
+              "id": "V7-bedroom1-drawers-drawer500",
+              "collisions": [
+                {
+                  "a": "seated-starter-9",
+                  "b": "starter-6",
+                  "area_mm2": 1496.475
+                },
+                {
+                  "a": "user-V7-bedroom1-drawers",
+                  "b": "starter-6",
+                  "area_mm2": 171000
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        },
+        {
+          "id": "MBR-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1100,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "wic",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "terrace",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1100,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "wic",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "terrace",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [],
+          "door_collisions": []
+        },
+        {
+          "id": "WIC-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bath",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "north",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "south",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 400,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bath",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "north",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "south",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "two-users-open300",
+              "collisions": [
+                {
+                  "a": "user-starter-4",
+                  "b": "user-starter-5",
+                  "area_mm2": 279000
+                }
+              ]
+            },
+            {
+              "id": "two-users-open450",
+              "collisions": [
+                {
+                  "a": "user-starter-4",
+                  "b": "open-starter-5",
+                  "area_mm2": 99000
+                },
+                {
+                  "a": "user-starter-5",
+                  "b": "open-starter-4",
+                  "area_mm2": 99000
+                },
+                {
+                  "a": "user-starter-4",
+                  "b": "user-starter-5",
+                  "area_mm2": 261000
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "scene": "scene-5a6a4d60",
+      "facts": {
+        "beds": [
+          {
+            "id": "starter-1",
+            "frame_mm": [
+              1870,
+              2220
+            ],
+            "mattress_mm": [
+              1800,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 19.43999999999977,
+              "east": 1287.5590000000002,
+              "north": 775.8469999999998,
+              "south": 1135.3459999999995
+            },
+            "mattress_height_mm": 560,
+            "not_surveyed": true
+          },
+          {
+            "id": "starter-6",
+            "frame_mm": [
+              1280,
+              2100
+            ],
+            "mattress_mm": [
+              1200,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 299.94799999999987,
+              "east": 1735.2220000000002,
+              "north": 36.01800000000003,
+              "south": 1179.1530000000002
+            },
+            "mattress_height_mm": 560,
+            "not_surveyed": true
+          },
+          {
+            "id": "starter-10",
+            "frame_mm": [
+              1240,
+              2100
+            ],
+            "mattress_mm": [
+              1200,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 1214.8249999999998,
+              "east": 21.52900000000045,
+              "north": 776.018,
+              "south": 1299.1530000000002
+            },
+            "mattress_height_mm": 560,
+            "not_surveyed": true
+          }
+        ],
+        "wic_aisle_mm": 1235,
+        "BR02_table_mm": [
+          1100,
+          580
+        ],
+        "BR02_wardrobe_width_relative_to_source": 0.75,
+        "master_chest_inner_width_relative_to_source": 0.5833333333333334,
+        "BR01_chest_inner_width_relative_to_source": 0.5833333333333334
+      },
+      "validation": {
+        "summary": {
+          "pass": 195,
+          "warning": 79,
+          "fail": 0
+        },
+        "failures": []
+      },
+      "rooms": [
+        {
+          "id": "BR-02",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1700,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1700,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [],
+          "door_collisions": []
+        },
+        {
+          "id": "BR-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 2100,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 2900,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "starter-7-open600-bay-600",
+              "collisions": [
+                {
+                  "a": "user-starter-7",
+                  "b": "starter-6",
+                  "area_mm2": 77971.8
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open600-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-7",
+                  "b": "starter-6",
+                  "area_mm2": 77971.8
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open600-bay600",
+              "collisions": [
+                {
+                  "a": "user-starter-7",
+                  "b": "starter-6",
+                  "area_mm2": 55879.79
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        },
+        {
+          "id": "MBR-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1100,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "wic",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "terrace",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 2900,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1100,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "wic",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "terrace",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [],
+          "door_collisions": []
+        },
+        {
+          "id": "WIC-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bath",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "north",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "south",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 400,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bath",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "north",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "south",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "two-users-open300",
+              "collisions": [
+                {
+                  "a": "user-starter-4",
+                  "b": "user-starter-5",
+                  "area_mm2": 339000
+                }
+              ]
+            },
+            {
+              "id": "two-users-open450",
+              "collisions": [
+                {
+                  "a": "user-starter-4",
+                  "b": "open-starter-5",
+                  "area_mm2": 159000
+                },
+                {
+                  "a": "user-starter-5",
+                  "b": "open-starter-4",
+                  "area_mm2": 159000
+                },
+                {
+                  "a": "user-starter-4",
+                  "b": "user-starter-5",
+                  "area_mm2": 201000
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "scene": "scene-a6276ce3",
+      "facts": {
+        "beds": [
+          {
+            "id": "starter-1",
+            "frame_mm": [
+              1870,
+              2220
+            ],
+            "mattress_mm": [
+              1800,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 19.43999999999977,
+              "east": 1287.5590000000002,
+              "north": 775.8469999999998,
+              "south": 1135.3459999999995
+            },
+            "mattress_height_mm": 570,
+            "not_surveyed": true
+          },
+          {
+            "id": "starter-6",
+            "frame_mm": [
+              1280,
+              2100
+            ],
+            "mattress_mm": [
+              1200,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 74.94799999999987,
+              "east": 1960.2220000000002,
+              "north": 36.01800000000003,
+              "south": 1179.1530000000002
+            },
+            "mattress_height_mm": 570,
+            "not_surveyed": true
+          },
+          {
+            "id": "starter-10",
+            "frame_mm": [
+              1280,
+              2100
+            ],
+            "mattress_mm": [
+              1200,
+              2000
+            ],
+            "assumed_face_bands_mm": {
+              "west": 1214.8249999999998,
+              "east": 21.52900000000045,
+              "north": 756.018,
+              "south": 1279.1530000000002
+            },
+            "mattress_height_mm": 570,
+            "not_surveyed": true
+          }
+        ],
+        "wic_aisle_mm": 1335,
+        "BR02_table_mm": [
+          900,
+          500
+        ],
+        "BR02_wardrobe_width_relative_to_source": 1,
+        "master_chest_inner_width_relative_to_source": 0.5833333333333334,
+        "BR01_chest_inner_width_relative_to_source": 0.5833333333333334
+      },
+      "validation": {
+        "summary": {
+          "pass": 195,
+          "warning": 77,
+          "fail": 0
+        },
+        "failures": []
+      },
+      "rooms": [
+        {
+          "id": "BR-02",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "DISCONNECTED",
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "starter-13-open300-bay-500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 144600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open300-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 144600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open300-bay500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 144600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open450-bay-500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 234600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open450-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 234600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open450-bay500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 234600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open600-bay-500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 324600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open600-bay0",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 324600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-open600-bay500",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 324600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-chair450-open300",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 144600
+                }
+              ]
+            },
+            {
+              "id": "starter-13-chair450-open450",
+              "collisions": [
+                {
+                  "a": "user-starter-13",
+                  "b": "starter-10",
+                  "area_mm2": 234600
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        },
+        {
+          "id": "BR-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 2100,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1450,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 2900,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "desk",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "glazing",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "starter-7-open450-bay-600",
+              "collisions": [
+                {
+                  "a": "user-starter-7",
+                  "b": "M3G2-BR01-nightstand",
+                  "area_mm2": 18900
+                }
+              ]
+            },
+            {
+              "id": "starter-7-open600-bay-600",
+              "collisions": [
+                {
+                  "a": "user-starter-7",
+                  "b": "M3G2-BR01-nightstand",
+                  "area_mm2": 39150
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        },
+        {
+          "id": "MBR-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1100,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "wic",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "terrace",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 2900,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bed",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1100,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "wic",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 1750,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "terrace",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [],
+          "door_collisions": []
+        },
+        {
+          "id": "WIC-01",
+          "typical_routes": [
+            {
+              "state": "chair-0",
+              "goal": "bath",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "north",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "south",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 400,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "bath",
+              "status": "MODEL_ROUTE_FOUND",
+              "distance_mm": 800,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "north",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            },
+            {
+              "state": "chair-0",
+              "goal": "south",
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ],
+          "operating_collisions": [
+            {
+              "id": "two-users-open300",
+              "collisions": [
+                {
+                  "a": "user-starter-4",
+                  "b": "user-starter-5",
+                  "area_mm2": 279000
+                }
+              ]
+            },
+            {
+              "id": "two-users-open450",
+              "collisions": [
+                {
+                  "a": "user-starter-4",
+                  "b": "open-starter-5",
+                  "area_mm2": 99000
+                },
+                {
+                  "a": "user-starter-5",
+                  "b": "open-starter-4",
+                  "area_mm2": 99000
+                },
+                {
+                  "a": "user-starter-4",
+                  "b": "user-starter-5",
+                  "area_mm2": 261000
+                }
+              ]
+            }
+          ],
+          "door_collisions": []
+        }
+      ]
+    }
+  ],
+  "group1_holds_sha256": "b9f3b10f3a6c562789ba0784ed029f569714088ef0509003e94e2956ccd00781"
+}

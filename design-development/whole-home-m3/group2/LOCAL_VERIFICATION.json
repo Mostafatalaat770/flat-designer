@@ -1,0 +1,20 @@
+{
+  "schema": "M3Group2LocalVerification/1",
+  "result": "PASS",
+  "baseline_commit": "5fd6e9153e521f72a5c2a226a7aa3d90833b9fab",
+  "build": "PASS",
+  "app_verifiers": 5,
+  "domain_analysis_tests": 18,
+  "focused_tests": 12,
+  "webgl_frames": 22,
+  "svg_plans": 17,
+  "offline_browser_states": 54,
+  "inherited_tracked_files_preserved": 1007,
+  "html_sha256": "4df0176e433e3251b591ccf5881945d4de3ac8c87c9961916b1ea3ba587e7597",
+  "render_evidence_sha256": "efae42263cb7930976927a4f87817901ee1a11a9684c0912e304a3ab7acfa65b",
+  "focused_test_sha256": "0ef77768a9363781198254209fb7314be32948212114cf4dc7c1351b99e18281",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "remote_ci": "NOT_RUN_INTENTIONALLY / no claim of remote PASS",
+  "construction_owner_procurement_cloud_save_approved": false
+}

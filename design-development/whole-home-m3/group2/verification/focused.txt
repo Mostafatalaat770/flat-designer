@@ -1,0 +1,20 @@
+✔ Every inherited tracked file remains byte-identical to5fd6e91 (294.624454ms)
+✔ Source control exact; original room/object identities and other rooms unchanged (19.498185ms)
+✔ All final full scenes pass domain hard checks; no ordinary door/fixed-furniture sweep collision (22.240672ms)
+✔ B resolves source chair direction/withdrawal and operating collisions at real300mm draw (1.48201ms)
+✔ Two WIC users/drawers rejected; depth/capacity/shoe loss not silently allocated (7.472983ms)
+✔ Phased B chair transport/service and glazing access verified at50/25; A phase rejected (0.783499ms)
+✔ 22 genuinePNG captures match current scene/camera/helper; no network, fallback or architecture override (43.066976ms)
+✔ Cameras genuinely matched; master night pair uses the same camera and real lighting state (0.31858ms)
+✔ Actual triangle/ray ergonomics expose comfort limits instead of relying on footprint gap (0.419451ms)
+✔ All inherited and new SITE HOLDs open, approvalsfalse, Arabic report self-contained (157.899856ms)
+✔ Actual AC body collision removed without claiming service approval; source defect retained (2.809507ms)
+✔ Actual curtain triangles fit declared operating envelopes and source finish returns (4.483686ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 659.766102

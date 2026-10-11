@@ -1,0 +1,6279 @@
+{
+  "schema": "M3Group2Service/1",
+  "results": [
+    {
+      "key": "SOURCE",
+      "room": "BR-02",
+      "unit_body_relations": [
+        {
+          "id": "starter-10",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6770,
+              0,
+              2160
+            ],
+            "max": [
+              8870,
+              820,
+              3440
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            -1325,
+            -1284.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1325
+        },
+        {
+          "id": "starter-11",
+          "furniture_world_bounds_mm": {
+            "min": [
+              5570,
+              0,
+              1670
+            ],
+            "max": [
+              6470,
+              1235,
+              2170
+            ]
+          },
+          "overlap_axis_mm": [
+            -923.3519928474425,
+            -910,
+            -2554.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 910
+        },
+        {
+          "id": "starter-12",
+          "furniture_world_bounds_mm": {
+            "min": [
+              5791.14,
+              0,
+              2205
+            ],
+            "max": [
+              6248.86,
+              1320,
+              2685.76
+            ]
+          },
+          "overlap_axis_mm": [
+            -1144.4919928474428,
+            -825,
+            -2038.3930001117587
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 825
+        },
+        {
+          "id": "starter-13",
+          "furniture_world_bounds_mm": {
+            "min": [
+              7190,
+              0,
+              4248
+            ],
+            "max": [
+              8790,
+              2200,
+              4889
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            55,
+            164.84699988824104
+          ],
+          "positive_body_overlap": true,
+          "plan_overlap": true,
+          "vertical_gap_mm": -55
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          7823.352,
+          4869.153
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            7393.3519928474425,
+            2145,
+            4724.153000111759
+          ],
+          "max": [
+            8253.352007152556,
+            2395,
+            4919.153003576279
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            7823.352,
+            4269.153
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              8123.352,
+              4719.153
+            ],
+            [
+              7523.352,
+              4719.153
+            ],
+            [
+              7523.352,
+              3819.1530000000002
+            ],
+            [
+              8123.352,
+              3819.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-13"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            7823.352,
+            3969.1530000000002
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              8123.352,
+              4419.153
+            ],
+            [
+              7523.352,
+              4419.153
+            ],
+            [
+              7523.352,
+              3519.1530000000002
+            ],
+            [
+              8123.352,
+              3519.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-13"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  6490.175,
+                  4478.982
+                ],
+                [
+                  6540.175,
+                  4478.982
+                ],
+                [
+                  6590.175,
+                  4478.982
+                ],
+                [
+                  6640.175,
+                  4478.982
+                ],
+                [
+                  6690.175,
+                  4478.982
+                ],
+                [
+                  6740.175,
+                  4478.982
+                ],
+                [
+                  6790.175,
+                  4478.982
+                ],
+                [
+                  6840.175,
+                  4478.982
+                ],
+                [
+                  6890.175,
+                  4478.982
+                ],
+                [
+                  6890.175,
+                  4428.982
+                ],
+                [
+                  6890.175,
+                  4378.982
+                ],
+                [
+                  6890.175,
+                  4328.982
+                ],
+                [
+                  6890.175,
+                  4278.982
+                ],
+                [
+                  6890.175,
+                  4228.982
+                ],
+                [
+                  6890.175,
+                  4178.982
+                ],
+                [
+                  6890.175,
+                  4128.982
+                ],
+                [
+                  6940.175,
+                  4128.982
+                ],
+                [
+                  6940.175,
+                  4078.982
+                ],
+                [
+                  6990.175,
+                  4078.982
+                ],
+                [
+                  6990.175,
+                  4028.982
+                ],
+                [
+                  7040.175,
+                  4028.982
+                ],
+                [
+                  7040.175,
+                  3978.982
+                ],
+                [
+                  7090.175,
+                  3978.982
+                ],
+                [
+                  7140.175,
+                  3978.982
+                ],
+                [
+                  7190.175,
+                  3978.982
+                ],
+                [
+                  7240.175,
+                  3978.982
+                ],
+                [
+                  7290.175,
+                  3978.982
+                ],
+                [
+                  7340.175,
+                  3978.982
+                ],
+                [
+                  7390.175,
+                  3978.982
+                ],
+                [
+                  7440.175,
+                  3978.982
+                ],
+                [
+                  7490.175,
+                  3978.982
+                ],
+                [
+                  7540.175,
+                  3978.982
+                ],
+                [
+                  7590.175,
+                  3978.982
+                ],
+                [
+                  7640.175,
+                  3978.982
+                ],
+                [
+                  7690.175,
+                  3978.982
+                ],
+                [
+                  7740.175,
+                  3978.982
+                ],
+                [
+                  7790.175,
+                  3978.982
+                ],
+                [
+                  7840.175,
+                  3978.982
+                ]
+              ],
+              "distance_mm": 1850,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": null,
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              7823.852,
+              4869.153
+            ],
+            [
+              7822.852,
+              4869.153
+            ],
+            [
+              7822.852,
+              1869.1530000000002
+            ],
+            [
+              7823.852,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-10"
+          ]
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              8123.352,
+              4869.153
+            ],
+            [
+              7523.352,
+              4869.153
+            ],
+            [
+              7523.352,
+              1869.1530000000002
+            ],
+            [
+              8123.352,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-10"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "SOURCE",
+      "room": "BR-01",
+      "unit_body_relations": [
+        {
+          "id": "starter-6",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2134.953,
+              0,
+              1630
+            ],
+            "max": [
+              3414.953,
+              820,
+              3730
+            ]
+          },
+          "overlap_axis_mm": [
+            381.39400715255715,
+            -1325,
+            -994.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1325
+        },
+        {
+          "id": "starter-7",
+          "furniture_world_bounds_mm": {
+            "min": [
+              4719,
+              0,
+              2250
+            ],
+            "max": [
+              5360,
+              2200,
+              4050
+            ]
+          },
+          "overlap_axis_mm": [
+            -825.4409928474424,
+            55,
+            -674.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": -55
+        },
+        {
+          "id": "starter-8",
+          "furniture_world_bounds_mm": {
+            "min": [
+              3200,
+              0,
+              4290
+            ],
+            "max": [
+              4400,
+              1235,
+              4890
+            ]
+          },
+          "overlap_axis_mm": [
+            693.5590071525576,
+            -910,
+            165.84699988824104
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": true,
+          "vertical_gap_mm": 910
+        },
+        {
+          "id": "starter-9",
+          "furniture_world_bounds_mm": {
+            "min": [
+              3480,
+              0,
+              3680
+            ],
+            "max": [
+              3960,
+              820,
+              4177.5
+            ]
+          },
+          "overlap_axis_mm": [
+            413.55900715255757,
+            -1325,
+            -546.653000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1325
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          3463.559,
+          4869.153
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            3033.558992847443,
+            2145,
+            4724.153000111759
+          ],
+          "max": [
+            3893.5590071525576,
+            2395,
+            4919.153003576279
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            3463.559,
+            4269.153
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3763.559,
+              4719.153
+            ],
+            [
+              3163.559,
+              4719.153
+            ],
+            [
+              3163.559,
+              3819.1530000000002
+            ],
+            [
+              3763.559,
+              3819.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-8",
+            "V7-bedroom1-drawers"
+          ],
+          "chair_collisions": [
+            "starter-9"
+          ],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            3463.559,
+            3969.1530000000002
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3763.559,
+              4419.153
+            ],
+            [
+              3163.559,
+              4419.153
+            ],
+            [
+              3163.559,
+              3519.1530000000002
+            ],
+            [
+              3763.559,
+              3519.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-6",
+            "starter-8"
+          ],
+          "chair_collisions": [
+            "starter-9"
+          ],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": null,
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3464.059,
+              4869.153
+            ],
+            [
+              3463.059,
+              4869.153
+            ],
+            [
+              3463.059,
+              1869.1530000000002
+            ],
+            [
+              3464.059,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": []
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3763.559,
+              4869.153
+            ],
+            [
+              3163.559,
+              4869.153
+            ],
+            [
+              3163.559,
+              1869.1530000000002
+            ],
+            [
+              3763.559,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "SOURCE",
+      "room": "MBR-01",
+      "unit_body_relations": [
+        {
+          "id": "starter-1",
+          "furniture_world_bounds_mm": {
+            "min": [
+              405.9999999999998,
+              0,
+              5900
+            ],
+            "max": [
+              2626,
+              1180,
+              7770
+            ]
+          },
+          "overlap_axis_mm": [
+            305.9410071525572,
+            -965,
+            -915.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 965
+        },
+        {
+          "id": "starter-2",
+          "furniture_world_bounds_mm": {
+            "min": [
+              456.668,
+              10,
+              5421
+            ],
+            "max": [
+              856.668,
+              810,
+              5875
+            ]
+          },
+          "overlap_axis_mm": [
+            -1463.3909928474427,
+            -1335,
+            -2810.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1335
+        },
+        {
+          "id": "starter-3",
+          "furniture_world_bounds_mm": {
+            "min": [
+              456.668,
+              10,
+              7821
+            ],
+            "max": [
+              856.668,
+              810,
+              8275
+            ]
+          },
+          "overlap_axis_mm": [
+            -1463.3909928474427,
+            -1335,
+            -410.34600011175826
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1335
+        },
+        {
+          "id": "V5-master-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              399.9999999999998,
+              6,
+              5500
+            ],
+            "max": [
+              3400,
+              18,
+              8100
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051147,
+            -2127,
+            -585.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2127
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          2750.059,
+          8830.346
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            2320.058992847443,
+            2145,
+            8685.346000111758
+          ],
+          "max": [
+            3180.0590071525576,
+            2395,
+            8880.346003576278
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            2750.059,
+            8230.346
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3050.059,
+              8680.346
+            ],
+            [
+              2450.059,
+              8680.346
+            ],
+            [
+              2450.059,
+              7780.346
+            ],
+            [
+              3050.059,
+              7780.346
+            ]
+          ],
+          "fixed_collisions": [
+            "V7-master-drawers"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            2750.059,
+            7930.346
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3050.059,
+              8380.346
+            ],
+            [
+              2450.059,
+              8380.346
+            ],
+            [
+              2450.059,
+              7480.346
+            ],
+            [
+              3050.059,
+              7480.346
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-1"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": null,
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              2750.559,
+              8830.346
+            ],
+            [
+              2749.559,
+              8830.346
+            ],
+            [
+              2749.559,
+              5830.346
+            ],
+            [
+              2750.559,
+              5830.346
+            ]
+          ],
+          "intersecting_beds": []
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3050.059,
+              8830.346
+            ],
+            [
+              2450.059,
+              8830.346
+            ],
+            [
+              2450.059,
+              5830.346
+            ],
+            [
+              3050.059,
+              5830.346
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "room": "BR-02",
+      "unit_body_relations": [
+        {
+          "id": "starter-10",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6770,
+              0,
+              2370
+            ],
+            "max": [
+              8870,
+              1080,
+              3610
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            -1065,
+            -1114.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1065
+        },
+        {
+          "id": "starter-11",
+          "furniture_world_bounds_mm": {
+            "min": [
+              5570,
+              0,
+              1610
+            ],
+            "max": [
+              6150,
+              961.2,
+              2710
+            ]
+          },
+          "overlap_axis_mm": [
+            -1243.3519928474425,
+            -1183.8,
+            -2014.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1183.8
+        },
+        {
+          "id": "starter-12",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6224.24,
+              12,
+              1730
+            ],
+            "max": [
+              6755.76,
+              1030,
+              2310
+            ]
+          },
+          "overlap_axis_mm": [
+            -637.5919928474423,
+            -1115,
+            -2414.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1115
+        },
+        {
+          "id": "starter-13",
+          "furniture_world_bounds_mm": {
+            "min": [
+              8220,
+              0,
+              3675
+            ],
+            "max": [
+              8870,
+              2100,
+              4875
+            ]
+          },
+          "overlap_axis_mm": [
+            33.352007152556325,
+            -45,
+            150.84699988824104
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": true,
+          "vertical_gap_mm": 45
+        },
+        {
+          "id": "M3G2-BR02-nightstand",
+          "furniture_world_bounds_mm": {
+            "min": [
+              8490,
+              0,
+              2020
+            ],
+            "max": [
+              8790,
+              837,
+              2320
+            ]
+          },
+          "overlap_axis_mm": [
+            -236.64799284744367,
+            -1308,
+            -2404.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1308
+        },
+        {
+          "id": "M3G2-BR02-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6860,
+              0,
+              1820
+            ],
+            "max": [
+              8860,
+              11,
+              3620
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            -2134,
+            -1104.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2134
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          7823.352,
+          4869.153
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            7393.3519928474425,
+            2145,
+            4724.153000111759
+          ],
+          "max": [
+            8253.352007152556,
+            2395,
+            4919.153003576279
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            7823.352,
+            4269.153
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              8123.352,
+              4719.153
+            ],
+            [
+              7523.352,
+              4719.153
+            ],
+            [
+              7523.352,
+              3819.1530000000002
+            ],
+            [
+              8123.352,
+              3819.1530000000002
+            ]
+          ],
+          "fixed_collisions": [],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  6490.175,
+                  4478.982
+                ],
+                [
+                  6540.175,
+                  4478.982
+                ],
+                [
+                  6590.175,
+                  4478.982
+                ],
+                [
+                  6640.175,
+                  4478.982
+                ],
+                [
+                  6690.175,
+                  4478.982
+                ],
+                [
+                  6740.175,
+                  4478.982
+                ],
+                [
+                  6790.175,
+                  4478.982
+                ],
+                [
+                  6840.175,
+                  4478.982
+                ],
+                [
+                  6890.175,
+                  4478.982
+                ],
+                [
+                  6940.175,
+                  4478.982
+                ],
+                [
+                  6990.175,
+                  4478.982
+                ],
+                [
+                  7040.175,
+                  4478.982
+                ],
+                [
+                  7090.175,
+                  4478.982
+                ],
+                [
+                  7140.175,
+                  4478.982
+                ],
+                [
+                  7190.175,
+                  4478.982
+                ],
+                [
+                  7240.175,
+                  4478.982
+                ],
+                [
+                  7290.175,
+                  4478.982
+                ],
+                [
+                  7340.175,
+                  4478.982
+                ],
+                [
+                  7390.175,
+                  4478.982
+                ],
+                [
+                  7440.175,
+                  4478.982
+                ],
+                [
+                  7490.175,
+                  4478.982
+                ],
+                [
+                  7540.175,
+                  4478.982
+                ],
+                [
+                  7590.175,
+                  4478.982
+                ],
+                [
+                  7640.175,
+                  4478.982
+                ],
+                [
+                  7690.175,
+                  4478.982
+                ],
+                [
+                  7740.175,
+                  4478.982
+                ],
+                [
+                  7790.175,
+                  4478.982
+                ],
+                [
+                  7840.175,
+                  4478.982
+                ],
+                [
+                  7840.175,
+                  4428.982
+                ],
+                [
+                  7840.175,
+                  4378.982
+                ],
+                [
+                  7840.175,
+                  4328.982
+                ],
+                [
+                  7840.175,
+                  4278.982
+                ]
+              ],
+              "distance_mm": 1550,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            7823.352,
+            3969.1530000000002
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              8123.352,
+              4419.153
+            ],
+            [
+              7523.352,
+              4419.153
+            ],
+            [
+              7523.352,
+              3519.1530000000002
+            ],
+            [
+              8123.352,
+              3519.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-10"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  6490.175,
+                  4478.982
+                ],
+                [
+                  6540.175,
+                  4478.982
+                ],
+                [
+                  6590.175,
+                  4478.982
+                ],
+                [
+                  6640.175,
+                  4478.982
+                ],
+                [
+                  6690.175,
+                  4478.982
+                ],
+                [
+                  6740.175,
+                  4478.982
+                ],
+                [
+                  6790.175,
+                  4478.982
+                ],
+                [
+                  6840.175,
+                  4478.982
+                ],
+                [
+                  6890.175,
+                  4478.982
+                ],
+                [
+                  6940.175,
+                  4478.982
+                ],
+                [
+                  6990.175,
+                  4478.982
+                ],
+                [
+                  7040.175,
+                  4478.982
+                ],
+                [
+                  7090.175,
+                  4478.982
+                ],
+                [
+                  7140.175,
+                  4478.982
+                ],
+                [
+                  7190.175,
+                  4478.982
+                ],
+                [
+                  7240.175,
+                  4478.982
+                ],
+                [
+                  7290.175,
+                  4478.982
+                ],
+                [
+                  7340.175,
+                  4478.982
+                ],
+                [
+                  7390.175,
+                  4478.982
+                ],
+                [
+                  7440.175,
+                  4478.982
+                ],
+                [
+                  7490.175,
+                  4478.982
+                ],
+                [
+                  7540.175,
+                  4478.982
+                ],
+                [
+                  7590.175,
+                  4478.982
+                ],
+                [
+                  7640.175,
+                  4478.982
+                ],
+                [
+                  7690.175,
+                  4478.982
+                ],
+                [
+                  7740.175,
+                  4478.982
+                ],
+                [
+                  7790.175,
+                  4478.982
+                ],
+                [
+                  7840.175,
+                  4478.982
+                ],
+                [
+                  7840.175,
+                  4428.982
+                ],
+                [
+                  7840.175,
+                  4378.982
+                ],
+                [
+                  7840.175,
+                  4328.982
+                ],
+                [
+                  7840.175,
+                  4278.982
+                ],
+                [
+                  7840.175,
+                  4228.982
+                ],
+                [
+                  7840.175,
+                  4178.982
+                ],
+                [
+                  7840.175,
+                  4128.982
+                ],
+                [
+                  7840.175,
+                  4078.982
+                ],
+                [
+                  7840.175,
+                  4028.982
+                ],
+                [
+                  7840.175,
+                  3978.982
+                ]
+              ],
+              "distance_mm": 1850,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": {
+        "chair": "starter-12",
+        "park_mm": [
+          7200,
+          4510
+        ],
+        "waypoints": [
+          [
+            6490,
+            2020
+          ],
+          [
+            6460,
+            2020
+          ],
+          [
+            6460,
+            4050
+          ],
+          [
+            7200,
+            4510
+          ]
+        ],
+        "sample_count": 603,
+        "collision_samples": [],
+        "minimum_fixed_gap_mm": 20,
+        "parked_service_collisions": [
+          {
+            "offset_mm": 600,
+            "chair_overlap": false
+          },
+          {
+            "offset_mm": 900,
+            "chair_overlap": false
+          }
+        ],
+        "start": [
+          6500,
+          4500
+        ],
+        "goal": [
+          7900,
+          1900
+        ],
+        "route_checks": [
+          {
+            "status": "MODEL_ROUTE_FOUND",
+            "route_mm": [
+              [
+                6490.175,
+                4478.982
+              ],
+              [
+                6440.175,
+                4478.982
+              ],
+              [
+                6440.175,
+                4428.982
+              ],
+              [
+                6440.175,
+                4378.982
+              ],
+              [
+                6440.175,
+                4328.982
+              ],
+              [
+                6440.175,
+                4278.982
+              ],
+              [
+                6440.175,
+                4228.982
+              ],
+              [
+                6440.175,
+                4178.982
+              ],
+              [
+                6440.175,
+                4128.982
+              ],
+              [
+                6440.175,
+                4078.982
+              ],
+              [
+                6440.175,
+                4028.982
+              ],
+              [
+                6440.175,
+                3978.982
+              ],
+              [
+                6440.175,
+                3928.982
+              ],
+              [
+                6440.175,
+                3878.982
+              ],
+              [
+                6440.175,
+                3828.982
+              ],
+              [
+                6440.175,
+                3778.982
+              ],
+              [
+                6440.175,
+                3728.982
+              ],
+              [
+                6440.175,
+                3678.982
+              ],
+              [
+                6440.175,
+                3628.982
+              ],
+              [
+                6440.175,
+                3578.982
+              ],
+              [
+                6440.175,
+                3528.982
+              ],
+              [
+                6440.175,
+                3478.982
+              ],
+              [
+                6440.175,
+                3428.982
+              ],
+              [
+                6440.175,
+                3378.982
+              ],
+              [
+                6440.175,
+                3328.982
+              ],
+              [
+                6440.175,
+                3278.982
+              ],
+              [
+                6440.175,
+                3228.982
+              ],
+              [
+                6440.175,
+                3178.982
+              ],
+              [
+                6440.175,
+                3128.982
+              ],
+              [
+                6440.175,
+                3078.982
+              ],
+              [
+                6440.175,
+                3028.982
+              ],
+              [
+                6440.175,
+                2978.982
+              ],
+              [
+                6440.175,
+                2928.982
+              ],
+              [
+                6440.175,
+                2878.982
+              ],
+              [
+                6440.175,
+                2828.982
+              ],
+              [
+                6440.175,
+                2778.982
+              ],
+              [
+                6440.175,
+                2728.982
+              ],
+              [
+                6440.175,
+                2678.982
+              ],
+              [
+                6440.175,
+                2628.982
+              ],
+              [
+                6440.175,
+                2578.982
+              ],
+              [
+                6440.175,
+                2528.982
+              ],
+              [
+                6440.175,
+                2478.982
+              ],
+              [
+                6440.175,
+                2428.982
+              ],
+              [
+                6440.175,
+                2378.982
+              ],
+              [
+                6440.175,
+                2328.982
+              ],
+              [
+                6440.175,
+                2278.982
+              ],
+              [
+                6490.175,
+                2278.982
+              ],
+              [
+                6490.175,
+                2228.982
+              ],
+              [
+                6490.175,
+                2178.982
+              ],
+              [
+                6540.175,
+                2178.982
+              ],
+              [
+                6540.175,
+                2128.982
+              ],
+              [
+                6590.175,
+                2128.982
+              ],
+              [
+                6590.175,
+                2078.982
+              ],
+              [
+                6640.175,
+                2078.982
+              ],
+              [
+                6690.175,
+                2078.982
+              ],
+              [
+                6740.175,
+                2078.982
+              ],
+              [
+                6790.175,
+                2078.982
+              ],
+              [
+                6840.175,
+                2078.982
+              ],
+              [
+                6890.175,
+                2078.982
+              ],
+              [
+                6940.175,
+                2078.982
+              ],
+              [
+                6990.175,
+                2078.982
+              ],
+              [
+                7040.175,
+                2078.982
+              ],
+              [
+                7090.175,
+                2078.982
+              ],
+              [
+                7140.175,
+                2078.982
+              ],
+              [
+                7190.175,
+                2078.982
+              ],
+              [
+                7240.175,
+                2078.982
+              ],
+              [
+                7290.175,
+                2078.982
+              ],
+              [
+                7340.175,
+                2078.982
+              ],
+              [
+                7390.175,
+                2078.982
+              ],
+              [
+                7440.175,
+                2078.982
+              ],
+              [
+                7490.175,
+                2078.982
+              ],
+              [
+                7540.175,
+                2078.982
+              ],
+              [
+                7590.175,
+                2078.982
+              ],
+              [
+                7640.175,
+                2078.982
+              ],
+              [
+                7690.175,
+                2078.982
+              ],
+              [
+                7740.175,
+                2078.982
+              ],
+              [
+                7790.175,
+                2078.982
+              ],
+              [
+                7840.175,
+                2078.982
+              ],
+              [
+                7890.175,
+                2078.982
+              ],
+              [
+                7890.175,
+                2028.982
+              ],
+              [
+                7890.175,
+                1978.982
+              ],
+              [
+                7890.175,
+                1928.982
+              ],
+              [
+                7890.175,
+                1878.982
+              ]
+            ],
+            "distance_mm": 4100,
+            "envelope_mm": 500,
+            "grid_mm": 50
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "GOAL_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 50
+          },
+          {
+            "status": "MODEL_ROUTE_FOUND",
+            "route_mm": [
+              [
+                6502.675,
+                4491.482
+              ],
+              [
+                6477.675,
+                4491.482
+              ],
+              [
+                6477.675,
+                4466.482
+              ],
+              [
+                6477.675,
+                4441.482
+              ],
+              [
+                6477.675,
+                4416.482
+              ],
+              [
+                6477.675,
+                4391.482
+              ],
+              [
+                6477.675,
+                4366.482
+              ],
+              [
+                6477.675,
+                4341.482
+              ],
+              [
+                6477.675,
+                4316.482
+              ],
+              [
+                6477.675,
+                4291.482
+              ],
+              [
+                6477.675,
+                4266.482
+              ],
+              [
+                6477.675,
+                4241.482
+              ],
+              [
+                6477.675,
+                4216.482
+              ],
+              [
+                6477.675,
+                4191.482
+              ],
+              [
+                6477.675,
+                4166.482
+              ],
+              [
+                6477.675,
+                4141.482
+              ],
+              [
+                6477.675,
+                4116.482
+              ],
+              [
+                6477.675,
+                4091.482
+              ],
+              [
+                6477.675,
+                4066.482
+              ],
+              [
+                6477.675,
+                4041.482
+              ],
+              [
+                6477.675,
+                4016.482
+              ],
+              [
+                6477.675,
+                3991.482
+              ],
+              [
+                6477.675,
+                3966.482
+              ],
+              [
+                6477.675,
+                3941.482
+              ],
+              [
+                6477.675,
+                3916.482
+              ],
+              [
+                6477.675,
+                3891.482
+              ],
+              [
+                6477.675,
+                3866.482
+              ],
+              [
+                6477.675,
+                3841.482
+              ],
+              [
+                6477.675,
+                3816.482
+              ],
+              [
+                6477.675,
+                3791.482
+              ],
+              [
+                6477.675,
+                3766.482
+              ],
+              [
+                6477.675,
+                3741.482
+              ],
+              [
+                6477.675,
+                3716.482
+              ],
+              [
+                6477.675,
+                3691.482
+              ],
+              [
+                6477.675,
+                3666.482
+              ],
+              [
+                6477.675,
+                3641.482
+              ],
+              [
+                6477.675,
+                3616.482
+              ],
+              [
+                6477.675,
+                3591.482
+              ],
+              [
+                6477.675,
+                3566.482
+              ],
+              [
+                6477.675,
+                3541.482
+              ],
+              [
+                6477.675,
+                3516.482
+              ],
+              [
+                6477.675,
+                3491.482
+              ],
+              [
+                6477.675,
+                3466.482
+              ],
+              [
+                6477.675,
+                3441.482
+              ],
+              [
+                6477.675,
+                3416.482
+              ],
+              [
+                6477.675,
+                3391.482
+              ],
+              [
+                6477.675,
+                3366.482
+              ],
+              [
+                6477.675,
+                3341.482
+              ],
+              [
+                6477.675,
+                3316.482
+              ],
+              [
+                6477.675,
+                3291.482
+              ],
+              [
+                6477.675,
+                3266.482
+              ],
+              [
+                6477.675,
+                3241.482
+              ],
+              [
+                6477.675,
+                3216.482
+              ],
+              [
+                6477.675,
+                3191.482
+              ],
+              [
+                6477.675,
+                3166.482
+              ],
+              [
+                6477.675,
+                3141.482
+              ],
+              [
+                6477.675,
+                3116.482
+              ],
+              [
+                6477.675,
+                3091.482
+              ],
+              [
+                6477.675,
+                3066.482
+              ],
+              [
+                6477.675,
+                3041.482
+              ],
+              [
+                6477.675,
+                3016.482
+              ],
+              [
+                6477.675,
+                2991.482
+              ],
+              [
+                6477.675,
+                2966.482
+              ],
+              [
+                6477.675,
+                2941.482
+              ],
+              [
+                6477.675,
+                2916.482
+              ],
+              [
+                6477.675,
+                2891.482
+              ],
+              [
+                6477.675,
+                2866.482
+              ],
+              [
+                6477.675,
+                2841.482
+              ],
+              [
+                6477.675,
+                2816.482
+              ],
+              [
+                6477.675,
+                2791.482
+              ],
+              [
+                6477.675,
+                2766.482
+              ],
+              [
+                6477.675,
+                2741.482
+              ],
+              [
+                6477.675,
+                2716.482
+              ],
+              [
+                6477.675,
+                2691.482
+              ],
+              [
+                6477.675,
+                2666.482
+              ],
+              [
+                6477.675,
+                2641.482
+              ],
+              [
+                6477.675,
+                2616.482
+              ],
+              [
+                6477.675,
+                2591.482
+              ],
+              [
+                6477.675,
+                2566.482
+              ],
+              [
+                6477.675,
+                2541.482
+              ],
+              [
+                6477.675,
+                2516.482
+              ],
+              [
+                6477.675,
+                2491.482
+              ],
+              [
+                6477.675,
+                2466.482
+              ],
+              [
+                6477.675,
+                2441.482
+              ],
+              [
+                6477.675,
+                2416.482
+              ],
+              [
+                6477.675,
+                2391.482
+              ],
+              [
+                6477.675,
+                2366.482
+              ],
+              [
+                6477.675,
+                2341.482
+              ],
+              [
+                6502.675,
+                2341.482
+              ],
+              [
+                6502.675,
+                2316.482
+              ],
+              [
+                6502.675,
+                2291.482
+              ],
+              [
+                6502.675,
+                2266.482
+              ],
+              [
+                6502.675,
+                2241.482
+              ],
+              [
+                6527.675,
+                2241.482
+              ],
+              [
+                6527.675,
+                2216.482
+              ],
+              [
+                6527.675,
+                2191.482
+              ],
+              [
+                6552.675,
+                2191.482
+              ],
+              [
+                6552.675,
+                2166.482
+              ],
+              [
+                6577.675,
+                2166.482
+              ],
+              [
+                6577.675,
+                2141.482
+              ],
+              [
+                6602.675,
+                2141.482
+              ],
+              [
+                6627.675,
+                2141.482
+              ],
+              [
+                6627.675,
+                2116.482
+              ],
+              [
+                6652.675,
+                2116.482
+              ],
+              [
+                6677.675,
+                2116.482
+              ],
+              [
+                6677.675,
+                2091.482
+              ],
+              [
+                6702.675,
+                2091.482
+              ],
+              [
+                6727.675,
+                2091.482
+              ],
+              [
+                6752.675,
+                2091.482
+              ],
+              [
+                6777.675,
+                2091.482
+              ],
+              [
+                6802.675,
+                2091.482
+              ],
+              [
+                6827.675,
+                2091.482
+              ],
+              [
+                6852.675,
+                2091.482
+              ],
+              [
+                6877.675,
+                2091.482
+              ],
+              [
+                6902.675,
+                2091.482
+              ],
+              [
+                6927.675,
+                2091.482
+              ],
+              [
+                6952.675,
+                2091.482
+              ],
+              [
+                6977.675,
+                2091.482
+              ],
+              [
+                7002.675,
+                2091.482
+              ],
+              [
+                7027.675,
+                2091.482
+              ],
+              [
+                7052.675,
+                2091.482
+              ],
+              [
+                7077.675,
+                2091.482
+              ],
+              [
+                7102.675,
+                2091.482
+              ],
+              [
+                7127.675,
+                2091.482
+              ],
+              [
+                7152.675,
+                2091.482
+              ],
+              [
+                7177.675,
+                2091.482
+              ],
+              [
+                7202.675,
+                2091.482
+              ],
+              [
+                7227.675,
+                2091.482
+              ],
+              [
+                7252.675,
+                2091.482
+              ],
+              [
+                7277.675,
+                2091.482
+              ],
+              [
+                7302.675,
+                2091.482
+              ],
+              [
+                7327.675,
+                2091.482
+              ],
+              [
+                7352.675,
+                2091.482
+              ],
+              [
+                7377.675,
+                2091.482
+              ],
+              [
+                7402.675,
+                2091.482
+              ],
+              [
+                7427.675,
+                2091.482
+              ],
+              [
+                7452.675,
+                2091.482
+              ],
+              [
+                7477.675,
+                2091.482
+              ],
+              [
+                7502.675,
+                2091.482
+              ],
+              [
+                7527.675,
+                2091.482
+              ],
+              [
+                7552.675,
+                2091.482
+              ],
+              [
+                7577.675,
+                2091.482
+              ],
+              [
+                7602.675,
+                2091.482
+              ],
+              [
+                7627.675,
+                2091.482
+              ],
+              [
+                7652.675,
+                2091.482
+              ],
+              [
+                7677.675,
+                2091.482
+              ],
+              [
+                7702.675,
+                2091.482
+              ],
+              [
+                7727.675,
+                2091.482
+              ],
+              [
+                7752.675,
+                2091.482
+              ],
+              [
+                7777.675,
+                2091.482
+              ],
+              [
+                7802.675,
+                2091.482
+              ],
+              [
+                7827.675,
+                2091.482
+              ],
+              [
+                7852.675,
+                2091.482
+              ],
+              [
+                7877.675,
+                2091.482
+              ],
+              [
+                7902.675,
+                2091.482
+              ],
+              [
+                7902.675,
+                2066.482
+              ],
+              [
+                7902.675,
+                2041.482
+              ],
+              [
+                7902.675,
+                2016.482
+              ],
+              [
+                7902.675,
+                1991.482
+              ],
+              [
+                7902.675,
+                1966.482
+              ],
+              [
+                7902.675,
+                1941.482
+              ],
+              [
+                7902.675,
+                1916.482
+              ],
+              [
+                7902.675,
+                1891.482
+              ]
+            ],
+            "distance_mm": 4050,
+            "envelope_mm": 500,
+            "grid_mm": 25
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "DISCONNECTED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 25
+          }
+        ],
+        "limits": "Chair-only translation402 samples; no person, rotation, cable, weight or articulated transport. Parked chair unoccupied. Different source/A/B bed approach points are disclosed."
+      },
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              7823.852,
+              4869.153
+            ],
+            [
+              7822.852,
+              4869.153
+            ],
+            [
+              7822.852,
+              1869.1530000000002
+            ],
+            [
+              7823.852,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-10"
+          ]
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              8123.352,
+              4869.153
+            ],
+            [
+              7523.352,
+              4869.153
+            ],
+            [
+              7523.352,
+              1869.1530000000002
+            ],
+            [
+              8123.352,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-10"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "room": "BR-01",
+      "unit_body_relations": [
+        {
+          "id": "starter-6",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2359.953,
+              0,
+              1630
+            ],
+            "max": [
+              3639.953,
+              1080,
+              3730
+            ]
+          },
+          "overlap_axis_mm": [
+            606.3940071525572,
+            -1065,
+            -994.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1065
+        },
+        {
+          "id": "starter-7",
+          "furniture_world_bounds_mm": {
+            "min": [
+              4710,
+              0,
+              2100
+            ],
+            "max": [
+              5360,
+              2250,
+              3900
+            ]
+          },
+          "overlap_axis_mm": [
+            -816.4409928474424,
+            105,
+            -824.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": -105
+        },
+        {
+          "id": "starter-8",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2080,
+              0,
+              3760
+            ],
+            "max": [
+              2680,
+              961.2,
+              4860
+            ]
+          },
+          "overlap_axis_mm": [
+            -353.5589928474428,
+            -1183.8,
+            135.84699988824104
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1183.8
+        },
+        {
+          "id": "starter-9",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2784.24,
+              12,
+              3860
+            ],
+            "max": [
+              3315.76,
+              1030,
+              4440
+            ]
+          },
+          "overlap_axis_mm": [
+            282.2010071525574,
+            -1115,
+            -284.15300011175896
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1115
+        },
+        {
+          "id": "M3G2-BR01-nightstand",
+          "furniture_world_bounds_mm": {
+            "min": [
+              3705,
+              0,
+              1785
+            ],
+            "max": [
+              4025,
+              837,
+              2085
+            ]
+          },
+          "overlap_axis_mm": [
+            188.55900715255757,
+            -1308,
+            -2639.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1308
+        },
+        {
+          "id": "M3G2-BR01-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2220,
+              0,
+              1600
+            ],
+            "max": [
+              4020,
+              11,
+              3800
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051147,
+            -2134,
+            -924.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2134
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          3463.559,
+          4869.153
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            3033.558992847443,
+            2145,
+            4724.153000111759
+          ],
+          "max": [
+            3893.5590071525576,
+            2395,
+            4919.153003576279
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            3463.559,
+            4269.153
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3763.559,
+              4719.153
+            ],
+            [
+              3163.559,
+              4719.153
+            ],
+            [
+              3163.559,
+              3819.1530000000002
+            ],
+            [
+              3763.559,
+              3819.1530000000002
+            ]
+          ],
+          "fixed_collisions": [],
+          "chair_collisions": [
+            "starter-9"
+          ],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            3463.559,
+            3969.1530000000002
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3763.559,
+              4419.153
+            ],
+            [
+              3163.559,
+              4419.153
+            ],
+            [
+              3163.559,
+              3519.1530000000002
+            ],
+            [
+              3763.559,
+              3519.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-6"
+          ],
+          "chair_collisions": [
+            "starter-9"
+          ],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": {
+        "chair": "starter-9",
+        "park_mm": [
+          3980,
+          2700
+        ],
+        "waypoints": [
+          [
+            3050,
+            4150
+          ],
+          [
+            3980,
+            4150
+          ],
+          [
+            3980,
+            2700
+          ]
+        ],
+        "sample_count": 402,
+        "collision_samples": [],
+        "minimum_fixed_gap_mm": 50.047,
+        "parked_service_collisions": [
+          {
+            "offset_mm": 600,
+            "chair_overlap": false
+          },
+          {
+            "offset_mm": 900,
+            "chair_overlap": false
+          }
+        ],
+        "start": [
+          4800,
+          4500
+        ],
+        "goal": [
+          3463.559,
+          4269.153
+        ],
+        "route_checks": [
+          {
+            "status": "MODEL_ROUTE_FOUND",
+            "route_mm": [
+              [
+                4795.005,
+                4478.982
+              ],
+              [
+                4745.005,
+                4478.982
+              ],
+              [
+                4745.005,
+                4428.982
+              ],
+              [
+                4745.005,
+                4378.982
+              ],
+              [
+                4695.005,
+                4378.982
+              ],
+              [
+                4695.005,
+                4328.982
+              ],
+              [
+                4695.005,
+                4278.982
+              ],
+              [
+                4645.005,
+                4278.982
+              ],
+              [
+                4595.005,
+                4278.982
+              ],
+              [
+                4595.005,
+                4228.982
+              ],
+              [
+                4545.005,
+                4228.982
+              ],
+              [
+                4495.005,
+                4228.982
+              ],
+              [
+                4445.005,
+                4228.982
+              ],
+              [
+                4395.005,
+                4228.982
+              ],
+              [
+                4345.005,
+                4228.982
+              ],
+              [
+                4295.005,
+                4228.982
+              ],
+              [
+                4245.005,
+                4228.982
+              ],
+              [
+                4195.005,
+                4228.982
+              ],
+              [
+                4145.005,
+                4228.982
+              ],
+              [
+                4095.005,
+                4228.982
+              ],
+              [
+                4045.005,
+                4228.982
+              ],
+              [
+                3995.005,
+                4228.982
+              ],
+              [
+                3945.005,
+                4228.982
+              ],
+              [
+                3895.005,
+                4228.982
+              ],
+              [
+                3845.005,
+                4228.982
+              ],
+              [
+                3795.005,
+                4228.982
+              ],
+              [
+                3745.005,
+                4228.982
+              ],
+              [
+                3695.005,
+                4228.982
+              ],
+              [
+                3645.005,
+                4228.982
+              ],
+              [
+                3595.005,
+                4228.982
+              ],
+              [
+                3545.005,
+                4228.982
+              ],
+              [
+                3495.005,
+                4228.982
+              ],
+              [
+                3445.005,
+                4228.982
+              ],
+              [
+                3445.005,
+                4278.982
+              ]
+            ],
+            "distance_mm": 1650,
+            "envelope_mm": 500,
+            "grid_mm": 50
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 50
+          },
+          {
+            "status": "MODEL_ROUTE_FOUND",
+            "route_mm": [
+              [
+                4807.505,
+                4491.482
+              ],
+              [
+                4782.505,
+                4491.482
+              ],
+              [
+                4757.505,
+                4491.482
+              ],
+              [
+                4732.505,
+                4491.482
+              ],
+              [
+                4732.505,
+                4466.482
+              ],
+              [
+                4732.505,
+                4441.482
+              ],
+              [
+                4707.505,
+                4441.482
+              ],
+              [
+                4707.505,
+                4416.482
+              ],
+              [
+                4707.505,
+                4391.482
+              ],
+              [
+                4682.505,
+                4391.482
+              ],
+              [
+                4682.505,
+                4366.482
+              ],
+              [
+                4682.505,
+                4341.482
+              ],
+              [
+                4657.505,
+                4341.482
+              ],
+              [
+                4657.505,
+                4316.482
+              ],
+              [
+                4632.505,
+                4316.482
+              ],
+              [
+                4607.505,
+                4316.482
+              ],
+              [
+                4607.505,
+                4291.482
+              ],
+              [
+                4582.505,
+                4291.482
+              ],
+              [
+                4582.505,
+                4266.482
+              ],
+              [
+                4557.505,
+                4266.482
+              ],
+              [
+                4532.505,
+                4266.482
+              ],
+              [
+                4507.505,
+                4266.482
+              ],
+              [
+                4482.505,
+                4266.482
+              ],
+              [
+                4457.505,
+                4266.482
+              ],
+              [
+                4432.505,
+                4266.482
+              ],
+              [
+                4407.505,
+                4266.482
+              ],
+              [
+                4382.505,
+                4266.482
+              ],
+              [
+                4357.505,
+                4266.482
+              ],
+              [
+                4332.505,
+                4266.482
+              ],
+              [
+                4307.505,
+                4266.482
+              ],
+              [
+                4282.505,
+                4266.482
+              ],
+              [
+                4257.505,
+                4266.482
+              ],
+              [
+                4232.505,
+                4266.482
+              ],
+              [
+                4207.505,
+                4266.482
+              ],
+              [
+                4182.505,
+                4266.482
+              ],
+              [
+                4157.505,
+                4266.482
+              ],
+              [
+                4132.505,
+                4266.482
+              ],
+              [
+                4107.505,
+                4266.482
+              ],
+              [
+                4082.505,
+                4266.482
+              ],
+              [
+                4057.505,
+                4266.482
+              ],
+              [
+                4032.505,
+                4266.482
+              ],
+              [
+                4007.505,
+                4266.482
+              ],
+              [
+                3982.505,
+                4266.482
+              ],
+              [
+                3957.505,
+                4266.482
+              ],
+              [
+                3932.505,
+                4266.482
+              ],
+              [
+                3907.505,
+                4266.482
+              ],
+              [
+                3882.505,
+                4266.482
+              ],
+              [
+                3857.505,
+                4266.482
+              ],
+              [
+                3832.505,
+                4266.482
+              ],
+              [
+                3807.505,
+                4266.482
+              ],
+              [
+                3782.505,
+                4266.482
+              ],
+              [
+                3757.505,
+                4266.482
+              ],
+              [
+                3732.505,
+                4266.482
+              ],
+              [
+                3707.505,
+                4266.482
+              ],
+              [
+                3682.505,
+                4266.482
+              ],
+              [
+                3657.505,
+                4266.482
+              ],
+              [
+                3632.505,
+                4266.482
+              ],
+              [
+                3607.505,
+                4266.482
+              ],
+              [
+                3582.505,
+                4266.482
+              ],
+              [
+                3557.505,
+                4266.482
+              ],
+              [
+                3532.505,
+                4266.482
+              ],
+              [
+                3507.505,
+                4266.482
+              ],
+              [
+                3482.505,
+                4266.482
+              ],
+              [
+                3457.505,
+                4266.482
+              ]
+            ],
+            "distance_mm": 1575,
+            "envelope_mm": 500,
+            "grid_mm": 25
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 25
+          }
+        ],
+        "limits": "Chair-only translation402 samples; no person, rotation, cable, weight or articulated transport. Parked chair unoccupied. Different source/A/B bed approach points are disclosed."
+      },
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3464.059,
+              4869.153
+            ],
+            [
+              3463.059,
+              4869.153
+            ],
+            [
+              3463.059,
+              1869.1530000000002
+            ],
+            [
+              3464.059,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-6"
+          ]
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3763.559,
+              4869.153
+            ],
+            [
+              3163.559,
+              4869.153
+            ],
+            [
+              3163.559,
+              1869.1530000000002
+            ],
+            [
+              3763.559,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "B",
+      "room": "MBR-01",
+      "unit_body_relations": [
+        {
+          "id": "starter-1",
+          "furniture_world_bounds_mm": {
+            "min": [
+              405.9999999999998,
+              0,
+              5865
+            ],
+            "max": [
+              2626,
+              1080,
+              7735
+            ]
+          },
+          "overlap_axis_mm": [
+            305.9410071525572,
+            -1065,
+            -950.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1065
+        },
+        {
+          "id": "starter-2",
+          "furniture_world_bounds_mm": {
+            "min": [
+              490,
+              0,
+              5355
+            ],
+            "max": [
+              890,
+              837,
+              5805
+            ]
+          },
+          "overlap_axis_mm": [
+            -1430.0589928474428,
+            -1308,
+            -2880.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1308
+        },
+        {
+          "id": "starter-3",
+          "furniture_world_bounds_mm": {
+            "min": [
+              490,
+              0,
+              7795
+            ],
+            "max": [
+              890,
+              837,
+              8245
+            ]
+          },
+          "overlap_axis_mm": [
+            -1430.0589928474428,
+            -1308,
+            -440.34600011175826
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1308
+        },
+        {
+          "id": "V5-master-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              499.9999999999998,
+              0,
+              5500
+            ],
+            "max": [
+              3300,
+              11,
+              8100
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051147,
+            -2134,
+            -585.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2134
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          2750.059,
+          8830.346
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            2320.058992847443,
+            2145,
+            8685.346000111758
+          ],
+          "max": [
+            3180.0590071525576,
+            2395,
+            8880.346003576278
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            2750.059,
+            8230.346
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3050.059,
+              8680.346
+            ],
+            [
+              2450.059,
+              8680.346
+            ],
+            [
+              2450.059,
+              7780.346
+            ],
+            [
+              3050.059,
+              7780.346
+            ]
+          ],
+          "fixed_collisions": [],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  3521.56,
+                  6174.153
+                ],
+                [
+                  3471.56,
+                  6174.153
+                ],
+                [
+                  3421.56,
+                  6174.153
+                ],
+                [
+                  3371.56,
+                  6174.153
+                ],
+                [
+                  3321.56,
+                  6174.153
+                ],
+                [
+                  3271.56,
+                  6174.153
+                ],
+                [
+                  3221.56,
+                  6174.153
+                ],
+                [
+                  3171.56,
+                  6174.153
+                ],
+                [
+                  3121.56,
+                  6174.153
+                ],
+                [
+                  3071.56,
+                  6174.153
+                ],
+                [
+                  3021.56,
+                  6174.153
+                ],
+                [
+                  2971.56,
+                  6174.153
+                ],
+                [
+                  2921.56,
+                  6174.153
+                ],
+                [
+                  2921.56,
+                  6224.153
+                ],
+                [
+                  2921.56,
+                  6274.153
+                ],
+                [
+                  2921.56,
+                  6324.153
+                ],
+                [
+                  2921.56,
+                  6374.153
+                ],
+                [
+                  2921.56,
+                  6424.153
+                ],
+                [
+                  2921.56,
+                  6474.153
+                ],
+                [
+                  2921.56,
+                  6524.153
+                ],
+                [
+                  2921.56,
+                  6574.153
+                ],
+                [
+                  2921.56,
+                  6624.153
+                ],
+                [
+                  2921.56,
+                  6674.153
+                ],
+                [
+                  2921.56,
+                  6724.153
+                ],
+                [
+                  2921.56,
+                  6774.153
+                ],
+                [
+                  2921.56,
+                  6824.153
+                ],
+                [
+                  2921.56,
+                  6874.153
+                ],
+                [
+                  2921.56,
+                  6924.153
+                ],
+                [
+                  2921.56,
+                  6974.153
+                ],
+                [
+                  2921.56,
+                  7024.153
+                ],
+                [
+                  2921.56,
+                  7074.153
+                ],
+                [
+                  2921.56,
+                  7124.153
+                ],
+                [
+                  2921.56,
+                  7174.153
+                ],
+                [
+                  2921.56,
+                  7224.153
+                ],
+                [
+                  2921.56,
+                  7274.153
+                ],
+                [
+                  2921.56,
+                  7324.153
+                ],
+                [
+                  2921.56,
+                  7374.153
+                ],
+                [
+                  2921.56,
+                  7424.153
+                ],
+                [
+                  2921.56,
+                  7474.153
+                ],
+                [
+                  2921.56,
+                  7524.153
+                ],
+                [
+                  2921.56,
+                  7574.153
+                ],
+                [
+                  2921.56,
+                  7624.153
+                ],
+                [
+                  2921.56,
+                  7674.153
+                ],
+                [
+                  2921.56,
+                  7724.153
+                ],
+                [
+                  2921.56,
+                  7774.153
+                ],
+                [
+                  2921.56,
+                  7824.153
+                ],
+                [
+                  2921.56,
+                  7874.153
+                ],
+                [
+                  2921.56,
+                  7924.153
+                ],
+                [
+                  2871.56,
+                  7924.153
+                ],
+                [
+                  2871.56,
+                  7974.153
+                ],
+                [
+                  2821.56,
+                  7974.153
+                ],
+                [
+                  2821.56,
+                  8024.153
+                ],
+                [
+                  2771.56,
+                  8024.153
+                ],
+                [
+                  2771.56,
+                  8074.153
+                ],
+                [
+                  2771.56,
+                  8124.153
+                ],
+                [
+                  2771.56,
+                  8174.153
+                ],
+                [
+                  2771.56,
+                  8224.153
+                ]
+              ],
+              "distance_mm": 2800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  3521.56,
+                  6174.153
+                ],
+                [
+                  3471.56,
+                  6174.153
+                ],
+                [
+                  3421.56,
+                  6174.153
+                ],
+                [
+                  3371.56,
+                  6174.153
+                ],
+                [
+                  3321.56,
+                  6174.153
+                ],
+                [
+                  3271.56,
+                  6174.153
+                ],
+                [
+                  3221.56,
+                  6174.153
+                ],
+                [
+                  3171.56,
+                  6174.153
+                ],
+                [
+                  3121.56,
+                  6174.153
+                ],
+                [
+                  3071.56,
+                  6174.153
+                ],
+                [
+                  3021.56,
+                  6174.153
+                ],
+                [
+                  3021.56,
+                  6224.153
+                ],
+                [
+                  3021.56,
+                  6274.153
+                ],
+                [
+                  3021.56,
+                  6324.153
+                ],
+                [
+                  3021.56,
+                  6374.153
+                ],
+                [
+                  3021.56,
+                  6424.153
+                ],
+                [
+                  3021.56,
+                  6474.153
+                ],
+                [
+                  3021.56,
+                  6524.153
+                ],
+                [
+                  3021.56,
+                  6574.153
+                ],
+                [
+                  3021.56,
+                  6624.153
+                ],
+                [
+                  3021.56,
+                  6674.153
+                ],
+                [
+                  3021.56,
+                  6724.153
+                ],
+                [
+                  3021.56,
+                  6774.153
+                ],
+                [
+                  3021.56,
+                  6824.153
+                ],
+                [
+                  3021.56,
+                  6874.153
+                ],
+                [
+                  3021.56,
+                  6924.153
+                ],
+                [
+                  3021.56,
+                  6974.153
+                ],
+                [
+                  3021.56,
+                  7024.153
+                ],
+                [
+                  3021.56,
+                  7074.153
+                ],
+                [
+                  3021.56,
+                  7124.153
+                ],
+                [
+                  3021.56,
+                  7174.153
+                ],
+                [
+                  3021.56,
+                  7224.153
+                ],
+                [
+                  3021.56,
+                  7274.153
+                ],
+                [
+                  3021.56,
+                  7324.153
+                ],
+                [
+                  3021.56,
+                  7374.153
+                ],
+                [
+                  3021.56,
+                  7424.153
+                ],
+                [
+                  3021.56,
+                  7474.153
+                ],
+                [
+                  3021.56,
+                  7524.153
+                ],
+                [
+                  3021.56,
+                  7574.153
+                ],
+                [
+                  3021.56,
+                  7624.153
+                ],
+                [
+                  3021.56,
+                  7674.153
+                ],
+                [
+                  3021.56,
+                  7724.153
+                ],
+                [
+                  3021.56,
+                  7774.153
+                ],
+                [
+                  3021.56,
+                  7824.153
+                ],
+                [
+                  3021.56,
+                  7874.153
+                ],
+                [
+                  3021.56,
+                  7924.153
+                ],
+                [
+                  2971.56,
+                  7924.153
+                ],
+                [
+                  2971.56,
+                  7974.153
+                ],
+                [
+                  2971.56,
+                  8024.153
+                ],
+                [
+                  2921.56,
+                  8024.153
+                ],
+                [
+                  2921.56,
+                  8074.153
+                ],
+                [
+                  2871.56,
+                  8074.153
+                ],
+                [
+                  2821.56,
+                  8074.153
+                ],
+                [
+                  2821.56,
+                  8124.153
+                ],
+                [
+                  2771.56,
+                  8124.153
+                ],
+                [
+                  2771.56,
+                  8174.153
+                ],
+                [
+                  2771.56,
+                  8224.153
+                ]
+              ],
+              "distance_mm": 2800,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            2750.059,
+            7930.346
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3050.059,
+              8380.346
+            ],
+            [
+              2450.059,
+              8380.346
+            ],
+            [
+              2450.059,
+              7480.346
+            ],
+            [
+              3050.059,
+              7480.346
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-1"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": null,
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              2750.559,
+              8830.346
+            ],
+            [
+              2749.559,
+              8830.346
+            ],
+            [
+              2749.559,
+              5830.346
+            ],
+            [
+              2750.559,
+              5830.346
+            ]
+          ],
+          "intersecting_beds": []
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3050.059,
+              8830.346
+            ],
+            [
+              2450.059,
+              8830.346
+            ],
+            [
+              2450.059,
+              5830.346
+            ],
+            [
+              3050.059,
+              5830.346
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-1"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "A",
+      "room": "BR-02",
+      "unit_body_relations": [
+        {
+          "id": "starter-10",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6770,
+              0,
+              2350
+            ],
+            "max": [
+              8870,
+              1140,
+              3630
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            -1005,
+            -1094.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1005
+        },
+        {
+          "id": "starter-11",
+          "furniture_world_bounds_mm": {
+            "min": [
+              5570,
+              0,
+              1650
+            ],
+            "max": [
+              6070,
+              961.2,
+              2550
+            ]
+          },
+          "overlap_axis_mm": [
+            -1323.3519928474425,
+            -1183.8,
+            -2174.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1183.8
+        },
+        {
+          "id": "starter-12",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6134.24,
+              12,
+              1730
+            ],
+            "max": [
+              6665.76,
+              1030,
+              2310
+            ]
+          },
+          "overlap_axis_mm": [
+            -727.5919928474423,
+            -1115,
+            -2414.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1115
+        },
+        {
+          "id": "starter-13",
+          "furniture_world_bounds_mm": {
+            "min": [
+              7190,
+              0,
+              4293
+            ],
+            "max": [
+              8790,
+              2100,
+              4889
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            -45,
+            164.84699988824104
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": true,
+          "vertical_gap_mm": 45
+        },
+        {
+          "id": "M3G2-BR02-nightstand",
+          "furniture_world_bounds_mm": {
+            "min": [
+              8490,
+              0,
+              2020
+            ],
+            "max": [
+              8790,
+              847,
+              2320
+            ]
+          },
+          "overlap_axis_mm": [
+            -236.64799284744367,
+            -1298,
+            -2404.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1298
+        },
+        {
+          "id": "M3G2-BR02-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              6860,
+              0,
+              1820
+            ],
+            "max": [
+              8860,
+              11,
+              3620
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051138,
+            -2134,
+            -1104.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2134
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          7823.352,
+          4869.153
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            7393.3519928474425,
+            2145,
+            4724.153000111759
+          ],
+          "max": [
+            8253.352007152556,
+            2395,
+            4919.153003576279
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            7823.352,
+            4269.153
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              8123.352,
+              4719.153
+            ],
+            [
+              7523.352,
+              4719.153
+            ],
+            [
+              7523.352,
+              3819.1530000000002
+            ],
+            [
+              8123.352,
+              3819.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-13"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            7823.352,
+            3969.1530000000002
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              8123.352,
+              4419.153
+            ],
+            [
+              7523.352,
+              4419.153
+            ],
+            [
+              7523.352,
+              3519.1530000000002
+            ],
+            [
+              8123.352,
+              3519.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-10",
+            "starter-13"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  6490.175,
+                  4478.982
+                ],
+                [
+                  6540.175,
+                  4478.982
+                ],
+                [
+                  6590.175,
+                  4478.982
+                ],
+                [
+                  6640.175,
+                  4478.982
+                ],
+                [
+                  6690.175,
+                  4478.982
+                ],
+                [
+                  6740.175,
+                  4478.982
+                ],
+                [
+                  6790.175,
+                  4478.982
+                ],
+                [
+                  6840.175,
+                  4478.982
+                ],
+                [
+                  6890.175,
+                  4478.982
+                ],
+                [
+                  6890.175,
+                  4428.982
+                ],
+                [
+                  6890.175,
+                  4378.982
+                ],
+                [
+                  6890.175,
+                  4328.982
+                ],
+                [
+                  6890.175,
+                  4278.982
+                ],
+                [
+                  6890.175,
+                  4228.982
+                ],
+                [
+                  6890.175,
+                  4178.982
+                ],
+                [
+                  6890.175,
+                  4128.982
+                ],
+                [
+                  6940.175,
+                  4128.982
+                ],
+                [
+                  6940.175,
+                  4078.982
+                ],
+                [
+                  6990.175,
+                  4078.982
+                ],
+                [
+                  6990.175,
+                  4028.982
+                ],
+                [
+                  7040.175,
+                  4028.982
+                ],
+                [
+                  7040.175,
+                  3978.982
+                ],
+                [
+                  7090.175,
+                  3978.982
+                ],
+                [
+                  7140.175,
+                  3978.982
+                ],
+                [
+                  7190.175,
+                  3978.982
+                ],
+                [
+                  7240.175,
+                  3978.982
+                ],
+                [
+                  7290.175,
+                  3978.982
+                ],
+                [
+                  7340.175,
+                  3978.982
+                ],
+                [
+                  7390.175,
+                  3978.982
+                ],
+                [
+                  7440.175,
+                  3978.982
+                ],
+                [
+                  7490.175,
+                  3978.982
+                ],
+                [
+                  7540.175,
+                  3978.982
+                ],
+                [
+                  7590.175,
+                  3978.982
+                ],
+                [
+                  7640.175,
+                  3978.982
+                ],
+                [
+                  7690.175,
+                  3978.982
+                ],
+                [
+                  7740.175,
+                  3978.982
+                ],
+                [
+                  7790.175,
+                  3978.982
+                ],
+                [
+                  7840.175,
+                  3978.982
+                ]
+              ],
+              "distance_mm": 1850,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": {
+        "chair": "starter-12",
+        "park_mm": [
+          6520,
+          4050
+        ],
+        "waypoints": [
+          [
+            6400,
+            2020
+          ],
+          [
+            6370,
+            2020
+          ],
+          [
+            6370,
+            4050
+          ],
+          [
+            6520,
+            4050
+          ]
+        ],
+        "sample_count": 603,
+        "collision_samples": [],
+        "minimum_fixed_gap_mm": 10,
+        "parked_service_collisions": [
+          {
+            "offset_mm": 600,
+            "chair_overlap": false
+          },
+          {
+            "offset_mm": 900,
+            "chair_overlap": false
+          }
+        ],
+        "start": [
+          6500,
+          4640
+        ],
+        "goal": [
+          7900,
+          1900
+        ],
+        "route_checks": [
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 500,
+            "grid_mm": 50
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 50
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 500,
+            "grid_mm": 25
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 25
+          }
+        ],
+        "limits": "Chair-only translation402 samples; no person, rotation, cable, weight or articulated transport. Parked chair unoccupied. Different source/A/B bed approach points are disclosed."
+      },
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              7823.852,
+              4869.153
+            ],
+            [
+              7822.852,
+              4869.153
+            ],
+            [
+              7822.852,
+              1869.1530000000002
+            ],
+            [
+              7823.852,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-10"
+          ]
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              8123.352,
+              4869.153
+            ],
+            [
+              7523.352,
+              4869.153
+            ],
+            [
+              7523.352,
+              1869.1530000000002
+            ],
+            [
+              8123.352,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-10"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "A",
+      "room": "BR-01",
+      "unit_body_relations": [
+        {
+          "id": "starter-6",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2134.953,
+              0,
+              1630
+            ],
+            "max": [
+              3414.953,
+              1140,
+              3730
+            ]
+          },
+          "overlap_axis_mm": [
+            381.39400715255715,
+            -1005,
+            -994.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1005
+        },
+        {
+          "id": "starter-7",
+          "furniture_world_bounds_mm": {
+            "min": [
+              4710,
+              0,
+              2100
+            ],
+            "max": [
+              5360,
+              2250,
+              3900
+            ]
+          },
+          "overlap_axis_mm": [
+            -816.4409928474424,
+            105,
+            -824.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": -105
+        },
+        {
+          "id": "starter-8",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2080,
+              0,
+              3760
+            ],
+            "max": [
+              2680,
+              961.2,
+              4860
+            ]
+          },
+          "overlap_axis_mm": [
+            -353.5589928474428,
+            -1183.8,
+            135.84699988824104
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1183.8
+        },
+        {
+          "id": "starter-9",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2784.24,
+              12,
+              3860
+            ],
+            "max": [
+              3315.76,
+              1030,
+              4440
+            ]
+          },
+          "overlap_axis_mm": [
+            282.2010071525574,
+            -1115,
+            -284.15300011175896
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1115
+        },
+        {
+          "id": "M3G2-BR01-nightstand",
+          "furniture_world_bounds_mm": {
+            "min": [
+              3480,
+              0,
+              1885
+            ],
+            "max": [
+              3800,
+              847,
+              2235
+            ]
+          },
+          "overlap_axis_mm": [
+            320,
+            -1298,
+            -2489.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1298
+        },
+        {
+          "id": "M3G2-BR01-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              2220,
+              0,
+              1600
+            ],
+            "max": [
+              4020,
+              11,
+              3800
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051147,
+            -2134,
+            -924.153000111759
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2134
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          3463.559,
+          4869.153
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            3033.558992847443,
+            2145,
+            4724.153000111759
+          ],
+          "max": [
+            3893.5590071525576,
+            2395,
+            4919.153003576279
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            3463.559,
+            4269.153
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3763.559,
+              4719.153
+            ],
+            [
+              3163.559,
+              4719.153
+            ],
+            [
+              3163.559,
+              3819.1530000000002
+            ],
+            [
+              3763.559,
+              3819.1530000000002
+            ]
+          ],
+          "fixed_collisions": [],
+          "chair_collisions": [
+            "starter-9"
+          ],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            3463.559,
+            3969.1530000000002
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3763.559,
+              4419.153
+            ],
+            [
+              3163.559,
+              4419.153
+            ],
+            [
+              3163.559,
+              3519.1530000000002
+            ],
+            [
+              3763.559,
+              3519.1530000000002
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-6"
+          ],
+          "chair_collisions": [
+            "starter-9"
+          ],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "START_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": {
+        "chair": "starter-9",
+        "park_mm": [
+          3980,
+          2700
+        ],
+        "waypoints": [
+          [
+            3050,
+            4150
+          ],
+          [
+            3980,
+            4150
+          ],
+          [
+            3980,
+            2700
+          ]
+        ],
+        "sample_count": 402,
+        "collision_samples": [],
+        "minimum_fixed_gap_mm": 80,
+        "parked_service_collisions": [
+          {
+            "offset_mm": 600,
+            "chair_overlap": false
+          },
+          {
+            "offset_mm": 900,
+            "chair_overlap": false
+          }
+        ],
+        "start": [
+          4800,
+          4500
+        ],
+        "goal": [
+          3463.559,
+          4269.153
+        ],
+        "route_checks": [
+          {
+            "status": "MODEL_ROUTE_FOUND",
+            "route_mm": [
+              [
+                4795.005,
+                4478.982
+              ],
+              [
+                4745.005,
+                4478.982
+              ],
+              [
+                4745.005,
+                4428.982
+              ],
+              [
+                4745.005,
+                4378.982
+              ],
+              [
+                4695.005,
+                4378.982
+              ],
+              [
+                4695.005,
+                4328.982
+              ],
+              [
+                4695.005,
+                4278.982
+              ],
+              [
+                4645.005,
+                4278.982
+              ],
+              [
+                4595.005,
+                4278.982
+              ],
+              [
+                4595.005,
+                4228.982
+              ],
+              [
+                4545.005,
+                4228.982
+              ],
+              [
+                4495.005,
+                4228.982
+              ],
+              [
+                4445.005,
+                4228.982
+              ],
+              [
+                4395.005,
+                4228.982
+              ],
+              [
+                4345.005,
+                4228.982
+              ],
+              [
+                4295.005,
+                4228.982
+              ],
+              [
+                4245.005,
+                4228.982
+              ],
+              [
+                4195.005,
+                4228.982
+              ],
+              [
+                4145.005,
+                4228.982
+              ],
+              [
+                4095.005,
+                4228.982
+              ],
+              [
+                4045.005,
+                4228.982
+              ],
+              [
+                3995.005,
+                4228.982
+              ],
+              [
+                3945.005,
+                4228.982
+              ],
+              [
+                3895.005,
+                4228.982
+              ],
+              [
+                3845.005,
+                4228.982
+              ],
+              [
+                3795.005,
+                4228.982
+              ],
+              [
+                3745.005,
+                4228.982
+              ],
+              [
+                3695.005,
+                4228.982
+              ],
+              [
+                3645.005,
+                4228.982
+              ],
+              [
+                3595.005,
+                4228.982
+              ],
+              [
+                3545.005,
+                4228.982
+              ],
+              [
+                3495.005,
+                4228.982
+              ],
+              [
+                3445.005,
+                4228.982
+              ],
+              [
+                3445.005,
+                4278.982
+              ]
+            ],
+            "distance_mm": 1650,
+            "envelope_mm": 500,
+            "grid_mm": 50
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 50
+          },
+          {
+            "status": "MODEL_ROUTE_FOUND",
+            "route_mm": [
+              [
+                4807.505,
+                4491.482
+              ],
+              [
+                4782.505,
+                4491.482
+              ],
+              [
+                4757.505,
+                4491.482
+              ],
+              [
+                4732.505,
+                4491.482
+              ],
+              [
+                4732.505,
+                4466.482
+              ],
+              [
+                4732.505,
+                4441.482
+              ],
+              [
+                4707.505,
+                4441.482
+              ],
+              [
+                4707.505,
+                4416.482
+              ],
+              [
+                4707.505,
+                4391.482
+              ],
+              [
+                4682.505,
+                4391.482
+              ],
+              [
+                4682.505,
+                4366.482
+              ],
+              [
+                4682.505,
+                4341.482
+              ],
+              [
+                4657.505,
+                4341.482
+              ],
+              [
+                4657.505,
+                4316.482
+              ],
+              [
+                4632.505,
+                4316.482
+              ],
+              [
+                4607.505,
+                4316.482
+              ],
+              [
+                4607.505,
+                4291.482
+              ],
+              [
+                4582.505,
+                4291.482
+              ],
+              [
+                4582.505,
+                4266.482
+              ],
+              [
+                4557.505,
+                4266.482
+              ],
+              [
+                4532.505,
+                4266.482
+              ],
+              [
+                4507.505,
+                4266.482
+              ],
+              [
+                4482.505,
+                4266.482
+              ],
+              [
+                4457.505,
+                4266.482
+              ],
+              [
+                4432.505,
+                4266.482
+              ],
+              [
+                4407.505,
+                4266.482
+              ],
+              [
+                4382.505,
+                4266.482
+              ],
+              [
+                4357.505,
+                4266.482
+              ],
+              [
+                4332.505,
+                4266.482
+              ],
+              [
+                4307.505,
+                4266.482
+              ],
+              [
+                4282.505,
+                4266.482
+              ],
+              [
+                4257.505,
+                4266.482
+              ],
+              [
+                4232.505,
+                4266.482
+              ],
+              [
+                4207.505,
+                4266.482
+              ],
+              [
+                4182.505,
+                4266.482
+              ],
+              [
+                4157.505,
+                4266.482
+              ],
+              [
+                4132.505,
+                4266.482
+              ],
+              [
+                4107.505,
+                4266.482
+              ],
+              [
+                4082.505,
+                4266.482
+              ],
+              [
+                4057.505,
+                4266.482
+              ],
+              [
+                4032.505,
+                4266.482
+              ],
+              [
+                4007.505,
+                4266.482
+              ],
+              [
+                3982.505,
+                4266.482
+              ],
+              [
+                3957.505,
+                4266.482
+              ],
+              [
+                3932.505,
+                4266.482
+              ],
+              [
+                3907.505,
+                4266.482
+              ],
+              [
+                3882.505,
+                4266.482
+              ],
+              [
+                3857.505,
+                4266.482
+              ],
+              [
+                3832.505,
+                4266.482
+              ],
+              [
+                3807.505,
+                4266.482
+              ],
+              [
+                3782.505,
+                4266.482
+              ],
+              [
+                3757.505,
+                4266.482
+              ],
+              [
+                3732.505,
+                4266.482
+              ],
+              [
+                3707.505,
+                4266.482
+              ],
+              [
+                3682.505,
+                4266.482
+              ],
+              [
+                3657.505,
+                4266.482
+              ],
+              [
+                3632.505,
+                4266.482
+              ],
+              [
+                3607.505,
+                4266.482
+              ],
+              [
+                3582.505,
+                4266.482
+              ],
+              [
+                3557.505,
+                4266.482
+              ],
+              [
+                3532.505,
+                4266.482
+              ],
+              [
+                3507.505,
+                4266.482
+              ],
+              [
+                3482.505,
+                4266.482
+              ],
+              [
+                3457.505,
+                4266.482
+              ]
+            ],
+            "distance_mm": 1575,
+            "envelope_mm": 500,
+            "grid_mm": 25
+          },
+          {
+            "status": "NO_MODEL_ROUTE",
+            "reason": "START_BLOCKED",
+            "route_mm": [],
+            "envelope_mm": 700,
+            "grid_mm": 25
+          }
+        ],
+        "limits": "Chair-only translation402 samples; no person, rotation, cable, weight or articulated transport. Parked chair unoccupied. Different source/A/B bed approach points are disclosed."
+      },
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3464.059,
+              4869.153
+            ],
+            [
+              3463.059,
+              4869.153
+            ],
+            [
+              3463.059,
+              1869.1530000000002
+            ],
+            [
+              3464.059,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": []
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3763.559,
+              4869.153
+            ],
+            [
+              3163.559,
+              4869.153
+            ],
+            [
+              3163.559,
+              1869.1530000000002
+            ],
+            [
+              3763.559,
+              1869.1530000000002
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-6"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "A",
+      "room": "MBR-01",
+      "unit_body_relations": [
+        {
+          "id": "starter-1",
+          "furniture_world_bounds_mm": {
+            "min": [
+              405.9999999999998,
+              0,
+              5865
+            ],
+            "max": [
+              2626,
+              1140,
+              7735
+            ]
+          },
+          "overlap_axis_mm": [
+            305.9410071525572,
+            -1005,
+            -950.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1005
+        },
+        {
+          "id": "starter-2",
+          "furniture_world_bounds_mm": {
+            "min": [
+              490,
+              0,
+              5355
+            ],
+            "max": [
+              890,
+              847,
+              5805
+            ]
+          },
+          "overlap_axis_mm": [
+            -1430.0589928474428,
+            -1298,
+            -2880.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1298
+        },
+        {
+          "id": "starter-3",
+          "furniture_world_bounds_mm": {
+            "min": [
+              490,
+              0,
+              7795
+            ],
+            "max": [
+              890,
+              847,
+              8245
+            ]
+          },
+          "overlap_axis_mm": [
+            -1430.0589928474428,
+            -1298,
+            -440.34600011175826
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 1298
+        },
+        {
+          "id": "V5-master-rug",
+          "furniture_world_bounds_mm": {
+            "min": [
+              499.9999999999998,
+              0,
+              5500
+            ],
+            "max": [
+              3300,
+              11,
+              8100
+            ]
+          },
+          "overlap_axis_mm": [
+            860.0000143051147,
+            -2134,
+            -585.3460001117583
+          ],
+          "positive_body_overlap": false,
+          "plan_overlap": false,
+          "vertical_gap_mm": 2134
+        }
+      ],
+      "source_ac_heuristic": {
+        "source_heuristic": true,
+        "position_mm": [
+          2750.059,
+          8830.346
+        ],
+        "bottom_mm": 2145,
+        "top_mm": 2395,
+        "ceiling_gap_mm": 105,
+        "normal_plan": [
+          1.2246467991473532e-16,
+          -1
+        ],
+        "bounds_world_mm": {
+          "min": [
+            2320.058992847443,
+            2145,
+            8685.346000111758
+          ],
+          "max": [
+            3180.0590071525576,
+            2395,
+            8880.346003576278
+          ]
+        },
+        "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+      },
+      "service": [
+        {
+          "offset_mm": 600,
+          "centre_mm": [
+            2750.059,
+            8230.346
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3050.059,
+              8680.346
+            ],
+            [
+              2450.059,
+              8680.346
+            ],
+            [
+              2450.059,
+              7780.346
+            ],
+            [
+              3050.059,
+              7780.346
+            ]
+          ],
+          "fixed_collisions": [],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  3521.56,
+                  6174.153
+                ],
+                [
+                  3471.56,
+                  6174.153
+                ],
+                [
+                  3421.56,
+                  6174.153
+                ],
+                [
+                  3371.56,
+                  6174.153
+                ],
+                [
+                  3321.56,
+                  6174.153
+                ],
+                [
+                  3271.56,
+                  6174.153
+                ],
+                [
+                  3221.56,
+                  6174.153
+                ],
+                [
+                  3171.56,
+                  6174.153
+                ],
+                [
+                  3121.56,
+                  6174.153
+                ],
+                [
+                  3071.56,
+                  6174.153
+                ],
+                [
+                  3021.56,
+                  6174.153
+                ],
+                [
+                  2971.56,
+                  6174.153
+                ],
+                [
+                  2921.56,
+                  6174.153
+                ],
+                [
+                  2921.56,
+                  6224.153
+                ],
+                [
+                  2921.56,
+                  6274.153
+                ],
+                [
+                  2921.56,
+                  6324.153
+                ],
+                [
+                  2921.56,
+                  6374.153
+                ],
+                [
+                  2921.56,
+                  6424.153
+                ],
+                [
+                  2921.56,
+                  6474.153
+                ],
+                [
+                  2921.56,
+                  6524.153
+                ],
+                [
+                  2921.56,
+                  6574.153
+                ],
+                [
+                  2921.56,
+                  6624.153
+                ],
+                [
+                  2921.56,
+                  6674.153
+                ],
+                [
+                  2921.56,
+                  6724.153
+                ],
+                [
+                  2921.56,
+                  6774.153
+                ],
+                [
+                  2921.56,
+                  6824.153
+                ],
+                [
+                  2921.56,
+                  6874.153
+                ],
+                [
+                  2921.56,
+                  6924.153
+                ],
+                [
+                  2921.56,
+                  6974.153
+                ],
+                [
+                  2921.56,
+                  7024.153
+                ],
+                [
+                  2921.56,
+                  7074.153
+                ],
+                [
+                  2921.56,
+                  7124.153
+                ],
+                [
+                  2921.56,
+                  7174.153
+                ],
+                [
+                  2921.56,
+                  7224.153
+                ],
+                [
+                  2921.56,
+                  7274.153
+                ],
+                [
+                  2921.56,
+                  7324.153
+                ],
+                [
+                  2921.56,
+                  7374.153
+                ],
+                [
+                  2921.56,
+                  7424.153
+                ],
+                [
+                  2921.56,
+                  7474.153
+                ],
+                [
+                  2921.56,
+                  7524.153
+                ],
+                [
+                  2921.56,
+                  7574.153
+                ],
+                [
+                  2921.56,
+                  7624.153
+                ],
+                [
+                  2921.56,
+                  7674.153
+                ],
+                [
+                  2921.56,
+                  7724.153
+                ],
+                [
+                  2921.56,
+                  7774.153
+                ],
+                [
+                  2921.56,
+                  7824.153
+                ],
+                [
+                  2921.56,
+                  7874.153
+                ],
+                [
+                  2921.56,
+                  7924.153
+                ],
+                [
+                  2871.56,
+                  7924.153
+                ],
+                [
+                  2871.56,
+                  7974.153
+                ],
+                [
+                  2821.56,
+                  7974.153
+                ],
+                [
+                  2821.56,
+                  8024.153
+                ],
+                [
+                  2771.56,
+                  8024.153
+                ],
+                [
+                  2771.56,
+                  8074.153
+                ],
+                [
+                  2771.56,
+                  8124.153
+                ],
+                [
+                  2771.56,
+                  8174.153
+                ],
+                [
+                  2771.56,
+                  8224.153
+                ]
+              ],
+              "distance_mm": 2800,
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "MODEL_ROUTE_FOUND",
+              "route_mm": [
+                [
+                  3521.56,
+                  6174.153
+                ],
+                [
+                  3471.56,
+                  6174.153
+                ],
+                [
+                  3421.56,
+                  6174.153
+                ],
+                [
+                  3371.56,
+                  6174.153
+                ],
+                [
+                  3321.56,
+                  6174.153
+                ],
+                [
+                  3271.56,
+                  6174.153
+                ],
+                [
+                  3221.56,
+                  6174.153
+                ],
+                [
+                  3171.56,
+                  6174.153
+                ],
+                [
+                  3121.56,
+                  6174.153
+                ],
+                [
+                  3071.56,
+                  6174.153
+                ],
+                [
+                  3021.56,
+                  6174.153
+                ],
+                [
+                  3021.56,
+                  6224.153
+                ],
+                [
+                  3021.56,
+                  6274.153
+                ],
+                [
+                  3021.56,
+                  6324.153
+                ],
+                [
+                  3021.56,
+                  6374.153
+                ],
+                [
+                  3021.56,
+                  6424.153
+                ],
+                [
+                  3021.56,
+                  6474.153
+                ],
+                [
+                  3021.56,
+                  6524.153
+                ],
+                [
+                  3021.56,
+                  6574.153
+                ],
+                [
+                  3021.56,
+                  6624.153
+                ],
+                [
+                  3021.56,
+                  6674.153
+                ],
+                [
+                  3021.56,
+                  6724.153
+                ],
+                [
+                  3021.56,
+                  6774.153
+                ],
+                [
+                  3021.56,
+                  6824.153
+                ],
+                [
+                  3021.56,
+                  6874.153
+                ],
+                [
+                  3021.56,
+                  6924.153
+                ],
+                [
+                  3021.56,
+                  6974.153
+                ],
+                [
+                  3021.56,
+                  7024.153
+                ],
+                [
+                  3021.56,
+                  7074.153
+                ],
+                [
+                  3021.56,
+                  7124.153
+                ],
+                [
+                  3021.56,
+                  7174.153
+                ],
+                [
+                  3021.56,
+                  7224.153
+                ],
+                [
+                  3021.56,
+                  7274.153
+                ],
+                [
+                  3021.56,
+                  7324.153
+                ],
+                [
+                  3021.56,
+                  7374.153
+                ],
+                [
+                  3021.56,
+                  7424.153
+                ],
+                [
+                  3021.56,
+                  7474.153
+                ],
+                [
+                  3021.56,
+                  7524.153
+                ],
+                [
+                  3021.56,
+                  7574.153
+                ],
+                [
+                  3021.56,
+                  7624.153
+                ],
+                [
+                  3021.56,
+                  7674.153
+                ],
+                [
+                  3021.56,
+                  7724.153
+                ],
+                [
+                  3021.56,
+                  7774.153
+                ],
+                [
+                  3021.56,
+                  7824.153
+                ],
+                [
+                  3021.56,
+                  7874.153
+                ],
+                [
+                  3021.56,
+                  7924.153
+                ],
+                [
+                  2971.56,
+                  7924.153
+                ],
+                [
+                  2971.56,
+                  7974.153
+                ],
+                [
+                  2971.56,
+                  8024.153
+                ],
+                [
+                  2921.56,
+                  8024.153
+                ],
+                [
+                  2921.56,
+                  8074.153
+                ],
+                [
+                  2871.56,
+                  8074.153
+                ],
+                [
+                  2821.56,
+                  8074.153
+                ],
+                [
+                  2821.56,
+                  8124.153
+                ],
+                [
+                  2771.56,
+                  8124.153
+                ],
+                [
+                  2771.56,
+                  8174.153
+                ],
+                [
+                  2771.56,
+                  8224.153
+                ]
+              ],
+              "distance_mm": 2800,
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        },
+        {
+          "offset_mm": 900,
+          "centre_mm": [
+            2750.059,
+            7930.346
+          ],
+          "envelope_mm": [
+            600,
+            900
+          ],
+          "polygon": [
+            [
+              3050.059,
+              8380.346
+            ],
+            [
+              2450.059,
+              8380.346
+            ],
+            [
+              2450.059,
+              7480.346
+            ],
+            [
+              3050.059,
+              7480.346
+            ]
+          ],
+          "fixed_collisions": [
+            "starter-1"
+          ],
+          "chair_collisions": [],
+          "access": [
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 500,
+              "grid_mm": 50
+            },
+            {
+              "status": "NO_MODEL_ROUTE",
+              "reason": "GOAL_BLOCKED",
+              "route_mm": [],
+              "envelope_mm": 700,
+              "grid_mm": 50
+            }
+          ]
+        }
+      ],
+      "parking": null,
+      "supply_axis_sensitivity": [
+        {
+          "kind": "proxy centreline",
+          "width_mm": 1,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              2750.559,
+              8830.346
+            ],
+            [
+              2749.559,
+              8830.346
+            ],
+            [
+              2749.559,
+              5830.346
+            ],
+            [
+              2750.559,
+              5830.346
+            ]
+          ],
+          "intersecting_beds": []
+        },
+        {
+          "kind": "assumed600mm strip / NOT CFD",
+          "width_mm": 600,
+          "length_mm": 3000,
+          "polygon": [
+            [
+              3050.059,
+              8830.346
+            ],
+            [
+              2450.059,
+              8830.346
+            ],
+            [
+              2450.059,
+              5830.346
+            ],
+            [
+              3050.059,
+              5830.346
+            ]
+          ],
+          "intersecting_beds": [
+            "starter-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": "Source AC placements are heuristic proxies and have105mm nominal ceiling gap. Real unit, filters, ladder, overhead reach, supply air and drain survey remain HOLD."
+}

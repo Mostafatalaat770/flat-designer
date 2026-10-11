@@ -1,0 +1,4635 @@
+{
+  "schema": "M3Group2Operation/1",
+  "room": "WIC-01",
+  "profile": "SOURCE",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "endpoints": {
+    "start": [
+      4450,
+      7800
+    ],
+    "bath": [
+      5070,
+      7650
+    ],
+    "north": [
+      4740,
+      7300
+    ],
+    "south": [
+      4740,
+      7900
+    ]
+  },
+  "states": [
+    {
+      "id": "chair-0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [],
+      "seated": []
+    },
+    {
+      "id": "chair-300",
+      "pull_mm": 300,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [],
+      "seated": []
+    },
+    {
+      "id": "chair-450",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open0-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-4",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              4709,
+              6915
+            ],
+            [
+              4709,
+              7515
+            ],
+            [
+              4109,
+              7515
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open0-bay0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              6915
+            ],
+            [
+              5034,
+              6915
+            ],
+            [
+              5034,
+              7515
+            ],
+            [
+              4434,
+              7515
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open0-bay325",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-4",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4759,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7515
+            ],
+            [
+              4759,
+              7515
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open300-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-4",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7215
+            ],
+            [
+              4109,
+              7215
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4109,
+              7215
+            ],
+            [
+              4709,
+              7215
+            ],
+            [
+              4709,
+              7815
+            ],
+            [
+              4109,
+              7815
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open300-bay0",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7215
+            ],
+            [
+              4109,
+              7215
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7215
+            ],
+            [
+              5034,
+              7215
+            ],
+            [
+              5034,
+              7815
+            ],
+            [
+              4434,
+              7815
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open300-bay325",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-4",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7215
+            ],
+            [
+              4109,
+              7215
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4759,
+              7215
+            ],
+            [
+              5359,
+              7215
+            ],
+            [
+              5359,
+              7815
+            ],
+            [
+              4759,
+              7815
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open450-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-4",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7365
+            ],
+            [
+              4109,
+              7365
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4109,
+              7365
+            ],
+            [
+              4709,
+              7365
+            ],
+            [
+              4709,
+              7965
+            ],
+            [
+              4109,
+              7965
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open450-bay0",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7365
+            ],
+            [
+              4109,
+              7365
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7365
+            ],
+            [
+              5034,
+              7365
+            ],
+            [
+              5034,
+              7965
+            ],
+            [
+              4434,
+              7965
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open450-bay325",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-4",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7365
+            ],
+            [
+              4109,
+              7365
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4759,
+              7365
+            ],
+            [
+              5359,
+              7365
+            ],
+            [
+              5359,
+              7965
+            ],
+            [
+              4759,
+              7965
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open600-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-4",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7515
+            ],
+            [
+              4109,
+              7515
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4109,
+              7515
+            ],
+            [
+              4709,
+              7515
+            ],
+            [
+              4709,
+              8115
+            ],
+            [
+              4109,
+              8115
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open600-bay0",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7515
+            ],
+            [
+              4109,
+              7515
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7515
+            ],
+            [
+              5034,
+              7515
+            ],
+            [
+              5034,
+              8115
+            ],
+            [
+              4434,
+              8115
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-open600-bay325",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-4",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7515
+            ],
+            [
+              4109,
+              7515
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4759,
+              7515
+            ],
+            [
+              5359,
+              7515
+            ],
+            [
+              5359,
+              8115
+            ],
+            [
+              4759,
+              8115
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open0-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-5",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4759,
+              8250
+            ],
+            [
+              4759,
+              7650
+            ],
+            [
+              5359,
+              7650
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open0-bay0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              8250
+            ],
+            [
+              4434,
+              8250
+            ],
+            [
+              4434,
+              7650
+            ],
+            [
+              5034,
+              7650
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open0-bay325",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-5",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              4709,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7650
+            ],
+            [
+              4709,
+              7650
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open300-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-5",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7950
+            ],
+            [
+              5359,
+              7950
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5359,
+              7950
+            ],
+            [
+              4759,
+              7950
+            ],
+            [
+              4759,
+              7350
+            ],
+            [
+              5359,
+              7350
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open300-bay0",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7950
+            ],
+            [
+              5359,
+              7950
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7950
+            ],
+            [
+              4434,
+              7950
+            ],
+            [
+              4434,
+              7350
+            ],
+            [
+              5034,
+              7350
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open300-bay325",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-5",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7950
+            ],
+            [
+              5359,
+              7950
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              4709,
+              7950
+            ],
+            [
+              4109,
+              7950
+            ],
+            [
+              4109,
+              7350
+            ],
+            [
+              4709,
+              7350
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open450-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-5",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7800
+            ],
+            [
+              5359,
+              7800
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5359,
+              7800
+            ],
+            [
+              4759,
+              7800
+            ],
+            [
+              4759,
+              7200
+            ],
+            [
+              5359,
+              7200
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open450-bay0",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7800
+            ],
+            [
+              5359,
+              7800
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7800
+            ],
+            [
+              4434,
+              7800
+            ],
+            [
+              4434,
+              7200
+            ],
+            [
+              5034,
+              7200
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open450-bay325",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-5",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7800
+            ],
+            [
+              5359,
+              7800
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              4709,
+              7800
+            ],
+            [
+              4109,
+              7800
+            ],
+            [
+              4109,
+              7200
+            ],
+            [
+              4709,
+              7200
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open600-bay-325",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-5",
+      "offset_mm": -325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7650
+            ],
+            [
+              5359,
+              7650
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5359,
+              7650
+            ],
+            [
+              4759,
+              7650
+            ],
+            [
+              4759,
+              7050
+            ],
+            [
+              5359,
+              7050
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open600-bay0",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7650
+            ],
+            [
+              5359,
+              7650
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7650
+            ],
+            [
+              4434,
+              7650
+            ],
+            [
+              4434,
+              7050
+            ],
+            [
+              5034,
+              7050
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-open600-bay325",
+      "pull_mm": 0,
+      "opening_mm": 600,
+      "cabinet": "starter-5",
+      "offset_mm": 325,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7650
+            ],
+            [
+              5359,
+              7650
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              4709,
+              7650
+            ],
+            [
+              4109,
+              7650
+            ],
+            [
+              4109,
+              7050
+            ],
+            [
+              4709,
+              7050
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-chair450-open0",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              6915
+            ],
+            [
+              5034,
+              6915
+            ],
+            [
+              5034,
+              7515
+            ],
+            [
+              4434,
+              7515
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-chair450-open300",
+      "pull_mm": 450,
+      "opening_mm": 300,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7215
+            ],
+            [
+              4109,
+              7215
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7215
+            ],
+            [
+              5034,
+              7215
+            ],
+            [
+              5034,
+              7815
+            ],
+            [
+              4434,
+              7815
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-4-chair450-open450",
+      "pull_mm": 450,
+      "opening_mm": 450,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7365
+            ],
+            [
+              4109,
+              7365
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7365
+            ],
+            [
+              5034,
+              7365
+            ],
+            [
+              5034,
+              7965
+            ],
+            [
+              4434,
+              7965
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-chair450-open0",
+      "pull_mm": 450,
+      "opening_mm": 0,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              8250
+            ],
+            [
+              4434,
+              8250
+            ],
+            [
+              4434,
+              7650
+            ],
+            [
+              5034,
+              7650
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-chair450-open300",
+      "pull_mm": 450,
+      "opening_mm": 300,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7950
+            ],
+            [
+              5359,
+              7950
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7950
+            ],
+            [
+              4434,
+              7950
+            ],
+            [
+              4434,
+              7350
+            ],
+            [
+              5034,
+              7350
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "starter-5-chair450-open450",
+      "pull_mm": 450,
+      "opening_mm": 450,
+      "cabinet": "starter-5",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7800
+            ],
+            [
+              5359,
+              7800
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7800
+            ],
+            [
+              4434,
+              7800
+            ],
+            [
+              4434,
+              7200
+            ],
+            [
+              5034,
+              7200
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "two-users-open0",
+      "pull_mm": 0,
+      "opening_mm": 0,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [],
+      "chairs": [],
+      "use": [
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              6915
+            ],
+            [
+              5034,
+              6915
+            ],
+            [
+              5034,
+              7515
+            ],
+            [
+              4434,
+              7515
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              8250
+            ],
+            [
+              4434,
+              8250
+            ],
+            [
+              4434,
+              7650
+            ],
+            [
+              5034,
+              7650
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "two-users-open300",
+      "pull_mm": 0,
+      "opening_mm": 300,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "user-starter-4",
+          "b": "user-starter-5",
+          "area_mm2": 279000
+        }
+      ],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7215
+            ],
+            [
+              4109,
+              7215
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7215
+            ],
+            [
+              5034,
+              7215
+            ],
+            [
+              5034,
+              7815
+            ],
+            [
+              4434,
+              7815
+            ]
+          ]
+        },
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7950
+            ],
+            [
+              5359,
+              7950
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7950
+            ],
+            [
+              4434,
+              7950
+            ],
+            [
+              4434,
+              7350
+            ],
+            [
+              5034,
+              7350
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    },
+    {
+      "id": "two-users-open450",
+      "pull_mm": 0,
+      "opening_mm": 450,
+      "cabinet": "starter-4",
+      "offset_mm": 0,
+      "collisions": [
+        {
+          "a": "user-starter-4",
+          "b": "open-starter-5",
+          "area_mm2": 99000
+        },
+        {
+          "a": "user-starter-5",
+          "b": "open-starter-4",
+          "area_mm2": 99000
+        },
+        {
+          "a": "user-starter-4",
+          "b": "user-starter-5",
+          "area_mm2": 261000
+        }
+      ],
+      "chairs": [],
+      "use": [
+        {
+          "id": "open-starter-4",
+          "polygon": [
+            [
+              4109,
+              6915
+            ],
+            [
+              5359,
+              6915
+            ],
+            [
+              5359,
+              7365
+            ],
+            [
+              4109,
+              7365
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-4",
+          "polygon": [
+            [
+              4434,
+              7365
+            ],
+            [
+              5034,
+              7365
+            ],
+            [
+              5034,
+              7965
+            ],
+            [
+              4434,
+              7965
+            ]
+          ]
+        },
+        {
+          "id": "open-starter-5",
+          "polygon": [
+            [
+              5359,
+              8250
+            ],
+            [
+              4109,
+              8250
+            ],
+            [
+              4109,
+              7800
+            ],
+            [
+              5359,
+              7800
+            ]
+          ]
+        },
+        {
+          "id": "user-starter-5",
+          "polygon": [
+            [
+              5034,
+              7800
+            ],
+            [
+              4434,
+              7800
+            ],
+            [
+              4434,
+              7200
+            ],
+            [
+              5034,
+              7200
+            ]
+          ]
+        }
+      ],
+      "seated": []
+    }
+  ],
+  "questions": [
+    {
+      "state": "chair-0",
+      "goal": "bath",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4778.559,
+          7781.575
+        ],
+        [
+          4828.559,
+          7781.575
+        ],
+        [
+          4878.559,
+          7781.575
+        ],
+        [
+          4928.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7781.575
+        ],
+        [
+          5028.559,
+          7781.575
+        ],
+        [
+          5078.559,
+          7781.575
+        ],
+        [
+          5078.559,
+          7731.575
+        ],
+        [
+          5078.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7631.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "north",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7731.575
+        ],
+        [
+          4728.559,
+          7681.575
+        ],
+        [
+          4728.559,
+          7631.575
+        ],
+        [
+          4728.559,
+          7581.575
+        ],
+        [
+          4728.559,
+          7531.575
+        ],
+        [
+          4728.559,
+          7481.575
+        ],
+        [
+          4728.559,
+          7431.575
+        ],
+        [
+          4728.559,
+          7381.575
+        ],
+        [
+          4728.559,
+          7331.575
+        ],
+        [
+          4728.559,
+          7281.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "south",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7831.575
+        ],
+        [
+          4728.559,
+          7881.575
+        ]
+      ],
+      "distance_mm": 400,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "bath",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4778.559,
+          7781.575
+        ],
+        [
+          4828.559,
+          7781.575
+        ],
+        [
+          4878.559,
+          7781.575
+        ],
+        [
+          4928.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7731.575
+        ],
+        [
+          5028.559,
+          7731.575
+        ],
+        [
+          5028.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7631.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "bath",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4778.559,
+          7781.575
+        ],
+        [
+          4828.559,
+          7781.575
+        ],
+        [
+          4878.559,
+          7781.575
+        ],
+        [
+          4928.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7781.575
+        ],
+        [
+          5028.559,
+          7781.575
+        ],
+        [
+          5078.559,
+          7781.575
+        ],
+        [
+          5078.559,
+          7731.575
+        ],
+        [
+          5078.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7631.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "north",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7731.575
+        ],
+        [
+          4728.559,
+          7681.575
+        ],
+        [
+          4728.559,
+          7631.575
+        ],
+        [
+          4728.559,
+          7581.575
+        ],
+        [
+          4728.559,
+          7531.575
+        ],
+        [
+          4728.559,
+          7481.575
+        ],
+        [
+          4728.559,
+          7431.575
+        ],
+        [
+          4728.559,
+          7381.575
+        ],
+        [
+          4728.559,
+          7331.575
+        ],
+        [
+          4728.559,
+          7281.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "south",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7831.575
+        ],
+        [
+          4728.559,
+          7881.575
+        ]
+      ],
+      "distance_mm": 400,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "bath",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4778.559,
+          7781.575
+        ],
+        [
+          4828.559,
+          7781.575
+        ],
+        [
+          4878.559,
+          7781.575
+        ],
+        [
+          4928.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7731.575
+        ],
+        [
+          5028.559,
+          7731.575
+        ],
+        [
+          5028.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7631.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "bath",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4778.559,
+          7781.575
+        ],
+        [
+          4828.559,
+          7781.575
+        ],
+        [
+          4878.559,
+          7781.575
+        ],
+        [
+          4928.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7781.575
+        ],
+        [
+          5028.559,
+          7781.575
+        ],
+        [
+          5078.559,
+          7781.575
+        ],
+        [
+          5078.559,
+          7731.575
+        ],
+        [
+          5078.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7631.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "north",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7731.575
+        ],
+        [
+          4728.559,
+          7681.575
+        ],
+        [
+          4728.559,
+          7631.575
+        ],
+        [
+          4728.559,
+          7581.575
+        ],
+        [
+          4728.559,
+          7531.575
+        ],
+        [
+          4728.559,
+          7481.575
+        ],
+        [
+          4728.559,
+          7431.575
+        ],
+        [
+          4728.559,
+          7381.575
+        ],
+        [
+          4728.559,
+          7331.575
+        ],
+        [
+          4728.559,
+          7281.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "south",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7831.575
+        ],
+        [
+          4728.559,
+          7881.575
+        ]
+      ],
+      "distance_mm": 400,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "bath",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4678.559,
+          7781.575
+        ],
+        [
+          4728.559,
+          7781.575
+        ],
+        [
+          4778.559,
+          7781.575
+        ],
+        [
+          4828.559,
+          7781.575
+        ],
+        [
+          4878.559,
+          7781.575
+        ],
+        [
+          4928.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7781.575
+        ],
+        [
+          4978.559,
+          7731.575
+        ],
+        [
+          5028.559,
+          7731.575
+        ],
+        [
+          5028.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7681.575
+        ],
+        [
+          5078.559,
+          7631.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "chair-450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay325",
+      "goal": "south",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4478.559,
+          7781.575
+        ],
+        [
+          4528.559,
+          7781.575
+        ],
+        [
+          4578.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7781.575
+        ],
+        [
+          4628.559,
+          7831.575
+        ],
+        [
+          4678.559,
+          7831.575
+        ],
+        [
+          4728.559,
+          7831.575
+        ],
+        [
+          4728.559,
+          7881.575
+        ]
+      ],
+      "distance_mm": 400,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open0-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open300-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open450-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-open600-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay-325",
+      "goal": "north",
+      "status": "MODEL_ROUTE_FOUND",
+      "route_mm": [
+        [
+          4428.559,
+          7781.575
+        ],
+        [
+          4428.559,
+          7731.575
+        ],
+        [
+          4428.559,
+          7681.575
+        ],
+        [
+          4428.559,
+          7631.575
+        ],
+        [
+          4428.559,
+          7581.575
+        ],
+        [
+          4478.559,
+          7581.575
+        ],
+        [
+          4478.559,
+          7531.575
+        ],
+        [
+          4478.559,
+          7481.575
+        ],
+        [
+          4528.559,
+          7481.575
+        ],
+        [
+          4528.559,
+          7431.575
+        ],
+        [
+          4528.559,
+          7381.575
+        ],
+        [
+          4578.559,
+          7381.575
+        ],
+        [
+          4628.559,
+          7381.575
+        ],
+        [
+          4628.559,
+          7331.575
+        ],
+        [
+          4678.559,
+          7331.575
+        ],
+        [
+          4728.559,
+          7331.575
+        ],
+        [
+          4728.559,
+          7281.575
+        ]
+      ],
+      "distance_mm": 800,
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "GOAL_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open0-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open300-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open450-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay-325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay-325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay-325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay325",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay325",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-open600-bay325",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open300",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open300",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open450",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open450",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-4-chair450-open450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open300",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open300",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open450",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open450",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "starter-5-chair450-open450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open0",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open0",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open0",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open300",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open300",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open300",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open300",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open450",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 500,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open450",
+      "goal": "bath",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open450",
+      "goal": "north",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    },
+    {
+      "state": "two-users-open450",
+      "goal": "south",
+      "status": "NO_MODEL_ROUTE",
+      "reason": "START_BLOCKED",
+      "route_mm": [],
+      "envelope_mm": 700,
+      "grid_mm": 50
+    }
+  ],
+  "door_sweeps": [
+    {
+      "door": "OP-WIC-BATHM",
+      "id": "starter-4",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 347.344
+    },
+    {
+      "door": "OP-WIC-BATHM",
+      "id": "starter-5",
+      "positive_overlap_samples": 0,
+      "gap_at_open_mm": 970.11
+    }
+  ],
+  "curtainSensitivity": [
+    {
+      "span_mm": 150,
+      "depth_mm": 150,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 150,
+      "depth_mm": 250,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 150,
+      "depth_mm": 350,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 150,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 250,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 300,
+      "depth_mm": 350,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 150,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 250,
+      "finish_face_conflicts": [],
+      "collisions": []
+    },
+    {
+      "span_mm": 450,
+      "depth_mm": 350,
+      "finish_face_conflicts": [],
+      "collisions": []
+    }
+  ],
+  "solver_crosscheck": {
+    "result": "MATCH",
+    "status": "MODEL_ROUTE_FOUND"
+  },
+  "limitations": "2D circular-envelope paths from INSIDE each room. Seated650x350, standing600x600,50mm grid+35.36mm radial allowance; no physical thresholds, articulated bodies, code, manufacturer or comfort validation."
+}
