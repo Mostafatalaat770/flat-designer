@@ -1,0 +1,1506 @@
+{
+  "schema": "TypeBWholeHomeM1Browser/1",
+  "browser": "151.0.7922.173",
+  "method": "Offline setContent exact committed HTML; all network blocked; real Chromium SVG rendering, tabs, crops, download",
+  "html_sha256": "77d3bfa5fcafb757b78337d3c361d7f872f84dd55d228abe1dad951e3b82f925",
+  "checked_views": 130,
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "E",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "L",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "H",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "A",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "TER-MBR",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BR-01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BR-02",
+      "source_objects": 5,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "MBR-01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "HALL-01",
+      "source_objects": 1,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "WIC-01",
+      "source_objects": 2,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BATH-M01",
+      "source_objects": 7,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "BATH-C01",
+      "source_objects": 6,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "KIT-01",
+      "source_objects": 15,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "TER-SVC",
+      "source_objects": 0,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "WC-01",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "TER-MAIN",
+      "source_objects": 3,
+      "pass": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "layer": "F",
+      "option": "B",
+      "room": "RECP-01",
+      "source_objects": 21,
+      "pass": true
+    }
+  ],
+  "downloads": [
+    {
+      "viewport": 1440,
+      "layer": "E",
+      "name": "TypeB-M1-E.svg",
+      "pass": true
+    },
+    {
+      "viewport": 1440,
+      "layer": "L",
+      "name": "TypeB-M1-L.svg",
+      "pass": true
+    },
+    {
+      "viewport": 1440,
+      "layer": "H",
+      "name": "TypeB-M1-H.svg",
+      "pass": true
+    },
+    {
+      "viewport": 1440,
+      "layer": "F",
+      "name": "TypeB-M1-F-B.svg",
+      "pass": true
+    },
+    {
+      "viewport": 390,
+      "layer": "E",
+      "name": "TypeB-M1-E.svg",
+      "pass": true
+    },
+    {
+      "viewport": 390,
+      "layer": "L",
+      "name": "TypeB-M1-L.svg",
+      "pass": true
+    },
+    {
+      "viewport": 390,
+      "layer": "H",
+      "name": "TypeB-M1-H.svg",
+      "pass": true
+    },
+    {
+      "viewport": 390,
+      "layer": "F",
+      "name": "TypeB-M1-F-B.svg",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "network_requests": [],
+  "screenshots_directory": "work/m1-session/visual",
+  "visual_review_status": "PASS_AGENT_VISUAL_INSPECTION",
+  "inspected_screenshots": [
+    "visual-review/mobile-E-BR-02-A.png",
+    "visual-review/mobile-F-WIC-01-A.png",
+    "visual-review/mobile-F-WIC-01-B.png",
+    "visual-review/mobile-H-BATH-C01-A.png",
+    "visual-review/mobile-L-KIT-01-A.png",
+    "visual-review/sheet-E.png",
+    "visual-review/sheet-F.png",
+    "visual-review/sheet-H.png",
+    "visual-review/sheet-L.png"
+  ],
+  "visual_review_document": "VISUAL_REVIEW.md",
+  "standalone_text_bounds": "PASS_ALL_FOUR_SHEETS"
+}

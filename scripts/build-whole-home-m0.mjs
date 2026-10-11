@@ -22,7 +22,17 @@ const ref=(p,pointer)=>({path:p,pointer,sha256:hash(p)});
 export function verifyLocks(){
   const locks=read(`${OUT}/SOURCE_LOCK.json`);
   assert.equal(locks.starting_head,'f5ad15f37a25ca91b598810e195fcacc777d6600');
-  for(const [p,sha] of Object.entries(locks.files))assert.equal(hash(p),sha,`Inherited source changed: ${p}`);
+  // Owner-authored 37e8844 updates continuity docs only, after M0 completion.
+  // Keep M0's historical manifest/results intact. Permit these exact document hashes,
+  // never arbitrary new edits and never geometry, inventory, approvals or design sources.
+  const continuity37={
+    'AGENTS.md':'f26ac8391b5abc9e05d2bd658b24538bfcab841b080e93e44b5f068834ba4337',
+    'design-development/WHOLE_HOME_MASTER_PLAN.md':'8078dbb6875aa8f0b8d0b541cb72d6623dfceeddca860fe0866c052b3bb92a4c'
+  };
+  for(const [p,sha] of Object.entries(locks.files)){
+    const actual=hash(p);
+    assert.ok(actual===sha||actual===continuity37[p],`Inherited source changed: ${p}`);
+  }
   assert.equal(hash(CANONICAL),LOCKED_CANONICAL);
   return locks;
 }
