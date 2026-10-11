@@ -58,8 +58,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6145,
-      "sha256": "b53875cb85ddb7e52d1814ab52d71a00c5bd88648e2ee65e20845211636494b6"
+      "bytes": 6357,
+      "sha256": "af0d1a3798ec868e28f82b43e60eafeba9f0e4165260c3b07763b32f3dbe000a"
     },
     {
       "path": "REFERENCE_LINKS.json",
@@ -250,6 +250,16 @@
       "path": "validation/npm-ci.log",
       "bytes": 533,
       "sha256": "d459110b2ce697763061a22d0a67fa2d2869be6c20544430dbf214baf67b15d6"
+    },
+    {
+      "path": "validation/render-floor-refinement.log",
+      "bytes": 538,
+      "sha256": "745106d11f054525f10c6a41b8d7a01a994f8e80496e70f4de1a07418521bd64"
+    },
+    {
+      "path": "validation/render-material-study.log",
+      "bytes": 450,
+      "sha256": "560b6e6d372e5b351d2d1298a678718b7c24aa8a03a90f9ae8acc3149e13b8f5"
     },
     {
       "path": "validation/render.log",
