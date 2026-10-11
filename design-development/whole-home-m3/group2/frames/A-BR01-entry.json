@@ -1,0 +1,2887 @@
+{
+  "schema": "ApartmentSceneCaptureFrame/1",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "snapshot_sha256": "2a60e0955fa0ba5f7b02c0852a45ce60578a84c1469ab2b4fa78f10c7a450a0a",
+  "scene_revision": "scene-a6276ce3",
+  "storage_revision": 55,
+  "room_id": "BR-01",
+  "camera": {
+    "position": [
+      -3.3677089999999996,
+      1.65,
+      -0.5956584999999995
+    ],
+    "target": [
+      -5.027709,
+      1.1,
+      -2.2856584999999994
+    ],
+    "fov": 65,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.6,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1120,
+      "height": 700
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-10-11T21:22:59.894Z",
+  "assets": {
+    "pending": 0,
+    "fallbacks": []
+  },
+  "renderer": {
+    "engine": "Three.js WebGL",
+    "revision": "160"
+  },
+  "architecture_variant": null,
+  "architecture_result": {
+    "wall_segments_hidden": 0,
+    "wall_finishes_hidden": 0,
+    "wall_segments_added": 0,
+    "wall_boxes_added": 0,
+    "canonical_ceilings_hidden": 0,
+    "merged_ceilings_added": 0,
+    "openings_hidden": 0,
+    "opening_headers_hidden": 0,
+    "opening_thresholds_hidden": 0,
+    "door_overrides": 0
+  },
+  "render_experiment": null,
+  "door_finish_result": null,
+  "kitchen_geometry": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            1100.9912637347638
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.9999940395355,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999997615814,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            859.9999995529652
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "kitchen_r6_study": null,
+  "kitchen_r6_result": null,
+  "mesh_bounds": {
+    "starter-1": {
+      "declared_mm": [
+        1870,
+        2220
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -935,
+          0,
+          -1110
+        ],
+        "max": [
+          935,
+          1140,
+          1110
+        ]
+      },
+      "parts": {
+        "frame": [
+          {
+            "min_mm": [
+              -935,
+              120,
+              -1020
+            ],
+            "max_mm": [
+              935,
+              370,
+              1110
+            ]
+          }
+        ],
+        "mattress": [
+          {
+            "min_mm": [
+              -900,
+              370,
+              -1020
+            ],
+            "max_mm": [
+              900,
+              570,
+              980
+            ]
+          }
+        ],
+        "headboard": [
+          {
+            "min_mm": [
+              -935,
+              120,
+              -1110
+            ],
+            "max_mm": [
+              935,
+              1140,
+              -1030
+            ]
+          }
+        ],
+        "throw": [
+          {
+            "min_mm": [
+              -890,
+              578,
+              445
+            ],
+            "max_mm": [
+              890,
+              616,
+              975
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-2": {
+      "declared_mm": [
+        450,
+        400
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -225,
+          0,
+          -200
+        ],
+        "max": [
+          225,
+          847,
+          200
+        ]
+      },
+      "parts": {
+        "case": [
+          {
+            "min_mm": [
+              -225,
+              120,
+              -200
+            ],
+            "max_mm": [
+              225,
+              580,
+              200
+            ]
+          }
+        ],
+        "open-shelf-recess": [
+          {
+            "min_mm": [
+              -202.5,
+              200,
+              191
+            ],
+            "max_mm": [
+              202.5,
+              360,
+              195
+            ]
+          }
+        ],
+        "top": [
+          {
+            "min_mm": [
+              -225,
+              580,
+              -200
+            ],
+            "max_mm": [
+              225,
+              605,
+              200
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-3": {
+      "declared_mm": [
+        450,
+        400
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -225,
+          0,
+          -200
+        ],
+        "max": [
+          225,
+          847,
+          200
+        ]
+      },
+      "parts": {
+        "case": [
+          {
+            "min_mm": [
+              -225,
+              120,
+              -200
+            ],
+            "max_mm": [
+              225,
+              580,
+              200
+            ]
+          }
+        ],
+        "open-shelf-recess": [
+          {
+            "min_mm": [
+              -202.5,
+              200,
+              191
+            ],
+            "max_mm": [
+              202.5,
+              360,
+              195
+            ]
+          }
+        ],
+        "top": [
+          {
+            "min_mm": [
+              -225,
+              580,
+              -200
+            ],
+            "max_mm": [
+              225,
+              605,
+              200
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-4": {
+      "declared_mm": [
+        1250,
+        600
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -625,
+          0,
+          -300
+        ],
+        "max": [
+          625,
+          2250,
+          300
+        ]
+      },
+      "parts": {
+        "back": [
+          {
+            "min_mm": [
+              -625,
+              0,
+              -300
+            ],
+            "max_mm": [
+              625,
+              2250,
+              -280
+            ]
+          }
+        ],
+        "side": [
+          {
+            "min_mm": [
+              -625,
+              0,
+              -280
+            ],
+            "max_mm": [
+              -607,
+              2250,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -9,
+              0,
+              -280
+            ],
+            "max_mm": [
+              9,
+              2250,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              607,
+              0,
+              -280
+            ],
+            "max_mm": [
+              625,
+              2250,
+              280
+            ]
+          }
+        ],
+        "shelf": [
+          {
+            "min_mm": [
+              -625,
+              120,
+              -280
+            ],
+            "max_mm": [
+              625,
+              138,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -625,
+              2010,
+              -280
+            ],
+            "max_mm": [
+              625,
+              2028,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -625,
+              2232,
+              -280
+            ],
+            "max_mm": [
+              625,
+              2250,
+              280
+            ]
+          }
+        ],
+        "rail": [
+          {
+            "min_mm": [
+              -580,
+              973,
+              -22
+            ],
+            "max_mm": [
+              -18,
+              987,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              -580,
+              1913,
+              -22
+            ],
+            "max_mm": [
+              -18,
+              1927,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              18,
+              1913,
+              -22
+            ],
+            "max_mm": [
+              580,
+              1927,
+              -8
+            ]
+          }
+        ],
+        "hinged-panel": [
+          {
+            "min_mm": [
+              -623,
+              60,
+              280
+            ],
+            "max_mm": [
+              -2,
+              2190,
+              300
+            ]
+          },
+          {
+            "min_mm": [
+              2,
+              60,
+              280
+            ],
+            "max_mm": [
+              623,
+              2190,
+              300
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-5": {
+      "declared_mm": [
+        1250,
+        600
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -625,
+          0,
+          -300
+        ],
+        "max": [
+          625,
+          2250,
+          300
+        ]
+      },
+      "parts": {
+        "back": [
+          {
+            "min_mm": [
+              -625,
+              0,
+              -300
+            ],
+            "max_mm": [
+              625,
+              2250,
+              -280
+            ]
+          }
+        ],
+        "side": [
+          {
+            "min_mm": [
+              -625,
+              0,
+              -280
+            ],
+            "max_mm": [
+              -607,
+              2250,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -9,
+              0,
+              -280
+            ],
+            "max_mm": [
+              9,
+              2250,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              607,
+              0,
+              -280
+            ],
+            "max_mm": [
+              625,
+              2250,
+              280
+            ]
+          }
+        ],
+        "shelf": [
+          {
+            "min_mm": [
+              -625,
+              120,
+              -280
+            ],
+            "max_mm": [
+              625,
+              138,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -625,
+              2010,
+              -280
+            ],
+            "max_mm": [
+              625,
+              2028,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -625,
+              2232,
+              -280
+            ],
+            "max_mm": [
+              625,
+              2250,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -588,
+              510,
+              -292.5
+            ],
+            "max_mm": [
+              -10,
+              528,
+              262.5
+            ]
+          },
+          {
+            "min_mm": [
+              -588,
+              900,
+              -292.5
+            ],
+            "max_mm": [
+              -10,
+              918,
+              262.5
+            ]
+          },
+          {
+            "min_mm": [
+              -588,
+              1290,
+              -292.5
+            ],
+            "max_mm": [
+              -10,
+              1308,
+              262.5
+            ]
+          },
+          {
+            "min_mm": [
+              -588,
+              1680,
+              -292.5
+            ],
+            "max_mm": [
+              -10,
+              1698,
+              262.5
+            ]
+          }
+        ],
+        "rail": [
+          {
+            "min_mm": [
+              18,
+              973,
+              -22
+            ],
+            "max_mm": [
+              580,
+              987,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              18,
+              1913,
+              -22
+            ],
+            "max_mm": [
+              580,
+              1927,
+              -8
+            ]
+          }
+        ],
+        "hinged-panel": [
+          {
+            "min_mm": [
+              -623,
+              60,
+              280
+            ],
+            "max_mm": [
+              -2,
+              2190,
+              300
+            ]
+          },
+          {
+            "min_mm": [
+              2,
+              60,
+              280
+            ],
+            "max_mm": [
+              623,
+              2190,
+              300
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-6": {
+      "declared_mm": [
+        1280,
+        2100
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -640,
+          0,
+          -1050
+        ],
+        "max": [
+          640,
+          1140,
+          1050
+        ]
+      },
+      "parts": {
+        "frame": [
+          {
+            "min_mm": [
+              -640,
+              120,
+              -960
+            ],
+            "max_mm": [
+              640,
+              370,
+              1050
+            ]
+          }
+        ],
+        "mattress": [
+          {
+            "min_mm": [
+              -600,
+              370,
+              -960
+            ],
+            "max_mm": [
+              600,
+              570,
+              1040
+            ]
+          }
+        ],
+        "headboard": [
+          {
+            "min_mm": [
+              -640,
+              120,
+              -1050
+            ],
+            "max_mm": [
+              640,
+              1140,
+              -970
+            ]
+          }
+        ],
+        "throw": [
+          {
+            "min_mm": [
+              -590,
+              578,
+              385
+            ],
+            "max_mm": [
+              590,
+              616,
+              915
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-7": {
+      "declared_mm": [
+        1800,
+        650
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -325
+        ],
+        "max": [
+          900,
+          2250,
+          325
+        ]
+      },
+      "parts": {
+        "back": [
+          {
+            "min_mm": [
+              -900,
+              0,
+              -325
+            ],
+            "max_mm": [
+              900,
+              2250,
+              -305
+            ]
+          }
+        ],
+        "side": [
+          {
+            "min_mm": [
+              -900,
+              0,
+              -305
+            ],
+            "max_mm": [
+              -882,
+              2250,
+              305
+            ]
+          },
+          {
+            "min_mm": [
+              -9,
+              0,
+              -305
+            ],
+            "max_mm": [
+              9,
+              2250,
+              305
+            ]
+          },
+          {
+            "min_mm": [
+              882,
+              0,
+              -305
+            ],
+            "max_mm": [
+              900,
+              2250,
+              305
+            ]
+          }
+        ],
+        "shelf": [
+          {
+            "min_mm": [
+              -900,
+              120,
+              -305
+            ],
+            "max_mm": [
+              900,
+              138,
+              305
+            ]
+          },
+          {
+            "min_mm": [
+              -900,
+              2010,
+              -305
+            ],
+            "max_mm": [
+              900,
+              2028,
+              305
+            ]
+          },
+          {
+            "min_mm": [
+              -900,
+              2232,
+              -305
+            ],
+            "max_mm": [
+              900,
+              2250,
+              305
+            ]
+          }
+        ],
+        "rail": [
+          {
+            "min_mm": [
+              -855,
+              973,
+              -22
+            ],
+            "max_mm": [
+              -18,
+              987,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              -855,
+              1913,
+              -22
+            ],
+            "max_mm": [
+              -18,
+              1927,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              18,
+              973,
+              -22
+            ],
+            "max_mm": [
+              855,
+              987,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              18,
+              1913,
+              -22
+            ],
+            "max_mm": [
+              855,
+              1927,
+              -8
+            ]
+          }
+        ],
+        "sliding-panel": [
+          {
+            "min_mm": [
+              -898,
+              60,
+              280
+            ],
+            "max_mm": [
+              -2,
+              2190,
+              300
+            ]
+          },
+          {
+            "min_mm": [
+              -890,
+              60,
+              305
+            ],
+            "max_mm": [
+              6,
+              2190,
+              325
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-8": {
+      "declared_mm": [
+        1100,
+        600
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -550,
+          0,
+          -300
+        ],
+        "max": [
+          550,
+          961.2,
+          300
+        ]
+      },
+      "parts": {
+        "tabletop": [
+          {
+            "min_mm": [
+              -550,
+              715,
+              -300
+            ],
+            "max_mm": [
+              550,
+              750,
+              300
+            ]
+          }
+        ],
+        "leg": [
+          {
+            "min_mm": [
+              -517.5,
+              0,
+              -267.5
+            ],
+            "max_mm": [
+              -472.5,
+              715,
+              -222.5
+            ]
+          },
+          {
+            "min_mm": [
+              -517.5,
+              0,
+              222.5
+            ],
+            "max_mm": [
+              -472.5,
+              715,
+              267.5
+            ]
+          },
+          {
+            "min_mm": [
+              472.5,
+              0,
+              -267.5
+            ],
+            "max_mm": [
+              517.5,
+              715,
+              -222.5
+            ]
+          },
+          {
+            "min_mm": [
+              472.5,
+              0,
+              222.5
+            ],
+            "max_mm": [
+              517.5,
+              715,
+              267.5
+            ]
+          }
+        ],
+        "rear-cable-rail": [
+          {
+            "min_mm": [
+              -490,
+              670,
+              -257.5
+            ],
+            "max_mm": [
+              490,
+              710,
+              -232.5
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-9": {
+      "declared_mm": [
+        580,
+        580
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -290,
+          12,
+          -265.76
+        ],
+        "max": [
+          290,
+          1030,
+          265.76
+        ]
+      },
+      "parts": {
+        "seat": [
+          {
+            "min_mm": [
+              -240,
+              395,
+              -210
+            ],
+            "max_mm": [
+              240,
+              460,
+              240
+            ]
+          }
+        ],
+        "back": [
+          {
+            "min_mm": [
+              -225,
+              470,
+              -262.5
+            ],
+            "max_mm": [
+              225,
+              1030,
+              -207.5
+            ]
+          }
+        ],
+        "arm": [
+          {
+            "min_mm": [
+              -290,
+              640,
+              -150
+            ],
+            "max_mm": [
+              -240,
+              665,
+              140
+            ]
+          },
+          {
+            "min_mm": [
+              240,
+              640,
+              -150
+            ],
+            "max_mm": [
+              290,
+              665,
+              140
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-10": {
+      "declared_mm": [
+        1280,
+        2100
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -640,
+          0,
+          -1050
+        ],
+        "max": [
+          640,
+          1140,
+          1050
+        ]
+      },
+      "parts": {
+        "frame": [
+          {
+            "min_mm": [
+              -640,
+              120,
+              -960
+            ],
+            "max_mm": [
+              640,
+              370,
+              1050
+            ]
+          }
+        ],
+        "mattress": [
+          {
+            "min_mm": [
+              -600,
+              370,
+              -960
+            ],
+            "max_mm": [
+              600,
+              570,
+              1040
+            ]
+          }
+        ],
+        "headboard": [
+          {
+            "min_mm": [
+              -640,
+              120,
+              -1050
+            ],
+            "max_mm": [
+              640,
+              1140,
+              -970
+            ]
+          }
+        ],
+        "throw": [
+          {
+            "min_mm": [
+              -590,
+              578,
+              385
+            ],
+            "max_mm": [
+              590,
+              616,
+              915
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-11": {
+      "declared_mm": [
+        900,
+        500
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -450,
+          0,
+          -250
+        ],
+        "max": [
+          450,
+          961.2,
+          250
+        ]
+      },
+      "parts": {
+        "tabletop": [
+          {
+            "min_mm": [
+              -450,
+              715,
+              -250
+            ],
+            "max_mm": [
+              450,
+              750,
+              250
+            ]
+          }
+        ],
+        "leg": [
+          {
+            "min_mm": [
+              -417.5,
+              0,
+              -217.5
+            ],
+            "max_mm": [
+              -372.5,
+              715,
+              -172.5
+            ]
+          },
+          {
+            "min_mm": [
+              -417.5,
+              0,
+              172.5
+            ],
+            "max_mm": [
+              -372.5,
+              715,
+              217.5
+            ]
+          },
+          {
+            "min_mm": [
+              372.5,
+              0,
+              -217.5
+            ],
+            "max_mm": [
+              417.5,
+              715,
+              -172.5
+            ]
+          },
+          {
+            "min_mm": [
+              372.5,
+              0,
+              172.5
+            ],
+            "max_mm": [
+              417.5,
+              715,
+              217.5
+            ]
+          }
+        ],
+        "rear-cable-rail": [
+          {
+            "min_mm": [
+              -390,
+              670,
+              -207.5
+            ],
+            "max_mm": [
+              390,
+              710,
+              -182.5
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-12": {
+      "declared_mm": [
+        580,
+        580
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -290,
+          12,
+          -265.76
+        ],
+        "max": [
+          290,
+          1030,
+          265.76
+        ]
+      },
+      "parts": {
+        "seat": [
+          {
+            "min_mm": [
+              -240,
+              395,
+              -210
+            ],
+            "max_mm": [
+              240,
+              460,
+              240
+            ]
+          }
+        ],
+        "back": [
+          {
+            "min_mm": [
+              -225,
+              470,
+              -262.5
+            ],
+            "max_mm": [
+              225,
+              1030,
+              -207.5
+            ]
+          }
+        ],
+        "arm": [
+          {
+            "min_mm": [
+              -290,
+              640,
+              -150
+            ],
+            "max_mm": [
+              -240,
+              665,
+              140
+            ]
+          },
+          {
+            "min_mm": [
+              240,
+              640,
+              -150
+            ],
+            "max_mm": [
+              290,
+              665,
+              140
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "starter-13": {
+      "declared_mm": [
+        1600,
+        600
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -800,
+          0,
+          -300
+        ],
+        "max": [
+          800,
+          2100,
+          296
+        ]
+      },
+      "parts": {
+        "back": [
+          {
+            "min_mm": [
+              -800,
+              0,
+              -300
+            ],
+            "max_mm": [
+              800,
+              2100,
+              -280
+            ]
+          }
+        ],
+        "side": [
+          {
+            "min_mm": [
+              -800,
+              0,
+              -280
+            ],
+            "max_mm": [
+              -782,
+              2100,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -9,
+              0,
+              -280
+            ],
+            "max_mm": [
+              9,
+              2100,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              782,
+              0,
+              -280
+            ],
+            "max_mm": [
+              800,
+              2100,
+              280
+            ]
+          }
+        ],
+        "shelf": [
+          {
+            "min_mm": [
+              -800,
+              120,
+              -280
+            ],
+            "max_mm": [
+              800,
+              138,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -800,
+              1860,
+              -280
+            ],
+            "max_mm": [
+              800,
+              1878,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              -800,
+              2082,
+              -280
+            ],
+            "max_mm": [
+              800,
+              2100,
+              280
+            ]
+          },
+          {
+            "min_mm": [
+              10,
+              510,
+              -295
+            ],
+            "max_mm": [
+              763,
+              528,
+              265
+            ]
+          },
+          {
+            "min_mm": [
+              10,
+              900,
+              -295
+            ],
+            "max_mm": [
+              763,
+              918,
+              265
+            ]
+          },
+          {
+            "min_mm": [
+              10,
+              1290,
+              -295
+            ],
+            "max_mm": [
+              763,
+              1308,
+              265
+            ]
+          },
+          {
+            "min_mm": [
+              10,
+              1680,
+              -295
+            ],
+            "max_mm": [
+              763,
+              1698,
+              265
+            ]
+          }
+        ],
+        "rail": [
+          {
+            "min_mm": [
+              -755,
+              973,
+              -22
+            ],
+            "max_mm": [
+              -18,
+              987,
+              -8
+            ]
+          },
+          {
+            "min_mm": [
+              -755,
+              1763,
+              -22
+            ],
+            "max_mm": [
+              -18,
+              1777,
+              -8
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "V5-master-rug": {
+      "declared_mm": [
+        2600,
+        2800
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -1300,
+          0,
+          -1400
+        ],
+        "max": [
+          1300,
+          11,
+          1400
+        ]
+      },
+      "parts": {
+        "rug": [
+          {
+            "min_mm": [
+              -1300,
+              0,
+              -1400
+            ],
+            "max_mm": [
+              1300,
+              10,
+              1400
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "M3G2-BR01-nightstand": {
+      "declared_mm": [
+        350,
+        320
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -175,
+          0,
+          -160
+        ],
+        "max": [
+          175,
+          847,
+          160
+        ]
+      },
+      "parts": {
+        "case": [
+          {
+            "min_mm": [
+              -175,
+              120,
+              -160
+            ],
+            "max_mm": [
+              175,
+              580,
+              160
+            ]
+          }
+        ],
+        "open-shelf-recess": [
+          {
+            "min_mm": [
+              -152.5,
+              200,
+              151
+            ],
+            "max_mm": [
+              152.5,
+              360,
+              155
+            ]
+          }
+        ],
+        "top": [
+          {
+            "min_mm": [
+              -175,
+              580,
+              -160
+            ],
+            "max_mm": [
+              175,
+              605,
+              160
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "M3G2-BR02-nightstand": {
+      "declared_mm": [
+        300,
+        300
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -150,
+          0,
+          -150
+        ],
+        "max": [
+          150,
+          847,
+          150
+        ]
+      },
+      "parts": {
+        "case": [
+          {
+            "min_mm": [
+              -150,
+              120,
+              -150
+            ],
+            "max_mm": [
+              150,
+              580,
+              150
+            ]
+          }
+        ],
+        "open-shelf-recess": [
+          {
+            "min_mm": [
+              -127.5,
+              200,
+              141
+            ],
+            "max_mm": [
+              127.5,
+              360,
+              145
+            ]
+          }
+        ],
+        "top": [
+          {
+            "min_mm": [
+              -150,
+              580,
+              -150
+            ],
+            "max_mm": [
+              150,
+              605,
+              150
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "M3G2-BR01-rug": {
+      "declared_mm": [
+        1800,
+        2200
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -1100
+        ],
+        "max": [
+          900,
+          11,
+          1100
+        ]
+      },
+      "parts": {
+        "rug": [
+          {
+            "min_mm": [
+              -900,
+              0,
+              -1100
+            ],
+            "max_mm": [
+              900,
+              10,
+              1100
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    },
+    "M3G2-BR02-rug": {
+      "declared_mm": [
+        1800,
+        2000
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -1000
+        ],
+        "max": [
+          900,
+          11,
+          1000
+        ]
+      },
+      "parts": {
+        "rug": [
+          {
+            "min_mm": [
+              -900,
+              0,
+              -1000
+            ],
+            "max_mm": [
+              900,
+              10,
+              1000
+            ]
+          }
+        ]
+      },
+      "front_local": "+Z; camera-independent mesh evidence",
+      "proxy": true
+    }
+  },
+  "comfort_mesh": {
+    "starter-1": {
+      "declared_mm": [
+        1870,
+        2220
+      ],
+      "bounds_mm": {
+        "min": [
+          -935,
+          0,
+          -1110
+        ],
+        "max": [
+          935,
+          1140,
+          1110
+        ]
+      },
+      "type": "bed"
+    },
+    "starter-2": {
+      "declared_mm": [
+        450,
+        400
+      ],
+      "bounds_mm": {
+        "min": [
+          -225,
+          0,
+          -200
+        ],
+        "max": [
+          225,
+          847,
+          200
+        ]
+      },
+      "type": "nightstand"
+    },
+    "starter-3": {
+      "declared_mm": [
+        450,
+        400
+      ],
+      "bounds_mm": {
+        "min": [
+          -225,
+          0,
+          -200
+        ],
+        "max": [
+          225,
+          847,
+          200
+        ]
+      },
+      "type": "nightstand"
+    },
+    "starter-4": {
+      "declared_mm": [
+        1250,
+        600
+      ],
+      "bounds_mm": {
+        "min": [
+          -625,
+          0,
+          -300
+        ],
+        "max": [
+          625,
+          2250,
+          300
+        ]
+      },
+      "type": "wardrobe"
+    },
+    "starter-5": {
+      "declared_mm": [
+        1250,
+        600
+      ],
+      "bounds_mm": {
+        "min": [
+          -625,
+          0,
+          -300
+        ],
+        "max": [
+          625,
+          2250,
+          300
+        ]
+      },
+      "type": "wardrobe"
+    },
+    "starter-6": {
+      "declared_mm": [
+        1280,
+        2100
+      ],
+      "bounds_mm": {
+        "min": [
+          -640,
+          0,
+          -1050
+        ],
+        "max": [
+          640,
+          1140,
+          1050
+        ]
+      },
+      "type": "bed"
+    },
+    "starter-7": {
+      "declared_mm": [
+        1800,
+        650
+      ],
+      "bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -325
+        ],
+        "max": [
+          900,
+          2250,
+          325
+        ]
+      },
+      "type": "wardrobe"
+    },
+    "starter-8": {
+      "declared_mm": [
+        1100,
+        600
+      ],
+      "bounds_mm": {
+        "min": [
+          -550,
+          0,
+          -300
+        ],
+        "max": [
+          550,
+          961.2,
+          300
+        ]
+      },
+      "type": "desk",
+      "tabletop": {
+        "underside_mm": 715,
+        "top_mm": 750
+      },
+      "knee_tests": [
+        {
+          "chair": "starter-9",
+          "width_mm": 500,
+          "pull_mm": 0,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-9",
+          "width_mm": 500,
+          "pull_mm": 100,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-9",
+          "width_mm": 600,
+          "pull_mm": 0,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-9",
+          "width_mm": 600,
+          "pull_mm": 100,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 0
+        }
+      ]
+    },
+    "starter-9": {
+      "declared_mm": [
+        580,
+        580
+      ],
+      "bounds_mm": {
+        "min": [
+          -290,
+          12,
+          -265.76
+        ],
+        "max": [
+          290,
+          1030,
+          265.76
+        ]
+      },
+      "type": "officechair",
+      "seat_top_mm": 460,
+      "usable_depth_rays": [
+        {
+          "height_mm": 480,
+          "back_hit_mm": -212.63,
+          "depth_mm": 452.63
+        },
+        {
+          "height_mm": 610,
+          "back_hit_mm": -207.5,
+          "depth_mm": 447.5
+        },
+        {
+          "height_mm": 710,
+          "back_hit_mm": -207.5,
+          "depth_mm": 447.5
+        }
+      ]
+    },
+    "starter-10": {
+      "declared_mm": [
+        1280,
+        2100
+      ],
+      "bounds_mm": {
+        "min": [
+          -640,
+          0,
+          -1050
+        ],
+        "max": [
+          640,
+          1140,
+          1050
+        ]
+      },
+      "type": "bed"
+    },
+    "starter-11": {
+      "declared_mm": [
+        900,
+        500
+      ],
+      "bounds_mm": {
+        "min": [
+          -450,
+          0,
+          -250
+        ],
+        "max": [
+          450,
+          961.2,
+          250
+        ]
+      },
+      "type": "desk",
+      "tabletop": {
+        "underside_mm": 715,
+        "top_mm": 750
+      },
+      "knee_tests": [
+        {
+          "chair": "starter-12",
+          "width_mm": 500,
+          "pull_mm": 0,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-12",
+          "width_mm": 500,
+          "pull_mm": 100,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-12",
+          "width_mm": 600,
+          "pull_mm": 0,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-12",
+          "width_mm": 600,
+          "pull_mm": 100,
+          "height_mm": [
+            460,
+            660
+          ],
+          "depth_mm": 450,
+          "intersecting_actual_meshes": 1
+        }
+      ]
+    },
+    "starter-12": {
+      "declared_mm": [
+        580,
+        580
+      ],
+      "bounds_mm": {
+        "min": [
+          -290,
+          12,
+          -265.76
+        ],
+        "max": [
+          290,
+          1030,
+          265.76
+        ]
+      },
+      "type": "officechair",
+      "seat_top_mm": 460,
+      "usable_depth_rays": [
+        {
+          "height_mm": 480,
+          "back_hit_mm": -212.63,
+          "depth_mm": 452.63
+        },
+        {
+          "height_mm": 610,
+          "back_hit_mm": -207.5,
+          "depth_mm": 447.5
+        },
+        {
+          "height_mm": 710,
+          "back_hit_mm": -207.5,
+          "depth_mm": 447.5
+        }
+      ]
+    },
+    "starter-13": {
+      "declared_mm": [
+        1600,
+        600
+      ],
+      "bounds_mm": {
+        "min": [
+          -800,
+          0,
+          -300
+        ],
+        "max": [
+          800,
+          2100,
+          296
+        ]
+      },
+      "type": "wardrobe"
+    },
+    "V5-master-rug": {
+      "declared_mm": [
+        2600,
+        2800
+      ],
+      "bounds_mm": {
+        "min": [
+          -1300,
+          0,
+          -1400
+        ],
+        "max": [
+          1300,
+          11,
+          1400
+        ]
+      },
+      "type": "rug"
+    },
+    "M3G2-BR01-nightstand": {
+      "declared_mm": [
+        350,
+        320
+      ],
+      "bounds_mm": {
+        "min": [
+          -175,
+          0,
+          -160
+        ],
+        "max": [
+          175,
+          847,
+          160
+        ]
+      },
+      "type": "nightstand"
+    },
+    "M3G2-BR02-nightstand": {
+      "declared_mm": [
+        300,
+        300
+      ],
+      "bounds_mm": {
+        "min": [
+          -150,
+          0,
+          -150
+        ],
+        "max": [
+          150,
+          847,
+          150
+        ]
+      },
+      "type": "nightstand"
+    },
+    "M3G2-BR01-rug": {
+      "declared_mm": [
+        1800,
+        2200
+      ],
+      "bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -1100
+        ],
+        "max": [
+          900,
+          11,
+          1100
+        ]
+      },
+      "type": "rug"
+    },
+    "M3G2-BR02-rug": {
+      "declared_mm": [
+        1800,
+        2000
+      ],
+      "bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -1000
+        ],
+        "max": [
+          900,
+          11,
+          1000
+        ]
+      },
+      "type": "rug"
+    }
+  },
+  "ac_mesh": {
+    "BR-01": {
+      "source_heuristic": true,
+      "position_mm": [
+        3463.559,
+        4869.153
+      ],
+      "bottom_mm": 2145,
+      "top_mm": 2395,
+      "ceiling_gap_mm": 105,
+      "normal_plan": [
+        1.2246467991473532e-16,
+        -1
+      ],
+      "bounds_world_mm": {
+        "min": [
+          3033.558992847443,
+          2145,
+          4724.153000111759
+        ],
+        "max": [
+          3893.5590071525576,
+          2395,
+          4919.153003576279
+        ]
+      },
+      "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+    },
+    "BR-02": {
+      "source_heuristic": true,
+      "position_mm": [
+        7823.352,
+        4869.153
+      ],
+      "bottom_mm": 2145,
+      "top_mm": 2395,
+      "ceiling_gap_mm": 105,
+      "normal_plan": [
+        1.2246467991473532e-16,
+        -1
+      ],
+      "bounds_world_mm": {
+        "min": [
+          7393.3519928474425,
+          2145,
+          4724.153000111759
+        ],
+        "max": [
+          8253.352007152556,
+          2395,
+          4919.153003576279
+        ]
+      },
+      "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+    },
+    "MBR-01": {
+      "source_heuristic": true,
+      "position_mm": [
+        2750.059,
+        8830.346
+      ],
+      "bottom_mm": 2145,
+      "top_mm": 2395,
+      "ceiling_gap_mm": 105,
+      "normal_plan": [
+        1.2246467991473532e-16,
+        -1
+      ],
+      "bounds_world_mm": {
+        "min": [
+          2320.058992847443,
+          2145,
+          8685.346000111758
+        ],
+        "max": [
+          3180.0590071525576,
+          2395,
+          8880.346003576278
+        ]
+      },
+      "limits": "Not an installed position, airflow simulation or manufacturer service clearance; ladder600x900 to be checked on site."
+    }
+  },
+  "curtain_mesh": {
+    "GLZ-MBR-TER": {
+      "span_mm": 150,
+      "depth_mm": 150,
+      "face_mm": 5089.153,
+      "stack_bounds": [
+        {
+          "side": -1,
+          "span_mm": 70,
+          "min_mm": [
+            396.022999850989,
+            14.999961853027433,
+            5132.152998480081
+          ],
+          "max_mm": [
+            466.0230001490122,
+            2435.0000381469727,
+            5196.153001519918
+          ]
+        },
+        {
+          "side": 1,
+          "span_mm": 150,
+          "min_mm": [
+            1842.9079970197683,
+            14.999961853027433,
+            5132.152998480081
+          ],
+          "max_mm": [
+            1992.9080029802328,
+            2435.0000381469727,
+            5196.153001519918
+          ]
+        }
+      ],
+      "location": "outside jambs; actual folded triangles inside tested envelope"
+    },
+    "GLZ-BR01-N": {
+      "span_mm": 300,
+      "depth_mm": 250,
+      "face_mm": 1593.982,
+      "stack_bounds": [
+        {
+          "side": -1,
+          "span_mm": 300,
+          "min_mm": [
+            3470.5469940395346,
+            14.999961853027433,
+            1686.9819984800815
+          ],
+          "max_mm": [
+            3770.5470059604636,
+            2435.0000381469727,
+            1750.9820015199184
+          ]
+        },
+        {
+          "side": 1,
+          "span_mm": 240,
+          "min_mm": [
+            5126.250002682209,
+            14.999961853027433,
+            1686.9819984800815
+          ],
+          "max_mm": [
+            5366.249997317791,
+            2435.0000381469727,
+            1750.9820015199184
+          ]
+        }
+      ],
+      "location": "outside jambs; actual folded triangles inside tested envelope"
+    },
+    "GLZ-BR02-N": {
+      "span_mm": 150,
+      "depth_mm": 150,
+      "face_mm": 1593.982,
+      "stack_bounds": [
+        {
+          "side": -1,
+          "span_mm": 150,
+          "min_mm": [
+            7052.168997019768,
+            14.999961853027433,
+            1636.9819984800813
+          ],
+          "max_mm": [
+            7202.169002980232,
+            2435.0000381469727,
+            1700.9820015199182
+          ]
+        },
+        {
+          "side": 1,
+          "span_mm": 150,
+          "min_mm": [
+            8579.053997019768,
+            14.999961853027433,
+            1636.9819984800813
+          ],
+          "max_mm": [
+            8729.054002980232,
+            2435.0000381469727,
+            1700.9820015199182
+          ]
+        }
+      ],
+      "location": "outside jambs; actual folded triangles inside tested envelope"
+    }
+  },
+  "interior_concept_ids": {
+    "MBR-A1-art": {
+      "room": "MBR-01",
+      "type": "artwork"
+    },
+    "BR1-A1-art": {
+      "room": "BR-01",
+      "type": "artwork"
+    },
+    "BR2-A1-art": {
+      "room": "BR-02",
+      "type": "artwork"
+    },
+    "M3G2-WIC-mirror": {
+      "room": "WIC-01",
+      "type": "mirror"
+    },
+    "M3G2-Master-art": {
+      "room": "MBR-01",
+      "type": "artwork"
+    },
+    "M3G2-BR01-personal-art": {
+      "room": "BR-01",
+      "type": "artwork"
+    },
+    "treatment-GLZ-MBR-TER": {
+      "room": "MBR-01",
+      "type": "curtain"
+    },
+    "treatment-GLZ-BR01-N": {
+      "room": "BR-01",
+      "type": "curtain"
+    },
+    "treatment-GLZ-BR02-N": {
+      "room": "BR-02",
+      "type": "curtain"
+    }
+  },
+  "full_snapshot_sha256": "2a60e0955fa0ba5f7b02c0852a45ce60578a84c1469ab2b4fa78f10c7a450a0a",
+  "mesh_diagnostics_sha256": "9ac9d9e5daaa55420cd9a600ce6c9b1e51904364a9ad406c746753dbe983b302",
+  "frame_id": "A-BR01-entry",
+  "style": "A",
+  "png": "A-BR01-entry.png",
+  "png_sha256": "e4af9973a9521f3f3bb74afb855aaa6b21bd0771267e16c116fd5c23befbe84a",
+  "layout_sha256": "ab50ef2eca5061b0eee3a47ded515a17f4a3490ffa5a7d095082d6156c56e279",
+  "camera_sha256": "97b4f17927b724c3d546fa7438dfd615b9c45d8fb1763e0598295bc5e1c6aa21",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "external_requests": [],
+  "page_errors": [],
+  "capture_script_sha256": "4a4de105ee73186b5f3e1f598da4f061b84fe51ed4668b65d22fd0a40cf7290b",
+  "built_viewer_sha256": "e364441b85501457f1b9378cc600203f56b4c0b72a9af692f0f8c298fc25f1ce",
+  "proxy_limits": "Actual bounded furniture concept meshes and source architecture; triangle knee boxes and chair rays are not manufacturer, physical comfort, lighting lux or HVAC validation. No walls, doors, ceilings or cloud data changed."
+}

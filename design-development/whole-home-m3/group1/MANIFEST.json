@@ -1,0 +1,270 @@
+{
+  "schema": "M3Group1Package/1",
+  "entries": [
+    {
+      "path": "A.json",
+      "bytes": 76647,
+      "sha256": "407b6ab33454ad3be93b992465d9f9231dd8af0fcaa856b06102c30c97862aa2"
+    },
+    {
+      "path": "AUDIT-A.json",
+      "bytes": 439730,
+      "sha256": "aa0147613200ab67d4b7c4a8d83440da441c7ebdb381392d4280e1bc301d1e40"
+    },
+    {
+      "path": "AUDIT-B.json",
+      "bytes": 480374,
+      "sha256": "38e4ee5521998f8fb6ac362a0740ebf10ecfe2c22d7b022b634a9a5e9a0a88b8"
+    },
+    {
+      "path": "AUDIT-SOURCE.json",
+      "bytes": 325533,
+      "sha256": "dcecadebdfaaa9703e18d277a7d13f565b35229640b7e379f088f1512d81372f"
+    },
+    {
+      "path": "B-stone.json",
+      "bytes": 72184,
+      "sha256": "2cbdf9f9f1fb613b5929a79287dccec68485a7411e5660e1f14e8d853d7a04c2"
+    },
+    {
+      "path": "B.json",
+      "bytes": 76795,
+      "sha256": "ce56c556e2f1379a69a6c3f493170c895e9d191114e6efeab8a1449aa7fb0299"
+    },
+    {
+      "path": "BROWSER_VERIFICATION.json",
+      "bytes": 2849,
+      "sha256": "4fd503caf5ec4df79ca44e4d5eb662ade12a44f5c9a64a3ef59017c1b52b4146"
+    },
+    {
+      "path": "DESIGN.json",
+      "bytes": 26617,
+      "sha256": "b43fb3d389a8b8f50315a346ac2c5e48197c5c4cbd24d48aa07e9b9bd9a26a10"
+    },
+    {
+      "path": "Owner-Review.html",
+      "bytes": 10507974,
+      "sha256": "b71e687a463892f2eb2236794bb1149f96e654c449439d51c46edf4334f63d49"
+    },
+    {
+      "path": "PRESERVATION.json",
+      "bytes": 206486,
+      "sha256": "3cf7195fa2c4b2f9df5f48e84d4becc6ed7aa6305f501bbfe806234dc424fb10"
+    },
+    {
+      "path": "Plan-A-200.svg",
+      "bytes": 34239,
+      "sha256": "c1c62e229f75bda5dfd9b0c81889d3a02679a7309956dc557ea652cb695723bf"
+    },
+    {
+      "path": "Plan-A-450.svg",
+      "bytes": 29458,
+      "sha256": "8b2f90de49089c1c83054bb773b8bee4427ef5f2f2ed19098e663e0c016dfadf"
+    },
+    {
+      "path": "Plan-B-200.svg",
+      "bytes": 34308,
+      "sha256": "d63625927156c8abb0279c19f14dae0a125494e5095209ac228152ddcbf7e2ea"
+    },
+    {
+      "path": "Plan-B-450.svg",
+      "bytes": 34273,
+      "sha256": "63f54a40675d3a0346e804d05ddccc7f45e8bbffe5d73a7f40c076be525409f3"
+    },
+    {
+      "path": "Plan-SOURCE-450.svg",
+      "bytes": 29549,
+      "sha256": "e9d6452d891d3e50973c27d93f2d04167db58ed9d2fe9ce0ffe19a982151d4f8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6405,
+      "sha256": "2acbc6b98d65d8f2cc33c2d733aad17e9842237bfa3b506e79e4c3d4cfcf2e74"
+    },
+    {
+      "path": "RENDER_EVIDENCE.json",
+      "bytes": 206455,
+      "sha256": "274e07b0f2b4084c330cff7d710379a68735faf54900a1560fc313d04f0de90c"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 9216,
+      "sha256": "56380358ec88786759a24bb30e23d12b49ef2920fc32ab331c322df6b4fac014"
+    },
+    {
+      "path": "frames/A-dining-to-living.json",
+      "bytes": 14743,
+      "sha256": "b534cf74b3bf770f3e31e6f2e688b6f951d1b44940a0c8235bc9ca2ca70ebdd6"
+    },
+    {
+      "path": "frames/A-dining-to-living.png",
+      "bytes": 799252,
+      "sha256": "c801d7a8059688e4849a324e34da68a47c5e67188eabb01c1bcd018ba473eeb1"
+    },
+    {
+      "path": "frames/A-entry-overview.json",
+      "bytes": 14718,
+      "sha256": "cfa1005a4eabb8f731278217ae75aa963e4fca91a844019db816067018770b1c"
+    },
+    {
+      "path": "frames/A-entry-overview.png",
+      "bytes": 476500,
+      "sha256": "a350b498ad4cfd7620625bbcfea21a253c31333ad750cb3d61d5bddd423669cd"
+    },
+    {
+      "path": "frames/A-living-to-dining-night.json",
+      "bytes": 14735,
+      "sha256": "407236345f4be6e28790a3c41f6f20d9b0154f37c51e99042f8902f5abe5c5b3"
+    },
+    {
+      "path": "frames/A-living-to-dining-night.png",
+      "bytes": 665168,
+      "sha256": "9cbb7525574aa1b932d1abffdd1f532ea07ad3805be251f1e515201fdf354fe4"
+    },
+    {
+      "path": "frames/A-living-to-dining.json",
+      "bytes": 14724,
+      "sha256": "8de0eb448f98e6861ba2dedf0414505185e7fd3c5f0eff7d3abad37a60a65cc2"
+    },
+    {
+      "path": "frames/A-living-to-dining.png",
+      "bytes": 496159,
+      "sha256": "9a71b7d19d509663978d18490cb8ecfb9adb166140fa4ffd102b41566735912b"
+    },
+    {
+      "path": "frames/A-seated-tv.json",
+      "bytes": 14729,
+      "sha256": "71561edd42967a5f278987321daeb1a5fa471392da2ea99f0e537a91b36a01d0"
+    },
+    {
+      "path": "frames/A-seated-tv.png",
+      "bytes": 872700,
+      "sha256": "327f7c6a983cbdddd7488a9c875fc9c8728b2fbc9b6a63c9642288968ea711b0"
+    },
+    {
+      "path": "frames/B-dining-to-living.json",
+      "bytes": 14705,
+      "sha256": "200827e0f18876569e4bcfb6b1c891584d750cf819f5ca004a9a8ef097aa2b88"
+    },
+    {
+      "path": "frames/B-dining-to-living.png",
+      "bytes": 816444,
+      "sha256": "20f3f872a332e9de2132e3e8222c05e584b3b0ff2fadf3775a25fd12fc425555"
+    },
+    {
+      "path": "frames/B-entry-overview.json",
+      "bytes": 14680,
+      "sha256": "fc75cd368d8af555c992015a6bb43f905d8c59145fbee101090ddd1ad7c4dc82"
+    },
+    {
+      "path": "frames/B-entry-overview.png",
+      "bytes": 507405,
+      "sha256": "f63e9661dbf9f1cd810604e10ea8a618c380aa287475fbcd3c864b31f4936d54"
+    },
+    {
+      "path": "frames/B-living-to-dining-night.json",
+      "bytes": 14697,
+      "sha256": "378a630cb4eec6ab716dfe1b6538d840adbfdcfae4735b0cfafd1e2158990e52"
+    },
+    {
+      "path": "frames/B-living-to-dining-night.png",
+      "bytes": 662032,
+      "sha256": "f22a60501a212db57c123cc94f6bdf1e443168aab8dd3393cfa6497ce3051756"
+    },
+    {
+      "path": "frames/B-living-to-dining.json",
+      "bytes": 14686,
+      "sha256": "b42e4d5bf938079d2f7494bb36639d5444e2ff5483bcb6c0776812c01b302cb3"
+    },
+    {
+      "path": "frames/B-living-to-dining.png",
+      "bytes": 486506,
+      "sha256": "95f0094dd7f764b3988dd4ba99cc8de2a2c84516e5ccc849b0fbc7c9265a4527"
+    },
+    {
+      "path": "frames/B-seated-tv.json",
+      "bytes": 14691,
+      "sha256": "17062414dfbce318ceea5c1fe6165d95e7b0ab5062c91a4fda1e40504b64f35d"
+    },
+    {
+      "path": "frames/B-seated-tv.png",
+      "bytes": 878075,
+      "sha256": "73eea4c6853cdec13826efc945a4131d6ff77d72947ced7680471ba7dc87974b"
+    },
+    {
+      "path": "frames/B-stone-dining-to-living.json",
+      "bytes": 14723,
+      "sha256": "c5d1a76602fe354d79effad97a3c3ebaf6bbc2ecfd4d2762f9f32a86f73f8987"
+    },
+    {
+      "path": "frames/B-stone-dining-to-living.png",
+      "bytes": 669332,
+      "sha256": "30cad4a723cd60aaa74de9e84ba1939a74f25d5a975957cf758d18eded2449e1"
+    },
+    {
+      "path": "frames/B-stone-living-to-dining.json",
+      "bytes": 14704,
+      "sha256": "52a736c7a89ba30bc4875014a1982a09361ec2439829aa40e015e77364f40b38"
+    },
+    {
+      "path": "frames/B-stone-living-to-dining.png",
+      "bytes": 364886,
+      "sha256": "5c271981a1c53c637c052875b9869c6c79f9eb895936294d5b770ab804cd109d"
+    },
+    {
+      "path": "m3assets/A-stone.png",
+      "bytes": 19083,
+      "sha256": "fa716b25708f41abebd29302775aa2b916eecab158c62cfeab1b3ada037944bd"
+    },
+    {
+      "path": "m3assets/A-wood.png",
+      "bytes": 58599,
+      "sha256": "f5dc4e9f4bb49fdee29322b98481f895f7ea558e074796f4fdd6c2f2e19556a0"
+    },
+    {
+      "path": "m3assets/B-stone.png",
+      "bytes": 19918,
+      "sha256": "5be081892daddf88c79315c48840182889b283785972ce78eab95375315e4401"
+    },
+    {
+      "path": "m3assets/B-wood.png",
+      "bytes": 57662,
+      "sha256": "771d52d220a4556334ac1fd0431f8c0291684d365aabe264e97945e96461d524"
+    },
+    {
+      "path": "validation/application-check.log",
+      "bytes": 7277,
+      "sha256": "bd50e21bf34ae934337dac61a91e1b24c7641463d08169c859d4a03f73a41134"
+    },
+    {
+      "path": "validation/browser.log",
+      "bytes": 97,
+      "sha256": "401920bfe96e8238ab4da7f9228ebecbcc2f206225bf12c6867090ac49839120"
+    },
+    {
+      "path": "validation/build.log",
+      "bytes": 1152,
+      "sha256": "c5fb751eca1947a2dee5cec66a27951bca7c53ef5d08b1a3036f0c34e5be889e"
+    },
+    {
+      "path": "validation/m3-tests.log",
+      "bytes": 884,
+      "sha256": "4d3b89a13aee8f2964047e1f7d5fa087da09d8fd43c46b148bd5067ada14c0dc"
+    },
+    {
+      "path": "validation/render.log",
+      "bytes": 352,
+      "sha256": "c5f48fdce54b7a58a485b051853881df8e03d6636c9748cb727c90c32b7f7464"
+    },
+    {
+      "path": "validation/source-tests.log",
+      "bytes": 4631,
+      "sha256": "abd43fd1967b020f698680ddbbd50a609bd7540730ba072a1c443f315e4edc72"
+    },
+    {
+      "path": "validation/studio-check.log",
+      "bytes": 553,
+      "sha256": "8e2cd7d06f4f6991334be99a7a57146f3b1247107b3ca8cd01332cfc54c386fd"
+    }
+  ]
+}

@@ -401,5 +401,22 @@ counter_new = """case 'counter': {
 assert counter_old in s, 'final counter builder target missing'
 s=s.replace(counter_old,counter_new,1)
 
+# Share the source-authority rule with Studio; do not edit the apartment layout.
+truth=(ROOT/'kitchen-render-truth.js').read_text().replace('export function ', 'function ')
+r6=(ROOT/'kitchen-r6-study.js').read_text().replace("import {kitchenGeometryEvidence} from './kitchen-render-truth.js';", '').replace('export function ', 'function ')
+replace('function buildFurniture(f){', truth+'\n'+r6+'\nfunction buildFurniture(f){')
+legacy_stack="""g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004), box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));
+      g.add(box(w, .7, .33, cm, 0, 1.48, bz + .165)); fronts(g, -w/2, 1.48, w, .7, bz + .33, n, 1, cm, 'bar', 1.56);
+      g.add(box(w - .04, .01, .02, glowMat('#fff7e6', '#ffe9c4', .8), 0, 1.47, bz + .29));"""
+source_stack="""const truth = kitchenCounterTruth(state, f, ROOMS);
+      g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));
+      if(!truth.backsplash_ids.length) g.add(box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));
+      if(!truth.upper_ids.length){
+        g.add(box(w, .7, .33, cm, 0, 1.48, bz + .165));
+        fronts(g, -w/2, 1.48, w, .7, bz + .33, n, 1, cm, 'bar', 1.56);
+        g.add(box(w - .04, .01, .02, glowMat('#fff7e6', '#ffe9c4', .8), 0, 1.47, bz + .29));
+      }"""
+replace(legacy_stack,source_stack)
+
 (ROOT/"dist"/"index.html").write_text(s)
 print({"index_bytes":len(s.encode()),"output":str(ROOT/"dist"/"index.html")})

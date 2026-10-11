@@ -1,0 +1,105 @@
+{
+  "schema": "TypeBKitchenFinishPatchR4/1",
+  "status": "RENDER_CANDIDATE_ONLY_NOT_APPLIED",
+  "source": {
+    "file": "design-development/reception-sprint/A-P0.json",
+    "sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a",
+    "scene": "scene-9e86635b",
+    "cloud_scene": "scene-4821689",
+    "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "storage_revision": 55
+  },
+  "direction": "Option A soft ivory cabinets with one muted oak landing",
+  "changes": [
+    {
+      "id": "starter-20",
+      "expected": {
+        "color": "#BCA98F"
+      },
+      "set": {
+        "color": "#E8E2D7"
+      },
+      "note": "West cooking counter facade becomes matte ivory; source 1500x600 untouched"
+    },
+    {
+      "id": "K3-corner",
+      "expected": {
+        "color": "#BCA98F"
+      },
+      "set": {
+        "color": "#E8E2D7"
+      },
+      "note": "Corner base 600x590 front becomes matte ivory"
+    },
+    {
+      "id": "K3-sink-base",
+      "expected": {
+        "color": "#BCA98F"
+      },
+      "set": {
+        "color": "#E8E2D7"
+      },
+      "note": "Sink-service base 600x610 front becomes matte ivory; services unchanged"
+    },
+    {
+      "id": "K3-dishwasher",
+      "expected": {
+        "color": "#BCA98F",
+        "material_id": "kitchen-muted-light-oak"
+      },
+      "set": {
+        "color": "#E8E2D7",
+        "material_id": "kitchen-soft-ivory"
+      },
+      "note": "Integrated DW niche 600x610 switches actual assigned renderer material ID"
+    }
+  ],
+  "preserved": {
+    "oak_landing": "K3-end-landing",
+    "ivory_fridge": "starter-23",
+    "ivory_uppers": [
+      "KIT-A1-upper-north",
+      "KIT-A1-upper-west-low",
+      "KIT-A1-upper-west-high"
+    ],
+    "floor_material_id": "S1-stone",
+    "kitchen_architectural_door": "P0 original, brown until separate finish approval",
+    "warm_decor": "Every other saved theme, colors, room and surface unchanged; only four saved warm theme colors intentionally change."
+  },
+  "implementation_note": "Counter variant=style uses f.color in production WebGL builder; integrated dishwasher variant=integrated uses f.material_id. Patch applied only to a deep-copied exploratory view. Do not preserve old scene_revision while claiming a new validated full scene. IMPORTANT: saved `decor.saved.warm.colours` must change for all four in addition to furniture fields or theme switching can resurrect the original brown colors.",
+  "release": {
+    "geometry_modified": false,
+    "cloud_saved": false,
+    "master_merged": false,
+    "owner_approved": false,
+    "construction_approved": false,
+    "manufacturer_selected": false,
+    "after_webgl_verified": false
+  },
+  "saved_theme_colour_changes": [
+    {
+      "id": "starter-20",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    },
+    {
+      "id": "K3-corner",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    },
+    {
+      "id": "K3-sink-base",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    },
+    {
+      "id": "K3-dishwasher",
+      "theme": "warm",
+      "expected": "#BCA98F",
+      "set": "#E8E2D7"
+    }
+  ]
+}

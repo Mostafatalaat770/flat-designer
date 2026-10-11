@@ -1,0 +1,1711 @@
+{
+  "schema": "TypeBKitchenR5GeometryAudit/1",
+  "status": "PASS",
+  "base_commit": "4211f1ddcd82ed18b1afe0b0e1e933c2f97220e8",
+  "source_layout_sha256": "471a2ff249a069b5b95849af79d3b587162cd9717e279814520497f6ecf0e1ce",
+  "source_layout_changed": false,
+  "source_ids_changed": false,
+  "before": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": {
+          "min_mm": [
+            9080.999993443489,
+            7288,
+            1470.0000001117585
+          ],
+          "max_mm": [
+            9428.99999961257,
+            8788,
+            2179.9999940395355
+          ]
+        },
+        "generated_upper_mesh_count": 6,
+        "generated_backsplash_bounds": {
+          "min_mm": [
+            9081.000000111759,
+            7288,
+            859.9999976158141
+          ],
+          "max_mm": [
+            9090.999999888241,
+            8788,
+            1480.0000023841858
+          ]
+        },
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            6697.999993443489,
+            1470.0000001117585
+          ],
+          "max_mm": [
+            9681.000011920929,
+            7045.99999961257,
+            2179.9999940395355
+          ]
+        },
+        "generated_upper_mesh_count": 4,
+        "generated_backsplash_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            6698.000000111759,
+            859.9999976158141
+          ],
+          "max_mm": [
+            9681.000011920929,
+            6707.999999888241,
+            1480.0000023841858
+          ]
+        },
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.999993443489,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": {
+          "min_mm": [
+            10880.999988079071,
+            6687.999993443489,
+            1470.0000001117585
+          ],
+          "max_mm": [
+            11481.000011920929,
+            7035.99999961257,
+            2179.9999940395355
+          ]
+        },
+        "generated_upper_mesh_count": 4,
+        "generated_backsplash_bounds": {
+          "min_mm": [
+            10880.999988079071,
+            6688.000000111759,
+            859.9999976158141
+          ],
+          "max_mm": [
+            11481.000011920929,
+            6697.999999888241,
+            1480.0000023841858
+          ]
+        },
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": {
+          "min_mm": [
+            11480.999988079071,
+            6687.999993443489,
+            1470.0000001117585
+          ],
+          "max_mm": [
+            12081.000011920929,
+            7035.99999961257,
+            2179.9999940395355
+          ]
+        },
+        "generated_upper_mesh_count": 4,
+        "generated_backsplash_bounds": {
+          "min_mm": [
+            11480.999988079071,
+            6688.000000111759,
+            859.9999976158141
+          ],
+          "max_mm": [
+            12081.000011920929,
+            6697.999999888241,
+            1480.0000023841858
+          ]
+        },
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999993443489,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "after": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            1100.9912637347638
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.9999940395355,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999997615814,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            859.9999995529652
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "before_signatures": {
+    "architecture_sha256": "3317ab8608d58d02f49d4ff07dcde7ffa61cd562c3d9a1b2940f01ce4db20f7c",
+    "doors_sha256": "ad3b829460f9056f7d380bec5f6f809821f405c81d20aba7a2e67d2b3dfc9250",
+    "room_footprints_sha256": "da8b27d8c68c9229114a0a5106e9bfbb74482c2fe2f6294d02c0969ade10ba06",
+    "objects": [
+      {
+        "id": "starter-1",
+        "mesh_count": 6,
+        "geometry_sha256": "6edce1d7ff4c6e2fb84c796333e1ae861f3bffe15d783f47ee3ae967694beb59"
+      },
+      {
+        "id": "starter-2",
+        "mesh_count": 5,
+        "geometry_sha256": "45441bf790aeb37881b70f245e2851736a2cb110786c8be2f6399cd897ddc637"
+      },
+      {
+        "id": "starter-3",
+        "mesh_count": 5,
+        "geometry_sha256": "362723a6ac3df9dde63e77a55715c01770b7c4321dadfaa5fb3e1cf5cdf6e026"
+      },
+      {
+        "id": "starter-4",
+        "mesh_count": 4,
+        "geometry_sha256": "f7d054cfc18ead3ae1cf6929e991855ccaacad1b1655a01823f37bb6df3ba583"
+      },
+      {
+        "id": "starter-5",
+        "mesh_count": 4,
+        "geometry_sha256": "339a499c0d7a305f36d4bfda90c5c39e73986a11123f1786a9c288d557f5276e"
+      },
+      {
+        "id": "starter-6",
+        "mesh_count": 6,
+        "geometry_sha256": "fddbacfec62e107feffa9b603e4d1444316bcbf1e8dfd49fc69a986e62ef10de"
+      },
+      {
+        "id": "starter-7",
+        "mesh_count": 4,
+        "geometry_sha256": "b9dc4ac103632db2b49d37bb90f4ec39f6ff29bffbacf6cab3c01f9e0117913b"
+      },
+      {
+        "id": "starter-8",
+        "mesh_count": 26,
+        "geometry_sha256": "b043c1a405827a82b1252416f28f125f69d5a4ba0ff2a1daf8a8f48c2492fd4a"
+      },
+      {
+        "id": "starter-9",
+        "mesh_count": 2,
+        "geometry_sha256": "cf5c383809fa8f7e8974c34f5664e46958de8916db55c87fb43ee38c0c75d3a0"
+      },
+      {
+        "id": "starter-10",
+        "mesh_count": 6,
+        "geometry_sha256": "a5d6a0c53fe95efc357c6ca1d57246dafa4fe88cc6dc4a06afbaefab1a54b86a"
+      },
+      {
+        "id": "starter-11",
+        "mesh_count": 26,
+        "geometry_sha256": "db039c2eae2566ab9736bc68300695204759823a1e5e0a684138f97ca3a81d64"
+      },
+      {
+        "id": "starter-12",
+        "mesh_count": 32,
+        "geometry_sha256": "55b60228589afcbef0ee29b9f55baf024fa65d60111c5fdf1f738b946f43efed"
+      },
+      {
+        "id": "starter-13",
+        "mesh_count": 4,
+        "geometry_sha256": "53e1f57fc2150f78a08542af3ed479e49209f7b45db0ea15b919ccb1338ea5a5"
+      },
+      {
+        "id": "starter-15",
+        "mesh_count": 8,
+        "geometry_sha256": "86a5849dd4b366fa2407881882751efb6ca0eb096e390bb7961e4e485f02a436"
+      },
+      {
+        "id": "starter-16",
+        "mesh_count": 19,
+        "geometry_sha256": "8755333ee3f97e124f93f8e441bfb9c02dec5e4de9b3116b4bc8f7c910c901fb"
+      },
+      {
+        "id": "starter-17",
+        "mesh_count": 8,
+        "geometry_sha256": "d1ed1dd930a715925b0616f24e8b5d1b3da67cac7d20085ecc42858b711ada2e"
+      },
+      {
+        "id": "starter-18",
+        "mesh_count": 16,
+        "geometry_sha256": "05f948f5455f029e720063c42b4f78fcc09e1f80d432299e4c8b685e7c590eb2"
+      },
+      {
+        "id": "starter-20",
+        "mesh_count": 54,
+        "geometry_sha256": "ed730a85006b93c1ed96d98af1199368b0e41053188133e393749ef537569664"
+      },
+      {
+        "id": "starter-21",
+        "mesh_count": 7,
+        "geometry_sha256": "b9c28ae5be20cae83ed98f0b71c3af3c108b3c3a6f23e47c04c182848c50eb90"
+      },
+      {
+        "id": "starter-22",
+        "mesh_count": 23,
+        "geometry_sha256": "9e0aba80b2fcaa84deaf2cb6d3d5ef9cb069051a9d86e3c3897d2f81412000b0"
+      },
+      {
+        "id": "starter-23",
+        "mesh_count": 3,
+        "geometry_sha256": "abcea9d87cf475394e4308beb31b06eaee157e1aa21b5441f3b503cb354154d7"
+      },
+      {
+        "id": "starter-25",
+        "mesh_count": 8,
+        "geometry_sha256": "1e3c8327eff5eccce0c14ce070d4b2281d7d6a673f8789519090af9b5043d9ec"
+      },
+      {
+        "id": "starter-26",
+        "mesh_count": 16,
+        "geometry_sha256": "95d44dcb77d0302c4b42900206fdb95573464ee80916f5f4c84fe966a0d03b1a"
+      },
+      {
+        "id": "starter-27",
+        "mesh_count": 1,
+        "geometry_sha256": "494661d07e5a292bd0476b2b504eacebcc63355e6c8c67b73a9135c0d16e1fd5"
+      },
+      {
+        "id": "starter-28",
+        "mesh_count": 3,
+        "geometry_sha256": "61c0aa8ae5a8f26291338e3aabcb7a5069e6d8b3e05afd151f8222a2b235162a"
+      },
+      {
+        "id": "starter-29",
+        "mesh_count": 10,
+        "geometry_sha256": "f2e71f2c3c2bb53f58f04754d984bdbbd61c7bf56abd6a035ba437fe24b0ae6b"
+      },
+      {
+        "id": "starter-30",
+        "mesh_count": 10,
+        "geometry_sha256": "17da5013140704f40cb64ea073fa12f7688f713abd06968c01298d3878d61d33"
+      },
+      {
+        "id": "starter-31",
+        "mesh_count": 4,
+        "geometry_sha256": "6dd61246c2d8970cb3a13cdf8a554d3563b13e67698958591ad56393fe9bff5d"
+      },
+      {
+        "id": "starter-32",
+        "mesh_count": 2,
+        "geometry_sha256": "a00ff23e3d5338afa7d7f380ecb5874added80dec47ffad18bb511c05b2b67f6"
+      },
+      {
+        "id": "starter-35",
+        "mesh_count": 10,
+        "geometry_sha256": "d38a8d65216fd1a6a8d30d9d4e6787b12566fc6b0380621743d643aaaef3b66c"
+      },
+      {
+        "id": "starter-36",
+        "mesh_count": 2,
+        "geometry_sha256": "2001aa1578501554a4d20edb1852799b43e72cf2acd08930100dbaa07c52bfef"
+      },
+      {
+        "id": "starter-37",
+        "mesh_count": 2,
+        "geometry_sha256": "bd0b2bfb3960820afa028f0c0f997762adc742f1a3d7e3874a3e5bc66cb7651a"
+      },
+      {
+        "id": "starter-38",
+        "mesh_count": 2,
+        "geometry_sha256": "d244528b0fd31f686fa331bfc091ccf94845ca246ff0afadced947c87194cbae"
+      },
+      {
+        "id": "starter-39",
+        "mesh_count": 2,
+        "geometry_sha256": "2c9a677187d75c04526774065fc9759d8d4a23364a3f8af21ae733f380817bd9"
+      },
+      {
+        "id": "starter-40",
+        "mesh_count": 3,
+        "geometry_sha256": "16906fb960dbce6e7b31ccc76fdaf8586caeec616d6f2f3592fba0df16605474"
+      },
+      {
+        "id": "starter-41",
+        "mesh_count": 4,
+        "geometry_sha256": "85037025e904303c8c822bc11f63d88dc998bc5a7850d4b2a6482537b0779ac0"
+      },
+      {
+        "id": "starter-42",
+        "mesh_count": 2,
+        "geometry_sha256": "98ba30412da850f2655a62a04de66be3270035ccc25bfd99e0a8ab49eeabb213"
+      },
+      {
+        "id": "starter-43",
+        "mesh_count": 2,
+        "geometry_sha256": "adb1fe9b6879156fd803269b3103e960a964f8b23c8eb6c33aa03799b350465b"
+      },
+      {
+        "id": "starter-44",
+        "mesh_count": 61,
+        "geometry_sha256": "17f877c37827a45bcbe75d1a43aa044680f02f7991d66a5bf09e1415aa5edb2f"
+      },
+      {
+        "id": "A2-dining-chair-north-centre",
+        "mesh_count": 2,
+        "geometry_sha256": "171c05a93053ca08a6599892eb9cf97ba194cbe0b2b4b91ee25b25167be141d6"
+      },
+      {
+        "id": "A2-dining-chair-south-centre",
+        "mesh_count": 2,
+        "geometry_sha256": "ea62cad1de2ae400ec2f0e76d07409b8470e9051308c2c890e74ff3b3036fd1f"
+      },
+      {
+        "id": "S1-living-side-table",
+        "mesh_count": 4,
+        "geometry_sha256": "9d477084bb73f2b8272088fe8159f1f59806c289808b1c6917c47d8d98fda7c7"
+      },
+      {
+        "id": "K3-corner",
+        "mesh_count": 21,
+        "geometry_sha256": "c7d7481cc8547f6351489d217694d03521bb65404b7e62388a4182393b91750c"
+      },
+      {
+        "id": "K3-dishwasher",
+        "mesh_count": 2,
+        "geometry_sha256": "70d6cc62ac4761980e1e341d08e53e56f5012a0e607abe2d76c01153b87624cc"
+      },
+      {
+        "id": "K3-sink-base",
+        "mesh_count": 21,
+        "geometry_sha256": "271d4cdcc602e645ab837514baccbd54c7733157d2181af7eac7feb1b57382da"
+      },
+      {
+        "id": "K3-end-landing",
+        "mesh_count": 21,
+        "geometry_sha256": "2f7723d37dcb154b605d3c10e5f4d51f3150329e078c96d3927b5216ee5439ad"
+      },
+      {
+        "id": "K3-laundry-niche",
+        "mesh_count": 10,
+        "geometry_sha256": "2f5d3bbfe8ce893e7e77efad3f3298df232e8d50bfc0458aaf6e9bb57dfd14cc"
+      },
+      {
+        "id": "V5-master-rug",
+        "mesh_count": 1,
+        "geometry_sha256": "a91097955fbacefaf88d8c78590aa44cd4d36102ce52fdd064fe905aa974d320"
+      },
+      {
+        "id": "R1-ensuite-vanity",
+        "mesh_count": 16,
+        "geometry_sha256": "8567dfc77423222e6788a9a08682792d003ada75c9bdf8f50bcfef90ccb16ab8"
+      },
+      {
+        "id": "BATHM-WALKIN-A1",
+        "mesh_count": 2,
+        "geometry_sha256": "0e6d7ba35b4a7d0e333618f4ff3e31bd923d6d6b1030348b97abec650e21b65a"
+      },
+      {
+        "id": "A-dining-sideboard",
+        "mesh_count": 10,
+        "geometry_sha256": "3d46bd743e42ab23175d74cb4b6c6b08a5780df2f6222a604912af646ddaa9a6"
+      },
+      {
+        "id": "A1-entry-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "acab6246c735daf271c4e9afcf0418f5a52067fa69e889bacd44fe3403c356f9"
+      },
+      {
+        "id": "A2-living-plant",
+        "mesh_count": 14,
+        "geometry_sha256": "658fa1f7b5728ac295c645e0d321bf088cd0ebac7048f09fc1d47a014c56e34c"
+      },
+      {
+        "id": "S1-reading-lamp",
+        "mesh_count": 4,
+        "geometry_sha256": "0ffc1a8c149a8736c1e228a63f09b1c2ebb7da17cab73cf6e24defc465b249cc"
+      },
+      {
+        "id": "V5-sideboard-lamp",
+        "mesh_count": 4,
+        "geometry_sha256": "e2a575bad0d4da8ea0d645064efea4ed9603ca2a941e6703f6367be9c23353a8"
+      },
+      {
+        "id": "WC-A1-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "ef3787dc4519b74172b6d93c8afd5e76d5ace4c67c7cdd251f80f1cbe8556f1c"
+      },
+      {
+        "id": "V7-master-drawers",
+        "mesh_count": 10,
+        "geometry_sha256": "39e79ba2abe8b8dac0d254e7446c6cd58c83af1acf7ad1db262c08151364ae2f"
+      },
+      {
+        "id": "V5-master-bench",
+        "mesh_count": 5,
+        "geometry_sha256": "95045abf6ea32a3cec499e02c9747bfa04d85c3ae5a143a7aee3de29a41ed68c"
+      },
+      {
+        "id": "BATHM-A1-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "b703f3d2120a5a53ca3888c04369cdac8c30f5d257cc0d2634f84fc20db5ff39"
+      },
+      {
+        "id": "V7-bedroom1-drawers",
+        "mesh_count": 10,
+        "geometry_sha256": "a114d91cd3bfdd28d2017f1689f404d68d90de4e1de7933e6a41bc77337f6799"
+      },
+      {
+        "id": "BATHC-A1-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "10924ff272ddf2e57de36320a33268c28690197b01b653794a2d4bd0667e8012"
+      },
+      {
+        "id": "V5-hall-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "130220ef4d3380b6696c8e056a5886da4e51b29e5c97f07ff85ef0af61248348"
+      },
+      {
+        "id": "KIT-A1-north-backsplash",
+        "mesh_count": 1,
+        "geometry_sha256": "aa427e959df6faf83a0c1af200a4e70511c212f4eabdf701d59f92a49f895709"
+      },
+      {
+        "id": "KIT-A1-west-backsplash",
+        "mesh_count": 1,
+        "geometry_sha256": "bc2825183d596683bdbd4a5b16451bb2040658a3f65de0d88c6da0a39916e6fb"
+      },
+      {
+        "id": "KIT-A1-upper-north",
+        "mesh_count": 10,
+        "geometry_sha256": "45de821f2aa46ef618c54f8ffa5086b62b73e8ebff353a9902fef7757d4a4d42"
+      },
+      {
+        "id": "KIT-A1-upper-west-low",
+        "mesh_count": 10,
+        "geometry_sha256": "580db1eae64e9d4d25d6cec26251f7b4f0faf3d49e372a2f0e354abc8affb9d8"
+      },
+      {
+        "id": "KIT-A1-upper-west-high",
+        "mesh_count": 10,
+        "geometry_sha256": "dd1fc255958cc79b760360fba9a31f3bc49d981250065719bf8667cb92990ce8"
+      },
+      {
+        "id": "MBR-A1-art",
+        "mesh_count": 2,
+        "geometry_sha256": "0da9e0acfde6242a6aa54f0e7f5077664cc15e80082a4d0ac0b3c3a81d31dd7e"
+      },
+      {
+        "id": "BR1-A1-art",
+        "mesh_count": 2,
+        "geometry_sha256": "71381dcc5f076f89281074acc2aeaf6466aa96c26bb9cf7dfbb45e534a932964"
+      },
+      {
+        "id": "BR2-A1-art",
+        "mesh_count": 2,
+        "geometry_sha256": "554fb2a118505282b8b5adad6284ad4a07814200a5d0f95ada7707f292e42293"
+      },
+      {
+        "id": "KIT-fridge-end-panel",
+        "mesh_count": 3,
+        "geometry_sha256": "f0b17b23b3f75a57cf969d905dc8bd83eaf81c5463f7969616bd2006e6b2ea2f"
+      },
+      {
+        "id": "BATHM-glass-600-A1",
+        "mesh_count": 3,
+        "geometry_sha256": "91c848411e91e360111cf476ac314c9975efd7146e3c82788526ce0ea8a59ec7"
+      },
+      {
+        "id": "BATHM-shampoo-shelf-A1",
+        "mesh_count": 4,
+        "geometry_sha256": "40c969fdde77bb2b047cc5a05bd8fec26e2cd6408d1553958eb090397a8a6266"
+      },
+      {
+        "id": "BATHM-shampoo-shelf-A2",
+        "mesh_count": 4,
+        "geometry_sha256": "4a1e9ff290c959ad273c01a3ed51672acadf2656a246335558bedb50e5a5631c"
+      },
+      {
+        "id": "BATHC-shampoo-shelf-A1",
+        "mesh_count": 4,
+        "geometry_sha256": "f052af0525734d516d302ddb0f194c8f0f0bbf16ebce41e4b28368fe42a26d21"
+      },
+      {
+        "id": "BATHC-wall-towel-cabinet-A2",
+        "mesh_count": 9,
+        "geometry_sha256": "aeaba7aba83044adecd0f671d3038c0b841958ec86e82c7e23af0982542d6fa1"
+      },
+      {
+        "id": "S1-buffet-art",
+        "mesh_count": 2,
+        "geometry_sha256": "90f69f1ab5294dd6fea426c678b12c6339648b8cad5ed16fe9dcda59dee01075"
+      },
+      {
+        "id": "treatment-GLZ-RECP-N",
+        "mesh_count": 4,
+        "geometry_sha256": "8a0f986cbeab353c78b37b153e9bb5345f364b62ea55e431b427b4bc23960a2e"
+      },
+      {
+        "id": "treatment-GLZ-RECP-TERMAIN",
+        "mesh_count": 4,
+        "geometry_sha256": "70ff9bc0d69c26f13b6fcc0241833cb5455ed2cbdefdcf66734b316da7c268e0"
+      },
+      {
+        "id": "treatment-GLZ-MBR-TER",
+        "mesh_count": 4,
+        "geometry_sha256": "522db814466802615ca6ed5643e2f9fae60fb05217617c88bb9ad5ce1632a6ae"
+      },
+      {
+        "id": "treatment-GLZ-BR01-N",
+        "mesh_count": 4,
+        "geometry_sha256": "5e656c138bdf0dfaa5032f869468d7ba8cf6369ed128ed4fd2180fa52c3de9c1"
+      },
+      {
+        "id": "treatment-GLZ-BR02-N",
+        "mesh_count": 4,
+        "geometry_sha256": "9d967c055a873294cf872a2510a456f51bfa874c673a08190a30a4d312cc1fcc"
+      }
+    ]
+  },
+  "after_signatures": {
+    "architecture_sha256": "3317ab8608d58d02f49d4ff07dcde7ffa61cd562c3d9a1b2940f01ce4db20f7c",
+    "doors_sha256": "ad3b829460f9056f7d380bec5f6f809821f405c81d20aba7a2e67d2b3dfc9250",
+    "room_footprints_sha256": "da8b27d8c68c9229114a0a5106e9bfbb74482c2fe2f6294d02c0969ade10ba06",
+    "objects": [
+      {
+        "id": "starter-1",
+        "mesh_count": 6,
+        "geometry_sha256": "6edce1d7ff4c6e2fb84c796333e1ae861f3bffe15d783f47ee3ae967694beb59"
+      },
+      {
+        "id": "starter-2",
+        "mesh_count": 5,
+        "geometry_sha256": "45441bf790aeb37881b70f245e2851736a2cb110786c8be2f6399cd897ddc637"
+      },
+      {
+        "id": "starter-3",
+        "mesh_count": 5,
+        "geometry_sha256": "362723a6ac3df9dde63e77a55715c01770b7c4321dadfaa5fb3e1cf5cdf6e026"
+      },
+      {
+        "id": "starter-4",
+        "mesh_count": 4,
+        "geometry_sha256": "f7d054cfc18ead3ae1cf6929e991855ccaacad1b1655a01823f37bb6df3ba583"
+      },
+      {
+        "id": "starter-5",
+        "mesh_count": 4,
+        "geometry_sha256": "339a499c0d7a305f36d4bfda90c5c39e73986a11123f1786a9c288d557f5276e"
+      },
+      {
+        "id": "starter-6",
+        "mesh_count": 6,
+        "geometry_sha256": "fddbacfec62e107feffa9b603e4d1444316bcbf1e8dfd49fc69a986e62ef10de"
+      },
+      {
+        "id": "starter-7",
+        "mesh_count": 4,
+        "geometry_sha256": "b9dc4ac103632db2b49d37bb90f4ec39f6ff29bffbacf6cab3c01f9e0117913b"
+      },
+      {
+        "id": "starter-8",
+        "mesh_count": 26,
+        "geometry_sha256": "b043c1a405827a82b1252416f28f125f69d5a4ba0ff2a1daf8a8f48c2492fd4a"
+      },
+      {
+        "id": "starter-9",
+        "mesh_count": 2,
+        "geometry_sha256": "cf5c383809fa8f7e8974c34f5664e46958de8916db55c87fb43ee38c0c75d3a0"
+      },
+      {
+        "id": "starter-10",
+        "mesh_count": 6,
+        "geometry_sha256": "a5d6a0c53fe95efc357c6ca1d57246dafa4fe88cc6dc4a06afbaefab1a54b86a"
+      },
+      {
+        "id": "starter-11",
+        "mesh_count": 26,
+        "geometry_sha256": "db039c2eae2566ab9736bc68300695204759823a1e5e0a684138f97ca3a81d64"
+      },
+      {
+        "id": "starter-12",
+        "mesh_count": 32,
+        "geometry_sha256": "55b60228589afcbef0ee29b9f55baf024fa65d60111c5fdf1f738b946f43efed"
+      },
+      {
+        "id": "starter-13",
+        "mesh_count": 4,
+        "geometry_sha256": "53e1f57fc2150f78a08542af3ed479e49209f7b45db0ea15b919ccb1338ea5a5"
+      },
+      {
+        "id": "starter-15",
+        "mesh_count": 8,
+        "geometry_sha256": "86a5849dd4b366fa2407881882751efb6ca0eb096e390bb7961e4e485f02a436"
+      },
+      {
+        "id": "starter-16",
+        "mesh_count": 19,
+        "geometry_sha256": "8755333ee3f97e124f93f8e441bfb9c02dec5e4de9b3116b4bc8f7c910c901fb"
+      },
+      {
+        "id": "starter-17",
+        "mesh_count": 8,
+        "geometry_sha256": "d1ed1dd930a715925b0616f24e8b5d1b3da67cac7d20085ecc42858b711ada2e"
+      },
+      {
+        "id": "starter-18",
+        "mesh_count": 16,
+        "geometry_sha256": "05f948f5455f029e720063c42b4f78fcc09e1f80d432299e4c8b685e7c590eb2"
+      },
+      {
+        "id": "starter-20",
+        "mesh_count": 38,
+        "geometry_sha256": "83574e8e9b98961db58df68834134f159403d34b54109c1e9fda3aea04c07a1a"
+      },
+      {
+        "id": "starter-21",
+        "mesh_count": 7,
+        "geometry_sha256": "b9c28ae5be20cae83ed98f0b71c3af3c108b3c3a6f23e47c04c182848c50eb90"
+      },
+      {
+        "id": "starter-22",
+        "mesh_count": 23,
+        "geometry_sha256": "9e0aba80b2fcaa84deaf2cb6d3d5ef9cb069051a9d86e3c3897d2f81412000b0"
+      },
+      {
+        "id": "starter-23",
+        "mesh_count": 3,
+        "geometry_sha256": "abcea9d87cf475394e4308beb31b06eaee157e1aa21b5441f3b503cb354154d7"
+      },
+      {
+        "id": "starter-25",
+        "mesh_count": 8,
+        "geometry_sha256": "1e3c8327eff5eccce0c14ce070d4b2281d7d6a673f8789519090af9b5043d9ec"
+      },
+      {
+        "id": "starter-26",
+        "mesh_count": 16,
+        "geometry_sha256": "95d44dcb77d0302c4b42900206fdb95573464ee80916f5f4c84fe966a0d03b1a"
+      },
+      {
+        "id": "starter-27",
+        "mesh_count": 1,
+        "geometry_sha256": "494661d07e5a292bd0476b2b504eacebcc63355e6c8c67b73a9135c0d16e1fd5"
+      },
+      {
+        "id": "starter-28",
+        "mesh_count": 3,
+        "geometry_sha256": "61c0aa8ae5a8f26291338e3aabcb7a5069e6d8b3e05afd151f8222a2b235162a"
+      },
+      {
+        "id": "starter-29",
+        "mesh_count": 10,
+        "geometry_sha256": "f2e71f2c3c2bb53f58f04754d984bdbbd61c7bf56abd6a035ba437fe24b0ae6b"
+      },
+      {
+        "id": "starter-30",
+        "mesh_count": 10,
+        "geometry_sha256": "17da5013140704f40cb64ea073fa12f7688f713abd06968c01298d3878d61d33"
+      },
+      {
+        "id": "starter-31",
+        "mesh_count": 4,
+        "geometry_sha256": "6dd61246c2d8970cb3a13cdf8a554d3563b13e67698958591ad56393fe9bff5d"
+      },
+      {
+        "id": "starter-32",
+        "mesh_count": 2,
+        "geometry_sha256": "a00ff23e3d5338afa7d7f380ecb5874added80dec47ffad18bb511c05b2b67f6"
+      },
+      {
+        "id": "starter-35",
+        "mesh_count": 10,
+        "geometry_sha256": "d38a8d65216fd1a6a8d30d9d4e6787b12566fc6b0380621743d643aaaef3b66c"
+      },
+      {
+        "id": "starter-36",
+        "mesh_count": 2,
+        "geometry_sha256": "2001aa1578501554a4d20edb1852799b43e72cf2acd08930100dbaa07c52bfef"
+      },
+      {
+        "id": "starter-37",
+        "mesh_count": 2,
+        "geometry_sha256": "bd0b2bfb3960820afa028f0c0f997762adc742f1a3d7e3874a3e5bc66cb7651a"
+      },
+      {
+        "id": "starter-38",
+        "mesh_count": 2,
+        "geometry_sha256": "d244528b0fd31f686fa331bfc091ccf94845ca246ff0afadced947c87194cbae"
+      },
+      {
+        "id": "starter-39",
+        "mesh_count": 2,
+        "geometry_sha256": "2c9a677187d75c04526774065fc9759d8d4a23364a3f8af21ae733f380817bd9"
+      },
+      {
+        "id": "starter-40",
+        "mesh_count": 3,
+        "geometry_sha256": "16906fb960dbce6e7b31ccc76fdaf8586caeec616d6f2f3592fba0df16605474"
+      },
+      {
+        "id": "starter-41",
+        "mesh_count": 4,
+        "geometry_sha256": "85037025e904303c8c822bc11f63d88dc998bc5a7850d4b2a6482537b0779ac0"
+      },
+      {
+        "id": "starter-42",
+        "mesh_count": 2,
+        "geometry_sha256": "98ba30412da850f2655a62a04de66be3270035ccc25bfd99e0a8ab49eeabb213"
+      },
+      {
+        "id": "starter-43",
+        "mesh_count": 2,
+        "geometry_sha256": "adb1fe9b6879156fd803269b3103e960a964f8b23c8eb6c33aa03799b350465b"
+      },
+      {
+        "id": "starter-44",
+        "mesh_count": 61,
+        "geometry_sha256": "17f877c37827a45bcbe75d1a43aa044680f02f7991d66a5bf09e1415aa5edb2f"
+      },
+      {
+        "id": "A2-dining-chair-north-centre",
+        "mesh_count": 2,
+        "geometry_sha256": "171c05a93053ca08a6599892eb9cf97ba194cbe0b2b4b91ee25b25167be141d6"
+      },
+      {
+        "id": "A2-dining-chair-south-centre",
+        "mesh_count": 2,
+        "geometry_sha256": "ea62cad1de2ae400ec2f0e76d07409b8470e9051308c2c890e74ff3b3036fd1f"
+      },
+      {
+        "id": "S1-living-side-table",
+        "mesh_count": 4,
+        "geometry_sha256": "9d477084bb73f2b8272088fe8159f1f59806c289808b1c6917c47d8d98fda7c7"
+      },
+      {
+        "id": "K3-corner",
+        "mesh_count": 13,
+        "geometry_sha256": "15e07271d994bf9658bdafe660c3c7d993d971e6381bd48219286679624d852c"
+      },
+      {
+        "id": "K3-dishwasher",
+        "mesh_count": 2,
+        "geometry_sha256": "70d6cc62ac4761980e1e341d08e53e56f5012a0e607abe2d76c01153b87624cc"
+      },
+      {
+        "id": "K3-sink-base",
+        "mesh_count": 13,
+        "geometry_sha256": "f17f8ed408a088e2a936f48f13b38b4afc4156e801450da4be1f33a8708b0959"
+      },
+      {
+        "id": "K3-end-landing",
+        "mesh_count": 13,
+        "geometry_sha256": "386a3b59d35497be8c1aa047aadabdf76c34fbd2bc024f0c1f3d4f726c16e00e"
+      },
+      {
+        "id": "K3-laundry-niche",
+        "mesh_count": 10,
+        "geometry_sha256": "2f5d3bbfe8ce893e7e77efad3f3298df232e8d50bfc0458aaf6e9bb57dfd14cc"
+      },
+      {
+        "id": "V5-master-rug",
+        "mesh_count": 1,
+        "geometry_sha256": "a91097955fbacefaf88d8c78590aa44cd4d36102ce52fdd064fe905aa974d320"
+      },
+      {
+        "id": "R1-ensuite-vanity",
+        "mesh_count": 16,
+        "geometry_sha256": "8567dfc77423222e6788a9a08682792d003ada75c9bdf8f50bcfef90ccb16ab8"
+      },
+      {
+        "id": "BATHM-WALKIN-A1",
+        "mesh_count": 2,
+        "geometry_sha256": "0e6d7ba35b4a7d0e333618f4ff3e31bd923d6d6b1030348b97abec650e21b65a"
+      },
+      {
+        "id": "A-dining-sideboard",
+        "mesh_count": 10,
+        "geometry_sha256": "3d46bd743e42ab23175d74cb4b6c6b08a5780df2f6222a604912af646ddaa9a6"
+      },
+      {
+        "id": "A1-entry-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "acab6246c735daf271c4e9afcf0418f5a52067fa69e889bacd44fe3403c356f9"
+      },
+      {
+        "id": "A2-living-plant",
+        "mesh_count": 14,
+        "geometry_sha256": "658fa1f7b5728ac295c645e0d321bf088cd0ebac7048f09fc1d47a014c56e34c"
+      },
+      {
+        "id": "S1-reading-lamp",
+        "mesh_count": 4,
+        "geometry_sha256": "0ffc1a8c149a8736c1e228a63f09b1c2ebb7da17cab73cf6e24defc465b249cc"
+      },
+      {
+        "id": "V5-sideboard-lamp",
+        "mesh_count": 4,
+        "geometry_sha256": "e2a575bad0d4da8ea0d645064efea4ed9603ca2a941e6703f6367be9c23353a8"
+      },
+      {
+        "id": "WC-A1-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "ef3787dc4519b74172b6d93c8afd5e76d5ace4c67c7cdd251f80f1cbe8556f1c"
+      },
+      {
+        "id": "V7-master-drawers",
+        "mesh_count": 10,
+        "geometry_sha256": "39e79ba2abe8b8dac0d254e7446c6cd58c83af1acf7ad1db262c08151364ae2f"
+      },
+      {
+        "id": "V5-master-bench",
+        "mesh_count": 5,
+        "geometry_sha256": "95045abf6ea32a3cec499e02c9747bfa04d85c3ae5a143a7aee3de29a41ed68c"
+      },
+      {
+        "id": "BATHM-A1-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "b703f3d2120a5a53ca3888c04369cdac8c30f5d257cc0d2634f84fc20db5ff39"
+      },
+      {
+        "id": "V7-bedroom1-drawers",
+        "mesh_count": 10,
+        "geometry_sha256": "a114d91cd3bfdd28d2017f1689f404d68d90de4e1de7933e6a41bc77337f6799"
+      },
+      {
+        "id": "BATHC-A1-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "10924ff272ddf2e57de36320a33268c28690197b01b653794a2d4bd0667e8012"
+      },
+      {
+        "id": "V5-hall-mirror",
+        "mesh_count": 2,
+        "geometry_sha256": "130220ef4d3380b6696c8e056a5886da4e51b29e5c97f07ff85ef0af61248348"
+      },
+      {
+        "id": "KIT-A1-north-backsplash",
+        "mesh_count": 1,
+        "geometry_sha256": "aa427e959df6faf83a0c1af200a4e70511c212f4eabdf701d59f92a49f895709"
+      },
+      {
+        "id": "KIT-A1-west-backsplash",
+        "mesh_count": 1,
+        "geometry_sha256": "bc2825183d596683bdbd4a5b16451bb2040658a3f65de0d88c6da0a39916e6fb"
+      },
+      {
+        "id": "KIT-A1-upper-north",
+        "mesh_count": 10,
+        "geometry_sha256": "45de821f2aa46ef618c54f8ffa5086b62b73e8ebff353a9902fef7757d4a4d42"
+      },
+      {
+        "id": "KIT-A1-upper-west-low",
+        "mesh_count": 10,
+        "geometry_sha256": "580db1eae64e9d4d25d6cec26251f7b4f0faf3d49e372a2f0e354abc8affb9d8"
+      },
+      {
+        "id": "KIT-A1-upper-west-high",
+        "mesh_count": 10,
+        "geometry_sha256": "dd1fc255958cc79b760360fba9a31f3bc49d981250065719bf8667cb92990ce8"
+      },
+      {
+        "id": "MBR-A1-art",
+        "mesh_count": 2,
+        "geometry_sha256": "0da9e0acfde6242a6aa54f0e7f5077664cc15e80082a4d0ac0b3c3a81d31dd7e"
+      },
+      {
+        "id": "BR1-A1-art",
+        "mesh_count": 2,
+        "geometry_sha256": "71381dcc5f076f89281074acc2aeaf6466aa96c26bb9cf7dfbb45e534a932964"
+      },
+      {
+        "id": "BR2-A1-art",
+        "mesh_count": 2,
+        "geometry_sha256": "554fb2a118505282b8b5adad6284ad4a07814200a5d0f95ada7707f292e42293"
+      },
+      {
+        "id": "KIT-fridge-end-panel",
+        "mesh_count": 3,
+        "geometry_sha256": "f0b17b23b3f75a57cf969d905dc8bd83eaf81c5463f7969616bd2006e6b2ea2f"
+      },
+      {
+        "id": "BATHM-glass-600-A1",
+        "mesh_count": 3,
+        "geometry_sha256": "91c848411e91e360111cf476ac314c9975efd7146e3c82788526ce0ea8a59ec7"
+      },
+      {
+        "id": "BATHM-shampoo-shelf-A1",
+        "mesh_count": 4,
+        "geometry_sha256": "40c969fdde77bb2b047cc5a05bd8fec26e2cd6408d1553958eb090397a8a6266"
+      },
+      {
+        "id": "BATHM-shampoo-shelf-A2",
+        "mesh_count": 4,
+        "geometry_sha256": "4a1e9ff290c959ad273c01a3ed51672acadf2656a246335558bedb50e5a5631c"
+      },
+      {
+        "id": "BATHC-shampoo-shelf-A1",
+        "mesh_count": 4,
+        "geometry_sha256": "f052af0525734d516d302ddb0f194c8f0f0bbf16ebce41e4b28368fe42a26d21"
+      },
+      {
+        "id": "BATHC-wall-towel-cabinet-A2",
+        "mesh_count": 9,
+        "geometry_sha256": "aeaba7aba83044adecd0f671d3038c0b841958ec86e82c7e23af0982542d6fa1"
+      },
+      {
+        "id": "S1-buffet-art",
+        "mesh_count": 2,
+        "geometry_sha256": "90f69f1ab5294dd6fea426c678b12c6339648b8cad5ed16fe9dcda59dee01075"
+      },
+      {
+        "id": "treatment-GLZ-RECP-N",
+        "mesh_count": 4,
+        "geometry_sha256": "8a0f986cbeab353c78b37b153e9bb5345f364b62ea55e431b427b4bc23960a2e"
+      },
+      {
+        "id": "treatment-GLZ-RECP-TERMAIN",
+        "mesh_count": 4,
+        "geometry_sha256": "70ff9bc0d69c26f13b6fcc0241833cb5455ed2cbdefdcf66734b316da7c268e0"
+      },
+      {
+        "id": "treatment-GLZ-MBR-TER",
+        "mesh_count": 4,
+        "geometry_sha256": "522db814466802615ca6ed5643e2f9fae60fb05217617c88bb9ad5ce1632a6ae"
+      },
+      {
+        "id": "treatment-GLZ-BR01-N",
+        "mesh_count": 4,
+        "geometry_sha256": "5e656c138bdf0dfaa5032f869468d7ba8cf6369ed128ed4fd2180fa52c3de9c1"
+      },
+      {
+        "id": "treatment-GLZ-BR02-N",
+        "mesh_count": 4,
+        "geometry_sha256": "9d967c055a873294cf872a2510a456f51bfa874c673a08190a30a4d312cc1fcc"
+      }
+    ]
+  },
+  "generated_upper_stacks_removed": 4,
+  "generated_upper_top_level_meshes_removed": 18,
+  "generated_backsplashes_removed": 4,
+  "total_descendant_meshes_removed": 40,
+  "measured_aabb_overlaps": [
+    {
+      "counter_source_id": "starter-20",
+      "other_source_id": "KIT-A1-upper-west-low",
+      "min_mm": [
+        9080.999993443489,
+        7288,
+        1480.0000059604645
+      ],
+      "max_mm": [
+        9409.529006556511,
+        7379.906005960464,
+        2179.9999940395355
+      ],
+      "extent_mm": [
+        328.5290131130223,
+        91.90600596046443,
+        699.999988079071
+      ],
+      "litres": 21.135652246207627
+    },
+    {
+      "counter_source_id": "starter-20",
+      "other_source_id": "KIT-A1-upper-west-high",
+      "min_mm": [
+        9080.999993443489,
+        8354.906005960464,
+        1480.0000059604645
+      ],
+      "max_mm": [
+        9409.529006556511,
+        8788,
+        2179.9999940395355
+      ],
+      "extent_mm": [
+        328.5290131130223,
+        433.0939940395365,
+        699.999988079071
+      ],
+      "litres": 99.5987580167335
+    },
+    {
+      "counter_source_id": "starter-20",
+      "other_source_id": "starter-22",
+      "min_mm": [
+        9181,
+        7594.999988079071,
+        1550.0000006705523
+      ],
+      "max_mm": [
+        9428.99999961257,
+        8195.000011920929,
+        2179.9999940395355
+      ],
+      "extent_mm": [
+        247.9999996125698,
+        600.0000238418579,
+        629.9999933689833
+      ],
+      "litres": 93.74400259190793
+    },
+    {
+      "counter_source_id": "K3-corner",
+      "other_source_id": "KIT-A1-upper-north",
+      "min_mm": [
+        9420.959523841857,
+        6697.999993443489,
+        1480.0000059604645
+      ],
+      "max_mm": [
+        9681.000011920929,
+        7015.866006556511,
+        2179.9999940395355
+      ],
+      "extent_mm": [
+        260.040488079072,
+        317.86601311302184,
+        699.999988079071
+      ],
+      "litres": 57.8606222502007
+    },
+    {
+      "counter_source_id": "K3-sink-base",
+      "other_source_id": "KIT-A1-upper-north",
+      "min_mm": [
+        10880.999988079071,
+        6687.999993443489,
+        1480.0000059604645
+      ],
+      "max_mm": [
+        11220.959476158141,
+        7015.866006556511,
+        2179.9999940395355
+      ],
+      "extent_mm": [
+        339.95948807907007,
+        327.86601311302184,
+        699.999988079071
+      ],
+      "litres": 78.02281205477941
+    }
+  ],
+  "overlap_method": "Actual Three.js axis-aligned mesh bounding boxes; intersections are geometric audit flags, not exact CSG intersections, usable storage volumes or physical clearance certifications.",
+  "counter_host_walls": {
+    "starter-20": "WALL-KIT-01-01",
+    "K3-corner": "WALL-KIT-01-02",
+    "K3-sink-base": "WALL-KIT-01-02",
+    "K3-end-landing": "WALL-KIT-01-02"
+  },
+  "authority": "The three explicitly saved elevated wall sideboards define the complete upper run in KIT-01. All four optional demo-generated stacks are superseded, including unsupported portions. The two source wall panels define the backsplash; generic counter skins are superseded. Base carcasses, fronts, worktops and props are retained byte-equivalent as actual mesh geometry.",
+  "phantom": "K3-end-landing creates a 600mm upper despite no source upper over that location; the west continuous stack also crosses the hood opening.",
+  "remaining_limits": [
+    "Explicit upper fronts are generic sideboard seams/handles, not approved cabinet divisions.",
+    "Legacy hood remains a source-stove proxy, not a selected product.",
+    "Source backsplash bottom is 930mm against the 860mm worktop proxy; the 70mm lower band and 30mm top gap remain source-detail HOLDs.",
+    "No source task-light object or under-cabinet fixture is added; deleted demo emissive strips were not approved fixtures."
+  ],
+  "owner_approved": false,
+  "construction_approved": false,
+  "cloud_saved": false,
+  "manufacturer_selected": false
+}

@@ -1,0 +1,174 @@
+{
+  "schema": "TypeBDailywareDepthScreenR2/1",
+  "status": "CONCEPT_ONLY_NOT_FOR_FABRICATION",
+  "source": {
+    "file": "design-development/reception-sprint/A-P0.json",
+    "sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a",
+    "scene": "scene-9e86635b",
+    "cloud": "scene-4821689",
+    "canonical": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658"
+  },
+  "assumptions": {
+    "back_mm": 18,
+    "front_mm": 18,
+    "edge_margin_each_mm": 10,
+    "item_diameters_not_measured": true,
+    "site_verified": false
+  },
+  "threshold_external_depth_mm_by_plate": {
+    "270": 326,
+    "285": 341,
+    "300": 356
+  },
+  "cabinet_source": {
+    "id": "KIT-A1-upper-north",
+    "exterior_mm": [
+      1800,
+      330,
+      700
+    ]
+  },
+  "cases": [
+    {
+      "plate_diameter_mm": 270,
+      "proposed_upper_external_depth_mm": 330,
+      "hypothetical_clear_depth_mm": 294,
+      "required_depth_mm": 290,
+      "model_gap_mm": 4,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 270,
+      "proposed_upper_external_depth_mm": 350,
+      "hypothetical_clear_depth_mm": 314,
+      "required_depth_mm": 290,
+      "model_gap_mm": 24,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 270,
+      "proposed_upper_external_depth_mm": 360,
+      "hypothetical_clear_depth_mm": 324,
+      "required_depth_mm": 290,
+      "model_gap_mm": 34,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 270,
+      "proposed_upper_external_depth_mm": 380,
+      "hypothetical_clear_depth_mm": 344,
+      "required_depth_mm": 290,
+      "model_gap_mm": 54,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 270,
+      "proposed_upper_external_depth_mm": 400,
+      "hypothetical_clear_depth_mm": 364,
+      "required_depth_mm": 290,
+      "model_gap_mm": 74,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 285,
+      "proposed_upper_external_depth_mm": 330,
+      "hypothetical_clear_depth_mm": 294,
+      "required_depth_mm": 305,
+      "model_gap_mm": -11,
+      "outcome": "MODEL_FAIL",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 285,
+      "proposed_upper_external_depth_mm": 350,
+      "hypothetical_clear_depth_mm": 314,
+      "required_depth_mm": 305,
+      "model_gap_mm": 9,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 285,
+      "proposed_upper_external_depth_mm": 360,
+      "hypothetical_clear_depth_mm": 324,
+      "required_depth_mm": 305,
+      "model_gap_mm": 19,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 285,
+      "proposed_upper_external_depth_mm": 380,
+      "hypothetical_clear_depth_mm": 344,
+      "required_depth_mm": 305,
+      "model_gap_mm": 39,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 285,
+      "proposed_upper_external_depth_mm": 400,
+      "hypothetical_clear_depth_mm": 364,
+      "required_depth_mm": 305,
+      "model_gap_mm": 59,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 300,
+      "proposed_upper_external_depth_mm": 330,
+      "hypothetical_clear_depth_mm": 294,
+      "required_depth_mm": 320,
+      "model_gap_mm": -26,
+      "outcome": "MODEL_FAIL",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 300,
+      "proposed_upper_external_depth_mm": 350,
+      "hypothetical_clear_depth_mm": 314,
+      "required_depth_mm": 320,
+      "model_gap_mm": -6,
+      "outcome": "MODEL_FAIL",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 300,
+      "proposed_upper_external_depth_mm": 360,
+      "hypothetical_clear_depth_mm": 324,
+      "required_depth_mm": 320,
+      "model_gap_mm": 4,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 300,
+      "proposed_upper_external_depth_mm": 380,
+      "hypothetical_clear_depth_mm": 344,
+      "required_depth_mm": 320,
+      "model_gap_mm": 24,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    },
+    {
+      "plate_diameter_mm": 300,
+      "proposed_upper_external_depth_mm": 400,
+      "hypothetical_clear_depth_mm": 364,
+      "required_depth_mm": 320,
+      "model_gap_mm": 44,
+      "outcome": "MODEL_PASS_ONLY",
+      "construction_approved": false
+    }
+  ],
+  "decision": "First investigate daily heavy dish base drawer near DW only if real oven/hob + service door and actual drawer clear envelope allow; keep existing upper for light items; 350-360 upper secondary conditional 1:1 mockup only",
+  "authorizations": {
+    "owner": false,
+    "procurement": false,
+    "construction": false
+  }
+}

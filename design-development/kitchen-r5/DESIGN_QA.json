@@ -1,0 +1,74 @@
+{
+  "schema": "TypeBKitchenR5VisualQA/1",
+  "status": "VISUALLY_INSPECTED",
+  "inspected_frames": [
+    "D0/entry-overview",
+    "D0/wide-reception",
+    "D0/kitchen-relationship",
+    "D0/kitchen-work",
+    "D0/kitchen-work-evening",
+    "D0/kitchen-relationship-evening",
+    "D1/entry-overview",
+    "D1/wide-reception",
+    "D1/kitchen-relationship",
+    "D1/kitchen-work",
+    "D1/kitchen-work-evening",
+    "D1/kitchen-relationship-evening",
+    "D2/entry-overview",
+    "D2/wide-reception",
+    "D2/kitchen-relationship",
+    "D2/kitchen-work",
+    "D2/kitchen-work-evening",
+    "D2/kitchen-relationship-evening"
+  ],
+  "inspection_method": "Original 1280x720 kitchen/day/night PNGs opened directly; all 18 final frames also inspected together in a browser contact sheet. Original PNG bytes remain unedited.",
+  "geometry_audit_sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af",
+  "verdict": "أحتفظ بـR4 العاجي، وأرشّح D1 greige دافي كاتجاه عينة للباب. تصحيح الكتل خلّى فراغ الـhood أوضح والخزائن العلوية مطابقة لعناصر المصدر؛ الاستخدام والنجارة والإضاءة لسه محتاجين تحقق موقعي ومنتجات فعلية.",
+  "door_recommendation": "التوصية للمراجعة والعينة: D1 warm greige #D8D1C5، مع بقاء الباب الفعلي بدون تغيير أو اعتماد دهان.",
+  "door_notes": [
+    "D0 البني الأصلي بيشد العين أكتر من الواجهات، وبيبان كتلة منفصلة من الريسبشن؛ اتعرض كما هو للمقارنة.",
+    "D1 قريب من العاجي لكنه أغمق بدرجة هادية، فبيربط باب المطبخ وباب الخدمة بالواجهة والأرضية من غير إضافة نقش. أفضل توازن نهارًا ومساءً في الصور الحالية.",
+    "D2 درجته الخشبية أخف من D0 ومرتبطة بالـoak accents، لكن النقشة procedural المتكررة ظاهرة ومشتتة على الضلفة الكبيرة. مش أرشّحه كاختيار نهائي، ومش دليل على veneer أو منتج حقيقي.",
+    "البديلان D1/D2 بيغيّروا لون/خامة الضلفة فقط؛ الكوالين والمفصلات والمقاسات وزوايا الفتح ثابتة. مفيش موافقة لتغيير تشطيب باب مركّب."
+  ],
+  "night_notes": [
+    "العاجي والـgreige بيحافظوا على عيلة لون دافية، لكن بيغمقوا طبيعيًا مع إعداد المساء؛ التشطيبات ما بقتش صفراء فاقعة في اللقطة.",
+    "السطح والحوض والغسالة ظاهرين، لكن منطقة الطبخ والجزء العلوي حوالين الـhood غامقين، وفيه بقع ضوء غير متجانسة على الواجهات العلوية.",
+    "الشرائط المضيئة التابعة للكتل الوهمية اتشالت؛ مفيش under-cabinet task light مسجّل اتضاف بدلها. الشريط الأزرق على الـhood proxy مش اعتماد إضاءة عمل.",
+    "إعداد downlights الأصلي، temperature 3000 وbrightness 82، اتساب زي المصدر؛ دي renderer parameters، مش lux أو مواصفات كهرباء مقاسة.",
+    "عايزين دراسة مستقلة لإضاءة سطح التحضير والطبخ، بمنتج وتثبيت وتنضيف ومراجعة حرارة الـhob والـhood، قبل أي تفصيل تنفيذ."
+  ],
+  "improvements": [
+    "فراغ الـhood بقى واضح بدل ما كتلة counter علوية مستمرة تعدّي جواه؛ الوحدات المصدرية الـ300 والـ450mm بقت منفصلة بصريًا.",
+    "الكتلة الوهمية فوق الـoak landing اختفت؛ الـnorth upper بقى بالعرض الحقيقي 1800mm، من غير امتداد وهمي.",
+    "طبقات backsplash التلقائية وقفت تغطي لوحي المصدر؛ لون العاجي وحفظ warm theme والـdishwasher المتكامل فضلوا شغّالين.",
+    "D1 قلّل ثقل بابين بني من منظور المطبخ ومن الريسبشن، مع ثبات إحساس Option A الهادي."
+  ],
+  "remaining_weaknesses": [
+    "تقسيمات الواجهات والمقابض العلوية جاية من sideboard proxy عام؛ وجود خطوط على وحدات 300/450mm مش دليل على أبواب أو أدراج فعلية. محتاجين front schedule مبني على نجارة حقيقية.",
+    "الغسالة لسه عنصر بارز في قلب الرنّ، وده اتعرض بأمانة. ما اتغطتش وما اتنقلتش؛ تهويتها وفتح بابها ومساحة الصيانة والخراطيم محتاجين قياسات فعلية.",
+    "الـhood لسه proxy تابع للـstove؛ المنتج والدكت والتثبيت والفلتر والخلوص الحراري مش محسومين رغم إن الكتل المتداخلة اتشالت.",
+    "الظلال الدائرية الحادة للمقبض ومستلزمات السطح، والـwood grain المتكرر في D2، بيكشفوا محدودية الواقعية الحالية. مفيش texture failure أو clipping جديد اتشاف.",
+    "الـbacksplash الأصلي يبدأ عند 930mm والسطح proxy عند 860mm: شريط 70mm تحت اللوح وفاصل 30mm فوقه محتاجين تفصيلة تنظيف ومنع رطوبة، من غير اختراع تغطية جديدة.",
+    "فيه 320mm فوق الخزائن لحد سقف 2500mm؛ الوصول والتنضيف والتثبيت لسه محتاجين تفصيل، ومفيش filler أو خزانة جديدة اتضافت."
+  ],
+  "holds": [
+    "المقاس الاسمي 600×610mm للـdishwasher والغسالة مش clear installation aperture؛ لازم SKU/manual وقياس فتحة وتشغيل الباب والسلال ووقفة المستخدم.",
+    "الحوض والـdishwasher وباب الخدمة والركنة والثلاجة محفوظين، لكن اللقطات بأجهزة مقفولة ما تثبتش إن فتحهم مع بعض مريح أو آمن.",
+    "الـ307/600/593mm تقسيمات سطح مصدرية، مش فتحات أدراج نهائية؛ مفيش درج 450–500mm اتضاف.",
+    "وحدات علوية بعمق 330mm مش شهادة سعة أطباق أو وصول آمن. المخزون الفعلي، الرفوف، المقابض، تثبيت الحائط والصيانة محتاجين مراجعة.",
+    "عينات ivory/greige/wood تحت إضاءة الموقع، قابلية المسح ومقاومة الرطوبة والحرارة، واستخدام الباب الفعلي محتاجين اعتماد مستقل.",
+    "الغاز والـhob/oven/exhaust والمياه والكهرباء والنجارة والشراء والتصنيع واعتماد المالك والمهندس كلها HOLD."
+  ],
+  "next_decision": "نعمل front schedule عملي مبني على موديلات hob/oven/hood/dishwasher والغسالة وقياسات as-built، مع mockup بالحجم الكامل لفتح الأجهزة وباب الخدمة والوصول للركنة. بالتوازي نعاين D1 مع العاجي ونطوّر proposal منفصل لإضاءة سطح العمل؛ من غير إضافة وحدات للمشهد الحالي.",
+  "ci": {
+    "status": "BLOCKED_BEFORE_RUNNER",
+    "known_run_id": 38084848837,
+    "manual_reruns": 0,
+    "explanation_ar": "GitHub Actions متعطّل قبل أي runner أو steps بسبب failed payments أو spending limit. Local PASS منفصل؛ المالك محتاج يراجع Billing & plans قبل Cloud CI، ومفيش إعداد billing/security اتغيّر."
+  },
+  "owner_approved": false,
+  "construction_approved": false,
+  "cloud_saved": false,
+  "manufacturer_selected": false
+}

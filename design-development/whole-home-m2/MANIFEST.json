@@ -1,0 +1,270 @@
+{
+  "schema": "M2OfflineManifest/1",
+  "entries": [
+    {
+      "path": "A.json",
+      "bytes": 177626,
+      "sha256": "eabc563dc07d615d0ca57b58b82740452bcf9c06559a54c416656e6a73e45a86"
+    },
+    {
+      "path": "B-stone.json",
+      "bytes": 173074,
+      "sha256": "d7bd1d1aa1001048168cb5e895ddd19b926ced529b8294d2a1af87df528be11a"
+    },
+    {
+      "path": "B.json",
+      "bytes": 177642,
+      "sha256": "ad17e3fb0f29ea3ab8406a37f0ea7c22a1b1d458af38bd6ce847543f8b24cfd3"
+    },
+    {
+      "path": "BROWSER_VERIFICATION.json",
+      "bytes": 644,
+      "sha256": "8764b6fc4527c2786b55cb41bc35d1ee1c04edc1176525681cdffba425975c5f"
+    },
+    {
+      "path": "C.json",
+      "bytes": 180577,
+      "sha256": "57d1a8a38c0b2fb77425b2403634a9a9ca8fe9e1707cb3abf6c614732c56804d"
+    },
+    {
+      "path": "DESIGN.json",
+      "bytes": 224369,
+      "sha256": "476f728d9543c9d7ce517cab553e17ce9b73640b859e1cb53e076294c1093075"
+    },
+    {
+      "path": "Moodboard-A.svg",
+      "bytes": 744694,
+      "sha256": "574859c02b1bede1b24be4377b286b3bac4e30bbf43924ee549efc2c2027a182"
+    },
+    {
+      "path": "Moodboard-B.svg",
+      "bytes": 751776,
+      "sha256": "d3bd3289d5174f0e034805d1c59b3ece1865036fee03dc97e7bd94206a4d76a9"
+    },
+    {
+      "path": "Moodboard-C.svg",
+      "bytes": 771925,
+      "sha256": "99e0f70a66d14a9513ee9afa24f3d8cf34c75704130f9e0755784e3fa04f93d2"
+    },
+    {
+      "path": "Owner-Review.html",
+      "bytes": 16691395,
+      "sha256": "767b6917a417d3e464582afc6dbcab97ed583c63c7495b7e06e7b05b1401cef3"
+    },
+    {
+      "path": "PRESERVATION.json",
+      "bytes": 120885,
+      "sha256": "a188117b3e6eef2c81942f06669f5456445b5cfa63692915c4eb895109c17553"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6357,
+      "sha256": "af0d1a3798ec868e28f82b43e60eafeba9f0e4165260c3b07763b32f3dbe000a"
+    },
+    {
+      "path": "REFERENCE_LINKS.json",
+      "bytes": 9821,
+      "sha256": "2990b620ee58537a5380ba4d4e8697784eee4a627af1fe5d73fbe662260d96bc"
+    },
+    {
+      "path": "RENDER_EVIDENCE.json",
+      "bytes": 209367,
+      "sha256": "f49168a09c53d4299ba7255d88a90f8ab536fdc8f692f8383bc9e8fe02ed0beb"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 7245,
+      "sha256": "2bc4e9ce1fbe287d23f0101adaa477b3498128e31b9d7e93bba87135463d9fd0"
+    },
+    {
+      "path": "frames/A-bath55-family-entry.json",
+      "bytes": 12826,
+      "sha256": "16bb4c33ea20e4a25057e85bfb1a7e79fef9bd9ea92e5964c769f0fbf3c386df"
+    },
+    {
+      "path": "frames/A-bath55-family-entry.png",
+      "bytes": 1388224,
+      "sha256": "747243f241c9719d5896ddd4047ecb18d7dbbc120e61991744fd524b96d6e22e"
+    },
+    {
+      "path": "frames/A-master-bedroom.json",
+      "bytes": 12851,
+      "sha256": "51b56b0ff64601a87f0586738e719db29873a74444439a5d2379dd33f667ea7a"
+    },
+    {
+      "path": "frames/A-master-bedroom.png",
+      "bytes": 466918,
+      "sha256": "484ef20e157e49d32bf9619488a9cd41626651cc7346b9c7d0de3650e277ff9f"
+    },
+    {
+      "path": "frames/A-reception-dining.json",
+      "bytes": 12830,
+      "sha256": "da5d853b73a53dbe001d48060c900f4abf5819be89e8e399bcefdb3749d7963c"
+    },
+    {
+      "path": "frames/A-reception-dining.png",
+      "bytes": 578541,
+      "sha256": "1bfc0db502bd513705cc117dacfe18678fc8f21ed01379b01e1791289d8eee8b"
+    },
+    {
+      "path": "frames/A-reception-living.json",
+      "bytes": 12831,
+      "sha256": "0f8c0124df0c14d15e0c4c3bd3504eb36594b3801ce7bf1a225ff8b476002984"
+    },
+    {
+      "path": "frames/A-reception-living.png",
+      "bytes": 551404,
+      "sha256": "35be8de685d509391ab7e4b48df8412201d647f4c65413974501684c15b1f880"
+    },
+    {
+      "path": "frames/B-bath55-family-entry.json",
+      "bytes": 12972,
+      "sha256": "861465d27fb689d5d4a3b0cd9498329444386fb4d744c2251505d839a2ce5b01"
+    },
+    {
+      "path": "frames/B-bath55-family-entry.png",
+      "bytes": 1378110,
+      "sha256": "c22af1354852f6c3b7f50fe964fc3afe6a6ffc8b9264c7467ae9206a30c72316"
+    },
+    {
+      "path": "frames/B-master-bedroom.json",
+      "bytes": 12997,
+      "sha256": "6e7c8c473cf3020e1810b8b2a80a15971ce2b2c29861dd454ba4ef0620a2b856"
+    },
+    {
+      "path": "frames/B-master-bedroom.png",
+      "bytes": 462202,
+      "sha256": "8cbff104b85ee47c3a4a65e271e51480202558ff4d73f21f1639bd6ddf9187cf"
+    },
+    {
+      "path": "frames/B-reception-dining.json",
+      "bytes": 12976,
+      "sha256": "7bc894c80e8f397cc7a515551ae7fff7ee73d5d31c9e500f26292612d779ec3b"
+    },
+    {
+      "path": "frames/B-reception-dining.png",
+      "bytes": 602927,
+      "sha256": "c32af85b4e6b2cb4469f84034115a484710aa0c2ab6dccd8a37a5264950d61ab"
+    },
+    {
+      "path": "frames/B-reception-living.json",
+      "bytes": 12977,
+      "sha256": "3aaa5288d1542ef4475143d1fed1942220c55e520299cc42fecca5e6c1ed3856"
+    },
+    {
+      "path": "frames/B-reception-living.png",
+      "bytes": 556173,
+      "sha256": "163be9168fdced64bba65a0a2f523cd66a4fa3e3b9b872682b6f927a60c5a89e"
+    },
+    {
+      "path": "frames/B-stone-reception-dining.json",
+      "bytes": 12994,
+      "sha256": "9523889805b34e9e69ea43da4e3b14fa4027b519dc6b6110874c78826ca63815"
+    },
+    {
+      "path": "frames/B-stone-reception-dining.png",
+      "bytes": 515781,
+      "sha256": "6c0388ac2564454665b816d92139b7b5ec729f397b9b8dc77f169da4a33cdc31"
+    },
+    {
+      "path": "frames/B-stone-reception-living.json",
+      "bytes": 12995,
+      "sha256": "d470e7ccc28880c60cd468ab24295bc3cf0e56c3f6e6cedc1cb9d502870a2eb1"
+    },
+    {
+      "path": "frames/B-stone-reception-living.png",
+      "bytes": 551690,
+      "sha256": "041b9afe652c987b1646f28d4118712a3207229a9e15f8b5c57f2457c5d247de"
+    },
+    {
+      "path": "frames/C-bath55-family-entry.json",
+      "bytes": 13053,
+      "sha256": "29cfe258a125d457e347d5ceea0d0ad425de05bfac28a63968bd782e27246f98"
+    },
+    {
+      "path": "frames/C-bath55-family-entry.png",
+      "bytes": 1397137,
+      "sha256": "daf8eba8bd8aee1943e316709e99fd5c868dc6486b591c6d2064406c80cede95"
+    },
+    {
+      "path": "frames/C-master-bedroom.json",
+      "bytes": 13078,
+      "sha256": "c6f76c5c80897cf8cdb262bf2400f9e33054b104ae8dff151b2fdb0050e86823"
+    },
+    {
+      "path": "frames/C-master-bedroom.png",
+      "bytes": 475690,
+      "sha256": "216fcf0e9da54447264ef7d883b5c468a44b9699f6469d7b39632deee4334d3b"
+    },
+    {
+      "path": "frames/C-reception-dining.json",
+      "bytes": 13057,
+      "sha256": "745e52a46e57bb631fb2b479a8f45081eeb2b24f6e69d5716b30772ed30e90a2"
+    },
+    {
+      "path": "frames/C-reception-dining.png",
+      "bytes": 548585,
+      "sha256": "e76c6acdd392661c037a92f18c9acc0e7ea576555e25d09101851de25562af73"
+    },
+    {
+      "path": "frames/C-reception-living.json",
+      "bytes": 13058,
+      "sha256": "e82714c54b318d651bd5cf25fdcbe2db420ec851399099e6366d9631c7a02403"
+    },
+    {
+      "path": "frames/C-reception-living.png",
+      "bytes": 571804,
+      "sha256": "8e240f3ffc8fdb0afefee2e7b76ca828fd66b719a1e4abc8511ce928df9b8da6"
+    },
+    {
+      "path": "validation/browser.log",
+      "bytes": 557,
+      "sha256": "d44f6b3a56ae0ea0399d34df8b3238deacb1c502031f77e0c36f716a231f9ae5"
+    },
+    {
+      "path": "validation/build.log",
+      "bytes": 1144,
+      "sha256": "39d088941abf3b0f0d1090b5ac4e549b1d05097f89f667378c0a4317b2419322"
+    },
+    {
+      "path": "validation/check-studio.log",
+      "bytes": 550,
+      "sha256": "dd52b6df7a1d4d0c9fdd6f69a66f998c58fa63770f4b27ca91bc4594500e8cae"
+    },
+    {
+      "path": "validation/check.log",
+      "bytes": 7277,
+      "sha256": "bd50e21bf34ae934337dac61a91e1b24c7641463d08169c859d4a03f73a41134"
+    },
+    {
+      "path": "validation/m0-m1-tests.log",
+      "bytes": 217,
+      "sha256": "7e0df341168454752a9f54630e05d832f9d0d86d625a33409694d53bb4feb16e"
+    },
+    {
+      "path": "validation/m2-tests.log",
+      "bytes": 888,
+      "sha256": "9813a9c30706fa09761e4a9c8fd4b6ac91aa2b8c149bc03e4b5fc2030703c93f"
+    },
+    {
+      "path": "validation/npm-ci.log",
+      "bytes": 533,
+      "sha256": "d459110b2ce697763061a22d0a67fa2d2869be6c20544430dbf214baf67b15d6"
+    },
+    {
+      "path": "validation/render-floor-refinement.log",
+      "bytes": 538,
+      "sha256": "745106d11f054525f10c6a41b8d7a01a994f8e80496e70f4de1a07418521bd64"
+    },
+    {
+      "path": "validation/render-material-study.log",
+      "bytes": 450,
+      "sha256": "560b6e6d372e5b351d2d1298a678718b7c24aa8a03a90f9ae8acc3149e13b8f5"
+    },
+    {
+      "path": "validation/render.log",
+      "bytes": 541,
+      "sha256": "5f7da6f1969a59f69078a9831fbd0f999ab6523eabd4770b3d95ec6350e21fe8"
+    }
+  ]
+}

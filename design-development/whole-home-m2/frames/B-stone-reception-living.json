@@ -1,0 +1,496 @@
+{
+  "schema": "ApartmentSceneCaptureFrame/1",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "snapshot_sha256": "branch-fbe1bd89",
+  "scene_revision": "scene-fbe1bd89",
+  "storage_revision": 55,
+  "room_id": "RECP-01",
+  "camera": {
+    "position": [
+      3.382291,
+      1.62,
+      -0.5456585
+    ],
+    "target": [
+      2.582291,
+      1.5,
+      -3.5156585
+    ],
+    "fov": 60,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.7777777777777777,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-10-11T11:06:16.202Z",
+  "assets": {
+    "pending": 0,
+    "fallbacks": []
+  },
+  "renderer": {
+    "engine": "Three.js WebGL",
+    "revision": "160"
+  },
+  "architecture_variant": null,
+  "architecture_result": {
+    "wall_segments_hidden": 0,
+    "wall_finishes_hidden": 0,
+    "wall_segments_added": 0,
+    "wall_boxes_added": 0,
+    "canonical_ceilings_hidden": 0,
+    "merged_ceilings_added": 0,
+    "openings_hidden": 0,
+    "opening_headers_hidden": 0,
+    "opening_thresholds_hidden": 0,
+    "door_overrides": 0
+  },
+  "render_experiment": null,
+  "door_finish_result": null,
+  "kitchen_geometry": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            1100.9912637347638
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.9999940395355,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999997615814,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            859.9999995529652
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "kitchen_r6_study": null,
+  "kitchen_r6_result": null,
+  "frame_id": "B-stone-reception-living",
+  "style": "B-stone",
+  "m2_profile": {
+    "id": "B",
+    "name": "سكون وخطوط واضحة",
+    "english": "Warm Japandi / Refined Minimal",
+    "family": "japandi",
+    "floor": "B",
+    "sofa": "style",
+    "bed": "oak-platform",
+    "wall": "#E6E4DA",
+    "ceiling": "#FEFCF7",
+    "wood": "#8A7860",
+    "woodDark": "#4D493F",
+    "fabric": "#C8C7BA",
+    "accent": "#515A4E",
+    "rug": "#BDBEAE",
+    "metal": "#4A4D43",
+    "pot": "#A7A99A",
+    "stone": "#DCDAD0",
+    "curtain": "#D8D9CF",
+    "bath": "#E2E1D8",
+    "wet": "#CACCC0",
+    "story": "مساحات أهدى وخطوط أخف: خشب مدخن في الهياكل، آش فاتح في التخزين، قماش كتاني رمادي دافي، وفراغ مقصود حوالين كل قطعة. الأثاث المنخفض والمكشوف بيقلل الإحساس بثقل السقف ٢٫٥ متر.",
+    "risk": "القعدة المنخفضة والذراع الخشبي مش مريحين لكل شخص؛ الأسطح الغامقة بتبين التراب. الفراغ المقصود محتاج تخزين مقفول جيد.",
+    "forms": [
+      "كنبة بهيكل خشب مكشوف ووسائد منفصلة",
+      "كراسي سفرة خشب وخطوط مستقيمة",
+      "سرير منصة ولوح شرائح بسيط",
+      "طاولة وسط خشب مستطيلة"
+    ],
+    "bathStory": "بورسلين greige هادي قليل العروق، نيكل مصقول، مناشف زيتوني خفيف، إكسسوارات مستقيمة سهلة الفك."
+  },
+  "png": "B-stone-reception-living.png",
+  "png_sha256": "041b9afe652c987b1646f28d4118712a3207229a9e15f8b5c57f2457c5d247de",
+  "layout_sha256": "1509a583c3c5e52f9df3e1cd879c22080ad18a8e2dfdec0194d2612b746fe4f3",
+  "camera_sha256": "d476ba505e0d7197621209644ad317d342efb22abc9c0f8b4b64ca72c3c5c05d",
+  "source_camera_id": "reception-living",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "capture": {
+    "method": "actual WebGL canvas.toDataURL",
+    "width": 1280,
+    "height": 720,
+    "bytes": 551690
+  },
+  "external_requests": [],
+  "page_errors": [],
+  "renderer_hook": "currentDecor merges isolated profile; all geometry comes from production renderer"
+}

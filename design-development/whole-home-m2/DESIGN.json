@@ -1,0 +1,3787 @@
+{
+  "schema": "WholeHomeM2Design/1",
+  "issue": 71,
+  "baseline_head": "2826d5dc987f9455ffdbb1b22c5cf615a835ef61",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "source_scene": "scene-9cf45a73",
+  "cloud_origin": "scene-4821689 / storage v55",
+  "approvals": {
+    "owner_style": false,
+    "construction": false,
+    "procurement": false,
+    "cloud_write": false
+  },
+  "styles": [
+    {
+      "id": "A",
+      "name": "هدوء عضوي",
+      "english": "Calm Contemporary / Modern Organic",
+      "family": "warm",
+      "floor": "A",
+      "sofa": "cocoon",
+      "bed": "upholstered",
+      "wall": "#F1ECE3",
+      "ceiling": "#FEFCF7",
+      "wood": "#B9A184",
+      "woodDark": "#80705D",
+      "fabric": "#D9CCBA",
+      "accent": "#7C856D",
+      "rug": "#C8BAA4",
+      "metal": "#9A8966",
+      "pot": "#CCB79C",
+      "stone": "#E7DFD2",
+      "curtain": "#E3DCD0",
+      "bath": "#EEE7DC",
+      "wet": "#D9D0C0",
+      "story": "راحة ناعمة ومضيئة: كتلة الكنبة مستديرة، بلوط فاتح، حجر هادي، وكُتل نسيجية غنية من غير زحمة. الدفء هنا من الملمس والمنحنيات؛ مش من كثرة الديكور.",
+      "risk": "التنجيد الفاتح والمنحنيات بيحتاجوا عينة قماش سهلة التنظيف وتجربة جلوس؛ تفاصيل التخديد الكتيرة بتجمع تراب.",
+      "forms": [
+        "كنبة مستديرة بقاعدة ممتلئة",
+        "كراسي سفرة ظهر مبطن منحني",
+        "لوح سرير مبطن أفقي",
+        "طاولة وسط بيضاوية حجرية"
+      ],
+      "bathStory": "بورسلين limestone مطفي، معدن نيكل، مناشف رملي، أرفف قابلة للفك بدل نيش جديد."
+    },
+    {
+      "id": "B",
+      "name": "سكون وخطوط واضحة",
+      "english": "Warm Japandi / Refined Minimal",
+      "family": "japandi",
+      "floor": "A",
+      "sofa": "style",
+      "bed": "oak-platform",
+      "wall": "#E6E4DA",
+      "ceiling": "#FEFCF7",
+      "wood": "#8A7860",
+      "woodDark": "#4D493F",
+      "fabric": "#C8C7BA",
+      "accent": "#515A4E",
+      "rug": "#BDBEAE",
+      "metal": "#4A4D43",
+      "pot": "#A7A99A",
+      "stone": "#DCDAD0",
+      "curtain": "#D8D9CF",
+      "bath": "#E2E1D8",
+      "wet": "#CACCC0",
+      "story": "مساحات أهدى وخطوط أخف: خشب مدخن في الهياكل، آش فاتح في التخزين، قماش كتاني رمادي دافي، وفراغ مقصود حوالين كل قطعة. الأثاث المنخفض والمكشوف بيقلل الإحساس بثقل السقف ٢٫٥ متر.",
+      "risk": "القعدة المنخفضة والذراع الخشبي مش مريحين لكل شخص؛ الأسطح الغامقة بتبين التراب. الفراغ المقصود محتاج تخزين مقفول جيد.",
+      "forms": [
+        "كنبة بهيكل خشب مكشوف ووسائد منفصلة",
+        "كراسي سفرة خشب وخطوط مستقيمة",
+        "سرير منصة ولوح شرائح بسيط",
+        "طاولة وسط خشب مستطيلة"
+      ],
+      "bathStory": "بورسلين greige هادي قليل العروق، نيكل مصقول، مناشف زيتوني خفيف، إكسسوارات مستقيمة سهلة الفك."
+    },
+    {
+      "id": "C",
+      "name": "ضوء متوسطي ناضج",
+      "english": "Contemporary Mediterranean / Restrained Soft Luxury",
+      "family": "boho",
+      "floor": "B",
+      "sofa": "tailored",
+      "bed": "upholstered",
+      "wall": "#EFE2D0",
+      "ceiling": "#FEFCF7",
+      "wood": "#806047",
+      "woodDark": "#513E30",
+      "fabric": "#DBC5AB",
+      "accent": "#A46C50",
+      "rug": "#D1B899",
+      "metal": "#8D7650",
+      "pot": "#AC7655",
+      "stone": "#E5D7C0",
+      "curtain": "#DDCCB5",
+      "bath": "#EADCC6",
+      "wet": "#D8C5A8",
+      "story": "دفء متوسطي متحكم فيه: جوز أغمق، حجر travertine-look في العمومي، كنبة خطية على أرجل، لوحة فنية بلون طيني، ولمسة برونز صغيرة. الفخامة من النِسب والخامة؛ الحوائط مستقيمة زي المصدر.",
+      "risk": "الحجر والحوائط الدافئة ممكن يزودوا الاصفرار في الضوء الدافي؛ العينات أهم من الصورة. الجوز والبرونز أكتر تكلفة من بدائل laminate جيدة.",
+      "forms": [
+        "كنبة خطية على أرجل رفيعة وذراع ضيق",
+        "كراسي سفرة جوز مع مقعد منسوج بصريًا",
+        "لوح سرير مبطن مع خشب جوز جانبي",
+        "طاولة وسط حجرية مع خشب داكن"
+      ],
+      "bathStory": "بورسلين travertine-look قليل العروق، نيكل عملي للحنفيات وبرونز محدود في حامل جاف؛ مناشف عاجي وحافة طينية."
+    }
+  ],
+  "references": [
+    {
+      "style": "A",
+      "title": "Biarritz house",
+      "creator": "Wouter Tousseyn",
+      "year": "2025 (publication)",
+      "publisher": "Architectural Digest México",
+      "url": "https://www.admagazine.com/articulos/estilo-moderno-organico-una-serena-casa-que-sorprende-con-su-diseno",
+      "transfer": "منحنيات الأثاث وتجاور بلوط فاتح مع نسيج غني",
+      "avoid": "فتح المطبخ أو البوابات المعمارية؛ مساحة الفيلا",
+      "role": "seed",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "A",
+      "title": "Paseo Mallorca_15",
+      "creator": "OHLAB — Paloma Hernaiz & Jaime Oliver",
+      "year": "Completion year not stated on retrieved studio page",
+      "publisher": "Official studio",
+      "url": "https://ohlab.net/proyectos/paseo-mallorca_15/",
+      "transfer": "هدوء لوحة الخامات؛ إحساس أسطح الجير والخشب والحجر، ببدائل قابلة للمسح هنا",
+      "avoid": "الواجهات الخشبية الخارجية والمسابح؛ أحواض الحجر المصمت ذات صيانة مختلفة",
+      "role": "additional",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "A",
+      "title": "Casa Palerm",
+      "creator": "OHLAB — Paloma Hernaiz & Jaime Oliver",
+      "year": "Completion not stated; 2020 awards listed, not completion",
+      "publisher": "Official studio",
+      "url": "https://ohlab.net/proyectos/casa-palerm/",
+      "transfer": "ملمس الجير والخشب الطبيعي؛ بساطة عدد الخامات بدل تكلفة استعراضية",
+      "avoid": "سقف مائل وعوارض؛ برغولا أو زجاج يختفي في الحائط",
+      "role": "additional",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "B",
+      "title": "Residential 1 Apartment",
+      "creator": "Makecraft",
+      "year": "2025 (studio description)",
+      "publisher": "Official studio",
+      "url": "https://makecraft.co/projects/residential-1-apartment-interior",
+      "transfer": "وحدة الأبيض المطفي والخشب؛ منصة سرير وتخزين واضح",
+      "avoid": "كوف سقف منخفض إضافي؛ كنبة L أو نجارة تعيد توزيع شقتنا",
+      "role": "seed",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "B",
+      "title": "Kinuta Terrace",
+      "creator": "Keiji Ashizawa Design + Norm Architects",
+      "year": "2019",
+      "publisher": "Official Keiji Ashizawa studio",
+      "url": "https://keijidesign.com/en/works/kinuta-terrace/",
+      "transfer": "خفة هياكل الأثاث وتناسق التنجيد والخشب؛ الصلة بالنبات والضوء",
+      "avoid": "فناء طويل أو زجاج أكبر؛ علاقة الموقع والضوء الياباني ليست دراسة لشقتنا",
+      "role": "additional",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "B",
+      "title": "House in Gotokuji",
+      "creator": "Keiji Ashizawa Design",
+      "year": "2016",
+      "publisher": "Official studio",
+      "url": "https://keijidesign.com/en/works/house-in-goutokuji/",
+      "transfer": "هدوء المستوى الأفقي ومناطق الراحة البسيطة؛ تقليل الإكسسوارات",
+      "avoid": "skylight أو تغيير الشبابيك؛ tatami على أرض الحمام أو فراغاتنا القائمة",
+      "role": "additional",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "C",
+      "title": "Diagonal Apartment",
+      "creator": "De la Villa Studio",
+      "year": "2025 completion / 2026 publication",
+      "publisher": "ArchDaily",
+      "url": "https://www.archdaily.com/1041786/diagonal-apartment-de-la-villa-studio",
+      "transfer": "ترابط خشب أصلي مع حجر وألوان أرضية؛ الفن كطبقة أساسية",
+      "avoid": "إعادة توزيع الحركة؛ تناسب 133م² أو نجارة خاصة كإذن بناء",
+      "role": "seed",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "C",
+      "title": "Can Santacilia",
+      "creator": "OHLAB — Paloma Hernaiz & Jaime Oliver",
+      "year": "Completion not stated on retrieved studio page",
+      "publisher": "Official studio",
+      "url": "https://ohlab.net/proyectos/can-santacilia/",
+      "transfer": "كتان وقطن مع حجر وخشب؛ برونز متقادم قليل في التفاصيل",
+      "avoid": "القصر والفناء والقوالب التاريخية؛ أسقف عالية أو تراسات بمسابح",
+      "role": "additional",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "C",
+      "title": "Casa MM",
+      "creator": "OHLAB — Paloma Hernaiz & Jaime Oliver",
+      "year": "Completion not stated; 2016–17 awards are not completion dates",
+      "publisher": "Official studio",
+      "url": "https://ohlab.net/proyectos/casa-mm/",
+      "transfer": "اقتصاد لوحة الخامات والخصوصية؛ دفء الخشب الطبيعي كفكرة داخلية",
+      "avoid": "تدوير كتل المبنى والنوافذ؛ Passivhaus أو أحمال وتوجيهات مناخ مايوركا",
+      "role": "additional",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    },
+    {
+      "style": "ALL",
+      "title": "Plantagegatan Apartment Renovation",
+      "creator": "mnmt",
+      "year": "2024 completion / ArchDaily listing",
+      "publisher": "ArchDaily",
+      "url": "https://www.archdaily.com/1031409/plantagegatan-mnmt",
+      "transfer": "قراءة الأرضية والأثاث المتحرك كوحدة؛ خامة قليلة مع تفاصيل دقيقة",
+      "avoid": "بنية الشقة السويدية أو رفعها إلى عمارة Type B",
+      "role": "caution",
+      "verified_http_status": 200,
+      "verified_on": "2026-10-11",
+      "image_policy": "LINK_ONLY; no third-party photo bytes in package"
+    }
+  ],
+  "materials": [
+    {
+      "category": "wood-look porcelain",
+      "visual": "دفء الخشب مع مقاومة تنظيف أفضل",
+      "cost": "متوسط",
+      "egypt": "بورسلين متوفر كفئة محلية/مستوردة؛ لون وعروق على عينة",
+      "care": "مقاس وفواصل منتظمة؛ ملمس أبرد من الخشب",
+      "hold": "عينة فعلية؛ توافق أرضية تحتية ومنسوب الباب؛ slip للبلل لا يُستنتج من matte"
+    },
+    {
+      "category": "stone-look porcelain",
+      "visual": "A limestone / C travertine هادي",
+      "cost": "متوسط إلى أعلى",
+      "egypt": "بورسلين حجر-look كفئة؛ تجنب عروق رقمية متكررة",
+      "care": "تنظيف أسهل من الرخام، كسر وصوت وصلابة تحت القدم",
+      "hold": "عينات بلاط متجاورة، فواصل وwet slip مع مورد/مختص؛ لا مقاسات تركيب مخترعة"
+    },
+    {
+      "category": "engineered wood",
+      "visual": "خشب حقيقي حميم بغرف النوم الجافة",
+      "cost": "أعلى",
+      "egypt": "مورد أرضيات هندسية بفئة رطوبة وضمان واضح",
+      "care": "أدفى وأهدى؛ ماء وخدوش وصيانة دورية",
+      "hold": "بديل مشروط للأرضية wood-look وليس شراء؛ رطوبة substrate وسمك/باب/threshold تُرفع"
+    },
+    {
+      "category": "actual marble / travertine",
+      "visual": "عروق وعمق طبيعي",
+      "cost": "أعلى + عناية أعلى",
+      "egypt": "ورش حجر وعينات ألواح؛ لم يتم اختيار منتج",
+      "care": "مسامية وحمض وبقع؛ sealing لا يلغي الخطر؛ polished غير مفضل للبلل",
+      "hold": "ليس الاختيار الافتراضي للشاور أو سطح المطبخ؛ wet slip والتفاصيل المهنية HOLD"
+    },
+    {
+      "category": "washable mineral-look paint",
+      "visual": "ملمس جير بصري A/C أو plaster هادي B",
+      "cost": "متوسط؛ أعلى في التطبيق المتخصص",
+      "egypt": "دهان washable بتأثير معدني أو عينة فني؛ لا ندعي limewash أصلي",
+      "care": "الرتوش تختلف؛ الحقيقي porous لا يمسح بسهولة",
+      "hold": "جاف فقط؛ mockup بالنهار والليل؛ wet walls بورسلين لا طلاء جير غير محمي"
+    },
+    {
+      "category": "veneer / quality laminate",
+      "visual": "بلوط A / آش B / جوز C",
+      "cost": "متوسط إلى أعلى",
+      "egypt": "نجارة محلية بعينة قشرة/laminate وحافة قابلة للفحص",
+      "care": "laminate أسهل مسحًا؛ القشرة تحتاج عناية؛ flutes تجمع تراب",
+      "hold": "قلب نجارة/حواف رطوبة خاصة بالحمام؛ لا قشرة طبيعية مكشوفة في رش الماء"
+    },
+    {
+      "category": "performance woven upholstery",
+      "visual": "A غني ناعم / B كتان tight / C نسج ثقيل",
+      "cost": "متوسط إلى أعلى",
+      "egypt": "محلات قماش/منجد؛ اختبار cleaning code وعينة قابلة للفك",
+      "care": "tight weave عملي أكثر من bouclé الخشن مع أطفال/حيوانات",
+      "hold": "جلوس حقيقي واحتكاك وبقع؛ الكتان الطبيعي يكرمش؛ لا ادعاء مقاومة حريق بلا وثيقة"
+    },
+    {
+      "category": "sheer + lined blackout",
+      "visual": "طبقتان خفيفتان داخل الفتحات",
+      "cost": "متوسط",
+      "egypt": "تفصيل ستائر محلي وعينة wash/shrink",
+      "care": "sheer للضوء وblackout للخصوصية؛ لا تسحب فوق مصدر حرارة أو AC",
+      "hold": "قياس rail والضلفة ومساحة تجميع القماش، manual fallback؛ لا بنية كوف جديدة"
+    },
+    {
+      "category": "brushed nickel + limited bronze",
+      "visual": "نيكل عملي في الماء، accent برونز جاف",
+      "cost": "متوسط؛ أعلى لبعض finishes",
+      "egypt": "إكسسوارات فئة generic قابلة للفك وتنظيف مناسب",
+      "care": "الكلس يظهر؛ الطلاء الرديء يتغير؛ خلط معدن واحد في البلل أدق",
+      "hold": "عينات وتشغيل وصيانة؛ glass safety/fasteners/ waterproof fix مختص، لا شراء"
+    },
+    {
+      "category": "exterior seating / grip surface",
+      "visual": "greenery واقعية ووسائد removable",
+      "cost": "متوسط إلى أعلى",
+      "egypt": "فئة outdoor UV/textile + بلاط exterior مع بيانات المورد",
+      "care": "تخزين الوسائد وتنظيف الصرف؛ نبات حسب شمس/ري ومخاطر الأطفال والحيوانات",
+      "hold": "لا ربط planter/حمل/حائط privacy تلقائيًا؛ drain/threshold/weather survey HOLD"
+    }
+  ],
+  "m1_zone_count": 68,
+  "rooms": [
+    {
+      "style": "A",
+      "room_id": "TER-MBR",
+      "name_ar": "بلكونة غرفة النوم الرئيسية",
+      "source_object_ids": [
+        "starter-44"
+      ],
+      "m1_zone_ids": [
+        "TER-MBR.E1",
+        "TER-MBR.L1",
+        "TER-MBR.H1",
+        "TER-MBR.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-MBR/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "A",
+      "narrative": [
+        "نبات المصدر ٥٠٠×٥٠٠ فقط؛ pot رملي weather-safe وصينية ري لا تسد مصرف.",
+        "الستارة داخل غرفة النوم تعطي خصوصية؛ لا مقعد إضافي بلا فحص. إضاءة طريق قليلة الوهج من الداخل، لا تسليط على المخدة."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A pot رملي هادي يحافظ على المصدر؛ B أقل تباين، الاختيار تابع للضوء والري لا لصورة مرجعية.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-MBR.E1",
+          "layer": "E",
+          "label": "خدمة اختيارية",
+          "use": "حاجة تنظيف اختيارية وتحكم من الداخل؛ احتياج الكهرباء يراجع قبل توفيرها.",
+          "tradeoff": "النبات مش مبرر لمأخذ ثابت؛ الماء والواجهة يحتاجوا تصريح وحماية.",
+          "site_hold": "صور الري والمطر وفتحة GLZ-MBR-TER؛ qualified outdoor review قبل تثبيت."
+        },
+        {
+          "id": "TER-MBR.L1",
+          "layer": "L",
+          "label": "طريق هادي",
+          "use": "إرشاد طريق خارجي منخفض الوهج بتحكم يدوي من MBR؛ accent نبات اختياري فقط.",
+          "tradeoff": "نور قوي يرتد على غرفة النوم؛ façade fixture غير معتمد.",
+          "site_hold": "اختبر وهج من المخدة والستارة ومسار التراس؛ راجع المطر والتثبيت."
+        },
+        {
+          "id": "TER-MBR.H1",
+          "layer": "H",
+          "label": "تصريف وواجهة",
+          "use": "تسجيل drain/weather access؛ لا condenser أو غسالة أو دكت مفترض على تراس النوم.",
+          "tradeoff": "مياه التراس لا تتوجه للغرفة؛ مسار خدمات يحتاج تصريح مستقل.",
+          "site_hold": "صور المصرف والعتبة والميول القائمة قبل التنظيف/التشطيب."
+        },
+        {
+          "id": "TER-MBR.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "GLZ-MBR-TER weather threshold؛ حافظ على drain ومسار الدخول حول النبات.",
+          "tradeoff": "grip اسم المصدر وليس اختبار منتج؛ عينة مبلولة وتصريح تثبيت.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "GLZ-MBR-TER weather threshold؛ حافظ على drain ومسار الدخول حول النبات.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "BR-01",
+      "name_ar": "غرفة النوم الأولى",
+      "source_object_ids": [
+        "starter-6",
+        "starter-7",
+        "starter-8",
+        "starter-9",
+        "V7-bedroom1-drawers",
+        "BR1-A1-art"
+      ],
+      "m1_zone_ids": [
+        "BR-01.E1",
+        "BR-01.E2",
+        "BR-01.E3",
+        "BR-01.L1",
+        "BR-01.H1",
+        "BR-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BR-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "سرير ١٢٨٠×٢١٠٠ بلوح مبطن خفيف، دولاب ١٨٠٠×٦٠٠ فاتح ومكتب ١٢٠٠×٦٠٠ بلوط؛ كرسي قماش زيتوني سهل التنظيف.",
+        "فن soft olive، ستائر sheer وblackout؛ القراءة والشحن بجوار السرير وtask على المكتب. نسيج مسطح يخدم نوم هادي؛ المرونة ضيافة ومذاكرة بلا تحريك الباب."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يسيب المكتب أوضح والتخزين هادي؛ A يعطي ملمسًا ألين لضيافة طويلة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BR-01.E1",
+          "layer": "E",
+          "label": "مكتب وبيانات",
+          "use": "خدمات laptop/شاشة/مهمة وبيانات اختيارية من جانب سطح المكتب الحالي؛ قابلية فصل بدون تحريك المكتب.",
+          "tradeoff": "الdesk قريب من جهة دخول الطرقة؛ الكرسي راجع للخلف والسلك تحت القدم خطر استخدام.",
+          "site_hold": "جرّب الكرسي راجع وOP-BR01-HALL كامل الفتح؛ تحقق من مخارج قائمة وحجم أجهزة المالك."
+        },
+        {
+          "id": "BR-01.E2",
+          "layer": "E",
+          "label": "سرير وتحكم دخول",
+          "use": "شحن/قراءة على جانبي السرير المتاحين وفق المرور؛ مفتاح دخول + إطفاء من السرير يدويًا.",
+          "tradeoff": "مفيش كومود مصدر في الغرفة؛ لا نفترض نجارة جديدة، ولا مخارج مدفونة خلف wardrobe.",
+          "site_hold": "جرّب نوم ووصول اليد على كل جانب وحدد أي جانب قابل للاستخدام؛ راجع الضلفة والwardrobe starter-7."
+        },
+        {
+          "id": "BR-01.E3",
+          "layer": "E",
+          "label": "ستارة احتياطية",
+          "use": "تحكم يدوي بالblackout عند GLZ-BR01-N؛ احتياطي موتور فقط بطلب لاحق.",
+          "tradeoff": "التغذية لا تعبر فتحة الزجاج ولا تدفن وراء curtain غير قابل للصيانة.",
+          "site_hold": "ارفع رأس الفتحة وعودة المسار ومكان خدمة موتور محتمل."
+        },
+        {
+          "id": "BR-01.L1",
+          "layer": "L",
+          "label": "عام ومهمة وليل",
+          "use": "عام مستقل عن مكتب/قراءة؛ accent لوحة اختياري؛ إرشاد دخول هادي بمفتاح يدوي عند السرير.",
+          "tradeoff": "تركيز task على المكتب يوفر راحة العمل بدون إضاءة الغرفة كلها ليلًا.",
+          "site_hold": "راجع ظل يد الكتابة على المكتب والوهج من السرير والستارة؛ لا lux أو عدد fixtures مفترض."
+        },
+        {
+          "id": "BR-01.H1",
+          "layer": "H",
+          "label": "راحة نوم وعمل",
+          "use": "شريط جهة الشرق مرشح للمراجعة؛ يوزع عبر الفراغ بعيد عن bed/desk؛ الفلتر قابل للخدمة.",
+          "tradeoff": "wardrobe starter-7 على الشرق قد يمنع الرأس؛ اختبر الحائط فوق/حول النجارة بدل افتراض غلافه دليل خدمة.",
+          "site_hold": "قِس ارتفاع النجارة والسقف وراجع jet عند pillow/work chair مع مهندس HVAC."
+        },
+        {
+          "id": "BR-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+          "tradeoff": "خشبي بصري لا يحدد wood أم timber-look أو قدرة تنظيف المنتج.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "BR-02",
+      "name_ar": "غرفة النوم الثانية",
+      "source_object_ids": [
+        "starter-10",
+        "starter-11",
+        "starter-12",
+        "starter-13",
+        "BR2-A1-art"
+      ],
+      "m1_zone_ids": [
+        "BR-02.E1",
+        "BR-02.E2",
+        "BR-02.E3",
+        "BR-02.L1",
+        "BR-02.H1",
+        "BR-02.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BR-02/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "سرير ١٢٨٠×٢١٠٠ ناعم ومكتب ٩٠٠×٥٠٠، دولاب ١٦٠٠×٦٠٠ عاجي؛ كُشن taupe بدل الزيتوني.",
+        "فن خطي هادي وblackout؛ مساحة تدوير كرسي المكتب غير مثبتة من grid=0، فالقماش واللون لا يثبتوا الملاءمة. جرّب الكرسي والباب فعليًا في #72."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يقلل الملحقات في غرفة المكتب الأصغر؛ A بديل راحة، ولا واحد منهم يحل grid=0 بلا قياس.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BR-02.E1",
+          "layer": "E",
+          "label": "مكتب وبيانات جديدان",
+          "use": "منطقة workstation عند جانب المكتب الحالي بالشمال الغربي؛ data اختياري وطاقة منفصلان وظيفيًا.",
+          "tradeoff": "نقل المكتب غيّر وصول اليد وقرب الكرسي ومسار الباب؛ ما ننسخش أرقام A15 ولا ندمج data مع power.",
+          "site_hold": "جرب مستخدمًا جالسًا وكرسيًا مسحوبًا والطريق من OP-BR02-HALL؛ قِس socket access بعد المخطط الفعلي."
+        },
+        {
+          "id": "BR-02.E2",
+          "layer": "E",
+          "label": "سرير ودخول",
+          "use": "شحن/قراءة على جانبي السرير القابلين للوصول؛ إطفاء عام من الدخول ومن السرير.",
+          "tradeoff": "مدى الوصول على جانب قرب الحائط قد يحتاج حل مختلف عن الجانب المفتوح، من غير فرض كومود جديد.",
+          "site_hold": "جرب اليد عند pillow والمرور للwardrobe starter-13 مع الباب كامل الفتح."
+        },
+        {
+          "id": "BR-02.E3",
+          "layer": "E",
+          "label": "ستارة اختيارية",
+          "use": "manual blackout عند GLZ-BR02-N مع احتياطي خدمة لو اختار المالك موتور.",
+          "tradeoff": "المكتب/السرير قرب الشمال؛ تجنب سلك فوق طاولة العمل.",
+          "site_hold": "قِس curtain stack ومسار خدمة الرأس قبل اعتماد موتور."
+        },
+        {
+          "id": "BR-02.L1",
+          "layer": "L",
+          "label": "عام وقراءة ومهمة",
+          "use": "عام diffuse + task مكتب + قراءة مستقلة وإرشاد ليل ناحية الباب؛ accent اختياري على art الحالي.",
+          "tradeoff": "الغرفة نوم/عمل محتمل؛ مشهد العمل لازم ما يبقاش شرط تشغيل القراءة.",
+          "site_hold": "اختبر glare من السرير وشاشة المكتب؛ manual fallback لكل مجموعة."
+        },
+        {
+          "id": "BR-02.H1",
+          "layer": "H",
+          "label": "هواء بعيد عن السرير والمكتب",
+          "use": "شريط الجنوب مرشح للمراجعة مع wardrobe؛ راجع توزيع نفخ عبر الفراغ المفتوح.",
+          "tradeoff": "خزنة starter-13 قد تمنع خدمة الفلتر؛ الحائط المرشح مش وحدة أو اتجاه نفخ مصدق.",
+          "site_hold": "قِس النجارة والعوائق ومسار صرف التكثيف؛ راجع راحة الشخص الجالس والنائم."
+        },
+        {
+          "id": "BR-02.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+          "tradeoff": "فاصل أقل يفيد الحركة؛ عينة مقاومة خدش الكرسي مطلوبة.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "MBR-01",
+      "name_ar": "غرفة النوم الرئيسية",
+      "source_object_ids": [
+        "starter-1",
+        "starter-2",
+        "starter-3",
+        "V5-master-rug",
+        "V7-master-drawers",
+        "V5-master-bench",
+        "MBR-A1-art"
+      ],
+      "m1_zone_ids": [
+        "MBR-01.E1",
+        "MBR-01.E2",
+        "MBR-01.L1",
+        "MBR-01.L2",
+        "MBR-01.H1",
+        "MBR-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/MBR-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "سرير المصدر ١٨٧٠×٢٢٢٠ بلوح مبطن ناعم، كومودين بلوط فاتح؛ bench موجود قماش رملي، أدراج مقفولة. سجادة ٢٦٠٠×٣٠٠٠ المصدر عاجي منخفض الوبر.",
+        "كتان عاجي وthrow زيتوني خفيف؛ ستارة blackout مع sheer بلا سد باب التراس. فن أرضي هادي فوق الرأس لا مرايا مواجهة للمخدة. قراءة جانبية مستقلة وشحن لا يحتاج النزول من السرير."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A أنعم للنوم واللوح المبطن؛ B أبسط للتنظيف لكن منصة السرير تحتاج تجربة ارتفاع فعلية.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "MBR-01.E1",
+          "layer": "E",
+          "label": "جانبي السرير",
+          "use": "شحن ولمبة قراءة مستقلة لكل كومود؛ موضع وظيفي على الجانب القابل للوصول واليد على المخدة، مش خلف ظهر السرير.",
+          "tradeoff": "الجنبين محفوظين بالمصدر لكن الوصول الفعلي غير مقاس؛ سلك الشحن لا يعبر الطريق للتراس أو الدريسنج.",
+          "site_hold": "جرّب اليد من كل مخدة وفتح أدراج كل كومود والسرير بالحجم الحقيقي، مع الكهربائي قبل تحديد الارتفاع."
+        },
+        {
+          "id": "MBR-01.E2",
+          "layer": "E",
+          "label": "دخول وستارة وتنقية",
+          "use": "مفتاح من ناحية دخول الطرقة متبادل الوظيفة مع تحكم بجانب السرير؛ ستارة manual + احتياطي موتور لو مطلوب.",
+          "tradeoff": "منقّي اختياري بعيد عن المخدة؛ لا موضع جهاز أو فولت موتور مختار.",
+          "site_hold": "اختبر ضلفة OP-MBR-HALL والدريسنج والمشي للتراس؛ صور خلوص curtain حول GLZ-MBR-TER."
+        },
+        {
+          "id": "MBR-01.L1",
+          "layer": "L",
+          "label": "عام وقراءة",
+          "use": "طبقة عامة مريحة + مهمة على جانبي السرير ومشهد accent اختياري عند لوحة الحائط؛ كل وظيفة أساسية لها تحكم يدوي.",
+          "tradeoff": "لا سبوت مكشوف فوق العين؛ لمبات جانبية أسهل صيانة من cornice شامل عند 2500 صافٍ.",
+          "site_hold": "اختبر الوهج مستلقيًا ومقاس سقف/ستارة؛ اختيار fixtures بعد عينة واقعية."
+        },
+        {
+          "id": "MBR-01.L2",
+          "layer": "L",
+          "label": "طريق ليل",
+          "use": "إرشاد هادي من جانب السرير ناحية WIC والحمّام، مستقل عن العام؛ حساس اختياري مع تعطيل يدوي.",
+          "tradeoff": "الضوء لا يصب على النائم ولا يمتد wiring داخل حيز shower غير محدد.",
+          "site_hold": "راجع الطريق بأبواب مفتوحة/مقفولة وعتبات فعلية؛ جرب الضوء مع مستخدم ليلي."
+        },
+        {
+          "id": "MBR-01.H1",
+          "layer": "H",
+          "label": "هواء بعيد عن المخدة",
+          "use": "شريط جهة الشرق/الدخول مرشح للمراجعة؛ نفخ عبر الفراغ المفتوح لا فوق pillow line؛ وصول للفلتر.",
+          "tradeoff": "الأبواب للدريسنج والطرقة تحد أماكن الرأس؛ شريط المراجعة ليس موضع وحدة مثبتة.",
+          "site_hold": "HVAC يراجع الحمل والضوضاء ومسار التكثيف والرأس وموافقة المكثف؛ اختبار نفخ عند المخدتين."
+        },
+        {
+          "id": "MBR-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+          "tradeoff": "الاستمرارية أهدى؛ مقاومة رطوبة الدريسنج تحتاج اختيار فعلي منفصل.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "HALL-01",
+      "name_ar": "الطرقة الخاصة",
+      "source_object_ids": [
+        "V5-hall-mirror"
+      ],
+      "m1_zone_ids": [
+        "HALL-01.E1",
+        "HALL-01.L1",
+        "HALL-01.H1",
+        "HALL-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/HALL-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "الأرضية wood-look المستمرة، الحوائط ivory وأبواب بنفس الدرجة؛ المرآة المصدر بإطار رفيع.",
+        "فن هادي مسطح فقط، لا console أو كسوة تقلل عرض ١٢٠٧ مم الاسمي. إضاءة طريق الليل مستقلة من الطرفين ومفاتيح يدوية."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "C",
+        "reason": "B خط جاف متصل وأبواب هادئة؛ C يختبر stone public spine، لكن لا نضيف تكسية بارزة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "HALL-01.E1",
+          "layer": "E",
+          "label": "تحكم طرفي الطرقة",
+          "use": "تحكم يدوي متبادل الوظيفة من جهة RECP ومن جهة MBR؛ خارج مناطق ضلف الغرف؛ مأخذ تنظيف وظيفي إن مطلوب.",
+          "tradeoff": "المراية موجودة بجهة الجنوب؛ نقطتان قريبتان من بابين لا تعنيان مفتاحًا قابلًا للوصول.",
+          "site_hold": "صوّر OP-HALL-RECP وOP-MBR-HALL وكل ضلفة جارّة؛ جرّب فتح باب الحمّام والسرير عند الوصول للمفتاح."
+        },
+        {
+          "id": "HALL-01.L1",
+          "layer": "L",
+          "label": "عام وطريق ليل",
+          "use": "عام سقفي أو حائطي انتقائي + إرشاد ليلي مستقل للحمّام؛ حساس اختياري manual override من الطرفين.",
+          "tradeoff": "سقف منخفض مستمر يعاقب الطرقة كلها؛ نقطة مضيئة قد تنعكس على المراية وتزعج غرف مفتوحة.",
+          "site_hold": "جرب انعكاس المراية وراحة العين من أبواب الغرف؛ قِس السقف وأي خدمات قائمة."
+        },
+        {
+          "id": "HALL-01.H1",
+          "layer": "H",
+          "label": "تقاطعات وخدمة",
+          "use": "تسجيل مرور خدمات محتمل فقط؛ access فوق الأبواب إن لزم، لا وحدة تكييف أو دكت مفترض داخل الطرقة.",
+          "tradeoff": "عبور مواسير قد يصطدم بالرأس الصافي 2500 أو كمر/أسلاك موجودة.",
+          "site_hold": "مهندسو الكهرباء/HVAC يوثقوا المسارات القائمة والرأس؛ لا إغلاق دائم قبل الوصول للصيانة."
+        },
+        {
+          "id": "HALL-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "Public/private عند OP-HALL-RECP؛ bath threshold عند OP-HALL-BATHC مع night route.",
+          "tradeoff": "A يوحّد المنطقة الخاصة؛ B أسهل تنظيفًا بصريًا لكنه يزيد فواصل غرف النوم.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "Public/private عند OP-HALL-RECP؛ bath threshold عند OP-HALL-BATHC مع night route.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "WIC-01",
+      "name_ar": "الدريسنج",
+      "source_object_ids": [
+        "starter-4",
+        "starter-5"
+      ],
+      "m1_zone_ids": [
+        "WIC-01.E1",
+        "WIC-01.L1",
+        "WIC-01.H1",
+        "WIC-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/WIC-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "دولابان المصدر ١٢٥٠×٦٠٠ بواجهات عاجي وبلوط محدود؛ الداخلي فاتح لتقييم الملابس.",
+        "المرآة القائمة وإضاءة أمامية بلا وهج. لا جزيرة أو pouf يضيق المسار؛ المقابض المريحة أسهل من تخديد يمسك تراب."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "plain آش فاتح أسهل للوصول والتنظيف من زخرفة مخددة؛ A لو عايز نعومة ivory أكبر.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "WIC-01.E1",
+          "layer": "E",
+          "label": "تحكم وصيانة",
+          "use": "تحكم ناحية الدخول من MBR، خدمة drivers في حيز جاف متاح؛ لا مأخذ grooming مفترض داخل splash محتمل.",
+          "tradeoff": "باب BATH-M01 وحركة مستخدمين قد تخفي المفتاح أو driver وراء النجارة.",
+          "site_hold": "جرّب OP-MBR-WIC وOP-WIC-BATHM مع أبواب الخزائن مفتوحة ويد تحمل هدوم."
+        },
+        {
+          "id": "WIC-01.L1",
+          "layer": "L",
+          "label": "وجوه الخزائن",
+          "use": "طبقة عامة للممر ومهمة رأسيّة للخزانتين الشمالية والجنوبية؛ لون القماش يراجع بعينات حقيقية.",
+          "tradeoff": "نور من السقف وحده يتغطى بالجسم؛ LED داخل النجارة يزيد driver وتنظيف وصيانة وحرارة قرب الهدوم.",
+          "site_hold": "اختبر فتح الضلف بالكامل والظل على رفوف/وجه الخزانة وخدمة driver؛ حساس باب اختياري مع override."
+        },
+        {
+          "id": "WIC-01.H1",
+          "layer": "H",
+          "label": "رطوبة ووصول للحمّام",
+          "use": "تحقق من انتقال رطوبة ensuite والتهوية ومسار خدمة extraction؛ لا تكييف مستقل مفترض.",
+          "tradeoff": "إنارة أو access عند فتحة الحمّام لا يجوز اعتبارها منطقة كهرباء جافة بدون تقييم splash.",
+          "site_hold": "وثّق OP-WIC-BATHM مع shower مستخدم، العادم ومسار الصيانة وعلاقة الthreshold."
+        },
+        {
+          "id": "WIC-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+          "tradeoff": "راحة قدم مقابل رطوبة shower؛ اختبار splash وlevel قبل المنتج.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "BATH-M01",
+      "name_ar": "الحمّام الرئيسي",
+      "source_object_ids": [
+        "starter-15",
+        "R1-ensuite-vanity",
+        "BATHM-WALKIN-A1",
+        "BATHM-A1-mirror",
+        "BATHM-glass-600-A1",
+        "BATHM-shampoo-shelf-A1",
+        "BATHM-shampoo-shelf-A2"
+      ],
+      "m1_zone_ids": [
+        "BATH-M01.E1",
+        "BATH-M01.L1",
+        "BATH-M01.H1",
+        "BATH-M01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BATH-M01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "شاور المصدر ١٤٥٠×٨٠٠ والـvanity ٦٠٠×٤٦٠ كما هما؛ بورسلين limestone مطفي، vanity بلوط-look مقاوم للرطوبة ونيكل.",
+        "حائط النهاية greige خفيف، glass clear مصدر لا يثبت سلامته؛ مناشف sand، خطاف قرب الخروج خارج الضلفة، shelf قابلة للفك في متناول اليد. لا نيش جديد؛ خيار ٩٠٠ مش مختار."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "C",
+        "reason": "B أقل عروق وأسهل قراءة؛ C يعطي دفء الحجر بالبورسلين نفسه دون كلفة عناية رخام طبيعي.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BATH-M01.E1",
+          "layer": "E",
+          "label": "حلاقة آمنة فقط",
+          "use": "حاجة grooming محتملة قريبة من vanity وظيفيًا؛ لا نرسم مأخذ في splash ولا نقرر حماية/ارتفاع.",
+          "tradeoff": "وجود مراية لا يثبت منطقة جافة. قد تكون أفضل نتيجة عدم تركيب مأخذ حتى يحدد الكهربائي wet zones.",
+          "site_hold": "الكهربائي يرسم wet zoning طبق الموقع، الحوض والشاور والمستخدم؛ يلزم qualified signoff قبل أول fixing."
+        },
+        {
+          "id": "BATH-M01.L1",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "use": "نور وجه + عام diffuse مستقلة؛ إرشاد دخول هادي؛ وظيفة shower العامة مع wet-safe equipment يحددها المختص.",
+          "tradeoff": "مفيش سبوت أو wiring معتمد فوق shower؛ الضوء الأمامي أجدى للوجه من spot رأسي فقط.",
+          "site_hold": "راجع ارتفاع المراية، glare على glass، curtain/سقف إن وجد وwet zoning؛ driver وصيانة خارج splash المعتمد."
+        },
+        {
+          "id": "BATH-M01.H1",
+          "layer": "H",
+          "label": "عادم ومياه ووصول",
+          "use": "استخراج رطوبة بعد الاستخدام ومحبس/سيفون متاح؛ حافظ على دخول الشاور والوصول للشاشة/الصرف.",
+          "tradeoff": "مسار العادم إلى الخارج غير معلوم؛ دراسة 900 غير مختارة ولا تحل أول fixing. الـ832 nominal ليس ممرًا مثبتًا.",
+          "site_hold": "راجع shaft وmakeup air وارتفاع drain وفروق منسوب WIC؛ wet engineer يراجع splash مع الباب مفتوحًا."
+        },
+        {
+          "id": "BATH-M01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+          "tradeoff": "بلاط قليل الفواصل قد يسهل تنظيفه لكنه لا يثبت إمكانية الميل؛ wet engineer يقرر.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "BATH-C01",
+      "name_ar": "الحمّام العائلي",
+      "source_object_ids": [
+        "starter-16",
+        "starter-17",
+        "starter-18",
+        "BATHC-A1-mirror",
+        "BATHC-shampoo-shelf-A1",
+        "BATHC-wall-towel-cabinet-A2"
+      ],
+      "m1_zone_ids": [
+        "BATH-C01.E1",
+        "BATH-C01.L1",
+        "BATH-C01.H1",
+        "BATH-C01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BATH-C01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "شاور المصدر ٩٠٠×٩٠٠، vanity ٦٠٠×٤٦٠؛ بورسلين عاجي قليل العروق وخزانة فاتحة قابلة للمسح.",
+        "glass المصدر يبقى؛ F1 frameless بديل مشروط منفصل. مناشف بلون زيتوني تميز المستخدمين، حامل ورق وخطاف لا يضرب الضلفة؛ لا رف زينة قرب الماء."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يقلل عدد الخامات والإكسسوارات؛ A ivory لو الضوء الطبيعي ضعيف، من غير تعديل F1 تلقائي.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BATH-C01.E1",
+          "layer": "E",
+          "label": "grooming مؤهل فقط",
+          "use": "حاجة grooming قرب vanity بعد خريطة wet zones؛ لا socket point جاهز.",
+          "tradeoff": "المساحة الصغيرة والكابينة لا يتركوا dry zone مضمون؛ عدم تركيب نقطة قد يكون البديل المناسب.",
+          "site_hold": "كهربائي/مهندس wet يوثّقوا splash وstanding use والباب والcabinet قبل تحديد المعدات."
+        },
+        {
+          "id": "BATH-C01.L1",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "use": "وجه واضح + عام لا يعتمد على المراية + إرشاد ليلي مع override؛ shower light coverage ضمن العام المؤهل.",
+          "tradeoff": "انعكاس الزجاج وظل cabinet يغيروا الضوء. مفيش اعتماد IP أو lux في النموذج.",
+          "site_hold": "جرب الوجه عند basin والوهج مع باب shower/cabinet؛ قِس سقف ومكان access مستقل."
+        },
+        {
+          "id": "BATH-C01.H1",
+          "layer": "H",
+          "label": "عادم وصرف وصيانة",
+          "use": "عادم رطوبة ومحابس/siphon قابلة للوصول بدون فك cabinet؛ وصول للشاور بعد اختبار hinge الفعلي.",
+          "tradeoff": "580mm بصري لا يحدد عرض دخول حقيقي؛ south/west outward مش آمن افتراضيًا في الدراسة.",
+          "site_hold": "HVAC يثبت الخارج؛ wet engineer/supplier يثبت opening mechanism، drain/waterproofing، وتداخل باب الحمام الاسمي 656.7."
+        },
+        {
+          "id": "BATH-C01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+          "tradeoff": "تنسيق لون لا يختار tray أو hinge ولا يؤكد grip؛ specimen وwet signoff.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "KIT-01",
+      "name_ar": "المطبخ",
+      "source_object_ids": [
+        "starter-20",
+        "starter-21",
+        "starter-22",
+        "starter-23",
+        "K3-corner",
+        "K3-dishwasher",
+        "K3-sink-base",
+        "K3-end-landing",
+        "K3-laundry-niche",
+        "KIT-A1-north-backsplash",
+        "KIT-A1-west-backsplash",
+        "KIT-A1-upper-north",
+        "KIT-A1-upper-west-low",
+        "KIT-A1-upper-west-high",
+        "KIT-fridge-end-panel"
+      ],
+      "m1_zone_ids": [
+        "KIT-01.E1",
+        "KIT-01.E2",
+        "KIT-01.E3",
+        "KIT-01.E4",
+        "KIT-01.L1",
+        "KIT-01.L2",
+        "KIT-01.H1",
+        "KIT-01.H2",
+        "KIT-01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/KIT-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "P0 القائم كامل: واجهات ivory مطفي وخشب بلوط محدود تحت، سطح stone-look هادي وbackplash قليل الفواصل.",
+        "R4/R5/R6 دليل سابق فقط؛ task تحت التخزين يُطور من M1 بعد الرفع. مقابض قابلة للمسح، لا open shelf فوق الطبخ، ولا جزيرة K12."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A يحافظ على السابقة البصرية R4 ivory كمرجع مطبخ؛ B plain greige بديل أهدى، P0 ثابت في الاثنين.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "KIT-01.E1",
+          "layer": "E",
+          "label": "أجهزة قابلة للفصل",
+          "use": "حاجة خدمات الموقد على الضلع الغربي، الثلاجة بالركن الجنوبي الشرقي، وDW تحت الضلع الشمالي؛ فصل قابل للوصول من حيز مجاور جاف، مش وراء جهاز مسحوب.",
+          "tradeoff": "starter-22 تمثيل stove، مش موديل وقود مؤكد؛ نوع الطاقة والمخارج يتحددوا بالمعدات المختارة لاحقًا.",
+          "site_hold": "وثّق الخدمات الحالية على الضلعين؛ افتح أبواب fridge وDW بالكامل وجرب الوصول للفصل بدون فك جهاز."
+        },
+        {
+          "id": "KIT-01.E2",
+          "layer": "E",
+          "label": "تحضير وكوفي",
+          "use": "مخارج استخدام صغيرة على منطقة تحضير الضلع الغربي أو landing الحالي؛ اختيار موضع الكوفي بعد تجربة حوض/موقد وتجفيف سطح.",
+          "tradeoff": "landing الحالي ضحل؛ ما نحشرش كوفي ثابت أو سلك فوق الحوض/الموقد. الاستخدام المتزامن سؤال كهربائي لاحق، مش حمل مفترض.",
+          "site_hold": "جرب حجم أدواتك الفعلية والبخار ومسافة استخدام اليد؛ الكهربائي يحدد منطقة جافة ونظام حماية مناسب."
+        },
+        {
+          "id": "KIT-01.E3",
+          "layer": "E",
+          "label": "تحكم وخيار طبخ جديد",
+          "use": "تحكم إنارة من ناحية دخول OP-RECP-KIT؛ احتياطي وظيفي لطبخ كهربائي محتمل بلا نقطة فرن مرسومة.",
+          "tradeoff": "kit-oven القديم parked؛ مفيش مكان عمود أو مسار حمل مستنتج منه.",
+          "site_hold": "سجل رغبة المالك في نوع الطبخ وصوّر الخدمات؛ اختبر باب P0 والضلفة قبل اعتماد أي موضع."
+        },
+        {
+          "id": "KIT-01.E4",
+          "layer": "E",
+          "label": "غسالة داخلية جديدة",
+          "use": "حاجة تغذية وفصل لغسالة محتملة في النيش الداخلي الحالي؛ مفهوم جديد مرتبط بالمصدر، مش نقل تلقائي من التراس.",
+          "tradeoff": "الغسالة نفسها غير ممثلة كجهاز؛ النيش احتياطي محفوظ. لا تعتبر indoor وterrace تشغيلين متزامنين.",
+          "site_hold": "تأكد من أبعاد النيش وفتح الجهاز وإمكانية فصل آمن؛ راجع الكهرباء والمياه والصرف معًا."
+        },
+        {
+          "id": "KIT-01.L1",
+          "layer": "L",
+          "label": "عام وتنظيف",
+          "use": "مجموعة عامة مستقلة تصل الممشى والباب؛ تحكم يدوي من ناحية دخول P0. night للمرور إلى التراس وظيفة منخفضة الوهج ضمن المجموعة لو الأجهزة المختارة تسمح.",
+          "tradeoff": "المهمة تحت الوحدات لا تكفي وحدها للتنظيف أو الوصول للثلاجة؛ لا عدد fixtures مفترض.",
+          "site_hold": "قِس السقف وأي beam أو خدمة قائمة، وجرب ظل المستخدم على الممر والثلاجة والباب."
+        },
+        {
+          "id": "KIT-01.L2",
+          "layer": "L",
+          "label": "مهمة L2 مستقلة",
+          "use": "مهمة أسفل الوحدات الشمالية والغربية الحالية؛ R6 L2 مرجع اتجاه بصري مع R4 ivory وR5 greige فقط؛ تحكم مستقل يدوي عن العام.",
+          "tradeoff": "R6 مش دائرة كهربائية. driver لازم يتصان؛ إضاءة الحوض والغربي ما تتغطاش بظل الجسم أو وهج backsplash.",
+          "site_hold": "راجع FRONT_SCHEDULE وINSTALLER_REQUIREMENTS؛ جرّب العمل عند الحوض/التحضير وحدد خدمة driver بعيد عن المياه."
+        },
+        {
+          "id": "KIT-01.H1",
+          "layer": "H",
+          "label": "استخراج الموقد",
+          "use": "منطقة استخراج فوق تمثيل الموقد على الضلع الغربي الحالي، مع وصول لفلتر grease وفصل خدمة.",
+          "tradeoff": "مفيش هود مثبت في source ولا نهاية دكت مؤكدة؛ تهوية تدوير ليست بديلًا مفترضًا للعادم.",
+          "site_hold": "HVAC يوثّق shaft/خروج خارجي وتعويض الهواء، نمط الوقود وfire/واجهة؛ لا route أو ثقب مرسوم كمصرح."
+        },
+        {
+          "id": "KIT-01.H2",
+          "layer": "H",
+          "label": "مياه وصرف وخدمة driver",
+          "use": "محابس وسيفون الحوض وDW والغسالة الداخلية المحتملة متاحين؛ خدمات الأجهزة على الشمال وdriver lighting في حيز جاف يحدده المختص.",
+          "tradeoff": "front removal ليس خدمة متاحة تلقائيًا؛ النيش ليس غسالة مركبة. فصل الكهرباء والخدمات بعيد عن التسريب يحدده trades.",
+          "site_hold": "سباك وكهربائي يراجعوا محابس/صرف وفتح باب الجهاز والوصول للسيفون وdriver؛ لا تعديل slab أو صرف تراس مفترض."
+        },
+        {
+          "id": "KIT-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+          "tradeoff": "اللون المستمر يقلل تقسيم المكان؛ لا يعني نفس slip/wet performance أو منسوب التنفيذ.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "TER-SVC",
+      "name_ar": "البلكونة الخدمية",
+      "source_object_ids": [],
+      "m1_zone_ids": [
+        "TER-SVC.E1",
+        "TER-SVC.L1",
+        "TER-SVC.H1",
+        "TER-SVC.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-SVC/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "A",
+      "narrative": [
+        "خامة grip رملي وظيفية وجدار قابل للمسح؛ لا أثاث أو نبات اختياري يسد الخدمة.",
+        "خدمات وصرف ومكان معدات as-built مجهولة؛ الغسالة الحالية داخل KIT، لا نرجع washer التاريخية هنا. الإضاءة عملية مع تحكم من الداخل."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B تشطيب عملي وقليل الزينة؛ A درجات أفتح فقط. مسار الخدمة أهم من لغة التصميم هنا.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-SVC.E1",
+          "layer": "E",
+          "label": "تحكم وخدمة قائمة",
+          "use": "تحكم light من ناحية المطبخ قبل الوصول للتراس؛ أي مأخذ تنظيف جديد حسب حاجة مؤكدة وتصريح outdoor.",
+          "tradeoff": "لا نقطة غسالة أو water/drain مخصصة لغسالة مفترضة على التراس.",
+          "site_hold": "جرّب OP-KIT-TERSVC كامل الفتح؛ سجل أي خدمات فعلية واحتمال المطر والكهرباء القائمة."
+        },
+        {
+          "id": "TER-SVC.L1",
+          "layer": "L",
+          "label": "إنارة خدمة",
+          "use": "إنارة عامة للخدمة والتنظيف، تحكم يدوي داخلي؛ task تجفيف بسيط ضمن العام وليس جهاز dryer.",
+          "tradeoff": "المصدر لا يسجل سقف تراس مثبت؛ نوع fixture/التثبيت يتحدد بعد survey.",
+          "site_hold": "قِس الواجهة/السقف والحماية من الجو واختبر ظل باب المطبخ."
+        },
+        {
+          "id": "TER-SVC.H1",
+          "layer": "H",
+          "label": "تجفيف وتصريف اختياري",
+          "use": "تجفيف طبيعي برف removable لو المالك محتاج + sensor تسريب اختياري قرب تجمع ماء فعلي؛ لا جهاز dryer.",
+          "tradeoff": "الباب والخروج والتنظيف أولى من rack؛ sensor ليس بديل drain/waterproofing.",
+          "site_hold": "صور المصرف والمطر واتجاه الهواء والخلوص بعد فتح الباب؛ trade يراجع drain والواجهة."
+        },
+        {
+          "id": "TER-SVC.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "OP-KIT-TERSVC door swing + drain؛ مفيش منصة غسالة أو تغيير slab مفترض.",
+          "tradeoff": "تنظيف وتجفيف وصيانة drain قبل هيئة البلاط؛ ميول/مناسيب TBD.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "OP-KIT-TERSVC door swing + drain؛ مفيش منصة غسالة أو تغيير slab مفترض.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "WC-01",
+      "name_ar": "حمّام الضيوف",
+      "source_object_ids": [
+        "starter-25",
+        "starter-26",
+        "WC-A1-mirror"
+      ],
+      "m1_zone_ids": [
+        "WC-01.E1",
+        "WC-01.L1",
+        "WC-01.H1",
+        "WC-01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/WC-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "حوض المصدر ٣٥٠×١٨٠ لا يتوسع؛ ivory porcelain وحائط greige هادي، مرآة مستطيلة قابلة للتنظيف ونيكل.",
+        "صابون pump صغير ومنشفة ضيوف واحدة وخطاف خارج الضلفة؛ خيار B ٤٥٠×٢٥٠ منفصل غير مختار. لا plant على الأرض الصغيرة."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A ivory خفيف بصريًا في حوض المصدر الصغير؛ B أبسط، لا نحول الاختيار لطلب توسيع الحوض.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "WC-01.E1",
+          "layer": "E",
+          "label": "تحكم قبل الدخول",
+          "use": "مفتاح ناحية الوصول للباب من RECP خارج splash يحدده الكهربائي؛ لا مأخذ إضافي مفترض في WC.",
+          "tradeoff": "المراية/الباسين الصغير لا يثبتوا منطقة جافة؛ ضلفة الباب حاسمة للوصول.",
+          "site_hold": "جرّب OP-RECP-WC مفتوح ومقفول؛ الكهربائي يحدد جانب التحكم المسموح ونطاق splash."
+        },
+        {
+          "id": "WC-01.L1",
+          "layer": "L",
+          "label": "وجه وعام منفصلان",
+          "use": "نور وجه للباسين الحالي وعام diffuse مستقل؛ كلاهما يدوي، مش جسم مصدر 450×250 غير موجود.",
+          "tradeoff": "starter-26 اتغير عن القديم؛ وقفة الوجه وغسيل اليدين لازم يتجربوا بدل نقل موضع نور قديم.",
+          "site_hold": "جرّب شخص أمام الحالي وباب WC مفتوح، ارتفاع المرآة والظل؛ اقتراح B يظل خيارًا منفصلًا."
+        },
+        {
+          "id": "WC-01.H1",
+          "layer": "H",
+          "label": "عادم ومحبس",
+          "use": "تهوية روائح وخدمة drain/mحبس الباسين الحالي؛ عادم بعيد عن المستخدم وaccess متاح.",
+          "tradeoff": "مسار الخروج غير معلوم؛ صغر الغرفة لا يبرر ثقب واجهة أو صرف جديد.",
+          "site_hold": "HVAC/سباك يصوروا shaft وخروج محتمل ويجربوا الوصول للسيفون مع الباب؛ review #19."
+        },
+        {
+          "id": "WC-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+          "tradeoff": "تقليل joints خلف WC يسهل التنظيف؛ الميول والحافة تحتاج مسح.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "TER-MAIN",
+      "name_ar": "البلكونة الرئيسية",
+      "source_object_ids": [
+        "starter-41",
+        "starter-42",
+        "starter-43"
+      ],
+      "m1_zone_ids": [
+        "TER-MAIN.E1",
+        "TER-MAIN.L1",
+        "TER-MAIN.H1",
+        "TER-MAIN.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-MAIN/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "A",
+      "narrative": [
+        "طاولة المصدر ٦٠٠ وكرسيان ٦٥٠×٦٥٠؛ خشب-look أو معدن exterior مناسب ووسائد sand تفك وتُخزن.",
+        "أرض exterior grip بعينة مبلولة؛ نبات اختياري فقط بعد الضوء والري والتصريح، لا نزود أصيص في طريق الضلفة. لا غطاء أو privacy screen ثابت بلا تصريح."
+      ],
+      "room_judgment": {
+        "lead": "C",
+        "alternate": "B",
+        "reason": "C لمسة outdoor دافئة بوسائد قابلة للفك؛ B إطار بسيط وتراب أقل، بدون أي غطاء جديد.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-MAIN.E1",
+          "layer": "E",
+          "label": "خارجية اختيارية",
+          "use": "حاجة تنظيف/استخدام اختياري قرب القعدة مع تحكم light من الداخل؛ لا سلك يعبر فتحة GLZ-RECP-TERMAIN.",
+          "tradeoff": "تغذية خارجية اختيارية قد تضيف تسريب/تثبيت واجهة؛ إبقاؤها بدون مأخذ خيار حتى يثبت الاحتياج.",
+          "site_hold": "وثّق المطر والتصريف والمخارج القائمة وفتح الزجاج؛ كهربائي ومطور يحددوا إذن وحماية خارجية."
+        },
+        {
+          "id": "TER-MAIN.L1",
+          "layer": "L",
+          "label": "قعدة بلا وهج",
+          "use": "عام خارجي هادي موجّه للقعدة + accent اختياري، مستقل عن القعدة الداخلية، مفتاح يدوي من الداخل.",
+          "tradeoff": "fixture ظاهر على الواجهة يحتاج تصريح؛ لا uplight للجيران ولا blocking للزجاج.",
+          "site_hold": "اختبر وهج من الداخل/الجيران وصور الواجهة وارتفاع السقف الحقيقي إن وجد."
+        },
+        {
+          "id": "TER-MAIN.H1",
+          "layer": "H",
+          "label": "مراجعة مكثف فقط",
+          "use": "سؤال feasibility لمكان condenser مع المطور؛ مفيش وحدة أو route مرسومة كمثبتة.",
+          "tradeoff": "Noise/hot exhaust/service قد يفسدوا القعدة؛ البديل موقع مطور معتمد خارج التراس إن توفر.",
+          "site_hold": "خذ مخطط developer لمواقع الوحدات وحمل التثبيت/الصرف والضوضاء؛ HVAC يصمم المسار بعده."
+        },
+        {
+          "id": "TER-MAIN.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "GLZ-RECP-TERMAIN فصل indoor/outdoor؛ drain/door weather seals وفرق منسوب TBD.",
+          "tradeoff": "لا seamless indoor-to-outdoor مزعوم؛ الحماية من المطر أهم من صورة استمرار اللون.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "GLZ-RECP-TERMAIN فصل indoor/outdoor؛ drain/door weather seals وفرق منسوب TBD.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "A",
+      "room_id": "RECP-01",
+      "name_ar": "الريسبشن والسفرة والمدخل العام",
+      "source_object_ids": [
+        "starter-27",
+        "starter-28",
+        "starter-29",
+        "starter-30",
+        "starter-31",
+        "starter-32",
+        "starter-35",
+        "starter-36",
+        "starter-37",
+        "starter-38",
+        "starter-39",
+        "starter-40",
+        "A2-dining-chair-north-centre",
+        "A2-dining-chair-south-centre",
+        "S1-living-side-table",
+        "A-dining-sideboard",
+        "A-dining-pendant",
+        "A1-entry-mirror",
+        "A2-living-plant",
+        "S1-reading-lamp",
+        "V5-sideboard-lamp"
+      ],
+      "m1_zone_ids": [
+        "RECP-01.E1",
+        "RECP-01.E2",
+        "RECP-01.E3",
+        "RECP-01.E4",
+        "RECP-01.L1",
+        "RECP-01.L2",
+        "RECP-01.L3",
+        "RECP-01.H1",
+        "RECP-01.F1"
+      ],
+      "source_floor": {
+        "value": "lightoak",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/RECP-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "كنبة ٢٨٨٠×٩٩٠ مستديرة في غلاف المصدر؛ كُشن عاجي وكتان رملي وزيتوني واحد. كرسي cocoon بنفس ٧٠٠×٧٢٠. سجادة المصدر ٣٤٠٠×٢١٠٠ نسيج مسطح؛ رجل الكنبة الأمامية تراجع على العينة. TV فوق قاعدة بلوط فاتح مقفولة، سطح خالٍ من زحمة.",
+        "سفرة المصدر ٢٠٠٠×٩٥٠ وستة كراسي: ظهر مبطن ناعم وطاولة بيضاوية بصريًا داخل الغلاف. البندنت globe الموجود فوق الطاولة؛ نراجع ارتفاعه لا نعمل كوف سقف. سايدبورد فاتح ومصباح جانبي صغير. مرآة المدخل الدائرية ومخزن الأحذية ٩٠٠×٢٨٠ باقيين؛ screen بصري باللون فقط حتى حل تحذير الدخول.",
+        "ستارة sheer عاجي وطبقة blackout رملي ممتدة داخل الفتحة القائمة؛ نهايتها لا تلمس المأخذ ولا تكتم AC. فن تجريدي كبير بفراغ حوله، نبات المصدر قرب الضوء مع صينية ري. لا نضيف أصيص في طريق كراسي السفرة."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B أخف في السقف والفراغ، A أولى لو راحة الذراع أهم؛ لا نحكم من الصورة على القعدة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "RECP-01.E1",
+          "layer": "E",
+          "label": "تحكم الوصول",
+          "use": "مجموعات ترحيب/تنظيف/ليل من ناحية الوصول لباب الشقة؛ تشغيل يدوي قبل أي مشاهد ذكية.",
+          "tradeoff": "الدولاب الحالي ومستخدمه بيتداخلوا مع عينات حركة الباب؛ نقل المفتاح وحده ما يحلش مشكلة المرور.",
+          "site_hold": "صوّر OP-ENT-01 مفتوح ومقفول مع شخص بيستخدم الجزمة؛ اختبر الوصول للمفتاح من خارج ضلفة الباب."
+        },
+        {
+          "id": "RECP-01.E2",
+          "layer": "E",
+          "label": "TV وشبكة",
+          "use": "خدمات قابلة للوصول من جانب وحدة التلفزيون؛ مسار طاقة وبيانات منسق بدون أسلاك فوق الممشى.",
+          "tradeoff": "النقطة وراء التلفزيون بس ممكن تتدفن عند صيانة الشاشة؛ خلي فصل الخدمة متاح بدون سحب الوحدة كلها.",
+          "site_hold": "راجع فتح وحدة TV ومخارج الحائط الفعلية وامكانية فصل الطاقة والبيانات مع الكهربائي."
+        },
+        {
+          "id": "RECP-01.E3",
+          "layer": "E",
+          "label": "قراية وبوفيه",
+          "use": "تغذية لمبة القراية ناحية الكرسي الحالي ولمبة البوفيه ناحية سطحه؛ مفيش سلك عابر لطريق السفرة.",
+          "tradeoff": "الكرسي اتحرك عن A15؛ اللمبة الحالية مش ملاصقة له تلقائيًا. اختبر وصول اليد والسلك مع كرسي مشغول.",
+          "site_hold": "جرب قعدة القراية بجانب starter-32 وحدد طول سلك اللمبة ومسار التنظيف وفتح البوفيه."
+        },
+        {
+          "id": "RECP-01.E4",
+          "layer": "E",
+          "label": "احتياطي ستارة وتنقية",
+          "use": "احتياطي وظيفي فقط عند طرف ستارة الزجاج ومكان منقّي يختاره المالك؛ الستارة اليدوية هي fallback.",
+          "tradeoff": "موتور غير مختار؛ مفيش فولت أو موضع منقّي معتمد. الزجاج كامل الارتفاع ماينفعش يتغطى بعلبة سقف تخمينية.",
+          "site_hold": "قِس مكان مسار الستارة وفتحة الصيانة؛ جرّب المنقّي بعيد عن ممشى التراس وتيار التكييف."
+        },
+        {
+          "id": "RECP-01.L1",
+          "layer": "L",
+          "label": "عام ومشهد قعدة",
+          "use": "إنارة عامة مستقلة + إضاءة حائط/لمبات مريحة؛ تحكم يدوي لمشهد TV بدون وهج على الشاشة.",
+          "tradeoff": "زيادة السبوتات فوق الكنبة تجهد العين؛ قارن لمبات متنقلة مع مسار سقفي انتقائي من غير سقف ساقط شامل.",
+          "site_hold": "راجع انعكاس الضوء على TV من أماكن الجلوس وإغلاق الستائر؛ قِس الرأس الصافي."
+        },
+        {
+          "id": "RECP-01.L2",
+          "layer": "L",
+          "label": "سفرة مستقلة",
+          "use": "منطقة مهمة فوق السفرة الحالية والـpendant الموجود بالمصدر؛ مجموعة مستقلة قابلة للتعتيم فقط لو الأجهزة تدعم.",
+          "tradeoff": "الطاولة اتغيرت مكانًا؛ معلّق المصدر مجرد كتلة بصرية، وارتفاعه مش موافقة. ما تسحبش شبكة إنارة K12.",
+          "site_hold": "جرّب ستة أشخاص وكراسي مسحوبة، خط النظر تحت المعلّق، والمرور من باب المطبخ P0."
+        },
+        {
+          "id": "RECP-01.L3",
+          "layer": "L",
+          "label": "قراءة وaccent وليل",
+          "use": "مهمة قراءة منفصلة عند الكرسي الحالي، accent البوفيه اختياري، وإرشاد وصول من المدخل للطرقة مستقل عن عام القعدة.",
+          "tradeoff": "اللمبات المحمولة تحفظ سقف 2500 لكن سلكها لازم يبقى خارج المرور؛ night scene لا يعتمد على شبكة ذكية.",
+          "site_hold": "جرّب مدى الضوء واليد من كرسي مشغول، والمرور من المدخل للحمّام، ومفتاح كل لمبة قبل الربط بالمشاهد."
+        },
+        {
+          "id": "RECP-01.H1",
+          "layer": "H",
+          "label": "راحة القعدة والسفرة",
+          "use": "مراجعة منطقتي راحة داخل شكل L؛ شريط حائط مرشح على الجهة الشرقية بعيد عن الكنبة؛ اتجاه الهواء عبر الفراغ لا على القعدة.",
+          "tradeoff": "رأس واحد قد لا يغطي طرفي L؛ رأس ثانٍ يزيد المواسير والصيانة. العدد والحمل ومكان الرأس قرار مهندس بعد المسح.",
+          "site_hold": "HVAC يقارن توزيع الهواء وقت الستارة مقفولة وست كراسي مشغولة؛ يثبت صرف التكثيف وموافقة المكثف قبل أي مسار."
+        },
+        {
+          "id": "RECP-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "الفاصل عند باب المطبخ P0 والطرقة؛ بساط القعدة الحالي طبقة متحركة مش أرضية.",
+          "tradeoff": "surface خشبي أدفأ بصريًا؛ porcelain أسهل عند المدخل لكن يحتاج عينة وصوت مشي حقيقي.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "الفاصل عند باب المطبخ P0 والطرقة؛ بساط القعدة الحالي طبقة متحركة مش أرضية.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "TER-MBR",
+      "name_ar": "بلكونة غرفة النوم الرئيسية",
+      "source_object_ids": [
+        "starter-44"
+      ],
+      "m1_zone_ids": [
+        "TER-MBR.E1",
+        "TER-MBR.L1",
+        "TER-MBR.H1",
+        "TER-MBR.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-MBR/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "A",
+      "narrative": [
+        "نفس النبات في وعاء greige مطفي وخط بسيط؛ لا سياج نجارة ولا lounger جديد.",
+        "الفراغ جزء من الراحة؛ ضوء إرشاد يدوي إذا احتاج المالك فقط. لا condenser مفترض أو عتبة مرفوعة."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A pot رملي هادي يحافظ على المصدر؛ B أقل تباين، الاختيار تابع للضوء والري لا لصورة مرجعية.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-MBR.E1",
+          "layer": "E",
+          "label": "خدمة اختيارية",
+          "use": "حاجة تنظيف اختيارية وتحكم من الداخل؛ احتياج الكهرباء يراجع قبل توفيرها.",
+          "tradeoff": "النبات مش مبرر لمأخذ ثابت؛ الماء والواجهة يحتاجوا تصريح وحماية.",
+          "site_hold": "صور الري والمطر وفتحة GLZ-MBR-TER؛ qualified outdoor review قبل تثبيت."
+        },
+        {
+          "id": "TER-MBR.L1",
+          "layer": "L",
+          "label": "طريق هادي",
+          "use": "إرشاد طريق خارجي منخفض الوهج بتحكم يدوي من MBR؛ accent نبات اختياري فقط.",
+          "tradeoff": "نور قوي يرتد على غرفة النوم؛ façade fixture غير معتمد.",
+          "site_hold": "اختبر وهج من المخدة والستارة ومسار التراس؛ راجع المطر والتثبيت."
+        },
+        {
+          "id": "TER-MBR.H1",
+          "layer": "H",
+          "label": "تصريف وواجهة",
+          "use": "تسجيل drain/weather access؛ لا condenser أو غسالة أو دكت مفترض على تراس النوم.",
+          "tradeoff": "مياه التراس لا تتوجه للغرفة؛ مسار خدمات يحتاج تصريح مستقل.",
+          "site_hold": "صور المصرف والعتبة والميول القائمة قبل التنظيف/التشطيب."
+        },
+        {
+          "id": "TER-MBR.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "GLZ-MBR-TER weather threshold؛ حافظ على drain ومسار الدخول حول النبات.",
+          "tradeoff": "grip اسم المصدر وليس اختبار منتج؛ عينة مبلولة وتصريح تثبيت.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "GLZ-MBR-TER weather threshold؛ حافظ على drain ومسار الدخول حول النبات.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "BR-01",
+      "name_ar": "غرفة النوم الأولى",
+      "source_object_ids": [
+        "starter-6",
+        "starter-7",
+        "starter-8",
+        "starter-9",
+        "V7-bedroom1-drawers",
+        "BR1-A1-art"
+      ],
+      "m1_zone_ids": [
+        "BR-01.E1",
+        "BR-01.E2",
+        "BR-01.E3",
+        "BR-01.L1",
+        "BR-01.H1",
+        "BR-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BR-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "منصة آش واللوح شرائح؛ الدولاب off-white بخط سحب واضح، مكتب خشب مدخن والكرسي زيتوني داكن.",
+        "صندوق واحد للتخزين، فن خطي أصلي. blackout greige؛ surface المكتب خالٍ من نبات كبير. القراءة مستقلة عن task والدخول."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يسيب المكتب أوضح والتخزين هادي؛ A يعطي ملمسًا ألين لضيافة طويلة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BR-01.E1",
+          "layer": "E",
+          "label": "مكتب وبيانات",
+          "use": "خدمات laptop/شاشة/مهمة وبيانات اختيارية من جانب سطح المكتب الحالي؛ قابلية فصل بدون تحريك المكتب.",
+          "tradeoff": "الdesk قريب من جهة دخول الطرقة؛ الكرسي راجع للخلف والسلك تحت القدم خطر استخدام.",
+          "site_hold": "جرّب الكرسي راجع وOP-BR01-HALL كامل الفتح؛ تحقق من مخارج قائمة وحجم أجهزة المالك."
+        },
+        {
+          "id": "BR-01.E2",
+          "layer": "E",
+          "label": "سرير وتحكم دخول",
+          "use": "شحن/قراءة على جانبي السرير المتاحين وفق المرور؛ مفتاح دخول + إطفاء من السرير يدويًا.",
+          "tradeoff": "مفيش كومود مصدر في الغرفة؛ لا نفترض نجارة جديدة، ولا مخارج مدفونة خلف wardrobe.",
+          "site_hold": "جرّب نوم ووصول اليد على كل جانب وحدد أي جانب قابل للاستخدام؛ راجع الضلفة والwardrobe starter-7."
+        },
+        {
+          "id": "BR-01.E3",
+          "layer": "E",
+          "label": "ستارة احتياطية",
+          "use": "تحكم يدوي بالblackout عند GLZ-BR01-N؛ احتياطي موتور فقط بطلب لاحق.",
+          "tradeoff": "التغذية لا تعبر فتحة الزجاج ولا تدفن وراء curtain غير قابل للصيانة.",
+          "site_hold": "ارفع رأس الفتحة وعودة المسار ومكان خدمة موتور محتمل."
+        },
+        {
+          "id": "BR-01.L1",
+          "layer": "L",
+          "label": "عام ومهمة وليل",
+          "use": "عام مستقل عن مكتب/قراءة؛ accent لوحة اختياري؛ إرشاد دخول هادي بمفتاح يدوي عند السرير.",
+          "tradeoff": "تركيز task على المكتب يوفر راحة العمل بدون إضاءة الغرفة كلها ليلًا.",
+          "site_hold": "راجع ظل يد الكتابة على المكتب والوهج من السرير والستارة؛ لا lux أو عدد fixtures مفترض."
+        },
+        {
+          "id": "BR-01.H1",
+          "layer": "H",
+          "label": "راحة نوم وعمل",
+          "use": "شريط جهة الشرق مرشح للمراجعة؛ يوزع عبر الفراغ بعيد عن bed/desk؛ الفلتر قابل للخدمة.",
+          "tradeoff": "wardrobe starter-7 على الشرق قد يمنع الرأس؛ اختبر الحائط فوق/حول النجارة بدل افتراض غلافه دليل خدمة.",
+          "site_hold": "قِس ارتفاع النجارة والسقف وراجع jet عند pillow/work chair مع مهندس HVAC."
+        },
+        {
+          "id": "BR-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+          "tradeoff": "خشبي بصري لا يحدد wood أم timber-look أو قدرة تنظيف المنتج.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "BR-02",
+      "name_ar": "غرفة النوم الثانية",
+      "source_object_ids": [
+        "starter-10",
+        "starter-11",
+        "starter-12",
+        "starter-13",
+        "BR2-A1-art"
+      ],
+      "m1_zone_ids": [
+        "BR-02.E1",
+        "BR-02.E2",
+        "BR-02.E3",
+        "BR-02.L1",
+        "BR-02.H1",
+        "BR-02.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BR-02/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "منصة خشب مستقيمة، مكتب آش ضحل في غلاف ٩٠٠×٥٠٠ وكرسي خفيف الظهر؛ دولاب plain رمادي دافي.",
+        "قلة الأكسسوارات مهمة هنا؛ لا رف أرضي ولا plant جديد. ظل blackout وضوء task منفصل، لا نفترض أن انخفاض السرير حل للتحذير."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يقلل الملحقات في غرفة المكتب الأصغر؛ A بديل راحة، ولا واحد منهم يحل grid=0 بلا قياس.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BR-02.E1",
+          "layer": "E",
+          "label": "مكتب وبيانات جديدان",
+          "use": "منطقة workstation عند جانب المكتب الحالي بالشمال الغربي؛ data اختياري وطاقة منفصلان وظيفيًا.",
+          "tradeoff": "نقل المكتب غيّر وصول اليد وقرب الكرسي ومسار الباب؛ ما ننسخش أرقام A15 ولا ندمج data مع power.",
+          "site_hold": "جرب مستخدمًا جالسًا وكرسيًا مسحوبًا والطريق من OP-BR02-HALL؛ قِس socket access بعد المخطط الفعلي."
+        },
+        {
+          "id": "BR-02.E2",
+          "layer": "E",
+          "label": "سرير ودخول",
+          "use": "شحن/قراءة على جانبي السرير القابلين للوصول؛ إطفاء عام من الدخول ومن السرير.",
+          "tradeoff": "مدى الوصول على جانب قرب الحائط قد يحتاج حل مختلف عن الجانب المفتوح، من غير فرض كومود جديد.",
+          "site_hold": "جرب اليد عند pillow والمرور للwardrobe starter-13 مع الباب كامل الفتح."
+        },
+        {
+          "id": "BR-02.E3",
+          "layer": "E",
+          "label": "ستارة اختيارية",
+          "use": "manual blackout عند GLZ-BR02-N مع احتياطي خدمة لو اختار المالك موتور.",
+          "tradeoff": "المكتب/السرير قرب الشمال؛ تجنب سلك فوق طاولة العمل.",
+          "site_hold": "قِس curtain stack ومسار خدمة الرأس قبل اعتماد موتور."
+        },
+        {
+          "id": "BR-02.L1",
+          "layer": "L",
+          "label": "عام وقراءة ومهمة",
+          "use": "عام diffuse + task مكتب + قراءة مستقلة وإرشاد ليل ناحية الباب؛ accent اختياري على art الحالي.",
+          "tradeoff": "الغرفة نوم/عمل محتمل؛ مشهد العمل لازم ما يبقاش شرط تشغيل القراءة.",
+          "site_hold": "اختبر glare من السرير وشاشة المكتب؛ manual fallback لكل مجموعة."
+        },
+        {
+          "id": "BR-02.H1",
+          "layer": "H",
+          "label": "هواء بعيد عن السرير والمكتب",
+          "use": "شريط الجنوب مرشح للمراجعة مع wardrobe؛ راجع توزيع نفخ عبر الفراغ المفتوح.",
+          "tradeoff": "خزنة starter-13 قد تمنع خدمة الفلتر؛ الحائط المرشح مش وحدة أو اتجاه نفخ مصدق.",
+          "site_hold": "قِس النجارة والعوائق ومسار صرف التكثيف؛ راجع راحة الشخص الجالس والنائم."
+        },
+        {
+          "id": "BR-02.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+          "tradeoff": "فاصل أقل يفيد الحركة؛ عينة مقاومة خدش الكرسي مطلوبة.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "MBR-01",
+      "name_ar": "غرفة النوم الرئيسية",
+      "source_object_ids": [
+        "starter-1",
+        "starter-2",
+        "starter-3",
+        "V5-master-rug",
+        "V7-master-drawers",
+        "V5-master-bench",
+        "MBR-A1-art"
+      ],
+      "m1_zone_ids": [
+        "MBR-01.E1",
+        "MBR-01.E2",
+        "MBR-01.L1",
+        "MBR-01.L2",
+        "MBR-01.H1",
+        "MBR-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/MBR-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "نفس غلاف السرير منصة آش بلوح خشب شرائح بسيط، كومودين بسيطين؛ أدراج آش وbench بلا مخدات متراكمة. المنصة مفهومة بصريًا وليست اعتماد ارتفاع صالح للجميع.",
+        "ملاية ecru وthrow greige، blackout رمادي دافي وستارة نهارية أخف؛ فن حبر واحد. قراءة low-glare بجوار المخدة، كل مستخدم يتحكم منفصلًا؛ لا رف بارز بطريق الليل."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A أنعم للنوم واللوح المبطن؛ B أبسط للتنظيف لكن منصة السرير تحتاج تجربة ارتفاع فعلية.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "MBR-01.E1",
+          "layer": "E",
+          "label": "جانبي السرير",
+          "use": "شحن ولمبة قراءة مستقلة لكل كومود؛ موضع وظيفي على الجانب القابل للوصول واليد على المخدة، مش خلف ظهر السرير.",
+          "tradeoff": "الجنبين محفوظين بالمصدر لكن الوصول الفعلي غير مقاس؛ سلك الشحن لا يعبر الطريق للتراس أو الدريسنج.",
+          "site_hold": "جرّب اليد من كل مخدة وفتح أدراج كل كومود والسرير بالحجم الحقيقي، مع الكهربائي قبل تحديد الارتفاع."
+        },
+        {
+          "id": "MBR-01.E2",
+          "layer": "E",
+          "label": "دخول وستارة وتنقية",
+          "use": "مفتاح من ناحية دخول الطرقة متبادل الوظيفة مع تحكم بجانب السرير؛ ستارة manual + احتياطي موتور لو مطلوب.",
+          "tradeoff": "منقّي اختياري بعيد عن المخدة؛ لا موضع جهاز أو فولت موتور مختار.",
+          "site_hold": "اختبر ضلفة OP-MBR-HALL والدريسنج والمشي للتراس؛ صور خلوص curtain حول GLZ-MBR-TER."
+        },
+        {
+          "id": "MBR-01.L1",
+          "layer": "L",
+          "label": "عام وقراءة",
+          "use": "طبقة عامة مريحة + مهمة على جانبي السرير ومشهد accent اختياري عند لوحة الحائط؛ كل وظيفة أساسية لها تحكم يدوي.",
+          "tradeoff": "لا سبوت مكشوف فوق العين؛ لمبات جانبية أسهل صيانة من cornice شامل عند 2500 صافٍ.",
+          "site_hold": "اختبر الوهج مستلقيًا ومقاس سقف/ستارة؛ اختيار fixtures بعد عينة واقعية."
+        },
+        {
+          "id": "MBR-01.L2",
+          "layer": "L",
+          "label": "طريق ليل",
+          "use": "إرشاد هادي من جانب السرير ناحية WIC والحمّام، مستقل عن العام؛ حساس اختياري مع تعطيل يدوي.",
+          "tradeoff": "الضوء لا يصب على النائم ولا يمتد wiring داخل حيز shower غير محدد.",
+          "site_hold": "راجع الطريق بأبواب مفتوحة/مقفولة وعتبات فعلية؛ جرب الضوء مع مستخدم ليلي."
+        },
+        {
+          "id": "MBR-01.H1",
+          "layer": "H",
+          "label": "هواء بعيد عن المخدة",
+          "use": "شريط جهة الشرق/الدخول مرشح للمراجعة؛ نفخ عبر الفراغ المفتوح لا فوق pillow line؛ وصول للفلتر.",
+          "tradeoff": "الأبواب للدريسنج والطرقة تحد أماكن الرأس؛ شريط المراجعة ليس موضع وحدة مثبتة.",
+          "site_hold": "HVAC يراجع الحمل والضوضاء ومسار التكثيف والرأس وموافقة المكثف؛ اختبار نفخ عند المخدتين."
+        },
+        {
+          "id": "MBR-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+          "tradeoff": "الاستمرارية أهدى؛ مقاومة رطوبة الدريسنج تحتاج اختيار فعلي منفصل.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "HALL-01",
+      "name_ar": "الطرقة الخاصة",
+      "source_object_ids": [
+        "V5-hall-mirror"
+      ],
+      "m1_zone_ids": [
+        "HALL-01.E1",
+        "HALL-01.L1",
+        "HALL-01.H1",
+        "HALL-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/HALL-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "امتداد آش الأرضية وخط أبواب greige؛ المرآة بإطار مدخن رفيع ولا gallery مزدحمة.",
+        "جدار هادي يبرز الفراغ؛ لا slats بارزة رغم لغة B. مسار الليل أولى من سبوتات زخرفية؛ الموجود ceiling proxy لا تحديد نقاط."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "C",
+        "reason": "B خط جاف متصل وأبواب هادئة؛ C يختبر stone public spine، لكن لا نضيف تكسية بارزة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "HALL-01.E1",
+          "layer": "E",
+          "label": "تحكم طرفي الطرقة",
+          "use": "تحكم يدوي متبادل الوظيفة من جهة RECP ومن جهة MBR؛ خارج مناطق ضلف الغرف؛ مأخذ تنظيف وظيفي إن مطلوب.",
+          "tradeoff": "المراية موجودة بجهة الجنوب؛ نقطتان قريبتان من بابين لا تعنيان مفتاحًا قابلًا للوصول.",
+          "site_hold": "صوّر OP-HALL-RECP وOP-MBR-HALL وكل ضلفة جارّة؛ جرّب فتح باب الحمّام والسرير عند الوصول للمفتاح."
+        },
+        {
+          "id": "HALL-01.L1",
+          "layer": "L",
+          "label": "عام وطريق ليل",
+          "use": "عام سقفي أو حائطي انتقائي + إرشاد ليلي مستقل للحمّام؛ حساس اختياري manual override من الطرفين.",
+          "tradeoff": "سقف منخفض مستمر يعاقب الطرقة كلها؛ نقطة مضيئة قد تنعكس على المراية وتزعج غرف مفتوحة.",
+          "site_hold": "جرب انعكاس المراية وراحة العين من أبواب الغرف؛ قِس السقف وأي خدمات قائمة."
+        },
+        {
+          "id": "HALL-01.H1",
+          "layer": "H",
+          "label": "تقاطعات وخدمة",
+          "use": "تسجيل مرور خدمات محتمل فقط؛ access فوق الأبواب إن لزم، لا وحدة تكييف أو دكت مفترض داخل الطرقة.",
+          "tradeoff": "عبور مواسير قد يصطدم بالرأس الصافي 2500 أو كمر/أسلاك موجودة.",
+          "site_hold": "مهندسو الكهرباء/HVAC يوثقوا المسارات القائمة والرأس؛ لا إغلاق دائم قبل الوصول للصيانة."
+        },
+        {
+          "id": "HALL-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "Public/private عند OP-HALL-RECP؛ bath threshold عند OP-HALL-BATHC مع night route.",
+          "tradeoff": "A يوحّد المنطقة الخاصة؛ B أسهل تنظيفًا بصريًا لكنه يزيد فواصل غرف النوم.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "Public/private عند OP-HALL-RECP؛ bath threshold عند OP-HALL-BATHC مع night route.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "WIC-01",
+      "name_ar": "الدريسنج",
+      "source_object_ids": [
+        "starter-4",
+        "starter-5"
+      ],
+      "m1_zone_ids": [
+        "WIC-01.E1",
+        "WIC-01.L1",
+        "WIC-01.H1",
+        "WIC-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/WIC-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "آش فاتح plain بمقابض خطية صغيرة، خط قاعدة مدخن؛ تقسيم داخل الدولاب مستقبلًا بعد احتياج المالك.",
+        "ضوء يظهر ألوان الملابس، تشغيل يدوي وفصل عن ليل غرفة النوم. المرآة بلا إطار ثقيل، مسار الأبواب يبقى ثابتًا."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "plain آش فاتح أسهل للوصول والتنظيف من زخرفة مخددة؛ A لو عايز نعومة ivory أكبر.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "WIC-01.E1",
+          "layer": "E",
+          "label": "تحكم وصيانة",
+          "use": "تحكم ناحية الدخول من MBR، خدمة drivers في حيز جاف متاح؛ لا مأخذ grooming مفترض داخل splash محتمل.",
+          "tradeoff": "باب BATH-M01 وحركة مستخدمين قد تخفي المفتاح أو driver وراء النجارة.",
+          "site_hold": "جرّب OP-MBR-WIC وOP-WIC-BATHM مع أبواب الخزائن مفتوحة ويد تحمل هدوم."
+        },
+        {
+          "id": "WIC-01.L1",
+          "layer": "L",
+          "label": "وجوه الخزائن",
+          "use": "طبقة عامة للممر ومهمة رأسيّة للخزانتين الشمالية والجنوبية؛ لون القماش يراجع بعينات حقيقية.",
+          "tradeoff": "نور من السقف وحده يتغطى بالجسم؛ LED داخل النجارة يزيد driver وتنظيف وصيانة وحرارة قرب الهدوم.",
+          "site_hold": "اختبر فتح الضلف بالكامل والظل على رفوف/وجه الخزانة وخدمة driver؛ حساس باب اختياري مع override."
+        },
+        {
+          "id": "WIC-01.H1",
+          "layer": "H",
+          "label": "رطوبة ووصول للحمّام",
+          "use": "تحقق من انتقال رطوبة ensuite والتهوية ومسار خدمة extraction؛ لا تكييف مستقل مفترض.",
+          "tradeoff": "إنارة أو access عند فتحة الحمّام لا يجوز اعتبارها منطقة كهرباء جافة بدون تقييم splash.",
+          "site_hold": "وثّق OP-WIC-BATHM مع shower مستخدم، العادم ومسار الصيانة وعلاقة الthreshold."
+        },
+        {
+          "id": "WIC-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+          "tradeoff": "راحة قدم مقابل رطوبة shower؛ اختبار splash وlevel قبل المنتج.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "BATH-M01",
+      "name_ar": "الحمّام الرئيسي",
+      "source_object_ids": [
+        "starter-15",
+        "R1-ensuite-vanity",
+        "BATHM-WALKIN-A1",
+        "BATHM-A1-mirror",
+        "BATHM-glass-600-A1",
+        "BATHM-shampoo-shelf-A1",
+        "BATHM-shampoo-shelf-A2"
+      ],
+      "m1_zone_ids": [
+        "BATH-M01.E1",
+        "BATH-M01.L1",
+        "BATH-M01.H1",
+        "BATH-M01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BATH-M01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "نفس الشاور والـvanity؛ بورسلين greige قليل العروق، واجهة ash-look plain بمقابض صريحة ونيكل.",
+        "مرآة بإضاءة أمامية لا حلقة قوية فقط؛ مناشف olive، حامل مستقيم سهل الفك. تقليل الخامات يريح الصيانة؛ منصة النوم لا تستمر في الأرض المبلولة."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "C",
+        "reason": "B أقل عروق وأسهل قراءة؛ C يعطي دفء الحجر بالبورسلين نفسه دون كلفة عناية رخام طبيعي.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BATH-M01.E1",
+          "layer": "E",
+          "label": "حلاقة آمنة فقط",
+          "use": "حاجة grooming محتملة قريبة من vanity وظيفيًا؛ لا نرسم مأخذ في splash ولا نقرر حماية/ارتفاع.",
+          "tradeoff": "وجود مراية لا يثبت منطقة جافة. قد تكون أفضل نتيجة عدم تركيب مأخذ حتى يحدد الكهربائي wet zones.",
+          "site_hold": "الكهربائي يرسم wet zoning طبق الموقع، الحوض والشاور والمستخدم؛ يلزم qualified signoff قبل أول fixing."
+        },
+        {
+          "id": "BATH-M01.L1",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "use": "نور وجه + عام diffuse مستقلة؛ إرشاد دخول هادي؛ وظيفة shower العامة مع wet-safe equipment يحددها المختص.",
+          "tradeoff": "مفيش سبوت أو wiring معتمد فوق shower؛ الضوء الأمامي أجدى للوجه من spot رأسي فقط.",
+          "site_hold": "راجع ارتفاع المراية، glare على glass، curtain/سقف إن وجد وwet zoning؛ driver وصيانة خارج splash المعتمد."
+        },
+        {
+          "id": "BATH-M01.H1",
+          "layer": "H",
+          "label": "عادم ومياه ووصول",
+          "use": "استخراج رطوبة بعد الاستخدام ومحبس/سيفون متاح؛ حافظ على دخول الشاور والوصول للشاشة/الصرف.",
+          "tradeoff": "مسار العادم إلى الخارج غير معلوم؛ دراسة 900 غير مختارة ولا تحل أول fixing. الـ832 nominal ليس ممرًا مثبتًا.",
+          "site_hold": "راجع shaft وmakeup air وارتفاع drain وفروق منسوب WIC؛ wet engineer يراجع splash مع الباب مفتوحًا."
+        },
+        {
+          "id": "BATH-M01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+          "tradeoff": "بلاط قليل الفواصل قد يسهل تنظيفه لكنه لا يثبت إمكانية الميل؛ wet engineer يقرر.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "BATH-C01",
+      "name_ar": "الحمّام العائلي",
+      "source_object_ids": [
+        "starter-16",
+        "starter-17",
+        "starter-18",
+        "BATHC-A1-mirror",
+        "BATHC-shampoo-shelf-A1",
+        "BATHC-wall-towel-cabinet-A2"
+      ],
+      "m1_zone_ids": [
+        "BATH-C01.E1",
+        "BATH-C01.L1",
+        "BATH-C01.H1",
+        "BATH-C01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BATH-C01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "greige مطفي، plain ash-look وخط نيكل واحد؛ نفس كل fixtures.",
+        "منسوجات neutral بحافة olive، تخزين مغلق؛ removable shelf بدل niche. مراجعة الفراغ أمام الباب وملاءمة shower F1 في الرفع."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يقلل عدد الخامات والإكسسوارات؛ A ivory لو الضوء الطبيعي ضعيف، من غير تعديل F1 تلقائي.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BATH-C01.E1",
+          "layer": "E",
+          "label": "grooming مؤهل فقط",
+          "use": "حاجة grooming قرب vanity بعد خريطة wet zones؛ لا socket point جاهز.",
+          "tradeoff": "المساحة الصغيرة والكابينة لا يتركوا dry zone مضمون؛ عدم تركيب نقطة قد يكون البديل المناسب.",
+          "site_hold": "كهربائي/مهندس wet يوثّقوا splash وstanding use والباب والcabinet قبل تحديد المعدات."
+        },
+        {
+          "id": "BATH-C01.L1",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "use": "وجه واضح + عام لا يعتمد على المراية + إرشاد ليلي مع override؛ shower light coverage ضمن العام المؤهل.",
+          "tradeoff": "انعكاس الزجاج وظل cabinet يغيروا الضوء. مفيش اعتماد IP أو lux في النموذج.",
+          "site_hold": "جرب الوجه عند basin والوهج مع باب shower/cabinet؛ قِس سقف ومكان access مستقل."
+        },
+        {
+          "id": "BATH-C01.H1",
+          "layer": "H",
+          "label": "عادم وصرف وصيانة",
+          "use": "عادم رطوبة ومحابس/siphon قابلة للوصول بدون فك cabinet؛ وصول للشاور بعد اختبار hinge الفعلي.",
+          "tradeoff": "580mm بصري لا يحدد عرض دخول حقيقي؛ south/west outward مش آمن افتراضيًا في الدراسة.",
+          "site_hold": "HVAC يثبت الخارج؛ wet engineer/supplier يثبت opening mechanism، drain/waterproofing، وتداخل باب الحمام الاسمي 656.7."
+        },
+        {
+          "id": "BATH-C01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+          "tradeoff": "تنسيق لون لا يختار tray أو hinge ولا يؤكد grip؛ specimen وwet signoff.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "KIT-01",
+      "name_ar": "المطبخ",
+      "source_object_ids": [
+        "starter-20",
+        "starter-21",
+        "starter-22",
+        "starter-23",
+        "K3-corner",
+        "K3-dishwasher",
+        "K3-sink-base",
+        "K3-end-landing",
+        "K3-laundry-niche",
+        "KIT-A1-north-backsplash",
+        "KIT-A1-west-backsplash",
+        "KIT-A1-upper-north",
+        "KIT-A1-upper-west-low",
+        "KIT-A1-upper-west-high",
+        "KIT-fridge-end-panel"
+      ],
+      "m1_zone_ids": [
+        "KIT-01.E1",
+        "KIT-01.E2",
+        "KIT-01.E3",
+        "KIT-01.E4",
+        "KIT-01.L1",
+        "KIT-01.L2",
+        "KIT-01.H1",
+        "KIT-01.H2",
+        "KIT-01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/KIT-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "P0 نفسه؛ واجهات greige plain وآش خفيف محدود، سطح عاجي سادة يخفف الخشب المدخن.",
+        "لمسة B من الخطوط المقفولة لا من حذف الأجهزة. task مستقل عن العام، خدمات الغسالة في المطبخ كما المصدر؛ extraction ومسار المواسير HOLD."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A يحافظ على السابقة البصرية R4 ivory كمرجع مطبخ؛ B plain greige بديل أهدى، P0 ثابت في الاثنين.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "KIT-01.E1",
+          "layer": "E",
+          "label": "أجهزة قابلة للفصل",
+          "use": "حاجة خدمات الموقد على الضلع الغربي، الثلاجة بالركن الجنوبي الشرقي، وDW تحت الضلع الشمالي؛ فصل قابل للوصول من حيز مجاور جاف، مش وراء جهاز مسحوب.",
+          "tradeoff": "starter-22 تمثيل stove، مش موديل وقود مؤكد؛ نوع الطاقة والمخارج يتحددوا بالمعدات المختارة لاحقًا.",
+          "site_hold": "وثّق الخدمات الحالية على الضلعين؛ افتح أبواب fridge وDW بالكامل وجرب الوصول للفصل بدون فك جهاز."
+        },
+        {
+          "id": "KIT-01.E2",
+          "layer": "E",
+          "label": "تحضير وكوفي",
+          "use": "مخارج استخدام صغيرة على منطقة تحضير الضلع الغربي أو landing الحالي؛ اختيار موضع الكوفي بعد تجربة حوض/موقد وتجفيف سطح.",
+          "tradeoff": "landing الحالي ضحل؛ ما نحشرش كوفي ثابت أو سلك فوق الحوض/الموقد. الاستخدام المتزامن سؤال كهربائي لاحق، مش حمل مفترض.",
+          "site_hold": "جرب حجم أدواتك الفعلية والبخار ومسافة استخدام اليد؛ الكهربائي يحدد منطقة جافة ونظام حماية مناسب."
+        },
+        {
+          "id": "KIT-01.E3",
+          "layer": "E",
+          "label": "تحكم وخيار طبخ جديد",
+          "use": "تحكم إنارة من ناحية دخول OP-RECP-KIT؛ احتياطي وظيفي لطبخ كهربائي محتمل بلا نقطة فرن مرسومة.",
+          "tradeoff": "kit-oven القديم parked؛ مفيش مكان عمود أو مسار حمل مستنتج منه.",
+          "site_hold": "سجل رغبة المالك في نوع الطبخ وصوّر الخدمات؛ اختبر باب P0 والضلفة قبل اعتماد أي موضع."
+        },
+        {
+          "id": "KIT-01.E4",
+          "layer": "E",
+          "label": "غسالة داخلية جديدة",
+          "use": "حاجة تغذية وفصل لغسالة محتملة في النيش الداخلي الحالي؛ مفهوم جديد مرتبط بالمصدر، مش نقل تلقائي من التراس.",
+          "tradeoff": "الغسالة نفسها غير ممثلة كجهاز؛ النيش احتياطي محفوظ. لا تعتبر indoor وterrace تشغيلين متزامنين.",
+          "site_hold": "تأكد من أبعاد النيش وفتح الجهاز وإمكانية فصل آمن؛ راجع الكهرباء والمياه والصرف معًا."
+        },
+        {
+          "id": "KIT-01.L1",
+          "layer": "L",
+          "label": "عام وتنظيف",
+          "use": "مجموعة عامة مستقلة تصل الممشى والباب؛ تحكم يدوي من ناحية دخول P0. night للمرور إلى التراس وظيفة منخفضة الوهج ضمن المجموعة لو الأجهزة المختارة تسمح.",
+          "tradeoff": "المهمة تحت الوحدات لا تكفي وحدها للتنظيف أو الوصول للثلاجة؛ لا عدد fixtures مفترض.",
+          "site_hold": "قِس السقف وأي beam أو خدمة قائمة، وجرب ظل المستخدم على الممر والثلاجة والباب."
+        },
+        {
+          "id": "KIT-01.L2",
+          "layer": "L",
+          "label": "مهمة L2 مستقلة",
+          "use": "مهمة أسفل الوحدات الشمالية والغربية الحالية؛ R6 L2 مرجع اتجاه بصري مع R4 ivory وR5 greige فقط؛ تحكم مستقل يدوي عن العام.",
+          "tradeoff": "R6 مش دائرة كهربائية. driver لازم يتصان؛ إضاءة الحوض والغربي ما تتغطاش بظل الجسم أو وهج backsplash.",
+          "site_hold": "راجع FRONT_SCHEDULE وINSTALLER_REQUIREMENTS؛ جرّب العمل عند الحوض/التحضير وحدد خدمة driver بعيد عن المياه."
+        },
+        {
+          "id": "KIT-01.H1",
+          "layer": "H",
+          "label": "استخراج الموقد",
+          "use": "منطقة استخراج فوق تمثيل الموقد على الضلع الغربي الحالي، مع وصول لفلتر grease وفصل خدمة.",
+          "tradeoff": "مفيش هود مثبت في source ولا نهاية دكت مؤكدة؛ تهوية تدوير ليست بديلًا مفترضًا للعادم.",
+          "site_hold": "HVAC يوثّق shaft/خروج خارجي وتعويض الهواء، نمط الوقود وfire/واجهة؛ لا route أو ثقب مرسوم كمصرح."
+        },
+        {
+          "id": "KIT-01.H2",
+          "layer": "H",
+          "label": "مياه وصرف وخدمة driver",
+          "use": "محابس وسيفون الحوض وDW والغسالة الداخلية المحتملة متاحين؛ خدمات الأجهزة على الشمال وdriver lighting في حيز جاف يحدده المختص.",
+          "tradeoff": "front removal ليس خدمة متاحة تلقائيًا؛ النيش ليس غسالة مركبة. فصل الكهرباء والخدمات بعيد عن التسريب يحدده trades.",
+          "site_hold": "سباك وكهربائي يراجعوا محابس/صرف وفتح باب الجهاز والوصول للسيفون وdriver؛ لا تعديل slab أو صرف تراس مفترض."
+        },
+        {
+          "id": "KIT-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+          "tradeoff": "اللون المستمر يقلل تقسيم المكان؛ لا يعني نفس slip/wet performance أو منسوب التنفيذ.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "TER-SVC",
+      "name_ar": "البلكونة الخدمية",
+      "source_object_ids": [],
+      "m1_zone_ids": [
+        "TER-SVC.E1",
+        "TER-SVC.L1",
+        "TER-SVC.H1",
+        "TER-SVC.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-SVC/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "A",
+      "narrative": [
+        "grip greige وجدار عملي فاتح؛ B هنا ترتيب وصيانة، مش خشب خارجي.",
+        "أي تخزين خدمة قابل للفك بعد رفع موقع drain/AC؛ لا غطاء ولا نقل معدات أو أحمال. مفاتيح يدوية واضحة."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B تشطيب عملي وقليل الزينة؛ A درجات أفتح فقط. مسار الخدمة أهم من لغة التصميم هنا.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-SVC.E1",
+          "layer": "E",
+          "label": "تحكم وخدمة قائمة",
+          "use": "تحكم light من ناحية المطبخ قبل الوصول للتراس؛ أي مأخذ تنظيف جديد حسب حاجة مؤكدة وتصريح outdoor.",
+          "tradeoff": "لا نقطة غسالة أو water/drain مخصصة لغسالة مفترضة على التراس.",
+          "site_hold": "جرّب OP-KIT-TERSVC كامل الفتح؛ سجل أي خدمات فعلية واحتمال المطر والكهرباء القائمة."
+        },
+        {
+          "id": "TER-SVC.L1",
+          "layer": "L",
+          "label": "إنارة خدمة",
+          "use": "إنارة عامة للخدمة والتنظيف، تحكم يدوي داخلي؛ task تجفيف بسيط ضمن العام وليس جهاز dryer.",
+          "tradeoff": "المصدر لا يسجل سقف تراس مثبت؛ نوع fixture/التثبيت يتحدد بعد survey.",
+          "site_hold": "قِس الواجهة/السقف والحماية من الجو واختبر ظل باب المطبخ."
+        },
+        {
+          "id": "TER-SVC.H1",
+          "layer": "H",
+          "label": "تجفيف وتصريف اختياري",
+          "use": "تجفيف طبيعي برف removable لو المالك محتاج + sensor تسريب اختياري قرب تجمع ماء فعلي؛ لا جهاز dryer.",
+          "tradeoff": "الباب والخروج والتنظيف أولى من rack؛ sensor ليس بديل drain/waterproofing.",
+          "site_hold": "صور المصرف والمطر واتجاه الهواء والخلوص بعد فتح الباب؛ trade يراجع drain والواجهة."
+        },
+        {
+          "id": "TER-SVC.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "OP-KIT-TERSVC door swing + drain؛ مفيش منصة غسالة أو تغيير slab مفترض.",
+          "tradeoff": "تنظيف وتجفيف وصيانة drain قبل هيئة البلاط؛ ميول/مناسيب TBD.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "OP-KIT-TERSVC door swing + drain؛ مفيش منصة غسالة أو تغيير slab مفترض.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "WC-01",
+      "name_ar": "حمّام الضيوف",
+      "source_object_ids": [
+        "starter-25",
+        "starter-26",
+        "WC-A1-mirror"
+      ],
+      "m1_zone_ids": [
+        "WC-01.E1",
+        "WC-01.L1",
+        "WC-01.H1",
+        "WC-01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/WC-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "A",
+      "narrative": [
+        "نفس الحوض؛ بورسلين greige plain، قاعدة ash-look خفيفة وخط نيكل.",
+        "إضاءة وجه أمامية لا لمبة سقف وحدها؛ dish سيراميك صغير جاف، لا shelf بارز قرب الباب. شكله أهدى وسهل المسح."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A ivory خفيف بصريًا في حوض المصدر الصغير؛ B أبسط، لا نحول الاختيار لطلب توسيع الحوض.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "WC-01.E1",
+          "layer": "E",
+          "label": "تحكم قبل الدخول",
+          "use": "مفتاح ناحية الوصول للباب من RECP خارج splash يحدده الكهربائي؛ لا مأخذ إضافي مفترض في WC.",
+          "tradeoff": "المراية/الباسين الصغير لا يثبتوا منطقة جافة؛ ضلفة الباب حاسمة للوصول.",
+          "site_hold": "جرّب OP-RECP-WC مفتوح ومقفول؛ الكهربائي يحدد جانب التحكم المسموح ونطاق splash."
+        },
+        {
+          "id": "WC-01.L1",
+          "layer": "L",
+          "label": "وجه وعام منفصلان",
+          "use": "نور وجه للباسين الحالي وعام diffuse مستقل؛ كلاهما يدوي، مش جسم مصدر 450×250 غير موجود.",
+          "tradeoff": "starter-26 اتغير عن القديم؛ وقفة الوجه وغسيل اليدين لازم يتجربوا بدل نقل موضع نور قديم.",
+          "site_hold": "جرّب شخص أمام الحالي وباب WC مفتوح، ارتفاع المرآة والظل؛ اقتراح B يظل خيارًا منفصلًا."
+        },
+        {
+          "id": "WC-01.H1",
+          "layer": "H",
+          "label": "عادم ومحبس",
+          "use": "تهوية روائح وخدمة drain/mحبس الباسين الحالي؛ عادم بعيد عن المستخدم وaccess متاح.",
+          "tradeoff": "مسار الخروج غير معلوم؛ صغر الغرفة لا يبرر ثقب واجهة أو صرف جديد.",
+          "site_hold": "HVAC/سباك يصوروا shaft وخروج محتمل ويجربوا الوصول للسيفون مع الباب؛ review #19."
+        },
+        {
+          "id": "WC-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+          "tradeoff": "تقليل joints خلف WC يسهل التنظيف؛ الميول والحافة تحتاج مسح.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "TER-MAIN",
+      "name_ar": "البلكونة الرئيسية",
+      "source_object_ids": [
+        "starter-41",
+        "starter-42",
+        "starter-43"
+      ],
+      "m1_zone_ids": [
+        "TER-MAIN.E1",
+        "TER-MAIN.L1",
+        "TER-MAIN.H1",
+        "TER-MAIN.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-MAIN/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "A",
+      "narrative": [
+        "هيكل كرسي مستقيم معدن داكن مع textile olive خارجي removable؛ نفس الطاولة والكراسي.",
+        "زينة أقل وصينية بسيطة، لا rug داخلية تحبس ماء. خصوصية من الستارة الداخلية أولًا؛ الصرف والمسار قبل النبات."
+      ],
+      "room_judgment": {
+        "lead": "C",
+        "alternate": "B",
+        "reason": "C لمسة outdoor دافئة بوسائد قابلة للفك؛ B إطار بسيط وتراب أقل، بدون أي غطاء جديد.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-MAIN.E1",
+          "layer": "E",
+          "label": "خارجية اختيارية",
+          "use": "حاجة تنظيف/استخدام اختياري قرب القعدة مع تحكم light من الداخل؛ لا سلك يعبر فتحة GLZ-RECP-TERMAIN.",
+          "tradeoff": "تغذية خارجية اختيارية قد تضيف تسريب/تثبيت واجهة؛ إبقاؤها بدون مأخذ خيار حتى يثبت الاحتياج.",
+          "site_hold": "وثّق المطر والتصريف والمخارج القائمة وفتح الزجاج؛ كهربائي ومطور يحددوا إذن وحماية خارجية."
+        },
+        {
+          "id": "TER-MAIN.L1",
+          "layer": "L",
+          "label": "قعدة بلا وهج",
+          "use": "عام خارجي هادي موجّه للقعدة + accent اختياري، مستقل عن القعدة الداخلية، مفتاح يدوي من الداخل.",
+          "tradeoff": "fixture ظاهر على الواجهة يحتاج تصريح؛ لا uplight للجيران ولا blocking للزجاج.",
+          "site_hold": "اختبر وهج من الداخل/الجيران وصور الواجهة وارتفاع السقف الحقيقي إن وجد."
+        },
+        {
+          "id": "TER-MAIN.H1",
+          "layer": "H",
+          "label": "مراجعة مكثف فقط",
+          "use": "سؤال feasibility لمكان condenser مع المطور؛ مفيش وحدة أو route مرسومة كمثبتة.",
+          "tradeoff": "Noise/hot exhaust/service قد يفسدوا القعدة؛ البديل موقع مطور معتمد خارج التراس إن توفر.",
+          "site_hold": "خذ مخطط developer لمواقع الوحدات وحمل التثبيت/الصرف والضوضاء؛ HVAC يصمم المسار بعده."
+        },
+        {
+          "id": "TER-MAIN.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "GLZ-RECP-TERMAIN فصل indoor/outdoor؛ drain/door weather seals وفرق منسوب TBD.",
+          "tradeoff": "لا seamless indoor-to-outdoor مزعوم؛ الحماية من المطر أهم من صورة استمرار اللون.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "GLZ-RECP-TERMAIN فصل indoor/outdoor؛ drain/door weather seals وفرق منسوب TBD.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "B",
+      "room_id": "RECP-01",
+      "name_ar": "الريسبشن والسفرة والمدخل العام",
+      "source_object_ids": [
+        "starter-27",
+        "starter-28",
+        "starter-29",
+        "starter-30",
+        "starter-31",
+        "starter-32",
+        "starter-35",
+        "starter-36",
+        "starter-37",
+        "starter-38",
+        "starter-39",
+        "starter-40",
+        "A2-dining-chair-north-centre",
+        "A2-dining-chair-south-centre",
+        "S1-living-side-table",
+        "A-dining-sideboard",
+        "A-dining-pendant",
+        "A1-entry-mirror",
+        "A2-living-plant",
+        "S1-reading-lamp",
+        "V5-sideboard-lamp"
+      ],
+      "m1_zone_ids": [
+        "RECP-01.E1",
+        "RECP-01.E2",
+        "RECP-01.E3",
+        "RECP-01.E4",
+        "RECP-01.L1",
+        "RECP-01.L2",
+        "RECP-01.L3",
+        "RECP-01.H1",
+        "RECP-01.F1"
+      ],
+      "source_floor": {
+        "value": "lightoak",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/RECP-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "A",
+      "narrative": [
+        "كنبة ٢٨٨٠×٩٩٠ بإطار خشب ظاهر ووسائد مستقلة رمادي دافي؛ كُشن زيتوني واحد وlumbar كتان، بلا تكديس. كرسي إطار خشب بمقعد مبطن. السجادة نفسها بلون oatmeal سادة وحافة رفيعة. TV على قاعدة ash فاتح بخط أفقي داكن، تخزين مقفول بلا رفوف كثيرة.",
+        "سفرة مستطيلة بإطار خشب مدخن، ستة كراسي خشب ومقعد منسوج بصريًا؛ عرض المصدر ثابت. البندنت الموجود نموذج globe عام، والنية شكل ورقي مسطح أهدى بلا تغيير النقطة؛ النموذج لا يثبت صناعة الورق. سايدبورد آش plain. مرآة دائرية بإطار غامق رفيع وخزانة أحذية flush بلا screen جديد.",
+        "sheer كتان greige وblackout سادة بلا حواف زخرفية؛ التحكم يدوي حتى لو أضفنا موتور لاحقًا. فن حبر خطي واحد، سيراميك واحد منخفض. النبات الموجود فقط؛ الفراغ بين قطع الأثاث جزء من التصميم."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B أخف في السقف والفراغ، A أولى لو راحة الذراع أهم؛ لا نحكم من الصورة على القعدة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "RECP-01.E1",
+          "layer": "E",
+          "label": "تحكم الوصول",
+          "use": "مجموعات ترحيب/تنظيف/ليل من ناحية الوصول لباب الشقة؛ تشغيل يدوي قبل أي مشاهد ذكية.",
+          "tradeoff": "الدولاب الحالي ومستخدمه بيتداخلوا مع عينات حركة الباب؛ نقل المفتاح وحده ما يحلش مشكلة المرور.",
+          "site_hold": "صوّر OP-ENT-01 مفتوح ومقفول مع شخص بيستخدم الجزمة؛ اختبر الوصول للمفتاح من خارج ضلفة الباب."
+        },
+        {
+          "id": "RECP-01.E2",
+          "layer": "E",
+          "label": "TV وشبكة",
+          "use": "خدمات قابلة للوصول من جانب وحدة التلفزيون؛ مسار طاقة وبيانات منسق بدون أسلاك فوق الممشى.",
+          "tradeoff": "النقطة وراء التلفزيون بس ممكن تتدفن عند صيانة الشاشة؛ خلي فصل الخدمة متاح بدون سحب الوحدة كلها.",
+          "site_hold": "راجع فتح وحدة TV ومخارج الحائط الفعلية وامكانية فصل الطاقة والبيانات مع الكهربائي."
+        },
+        {
+          "id": "RECP-01.E3",
+          "layer": "E",
+          "label": "قراية وبوفيه",
+          "use": "تغذية لمبة القراية ناحية الكرسي الحالي ولمبة البوفيه ناحية سطحه؛ مفيش سلك عابر لطريق السفرة.",
+          "tradeoff": "الكرسي اتحرك عن A15؛ اللمبة الحالية مش ملاصقة له تلقائيًا. اختبر وصول اليد والسلك مع كرسي مشغول.",
+          "site_hold": "جرب قعدة القراية بجانب starter-32 وحدد طول سلك اللمبة ومسار التنظيف وفتح البوفيه."
+        },
+        {
+          "id": "RECP-01.E4",
+          "layer": "E",
+          "label": "احتياطي ستارة وتنقية",
+          "use": "احتياطي وظيفي فقط عند طرف ستارة الزجاج ومكان منقّي يختاره المالك؛ الستارة اليدوية هي fallback.",
+          "tradeoff": "موتور غير مختار؛ مفيش فولت أو موضع منقّي معتمد. الزجاج كامل الارتفاع ماينفعش يتغطى بعلبة سقف تخمينية.",
+          "site_hold": "قِس مكان مسار الستارة وفتحة الصيانة؛ جرّب المنقّي بعيد عن ممشى التراس وتيار التكييف."
+        },
+        {
+          "id": "RECP-01.L1",
+          "layer": "L",
+          "label": "عام ومشهد قعدة",
+          "use": "إنارة عامة مستقلة + إضاءة حائط/لمبات مريحة؛ تحكم يدوي لمشهد TV بدون وهج على الشاشة.",
+          "tradeoff": "زيادة السبوتات فوق الكنبة تجهد العين؛ قارن لمبات متنقلة مع مسار سقفي انتقائي من غير سقف ساقط شامل.",
+          "site_hold": "راجع انعكاس الضوء على TV من أماكن الجلوس وإغلاق الستائر؛ قِس الرأس الصافي."
+        },
+        {
+          "id": "RECP-01.L2",
+          "layer": "L",
+          "label": "سفرة مستقلة",
+          "use": "منطقة مهمة فوق السفرة الحالية والـpendant الموجود بالمصدر؛ مجموعة مستقلة قابلة للتعتيم فقط لو الأجهزة تدعم.",
+          "tradeoff": "الطاولة اتغيرت مكانًا؛ معلّق المصدر مجرد كتلة بصرية، وارتفاعه مش موافقة. ما تسحبش شبكة إنارة K12.",
+          "site_hold": "جرّب ستة أشخاص وكراسي مسحوبة، خط النظر تحت المعلّق، والمرور من باب المطبخ P0."
+        },
+        {
+          "id": "RECP-01.L3",
+          "layer": "L",
+          "label": "قراءة وaccent وليل",
+          "use": "مهمة قراءة منفصلة عند الكرسي الحالي، accent البوفيه اختياري، وإرشاد وصول من المدخل للطرقة مستقل عن عام القعدة.",
+          "tradeoff": "اللمبات المحمولة تحفظ سقف 2500 لكن سلكها لازم يبقى خارج المرور؛ night scene لا يعتمد على شبكة ذكية.",
+          "site_hold": "جرّب مدى الضوء واليد من كرسي مشغول، والمرور من المدخل للحمّام، ومفتاح كل لمبة قبل الربط بالمشاهد."
+        },
+        {
+          "id": "RECP-01.H1",
+          "layer": "H",
+          "label": "راحة القعدة والسفرة",
+          "use": "مراجعة منطقتي راحة داخل شكل L؛ شريط حائط مرشح على الجهة الشرقية بعيد عن الكنبة؛ اتجاه الهواء عبر الفراغ لا على القعدة.",
+          "tradeoff": "رأس واحد قد لا يغطي طرفي L؛ رأس ثانٍ يزيد المواسير والصيانة. العدد والحمل ومكان الرأس قرار مهندس بعد المسح.",
+          "site_hold": "HVAC يقارن توزيع الهواء وقت الستارة مقفولة وست كراسي مشغولة؛ يثبت صرف التكثيف وموافقة المكثف قبل أي مسار."
+        },
+        {
+          "id": "RECP-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "الفاصل عند باب المطبخ P0 والطرقة؛ بساط القعدة الحالي طبقة متحركة مش أرضية.",
+          "tradeoff": "surface خشبي أدفأ بصريًا؛ porcelain أسهل عند المدخل لكن يحتاج عينة وصوت مشي حقيقي.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "الفاصل عند باب المطبخ P0 والطرقة؛ بساط القعدة الحالي طبقة متحركة مش أرضية.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "TER-MBR",
+      "name_ar": "بلكونة غرفة النوم الرئيسية",
+      "source_object_ids": [
+        "starter-44"
+      ],
+      "m1_zone_ids": [
+        "TER-MBR.E1",
+        "TER-MBR.L1",
+        "TER-MBR.H1",
+        "TER-MBR.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-MBR/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "B",
+      "narrative": [
+        "نفس النبات في pot طيني محدود مقاوم للشمس؛ الأرض stone-look grip مرتبطة بالمصرف القائم.",
+        "لمسة متوسطية صغيرة من النبات لا من تغطية التراس؛ لا جدران حجر أو ربط ري ثابت. سحب ستارة النوم يظل ممكن."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A pot رملي هادي يحافظ على المصدر؛ B أقل تباين، الاختيار تابع للضوء والري لا لصورة مرجعية.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-MBR.E1",
+          "layer": "E",
+          "label": "خدمة اختيارية",
+          "use": "حاجة تنظيف اختيارية وتحكم من الداخل؛ احتياج الكهرباء يراجع قبل توفيرها.",
+          "tradeoff": "النبات مش مبرر لمأخذ ثابت؛ الماء والواجهة يحتاجوا تصريح وحماية.",
+          "site_hold": "صور الري والمطر وفتحة GLZ-MBR-TER؛ qualified outdoor review قبل تثبيت."
+        },
+        {
+          "id": "TER-MBR.L1",
+          "layer": "L",
+          "label": "طريق هادي",
+          "use": "إرشاد طريق خارجي منخفض الوهج بتحكم يدوي من MBR؛ accent نبات اختياري فقط.",
+          "tradeoff": "نور قوي يرتد على غرفة النوم؛ façade fixture غير معتمد.",
+          "site_hold": "اختبر وهج من المخدة والستارة ومسار التراس؛ راجع المطر والتثبيت."
+        },
+        {
+          "id": "TER-MBR.H1",
+          "layer": "H",
+          "label": "تصريف وواجهة",
+          "use": "تسجيل drain/weather access؛ لا condenser أو غسالة أو دكت مفترض على تراس النوم.",
+          "tradeoff": "مياه التراس لا تتوجه للغرفة؛ مسار خدمات يحتاج تصريح مستقل.",
+          "site_hold": "صور المصرف والعتبة والميول القائمة قبل التنظيف/التشطيب."
+        },
+        {
+          "id": "TER-MBR.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "GLZ-MBR-TER weather threshold؛ حافظ على drain ومسار الدخول حول النبات.",
+          "tradeoff": "grip اسم المصدر وليس اختبار منتج؛ عينة مبلولة وتصريح تثبيت.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "GLZ-MBR-TER weather threshold؛ حافظ على drain ومسار الدخول حول النبات.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "BR-01",
+      "name_ar": "غرفة النوم الأولى",
+      "source_object_ids": [
+        "starter-6",
+        "starter-7",
+        "starter-8",
+        "starter-9",
+        "V7-bedroom1-drawers",
+        "BR1-A1-art"
+      ],
+      "m1_zone_ids": [
+        "BR-01.E1",
+        "BR-01.E2",
+        "BR-01.E3",
+        "BR-01.L1",
+        "BR-01.H1",
+        "BR-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BR-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "B",
+      "narrative": [
+        "لوح سرير مبطن عاجي وحافة جوز؛ الدولاب رملي plain والمكتب جوز أخف؛ المقعد عاجي قابل للتنظيف.",
+        "فن olive/terracotta محدود لا نفس لوحة الريسبشن؛ كتان نهاري وblackout رملي. ضيافة ودراسة بالنفس الغلاف، من غير vanity أو سرير أكبر."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يسيب المكتب أوضح والتخزين هادي؛ A يعطي ملمسًا ألين لضيافة طويلة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BR-01.E1",
+          "layer": "E",
+          "label": "مكتب وبيانات",
+          "use": "خدمات laptop/شاشة/مهمة وبيانات اختيارية من جانب سطح المكتب الحالي؛ قابلية فصل بدون تحريك المكتب.",
+          "tradeoff": "الdesk قريب من جهة دخول الطرقة؛ الكرسي راجع للخلف والسلك تحت القدم خطر استخدام.",
+          "site_hold": "جرّب الكرسي راجع وOP-BR01-HALL كامل الفتح؛ تحقق من مخارج قائمة وحجم أجهزة المالك."
+        },
+        {
+          "id": "BR-01.E2",
+          "layer": "E",
+          "label": "سرير وتحكم دخول",
+          "use": "شحن/قراءة على جانبي السرير المتاحين وفق المرور؛ مفتاح دخول + إطفاء من السرير يدويًا.",
+          "tradeoff": "مفيش كومود مصدر في الغرفة؛ لا نفترض نجارة جديدة، ولا مخارج مدفونة خلف wardrobe.",
+          "site_hold": "جرّب نوم ووصول اليد على كل جانب وحدد أي جانب قابل للاستخدام؛ راجع الضلفة والwardrobe starter-7."
+        },
+        {
+          "id": "BR-01.E3",
+          "layer": "E",
+          "label": "ستارة احتياطية",
+          "use": "تحكم يدوي بالblackout عند GLZ-BR01-N؛ احتياطي موتور فقط بطلب لاحق.",
+          "tradeoff": "التغذية لا تعبر فتحة الزجاج ولا تدفن وراء curtain غير قابل للصيانة.",
+          "site_hold": "ارفع رأس الفتحة وعودة المسار ومكان خدمة موتور محتمل."
+        },
+        {
+          "id": "BR-01.L1",
+          "layer": "L",
+          "label": "عام ومهمة وليل",
+          "use": "عام مستقل عن مكتب/قراءة؛ accent لوحة اختياري؛ إرشاد دخول هادي بمفتاح يدوي عند السرير.",
+          "tradeoff": "تركيز task على المكتب يوفر راحة العمل بدون إضاءة الغرفة كلها ليلًا.",
+          "site_hold": "راجع ظل يد الكتابة على المكتب والوهج من السرير والستارة؛ لا lux أو عدد fixtures مفترض."
+        },
+        {
+          "id": "BR-01.H1",
+          "layer": "H",
+          "label": "راحة نوم وعمل",
+          "use": "شريط جهة الشرق مرشح للمراجعة؛ يوزع عبر الفراغ بعيد عن bed/desk؛ الفلتر قابل للخدمة.",
+          "tradeoff": "wardrobe starter-7 على الشرق قد يمنع الرأس؛ اختبر الحائط فوق/حول النجارة بدل افتراض غلافه دليل خدمة.",
+          "site_hold": "قِس ارتفاع النجارة والسقف وراجع jet عند pillow/work chair مع مهندس HVAC."
+        },
+        {
+          "id": "BR-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+          "tradeoff": "خشبي بصري لا يحدد wood أم timber-look أو قدرة تنظيف المنتج.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "BR-02",
+      "name_ar": "غرفة النوم الثانية",
+      "source_object_ids": [
+        "starter-10",
+        "starter-11",
+        "starter-12",
+        "starter-13",
+        "BR2-A1-art"
+      ],
+      "m1_zone_ids": [
+        "BR-02.E1",
+        "BR-02.E2",
+        "BR-02.E3",
+        "BR-02.L1",
+        "BR-02.H1",
+        "BR-02.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BR-02/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "B",
+      "narrative": [
+        "لوح سرير مبطن رملي، الدولاب عاجي والمكتب جوز محدود؛ كُشن طيني واحد مع قماش سادة.",
+        "رسم حبر واحد داخل موقع الفن المصدر؛ ستارة رملية بسيطة. لا كسوة ثقيلة ولا مكتبة إضافية؛ احتواء التحذير الوظيفي ينتقل لـ#72."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يقلل الملحقات في غرفة المكتب الأصغر؛ A بديل راحة، ولا واحد منهم يحل grid=0 بلا قياس.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BR-02.E1",
+          "layer": "E",
+          "label": "مكتب وبيانات جديدان",
+          "use": "منطقة workstation عند جانب المكتب الحالي بالشمال الغربي؛ data اختياري وطاقة منفصلان وظيفيًا.",
+          "tradeoff": "نقل المكتب غيّر وصول اليد وقرب الكرسي ومسار الباب؛ ما ننسخش أرقام A15 ولا ندمج data مع power.",
+          "site_hold": "جرب مستخدمًا جالسًا وكرسيًا مسحوبًا والطريق من OP-BR02-HALL؛ قِس socket access بعد المخطط الفعلي."
+        },
+        {
+          "id": "BR-02.E2",
+          "layer": "E",
+          "label": "سرير ودخول",
+          "use": "شحن/قراءة على جانبي السرير القابلين للوصول؛ إطفاء عام من الدخول ومن السرير.",
+          "tradeoff": "مدى الوصول على جانب قرب الحائط قد يحتاج حل مختلف عن الجانب المفتوح، من غير فرض كومود جديد.",
+          "site_hold": "جرب اليد عند pillow والمرور للwardrobe starter-13 مع الباب كامل الفتح."
+        },
+        {
+          "id": "BR-02.E3",
+          "layer": "E",
+          "label": "ستارة اختيارية",
+          "use": "manual blackout عند GLZ-BR02-N مع احتياطي خدمة لو اختار المالك موتور.",
+          "tradeoff": "المكتب/السرير قرب الشمال؛ تجنب سلك فوق طاولة العمل.",
+          "site_hold": "قِس curtain stack ومسار خدمة الرأس قبل اعتماد موتور."
+        },
+        {
+          "id": "BR-02.L1",
+          "layer": "L",
+          "label": "عام وقراءة ومهمة",
+          "use": "عام diffuse + task مكتب + قراءة مستقلة وإرشاد ليل ناحية الباب؛ accent اختياري على art الحالي.",
+          "tradeoff": "الغرفة نوم/عمل محتمل؛ مشهد العمل لازم ما يبقاش شرط تشغيل القراءة.",
+          "site_hold": "اختبر glare من السرير وشاشة المكتب؛ manual fallback لكل مجموعة."
+        },
+        {
+          "id": "BR-02.H1",
+          "layer": "H",
+          "label": "هواء بعيد عن السرير والمكتب",
+          "use": "شريط الجنوب مرشح للمراجعة مع wardrobe؛ راجع توزيع نفخ عبر الفراغ المفتوح.",
+          "tradeoff": "خزنة starter-13 قد تمنع خدمة الفلتر؛ الحائط المرشح مش وحدة أو اتجاه نفخ مصدق.",
+          "site_hold": "قِس النجارة والعوائق ومسار صرف التكثيف؛ راجع راحة الشخص الجالس والنائم."
+        },
+        {
+          "id": "BR-02.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+          "tradeoff": "فاصل أقل يفيد الحركة؛ عينة مقاومة خدش الكرسي مطلوبة.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "MBR-01",
+      "name_ar": "غرفة النوم الرئيسية",
+      "source_object_ids": [
+        "starter-1",
+        "starter-2",
+        "starter-3",
+        "V5-master-rug",
+        "V7-master-drawers",
+        "V5-master-bench",
+        "MBR-A1-art"
+      ],
+      "m1_zone_ids": [
+        "MBR-01.E1",
+        "MBR-01.E2",
+        "MBR-01.L1",
+        "MBR-01.L2",
+        "MBR-01.H1",
+        "MBR-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/MBR-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "B",
+      "narrative": [
+        "السرير نفسه بلوح قماش channel داخل الغلاف وجوز جانبي؛ كومودين جوز، أدراج plain. bench المصدر عاجي؛ سجادة رملية مسطحة.",
+        "قماش عاجي مع مخدة طينية صغيرة وthrow نسج رملي؛ blackout كتان دافي. لوحة earth abstract الأصلية، نيكل عملي في لمبة القراءة ولمسة برونز على المرآة فقط."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A أنعم للنوم واللوح المبطن؛ B أبسط للتنظيف لكن منصة السرير تحتاج تجربة ارتفاع فعلية.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "MBR-01.E1",
+          "layer": "E",
+          "label": "جانبي السرير",
+          "use": "شحن ولمبة قراءة مستقلة لكل كومود؛ موضع وظيفي على الجانب القابل للوصول واليد على المخدة، مش خلف ظهر السرير.",
+          "tradeoff": "الجنبين محفوظين بالمصدر لكن الوصول الفعلي غير مقاس؛ سلك الشحن لا يعبر الطريق للتراس أو الدريسنج.",
+          "site_hold": "جرّب اليد من كل مخدة وفتح أدراج كل كومود والسرير بالحجم الحقيقي، مع الكهربائي قبل تحديد الارتفاع."
+        },
+        {
+          "id": "MBR-01.E2",
+          "layer": "E",
+          "label": "دخول وستارة وتنقية",
+          "use": "مفتاح من ناحية دخول الطرقة متبادل الوظيفة مع تحكم بجانب السرير؛ ستارة manual + احتياطي موتور لو مطلوب.",
+          "tradeoff": "منقّي اختياري بعيد عن المخدة؛ لا موضع جهاز أو فولت موتور مختار.",
+          "site_hold": "اختبر ضلفة OP-MBR-HALL والدريسنج والمشي للتراس؛ صور خلوص curtain حول GLZ-MBR-TER."
+        },
+        {
+          "id": "MBR-01.L1",
+          "layer": "L",
+          "label": "عام وقراءة",
+          "use": "طبقة عامة مريحة + مهمة على جانبي السرير ومشهد accent اختياري عند لوحة الحائط؛ كل وظيفة أساسية لها تحكم يدوي.",
+          "tradeoff": "لا سبوت مكشوف فوق العين؛ لمبات جانبية أسهل صيانة من cornice شامل عند 2500 صافٍ.",
+          "site_hold": "اختبر الوهج مستلقيًا ومقاس سقف/ستارة؛ اختيار fixtures بعد عينة واقعية."
+        },
+        {
+          "id": "MBR-01.L2",
+          "layer": "L",
+          "label": "طريق ليل",
+          "use": "إرشاد هادي من جانب السرير ناحية WIC والحمّام، مستقل عن العام؛ حساس اختياري مع تعطيل يدوي.",
+          "tradeoff": "الضوء لا يصب على النائم ولا يمتد wiring داخل حيز shower غير محدد.",
+          "site_hold": "راجع الطريق بأبواب مفتوحة/مقفولة وعتبات فعلية؛ جرب الضوء مع مستخدم ليلي."
+        },
+        {
+          "id": "MBR-01.H1",
+          "layer": "H",
+          "label": "هواء بعيد عن المخدة",
+          "use": "شريط جهة الشرق/الدخول مرشح للمراجعة؛ نفخ عبر الفراغ المفتوح لا فوق pillow line؛ وصول للفلتر.",
+          "tradeoff": "الأبواب للدريسنج والطرقة تحد أماكن الرأس؛ شريط المراجعة ليس موضع وحدة مثبتة.",
+          "site_hold": "HVAC يراجع الحمل والضوضاء ومسار التكثيف والرأس وموافقة المكثف؛ اختبار نفخ عند المخدتين."
+        },
+        {
+          "id": "MBR-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+          "tradeoff": "الاستمرارية أهدى؛ مقاومة رطوبة الدريسنج تحتاج اختيار فعلي منفصل.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "HALL-01",
+      "name_ar": "الطرقة الخاصة",
+      "source_object_ids": [
+        "V5-hall-mirror"
+      ],
+      "m1_zone_ids": [
+        "HALL-01.E1",
+        "HALL-01.L1",
+        "HALL-01.H1",
+        "HALL-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/HALL-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "travertine",
+      "m1_floor_option": "B",
+      "narrative": [
+        "حجر العمومي مستمر في الهول، أبواب عاجي دافي؛ مرآة جوز رفيعة ولوحة حبر واحدة.",
+        "limewash-look قابل للمسح كنية على الحائط الجاف؛ لا تكسية حجر ولا أقواس. فصل الحجر/خشب النوم على خط الباب، فرق المنسوب غير معروف."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "C",
+        "reason": "B خط جاف متصل وأبواب هادئة؛ C يختبر stone public spine، لكن لا نضيف تكسية بارزة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "HALL-01.E1",
+          "layer": "E",
+          "label": "تحكم طرفي الطرقة",
+          "use": "تحكم يدوي متبادل الوظيفة من جهة RECP ومن جهة MBR؛ خارج مناطق ضلف الغرف؛ مأخذ تنظيف وظيفي إن مطلوب.",
+          "tradeoff": "المراية موجودة بجهة الجنوب؛ نقطتان قريبتان من بابين لا تعنيان مفتاحًا قابلًا للوصول.",
+          "site_hold": "صوّر OP-HALL-RECP وOP-MBR-HALL وكل ضلفة جارّة؛ جرّب فتح باب الحمّام والسرير عند الوصول للمفتاح."
+        },
+        {
+          "id": "HALL-01.L1",
+          "layer": "L",
+          "label": "عام وطريق ليل",
+          "use": "عام سقفي أو حائطي انتقائي + إرشاد ليلي مستقل للحمّام؛ حساس اختياري manual override من الطرفين.",
+          "tradeoff": "سقف منخفض مستمر يعاقب الطرقة كلها؛ نقطة مضيئة قد تنعكس على المراية وتزعج غرف مفتوحة.",
+          "site_hold": "جرب انعكاس المراية وراحة العين من أبواب الغرف؛ قِس السقف وأي خدمات قائمة."
+        },
+        {
+          "id": "HALL-01.H1",
+          "layer": "H",
+          "label": "تقاطعات وخدمة",
+          "use": "تسجيل مرور خدمات محتمل فقط؛ access فوق الأبواب إن لزم، لا وحدة تكييف أو دكت مفترض داخل الطرقة.",
+          "tradeoff": "عبور مواسير قد يصطدم بالرأس الصافي 2500 أو كمر/أسلاك موجودة.",
+          "site_hold": "مهندسو الكهرباء/HVAC يوثقوا المسارات القائمة والرأس؛ لا إغلاق دائم قبل الوصول للصيانة."
+        },
+        {
+          "id": "HALL-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "Public/private عند OP-HALL-RECP؛ bath threshold عند OP-HALL-BATHC مع night route.",
+          "tradeoff": "A يوحّد المنطقة الخاصة؛ B أسهل تنظيفًا بصريًا لكنه يزيد فواصل غرف النوم.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "Public/private عند OP-HALL-RECP؛ bath threshold عند OP-HALL-BATHC مع night route.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "WIC-01",
+      "name_ar": "الدريسنج",
+      "source_object_ids": [
+        "starter-4",
+        "starter-5"
+      ],
+      "m1_zone_ids": [
+        "WIC-01.E1",
+        "WIC-01.L1",
+        "WIC-01.H1",
+        "WIC-01.F1"
+      ],
+      "source_floor": {
+        "value": "parquet",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/WIC-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "lightoak",
+      "m1_floor_option": "B",
+      "narrative": [
+        "واجهات رملية مع جوز على حدود قليلة، داخلي ivory؛ نفس الدولابين والمرآة.",
+        "قطعة برونز صغيرة في المقبض فقط. لا نحول الـWIC لغرفة ديكور؛ surface قابل للمسح وفتحات الصيانة متاحة."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "plain آش فاتح أسهل للوصول والتنظيف من زخرفة مخددة؛ A لو عايز نعومة ivory أكبر.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "WIC-01.E1",
+          "layer": "E",
+          "label": "تحكم وصيانة",
+          "use": "تحكم ناحية الدخول من MBR، خدمة drivers في حيز جاف متاح؛ لا مأخذ grooming مفترض داخل splash محتمل.",
+          "tradeoff": "باب BATH-M01 وحركة مستخدمين قد تخفي المفتاح أو driver وراء النجارة.",
+          "site_hold": "جرّب OP-MBR-WIC وOP-WIC-BATHM مع أبواب الخزائن مفتوحة ويد تحمل هدوم."
+        },
+        {
+          "id": "WIC-01.L1",
+          "layer": "L",
+          "label": "وجوه الخزائن",
+          "use": "طبقة عامة للممر ومهمة رأسيّة للخزانتين الشمالية والجنوبية؛ لون القماش يراجع بعينات حقيقية.",
+          "tradeoff": "نور من السقف وحده يتغطى بالجسم؛ LED داخل النجارة يزيد driver وتنظيف وصيانة وحرارة قرب الهدوم.",
+          "site_hold": "اختبر فتح الضلف بالكامل والظل على رفوف/وجه الخزانة وخدمة driver؛ حساس باب اختياري مع override."
+        },
+        {
+          "id": "WIC-01.H1",
+          "layer": "H",
+          "label": "رطوبة ووصول للحمّام",
+          "use": "تحقق من انتقال رطوبة ensuite والتهوية ومسار خدمة extraction؛ لا تكييف مستقل مفترض.",
+          "tradeoff": "إنارة أو access عند فتحة الحمّام لا يجوز اعتبارها منطقة كهرباء جافة بدون تقييم splash.",
+          "site_hold": "وثّق OP-WIC-BATHM مع shower مستخدم، العادم ومسار الصيانة وعلاقة الthreshold."
+        },
+        {
+          "id": "WIC-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+          "tradeoff": "راحة قدم مقابل رطوبة shower؛ اختبار splash وlevel قبل المنتج.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "BATH-M01",
+      "name_ar": "الحمّام الرئيسي",
+      "source_object_ids": [
+        "starter-15",
+        "R1-ensuite-vanity",
+        "BATHM-WALKIN-A1",
+        "BATHM-A1-mirror",
+        "BATHM-glass-600-A1",
+        "BATHM-shampoo-shelf-A1",
+        "BATHM-shampoo-shelf-A2"
+      ],
+      "m1_zone_ids": [
+        "BATH-M01.E1",
+        "BATH-M01.L1",
+        "BATH-M01.H1",
+        "BATH-M01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BATH-M01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "B",
+      "narrative": [
+        "نفس الشاور؛ travertine-look بورسلين بدل حجر مسامي، vanity walnut-look مقاوم للرطوبة؛ الحنفيات نيكل.",
+        "لمسة bronze في حامل جاف منفصل، مناشف عاجي وحد طيني. رف removable بلون الحجر، لا توسعة ولا niche بلا عزل وتصريح؛ نقل الضوء لا يفترض رفع سقف."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "C",
+        "reason": "B أقل عروق وأسهل قراءة؛ C يعطي دفء الحجر بالبورسلين نفسه دون كلفة عناية رخام طبيعي.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BATH-M01.E1",
+          "layer": "E",
+          "label": "حلاقة آمنة فقط",
+          "use": "حاجة grooming محتملة قريبة من vanity وظيفيًا؛ لا نرسم مأخذ في splash ولا نقرر حماية/ارتفاع.",
+          "tradeoff": "وجود مراية لا يثبت منطقة جافة. قد تكون أفضل نتيجة عدم تركيب مأخذ حتى يحدد الكهربائي wet zones.",
+          "site_hold": "الكهربائي يرسم wet zoning طبق الموقع، الحوض والشاور والمستخدم؛ يلزم qualified signoff قبل أول fixing."
+        },
+        {
+          "id": "BATH-M01.L1",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "use": "نور وجه + عام diffuse مستقلة؛ إرشاد دخول هادي؛ وظيفة shower العامة مع wet-safe equipment يحددها المختص.",
+          "tradeoff": "مفيش سبوت أو wiring معتمد فوق shower؛ الضوء الأمامي أجدى للوجه من spot رأسي فقط.",
+          "site_hold": "راجع ارتفاع المراية، glare على glass، curtain/سقف إن وجد وwet zoning؛ driver وصيانة خارج splash المعتمد."
+        },
+        {
+          "id": "BATH-M01.H1",
+          "layer": "H",
+          "label": "عادم ومياه ووصول",
+          "use": "استخراج رطوبة بعد الاستخدام ومحبس/سيفون متاح؛ حافظ على دخول الشاور والوصول للشاشة/الصرف.",
+          "tradeoff": "مسار العادم إلى الخارج غير معلوم؛ دراسة 900 غير مختارة ولا تحل أول fixing. الـ832 nominal ليس ممرًا مثبتًا.",
+          "site_hold": "راجع shaft وmakeup air وارتفاع drain وفروق منسوب WIC؛ wet engineer يراجع splash مع الباب مفتوحًا."
+        },
+        {
+          "id": "BATH-M01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+          "tradeoff": "بلاط قليل الفواصل قد يسهل تنظيفه لكنه لا يثبت إمكانية الميل؛ wet engineer يقرر.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "BATH-C01",
+      "name_ar": "الحمّام العائلي",
+      "source_object_ids": [
+        "starter-16",
+        "starter-17",
+        "starter-18",
+        "BATHC-A1-mirror",
+        "BATHC-shampoo-shelf-A1",
+        "BATHC-wall-towel-cabinet-A2"
+      ],
+      "m1_zone_ids": [
+        "BATH-C01.E1",
+        "BATH-C01.L1",
+        "BATH-C01.H1",
+        "BATH-C01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/BATH-C01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "B",
+      "narrative": [
+        "بورسلين stone-look هادي لا نفس accent الحمام الرئيسي، vanity عاجي مع walnut-look محدود.",
+        "منشفة طينية صغيرة فقط ونيكل للبلل؛ holder قابل للفك. الماء والعزل والميول تُراجع قبل اختيار عينة، لا سطح terracotta طبيعي في الشاور."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B يقلل عدد الخامات والإكسسوارات؛ A ivory لو الضوء الطبيعي ضعيف، من غير تعديل F1 تلقائي.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "BATH-C01.E1",
+          "layer": "E",
+          "label": "grooming مؤهل فقط",
+          "use": "حاجة grooming قرب vanity بعد خريطة wet zones؛ لا socket point جاهز.",
+          "tradeoff": "المساحة الصغيرة والكابينة لا يتركوا dry zone مضمون؛ عدم تركيب نقطة قد يكون البديل المناسب.",
+          "site_hold": "كهربائي/مهندس wet يوثّقوا splash وstanding use والباب والcabinet قبل تحديد المعدات."
+        },
+        {
+          "id": "BATH-C01.L1",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "use": "وجه واضح + عام لا يعتمد على المراية + إرشاد ليلي مع override؛ shower light coverage ضمن العام المؤهل.",
+          "tradeoff": "انعكاس الزجاج وظل cabinet يغيروا الضوء. مفيش اعتماد IP أو lux في النموذج.",
+          "site_hold": "جرب الوجه عند basin والوهج مع باب shower/cabinet؛ قِس سقف ومكان access مستقل."
+        },
+        {
+          "id": "BATH-C01.H1",
+          "layer": "H",
+          "label": "عادم وصرف وصيانة",
+          "use": "عادم رطوبة ومحابس/siphon قابلة للوصول بدون فك cabinet؛ وصول للشاور بعد اختبار hinge الفعلي.",
+          "tradeoff": "580mm بصري لا يحدد عرض دخول حقيقي؛ south/west outward مش آمن افتراضيًا في الدراسة.",
+          "site_hold": "HVAC يثبت الخارج؛ wet engineer/supplier يثبت opening mechanism، drain/waterproofing، وتداخل باب الحمام الاسمي 656.7."
+        },
+        {
+          "id": "BATH-C01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+          "tradeoff": "تنسيق لون لا يختار tray أو hinge ولا يؤكد grip؛ specimen وwet signoff.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "KIT-01",
+      "name_ar": "المطبخ",
+      "source_object_ids": [
+        "starter-20",
+        "starter-21",
+        "starter-22",
+        "starter-23",
+        "K3-corner",
+        "K3-dishwasher",
+        "K3-sink-base",
+        "K3-end-landing",
+        "K3-laundry-niche",
+        "KIT-A1-north-backsplash",
+        "KIT-A1-west-backsplash",
+        "KIT-A1-upper-north",
+        "KIT-A1-upper-west-low",
+        "KIT-A1-upper-west-high",
+        "KIT-fridge-end-panel"
+      ],
+      "m1_zone_ids": [
+        "KIT-01.E1",
+        "KIT-01.E2",
+        "KIT-01.E3",
+        "KIT-01.E4",
+        "KIT-01.L1",
+        "KIT-01.L2",
+        "KIT-01.H1",
+        "KIT-01.H2",
+        "KIT-01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/KIT-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "B",
+      "narrative": [
+        "P0 نفسه؛ واجهات عاجي دافي وجوز محدود خارج البلل، سطح travertine-look بورسلين أو بديل سطح قابل للفحص.",
+        "المطبخ يتصل بالحجر العمومي؛ لا رخام مسامي حول الحوض تلقائيًا ولا طيني خلف منطقة الزيت. backsplash سهل المسح؛ R6 ليس إجازة تركيب."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A يحافظ على السابقة البصرية R4 ivory كمرجع مطبخ؛ B plain greige بديل أهدى، P0 ثابت في الاثنين.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "KIT-01.E1",
+          "layer": "E",
+          "label": "أجهزة قابلة للفصل",
+          "use": "حاجة خدمات الموقد على الضلع الغربي، الثلاجة بالركن الجنوبي الشرقي، وDW تحت الضلع الشمالي؛ فصل قابل للوصول من حيز مجاور جاف، مش وراء جهاز مسحوب.",
+          "tradeoff": "starter-22 تمثيل stove، مش موديل وقود مؤكد؛ نوع الطاقة والمخارج يتحددوا بالمعدات المختارة لاحقًا.",
+          "site_hold": "وثّق الخدمات الحالية على الضلعين؛ افتح أبواب fridge وDW بالكامل وجرب الوصول للفصل بدون فك جهاز."
+        },
+        {
+          "id": "KIT-01.E2",
+          "layer": "E",
+          "label": "تحضير وكوفي",
+          "use": "مخارج استخدام صغيرة على منطقة تحضير الضلع الغربي أو landing الحالي؛ اختيار موضع الكوفي بعد تجربة حوض/موقد وتجفيف سطح.",
+          "tradeoff": "landing الحالي ضحل؛ ما نحشرش كوفي ثابت أو سلك فوق الحوض/الموقد. الاستخدام المتزامن سؤال كهربائي لاحق، مش حمل مفترض.",
+          "site_hold": "جرب حجم أدواتك الفعلية والبخار ومسافة استخدام اليد؛ الكهربائي يحدد منطقة جافة ونظام حماية مناسب."
+        },
+        {
+          "id": "KIT-01.E3",
+          "layer": "E",
+          "label": "تحكم وخيار طبخ جديد",
+          "use": "تحكم إنارة من ناحية دخول OP-RECP-KIT؛ احتياطي وظيفي لطبخ كهربائي محتمل بلا نقطة فرن مرسومة.",
+          "tradeoff": "kit-oven القديم parked؛ مفيش مكان عمود أو مسار حمل مستنتج منه.",
+          "site_hold": "سجل رغبة المالك في نوع الطبخ وصوّر الخدمات؛ اختبر باب P0 والضلفة قبل اعتماد أي موضع."
+        },
+        {
+          "id": "KIT-01.E4",
+          "layer": "E",
+          "label": "غسالة داخلية جديدة",
+          "use": "حاجة تغذية وفصل لغسالة محتملة في النيش الداخلي الحالي؛ مفهوم جديد مرتبط بالمصدر، مش نقل تلقائي من التراس.",
+          "tradeoff": "الغسالة نفسها غير ممثلة كجهاز؛ النيش احتياطي محفوظ. لا تعتبر indoor وterrace تشغيلين متزامنين.",
+          "site_hold": "تأكد من أبعاد النيش وفتح الجهاز وإمكانية فصل آمن؛ راجع الكهرباء والمياه والصرف معًا."
+        },
+        {
+          "id": "KIT-01.L1",
+          "layer": "L",
+          "label": "عام وتنظيف",
+          "use": "مجموعة عامة مستقلة تصل الممشى والباب؛ تحكم يدوي من ناحية دخول P0. night للمرور إلى التراس وظيفة منخفضة الوهج ضمن المجموعة لو الأجهزة المختارة تسمح.",
+          "tradeoff": "المهمة تحت الوحدات لا تكفي وحدها للتنظيف أو الوصول للثلاجة؛ لا عدد fixtures مفترض.",
+          "site_hold": "قِس السقف وأي beam أو خدمة قائمة، وجرب ظل المستخدم على الممر والثلاجة والباب."
+        },
+        {
+          "id": "KIT-01.L2",
+          "layer": "L",
+          "label": "مهمة L2 مستقلة",
+          "use": "مهمة أسفل الوحدات الشمالية والغربية الحالية؛ R6 L2 مرجع اتجاه بصري مع R4 ivory وR5 greige فقط؛ تحكم مستقل يدوي عن العام.",
+          "tradeoff": "R6 مش دائرة كهربائية. driver لازم يتصان؛ إضاءة الحوض والغربي ما تتغطاش بظل الجسم أو وهج backsplash.",
+          "site_hold": "راجع FRONT_SCHEDULE وINSTALLER_REQUIREMENTS؛ جرّب العمل عند الحوض/التحضير وحدد خدمة driver بعيد عن المياه."
+        },
+        {
+          "id": "KIT-01.H1",
+          "layer": "H",
+          "label": "استخراج الموقد",
+          "use": "منطقة استخراج فوق تمثيل الموقد على الضلع الغربي الحالي، مع وصول لفلتر grease وفصل خدمة.",
+          "tradeoff": "مفيش هود مثبت في source ولا نهاية دكت مؤكدة؛ تهوية تدوير ليست بديلًا مفترضًا للعادم.",
+          "site_hold": "HVAC يوثّق shaft/خروج خارجي وتعويض الهواء، نمط الوقود وfire/واجهة؛ لا route أو ثقب مرسوم كمصرح."
+        },
+        {
+          "id": "KIT-01.H2",
+          "layer": "H",
+          "label": "مياه وصرف وخدمة driver",
+          "use": "محابس وسيفون الحوض وDW والغسالة الداخلية المحتملة متاحين؛ خدمات الأجهزة على الشمال وdriver lighting في حيز جاف يحدده المختص.",
+          "tradeoff": "front removal ليس خدمة متاحة تلقائيًا؛ النيش ليس غسالة مركبة. فصل الكهرباء والخدمات بعيد عن التسريب يحدده trades.",
+          "site_hold": "سباك وكهربائي يراجعوا محابس/صرف وفتح باب الجهاز والوصول للسيفون وdriver؛ لا تعديل slab أو صرف تراس مفترض."
+        },
+        {
+          "id": "KIT-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+          "tradeoff": "اللون المستمر يقلل تقسيم المكان؛ لا يعني نفس slip/wet performance أو منسوب التنفيذ.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "TER-SVC",
+      "name_ar": "البلكونة الخدمية",
+      "source_object_ids": [],
+      "m1_zone_ids": [
+        "TER-SVC.E1",
+        "TER-SVC.L1",
+        "TER-SVC.H1",
+        "TER-SVC.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-SVC/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "B",
+      "narrative": [
+        "grip stone-look فاتح وجدار عاجي قابل للتنظيف؛ لا porcelain مصقول.",
+        "الطيني يقتصر على الواجهة الداخلية لو كانت جافة؛ لا planter ولا كسوة قبل معرفة مسار الخدمات. المصدر لا يمثل الغطاء أو المعدات."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B تشطيب عملي وقليل الزينة؛ A درجات أفتح فقط. مسار الخدمة أهم من لغة التصميم هنا.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-SVC.E1",
+          "layer": "E",
+          "label": "تحكم وخدمة قائمة",
+          "use": "تحكم light من ناحية المطبخ قبل الوصول للتراس؛ أي مأخذ تنظيف جديد حسب حاجة مؤكدة وتصريح outdoor.",
+          "tradeoff": "لا نقطة غسالة أو water/drain مخصصة لغسالة مفترضة على التراس.",
+          "site_hold": "جرّب OP-KIT-TERSVC كامل الفتح؛ سجل أي خدمات فعلية واحتمال المطر والكهرباء القائمة."
+        },
+        {
+          "id": "TER-SVC.L1",
+          "layer": "L",
+          "label": "إنارة خدمة",
+          "use": "إنارة عامة للخدمة والتنظيف، تحكم يدوي داخلي؛ task تجفيف بسيط ضمن العام وليس جهاز dryer.",
+          "tradeoff": "المصدر لا يسجل سقف تراس مثبت؛ نوع fixture/التثبيت يتحدد بعد survey.",
+          "site_hold": "قِس الواجهة/السقف والحماية من الجو واختبر ظل باب المطبخ."
+        },
+        {
+          "id": "TER-SVC.H1",
+          "layer": "H",
+          "label": "تجفيف وتصريف اختياري",
+          "use": "تجفيف طبيعي برف removable لو المالك محتاج + sensor تسريب اختياري قرب تجمع ماء فعلي؛ لا جهاز dryer.",
+          "tradeoff": "الباب والخروج والتنظيف أولى من rack؛ sensor ليس بديل drain/waterproofing.",
+          "site_hold": "صور المصرف والمطر واتجاه الهواء والخلوص بعد فتح الباب؛ trade يراجع drain والواجهة."
+        },
+        {
+          "id": "TER-SVC.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "OP-KIT-TERSVC door swing + drain؛ مفيش منصة غسالة أو تغيير slab مفترض.",
+          "tradeoff": "تنظيف وتجفيف وصيانة drain قبل هيئة البلاط؛ ميول/مناسيب TBD.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "OP-KIT-TERSVC door swing + drain؛ مفيش منصة غسالة أو تغيير slab مفترض.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "WC-01",
+      "name_ar": "حمّام الضيوف",
+      "source_object_ids": [
+        "starter-25",
+        "starter-26",
+        "WC-A1-mirror"
+      ],
+      "m1_zone_ids": [
+        "WC-01.E1",
+        "WC-01.L1",
+        "WC-01.H1",
+        "WC-01.F1"
+      ],
+      "source_floor": {
+        "value": "tile800",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/WC-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "tile800",
+      "m1_floor_option": "B",
+      "narrative": [
+        "نفس الحوض؛ travertine-look فاتح محدود وحائط جاف limewash-look قابل للمسح، نيكل في الماء.",
+        "برونز في إطار المرآة فقط، منشفة عاجي. مساحة صابون محدودة تمنع المبالغة في الإكسسوارات؛ التهوية HOLD حسب M1."
+      ],
+      "room_judgment": {
+        "lead": "A",
+        "alternate": "B",
+        "reason": "A ivory خفيف بصريًا في حوض المصدر الصغير؛ B أبسط، لا نحول الاختيار لطلب توسيع الحوض.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "WC-01.E1",
+          "layer": "E",
+          "label": "تحكم قبل الدخول",
+          "use": "مفتاح ناحية الوصول للباب من RECP خارج splash يحدده الكهربائي؛ لا مأخذ إضافي مفترض في WC.",
+          "tradeoff": "المراية/الباسين الصغير لا يثبتوا منطقة جافة؛ ضلفة الباب حاسمة للوصول.",
+          "site_hold": "جرّب OP-RECP-WC مفتوح ومقفول؛ الكهربائي يحدد جانب التحكم المسموح ونطاق splash."
+        },
+        {
+          "id": "WC-01.L1",
+          "layer": "L",
+          "label": "وجه وعام منفصلان",
+          "use": "نور وجه للباسين الحالي وعام diffuse مستقل؛ كلاهما يدوي، مش جسم مصدر 450×250 غير موجود.",
+          "tradeoff": "starter-26 اتغير عن القديم؛ وقفة الوجه وغسيل اليدين لازم يتجربوا بدل نقل موضع نور قديم.",
+          "site_hold": "جرّب شخص أمام الحالي وباب WC مفتوح، ارتفاع المرآة والظل؛ اقتراح B يظل خيارًا منفصلًا."
+        },
+        {
+          "id": "WC-01.H1",
+          "layer": "H",
+          "label": "عادم ومحبس",
+          "use": "تهوية روائح وخدمة drain/mحبس الباسين الحالي؛ عادم بعيد عن المستخدم وaccess متاح.",
+          "tradeoff": "مسار الخروج غير معلوم؛ صغر الغرفة لا يبرر ثقب واجهة أو صرف جديد.",
+          "site_hold": "HVAC/سباك يصوروا shaft وخروج محتمل ويجربوا الوصول للسيفون مع الباب؛ review #19."
+        },
+        {
+          "id": "WC-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+          "tradeoff": "تقليل joints خلف WC يسهل التنظيف؛ الميول والحافة تحتاج مسح.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "TER-MAIN",
+      "name_ar": "البلكونة الرئيسية",
+      "source_object_ids": [
+        "starter-41",
+        "starter-42",
+        "starter-43"
+      ],
+      "m1_zone_ids": [
+        "TER-MAIN.E1",
+        "TER-MAIN.L1",
+        "TER-MAIN.H1",
+        "TER-MAIN.F1"
+      ],
+      "source_floor": {
+        "value": "antislip",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/TER-MAIN/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "antislip",
+      "m1_floor_option": "B",
+      "narrative": [
+        "هيكل bronze-tone مطفي مناسب للخارج ووسائد عاجي outdoor، طاولة فاتحة كما الغلاف.",
+        "pot طيني قابل للنقل اختيار لاحق لا ثابت، grip حجر-look لا terracotta مسامية تلقائيًا. لا برغولا من المرجع ولا سقف جديد."
+      ],
+      "room_judgment": {
+        "lead": "C",
+        "alternate": "B",
+        "reason": "C لمسة outdoor دافئة بوسائد قابلة للفك؛ B إطار بسيط وتراب أقل، بدون أي غطاء جديد.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "TER-MAIN.E1",
+          "layer": "E",
+          "label": "خارجية اختيارية",
+          "use": "حاجة تنظيف/استخدام اختياري قرب القعدة مع تحكم light من الداخل؛ لا سلك يعبر فتحة GLZ-RECP-TERMAIN.",
+          "tradeoff": "تغذية خارجية اختيارية قد تضيف تسريب/تثبيت واجهة؛ إبقاؤها بدون مأخذ خيار حتى يثبت الاحتياج.",
+          "site_hold": "وثّق المطر والتصريف والمخارج القائمة وفتح الزجاج؛ كهربائي ومطور يحددوا إذن وحماية خارجية."
+        },
+        {
+          "id": "TER-MAIN.L1",
+          "layer": "L",
+          "label": "قعدة بلا وهج",
+          "use": "عام خارجي هادي موجّه للقعدة + accent اختياري، مستقل عن القعدة الداخلية، مفتاح يدوي من الداخل.",
+          "tradeoff": "fixture ظاهر على الواجهة يحتاج تصريح؛ لا uplight للجيران ولا blocking للزجاج.",
+          "site_hold": "اختبر وهج من الداخل/الجيران وصور الواجهة وارتفاع السقف الحقيقي إن وجد."
+        },
+        {
+          "id": "TER-MAIN.H1",
+          "layer": "H",
+          "label": "مراجعة مكثف فقط",
+          "use": "سؤال feasibility لمكان condenser مع المطور؛ مفيش وحدة أو route مرسومة كمثبتة.",
+          "tradeoff": "Noise/hot exhaust/service قد يفسدوا القعدة؛ البديل موقع مطور معتمد خارج التراس إن توفر.",
+          "site_hold": "خذ مخطط developer لمواقع الوحدات وحمل التثبيت/الصرف والضوضاء؛ HVAC يصمم المسار بعده."
+        },
+        {
+          "id": "TER-MAIN.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "GLZ-RECP-TERMAIN فصل indoor/outdoor؛ drain/door weather seals وفرق منسوب TBD.",
+          "tradeoff": "لا seamless indoor-to-outdoor مزعوم؛ الحماية من المطر أهم من صورة استمرار اللون.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "GLZ-RECP-TERMAIN فصل indoor/outdoor؛ drain/door weather seals وفرق منسوب TBD.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    },
+    {
+      "style": "C",
+      "room_id": "RECP-01",
+      "name_ar": "الريسبشن والسفرة والمدخل العام",
+      "source_object_ids": [
+        "starter-27",
+        "starter-28",
+        "starter-29",
+        "starter-30",
+        "starter-31",
+        "starter-32",
+        "starter-35",
+        "starter-36",
+        "starter-37",
+        "starter-38",
+        "starter-39",
+        "starter-40",
+        "A2-dining-chair-north-centre",
+        "A2-dining-chair-south-centre",
+        "S1-living-side-table",
+        "A-dining-sideboard",
+        "A-dining-pendant",
+        "A1-entry-mirror",
+        "A2-living-plant",
+        "S1-reading-lamp",
+        "V5-sideboard-lamp"
+      ],
+      "m1_zone_ids": [
+        "RECP-01.E1",
+        "RECP-01.E2",
+        "RECP-01.E3",
+        "RECP-01.E4",
+        "RECP-01.L1",
+        "RECP-01.L2",
+        "RECP-01.L3",
+        "RECP-01.H1",
+        "RECP-01.F1"
+      ],
+      "source_floor": {
+        "value": "lightoak",
+        "source": {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/RECP-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        "approval": "NOT_A_MATERIAL_SPEC"
+      },
+      "concept_floor": "travertine",
+      "m1_floor_option": "B",
+      "narrative": [
+        "كنبة المصدر خطية بذراع ضيق على أرجل، قماش عاجي دافي كثيف؛ كُشن طيني وكُشن مخطط رملي وlumbar عاجي. كرسي tailored بلون طيني هادي. سجادة flatweave رملي بإطار بسيط. وحدة TV جوز مقفولة؛ الفن يعطي اللون بدل تكسية حجر ثقيلة.",
+        "سفرة ٢٠٠٠×٩٥٠ بهيكل جوز وطاولة فاتحة، ستة كراسي ظهر خشب ومقعد عاجي. البندنت globe الحالي بلمسة برونز؛ نية بيان ضوئي واحد فقط فوق الطعام، بلا ثريا كبيرة. سايدبورد جوز ومرآة round برونز هادئ؛ مخزن الأحذية زي المصدر لا نمده ناحية الضلفة.",
+        "ستائر كتان عاجي أثقل بصريًا وblackout رملي، من غير صناديق سقف. لوحة أصلية طينية/حبر، سيراميك مطفي محدود. نفس نبات المصدر، pot خزفي مش تقليد واجهة حجر."
+      ],
+      "room_judgment": {
+        "lead": "B",
+        "alternate": "A",
+        "reason": "B أخف في السقف والفراغ، A أولى لو راحة الذراع أهم؛ لا نحكم من الصورة على القعدة.",
+        "status": "DESIGN_PREFERENCE_ONLY; do not assemble all room favorites without a cohesive home language"
+      },
+      "functional_constraints": [
+        {
+          "id": "RECP-01.E1",
+          "layer": "E",
+          "label": "تحكم الوصول",
+          "use": "مجموعات ترحيب/تنظيف/ليل من ناحية الوصول لباب الشقة؛ تشغيل يدوي قبل أي مشاهد ذكية.",
+          "tradeoff": "الدولاب الحالي ومستخدمه بيتداخلوا مع عينات حركة الباب؛ نقل المفتاح وحده ما يحلش مشكلة المرور.",
+          "site_hold": "صوّر OP-ENT-01 مفتوح ومقفول مع شخص بيستخدم الجزمة؛ اختبر الوصول للمفتاح من خارج ضلفة الباب."
+        },
+        {
+          "id": "RECP-01.E2",
+          "layer": "E",
+          "label": "TV وشبكة",
+          "use": "خدمات قابلة للوصول من جانب وحدة التلفزيون؛ مسار طاقة وبيانات منسق بدون أسلاك فوق الممشى.",
+          "tradeoff": "النقطة وراء التلفزيون بس ممكن تتدفن عند صيانة الشاشة؛ خلي فصل الخدمة متاح بدون سحب الوحدة كلها.",
+          "site_hold": "راجع فتح وحدة TV ومخارج الحائط الفعلية وامكانية فصل الطاقة والبيانات مع الكهربائي."
+        },
+        {
+          "id": "RECP-01.E3",
+          "layer": "E",
+          "label": "قراية وبوفيه",
+          "use": "تغذية لمبة القراية ناحية الكرسي الحالي ولمبة البوفيه ناحية سطحه؛ مفيش سلك عابر لطريق السفرة.",
+          "tradeoff": "الكرسي اتحرك عن A15؛ اللمبة الحالية مش ملاصقة له تلقائيًا. اختبر وصول اليد والسلك مع كرسي مشغول.",
+          "site_hold": "جرب قعدة القراية بجانب starter-32 وحدد طول سلك اللمبة ومسار التنظيف وفتح البوفيه."
+        },
+        {
+          "id": "RECP-01.E4",
+          "layer": "E",
+          "label": "احتياطي ستارة وتنقية",
+          "use": "احتياطي وظيفي فقط عند طرف ستارة الزجاج ومكان منقّي يختاره المالك؛ الستارة اليدوية هي fallback.",
+          "tradeoff": "موتور غير مختار؛ مفيش فولت أو موضع منقّي معتمد. الزجاج كامل الارتفاع ماينفعش يتغطى بعلبة سقف تخمينية.",
+          "site_hold": "قِس مكان مسار الستارة وفتحة الصيانة؛ جرّب المنقّي بعيد عن ممشى التراس وتيار التكييف."
+        },
+        {
+          "id": "RECP-01.L1",
+          "layer": "L",
+          "label": "عام ومشهد قعدة",
+          "use": "إنارة عامة مستقلة + إضاءة حائط/لمبات مريحة؛ تحكم يدوي لمشهد TV بدون وهج على الشاشة.",
+          "tradeoff": "زيادة السبوتات فوق الكنبة تجهد العين؛ قارن لمبات متنقلة مع مسار سقفي انتقائي من غير سقف ساقط شامل.",
+          "site_hold": "راجع انعكاس الضوء على TV من أماكن الجلوس وإغلاق الستائر؛ قِس الرأس الصافي."
+        },
+        {
+          "id": "RECP-01.L2",
+          "layer": "L",
+          "label": "سفرة مستقلة",
+          "use": "منطقة مهمة فوق السفرة الحالية والـpendant الموجود بالمصدر؛ مجموعة مستقلة قابلة للتعتيم فقط لو الأجهزة تدعم.",
+          "tradeoff": "الطاولة اتغيرت مكانًا؛ معلّق المصدر مجرد كتلة بصرية، وارتفاعه مش موافقة. ما تسحبش شبكة إنارة K12.",
+          "site_hold": "جرّب ستة أشخاص وكراسي مسحوبة، خط النظر تحت المعلّق، والمرور من باب المطبخ P0."
+        },
+        {
+          "id": "RECP-01.L3",
+          "layer": "L",
+          "label": "قراءة وaccent وليل",
+          "use": "مهمة قراءة منفصلة عند الكرسي الحالي، accent البوفيه اختياري، وإرشاد وصول من المدخل للطرقة مستقل عن عام القعدة.",
+          "tradeoff": "اللمبات المحمولة تحفظ سقف 2500 لكن سلكها لازم يبقى خارج المرور؛ night scene لا يعتمد على شبكة ذكية.",
+          "site_hold": "جرّب مدى الضوء واليد من كرسي مشغول، والمرور من المدخل للحمّام، ومفتاح كل لمبة قبل الربط بالمشاهد."
+        },
+        {
+          "id": "RECP-01.H1",
+          "layer": "H",
+          "label": "راحة القعدة والسفرة",
+          "use": "مراجعة منطقتي راحة داخل شكل L؛ شريط حائط مرشح على الجهة الشرقية بعيد عن الكنبة؛ اتجاه الهواء عبر الفراغ لا على القعدة.",
+          "tradeoff": "رأس واحد قد لا يغطي طرفي L؛ رأس ثانٍ يزيد المواسير والصيانة. العدد والحمل ومكان الرأس قرار مهندس بعد المسح.",
+          "site_hold": "HVAC يقارن توزيع الهواء وقت الستارة مقفولة وست كراسي مشغولة؛ يثبت صرف التكثيف وموافقة المكثف قبل أي مسار."
+        },
+        {
+          "id": "RECP-01.F1",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "use": "الفاصل عند باب المطبخ P0 والطرقة؛ بساط القعدة الحالي طبقة متحركة مش أرضية.",
+          "tradeoff": "surface خشبي أدفأ بصريًا؛ porcelain أسهل عند المدخل لكن يحتاج عينة وصوت مشي حقيقي.",
+          "site_hold": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل."
+        }
+      ],
+      "floor_boundary": "الفاصل عند باب المطبخ P0 والطرقة؛ بساط القعدة الحالي طبقة متحركة مش أرضية.",
+      "as_built_unknowns": "SITE-HOLD",
+      "construction_approved": false
+    }
+  ],
+  "provisional_lead": "B",
+  "credible_alternate": "A",
+  "mix_rule": "B يحتفظ بالشكل والخطوط والتخزين؛ ناخد من A راحة قماش الكنبة فقط ونَيكل الحمامات العملي. اختار عائلة أرضية واحدة للعمومي؛ لا نخلط fluted + cane + walnut + terracotta في نفس المساحة.",
+  "owner_prompts": [
+    "الكنبة الخشبية الأخف ولا المستديرة الأكثر نعومة؟ جرّب القعدة والذراع قبل القرار.",
+    "للريسبشن والهول: دفء wood-look المستمر ولا stone-look سهل المسح؟ شوف مقارنة B/B-stone المضبوطة.",
+    "الخشب المدخن في الإطار فقط ولا بلوط فاتح كامل؟ C بديل أدفى وأغنى لكنه أكثر تكلفة بصريًا وصيانة.",
+    "التنجيد الفاتح مناسب للاستخدام اليومي؟ عينة tight weave قابلة للتنظيف أم نرفع درجة اللون؟",
+    "الحمام: بورسلين هادي قليل العروق ولا travertine-look؟ هل تقبل عناية الحجر الطبيعي الإضافية؟"
+  ],
+  "render_limitations": [
+    "الصور WebGL stylized وليست photoreal؛ اللون يتأثر بتعريض المصدر والإضاءة النهارية الثابتة.",
+    "شكل الأثاث procedural داخل غلاف المصدر؛ ارتفاعات القطع غير المحفوظة proxies، لا CAD منتج ولا تحقق ergonomic.",
+    "limewash، حياكة القماش، cushions وعددها، فن ونيكل/برونز textures مبسطة؛ الـmoodboard يبين النية، مش ادعاء أن كل تفصيلة مرسومة بالـ3D.",
+    "المصابيح وAC/ceiling المصدرية proxies ثابتة؛ لا تُقرأ كتصميم M1 معتمد أو مخطط تركيب. لا concealed ceiling جديدة.",
+    "طاولة B المستطيلة والظهر المنحني لكراسي A نية في المودبورد؛ الـrenderer يستخدم tabletop بيضاوي وكتل كراسي مبسطة. سطح C الفاتح دراسة خامة، والصورة تستخدم proxy خشب.",
+    "البندنت source globe ثابت في الحجم؛ شكل الورق في B نية فقط. زجاج source translucent غير تمثيل safety spec."
+  ]
+}

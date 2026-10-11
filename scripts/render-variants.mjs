@@ -20,7 +20,7 @@ const files=process.argv.slice(2);
 const inputs=await Promise.all(files.map(async file=>({
  file, snapshot:JSON.parse(await fs.readFile(file,'utf8'))
 })));
-const plan=makeBatchPlan(inputs);
+const plan=makeBatchPlan(inputs,{allowSingle:process.env.RENDER_SINGLE_VARIANT==='1'});
 const domain=createApartmentDomain(process.cwd());
 for (const v of plan.variants) {
  assert.equal(v.snapshot.canonical_sha256,domain.model.canonical_sha256,
@@ -95,9 +95,11 @@ try{
   const frame=String(v.snapshot.scene_revision)+'-'+view.id;
   const page=await browser.newPage({viewport:view.camera.viewport});
   const pageErrors=[];
+  const consoleErrors=[];
   const t0=performance.now();
   try{
    page.on('pageerror',err=>pageErrors.push(String(err?.message||err)));
+   page.on('console',msg=>{if(msg.type()==='error')consoleErrors.push(msg.text());});
    const input={
     frame_id:frame,room_id:view.room_id,
     canonical_sha256:v.snapshot.canonical_sha256,
@@ -107,10 +109,14 @@ try{
     layout:v.snapshot.layout,
     camera:view.camera,
     asset_urls:v.asset_urls,
-    architecture_variant:v.snapshot.architecture_variant||null
+    architecture_variant:v.snapshot.architecture_variant||null,
+    render_experiment:v.snapshot.render_experiment||null,
+    kitchen_r6_study:v.snapshot.kitchen_r6_study||null
    };
    const html=template.replace('__APARTMENT_CAPTURE_SNAPSHOT_JSON__',safeJson(input));
-   await page.setContent(html,{waitUntil:'load'});
+   // Software WebGL may compile its first shader while the inline page loads.
+   // Use the same explicit deadline as readiness, instead of Playwright's 30s.
+   await page.setContent(html,{waitUntil:'load',timeout:180000});
    await page.waitForFunction(id=>{
     const error=document.body?.dataset?.captureError;
     if(error)throw new Error(error);
@@ -126,6 +132,8 @@ try{
    assert.equal(meta.rendered_layout_json,v.layoutJson);
    assert.equal(meta.room_id,view.room_id);
    assert.deepEqual(meta.architecture_variant,input.architecture_variant);
+   assert.deepEqual(meta.render_experiment,input.render_experiment);
+   assert.deepEqual(meta.kitchen_r6_study,input.kitchen_r6_study);
    for (const prop of ['position','target','fov','aspect','near','far','viewport']) {
     assert.deepEqual(meta.camera[prop],view.camera[prop],
       'Camera changed at '+job.key+'/'+view.id+': '+prop);
@@ -133,6 +141,17 @@ try{
    assert.equal(meta.assets.pending,0);
    assert.deepEqual(meta.assets.fallbacks,[]);
    assert.deepEqual(pageErrors,[],'Page errors occurred during WebGL capture');
+   assert.deepEqual(consoleErrors,[],'Console/shader errors occurred during WebGL capture');
+   const webgl=await canvas.evaluate(element=>{
+    const gl=element.getContext('webgl2')||element.getContext('webgl');
+    if(!gl)throw new Error('Capture canvas has no WebGL context');
+    const debug=gl.getExtension('WEBGL_debug_renderer_info');
+    return {version:gl.getParameter(gl.VERSION),
+     renderer:gl.getParameter(debug?debug.UNMASKED_RENDERER_WEBGL:gl.RENDERER),
+     vendor:gl.getParameter(debug?debug.UNMASKED_VENDOR_WEBGL:gl.VENDOR),
+     context_lost:gl.isContextLost()};
+   });
+   assert.equal(webgl.context_lost,false);
    await fs.writeFile(base+'.json',JSON.stringify(meta,null,2));
    const pngBytes=await fs.readFile(base+'.png');
    assert.ok(pngBytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),
@@ -144,6 +163,7 @@ try{
     elapsed_ms:Math.round(performance.now()-t0),
     scene_revision:v.snapshot.scene_revision,
     camera_signature_sha256:sha(JSON.stringify(view.camera)),
+    webgl, page_errors:pageErrors, console_errors:consoleErrors,
     validated:true
    };
    timings.push(record);
@@ -187,6 +207,8 @@ try{
   finished_at:new Date().toISOString(),
   total_elapsed_ms:Math.round(performance.now()-perfStart),
   browser_launches:1,
+  browser_version:browser.version(),
+  capture_template_sha256:sha(await fs.readFile('dist/capture-template.json')),
   asset_encodings:assets.size,
   concurrency:count,
   canonical_sha256:plan.canonical_sha256,

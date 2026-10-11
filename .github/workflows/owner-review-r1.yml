@@ -1,0 +1,151 @@
+name: Owner R1 - unified release review and field RFI evidence
+on:
+  push:
+    branches: ["integration/owner-review-gates-r1-20261010"]
+  pull_request:
+    branches: ["design/sprint6-integrated-dw-manufacturer-fit-20261010"]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build-release-board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+      - run: npm run build
+      - run: node --test studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs studio/analysis/reception-sprint.test.mjs
+      - name: Import source-verified original PR62 WebGL capture
+        uses: actions/download-artifact@v4
+        with:
+          name: reception-final-reviewed-evidence
+          path: review-evidence/owner-source-capture
+          github-token: ${{ github.token }}
+          run-id: 38046581713
+      - run: node scripts/build-owner-release-r1.mjs
+      - name: Build source-faithful Option A finishes, lighting and joinery board
+        run: node scripts/build-owner-finish-r1.mjs
+      - name: Build kitchen P0 storage tests and site RFI
+        run: node scripts/build-kitchen-storage-p0-r1.mjs
+      - name: Verify source-locked R2 plate-depth cases (not a build approval)
+        run: node scripts/verify-dailyware-r2.mjs
+      - name: Verify source-locked P0 kitchen cooking run and zero build approvals
+        run: node scripts/verify-p0-joinery-r3.mjs
+      - name: Verify kitchen R4 palette patch (NO source geometry changes)
+        run: node scripts/verify-kitchen-finish-r4.mjs
+      - name: Verify isolated R4 candidate and production warm-theme persistence
+        run: node --test scripts/kitchen-r4-candidate.test.mjs scripts/render-batch-plan.test.mjs
+      - name: Verify gate integrity and source immutability
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';import assert from 'node:assert/strict';
+          import {createHash} from 'node:crypto';
+          const d='review-evidence/owner-release-r1/';
+          const r=JSON.parse(fs.readFileSync(d+'OWNER_RELEASE_GATES.json'));
+          assert.equal(r.schema,'TypeBOwnerReviewR1/1');
+          assert.equal(r.gates.length,16);
+          assert.equal(r.summary.high_priority,12);
+          assert.equal(r.summary.approved_for_construction,0);
+          assert.equal(r.source.canonical_sha256,'734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658');
+          assert.equal(r.source.github_current_scene,'scene-9cf45a73');
+          assert.equal(r.source.cloud_source_scene,'scene-4821689');
+          assert.equal(r.source.A_P0_scene,'scene-9e86635b');
+          const h=f=>createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+          assert.equal(r.source.current_snapshot_sha256,h('render-snapshots/current.json'));
+          assert.equal(r.source.reviewed_A_P0_sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.ok(Object.values(r.approvals).every(x=>x===false));
+          assert.ok(r.gates.every(x=>x.construction_approved===false));
+          assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('data-room="مطبخ"'));
+          assert.ok(fs.statSync(d+'Owner-Review.html').size>8000);
+          const vis=JSON.parse(fs.readFileSync(d+'VISUAL_PROVENANCE.json'));
+          assert.equal(vis.status,'SOURCE_HASH_VERIFIED');
+          assert.equal(vis.frames.length,7);
+          for(const f of vis.frames){
+            const p=d+'visuals/'+f.name;
+            assert.ok(fs.statSync(p).size>100000);
+            assert.equal(h(p),f.sha256);
+          }
+          assert.ok(fs.readFileSync(d+'Owner-Review.html','utf8').includes('visuals/AB-P0-contact.png'));
+
+          assert.equal(fs.readFileSync(d+'SITE_RFI_MATRIX.csv','utf8').trim().split('\n').length,17);
+          const kitchenR4=JSON.parse(fs.readFileSync(d+'KITCHEN_FINISH_R4_AUDIT.json'));
+          assert.equal(kitchenR4.schema,'TypeBKitchenFinishPatchAuditR4/1');
+          assert.equal(kitchenR4.source_sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.deepEqual(kitchenR4.changed_ids,['starter-20','K3-corner','K3-sink-base','K3-dishwasher']);
+          assert.equal(kitchenR4.geometry_drift,0);
+          assert.equal(kitchenR4.interior_surfaces_drift,0);
+          assert.equal(kitchenR4.arch_door_recolored,false);
+          assert.equal(kitchenR4.warm_saved_colors_aligned,true);
+          assert.equal(kitchenR4.other_decor_drift,0);
+          // Historical patch-only audit. Actual R4 captures have a separate,
+          // source-bound ALL_16_FRAMES_VERIFIED gate in kitchen-r4-webgl-review.yml.
+          assert.equal(kitchenR4.after_webgl_rendered,false);
+          assert.equal(kitchenR4.approval,false);
+          const joineryR3=JSON.parse(fs.readFileSync(d+'P0_JOINERY_R3.json'));
+          assert.equal(joineryR3.schema,'TypeBP0KitchenJoineryR3/1');
+          assert.equal(joineryR3.source.sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.deepEqual(joineryR3.source_regions_mm,[307,600,593]);
+          assert.equal(joineryR3.candidates.length,3);
+          assert.ok(joineryR3.candidates.every(x=>x.status.startsWith('HOLD')));
+          assert.ok(Object.values(joineryR3.approvals).every(x=>x===false));
+          const kitchen=JSON.parse(fs.readFileSync(d+'P0_KITCHEN_STORAGE_R1.json'));
+          assert.equal(kitchen.schema,'TypeBP0KitchenStorageR1/1');
+          assert.equal(kitchen.source.sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.equal(kitchen.one_item_box_tests.length,120);
+          assert.equal(kitchen.illustrative_item_inventory.length,12);
+          assert.equal(kitchen.site_holds.length,7);
+          assert.ok(kitchen.site_holds.every(x=>x.status==='HOLD'&&x.construction_approved===false));
+          assert.equal(kitchen.cabinets.find(x=>x.key==='north-upper').illustrative_empty_bay_mm.d,294);
+          assert.equal(kitchen.cabinets.find(x=>x.key==='dining-buffet').illustrative_empty_bay_mm.d,364);
+          assert.equal(kitchen.one_item_box_tests.find(x=>x.item_id==='dinner-plates'&&x.unit==='north-upper').status,'SINGLE_ITEM_BOX_FAIL');
+          assert.equal(kitchen.one_item_box_tests.find(x=>x.item_id==='dinner-plates'&&x.unit==='dining-buffet').status,'SINGLE_ITEM_BOX_FIT_ONLY');
+          assert.equal(kitchen.assumptions.real_family_stocktake_received,false);
+          assert.ok(fs.statSync(d+'P0-Kitchen-Storage.html').size>6000);
+          assert.ok(fs.statSync(d+'P0_KITCHEN_120_CASES.csv').size>2000);
+          const f=JSON.parse(fs.readFileSync(d+'FINISH_AND_JOINERY_R1.json'));
+          assert.equal(f.schema,'TypeBFinishAndLightingR1/1');
+          assert.equal(f.status,'DESIGN_INTENT_NOT_SHOP_DRAWINGS');
+          assert.equal(f.provenance.source_sha256,h('design-development/reception-sprint/A-P0.json'));
+          assert.equal(f.provenance.net_ceiling_mm,2500);
+          assert.equal(f.material_samples.length,10);
+          assert.equal(f.joinery.length,6);
+          assert.equal(f.lighting.length,8);
+          assert.equal(f.source_floor_conflicts.length,2);
+          assert.ok(f.source_floor_conflicts.every(x=>x.rendered_material_id==='S1-stone'&&x.rendered_material_status==='PRODUCTION_RENDERER_CODE_PRECEDENCE_VERIFIED'));
+          assert.equal(f.illustrative_joinery_internal_prototypes.length,2);
+          assert.equal(f.lighting_scenes.length,4);
+          assert.deepEqual(f.illustrative_joinery_internal_prototypes.map(x=>x.illustrative_clear_per_bay_mm.w),[642.7,576]);
+          assert.ok(f.illustrative_joinery_internal_prototypes.every(x=>x.approved_for_fabrication===false));
+          assert.ok(f.lighting_scenes.every(x=>x.programmed===false));
+
+          assert.ok(f.source_floor_conflicts.every(x=>x.assignment_mismatch&&x.material_for_boQ===null));
+          assert.ok(f.material_samples.every(x=>x.purchased===false));
+          assert.ok(f.lighting.every(x=>x.lumens===null&&x.wattage===null));
+          assert.ok(f.joinery.every(x=>x.status!=='APPROVED'));
+          assert.ok(Object.values(f.safety).every(x=>x===false));
+          assert.ok(fs.readFileSync(d+'Finishes-and-Joinery.html','utf8').includes('visuals/AB-P0-contact.png'));
+          assert.ok(fs.statSync(d+'Finishes-and-Joinery.html').size>10000);
+          assert.ok(fs.statSync(d+'JOINERY_CONCEPT_ELEVATIONS.svg').size>1000);
+          for(const [name,rows] of [['FINISH_SAMPLES.csv',10],['JOINERY_INTENT.csv',6],['LIGHTING_INTENT.csv',8],['JOINERY_INTERNAL_PROTOTYPES.csv',2],['LIGHTING_SCENES.csv',4]]){
+            const lines=fs.readFileSync(d+name,'utf8').trim().split(/\r?\n/);
+            assert.equal(lines.length,rows+1,name+': header and expected source records');
+            assert.ok(lines.every(line=>line.length>0),name+': empty CSV record');
+          }
+
+          JS
+          git diff --exit-code -- render-snapshots/current.json design-development/decision-registry.json design-development/reception-sprint/A-P0.json dist/sources
+      - name: Upload owner and field handoff
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apartment-typeb-owner-r1-complete-offline-review
+          path: review-evidence/owner-release-r1/
+          retention-days: 90
+          if-no-files-found: error

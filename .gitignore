@@ -13,6 +13,9 @@ local-qa/reports/
 .argent/flows/__baselines__/
 .argent/flows/__runs__/
 renders/
+/work/
+/review-evidence/owner-release-r1/
+/review-evidence/owner-source-capture/
 studio/app/data/workspace-seed.json
 studio/app/data/workspace-cameras.json
 studio/app/data/workspace-config.json

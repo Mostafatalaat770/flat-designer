@@ -1,0 +1,1485 @@
+{
+  "schema": "M3Group2Browser/1",
+  "result": "PASS",
+  "states": 54,
+  "records": [
+    {
+      "viewport": 1440,
+      "room": "BR-02",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-02",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-02",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-02",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-02",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-02",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-01",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BR-01",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "2",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "2",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "2",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "2",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "MBR-01",
+      "requested_camera": "2",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "2",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WIC-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WIC-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WIC-01",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WIC-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WIC-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WIC-01",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-02",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-02",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-02",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-02",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-02",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-02",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-01",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BR-01",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "2",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "2",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "2",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "2",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "MBR-01",
+      "requested_camera": "2",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "2",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WIC-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "SOURCE-B",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WIC-01",
+      "requested_camera": "0",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "SOURCE-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WIC-01",
+      "requested_camera": "0",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "0",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WIC-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-B",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WIC-01",
+      "requested_camera": "1",
+      "requested_comparison": "SOURCE-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WIC-01",
+      "requested_camera": "1",
+      "requested_comparison": "B-A",
+      "comparison": "B-A",
+      "camera": "1",
+      "images": [
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        },
+        {
+          "loaded": true,
+          "source": true
+        }
+      ]
+    }
+  ],
+  "svg": [
+    {
+      "file": "A-BR-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "A-BR-02.svg",
+      "overflow": []
+    },
+    {
+      "file": "A-MBR-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "A-WIC-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-BR-01-phased.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-BR-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-BR-02-phased.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-BR-02.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-MBR-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-WIC-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-BR-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-BR-02.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-MBR-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-WIC-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "WIC-elevation-A.svg",
+      "overflow": []
+    },
+    {
+      "file": "WIC-elevation-B.svg",
+      "overflow": []
+    },
+    {
+      "file": "WIC-section.svg",
+      "overflow": []
+    }
+  ],
+  "network_requests": [],
+  "page_errors": [],
+  "html_sha256": "4df0176e433e3251b591ccf5881945d4de3ac8c87c9961916b1ea3ba587e7597",
+  "screenshots": "work/m3-group2/review-1440.png + review-390.png / QA only"
+}

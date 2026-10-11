@@ -1,0 +1,29 @@
+{
+  "browser": "151.0.7922.173",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "rooms": 13,
+      "overflow": false,
+      "svg": 1034,
+      "internalBroken": 0,
+      "expandedOverflow": false,
+      "kitchenRows": 15
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "rooms": 13,
+      "overflow": false,
+      "svg": 334,
+      "internalBroken": 0,
+      "expandedOverflow": false,
+      "kitchenRows": 15
+    }
+  ],
+  "externalRequests": [],
+  "errors": []
+}

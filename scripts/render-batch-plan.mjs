@@ -5,8 +5,8 @@
 import assert from 'node:assert/strict';
 import path from 'node:path';
 
-export function makeBatchPlan(inputs) {
-  assert.ok(Array.isArray(inputs) && inputs.length >= 2, 'A comparison needs at least two snapshots.');
+export function makeBatchPlan(inputs, {allowSingle = false} = {}) {
+  assert.ok(Array.isArray(inputs) && inputs.length >= (allowSingle ? 1 : 2), 'A comparison needs at least two snapshots; a standalone capture must opt in.');
   assert.ok(inputs.length <= 16, 'Refusing unbounded variant batch (>16).');
   const expected = inputs[0].snapshot;
   assert.ok(typeof expected.canonical_sha256 === 'string' && expected.canonical_sha256.length === 64,

@@ -1,0 +1,60 @@
+{
+  "schema": "TypeBKitchenR4VisualAssessment/1",
+  "status": "VISUALLY_INSPECTED",
+  "decision": "KEEP_R4_FOR_DESIGN_REVIEW",
+  "inspected_views": ["entry-overview", "living-to-dining", "dining-to-living", "wide-reception", "kitchen-relationship", "kitchen-work", "wide-reception-evening", "seated-tv"],
+  "verdict": "R4 أحسن كاتجاه تشطيب: الواجهات العاجي قللت تنافس البني والخشب، وربطت رنّ الطبخ بالـdishwasher وباللغة الهادية للريسبشن. نحتفظ بالنتيجة للمراجعة والتجربة بعينات، وكل قرارات التنفيذ تفضل HOLD.",
+  "improvements": [
+    "في kitchen-work الواجهات الجديدة أهدى وأفتح، والعاجي بيقرأ warm greige تحت الإضاءة الحالية، مش أصفر فاقع. الـdishwasher فقد الخشب المخطط اللي كان بيلفت النظر أكتر من باقي الرنّ.",
+    "الـbacksplash الدافي والـcountertop الفاتح والأرضية المعدنية الهادية متوافقين بصريًا مع الواجهات الجديدة. مفيش داعي لخامـة رخام صاخبة أو إضافة ديكور.",
+    "من kitchen-relationship رنّ الطبخ بقى أقرب للوحدات الفاتحة وللريسبشن، مع بقاء الفاصل والباب الأصليين. التغيير حقيقي لكنه محدود بمقدار الجزء الظاهر من المطبخ.",
+    "مفيش geometry جديدة أو أجهزة ناقصة أو clipping جديد ظاهر في المقارنات. خمس لقطات بعيدة متطابقة بكسل ببكسل؛ ده يؤكد إن التغيير ما تسربش لتشطيبات الريسبشن.",
+    "واجهات هادية ومغلقة بتدعم شكل سهل الصيانة نسبيًا، لكن قابلية التنضيف ومقاومة الدهون والمياه لازم تتثبت بعينة منتج حقيقي، مش بلون shader."
+  ],
+  "remaining_weaknesses": [
+    "الباب البني وباب الخدمة بقوا أكتر بروزًا جنب العاجي. لونهم محفوظ عمدًا؛ تعديل تشطيبهم يحتاج عينة وموافقة مستقلة، ومش لازم نغيّرهم أو نفتح الفاصل في R4.",
+    "نِسب الواجهات والـseams والـhandles لسه generic. الـdishwasher ليه handle غامق مختلف عن رنّ الطبخ، والعلويات كثيفة بصريًا في لقطة قريبة مقصوصة من أعلى. الصورة مش shop drawing ولا اختيار hardware.",
+    "الإضاءة تجعل سطح العمل مقروءًا، لكن الظلال الحادة على الباب والواجهات، والكتلة الداكنة للشفاط، والـcountertop الفاتح القريب من white highlights بيحدوا من واقعية العرض. الظلال موجودة في BEFORE وAFTER؛ مفيش قياس lux أو ادعاء glare-free.",
+    "لقطة المساء الأصلية بتعرض الريسبشن ومش الواجهات الجديدة. بالتالي ما تثبتش لون العاجي في المطبخ ليلًا أو جودة task lighting فيه. يلزم sample viewing وتجربة إضاءة فعلية.",
+    "الـoak landing محفوظ كلمسة دفء، لكن الـlegacy counter proxy يورّث لونه لأجزاء علوية تلقائية أيضًا. ما نعتبرش ظهورها وحدات خشب جديدة مختارة أو دليل سعة تخزين."
+  ],
+  "renderer_limitations": [
+    "الـproduction counter builder يولّد masses وfronts علوية تلقائية من f.color بجانب interior upper objects المسجلة. لذلك التعديل المسموح في starter-20/K3-corner/K3-sink-base يظهر في أجزاء counter proxy فوق سطح العمل أيضًا. مراجع خامات الثلاث upper objects المسجلة ظلت kitchen-soft-ivory، وكل mesh geometry مولّدة من نفس الكود والمقاسات قبل وبعد.",
+    "ما تمش حذف أو إضافة proxy cupboards لتجميل النتيجة. التفريق بين العلويات الصريحة والـlegacy masses، وحدود فتحها والشفاط والـheat clearances، يحتاج مراجعة renderer/joinery مستقلة قبل أي اعتماد تخزين.",
+    "الـstyle counter يستخدم f.color وroughness 0.45؛ الـintegrated dishwasher يحل material_id في PBR، والـinterior uppers لها material references منفصلة. نفس hex مش ضمان gloss أو undertone متطابق تحت كل إضاءة.",
+    "خامات الأرضية والخشب والـbacksplash procedural/generic، والـcountertop #DCD7CF hardcoded proxy. حدة الظلال وبساطة seams والـreflections موجودة في المصدر وليست manufacturer detail أو صورة لشقة منفذة."
+  ],
+  "view_notes": {
+    "kitchen-work": "العاجي وحّد الواجهات وخفّف الخشب المخطط للـdishwasher. الظلال ونِسب front subdivisions هي نفس المصدر؛ أجزاء الـcounter proxy العلوية ترث تغيير اللون أيضًا.",
+    "kitchen-relationship": "الواجهات الظاهرة من الفتحة الأصلية بقت أفتح وأهدى. الباب البني والفاصل ما اتغيروش، ولسه بيحجبوا جزء كبير من رنّ الحوض.",
+    "entry-overview": "الجزء الصغير من واجهة المطبخ على يسار الصورة بقى أفتح. طاولة السفرة والبوفيه والجلوس والزجاج والأرضية محفوظين.",
+    "living-to-dining": "المطبخ خارج زاوية الرؤية؛ الصورة قبل وبعد متطابقة بكسل ببكسل. الست كراسي الظاهرة مغلقة الحالة، ومش إثبات لراحة ستة أشخاص في التشغيل.",
+    "dining-to-living": "مفيش تغيير في الكنبة والكرسي الزيتوني والزجاج كامل الارتفاع أو الإضاءة. النتيجة متطابقة بكسل ببكسل.",
+    "wide-reception": "الريسبشن فضل هادي ومفتوح في حدوده الأصلية؛ تعديل المطبخ مش ظاهر من الكاميرا دي. الصورة متطابقة بكسل ببكسل.",
+    "wide-reception-evening": "إضاءة المساء ومشهد الزجاج الداكن هما نفس المصدر. اللقطة متطابقة بكسل ببكسل، ومش اختبار مباشر لدرجة العاجي في المطبخ ليلًا.",
+    "seated-tv": "الكونسول ذو الـslats والبوفيه والإكسسوارات محفوظين. متطابقة بكسل ببكسل؛ تنضيف الـslats وتهوية الكونسول ما زالوا محتاجين detail review."
+  },
+  "holds": [
+    "رفع مقاسات as-built فعلية: فتحات الأبواب، مناسيب الأرضية، ارتفاع 2500mm، والـfinished appliance cavities.",
+    "Dishwasher محدد من manufacturer: clear cavity حسب manual، فتح الباب والسلال بالكامل، ومكان وقوف مستخدم واحد بدون تعارض الأبواب أو الأجهزة.",
+    "Gas hob/oven/hood: cutouts والتهوية والـheat clearances والغاز والتغذية الكهربائية تحت مراجعة متخصصين؛ مفيش oven أو MEP جديد معتمد.",
+    "تحقق 1:1 من تشغيل الغسالة والثلاجة وباب الخدمة وباب المطبخ، ومن المرور أثناء استخدام الأسرة، وإمكانية الوصول للركن والصيانة.",
+    "حصر أدوات الأسرة وأبعادها الفعلية قبل اعتماد storage. أعماق 330mm والـ307/600/593 nominal spans مش إثبات سعة أو drawer aperture؛ مفيش درج 450–500mm اتضاف.",
+    "عينات واجهة matte قابلة للغسيل والحواف والـbacksplash والـworktop والأرضية: دهون ومياه وخدش وتنضيف، وundertones تحت نهار وإضاءة دافية.",
+    "Wall 44/P1 يفضل NOT APPROVED؛ موافقات المالك والهندسة والـMEP والشراء والتصنيع والتنفيذ كلها FALSE."
+  ],
+  "next_decision": "ثبّت SKU مبدئي للـdishwasher والـhob/oven، واعمل مراجعة manual + mockup بالحجم الحقيقي لفتح الباب والسلال ووقوف المستخدم، مع الغسالة وباب الخدمة. ده أعلى قيمة للأسرة من إضافة شكل درج أو ديكور جديد. بالتوازي جرّب عينة العاجي جنب الباب البني؛ R4 يفضل اتجاه المراجعة الحالي.",
+  "ci": {
+    "status": "BLOCKED_ACCOUNT_BILLING_NOT_CI_PASS",
+    "observed_run_id": 38082633258,
+    "runner_id": 0,
+    "steps_executed": 0,
+    "annotation": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+    "explanation_ar": "الـjob لم يبدأ: GitHub سجّل payments فشلت أو spending limit محتاج زيادة؛ runner_id=0 وsteps=0. المالك يحتاج مراجعة Billing & plans. إعدادات الحساب ما اتغيرتش",
+    "billing_settings_changed": false
+  },
+  "owner_approved": false,
+  "construction_approved": false,
+  "cloud_saved": false,
+  "manufacturer_selected": false
+}

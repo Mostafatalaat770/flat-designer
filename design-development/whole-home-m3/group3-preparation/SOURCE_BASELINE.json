@@ -1,0 +1,1297 @@
+{
+  "schema": "M3Group3SourcePreparation/1",
+  "baseline_head": "5fd6e9153e521f72a5c2a226a7aa3d90833b9fab",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "status": "PREPARED_ONLY / no bathroom layout or owner approval changed",
+  "rooms": [
+    {
+      "geometry": {
+        "id": "BATH-M01",
+        "name": "Ensuite",
+        "full_name": "Master ensuite",
+        "poly": [
+          [
+            5465.175,
+            6206.575
+          ],
+          [
+            7180.986,
+            6206.575
+          ],
+          [
+            7180.986,
+            8960.346
+          ],
+          [
+            5465.175,
+            8960.346
+          ]
+        ],
+        "at": [
+          6323.081,
+          7583.46
+        ],
+        "kind": "bathroom",
+        "isTerrace": false,
+        "mat": "antislip",
+        "printed": "BATH ROOM 1.70m x 2.75m",
+        "printed_dimensions_m": [
+          1.7,
+          2.75
+        ],
+        "callouts": [],
+        "area_estimate_m2": 4.7249505732809975
+      },
+      "furniture": [
+        {
+          "id": "starter-15",
+          "type": "toilet",
+          "name": "Ensuite WC · rear toward south wall · plumbing TBD",
+          "room_id": "BATH-M01",
+          "cx": 6714.964,
+          "cy": 8520,
+          "w": 400,
+          "d": 700,
+          "rot": 180,
+          "color": "#F5F4F0",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "R1-ensuite-vanity",
+          "type": "vanity",
+          "name": "600 mm basin on custom closed vanity",
+          "room_id": "BATH-M01",
+          "cx": 5980,
+          "cy": 8620,
+          "w": 600,
+          "d": 460,
+          "rot": 180,
+          "color": "#BCA98F",
+          "variant": "style",
+          "status": "EXPLORATORY",
+          "product_reference_id": "r1-dneo-basin-custom-vanity"
+        },
+        {
+          "id": "BATHM-WALKIN-A1",
+          "type": "shower",
+          "name": "Master walk-in shower 1450x800",
+          "room_id": "BATH-M01",
+          "cx": 6323,
+          "cy": 6750,
+          "w": 1450,
+          "d": 800,
+          "rot": 0,
+          "color": "#E4DED3",
+          "status": "EXPLORATORY",
+          "variant": "walk-in"
+        }
+      ],
+      "interior": [
+        {
+          "id": "BATHM-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-04",
+            "offset_mm": -343.08,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 35,
+          "height_mm": 850,
+          "material_references": {
+            "frame": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Master mirror: calm nickel finish matches fixtures; electrical IP fixture/location TBD"
+          }
+        },
+        {
+          "id": "BATHM-glass-600-A1",
+          "type": "divider",
+          "variant": "solid-panel",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 6730,
+          "cy": 7171,
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 18,
+          "height_mm": 2050,
+          "material_references": {
+            "primary": "bath-clear-glass-visual"
+          },
+          "colour": "#F0F7F6",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Fixed 2050mm glass screen with nominal 800mm open entry. Category glass used for semi-transparent renderer. Safety glass, fixings and maintenance TBD."
+          }
+        },
+        {
+          "id": "BATHM-shampoo-shelf-A1",
+          "type": "shelf",
+          "variant": "floating",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-05",
+            "offset_mm": -760,
+            "elevation_mm": 1230,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 380,
+          "depth_mm": 115,
+          "height_mm": 40,
+          "material_references": {
+            "body": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+          }
+        },
+        {
+          "id": "BATHM-shampoo-shelf-A2",
+          "type": "shelf",
+          "variant": "floating",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-05",
+            "offset_mm": -760,
+            "elevation_mm": 1540,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 380,
+          "depth_mm": 115,
+          "height_mm": 40,
+          "material_references": {
+            "body": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "id": "OP-WIC-BATHM",
+          "type": "hinged_door",
+          "between": [
+            "WIC-01",
+            "BATH-M01"
+          ],
+          "from": [
+            5465.175,
+            7265.718
+          ],
+          "to": [
+            5465.175,
+            7943.569
+          ],
+          "rect": [
+            5375.175,
+            7265.718,
+            5555.175,
+            7943.569
+          ],
+          "length_mm": 677.8510000000006,
+          "source_px": [
+            [
+              515,
+              514
+            ],
+            [
+              515,
+              546
+            ]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "OP-WIC-BATHM",
+          "name": "OP-WIC-BATHM",
+          "rect": [
+            5375.175,
+            7265.718,
+            5555.175,
+            7943.569
+          ],
+          "h": [
+            5465.175,
+            7265.718
+          ],
+          "c": [
+            0,
+            1
+          ],
+          "o": [
+            1,
+            0
+          ],
+          "len": 677.8510000000006,
+          "entry": false
+        }
+      ],
+      "m1_intents": [
+        {
+          "id": "BATH-M01.E1",
+          "room_id": "BATH-M01",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "حلاقة آمنة فقط",
+          "original_ids": [
+            "bathm-power"
+          ],
+          "current_object_ids": [
+            "R1-ensuite-vanity",
+            "BATHM-A1-mirror"
+          ],
+          "owner_use": "حاجة grooming محتملة قريبة من vanity وظيفيًا؛ لا نرسم مأخذ في splash ولا نقرر حماية/ارتفاع.",
+          "furniture_reason": "Source context R1-ensuite-vanity, BATHM-A1-mirror; حاجة grooming محتملة قريبة من vanity وظيفيًا؛ لا نرسم مأخذ في splash ولا نقرر حماية/ارتفاع.",
+          "operational_tradeoff": "وجود مراية لا يثبت منطقة جافة. قد تكون أفضل نتيجة عدم تركيب مأخذ حتى يحدد الكهربائي wet zones.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "الكهربائي يرسم wet zoning طبق الموقع، الحوض والشاور والمستخدم؛ يلزم qualified signoff قبل أول fixing.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/6",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/48",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/9",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+              "sha256": "1b7a73cdfd949daa2474eded29485664e609c3d14753788a5a407dfe66207367"
+            },
+            {
+              "path": "scripts/build-master-walkin-depth.mjs",
+              "sha256": "e96b4596570ddce379aa87748645b15279d57582b84550f6f8949d20bbc85705"
+            },
+            {
+              "path": "design-development/MASTER_DETAIL_JURY_20261010.md",
+              "sha256": "18e4d3f9a75dc1f299d60a2ae47f5f1a9c9edad213cea5afe86c858d1a9c5266"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BATH-M01.L1",
+          "room_id": "BATH-M01",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "original_ids": [
+            "bathm-mirror",
+            "bathm-general",
+            "bathm-night"
+          ],
+          "current_object_ids": [
+            "R1-ensuite-vanity",
+            "BATHM-A1-mirror",
+            "BATHM-WALKIN-A1"
+          ],
+          "owner_use": "نور وجه + عام diffuse مستقلة؛ إرشاد دخول هادي؛ وظيفة shower العامة مع wet-safe equipment يحددها المختص.",
+          "furniture_reason": "Source context R1-ensuite-vanity, BATHM-A1-mirror, BATHM-WALKIN-A1; نور وجه + عام diffuse مستقلة؛ إرشاد دخول هادي؛ وظيفة shower العامة مع wet-safe equipment يحددها المختص.",
+          "operational_tradeoff": "مفيش سبوت أو wiring معتمد فوق shower؛ الضوء الأمامي أجدى للوجه من spot رأسي فقط.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "راجع ارتفاع المراية، glare على glass، curtain/سقف إن وجد وwet zoning؛ driver وصيانة خارج splash المعتمد.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/6",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/48",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/9",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/49",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+              "sha256": "1b7a73cdfd949daa2474eded29485664e609c3d14753788a5a407dfe66207367"
+            },
+            {
+              "path": "scripts/build-master-walkin-depth.mjs",
+              "sha256": "e96b4596570ddce379aa87748645b15279d57582b84550f6f8949d20bbc85705"
+            },
+            {
+              "path": "design-development/MASTER_DETAIL_JURY_20261010.md",
+              "sha256": "18e4d3f9a75dc1f299d60a2ae47f5f1a9c9edad213cea5afe86c858d1a9c5266"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BATH-M01.H1",
+          "room_id": "BATH-M01",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "عادم ومياه ووصول",
+          "original_ids": [
+            "bathm-exhaust"
+          ],
+          "current_object_ids": [
+            "BATHM-WALKIN-A1",
+            "BATHM-glass-600-A1",
+            "R1-ensuite-vanity"
+          ],
+          "owner_use": "استخراج رطوبة بعد الاستخدام ومحبس/سيفون متاح؛ حافظ على دخول الشاور والوصول للشاشة/الصرف.",
+          "furniture_reason": "Source context BATHM-WALKIN-A1, BATHM-glass-600-A1, R1-ensuite-vanity; استخراج رطوبة بعد الاستخدام ومحبس/سيفون متاح؛ حافظ على دخول الشاور والوصول للشاشة/الصرف.",
+          "operational_tradeoff": "مسار العادم إلى الخارج غير معلوم؛ دراسة 900 غير مختارة ولا تحل أول fixing. الـ832 nominal ليس ممرًا مثبتًا.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "راجع shaft وmakeup air وارتفاع drain وفروق منسوب WIC؛ wet engineer يراجع splash مع الباب مفتوحًا.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/6",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/49",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/22",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/48",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+              "sha256": "1b7a73cdfd949daa2474eded29485664e609c3d14753788a5a407dfe66207367"
+            },
+            {
+              "path": "scripts/build-master-walkin-depth.mjs",
+              "sha256": "e96b4596570ddce379aa87748645b15279d57582b84550f6f8949d20bbc85705"
+            },
+            {
+              "path": "design-development/MASTER_DETAIL_JURY_20261010.md",
+              "sha256": "18e4d3f9a75dc1f299d60a2ae47f5f1a9c9edad213cea5afe86c858d1a9c5266"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BATH-M01.F1",
+          "room_id": "BATH-M01",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "حد shower 1450×800 الحالي + فتحة WIC؛ drain/slope/waterproofing TBD، fixed glass مصدر لا خط صرف.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "بلاط قليل الفواصل قد يسهل تنظيفه لكنه لا يثبت إمكانية الميل؛ wet engineer يقرر.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/BATH-M01/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/4",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "id": "BATH-C01",
+        "name": "Family bathroom",
+        "full_name": "Common full bathroom",
+        "poly": [
+          [
+            7180.986,
+            6206.575
+          ],
+          [
+            8981.529,
+            6206.575
+          ],
+          [
+            8981.529,
+            8960.346
+          ],
+          [
+            7180.986,
+            8960.346
+          ]
+        ],
+        "at": [
+          8081.257,
+          7583.46
+        ],
+        "kind": "bathroom",
+        "isTerrace": false,
+        "mat": "antislip",
+        "printed": "BATH ROOM 1.70m x 2.75m",
+        "printed_dimensions_m": [
+          1.7,
+          2.75
+        ],
+        "callouts": [],
+        "area_estimate_m2": 4.958283097653009
+      },
+      "furniture": [
+        {
+          "id": "starter-16",
+          "type": "shower",
+          "name": "Shower · 900 × 900 mm",
+          "room_id": "BATH-C01",
+          "cx": 8409.592,
+          "cy": 8409.592,
+          "w": 900,
+          "d": 900,
+          "rot": 0,
+          "color": "#C9D6D8",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-17",
+          "type": "toilet",
+          "name": "Family WC · rear toward east wall · plumbing TBD",
+          "room_id": "BATH-C01",
+          "cx": 8541,
+          "cy": 7440,
+          "w": 400,
+          "d": 700,
+          "rot": 90,
+          "color": "#F5F4F0",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-18",
+          "type": "vanity",
+          "name": "600 mm basin on custom closed vanity",
+          "room_id": "BATH-C01",
+          "cx": 8500,
+          "cy": 6526,
+          "w": 600,
+          "d": 460,
+          "rot": 0,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style",
+          "product_reference_id": "r1-dneo-basin-custom-vanity"
+        }
+      ],
+      "interior": [
+        {
+          "id": "BATHC-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-04",
+            "offset_mm": -26.3,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 35,
+          "height_mm": 800,
+          "material_references": {
+            "frame": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Family bathroom mirror; brushed-nickel/chrome direction"
+          }
+        },
+        {
+          "id": "BATHC-shampoo-shelf-A1",
+          "type": "shelf",
+          "variant": "floating",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-07",
+            "offset_mm": 700,
+            "elevation_mm": 1250,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 350,
+          "depth_mm": 115,
+          "height_mm": 40,
+          "material_references": {
+            "body": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+          }
+        },
+        {
+          "id": "BATHC-wall-towel-cabinet-A2",
+          "type": "console",
+          "variant": "plain",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-01",
+            "offset_mm": -300,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 520,
+          "depth_mm": 170,
+          "height_mm": 420,
+          "material_references": {
+            "primary": "kitchen-soft-ivory",
+            "accent": "bath-brushed-nickel"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Shallow closed dry-side family towel cabinet, less bulk next to shower. Two adjustable shelves; installer to verify wall blocking, water-resistance, suitable reach and safe fixings."
+          }
+        }
+      ],
+      "openings": [
+        {
+          "id": "OP-HALL-BATHC",
+          "type": "hinged_door",
+          "between": [
+            "HALL-01",
+            "BATH-C01"
+          ],
+          "from": [
+            7413.998,
+            6206.575
+          ],
+          "to": [
+            8070.666,
+            6206.575
+          ],
+          "rect": [
+            7413.998,
+            6116.575,
+            8070.666,
+            6296.575
+          ],
+          "length_mm": 656.6680000000006,
+          "source_px": [
+            [
+              607,
+              464
+            ],
+            [
+              638,
+              464
+            ]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "OP-HALL-BATHC",
+          "name": "OP-HALL-BATHC",
+          "rect": [
+            7413.998,
+            6116.575,
+            8070.666,
+            6296.575
+          ],
+          "h": [
+            7413.998,
+            6206.575
+          ],
+          "c": [
+            1,
+            0
+          ],
+          "o": [
+            0,
+            1
+          ],
+          "len": 656.6680000000006,
+          "entry": false
+        }
+      ],
+      "m1_intents": [
+        {
+          "id": "BATH-C01.E1",
+          "room_id": "BATH-C01",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "grooming مؤهل فقط",
+          "original_ids": [
+            "bathc-power"
+          ],
+          "current_object_ids": [
+            "starter-18",
+            "BATHC-A1-mirror"
+          ],
+          "owner_use": "حاجة grooming قرب vanity بعد خريطة wet zones؛ لا socket point جاهز.",
+          "furniture_reason": "Source context starter-18, BATHC-A1-mirror; حاجة grooming قرب vanity بعد خريطة wet zones؛ لا socket point جاهز.",
+          "operational_tradeoff": "المساحة الصغيرة والكابينة لا يتركوا dry zone مضمون؛ عدم تركيب نقطة قد يكون البديل المناسب.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "كهربائي/مهندس wet يوثّقوا splash وstanding use والباب والcabinet قبل تحديد المعدات.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/7",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/16",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/11",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md",
+              "sha256": "6e18eb79b4e22d201ef3055c305d65862c74a7983a380d36d9d35ae49296f808"
+            },
+            {
+              "path": "scripts/build-family-shower-study.mjs",
+              "sha256": "b2e137c7f6ecefea5db19ce2733c89fe3e7647f0de42c446034b972bf4975cd8"
+            },
+            {
+              "path": "design-development/BATHROOMS_B3_DESIGN_REVIEW_20261010.md",
+              "sha256": "e448d51787a8090f757952d82b20ebcf01331be9d2d941e872ec8bca2202e5ef"
+            },
+            {
+              "path": "design-development/advisor/BATHROOMS_A2_V55_VISUAL_QA_20261009.md",
+              "sha256": "9070724ad102fd21d1e93dbe654a45455fdea5574aaf18b5e3e118d55164f333"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BATH-C01.L1",
+          "room_id": "BATH-C01",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "وجه وعام وليل",
+          "original_ids": [
+            "bathc-mirror",
+            "bathc-general",
+            "bathc-night"
+          ],
+          "current_object_ids": [
+            "starter-18",
+            "BATHC-A1-mirror",
+            "starter-16"
+          ],
+          "owner_use": "وجه واضح + عام لا يعتمد على المراية + إرشاد ليلي مع override؛ shower light coverage ضمن العام المؤهل.",
+          "furniture_reason": "Source context starter-18, BATHC-A1-mirror, starter-16; وجه واضح + عام لا يعتمد على المراية + إرشاد ليلي مع override؛ shower light coverage ضمن العام المؤهل.",
+          "operational_tradeoff": "انعكاس الزجاج وظل cabinet يغيروا الضوء. مفيش اعتماد IP أو lux في النموذج.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرب الوجه عند basin والوهج مع باب shower/cabinet؛ قِس سقف ومكان access مستقل.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/7",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/16",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/11",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/14",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md",
+              "sha256": "6e18eb79b4e22d201ef3055c305d65862c74a7983a380d36d9d35ae49296f808"
+            },
+            {
+              "path": "scripts/build-family-shower-study.mjs",
+              "sha256": "b2e137c7f6ecefea5db19ce2733c89fe3e7647f0de42c446034b972bf4975cd8"
+            },
+            {
+              "path": "design-development/BATHROOMS_B3_DESIGN_REVIEW_20261010.md",
+              "sha256": "e448d51787a8090f757952d82b20ebcf01331be9d2d941e872ec8bca2202e5ef"
+            },
+            {
+              "path": "design-development/advisor/BATHROOMS_A2_V55_VISUAL_QA_20261009.md",
+              "sha256": "9070724ad102fd21d1e93dbe654a45455fdea5574aaf18b5e3e118d55164f333"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BATH-C01.H1",
+          "room_id": "BATH-C01",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "عادم وصرف وصيانة",
+          "original_ids": [
+            "bathc-exhaust"
+          ],
+          "current_object_ids": [
+            "starter-16",
+            "starter-17",
+            "starter-18",
+            "BATHC-wall-towel-cabinet-A2"
+          ],
+          "owner_use": "عادم رطوبة ومحابس/siphon قابلة للوصول بدون فك cabinet؛ وصول للشاور بعد اختبار hinge الفعلي.",
+          "furniture_reason": "Source context starter-16, starter-17, starter-18, BATHC-wall-towel-cabinet-A2; عادم رطوبة ومحابس/siphon قابلة للوصول بدون فك cabinet؛ وصول للشاور بعد اختبار hinge الفعلي.",
+          "operational_tradeoff": "580mm بصري لا يحدد عرض دخول حقيقي؛ south/west outward مش آمن افتراضيًا في الدراسة.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "HVAC يثبت الخارج؛ wet engineer/supplier يثبت opening mechanism، drain/waterproofing، وتداخل باب الحمام الاسمي 656.7.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/7",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/14",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/15",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/16",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/26",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md",
+              "sha256": "6e18eb79b4e22d201ef3055c305d65862c74a7983a380d36d9d35ae49296f808"
+            },
+            {
+              "path": "scripts/build-family-shower-study.mjs",
+              "sha256": "b2e137c7f6ecefea5db19ce2733c89fe3e7647f0de42c446034b972bf4975cd8"
+            },
+            {
+              "path": "design-development/BATHROOMS_B3_DESIGN_REVIEW_20261010.md",
+              "sha256": "e448d51787a8090f757952d82b20ebcf01331be9d2d941e872ec8bca2202e5ef"
+            },
+            {
+              "path": "design-development/advisor/BATHROOMS_A2_V55_VISUAL_QA_20261009.md",
+              "sha256": "9070724ad102fd21d1e93dbe654a45455fdea5574aaf18b5e3e118d55164f333"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BATH-C01.F1",
+          "room_id": "BATH-C01",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "باب الطرقة والشاور 900×900؛ قاعدة35mm الخاصة بـF1 ليست build-up فعلي.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "تنسيق لون لا يختار tray أو hinge ولا يؤكد grip؛ specimen وwet signoff.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/BATH-C01/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/5",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "id": "WC-01",
+        "name": "Guest WC",
+        "full_name": "Guest toilet",
+        "poly": [
+          [
+            10739.705,
+            8960.346
+          ],
+          [
+            12603.796,
+            8960.346
+          ],
+          [
+            12603.796,
+            10231.317
+          ],
+          [
+            10739.705,
+            10231.317
+          ]
+        ],
+        "at": [
+          11671.751,
+          9595.831
+        ],
+        "kind": "toilet",
+        "isTerrace": false,
+        "mat": "antislip",
+        "printed": "TOILET 1.30m x 1.90m",
+        "printed_dimensions_m": [
+          1.3,
+          1.9
+        ],
+        "callouts": [],
+        "area_estimate_m2": 2.3692056023610086
+      },
+      "furniture": [
+        {
+          "id": "starter-25",
+          "type": "toilet",
+          "name": "Guest WC",
+          "room_id": "WC-01",
+          "cx": 11269.276,
+          "cy": 9701.745,
+          "w": 400,
+          "d": 650,
+          "rot": 270,
+          "color": "#f6f8fa",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-26",
+          "type": "vanity",
+          "name": "Compact guest handrinse 350 × 180 mm · slim wall basin/vanity concept",
+          "room_id": "WC-01",
+          "cx": 11968.31,
+          "cy": 9174.54,
+          "w": 350,
+          "d": 180,
+          "rot": 0,
+          "color": "#60432E",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "interior": [
+        {
+          "id": "WC-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "WC-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-WC-01-02",
+            "offset_mm": 307.15,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 35,
+          "height_mm": 800,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Guest WC mirror; restrained bronze frame over darker walnut vanity"
+          }
+        }
+      ],
+      "openings": [
+        {
+          "id": "OP-RECP-WC",
+          "type": "hinged_door",
+          "between": [
+            "RECP-01",
+            "WC-01"
+          ],
+          "from": [
+            12603.796,
+            9341.637
+          ],
+          "to": [
+            12603.796,
+            9998.305
+          ],
+          "rect": [
+            12513.796,
+            9341.637,
+            12693.796,
+            9998.305
+          ],
+          "length_mm": 656.6679999999997,
+          "source_px": [
+            [
+              852,
+              612
+            ],
+            [
+              852,
+              643
+            ]
+          ]
+        }
+      ],
+      "doors": [
+        {
+          "id": "OP-RECP-WC",
+          "name": "OP-RECP-WC",
+          "rect": [
+            12513.796,
+            9341.637,
+            12693.796,
+            9998.305
+          ],
+          "h": [
+            12603.796,
+            9341.637
+          ],
+          "c": [
+            0,
+            1
+          ],
+          "o": [
+            -1,
+            0
+          ],
+          "len": 656.6679999999997,
+          "entry": false
+        }
+      ],
+      "m1_intents": [
+        {
+          "id": "WC-01.E1",
+          "room_id": "WC-01",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "تحكم قبل الدخول",
+          "original_ids": [
+            "wc-control"
+          ],
+          "current_object_ids": [],
+          "owner_use": "مفتاح ناحية الوصول للباب من RECP خارج splash يحدده الكهربائي؛ لا مأخذ إضافي مفترض في WC.",
+          "furniture_reason": "Room/opening use only; مفتاح ناحية الوصول للباب من RECP خارج splash يحدده الكهربائي؛ لا مأخذ إضافي مفترض في WC.",
+          "operational_tradeoff": "المراية/الباسين الصغير لا يثبتوا منطقة جافة؛ ضلفة الباب حاسمة للوصول.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرّب OP-RECP-WC مفتوح ومقفول؛ الكهربائي يحدد جانب التحكم المسموح ونطاق splash.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/10",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "design-development/GUEST_WC_COMFORT_JURY_20261010.md",
+              "sha256": "9af4dc0f13b17f4e373f8c31f4242a0c79aa6f311a3d1c2c69317ac160a625b6"
+            },
+            {
+              "path": "scripts/build-guest-wc-jury.mjs",
+              "sha256": "a0d26c6b79c4b1666dcf0c745ecf0d5bc5850a7defb0a8718b7c65b277d119b1"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "WC-01.L1",
+          "room_id": "WC-01",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "وجه وعام منفصلان",
+          "original_ids": [
+            "wc-mirror",
+            "wc-general"
+          ],
+          "current_object_ids": [
+            "starter-26",
+            "WC-A1-mirror"
+          ],
+          "owner_use": "نور وجه للباسين الحالي وعام diffuse مستقل؛ كلاهما يدوي، مش جسم مصدر 450×250 غير موجود.",
+          "furniture_reason": "Source context starter-26, WC-A1-mirror; نور وجه للباسين الحالي وعام diffuse مستقل؛ كلاهما يدوي، مش جسم مصدر 450×250 غير موجود.",
+          "operational_tradeoff": "starter-26 اتغير عن القديم؛ وقفة الوجه وغسيل اليدين لازم يتجربوا بدل نقل موضع نور قديم.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرّب شخص أمام الحالي وباب WC مفتوح، ارتفاع المرآة والظل؛ اقتراح B يظل خيارًا منفصلًا.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/10",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/22",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/interior/objects/6",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/GUEST_WC_COMFORT_JURY_20261010.md",
+              "sha256": "9af4dc0f13b17f4e373f8c31f4242a0c79aa6f311a3d1c2c69317ac160a625b6"
+            },
+            {
+              "path": "scripts/build-guest-wc-jury.mjs",
+              "sha256": "a0d26c6b79c4b1666dcf0c745ecf0d5bc5850a7defb0a8718b7c65b277d119b1"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "WC-01.H1",
+          "room_id": "WC-01",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "عادم ومحبس",
+          "original_ids": [
+            "wc-exhaust"
+          ],
+          "current_object_ids": [
+            "starter-25",
+            "starter-26"
+          ],
+          "owner_use": "تهوية روائح وخدمة drain/mحبس الباسين الحالي؛ عادم بعيد عن المستخدم وaccess متاح.",
+          "furniture_reason": "Source context starter-25, starter-26; تهوية روائح وخدمة drain/mحبس الباسين الحالي؛ عادم بعيد عن المستخدم وaccess متاح.",
+          "operational_tradeoff": "مسار الخروج غير معلوم؛ صغر الغرفة لا يبرر ثقب واجهة أو صرف جديد.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "HVAC/سباك يصوروا shaft وخروج محتمل ويجربوا الوصول للسيفون مع الباب؛ review #19.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/10",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/21",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/22",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/GUEST_WC_COMFORT_JURY_20261010.md",
+              "sha256": "9af4dc0f13b17f4e373f8c31f4242a0c79aa6f311a3d1c2c69317ac160a625b6"
+            },
+            {
+              "path": "scripts/build-guest-wc-jury.mjs",
+              "sha256": "a0d26c6b79c4b1666dcf0c745ecf0d5bc5850a7defb0a8718b7c65b277d119b1"
+            },
+            {
+              "path": "studio/renderer/builders.js",
+              "sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "WC-01.F1",
+          "room_id": "WC-01",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "عتبة OP-RECP-WC ومحبس basin؛ لا تبني rough-in على اقتراح basin B.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "تقليل joints خلف WC يسهل التنظيف؛ الميول والحافة تحتاج مسح.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/WC-01/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/9",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    }
+  ],
+  "owner_decisions": {
+    "two_showers_no_bathtub": true,
+    "master_open800_visual_lead": true,
+    "wet_splash_waterproofing_services_construction": false,
+    "source_bath_door_opens_into_bath_preserved": true
+  },
+  "carry_holds": {
+    "group1": "All7OPEN / independent",
+    "group2": "All9OPEN / independent",
+    "construction": "Existing Issue19, no substitute issue"
+  },
+  "approvals": {
+    "owner": false,
+    "construction": false,
+    "procurement": false,
+    "cloud_save": false
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "M3Group2Package/1",
+  "result": "PASS",
+  "zip": "Type-B-M3-Group2-Owner-Review.zip",
+  "sha256": "2b41de3973e8c14788a5c7bd36a2e5f8cb3f79fd28322de5e9adc4f506589728",
+  "bytes": 14761185,
+  "entries": 78,
+  "embedded_webgl_pngs": 22,
+  "svg_plans": 17,
+  "html_sha256": "4df0176e433e3251b591ccf5881945d4de3ac8c87c9961916b1ea3ba587e7597",
+  "manifest_sha256": "3e82ef4d55c9729812947e0d295ec622002ea38d21f0f534decd17e031ffe8dd",
+  "offline": true,
+  "owner_approved": false
+}

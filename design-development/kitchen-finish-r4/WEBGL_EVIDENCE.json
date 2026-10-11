@@ -1,0 +1,747 @@
+{
+  "schema": "TypeBKitchenR4MatchedWebGL/1",
+  "status": "ALL_16_FRAMES_VERIFIED",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "candidate_audit": {
+    "schema": "TypeBKitchenR4CandidateAudit/1",
+    "status": "PASS",
+    "source_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a",
+    "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+    "source_scene_revision": "scene-9e86635b",
+    "candidate_scene_revision": "scene-3b86c557",
+    "changed_ids": [
+      "starter-20",
+      "K3-corner",
+      "K3-sink-base",
+      "K3-dishwasher"
+    ],
+    "layout_diff": [
+      {
+        "path": "/furniture/17/color",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/furniture/42/color",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/furniture/43/color",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/furniture/43/material_id",
+        "before": "kitchen-muted-light-oak",
+        "after": "kitchen-soft-ivory"
+      },
+      {
+        "path": "/furniture/44/color",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/decor/saved/warm/colours/starter-20",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/decor/saved/warm/colours/K3-corner",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/decor/saved/warm/colours/K3-dishwasher",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      },
+      {
+        "path": "/decor/saved/warm/colours/K3-sink-base",
+        "before": "#BCA98F",
+        "after": "#E8E2D7"
+      }
+    ],
+    "layout_changed_fields": 9,
+    "geometry_drift": 0,
+    "camera_drift": 0,
+    "architecture_drift": 0,
+    "furniture_count": 50,
+    "validation": {
+      "status": "WARNING",
+      "valid": true,
+      "summary": {
+        "pass": 184,
+        "warning": 77,
+        "fail": 0
+      }
+    },
+    "owner_approved": false,
+    "construction_approved": false,
+    "cloud_saved": false,
+    "manufacturer_selected": false
+  },
+  "frames": [
+    {
+      "view_id": "entry-overview",
+      "image_sha256": "ca2cfd44662ecae3e5ea5ff005dce5028bf07918da69ac686dbefa57dcc2da67",
+      "image_bytes": 437252,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "42edc81f772df8e70788c96d7054e51ce768f078404ad5598f152b7feec3e51a",
+      "metadata_sha256": "971412d5df381992a1dd5e1240fe5c6b2eb5e9edd5efa12a1cfa0bb30d950ed5",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/entry-overview.png",
+      "metadata": "A-P0/entry-overview.json",
+      "metadata_file_sha256": "ef5c2fc43a3cfa9c06b403515e8b63dd3ab6d8344dd959c4080bdf4f7abc2a6b",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "living-to-dining",
+      "image_sha256": "35aff812c36b77bc14b6159c65dbd3dfe871766b666c93e31e92e82ece7c227c",
+      "image_bytes": 353885,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "c6a48b17986f8b6bf99407b3d597d2329f217817b901881ce9328d37cd350769",
+      "metadata_sha256": "a92cb5e7d1e344c6d871c095a3defe27fc18af87e574920b3b86062e5798cb64",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/living-to-dining.png",
+      "metadata": "A-P0/living-to-dining.json",
+      "metadata_file_sha256": "10ef2edeb07b9dd9230a68931de6e4570907410f7ce08d3f82ea1dd80e4b5883",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "dining-to-living",
+      "image_sha256": "fef6378f19ed37948e7b8ca1fb7c9b1a453424fadc5bbd64834632766dab3ab0",
+      "image_bytes": 658168,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "9baa744ad2b7552286a15b2166d1922722189f3488c493b27ce4d269834c4046",
+      "metadata_sha256": "8e68b7c9549bccebfe3485ec653d88899e63cc25bfd4a4546aa29b5da66e14f7",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/dining-to-living.png",
+      "metadata": "A-P0/dining-to-living.json",
+      "metadata_file_sha256": "7def1a5a0e5991ce9d74e4b173ebcbbf58443039c6731f00913a490e032282e0",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "wide-reception",
+      "image_sha256": "c55cc729a3a6615e0560a1bb106407eae922a49febbd314ce3ca6ba37166c885",
+      "image_bytes": 537415,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "f43116963715e7e1640c479fe7ddae8faf1128a98fbdf55ff9ddd08c5691a3a9",
+      "metadata_sha256": "5fe1fb1bdb30be68b7c4f2ecac7061f31294d860100e8d005555371c3c1dc968",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/wide-reception.png",
+      "metadata": "A-P0/wide-reception.json",
+      "metadata_file_sha256": "e2cd8cc9a5b693e3c4871f342ead213dc19cf6a085e58c9d71bd2b7291302ea5",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "kitchen-relationship",
+      "image_sha256": "a74f488e7dec518de2d4e8cb4f2065043fa7282b6c350fdebc188db123d56ea8",
+      "image_bytes": 164595,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "32c29091d35e8c1842efe3502ef2f0956e4998075d5668040a3ec54c4f7b03e6",
+      "metadata_sha256": "12a99f4f28b41378fa49fcc92c3ed8e8587f14477e7d61f173ff83804875a36f",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/kitchen-relationship.png",
+      "metadata": "A-P0/kitchen-relationship.json",
+      "metadata_file_sha256": "9fe383d7a26d87d17114b174b1304db869538c9d2cda16003fcca62e2b5dd553",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "kitchen-work",
+      "image_sha256": "ac3b9ab3da8170f1011dedaa05c05ccca2ef6bf19907e52bd683bd0ee6eb4e62",
+      "image_bytes": 495808,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "dd06d6abb0213578e8cfa85152402727e9f9a9bdaf5a83a0dac8412a4bac88a2",
+      "metadata_sha256": "4c895689819294b6b3a3318418f677c316a77e4031bddcadc7f91566803d92c0",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/kitchen-work.png",
+      "metadata": "A-P0/kitchen-work.json",
+      "metadata_file_sha256": "e6c62574112a020abbae41ba7778862ae929fe71f2126237b7b199770616b6e3",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "wide-reception-evening",
+      "image_sha256": "2b0d070c2325861a76b375b010a284a7b7f9ed2d1480cea5b9ec9987861bd8e7",
+      "image_bytes": 611613,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "c1ccfd49cc308a37d7c2b3835e542e7c3382caa6f3350b683efeb6e65dc20614",
+      "metadata_sha256": "f54d59b87a88f87c0864200c0e09afdfd36b9d29da9ee1c9f7f5e89071d53e0d",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/wide-reception-evening.png",
+      "metadata": "A-P0/wide-reception-evening.json",
+      "metadata_file_sha256": "2b1593c498957f6ff3bb3e511952f5b99ccd9d59a02e0f756c9a4d0add4db725",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "seated-tv",
+      "image_sha256": "d0e6f0b6ffa2b5bd6cbb4e80cd8c5bb423388ffa17a5ad8b63535cb8bc93c9cd",
+      "image_bytes": 1111373,
+      "scene_revision": "scene-9e86635b",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "b7825683265f76833e8b63fae4e271951bbb28548a97d95de99e75fbaa5ce728",
+      "metadata_sha256": "aea1abda421cc5dd6f3cb65507ac8e523a8540848e487d174ae6c43813655c5a",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0",
+      "image": "A-P0/seated-tv.png",
+      "metadata": "A-P0/seated-tv.json",
+      "metadata_file_sha256": "f91b5a3de78463d2100dd3c3baff401ffc9ca58084f966a679f6a1365157db25",
+      "input_snapshot": "design-development/reception-sprint/A-P0.json",
+      "input_snapshot_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a"
+    },
+    {
+      "view_id": "entry-overview",
+      "image_sha256": "175e98e561eee853c4f57fff321a53187bf4046f1b5dd9313f65f76464e2142f",
+      "image_bytes": 437089,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "42edc81f772df8e70788c96d7054e51ce768f078404ad5598f152b7feec3e51a",
+      "metadata_sha256": "bfa8bae92edc741c5f704c93d8fe2b5775506aade7a305db02460fdbdc5e2194",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/entry-overview.png",
+      "metadata": "A-P0-IVORY/entry-overview.json",
+      "metadata_file_sha256": "cb81d61e3e4fa89a02af14dde914776d628a1019d3c10d45f38f1be82432de75",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "living-to-dining",
+      "image_sha256": "35aff812c36b77bc14b6159c65dbd3dfe871766b666c93e31e92e82ece7c227c",
+      "image_bytes": 353885,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "c6a48b17986f8b6bf99407b3d597d2329f217817b901881ce9328d37cd350769",
+      "metadata_sha256": "c101d5780188c2c02ca6570ddf71a96ce4f6c6ec91e826672fbcc2d8cd0966aa",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/living-to-dining.png",
+      "metadata": "A-P0-IVORY/living-to-dining.json",
+      "metadata_file_sha256": "b8db512ebf08d6b3bbc047231580cc713ba40e6935f275fbc9e81e42f29d52ce",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "dining-to-living",
+      "image_sha256": "fef6378f19ed37948e7b8ca1fb7c9b1a453424fadc5bbd64834632766dab3ab0",
+      "image_bytes": 658168,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "9baa744ad2b7552286a15b2166d1922722189f3488c493b27ce4d269834c4046",
+      "metadata_sha256": "b617cdebb50b3dd1233fe9d11449898473e6fab494a579555af847f5d0791795",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/dining-to-living.png",
+      "metadata": "A-P0-IVORY/dining-to-living.json",
+      "metadata_file_sha256": "bcc78a9a378df631c212b7c27f0b50213045bd36823148d6a8a60aeaeca754ac",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "wide-reception",
+      "image_sha256": "c55cc729a3a6615e0560a1bb106407eae922a49febbd314ce3ca6ba37166c885",
+      "image_bytes": 537415,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "f43116963715e7e1640c479fe7ddae8faf1128a98fbdf55ff9ddd08c5691a3a9",
+      "metadata_sha256": "cbfa6352a54fce8faec1087d3b3ec9691cd241948a861917afcc41f0b10d44bd",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/wide-reception.png",
+      "metadata": "A-P0-IVORY/wide-reception.json",
+      "metadata_file_sha256": "c15a686b3ad034091573255876b81141c36c867a7c6fbb6ee59e181494810ad1",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "kitchen-relationship",
+      "image_sha256": "825b7144fd031cdce98f14c9461aa3ebcdafb8919d3d1ca43dc8b62be7e267e3",
+      "image_bytes": 163136,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "32c29091d35e8c1842efe3502ef2f0956e4998075d5668040a3ec54c4f7b03e6",
+      "metadata_sha256": "2d448c996169a1e14b211af949eef2f8483a58e7dc5b38e96a4b6983cc922b35",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/kitchen-relationship.png",
+      "metadata": "A-P0-IVORY/kitchen-relationship.json",
+      "metadata_file_sha256": "71dfd29671bab0a98a6b7980c85e81799d860f1215a25990dcd7839421e31115",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "kitchen-work",
+      "image_sha256": "6c544503c60bd3ba6e97ea8f686d98425e27276ec921e7c3b4bc2b7ccb86c854",
+      "image_bytes": 425682,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "dd06d6abb0213578e8cfa85152402727e9f9a9bdaf5a83a0dac8412a4bac88a2",
+      "metadata_sha256": "07ec51de4a1a220517672fc1bdaa92de3bc9f876028c0ed5261f63b702759e24",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/kitchen-work.png",
+      "metadata": "A-P0-IVORY/kitchen-work.json",
+      "metadata_file_sha256": "f9cc19d1681562c34589d5a048755b8148da8f7d216fbc42945d5f46423cf1de",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "wide-reception-evening",
+      "image_sha256": "2b0d070c2325861a76b375b010a284a7b7f9ed2d1480cea5b9ec9987861bd8e7",
+      "image_bytes": 611613,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "c1ccfd49cc308a37d7c2b3835e542e7c3382caa6f3350b683efeb6e65dc20614",
+      "metadata_sha256": "ed5fa6fc68a768d4c5fe2b9d579d8a9837fcd9f4ecec8dc35ef3349e271131af",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/wide-reception-evening.png",
+      "metadata": "A-P0-IVORY/wide-reception-evening.json",
+      "metadata_file_sha256": "9b44e286f4248d75c56c46c2bd18a460c17e453f460e745f40dd71117188fc55",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    },
+    {
+      "view_id": "seated-tv",
+      "image_sha256": "d0e6f0b6ffa2b5bd6cbb4e80cd8c5bb423388ffa17a5ad8b63535cb8bc93c9cd",
+      "image_bytes": 1111373,
+      "scene_revision": "scene-3b86c557",
+      "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+      "camera_signature_sha256": "b7825683265f76833e8b63fae4e271951bbb28548a97d95de99e75fbaa5ce728",
+      "metadata_sha256": "a02ae23000e8705af49ee224f66f85fe76fbfd6fb9571532ded2c9e04958b5ea",
+      "renderer": {
+        "engine": "Three.js WebGL",
+        "revision": "160"
+      },
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "vendor": "Google Inc. (Google)",
+        "context_lost": false
+      },
+      "assets": {
+        "pending": 0,
+        "fallbacks": []
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "validated": true,
+      "variant": "A-P0-IVORY",
+      "image": "A-P0-IVORY/seated-tv.png",
+      "metadata": "A-P0-IVORY/seated-tv.json",
+      "metadata_file_sha256": "1ec6350c7b689295456279ca87545cb047bd30168d38601f645a3a4531eea619",
+      "input_snapshot": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+      "input_snapshot_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+    }
+  ],
+  "pairs": [
+    {
+      "view_id": "entry-overview",
+      "before": "A-P0/entry-overview.png",
+      "after": "A-P0-IVORY/entry-overview.png",
+      "camera_signature_sha256": "42edc81f772df8e70788c96d7054e51ce768f078404ad5598f152b7feec3e51a",
+      "pixels_changed_over_2": 11836,
+      "changed_percent": 1.284,
+      "max_channel_delta": 63,
+      "mean_max_channel_delta": 0.6808,
+      "change_bounds_px": [
+        47,
+        206,
+        127,
+        616
+      ]
+    },
+    {
+      "view_id": "living-to-dining",
+      "before": "A-P0/living-to-dining.png",
+      "after": "A-P0-IVORY/living-to-dining.png",
+      "camera_signature_sha256": "c6a48b17986f8b6bf99407b3d597d2329f217817b901881ce9328d37cd350769",
+      "pixels_changed_over_2": 0,
+      "changed_percent": 0,
+      "max_channel_delta": 0,
+      "mean_max_channel_delta": 0,
+      "change_bounds_px": null
+    },
+    {
+      "view_id": "dining-to-living",
+      "before": "A-P0/dining-to-living.png",
+      "after": "A-P0-IVORY/dining-to-living.png",
+      "camera_signature_sha256": "9baa744ad2b7552286a15b2166d1922722189f3488c493b27ce4d269834c4046",
+      "pixels_changed_over_2": 0,
+      "changed_percent": 0,
+      "max_channel_delta": 0,
+      "mean_max_channel_delta": 0,
+      "change_bounds_px": null
+    },
+    {
+      "view_id": "wide-reception",
+      "before": "A-P0/wide-reception.png",
+      "after": "A-P0-IVORY/wide-reception.png",
+      "camera_signature_sha256": "f43116963715e7e1640c479fe7ddae8faf1128a98fbdf55ff9ddd08c5691a3a9",
+      "pixels_changed_over_2": 0,
+      "changed_percent": 0,
+      "max_channel_delta": 0,
+      "mean_max_channel_delta": 0,
+      "change_bounds_px": null
+    },
+    {
+      "view_id": "kitchen-relationship",
+      "before": "A-P0/kitchen-relationship.png",
+      "after": "A-P0-IVORY/kitchen-relationship.png",
+      "camera_signature_sha256": "32c29091d35e8c1842efe3502ef2f0956e4998075d5668040a3ec54c4f7b03e6",
+      "pixels_changed_over_2": 22656,
+      "changed_percent": 2.458,
+      "max_channel_delta": 63,
+      "mean_max_channel_delta": 1.3959,
+      "change_bounds_px": [
+        502,
+        233,
+        711,
+        581
+      ]
+    },
+    {
+      "view_id": "kitchen-work",
+      "before": "A-P0/kitchen-work.png",
+      "after": "A-P0-IVORY/kitchen-work.png",
+      "camera_signature_sha256": "dd06d6abb0213578e8cfa85152402727e9f9a9bdaf5a83a0dac8412a4bac88a2",
+      "pixels_changed_over_2": 233603,
+      "changed_percent": 25.348,
+      "max_channel_delta": 64,
+      "mean_max_channel_delta": 11.9947,
+      "change_bounds_px": [
+        197,
+        0,
+        1279,
+        719
+      ]
+    },
+    {
+      "view_id": "wide-reception-evening",
+      "before": "A-P0/wide-reception-evening.png",
+      "after": "A-P0-IVORY/wide-reception-evening.png",
+      "camera_signature_sha256": "c1ccfd49cc308a37d7c2b3835e542e7c3382caa6f3350b683efeb6e65dc20614",
+      "pixels_changed_over_2": 0,
+      "changed_percent": 0,
+      "max_channel_delta": 0,
+      "mean_max_channel_delta": 0,
+      "change_bounds_px": null
+    },
+    {
+      "view_id": "seated-tv",
+      "before": "A-P0/seated-tv.png",
+      "after": "A-P0-IVORY/seated-tv.png",
+      "camera_signature_sha256": "b7825683265f76833e8b63fae4e271951bbb28548a97d95de99e75fbaa5ce728",
+      "pixels_changed_over_2": 0,
+      "changed_percent": 0,
+      "max_channel_delta": 0,
+      "mean_max_channel_delta": 0,
+      "change_bounds_px": null
+    }
+  ],
+  "capture_template_sha256": "cbbe5e2b9be3cd01251d0c85b700c044f5a968c233ae707fe19120f80de51ffc",
+  "production_builder_sha256": "8e1b59b7275ac427cbd8847d412560af10c0a2fdae8e5389be36590fb4c8d807",
+  "browser_version": "145.0.7632.6",
+  "capture_started_at": "2026-10-10T20:28:42.400Z",
+  "capture_finished_at": "2026-10-10T20:35:14.485Z",
+  "render_script_sha256": "f0f87f45842e7f6608e873bc173374ab29d90537148cdcf4cfcaec9cfd5cd081",
+  "capture_builder_sha256": "c20fba395bea48cfdb6e8ff33d3e7cff707512bd524798485d2cbac6e3ed3606",
+  "original_source_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a",
+  "after_webgl_rendered": true,
+  "owner_approved": false,
+  "construction_approved": false,
+  "cloud_saved": false
+}

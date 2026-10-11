@@ -1,0 +1,648 @@
+{
+  "schema": "M3Group1/1",
+  "baseline_head": "42faaa195d81ffa1ec39e9cd30e1c0bcb1f818dd",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "approvals": {
+    "owner": false,
+    "construction": false,
+    "procurement": false,
+    "cloud_save": false
+  },
+  "options": [
+    {
+      "id": "B",
+      "scene": "scene-af22b36c",
+      "failures": [],
+      "route_results": [
+        {
+          "pull_mm": 200,
+          "use": "normal",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "normal",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "both-users",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "both-users",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "normal",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "normal",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        },
+        {
+          "pull_mm": 450,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "both-users",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "both-users",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        }
+      ],
+      "chair450": [
+        {
+          "projection": 100,
+          "shoe_chair": 710,
+          "buffet_open": 685,
+          "standing_buffet_collisions": []
+        },
+        {
+          "projection": 200,
+          "shoe_chair": 610,
+          "buffet_open": 685,
+          "standing_buffet_collisions": []
+        },
+        {
+          "projection": 300,
+          "shoe_chair": 510,
+          "buffet_open": 685,
+          "standing_buffet_collisions": []
+        },
+        {
+          "projection": 400,
+          "shoe_chair": 410,
+          "buffet_open": 685,
+          "standing_buffet_collisions": []
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "scene": "scene-2d47c444",
+      "failures": [],
+      "route_results": [
+        {
+          "pull_mm": 200,
+          "use": "normal",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "normal",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        },
+        {
+          "pull_mm": 200,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "both-users",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 200,
+          "use": "both-users",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        },
+        {
+          "pull_mm": 450,
+          "use": "normal",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "normal",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 35
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        },
+        {
+          "pull_mm": 450,
+          "use": "shoe-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        },
+        {
+          "pull_mm": 450,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8050,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "buffet-user",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "MODEL_ROUTE_FOUND",
+          "reason": null,
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 37
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": 8250,
+          "caution": "A route being found is only evidence for the chosen conservative discrete circular envelope and nominal obstacles, not a safe physical route."
+        },
+        {
+          "pull_mm": 450,
+          "use": "both-users",
+          "envelope_diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        },
+        {
+          "pull_mm": 450,
+          "use": "both-users",
+          "envelope_diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 39
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "distance_mm": null
+        }
+      ],
+      "chair450": [
+        {
+          "projection": 100,
+          "shoe_chair": 510,
+          "buffet_open": 635,
+          "standing_buffet_collisions": []
+        },
+        {
+          "projection": 200,
+          "shoe_chair": 410,
+          "buffet_open": 635,
+          "standing_buffet_collisions": []
+        },
+        {
+          "projection": 300,
+          "shoe_chair": 310,
+          "buffet_open": 635,
+          "standing_buffet_collisions": []
+        },
+        {
+          "projection": 400,
+          "shoe_chair": 210,
+          "buffet_open": 635,
+          "standing_buffet_collisions": []
+        }
+      ]
+    }
+  ]
+}

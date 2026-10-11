@@ -1,0 +1,80 @@
+{
+  "schema": "TypeBKitchenR4CandidateAudit/1",
+  "status": "PASS",
+  "source_sha256": "017a76a5fc6d5ff0e90f1adb10140c7098e3c2cc3e86d18e7a0b0c0fd439ec2a",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_scene_revision": "scene-9e86635b",
+  "candidate_scene_revision": "scene-3b86c557",
+  "changed_ids": [
+    "starter-20",
+    "K3-corner",
+    "K3-sink-base",
+    "K3-dishwasher"
+  ],
+  "layout_diff": [
+    {
+      "path": "/furniture/17/color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/furniture/42/color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/furniture/43/color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/furniture/43/material_id",
+      "before": "kitchen-muted-light-oak",
+      "after": "kitchen-soft-ivory"
+    },
+    {
+      "path": "/furniture/44/color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/decor/saved/warm/colours/starter-20",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/decor/saved/warm/colours/K3-corner",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/decor/saved/warm/colours/K3-dishwasher",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "path": "/decor/saved/warm/colours/K3-sink-base",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    }
+  ],
+  "layout_changed_fields": 9,
+  "geometry_drift": 0,
+  "camera_drift": 0,
+  "architecture_drift": 0,
+  "furniture_count": 50,
+  "validation": {
+    "status": "WARNING",
+    "valid": true,
+    "summary": {
+      "pass": 184,
+      "warning": 77,
+      "fail": 0
+    }
+  },
+  "owner_approved": false,
+  "construction_approved": false,
+  "cloud_saved": false,
+  "manufacturer_selected": false,
+  "candidate_sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "M3Group2OwnerReview/1",
+  "provisional_lead": {
+    "BR02": "B daily work / wardrobe loss and chair parking conditional",
+    "BR01": "B bed225mm east / west300mm conditional cleaning access; shared desk and wardrobe; A material taste pending",
+    "Master": "shared layout, upholstered A preference for comfort study",
+    "WIC": "B650 sliding / inventory and depth HOLD"
+  },
+  "rejected": [
+    "A-BR02 as complete daily-work layout: wide knee box, glazing parking and source AC service unresolved",
+    "Two opposite WIC drawers operated simultaneously",
+    "Silent4-pair shoe allocation",
+    "Large curtain stacks without supplier envelope check"
+  ],
+  "owner_approved": false,
+  "programme": {
+    "BR02": {
+      "owner_confirmed": true,
+      "use": "Daily office with guest sleeping when needed",
+      "evidence": "Explicit owner reply during the Group2 sprint; layout, products and storage loss remain unapproved"
+    },
+    "BR01": "OCCUPANT_UNKNOWN"
+  },
+  "inventory": "UNKNOWN",
+  "hold_ids": [
+    "G2-H01",
+    "G2-H02",
+    "G2-H03",
+    "G2-H04",
+    "G2-H05",
+    "G2-H06",
+    "G2-H07",
+    "G2-H08",
+    "G2-H09"
+  ]
+}
