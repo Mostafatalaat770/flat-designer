@@ -1,0 +1,2383 @@
+{
+  "schema": "ApartmentGitHubRenderSnapshot/1",
+  "name": "B / controlled stone public spine floor study",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_scene_revision": "scene-4821689",
+  "scene_revision": "scene-fbe1bd89",
+  "storage_revision": 55,
+  "layout": {
+    "modelVersion": "0.2.2",
+    "furniture": [
+      {
+        "id": "starter-1",
+        "type": "bed",
+        "name": "King frame 1870 × 2220 · mattress 1800 × 2000",
+        "room_id": "MBR-01",
+        "cx": 1516,
+        "cy": 6835,
+        "w": 1870,
+        "d": 2220,
+        "rot": 270,
+        "color": "#C8C7BA",
+        "status": "EXPLORATORY",
+        "variant": "oak-platform",
+        "product_reference_id": "bed-idanas-180-reference",
+        "material_id": "generic-linen"
+      },
+      {
+        "id": "starter-2",
+        "type": "nightstand",
+        "name": "Nightstand",
+        "room_id": "MBR-01",
+        "cx": 656.668,
+        "cy": 5650,
+        "w": 450,
+        "d": 400,
+        "rot": 270,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-3",
+        "type": "nightstand",
+        "name": "Nightstand",
+        "room_id": "MBR-01",
+        "cx": 656.668,
+        "cy": 8050,
+        "w": 450,
+        "d": 400,
+        "rot": 270,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-4",
+        "type": "wardrobe",
+        "name": "North dressing wardrobe · 1250 × 600 mm",
+        "room_id": "WIC-01",
+        "cx": 4734,
+        "cy": 6615,
+        "w": 1250,
+        "d": 600,
+        "rot": 0,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-5",
+        "type": "wardrobe",
+        "name": "South dressing wardrobe · 1250 × 600 mm",
+        "room_id": "WIC-01",
+        "cx": 4734,
+        "cy": 8550,
+        "w": 1250,
+        "d": 600,
+        "rot": 180,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-6",
+        "type": "bed",
+        "name": "Single frame reserve 1280 × 2100 · mattress 1200 × 2000",
+        "room_id": "BR-01",
+        "cx": 2774.953,
+        "cy": 2680,
+        "w": 1280,
+        "d": 2100,
+        "rot": 0,
+        "color": "#C8C7BA",
+        "status": "EXPLORATORY",
+        "variant": "oak-platform"
+      },
+      {
+        "id": "starter-7",
+        "type": "wardrobe",
+        "name": "Bedroom 1 wardrobe · 1800 × 600 mm",
+        "room_id": "BR-01",
+        "cx": 5060,
+        "cy": 3150,
+        "w": 1800,
+        "d": 600,
+        "rot": 90,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-8",
+        "type": "desk",
+        "name": "Bedroom 1 study desk · 1200 × 600 mm",
+        "room_id": "BR-01",
+        "cx": 3800,
+        "cy": 4590,
+        "w": 1200,
+        "d": 600,
+        "rot": 180,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-9",
+        "type": "chair",
+        "name": "Bedroom 1 study chair · bed overlap corrected",
+        "room_id": "BR-01",
+        "cx": 3720,
+        "cy": 3930,
+        "w": 480,
+        "d": 500,
+        "rot": 180,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-10",
+        "type": "bed",
+        "name": "1280 × 2100 frame reserve · headboard on east wall",
+        "room_id": "BR-02",
+        "cx": 7820,
+        "cy": 2800,
+        "w": 1280,
+        "d": 2100,
+        "rot": 90,
+        "color": "#C8C7BA",
+        "status": "EXPLORATORY",
+        "variant": "oak-platform"
+      },
+      {
+        "id": "starter-11",
+        "type": "desk",
+        "name": "Bedroom 2 study desk · compact 900 × 500 mm",
+        "room_id": "BR-02",
+        "cx": 6020,
+        "cy": 1920,
+        "w": 900,
+        "d": 500,
+        "rot": 0,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-12",
+        "type": "officechair",
+        "name": "Bedroom 2 compact task chair · 480 mm envelope",
+        "room_id": "BR-02",
+        "cx": 6020,
+        "cy": 2450,
+        "w": 480,
+        "d": 480,
+        "rot": 0,
+        "color": "#8A8F82",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-13",
+        "type": "wardrobe",
+        "name": "1600 mm closed wardrobe · one family-linen bay",
+        "room_id": "BR-02",
+        "cx": 7990,
+        "cy": 4589,
+        "w": 1600,
+        "d": 600,
+        "rot": 180,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-15",
+        "type": "toilet",
+        "name": "Ensuite WC · rear toward south wall · plumbing TBD",
+        "room_id": "BATH-M01",
+        "cx": 6714.964,
+        "cy": 8520,
+        "w": 400,
+        "d": 700,
+        "rot": 180,
+        "color": "#F5F4F0",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-16",
+        "type": "shower",
+        "name": "Shower · 900 × 900 mm",
+        "room_id": "BATH-C01",
+        "cx": 8409.592,
+        "cy": 8409.592,
+        "w": 900,
+        "d": 900,
+        "rot": 0,
+        "color": "#C9D6D8",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-17",
+        "type": "toilet",
+        "name": "Family WC · rear toward east wall · plumbing TBD",
+        "room_id": "BATH-C01",
+        "cx": 8541,
+        "cy": 7440,
+        "w": 400,
+        "d": 700,
+        "rot": 90,
+        "color": "#F5F4F0",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-18",
+        "type": "vanity",
+        "name": "600 mm basin on custom closed vanity",
+        "room_id": "BATH-C01",
+        "cx": 8500,
+        "cy": 6526,
+        "w": 600,
+        "d": 460,
+        "rot": 0,
+        "color": "#BCA98F",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
+      },
+      {
+        "id": "starter-20",
+        "type": "counter",
+        "name": "West cooking counter · 1500 mm · oven reserved, SKU TBD",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 8038,
+        "w": 1500,
+        "d": 600,
+        "rot": 270,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-21",
+        "type": "ksink",
+        "name": "550 mm sink · drain/water positions TBD",
+        "room_id": "KIT-01",
+        "cx": 11181,
+        "cy": 6993,
+        "w": 550,
+        "d": 400,
+        "rot": 0,
+        "color": "#eef2f5",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-22",
+        "type": "stove",
+        "name": "600 mm gas hob · ventilation and clearances TBD",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 7895,
+        "w": 600,
+        "d": 400,
+        "rot": 270,
+        "color": "#424f61",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-23",
+        "type": "fridge",
+        "name": "650 mm fridge envelope · door/ventilation TBD",
+        "room_id": "KIT-01",
+        "cx": 11850,
+        "cy": 8520,
+        "w": 650,
+        "d": 650,
+        "rot": 180,
+        "color": "#E8E2D7",
+        "status": "EXPLORATORY",
+        "variant": "integrated",
+        "material_id": "kitchen-soft-ivory"
+      },
+      {
+        "id": "starter-25",
+        "type": "toilet",
+        "name": "Guest WC",
+        "room_id": "WC-01",
+        "cx": 11269.276,
+        "cy": 9701.745,
+        "w": 400,
+        "d": 650,
+        "rot": 270,
+        "color": "#f6f8fa",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-26",
+        "type": "vanity",
+        "name": "Compact guest handrinse 350 × 180 mm · slim wall basin/vanity concept",
+        "room_id": "WC-01",
+        "cx": 11968.31,
+        "cy": 9174.54,
+        "w": 350,
+        "d": 180,
+        "rot": 0,
+        "color": "#60432E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-27",
+        "type": "rug",
+        "name": "Living rug · generous front-leg coverage",
+        "room_id": "RECP-01",
+        "cx": 11000,
+        "cy": 2700,
+        "w": 3400,
+        "d": 2100,
+        "rot": 90,
+        "color": "#BDBEAE",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "generic-carpet"
+      },
+      {
+        "id": "starter-28",
+        "type": "sofa",
+        "name": "Family sofa · tailored straight · 2880 × 990 mm",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 2460,
+        "w": 2880,
+        "d": 990,
+        "rot": 270,
+        "color": "#C8C7BA",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "generic-linen",
+        "product_reference_id": "sofa-tailored"
+      },
+      {
+        "id": "starter-29",
+        "type": "coffeetable",
+        "name": "Coffee table · Option A enlarged",
+        "room_id": "RECP-01",
+        "cx": 10900,
+        "cy": 2350,
+        "w": 1200,
+        "d": 600,
+        "rot": 90,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-30",
+        "type": "tvstand",
+        "name": "TV console",
+        "room_id": "RECP-01",
+        "cx": 12180,
+        "cy": 1800,
+        "w": 1800,
+        "d": 380,
+        "rot": 90,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style",
+        "material_id": "a1-natural-oak"
+      },
+      {
+        "id": "starter-31",
+        "type": "tv",
+        "name": "TV",
+        "room_id": "RECP-01",
+        "cx": 12243.688,
+        "cy": 1779.359,
+        "w": 1230,
+        "d": 80,
+        "rot": 90,
+        "color": "#152034",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-32",
+        "type": "armchair",
+        "name": "Single olive lounge chair · linked to family living",
+        "room_id": "RECP-01",
+        "cx": 11650,
+        "cy": 4250,
+        "w": 700,
+        "d": 720,
+        "rot": 135,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-35",
+        "type": "table",
+        "name": "Dining table · six seats · 2000 × 950 mm",
+        "room_id": "RECP-01",
+        "cx": 14670,
+        "cy": 7650,
+        "w": 2000,
+        "d": 950,
+        "rot": 0,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-36",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 13970,
+        "cy": 6950,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-37",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 15370,
+        "cy": 6950,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-38",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 13970,
+        "cy": 8350,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-39",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 15370,
+        "cy": 8350,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-40",
+        "type": "shoecab",
+        "name": "Slim entry shoe storage · 900 × 280 mm",
+        "room_id": "RECP-01",
+        "cx": 15740,
+        "cy": 9450,
+        "w": 900,
+        "d": 280,
+        "rot": 90,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-41",
+        "type": "roundtable",
+        "name": "Terrace table",
+        "room_id": "TER-MAIN",
+        "cx": 14256.058,
+        "cy": 1292.154,
+        "w": 600,
+        "d": 600,
+        "rot": 0,
+        "color": "#8A7860",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-42",
+        "type": "armchair",
+        "name": "Terrace chair",
+        "room_id": "TER-MAIN",
+        "cx": 13366.379,
+        "cy": 1292.154,
+        "w": 650,
+        "d": 650,
+        "rot": 270,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-43",
+        "type": "armchair",
+        "name": "Terrace chair",
+        "room_id": "TER-MAIN",
+        "cx": 15145.738,
+        "cy": 1292.154,
+        "w": 650,
+        "d": 650,
+        "rot": 90,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "starter-44",
+        "type": "plant",
+        "name": "Plant",
+        "room_id": "TER-MBR",
+        "cx": 381.291,
+        "cy": 3834.096,
+        "w": 500,
+        "d": 500,
+        "rot": 0,
+        "color": "#799378",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "A2-dining-chair-north-centre",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 14670,
+        "cy": 6950,
+        "w": 510,
+        "d": 530,
+        "rot": 0,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "A2-dining-chair-south-centre",
+        "type": "chair",
+        "name": "Dining chair · mushroom",
+        "room_id": "RECP-01",
+        "cx": 14670,
+        "cy": 8350,
+        "w": 510,
+        "d": 530,
+        "rot": 180,
+        "color": "#515A4E",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      },
+      {
+        "id": "S1-living-side-table",
+        "type": "sidetable",
+        "name": "Living side table · remote, drink and book",
+        "room_id": "RECP-01",
+        "cx": 9585,
+        "cy": 4240,
+        "w": 460,
+        "d": 460,
+        "rot": 0,
+        "color": "#8A7860",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K3-corner",
+        "type": "counter",
+        "name": "600 mm closed corner cabinet · access hardware TBD",
+        "room_id": "KIT-01",
+        "cx": 9381,
+        "cy": 6993,
+        "w": 600,
+        "d": 590,
+        "rot": 0,
+        "color": "#8A7860",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K3-dishwasher",
+        "type": "dishwasher",
+        "name": "600 mm integrated dishwasher niche · SKU TBD",
+        "room_id": "KIT-01",
+        "cx": 10581,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "color": "#BCA98F",
+        "variant": "integrated",
+        "status": "EXPLORATORY",
+        "material_id": "kitchen-muted-light-oak"
+      },
+      {
+        "id": "K3-sink-base",
+        "type": "counter",
+        "name": "600 mm sink / waste cabinet",
+        "room_id": "KIT-01",
+        "cx": 11181,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "color": "#8A7860",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K3-end-landing",
+        "type": "counter",
+        "name": "Shallow 600 × 410 mm refrigerator landing",
+        "room_id": "KIT-01",
+        "cx": 11781,
+        "cy": 6893,
+        "w": 600,
+        "d": 410,
+        "rot": 0,
+        "color": "#8A7860",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "K3-laundry-niche",
+        "type": "washer",
+        "name": "600 × 610 mm indoor laundry niche · generic envelope",
+        "room_id": "KIT-01",
+        "cx": 9981,
+        "cy": 6993,
+        "w": 600,
+        "d": 610,
+        "rot": 0,
+        "color": "#E6E0D7",
+        "variant": "style",
+        "status": "EXPLORATORY"
+      },
+      {
+        "id": "V5-master-rug",
+        "type": "rug",
+        "name": "Quiet master rug · generic 2600 × 3000",
+        "room_id": "MBR-01",
+        "cx": 1900,
+        "cy": 6800,
+        "w": 2600,
+        "d": 3000,
+        "rot": 270,
+        "color": "#BDBEAE",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "material_id": "generic-carpet"
+      },
+      {
+        "id": "R1-ensuite-vanity",
+        "type": "vanity",
+        "name": "600 mm basin on custom closed vanity",
+        "room_id": "BATH-M01",
+        "cx": 5980,
+        "cy": 8620,
+        "w": 600,
+        "d": 460,
+        "rot": 180,
+        "color": "#BCA98F",
+        "variant": "style",
+        "status": "EXPLORATORY",
+        "product_reference_id": "r1-dneo-basin-custom-vanity"
+      },
+      {
+        "id": "BATHM-WALKIN-A1",
+        "type": "shower",
+        "name": "Master walk-in shower 1450x800",
+        "room_id": "BATH-M01",
+        "cx": 6323,
+        "cy": 6750,
+        "w": 1450,
+        "d": 800,
+        "rot": 0,
+        "color": "#E4DED3",
+        "status": "EXPLORATORY",
+        "variant": "walk-in"
+      }
+    ],
+    "rooms": {
+      "TER-MBR": {
+        "name": "Master terrace",
+        "mat": "antislip"
+      },
+      "BR-01": {
+        "name": "Bedroom 1",
+        "mat": "lightoak"
+      },
+      "BR-02": {
+        "name": "Bedroom 2",
+        "mat": "lightoak"
+      },
+      "MBR-01": {
+        "name": "Master bedroom",
+        "mat": "lightoak"
+      },
+      "HALL-01": {
+        "name": "Private hall",
+        "mat": "travertine"
+      },
+      "WIC-01": {
+        "name": "Dressing",
+        "mat": "lightoak"
+      },
+      "BATH-M01": {
+        "name": "Ensuite",
+        "mat": "tile800"
+      },
+      "BATH-C01": {
+        "name": "Family bathroom",
+        "mat": "tile800"
+      },
+      "KIT-01": {
+        "name": "Kitchen",
+        "mat": "travertine"
+      },
+      "TER-SVC": {
+        "name": "Service terrace",
+        "mat": "antislip"
+      },
+      "WC-01": {
+        "name": "Guest WC",
+        "mat": "tile800"
+      },
+      "TER-MAIN": {
+        "name": "Main terrace",
+        "mat": "antislip"
+      },
+      "RECP-01": {
+        "name": "Living & dining",
+        "mat": "travertine"
+      }
+    },
+    "decor": {
+      "active": "japandi",
+      "sceneVersion": 2,
+      "saved": {
+        "custom": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "wood",
+            "BR-02": "wood",
+            "MBR-01": "wood",
+            "HALL-01": "tile800",
+            "WIC-01": "wood",
+            "BATH-M01": "antislip",
+            "BATH-C01": "antislip",
+            "KIT-01": "tile800",
+            "TER-SVC": "antislip",
+            "WC-01": "antislip",
+            "TER-MAIN": "antislip",
+            "RECP-01": "tile800"
+          },
+          "colours": {
+            "starter-1": "#c6d3df",
+            "starter-2": "#c7b299",
+            "starter-3": "#c7b299",
+            "starter-4": "#d8dfe5",
+            "starter-5": "#d8dfe5",
+            "starter-6": "#adc2d2",
+            "starter-7": "#d8dfe5",
+            "starter-8": "#c7b299",
+            "starter-9": "#747f91",
+            "starter-10": "#c4b9a9",
+            "starter-11": "#c7b299",
+            "starter-12": "#3a465c",
+            "starter-13": "#d8dfe5",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#d8dfe5",
+            "starter-20": "#d8dfe5",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#d8dfe5",
+            "starter-27": "#c0c6d0",
+            "starter-28": "#536f8b",
+            "starter-29": "#c7b299",
+            "starter-30": "#c7b299",
+            "starter-31": "#152034",
+            "starter-32": "#a89780",
+            "starter-35": "#c7b299",
+            "starter-36": "#6a7888",
+            "starter-37": "#6a7888",
+            "starter-38": "#6a7888",
+            "starter-39": "#6a7888",
+            "starter-40": "#d8dfe5",
+            "starter-41": "#c7b299",
+            "starter-42": "#8a9c9f",
+            "starter-43": "#8a9c9f",
+            "starter-44": "#799378"
+          }
+        },
+        "warm": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "parquet",
+            "BR-02": "parquet",
+            "MBR-01": "parquet",
+            "HALL-01": "parquet",
+            "WIC-01": "parquet",
+            "BATH-M01": "tile800",
+            "BATH-C01": "tile800",
+            "KIT-01": "tile800",
+            "TER-SVC": "antislip",
+            "WC-01": "tile800",
+            "TER-MAIN": "antislip",
+            "RECP-01": "lightoak"
+          },
+          "colours": {
+            "starter-1": "#dfd3bb",
+            "starter-2": "#BCA98F",
+            "starter-3": "#BCA98F",
+            "starter-4": "#BCA98F",
+            "starter-5": "#BCA98F",
+            "starter-6": "#BCA98F",
+            "starter-7": "#BCA98F",
+            "starter-8": "#BCA98F",
+            "starter-9": "#8D9381",
+            "starter-10": "#BCA98F",
+            "starter-11": "#BCA98F",
+            "starter-12": "#8A8F82",
+            "starter-13": "#BCA98F",
+            "starter-15": "#F5F4F0",
+            "starter-16": "#C9D6D8",
+            "starter-17": "#F5F4F0",
+            "starter-18": "#BCA98F",
+            "starter-20": "#BCA98F",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#E8E2D7",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#60432E",
+            "starter-27": "#b6a797",
+            "starter-28": "#dfd3bb",
+            "starter-29": "#D2BFA4",
+            "starter-30": "#B88C5E",
+            "starter-31": "#152034",
+            "starter-32": "#7D856F",
+            "starter-35": "#D8CEC0",
+            "starter-36": "#A89E90",
+            "starter-37": "#A89E90",
+            "starter-38": "#A89E90",
+            "starter-39": "#A89E90",
+            "starter-40": "#BCA98F",
+            "starter-41": "#a5825c",
+            "starter-42": "#69755c",
+            "starter-43": "#69755c",
+            "starter-44": "#799378",
+            "A2-dining-chair-north-centre": "#A89E90",
+            "A2-dining-chair-south-centre": "#A89E90",
+            "S1-living-side-table": "#C6B18F",
+            "K3-corner": "#BCA98F",
+            "K3-dishwasher": "#BCA98F",
+            "K3-sink-base": "#BCA98F",
+            "K3-end-landing": "#BCA98F",
+            "K3-laundry-niche": "#E6E0D7",
+            "V5-master-rug": "#b6a797",
+            "R1-ensuite-vanity": "#BCA98F",
+            "BATHM-WALKIN-A1": "#E4DED3"
+          }
+        },
+        "boho": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "travertine",
+            "BR-02": "travertine",
+            "MBR-01": "travertine",
+            "HALL-01": "travertine",
+            "WIC-01": "travertine",
+            "BATH-M01": "terrazzo",
+            "BATH-C01": "terrazzo",
+            "KIT-01": "terrazzo",
+            "TER-SVC": "antislip",
+            "WC-01": "terrazzo",
+            "TER-MAIN": "antislip",
+            "RECP-01": "travertine"
+          },
+          "colours": {
+            "starter-1": "#dfc99f",
+            "starter-2": "#996f49",
+            "starter-3": "#996f49",
+            "starter-4": "#996f49",
+            "starter-5": "#996f49",
+            "starter-6": "#dfc99f",
+            "starter-7": "#996f49",
+            "starter-8": "#996f49",
+            "starter-9": "#ac6348",
+            "starter-10": "#dfc99f",
+            "starter-11": "#996f49",
+            "starter-12": "#3a465c",
+            "starter-13": "#996f49",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#996f49",
+            "starter-20": "#996f49",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#996f49",
+            "starter-27": "#bb6c48",
+            "starter-28": "#dfc99f",
+            "starter-29": "#996f49",
+            "starter-30": "#996f49",
+            "starter-31": "#152034",
+            "starter-32": "#ac6348",
+            "starter-35": "#996f49",
+            "starter-36": "#ac6348",
+            "starter-37": "#ac6348",
+            "starter-38": "#ac6348",
+            "starter-39": "#ac6348",
+            "starter-40": "#996f49",
+            "starter-41": "#996f49",
+            "starter-42": "#ac6348",
+            "starter-43": "#ac6348",
+            "starter-44": "#799378"
+          }
+        },
+        "japandi": {
+          "rooms": {
+            "TER-MBR": "antislip",
+            "BR-01": "lightoak",
+            "BR-02": "lightoak",
+            "MBR-01": "lightoak",
+            "HALL-01": "lightoak",
+            "WIC-01": "lightoak",
+            "BATH-M01": "tile600",
+            "BATH-C01": "tile600",
+            "KIT-01": "tile600",
+            "TER-SVC": "antislip",
+            "WC-01": "tile600",
+            "TER-MAIN": "antislip",
+            "RECP-01": "lightoak"
+          },
+          "colours": {
+            "starter-1": "#d5d0c5",
+            "starter-2": "#c4ad86",
+            "starter-3": "#c4ad86",
+            "starter-4": "#c4ad86",
+            "starter-5": "#c4ad86",
+            "starter-6": "#d5d0c5",
+            "starter-7": "#c4ad86",
+            "starter-8": "#c4ad86",
+            "starter-9": "#565f54",
+            "starter-10": "#d5d0c5",
+            "starter-11": "#c4ad86",
+            "starter-12": "#3a465c",
+            "starter-13": "#c4ad86",
+            "starter-15": "#f6f8fa",
+            "starter-16": "#c0d6df",
+            "starter-17": "#f6f8fa",
+            "starter-18": "#c4ad86",
+            "starter-20": "#c4ad86",
+            "starter-21": "#eef2f5",
+            "starter-22": "#424f61",
+            "starter-23": "#bec7d0",
+            "starter-25": "#f6f8fa",
+            "starter-26": "#c4ad86",
+            "starter-27": "#cbc8bc",
+            "starter-28": "#d5d0c5",
+            "starter-29": "#c4ad86",
+            "starter-30": "#c4ad86",
+            "starter-31": "#152034",
+            "starter-32": "#565f54",
+            "starter-35": "#c4ad86",
+            "starter-36": "#565f54",
+            "starter-37": "#565f54",
+            "starter-38": "#565f54",
+            "starter-39": "#565f54",
+            "starter-40": "#c4ad86",
+            "starter-41": "#c4ad86",
+            "starter-42": "#565f54",
+            "starter-43": "#565f54",
+            "starter-44": "#799378"
+          }
+        }
+      }
+    },
+    "studio": {
+      "version": 1,
+      "rooms": {
+        "BR-01": {
+          "hvac": "wall-split",
+          "lighting": "downlights",
+          "temperature": 2700,
+          "brightness": 72,
+          "wall": "#E6E4DA"
+        },
+        "BR-02": {
+          "hvac": "wall-split",
+          "lighting": "downlights",
+          "temperature": 2700,
+          "brightness": 72,
+          "wall": "#E6E4DA"
+        },
+        "MBR-01": {
+          "hvac": "wall-split",
+          "lighting": "downlights",
+          "temperature": 2700,
+          "brightness": 70,
+          "wall": "#E6E4DA"
+        },
+        "HALL-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 80,
+          "wall": "#E6E4DA"
+        },
+        "WIC-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 82,
+          "wall": "#E6E4DA"
+        },
+        "BATH-M01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 90,
+          "wall": "#E6E4DA"
+        },
+        "BATH-C01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 92,
+          "wall": "#E6E4DA"
+        },
+        "KIT-01": {
+          "hvac": "none",
+          "ceiling": "plain",
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 82,
+          "wall": "#E6E4DA"
+        },
+        "WC-01": {
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 82,
+          "wall": "#E6E4DA"
+        },
+        "RECP-01": {
+          "hvac": "wall-split",
+          "ceiling": "plain",
+          "lighting": "downlights",
+          "temperature": 3000,
+          "brightness": 76,
+          "wall": "#E6E4DA"
+        }
+      }
+    },
+    "demolished": [],
+    "measures": [],
+    "interior": {
+      "version": 1,
+      "objects": [
+        {
+          "id": "A-dining-sideboard",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 15720,
+          "cy": 4750,
+          "rotation": 90,
+          "width_mm": 2000,
+          "depth_mm": 400,
+          "height_mm": 800,
+          "material_references": {
+            "body": "a1-natural-oak"
+          },
+          "colour": "#8A7860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed family dining storage / buffet; lighter medium-oak tone and reduced visual mass"
+          }
+        },
+        {
+          "id": "A-dining-pendant",
+          "type": "pendant",
+          "variant": "globe",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "ceiling",
+            "drop_mm": 650
+          },
+          "cx": 14670,
+          "cy": 7650,
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 500,
+          "height_mm": 200,
+          "material_references": {
+            "metal": "generic-brass"
+          },
+          "colour": "#4A4D43",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "smaller sculptural dining pendant; visually lighter over 2000 x 950 table",
+            "temperature_k": 2700
+          }
+        },
+        {
+          "id": "A1-entry-mirror",
+          "type": "mirror",
+          "variant": "round",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-RECP-01-16",
+            "offset_mm": 0,
+            "inset_mm": 10,
+            "elevation_mm": 1100
+          },
+          "rotation": 0,
+          "width_mm": 620,
+          "depth_mm": 35,
+          "height_mm": 620,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "entry definition above slim shoe storage"
+          }
+        },
+        {
+          "id": "A2-living-plant",
+          "type": "plant",
+          "variant": "potted",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 15480,
+          "cy": 3250,
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 500,
+          "height_mm": 1650,
+          "material_references": {
+            "pot": "a1-natural-oak"
+          },
+          "colour": "#738064",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "One taller specimen; glazing kept clear"
+          }
+        },
+        {
+          "id": "S1-reading-lamp",
+          "type": "floor-lamp",
+          "variant": "shade",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 10230,
+          "cy": 4430,
+          "rotation": 0,
+          "width_mm": 360,
+          "depth_mm": 360,
+          "height_mm": 1500,
+          "material_references": {
+            "primary": "generic-brass"
+          },
+          "colour": "#4A4D43",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Warm reading lamp; restrained bronze accent"
+          }
+        },
+        {
+          "id": "V5-sideboard-lamp",
+          "type": "table-lamp",
+          "variant": "shade",
+          "room_id": "RECP-01",
+          "placement": {
+            "mode": "floor",
+            "elevation_mm": 800
+          },
+          "cx": 15720,
+          "cy": 5450,
+          "rotation": 0,
+          "width_mm": 260,
+          "depth_mm": 260,
+          "height_mm": 400,
+          "material_references": {
+            "primary": "generic-brass"
+          },
+          "colour": "#4A4D43",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Warm ceramic/brass sideboard lamp; decorative lighting only"
+          }
+        },
+        {
+          "id": "WC-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "WC-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-WC-01-02",
+            "offset_mm": 307.15,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 35,
+          "height_mm": 800,
+          "material_references": {
+            "frame": "generic-brass"
+          },
+          "colour": "#B39860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Guest WC mirror; restrained bronze frame over darker walnut vanity"
+          }
+        },
+        {
+          "id": "V7-master-drawers",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 3340,
+          "cy": 8650,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 400,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "kitchen-muted-light-oak"
+          },
+          "colour": "#8A7860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed master drawer chest; generic custom joinery, not a vanity"
+          }
+        },
+        {
+          "id": "V5-master-bench",
+          "type": "bench",
+          "variant": "upholstered",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 1700,
+          "cy": 8610,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 350,
+          "height_mm": 440,
+          "material_references": {
+            "primary": "kitchen-muted-light-oak"
+          },
+          "colour": "#8A7860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "South-wall dressing bench; leave the entire east-side main path open"
+          }
+        },
+        {
+          "id": "BATHM-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-04",
+            "offset_mm": -343.08,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 35,
+          "height_mm": 850,
+          "material_references": {
+            "frame": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Master mirror: calm nickel finish matches fixtures; electrical IP fixture/location TBD"
+          }
+        },
+        {
+          "id": "V7-bedroom1-drawers",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "BR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 2675,
+          "cy": 4720,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 350,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "kitchen-muted-light-oak"
+          },
+          "colour": "#8A7860",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed books / toys / daily drawers; generic custom joinery"
+          }
+        },
+        {
+          "id": "BATHC-A1-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-04",
+            "offset_mm": -26.3,
+            "elevation_mm": 1050,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 35,
+          "height_mm": 800,
+          "material_references": {
+            "frame": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Family bathroom mirror; brushed-nickel/chrome direction"
+          }
+        },
+        {
+          "id": "V5-hall-mirror",
+          "type": "mirror",
+          "variant": "rectangle",
+          "room_id": "HALL-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-HALL-01-07",
+            "offset_mm": 200,
+            "inset_mm": 12,
+            "elevation_mm": 750
+          },
+          "rotation": 0,
+          "width_mm": 500,
+          "depth_mm": 35,
+          "height_mm": 1100,
+          "material_references": {
+            "frame": "kitchen-muted-light-oak"
+          },
+          "colour": "#BCA98F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Functional wall mirror; no architectural change"
+          }
+        },
+        {
+          "id": "KIT-A1-north-backsplash",
+          "type": "wall-panel",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-02",
+            "offset_mm": 0,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 2800,
+          "depth_mm": 5,
+          "height_mm": 520,
+          "material_references": {
+            "primary": "kitchen-warm-quartz"
+          },
+          "colour": "#E5DED1",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Thin quartz backsplash skin; modeled thin to avoid false appliance-footprint collision"
+          }
+        },
+        {
+          "id": "KIT-A1-west-backsplash",
+          "type": "wall-panel",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 263.9,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 1500,
+          "depth_mm": 5,
+          "height_mm": 520,
+          "material_references": {
+            "primary": "kitchen-warm-quartz"
+          },
+          "colour": "#E5DED1",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Thin quartz backsplash skin behind cooking run"
+          }
+        },
+        {
+          "id": "KIT-A1-upper-north",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-02",
+            "offset_mm": -228.1,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 1800,
+          "depth_mm": 330,
+          "height_mm": 700,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Flush pale-oak upper cabinet run with 40 mm blind-corner relief at west junction"
+          }
+        },
+        {
+          "id": "KIT-A1-upper-west-low",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": -544.2,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 300,
+          "depth_mm": 330,
+          "height_mm": 700,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Compact 300 mm upper cupboard; clear north-run front strip, hob/exhaust heat clearances TBD"
+          }
+        },
+        {
+          "id": "KIT-A1-upper-west-high",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 805.8,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 450,
+          "depth_mm": 330,
+          "height_mm": 700,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Upper cabinet flanking cooking zone; hood/exhaust remains TBD"
+          }
+        },
+        {
+          "id": "MBR-A1-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-MBR-01-03",
+            "offset_mm": 1189.9,
+            "elevation_mm": 1100,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 800,
+          "depth_mm": 30,
+          "height_mm": 600,
+          "material_references": {
+            "art": "art-master-warm-earth",
+            "frame": "generic-walnut"
+          },
+          "colour": "#CDB9A1",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single artwork above master chest; no gallery grouping"
+          }
+        },
+        {
+          "id": "BR1-A1-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "BR-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BR-01-04",
+            "offset_mm": -311.6,
+            "elevation_mm": 1100,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 650,
+          "depth_mm": 30,
+          "height_mm": 500,
+          "material_references": {
+            "art": "art-br1-soft-olive",
+            "frame": "a1-natural-oak"
+          },
+          "colour": "#A6AA92",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single adaptable muted-olive artwork above closed drawer storage"
+          }
+        },
+        {
+          "id": "BR2-A1-art",
+          "type": "artwork",
+          "variant": "canvas",
+          "room_id": "BR-02",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BR-02-06",
+            "offset_mm": -451.6,
+            "elevation_mm": 1150,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 800,
+          "depth_mm": 30,
+          "height_mm": 600,
+          "material_references": {
+            "art": "art-br2-taupe-line"
+          },
+          "colour": "#B7A99A",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single taupe line artwork over east-wall bed; deliberately distinct from Bedroom 1"
+          }
+        },
+        {
+          "id": "KIT-fridge-end-panel",
+          "type": "divider",
+          "variant": "solid-panel",
+          "room_id": "KIT-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 12186,
+          "cy": 8520,
+          "rotation": 90,
+          "width_mm": 650,
+          "depth_mm": 18,
+          "height_mm": 2200,
+          "material_references": {
+            "primary": "kitchen-soft-ivory"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Ivory cabinetry end panel masking the exposed side of the integrated refrigerator from the kitchen entry; 18 mm concept panel."
+          }
+        },
+        {
+          "id": "BATHM-glass-600-A1",
+          "type": "divider",
+          "variant": "solid-panel",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 6730,
+          "cy": 7171,
+          "rotation": 0,
+          "width_mm": 600,
+          "depth_mm": 18,
+          "height_mm": 2050,
+          "material_references": {
+            "primary": "bath-clear-glass-visual"
+          },
+          "colour": "#F0F7F6",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Fixed 2050mm glass screen with nominal 800mm open entry. Category glass used for semi-transparent renderer. Safety glass, fixings and maintenance TBD."
+          }
+        },
+        {
+          "id": "BATHM-shampoo-shelf-A1",
+          "type": "shelf",
+          "variant": "floating",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-05",
+            "offset_mm": -760,
+            "elevation_mm": 1230,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 380,
+          "depth_mm": 115,
+          "height_mm": 40,
+          "material_references": {
+            "body": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+          }
+        },
+        {
+          "id": "BATHM-shampoo-shelf-A2",
+          "type": "shelf",
+          "variant": "floating",
+          "room_id": "BATH-M01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-M01-05",
+            "offset_mm": -760,
+            "elevation_mm": 1540,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 380,
+          "depth_mm": 115,
+          "height_mm": 40,
+          "material_references": {
+            "body": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+          }
+        },
+        {
+          "id": "BATHC-shampoo-shelf-A1",
+          "type": "shelf",
+          "variant": "floating",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-07",
+            "offset_mm": 700,
+            "elevation_mm": 1250,
+            "inset_mm": 0
+          },
+          "rotation": 0,
+          "width_mm": 350,
+          "depth_mm": 115,
+          "height_mm": 40,
+          "material_references": {
+            "body": "bath-brushed-nickel"
+          },
+          "colour": "#B9BDC0",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+          }
+        },
+        {
+          "id": "BATHC-wall-towel-cabinet-A2",
+          "type": "console",
+          "variant": "plain",
+          "room_id": "BATH-C01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BATH-C01-01",
+            "offset_mm": -300,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "rotation": 0,
+          "width_mm": 520,
+          "depth_mm": 170,
+          "height_mm": 420,
+          "material_references": {
+            "primary": "kitchen-soft-ivory",
+            "accent": "bath-brushed-nickel"
+          },
+          "colour": "#E8E2D7",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Shallow closed dry-side family towel cabinet, less bulk next to shower. Two adjustable shelves; installer to verify wall blocking, water-resistance, suitable reach and safe fixings."
+          }
+        }
+      ],
+      "materials": [
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-wall-plaster",
+          "name": "Warm ivory mineral plaster",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#EEE9DF",
+          "finish": "mineral-matte",
+          "roughness": 0.96,
+          "metallic": 0,
+          "notes": "Low-contrast warm plaster concept."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-ceiling-ivory",
+          "name": "Soft warm ivory ceiling",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#F5F1E9",
+          "finish": "ultra-matte",
+          "roughness": 0.98,
+          "metallic": 0,
+          "notes": "Light ceiling tone to preserve perceived height."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-limestone-honed",
+          "name": "Warm limestone-look porcelain, honed",
+          "category": "stone",
+          "source_status": "REFERENCE",
+          "base_colour": "#DCDAD0",
+          "finish": "honed",
+          "roughness": 0.66,
+          "metallic": 0,
+          "physical_dimensions_mm": {
+            "width": 1200,
+            "height": 600,
+            "depth": 10
+          },
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "fallback_generic_id": "travertine",
+          "notes": "Concept only; final SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a1-natural-oak",
+          "name": "Natural light oak",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#8A7860",
+          "finish": "matte",
+          "roughness": 0.72,
+          "metallic": 0,
+          "fallback_generic_id": "lightoak"
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a2-ceiling-softwhite",
+          "name": "Soft white ceiling",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#FEFCF7",
+          "finish": "ultra-matte",
+          "roughness": 0.98,
+          "metallic": 0,
+          "notes": "Near-white ceiling intended to read warm-neutral under 3000 K lighting."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "a2-curtain-linen",
+          "name": "Warm light linen curtain",
+          "category": "fabric",
+          "source_status": "GENERIC",
+          "base_colour": "#D8D9CF",
+          "finish": "woven",
+          "roughness": 0.94,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 300,
+            "height": 300
+          },
+          "notes": "Light warm linen concept; layered treatment, not a selected SKU."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "wc-warm-ivory-porcelain",
+          "name": "Warm ivory matte porcelain",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#DCDAD0",
+          "finish": "matte",
+          "roughness": 0.78,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 600,
+            "height": 600
+          },
+          "notes": "Guest WC concept; final porcelain SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-warm-ivory-porcelain",
+          "name": "Warm ivory matte porcelain",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E2E1D8",
+          "finish": "matte",
+          "roughness": 0.78,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 600,
+            "height": 600
+          },
+          "notes": "Bathroom porcelain concept; final SKU and waterproofing build-up TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-warm-quartz",
+          "name": "Warm ivory quartz composite",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#DCDAD0",
+          "finish": "honed",
+          "roughness": 0.5,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "notes": "Concept countertop/backsplash material; final slab/SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "art-master-warm-earth",
+          "name": "Master artwork · warm earth abstract",
+          "category": "artwork",
+          "source_status": "REFERENCE",
+          "base_colour": "#CDB9A1",
+          "finish": "matte",
+          "roughness": 0.94,
+          "metallic": 0,
+          "notes": "Concept artwork only; not a real purchasable piece."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "art-br1-soft-olive",
+          "name": "Bedroom 1 artwork · soft olive field",
+          "category": "artwork",
+          "source_status": "REFERENCE",
+          "base_colour": "#A6AA92",
+          "finish": "matte",
+          "roughness": 0.94,
+          "metallic": 0,
+          "notes": "Concept artwork only; subtle adaptable family-room accent."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "art-br2-taupe-line",
+          "name": "Bedroom 2 artwork · taupe line composition",
+          "category": "artwork",
+          "source_status": "REFERENCE",
+          "base_colour": "#B7A99A",
+          "finish": "matte",
+          "roughness": 0.94,
+          "metallic": 0,
+          "notes": "Concept artwork only; intentionally different from Bedroom 1."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-brushed-nickel",
+          "name": "Brushed nickel / chrome concept",
+          "category": "metal",
+          "source_status": "GENERIC",
+          "base_colour": "#B9BDC0",
+          "finish": "brushed",
+          "roughness": 0.34,
+          "metallic": 0.82,
+          "notes": "Concept only; final fittings/SKU TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-soft-ivory",
+          "name": "Kitchen soft ivory matte lacquer",
+          "category": "paint",
+          "source_status": "GENERIC",
+          "base_colour": "#E6E4DA",
+          "finish": "matte",
+          "roughness": 0.82,
+          "metallic": 0,
+          "notes": "Conceptual joinery finish; manufacturer and sample TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "kitchen-muted-light-oak",
+          "name": "Kitchen muted light oak",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#8A7860",
+          "finish": "matte",
+          "roughness": 0.74,
+          "metallic": 0,
+          "fallback_generic_id": "lightoak",
+          "notes": "Muted low-saturation light oak for base cabinetry; concept only, final veneer/laminate sample TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-clear-glass-visual",
+          "name": "Clear shower safety glass · generic visual",
+          "category": "glass",
+          "source_status": "GENERIC",
+          "base_colour": "#F0F7F6",
+          "finish": "clear",
+          "roughness": 0.09,
+          "metallic": 0,
+          "notes": "Visual surrogate only: renderer forces fixed glass opacity; real tempered/laminated glass safety and hardware must be specified by installer."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-wall-airy-ivory-1200x600",
+          "name": "Airy warm-ivory large porcelain concept",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E2E1D8",
+          "finish": "matte",
+          "roughness": 0.72,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "notes": "Wet wall porcelain concept; final supplier, grout, membrane and sample TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-wet-accent-soft-greige",
+          "name": "Quiet greige honed porcelain accent",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#CACCC0",
+          "finish": "matte",
+          "roughness": 0.78,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 1200,
+            "height": 600
+          },
+          "notes": "Accent shower-end wall only; mockup and supplier TBD."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "bath-floor-sand-grip-600",
+          "name": "Sand-beige slip-resistant floor concept",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#E2E1D8",
+          "finish": "matte",
+          "roughness": 0.9,
+          "metallic": 0,
+          "texture_scale_mm": {
+            "width": 600,
+            "height": 600
+          },
+          "notes": "Select supplier certified wet slip resistance and local conformity before procurement."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "m2-wood",
+          "name": "Original M2 wood visual sample",
+          "category": "wood",
+          "source_status": "GENERIC",
+          "base_colour": "#B9AF96",
+          "roughness": 0.85,
+          "metallic": 0,
+          "finish": "matte",
+          "texture_scale_mm": {
+            "width": 1000,
+            "height": 1000
+          },
+          "albedo_texture": "data:image/png;base64,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",
+          "notes": "Original procedural schematic sample; no product, grout format, slip or laying specification."
+        },
+        {
+          "schema": "InteriorMaterial/1",
+          "id": "m2-stone",
+          "name": "Original M2 stone visual sample",
+          "category": "stone",
+          "source_status": "GENERIC",
+          "base_colour": "#DCDAD0",
+          "roughness": 0.85,
+          "metallic": 0,
+          "finish": "matte",
+          "texture_scale_mm": {
+            "width": 1000,
+            "height": 1000
+          },
+          "albedo_texture": "data:image/png;base64,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",
+          "notes": "Original procedural schematic sample; no product, grout format, slip or laying specification."
+        }
+      ],
+      "surface_materials": {
+        "CEILING-RECP-01": "a2-ceiling-softwhite",
+        "WALL-RECP-01-01": "a1-wall-plaster",
+        "WALL-RECP-01-02": "a1-wall-plaster",
+        "WALL-RECP-01-03": "a1-wall-plaster",
+        "WALL-RECP-01-04": "a1-wall-plaster",
+        "WALL-RECP-01-05": "a1-wall-plaster",
+        "WALL-RECP-01-06": "a1-wall-plaster",
+        "WALL-RECP-01-07": "a1-wall-plaster",
+        "WALL-RECP-01-08": "a1-wall-plaster",
+        "WALL-RECP-01-09": "a1-wall-plaster",
+        "WALL-RECP-01-10": "a1-wall-plaster",
+        "WALL-RECP-01-11": "a1-wall-plaster",
+        "WALL-RECP-01-12": "a1-wall-plaster",
+        "WALL-RECP-01-13": "a1-wall-plaster",
+        "WALL-RECP-01-14": "a1-wall-plaster",
+        "WALL-RECP-01-15": "a1-wall-plaster",
+        "WALL-RECP-01-16": "a1-wall-plaster",
+        "WALL-RECP-01-17": "a1-wall-plaster",
+        "WALL-RECP-01-18": "a1-wall-plaster",
+        "FLOOR-KIT-01": "m2-stone",
+        "FLOOR-WC-01": "bath-floor-sand-grip-600",
+        "CEILING-WC-01": "a2-ceiling-softwhite",
+        "FLOOR-MBR-01": "m2-wood",
+        "CEILING-MBR-01": "a2-ceiling-softwhite",
+        "FLOOR-WIC-01": "m2-wood",
+        "CEILING-WIC-01": "a2-ceiling-softwhite",
+        "FLOOR-BATH-M01": "bath-floor-sand-grip-600",
+        "CEILING-BATH-M01": "a2-ceiling-softwhite",
+        "WALL-BATH-M01-01": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-M01-02": "bath-wet-accent-soft-greige",
+        "WALL-BATH-M01-03": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-M01-04": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-M01-05": "bath-wall-airy-ivory-1200x600",
+        "FLOOR-BR-01": "m2-wood",
+        "CEILING-BR-01": "a2-ceiling-softwhite",
+        "FLOOR-BR-02": "m2-wood",
+        "CEILING-BR-02": "a2-ceiling-softwhite",
+        "FLOOR-BATH-C01": "bath-floor-sand-grip-600",
+        "CEILING-BATH-C01": "a2-ceiling-softwhite",
+        "WALL-BATH-C01-01": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-C01-02": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-C01-03": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-C01-04": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-C01-05": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-C01-06": "bath-wall-airy-ivory-1200x600",
+        "WALL-BATH-C01-07": "bath-wet-accent-soft-greige",
+        "FLOOR-HALL-01": "m2-stone",
+        "CEILING-HALL-01": "a2-ceiling-softwhite",
+        "FLOOR-TER-MAIN": "generic-antislip",
+        "FLOOR-TER-MBR": "generic-antislip",
+        "FLOOR-TER-SVC": "generic-antislip",
+        "WALL-WC-01-02": "bath-wet-accent-soft-greige",
+        "FLOOR-RECP-01": "m2-stone"
+      },
+      "opening_treatments": {
+        "GLZ-RECP-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#D8D9CF",
+          "openness": 0.72,
+          "room_id": "RECP-01"
+        },
+        "GLZ-RECP-TERMAIN": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#D8D9CF",
+          "openness": 0.78,
+          "room_id": "RECP-01"
+        },
+        "GLZ-MBR-TER": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#D8D9CF",
+          "openness": 0.78,
+          "room_id": "MBR-01"
+        },
+        "GLZ-BR01-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#D8D9CF",
+          "openness": 0.8,
+          "room_id": "BR-01"
+        },
+        "GLZ-BR02-N": {
+          "type": "curtain",
+          "variant": "layered",
+          "material_id": "a2-curtain-linen",
+          "colour": "#D8D9CF",
+          "openness": 0.82,
+          "room_id": "BR-02"
+        }
+      }
+    }
+  },
+  "views": [
+    {
+      "id": "reception-living",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          3.382291,
+          1.62,
+          -0.5456585
+        ],
+        "target": [
+          2.582291,
+          1.5,
+          -3.5156585
+        ],
+        "fov": 60,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "reception-dining",
+      "room_id": "RECP-01",
+      "camera": {
+        "position": [
+          5.232291,
+          1.62,
+          4.3243415
+        ],
+        "target": [
+          6.282291,
+          1.45,
+          2.2843415
+        ],
+        "fov": 60,
+        "projection_type": "perspective",
+        "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+        "aspect": 1.7777777777777777,
+        "near": 0.05,
+        "far": 300,
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "viewer": {
+          "cut_height_m": 2.5,
+          "furnishings_visible": true,
+          "night": false,
+          "hour": 10,
+          "mode": "orbit",
+          "doors": [
+            {
+              "id": "OP-BR01-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-BR02-HALL",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-MBR-HALL",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-WIC-BATHM",
+              "open": true,
+              "position": 0
+            },
+            {
+              "id": "OP-HALL-BATHC",
+              "open": true,
+              "position": -1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-KIT",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-KIT-TERSVC",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "OP-RECP-WC",
+              "open": true,
+              "position": -3.141592653589793
+            },
+            {
+              "id": "OP-ENT-01",
+              "open": true,
+              "position": 1.5707963267948966
+            },
+            {
+              "id": "GLZ-MBR-TER",
+              "open": true,
+              "position": 1
+            },
+            {
+              "id": "GLZ-RECP-TERMAIN",
+              "open": true,
+              "position": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "SOURCE-LOCKED; material/shape studies only; not owner approved"
+  ],
+  "m2_profile": {
+    "id": "B",
+    "name": "سكون وخطوط واضحة",
+    "english": "Warm Japandi / Refined Minimal",
+    "family": "japandi",
+    "floor": "B",
+    "sofa": "style",
+    "bed": "oak-platform",
+    "wall": "#E6E4DA",
+    "ceiling": "#FEFCF7",
+    "wood": "#8A7860",
+    "woodDark": "#4D493F",
+    "fabric": "#C8C7BA",
+    "accent": "#515A4E",
+    "rug": "#BDBEAE",
+    "metal": "#4A4D43",
+    "pot": "#A7A99A",
+    "stone": "#DCDAD0",
+    "curtain": "#D8D9CF",
+    "bath": "#E2E1D8",
+    "wet": "#CACCC0",
+    "story": "مساحات أهدى وخطوط أخف: خشب مدخن في الهياكل، آش فاتح في التخزين، قماش كتاني رمادي دافي، وفراغ مقصود حوالين كل قطعة. الأثاث المنخفض والمكشوف بيقلل الإحساس بثقل السقف ٢٫٥ متر.",
+    "risk": "القعدة المنخفضة والذراع الخشبي مش مريحين لكل شخص؛ الأسطح الغامقة بتبين التراب. الفراغ المقصود محتاج تخزين مقفول جيد.",
+    "forms": [
+      "كنبة بهيكل خشب مكشوف ووسائد منفصلة",
+      "كراسي سفرة خشب وخطوط مستقيمة",
+      "سرير منصة ولوح شرائح بسيط",
+      "طاولة وسط خشب مستطيلة"
+    ],
+    "bathStory": "بورسلين greige هادي قليل العروق، نيكل مصقول، مناشف زيتوني خفيف، إكسسوارات مستقيمة سهلة الفك."
+  }
+}

@@ -1,0 +1,14 @@
+✔ 39 developed schedules cover all 13 rooms; all 77 source identities and all 68 M1 intents available (1.671502ms)
+✔ three distinct shapes, detailing, palettes and independent floor studies; all source geometry/approvals/MEP unchanged (123.128131ms)
+✔ attributed, verified external inspiration: 2 additional projects per style, precise years and no copied photographs (0.670516ms)
+✔ 14 genuine source camera canvases with geometry-zero, source/layout/image hashes, no fallbacks or outside requests (44.178579ms)
+✔ offline owner package embeds its own original visuals; no external resource dependencies (98.478691ms)
+✔ all 784 pre-existing tracked files preserved byte-for-byte including canonical, prior studies, approvals, M0/M1/cloud snapshots (66.816461ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 343.243737
