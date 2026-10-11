@@ -12,7 +12,7 @@ The M0 addition changes no pre-existing source or application file. The producti
 | `node --test --test-isolation=none --test-reporter=tap scripts/whole-home-m0.test.mjs studio/local/current-baseline.test.mjs studio/local/owner-decisions.test.mjs` | 20 tests PASS; 9 new M0 contracts + 11 existing baseline/approval contracts; zero failures/skips |
 | Current-source extraction | 13 spaces, 50 furniture + 27 explicit interior records; exact JSON pointers, source dimensions/placement and host-derived model placement kept distinct |
 | Existing model validation | 0 hard failures, **75 warnings retained**; nearest gaps, generic preferred thresholds and 125mm sampled paths are not as-built circulation or code proof |
-| A15 continuity | All 65 historical K12 intents retained as functional research: **8 absent furniture anchors**, **5 changed furniture envelopes**, 9 canonical opening anchors and 43 other same-envelope/room-intent records. All locations remain `TBD_AS_BUILT` |
+| A15 continuity | All 65 historical K12 intents retained as functional research: **8 absent furniture anchors**, **5 changed furniture envelopes**, 14 same-envelope anchors and 38 room-level intents without a furniture anchor. All locations remain `TBD_AS_BUILT` |
 | Offline browser review | Chromium 151.0.7922.173; desktop 1440×1000 and mobile 390×844; all 13 cards/internal links work, kitchen detail has 15 rows, no page overflow, JS errors or external requests. Checked closed overview and expanded details; screenshots inspected directly |
 | Reproducibility and preservation | Deterministic builder output, no inherited file hash change; `git diff --check` PASS |
 
