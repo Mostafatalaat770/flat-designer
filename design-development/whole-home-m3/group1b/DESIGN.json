@@ -1,0 +1,827 @@
+{
+  "schema": "M3Group1B/1",
+  "baseline_head": "673708eaeec8f2f036a2941a3412e67a9eff7d07",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "approvals": {
+    "owner": false,
+    "construction": false,
+    "procurement": false,
+    "cloud_save": false
+  },
+  "options": [
+    {
+      "id": "B",
+      "scene": "scene-af22b36c",
+      "hard_failures": [],
+      "legacy": [
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        }
+      ],
+      "curtain_collisions": 4,
+      "six_standing_collisions": [
+        {
+          "a": "standing-starter-38",
+          "b": "shoe-user",
+          "overlap_area_mm2": 43700
+        }
+      ]
+    },
+    {
+      "id": "A",
+      "scene": "scene-2d47c444",
+      "hard_failures": [],
+      "legacy": [
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "NO_MODEL_ROUTE",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": null
+        }
+      ],
+      "curtain_collisions": 0,
+      "six_standing_collisions": [
+        {
+          "a": "standing-starter-38",
+          "b": "shoe-user",
+          "overlap_area_mm2": 89700
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "scene": "scene-c54d2ef4",
+      "hard_failures": [],
+      "legacy": [
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        }
+      ],
+      "curtain_collisions": 0,
+      "six_standing_collisions": []
+    },
+    {
+      "id": "B2",
+      "scene": "scene-85b47d18",
+      "hard_failures": [],
+      "legacy": [
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 100,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 200,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 300,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 500,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 8050
+        },
+        {
+          "projection_mm": 400,
+          "goal": "legacy_glazing",
+          "start_mm": [
+            14300,
+            9630
+          ],
+          "goal_mm": [
+            13950,
+            3150
+          ],
+          "envelope_diameter_mm": 700,
+          "status": "MODEL_ROUTE_FOUND",
+          "valid_operation": true,
+          "grid_mm": 50,
+          "cell_safety_pad_mm": 35.35533905932738,
+          "distance_mm": 9450
+        }
+      ],
+      "curtain_collisions": 0,
+      "six_standing_collisions": []
+    }
+  ],
+  "rejected": [
+    {
+      "id": "table-only-north450",
+      "collisions": [
+        {
+          "a": "standing-starter-37",
+          "b": "buffet",
+          "overlap_area_mm2": 54750
+        },
+        {
+          "a": "standing-starter-37",
+          "b": "buffet-panel",
+          "overlap_area_mm2": 164250
+        },
+        {
+          "a": "standing-A2-dining-chair-north-centre",
+          "b": "buffet-south-user",
+          "overlap_area_mm2": 200750
+        }
+      ],
+      "reason": "North chair rear body intersects existing buffet/opening; moving table alone trades shoe obstruction for dining-storage collision."
+    },
+    {
+      "id": "original2000x950-table-rotated90-with-six",
+      "required_cross_width_mm": 2830,
+      "available_face_strip_mm": 3251.6219999999994,
+      "chair_footprints": [
+        [
+          [
+            16085,
+            6145
+          ],
+          [
+            16085,
+            6655
+          ],
+          [
+            15555,
+            6655
+          ],
+          [
+            15555,
+            6145
+          ]
+        ],
+        [
+          [
+            16085,
+            7545
+          ],
+          [
+            16085,
+            8055
+          ],
+          [
+            15555,
+            8055
+          ],
+          [
+            15555,
+            7545
+          ]
+        ],
+        [
+          [
+            13255,
+            6655
+          ],
+          [
+            13255,
+            6145
+          ],
+          [
+            13785,
+            6145
+          ],
+          [
+            13785,
+            6655
+          ]
+        ],
+        [
+          [
+            13255,
+            8055
+          ],
+          [
+            13255,
+            7545
+          ],
+          [
+            13785,
+            7545
+          ],
+          [
+            13785,
+            8055
+          ]
+        ],
+        [
+          [
+            16085,
+            6845
+          ],
+          [
+            16085,
+            7355
+          ],
+          [
+            15555,
+            7355
+          ],
+          [
+            15555,
+            6845
+          ]
+        ],
+        [
+          [
+            13255,
+            7355
+          ],
+          [
+            13255,
+            6845
+          ],
+          [
+            13785,
+            6845
+          ],
+          [
+            13785,
+            7355
+          ]
+        ]
+      ],
+      "reason": "Six original3-per-long-side chairs retained. 450mm withdrawal crosses assumedwallface strip. Reject instead of quietly reducing seats."
+    },
+    {
+      "id": "rotation90-recentred-six-seats",
+      "table_centre_mm": [
+        14319.607,
+        6650
+      ],
+      "table_mm": [
+        2000,
+        950
+      ],
+      "withdraw_mm": 450,
+      "required_cross_width_mm": 2830,
+      "available_face_width_mm": 3251.622,
+      "each_side_projected_band_mm": 210.81099999999992,
+      "routes": [
+        {
+          "diameter_mm": 500,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 250,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 43
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "route_mm": [],
+          "distance_mm": null
+        },
+        {
+          "diameter_mm": 700,
+          "schema": "ApartmentRouteEstimate/1",
+          "status": "NO_MODEL_ROUTE",
+          "reason": "SAMPLED_REGION_DISCONNECTED",
+          "parameters": {
+            "radius_mm": 350,
+            "grid_mm": 50,
+            "cell_safety_pad_mm": 35.355,
+            "sample_count": 27548,
+            "obstacle_count": 43
+          },
+          "constraints": "Conservative 2D circular-agent centre route through fixed polygons. No wheelchair, tray, door kinematics, posture, code or as-built certification.",
+          "route_mm": [],
+          "distance_mm": null
+        }
+      ],
+      "reason": "Recentering fixes the uncentred139.6mm east-face clash, but leaves210.8mm side bands and no500/700 route through the southern chair row. Six seats retained; rejected."
+    }
+  ]
+}

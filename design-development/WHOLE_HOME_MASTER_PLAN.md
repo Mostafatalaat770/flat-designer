@@ -6,6 +6,8 @@
 
 ## How we work — lasting ownership
 
+**Owner direction · 11 October 2026 (M3 Group 1B):** Exhaust meaningful reversible furniture/storage/curtain and seating improvements in the exact source model before requesting physical measurements. B Warm Japandi is promising, **not approved**. After delivering the functional optimization owner review, prepare the independent bedrooms/WIC group while retaining Group 1's unresolved site gates. Missing physical measurements for one group do not block independent model-based work elsewhere; site, procurement and construction release remain HOLD.
+
 - **Owner:** direction, priorities, taste, optional budget range and explicit design approvals. Silence is NOT approval.
 - **ChatGPT / design lead:** architecture & interior design critique, coherent priorities, synthesis of real references, prompt/acceptance-quality ownership and progress review.
 - **Codex / implementation lead:** repo search, measured model checks, original 2D/3D WebGL, reversible candidates, scripts/tests, visual artifacts and issue/PR traceability. One work item at a time.

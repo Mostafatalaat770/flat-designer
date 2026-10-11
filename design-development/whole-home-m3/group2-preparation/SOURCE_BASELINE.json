@@ -1,0 +1,1836 @@
+{
+  "schema": "M3Group2PreparedSource/1",
+  "baseline_head": "673708eaeec8f2f036a2941a3412e67a9eff7d07",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "status": "PREPARED / independent next room group / no new bedroom proposal yet",
+  "rooms": [
+    {
+      "geometry": {
+        "id": "BR-01",
+        "name": "Bedroom 1",
+        "full_name": "Secondary bedroom — west",
+        "poly": [
+          [
+            1970.005,
+            1503.982
+          ],
+          [
+            5465.175,
+            1503.982
+          ],
+          [
+            5465.175,
+            4999.153
+          ],
+          [
+            1970.005,
+            4999.153
+          ]
+        ],
+        "at": [
+          3717.59,
+          3251.568
+        ],
+        "kind": "bedroom",
+        "isTerrace": false,
+        "mat": "wood",
+        "printed": "BED ROOM 3.50m x 3.50m",
+        "printed_dimensions_m": [
+          3.5,
+          3.5
+        ],
+        "callouts": [],
+        "area_estimate_m2": 12.21621682407
+      },
+      "furniture": [
+        {
+          "id": "starter-6",
+          "type": "bed",
+          "name": "Single frame reserve 1280 × 2100 · mattress 1200 × 2000",
+          "room_id": "BR-01",
+          "cx": 2774.953,
+          "cy": 2680,
+          "w": 1280,
+          "d": 2100,
+          "rot": 0,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "oak-platform"
+        },
+        {
+          "id": "starter-7",
+          "type": "wardrobe",
+          "name": "Bedroom 1 wardrobe · 1800 × 600 mm",
+          "room_id": "BR-01",
+          "cx": 5060,
+          "cy": 3150,
+          "w": 1800,
+          "d": 600,
+          "rot": 90,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-8",
+          "type": "desk",
+          "name": "Bedroom 1 study desk · 1200 × 600 mm",
+          "room_id": "BR-01",
+          "cx": 3800,
+          "cy": 4590,
+          "w": 1200,
+          "d": 600,
+          "rot": 180,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-9",
+          "type": "chair",
+          "name": "Bedroom 1 study chair · bed overlap corrected",
+          "room_id": "BR-01",
+          "cx": 3720,
+          "cy": 3930,
+          "w": 480,
+          "d": 500,
+          "rot": 180,
+          "color": "#8D9381",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "interior": [
+        {
+          "id": "V7-bedroom1-drawers",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "BR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 2675,
+          "cy": 4720,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 350,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "kitchen-muted-light-oak"
+          },
+          "colour": "#BCA98F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed books / toys / daily drawers; generic custom joinery"
+          }
+        },
+        {
+          "id": "BR1-A1-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "BR-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BR-01-04",
+            "offset_mm": -311.6,
+            "elevation_mm": 1100,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 650,
+          "depth_mm": 30,
+          "height_mm": 500,
+          "material_references": {
+            "art": "art-br1-soft-olive",
+            "frame": "a1-natural-oak"
+          },
+          "colour": "#A6AA92",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single adaptable muted-olive artwork above closed drawer storage"
+          }
+        }
+      ],
+      "opening_ids": [
+        "OP-BR01-HALL",
+        "GLZ-BR01-N"
+      ],
+      "m1_intents": [
+        {
+          "id": "BR-01.E1",
+          "room_id": "BR-01",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "مكتب وبيانات",
+          "original_ids": [
+            "br1-desk",
+            "br1-data"
+          ],
+          "current_object_ids": [
+            "starter-8",
+            "starter-9"
+          ],
+          "owner_use": "خدمات laptop/شاشة/مهمة وبيانات اختيارية من جانب سطح المكتب الحالي؛ قابلية فصل بدون تحريك المكتب.",
+          "furniture_reason": "Source context starter-8, starter-9; خدمات laptop/شاشة/مهمة وبيانات اختيارية من جانب سطح المكتب الحالي؛ قابلية فصل بدون تحريك المكتب.",
+          "operational_tradeoff": "الdesk قريب من جهة دخول الطرقة؛ الكرسي راجع للخلف والسلك تحت القدم خطر استخدام.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرّب الكرسي راجع وOP-BR01-HALL كامل الفتح؛ تحقق من مخارج قائمة وحجم أجهزة المالك.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/1",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/7",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/8",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            },
+            {
+              "path": "design-development/K4_BEDROOM_JOINERY.md",
+              "sha256": "6d47f69da20d3657c6aa693c30c1d78a9a26eeb358f199eff1723a4cdaf71669"
+            },
+            {
+              "path": "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+              "sha256": "356e564e39644258a5ef1c478bbae2f238dc6c8c39acfa3f4d2ec0fbe439f4cb"
+            },
+            {
+              "path": "studio/analysis/first-fix.mjs",
+              "sha256": "da069524eb26ef9f689c09b9d0d7a7fa70cdd98d45e280b77ea61222a497cca9"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-01.E2",
+          "room_id": "BR-01",
+          "code": "E2",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "سرير وتحكم دخول",
+          "original_ids": [],
+          "current_object_ids": [
+            "starter-6"
+          ],
+          "owner_use": "شحن/قراءة على جانبي السرير المتاحين وفق المرور؛ مفتاح دخول + إطفاء من السرير يدويًا.",
+          "furniture_reason": "Source context starter-6; شحن/قراءة على جانبي السرير المتاحين وفق المرور؛ مفتاح دخول + إطفاء من السرير يدويًا.",
+          "operational_tradeoff": "مفيش كومود مصدر في الغرفة؛ لا نفترض نجارة جديدة، ولا مخارج مدفونة خلف wardrobe.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرّب نوم ووصول اليد على كل جانب وحدد أي جانب قابل للاستخدام؛ راجع الضلفة والwardrobe starter-7.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/1",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/5",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            },
+            {
+              "path": "design-development/K4_BEDROOM_JOINERY.md",
+              "sha256": "6d47f69da20d3657c6aa693c30c1d78a9a26eeb358f199eff1723a4cdaf71669"
+            },
+            {
+              "path": "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+              "sha256": "356e564e39644258a5ef1c478bbae2f238dc6c8c39acfa3f4d2ec0fbe439f4cb"
+            },
+            {
+              "path": "studio/analysis/first-fix.mjs",
+              "sha256": "da069524eb26ef9f689c09b9d0d7a7fa70cdd98d45e280b77ea61222a497cca9"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-01.E3",
+          "room_id": "BR-01",
+          "code": "E3",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "ستارة احتياطية",
+          "original_ids": [
+            "br1-shading"
+          ],
+          "current_object_ids": [],
+          "owner_use": "تحكم يدوي بالblackout عند GLZ-BR01-N؛ احتياطي موتور فقط بطلب لاحق.",
+          "furniture_reason": "Room/opening use only; تحكم يدوي بالblackout عند GLZ-BR01-N؛ احتياطي موتور فقط بطلب لاحق.",
+          "operational_tradeoff": "التغذية لا تعبر فتحة الزجاج ولا تدفن وراء curtain غير قابل للصيانة.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "ارفع رأس الفتحة وعودة المسار ومكان خدمة موتور محتمل.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/1",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            },
+            {
+              "path": "design-development/K4_BEDROOM_JOINERY.md",
+              "sha256": "6d47f69da20d3657c6aa693c30c1d78a9a26eeb358f199eff1723a4cdaf71669"
+            },
+            {
+              "path": "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+              "sha256": "356e564e39644258a5ef1c478bbae2f238dc6c8c39acfa3f4d2ec0fbe439f4cb"
+            },
+            {
+              "path": "studio/analysis/first-fix.mjs",
+              "sha256": "da069524eb26ef9f689c09b9d0d7a7fa70cdd98d45e280b77ea61222a497cca9"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-01.L1",
+          "room_id": "BR-01",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "عام ومهمة وليل",
+          "original_ids": [
+            "br1-general"
+          ],
+          "current_object_ids": [
+            "starter-6",
+            "starter-8"
+          ],
+          "owner_use": "عام مستقل عن مكتب/قراءة؛ accent لوحة اختياري؛ إرشاد دخول هادي بمفتاح يدوي عند السرير.",
+          "furniture_reason": "Source context starter-6, starter-8; عام مستقل عن مكتب/قراءة؛ accent لوحة اختياري؛ إرشاد دخول هادي بمفتاح يدوي عند السرير.",
+          "operational_tradeoff": "تركيز task على المكتب يوفر راحة العمل بدون إضاءة الغرفة كلها ليلًا.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "راجع ظل يد الكتابة على المكتب والوهج من السرير والستارة؛ لا lux أو عدد fixtures مفترض.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/1",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/5",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/7",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            },
+            {
+              "path": "design-development/K4_BEDROOM_JOINERY.md",
+              "sha256": "6d47f69da20d3657c6aa693c30c1d78a9a26eeb358f199eff1723a4cdaf71669"
+            },
+            {
+              "path": "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+              "sha256": "356e564e39644258a5ef1c478bbae2f238dc6c8c39acfa3f4d2ec0fbe439f4cb"
+            },
+            {
+              "path": "studio/analysis/first-fix.mjs",
+              "sha256": "da069524eb26ef9f689c09b9d0d7a7fa70cdd98d45e280b77ea61222a497cca9"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-01.H1",
+          "room_id": "BR-01",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "راحة نوم وعمل",
+          "original_ids": [
+            "br1-hvac"
+          ],
+          "current_object_ids": [
+            "starter-6",
+            "starter-8"
+          ],
+          "owner_use": "شريط جهة الشرق مرشح للمراجعة؛ يوزع عبر الفراغ بعيد عن bed/desk؛ الفلتر قابل للخدمة.",
+          "furniture_reason": "Source context starter-6, starter-8; شريط جهة الشرق مرشح للمراجعة؛ يوزع عبر الفراغ بعيد عن bed/desk؛ الفلتر قابل للخدمة.",
+          "operational_tradeoff": "wardrobe starter-7 على الشرق قد يمنع الرأس؛ اختبر الحائط فوق/حول النجارة بدل افتراض غلافه دليل خدمة.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "قِس ارتفاع النجارة والسقف وراجع jet عند pillow/work chair مع مهندس HVAC.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/1",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/5",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/7",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            },
+            {
+              "path": "design-development/K4_BEDROOM_JOINERY.md",
+              "sha256": "6d47f69da20d3657c6aa693c30c1d78a9a26eeb358f199eff1723a4cdaf71669"
+            },
+            {
+              "path": "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+              "sha256": "356e564e39644258a5ef1c478bbae2f238dc6c8c39acfa3f4d2ec0fbe439f4cb"
+            },
+            {
+              "path": "studio/analysis/first-fix.mjs",
+              "sha256": "da069524eb26ef9f689c09b9d0d7a7fa70cdd98d45e280b77ea61222a497cca9"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-01.F1",
+          "room_id": "BR-01",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "عتبة OP-BR01-HALL على خط الفتحة الأصلي؛ راجع door undercut وكرسي المكتب/البساط.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "خشبي بصري لا يحدد wood أم timber-look أو قدرة تنظيف المنتج.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/BR-01/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/0",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/12",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "id": "BR-02",
+        "name": "Bedroom 2",
+        "full_name": "Secondary bedroom — east",
+        "poly": [
+          [
+            5465.175,
+            1503.982
+          ],
+          [
+            8981.529,
+            1503.982
+          ],
+          [
+            8981.529,
+            4999.153
+          ],
+          [
+            5465.175,
+            4999.153
+          ]
+        ],
+        "at": [
+          7223.352,
+          3251.568
+        ],
+        "kind": "bedroom",
+        "isTerrace": false,
+        "mat": "wood",
+        "printed": "BED ROOM 3.50m x 3.50m",
+        "printed_dimensions_m": [
+          3.5,
+          3.5
+        ],
+        "callouts": [],
+        "area_estimate_m2": 12.290258526534
+      },
+      "furniture": [
+        {
+          "id": "starter-10",
+          "type": "bed",
+          "name": "1280 × 2100 frame reserve · headboard on east wall",
+          "room_id": "BR-02",
+          "cx": 7820,
+          "cy": 2800,
+          "w": 1280,
+          "d": 2100,
+          "rot": 90,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "oak-platform"
+        },
+        {
+          "id": "starter-11",
+          "type": "desk",
+          "name": "Bedroom 2 study desk · compact 900 × 500 mm",
+          "room_id": "BR-02",
+          "cx": 6020,
+          "cy": 1920,
+          "w": 900,
+          "d": 500,
+          "rot": 0,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-12",
+          "type": "officechair",
+          "name": "Bedroom 2 compact task chair · 480 mm envelope",
+          "room_id": "BR-02",
+          "cx": 6020,
+          "cy": 2450,
+          "w": 480,
+          "d": 480,
+          "rot": 0,
+          "color": "#8A8F82",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-13",
+          "type": "wardrobe",
+          "name": "1600 mm closed wardrobe · one family-linen bay",
+          "room_id": "BR-02",
+          "cx": 7990,
+          "cy": 4589,
+          "w": 1600,
+          "d": 600,
+          "rot": 180,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "interior": [
+        {
+          "id": "BR2-A1-art",
+          "type": "artwork",
+          "variant": "canvas",
+          "room_id": "BR-02",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-BR-02-06",
+            "offset_mm": -451.6,
+            "elevation_mm": 1150,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 800,
+          "depth_mm": 30,
+          "height_mm": 600,
+          "material_references": {
+            "art": "art-br2-taupe-line"
+          },
+          "colour": "#B7A99A",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single taupe line artwork over east-wall bed; deliberately distinct from Bedroom 1"
+          }
+        }
+      ],
+      "opening_ids": [
+        "OP-BR02-HALL",
+        "GLZ-BR02-N"
+      ],
+      "m1_intents": [
+        {
+          "id": "BR-02.E1",
+          "room_id": "BR-02",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "مكتب وبيانات جديدان",
+          "original_ids": [
+            "br2-desk",
+            "br2-data"
+          ],
+          "current_object_ids": [
+            "starter-11",
+            "starter-12"
+          ],
+          "owner_use": "منطقة workstation عند جانب المكتب الحالي بالشمال الغربي؛ data اختياري وطاقة منفصلان وظيفيًا.",
+          "furniture_reason": "Source context starter-11, starter-12; منطقة workstation عند جانب المكتب الحالي بالشمال الغربي؛ data اختياري وطاقة منفصلان وظيفيًا.",
+          "operational_tradeoff": "نقل المكتب غيّر وصول اليد وقرب الكرسي ومسار الباب؛ ما ننسخش أرقام A15 ولا ندمج data مع power.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرب مستخدمًا جالسًا وكرسيًا مسحوبًا والطريق من OP-BR02-HALL؛ قِس socket access بعد المخطط الفعلي.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/2",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/10",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/11",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-02.E2",
+          "room_id": "BR-02",
+          "code": "E2",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "سرير ودخول",
+          "original_ids": [],
+          "current_object_ids": [
+            "starter-10"
+          ],
+          "owner_use": "شحن/قراءة على جانبي السرير القابلين للوصول؛ إطفاء عام من الدخول ومن السرير.",
+          "furniture_reason": "Source context starter-10; شحن/قراءة على جانبي السرير القابلين للوصول؛ إطفاء عام من الدخول ومن السرير.",
+          "operational_tradeoff": "مدى الوصول على جانب قرب الحائط قد يحتاج حل مختلف عن الجانب المفتوح، من غير فرض كومود جديد.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرب اليد عند pillow والمرور للwardrobe starter-13 مع الباب كامل الفتح.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/2",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/9",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-02.E3",
+          "room_id": "BR-02",
+          "code": "E3",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "ستارة اختيارية",
+          "original_ids": [
+            "br2-shading"
+          ],
+          "current_object_ids": [],
+          "owner_use": "manual blackout عند GLZ-BR02-N مع احتياطي خدمة لو اختار المالك موتور.",
+          "furniture_reason": "Room/opening use only; manual blackout عند GLZ-BR02-N مع احتياطي خدمة لو اختار المالك موتور.",
+          "operational_tradeoff": "المكتب/السرير قرب الشمال؛ تجنب سلك فوق طاولة العمل.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "قِس curtain stack ومسار خدمة الرأس قبل اعتماد موتور.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/2",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-02.L1",
+          "room_id": "BR-02",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "عام وقراءة ومهمة",
+          "original_ids": [
+            "br2-general"
+          ],
+          "current_object_ids": [
+            "starter-10",
+            "starter-11"
+          ],
+          "owner_use": "عام diffuse + task مكتب + قراءة مستقلة وإرشاد ليل ناحية الباب؛ accent اختياري على art الحالي.",
+          "furniture_reason": "Source context starter-10, starter-11; عام diffuse + task مكتب + قراءة مستقلة وإرشاد ليل ناحية الباب؛ accent اختياري على art الحالي.",
+          "operational_tradeoff": "الغرفة نوم/عمل محتمل؛ مشهد العمل لازم ما يبقاش شرط تشغيل القراءة.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "اختبر glare من السرير وشاشة المكتب؛ manual fallback لكل مجموعة.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/2",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/9",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/10",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-02.H1",
+          "room_id": "BR-02",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "هواء بعيد عن السرير والمكتب",
+          "original_ids": [
+            "br2-hvac"
+          ],
+          "current_object_ids": [
+            "starter-10",
+            "starter-11"
+          ],
+          "owner_use": "شريط الجنوب مرشح للمراجعة مع wardrobe؛ راجع توزيع نفخ عبر الفراغ المفتوح.",
+          "furniture_reason": "Source context starter-10, starter-11; شريط الجنوب مرشح للمراجعة مع wardrobe؛ راجع توزيع نفخ عبر الفراغ المفتوح.",
+          "operational_tradeoff": "خزنة starter-13 قد تمنع خدمة الفلتر؛ الحائط المرشح مش وحدة أو اتجاه نفخ مصدق.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "قِس النجارة والعوائق ومسار صرف التكثيف؛ راجع راحة الشخص الجالس والنائم.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/2",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/9",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/10",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "design-development/CURRENT_BASELINE.md",
+              "sha256": "e67a3de0e02b8f14c6623f464e2ba7b8f93137dc65c3ba97ab3c55c0df951206"
+            },
+            {
+              "path": "design-development/OWNER_REVIEW_20261010.md",
+              "sha256": "71988cde1af5e8fc126d035368c81365721b7a6b4fcc3bf17dba61dcab55f895"
+            },
+            {
+              "path": "design-development/decision-registry.json",
+              "sha256": "fef9b27227a97ed698b4d70fa10ecfbfa0b62445754022f3ad887af1e4b5c79c"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "BR-02.F1",
+          "room_id": "BR-02",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "عتبة OP-BR02-HALL بدون خطوة مفترضة؛ كرسي المكتب والwardrobe يراجعوا مع ارتفاع الأرضية.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "فاصل أقل يفيد الحركة؛ عينة مقاومة خدش الكرسي مطلوبة.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/BR-02/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/1",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/13",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "id": "MBR-01",
+        "name": "Master bedroom",
+        "full_name": "Master bedroom",
+        "poly": [
+          [
+            296.56,
+            4999.153
+          ],
+          [
+            4003.559,
+            4999.153
+          ],
+          [
+            4003.559,
+            8960.346
+          ],
+          [
+            296.56,
+            8960.346
+          ]
+        ],
+        "at": [
+          2150.059,
+          6979.749
+        ],
+        "kind": "bedroom",
+        "isTerrace": false,
+        "mat": "wood",
+        "printed": "MASTER BED ROOM 4.00m x 3.80m",
+        "printed_dimensions_m": [
+          4,
+          3.8
+        ],
+        "callouts": [],
+        "area_estimate_m2": 14.684138489807
+      },
+      "furniture": [
+        {
+          "id": "starter-1",
+          "type": "bed",
+          "name": "King frame 1870 × 2220 · mattress 1800 × 2000",
+          "room_id": "MBR-01",
+          "cx": 1516,
+          "cy": 6835,
+          "w": 1870,
+          "d": 2220,
+          "rot": 270,
+          "color": "#dfd3bb",
+          "status": "EXPLORATORY",
+          "variant": "upholstered",
+          "product_reference_id": "bed-idanas-180-reference",
+          "material_id": "generic-linen"
+        },
+        {
+          "id": "starter-2",
+          "type": "nightstand",
+          "name": "Nightstand",
+          "room_id": "MBR-01",
+          "cx": 656.668,
+          "cy": 5650,
+          "w": 450,
+          "d": 400,
+          "rot": 270,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-3",
+          "type": "nightstand",
+          "name": "Nightstand",
+          "room_id": "MBR-01",
+          "cx": 656.668,
+          "cy": 8050,
+          "w": 450,
+          "d": 400,
+          "rot": 270,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "V5-master-rug",
+          "type": "rug",
+          "name": "Quiet master rug · generic 2600 × 3000",
+          "room_id": "MBR-01",
+          "cx": 1900,
+          "cy": 6800,
+          "w": 2600,
+          "d": 3000,
+          "rot": 270,
+          "color": "#b6a797",
+          "variant": "style",
+          "status": "EXPLORATORY",
+          "material_id": "generic-carpet"
+        }
+      ],
+      "interior": [
+        {
+          "id": "V7-master-drawers",
+          "type": "sideboard",
+          "variant": "plain",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 3340,
+          "cy": 8650,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 400,
+          "height_mm": 800,
+          "material_references": {
+            "primary": "kitchen-muted-light-oak"
+          },
+          "colour": "#BCA98F",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Closed master drawer chest; generic custom joinery, not a vanity"
+          }
+        },
+        {
+          "id": "V5-master-bench",
+          "type": "bench",
+          "variant": "upholstered",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "floor"
+          },
+          "cx": 1700,
+          "cy": 8610,
+          "rotation": 180,
+          "width_mm": 1000,
+          "depth_mm": 350,
+          "height_mm": 440,
+          "material_references": {
+            "primary": "kitchen-muted-light-oak"
+          },
+          "colour": "#D8D0C4",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "South-wall dressing bench; leave the entire east-side main path open"
+          }
+        },
+        {
+          "id": "MBR-A1-art",
+          "type": "artwork",
+          "variant": "framed",
+          "room_id": "MBR-01",
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-MBR-01-03",
+            "offset_mm": 1189.9,
+            "elevation_mm": 1100,
+            "inset_mm": 10
+          },
+          "rotation": 0,
+          "width_mm": 800,
+          "depth_mm": 30,
+          "height_mm": 600,
+          "material_references": {
+            "art": "art-master-warm-earth",
+            "frame": "generic-walnut"
+          },
+          "colour": "#CDB9A1",
+          "status": "EXPLORATORY",
+          "metadata": {
+            "role": "Single artwork above master chest; no gallery grouping"
+          }
+        }
+      ],
+      "opening_ids": [
+        "OP-MBR-HALL",
+        "OP-MBR-WIC",
+        "GLZ-MBR-TER"
+      ],
+      "m1_intents": [
+        {
+          "id": "MBR-01.E1",
+          "room_id": "MBR-01",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "جانبي السرير",
+          "original_ids": [
+            "mbr-bed-left",
+            "mbr-bed-right"
+          ],
+          "current_object_ids": [
+            "starter-2",
+            "starter-3"
+          ],
+          "owner_use": "شحن ولمبة قراءة مستقلة لكل كومود؛ موضع وظيفي على الجانب القابل للوصول واليد على المخدة، مش خلف ظهر السرير.",
+          "furniture_reason": "Source context starter-2, starter-3; شحن ولمبة قراءة مستقلة لكل كومود؛ موضع وظيفي على الجانب القابل للوصول واليد على المخدة، مش خلف ظهر السرير.",
+          "operational_tradeoff": "الجنبين محفوظين بالمصدر لكن الوصول الفعلي غير مقاس؛ سلك الشحن لا يعبر الطريق للتراس أو الدريسنج.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرّب اليد من كل مخدة وفتح أدراج كل كومود والسرير بالحجم الحقيقي، مع الكهربائي قبل تحديد الارتفاع.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/1",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/2",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "design-development/advisor/A11_MASTER_SLEEP_MEP_BRIEF.md",
+              "sha256": "b3d15f1aa5e20c0fb9c6f82a94da1810834a73635f0693f1f5ec8f5584f06ba3"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "MBR-01.E2",
+          "room_id": "MBR-01",
+          "code": "E2",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "دخول وستارة وتنقية",
+          "original_ids": [
+            "mbr-blackout",
+            "mbr-purifier"
+          ],
+          "current_object_ids": [],
+          "owner_use": "مفتاح من ناحية دخول الطرقة متبادل الوظيفة مع تحكم بجانب السرير؛ ستارة manual + احتياطي موتور لو مطلوب.",
+          "furniture_reason": "Room/opening use only; مفتاح من ناحية دخول الطرقة متبادل الوظيفة مع تحكم بجانب السرير؛ ستارة manual + احتياطي موتور لو مطلوب.",
+          "operational_tradeoff": "منقّي اختياري بعيد عن المخدة؛ لا موضع جهاز أو فولت موتور مختار.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "اختبر ضلفة OP-MBR-HALL والدريسنج والمشي للتراس؛ صور خلوص curtain حول GLZ-MBR-TER.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "design-development/advisor/A11_MASTER_SLEEP_MEP_BRIEF.md",
+              "sha256": "b3d15f1aa5e20c0fb9c6f82a94da1810834a73635f0693f1f5ec8f5584f06ba3"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "MBR-01.L1",
+          "room_id": "MBR-01",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "عام وقراءة",
+          "original_ids": [
+            "mbr-general"
+          ],
+          "current_object_ids": [
+            "starter-1",
+            "starter-2",
+            "starter-3"
+          ],
+          "owner_use": "طبقة عامة مريحة + مهمة على جانبي السرير ومشهد accent اختياري عند لوحة الحائط؛ كل وظيفة أساسية لها تحكم يدوي.",
+          "furniture_reason": "Source context starter-1, starter-2, starter-3; طبقة عامة مريحة + مهمة على جانبي السرير ومشهد accent اختياري عند لوحة الحائط؛ كل وظيفة أساسية لها تحكم يدوي.",
+          "operational_tradeoff": "لا سبوت مكشوف فوق العين؛ لمبات جانبية أسهل صيانة من cornice شامل عند 2500 صافٍ.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "اختبر الوهج مستلقيًا ومقاس سقف/ستارة؛ اختيار fixtures بعد عينة واقعية.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/0",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/1",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/2",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "design-development/advisor/A11_MASTER_SLEEP_MEP_BRIEF.md",
+              "sha256": "b3d15f1aa5e20c0fb9c6f82a94da1810834a73635f0693f1f5ec8f5584f06ba3"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "MBR-01.L2",
+          "room_id": "MBR-01",
+          "code": "L2",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "طريق ليل",
+          "original_ids": [
+            "mbr-night"
+          ],
+          "current_object_ids": [],
+          "owner_use": "إرشاد هادي من جانب السرير ناحية WIC والحمّام، مستقل عن العام؛ حساس اختياري مع تعطيل يدوي.",
+          "furniture_reason": "Room/opening use only; إرشاد هادي من جانب السرير ناحية WIC والحمّام، مستقل عن العام؛ حساس اختياري مع تعطيل يدوي.",
+          "operational_tradeoff": "الضوء لا يصب على النائم ولا يمتد wiring داخل حيز shower غير محدد.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "راجع الطريق بأبواب مفتوحة/مقفولة وعتبات فعلية؛ جرب الضوء مع مستخدم ليلي.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "design-development/advisor/A11_MASTER_SLEEP_MEP_BRIEF.md",
+              "sha256": "b3d15f1aa5e20c0fb9c6f82a94da1810834a73635f0693f1f5ec8f5584f06ba3"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "MBR-01.H1",
+          "room_id": "MBR-01",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "هواء بعيد عن المخدة",
+          "original_ids": [
+            "mbr-hvac"
+          ],
+          "current_object_ids": [
+            "starter-1"
+          ],
+          "owner_use": "شريط جهة الشرق/الدخول مرشح للمراجعة؛ نفخ عبر الفراغ المفتوح لا فوق pillow line؛ وصول للفلتر.",
+          "furniture_reason": "Source context starter-1; شريط جهة الشرق/الدخول مرشح للمراجعة؛ نفخ عبر الفراغ المفتوح لا فوق pillow line؛ وصول للفلتر.",
+          "operational_tradeoff": "الأبواب للدريسنج والطرقة تحد أماكن الرأس؛ شريط المراجعة ليس موضع وحدة مثبتة.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "HVAC يراجع الحمل والضوضاء ومسار التكثيف والرأس وموافقة المكثف؛ اختبار نفخ عند المخدتين.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/0",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "review-evidence/advisor-a10/VISUAL_VERDICT_20261008.md",
+              "sha256": "e4b3c6922439ff6d9e79576861cf880d75ffbc19029a611580a2e9537ae5024d"
+            },
+            {
+              "path": "review-evidence/advisor-a11/MASTER_VERDICT_20261008.md",
+              "sha256": "40a9b871df0dc6dda9d62cf74fd43692bec95af032541554b929024357b9d438"
+            },
+            {
+              "path": "design-development/advisor/A11_MASTER_SLEEP_MEP_BRIEF.md",
+              "sha256": "b3d15f1aa5e20c0fb9c6f82a94da1810834a73635f0693f1f5ec8f5584f06ba3"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "MBR-01.F1",
+          "room_id": "MBR-01",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "MBR↔WIC continuity؛ GLZ-MBR-TER weather threshold؛ طريق ليل خالي من حافة بساط.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "الاستمرارية أهدى؛ مقاومة رطوبة الدريسنج تحتاج اختيار فعلي منفصل.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/MBR-01/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/2",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/11",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "id": "WIC-01",
+        "name": "Dressing",
+        "full_name": "Master dressing",
+        "poly": [
+          [
+            4003.559,
+            6206.575
+          ],
+          [
+            5465.175,
+            6206.575
+          ],
+          [
+            5465.175,
+            8960.346
+          ],
+          [
+            4003.559,
+            8960.346
+          ]
+        ],
+        "at": [
+          4734.367,
+          7583.46
+        ],
+        "kind": "dressing",
+        "isTerrace": false,
+        "mat": "wood",
+        "printed": "DRESSING 2.75m x 1.40m",
+        "printed_dimensions_m": [
+          2.75,
+          1.4
+        ],
+        "callouts": [],
+        "area_estimate_m2": 4.024955753936
+      },
+      "furniture": [
+        {
+          "id": "starter-4",
+          "type": "wardrobe",
+          "name": "North dressing wardrobe · 1250 × 600 mm",
+          "room_id": "WIC-01",
+          "cx": 4734,
+          "cy": 6615,
+          "w": 1250,
+          "d": 600,
+          "rot": 0,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        },
+        {
+          "id": "starter-5",
+          "type": "wardrobe",
+          "name": "South dressing wardrobe · 1250 × 600 mm",
+          "room_id": "WIC-01",
+          "cx": 4734,
+          "cy": 8550,
+          "w": 1250,
+          "d": 600,
+          "rot": 180,
+          "color": "#BCA98F",
+          "status": "EXPLORATORY",
+          "variant": "style"
+        }
+      ],
+      "interior": [],
+      "opening_ids": [
+        "OP-MBR-WIC",
+        "OP-WIC-BATHM"
+      ],
+      "m1_intents": [
+        {
+          "id": "WIC-01.E1",
+          "room_id": "WIC-01",
+          "code": "E1",
+          "service": "Power • data • controls",
+          "layer": "E",
+          "label": "تحكم وصيانة",
+          "original_ids": [
+            "wic-controls"
+          ],
+          "current_object_ids": [
+            "starter-4",
+            "starter-5"
+          ],
+          "owner_use": "تحكم ناحية الدخول من MBR، خدمة drivers في حيز جاف متاح؛ لا مأخذ grooming مفترض داخل splash محتمل.",
+          "furniture_reason": "Source context starter-4, starter-5; تحكم ناحية الدخول من MBR، خدمة drivers في حيز جاف متاح؛ لا مأخذ grooming مفترض داخل splash محتمل.",
+          "operational_tradeoff": "باب BATH-M01 وحركة مستخدمين قد تخفي المفتاح أو driver وراء النجارة.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "جرّب OP-MBR-WIC وOP-WIC-BATHM مع أبواب الخزائن مفتوحة ويد تحمل هدوم.",
+          "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/5",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/3",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/4",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "scripts/advisor-a8-private-wet-storage.mjs",
+              "sha256": "1aa3809cc5787084065113b6a145acca8ae15e19b951d0c7702b2cfd10a31f13"
+            },
+            {
+              "path": "design-development/advisor/cases/wic-two-person.json",
+              "sha256": "bafafac48d85911518f5ec727ab92329f1a050bafd2986939714d4188d6d412d"
+            },
+            {
+              "path": "design-development/advisor/cases/wic-access.json",
+              "sha256": "2c8d8233aece67f7b29e07e29dc388bea1dca9e1469f9f9cb596fc11205c22ed"
+            },
+            {
+              "path": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+              "sha256": "1b7a73cdfd949daa2474eded29485664e609c3d14753788a5a407dfe66207367"
+            },
+            {
+              "path": "scripts/build-master-walkin-depth.mjs",
+              "sha256": "e96b4596570ddce379aa87748645b15279d57582b84550f6f8949d20bbc85705"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "WIC-01.L1",
+          "room_id": "WIC-01",
+          "code": "L1",
+          "service": "Lighting • reflected ceiling",
+          "layer": "L",
+          "label": "وجوه الخزائن",
+          "original_ids": [
+            "wic-general",
+            "wic-opposing"
+          ],
+          "current_object_ids": [
+            "starter-4",
+            "starter-5"
+          ],
+          "owner_use": "طبقة عامة للممر ومهمة رأسيّة للخزانتين الشمالية والجنوبية؛ لون القماش يراجع بعينات حقيقية.",
+          "furniture_reason": "Source context starter-4, starter-5; طبقة عامة للممر ومهمة رأسيّة للخزانتين الشمالية والجنوبية؛ لون القماش يراجع بعينات حقيقية.",
+          "operational_tradeoff": "نور من السقف وحده يتغطى بالجسم؛ LED داخل النجارة يزيد driver وتنظيف وصيانة وحرارة قرب الهدوم.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "اختبر فتح الضلف بالكامل والظل على رفوف/وجه الخزانة وخدمة driver؛ حساس باب اختياري مع override.",
+          "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/5",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/3",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/furniture/4",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "scripts/advisor-a8-private-wet-storage.mjs",
+              "sha256": "1aa3809cc5787084065113b6a145acca8ae15e19b951d0c7702b2cfd10a31f13"
+            },
+            {
+              "path": "design-development/advisor/cases/wic-two-person.json",
+              "sha256": "bafafac48d85911518f5ec727ab92329f1a050bafd2986939714d4188d6d412d"
+            },
+            {
+              "path": "design-development/advisor/cases/wic-access.json",
+              "sha256": "2c8d8233aece67f7b29e07e29dc388bea1dca9e1469f9f9cb596fc11205c22ed"
+            },
+            {
+              "path": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+              "sha256": "1b7a73cdfd949daa2474eded29485664e609c3d14753788a5a407dfe66207367"
+            },
+            {
+              "path": "scripts/build-master-walkin-depth.mjs",
+              "sha256": "e96b4596570ddce379aa87748645b15279d57582b84550f6f8949d20bbc85705"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "WIC-01.H1",
+          "room_id": "WIC-01",
+          "code": "H1",
+          "service": "HVAC • extraction • access",
+          "layer": "H",
+          "label": "رطوبة ووصول للحمّام",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "تحقق من انتقال رطوبة ensuite والتهوية ومسار خدمة extraction؛ لا تكييف مستقل مفترض.",
+          "furniture_reason": "Room/opening use only; تحقق من انتقال رطوبة ensuite والتهوية ومسار خدمة extraction؛ لا تكييف مستقل مفترض.",
+          "operational_tradeoff": "إنارة أو access عند فتحة الحمّام لا يجوز اعتبارها منطقة كهرباء جافة بدون تقييم splash.",
+          "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+          "survey_step": "وثّق OP-WIC-BATHM مع shower مستخدم، العادم ومسار الصيانة وعلاقة الthreshold.",
+          "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+          "evidence_source": [
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/rooms/5",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "scripts/advisor-a8-private-wet-storage.mjs",
+              "sha256": "1aa3809cc5787084065113b6a145acca8ae15e19b951d0c7702b2cfd10a31f13"
+            },
+            {
+              "path": "design-development/advisor/cases/wic-two-person.json",
+              "sha256": "bafafac48d85911518f5ec727ab92329f1a050bafd2986939714d4188d6d412d"
+            },
+            {
+              "path": "design-development/advisor/cases/wic-access.json",
+              "sha256": "2c8d8233aece67f7b29e07e29dc388bea1dca9e1469f9f9cb596fc11205c22ed"
+            },
+            {
+              "path": "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md",
+              "sha256": "1b7a73cdfd949daa2474eded29485664e609c3d14753788a5a407dfe66207367"
+            },
+            {
+              "path": "scripts/build-master-walkin-depth.mjs",
+              "sha256": "e96b4596570ddce379aa87748645b15279d57582b84550f6f8949d20bbc85705"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+          "construction_approved": false
+        },
+        {
+          "id": "WIC-01.F1",
+          "room_id": "WIC-01",
+          "code": "F1",
+          "service": "Floors • thresholds",
+          "layer": "F",
+          "label": "حدود وخيارات أرضية",
+          "original_ids": [],
+          "current_object_ids": [],
+          "owner_use": "Wet boundary عند OP-WIC-BATHM؛ لا ترفع عتبة مفترضة ولا تسحب أرضية الشاور للدريسنج.",
+          "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+          "operational_tradeoff": "راحة قدم مقابل رطوبة shower؛ اختبار splash وlevel قبل المنتج.",
+          "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+          "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+          "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+          "evidence_source": [
+            {
+              "path": "render-snapshots/current.json",
+              "pointer": "/layout/rooms/WIC-01/mat",
+              "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/3",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            },
+            {
+              "path": "dist/apartment-model.json",
+              "pointer": "/openings/4",
+              "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+            }
+          ],
+          "measurement_status": "NOT_SURVEYED",
+          "TBD_AS_BUILT": true,
+          "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+          "construction_approved": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "BR-01",
+      "from": "OP-BR01-HALL",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 205.2,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "BR-02",
+      "from": "OP-BR02-HALL",
+      "to": "free-space-near-room-centre",
+      "measured_clearance_mm": 0,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "MBR-01",
+      "from": "OP-MBR-HALL",
+      "to": "OP-MBR-WIC",
+      "measured_clearance_mm": 720.2,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    },
+    {
+      "kind": "circulation",
+      "status": "WARNING",
+      "room_id": "WIC-01",
+      "from": "OP-MBR-WIC",
+      "to": "OP-WIC-BATHM",
+      "measured_clearance_mm": 677.9,
+      "preferred_clearance_mm": 900,
+      "grid_resolution_mm": 125,
+      "method": "Conservative widest sampled path; centreline widths minus 125 mm sampling allowance",
+      "message": "Circulation estimate between access approaches and free room space. Confirm usable routes with actual furniture and site dimensions."
+    }
+  ],
+  "carry_from_group1b": {
+    "B": "Promising unapproved language, not mandatory private-room furniture",
+    "reserve_shoes": {
+      "wardrobe_id": "starter-5",
+      "bay_mm": [
+        550,
+        350,
+        400
+      ],
+      "pairs": 4,
+      "tradeoff": "Inventory-dependent lower clothing bay; keep original wardrobe footprint unchanged. This is NOT allocated/approved capacity."
+    },
+    "group1_holds": "Entry/WC/door/hardware, curtains, actual comfort and AC service stay in Group1B SITE_HOLDS.json; not a dependency for independent source optimization."
+  },
+  "first_decisions": [
+    "BR-02: preserve real daily desk versus reversible guest/future study option; test door-to-bed/wardrobe routes with occupied chair and actual forward orientation, not the old room-centre endpoint alone.",
+    "WIC: two1250x600 wardrobes; check shared operating aisle, bathroom-leaf and clothing/linen/shoe inventory before reserving550mm bay.",
+    "Master + BR01: compare source frame footprints and bedside access, occupied desks/wardrobe motion, night movement, charging/reading/blackout/AC coordination."
+  ],
+  "approvals": {
+    "owner": false,
+    "construction": false,
+    "procurement": false,
+    "cloud_save": false
+  }
+}

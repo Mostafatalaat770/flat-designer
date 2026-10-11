@@ -538,7 +538,7 @@ const STUDIO_OPTIONS={
   flooring:['wood','walnut','tile800','tile600','marble','antislip','terrazzo','carpet','lightoak','parquet','travertine'],
   temperature:[2700,3000,4000],brightness:[0,100]
 };
-const STUDIO_VARIANTS={sofa:['style','cocoon','modular','tailored'],armchair:['style','cocoon','tailored'],bed:['style','upholstered','oak-platform','woven-headboard'],fridge:['style','integrated','steel'],ovencol:['style','black-glass','steel'],dishwasher:['style','integrated','steel'],counter:['style','base-only','peninsula'],shower:['style','walk-in']};
+const STUDIO_VARIANTS={sofa:['style','cocoon','modular','tailored'],armchair:['style','cocoon','tailored'],bed:['style','upholstered','oak-platform','woven-headboard'],fridge:['style','integrated','steel'],ovencol:['style','black-glass','steel'],dishwasher:['style','integrated','steel'],counter:['style','base-only','peninsula'],vanity:['style','floating-compact'],shower:['style','walk-in','frameless-low-profile']};
 function studioDefaults(){return {version:1,rooms:{}};}
 function studioRoomDefaults(){return {hvac:'none',ceiling:'plain',lighting:'style',temperature:3000,brightness:75,wall:null};}
 function studioRoomOptions(scene,id){return {...studioRoomDefaults(),...scene.studio?.rooms?.[id]};}
@@ -615,15 +615,15 @@ function studioRenderBrief(layout,model,roomId,catalog=[]){
 const INTERIOR_MATERIALS=[{"schema":"InteriorMaterial/1","id":"generic-wood","name":"Wood","category":"wood","source_status":"GENERIC","base_colour":"#ae8153","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"wood","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-walnut","name":"Walnut","category":"wood","source_status":"GENERIC","base_colour":"#60432e","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"walnut","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-tile800","name":"Tile 800","category":"stone","source_status":"GENERIC","base_colour":"#ddd9cf","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":800,"height":800},"fallback_generic_id":"tile800","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-tile600","name":"Tile 600","category":"stone","source_status":"GENERIC","base_colour":"#e5e0d7","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":600,"height":600},"fallback_generic_id":"tile600","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-marble","name":"Marble","category":"stone","source_status":"GENERIC","base_colour":"#ebe8e3","finish":"matte","roughness":0.32,"metallic":0,"texture_scale_mm":{"width":1200,"height":1200},"fallback_generic_id":"marble","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-antislip","name":"Antislip","category":"stone","source_status":"GENERIC","base_colour":"#b1aca1","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"antislip","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-terrazzo","name":"Terrazzo","category":"stone","source_status":"GENERIC","base_colour":"#c9c1ae","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"terrazzo","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-carpet","name":"Carpet","category":"fabric","source_status":"GENERIC","base_colour":"#b6a797","finish":"matte","roughness":0.92,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"carpet","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-lightoak","name":"Lightoak","category":"wood","source_status":"GENERIC","base_colour":"#d3b78b","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"lightoak","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-parquet","name":"Parquet","category":"wood","source_status":"GENERIC","base_colour":"#a97b4f","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1000,"height":1000},"fallback_generic_id":"parquet","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-travertine","name":"Travertine","category":"stone","source_status":"GENERIC","base_colour":"#d2bfa4","finish":"matte","roughness":0.7,"metallic":0,"texture_scale_mm":{"width":1200,"height":1200},"fallback_generic_id":"travertine","notes":"Procedural interpretation; no manufacturer or exact product match."},{"schema":"InteriorMaterial/1","id":"generic-linen","name":"Natural linen","category":"fabric","source_status":"GENERIC","base_colour":"#dfd3bb","finish":"woven","roughness":0.95,"metallic":0,"texture_scale_mm":{"width":300,"height":300}},{"schema":"InteriorMaterial/1","id":"generic-plaster","name":"Warm plaster","category":"paint","source_status":"GENERIC","base_colour":"#ebe6da","finish":"matte","roughness":0.96,"metallic":0},{"schema":"InteriorMaterial/1","id":"generic-brass","name":"Satin brass","category":"metal","source_status":"GENERIC","base_colour":"#b39860","finish":"satin","roughness":0.36,"metallic":0.85},{"schema":"InteriorMaterial/1","id":"generic-glass","name":"Fluted glass concept","category":"glass","source_status":"GENERIC","base_colour":"#cbd9d8","finish":"fluted","roughness":0.28,"metallic":0,"notes":"Approximate translucent glass; not an exact optical simulation."},{"schema":"InteriorMaterial/1","id":"reference-art-warm","name":"Organic abstract print","category":"artwork","source_status":"REFERENCE","base_colour":"#f1e4d0","finish":"matte","roughness":0.92,"metallic":0,"albedo_texture":"./art/warm.png","notes":"AI-created concept artwork, not a purchasable product."}];
 /* InteriorDesign/1 is a reversible overlay, never an architectural model. Units: mm. */
 const INTERIOR_OBJECT_TYPES={
-  divider:{variants:['vertical-slats','fluted-glass','open-shelf','storage-screen','solid-panel'],modes:['floor'],size:[1200,180,2200]},
+  divider:{variants:['vertical-slats','fluted-glass','open-shelf','storage-screen','solid-panel','fixed-clear-glass'],modes:['floor'],size:[1200,180,2200]},
   console:{variants:['plain'],modes:['floor','wall'],size:[1100,350,800],operating:600},
   sideboard:{variants:['plain'],modes:['floor','wall'],size:[1500,450,800],operating:800},
   bench:{variants:['plain','upholstered'],modes:['floor'],size:[1100,420,450],operating:600},
   artwork:{variants:['framed','canvas'],modes:['wall'],size:[800,40,650]},
-  mirror:{variants:['rectangle','round'],modes:['wall'],size:[650,40,1000]},
+  mirror:{variants:['rectangle','round','task-lit'],modes:['wall'],size:[650,40,1000]},
   'wall-panel':{variants:['plain','fluted'],modes:['wall'],size:[1000,35,2200]},
   'media-unit':{variants:['plain','floating'],modes:['floor','wall'],size:[1800,380,500],operating:600},
-  shelf:{variants:['open','floating'],modes:['wall','floor'],size:[900,280,450],operating:600},
+  shelf:{variants:['open','floating','wet-tray'],modes:['wall','floor'],size:[900,280,450],operating:600},
   curtain:{variants:['sheer','drapery','layered'],modes:['opening','ceiling'],size:[1600,120,2450]},
   pendant:{variants:['globe','linear'],modes:['ceiling'],size:[360,360,650]},
   'floor-lamp':{variants:['shade','arc'],modes:['floor'],size:[380,380,1650]},
@@ -3245,6 +3245,20 @@ function makeStudioVariant(f){
       for(let i=0;i<n;i++){const x=-(w-.17)/2+(w-.17)/n*(i+.5);cushion(g,(w-.17)/n-.015,.13,d-.15,c,x,.29,.04);cushion(g,(w-.17)/n-.02,.37,.12,c,x,.44,-d/2+.12,-.05);}
     }
     if(f.type==='sofa')cushion(g,.30,.30,.12,t.accent,-w*.28,connect?.34:.43,-d*.14,-.09);
+  }else if(f.type==='vanity'&&f.variant==='floating-compact'){
+    // Opt-in suspended compact guest vanity: footprint, tap/pipe center and wall remain
+    // unchanged; visual bracket, water supply and bowl fit are NOT engineer approved.
+    const wood=mat(c,{roughness:.53}),stone=mat('#faf8f3',{roughness:.22}),cm=mat('#b7bdbe',{metalness:.76,roughness:.27});
+    g.add(rbox(w,.225,Math.max(.13,d-.025),wood,0,.525,0,.012));
+    g.add(rbox(w+.005,.046,d,stone,0,.755,0,.008));
+    g.add(box(w*.58,.008,.012,cm,0,.655,d/2+.006));
+    const rb=Math.min(.12,w*.33,d*.45),bowl=lathe([[0,0],[rb*.50,0],[rb*.80,.017],[rb,.06],[rb,.08]],ceramic({side:THREE.DoubleSide}),0,.804,0,32);
+    bowl.scale.z=Math.min(1,(d-.045)/(rb*2));g.add(bowl);
+    const z=-d/2+.047;
+    g.add(cyl(.019,.02,.015,cm,0,.805,z,16),
+      tube([[0,.815,z],[0,1.008,z],[0,1.051,z+.045],[0,1.018,z+.105]],.009,cm));
+    g.userData.guestCompactVanity={concept:"floating-compact",status:"NOT_FOR_INSTALLATION",floor_clearance_mm:525,
+      physical_sink_envelope_mm:[f.w,f.d],real_wall_bracket_drain_and_bowl_fit_approved:false};
   }else if(f.type==='counter'){
     const assigned=interiorMaterial(state,f.material_id),cm=assigned?.category==='wood'?woodM(assigned.base_colour):mat(c,{roughness:.45}),stone=mat('#dcd7cf',{roughness:.22}),n=Math.max(1,Math.round(w/.6)),fz=d/2-.04;
     if(!studioCounterJoinery(g,f,w,d,cm)){
@@ -3252,6 +3266,29 @@ function makeStudioVariant(f){
       fronts(g,-w/2+.005,.08,w-.01,.72,fz,n,1,cm,'edge',.48);
     }
     studioCountertop(g,f,w,d,stone);
+  }else if(f.type==='shower'&&f.variant==='frameless-low-profile'){
+    // Family shower: north/east are masonry. Exposed glazing MUST face SOUTH
+    // (WC side) and WEST (bathroom passage). Door is drawn CLOSED only.
+    // No outward swing, drain capacity, tray buildup or safety-glass approval.
+    const cm=mat('#b5bebc',{metalness:.74,roughness:.27}),porcelain=mat('#e7e1d8',{roughness:.84});
+    const glass=mat('#d9eef0',{transparent:true,opacity:.19,roughness:.08,metalness:.02,depthWrite:false,side:THREE.DoubleSide});
+    const h=1.96,base=.035,pivot=Math.min(.58,d*.68),fixed=d-pivot;
+    g.add(rbox(w,base,d,porcelain,0,0,0,.006));
+    // SOUTH fixed splash pane: kept closed by actual WC, not an entry.
+    const south=box(w,h,.008,glass,0,base,-d/2+.006);
+    // WEST access: nominal pivot 580mm + rear fixed 320mm (door CLOSED).
+    const westFixed=box(.008,h,fixed,glass,-w/2+.006,base,d/2-fixed/2);
+    const westDoor=box(.008,h,pivot,glass,-w/2+.006,base,-d/2+pivot/2);
+    for(const p of [south,westFixed,westDoor]){p.castShadow=false;p.userData.hardwareStudy='CLOSED_DOOR_NO_CLEARANCE_CERTIFICATION';g.add(p);}
+    g.add(box(.013,h,.013,cm,-w/2+.008,base,d/2-fixed));
+    for(const yy of [1.00,1.20])g.add(rbox(.017,.11,.03,cm,-w/2-.018,yy,-d/2+pivot*.65,.004));
+    const x=-w*.25,z=d/2-.055;
+    g.add(rbox(.14,.090,.035,cm,x,1.04,z,.012),
+      rod([x,1.13,z],[x,2.01,z],.012,cm),
+      rod([x,2.01,z],[x,2.01,z-.18],.012,cm),
+      box(.23,.012,.23,cm,x,2.00,z-.18));
+    g.userData.familyEnclosure={status:'CONDITIONAL',accessFace:'WEST',splashFace:'SOUTH',
+      doorShownClosed:true,realSwingApproved:false,modelTrayHeightMm:35,pivotLeafProxyMm:Math.round(pivot*1000)};
   }else if(f.type==='shower'&&f.variant==='walk-in'){
     // True open wet area: no default glass cage or raised prefabricated tray.
     // Any fixed splash panel is a separate validated interior object.
@@ -3437,6 +3474,197 @@ function showInterior(id='living',smooth=true){
   opt.cut=H;syncCutBtns();sync(true);showLabels(false);window.select(null);
   const p=interiorPose(id);smooth?flyTo(p):setPose(p);
   $('#interiorView').value=id;syncHint3d();
+}
+
+// Shared by the classic production viewer and the extracted Studio builder.
+// A saved elevated wall sideboard in a kitchen is the source-defined upper run.
+// Suppress the demo asset's ENTIRE optional upper stack in that room, including
+// portions outside the explicit run: those portions have no source cabinet ID.
+function sourceKitchenUppers(layout, roomId) {
+  return (layout.interior?.objects || []).filter(o => o.room_id === roomId &&
+    o.type === 'sideboard' && o.placement?.mode === 'wall' &&
+    o.placement.elevation_mm >= 1200 && o.height_mm > 0);
+}
+function sourceKitchenBacksplashes(layout, roomId) {
+  return (layout.interior?.objects || []).filter(o => o.room_id === roomId &&
+    o.type === 'wall-panel' && o.placement?.mode === 'wall' &&
+    o.placement.elevation_mm >= 800 && o.placement.elevation_mm <= 1000 &&
+    o.height_mm >= 300 && o.depth_mm <= 30);
+}
+function kitchenCounterTruth(layout, furniture, rooms) {
+  const kitchen = rooms.some(r => r.id === furniture.room_id && r.kind === 'kitchen');
+  return {
+    upper_ids: kitchen ? sourceKitchenUppers(layout, furniture.room_id).map(o => o.id) : [],
+    backsplash_ids: kitchen ? sourceKitchenBacksplashes(layout, furniture.room_id).map(o => o.id) : [],
+  };
+}
+
+function applyKitchenDoorFinishExperiment(THREE, experiment, doors, woodMaterial) {
+  if (!experiment) return null;
+  const specs = {
+    D0: null,
+    D1: {colour:'#D8D1C5',roughness:.72,appearance:'PAINT_PROXY'},
+    D2: {colour:'#BCA98F',roughness:.72,appearance:'PROCEDURAL_WOOD_PROXY'},
+  };
+  const ids = ['OP-RECP-KIT','OP-KIT-TERSVC'];
+  const expected = {schema:'KitchenDoorFinishExperiment/1',status:'RENDER_ONLY',
+    variant:experiment.variant,door_ids:ids,finish:specs[experiment.variant],
+    owner_approved:false,construction_approved:false,cloud_saved:false,manufacturer_selected:false};
+  if (!Object.hasOwn(specs,experiment.variant) || JSON.stringify(experiment)!==JSON.stringify(expected))
+    throw new Error('Unauthorized kitchen door finish experiment');
+  const records=[];
+  const shape = (door, leaf) => {
+    door.pivot.updateMatrixWorld(true);
+    const bounds=new THREE.Box3().setFromObject(leaf);
+    return {id:door.id,width_m:door.width,hinge:door.pivot.position.toArray(),
+      a0:door.a0,a1:door.a1,open:door.open,position:door.cur,
+      leaf_parameters:{width:leaf.geometry.parameters.width,height:leaf.geometry.parameters.height,depth:leaf.geometry.parameters.depth},
+      leaf_matrix:leaf.matrixWorld.toArray(),leaf_bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}};
+  };
+  for (const id of ids) {
+    const door=doors.find(d=>d.id===id && !d.sliding);
+    if (!door?.pivot) throw new Error('Missing kitchen door '+id);
+    const leaf=door.pivot.children.find(n=>n.geometry?.type==='BoxGeometry' && n.userData.door===door);
+    if (!leaf) throw new Error('Missing kitchen door leaf '+id);
+    const before=shape(door,leaf), original_colour='#'+leaf.material.color.getHexString();
+    if (expected.finish) {
+      const material=(experiment.variant==='D2'?woodMaterial(expected.finish.colour):leaf.material).clone();
+      material.color.set(expected.finish.colour);
+      material.roughness=expected.finish.roughness;
+      leaf.material=material;
+    }
+    const after=shape(door,leaf);
+    if(JSON.stringify(before)!==JSON.stringify(after)) throw new Error('Door geometry changed');
+    records.push({id,original_colour,rendered_colour:'#'+leaf.material.color.getHexString(),
+      appearance:expected.finish?.appearance || 'ORIGINAL_SOURCE_RENDERED_PAINT',before,after});
+  }
+  return {...expected,doors:records,geometry_changed:false};
+}
+
+// Measured Three.js r160 meshes, not dimensions inferred from screenshots.
+// Bounds use canonical plan X/Y in mm, and elevation in mm, in that order.
+function kitchenGeometryEvidence(THREE, model, layout, furnG) {
+  furnG.updateMatrixWorld(true);
+  const planBounds = box => ({
+    min_mm: [box.min.x * 1000 + model.width_mm / 2, box.min.z * 1000 + model.depth_mm / 2, box.min.y * 1000],
+    max_mm: [box.max.x * 1000 + model.width_mm / 2, box.max.z * 1000 + model.depth_mm / 2, box.max.y * 1000],
+  });
+  const bounds = nodes => {
+    const b = new THREE.Box3();
+    for (const n of nodes) b.union(new THREE.Box3().setFromObject(n));
+    return b.isEmpty() ? null : planBounds(b);
+  };
+  const counters = [], uppers = [], hoods = [], backsplashes = [];
+  for (const f of layout.furniture.filter(f => f.room_id === 'KIT-01')) {
+    const group = furnG.children.find(g => g.userData.fid === f.id);
+    if (!group) continue;
+    if (f.type === 'counter') {
+      const upper = group.children.filter(n => n.geometry && n.position.y >= 1.465 && n.position.y <= 2.18);
+      const splash = group.children.filter(n => n.geometry?.parameters?.height === .62);
+      counters.push({ source_id: f.id, source_footprint: {cx:f.cx,cy:f.cy,w:f.w,d:f.d,rot:f.rot},
+        generated_upper_bounds: bounds(upper), generated_upper_mesh_count: upper.length,
+        generated_backsplash_bounds: bounds(splash), total_bounds: bounds([group]) });
+    }
+    if (f.type === 'stove') {
+      const hood = group.children.filter(n => n.geometry && n.position.y >= 1.5);
+      hoods.push({source_id:f.id, status:'LEGACY_HOOD_PROXY_NOT_MANUFACTURER', bounds:bounds(hood)});
+    }
+  }
+  for (const o of layout.interior?.objects || []) {
+    if (o.room_id !== 'KIT-01') continue;
+    const group = furnG.children.find(g => g.userData.interiorObjectId === o.id);
+    if (!group) continue;
+    const record = { source_id:o.id, host_wall_id:o.placement.host_wall_id || null,
+      dimensions_mm:[o.width_mm,o.depth_mm,o.height_mm], placement:structuredClone(o.placement),
+      carcass_bounds:bounds(group.children.slice(0,1)), rendered_bounds:bounds([group]) };
+    if (sourceKitchenUppers(layout,'KIT-01').some(x => x.id === o.id)) uppers.push(record);
+    if (sourceKitchenBacksplashes(layout,'KIT-01').some(x => x.id === o.id)) backsplashes.push(record);
+  }
+  return {schema:'KitchenRenderedGeometry/1',coordinates:'canonical plan X / plan Y / elevation, millimetres',counters,uppers,hoods,backsplashes};
+}
+
+// Isolated review overlay. Never called by the interactive viewer; no source edit.
+
+function kitchenR6Spec(option, detail = false) {
+  const concepts = {L0:{under:false,hood:false,ceiling:false},L1:{under:true,hood:false,ceiling:false},L2:{under:true,hood:true,ceiling:false},L3:{under:false,hood:true,ceiling:true}};
+  if (!Object.hasOwn(concepts,option) || (detail && option !== 'L2')) throw Error('Unknown R6 study');
+  return {schema:'KitchenR6Study/1',status:'RENDER_ONLY',option,detail,concept:concepts[option],
+    light_colour:'#fff1db',under_intensity:.28,hood_intensity:.65,ceiling_intensity:2.5,
+    renderer_units_only:true,owner_approved:false,construction_approved:false,cloud_saved:false,manufacturer_selected:false};
+}
+function applyKitchenR6Study(THREE, model, layout, furnG, scene, spec) {
+  if (!spec) return null;
+  const expected=kitchenR6Spec(spec.option,spec.detail);
+  if (JSON.stringify(spec)!==JSON.stringify(expected)) throw Error('Unauthorized R6 overlay');
+  const original=JSON.stringify(layout), geometry=kitchenGeometryEvidence(THREE,model,layout,furnG);
+  if(geometry.uppers.length!==3 || geometry.backsplashes.length!==2 || geometry.counters.some(c=>c.generated_upper_bounds)) throw Error('R6 source authority missing');
+  const overlay=new THREE.Group();overlay.name='R6_RENDER_ONLY_PROPOSAL';scene.add(overlay);
+  const fixtures=[],finishes=[];
+  const xyz=p=>[p[0]/1000-model.width_mm/2000,p[2]/1000,p[1]/1000-model.depth_mm/2000];
+  const bounds=m=>{m.updateMatrixWorld(true);const b=new THREE.Box3().setFromObject(m);return {min:b.min.toArray(),max:b.max.toArray()};};
+  const mesh=(id,w,h,d,p,material,matrix=null)=>{
+    const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),material);m.name=id;
+    m.position.fromArray(p);if(matrix)m.applyMatrix4(matrix);m.receiveShadow=true;
+    m.userData.r6Proposal=true;overlay.add(m);return m;
+  };
+  const light=(id,p,t,intensity,angle)=>{
+    const l=new THREE.SpotLight(spec.light_colour,intensity,4,angle,1,2);
+    l.position.fromArray(p);l.target.position.fromArray(t);l.castShadow=true;
+    l.shadow.mapSize.set(512,512);l.shadow.bias=-.0004;l.shadow.normalBias=.03;
+    l.name=id;overlay.add(l,l.target);
+    return {id,position:l.position.toArray(),target:l.target.position.toArray(),intensity,angle,penumbra:1,decay:2,cast_shadow:true,shadow_map:512};
+  };
+  const diffuser=new THREE.MeshStandardMaterial({color:'#fff9ee',emissive:spec.light_colour,emissiveIntensity:.3,roughness:.75});
+  const housing=new THREE.MeshStandardMaterial({color:'#d6d4cf',roughness:.7,metalness:.15});
+  if(spec.concept.under)for(const u of geometry.uppers){
+    const source=layout.interior.objects.find(o=>o.id===u.source_id),g=furnG.children.find(g=>g.userData.interiorObjectId===u.source_id);
+    g.updateMatrixWorld(true);const length=(source.width_mm-50)/1000,z=source.depth_mm/2000-.045;
+    const profile=mesh('R6-U-'+u.source_id,length,.010,.020,[0,-.005,z],housing,g.matrixWorld);
+    mesh('R6-DIFFUSER-'+u.source_id,length,.002,.014,[0,-.011,z],diffuser,g.matrixWorld);
+    const count=Math.max(1,Math.ceil(length/.38)),emitters=[];
+    for(let i=0;i<count;i++){
+      const x=length*((i+.5)/count-.5),p=new THREE.Vector3(x,-.013,z).applyMatrix4(g.matrixWorld),t=new THREE.Vector3(x,-.62,z+.17).applyMatrix4(g.matrixWorld);
+      emitters.push(light('R6-U-'+u.source_id+'-'+i,p.toArray(),t.toArray(),spec.under_intensity,Math.PI*.32));
+    }
+    fixtures.push({id:'R6-U-'+u.source_id,kind:'SHIELDED_LINEAR_PROFILE_PROXY',source_id:u.source_id,length_mm:source.width_mm-50,setback_from_front_mm:45,profile_bounds:bounds(profile),emitters,
+      approximation:'Linear diffuser sampled by downward broad soft spots; no photometric IES, lux or installed product assumed.'});
+  }
+  if(spec.concept.hood){
+    const g=furnG.children.find(g=>g.userData.fid==='starter-22');g.updateMatrixWorld(true);
+    const emitters=[];
+    for(const x of [-.16,.16]){
+      const p=new THREE.Vector3(x,1.543,.10).applyMatrix4(g.matrixWorld),t=new THREE.Vector3(x,.87,0).applyMatrix4(g.matrixWorld);
+      mesh('R6-HOOD-DIFFUSER-'+x,.075,.006,.018,[x,1.546,.10],diffuser,g.matrixWorld);
+      emitters.push(light('R6-HOOD-'+x,p.toArray(),t.toArray(),spec.hood_intensity,Math.PI*.28));
+    }
+    fixtures.push({id:'R6-HOOD',source_id:'starter-22',kind:'HOOD_TASK_LIGHT_CAPABILITY_PROXY',emitters,
+      requirement:'Future hood must supply independently controlled downward task light and accessible cleanable sealed optics without blocking filter removal. Product, heat clearance and extraction remain HOLD.'});
+  }
+  if(spec.concept.ceiling){
+    for(const [id,p,t] of [['HOB',[9890,7895,2440],[9381,7895,870]],['SINK',[11181,7440,2440],[11181,6993,870]]]){
+      const emitters=[light('R6-CEILING-'+id,xyz(p),xyz(t),spec.ceiling_intensity,Math.PI*.18)];
+      mesh('R6-CEILING-TRIM-'+id,.07,.008,.07,xyz([p[0],p[1],2490]),housing);
+      fixtures.push({id:'R6-CEILING-'+id,kind:'AIMED_CEILING_PROXY',source_id:null,emitters,requirement:'Separate supplemental circuit/controls and ceiling access subject to survey; no ceiling drop or source fixture relocation.'});
+    }
+  }
+  if(spec.detail){
+    const material=new THREE.MeshStandardMaterial({color:'#E5DED1',roughness:.68});
+    for(const panel of geometry.backsplashes){
+      const g=furnG.children.find(g=>g.userData.interiorObjectId===panel.source_id);g.updateMatrixWorld(true);
+      const w=panel.dimensions_mm[0]/1000,d=panel.dimensions_mm[1]/1000;
+      for(const [band,h,y] of [['BOTTOM',.07,-.035],['TOP',.03,.535]]){
+        const m=mesh('R6-F1-'+panel.source_id+'-'+band,w,h,d,[0,y,0],material,g.matrixWorld);
+        finishes.push({id:m.name,source_panel_id:panel.source_id,kind:'REMOVABLE_FINISH_SKIN_PROXY',bounds:bounds(m),nominal_height_mm:h*1000,not_fabrication_dimension:true});
+      }
+    }
+    const p=geometry.backsplashes.find(p=>p.source_id==='KIT-A1-west-backsplash'),b=p.carcass_bounds;
+    const m=mesh('R6-F1-HOOD-BAND',.005,.07,.6,xyz([(b.min_mm[0]+b.max_mm[0])/2,7895,1515]),material);
+    finishes.push({id:m.name,source_panel_id:p.source_id,kind:'HOOD_ZONE_FINISH_SKIN_PROXY',bounds:bounds(m),nominal_height_mm:70,not_fabrication_dimension:true});
+  }
+  if(original!==JSON.stringify(layout))throw Error('R6 source mutation');
+  return {schema:'KitchenR6OverlayEvidence/1',spec,fixtures,finishes,source_geometry_before:geometry,
+    source_geometry_after:kitchenGeometryEvidence(THREE,model,layout,furnG),source_changed:false,
+    measured_lux:null,wattage:null,wiring:null,product_selected:false};
 }
 
 function buildFurniture(f){
@@ -3672,9 +3900,14 @@ function buildFurniture(f){
       }
       g.add(box(w - .01, .1, d - .1, '#4a4641', 0, 0, -.05), box(w, .72, d - .04, cm, 0, .1, -.02));
       fronts(g, -w/2, .64, w, .18, fz, n, 1, cm, 'bar'); fronts(g, -w/2, .1, w, .54, fz, n, 1, cm, 'bar', .56);
-      if(['base-only','peninsula'].includes(f.variant)){g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));break;} g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004), box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));
-      g.add(box(w, .7, .33, cm, 0, 1.48, bz + .165)); fronts(g, -w/2, 1.48, w, .7, bz + .33, n, 1, cm, 'bar', 1.56);
-      g.add(box(w - .04, .01, .02, glowMat('#fff7e6', '#ffe9c4', .8), 0, 1.47, bz + .29));
+      if(['base-only','peninsula'].includes(f.variant)){g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));break;} const truth = kitchenCounterTruth(state, f, ROOMS);
+      g.add(rbox(w + .01, .04, d, stone, 0, .82, 0, .004));
+      if(!truth.backsplash_ids.length) g.add(box(w, .62, .01, mat('#efece6', {roughness:.3}), 0, .86, bz + .005));
+      if(!truth.upper_ids.length){
+        g.add(box(w, .7, .33, cm, 0, 1.48, bz + .165));
+        fronts(g, -w/2, 1.48, w, .7, bz + .33, n, 1, cm, 'bar', 1.56);
+        g.add(box(w - .04, .01, .02, glowMat('#fff7e6', '#ffe9c4', .8), 0, 1.47, bz + .29));
+      }
       if (w >= .8){
         g.add(rbox(.36, .018, .25, woodM('#c9a27a'), -w/2 + .3, .86, .0, .005));
         [.07, .06, .05].forEach((r, i) => g.add(cyl(r, r, .16 - i*.03, mat(['#e9e2d6', '#d6cfc3', '#bfb6a8'][i], {roughness:.4}), w/2 - .15 - i*.15, .86, bz + .1, 24)));
@@ -4085,11 +4318,37 @@ function interiorMesh(o) {
         z,
       ),
     );
-  if (o.type === "divider") {
+  if(o.type==="shelf"&&o.variant==="wet-tray"){
+    // Independent shallow wet tray, with easy-clean front retention lip.
+    // Nominal shelf is 380x115x40mm, not tested for product weight/wall substrate.
+    const nickel=mat("#b7bec0",{metalness:.79,roughness:.3});
+    B(w,.012,d,nickel,0,0,0);
+    B(w,.021,.009,nickel,0,0,d/2-.004);
+    B(w,.015,.009,nickel,0,0,-d/2+.004);
+    B(.012,.025,d,nickel,-w/2+.006,0,0);
+    B(.012,.025,d,nickel,w/2-.006,0,0);
+    g.userData.showerTrayConcept={status:"UNAPPROVED",nominal_capacity:"UNKNOWN",wet_fixing_details:"TBD"};
+  } else if (o.type === "divider") {
     const frame = Math.min(0.03, w * 0.08, d * 0.25);
     B(w, frame, d, primary, 0, 0);
     B(w, frame, d, primary, 0, h - frame);
-    if (o.variant === "vertical-slats") {
+    if (o.variant === "fixed-clear-glass") {
+      // Master ONLY opt-in: single transparent 600 x 2050 mm fixed glass,
+      // minimal removable lower clips, zero fabricated ceiling or top frame.
+      // No inference about actual safety glass, membrane penetrations or splash.
+      const clear = mat("#d6e8e8", {
+        transparent:true,opacity:0.19,roughness:0.085,metalness:0,
+        depthWrite:false,side:THREE.DoubleSide
+      });
+      const nickel = mat("#b8bdbe",{metalness:0.78,roughness:0.26});
+      B(w,h,Math.min(d,.009),clear,0,0);
+      for (const xpos of [-w*.37,w*.37]){
+        B(.045,.042,Math.max(d,.024),nickel,xpos,0,0);
+        B(.045,.009,Math.max(d,.024),nickel,xpos,.05,0);
+      }
+      g.userData.glassConcept = {status:"UNAPPROVED",type:"ONE_FIXED_PANEL",width_mm:o.width_mm,height_mm:o.height_mm,
+        clip_design:"VENDOR_REQUIRED",splash_validated:false};
+    } else if (o.variant === "vertical-slats") {
       const N = Math.max(3, Math.round(w / 0.085));
       for (let i = 0; i < N; i++)
         B(
@@ -4209,7 +4468,17 @@ function interiorMesh(o) {
       envMap: envTex,
       envMapIntensity: 1,
     });
-    if (o.variant === "round") {
+    if (o.variant === "task-lit") {
+      // Deterministic neutral-glass preview, NOT physical reflection. The old 98% metal mirror becomes almost black in headless captures without a stable environment map.
+      const mirror = new THREE.MeshBasicMaterial({color:"#B6C8C7",side:THREE.DoubleSide});
+      const nickel=mat("#b7bec0",{metalness:.72,roughness:.3});
+      const glow=mat("#fff2dd",{emissive:"#ffdcb4",emissiveIntensity:.62,roughness:.28});
+      B(w,h,d,nickel);
+      B(w-.035,h-.035,.003,mirror,0,.016,d/2+.004);
+      // Non-photometric visual TASK lighting concept; actual lumens/zones TBD.
+      B(w*.82,.012,.014,glow,0,h-.056,d/2+.016);
+      g.userData.mirrorLightConcept={colour_temperature_k:3000,illuminance:"NOT_CALCULATED",wet_electrical_zone:"ENGINEER_REQUIRED",reflective_simulation:false,mirror_visual:"NEUTRAL_GREY_NON_PHOTOREAL_PROXY"};
+    } else if (o.variant === "round") {
       g.add(blob(w / 2, h / 2, d / 2, accent, 0, h / 2, 0));
       g.add(blob(w * 0.47, h * 0.47, 0.002, mirror, 0, h / 2, d / 2));
     } else {

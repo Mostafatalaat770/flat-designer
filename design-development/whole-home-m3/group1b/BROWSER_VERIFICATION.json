@@ -1,0 +1,550 @@
+{
+  "result": "PASS",
+  "html_sha256": "11112d736b5e9b9d380bb2725742c5e16f3b48cc7bd97f11222752fdc13ec24e",
+  "states": 78,
+  "checks": [
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B1",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B1",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B1",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B1",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B1",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B1",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B2",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B2",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B2",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B2",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B2",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "B",
+      "option": "B2",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B1",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B1",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B1",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B1",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B1",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B1",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B2",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B2",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B2",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B2",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B2",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "base": "A",
+      "option": "B2",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "B",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "A",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "B1",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "B2",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "Curtain-Relationship.svg",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "AC-Service-Operation.svg",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "plan": "Shoe-Storage.svg",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "200",
+      "opening": "100",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "200",
+      "opening": "200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "200",
+      "opening": "300",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "200",
+      "opening": "400",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "450",
+      "opening": "100",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "450",
+      "opening": "200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "450",
+      "opening": "300",
+      "result": "PASS"
+    },
+    {
+      "viewport": "desktop",
+      "pull": "450",
+      "opening": "400",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B1",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B1",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B1",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B1",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B1",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B1",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B2",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B2",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B2",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B2",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B2",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "B",
+      "option": "B2",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B1",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B1",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B1",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B1",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B1",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B1",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B2",
+      "view": "entry-overview",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B2",
+      "view": "entry-storage",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B2",
+      "view": "dining-to-living",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B2",
+      "view": "living-to-dining",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B2",
+      "view": "seated-tv",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "base": "A",
+      "option": "B2",
+      "view": "living-to-dining-night",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "B",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "A",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "B1",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "B2",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "Curtain-Relationship.svg",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "AC-Service-Operation.svg",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "plan": "Shoe-Storage.svg",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "200",
+      "opening": "100",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "200",
+      "opening": "200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "200",
+      "opening": "300",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "200",
+      "opening": "400",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "450",
+      "opening": "100",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "450",
+      "opening": "200",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "450",
+      "opening": "300",
+      "result": "PASS"
+    },
+    {
+      "viewport": "mobile",
+      "pull": "450",
+      "opening": "400",
+      "result": "PASS"
+    }
+  ],
+  "decoded_assets": {
+    "frames": 24,
+    "plans": 7
+  },
+  "svg_bounds": [
+    {
+      "file": "design-development/whole-home-m3/group1b/AC-Service-Operation.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group1b/Curtain-Relationship.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group1b/Plan-A-450.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group1b/Plan-B-450.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group1b/Plan-B1-450.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group1b/Plan-B2-450.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group1b/Shoe-Storage.svg",
+      "result": "PASS"
+    },
+    {
+      "file": "design-development/whole-home-m3/group2-preparation/Source-Plan.svg",
+      "result": "PASS"
+    }
+  ],
+  "zoom_escape_close": "PASS",
+  "page_errors": [],
+  "external_requests": []
+}

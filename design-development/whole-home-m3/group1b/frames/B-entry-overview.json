@@ -1,0 +1,1796 @@
+{
+  "schema": "ApartmentSceneCaptureFrame/1",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "snapshot_sha256": "branch-af22b36c",
+  "scene_revision": "scene-af22b36c",
+  "storage_revision": 55,
+  "room_id": "RECP-01",
+  "camera": {
+    "position": [
+      6.582291,
+      1.68,
+      4.364341500000001
+    ],
+    "target": [
+      6.082291,
+      1.4,
+      1.5843415000000007
+    ],
+    "fov": 72,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.7777777777777777,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-10-11T16:20:36.881Z",
+  "assets": {
+    "pending": 0,
+    "fallbacks": []
+  },
+  "renderer": {
+    "engine": "Three.js WebGL",
+    "revision": "160"
+  },
+  "architecture_variant": null,
+  "architecture_result": {
+    "wall_segments_hidden": 0,
+    "wall_finishes_hidden": 0,
+    "wall_segments_added": 0,
+    "wall_boxes_added": 0,
+    "canonical_ceilings_hidden": 0,
+    "merged_ceilings_added": 0,
+    "openings_hidden": 0,
+    "opening_headers_hidden": 0,
+    "opening_thresholds_hidden": 0,
+    "door_overrides": 0
+  },
+  "render_experiment": null,
+  "door_finish_result": null,
+  "kitchen_geometry": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            1100.9912637347638
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.9999940395355,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999997615814,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            859.9999995529652
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "kitchen_r6_study": null,
+  "kitchen_r6_result": null,
+  "mesh_bounds": {
+    "starter-28": {
+      "min": [
+        -1.4399999986588954,
+        -3.5762786898541066e-9,
+        -0.49000000074505806
+      ],
+      "max": [
+        1.4399999986588954,
+        0.8047730449323882,
+        0.48500001430511475
+      ],
+      "declared_mm": [
+        2880,
+        990
+      ]
+    },
+    "starter-30": {
+      "min": [
+        -0.8999999761581421,
+        8.940696724635266e-10,
+        -0.1899999976158142
+      ],
+      "max": [
+        0.8999999761581421,
+        0.49999999344348905,
+        0.1899999976158142
+      ],
+      "declared_mm": [
+        1800,
+        380
+      ]
+    },
+    "starter-35": {
+      "min": [
+        -1,
+        5.960464455334602e-9,
+        -0.4749999940395355
+      ],
+      "max": [
+        1,
+        0.7500000008940696,
+        0.4749999940395355
+      ],
+      "declared_mm": [
+        2000,
+        950
+      ]
+    },
+    "starter-36": {
+      "min": [
+        -0.2549999952316284,
+        -5.9604643443123e-10,
+        -0.26350000089406966
+      ],
+      "max": [
+        0.2549999952316284,
+        0.8400000047683716,
+        0.251999994635582
+      ],
+      "declared_mm": [
+        510,
+        530
+      ]
+    },
+    "starter-37": {
+      "min": [
+        -0.2549999952316284,
+        -5.9604643443123e-10,
+        -0.26350000089406966
+      ],
+      "max": [
+        0.2549999952316284,
+        0.8400000047683716,
+        0.251999994635582
+      ],
+      "declared_mm": [
+        510,
+        530
+      ]
+    },
+    "starter-38": {
+      "min": [
+        -0.2549999952316284,
+        -5.9604643443123e-10,
+        -0.26350000089406966
+      ],
+      "max": [
+        0.2549999952316284,
+        0.8400000047683716,
+        0.251999994635582
+      ],
+      "declared_mm": [
+        510,
+        530
+      ]
+    },
+    "starter-39": {
+      "min": [
+        -0.2549999952316284,
+        -5.9604643443123e-10,
+        -0.26350000089406966
+      ],
+      "max": [
+        0.2549999952316284,
+        0.8400000047683716,
+        0.251999994635582
+      ],
+      "declared_mm": [
+        510,
+        530
+      ]
+    },
+    "starter-40": {
+      "min": [
+        -0.25999999046325684,
+        8.940696724635266e-10,
+        -0.09000000357627869
+      ],
+      "max": [
+        0.25999999046325684,
+        0.7799999940395356,
+        0.09000000357627869
+      ],
+      "declared_mm": [
+        520,
+        180
+      ]
+    },
+    "A2-dining-chair-north-centre": {
+      "min": [
+        -0.2549999952316284,
+        -5.9604643443123e-10,
+        -0.26350000089406966
+      ],
+      "max": [
+        0.2549999952316284,
+        0.8400000047683716,
+        0.251999994635582
+      ],
+      "declared_mm": [
+        510,
+        530
+      ]
+    },
+    "A2-dining-chair-south-centre": {
+      "min": [
+        -0.2549999952316284,
+        -5.9604643443123e-10,
+        -0.26350000089406966
+      ],
+      "max": [
+        0.2549999952316284,
+        0.8400000047683716,
+        0.251999994635582
+      ],
+      "declared_mm": [
+        510,
+        530
+      ]
+    }
+  },
+  "comfort_mesh": {
+    "starter-28": {
+      "declared_mm": [
+        2880,
+        990
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -1440,
+          0,
+          -490
+        ],
+        "max": [
+          1440,
+          804.77,
+          485
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 862,
+          "depth_mm": 760,
+          "top_mm": 450,
+          "front_mm": 435
+        },
+        {
+          "width_mm": 862,
+          "depth_mm": 760,
+          "top_mm": 450,
+          "front_mm": 435
+        },
+        {
+          "width_mm": 862,
+          "depth_mm": 760,
+          "top_mm": 450,
+          "front_mm": 435
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": -880,
+          "height_mm": 460,
+          "seat_front_mm": 435,
+          "first_support_mm": -138.16,
+          "usable_depth_mm": 573.16
+        },
+        {
+          "seat_x_mm": -880,
+          "height_mm": 550,
+          "seat_front_mm": 435,
+          "first_support_mm": -113.6,
+          "usable_depth_mm": 548.6
+        },
+        {
+          "seat_x_mm": -880,
+          "height_mm": 650,
+          "seat_front_mm": 435,
+          "first_support_mm": -121.62,
+          "usable_depth_mm": 556.62
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 460,
+          "seat_front_mm": 435,
+          "first_support_mm": -148.05,
+          "usable_depth_mm": 583.05
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 550,
+          "seat_front_mm": 435,
+          "first_support_mm": -130.64,
+          "usable_depth_mm": 565.64
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 650,
+          "seat_front_mm": 435,
+          "first_support_mm": -136.65,
+          "usable_depth_mm": 571.65
+        },
+        {
+          "seat_x_mm": 880,
+          "height_mm": 460,
+          "seat_front_mm": 435,
+          "first_support_mm": -138.16,
+          "usable_depth_mm": 573.16
+        },
+        {
+          "seat_x_mm": 880,
+          "height_mm": 550,
+          "seat_front_mm": 435,
+          "first_support_mm": -113.6,
+          "usable_depth_mm": 548.6
+        },
+        {
+          "seat_x_mm": 880,
+          "height_mm": 650,
+          "seat_front_mm": 435,
+          "first_support_mm": -121.62,
+          "usable_depth_mm": 556.62
+        }
+      ],
+      "arm_caps": [
+        {
+          "width_mm": 120,
+          "crest_flat_width_mm": 70,
+          "top_mm": 650,
+          "height_above_seat_mm": 200
+        },
+        {
+          "width_mm": 120,
+          "crest_flat_width_mm": 70,
+          "top_mm": 650,
+          "height_above_seat_mm": 200
+        }
+      ]
+    },
+    "starter-30": {
+      "declared_mm": [
+        1800,
+        380
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -900,
+          0,
+          -190
+        ],
+        "max": [
+          900,
+          500,
+          190
+        ]
+      }
+    },
+    "starter-31": {
+      "declared_mm": [
+        1230,
+        80
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -615,
+          854.06,
+          -40
+        ],
+        "max": [
+          615,
+          1545.94,
+          14.5
+        ]
+      }
+    },
+    "starter-32": {
+      "declared_mm": [
+        700,
+        720
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -350,
+          0,
+          -360
+        ],
+        "max": [
+          350,
+          760.88,
+          360
+        ]
+      },
+      "unclassified_meshes": [
+        {
+          "min": [
+            -350,
+            0,
+            -360
+          ],
+          "max": [
+            350,
+            750,
+            360
+          ]
+        },
+        {
+          "min": [
+            -215,
+            250,
+            -261.44
+          ],
+          "max": [
+            215,
+            760.88,
+            330
+          ]
+        }
+      ],
+      "seat_measurement_method": "Native batched seat/back mesh: actual vertical centre ray for seat top, fabric mesh front/width; cushion-only depth unavailable. Back rays include merged mesh.",
+      "seat_cushions": [
+        {
+          "width_mm": 430,
+          "depth_mm": null,
+          "top_mm": 420,
+          "front_mm": 330
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 430,
+          "seat_front_mm": 330,
+          "first_support_mm": -98.34,
+          "usable_depth_mm": 428.34
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 520,
+          "seat_front_mm": 330,
+          "first_support_mm": -80.94,
+          "usable_depth_mm": 410.94
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 620,
+          "seat_front_mm": 330,
+          "first_support_mm": -86.95,
+          "usable_depth_mm": 416.95
+        }
+      ],
+      "arm_caps": []
+    },
+    "starter-35": {
+      "declared_mm": [
+        2000,
+        950
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -1000,
+          0,
+          -475
+        ],
+        "max": [
+          1000,
+          750,
+          475
+        ]
+      },
+      "tabletop": {
+        "underside_mm": 705,
+        "top_mm": 750,
+        "apron": "Geometry checked below, not inferred from footprint"
+      },
+      "knee_tests": [
+        {
+          "chair": "starter-36",
+          "pull_mm": 0,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 0,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 0,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 0,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 0,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 0,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 0,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 0,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 0,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 0,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 0,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 0,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 0,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 0,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 0,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 0,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 0,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 0,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 100,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 100,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 100,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 100,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 100,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 100,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 100,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 100,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 100,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 100,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 100,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 100,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 100,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 100,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 100,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 100,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 1
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 100,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 100,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 200,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 200,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 200,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 200,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 200,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 200,
+          "knee_width_mm": 400,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 200,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 200,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 200,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 200,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 200,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 200,
+          "knee_width_mm": 500,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-36",
+          "pull_mm": 200,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-37",
+          "pull_mm": 200,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-38",
+          "pull_mm": 200,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "starter-39",
+          "pull_mm": 200,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-north-centre",
+          "pull_mm": 200,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        },
+        {
+          "chair": "A2-dining-chair-south-centre",
+          "pull_mm": 200,
+          "knee_width_mm": 600,
+          "forward_zone_mm": 450,
+          "vertical_mm": [
+            460,
+            660
+          ],
+          "intersecting_actual_meshes": 0
+        }
+      ]
+    },
+    "starter-36": {
+      "declared_mm": [
+        510,
+        530
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -255,
+          0,
+          -263.5
+        ],
+        "max": [
+          255,
+          840,
+          252
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 485,
+          "depth_mm": 480,
+          "top_mm": 460,
+          "front_mm": 252
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 470,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 560,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 660,
+          "seat_front_mm": 252,
+          "first_support_mm": -240,
+          "usable_depth_mm": 492
+        }
+      ],
+      "arm_caps": []
+    },
+    "starter-37": {
+      "declared_mm": [
+        510,
+        530
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -255,
+          0,
+          -263.5
+        ],
+        "max": [
+          255,
+          840,
+          252
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 485,
+          "depth_mm": 480,
+          "top_mm": 460,
+          "front_mm": 252
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 470,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 560,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 660,
+          "seat_front_mm": 252,
+          "first_support_mm": -240,
+          "usable_depth_mm": 492
+        }
+      ],
+      "arm_caps": []
+    },
+    "starter-38": {
+      "declared_mm": [
+        510,
+        530
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -255,
+          0,
+          -263.5
+        ],
+        "max": [
+          255,
+          840,
+          252
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 485,
+          "depth_mm": 480,
+          "top_mm": 460,
+          "front_mm": 252
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 470,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 560,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 660,
+          "seat_front_mm": 252,
+          "first_support_mm": -240,
+          "usable_depth_mm": 492
+        }
+      ],
+      "arm_caps": []
+    },
+    "starter-39": {
+      "declared_mm": [
+        510,
+        530
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -255,
+          0,
+          -263.5
+        ],
+        "max": [
+          255,
+          840,
+          252
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 485,
+          "depth_mm": 480,
+          "top_mm": 460,
+          "front_mm": 252
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 470,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 560,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 660,
+          "seat_front_mm": 252,
+          "first_support_mm": -240,
+          "usable_depth_mm": 492
+        }
+      ],
+      "arm_caps": []
+    },
+    "A2-dining-chair-north-centre": {
+      "declared_mm": [
+        510,
+        530
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -255,
+          0,
+          -263.5
+        ],
+        "max": [
+          255,
+          840,
+          252
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 485,
+          "depth_mm": 480,
+          "top_mm": 460,
+          "front_mm": 252
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 470,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 560,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 660,
+          "seat_front_mm": 252,
+          "first_support_mm": -240,
+          "usable_depth_mm": 492
+        }
+      ],
+      "arm_caps": []
+    },
+    "A2-dining-chair-south-centre": {
+      "declared_mm": [
+        510,
+        530
+      ],
+      "actual_bounds_mm": {
+        "min": [
+          -255,
+          0,
+          -263.5
+        ],
+        "max": [
+          255,
+          840,
+          252
+        ]
+      },
+      "seat_cushions": [
+        {
+          "width_mm": 485,
+          "depth_mm": 480,
+          "top_mm": 460,
+          "front_mm": 252
+        }
+      ],
+      "usable_depth_rays": [
+        {
+          "seat_x_mm": 0,
+          "height_mm": 470,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 560,
+          "seat_front_mm": 252,
+          "first_support_mm": null,
+          "usable_depth_mm": null
+        },
+        {
+          "seat_x_mm": 0,
+          "height_mm": 660,
+          "seat_front_mm": 252,
+          "first_support_mm": -240,
+          "usable_depth_mm": 492
+        }
+      ],
+      "arm_caps": []
+    },
+    "AC": {
+      "placement_kind": "SOURCE_SETTING / production nearestSolidMount heuristic, NOT site surveyed",
+      "centre_plan_mm": [
+        12367.882,
+        1779.359
+      ],
+      "normal_plan": [
+        -1,
+        2.220446049250313e-16
+      ],
+      "bottom_mm": 2145,
+      "top_mm": 2395,
+      "ceiling_gap_mm": 105,
+      "assumed_service_floor": {
+        "cx": 11467.882,
+        "cy": 1779.3590000000002,
+        "w": 600,
+        "d": 900,
+        "rot": 90
+      },
+      "limits": "600x900 assumed floor access envelope, offset900 from proxy centre. Real ladder/filter/front/top/side/manual control/drain service strokes require installed-unit and manufacturer measurements."
+    }
+  },
+  "mesh_diagnostics_sha256": "185257156df8fc3413351b97e554b2dfc0df842a2d0bd6e95dfc0b5b595cbef6",
+  "frame_id": "B-entry-overview",
+  "style": "B",
+  "png": "B-entry-overview.png",
+  "png_sha256": "f63e9661dbf9f1cd810604e10ea8a618c380aa287475fbcd3c864b31f4936d54",
+  "layout_sha256": "4fc7dbc82f9d4bc15adb0a8f6b1962468b338f287fce1071e9261629668562c1",
+  "camera_sha256": "5de676b4557df01e0f9b93738665ab752947ebccddb026eb8001bafb3d5e5e3e",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "external_requests": [],
+  "page_errors": [],
+  "capture_script_sha256": "b4a320d18e8a0590f9e5546fba9445d37afd5a3062eb3f4ac9781e5529ece88e",
+  "built_viewer_sha256": "e364441b85501457f1b9378cc600203f56b4c0b72a9af692f0f8c298fc25f1ce",
+  "proxy_limits": "Actual triangle/ray diagnostics of generic design proxies, not manufacturer or physical comfort proof. Isolated upholstered sofa/arms, shoe prototypes780mm(B/A/B1) or800mm(B2), plain console, rectangular B table and chair backs are design envelopes, not manufacturer CAD. Source walls/doors/glazing/HVAC/light fixtures are production meshes; no hidden wall/door override."
+}
