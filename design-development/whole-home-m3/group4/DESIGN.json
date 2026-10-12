@@ -1,0 +1,1040 @@
+{
+  "schema": "M3Group4Design/1",
+  "checkpoint": "e4bf637abd449cfa034710499a04fc56b6a18cf7",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "ceiling_mm": 2500,
+  "provisional_lead": "A olive/ivory/closed upper composition plus B full-access450mm drawers, pending terrace-door/user mockup. Slider rejected for universal cookware access.",
+  "inheritance": "All1241 inherited files including120 Group3 additions retained; no option accepted or executed",
+  "m1_intents": [
+    {
+      "id": "KIT-01.E1",
+      "room_id": "KIT-01",
+      "code": "E1",
+      "service": "Power • data • controls",
+      "layer": "E",
+      "label": "أجهزة قابلة للفصل",
+      "original_ids": [
+        "kit-hob",
+        "kit-fridge",
+        "kit-dw"
+      ],
+      "current_object_ids": [
+        "starter-22",
+        "starter-23",
+        "K3-dishwasher"
+      ],
+      "owner_use": "حاجة خدمات الموقد على الضلع الغربي، الثلاجة بالركن الجنوبي الشرقي، وDW تحت الضلع الشمالي؛ فصل قابل للوصول من حيز مجاور جاف، مش وراء جهاز مسحوب.",
+      "furniture_reason": "Source context starter-22, starter-23, K3-dishwasher; حاجة خدمات الموقد على الضلع الغربي، الثلاجة بالركن الجنوبي الشرقي، وDW تحت الضلع الشمالي؛ فصل قابل للوصول من حيز مجاور جاف، مش وراء جهاز مسحوب.",
+      "operational_tradeoff": "starter-22 تمثيل stove، مش موديل وقود مؤكد؛ نوع الطاقة والمخارج يتحددوا بالمعدات المختارة لاحقًا.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "وثّق الخدمات الحالية على الضلعين؛ افتح أبواب fridge وDW بالكامل وجرب الوصول للفصل بدون فك جهاز.",
+      "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/19",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/20",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/43",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.E2",
+      "room_id": "KIT-01",
+      "code": "E2",
+      "service": "Power • data • controls",
+      "layer": "E",
+      "label": "تحضير وكوفي",
+      "original_ids": [
+        "kit-counter",
+        "kit-coffee"
+      ],
+      "current_object_ids": [
+        "starter-20",
+        "K3-end-landing"
+      ],
+      "owner_use": "مخارج استخدام صغيرة على منطقة تحضير الضلع الغربي أو landing الحالي؛ اختيار موضع الكوفي بعد تجربة حوض/موقد وتجفيف سطح.",
+      "furniture_reason": "Source context starter-20, K3-end-landing; مخارج استخدام صغيرة على منطقة تحضير الضلع الغربي أو landing الحالي؛ اختيار موضع الكوفي بعد تجربة حوض/موقد وتجفيف سطح.",
+      "operational_tradeoff": "landing الحالي ضحل؛ ما نحشرش كوفي ثابت أو سلك فوق الحوض/الموقد. الاستخدام المتزامن سؤال كهربائي لاحق، مش حمل مفترض.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "جرب حجم أدواتك الفعلية والبخار ومسافة استخدام اليد؛ الكهربائي يحدد منطقة جافة ونظام حماية مناسب.",
+      "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/17",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/45",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.E3",
+      "room_id": "KIT-01",
+      "code": "E3",
+      "service": "Power • data • controls",
+      "layer": "E",
+      "label": "تحكم وخيار طبخ جديد",
+      "original_ids": [],
+      "current_object_ids": [],
+      "owner_use": "تحكم إنارة من ناحية دخول OP-RECP-KIT؛ احتياطي وظيفي لطبخ كهربائي محتمل بلا نقطة فرن مرسومة.",
+      "furniture_reason": "Room/opening use only; تحكم إنارة من ناحية دخول OP-RECP-KIT؛ احتياطي وظيفي لطبخ كهربائي محتمل بلا نقطة فرن مرسومة.",
+      "operational_tradeoff": "kit-oven القديم parked؛ مفيش مكان عمود أو مسار حمل مستنتج منه.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "سجل رغبة المالك في نوع الطبخ وصوّر الخدمات؛ اختبر باب P0 والضلفة قبل اعتماد أي موضع.",
+      "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.E4",
+      "room_id": "KIT-01",
+      "code": "E4",
+      "service": "Power • data • controls",
+      "layer": "E",
+      "label": "غسالة داخلية جديدة",
+      "original_ids": [],
+      "current_object_ids": [
+        "K3-laundry-niche"
+      ],
+      "owner_use": "حاجة تغذية وفصل لغسالة محتملة في النيش الداخلي الحالي؛ مفهوم جديد مرتبط بالمصدر، مش نقل تلقائي من التراس.",
+      "furniture_reason": "Source context K3-laundry-niche; حاجة تغذية وفصل لغسالة محتملة في النيش الداخلي الحالي؛ مفهوم جديد مرتبط بالمصدر، مش نقل تلقائي من التراس.",
+      "operational_tradeoff": "الغسالة نفسها غير ممثلة كجهاز؛ النيش احتياطي محفوظ. لا تعتبر indoor وterrace تشغيلين متزامنين.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "تأكد من أبعاد النيش وفتح الجهاز وإمكانية فصل آمن؛ راجع الكهرباء والمياه والصرف معًا.",
+      "trade_signoff": "Qualified electrician; wet/outdoor engineer where relevant",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/46",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.L1",
+      "room_id": "KIT-01",
+      "code": "L1",
+      "service": "Lighting • reflected ceiling",
+      "layer": "L",
+      "label": "عام وتنظيف",
+      "original_ids": [
+        "kit-ambient"
+      ],
+      "current_object_ids": [],
+      "owner_use": "مجموعة عامة مستقلة تصل الممشى والباب؛ تحكم يدوي من ناحية دخول P0. night للمرور إلى التراس وظيفة منخفضة الوهج ضمن المجموعة لو الأجهزة المختارة تسمح.",
+      "furniture_reason": "Room/opening use only; مجموعة عامة مستقلة تصل الممشى والباب؛ تحكم يدوي من ناحية دخول P0. night للمرور إلى التراس وظيفة منخفضة الوهج ضمن المجموعة لو الأجهزة المختارة تسمح.",
+      "operational_tradeoff": "المهمة تحت الوحدات لا تكفي وحدها للتنظيف أو الوصول للثلاجة؛ لا عدد fixtures مفترض.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "قِس السقف وأي beam أو خدمة قائمة، وجرب ظل المستخدم على الممر والثلاجة والباب.",
+      "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.L2",
+      "room_id": "KIT-01",
+      "code": "L2",
+      "service": "Lighting • reflected ceiling",
+      "layer": "L",
+      "label": "مهمة L2 مستقلة",
+      "original_ids": [
+        "kit-task"
+      ],
+      "current_object_ids": [
+        "KIT-A1-upper-north",
+        "KIT-A1-upper-west-low",
+        "KIT-A1-upper-west-high",
+        "starter-20",
+        "starter-21"
+      ],
+      "owner_use": "مهمة أسفل الوحدات الشمالية والغربية الحالية؛ R6 L2 مرجع اتجاه بصري مع R4 ivory وR5 greige فقط؛ تحكم مستقل يدوي عن العام.",
+      "furniture_reason": "Source context KIT-A1-upper-north, KIT-A1-upper-west-low, KIT-A1-upper-west-high, starter-20, starter-21; مهمة أسفل الوحدات الشمالية والغربية الحالية؛ R6 L2 مرجع اتجاه بصري مع R4 ivory وR5 greige فقط؛ تحكم مستقل يدوي عن العام.",
+      "operational_tradeoff": "R6 مش دائرة كهربائية. driver لازم يتصان؛ إضاءة الحوض والغربي ما تتغطاش بظل الجسم أو وهج backsplash.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "راجع FRONT_SCHEDULE وINSTALLER_REQUIREMENTS؛ جرّب العمل عند الحوض/التحضير وحدد خدمة driver بعيد عن المياه.",
+      "trade_signoff": "Lighting designer + qualified electrician; wet/outdoor engineer where relevant",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/interior/objects/15",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/interior/objects/16",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/interior/objects/17",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/17",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/18",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.H1",
+      "room_id": "KIT-01",
+      "code": "H1",
+      "service": "HVAC • extraction • access",
+      "layer": "H",
+      "label": "استخراج الموقد",
+      "original_ids": [
+        "kit-hood"
+      ],
+      "current_object_ids": [
+        "starter-22"
+      ],
+      "owner_use": "منطقة استخراج فوق تمثيل الموقد على الضلع الغربي الحالي، مع وصول لفلتر grease وفصل خدمة.",
+      "furniture_reason": "Source context starter-22; منطقة استخراج فوق تمثيل الموقد على الضلع الغربي الحالي، مع وصول لفلتر grease وفصل خدمة.",
+      "operational_tradeoff": "مفيش هود مثبت في source ولا نهاية دكت مؤكدة؛ تهوية تدوير ليست بديلًا مفترضًا للعادم.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "HVAC يوثّق shaft/خروج خارجي وتعويض الهواء، نمط الوقود وfire/واجهة؛ لا route أو ثقب مرسوم كمصرح.",
+      "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/19",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.H2",
+      "room_id": "KIT-01",
+      "code": "H2",
+      "service": "HVAC • extraction • access",
+      "layer": "H",
+      "label": "مياه وصرف وخدمة driver",
+      "original_ids": [],
+      "current_object_ids": [
+        "starter-21",
+        "K3-sink-base",
+        "K3-dishwasher",
+        "K3-laundry-niche"
+      ],
+      "owner_use": "محابس وسيفون الحوض وDW والغسالة الداخلية المحتملة متاحين؛ خدمات الأجهزة على الشمال وdriver lighting في حيز جاف يحدده المختص.",
+      "furniture_reason": "Source context starter-21, K3-sink-base, K3-dishwasher, K3-laundry-niche; محابس وسيفون الحوض وDW والغسالة الداخلية المحتملة متاحين؛ خدمات الأجهزة على الشمال وdriver lighting في حيز جاف يحدده المختص.",
+      "operational_tradeoff": "front removal ليس خدمة متاحة تلقائيًا؛ النيش ليس غسالة مركبة. فصل الكهرباء والخدمات بعيد عن التسريب يحدده trades.",
+      "confidence": "SOURCE_CONTEXT_VERIFIED; DESIGN_HYPOTHESIS; SITE_HOLD",
+      "survey_step": "سباك وكهربائي يراجعوا محابس/صرف وفتح باب الجهاز والوصول للسيفون وdriver؛ لا تعديل slab أو صرف تراس مفترض.",
+      "trade_signoff": "Qualified HVAC / plumbing engineer + developer for façade/routes",
+      "evidence_source": [
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/rooms/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/18",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/44",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/43",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/furniture/46",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "design-development/reception-sprint4/REVIEW.md",
+          "sha256": "fce04bea5b390762bad25f46169923a7f900d04fc60d572986d7c8f3cd39f705"
+        },
+        {
+          "path": "scripts/sprint4-kitchen-operation.mjs",
+          "sha256": "b70e0d8011c6a1f262c825c6acd66cf37aedb1dba9f92d732242befa425e2586"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/README.md",
+          "sha256": "4dea74d33570f3f231cd822772a363477b4977eda1f9214b794aeeedb900c8d3"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/A-P0-IVORY.json",
+          "sha256": "6a745bdcde16a2b3820e26de0f367c4ac32d8b0a00204895eac1d2ef161b69ff"
+        },
+        {
+          "path": "design-development/kitchen-finish-r4/WEBGL_EVIDENCE.json",
+          "sha256": "3e455b70839cd3660162132b3249a2ac95ab740481c575252f1956f17cc34893"
+        },
+        {
+          "path": "design-development/kitchen-r5/README.md",
+          "sha256": "406609039910998bc6141e59314a9522c847116a1c30fa8e4514c0e0b5d828bf"
+        },
+        {
+          "path": "design-development/kitchen-r5/D1.json",
+          "sha256": "14cf1c20bc3f78c2d21c14c904926ace5f60e6b6b59b7dbaf77d57dc68a57b1f"
+        },
+        {
+          "path": "design-development/kitchen-r5/GEOMETRY_AUDIT.json",
+          "sha256": "3fde45b47fd2b7a7d0a98c545efcd3c1fbfc01aa3b0d8c742217eac45c7015af"
+        },
+        {
+          "path": "design-development/kitchen-r5/WEBGL_EVIDENCE.json",
+          "sha256": "c9d76b9eb9251d0c783e3b25029a1cccc352d9fe2f5d61eb5e21779339d6a6fa"
+        },
+        {
+          "path": "design-development/kitchen-r6/README.md",
+          "sha256": "c1a96c591b4831edc2159d2f53e3b74c0ba0f6cf287d9a61d252822de7a7f533"
+        },
+        {
+          "path": "design-development/kitchen-r6/L2.json",
+          "sha256": "3c3846f850a1e07ba87b2e0538bd82e52f3bc260e18bde86dc41156d38fd13c7"
+        },
+        {
+          "path": "design-development/kitchen-r6/DESIGN_QA.json",
+          "sha256": "8d3e7f68235ef17db1bb636a947e2ffdd7d34bea7e8a4693011973b0eaa20b45"
+        },
+        {
+          "path": "design-development/kitchen-r6/FRONT_SCHEDULE.json",
+          "sha256": "b86f9519bc210653ad1d1b42c36454b3eef86790266b913027b1577a34e74bba"
+        },
+        {
+          "path": "design-development/kitchen-r6/INSTALLER_REQUIREMENTS.json",
+          "sha256": "a4010c445afdf202cd34252478f434211ba51ca152eefd53733192219a20c9d5"
+        },
+        {
+          "path": "design-development/kitchen-r6/GEOMETRY_DETAIL_AUDIT.json",
+          "sha256": "f9c69fbd9ba7aecef25384a4ae7a49f70fc82be74194a1e39abbc51be546e1e6"
+        },
+        {
+          "path": "design-development/kitchen-r6/WEBGL_EVIDENCE.json",
+          "sha256": "6643256712dbb9785c76ea0c1a25fba419dcf2210ea1338796bf0977a458d311"
+        },
+        {
+          "path": "design-development/SEMI_OPEN_PORTAL_REVIEW.md",
+          "sha256": "84942773a661ad99a110eb32cfa4936432b0f6b0feda71deb8494c16b7db72b5"
+        },
+        {
+          "path": "design-development/P1_PORTAL_FINISH_AND_FUNCTION_20261010.md",
+          "sha256": "7b4f72adacc0e6a8b240b75fec8018fb6f052c512f5267b639af80dab241cd5f"
+        },
+        {
+          "path": "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md",
+          "sha256": "9df648a678fd9b471111456a1b4838ce957cce25983ba5241b271b051a466d0d"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "RELATIVE_USE_ZONE_ONLY; NO_INSTALLATION_COORDINATES",
+      "construction_approved": false
+    },
+    {
+      "id": "KIT-01.F1",
+      "room_id": "KIT-01",
+      "code": "F1",
+      "service": "Floors • thresholds",
+      "layer": "F",
+      "label": "حدود وخيارات أرضية",
+      "original_ids": [],
+      "current_object_ids": [],
+      "owner_use": "فاصل قابل للتنظيف عند OP-RECP-KIT الحالي فقط؛ لا توسعة P1؛ حماية الحوض/الغسالة وdoor clearance.",
+      "furniture_reason": "Source room surface and canonical opening lines; no new slab or floor heights.",
+      "operational_tradeoff": "اللون المستمر يقلل تقسيم المكان؛ لا يعني نفس slip/wet performance أو منسوب التنفيذ.",
+      "confidence": "SOURCE_SURFACE_VERIFIED; TWO_DESIGN_INTENTS; SITE_HOLD",
+      "survey_step": "ارفع مناسيب جانبي كل فتحة، حركة الضلفة، drain/رطوبة/عتبة قائمة؛ عينة حقيقية وqualified waterproofing/door review قبل التفاصيل.",
+      "trade_signoff": "Qualified wet/finishes engineer + installer; developer for slab/terraces",
+      "evidence_source": [
+        {
+          "path": "render-snapshots/current.json",
+          "pointer": "/layout/rooms/KIT-01/mat",
+          "sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+        },
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/openings/7",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        },
+        {
+          "path": "dist/apartment-model.json",
+          "pointer": "/openings/8",
+          "sha256": "16f3faca9d0e447c72392460b062f4498a4c38e8090e8c39ad1308db71a18b23"
+        }
+      ],
+      "measurement_status": "NOT_SURVEYED",
+      "TBD_AS_BUILT": true,
+      "placement_status": "BOUNDARY_INTENT_ONLY; NO_BUILDUP_DIMENSIONS",
+      "construction_approved": false
+    }
+  ],
+  "options": [
+    {
+      "id": "SOURCE",
+      "scene": "scene-9cf45a73",
+      "snapshot_sha256": "3de55902b77e317ecabd0338faa3a25cccba4acdc27996cc9a7d36f43ebab8f5",
+      "geometry_failures": [],
+      "validation_summary": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      }
+    },
+    {
+      "id": "LEAD",
+      "scene": "scene-a234faf5",
+      "snapshot_sha256": "5ec5f3bb93839b5736e10575692e96d8b20f1fce45ca83692331974c2bbe580d",
+      "geometry_failures": [],
+      "validation_summary": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      }
+    },
+    {
+      "id": "A",
+      "scene": "scene-a234faf5",
+      "snapshot_sha256": "4c0fa31796766341d5d9cb174c3a39a1694ffef3e1bc05b536b5317125276901",
+      "geometry_failures": [],
+      "validation_summary": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      }
+    },
+    {
+      "id": "B",
+      "scene": "scene-a234faf5",
+      "snapshot_sha256": "ca7f1f5c183aeff195992c8b4d4ca918b29c400cb5619a1f948af0ea937a1655",
+      "geometry_failures": [],
+      "validation_summary": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      }
+    },
+    {
+      "id": "RECOMMENDED",
+      "scene": "scene-a234faf5",
+      "snapshot_sha256": "2286f333fff050ef54c0203111622388cf1e9446ecf46d8b2681c3da419ccf3e",
+      "geometry_failures": [],
+      "validation": "same geometry/layout as A and B; recommendation is combination of two local choices"
+    }
+  ]
+}

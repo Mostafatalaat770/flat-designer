@@ -1,0 +1,17 @@
+
+> apartment-type-b-studio@1.3.0 check:studio
+> node studio/build-domain.mjs && node --test studio/domain/browser.test.mjs studio/assets/*.test.mjs studio/renderer/*.test.mjs
+
+✔ studio/assets/contract.test.mjs (67.321989ms)
+✔ studio/assets/gltf.test.mjs (330.456614ms)
+✔ studio/domain/browser.test.mjs (7649.519521ms)
+✔ studio/renderer/bounds.test.mjs (3823.81491ms)
+✔ studio/renderer/walk-in-shower.test.mjs (63.793978ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11973.743168

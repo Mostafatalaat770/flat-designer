@@ -1,0 +1,16 @@
+render A-work
+render A-sink
+render A-night
+render A-entry
+render A-access
+render B-work
+render B-sink
+render B-night
+render B-entry
+render B-access
+render RECOMMENDED-work
+render RECOMMENDED-sink
+render RECOMMENDED-night
+render RECOMMENDED-entry
+render RECOMMENDED-access
+Captured 15 actual WebGL canvases

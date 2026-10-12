@@ -1,0 +1,177 @@
+{
+  "schema": "M3Group4Storage/1",
+  "assumptions": {
+    "case_mm": 18,
+    "upper_internal_depth_mm": 294,
+    "drawer_internal_depth_mm": 500,
+    "shelf_mm": 18,
+    "capacity_status": "GROSS GEOMETRIC HYPOTHESIS, no hardware/trap/load deductions and no family inventory"
+  },
+  "schedule": [
+    {
+      "id": "KIT-A1-upper-north",
+      "outside_mm": [
+        1800,
+        330,
+        700
+      ],
+      "assumed_clear_mm": [
+        1764,
+        294,
+        664
+      ],
+      "use": "Light daily cups/bowls and dry stock; lower shelf band1480–1700, higher stock only after personal reach trial",
+      "A_closed_width_mm": 1764,
+      "B_closed_width_mm": 1464,
+      "B_open_width_mm": 264,
+      "assumed_closed_gross_L_A": 344.361024,
+      "assumed_closed_gross_L_B": 285.796224,
+      "not_net_capacity": true
+    },
+    {
+      "id": "KIT-A1-upper-west-low",
+      "outside_mm": [
+        300,
+        330,
+        700
+      ],
+      "assumed_clear_mm": [
+        264,
+        294,
+        664
+      ],
+      "use": "Light tea/dry supplies only after hood heat/reach/door checks"
+    },
+    {
+      "id": "KIT-A1-upper-west-high",
+      "outside_mm": [
+        450,
+        330,
+        700
+      ],
+      "assumed_clear_mm": [
+        414,
+        294,
+        664
+      ],
+      "use": "Light dry supplies; no heavy stock at high reach"
+    },
+    {
+      "id": "west-south-593",
+      "outside_interval_mm": 593,
+      "assumed_clear_width_mm": 557,
+      "drawer_depth_mm": 500,
+      "proposed_contents": [
+        {
+          "level": "upper",
+          "height_assumed_mm": 100,
+          "use": "Cutlery; 450×300 organiser leaves107mm width and200mm depth",
+          "item_mm": [
+            450,
+            300
+          ]
+        },
+        {
+          "level": "middle",
+          "height_assumed_mm": 180,
+          "use": "Daily plates up to280mm nominal diameter, divider/wrap and load HOLD",
+          "item_mm": [
+            280,
+            280
+          ]
+        },
+        {
+          "level": "lower",
+          "height_assumed_mm": 240,
+          "use": "Pans to300mm nominal diameter; handles must fit500mm depth",
+          "item_mm": [
+            300,
+            450
+          ]
+        }
+      ],
+      "use": "One593mm outside interval, not a600mm manufactured opening; never claim all family items fit"
+    },
+    {
+      "id": "west-north-307",
+      "outside_interval_mm": 307,
+      "assumed_clear_width_mm": 271,
+      "use": "Small utensils/spices alternative to blind-corner access, not both simultaneously; side heat/supplier mechanism HOLD"
+    },
+    {
+      "id": "K3-end-landing",
+      "outside_mm": [
+        600,
+        410
+      ],
+      "assumed_clear_mm": [
+        564,
+        374
+      ],
+      "use": "Dry tea/breakfast stock and cloths; shallow drawer reach. No coffee appliance assumed"
+    },
+    {
+      "id": "K3-sink-base",
+      "outside_mm": [
+        600,
+        610
+      ],
+      "assumed_clear_mm": [
+        564,
+        574
+      ],
+      "use": "Drain/service reserved; compare removable220×300×330 wet-waste caddy and a second small container with actual trap. No dry-food allocation",
+      "bin_assumption_mm": [
+        220,
+        300,
+        330
+      ],
+      "bin_volume_L": null,
+      "trap_envelope_known": false
+    },
+    {
+      "id": "K3-corner",
+      "outside_mm": [
+        600,
+        590
+      ],
+      "credited_daily_capacity_L": 0,
+      "use": "HOLD entire capacity until genuine blind-corner access/cleaning proven; separate600mm south door blocked by west base"
+    },
+    {
+      "id": "K3-dishwasher",
+      "use": "Appliance reservation; zero cupboard allocation"
+    },
+    {
+      "id": "K3-laundry-niche",
+      "use": "Indoor appliance reservation retained; zero pantry allocation; no terrace transfer"
+    },
+    {
+      "id": "starter-23",
+      "use": "650×650 fridge envelope; do not infer litrerage or integrated-front eligibility"
+    },
+    {
+      "id": "under-hob600",
+      "use": "Reserved oven/heat/service; zero pots drawer capacity"
+    }
+  ],
+  "workflow": [
+    "Fridge→600×410 landing for clean unloading; close fridge before entry leaf moves",
+    "Wash at sink; small removable dish drain can use landing temporarily, clean-food preparation separately",
+    "Prepare on593×600 south worktop, preserve400×300 clear board zone; clear hot-pan landing before heat use",
+    "Scrape food into removable sink-base caddy, then rinse/load DW; sink cannot be assumed a25mm side landing",
+    "Unload DW in batches, close rack/door before turning to south plate drawer; do not carry a stack around an open panel",
+    "Heavy pots in south lower drawer only if actual clearances/load pass; no under-hob drawer",
+    "Keep counters free of permanent coffee/kettle cluster; no socket XY assigned"
+  ],
+  "whole_home": {
+    "kitchen_compensation_for_other_rooms": false,
+    "prior_losses": "Group1B buffet38.3% assumed clear-width loss; Group2 BR02 wardrobe25% outer/25.9% clear-width; master/BR01 chests41.7% assumed clear-width. WIC shoes/reserve unresolved.",
+    "owner_inventory_required": [
+      "Daily plate/cup counts and largest pan with handles",
+      "Groceries stock frequency and small appliances",
+      "Laundry baskets/cleaning items and under-sink trap",
+      "Whole-home linens/servingware after reduced buffet; no default kitchen allocation"
+    ]
+  }
+}

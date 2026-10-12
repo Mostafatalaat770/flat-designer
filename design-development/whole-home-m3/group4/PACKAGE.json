@@ -1,0 +1,11 @@
+{
+  "schema": "M3Group4Package/1",
+  "zip": "Type-B-M3-Group4-Kitchen-Owner-Review.zip",
+  "zip_sha256": "2be2e56322495413b2d31e9d5679f8161d0183472b15354a862bbcc160efb127",
+  "zip_bytes": 14915885,
+  "html_bytes": 19326519,
+  "archive_files": 63,
+  "embedded_actual_pngs": 26,
+  "crc_content_hashes": "PASS",
+  "offline": true
+}

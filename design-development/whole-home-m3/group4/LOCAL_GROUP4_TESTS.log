@@ -1,0 +1,17 @@
+✔ real review snapshot retains all architecture, furniture/service centres, other rooms and approvals (19.139628ms)
+✔ reject moved sink (7.602549ms)
+✔ reject new corner storage footprint (7.987644ms)
+✔ reject borrowed bedroom storage (5.83314ms)
+✔ reject construction approval (15.072336ms)
+✔ reject missing source upper (8.855711ms)
+✔ reject unmatched camera (8.284022ms)
+✔ reject a substituted genuine PNG or false camera/error record (6.020031ms)
+✔ known operation failures remain reported rather than converted into approval (1.692769ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 87.747168

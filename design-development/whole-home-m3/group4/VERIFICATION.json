@@ -1,0 +1,16 @@
+{
+  "schema": "M3Group4Verification/1",
+  "result": "PASS",
+  "original_files_preserved": 1241,
+  "source_kitchen_furniture": 9,
+  "source_kitchen_interiors": 6,
+  "m1_intents": 9,
+  "actual_frames": 26,
+  "matched_final_cameras": 5,
+  "plans": 9,
+  "all_final_png_camera_snapshot_checks": true,
+  "zero_cloud_or_construction_approvals": true,
+  "prior_holds_preserved": 28,
+  "new_holds": 12,
+  "remote_CI": "NOT_TRIGGERED / no remote CI PASS claimed"
+}

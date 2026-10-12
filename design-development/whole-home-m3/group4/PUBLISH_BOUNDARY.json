@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-10-12 / current sprint before publishing",
+  "planned_review_tag": "type-b-m3-group4-review-20261012",
+  "parent_checkpoint": "e4bf637abd449cfa034710499a04fc56b6a18cf7",
+  "pr68_head": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+  "default_master": "cfb7e8dee8621280c87121b6e60f7bb908b12695",
+  "read_only_findings": {
+    "review_workflows": 48,
+    "review_push_workflows": 40,
+    "all_push_filtered_to_branches": true,
+    "no_tag_create_issue_comment_triggers": true,
+    "no_PR_edited_event_trigger": true,
+    "default_branch_workflows": 36,
+    "default_branch_push_workflows": 30,
+    "default_push_branch_only": true,
+    "previous_Group3_tag_deployments": 0,
+    "latest_connected_project_deployment": "dpl_3pp1o5afYXjRq3e8XUmoCewqbrk1",
+    "latest_deployment_sha": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+    "latest_deployment_source": "git",
+    "vercel_project_last_updated": 1791622878139
+  },
+  "docs": {
+    "url": "https://vercel.com/docs/git/vercel-for-github",
+    "quote": "create a new Vercel Project from a GitHub repository, and enable automatic deployments on every branch push.",
+    "interpretation": "Use the already observed non-deploying tag route, exclude all branch/PR code pushes; recheck SHA-specific deployments/Actions afterward."
+  },
+  "allowed_action": "Only push refs/tags/type-b-m3-group4-review-20261012 after all local acceptance; update existing issue/PR metadata. No settings changes or deployment calls.",
+  "status": "PREPUBLICATION_READ_ONLY_EVIDENCE / actual publication outcome reported in existing issues afterward",
+  "limitations": "No claim of remote CI PASS. No secrets/env or webhook settings changed."
+}

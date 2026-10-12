@@ -1,0 +1,1776 @@
+{
+  "schema": "ApartmentSceneCaptureFrame/1",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "snapshot_sha256": "5ec5f3bb93839b5736e10575692e96d8b20f1fce45ca83692331974c2bbe580d",
+  "scene_revision": "scene-a234faf5",
+  "storage_revision": 55,
+  "room_id": "KIT-01",
+  "camera": {
+    "position": [
+      4.032291,
+      1.62,
+      2.9043415000000006
+    ],
+    "target": [
+      2.4722910000000002,
+      1.2,
+      1.7343415000000004
+    ],
+    "fov": 67,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.7777777777777777,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": false,
+          "position": 0
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-10-12T07:08:24.095Z",
+  "assets": {
+    "pending": 0,
+    "fallbacks": []
+  },
+  "renderer": {
+    "engine": "Three.js WebGL",
+    "revision": "160"
+  },
+  "architecture_variant": null,
+  "architecture_result": {
+    "wall_segments_hidden": 0,
+    "wall_finishes_hidden": 0,
+    "wall_segments_added": 0,
+    "wall_boxes_added": 0,
+    "canonical_ceilings_hidden": 0,
+    "merged_ceilings_added": 0,
+    "openings_hidden": 0,
+    "opening_headers_hidden": 0,
+    "opening_thresholds_hidden": 0,
+    "door_overrides": 0
+  },
+  "render_experiment": {
+    "schema": "KitchenDoorFinishExperiment/1",
+    "status": "RENDER_ONLY",
+    "variant": "D1",
+    "door_ids": [
+      "OP-RECP-KIT",
+      "OP-KIT-TERSVC"
+    ],
+    "finish": {
+      "colour": "#D8D1C5",
+      "roughness": 0.72,
+      "appearance": "PAINT_PROXY"
+    },
+    "owner_approved": false,
+    "construction_approved": false,
+    "cloud_saved": false,
+    "manufacturer_selected": false
+  },
+  "door_finish_result": {
+    "schema": "KitchenDoorFinishExperiment/1",
+    "status": "RENDER_ONLY",
+    "variant": "D1",
+    "door_ids": [
+      "OP-RECP-KIT",
+      "OP-KIT-TERSVC"
+    ],
+    "finish": {
+      "colour": "#D8D1C5",
+      "roughness": 0.72,
+      "appearance": "PAINT_PROXY"
+    },
+    "owner_approved": false,
+    "construction_approved": false,
+    "cloud_saved": false,
+    "manufacturer_selected": false,
+    "doors": [
+      {
+        "id": "OP-RECP-KIT",
+        "original_colour": "#a5825c",
+        "rendered_colour": "#d8d1c5",
+        "appearance": "PAINT_PROXY",
+        "before": {
+          "id": "OP-RECP-KIT",
+          "width_m": 0.7202169999999997,
+          "hinge": [
+            4.564903999999999,
+            0,
+            2.3407045000000006
+          ],
+          "a0": -1.5707963267948966,
+          "a1": -3.141592653589793,
+          "open": true,
+          "position": -3.141592653589793,
+          "leaf_parameters": {
+            "width": 0.7202169999999997,
+            "height": 2.05,
+            "depth": 0.04
+          },
+          "leaf_matrix": [
+            -1,
+            0,
+            1.2246467991473532e-16,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.2246467991473532e-16,
+            0,
+            -1,
+            0,
+            4.2047954999999995,
+            1.025,
+            2.3407045000000006,
+            1
+          ],
+          "leaf_bounds": {
+            "min": [
+              3.8446870052413935,
+              2.3841857821338408e-8,
+              2.3207045004470355
+            ],
+            "max": [
+              4.564903994758605,
+              2.049999976158142,
+              2.360704499552966
+            ]
+          }
+        },
+        "after": {
+          "id": "OP-RECP-KIT",
+          "width_m": 0.7202169999999997,
+          "hinge": [
+            4.564903999999999,
+            0,
+            2.3407045000000006
+          ],
+          "a0": -1.5707963267948966,
+          "a1": -3.141592653589793,
+          "open": true,
+          "position": -3.141592653589793,
+          "leaf_parameters": {
+            "width": 0.7202169999999997,
+            "height": 2.05,
+            "depth": 0.04
+          },
+          "leaf_matrix": [
+            -1,
+            0,
+            1.2246467991473532e-16,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1.2246467991473532e-16,
+            0,
+            -1,
+            0,
+            4.2047954999999995,
+            1.025,
+            2.3407045000000006,
+            1
+          ],
+          "leaf_bounds": {
+            "min": [
+              3.8446870052413935,
+              2.3841857821338408e-8,
+              2.3207045004470355
+            ],
+            "max": [
+              4.564903994758605,
+              2.049999976158142,
+              2.360704499552966
+            ]
+          }
+        }
+      },
+      {
+        "id": "OP-KIT-TERSVC",
+        "original_colour": "#a5825c",
+        "rendered_colour": "#d8d1c5",
+        "appearance": "PAINT_PROXY",
+        "before": {
+          "id": "OP-KIT-TERSVC",
+          "width_m": 0.6778510000000005,
+          "hinge": [
+            1.747585,
+            0,
+            3.8446875
+          ],
+          "a0": 0,
+          "a1": 1.5707963267948966,
+          "open": false,
+          "position": 0,
+          "leaf_parameters": {
+            "width": 0.6778510000000005,
+            "height": 2.05,
+            "depth": 0.04
+          },
+          "leaf_matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2.0865105,
+            1.025,
+            3.8446875,
+            1
+          ],
+          "leaf_bounds": {
+            "min": [
+              1.7475849893550874,
+              2.3841857821338408e-8,
+              3.824687500447035
+            ],
+            "max": [
+              2.425436010644913,
+              2.049999976158142,
+              3.864687499552965
+            ]
+          }
+        },
+        "after": {
+          "id": "OP-KIT-TERSVC",
+          "width_m": 0.6778510000000005,
+          "hinge": [
+            1.747585,
+            0,
+            3.8446875
+          ],
+          "a0": 0,
+          "a1": 1.5707963267948966,
+          "open": false,
+          "position": 0,
+          "leaf_parameters": {
+            "width": 0.6778510000000005,
+            "height": 2.05,
+            "depth": 0.04
+          },
+          "leaf_matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2.0865105,
+            1.025,
+            3.8446875,
+            1
+          ],
+          "leaf_bounds": {
+            "min": [
+              1.7475849893550874,
+              2.3841857821338408e-8,
+              3.824687500447035
+            ],
+            "max": [
+              2.425436010644913,
+              2.049999976158142,
+              3.864687499552965
+            ]
+          }
+        }
+      }
+    ],
+    "geometry_changed": false
+  },
+  "kitchen_geometry": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            1100.9912637347638
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.9999940395355,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999997615814,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            859.9999995529652
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "kitchen_r6_study": {
+    "schema": "KitchenR6Study/1",
+    "status": "RENDER_ONLY",
+    "option": "L2",
+    "detail": false,
+    "concept": {
+      "under": true,
+      "hood": true,
+      "ceiling": false
+    },
+    "light_colour": "#fff1db",
+    "under_intensity": 0.28,
+    "hood_intensity": 0.65,
+    "ceiling_intensity": 2.5,
+    "renderer_units_only": true,
+    "owner_approved": false,
+    "construction_approved": false,
+    "cloud_saved": false,
+    "manufacturer_selected": false
+  },
+  "kitchen_r6_result": {
+    "schema": "KitchenR6OverlayEvidence/1",
+    "spec": {
+      "schema": "KitchenR6Study/1",
+      "status": "RENDER_ONLY",
+      "option": "L2",
+      "detail": false,
+      "concept": {
+        "under": true,
+        "hood": true,
+        "ceiling": false
+      },
+      "light_colour": "#fff1db",
+      "under_intensity": 0.28,
+      "hood_intensity": 0.65,
+      "ceiling_intensity": 2.5,
+      "renderer_units_only": true,
+      "owner_approved": false,
+      "construction_approved": false,
+      "cloud_saved": false,
+      "manufacturer_selected": false
+    },
+    "fixtures": [
+      {
+        "id": "R6-U-KIT-A1-upper-north",
+        "kind": "SHIELDED_LINEAR_PROFILE_PROXY",
+        "source_id": "KIT-A1-upper-north",
+        "length_mm": 1750,
+        "setback_from_front_mm": 45,
+        "profile_bounds": {
+          "min": [
+            1.428250499999999,
+            1.4700000001117588,
+            1.845207500223518
+          ],
+          "max": [
+            3.178250499999999,
+            1.4799999998882414,
+            1.8652074997764831
+          ]
+        },
+        "emitters": [
+          {
+            "id": "R6-U-KIT-A1-upper-north-0",
+            "position": [
+              1.6032504999999988,
+              1.467,
+              1.8552075000000006
+            ],
+            "target": [
+              1.6032504999999988,
+              0.86,
+              2.0252075000000005
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          },
+          {
+            "id": "R6-U-KIT-A1-upper-north-1",
+            "position": [
+              1.953250499999999,
+              1.467,
+              1.8552075000000006
+            ],
+            "target": [
+              1.953250499999999,
+              0.86,
+              2.0252075000000005
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          },
+          {
+            "id": "R6-U-KIT-A1-upper-north-2",
+            "position": [
+              2.303250499999999,
+              1.467,
+              1.8552075000000006
+            ],
+            "target": [
+              2.303250499999999,
+              0.86,
+              2.0252075000000005
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          },
+          {
+            "id": "R6-U-KIT-A1-upper-north-3",
+            "position": [
+              2.653250499999999,
+              1.467,
+              1.8552075000000006
+            ],
+            "target": [
+              2.653250499999999,
+              0.86,
+              2.0252075000000005
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          },
+          {
+            "id": "R6-U-KIT-A1-upper-north-4",
+            "position": [
+              3.003250499999999,
+              1.467,
+              1.8552075000000006
+            ],
+            "target": [
+              3.003250499999999,
+              0.86,
+              2.0252075000000005
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          }
+        ],
+        "approximation": "Linear diffuser sampled by downward broad soft spots; no photometric IES, lux or installed product assumed."
+      },
+      {
+        "id": "R6-U-KIT-A1-upper-west-low",
+        "kind": "SHIELDED_LINEAR_PROFILE_PROXY",
+        "source_id": "KIT-A1-upper-west-low",
+        "length_mm": 250,
+        "setback_from_front_mm": 45,
+        "profile_bounds": {
+          "min": [
+            1.3368200002235182,
+            1.4700000001117588,
+            1.9892475000000003
+          ],
+          "max": [
+            1.3568199997764834,
+            1.4799999998882414,
+            2.2392475000000003
+          ]
+        },
+        "emitters": [
+          {
+            "id": "R6-U-KIT-A1-upper-west-low-0",
+            "position": [
+              1.3468200000000008,
+              1.467,
+              2.1142475000000003
+            ],
+            "target": [
+              1.5168200000000007,
+              0.86,
+              2.1142475000000003
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          }
+        ],
+        "approximation": "Linear diffuser sampled by downward broad soft spots; no photometric IES, lux or installed product assumed."
+      },
+      {
+        "id": "R6-U-KIT-A1-upper-west-high",
+        "kind": "SHIELDED_LINEAR_PROFILE_PROXY",
+        "source_id": "KIT-A1-upper-west-high",
+        "length_mm": 400,
+        "setback_from_front_mm": 45,
+        "profile_bounds": {
+          "min": [
+            1.3368200002235182,
+            1.4700000001117588,
+            3.2642474970197672
+          ],
+          "max": [
+            1.3568199997764834,
+            1.4799999998882414,
+            3.6642475029802317
+          ]
+        },
+        "emitters": [
+          {
+            "id": "R6-U-KIT-A1-upper-west-high-0",
+            "position": [
+              1.3468200000000008,
+              1.467,
+              3.5642474999999996
+            ],
+            "target": [
+              1.5168200000000007,
+              0.86,
+              3.5642474999999996
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          },
+          {
+            "id": "R6-U-KIT-A1-upper-west-high-1",
+            "position": [
+              1.3468200000000006,
+              1.467,
+              3.3642474999999994
+            ],
+            "target": [
+              1.5168200000000007,
+              0.86,
+              3.3642474999999994
+            ],
+            "intensity": 0.28,
+            "angle": 1.0053096491487339,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          }
+        ],
+        "approximation": "Linear diffuser sampled by downward broad soft spots; no photometric IES, lux or installed product assumed."
+      },
+      {
+        "id": "R6-HOOD",
+        "source_id": "starter-22",
+        "kind": "HOOD_TASK_LIGHT_CAPABILITY_PROXY",
+        "emitters": [
+          {
+            "id": "R6-HOOD--0.16",
+            "position": [
+              1.4632910000000003,
+              1.543,
+              2.9393415000000007
+            ],
+            "target": [
+              1.3632910000000003,
+              0.87,
+              2.9393415000000007
+            ],
+            "intensity": 0.65,
+            "angle": 0.8796459430051422,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          },
+          {
+            "id": "R6-HOOD-0.16",
+            "position": [
+              1.4632910000000001,
+              1.543,
+              2.6193415000000004
+            ],
+            "target": [
+              1.3632910000000003,
+              0.87,
+              2.6193415000000004
+            ],
+            "intensity": 0.65,
+            "angle": 0.8796459430051422,
+            "penumbra": 1,
+            "decay": 2,
+            "cast_shadow": true,
+            "shadow_map": 512
+          }
+        ],
+        "requirement": "Future hood must supply independently controlled downward task light and accessible cleanable sealed optics without blocking filter removal. Product, heat clearance and extraction remain HOLD."
+      }
+    ],
+    "finishes": [],
+    "source_geometry_before": {
+      "schema": "KitchenRenderedGeometry/1",
+      "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+      "counters": [
+        {
+          "source_id": "starter-20",
+          "source_footprint": {
+            "cx": 9381,
+            "cy": 8038,
+            "w": 1500,
+            "d": 600,
+            "rot": 270
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              9080.999988079071,
+              7283.000004768372,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              9691.999999888241,
+              8792.999995231628,
+              1100.9912637347638
+            ]
+          }
+        },
+        {
+          "source_id": "K3-corner",
+          "source_footprint": {
+            "cx": 9381,
+            "cy": 6993,
+            "w": 600,
+            "d": 590,
+            "rot": 0
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              9075.999992847443,
+              6697.9999940395355,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              9686.000007152557,
+              7298.999999888241,
+              859.9999995529652
+            ]
+          }
+        },
+        {
+          "source_id": "K3-sink-base",
+          "source_footprint": {
+            "cx": 11181,
+            "cy": 6993,
+            "w": 600,
+            "d": 610,
+            "rot": 0
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              10875.999992847443,
+              6687.999992847443,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              11486.000007152557,
+              7308.999999888241,
+              859.9999995529652
+            ]
+          }
+        },
+        {
+          "source_id": "K3-end-landing",
+          "source_footprint": {
+            "cx": 11781,
+            "cy": 6893,
+            "w": 600,
+            "d": 410,
+            "rot": 0
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              11475.999992847443,
+              6687.999997615814,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              12086.000007152557,
+              7108.999999888241,
+              859.9999995529652
+            ]
+          }
+        }
+      ],
+      "uppers": [
+        {
+          "source_id": "KIT-A1-upper-north",
+          "host_wall_id": "WALL-KIT-01-02",
+          "dimensions_mm": [
+            1800,
+            330,
+            700
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-02",
+            "offset_mm": -228.1,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9420.959523841857,
+              6685.865993443489,
+              1480.0000059604645
+            ],
+            "max_mm": [
+              11220.959476158141,
+              7015.866006556511,
+              2179.9999940395355
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9420.959523841857,
+              6685.865993443489,
+              1479.9999999869615
+            ],
+            "max_mm": [
+              11222.959500094994,
+              7022.365999806285,
+              2179.9999940395355
+            ]
+          }
+        },
+        {
+          "source_id": "KIT-A1-upper-west-low",
+          "host_wall_id": "WALL-KIT-01-01",
+          "dimensions_mm": [
+            300,
+            330,
+            700
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": -544.2,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              7079.9059940395355,
+              1480.0000059604645
+            ],
+            "max_mm": [
+              9409.529006556511,
+              7379.906005960464,
+              2179.9999940395355
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              7077.905999905005,
+              1479.9999999869615
+            ],
+            "max_mm": [
+              9416.028999806285,
+              7379.906005960464,
+              2179.9999940395355
+            ]
+          }
+        },
+        {
+          "source_id": "KIT-A1-upper-west-high",
+          "host_wall_id": "WALL-KIT-01-01",
+          "dimensions_mm": [
+            450,
+            330,
+            700
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 805.8,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              8354.906005960464,
+              1480.0000059604645
+            ],
+            "max_mm": [
+              9409.529006556511,
+              8804.905994039535,
+              2179.9999940395355
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              8352.905999905004,
+              1479.9999999869615
+            ],
+            "max_mm": [
+              9416.028999806285,
+              8804.905994039535,
+              2179.9999940395355
+            ]
+          }
+        }
+      ],
+      "hoods": [
+        {
+          "source_id": "starter-22",
+          "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+          "bounds": {
+            "min_mm": [
+              9181,
+              7594.999988079071,
+              1550.0000006705523
+            ],
+            "max_mm": [
+              9684.500000013039,
+              8195.000011920929,
+              2330.0000143051147
+            ]
+          }
+        }
+      ],
+      "backsplashes": [
+        {
+          "source_id": "KIT-A1-north-backsplash",
+          "host_wall_id": "WALL-KIT-01-02",
+          "dimensions_mm": [
+            2800,
+            5,
+            520
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-02",
+            "offset_mm": 0,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9149.059523841857,
+              6677.866000055879,
+              930.0000095367432
+            ],
+            "max_mm": [
+              11949.059476158141,
+              6682.865999944121,
+              1449.9999904632568
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9149.059523841857,
+              6677.866000055879,
+              930.0000095367432
+            ],
+            "max_mm": [
+              11949.059476158141,
+              6682.865999944121,
+              1449.9999904632568
+            ]
+          }
+        },
+        {
+          "source_id": "KIT-A1-west-backsplash",
+          "host_wall_id": "WALL-KIT-01-01",
+          "dimensions_mm": [
+            1500,
+            5,
+            520
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 263.9,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9071.52900005588,
+              7288.005999999999,
+              930.0000095367432
+            ],
+            "max_mm": [
+              9076.528999944121,
+              8788.006,
+              1449.9999904632568
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9071.52900005588,
+              7288.005999999999,
+              930.0000095367432
+            ],
+            "max_mm": [
+              9076.528999944121,
+              8788.006,
+              1449.9999904632568
+            ]
+          }
+        }
+      ]
+    },
+    "source_geometry_after": {
+      "schema": "KitchenRenderedGeometry/1",
+      "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+      "counters": [
+        {
+          "source_id": "starter-20",
+          "source_footprint": {
+            "cx": 9381,
+            "cy": 8038,
+            "w": 1500,
+            "d": 600,
+            "rot": 270
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              9080.999988079071,
+              7283.000004768372,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              9691.999999888241,
+              8792.999995231628,
+              1100.9912637347638
+            ]
+          }
+        },
+        {
+          "source_id": "K3-corner",
+          "source_footprint": {
+            "cx": 9381,
+            "cy": 6993,
+            "w": 600,
+            "d": 590,
+            "rot": 0
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              9075.999992847443,
+              6697.9999940395355,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              9686.000007152557,
+              7298.999999888241,
+              859.9999995529652
+            ]
+          }
+        },
+        {
+          "source_id": "K3-sink-base",
+          "source_footprint": {
+            "cx": 11181,
+            "cy": 6993,
+            "w": 600,
+            "d": 610,
+            "rot": 0
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              10875.999992847443,
+              6687.999992847443,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              11486.000007152557,
+              7308.999999888241,
+              859.9999995529652
+            ]
+          }
+        },
+        {
+          "source_id": "K3-end-landing",
+          "source_footprint": {
+            "cx": 11781,
+            "cy": 6893,
+            "w": 600,
+            "d": 410,
+            "rot": 0
+          },
+          "generated_upper_bounds": null,
+          "generated_upper_mesh_count": 0,
+          "generated_backsplash_bounds": null,
+          "total_bounds": {
+            "min_mm": [
+              11475.999992847443,
+              6687.999997615814,
+              -7.450580569168253e-7
+            ],
+            "max_mm": [
+              12086.000007152557,
+              7108.999999888241,
+              859.9999995529652
+            ]
+          }
+        }
+      ],
+      "uppers": [
+        {
+          "source_id": "KIT-A1-upper-north",
+          "host_wall_id": "WALL-KIT-01-02",
+          "dimensions_mm": [
+            1800,
+            330,
+            700
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-02",
+            "offset_mm": -228.1,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9420.959523841857,
+              6685.865993443489,
+              1480.0000059604645
+            ],
+            "max_mm": [
+              11220.959476158141,
+              7015.866006556511,
+              2179.9999940395355
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9420.959523841857,
+              6685.865993443489,
+              1479.9999999869615
+            ],
+            "max_mm": [
+              11222.959500094994,
+              7022.365999806285,
+              2179.9999940395355
+            ]
+          }
+        },
+        {
+          "source_id": "KIT-A1-upper-west-low",
+          "host_wall_id": "WALL-KIT-01-01",
+          "dimensions_mm": [
+            300,
+            330,
+            700
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": -544.2,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              7079.9059940395355,
+              1480.0000059604645
+            ],
+            "max_mm": [
+              9409.529006556511,
+              7379.906005960464,
+              2179.9999940395355
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              7077.905999905005,
+              1479.9999999869615
+            ],
+            "max_mm": [
+              9416.028999806285,
+              7379.906005960464,
+              2179.9999940395355
+            ]
+          }
+        },
+        {
+          "source_id": "KIT-A1-upper-west-high",
+          "host_wall_id": "WALL-KIT-01-01",
+          "dimensions_mm": [
+            450,
+            330,
+            700
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 805.8,
+            "elevation_mm": 1480,
+            "inset_mm": 8
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              8354.906005960464,
+              1480.0000059604645
+            ],
+            "max_mm": [
+              9409.529006556511,
+              8804.905994039535,
+              2179.9999940395355
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9079.52899344349,
+              8352.905999905004,
+              1479.9999999869615
+            ],
+            "max_mm": [
+              9416.028999806285,
+              8804.905994039535,
+              2179.9999940395355
+            ]
+          }
+        }
+      ],
+      "hoods": [
+        {
+          "source_id": "starter-22",
+          "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+          "bounds": {
+            "min_mm": [
+              9181,
+              7594.999988079071,
+              1550.0000006705523
+            ],
+            "max_mm": [
+              9684.500000013039,
+              8195.000011920929,
+              2330.0000143051147
+            ]
+          }
+        }
+      ],
+      "backsplashes": [
+        {
+          "source_id": "KIT-A1-north-backsplash",
+          "host_wall_id": "WALL-KIT-01-02",
+          "dimensions_mm": [
+            2800,
+            5,
+            520
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-02",
+            "offset_mm": 0,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9149.059523841857,
+              6677.866000055879,
+              930.0000095367432
+            ],
+            "max_mm": [
+              11949.059476158141,
+              6682.865999944121,
+              1449.9999904632568
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9149.059523841857,
+              6677.866000055879,
+              930.0000095367432
+            ],
+            "max_mm": [
+              11949.059476158141,
+              6682.865999944121,
+              1449.9999904632568
+            ]
+          }
+        },
+        {
+          "source_id": "KIT-A1-west-backsplash",
+          "host_wall_id": "WALL-KIT-01-01",
+          "dimensions_mm": [
+            1500,
+            5,
+            520
+          ],
+          "placement": {
+            "mode": "wall",
+            "host_wall_id": "WALL-KIT-01-01",
+            "offset_mm": 263.9,
+            "elevation_mm": 930,
+            "inset_mm": 0
+          },
+          "carcass_bounds": {
+            "min_mm": [
+              9071.52900005588,
+              7288.005999999999,
+              930.0000095367432
+            ],
+            "max_mm": [
+              9076.528999944121,
+              8788.006,
+              1449.9999904632568
+            ]
+          },
+          "rendered_bounds": {
+            "min_mm": [
+              9071.52900005588,
+              7288.005999999999,
+              930.0000095367432
+            ],
+            "max_mm": [
+              9076.528999944121,
+              8788.006,
+              1449.9999904632568
+            ]
+          }
+        }
+      ]
+    },
+    "source_changed": false,
+    "measured_lux": null,
+    "wattage": null,
+    "wiring": null,
+    "product_selected": false
+  },
+  "mesh_bounds": [
+    {
+      "id": "KIT-A1-north-backsplash",
+      "bounds_world_m": {
+        "min": [
+          1.1313505238418573,
+          0.9300000095367431,
+          1.5622075000558797
+        ],
+        "max": [
+          3.9313504761581415,
+          1.4499999904632568,
+          1.567207499944121
+        ]
+      },
+      "parts": [],
+      "concept": null
+    },
+    {
+      "id": "KIT-A1-west-backsplash",
+      "bounds_world_m": {
+        "min": [
+          1.0538200000558797,
+          0.9300000095367431,
+          2.1723475
+        ],
+        "max": [
+          1.0588199999441215,
+          1.4499999904632568,
+          3.6723475
+        ]
+      },
+      "parts": [],
+      "concept": null
+    },
+    {
+      "id": "KIT-A1-upper-north",
+      "bounds_world_m": {
+        "min": [
+          1.403250523841857,
+          1.4799999999869615,
+          1.5702074934434895
+        ],
+        "max": [
+          3.205250500094994,
+          2.1799999940395356,
+          1.9067074998062854
+        ]
+      },
+      "parts": [],
+      "concept": null
+    },
+    {
+      "id": "KIT-A1-upper-west-low",
+      "bounds_world_m": {
+        "min": [
+          1.0618199934434898,
+          1.4799999999869615,
+          1.9622474999050055
+        ],
+        "max": [
+          1.3983199998062856,
+          2.1799999940395356,
+          2.2642475059604648
+        ]
+      },
+      "parts": [],
+      "concept": null
+    },
+    {
+      "id": "KIT-A1-upper-west-high",
+      "bounds_world_m": {
+        "min": [
+          1.0618199934434898,
+          1.4799999999869615,
+          3.2372474999050045
+        ],
+        "max": [
+          1.3983199998062856,
+          2.1799999940395356,
+          3.689247494039535
+        ]
+      },
+      "parts": [],
+      "concept": null
+    },
+    {
+      "id": "KIT-fridge-end-panel",
+      "bounds_world_m": {
+        "min": [
+          4.15929100038743,
+          -2.3841857821338408e-8,
+          3.0793415119209295
+        ],
+        "max": [
+          4.17729099961257,
+          2.200000023841858,
+          3.7293414880790716
+        ]
+      },
+      "parts": [],
+      "concept": null
+    }
+  ],
+  "full_snapshot_sha256": "5ec5f3bb93839b5736e10575692e96d8b20f1fce45ca83692331974c2bbe580d",
+  "mesh_diagnostics_sha256": "b6a71cf8bf0ddbdeacb3192c3652c6af4b524625a6c31354bb0d57a9c6661aa8",
+  "frame_id": "LEAD-sink",
+  "style": "LEAD",
+  "png": "LEAD-sink.png",
+  "png_sha256": "5f7b6fd272154a3c2086e781dbc217bf09d36c996c34bdf3ccbf5e913a6f07b9",
+  "layout_sha256": "f600fd4da9d4f12da7402d0af28d781536dca258ae84318bb4e9bf7088276250",
+  "camera_sha256": "cd7cf592990789aab11451fc0e060b5dc322b5f398590e38904dbea839279d7d",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "external_requests": [],
+  "page_errors": [],
+  "capture_script_sha256": "883158fe3f56531329b1b3033e277e3825b9127d6314368a95361f0f87a70a9a",
+  "built_viewer_sha256": "e364441b85501457f1b9378cc600203f56b4c0b72a9af692f0f8c298fc25f1ce",
+  "proxy_limits": "Actual source-sized cabinetry/appliance proxies and cosmetic front/facing studies. No cavity, manufacturer hinge, lux, extraction or material certification. All service centres and architecture immutable."
+}

@@ -1,0 +1,98 @@
+{
+  "schema": "M3Group4OwnerDecisions/1",
+  "status": "PROVISIONAL_DESIGN_ONLY",
+  "recommendation": {
+    "finish": "A muted olive continuous washable facing, warm ivory and limited oak; sample suitability HOLD",
+    "upper": "A entirely closed, no storage surrendered to B300mm display cubby",
+    "south": "B full-width drawers preferred for daily pans/plates only if terrace-door/user1:1 operating control accepted; A sliding access269.5 fails flat280/300 items and does not resolve standing-body conflict",
+    "lighting": "Retain R6 L2 and original ambient capability; independent control, no installed electrical facts",
+    "counter": "Keep source surfaces clear and enclosed P0; no added island/peninsula or permanent coffee cluster"
+  },
+  "local_alternatives": [
+    {
+      "decision": "south access",
+      "two": [
+        "450mm assumed full-extension drawers",
+        "12mm assumed sliding frontage / fixed shelves"
+      ],
+      "rejected": "slider as universal daily cookware store; limited half-access and user conflicts"
+    },
+    {
+      "decision": "upper storage",
+      "two": [
+        "all closed source1800 upper",
+        "one300mm source-enclosed oak cubby"
+      ],
+      "lead": "all closed; kitchen inventory unknown"
+    },
+    {
+      "decision": "facing",
+      "two": [
+        "muted olive stone-look washable facing",
+        "warm quartz-tone facing"
+      ],
+      "lead": "olive, coordinates Group3B and home oak/stone; real samples required"
+    }
+  ],
+  "rejected": [
+    "extra1000×500 island",
+    "extra1000×350 slim counter",
+    "600mm corner south door assumed independently usable",
+    "seamless two-person DW/oven/washer use",
+    "coffee appliance cluster on600×410 landing",
+    "closed-body600DW proxy as manufacturer clear niche",
+    "automatic whole-home storage compensation"
+  ],
+  "owner_approved": false,
+  "construction_approved": false,
+  "procurement_approved": false,
+  "cloud_saved": false,
+  "m1_intents": [
+    {
+      "id": "KIT-01.E1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.E2",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.E3",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.E4",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.L1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.L2",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.H1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.H2",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "KIT-01.F1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ZONE_ONLY / TBD_AS_BUILT"
+    }
+  ],
+  "next": "Independent M3Group5 terraces from current source, all kitchen/bath/site holds independent"
+}
