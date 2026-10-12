@@ -1,0 +1,27 @@
+render SCENARIO-entry
+render SCENARIO-reception
+render SCENARIO-dining
+render SCENARIO-master
+render SCENARIO-br01
+render SCENARIO-br02
+render SCENARIO-wic
+render SCENARIO-bath-master
+render SCENARIO-bath-family
+render SCENARIO-guest-wc
+render SCENARIO-kitchen
+render SCENARIO-terrace-main
+render SCENARIO-terrace-master
+render SCENARIO-terrace-service
+render SCENARIO-living-seated
+render SCENARIO-hall-to-public
+render SCENARIO-public-to-terrace
+render SCENARIO-master-to-terrace
+render SCENARIO-wic-to-bath
+render SCENARIO-service-to-kitchen
+render SCENARIO-reception-night
+render SCENARIO-master-night
+render SCENARIO-hall-to-public-night
+render SCENARIO-public-to-terrace-night
+render SCENARIO-wic-to-bath-night
+render SCENARIO-kitchen-night
+Captured 26 actual WebGL canvases

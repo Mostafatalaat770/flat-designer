@@ -1,0 +1,48 @@
+{
+  "schema": "WholeHomeReviewPublicationBoundary/1",
+  "checkpoint": "6fa75864b21e25f2a157c04122df34b1a59cd784",
+  "review_only_tag": "type-b-m3-whole-home-jury-review-20261012",
+  "default_branch_sha": "cfb7e8dee8621280c87121b6e60f7bb908b12695",
+  "pr68_head": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+  "pr68_draft": true,
+  "workflow_trigger_audit": "WORKFLOW_TRIGGER_AUDIT.json",
+  "workflow_counts": {
+    "review": 48,
+    "review_branch_only_push": 40,
+    "default": 36,
+    "default_branch_only_push": 30
+  },
+  "tag_create_issue_and_pr_edit_events_excluded": true,
+  "vercel": {
+    "project": "prj_ZMTekYZ9DEa0Lp21CYMQa0A70F7T",
+    "team": "mostafa-talaats-projects",
+    "project_updated_at": 1791622878139,
+    "latest_deployment": {
+      "id": "dpl_3pp1o5afYXjRq3e8XUmoCewqbrk1",
+      "url": "flat-designer-fivm5h44o-mostafa-talaats-projects.vercel.app",
+      "createdAt": 1791754511924,
+      "readyState": "READY",
+      "target": null
+    },
+    "latest_trigger": "git branch integration/owner-review-gates-r1-20261010 at8b91b69",
+    "repository_projects": 1,
+    "no_project_deployments_since_2026_10_12_0800UTC": true,
+    "prior_Group3_4_5_tag_results": "Observed prior tags with zero deployments; unchanged live project update timestamp",
+    "documentation": "https://vercel.com/docs/git/vercel-for-github"
+  },
+  "authorized_actions": [
+    "local review files",
+    "only a named review tag after final validation and fresh refs",
+    "update existing Issue72,Issue41,PR68 metadata"
+  ],
+  "prohibited_actions": [
+    "branch push",
+    "Actions dispatch",
+    "deployment request",
+    "merge",
+    "settings/billing change",
+    "procurement",
+    "cloud scene save"
+  ],
+  "status": "READ_ONLY_PREFLIGHT; refresh refs and check final artifact gates immediately before tag publication"
+}

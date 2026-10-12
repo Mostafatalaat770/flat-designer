@@ -1,0 +1,42 @@
+{
+  "schema": "VisualJuryReview/1",
+  "examined_initial_views": [
+    "entry",
+    "reception",
+    "master",
+    "kitchen",
+    "public-to-terrace",
+    "wic-to-bath"
+  ],
+  "corrections": [
+    {
+      "change": "Neutral optical mirror surrogate replaces black/native reflective surface; no reflection claimed",
+      "geometry_changed": false
+    },
+    {
+      "change": "Explicit public ivory paint material only; source polygons unchanged",
+      "geometry_changed": false
+    },
+    {
+      "change": "Seated eye camera added; source furniture retained",
+      "geometry_changed": false
+    }
+  ],
+  "remaining_visual_criticisms": [
+    "Public wood/floor/walls too close in value; samples and textile contrast needed",
+    "Procedural material grain/art repeated across bedrooms; personalized art and realistic samples required",
+    "Source dark/brown doors differ from two kitchen greige leaves; home-wide door/metal finish choice open",
+    "Native plant shapes and neutral mirrors are schematic; no realism/privacy certificate",
+    "Source bathroom door and narrow sightlines remain visible; not erased for an unobstructed render"
+  ],
+  "jury_perspectives": {
+    "residential_architect": "Shared vocabulary promising, source door/focal variation unresolved",
+    "space_ergonomics": "B2 strongest; BR01 narrow side, kitchen sequence and shower occupied operation unresolved",
+    "kitchen_bath": "No supplier mechanism/cavity claim; source wet centres remain fixed",
+    "light_material": "6 matched pairs show composition, actual glare/reach/lux UNKNOWN",
+    "MEP": "M1 needs current-anchor review, qualified survey and service routes",
+    "storage_usability": "Four width reductions retained; all net totals and residual shortage UNKNOWN"
+  },
+  "all_final_views_require_direct_visual_inspection": true,
+  "approval": false
+}

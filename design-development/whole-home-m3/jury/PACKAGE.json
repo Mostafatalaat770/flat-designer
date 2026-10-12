@@ -1,0 +1,12 @@
+{
+  "schema": "WholeHomeOfflineArchiveVerification/1",
+  "zip": "Type-B-M3-Whole-Home-Jury-Owner-Review.zip",
+  "bytes": 40162171,
+  "sha256": "34af00cb07b2b7bae91885b4afbc1f45887806fc67a897f4fe437f16d8884b3a",
+  "html_sha256": "0955642c69b20cf75751530c63fb710eb82bcb1acadfe9f48efe7cfab13e85f9",
+  "file_count": 130,
+  "CRC": "PASS",
+  "all_content_hashes": "PASS",
+  "exact_html_identity": "PASS",
+  "no_inherited_room_archives_modified": true
+}

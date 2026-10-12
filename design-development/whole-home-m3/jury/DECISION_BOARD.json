@@ -1,0 +1,76 @@
+{
+  "schema": "WholeHomeDecisionBoard/1",
+  "recommended_for_continued_study": [
+    "B2 six seats with capacity loss disclosed",
+    "A upholstered master / measured shared layout",
+    "B daily BR02 office and B WIC single-user sequencing",
+    "B warm bathrooms; master800 source depth",
+    "Kitchen closed ivory uppers/limited oak/olive, conditional drawers",
+    "Main two seats, master one seat, compact B drying"
+  ],
+  "owner_choice_needed": [
+    "Accept four storage reductions or reject the affected joinery",
+    "Confirm daily-office/guest inventory and users",
+    "Accept sequential kitchen service use",
+    "Warm oak/ivory/olive samples with terracotta master variation; source brown doors versus later coordinated finish"
+  ],
+  "site_measurement_needed": [
+    "G1B-H01",
+    "G2-H01",
+    "G3-H01",
+    "G4-H01",
+    "G5-H01"
+  ],
+  "vendor_product_verification_needed": [
+    "G3-H03",
+    "G3-H06",
+    "G3-H07",
+    "G4-H02",
+    "G4-H04",
+    "G4-H05",
+    "G4-H06",
+    "G5-H10"
+  ],
+  "professional_engineering_approval_needed": [
+    "G1B-H01",
+    "G1B-H03",
+    "G1B-H04",
+    "G2-H01",
+    "G2-H06",
+    "G2-H07",
+    "G2-H08",
+    "G3-H01",
+    "G3-H02",
+    "G3-H03",
+    "G3-H04",
+    "G3-H05",
+    "G3-H06",
+    "G3-H08",
+    "G3-H09",
+    "G3-H10",
+    "G4-H01",
+    "G4-H02",
+    "G4-H03",
+    "G4-H04",
+    "G4-H08",
+    "G4-H12",
+    "G5-H01",
+    "G5-H02",
+    "G5-H03",
+    "G5-H04",
+    "G5-H05",
+    "G5-H06",
+    "G5-H09",
+    "G5-H10"
+  ],
+  "rejected_design_alternatives": [
+    "Family outward/pivot shower operation as occupied default",
+    "Automatic900mm master shower expansion",
+    "Permanent third main terrace seat at tested position",
+    "South kitchen half-slider as full cookware access",
+    "Extra kitchen counters in tested source room",
+    "A BR02 as a complete daily office",
+    "Double allocation of WIC shoes/clothes or kitchen/terrace storage compensation"
+  ],
+  "all_approvals_false": true
+}

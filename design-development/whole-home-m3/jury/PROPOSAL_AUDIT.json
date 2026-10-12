@@ -1,0 +1,143 @@
+{
+  "schema": "WholeHomeDeliveredProposalAudit/1",
+  "options": [
+    {
+      "group": "group1b",
+      "option": "A",
+      "input": "design-development/whole-home-m3/group1b/A.json",
+      "sha256": "f4a089d290a8c03e9c0767990f32e57ac0ff492ee85d92ee22037ebaa4331e57",
+      "jury_verdict": "UPHOLSTERY_CONTROL; public operations not resolved",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group1b",
+      "option": "B",
+      "input": "design-development/whole-home-m3/group1b/B.json",
+      "sha256": "4556615df00ee3ab669c796e8487a156e88a3b8d65ed0ce08a71d6cc9bc013f5",
+      "jury_verdict": "SUPERSEDED_FUNCTION; curtain/shoe/six-standing shortcomings",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group1b",
+      "option": "B1",
+      "input": "design-development/whole-home-m3/group1b/B1.json",
+      "sha256": "34032bc5831088a5c04b003b2d3907dcc555732922380304deb40319f40465ce",
+      "jury_verdict": "REJECT_FOR_CONTINUED_PUBLIC_LEAD;16/24 independent standing routes",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group1b",
+      "option": "B2",
+      "input": "design-development/whole-home-m3/group1b/B2.json",
+      "sha256": "80a1a1ad8fce19025c5e67cd4778a804d27d15766e90a55b3345151c02806f22",
+      "jury_verdict": "SELECTED_STUDY;24/24, storage reduction/table stability and real openings HOLD",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group1b",
+      "option": "B2-AC-service",
+      "input": "design-development/whole-home-m3/group1b/B2-AC-service.json",
+      "sha256": "26ae7a018b39179cf2d2ea9ee04aafade2e99b1baf632ae6893536434c168d4a",
+      "jury_verdict": "CONDITIONAL_MAINTENANCE_ONLY; coffee transport is table-only, person/ladder HOLD",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group2",
+      "option": "A",
+      "input": "design-development/whole-home-m3/group2/A.json",
+      "sha256": "2a60e0955fa0ba5f7b02c0852a45ce60578a84c1469ab2b4fa78f10c7a450a0a",
+      "jury_verdict": "MASTER_LANGUAGE_ONLY; not imported as a whole option. BR02 A rejected daily office; hinged WIC not selected",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group2",
+      "option": "B",
+      "input": "design-development/whole-home-m3/group2/B.json",
+      "sha256": "44b4330f4551315c2f3b42c143760cde7b104c5c4d9b9d61e948e09176069206",
+      "jury_verdict": "BR01/BR02/WIC selected; BR01 narrow side, storage and phased chair use remain unresolved",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group3",
+      "option": "A",
+      "input": "design-development/whole-home-m3/group3/A.json",
+      "sha256": "66f85bc16018be55394e79e885c7e27841a097b05ce10f0b7ece1bf132af34fa",
+      "jury_verdict": "NOT_SELECTED; clay finish valid taste alternative,700 master screen shrinks band and inward580 pivot fails occupied states",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group3",
+      "option": "B",
+      "input": "design-development/whole-home-m3/group3/B.json",
+      "sha256": "b74ca427f0cbbcc2c18f20a8f45ba3ad3f1fcd7f50981cb00908606a7501afbb",
+      "jury_verdict": "WARM_DIRECTION_SELECTED; master800 retained. Family ideal fold not selected/approved as real hardware",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group4",
+      "option": "LEAD",
+      "input": "design-development/whole-home-m3/group4/LEAD.json",
+      "sha256": "5ec5f3bb93839b5736e10575692e96d8b20f1fce45ca83692331974c2bbe580d",
+      "jury_verdict": "Retained R4/R5D1/R6L2 source-scoped controls",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group4",
+      "option": "A",
+      "input": "design-development/whole-home-m3/group4/A.json",
+      "sha256": "4c0fa31796766341d5d9cb174c3a39a1694ffef3e1bc05b536b5317125276901",
+      "jury_verdict": "FINISH/CLOSED_UPPER_SELECTED; south half-slider not acceptable full-access cookware",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group4",
+      "option": "B",
+      "input": "design-development/whole-home-m3/group4/B.json",
+      "sha256": "ca7f1f5c183aeff195992c8b4d4ca918b29c400cb5619a1f948af0ea937a1655",
+      "jury_verdict": "DRAWER_CONCEPT_ONLY; cubby not selected,58.57L hypothetical gross loss",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group4",
+      "option": "RECOMMENDED",
+      "input": "design-development/whole-home-m3/group4/RECOMMENDED.json",
+      "sha256": "2286f333fff050ef54c0203111622388cf1e9446ecf46d8b2681c3da419ccf3e",
+      "jury_verdict": "SELECTED_STUDY with doorway sequence; no drawer/product fit approval",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group5",
+      "option": "A",
+      "input": "design-development/whole-home-m3/group5/A.json",
+      "sha256": "7494c398f99b3b36ae670399bc91aa2fef40948970a3151f9fa8e50cab3bd4d7",
+      "jury_verdict": "MAIN_TWO_SEAT/MASTER_ONE_SEAT selected; horizontal rack not lead",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group5",
+      "option": "B",
+      "input": "design-development/whole-home-m3/group5/B.json",
+      "sha256": "cbd4f66e633950c02fa6664b220172d2d4d39f88a786880527b3ccc74879f73a",
+      "jury_verdict": "SERVICE_TOWER_ONLY selected; tested permanent third main chair rejected",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group5",
+      "option": "A-FOLDED",
+      "input": "design-development/whole-home-m3/group5/A-FOLDED.json",
+      "sha256": "687cd67896e77776837b44e5ebebc8809a29d11384515adadbe1f8373f5775d9",
+      "jury_verdict": "Alternative mechanism control; indoor parking not allocated",
+      "original_snapshot_modified": false
+    },
+    {
+      "group": "group5",
+      "option": "B-FOLDED",
+      "input": "design-development/whole-home-m3/group5/B-FOLDED.json",
+      "sha256": "e57b08fdc0767c86b0f2b8926f691aac34c76b6afdd2993810358326644133ae",
+      "jury_verdict": "Service fold study;120mm depth assumption and indoor parking HOLD",
+      "original_snapshot_modified": false
+    }
+  ],
+  "all_source_and_original_architecture_immutable": true,
+  "owner_approval_inferred": false
+}

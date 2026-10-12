@@ -1,0 +1,115 @@
+{
+  "schema": "WholeHomeOfflineBookBrowser/1",
+  "records": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "source": "Exact local HTML bytes via setContent; no network resources",
+      "file_url_limit": "Managed browser policy blocks file:// navigation; file URL opening not claimed as tested",
+      "room_cards": 13,
+      "hold_rows": 52,
+      "mode_checks": [
+        "reception-night",
+        "reception-day",
+        "master-night",
+        "master-day",
+        "hall-to-public-night",
+        "hall-to-public-day",
+        "public-to-terrace-night",
+        "public-to-terrace-day",
+        "wic-to-bath-night",
+        "wic-to-bath-day",
+        "kitchen-night",
+        "kitchen-day"
+      ],
+      "filters": [
+        {
+          "priority": "P0",
+          "count": 30
+        },
+        {
+          "priority": "P1",
+          "count": 19
+        },
+        {
+          "priority": "P2",
+          "count": 3
+        },
+        {
+          "priority": "ALL",
+          "count": 52
+        }
+      ],
+      "room_navigation": [
+        "BR-02",
+        "WIC-01",
+        "TER-SVC"
+      ],
+      "inventory_export": "PASS",
+      "overflow": {
+        "document": 1440,
+        "viewport": 1440
+      },
+      "errors": [],
+      "external_requests": [],
+      "book_sha256": "0955642c69b20cf75751530c63fb710eb82bcb1acadfe9f48efe7cfab13e85f9"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "source": "Exact local HTML bytes via setContent; no network resources",
+      "file_url_limit": "Managed browser policy blocks file:// navigation; file URL opening not claimed as tested",
+      "room_cards": 13,
+      "hold_rows": 52,
+      "mode_checks": [
+        "reception-night",
+        "reception-day",
+        "master-night",
+        "master-day",
+        "hall-to-public-night",
+        "hall-to-public-day",
+        "public-to-terrace-night",
+        "public-to-terrace-day",
+        "wic-to-bath-night",
+        "wic-to-bath-day",
+        "kitchen-night",
+        "kitchen-day"
+      ],
+      "filters": [
+        {
+          "priority": "P0",
+          "count": 30
+        },
+        {
+          "priority": "P1",
+          "count": 19
+        },
+        {
+          "priority": "P2",
+          "count": 3
+        },
+        {
+          "priority": "ALL",
+          "count": 52
+        }
+      ],
+      "room_navigation": [
+        "BR-02",
+        "WIC-01",
+        "TER-SVC"
+      ],
+      "inventory_export": "PASS",
+      "overflow": {
+        "document": 390,
+        "viewport": 390
+      },
+      "errors": [],
+      "external_requests": [],
+      "book_sha256": "0955642c69b20cf75751530c63fb710eb82bcb1acadfe9f48efe7cfab13e85f9"
+    }
+  ]
+}

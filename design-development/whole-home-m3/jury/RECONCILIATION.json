@@ -1,0 +1,1991 @@
+{
+  "schema": "WholeHomeReconciliation/1",
+  "checkpoint": "6fa75864b21e25f2a157c04122df34b1a59cd784",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "original_furniture": 50,
+  "original_interior": 27,
+  "changes": [
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-27",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#b6a797",
+      "after": "#BDBEAE"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-28",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#dfd3bb",
+      "after": "#C8C7BA"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-28",
+      "room": "RECP-01",
+      "field": "variant",
+      "before": "tailored",
+      "after": "style"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-29",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#D2BFA4",
+      "after": "#8A7860"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-30",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#B88C5E",
+      "after": "#8A7860"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-30",
+      "room": "RECP-01",
+      "field": "material_id",
+      "before": "a1-natural-oak",
+      "after": "m3-casework"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-31",
+      "room": "RECP-01",
+      "field": "name",
+      "before": "TV",
+      "after": "Source1230mm TV /12° angled study / actual swivel fixing HOLD"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-31",
+      "room": "RECP-01",
+      "field": "cx",
+      "before": 12243.688,
+      "after": 12200
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-31",
+      "room": "RECP-01",
+      "field": "rot",
+      "before": 90,
+      "after": 78
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-32",
+      "room": "RECP-01",
+      "field": "name",
+      "before": "Single olive lounge chair · linked to family living",
+      "after": "Supported lounge chair 850×850 / design proxy, seat trial HOLD"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-32",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 4250,
+      "after": 4350
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-32",
+      "room": "RECP-01",
+      "field": "w",
+      "before": 700,
+      "after": 850
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-32",
+      "room": "RECP-01",
+      "field": "d",
+      "before": 720,
+      "after": 850
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-32",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#7D856F",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-32",
+      "room": "RECP-01",
+      "field": "variant",
+      "before": "tailored",
+      "after": "style"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-35",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 7650,
+      "after": 6650
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-35",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#D8CEC0",
+      "after": "#8A7860"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-36",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 6950,
+      "after": 5950
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-36",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#A89E90",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-37",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 6950,
+      "after": 5950
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-37",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#A89E90",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-38",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 8350,
+      "after": 7350
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-38",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#A89E90",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-39",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 8350,
+      "after": 7350
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-39",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#A89E90",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "name",
+      "before": "Slim entry shoe storage · 900 × 280 mm",
+      "after": "600×350×800 sliding flat-shelf shoe prototype / ~4 daily pairs, no SKU"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "cx",
+      "before": 15740,
+      "after": 15755
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 9450,
+      "after": 9050
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "w",
+      "before": 900,
+      "after": 600
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "d",
+      "before": 280,
+      "after": 350
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#8A7860"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "starter-40",
+      "room": "RECP-01",
+      "field": "material_id",
+      "before": null,
+      "after": "m3-casework"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "A2-dining-chair-north-centre",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 6950,
+      "after": 5950
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "A2-dining-chair-north-centre",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#A89E90",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "A2-dining-chair-south-centre",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 8350,
+      "after": 7350
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "A2-dining-chair-south-centre",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#A89E90",
+      "after": "#515A4E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "furniture",
+      "id": "S1-living-side-table",
+      "room": "RECP-01",
+      "field": "color",
+      "before": "#C6B18F",
+      "after": "#8A7860"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-sideboard",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 4750,
+      "after": 3925
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-sideboard",
+      "room": "RECP-01",
+      "field": "width_mm",
+      "before": 2000,
+      "after": 1250
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-sideboard",
+      "room": "RECP-01",
+      "field": "material_references",
+      "before": {
+        "body": "a1-natural-oak"
+      },
+      "after": {
+        "body": "m3-casework"
+      }
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-sideboard",
+      "room": "RECP-01",
+      "field": "colour",
+      "before": "#A77F58",
+      "after": "#B2A18B"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-sideboard",
+      "room": "RECP-01",
+      "field": "metadata",
+      "before": {
+        "role": "Closed family dining storage / buffet; lighter medium-oak tone and reduced visual mass"
+      },
+      "after": {
+        "role": "Compact dining-only cabinet, 1250×400×800; capacity loss explicit"
+      }
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-pendant",
+      "room": "RECP-01",
+      "field": "variant",
+      "before": "globe",
+      "after": "linear"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-pendant",
+      "room": "RECP-01",
+      "field": "placement",
+      "before": {
+        "mode": "ceiling",
+        "drop_mm": 650
+      },
+      "after": {
+        "mode": "ceiling",
+        "drop_mm": 450
+      }
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-pendant",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 7650,
+      "after": 6650
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-pendant",
+      "room": "RECP-01",
+      "field": "width_mm",
+      "before": 500,
+      "after": 1000
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-pendant",
+      "room": "RECP-01",
+      "field": "depth_mm",
+      "before": 500,
+      "after": 70
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A-dining-pendant",
+      "room": "RECP-01",
+      "field": "height_mm",
+      "before": 200,
+      "after": 150
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A1-entry-mirror",
+      "room": "RECP-01",
+      "field": "variant",
+      "before": "round",
+      "after": "rectangle"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A1-entry-mirror",
+      "room": "RECP-01",
+      "field": "placement",
+      "before": {
+        "mode": "wall",
+        "host_wall_id": "WALL-RECP-01-16",
+        "offset_mm": 0,
+        "inset_mm": 10,
+        "elevation_mm": 1100
+      },
+      "after": {
+        "mode": "wall",
+        "host_wall_id": "WALL-RECP-01-18",
+        "offset_mm": 2568.0475000000006,
+        "inset_mm": 10,
+        "elevation_mm": 1100
+      }
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A1-entry-mirror",
+      "room": "RECP-01",
+      "field": "width_mm",
+      "before": 620,
+      "after": 520
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A1-entry-mirror",
+      "room": "RECP-01",
+      "field": "colour",
+      "before": "#B39860",
+      "after": "#827B6E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A2-living-plant",
+      "room": "RECP-01",
+      "field": "cx",
+      "before": 15480,
+      "after": 13300
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A2-living-plant",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 3250,
+      "after": 4300
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A2-living-plant",
+      "room": "RECP-01",
+      "field": "material_references",
+      "before": {
+        "pot": "a1-natural-oak"
+      },
+      "after": {
+        "primary": "m3-pot"
+      }
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "A2-living-plant",
+      "room": "RECP-01",
+      "field": "colour",
+      "before": "#738064",
+      "after": "#B6ADA0"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "V5-sideboard-lamp",
+      "room": "RECP-01",
+      "field": "cy",
+      "before": 5450,
+      "after": 4325
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "V5-hall-mirror",
+      "room": "HALL-01",
+      "field": "colour",
+      "before": "#BCA98F",
+      "after": "#827B6E"
+    },
+    {
+      "input": "group1b/B2",
+      "collection": "interior.objects",
+      "id": "M3-buffet-art",
+      "room": "RECP-01",
+      "kind": "ADD",
+      "value": {
+        "id": "M3-buffet-art",
+        "type": "artwork",
+        "variant": "framed",
+        "room_id": "RECP-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-RECP-01-18",
+          "offset_mm": -2556.9524999999994,
+          "elevation_mm": 1120,
+          "inset_mm": 12
+        },
+        "rotation": 0,
+        "width_mm": 1200,
+        "depth_mm": 25,
+        "height_mm": 650,
+        "material_references": {
+          "frame": "m3-casework"
+        },
+        "colour": "#828575",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Single original landscape artwork; composition proposal"
+        }
+      }
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-1",
+      "room": "MBR-01",
+      "field": "cy",
+      "before": 6835,
+      "after": 6800
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-1",
+      "room": "MBR-01",
+      "field": "color",
+      "before": "#dfd3bb",
+      "after": "#E4D6C5"
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-1",
+      "room": "MBR-01",
+      "field": "variant",
+      "before": "upholstered",
+      "after": "style"
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-1",
+      "room": "MBR-01",
+      "field": "product_reference_id",
+      "before": "bed-idanas-180-reference",
+      "after": null
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-2",
+      "room": "MBR-01",
+      "field": "cx",
+      "before": 656.668,
+      "after": 690
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-2",
+      "room": "MBR-01",
+      "field": "cy",
+      "before": 5650,
+      "after": 5580
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-2",
+      "room": "MBR-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#BC9E7C"
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-3",
+      "room": "MBR-01",
+      "field": "cx",
+      "before": 656.668,
+      "after": 690
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-3",
+      "room": "MBR-01",
+      "field": "cy",
+      "before": 8050,
+      "after": 8020
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "starter-3",
+      "room": "MBR-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#BC9E7C"
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "V5-master-rug",
+      "room": "MBR-01",
+      "field": "d",
+      "before": 3000,
+      "after": 2800
+    },
+    {
+      "input": "group2/A",
+      "collection": "furniture",
+      "id": "V5-master-rug",
+      "room": "MBR-01",
+      "field": "color",
+      "before": "#b6a797",
+      "after": "#C7BDAE"
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "V7-master-drawers",
+      "room": "MBR-01",
+      "field": "cx",
+      "before": 3340,
+      "after": 3590
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "V7-master-drawers",
+      "room": "MBR-01",
+      "field": "width_mm",
+      "before": 1000,
+      "after": 600
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "V7-master-drawers",
+      "room": "MBR-01",
+      "field": "colour",
+      "before": "#BCA98F",
+      "after": "#BC9E7C"
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "V5-master-bench",
+      "room": "MBR-01",
+      "field": "colour",
+      "before": "#D8D0C4",
+      "after": "#BC9E7C"
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "MBR-A1-art",
+      "room": "MBR-01",
+      "field": "placement",
+      "before": {
+        "mode": "wall",
+        "host_wall_id": "WALL-MBR-01-03",
+        "offset_mm": 1189.9,
+        "elevation_mm": 1100,
+        "inset_mm": 10
+      },
+      "after": {
+        "mode": "wall",
+        "host_wall_id": "WALL-MBR-01-03",
+        "offset_mm": 1439.9,
+        "elevation_mm": 1100,
+        "inset_mm": 10
+      }
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "MBR-A1-art",
+      "room": "MBR-01",
+      "field": "width_mm",
+      "before": 800,
+      "after": 500
+    },
+    {
+      "input": "group2/A",
+      "collection": "interior.objects",
+      "id": "M3G2-Master-art",
+      "room": "MBR-01",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-Master-art",
+        "type": "artwork",
+        "variant": "framed",
+        "room_id": "MBR-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-MBR-01-01",
+          "offset_mm": -179.7,
+          "elevation_mm": 1300,
+          "inset_mm": 10
+        },
+        "rotation": 0,
+        "width_mm": 1000,
+        "depth_mm": 30,
+        "height_mm": 500,
+        "material_references": {
+          "art": "art-master-warm-earth",
+          "frame": "generic-walnut"
+        },
+        "colour": "#CDB9A1",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Original artwork concept; anchorage and owner personal selection HOLD"
+        }
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-4",
+      "room": "WIC-01",
+      "field": "cy",
+      "before": 6615,
+      "after": 6640
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-4",
+      "room": "WIC-01",
+      "field": "d",
+      "before": 600,
+      "after": 650
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-4",
+      "room": "WIC-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-5",
+      "room": "WIC-01",
+      "field": "cy",
+      "before": 8550,
+      "after": 8525
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-5",
+      "room": "WIC-01",
+      "field": "d",
+      "before": 600,
+      "after": 650
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-5",
+      "room": "WIC-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-6",
+      "room": "BR-01",
+      "field": "cx",
+      "before": 2774.953,
+      "after": 2999.953
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-6",
+      "room": "BR-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#D7D0C3"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-6",
+      "room": "BR-01",
+      "field": "variant",
+      "before": "oak-platform",
+      "after": "style"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-7",
+      "room": "BR-01",
+      "field": "cx",
+      "before": 5060,
+      "after": 5035
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-7",
+      "room": "BR-01",
+      "field": "cy",
+      "before": 3150,
+      "after": 3000
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-7",
+      "room": "BR-01",
+      "field": "d",
+      "before": 600,
+      "after": 650
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-7",
+      "room": "BR-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-8",
+      "room": "BR-01",
+      "field": "cx",
+      "before": 3800,
+      "after": 2380
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-8",
+      "room": "BR-01",
+      "field": "cy",
+      "before": 4590,
+      "after": 4310
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-8",
+      "room": "BR-01",
+      "field": "w",
+      "before": 1200,
+      "after": 1100
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-8",
+      "room": "BR-01",
+      "field": "rot",
+      "before": 180,
+      "after": 270
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-8",
+      "room": "BR-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "type",
+      "before": "chair",
+      "after": "officechair"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "cx",
+      "before": 3720,
+      "after": 3050
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "cy",
+      "before": 3930,
+      "after": 4150
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "w",
+      "before": 480,
+      "after": 580
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "d",
+      "before": 500,
+      "after": 580
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "rot",
+      "before": 180,
+      "after": 90
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-9",
+      "room": "BR-01",
+      "field": "color",
+      "before": "#8D9381",
+      "after": "#64715A"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-10",
+      "room": "BR-02",
+      "field": "cy",
+      "before": 2800,
+      "after": 2990
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-10",
+      "room": "BR-02",
+      "field": "w",
+      "before": 1280,
+      "after": 1240
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-10",
+      "room": "BR-02",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#D7D0C3"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-10",
+      "room": "BR-02",
+      "field": "variant",
+      "before": "oak-platform",
+      "after": "style"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-11",
+      "room": "BR-02",
+      "field": "cx",
+      "before": 6020,
+      "after": 5860
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-11",
+      "room": "BR-02",
+      "field": "cy",
+      "before": 1920,
+      "after": 2160
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-11",
+      "room": "BR-02",
+      "field": "w",
+      "before": 900,
+      "after": 1100
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-11",
+      "room": "BR-02",
+      "field": "d",
+      "before": 500,
+      "after": 580
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-11",
+      "room": "BR-02",
+      "field": "rot",
+      "before": 0,
+      "after": 270
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-11",
+      "room": "BR-02",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-12",
+      "room": "BR-02",
+      "field": "cx",
+      "before": 6020,
+      "after": 6490
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-12",
+      "room": "BR-02",
+      "field": "cy",
+      "before": 2450,
+      "after": 2020
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-12",
+      "room": "BR-02",
+      "field": "w",
+      "before": 480,
+      "after": 580
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-12",
+      "room": "BR-02",
+      "field": "d",
+      "before": 480,
+      "after": 580
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-12",
+      "room": "BR-02",
+      "field": "rot",
+      "before": 0,
+      "after": 90
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-12",
+      "room": "BR-02",
+      "field": "color",
+      "before": "#8A8F82",
+      "after": "#64715A"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-13",
+      "room": "BR-02",
+      "field": "cx",
+      "before": 7990,
+      "after": 8545
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-13",
+      "room": "BR-02",
+      "field": "cy",
+      "before": 4589,
+      "after": 4275
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-13",
+      "room": "BR-02",
+      "field": "w",
+      "before": 1600,
+      "after": 1200
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-13",
+      "room": "BR-02",
+      "field": "d",
+      "before": 600,
+      "after": 650
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-13",
+      "room": "BR-02",
+      "field": "rot",
+      "before": 180,
+      "after": 90
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "starter-13",
+      "room": "BR-02",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "M3G2-BR01-nightstand",
+      "room": "BR-01",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-BR01-nightstand",
+        "type": "nightstand",
+        "name": "Open bedside shelf350 / no blind drawer promise",
+        "room_id": "BR-01",
+        "cx": 3865,
+        "cy": 1935,
+        "w": 300,
+        "d": 320,
+        "rot": 270,
+        "color": "#A18C70",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "M3G2-BR02-nightstand",
+      "room": "BR-02",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-BR02-nightstand",
+        "type": "nightstand",
+        "name": "Open bedside shelf300 / single guest bed",
+        "room_id": "BR-02",
+        "cx": 8640,
+        "cy": 2170,
+        "w": 300,
+        "d": 300,
+        "rot": 90,
+        "color": "#A18C70",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "M3G2-BR01-rug",
+      "room": "BR-01",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-BR01-rug",
+        "type": "rug",
+        "name": "Low-pile bedside rug / grip and edges HOLD",
+        "room_id": "BR-01",
+        "cx": 3120,
+        "cy": 2700,
+        "w": 1800,
+        "d": 2200,
+        "rot": 0,
+        "color": "#C5BCAA",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "furniture",
+      "id": "M3G2-BR02-rug",
+      "room": "BR-02",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-BR02-rug",
+        "type": "rug",
+        "name": "Low-pile guest bed rug / chair rolling clear",
+        "room_id": "BR-02",
+        "cx": 7860,
+        "cy": 2720,
+        "w": 1800,
+        "d": 2000,
+        "rot": 90,
+        "color": "#C5BCAA",
+        "status": "EXPLORATORY",
+        "variant": "style"
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "V7-bedroom1-drawers",
+      "room": "BR-01",
+      "field": "cx",
+      "before": 2675,
+      "after": 4150
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "V7-bedroom1-drawers",
+      "room": "BR-01",
+      "field": "cy",
+      "before": 4720,
+      "after": 4710
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "V7-bedroom1-drawers",
+      "room": "BR-01",
+      "field": "width_mm",
+      "before": 1000,
+      "after": 600
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "V7-bedroom1-drawers",
+      "room": "BR-01",
+      "field": "colour",
+      "before": "#BCA98F",
+      "after": "#A18C70"
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "BR1-A1-art",
+      "room": "BR-01",
+      "field": "placement",
+      "before": {
+        "mode": "wall",
+        "host_wall_id": "WALL-BR-01-04",
+        "offset_mm": -311.6,
+        "elevation_mm": 1100,
+        "inset_mm": 10
+      },
+      "after": {
+        "mode": "wall",
+        "host_wall_id": "WALL-BR-01-03",
+        "offset_mm": 94.6,
+        "elevation_mm": 1400,
+        "inset_mm": 10
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "M3G2-WIC-mirror",
+      "room": "WIC-01",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-WIC-mirror",
+        "type": "mirror",
+        "variant": "rectangle",
+        "room_id": "WIC-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-WIC-01-01",
+          "offset_mm": 369.1,
+          "inset_mm": 5,
+          "elevation_mm": 400
+        },
+        "rotation": 0,
+        "width_mm": 350,
+        "depth_mm": 25,
+        "height_mm": 1500,
+        "material_references": {
+          "frame": "generic-brass"
+        },
+        "colour": "#655744",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Dressing mirror on dry return; neutral non-reflective render proxy / site humidity and anchorage HOLD"
+        }
+      }
+    },
+    {
+      "input": "group2/B",
+      "collection": "interior.objects",
+      "id": "M3G2-BR01-personal-art",
+      "room": "BR-01",
+      "kind": "ADD",
+      "value": {
+        "id": "M3G2-BR01-personal-art",
+        "type": "artwork",
+        "variant": "framed",
+        "room_id": "BR-01",
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-BR-01-02",
+          "offset_mm": 129.7,
+          "elevation_mm": 1400,
+          "inset_mm": 10
+        },
+        "rotation": 0,
+        "width_mm": 700,
+        "depth_mm": 30,
+        "height_mm": 350,
+        "material_references": {
+          "art": "art-master-warm-earth",
+          "frame": "generic-walnut"
+        },
+        "colour": "#CDB9A1",
+        "status": "EXPLORATORY",
+        "metadata": {
+          "role": "Original artwork concept; anchorage and owner personal selection HOLD"
+        }
+      }
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-16",
+      "room": "BATH-C01",
+      "field": "variant",
+      "before": "style",
+      "after": "frameless-low-profile"
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-18",
+      "room": "BATH-C01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#95795B"
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-18",
+      "room": "BATH-C01",
+      "field": "product_reference_id",
+      "before": "r1-dneo-basin-custom-vanity",
+      "after": null
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-26",
+      "room": "WC-01",
+      "field": "w",
+      "before": 350,
+      "after": 450
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-26",
+      "room": "WC-01",
+      "field": "d",
+      "before": 180,
+      "after": 250
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-26",
+      "room": "WC-01",
+      "field": "color",
+      "before": "#60432E",
+      "after": "#95795B"
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "starter-26",
+      "room": "WC-01",
+      "field": "variant",
+      "before": "style",
+      "after": "floating-compact"
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "R1-ensuite-vanity",
+      "room": "BATH-M01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#95795B"
+    },
+    {
+      "input": "group3/B",
+      "collection": "furniture",
+      "id": "R1-ensuite-vanity",
+      "room": "BATH-M01",
+      "field": "product_reference_id",
+      "before": "r1-dneo-basin-custom-vanity",
+      "after": null
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "WC-A1-mirror",
+      "room": "WC-01",
+      "field": "variant",
+      "before": "rectangle",
+      "after": "task-lit"
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "WC-A1-mirror",
+      "room": "WC-01",
+      "field": "material_references",
+      "before": {
+        "frame": "generic-brass"
+      },
+      "after": {
+        "frame": "bath-brushed-nickel"
+      }
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-A1-mirror",
+      "room": "BATH-M01",
+      "field": "variant",
+      "before": "rectangle",
+      "after": "task-lit"
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-A1-mirror",
+      "room": "BATH-M01",
+      "field": "depth_mm",
+      "before": 35,
+      "after": 100
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHC-A1-mirror",
+      "room": "BATH-C01",
+      "field": "variant",
+      "before": "rectangle",
+      "after": "task-lit"
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHC-A1-mirror",
+      "room": "BATH-C01",
+      "field": "depth_mm",
+      "before": 35,
+      "after": 100
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-glass-600-A1",
+      "room": "BATH-M01",
+      "field": "variant",
+      "before": "solid-panel",
+      "after": "fixed-clear-glass"
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-shampoo-shelf-A1",
+      "room": "BATH-M01",
+      "field": "variant",
+      "before": "floating",
+      "after": "wet-tray"
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-shampoo-shelf-A1",
+      "room": "BATH-M01",
+      "field": "placement",
+      "before": {
+        "mode": "wall",
+        "host_wall_id": "WALL-BATH-M01-05",
+        "offset_mm": -760,
+        "elevation_mm": 1230,
+        "inset_mm": 0
+      },
+      "after": {
+        "mode": "wall",
+        "host_wall_id": "WALL-BATH-M01-02",
+        "offset_mm": -53.08,
+        "elevation_mm": 1230,
+        "inset_mm": 0
+      }
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-shampoo-shelf-A2",
+      "room": "BATH-M01",
+      "field": "variant",
+      "before": "floating",
+      "after": "wet-tray"
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHM-shampoo-shelf-A2",
+      "room": "BATH-M01",
+      "field": "placement",
+      "before": {
+        "mode": "wall",
+        "host_wall_id": "WALL-BATH-M01-05",
+        "offset_mm": -760,
+        "elevation_mm": 1540,
+        "inset_mm": 0
+      },
+      "after": {
+        "mode": "wall",
+        "host_wall_id": "WALL-BATH-M01-02",
+        "offset_mm": -53.08,
+        "elevation_mm": 1540,
+        "inset_mm": 0
+      }
+    },
+    {
+      "input": "group3/B",
+      "collection": "interior.objects",
+      "id": "BATHC-shampoo-shelf-A1",
+      "room": "BATH-C01",
+      "field": "variant",
+      "before": "floating",
+      "after": "wet-tray"
+    },
+    {
+      "input": "group4/RECOMMENDED",
+      "collection": "furniture",
+      "id": "starter-20",
+      "room": "KIT-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "input": "group4/RECOMMENDED",
+      "collection": "furniture",
+      "id": "K3-corner",
+      "room": "KIT-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "input": "group4/RECOMMENDED",
+      "collection": "furniture",
+      "id": "K3-dishwasher",
+      "room": "KIT-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "input": "group4/RECOMMENDED",
+      "collection": "furniture",
+      "id": "K3-dishwasher",
+      "room": "KIT-01",
+      "field": "material_id",
+      "before": "kitchen-muted-light-oak",
+      "after": "kitchen-soft-ivory"
+    },
+    {
+      "input": "group4/RECOMMENDED",
+      "collection": "furniture",
+      "id": "K3-sink-base",
+      "room": "KIT-01",
+      "field": "color",
+      "before": "#BCA98F",
+      "after": "#E8E2D7"
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-41",
+      "room": "TER-MAIN",
+      "field": "cx",
+      "before": 14256.058,
+      "after": 14200
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-41",
+      "room": "TER-MAIN",
+      "field": "cy",
+      "before": 1292.154,
+      "after": 1230
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-41",
+      "room": "TER-MAIN",
+      "field": "color",
+      "before": "#a5825c",
+      "after": "#D3CABB"
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-42",
+      "room": "TER-MAIN",
+      "field": "cx",
+      "before": 13366.379,
+      "after": 13285
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-42",
+      "room": "TER-MAIN",
+      "field": "cy",
+      "before": 1292.154,
+      "after": 1230
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-42",
+      "room": "TER-MAIN",
+      "field": "d",
+      "before": 650,
+      "after": 700
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-42",
+      "room": "TER-MAIN",
+      "field": "color",
+      "before": "#69755c",
+      "after": "#DBD9CA"
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-43",
+      "room": "TER-MAIN",
+      "field": "cx",
+      "before": 15145.738,
+      "after": 15115
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-43",
+      "room": "TER-MAIN",
+      "field": "cy",
+      "before": 1292.154,
+      "after": 1230
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-43",
+      "room": "TER-MAIN",
+      "field": "d",
+      "before": 650,
+      "after": 700
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-43",
+      "room": "TER-MAIN",
+      "field": "color",
+      "before": "#69755c",
+      "after": "#DBD9CA"
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-44",
+      "room": "TER-MBR",
+      "field": "cx",
+      "before": 381.291,
+      "after": 385
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-44",
+      "room": "TER-MBR",
+      "field": "cy",
+      "before": 3834.096,
+      "after": 3820
+    },
+    {
+      "input": "group5/A",
+      "collection": "furniture",
+      "id": "starter-44",
+      "room": "TER-MBR",
+      "field": "color",
+      "before": "#799378",
+      "after": "#7F8C70"
+    }
+  ],
+  "conflicting_deltas": [
+    {
+      "slot": "material/m3g2-wood",
+      "input": "group2/B",
+      "resolution": "NAMESPACE_PROPOSED_RECORD; no shared-source material recolour",
+      "replacement": "jury-group2-B-m3g2-wood"
+    }
+  ],
+  "excluded_global_deltas": [
+    {
+      "input": "group1b/B2",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "RECP-01",
+        "HALL-01"
+      ]
+    },
+    {
+      "input": "group2/A",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "MBR-01"
+      ]
+    },
+    {
+      "input": "group2/B",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "BR-01",
+        "BR-02",
+        "WIC-01"
+      ]
+    },
+    {
+      "input": "group3/B",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "BATH-M01",
+        "BATH-C01",
+        "WC-01"
+      ]
+    },
+    {
+      "input": "group4/RECOMMENDED",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "KIT-01"
+      ]
+    },
+    {
+      "input": "group5/A",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "TER-MAIN",
+        "TER-MBR"
+      ]
+    },
+    {
+      "input": "group5/B",
+      "ignored_global": [
+        "decor themes and saved colours",
+        "demolition",
+        "views/door states",
+        "source scene identity"
+      ],
+      "scope": [
+        "TER-SVC"
+      ]
+    }
+  ],
+  "shared_choices": {
+    "schema": "WholeHomeJuryScenario/1",
+    "checkpoint": "6fa75864b21e25f2a157c04122df34b1a59cd784",
+    "issue": 72,
+    "roadmap": 41,
+    "construction": 19,
+    "status": "PROVISIONAL_STUDY",
+    "selection": [
+      {
+        "input": "group1b/B2",
+        "rooms": [
+          "RECP-01",
+          "HALL-01"
+        ]
+      },
+      {
+        "input": "group2/A",
+        "rooms": [
+          "MBR-01"
+        ]
+      },
+      {
+        "input": "group2/B",
+        "rooms": [
+          "BR-01",
+          "BR-02",
+          "WIC-01"
+        ]
+      },
+      {
+        "input": "group3/B",
+        "rooms": [
+          "BATH-M01",
+          "BATH-C01",
+          "WC-01"
+        ]
+      },
+      {
+        "input": "group4/RECOMMENDED",
+        "rooms": [
+          "KIT-01"
+        ]
+      },
+      {
+        "input": "group5/A",
+        "rooms": [
+          "TER-MAIN",
+          "TER-MBR"
+        ]
+      },
+      {
+        "input": "group5/B",
+        "rooms": [
+          "TER-SVC"
+        ]
+      }
+    ],
+    "door_finish": "R5 D1 only on two kitchen leaves; all other source door finishes retained and visibly critiqued",
+    "floor": "One source-sized oak visual family in dry rooms; deliberate stone wet/kitchen and exterior thresholds, assembly/levels UNKNOWN",
+    "services": "All original wet centres, walls, openings, ceiling and source scenes immutable",
+    "approvals": {
+      "owner": false,
+      "construction": false,
+      "procurement": false,
+      "cloud": false
+    }
+  },
+  "domain_validation": {
+    "pass": 193,
+    "warning": 76,
+    "fail": 0
+  },
+  "failures": []
+}

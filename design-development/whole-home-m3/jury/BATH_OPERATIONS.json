@@ -1,0 +1,6959 @@
+{
+  "schema": "M3Group3Operations/1",
+  "option": "B",
+  "records": [
+    {
+      "room": "BATH-M01",
+      "solids": [
+        {
+          "id": "starter-15",
+          "polygon": [
+            [
+              6914.964,
+              8870
+            ],
+            [
+              6514.964,
+              8870
+            ],
+            [
+              6514.964,
+              8170
+            ],
+            [
+              6914.964,
+              8170
+            ]
+          ]
+        },
+        {
+          "id": "R1-ensuite-vanity",
+          "polygon": [
+            [
+              6280,
+              8850
+            ],
+            [
+              5680,
+              8850
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              6280,
+              8390
+            ]
+          ]
+        }
+      ],
+      "glass": [
+        {
+          "id": "BATHM-glass-600-A1",
+          "polygon": [
+            [
+              6430,
+              7162
+            ],
+            [
+              7030,
+              7162
+            ],
+            [
+              7030,
+              7180
+            ],
+            [
+              6430,
+              7180
+            ]
+          ]
+        }
+      ],
+      "users": [
+        {
+          "id": "shower600",
+          "polygon": [
+            [
+              5880,
+              6450
+            ],
+            [
+              6480,
+              6450
+            ],
+            [
+              6480,
+              7050
+            ],
+            [
+              5880,
+              7050
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "vanity500",
+          "polygon": [
+            [
+              5730,
+              7890
+            ],
+            [
+              6230,
+              7890
+            ],
+            [
+              6230,
+              8390
+            ],
+            [
+              5730,
+              8390
+            ]
+          ],
+          "body_proxy_mm": [
+            500,
+            500
+          ]
+        },
+        {
+          "id": "vanity600",
+          "polygon": [
+            [
+              5680,
+              7790
+            ],
+            [
+              6280,
+              7790
+            ],
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "WC600",
+          "polygon": [
+            [
+              6415,
+              7570
+            ],
+            [
+              7015,
+              7570
+            ],
+            [
+              7015,
+              8170
+            ],
+            [
+              6415,
+              8170
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "entry-wait600",
+          "polygon": [
+            [
+              5630,
+              7290
+            ],
+            [
+              6230,
+              7290
+            ],
+            [
+              6230,
+              7890
+            ],
+            [
+              5630,
+              7890
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        }
+      ],
+      "accessories": [
+        {
+          "id": "master-towel",
+          "room": "BATH-M01",
+          "kind": "bar",
+          "cx": 7060,
+          "cy": 7540,
+          "rot": 90,
+          "w": 360,
+          "d": 60,
+          "bottom": 1000,
+          "h": 500,
+          "polygon": [
+            [
+              7090,
+              7360
+            ],
+            [
+              7090,
+              7720
+            ],
+            [
+              7030,
+              7720
+            ],
+            [
+              7030,
+              7360
+            ]
+          ]
+        },
+        {
+          "id": "master-roll",
+          "room": "BATH-M01",
+          "kind": "roll",
+          "cx": 7050,
+          "cy": 8380,
+          "rot": 90,
+          "w": 180,
+          "d": 70,
+          "bottom": 650,
+          "h": 150,
+          "polygon": [
+            [
+              7085,
+              8290
+            ],
+            [
+              7085,
+              8470
+            ],
+            [
+              7015,
+              8470
+            ],
+            [
+              7015,
+              8290
+            ]
+          ]
+        },
+        {
+          "id": "master-bin",
+          "room": "BATH-M01",
+          "kind": "bin",
+          "cx": 6350,
+          "cy": 8730,
+          "rot": 0,
+          "w": 130,
+          "d": 170,
+          "bottom": 0,
+          "h": 280,
+          "polygon": [
+            [
+              6285,
+              8645
+            ],
+            [
+              6415,
+              8645
+            ],
+            [
+              6415,
+              8815
+            ],
+            [
+              6285,
+              8815
+            ]
+          ]
+        }
+      ],
+      "door": {
+        "id": "OP-WIC-BATHM",
+        "samples": 91,
+        "fixture": [
+          {
+            "id": "starter-15",
+            "min_gap_mm": 707.417,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "R1-ensuite-vanity",
+            "min_gap_mm": 466.48,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "BATHM-glass-600-A1",
+            "min_gap_mm": 294.403,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ],
+        "occupied": [
+          {
+            "id": "shower600",
+            "min_gap_mm": 195.718,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "vanity500",
+            "min_gap_mm": 0.173,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "vanity600",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 25,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "WC600",
+            "min_gap_mm": 319.23,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "entry-wait600",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 76,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ],
+        "accessories": [
+          {
+            "id": "master-towel",
+            "min_gap_mm": 889.52,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "master-roll",
+            "min_gap_mm": 1179.574,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "master-bin",
+            "min_gap_mm": 926.389,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ]
+      },
+      "user_obstacles": [
+        {
+          "id": "shower600",
+          "collisions": []
+        },
+        {
+          "id": "vanity500",
+          "collisions": []
+        },
+        {
+          "id": "vanity600",
+          "collisions": []
+        },
+        {
+          "id": "WC600",
+          "collisions": []
+        },
+        {
+          "id": "entry-wait600",
+          "collisions": []
+        }
+      ],
+      "floor_accessory_conflicts": [
+        {
+          "id": "master-bin",
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "room": "BATH-C01",
+      "solids": [
+        {
+          "id": "starter-17",
+          "polygon": [
+            [
+              8891,
+              7240
+            ],
+            [
+              8891,
+              7640
+            ],
+            [
+              8191,
+              7640
+            ],
+            [
+              8191,
+              7240
+            ]
+          ]
+        },
+        {
+          "id": "starter-18",
+          "polygon": [
+            [
+              8200,
+              6296
+            ],
+            [
+              8800,
+              6296
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8200,
+              6756
+            ]
+          ]
+        }
+      ],
+      "glass": [],
+      "users": [
+        {
+          "id": "shower-retreat500",
+          "polygon": [
+            [
+              8260,
+              7980
+            ],
+            [
+              8760,
+              7980
+            ],
+            [
+              8760,
+              8480
+            ],
+            [
+              8260,
+              8480
+            ]
+          ],
+          "body_proxy_mm": [
+            500,
+            500
+          ]
+        },
+        {
+          "id": "shower-retreat600",
+          "polygon": [
+            [
+              8210,
+              7930
+            ],
+            [
+              8810,
+              7930
+            ],
+            [
+              8810,
+              8530
+            ],
+            [
+              8210,
+              8530
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "vanity600",
+          "polygon": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7356
+            ],
+            [
+              8200,
+              7356
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "vanity600x400",
+          "polygon": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7156
+            ],
+            [
+              8200,
+              7156
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            400
+          ]
+        },
+        {
+          "id": "vanity500",
+          "polygon": [
+            [
+              8250,
+              6756
+            ],
+            [
+              8750,
+              6756
+            ],
+            [
+              8750,
+              7256
+            ],
+            [
+              8250,
+              7256
+            ]
+          ],
+          "body_proxy_mm": [
+            500,
+            500
+          ]
+        },
+        {
+          "id": "WC600",
+          "polygon": [
+            [
+              7591,
+              7140
+            ],
+            [
+              8191,
+              7140
+            ],
+            [
+              8191,
+              7740
+            ],
+            [
+              7591,
+              7740
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "entry-wait600",
+          "polygon": [
+            [
+              7450,
+              6350
+            ],
+            [
+              8050,
+              6350
+            ],
+            [
+              8050,
+              6950
+            ],
+            [
+              7450,
+              6950
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        }
+      ],
+      "accessories": [
+        {
+          "id": "family-towel",
+          "room": "BATH-C01",
+          "kind": "hooks",
+          "cx": 7300,
+          "cy": 8150,
+          "rot": 270,
+          "w": 220,
+          "d": 60,
+          "bottom": 1180,
+          "h": 450,
+          "polygon": [
+            [
+              7270,
+              8260
+            ],
+            [
+              7270,
+              8040
+            ],
+            [
+              7330,
+              8040
+            ],
+            [
+              7330,
+              8260
+            ]
+          ]
+        },
+        {
+          "id": "family-handtowel",
+          "room": "BATH-C01",
+          "kind": "bar",
+          "cx": 8790,
+          "cy": 6850,
+          "rot": 90,
+          "w": 220,
+          "d": 50,
+          "bottom": 1150,
+          "h": 300,
+          "polygon": [
+            [
+              8815,
+              6740
+            ],
+            [
+              8815,
+              6960
+            ],
+            [
+              8765,
+              6960
+            ],
+            [
+              8765,
+              6740
+            ]
+          ]
+        },
+        {
+          "id": "family-roll",
+          "room": "BATH-C01",
+          "kind": "roll",
+          "cx": 8720,
+          "cy": 7750,
+          "rot": 90,
+          "w": 160,
+          "d": 70,
+          "bottom": 650,
+          "h": 150,
+          "polygon": [
+            [
+              8755,
+              7670
+            ],
+            [
+              8755,
+              7830
+            ],
+            [
+              8685,
+              7830
+            ],
+            [
+              8685,
+              7670
+            ]
+          ]
+        },
+        {
+          "id": "family-bin",
+          "room": "BATH-C01",
+          "kind": "bin",
+          "cx": 8810,
+          "cy": 7800,
+          "rot": 0,
+          "w": 130,
+          "d": 150,
+          "bottom": 0,
+          "h": 280,
+          "polygon": [
+            [
+              8745,
+              7725
+            ],
+            [
+              8875,
+              7725
+            ],
+            [
+              8875,
+              7875
+            ],
+            [
+              8745,
+              7875
+            ]
+          ]
+        }
+      ],
+      "door": {
+        "id": "OP-HALL-BATHC",
+        "samples": 91,
+        "fixture": [
+          {
+            "id": "starter-17",
+            "min_gap_mm": 635.977,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "starter-18",
+            "min_gap_mm": 134.133,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ],
+        "occupied": [
+          {
+            "id": "shower-retreat500",
+            "min_gap_mm": 1307.917,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "shower-retreat600",
+            "min_gap_mm": 1241.399,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "vanity600",
+            "min_gap_mm": 302.034,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "vanity600x400",
+            "min_gap_mm": 302.034,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "vanity500",
+            "min_gap_mm": 343.412,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "WC600",
+            "min_gap_mm": 293.086,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "entry-wait600",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 78,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ],
+        "accessories": [
+          {
+            "id": "family-towel",
+            "min_gap_mm": 1178.496,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "family-handtowel",
+            "min_gap_mm": 795.532,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "family-roll",
+            "min_gap_mm": 1281.349,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "family-bin",
+            "min_gap_mm": 1362.231,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ]
+      },
+      "user_obstacles": [
+        {
+          "id": "shower-retreat500",
+          "collisions": []
+        },
+        {
+          "id": "shower-retreat600",
+          "collisions": []
+        },
+        {
+          "id": "vanity600",
+          "collisions": [
+            "starter-17"
+          ]
+        },
+        {
+          "id": "vanity600x400",
+          "collisions": []
+        },
+        {
+          "id": "vanity500",
+          "collisions": [
+            "starter-17"
+          ]
+        },
+        {
+          "id": "WC600",
+          "collisions": []
+        },
+        {
+          "id": "entry-wait600",
+          "collisions": []
+        }
+      ],
+      "floor_accessory_conflicts": [
+        {
+          "id": "family-bin",
+          "collisions": []
+        }
+      ]
+    },
+    {
+      "room": "WC-01",
+      "solids": [
+        {
+          "id": "starter-25",
+          "polygon": [
+            [
+              10944.276,
+              9901.745
+            ],
+            [
+              10944.276,
+              9501.745
+            ],
+            [
+              11594.276,
+              9501.745
+            ],
+            [
+              11594.276,
+              9901.745
+            ]
+          ]
+        },
+        {
+          "id": "starter-26",
+          "polygon": [
+            [
+              11743.31,
+              9049.54
+            ],
+            [
+              12193.31,
+              9049.54
+            ],
+            [
+              12193.31,
+              9299.54
+            ],
+            [
+              11743.31,
+              9299.54
+            ]
+          ]
+        }
+      ],
+      "glass": [],
+      "users": [
+        {
+          "id": "handwash500",
+          "polygon": [
+            [
+              11718,
+              9299.54
+            ],
+            [
+              12218,
+              9299.54
+            ],
+            [
+              12218,
+              9799.54
+            ],
+            [
+              11718,
+              9799.54
+            ]
+          ],
+          "body_proxy_mm": [
+            500,
+            500
+          ]
+        },
+        {
+          "id": "handwash600",
+          "polygon": [
+            [
+              11668,
+              9299.54
+            ],
+            [
+              12268,
+              9299.54
+            ],
+            [
+              12268,
+              9899.54
+            ],
+            [
+              11668,
+              9899.54
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "WC600",
+          "polygon": [
+            [
+              11594.276,
+              9401.745
+            ],
+            [
+              12194.276,
+              9401.745
+            ],
+            [
+              12194.276,
+              10001.745
+            ],
+            [
+              11594.276,
+              10001.745
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        },
+        {
+          "id": "entry-wait600",
+          "polygon": [
+            [
+              11820,
+              9360
+            ],
+            [
+              12420,
+              9360
+            ],
+            [
+              12420,
+              9960
+            ],
+            [
+              11820,
+              9960
+            ]
+          ],
+          "body_proxy_mm": [
+            600,
+            600
+          ]
+        }
+      ],
+      "accessories": [
+        {
+          "id": "guest-handtowel",
+          "room": "WC-01",
+          "kind": "bar",
+          "cx": 11570,
+          "cy": 9080,
+          "rot": 0,
+          "w": 220,
+          "d": 50,
+          "bottom": 1130,
+          "h": 300,
+          "polygon": [
+            [
+              11460,
+              9055
+            ],
+            [
+              11680,
+              9055
+            ],
+            [
+              11680,
+              9105
+            ],
+            [
+              11460,
+              9105
+            ]
+          ]
+        },
+        {
+          "id": "guest-roll",
+          "room": "WC-01",
+          "kind": "roll",
+          "cx": 10900,
+          "cy": 9350,
+          "rot": 270,
+          "w": 160,
+          "d": 70,
+          "bottom": 650,
+          "h": 150,
+          "polygon": [
+            [
+              10865,
+              9430
+            ],
+            [
+              10865,
+              9270
+            ],
+            [
+              10935,
+              9270
+            ],
+            [
+              10935,
+              9430
+            ]
+          ]
+        },
+        {
+          "id": "guest-bin",
+          "room": "WC-01",
+          "kind": "bin",
+          "cx": 10950,
+          "cy": 10040,
+          "rot": 0,
+          "w": 130,
+          "d": 170,
+          "bottom": 0,
+          "h": 280,
+          "polygon": [
+            [
+              10885,
+              9955
+            ],
+            [
+              11015,
+              9955
+            ],
+            [
+              11015,
+              10125
+            ],
+            [
+              10885,
+              10125
+            ]
+          ]
+        }
+      ],
+      "door": {
+        "id": "OP-RECP-WC",
+        "samples": 91,
+        "fixture": [
+          {
+            "id": "starter-25",
+            "min_gap_mm": 365.182,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "starter-26",
+            "min_gap_mm": 22.097,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ],
+        "occupied": [
+          {
+            "id": "handwash500",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 52,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "handwash600",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 61,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "WC600",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 50,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "entry-wait600",
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 76,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ],
+        "accessories": [
+          {
+            "id": "guest-handtowel",
+            "min_gap_mm": 343.932,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "guest-roll",
+            "min_gap_mm": 1011.83,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          },
+          {
+            "id": "guest-bin",
+            "min_gap_mm": 1046.113,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        ]
+      },
+      "user_obstacles": [
+        {
+          "id": "handwash500",
+          "collisions": []
+        },
+        {
+          "id": "handwash600",
+          "collisions": []
+        },
+        {
+          "id": "WC600",
+          "collisions": []
+        },
+        {
+          "id": "entry-wait600",
+          "collisions": []
+        }
+      ],
+      "floor_accessory_conflicts": [
+        {
+          "id": "guest-bin",
+          "collisions": []
+        }
+      ]
+    }
+  ],
+  "family": {
+    "hinge": [
+      7959.592,
+      8539.592
+    ],
+    "aperture_band_mm": 580,
+    "thickness_proxy_mm": 8,
+    "states": [
+      {
+        "angle": 0,
+        "bifold": [
+          [
+            [
+              7955.592,
+              8539.592
+            ],
+            [
+              7955.592,
+              8249.592
+            ],
+            [
+              7963.592,
+              8249.592
+            ],
+            [
+              7963.592,
+              8539.592
+            ]
+          ],
+          [
+            [
+              7955.592,
+              8249.592
+            ],
+            [
+              7955.592,
+              7959.592000000001
+            ],
+            [
+              7963.592,
+              7959.592000000001
+            ],
+            [
+              7963.592,
+              8249.592
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.592,
+              8539.592
+            ],
+            [
+              7955.592,
+              7959.592000000001
+            ],
+            [
+              7963.592,
+              7959.592000000001
+            ],
+            [
+              7963.592,
+              8539.592
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 1,
+        "bifold": [
+          [
+            [
+              7955.592609219374,
+              8539.522190374251
+            ],
+            [
+              7960.653807086186,
+              8249.566358778899
+            ],
+            [
+              7968.652588647437,
+              8249.705978030397
+            ],
+            [
+              7963.591390780625,
+              8539.66180962575
+            ]
+          ],
+          [
+            [
+              7960.653807086186,
+              8249.705978030397
+            ],
+            [
+              7955.592609219374,
+              7959.7501464350435
+            ],
+            [
+              7963.591390780625,
+              7959.610527183545
+            ],
+            [
+              7968.652588647437,
+              8249.566358778899
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.592609219374,
+              8539.522190374251
+            ],
+            [
+              7965.715004952998,
+              7959.610527183544
+            ],
+            [
+              7973.7137865142495,
+              7959.750146435043
+            ],
+            [
+              7963.591390780625,
+              8539.66180962575
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 2,
+        "bifold": [
+          [
+            [
+              7955.594436691923,
+              8539.45240201319
+            ],
+            [
+              7965.7152907356485,
+              8249.629062177653
+            ],
+            [
+              7973.710417351802,
+              8249.908258151274
+            ],
+            [
+              7963.589563308076,
+              8539.73159798681
+            ]
+          ],
+          [
+            [
+              7965.7152907356485,
+              8249.908258151274
+            ],
+            [
+              7955.594436691923,
+              7960.084918315736
+            ],
+            [
+              7963.589563308076,
+              7959.805722342116
+            ],
+            [
+              7973.710417351802,
+              8249.629062177653
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.594436691923,
+              8539.45240201319
+            ],
+            [
+              7975.836144779373,
+              7959.805722342115
+            ],
+            [
+              7983.8312713955265,
+              7960.084918315735
+            ],
+            [
+              7963.589563308076,
+              8539.73159798681
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 3,
+        "bifold": [
+          [
+            [
+              7955.597481860981,
+              8539.382656175028
+            ],
+            [
+              7970.774909171435,
+              8249.780091096201
+            ],
+            [
+              7978.763945449472,
+              8250.198778746146
+            ],
+            [
+              7963.586518139018,
+              8539.801343824973
+            ]
+          ],
+          [
+            [
+              7970.774909171435,
+              8250.198778746146
+            ],
+            [
+              7955.597481860981,
+              7960.59621366732
+            ],
+            [
+              7963.586518139018,
+              7960.177526017375
+            ],
+            [
+              7978.763945449472,
+              8249.780091096201
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.597481860981,
+              8539.382656175028
+            ],
+            [
+              7985.952336481889,
+              7960.177526017375
+            ],
+            [
+              7993.941372759926,
+              7960.59621366732
+            ],
+            [
+              7963.586518139018,
+              8539.801343824973
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 4,
+        "bifold": [
+          [
+            [
+              7955.60174379896,
+              8539.312974105023
+            ],
+            [
+              7975.831121184757,
+              8250.019399529674
+            ],
+            [
+              7983.811633586835,
+              8250.577451319628
+            ],
+            [
+              7963.582256201039,
+              8539.871025894978
+            ]
+          ],
+          [
+            [
+              7975.831121184757,
+              8250.577451319628
+            ],
+            [
+              7955.60174379896,
+              7961.283876744278
+            ],
+            [
+              7963.582256201039,
+              7960.725824954326
+            ],
+            [
+              7983.811633586835,
+              8250.019399529674
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.60174379896,
+              8539.312974105023
+            ],
+            [
+              7996.060498570553,
+              7960.7258249543265
+            ],
+            [
+              8004.041010972632,
+              7961.283876744279
+            ],
+            [
+              7963.582256201039,
+              8539.871025894978
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 5,
+        "bifold": [
+          [
+            [
+              7955.607221207632,
+              8539.24337702901
+            ],
+            [
+              7980.882386604453,
+              8250.346914582404
+            ],
+            [
+              7988.851944189188,
+              8251.044160524385
+            ],
+            [
+              7963.576778792367,
+              8539.940622970991
+            ]
+          ],
+          [
+            [
+              7980.882386604453,
+              8251.044160524385
+            ],
+            [
+              7955.607221207632,
+              7962.147698077779
+            ],
+            [
+              7963.576778792367,
+              7961.450452135798
+            ],
+            [
+              7988.851944189188,
+              8250.346914582404
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.607221207632,
+              8539.24337702901
+            ],
+            [
+              8006.157552001274,
+              7961.450452135798
+            ],
+            [
+              8014.127109586008,
+              7962.147698077779
+            ],
+            [
+              7963.576778792367,
+              8539.940622970991
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 6,
+        "bifold": [
+          [
+            [
+              7955.6139124185265,
+              8539.17388614693
+            ],
+            [
+              7985.927166766146,
+              8250.76253649013
+            ],
+            [
+              7993.883341929092,
+              8251.598764196273
+            ],
+            [
+              7963.570087581473,
+              8540.010113853072
+            ]
+          ],
+          [
+            [
+              7985.927166766146,
+              8251.598764196273
+            ],
+            [
+              7955.6139124185265,
+              7963.187414539473
+            ],
+            [
+              7963.570087581473,
+              7962.351186833333
+            ],
+            [
+              7993.883341929092,
+              8250.76253649013
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.6139124185265,
+              8539.17388614693
+            ],
+            [
+              8016.2404211137655,
+              7962.351186833332
+            ],
+            [
+              8024.196596276712,
+              7963.187414539472
+            ],
+            [
+              7963.570087581473,
+              8540.010113853072
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 7,
+        "bifold": [
+          [
+            [
+              7955.621815393434,
+              8539.10452262638
+            ],
+            [
+              7990.963924980927,
+              8251.266138650397
+            ],
+            [
+              7998.904294194058,
+              8252.241093397639
+            ],
+            [
+              7963.562184606565,
+              8540.079477373622
+            ]
+          ],
+          [
+            [
+              7990.963924980927,
+              8252.241093397639
+            ],
+            [
+              7955.621815393434,
+              7964.402709421655
+            ],
+            [
+              7963.562184606565,
+              7963.427754674413
+            ],
+            [
+              7998.904294194058,
+              8251.266138650397
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.621815393434,
+              8539.10452262638
+            ],
+            [
+              8026.30603456842,
+              7963.427754674412
+            ],
+            [
+              8034.246403781551,
+              7964.402709421654
+            ],
+            [
+              7963.562184606565,
+              8540.079477373622
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 8,
+        "bifold": [
+          [
+            [
+              7955.630927725033,
+              8539.035307596161
+            ],
+            [
+              7995.991127003452,
+              8251.857567661105
+            ],
+            [
+              8003.913271553385,
+              8252.970952468784
+            ],
+            [
+              7963.553072274966,
+              8540.14869240384
+            ]
+          ],
+          [
+            [
+              7995.991127003452,
+              8252.970952468784
+            ],
+            [
+              7955.630927725033,
+              7965.793212533729
+            ],
+            [
+              7963.553072274966,
+              7964.679827726049
+            ],
+            [
+              8003.913271553385,
+              8251.857567661105
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.630927725033,
+              8539.035307596161
+            ],
+            [
+              8036.3513262818715,
+              7964.67982772605
+            ],
+            [
+              8044.273470831805,
+              7965.79321253373
+            ],
+            [
+              7963.553072274966,
+              8540.14869240384
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 9,
+        "bifold": [
+          [
+            [
+              7955.641246637619,
+              8538.96626213984
+            ],
+            [
+              8001.007241499286,
+              8252.53664336725
+            ],
+            [
+              8008.9087482240475,
+              8253.78811908757
+            ],
+            [
+              7963.542753362381,
+              8540.217737860161
+            ]
+          ],
+          [
+            [
+              8001.007241499286,
+              8253.78811908757
+            ],
+            [
+              7955.641246637619,
+              7967.358500314981
+            ],
+            [
+              7963.542753362381,
+              7966.1070245946585
+            ],
+            [
+              8008.9087482240475,
+              8252.53664336725
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.641246637619,
+              8538.96626213984
+            ],
+            [
+              8046.373236360952,
+              7966.107024594659
+            ],
+            [
+              8054.274743085714,
+              7967.358500314982
+            ],
+            [
+              7963.542753362381,
+              8540.217737860161
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 10,
+        "bifold": [
+          [
+            [
+              7955.65276898795,
+              8538.897407289332
+            ],
+            [
+              8006.01074051136,
+              8253.303158915793
+            ],
+            [
+              8013.889202535459,
+              8254.692344337129
+            ],
+            [
+              7963.531231012049,
+              8540.286592710669
+            ]
+          ],
+          [
+            [
+              8006.01074051136,
+              8254.692344337129
+            ],
+            [
+              7955.65276898795,
+              7969.098095963588
+            ],
+            [
+              7963.531231012049,
+              7967.708910542252
+            ],
+            [
+              8013.889202535459,
+              8253.303158915793
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.65276898795,
+              8538.897407289332
+            ],
+            [
+              8056.36871203477,
+              7967.708910542252
+            ],
+            [
+              8064.247174058869,
+              7969.098095963588
+            ],
+            [
+              7963.531231012049,
+              8540.286592710669
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 11,
+        "bifold": [
+          [
+            [
+              7955.665491266209,
+              8538.828764018494
+            ],
+            [
+              8011.000099925407,
+              8254.156880818671
+            ],
+            [
+              8018.853117392989,
+              8255.683352781685
+            ],
+            [
+              7963.51850873379,
+              8540.355235981508
+            ]
+          ],
+          [
+            [
+              8011.000099925407,
+              8255.683352781685
+            ],
+            [
+              7955.665491266209,
+              7971.011469581862
+            ],
+            [
+              7963.51850873379,
+              7969.48499761885
+            ],
+            [
+              8018.853117392989,
+              8254.156880818671
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.665491266209,
+              8538.828764018494
+            ],
+            [
+              8066.334708584605,
+              7969.48499761885
+            ],
+            [
+              8074.187726052187,
+              7971.011469581862
+            ],
+            [
+              7963.51850873379,
+              8540.355235981508
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 12,
+        "bifold": [
+          [
+            [
+              7955.6794095970645,
+              8538.76035323673
+            ],
+            [
+              8015.973799934215,
+              8255.097549023927
+            ],
+            [
+              8023.798980740085,
+              8256.760842550468
+            ],
+            [
+              7963.504590402935,
+              8540.42364676327
+            ]
+          ],
+          [
+            [
+              8015.973799934215,
+              8256.760842550468
+            ],
+            [
+              7955.679409597065,
+              7973.0980383376655
+            ],
+            [
+              7963.504590402936,
+              7971.434744811123
+            ],
+            [
+              8023.798980740085,
+              8255.097549023927
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.6794095970645,
+              8538.76035323673
+            ],
+            [
+              8076.268190271365,
+              7971.434744811122
+            ],
+            [
+              8084.093371077235,
+              7973.098038337665
+            ],
+            [
+              7963.504590402935,
+              8540.42364676327
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 13,
+        "bifold": [
+          [
+            [
+              7955.694519740859,
+              8538.692195782625
+            ],
+            [
+              8020.93032550058,
+              8256.124876994907
+            ],
+            [
+              8028.725286018862,
+              8257.924485429658
+            ],
+            [
+              7963.489480259141,
+              8540.491804217376
+            ]
+          ],
+          [
+            [
+              8020.93032550058,
+              8257.924485429658
+            ],
+            [
+              7955.694519740859,
+              7975.357166641939
+            ],
+            [
+              7963.489480259141,
+              7973.557558207189
+            ],
+            [
+              8028.725286018862,
+              8256.124876994907
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.694519740859,
+              8538.692195782625
+            ],
+            [
+              8086.1661312603,
+              7973.557558207189
+            ],
+            [
+              8093.961091778582,
+              7975.357166641939
+            ],
+            [
+              7963.489480259141,
+              8540.491804217376
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 14,
+        "bifold": [
+          [
+            [
+              7955.710817094896,
+              8538.624312417602
+            ],
+            [
+              8025.868166818799,
+              8257.238551797564
+            ],
+            [
+              8033.630532629007,
+              8259.173926962361
+            ],
+            [
+              7963.473182905103,
+              8540.5596875824
+            ]
+          ],
+          [
+            [
+              8025.868166818799,
+              8259.173926962361
+            ],
+            [
+              7955.710817094896,
+              7977.788166342322
+            ],
+            [
+              7963.473182905103,
+              7975.8527911775245
+            ],
+            [
+              8033.630532629007,
+              8257.238551797564
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.710817094896,
+              8538.624312417602
+            ],
+            [
+              8096.025516542703,
+              7975.852791177524
+            ],
+            [
+              8103.787882352911,
+              7977.788166342321
+            ],
+            [
+              7963.473182905103,
+              8540.5596875824
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 15,
+        "bifold": [
+          [
+            [
+              7955.728296694843,
+              8538.55672381959
+            ],
+            [
+              8030.7858197745745,
+              8258.43823419576
+            ],
+            [
+              8038.513226384887,
+              8260.50878655658
+            ],
+            [
+              7963.455703305156,
+              8540.62727618041
+            ]
+          ],
+          [
+            [
+              8030.7858197745745,
+              8260.50878655658
+            ],
+            [
+              7955.728296694843,
+              7980.39029693275
+            ],
+            [
+              7963.455703305156,
+              7978.319744571931
+            ],
+            [
+              8038.513226384887,
+              8258.43823419576
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.728296694843,
+              8538.55672381959
+            ],
+            [
+              8105.843342854305,
+              7978.319744571932
+            ],
+            [
+              8113.570749464618,
+              7980.390296932751
+            ],
+            [
+              7963.455703305156,
+              8540.62727618041
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 16,
+        "bifold": [
+          [
+            [
+              7955.746953216247,
+              8538.489450576733
+            ],
+            [
+              8035.681786403176,
+              8259.72355875462
+            ],
+            [
+              8043.371879970682,
+              8261.928657601155
+            ],
+            [
+              7963.4370467837525,
+              8540.694549423268
+            ]
+          ],
+          [
+            [
+              8035.681786403176,
+              8261.928657601155
+            ],
+            [
+              7955.746953216247,
+              7983.162765779043
+            ],
+            [
+              7963.4370467837525,
+              7980.957666932507
+            ],
+            [
+              8043.371879970682,
+              8259.72355875462
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.746953216247,
+              8538.489450576733
+            ],
+            [
+              8115.616619590106,
+              7980.957666932508
+            ],
+            [
+              8123.306713157612,
+              7983.162765779044
+            ],
+            [
+              7963.4370467837525,
+              8540.694549423268
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 17,
+        "bifold": [
+          [
+            [
+              7955.766780976148,
+              8538.422513181109
+            ],
+            [
+              8040.554575345742,
+              8261.094133951829
+            ],
+            [
+              8048.205013393445,
+              8263.433107589612
+            ],
+            [
+              7963.417219023851,
+              8540.761486818892
+            ]
+          ],
+          [
+            [
+              8040.554575345742,
+              8263.433107589612
+            ],
+            [
+              7955.766780976148,
+              7986.10472836033
+            ],
+            [
+              7963.417219023851,
+              7983.765754722549
+            ],
+            [
+              8048.205013393445,
+              8261.094133951829
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.766780976148,
+              8538.422513181109
+            ],
+            [
+              8125.342369715335,
+              7983.765754722549
+            ],
+            [
+              8132.992807763038,
+              7986.10472836033
+            ],
+            [
+              7963.417219023851,
+              8540.761486818892
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 18,
+        "bifold": [
+          [
+            [
+              7955.787773934819,
+              8538.355932022501
+            ],
+            [
+              8045.402702303553,
+              8262.549542296907
+            ],
+            [
+              8053.011154433915,
+              8265.021678251906
+            ],
+            [
+              7963.396226065181,
+              8540.8280679775
+            ]
+          ],
+          [
+            [
+              8045.402702303553,
+              8265.021678251906
+            ],
+            [
+              7955.787773934819,
+              7989.215288526312
+            ],
+            [
+              7963.396226065181,
+              7986.743152571312
+            ],
+            [
+              8053.011154433915,
+              8262.549542296907
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.787773934819,
+              8538.355932022501
+            ],
+            [
+              8135.017630672288,
+              7986.743152571312
+            ],
+            [
+              8142.62608280265,
+              7989.215288526312
+            ],
+            [
+              7963.396226065181,
+              8540.8280679775
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 19,
+        "bifold": [
+          [
+            [
+              7955.809925697602,
+              8538.289727382173
+            ],
+            [
+              8050.224690490178,
+              8264.089340458371
+            ],
+            [
+              8057.788839094973,
+              8266.693885694027
+            ],
+            [
+              7963.374074302397,
+              8540.894272617828
+            ]
+          ],
+          [
+            [
+              8050.224690490178,
+              8266.693885694027
+            ],
+            [
+              7955.809925697602,
+              7992.493498770226
+            ],
+            [
+              7963.374074302397,
+              7989.888953534569
+            ],
+            [
+              8057.788839094973,
+              8264.089340458371
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.809925697602,
+              8538.289727382173
+            ],
+            [
+              8144.639455282753,
+              7989.888953534568
+            ],
+            [
+              8152.2036038875485,
+              7992.493498770225
+            ],
+            [
+              7963.374074302397,
+              8540.894272617828
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 20,
+        "bifold": [
+          [
+            [
+              7955.833229516856,
+              8538.223919426699
+            ],
+            [
+              8055.019071081299,
+              8265.713059398786
+            ],
+            [
+              8062.536612047587,
+              8268.44922054539
+            ],
+            [
+              7963.350770483144,
+              8540.960080573303
+            ]
+          ],
+          [
+            [
+              8055.019071081299,
+              8268.44922054539
+            ],
+            [
+              7955.833229516856,
+              7995.938360517477
+            ],
+            [
+              7963.350770483144,
+              7993.202199370871
+            ],
+            [
+              8062.536612047587,
+              8265.713059398786
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.833229516856,
+              8538.223919426699
+            ],
+            [
+              8154.204912645743,
+              7993.20219937087
+            ],
+            [
+              8161.722453612031,
+              7995.938360517476
+            ],
+            [
+              7963.350770483144,
+              8540.960080573303
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 21,
+        "bifold": [
+          [
+            [
+              7955.857678294011,
+              8538.158528201819
+            ],
+            [
+              8059.784383662148,
+              8267.42020451763
+            ],
+            [
+              8067.253027074125,
+              8270.287148113994
+            ],
+            [
+              7963.326321705988,
+              8541.025471798182
+            ]
+          ],
+          [
+            [
+              8059.784383662148,
+              8270.287148113994
+            ],
+            [
+              7955.857678294011,
+              7999.548824429804
+            ],
+            [
+              7963.326321705988,
+              7996.681880833442
+            ],
+            [
+              8067.253027074125,
+              8267.42020451763
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.857678294011,
+              8538.158528201819
+            ],
+            [
+              8163.711089030285,
+              7996.681880833443
+            ],
+            [
+              8171.179732442262,
+              7999.548824429805
+            ],
+            [
+              7963.326321705988,
+              8541.025471798182
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 22,
+        "bifold": [
+          [
+            [
+              7955.883264581733,
+              8538.093573626336
+            ],
+            [
+              8064.519176672347,
+              8269.210255801969
+            ],
+            [
+              8071.936647508881,
+              8272.207108549297
+            ],
+            [
+              7963.300735418266,
+              8541.090426373665
+            ]
+          ],
+          [
+            [
+              8064.519176672347,
+              8272.207108549297
+            ],
+            [
+              7955.883264581733,
+              8003.323790724928
+            ],
+            [
+              7963.300735418266,
+              8000.326937977601
+            ],
+            [
+              8071.936647508881,
+              8269.210255801969
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.883264581733,
+              8538.093573626336
+            ],
+            [
+              8173.155088762962,
+              8000.3269379776
+            ],
+            [
+              8180.572559599495,
+              8003.323790724927
+            ],
+            [
+              7963.300735418266,
+              8541.090426373665
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 23,
+        "bifold": [
+          [
+            [
+              7955.90998058619,
+              8538.029075486043
+            ],
+            [
+              8069.22200784808,
+              8271.082667984836
+            ],
+            [
+              8076.586046675699,
+              8274.20851701275
+            ],
+            [
+              7963.27401941381,
+              8541.154924513958
+            ]
+          ],
+          [
+            [
+              8069.22200784808,
+              8274.20851701275
+            ],
+            [
+              7955.909980586191,
+              8007.262109511543
+            ],
+            [
+              7963.2740194138105,
+              8004.136260483629
+            ],
+            [
+              8076.586046675699,
+              8271.082667984836
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.90998058619,
+              8538.029075486043
+            ],
+            [
+              8182.5340351099685,
+              8004.136260483629
+            ],
+            [
+              8189.898073937588,
+              8007.262109511543
+            ],
+            [
+              7963.27401941381,
+              8541.154924513958
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 24,
+        "bifold": [
+          [
+            [
+              7955.937818169429,
+              8537.965053427697
+            ],
+            [
+              8073.891444661412,
+              8273.036870711343
+            ],
+            [
+              8081.199808322553,
+              8276.29076385595
+            ],
+            [
+              7963.24618183057,
+              8541.218946572304
+            ]
+          ],
+          [
+            [
+              8073.891444661412,
+              8276.29076385595
+            ],
+            [
+              7955.93781816943,
+              8011.362581139596
+            ],
+            [
+              7963.246181830571,
+              8008.108687994989
+            ],
+            [
+              8081.199808322553,
+              8273.036870711343
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.937818169429,
+              8537.965053427697
+            ],
+            [
+              8191.845071153393,
+              8008.108687994989
+            ],
+            [
+              8199.153434814534,
+              8011.362581139596
+            ],
+            [
+              7963.24618183057,
+              8541.218946572304
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 25,
+        "bifold": [
+          [
+            [
+              7955.966768851853,
+              8537.901526953037
+            ],
+            [
+              8078.526064756656,
+              8275.072268712409
+            ],
+            [
+              8085.776527052949,
+              8278.453214806335
+            ],
+            [
+              7963.217231148146,
+              8541.282473046964
+            ]
+          ],
+          [
+            [
+              8078.526064756656,
+              8278.453214806335
+            ],
+            [
+              7955.966768851853,
+              8015.623956565707
+            ],
+            [
+              7963.217231148146,
+              8012.2430104717805
+            ],
+            [
+              8085.776527052949,
+              8275.072268712409
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.966768851853,
+              8537.901526953037
+            ],
+            [
+              8201.08536066146,
+              8012.2430104717805
+            ],
+            [
+              8208.335822957752,
+              8015.623956565707
+            ],
+            [
+              7963.217231148146,
+              8541.282473046964
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 26,
+        "bifold": [
+          [
+            [
+              7955.996823814803,
+              8537.838515412845
+            ],
+            [
+              8083.124456383635,
+              8277.188241986087
+            ],
+            [
+              8090.3148087540285,
+              8280.695211160399
+            ],
+            [
+              7963.187176185196,
+              8541.345484587157
+            ]
+          ],
+          [
+            [
+              8083.124456383635,
+              8280.695211160399
+            ],
+            [
+              7955.996823814803,
+              8020.04493773364
+            ],
+            [
+              7963.187176185196,
+              8016.537968559328
+            ],
+            [
+              8090.3148087540285,
+              8277.188241986087
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7955.996823814803,
+              8537.838515412845
+            ],
+            [
+              8210.252088952468,
+              8016.537968559328
+            ],
+            [
+              8217.442441322863,
+              8020.04493773364
+            ],
+            [
+              7963.187176185196,
+              8541.345484587157
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 27,
+        "bifold": [
+          [
+            [
+              7956.027973903246,
+              8537.776038001042
+            ],
+            [
+              8087.685218827714,
+              8279.384145986416
+            ],
+            [
+              8094.813271021222,
+              8283.016069984333
+            ],
+            [
+              7963.1560260967535,
+              8541.407961998959
+            ]
+          ],
+          [
+            [
+              8087.685218827714,
+              8283.016069984333
+            ],
+            [
+              7956.027973903246,
+              8024.624177969706
+            ],
+            [
+              7963.1560260967535,
+              8020.992253971789
+            ],
+            [
+              8094.813271021222,
+              8279.384145986416
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.027973903246,
+              8537.776038001042
+            ],
+            [
+              8219.342463752182,
+              8020.992253971789
+            ],
+            [
+              8226.47051594569,
+              8024.624177969706
+            ],
+            [
+              7963.1560260967535,
+              8541.407961998959
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 28,
+        "bifold": [
+          [
+            [
+              7956.060209628564,
+              8537.714113748856
+            ],
+            [
+              8092.2069628364725,
+              8281.659311819767
+            ],
+            [
+              8099.270543579344,
+              8285.415084322056
+            ],
+            [
+              7963.1237903714355,
+              8541.469886251145
+            ]
+          ],
+          [
+            [
+              8092.2069628364725,
+              8285.415084322056
+            ],
+            [
+              7956.060209628564,
+              8029.360282392966
+            ],
+            [
+              7963.1237903714355,
+              8025.604509890679
+            ],
+            [
+              8099.270543579344,
+              8281.659311819767
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.060209628564,
+              8537.714113748856
+            ],
+            [
+              8228.353716044381,
+              8025.60450989068
+            ],
+            [
+              8235.417296787251,
+              8029.360282392967
+            ],
+            [
+              7963.1237903714355,
+              8541.469886251145
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 29,
+        "bifold": [
+          [
+            [
+              7956.093521171442,
+              8537.652761519015
+            ],
+            [
+              8096.68831104288,
+              8284.01304644859
+            ],
+            [
+              8103.685268699995,
+              8287.89152341056
+            ],
+            [
+              7963.090478828557,
+              8541.531238480986
+            ]
+          ],
+          [
+            [
+              8096.68831104288,
+              8287.89152341056
+            ],
+            [
+              7956.093521171442,
+              8034.2518083401355
+            ],
+            [
+              7963.090478828557,
+              8030.373331378165
+            ],
+            [
+              8103.685268699995,
+              8284.01304644859
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.093521171442,
+              8537.652761519015
+            ],
+            [
+              8237.283100914317,
+              8030.373331378166
+            ],
+            [
+              8244.280058571434,
+              8034.251808340136
+            ],
+            [
+              7963.090478828557,
+              8541.531238480986
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 30,
+        "bifold": [
+          [
+            [
+              7956.1278983848615,
+              8537.592
+            ],
+            [
+              8101.1278983848615,
+              8286.444632902514
+            ],
+            [
+              8108.056101615138,
+              8290.444632902514
+            ],
+            [
+              7963.056101615138,
+              8541.592
+            ]
+          ],
+          [
+            [
+              8101.1278983848615,
+              8290.444632902514
+            ],
+            [
+              7956.1278983848615,
+              8039.297265805027
+            ],
+            [
+              7963.056101615138,
+              8035.297265805027
+            ],
+            [
+              8108.056101615138,
+              8286.444632902514
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.1278983848615,
+              8537.592
+            ],
+            [
+              8246.127898384862,
+              8035.297265805026
+            ],
+            [
+              8253.056101615139,
+              8039.297265805026
+            ],
+            [
+              7963.056101615138,
+              8541.592
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 31,
+        "bifold": [
+          [
+            [
+              7956.1633307971915,
+              8537.53184770036
+            ],
+            [
+              8105.524372521108,
+              8288.953330496748
+            ],
+            [
+              8112.381710926724,
+              8293.073635096029
+            ],
+            [
+              7963.020669202808,
+              8541.65215229964
+            ]
+          ],
+          [
+            [
+              8105.524372521108,
+              8293.073635096029
+            ],
+            [
+              7956.1633307971915,
+              8044.495117892417
+            ],
+            [
+              7963.020669202808,
+              8040.374813293136
+            ],
+            [
+              8112.381710926724,
+              8288.953330496748
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.1633307971915,
+              8537.53184770036
+            ],
+            [
+              8254.885414245022,
+              8040.374813293135
+            ],
+            [
+              8261.74275265064,
+              8044.495117892416
+            ],
+            [
+              7963.020669202808,
+              8541.65215229964
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 32,
+        "bifold": [
+          [
+            [
+              7956.199807615374,
+              8537.472322943067
+            ],
+            [
+              8109.876394243003,
+              8291.538375057704
+            ],
+            [
+              8116.660779012254,
+              8295.77772917157
+            ],
+            [
+              7962.984192384625,
+              8541.711677056934
+            ]
+          ],
+          [
+            [
+              8109.876394243003,
+              8295.77772917157
+            ],
+            [
+              7956.199807615374,
+              8049.843781286207
+            ],
+            [
+              7962.984192384625,
+              8045.60442717234
+            ],
+            [
+              8116.660779012254,
+              8291.538375057704
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.199807615374,
+              8537.472322943067
+            ],
+            [
+              8263.552980870632,
+              8045.60442717234
+            ],
+            [
+              8270.337365639885,
+              8049.843781286207
+            ],
+            [
+              7962.984192384625,
+              8541.711677056934
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 33,
+        "bifold": [
+          [
+            [
+              7956.237317728218,
+              8537.413443859941
+            ],
+            [
+              8114.182637882575,
+              8294.198979155768
+            ],
+            [
+              8120.892002426139,
+              8298.556091435887
+            ],
+            [
+              7962.946682271781,
+              8541.77055614006
+            ]
+          ],
+          [
+            [
+              8114.182637882575,
+              8298.556091435887
+            ],
+            [
+              7956.237317728218,
+              8055.341626731714
+            ],
+            [
+              7962.946682271781,
+              8050.984514451594
+            ],
+            [
+              8120.892002426139,
+              8294.198979155768
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.237317728218,
+              8537.413443859941
+            ],
+            [
+              8272.127958036934,
+              8050.984514451595
+            ],
+            [
+              8278.837322580497,
+              8055.341626731715
+            ],
+            [
+              7962.946682271781,
+              8541.77055614006
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 34,
+        "bifold": [
+          [
+            [
+              7956.275849709779,
+              8537.355228386117
+            ],
+            [
+              8118.4417917162955,
+              8296.934332345156
+            ],
+            [
+              8125.074092296736,
+              8301.407875572922
+            ],
+            [
+              7962.90815029022,
+              8541.828771613884
+            ]
+          ],
+          [
+            [
+              8118.4417917162955,
+              8301.407875572922
+            ],
+            [
+              7956.275849709779,
+              8060.98697953196
+            ],
+            [
+              7962.90815029022,
+              8056.513436304193
+            ],
+            [
+              8125.074092296736,
+              8296.934332345156
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.275849709779,
+              8537.355228386117
+            ],
+            [
+              8280.607733722813,
+              8056.513436304193
+            ],
+            [
+              8287.240034303253,
+              8060.98697953196
+            ],
+            [
+              7962.90815029022,
+              8541.828771613884
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 35,
+        "bifold": [
+          [
+            [
+              7956.315391822844,
+              8537.297694254596
+            ],
+            [
+              8122.652558364647,
+              8299.743601410788
+            ],
+            [
+              8129.205774718959,
+              8304.332212901598
+            ],
+            [
+              7962.868608177156,
+              8541.886305745405
+            ]
+          ],
+          [
+            [
+              8122.652558364647,
+              8304.332212901598
+            ],
+            [
+              7956.315391822844,
+              8066.778120057789
+            ],
+            [
+              7962.868608177156,
+              8062.189508566981
+            ],
+            [
+              8129.205774718959,
+              8299.743601410788
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.315391822844,
+              8537.297694254596
+            ],
+            [
+              8288.98972490645,
+              8062.189508566981
+            ],
+            [
+              8295.542941260761,
+              8066.778120057789
+            ],
+            [
+              7962.868608177156,
+              8541.886305745405
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 36,
+        "bifold": [
+          [
+            [
+              7956.3559320224995,
+              8537.24085899083
+            ],
+            [
+              8126.813655187317,
+              8302.625930622095
+            ],
+            [
+              8133.285791142317,
+              8307.328212640436
+            ],
+            [
+              7962.8280679775,
+              8541.943141009171
+            ]
+          ],
+          [
+            [
+              8126.813655187317,
+              8307.328212640436
+            ],
+            [
+              7956.3559320224995,
+              8072.7132842717
+            ],
+            [
+              7962.8280679775,
+              8068.011002253361
+            ],
+            [
+              8133.285791142317,
+              8302.625930622095
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.3559320224995,
+              8537.24085899083
+            ],
+            [
+              8297.271378352134,
+              8068.011002253362
+            ],
+            [
+              8303.743514307133,
+              8072.713284271701
+            ],
+            [
+              7962.8280679775,
+              8541.943141009171
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 37,
+        "bifold": [
+          [
+            [
+              7956.397457959811,
+              8537.184739907392
+            ],
+            [
+              8130.923814673904,
+              8305.580441993678
+            ],
+            [
+              8137.312898754282,
+              8310.394962178894
+            ],
+            [
+              7962.786542040189,
+              8541.999260092609
+            ]
+          ],
+          [
+            [
+              8130.923814673904,
+              8310.394962178894
+            ],
+            [
+              7956.397457959811,
+              8078.79066426518
+            ],
+            [
+              7962.786542040189,
+              8073.976144079963
+            ],
+            [
+              8137.312898754282,
+              8305.580441993678
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.397457959811,
+              8537.184739907392
+            ],
+            [
+              8305.450171387998,
+              8073.976144079962
+            ],
+            [
+              8311.839255468378,
+              8078.790664265179
+            ],
+            [
+              7962.786542040189,
+              8541.999260092609
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 38,
+        "bifold": [
+          [
+            [
+              7956.439956985573,
+              8537.129354098697
+            ],
+            [
+              8134.9817848300145,
+              8308.606235552748
+            ],
+            [
+              8141.285870858867,
+              8313.531527355355
+            ],
+            [
+              7962.744043014426,
+              8542.054645901304
+            ]
+          ],
+          [
+            [
+              8134.9817848300145,
+              8313.531527355355
+            ],
+            [
+              7956.439956985573,
+              8085.0084088094045
+            ],
+            [
+              7962.744043014426,
+              8080.0831170067995
+            ],
+            [
+              8141.285870858867,
+              8308.606235552748
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.439956985573,
+              8537.129354098697
+            ],
+            [
+              8313.523612674455,
+              8080.0831170067995
+            ],
+            [
+              8319.827698703308,
+              8085.0084088094045
+            ],
+            [
+              7962.744043014426,
+              8542.054645901304
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 39,
+        "bifold": [
+          [
+            [
+              7956.483416154172,
+              8537.0747184358
+            ],
+            [
+              8138.986329558625,
+              8311.70238961328
+            ],
+            [
+              8145.20349725028,
+              8316.73695274168
+            ],
+            [
+              7962.700583845827,
+              8542.1092815642
+            ]
+          ],
+          [
+            [
+              8138.986329558625,
+              8316.73695274168
+            ],
+            [
+              7956.483416154172,
+              8091.364623919157
+            ],
+            [
+              7962.700583845827,
+              8086.330060790759
+            ],
+            [
+              8145.20349725028,
+              8311.70238961328
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.483416154172,
+              8537.0747184358
+            ],
+            [
+              8321.489242963078,
+              8086.330060790759
+            ],
+            [
+              8327.706410654733,
+              8091.364623919157
+            ],
+            [
+              7962.700583845827,
+              8542.1092815642
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 40,
+        "bifold": [
+          [
+            [
+              7956.527822227524,
+              8537.020849561255
+            ],
+            [
+              8142.93622903662,
+              8314.86796105675
+            ],
+            [
+              8149.064584581572,
+              8320.010261934241
+            ],
+            [
+              7962.6561777724755,
+              8542.163150438746
+            ]
+          ],
+          [
+            [
+              8142.93622903662,
+              8320.010261934241
+            ],
+            [
+              7956.527822227524,
+              8097.857373429739
+            ],
+            [
+              7962.6561777724755,
+              8092.715072552246
+            ],
+            [
+              8149.064584581572,
+              8314.86796105675
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.527822227524,
+              8537.020849561255
+            ],
+            [
+              8329.344635845717,
+              8092.715072552247
+            ],
+            [
+              8335.472991390669,
+              8097.85737342974
+            ],
+            [
+              7962.6561777724755,
+              8542.163150438746
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 41,
+        "bifold": [
+          [
+            [
+              7956.573161679108,
+              8536.967763884039
+            ],
+            [
+              8146.830280086355,
+              8318.101985619434
+            ],
+            [
+              8152.867956728138,
+              8323.350457851358
+            ],
+            [
+              7962.610838320891,
+              8542.216236115963
+            ]
+          ],
+          [
+            [
+              8146.830280086355,
+              8323.350457851358
+            ],
+            [
+              7956.573161679107,
+              8104.484679586754
+            ],
+            [
+              7962.61083832089,
+              8099.23620735483
+            ],
+            [
+              8152.867956728138,
+              8318.101985619434
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.573161679108,
+              8536.967763884039
+            ],
+            [
+              8337.087398493602,
+              8099.236207354831
+            ],
+            [
+              8343.125075135385,
+              8104.484679586755
+            ],
+            [
+              7962.610838320891,
+              8542.216236115963
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 42,
+        "bifold": [
+          [
+            [
+              7956.61942069809,
+              8536.915477574565
+            ],
+            [
+              8150.6672965421585,
+              8321.403478186121
+            ],
+            [
+              8156.612455145978,
+              8326.756523036993
+            ],
+            [
+              7962.564579301909,
+              8542.268522425436
+            ]
+          ],
+          [
+            [
+              8150.6672965421585,
+              8326.756523036993
+            ],
+            [
+              7956.61942069809,
+              8111.244523648547
+            ],
+            [
+              7962.564579301909,
+              8105.891478797677
+            ],
+            [
+              8156.612455145978,
+              8321.403478186121
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.61942069809,
+              8536.915477574565
+            ],
+            [
+              8344.715172386228,
+              8105.891478797676
+            ],
+            [
+              8350.660330990047,
+              8111.244523648546
+            ],
+            [
+              7962.564579301909,
+              8542.268522425436
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 43,
+        "bifold": [
+          [
+            [
+              7956.666585193523,
+              8536.86400655975
+            ],
+            [
+              8154.446109611647,
+              8324.77143309019
+            ],
+            [
+              8160.2969392246005,
+              8330.227419970692
+            ],
+            [
+              7962.517414806476,
+              8542.319993440251
+            ]
+          ],
+          [
+            [
+              8154.446109611647,
+              8330.227419970692
+            ],
+            [
+              7956.666585193523,
+              8118.134846501132
+            ],
+            [
+              7962.517414806476,
+              8112.678859620632
+            ],
+            [
+              8160.2969392246005,
+              8324.77143309019
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.666585193523,
+              8536.86400655975
+            ],
+            [
+              8352.225634029772,
+              8112.678859620632
+            ],
+            [
+              8358.076463642727,
+              8118.134846501132
+            ],
+            [
+              7962.517414806476,
+              8542.319993440251
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 44,
+        "bifold": [
+          [
+            [
+              7956.714640798645,
+              8536.813366518165
+            ],
+            [
+              8158.165568231754,
+              8328.204824419956
+            ],
+            [
+              8163.920286634464,
+              8333.762091383627
+            ],
+            [
+              7962.469359201355,
+              8542.370633481836
+            ]
+          ],
+          [
+            [
+              8158.165568231754,
+              8333.762091383627
+            ],
+            [
+              7956.714640798645,
+              8125.153549285418
+            ],
+            [
+              7962.469359201355,
+              8119.596282321747
+            ],
+            [
+              8163.920286634464,
+              8328.204824419956
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.714640798645,
+              8536.813366518165
+            ],
+            [
+              8359.616495664863,
+              8119.596282321747
+            ],
+            [
+              8365.371214067573,
+              8125.153549285418
+            ],
+            [
+              7962.469359201355,
+              8542.370633481836
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 45,
+        "bifold": [
+          [
+            [
+              7956.763572875254,
+              8536.763572875254
+            ],
+            [
+              8161.824539419353,
+              8331.702606331155
+            ],
+            [
+              8167.481393668844,
+              8337.359460580648
+            ],
+            [
+              7962.420427124745,
+              8542.420427124747
+            ]
+          ],
+          [
+            [
+              8161.824539419353,
+              8337.359460580648
+            ],
+            [
+              7956.763572875254,
+              8132.298494036549
+            ],
+            [
+              7962.420427124745,
+              8126.641639787057
+            ],
+            [
+              8167.481393668844,
+              8331.702606331155
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.763572875254,
+              8536.763572875254
+            ],
+            [
+              8366.88550596345,
+              8126.641639787057
+            ],
+            [
+              8372.542360212943,
+              8132.298494036549
+            ],
+            [
+              7962.420427124745,
+              8542.420427124747
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 46,
+        "bifold": [
+          [
+            [
+              7956.813366518164,
+              8536.714640798646
+            ],
+            [
+              8165.421908616373,
+              8335.263713365537
+            ],
+            [
+              8170.979175580044,
+              8341.018431768247
+            ],
+            [
+              7962.370633481835,
+              8542.469359201355
+            ]
+          ],
+          [
+            [
+              8165.421908616373,
+              8341.018431768247
+            ],
+            [
+              7956.813366518164,
+              8139.5675043351375
+            ],
+            [
+              7962.370633481835,
+              8133.812785932428
+            ],
+            [
+              8170.979175580044,
+              8335.263713365537
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.813366518164,
+              8536.714640798646
+            ],
+            [
+              8374.030450714581,
+              8133.812785932427
+            ],
+            [
+              8379.587717678252,
+              8139.567504335137
+            ],
+            [
+              7962.370633481835,
+              8542.469359201355
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 47,
+        "bifold": [
+          [
+            [
+              7956.864006559749,
+              8536.666585193523
+            ],
+            [
+              8168.9565800293085,
+              8338.887060775398
+            ],
+            [
+              8174.412566909809,
+              8344.737890388353
+            ],
+            [
+              7962.31999344025,
+              8542.517414806478
+            ]
+          ],
+          [
+            [
+              8168.9565800293085,
+              8344.737890388353
+            ],
+            [
+              7956.864006559749,
+              8146.9583659702275
+            ],
+            [
+              7962.31999344025,
+              8141.1075363572745
+            ],
+            [
+              8174.412566909809,
+              8338.887060775398
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.864006559749,
+              8536.666585193523
+            ],
+            [
+              8381.049153498869,
+              8141.1075363572745
+            ],
+            [
+              8386.50514037937,
+              8146.9583659702275
+            ],
+            [
+              7962.31999344025,
+              8542.517414806478
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 48,
+        "bifold": [
+          [
+            [
+              7956.915477574565,
+              8536.61942069809
+            ],
+            [
+              8172.427476963009,
+              8342.571544854021
+            ],
+            [
+              8177.780521813879,
+              8348.51670345784
+            ],
+            [
+              7962.268522425435,
+              8542.56457930191
+            ]
+          ],
+          [
+            [
+              8172.427476963009,
+              8348.51670345784
+            ],
+            [
+              7956.915477574565,
+              8154.468827613772
+            ],
+            [
+              7962.268522425435,
+              8148.523669009953
+            ],
+            [
+              8177.780521813879,
+              8342.571544854021
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.915477574565,
+              8536.61942069809
+            ],
+            [
+              8387.939476351452,
+              8148.523669009953
+            ],
+            [
+              8393.292521202324,
+              8154.468827613772
+            ],
+            [
+              7962.268522425435,
+              8542.56457930191
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 49,
+        "bifold": [
+          [
+            [
+              7956.967763884038,
+              8536.573161679109
+            ],
+            [
+              8175.833542148642,
+              8346.316043271861
+            ],
+            [
+              8181.082014380566,
+              8352.353719913644
+            ],
+            [
+              7962.216236115962,
+              8542.610838320892
+            ]
+          ],
+          [
+            [
+              8175.833542148642,
+              8352.353719913644
+            ],
+            [
+              7956.967763884038,
+              8162.096601506398
+            ],
+            [
+              7962.216236115962,
+              8156.058924864615
+            ],
+            [
+              8181.082014380566,
+              8346.316043271861
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7956.967763884038,
+              8536.573161679109
+            ],
+            [
+              8394.699320413245,
+              8156.058924864615
+            ],
+            [
+              8399.94779264517,
+              8162.096601506398
+            ],
+            [
+              7962.216236115962,
+              8542.610838320892
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 50,
+        "bifold": [
+          [
+            [
+              7957.020849561253,
+              8536.527822227525
+            ],
+            [
+              8179.173738065757,
+              8350.119415418429
+            ],
+            [
+              8184.31603894325,
+              8356.24777096338
+            ],
+            [
+              7962.163150438746,
+              8542.656177772476
+            ]
+          ],
+          [
+            [
+              8179.173738065757,
+              8356.24777096338
+            ],
+            [
+              7957.020849561253,
+              8169.839364154284
+            ],
+            [
+              7962.163150438746,
+              8163.711008609333
+            ],
+            [
+              8184.31603894325,
+              8350.119415418429
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.020849561253,
+              8536.527822227525
+            ],
+            [
+              8401.326626570262,
+              8163.711008609332
+            ],
+            [
+              8406.468927447753,
+              8169.839364154283
+            ],
+            [
+              7962.163150438746,
+              8542.656177772476
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 51,
+        "bifold": [
+          [
+            [
+              7957.074718435801,
+              8536.483416154173
+            ],
+            [
+              8182.4470472583225,
+              8353.98050274972
+            ],
+            [
+              8187.481610386721,
+              8360.197670441376
+            ],
+            [
+              7962.109281564199,
+              8542.700583845828
+            ]
+          ],
+          [
+            [
+              8182.4470472583225,
+              8360.197670441376
+            ],
+            [
+              7957.074718435801,
+              8177.694757036923
+            ],
+            [
+              7962.109281564199,
+              8171.477589345268
+            ],
+            [
+              8187.481610386721,
+              8353.98050274972
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.074718435801,
+              8536.483416154173
+            ],
+            [
+              8407.819376080843,
+              8171.477589345267
+            ],
+            [
+              8412.853939209243,
+              8177.694757036922
+            ],
+            [
+              7962.109281564199,
+              8542.700583845828
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 52,
+        "bifold": [
+          [
+            [
+              7957.129354098697,
+              8536.439956985574
+            ],
+            [
+              8185.652472644647,
+              8357.898129141133
+            ],
+            [
+              8190.577764447252,
+              8364.202215169986
+            ],
+            [
+              7962.054645901302,
+              8542.744043014427
+            ]
+          ],
+          [
+            [
+              8185.652472644647,
+              8364.202215169986
+            ],
+            [
+              7957.129354098697,
+              8185.660387325544
+            ],
+            [
+              7962.054645901302,
+              8179.3563012966915
+            ],
+            [
+              8190.577764447252,
+              8357.898129141133
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.129354098697,
+              8536.439956985574
+            ],
+            [
+              8414.175591190595,
+              8179.356301296692
+            ],
+            [
+              8419.100882993202,
+              8185.660387325545
+            ],
+            [
+              7962.054645901302,
+              8542.744043014427
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 53,
+        "bifold": [
+          [
+            [
+              7957.184739907391,
+              8536.39745795981
+            ],
+            [
+              8188.789037821106,
+              8361.871101245717
+            ],
+            [
+              8193.603558006322,
+              8368.260185326097
+            ],
+            [
+              7961.999260092608,
+              8542.78654204019
+            ]
+          ],
+          [
+            [
+              8188.789037821106,
+              8368.260185326097
+            ],
+            [
+              7957.184739907391,
+              8193.733828612003
+            ],
+            [
+              7961.999260092608,
+              8187.344744531624
+            ],
+            [
+              8193.603558006322,
+              8361.871101245717
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.184739907391,
+              8536.39745795981
+            ],
+            [
+              8420.393335734821,
+              8187.344744531623
+            ],
+            [
+              8425.207855920038,
+              8193.733828612001
+            ],
+            [
+              7961.999260092608,
+              8542.78654204019
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 54,
+        "bifold": [
+          [
+            [
+              7957.24085899083,
+              8536.355932022501
+            ],
+            [
+              8191.855787359565,
+              8365.898208857685
+            ],
+            [
+              8196.558069377905,
+              8372.370344812683
+            ],
+            [
+              7961.943141009169,
+              8542.8280679775
+            ]
+          ],
+          [
+            [
+              8191.855787359565,
+              8372.370344812683
+            ],
+            [
+              7957.24085899083,
+              8201.912621647867
+            ],
+            [
+              7961.943141009169,
+              8195.440485692869
+            ],
+            [
+              8196.558069377905,
+              8365.898208857685
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.24085899083,
+              8536.355932022501
+            ],
+            [
+              8426.4707157283,
+              8195.440485692867
+            ],
+            [
+              8431.17299774664,
+              8201.912621647865
+            ],
+            [
+              7961.943141009169,
+              8542.8280679775
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 55,
+        "bifold": [
+          [
+            [
+              7957.297694254596,
+              8536.315391822845
+            ],
+            [
+              8194.851787098401,
+              8369.978225281042
+            ],
+            [
+              8199.440398589211,
+              8376.531441635352
+            ],
+            [
+              7961.886305745404,
+              8542.868608177156
+            ]
+          ],
+          [
+            [
+              8194.851787098401,
+              8376.531441635352
+            ],
+            [
+              7957.297694254595,
+              8210.194275093549
+            ],
+            [
+              7961.886305745403,
+              8203.641058739238
+            ],
+            [
+              8199.440398589211,
+              8369.978225281042
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.297694254596,
+              8536.315391822845
+            ],
+            [
+              8432.40587994221,
+              8203.641058739238
+            ],
+            [
+              8436.994491433019,
+              8210.194275093549
+            ],
+            [
+              7961.886305745404,
+              8542.868608177156
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 56,
+        "bifold": [
+          [
+            [
+              7957.355228386116,
+              8536.27584970978
+            ],
+            [
+              8197.776124427079,
+              8374.109907703263
+            ],
+            [
+              8202.249667654845,
+              8380.742208283704
+            ],
+            [
+              7961.828771613883,
+              8542.90815029022
+            ]
+          ],
+          [
+            [
+              8197.776124427079,
+              8380.742208283704
+            ],
+            [
+              7957.355228386116,
+              8218.576266277187
+            ],
+            [
+              7961.828771613883,
+              8211.943965696746
+            ],
+            [
+              8202.249667654845,
+              8374.109907703263
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.355228386116,
+              8536.27584970978
+            ],
+            [
+              8438.19702046804,
+              8211.943965696746
+            ],
+            [
+              8442.670563695807,
+              8218.576266277187
+            ],
+            [
+              7961.828771613883,
+              8542.90815029022
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 57,
+        "bifold": [
+          [
+            [
+              7957.413443859939,
+              8536.237317728219
+            ],
+            [
+              8200.627908564113,
+              8378.29199757386
+            ],
+            [
+              8204.985020844231,
+              8385.001362117424
+            ],
+            [
+              7961.77055614006,
+              8542.946682271782
+            ]
+          ],
+          [
+            [
+              8200.627908564113,
+              8385.001362117424
+            ],
+            [
+              7957.4134438599385,
+              8227.056041963066
+            ],
+            [
+              7961.770556140059,
+              8220.346677419502
+            ],
+            [
+              8204.985020844231,
+              8378.29199757386
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.413443859939,
+              8536.237317728219
+            ],
+            [
+              8443.842373268286,
+              8220.346677419504
+            ],
+            [
+              8448.199485548404,
+              8227.056041963067
+            ],
+            [
+              7961.77055614006,
+              8542.946682271782
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 58,
+        "bifold": [
+          [
+            [
+              7957.4723229430665,
+              8536.199807615374
+            ],
+            [
+              8203.40627082843,
+              8382.523220987745
+            ],
+            [
+              8207.645624942295,
+              8389.307605756998
+            ],
+            [
+              7961.711677056933,
+              8542.984192384627
+            ]
+          ],
+          [
+            [
+              8203.40627082843,
+              8389.307605756998
+            ],
+            [
+              7957.472322943066,
+              8235.631019129369
+            ],
+            [
+              7961.711677056932,
+              8228.846634360116
+            ],
+            [
+              8207.645624942295,
+              8382.523220987745
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.4723229430665,
+              8536.199807615374
+            ],
+            [
+              8449.340218713794,
+              8228.846634360116
+            ],
+            [
+              8453.57957282766,
+              8235.631019129369
+            ],
+            [
+              7961.711677056933,
+              8542.984192384627
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 59,
+        "bifold": [
+          [
+            [
+              7957.531847700359,
+              8536.163330797192
+            ],
+            [
+              8206.110364903972,
+              8386.802289073275
+            ],
+            [
+              8210.230669503253,
+              8393.659627478894
+            ],
+            [
+              7961.65215229964,
+              8543.02066920281
+            ]
+          ],
+          [
+            [
+              8206.110364903972,
+              8393.659627478894
+            ],
+            [
+              7957.53184770036,
+              8244.298585754977
+            ],
+            [
+              7961.652152299641,
+              8237.44124734936
+            ],
+            [
+              8210.230669503253,
+              8386.802289073275
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.531847700359,
+              8536.163330797192
+            ],
+            [
+              8454.688882107585,
+              8237.44124734936
+            ],
+            [
+              8458.809186706865,
+              8244.298585754977
+            ],
+            [
+              7961.65215229964,
+              8543.02066920281
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 60,
+        "bifold": [
+          [
+            [
+              7957.592,
+              8536.127898384862
+            ],
+            [
+              8208.739367097487,
+              8391.127898384862
+            ],
+            [
+              8212.739367097487,
+              8398.056101615139
+            ],
+            [
+              7961.592,
+              8543.056101615139
+            ]
+          ],
+          [
+            [
+              8208.739367097487,
+              8398.056101615139
+            ],
+            [
+              7957.592,
+              8253.056101615139
+            ],
+            [
+              7961.592,
+              8246.127898384862
+            ],
+            [
+              8212.739367097487,
+              8391.127898384862
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.592,
+              8536.127898384862
+            ],
+            [
+              8459.886734194974,
+              8246.127898384862
+            ],
+            [
+              8463.886734194974,
+              8253.056101615139
+            ],
+            [
+              7961.592,
+              8543.056101615139
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 61,
+        "bifold": [
+          [
+            [
+              7957.652761519014,
+              8536.093521171442
+            ],
+            [
+              8211.292476589439,
+              8395.498731300004
+            ],
+            [
+              8215.17095355141,
+              8402.49568895712
+            ],
+            [
+              7961.531238480985,
+              8543.090478828559
+            ]
+          ],
+          [
+            [
+              8211.292476589439,
+              8402.49568895712
+            ],
+            [
+              7957.652761519013,
+              8261.900899085682
+            ],
+            [
+              7961.531238480984,
+              8254.903941428565
+            ],
+            [
+              8215.17095355141,
+              8395.498731300004
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.652761519014,
+              8536.093521171442
+            ],
+            [
+              8464.932191659864,
+              8254.903941428567
+            ],
+            [
+              8468.810668621834,
+              8261.900899085684
+            ],
+            [
+              7961.531238480985,
+              8543.090478828559
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 62,
+        "bifold": [
+          [
+            [
+              7957.714113748856,
+              8536.060209628566
+            ],
+            [
+              8213.768915677943,
+              8399.913456420658
+            ],
+            [
+              8217.524688180232,
+              8406.977037163528
+            ],
+            [
+              7961.469886251143,
+              8543.123790371435
+            ]
+          ],
+          [
+            [
+              8213.768915677943,
+              8406.977037163528
+            ],
+            [
+              7957.714113748855,
+              8270.83028395562
+            ],
+            [
+              7961.469886251142,
+              8263.76670321275
+            ],
+            [
+              8217.524688180232,
+              8399.913456420658
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.714113748856,
+              8536.060209628566
+            ],
+            [
+              8469.823717607032,
+              8263.766703212748
+            ],
+            [
+              8473.579490109321,
+              8270.830283955618
+            ],
+            [
+              7961.469886251143,
+              8543.123790371435
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 63,
+        "bifold": [
+          [
+            [
+              7957.776038001041,
+              8536.027973903247
+            ],
+            [
+              8216.167930015668,
+              8404.370728978778
+            ],
+            [
+              8219.799854013585,
+              8411.498781172286
+            ],
+            [
+              7961.407961998958,
+              8543.156026096754
+            ]
+          ],
+          [
+            [
+              8216.167930015668,
+              8411.498781172286
+            ],
+            [
+              7957.776038001041,
+              8279.841536247817
+            ],
+            [
+              7961.407961998958,
+              8272.71348405431
+            ],
+            [
+              8219.799854013585,
+              8404.370728978778
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.776038001041,
+              8536.027973903247
+            ],
+            [
+              8474.559822030295,
+              8272.71348405431
+            ],
+            [
+              8478.191746028211,
+              8279.841536247817
+            ],
+            [
+              7961.407961998958,
+              8543.156026096754
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 64,
+        "bifold": [
+          [
+            [
+              7957.838515412844,
+              8535.996823814803
+            ],
+            [
+              8218.488788839602,
+              8408.86919124597
+            ],
+            [
+              8221.995758013914,
+              8416.059543616366
+            ],
+            [
+              7961.345484587156,
+              8543.187176185198
+            ]
+          ],
+          [
+            [
+              8218.488788839602,
+              8416.059543616366
+            ],
+            [
+              7957.838515412844,
+              8288.931911047534
+            ],
+            [
+              7961.345484587156,
+              8281.741558677139
+            ],
+            [
+              8221.995758013914,
+              8408.86919124597
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.838515412844,
+              8535.996823814803
+            ],
+            [
+              8479.13906226636,
+              8281.741558677139
+            ],
+            [
+              8482.646031440672,
+              8288.931911047534
+            ],
+            [
+              7961.345484587156,
+              8543.187176185198
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 65,
+        "bifold": [
+          [
+            [
+              7957.901526953036,
+              8535.966768851855
+            ],
+            [
+              8220.730785193666,
+              8413.407472947052
+            ],
+            [
+              8224.111731287592,
+              8420.657935243344
+            ],
+            [
+              7961.282473046963,
+              8543.217231148146
+            ]
+          ],
+          [
+            [
+              8220.730785193666,
+              8420.657935243344
+            ],
+            [
+              7957.901526953037,
+              8298.098639338541
+            ],
+            [
+              7961.282473046964,
+              8290.84817704225
+            ],
+            [
+              8224.111731287592,
+              8413.407472947052
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.901526953036,
+              8535.966768851855
+            ],
+            [
+              8483.560043434294,
+              8290.84817704225
+            ],
+            [
+              8486.94098952822,
+              8298.098639338541
+            ],
+            [
+              7961.282473046963,
+              8543.217231148146
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 66,
+        "bifold": [
+          [
+            [
+              7957.965053427696,
+              8535.93781816943
+            ],
+            [
+              8222.893236144051,
+              8417.984191677448
+            ],
+            [
+              8226.147129288658,
+              8425.292555338588
+            ],
+            [
+              7961.218946572303,
+              8543.246181830571
+            ]
+          ],
+          [
+            [
+              8222.893236144051,
+              8425.292555338588
+            ],
+            [
+              7957.965053427697,
+              8307.338928846606
+            ],
+            [
+              7961.218946572304,
+              8300.030565185465
+            ],
+            [
+              8226.147129288658,
+              8417.984191677448
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7957.965053427696,
+              8535.93781816943
+            ],
+            [
+              8487.821418860405,
+              8300.030565185465
+            ],
+            [
+              8491.075312005012,
+              8307.338928846606
+            ],
+            [
+              7961.218946572303,
+              8543.246181830571
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 67,
+        "bifold": [
+          [
+            [
+              7958.0290754860425,
+              8535.909980586192
+            ],
+            [
+              8224.97548298725,
+              8422.597953324303
+            ],
+            [
+              8228.101332015165,
+              8429.96199215192
+            ],
+            [
+              7961.154924513957,
+              8543.27401941381
+            ]
+          ],
+          [
+            [
+              8224.97548298725,
+              8429.96199215192
+            ],
+            [
+              7958.029075486043,
+              8316.649964890032
+            ],
+            [
+              7961.154924513958,
+              8309.285926062414
+            ],
+            [
+              8228.101332015165,
+              8422.597953324303
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.0290754860425,
+              8535.909980586192
+            ],
+            [
+              8491.921890488458,
+              8309.285926062414
+            ],
+            [
+              8495.047739516373,
+              8316.649964890032
+            ],
+            [
+              7961.154924513957,
+              8543.27401941381
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 68,
+        "bifold": [
+          [
+            [
+              7958.093573626336,
+              8535.883264581733
+            ],
+            [
+              8226.976891450704,
+              8427.247352491118
+            ],
+            [
+              8229.973744198032,
+              8434.664823327654
+            ],
+            [
+              7961.090426373663,
+              8543.300735418268
+            ]
+          ],
+          [
+            [
+              8226.976891450704,
+              8434.664823327654
+            ],
+            [
+              7958.093573626336,
+              8326.02891123704
+            ],
+            [
+              7961.090426373663,
+              8318.611440400504
+            ],
+            [
+              8229.973744198032,
+              8427.247352491118
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.093573626336,
+              8535.883264581733
+            ],
+            [
+              8495.860209275072,
+              8318.611440400504
+            ],
+            [
+              8498.8570620224,
+              8326.02891123704
+            ],
+            [
+              7961.090426373663,
+              8543.300735418268
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 69,
+        "bifold": [
+          [
+            [
+              7958.158528201819,
+              8535.85767829401
+            ],
+            [
+              8228.896851886006,
+              8431.930972925873
+            ],
+            [
+              8231.76379548237,
+              8439.399616337852
+            ],
+            [
+              7961.025471798181,
+              8543.32632170599
+            ]
+          ],
+          [
+            [
+              8228.896851886006,
+              8439.399616337852
+            ],
+            [
+              7958.158528201818,
+              8335.472910969715
+            ],
+            [
+              7961.02547179818,
+              8328.004267557735
+            ],
+            [
+              8231.76379548237,
+              8431.930972925873
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.158528201819,
+              8535.85767829401
+            ],
+            [
+              8499.635175570194,
+              8328.004267557737
+            ],
+            [
+              8502.502119166558,
+              8335.472910969716
+            ],
+            [
+              7961.025471798181,
+              8543.32632170599
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 70,
+        "bifold": [
+          [
+            [
+              7958.223919426697,
+              8535.833229516857
+            ],
+            [
+              8230.734779454611,
+              8436.647387952413
+            ],
+            [
+              8233.470940601215,
+              8444.1649289187
+            ],
+            [
+              7960.960080573303,
+              8543.350770483145
+            ]
+          ],
+          [
+            [
+              8230.734779454611,
+              8444.1649289187
+            ],
+            [
+              7958.223919426697,
+              8344.979087354257
+            ],
+            [
+              7960.960080573303,
+              8337.461546387969
+            ],
+            [
+              8233.470940601215,
+              8436.647387952413
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.223919426697,
+              8535.833229516857
+            ],
+            [
+              8503.245639482524,
+              8337.461546387969
+            ],
+            [
+              8505.981800629128,
+              8344.979087354257
+            ],
+            [
+              7960.960080573303,
+              8543.350770483145
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 71,
+        "bifold": [
+          [
+            [
+              7958.289727382171,
+              8535.809925697604
+            ],
+            [
+              8232.490114305974,
+              8441.39516090503
+            ],
+            [
+              8235.09465954163,
+              8448.959309509823
+            ],
+            [
+              7960.894272617828,
+              8543.374074302397
+            ]
+          ],
+          [
+            [
+              8232.490114305974,
+              8448.959309509823
+            ],
+            [
+              7958.289727382172,
+              8354.544544717248
+            ],
+            [
+              7960.894272617829,
+              8346.980396112454
+            ],
+            [
+              8235.09465954163,
+              8441.39516090503
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.289727382171,
+              8535.809925697604
+            ],
+            [
+              8506.690501229776,
+              8346.980396112453
+            ],
+            [
+              8509.295046465431,
+              8354.544544717246
+            ],
+            [
+              7960.894272617828,
+              8543.374074302397
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 72,
+        "bifold": [
+          [
+            [
+              7958.3559320224995,
+              8535.78777393482
+            ],
+            [
+              8234.162321748096,
+              8446.172845566085
+            ],
+            [
+              8236.634457703094,
+              8453.781297696445
+            ],
+            [
+              7960.8280679775,
+              8543.39622606518
+            ]
+          ],
+          [
+            [
+              8234.162321748096,
+              8453.781297696445
+            ],
+            [
+              7958.3559320225,
+              8364.16636932771
+            ],
+            [
+              7960.828067977501,
+              8356.55791719735
+            ],
+            [
+              8236.634457703094,
+              8446.172845566085
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.3559320224995,
+              8535.78777393482
+            ],
+            [
+              8509.96871147369,
+              8356.557917197351
+            ],
+            [
+              8512.440847428688,
+              8364.166369327711
+            ],
+            [
+              7960.8280679775,
+              8543.39622606518
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 73,
+        "bifold": [
+          [
+            [
+              7958.422513181109,
+              8535.766780976148
+            ],
+            [
+              8235.750892410388,
+              8450.978986606555
+            ],
+            [
+              8238.08986604817,
+              8458.62942465426
+            ],
+            [
+              7960.76148681889,
+              8543.417219023853
+            ]
+          ],
+          [
+            [
+              8235.750892410388,
+              8458.62942465426
+            ],
+            [
+              7958.422513181108,
+              8373.841630284667
+            ],
+            [
+              7960.761486818889,
+              8366.191192236962
+            ],
+            [
+              8238.08986604817,
+              8450.978986606555
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.422513181109,
+              8535.766780976148
+            ],
+            [
+              8513.079271639668,
+              8366.19119223696
+            ],
+            [
+              8515.418245277451,
+              8373.841630284665
+            ],
+            [
+              7960.76148681889,
+              8543.417219023853
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 74,
+        "bifold": [
+          [
+            [
+              7958.4894505767315,
+              8535.746953216247
+            ],
+            [
+              8237.255342398845,
+              8455.812120029317
+            ],
+            [
+              8239.46044124538,
+              8463.502213596825
+            ],
+            [
+              7960.694549423268,
+              8543.437046783754
+            ]
+          ],
+          [
+            [
+              8237.255342398845,
+              8463.502213596825
+            ],
+            [
+              7958.4894505767315,
+              8383.567380409895
+            ],
+            [
+              7960.694549423268,
+              8375.877286842388
+            ],
+            [
+              8239.46044124538,
+              8455.812120029317
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.4894505767315,
+              8535.746953216247
+            ],
+            [
+              8516.021234220958,
+              8375.877286842388
+            ],
+            [
+              8518.226333067492,
+              8383.567380409895
+            ],
+            [
+              7960.694549423268,
+              8543.437046783754
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 75,
+        "bifold": [
+          [
+            [
+              7958.55672381959,
+              8535.728296694844
+            ],
+            [
+              8238.67521344342,
+              8460.670773615113
+            ],
+            [
+              8240.745765804239,
+              8468.398180225426
+            ],
+            [
+              7960.627276180409,
+              8543.455703305157
+            ]
+          ],
+          [
+            [
+              8238.67521344342,
+              8468.398180225426
+            ],
+            [
+              7958.556723819589,
+              8393.340657145694
+            ],
+            [
+              7960.627276180408,
+              8385.613250535382
+            ],
+            [
+              8240.745765804239,
+              8460.670773615113
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.55672381959,
+              8535.728296694844
+            ],
+            [
+              8518.79370306725,
+              8385.613250535382
+            ],
+            [
+              8520.864255428069,
+              8393.340657145694
+            ],
+            [
+              7960.627276180409,
+              8543.455703305157
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 76,
+        "bifold": [
+          [
+            [
+              7958.624312417601,
+              8535.710817094896
+            ],
+            [
+              8240.01007303764,
+              8465.553467370992
+            ],
+            [
+              8241.945448202438,
+              8473.315833181201
+            ],
+            [
+              7960.5596875823985,
+              8543.473182905105
+            ]
+          ],
+          [
+            [
+              8240.01007303764,
+              8473.315833181201
+            ],
+            [
+              7958.624312417601,
+              8403.158483457297
+            ],
+            [
+              7960.5596875823985,
+              8395.396117647088
+            ],
+            [
+              8241.945448202438,
+              8465.553467370992
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.624312417601,
+              8535.710817094896
+            ],
+            [
+              8521.395833657678,
+              8395.39611764709
+            ],
+            [
+              8523.331208822476,
+              8403.158483457299
+            ],
+            [
+              7960.5596875823985,
+              8543.473182905105
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 77,
+        "bifold": [
+          [
+            [
+              7958.692195782624,
+              8535.69451974086
+            ],
+            [
+              8241.259514570342,
+              8470.45871398114
+            ],
+            [
+              8243.059123005092,
+              8478.25367449942
+            ],
+            [
+              7960.491804217375,
+              8543.48948025914
+            ]
+          ],
+          [
+            [
+              8241.259514570342,
+              8478.25367449942
+            ],
+            [
+              7958.6921957826235,
+              8413.017868739698
+            ],
+            [
+              7960.491804217374,
+              8405.222908221418
+            ],
+            [
+              8243.059123005092,
+              8470.45871398114
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.692195782624,
+              8535.69451974086
+            ],
+            [
+              8523.82683335806,
+              8405.222908221418
+            ],
+            [
+              8525.62644179281,
+              8413.017868739698
+            ],
+            [
+              7960.491804217375,
+              8543.48948025914
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 78,
+        "bifold": [
+          [
+            [
+              7958.760353236728,
+              8535.679409597065
+            ],
+            [
+              8242.423157449533,
+              8475.385019259915
+            ],
+            [
+              8244.086450976074,
+              8483.210200065785
+            ],
+            [
+              7960.423646763271,
+              8543.504590402936
+            ]
+          ],
+          [
+            [
+              8242.423157449533,
+              8483.210200065785
+            ],
+            [
+              7958.760353236729,
+              8422.915809728634
+            ],
+            [
+              7960.423646763272,
+              8415.090628922764
+            ],
+            [
+              8244.086450976074,
+              8475.385019259915
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.760353236728,
+              8535.679409597065
+            ],
+            [
+              8526.085961662337,
+              8415.090628922764
+            ],
+            [
+              8527.749255188877,
+              8422.915809728634
+            ],
+            [
+              7960.423646763271,
+              8543.504590402936
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 79,
+        "bifold": [
+          [
+            [
+              7958.8287640184935,
+              8535.66549126621
+            ],
+            [
+              8243.500647218316,
+              8480.330882607013
+            ],
+            [
+              8245.02711918133,
+              8488.183900074593
+            ],
+            [
+              7960.355235981506,
+              8543.51850873379
+            ]
+          ],
+          [
+            [
+              8243.500647218316,
+              8488.183900074593
+            ],
+            [
+              7958.828764018494,
+              8432.849291415396
+            ],
+            [
+              7960.355235981507,
+              8424.996273947816
+            ],
+            [
+              8245.02711918133,
+              8480.330882607013
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.8287640184935,
+              8535.66549126621
+            ],
+            [
+              8528.172530418138,
+              8424.996273947814
+            ],
+            [
+              8529.699002381152,
+              8432.849291415394
+            ],
+            [
+              7960.355235981506,
+              8543.51850873379
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 80,
+        "bifold": [
+          [
+            [
+              7958.897407289332,
+              8535.652768987951
+            ],
+            [
+              8244.491655662872,
+              8485.294797464541
+            ],
+            [
+              8245.880841084208,
+              8493.17325948864
+            ],
+            [
+              7960.286592710668,
+              8543.53123101205
+            ]
+          ],
+          [
+            [
+              8244.491655662872,
+              8493.17325948864
+            ],
+            [
+              7958.897407289332,
+              8442.81528796523
+            ],
+            [
+              7960.286592710668,
+              8434.936825941131
+            ],
+            [
+              8245.880841084208,
+              8485.294797464541
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.897407289332,
+              8535.652768987951
+            ],
+            [
+              8530.085904036412,
+              8434.936825941131
+            ],
+            [
+              8531.475089457748,
+              8442.81528796523
+            ],
+            [
+              7960.286592710668,
+              8543.53123101205
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 81,
+        "bifold": [
+          [
+            [
+              7958.966262139838,
+              8535.64124663762
+            ],
+            [
+              8245.395880912429,
+              8490.275251775953
+            ],
+            [
+              8246.64735663275,
+              8498.176758500713
+            ],
+            [
+              7960.217737860161,
+              8543.54275336238
+            ]
+          ],
+          [
+            [
+              8245.395880912429,
+              8498.176758500713
+            ],
+            [
+              7958.966262139837,
+              8452.810763639045
+            ],
+            [
+              7960.21773786016,
+              8444.909256914285
+            ],
+            [
+              8246.64735663275,
+              8490.275251775953
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7958.966262139838,
+              8535.64124663762
+            ],
+            [
+              8531.82549968502,
+              8444.909256914287
+            ],
+            [
+              8533.07697540534,
+              8452.810763639047
+            ],
+            [
+              7960.217737860161,
+              8543.54275336238
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 82,
+        "bifold": [
+          [
+            [
+              7959.035307596159,
+              8535.630927725035
+            ],
+            [
+              8246.213047531215,
+              8495.270728446616
+            ],
+            [
+              8247.326432338894,
+              8503.192872996548
+            ],
+            [
+              7960.14869240384,
+              8543.553072274966
+            ]
+          ],
+          [
+            [
+              8246.213047531215,
+              8503.192872996548
+            ],
+            [
+              7959.035307596158,
+              8462.832673718129
+            ],
+            [
+              7960.148692403839,
+              8454.910529168197
+            ],
+            [
+              8247.326432338894,
+              8495.270728446616
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.035307596159,
+              8535.630927725035
+            ],
+            [
+              8533.390787466271,
+              8454.910529168197
+            ],
+            [
+              8534.50417227395,
+              8462.832673718129
+            ],
+            [
+              7960.14869240384,
+              8543.553072274966
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 83,
+        "bifold": [
+          [
+            [
+              7959.104522626379,
+              8535.621815393435
+            ],
+            [
+              8246.942906602362,
+              8500.279705805942
+            ],
+            [
+              8247.917861349604,
+              8508.220075019073
+            ],
+            [
+              7960.079477373621,
+              8543.562184606566
+            ]
+          ],
+          [
+            [
+              8246.942906602362,
+              8508.220075019073
+            ],
+            [
+              7959.104522626379,
+              8472.87796543158
+            ],
+            [
+              7960.079477373621,
+              8464.93759621845
+            ],
+            [
+              8247.917861349604,
+              8500.279705805942
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.104522626379,
+              8535.621815393435
+            ],
+            [
+              8534.781290578345,
+              8464.93759621845
+            ],
+            [
+              8535.756245325587,
+              8472.87796543158
+            ],
+            [
+              7960.079477373621,
+              8543.562184606566
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 84,
+        "bifold": [
+          [
+            [
+              7959.173886146929,
+              8535.613912418528
+            ],
+            [
+              8247.585235803728,
+              8505.300658070908
+            ],
+            [
+              8248.42146350987,
+              8513.256833233852
+            ],
+            [
+              7960.01011385307,
+              8543.570087581473
+            ]
+          ],
+          [
+            [
+              8247.585235803728,
+              8513.256833233852
+            ],
+            [
+              7959.17388614693,
+              8482.943578886232
+            ],
+            [
+              7960.010113853071,
+              8474.987403723288
+            ],
+            [
+              8248.42146350987,
+              8505.300658070908
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.173886146929,
+              8535.613912418528
+            ],
+            [
+              8535.996585460527,
+              8474.98740372329
+            ],
+            [
+              8536.83281316667,
+              8482.943578886234
+            ],
+            [
+              7960.01011385307,
+              8543.570087581473
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 85,
+        "bifold": [
+          [
+            [
+              7959.243377029009,
+              8535.607221207634
+            ],
+            [
+              8248.139839475616,
+              8510.332055810813
+            ],
+            [
+              8248.837085417597,
+              8518.301613395546
+            ],
+            [
+              7959.94062297099,
+              8543.576778792367
+            ]
+          ],
+          [
+            [
+              8248.139839475616,
+              8518.301613395546
+            ],
+            [
+              7959.24337702901,
+              8493.026447998725
+            ],
+            [
+              7959.940622970991,
+              8485.056890413993
+            ],
+            [
+              8248.837085417597,
+              8510.332055810813
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.243377029009,
+              8535.607221207634
+            ],
+            [
+              8537.036301922222,
+              8485.056890413993
+            ],
+            [
+              8537.733547864204,
+              8493.026447998725
+            ],
+            [
+              7959.94062297099,
+              8543.576778792367
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 86,
+        "bifold": [
+          [
+            [
+              7959.312974105023,
+              8535.601743798961
+            ],
+            [
+              8248.60654868037,
+              8515.372366413165
+            ],
+            [
+              8249.164600470325,
+              8523.352878815243
+            ],
+            [
+              7959.871025894976,
+              8543.58225620104
+            ]
+          ],
+          [
+            [
+              8248.60654868037,
+              8523.352878815243
+            ],
+            [
+              7959.3129741050225,
+              8503.123501429447
+            ],
+            [
+              7959.871025894975,
+              8495.142989027368
+            ],
+            [
+              8249.164600470325,
+              8515.372366413165
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.312974105023,
+              8535.601743798961
+            ],
+            [
+              8537.90012325572,
+              8495.142989027368
+            ],
+            [
+              8538.458175045675,
+              8503.123501429447
+            ],
+            [
+              7959.871025894976,
+              8543.58225620104
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 87,
+        "bifold": [
+          [
+            [
+              7959.3826561750275,
+              8535.597481860983
+            ],
+            [
+              8248.985221253854,
+              8520.42005455053
+            ],
+            [
+              8249.403908903798,
+              8528.409090828565
+            ],
+            [
+              7959.801343824972,
+              8543.586518139018
+            ]
+          ],
+          [
+            [
+              8248.985221253854,
+              8528.409090828565
+            ],
+            [
+              7959.3826561750275,
+              8513.231663518112
+            ],
+            [
+              7959.801343824972,
+              8505.242627240077
+            ],
+            [
+              8249.403908903798,
+              8520.42005455053
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.3826561750275,
+              8535.597481860983
+            ],
+            [
+              8538.58778633268,
+              8505.242627240075
+            ],
+            [
+              8539.006473982625,
+              8513.23166351811
+            ],
+            [
+              7959.801343824972,
+              8543.586518139018
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 88,
+        "bifold": [
+          [
+            [
+              7959.452402013189,
+              8535.594436691925
+            ],
+            [
+              8249.275741848727,
+              8525.4735826482
+            ],
+            [
+              8249.554937822348,
+              8533.46870926435
+            ],
+            [
+              7959.73159798681,
+              8543.589563308076
+            ]
+          ],
+          [
+            [
+              8249.275741848727,
+              8533.46870926435
+            ],
+            [
+              7959.452402013189,
+              8523.347855220625
+            ],
+            [
+              7959.73159798681,
+              8515.352728604474
+            ],
+            [
+              8249.554937822348,
+              8525.4735826482
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.452402013189,
+              8535.594436691925
+            ],
+            [
+              8539.099081684264,
+              8515.352728604474
+            ],
+            [
+              8539.378277657885,
+              8523.347855220625
+            ],
+            [
+              7959.73159798681,
+              8543.589563308076
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 89,
+        "bifold": [
+          [
+            [
+              7959.52219037425,
+              8535.592609219375
+            ],
+            [
+              8249.478021969604,
+              8530.531411352562
+            ],
+            [
+              8249.617641221103,
+              8538.530192913813
+            ],
+            [
+              7959.661809625749,
+              8543.591390780626
+            ]
+          ],
+          [
+            [
+              8249.478021969604,
+              8538.530192913813
+            ],
+            [
+              7959.52219037425,
+              8533.468995047
+            ],
+            [
+              7959.661809625749,
+              8525.470213485749
+            ],
+            [
+              8249.617641221103,
+              8530.531411352562
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.52219037425,
+              8535.592609219375
+            ],
+            [
+              8539.433853564957,
+              8525.47021348575
+            ],
+            [
+              8539.573472816455,
+              8533.468995047002
+            ],
+            [
+              7959.661809625749,
+              8543.591390780626
+            ]
+          ]
+        ]
+      },
+      {
+        "angle": 90,
+        "bifold": [
+          [
+            [
+              7959.592,
+              8535.592
+            ],
+            [
+              8249.592,
+              8535.592
+            ],
+            [
+              8249.592,
+              8543.592
+            ],
+            [
+              7959.592,
+              8543.592
+            ]
+          ],
+          [
+            [
+              8249.592,
+              8543.592
+            ],
+            [
+              7959.592000000001,
+              8543.592
+            ],
+            [
+              7959.592000000001,
+              8535.592
+            ],
+            [
+              8249.592,
+              8535.592
+            ]
+          ]
+        ],
+        "pivot": [
+          [
+            [
+              7959.592,
+              8535.592
+            ],
+            [
+              8539.592,
+              8535.592
+            ],
+            [
+              8539.592,
+              8543.592
+            ],
+            [
+              7959.592,
+              8543.592
+            ]
+          ]
+        ]
+      }
+    ],
+    "mechanisms": [
+      {
+        "id": "bifold",
+        "max_inward_projection_mm": 290.0256412211029,
+        "body500_collision_samples": 0,
+        "body600_collision_samples": 31,
+        "shelf_collision_samples": 0,
+        "outside_wet_footprint_samples": 90
+      },
+      {
+        "id": "pivot",
+        "max_inward_projection_mm": 580.0000000000009,
+        "body500_collision_samples": 54,
+        "body600_collision_samples": 64,
+        "shelf_collision_samples": 0,
+        "outside_wet_footprint_samples": 90
+      }
+    ],
+    "opening_after_concept_20mm_allowance_mm": 560,
+    "not_installed_clear_width": true,
+    "limitations": "No hinge offset, handle, gasket, product tolerance, articulated occupant, finger safety, seals or supplier certification. Fold mechanism remains HOLD. Full moving panel rectangles at1deg."
+  },
+  "vanities": [
+    {
+      "id": "R1-ensuite-vanity",
+      "external_mm": [
+        600,
+        460
+      ],
+      "generic_internal_bowl_mm": [
+        410,
+        300
+      ],
+      "generic_side_landing_mm": 70,
+      "drawer_clear_assumption_mm": [
+        564,
+        370,
+        180
+      ],
+      "drawer_gross_L_assumption": 37.5624,
+      "central_trap_box_mm": [
+        140,
+        200,
+        180
+      ],
+      "net_upper_drawer_L_assumption": 32.5224,
+      "opening_strokes_mm": [
+        250,
+        350
+      ],
+      "not_vendor_capacity": true
+    },
+    {
+      "id": "starter-18",
+      "external_mm": [
+        600,
+        460
+      ],
+      "generic_internal_bowl_mm": [
+        410,
+        300
+      ],
+      "generic_side_landing_mm": 70,
+      "drawer_clear_assumption_mm": [
+        564,
+        370,
+        180
+      ],
+      "drawer_gross_L_assumption": 37.5624,
+      "central_trap_box_mm": [
+        140,
+        200,
+        180
+      ],
+      "net_upper_drawer_L_assumption": 32.5224,
+      "opening_strokes_mm": [
+        250,
+        350
+      ],
+      "not_vendor_capacity": true
+    },
+    {
+      "id": "starter-26",
+      "external_mm": [
+        450,
+        250
+      ],
+      "generic_internal_bowl_mm": [
+        350,
+        150
+      ],
+      "generic_side_landing_mm": 30,
+      "drawer_clear_assumption_mm": [
+        414,
+        200,
+        120
+      ],
+      "drawer_gross_L_assumption": 9.936,
+      "central_trap_box_mm": [
+        120,
+        100,
+        120
+      ],
+      "net_upper_drawer_L_assumption": 8.496,
+      "opening_strokes_mm": [
+        250,
+        350
+      ],
+      "not_vendor_capacity": true
+    }
+  ],
+  "master": {
+    "wet_mm": [
+      1450,
+      800
+    ],
+    "screen_mm": [
+      600,
+      18,
+      2050
+    ],
+    "west_open_band_mm": 832,
+    "wet_edge_to_WIC_jamb_y_projection_mm": 115.71799999999985,
+    "rejected900_projection_mm": 15.718,
+    "splash": "NOT_SIMULATED / dynamic real-water trial needed",
+    "screen_extension": "A700 extends west100, preserves east edge / not selected"
+  },
+  "orientation_correction": "Source plan y increases south. Family shower is southeast: exposed WC-facing edge is NORTH (y7959.592), west access x7959.592. Inherited PR54 calls this south; coordinates, not the old cardinal label, govern this study.",
+  "limits": "Source-model mm;2D rectangles at1deg with40mm room leaf/8mm conceptual glass. Body proxies500/600 are stress cases, not comfort, access, compliance or site dimensions. Floor wet marker is not treated as a solid."
+}

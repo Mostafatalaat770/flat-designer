@@ -1,0 +1,988 @@
+{
+  "schema": "WholeHomeSingleAllocationStorage/1",
+  "source": "SOURCE_MODEL; no measured cabinet internals supplied",
+  "rooms": [
+    {
+      "room_id": "RECP-01",
+      "name_ar": "الريسبشن والدخول والسفرة",
+      "items": [
+        {
+          "allocation_id": "RECP-01/A-dining-sideboard",
+          "id": "A-dining-sideboard",
+          "source_external_mm": [
+            2000,
+            400,
+            800
+          ],
+          "provisional_external_mm": [
+            1250,
+            400,
+            800
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 750,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "assumed_clear_width_mm": {
+            "source": 1960,
+            "provisional": 1210,
+            "loss_percent": 38.2653,
+            "assumption": "20mm ends; not surveyed net capacity"
+          },
+          "confirmed_external_width_loss_percent": 37.5
+        },
+        {
+          "allocation_id": "RECP-01/starter-40",
+          "id": "starter-40",
+          "source_external_mm": [
+            900,
+            280,
+            null
+          ],
+          "provisional_external_mm": [
+            600,
+            350,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 300,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [
+            "Extra shoes remain unallocated; WIC not credited"
+          ],
+          "design_hypothesis_clear_mm": [
+            560,
+            310,
+            680
+          ],
+          "daily_pairs_example": 4,
+          "shoe_example_mm": [
+            300,
+            115,
+            150
+          ],
+          "capacity_confirmed": false
+        },
+        {
+          "allocation_id": "RECP-01/starter-30",
+          "id": "starter-30",
+          "source_external_mm": [
+            1800,
+            380,
+            null
+          ],
+          "provisional_external_mm": [
+            1800,
+            380,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "أطقم السفرة والتقديم",
+        "الأحذية اليومية والضيوف",
+        "كتب وأجهزة التلفزيون"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "HALL-01",
+      "name_ar": "الطرقة الخاصة",
+      "items": [],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "لا وحدة تخزين مصدر؛ لا تنقل إليه عجزًا مفترضًا"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [
+        "لا وحدة تخزين مصدر؛ لا تنقل إليه عجزًا مفترضًا"
+      ],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "MBR-01",
+      "name_ar": "غرفة النوم الرئيسية",
+      "items": [
+        {
+          "allocation_id": "MBR-01/V7-master-drawers",
+          "id": "V7-master-drawers",
+          "source_external_mm": [
+            1000,
+            400,
+            800
+          ],
+          "provisional_external_mm": [
+            600,
+            400,
+            800
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 400,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "assumed_clear_width_mm": {
+            "source": 960,
+            "provisional": 560,
+            "loss_percent": 41.6667,
+            "assumption": "20mm ends; depth/hardware remain UNKNOWN"
+          },
+          "confirmed_external_width_loss_percent": 40
+        },
+        {
+          "allocation_id": "MBR-01/starter-2",
+          "id": "starter-2",
+          "source_external_mm": [
+            450,
+            400,
+            null
+          ],
+          "provisional_external_mm": [
+            450,
+            400,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "MBR-01/starter-3",
+          "id": "starter-3",
+          "source_external_mm": [
+            450,
+            400,
+            null
+          ],
+          "provisional_external_mm": [
+            450,
+            400,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "ملابس مطوية ومتعلقات شخصية",
+        "شواحن وكتب",
+        "مفروشات السرير"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "BR-01",
+      "name_ar": "غرفة النوم الأولى",
+      "items": [
+        {
+          "allocation_id": "BR-01/starter-7",
+          "id": "starter-7",
+          "source_external_mm": [
+            1800,
+            600,
+            null
+          ],
+          "provisional_external_mm": [
+            1800,
+            650,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "BR-01/V7-bedroom1-drawers",
+          "id": "V7-bedroom1-drawers",
+          "source_external_mm": [
+            1000,
+            350,
+            800
+          ],
+          "provisional_external_mm": [
+            600,
+            350,
+            800
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 400,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "assumed_clear_width_mm": {
+            "source": 960,
+            "provisional": 560,
+            "loss_percent": 41.6667,
+            "assumption": "20mm ends; depth/hardware remain UNKNOWN"
+          },
+          "confirmed_external_width_loss_percent": 40
+        },
+        {
+          "allocation_id": "BR-01/M3G2-BR01-nightstand",
+          "id": "M3G2-BR01-nightstand",
+          "source_external_mm": null,
+          "provisional_external_mm": [
+            300,
+            320,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": null,
+          "source_capacity_status": "NO_SOURCE_CAPACITY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "ملابس",
+        "كتب وأدوات دراسة",
+        "مفروشات"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "BR-02",
+      "name_ar": "المكتب وغرفة الضيف",
+      "items": [
+        {
+          "allocation_id": "BR-02/starter-13",
+          "id": "starter-13",
+          "source_external_mm": [
+            1600,
+            600,
+            null
+          ],
+          "provisional_external_mm": [
+            1200,
+            650,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 400,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "assumed_clear_bay_width_mm": {
+            "source": 773,
+            "provisional": 573,
+            "loss_percent": 25.8732,
+            "assumption": "Two bays/three18mm panels"
+          },
+          "confirmed_external_width_loss_percent": 25,
+          "source_linen_bay_preserved_in_inventory": true
+        },
+        {
+          "allocation_id": "BR-02/M3G2-BR02-nightstand",
+          "id": "M3G2-BR02-nightstand",
+          "source_external_mm": null,
+          "provisional_external_mm": [
+            300,
+            300,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": null,
+          "source_capacity_status": "NO_SOURCE_CAPACITY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "ملابس/مفروشات في ضلع الدولاب الذي تقلص",
+        "ملفات وشغل",
+        "عدة نوم الضيف"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "WIC-01",
+      "name_ar": "الدريسنج",
+      "items": [
+        {
+          "allocation_id": "WIC-01/starter-4",
+          "id": "starter-4",
+          "source_external_mm": [
+            1250,
+            600,
+            null
+          ],
+          "provisional_external_mm": [
+            1250,
+            650,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [
+            "Four-pair shoe reserve NOT allocated",
+            "Shelf clear372 vs400 reserve box; needs28 adjustment",
+            "Opposing drawers/users cannot be simultaneous"
+          ],
+          "assumed_inner_depth_mm": 575,
+          "garment_depth_assumed_mm": 550,
+          "bulky600mm_result": "FAILS_ASSUMED_DEPTH"
+        },
+        {
+          "allocation_id": "WIC-01/starter-5",
+          "id": "starter-5",
+          "source_external_mm": [
+            1250,
+            600,
+            null
+          ],
+          "provisional_external_mm": [
+            1250,
+            650,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [
+            "Four-pair shoe reserve NOT allocated",
+            "Shelf clear372 vs400 reserve box; needs28 adjustment",
+            "Opposing drawers/users cannot be simultaneous"
+          ],
+          "assumed_inner_depth_mm": 575,
+          "garment_depth_assumed_mm": 550,
+          "bulky600mm_result": "FAILS_ASSUMED_DEPTH"
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "عدد وطول الملابس المعلقة",
+        "قطع سميكة600مم",
+        "أحذية احتياطية4 أزواج كفرضية فقط",
+        "فوَط ومفروشات لم يخصص لها مكان"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [
+        "عدد وطول الملابس المعلقة",
+        "قطع سميكة600مم",
+        "أحذية احتياطية4 أزواج كفرضية فقط",
+        "فوَط ومفروشات لم يخصص لها مكان"
+      ],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "BATH-M01",
+      "name_ar": "حمام الرئيسية",
+      "items": [
+        {
+          "allocation_id": "BATH-M01/R1-ensuite-vanity",
+          "id": "R1-ensuite-vanity",
+          "source_external_mm": [
+            600,
+            460,
+            null
+          ],
+          "provisional_external_mm": [
+            600,
+            460,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "BATH-M01/BATHM-shampoo-shelf-A1",
+          "id": "BATHM-shampoo-shelf-A1",
+          "source_external_mm": [
+            380,
+            115,
+            40
+          ],
+          "provisional_external_mm": [
+            380,
+            115,
+            40
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "BATH-M01/BATHM-shampoo-shelf-A2",
+          "id": "BATHM-shampoo-shelf-A2",
+          "source_external_mm": [
+            380,
+            115,
+            40
+          ],
+          "provisional_external_mm": [
+            380,
+            115,
+            40
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "BATH-M01/BATHM-A1-mirror",
+          "id": "BATHM-A1-mirror",
+          "source_external_mm": [
+            600,
+            35,
+            850
+          ],
+          "provisional_external_mm": [
+            600,
+            100,
+            850
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "capacity_hypothesis": "100mm outer cabinet-depth concept; usable compartments/hardware UNKNOWN"
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "شامبو ومستلزمات استعمال يومي",
+        "مناشف إضافية ومستهلكات خارج الحيز المبلول"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "BATH-C01",
+      "name_ar": "حمام الأسرة",
+      "items": [
+        {
+          "allocation_id": "BATH-C01/starter-18",
+          "id": "starter-18",
+          "source_external_mm": [
+            600,
+            460,
+            null
+          ],
+          "provisional_external_mm": [
+            600,
+            460,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "BATH-C01/BATHC-wall-towel-cabinet-A2",
+          "id": "BATHC-wall-towel-cabinet-A2",
+          "source_external_mm": [
+            520,
+            170,
+            420
+          ],
+          "provisional_external_mm": [
+            520,
+            170,
+            420
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "design_hypothesis_depth_mm": 134,
+          "bath_towel_assumed_depth_mm": 180,
+          "shortfall_mm": 46,
+          "allocation": "HAND_TOWELS_ONLY; bath towel stock unallocated"
+        },
+        {
+          "allocation_id": "BATH-C01/BATHC-shampoo-shelf-A1",
+          "id": "BATHC-shampoo-shelf-A1",
+          "source_external_mm": [
+            350,
+            115,
+            40
+          ],
+          "provisional_external_mm": [
+            350,
+            115,
+            40
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "BATH-C01/BATHC-A1-mirror",
+          "id": "BATHC-A1-mirror",
+          "source_external_mm": [
+            600,
+            35,
+            800
+          ],
+          "provisional_external_mm": [
+            600,
+            100,
+            800
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "capacity_hypothesis": "100mm outer cabinet-depth concept; usable compartments/hardware UNKNOWN"
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "مناشف يد فقط داخل الدولاب الضحل",
+        "مناشف حمام كاملة تحتاج مخزنًا محددًا"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "WC-01",
+      "name_ar": "حمام الضيوف",
+      "items": [
+        {
+          "allocation_id": "WC-01/starter-26",
+          "id": "starter-26",
+          "source_external_mm": [
+            350,
+            180,
+            null
+          ],
+          "provisional_external_mm": [
+            450,
+            250,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "WC-01/WC-A1-mirror",
+          "id": "WC-A1-mirror",
+          "source_external_mm": [
+            500,
+            35,
+            800
+          ],
+          "provisional_external_mm": [
+            500,
+            35,
+            800
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "مستهلكات صغيرة مع ترك خدمة السيفون"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "KIT-01",
+      "name_ar": "المطبخ",
+      "items": [
+        {
+          "allocation_id": "KIT-01/starter-20",
+          "id": "starter-20",
+          "source_external_mm": [
+            1500,
+            600,
+            null
+          ],
+          "provisional_external_mm": [
+            1500,
+            600,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "KIT-01/K3-corner",
+          "id": "K3-corner",
+          "source_external_mm": [
+            600,
+            590,
+            null
+          ],
+          "provisional_external_mm": [
+            600,
+            590,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "credited_daily_capacity": 0,
+          "reason": "Blind corner access unresolved; avoid double-credit with west cabinet"
+        },
+        {
+          "allocation_id": "KIT-01/K3-sink-base",
+          "id": "K3-sink-base",
+          "source_external_mm": [
+            600,
+            610,
+            null
+          ],
+          "provisional_external_mm": [
+            600,
+            610,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "KIT-01/K3-end-landing",
+          "id": "K3-end-landing",
+          "source_external_mm": [
+            600,
+            410,
+            null
+          ],
+          "provisional_external_mm": [
+            600,
+            410,
+            null
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": []
+        },
+        {
+          "allocation_id": "KIT-01/KIT-A1-upper-north",
+          "id": "KIT-A1-upper-north",
+          "source_external_mm": [
+            1800,
+            330,
+            700
+          ],
+          "provisional_external_mm": [
+            1800,
+            330,
+            700
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "capacity_hypothesis": "Closed upper; case18/shelf deductions hypothetical, cannot be summed into confirmed net storage",
+          "retained_hypothetical_gross_box_L": 344.355936,
+          "rejected_open_cubby_hypothetical_loss_L": 58.566816
+        },
+        {
+          "allocation_id": "KIT-01/KIT-A1-upper-west-low",
+          "id": "KIT-A1-upper-west-low",
+          "source_external_mm": [
+            300,
+            330,
+            700
+          ],
+          "provisional_external_mm": [
+            300,
+            330,
+            700
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "capacity_hypothesis": "Closed upper; case18/shelf deductions hypothetical, cannot be summed into confirmed net storage"
+        },
+        {
+          "allocation_id": "KIT-01/KIT-A1-upper-west-high",
+          "id": "KIT-A1-upper-west-high",
+          "source_external_mm": [
+            450,
+            330,
+            700
+          ],
+          "provisional_external_mm": [
+            450,
+            330,
+            700
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": 0,
+          "source_capacity_status": "SOURCE_MODEL_OUTER_ENVELOPE_ONLY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "capacity_hypothesis": "Closed upper; case18/shelf deductions hypothetical, cannot be summed into confirmed net storage"
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "أطباق280مم وحلل300مم مع المقابض",
+        "مؤن وأجهزة صغيرة",
+        "سلة قمامة ومنظفات",
+        "تجربة وصول الركن والعلوي"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "TER-MAIN",
+      "name_ar": "التراس الرئيسي",
+      "items": [],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "لا تخزين مغلق معتمد ولا بديل للبوفيه"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "TER-MBR",
+      "name_ar": "تراس الرئيسية",
+      "items": [],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "لا احتياطي ملابس أو منسوجات بالخارج"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [],
+      "no_cross_room_compensation_assumed": true
+    },
+    {
+      "room_id": "TER-SVC",
+      "name_ar": "تراس الخدمة",
+      "items": [
+        {
+          "allocation_id": "TER-SVC/G5-service-caddy",
+          "id": "G5-service-caddy",
+          "source_external_mm": null,
+          "provisional_external_mm": [
+            280,
+            280,
+            1450
+          ],
+          "source_net_usable_L": null,
+          "provisional_net_usable_L": null,
+          "verified_usable_interior_mm": null,
+          "unknown_net_dimensions": true,
+          "confirmed_external_width_loss_mm": null,
+          "source_capacity_status": "NO_SOURCE_CAPACITY",
+          "provisional_capacity_status": "DESIGN_PROXY; hardware/interior/inventory UNKNOWN",
+          "reserved_or_unallocated": [],
+          "approved_weatherproof_capacity": 0,
+          "reason": "Portable open caddy; not pantry/linen/chemical compensation"
+        }
+      ],
+      "source_actual_net_L": null,
+      "provisional_designed_net_L": null,
+      "verified_usable_total_L": null,
+      "household_inventory_required": [
+        "سلة الغسيل",
+        "النشارة بعد طيها120مم: مكان داخلي غير مخصص",
+        "أدوات نظافة لا تُعتمد بالخارج"
+      ],
+      "residual_storage_shortage": "UNKNOWN_UNTIL_ITEM_INVENTORY_AND_NET_MEASUREMENTS",
+      "reserved_or_unallocated": [
+        "سلة الغسيل",
+        "النشارة بعد طيها120مم: مكان داخلي غير مخصص",
+        "أدوات نظافة لا تُعتمد بالخارج"
+      ],
+      "no_cross_room_compensation_assumed": true
+    }
+  ],
+  "whole_home_source_net_L": null,
+  "whole_home_provisional_net_L": null,
+  "whole_home_residual_shortage": "UNKNOWN",
+  "known_tradeoffs": {
+    "buffet_external_width_loss_mm": 750,
+    "br02_wardrobe_external_width_loss_mm": 400,
+    "master_chest_external_width_loss_mm": 400,
+    "br01_chest_external_width_loss_mm": 400,
+    "wic_shoe_reserve_cost_hypothesis_accessible_clothing_L": 137.5,
+    "wic_shoe_reserve_allocated": false,
+    "retained_closed_upper_not_new_net_credit": true
+  },
+  "rules": [
+    "Each item allocated once using unique allocation_id; WIC lower bay and shoe reserve cannot both be credited",
+    "Outer dimensions and gross-box hypotheses are not usable storage",
+    "Kitchen/terraces do not compensate reception/bedroom reductions",
+    "All wardrobe capacities need hardware and clothing inventory",
+    "No arithmetic total over UNKNOWN values"
+  ]
+}
