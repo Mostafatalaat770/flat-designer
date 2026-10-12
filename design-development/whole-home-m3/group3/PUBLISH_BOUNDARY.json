@@ -1,0 +1,346 @@
+{
+  "schema": "M3Group3PublicationBoundary/1",
+  "tag": "type-b-m3-group3-review-20261012",
+  "PR68_branch_head_preserved": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+  "branch_push": false,
+  "reason": "Read-only Vercel deployment inspection proves source:git for8b91b69 even with[skip ci]. Owner prohibits any new deployment. Persist review with a tag; existing Actions push filters match branches only.",
+  "prior_deployment_evidence": {
+    "id": "dpl_3pp1o5afYXjRq3e8XUmoCewqbrk1",
+    "source": "git",
+    "commit": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+    "ref": "integration/owner-review-gates-r1-20261010",
+    "state": "READY",
+    "message": "Type B M3 Group2: verified bedrooms and WIC owner review [skip ci]"
+  },
+  "existing_workflow_filter_checks": [
+    {
+      "path": ".github/workflows/agent-check.yml",
+      "sha256": "1764924faec3725c94e1f44798646b050d8d71ee6354ed416d31edb5b736685b",
+      "push_branches": [
+        "master",
+        "agent/**"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/bathroom-a2-render.yml",
+      "sha256": "27223f8c71acfe9f9362aee95d6d054bfde3d97adf7e2561c273ab6ec0ca634e",
+      "push_branches": [
+        "design/walkin-shower-family-bath-v53-20261009"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/integration-v55-review.yml",
+      "sha256": "5444e87d1836f36c1299e045dbbd8c7e8df7e25caecd5d71f04f884cbd443cca",
+      "push_branches": [
+        "master",
+        "integration/type-b-current-v55-20261009"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/kitchen-r4-webgl-review.yml",
+      "sha256": "c6eddb709f7765b7286ef171388131044d78679ffeab5f18723b50feeade5dc4",
+      "push_branches": [
+        "integration/owner-review-gates-r1-20261010"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/kitchen-r5-webgl-review.yml",
+      "sha256": "60cc9d9a7292d6231d05c7ab036b3da89868758baa8a873cf7a6f87349142216",
+      "push_branches": [
+        "integration/owner-review-gates-r1-20261010"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/kitchen-r6-webgl-review.yml",
+      "sha256": "480546cd0a2dabef37ad5efbed22ffe6fefe1fb93d22d31b011e2b61a6db2982",
+      "push_branches": [
+        "integration/owner-review-gates-r1-20261010"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/owner-kitchen-dining-review.yml",
+      "sha256": "ed455a7ca69d9d4f9cf3d7f40aa9202e8b09198894f2ef9cbeb689889041e667",
+      "push_branches": [
+        "master"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/owner-review-r1.yml",
+      "sha256": "7b0134a76e2f1eea05bf4bb484dac708e8c87ee7b77163284c148483b19d91ed",
+      "push_branches": [
+        "integration/owner-review-gates-r1-20261010"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/p1-site-feasibility.yml",
+      "sha256": "04c7c7bea63ec96831630cd0cde92eb43c7c4d11c58623509c08778d61f5bf0a",
+      "push_branches": [
+        "master"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/render-apartment.yml",
+      "sha256": "e135a83778057f59264c30d6956b4921c9a368d48a341d7eee97a3e720ce4982",
+      "push_branches": [
+        "**"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/render-k11-detail.yml",
+      "sha256": "0b858e5ac7e34b542b92937812ab341574cf6db65d339c1c2140ff4738830408",
+      "push_branches": [
+        "design/k11-kitchen-daily-use"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/sprint2-entry-feasibility.yml",
+      "sha256": "bfa4537c5f989ceddee35a55ebf3990e50fc3967875ba074ea7e41f61e9bdb50",
+      "push_branches": [
+        "design/sprint2-*"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/sprint3-shoe-sku-screen.yml",
+      "sha256": "57648d407f5ebf88f9004691596b00e58511f64b054ffddabc7fd262ffbba98b",
+      "push_branches": [
+        "design/sprint3-*"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/sprint4-kitchen-operation.yml",
+      "sha256": "3f17cf9cbbfc14628580904d048570e02df707d77e9d47fea5986da37ef67a34",
+      "push_branches": [
+        "design/sprint4-*"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/sprint5-manufacturer-fit.yml",
+      "sha256": "276411f6e0093e6763b2f4ec99d2b0254e4ff457a3d1af28068ed44a8441eadc",
+      "push_branches": [
+        "design/sprint5-*"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/sprint6-bosch-dw.yml",
+      "sha256": "b30759e2e2eab0cfd5286447e91c36f3153e2cc781d53b22d1e0228addce3a70",
+      "push_branches": [
+        "design/sprint6-*"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a1.yml",
+      "sha256": "ac50913e3dc990df0a6b89c3afce16ad7c5b9ff54d31f00fcb8abbf21bfab036",
+      "push_branches": [
+        "advisor/**"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a10.yml",
+      "sha256": "8f1e21d1dd07aba6705d7a7ea7ac45de870d6796fcc102a26e0906a978bc4661",
+      "push_branches": [
+        "advisor/a10-second-bedroom-flex-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a11.yml",
+      "sha256": "9c874de0bf53ef194e33f654992003c02048e55f231e4c6bb192aa1086c40b90",
+      "push_branches": [
+        "advisor/a11-master-bedroom-sleep-first-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a12.yml",
+      "sha256": "ca187f478ac67a1bb5a21d894f84fca765874eaaa9e522bfcb1d46940324004b",
+      "push_branches": [
+        "advisor/a12-kitchen-dining-family-sprint-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a13.yml",
+      "sha256": "d135224c807c203b542660d97513cba7fb813f3c10088f5af5f9489f7d66115d",
+      "push_branches": [
+        "advisor/a13-six-seat-redistribution-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a14.yml",
+      "sha256": "284323c9c90a052974352f0484aed277d25017d2d7156add12fe5235bb537e25",
+      "push_branches": [
+        "advisor/a14-dishwasher-storage-workflow-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a15.yml",
+      "sha256": "021b0c1f993336b5b7a407a3b803e483f50237f4cda8ec975c704a3146a04f22",
+      "push_branches": [
+        "advisor/a15-whole-home-mep-first-fix-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a16.yml",
+      "sha256": "5876018dea168aea1d5372aa5bc3e1a02f36e44381feb63bf301ec282d14dd33",
+      "push_branches": [
+        "advisor/a16-reception-finish-directions-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a17.yml",
+      "sha256": "0c242fb5514249139c62b0635e53628fd226441c3d823c27f2adeb8222303f23",
+      "push_branches": [
+        "advisor/a17-family-living-view-qa-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-advisor-a8.yml",
+      "sha256": "2a47daad0ad86b7a152e5f621695aca0f39e3c5211eef76a0c909100aaa240b7",
+      "push_branches": [
+        "advisor/a8-private-wet-storage-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-foundation-phase2.yml",
+      "sha256": "9e904a71e3b2f8162db645e6fc99a201ed72dcbd101c28dd8c0b2e7abdb9b0c2",
+      "push_branches": [
+        "foundation/phase2-multi-actor-storage-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-home-experience.yml",
+      "sha256": "86b9e21a730f317c1bf14f2d2cd00d9b866f137c21e6f847a2073bf8b2e6c14e",
+      "push_branches": [
+        "foundation/phase3-home-experience-lab-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-j1.yml",
+      "sha256": "9531426cfbb56560a0204c81b054ac7f0c2a879077b00ba36c1f0c6690355698",
+      "push_branches": [
+        "design/j1-integrated-candidate"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-k10.yml",
+      "sha256": "1d8a20c1d83db897c5b8cd77676ff2a3d9d1026eeba7ad5dc10d2c03e4c9cf5a",
+      "push_branches": [
+        "design/k10-island-function"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-k11.yml",
+      "sha256": "f9a478579d8e5087fb952f23e779876484309bb19fd0cb0d1c400d9ecc8af1dd",
+      "push_branches": [
+        "design/k11-kitchen-daily-use"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-k12.yml",
+      "sha256": "ffdad8707ea6789e01ccc5a547fd44dbbe237d589bd2b1f2ba097efd4285007f",
+      "push_branches": [
+        "design/k12-permanent-end-prep"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-k4.yml",
+      "sha256": "24cef737c64b64d9991d7eea2a4587abc914a85ded4ae777556b204051402b0a",
+      "push_branches": [
+        "design/k4-render-truth"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-k8.yml",
+      "sha256": "99f6b9e616bc8fcfb1ee43a2128f01cb0182559275ddbc014177161731cd2808",
+      "push_branches": [
+        "design/k8-bound-finishes-review"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-k9.yml",
+      "sha256": "b9935e80f0ed94e5e2af66f159eae6de2546fcd0796a536269583609af915650",
+      "push_branches": [
+        "design/k9-balanced-rotated-island"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-platform-batch.yml",
+      "sha256": "5f58b0ec308971a63a39af7adaaecb4c0bfcd22e6862ac84ab4e28164ea33dfd",
+      "push_branches": [
+        "platform/batch-compare-and-verify-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-spatial-foundation.yml",
+      "sha256": "a44a37a22f58a4354558b4748adaef7a581418217880a480d1698a8bd50bd512",
+      "push_branches": [
+        "foundation/spatial-decision-engine-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-studio-explore-mode.yml",
+      "sha256": "ea2527beec5c0523d6a9fea7293c7143f2a9c26448976191cd4da4f637245ca4",
+      "push_branches": [
+        "platform/explore-verify-interactive-workspace-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/verify-vercel-preview.yml",
+      "sha256": "f3b603d82fc51971348a1c89820aa6441a378f8b5f1b9c9781097d7b7ceccee1",
+      "push_branches": [
+        "platform/vercel-visual-preview-20261008"
+      ],
+      "tag_matches": false
+    },
+    {
+      "path": ".github/workflows/whole-home-m0.yml",
+      "sha256": "9b95f6126657aa85471ad20a36a51aa18581f8a59e90902e70796863dd6a47a2",
+      "push_branches": [
+        "integration/owner-review-gates-r1-20261010"
+      ],
+      "tag_matches": false
+    }
+  ],
+  "Actions_triggered": false,
+  "deployment_requested": false,
+  "billing_workflow_host_settings_changed": false,
+  "cloud_saved": false,
+  "merge": false,
+  "procurement": false,
+  "construction_approval": false
+}

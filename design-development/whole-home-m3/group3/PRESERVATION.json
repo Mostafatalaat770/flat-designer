@@ -1,0 +1,15 @@
+{
+  "schema": "M3Group3Preservation/1",
+  "baseline_head": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+  "inherited_tracked_files": 1121,
+  "byte_identical": 1121,
+  "exceptions": [],
+  "raw_source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "ceiling_mm": 2500,
+  "held_files": {
+    "design-development/whole-home-m3/group1b/SITE_HOLDS.json": "b9f3b10f3a6c562789ba0784ed029f569714088ef0509003e94e2956ccd00781",
+    "design-development/whole-home-m3/group2/SITE_HOLDS.json": "c5b3a5e071d7223eeca2b2241780c98ce02bae6c5d114205f9058aa75ac496df"
+  },
+  "scope": "Added isolated review only; all earlier source snapshots, geometry, master plan, registry and deliverables preserved."
+}

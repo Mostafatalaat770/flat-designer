@@ -1,0 +1,1569 @@
+{
+  "schema": "M3Group3OfflineBrowser/1",
+  "result": "PASS",
+  "states": 60,
+  "records": [
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-wide",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-wide",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-wide",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-shower",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-shower",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-shower",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-vanity",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-vanity",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-vanity",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-night",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-night",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-night",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-door-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-door-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-door-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "SOURCE-B",
+      "camera": "family-shower",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "B-A",
+      "camera": "family-shower",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "SOURCE-A",
+      "camera": "family-shower",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "SOURCE-B",
+      "camera": "family-vanity",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "B-A",
+      "camera": "family-vanity",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "SOURCE-A",
+      "camera": "family-vanity",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "SOURCE-B",
+      "camera": "family-access-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "B-A",
+      "camera": "family-access-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "BATH-C01",
+      "requested": "SOURCE-A",
+      "camera": "family-access-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WC-01",
+      "requested": "SOURCE-B",
+      "camera": "guest-closed",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WC-01",
+      "requested": "B-A",
+      "camera": "guest-closed",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WC-01",
+      "requested": "SOURCE-A",
+      "camera": "guest-closed",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WC-01",
+      "requested": "SOURCE-B",
+      "camera": "guest-open",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WC-01",
+      "requested": "B-A",
+      "camera": "guest-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 1440,
+      "room": "WC-01",
+      "requested": "SOURCE-A",
+      "camera": "guest-open",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-wide",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-wide",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-wide",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-shower",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-shower",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-shower",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-vanity",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-vanity",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-vanity",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-night",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-night",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-night",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-B",
+      "camera": "master-door-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "B-A",
+      "camera": "master-door-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-M01",
+      "requested": "SOURCE-A",
+      "camera": "master-door-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "SOURCE-B",
+      "camera": "family-shower",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "B-A",
+      "camera": "family-shower",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "SOURCE-A",
+      "camera": "family-shower",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "SOURCE-B",
+      "camera": "family-vanity",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "B-A",
+      "camera": "family-vanity",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "SOURCE-A",
+      "camera": "family-vanity",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "SOURCE-B",
+      "camera": "family-access-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "B-A",
+      "camera": "family-access-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "BATH-C01",
+      "requested": "SOURCE-A",
+      "camera": "family-access-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WC-01",
+      "requested": "SOURCE-B",
+      "camera": "guest-closed",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WC-01",
+      "requested": "B-A",
+      "camera": "guest-closed",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WC-01",
+      "requested": "SOURCE-A",
+      "camera": "guest-closed",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WC-01",
+      "requested": "SOURCE-B",
+      "camera": "guest-open",
+      "comparison": "SOURCE-B",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WC-01",
+      "requested": "B-A",
+      "camera": "guest-open",
+      "comparison": "B-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    },
+    {
+      "viewport": 390,
+      "room": "WC-01",
+      "requested": "SOURCE-A",
+      "camera": "guest-open",
+      "comparison": "SOURCE-A",
+      "images": [
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        },
+        {
+          "loaded": true,
+          "embedded": true
+        }
+      ]
+    }
+  ],
+  "svg": [
+    {
+      "file": "A-BATH-C01.svg",
+      "overflow": []
+    },
+    {
+      "file": "A-BATH-M01.svg",
+      "overflow": []
+    },
+    {
+      "file": "A-WC-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-BATH-C01.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-BATH-M01.svg",
+      "overflow": []
+    },
+    {
+      "file": "B-WC-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-BATH-C01.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-BATH-M01.svg",
+      "overflow": []
+    },
+    {
+      "file": "SOURCE-WC-01.svg",
+      "overflow": []
+    },
+    {
+      "file": "family-bifold.svg",
+      "overflow": []
+    },
+    {
+      "file": "family-pivot.svg",
+      "overflow": []
+    },
+    {
+      "file": "vanity-Family.svg",
+      "overflow": []
+    },
+    {
+      "file": "vanity-Guest.svg",
+      "overflow": []
+    },
+    {
+      "file": "vanity-Master.svg",
+      "overflow": []
+    }
+  ],
+  "external_network": [],
+  "page_errors": [],
+  "html_sha256": "dd5b13b6cc15074c55ba527331aa8047d97d763f3712897ff8bd492c9225b0cc",
+  "screenshots": "work/m3-group3/review-1440.png + review-390.png"
+}

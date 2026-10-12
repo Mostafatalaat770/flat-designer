@@ -1,0 +1,14 @@
+{
+  "schema": "M3Group3OfflinePackage/1",
+  "zip": "Type-B-M3-Group3-Bathrooms-Owner-Review.zip",
+  "bytes": 27157315,
+  "sha256": "f256d4a881c83790be6e2747f63b5a6c4f35a49ffc13bd3ad0d4fb884999bf11",
+  "crc": "PASS",
+  "html_sha256": "dd5b13b6cc15074c55ba527331aa8047d97d763f3712897ff8bd492c9225b0cc",
+  "embedded_pngs": 27,
+  "measured_svg_plans": 14,
+  "files": 41,
+  "png_identity": "All27 embedded PNG bytes match individually recorded actual canvases",
+  "frames_in_zip": "Embedded once in HTML. Individual PNGs and source texture swatches remain in repository; no duplicated27-frame binary set.",
+  "status": "LOCAL_REVIEW_ONLY / all physical and owner approvals false"
+}

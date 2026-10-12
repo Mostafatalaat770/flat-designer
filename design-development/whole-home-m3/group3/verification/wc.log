@@ -1,0 +1,23 @@
+[
+  {
+    id: 'starter-15',
+    native_bounds: { min: [Array], max: [Array] },
+    ray: 411.9999997764826,
+    knee_gap: 421.549,
+    collisions: []
+  },
+  {
+    id: 'starter-17',
+    native_bounds: { min: [Array], max: [Array] },
+    ray: 411.9999997764826,
+    knee_gap: 369.491,
+    collisions: []
+  },
+  {
+    id: 'starter-25',
+    native_bounds: { min: [Array], max: [Array] },
+    ray: 411.9999997764826,
+    knee_gap: 5.309,
+    collisions: []
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "schema": "M3Group3WCOccupation/1",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "native_builder_sha256": "ad1ea440285a65d1e16c9b4ca29655b6e9afd98507ac11e5da999ef0bbc658b6",
+  "records": [
+    {
+      "id": "starter-15",
+      "room": "BATH-M01",
+      "source_envelope_mm": [
+        400,
+        700
+      ],
+      "actual_native_mesh_world_bounds_mm": {
+        "min": [
+          6530.963999642372,
+          8174.410010188818,
+          0
+        ],
+        "max": [
+          6898.964000357628,
+          8869.999998867512,
+          796.000000026077
+        ]
+      },
+      "actual_native_top_ray_at_local_front12percent_mm": 411.9999997764826,
+      "knee_foot_proxy_mm": [
+        600,
+        350
+      ],
+      "knee_foot_polygon": [
+        [
+          7014.964,
+          8170
+        ],
+        [
+          6414.964,
+          8170
+        ],
+        [
+          6414.964,
+          7820
+        ],
+        [
+          7014.964,
+          7820
+        ]
+      ],
+      "door": {
+        "min_gap_mm": 421.549,
+        "any_intersection": false,
+        "positive_overlap_samples": 0,
+        "samples": 91,
+        "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+      },
+      "fixture_collisions": [],
+      "meaning": "Native r160 triangle bounds and ray.600x350 is an assumed seated knee/foot box at fixture front, not a human CAD or comfort claim.5.3mm guest door gap is sensitive to handles, finishes, product shape and between-angle sampling."
+    },
+    {
+      "id": "starter-17",
+      "room": "BATH-C01",
+      "source_envelope_mm": [
+        400,
+        700
+      ],
+      "actual_native_mesh_world_bounds_mm": {
+        "min": [
+          8195.410010188818,
+          7255.999999642372,
+          0
+        ],
+        "max": [
+          8890.999998867512,
+          7624.000000357628,
+          796.000000026077
+        ]
+      },
+      "actual_native_top_ray_at_local_front12percent_mm": 411.9999997764826,
+      "knee_foot_proxy_mm": [
+        600,
+        350
+      ],
+      "knee_foot_polygon": [
+        [
+          8191,
+          7140
+        ],
+        [
+          8191,
+          7740
+        ],
+        [
+          7841,
+          7740
+        ],
+        [
+          7841,
+          7140
+        ]
+      ],
+      "door": {
+        "min_gap_mm": 369.491,
+        "any_intersection": false,
+        "positive_overlap_samples": 0,
+        "samples": 91,
+        "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+      },
+      "fixture_collisions": [],
+      "meaning": "Native r160 triangle bounds and ray.600x350 is an assumed seated knee/foot box at fixture front, not a human CAD or comfort claim.5.3mm guest door gap is sensitive to handles, finishes, product shape and between-angle sampling."
+    },
+    {
+      "id": "starter-25",
+      "room": "WC-01",
+      "source_envelope_mm": [
+        400,
+        650
+      ],
+      "actual_native_mesh_world_bounds_mm": {
+        "min": [
+          10944.275997258186,
+          9517.744999642373,
+          0
+        ],
+        "max": [
+          11590.180990538955,
+          9885.745000357629,
+          796.000000026077
+        ]
+      },
+      "actual_native_top_ray_at_local_front12percent_mm": 411.9999997764826,
+      "knee_foot_proxy_mm": [
+        600,
+        350
+      ],
+      "knee_foot_polygon": [
+        [
+          11594.276,
+          10001.745
+        ],
+        [
+          11594.276,
+          9401.745
+        ],
+        [
+          11944.276,
+          9401.745
+        ],
+        [
+          11944.276,
+          10001.745
+        ]
+      ],
+      "door": {
+        "min_gap_mm": 5.309,
+        "any_intersection": false,
+        "positive_overlap_samples": 0,
+        "samples": 91,
+        "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+      },
+      "fixture_collisions": [],
+      "meaning": "Native r160 triangle bounds and ray.600x350 is an assumed seated knee/foot box at fixture front, not a human CAD or comfort claim.5.3mm guest door gap is sensitive to handles, finishes, product shape and between-angle sampling."
+    }
+  ],
+  "limits": "No toilet size, seat height, body, hygienic reach or legal clearance is approved. Native renderer is generic source geometry; snapshots/services untouched."
+}

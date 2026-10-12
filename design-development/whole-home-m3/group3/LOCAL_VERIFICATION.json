@@ -1,0 +1,25 @@
+{
+  "schema": "M3Group3LocalVerification/1",
+  "result": "PASS",
+  "build": "PASS",
+  "application_verifiers": 5,
+  "domain_analysis_owner_tests": 19,
+  "studio_asset_native_tests": 17,
+  "focused_tests": 10,
+  "actual_WebGL_frames": 27,
+  "viewport": [
+    1280,
+    720
+  ],
+  "offline_control_states": 60,
+  "measured_plans": 14,
+  "network_requests": [],
+  "page_errors": [],
+  "architecture_overrides": 0,
+  "inherited_files_preserved": 1121,
+  "remote_CI": "NOT_RUN / no claim",
+  "source_and_approval_boundary": "All original snapshots/previous deliverables preserved;all28 physical holds OPEN;all owner/construction/cloud/procurement flags false",
+  "setup_correction": "Generated workspace seed required for inherited native bounds test;setup completed and final17 Studio tests PASS",
+  "release": "Review tag only;no branch push or deployment",
+  "html_sha256": "dd5b13b6cc15074c55ba527331aa8047d97d763f3712897ff8bd492c9225b0cc"
+}

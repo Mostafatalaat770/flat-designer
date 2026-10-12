@@ -1,0 +1,1462 @@
+{
+  "schema": "M3Group3DetailedUse/1",
+  "status": "MODEL_EVIDENCE_ONLY",
+  "options": [
+    {
+      "key": "B",
+      "drawers": [
+        {
+          "id": "R1-ensuite-vanity",
+          "stroke_mm": 0,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              5680,
+              7990
+            ],
+            [
+              6280,
+              7990
+            ]
+          ],
+          "drawer": null,
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 77.353,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "R1-ensuite-vanity",
+          "stroke_mm": 250,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              6280,
+              8140
+            ],
+            [
+              5680,
+              8140
+            ],
+            [
+              5680,
+              7740
+            ],
+            [
+              6280,
+              7740
+            ]
+          ],
+          "drawer": [
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              5680,
+              8140
+            ],
+            [
+              6280,
+              8140
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 31,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "R1-ensuite-vanity",
+          "stroke_mm": 350,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              6280,
+              8040
+            ],
+            [
+              5680,
+              8040
+            ],
+            [
+              5680,
+              7640
+            ],
+            [
+              6280,
+              7640
+            ]
+          ],
+          "drawer": [
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              5680,
+              8040
+            ],
+            [
+              6280,
+              8040
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 42,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-18",
+          "stroke_mm": 0,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7156
+            ],
+            [
+              8200,
+              7156
+            ]
+          ],
+          "drawer": null,
+          "mechanism": "STROKE0_SLIDING_FRONTS /250+350 rejected counterfactual",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 302.034,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-18",
+          "stroke_mm": 250,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              8200,
+              7006
+            ],
+            [
+              8800,
+              7006
+            ],
+            [
+              8800,
+              7406
+            ],
+            [
+              8200,
+              7406
+            ]
+          ],
+          "drawer": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7006
+            ],
+            [
+              8200,
+              7006
+            ]
+          ],
+          "mechanism": "STROKE0_SLIDING_FRONTS /250+350 rejected counterfactual",
+          "user_collisions": [
+            "starter-17"
+          ],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 464.147,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-18",
+          "stroke_mm": 350,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              8200,
+              7106
+            ],
+            [
+              8800,
+              7106
+            ],
+            [
+              8800,
+              7506
+            ],
+            [
+              8200,
+              7506
+            ]
+          ],
+          "drawer": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7106
+            ],
+            [
+              8200,
+              7106
+            ]
+          ],
+          "mechanism": "STROKE0_SLIDING_FRONTS /250+350 rejected counterfactual",
+          "user_collisions": [
+            "starter-17"
+          ],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 537.502,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-26",
+          "stroke_mm": 0,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              11668.31,
+              9299.54
+            ],
+            [
+              12268.31,
+              9299.54
+            ],
+            [
+              12268.31,
+              9699.54
+            ],
+            [
+              11668.31,
+              9699.54
+            ]
+          ],
+          "drawer": null,
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 50,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-26",
+          "stroke_mm": 250,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              11668.31,
+              9549.54
+            ],
+            [
+              12268.31,
+              9549.54
+            ],
+            [
+              12268.31,
+              9949.54
+            ],
+            [
+              11668.31,
+              9949.54
+            ]
+          ],
+          "drawer": [
+            [
+              11743.31,
+              9299.54
+            ],
+            [
+              12193.31,
+              9299.54
+            ],
+            [
+              12193.31,
+              9549.54
+            ],
+            [
+              11743.31,
+              9549.54
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 45,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-26",
+          "stroke_mm": 350,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              11668.31,
+              9649.54
+            ],
+            [
+              12268.31,
+              9649.54
+            ],
+            [
+              12268.31,
+              10049.54
+            ],
+            [
+              11668.31,
+              10049.54
+            ]
+          ],
+          "drawer": [
+            [
+              11743.31,
+              9299.54
+            ],
+            [
+              12193.31,
+              9299.54
+            ],
+            [
+              12193.31,
+              9649.54
+            ],
+            [
+              11743.31,
+              9649.54
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 35,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        }
+      ],
+      "glassCleaning": [
+        {
+          "id": "wet-face",
+          "body": [
+            [
+              6450,
+              6630
+            ],
+            [
+              6950,
+              6630
+            ],
+            [
+              6950,
+              7130
+            ],
+            [
+              6450,
+              7130
+            ]
+          ],
+          "glass_gap_mm": 32,
+          "solid_collisions": [],
+          "shelf_shoulder_plan_collisions": []
+        },
+        {
+          "id": "dry-face",
+          "body": [
+            [
+              6450,
+              7230
+            ],
+            [
+              6950,
+              7230
+            ],
+            [
+              6950,
+              7730
+            ],
+            [
+              6450,
+              7730
+            ]
+          ],
+          "glass_gap_mm": 50,
+          "solid_collisions": [],
+          "shelf_shoulder_plan_collisions": []
+        }
+      ],
+      "handTrials": [
+        {
+          "id": "R1-ensuite-vanity",
+          "bowl_inside_assumption_mm": [
+            410,
+            300
+          ],
+          "two_hands_width_mm": 240,
+          "hands_foreaft_mm": 90,
+          "lateral_reserve_mm": 170,
+          "foreaft_reserve_mm": 210,
+          "water_test": "HOLD; no flow, actual bowl radius, spout trajectory or splash simulation"
+        },
+        {
+          "id": "starter-18",
+          "bowl_inside_assumption_mm": [
+            410,
+            300
+          ],
+          "two_hands_width_mm": 240,
+          "hands_foreaft_mm": 90,
+          "lateral_reserve_mm": 170,
+          "foreaft_reserve_mm": 210,
+          "water_test": "HOLD; no flow, actual bowl radius, spout trajectory or splash simulation"
+        },
+        {
+          "id": "starter-26",
+          "bowl_inside_assumption_mm": [
+            350,
+            150
+          ],
+          "two_hands_width_mm": 240,
+          "hands_foreaft_mm": 90,
+          "lateral_reserve_mm": 110,
+          "foreaft_reserve_mm": 60,
+          "water_test": "HOLD; no flow, actual bowl radius, spout trajectory or splash simulation"
+        }
+      ],
+      "master_shelves": [
+        {
+          "id": "BATHM-shampoo-shelf-A1",
+          "host": "WALL-BATH-M01-02",
+          "envelope_mm": [
+            380,
+            115,
+            40
+          ],
+          "elevation_mm": 1230,
+          "center": {
+            "id": "BATHM-shampoo-shelf-A1",
+            "type": "shelf",
+            "room_id": "BATH-M01",
+            "cx": 6270.0005,
+            "cy": 6354.075,
+            "w": 380,
+            "d": 115,
+            "rot": 0,
+            "bottom_mm": 1230,
+            "top_mm": 1270,
+            "host": {
+              "id": "WALL-BATH-M01-02",
+              "type": "wall",
+              "room_id": "BATH-M01",
+              "source_wall_index": 39,
+              "from": [
+                5465.175,
+                6206.575
+              ],
+              "to": [
+                7180.986,
+                6206.575
+              ],
+              "tangent": [
+                1,
+                0
+              ],
+              "inward_normal": [
+                0,
+                1
+              ],
+              "length_mm": 1715.8,
+              "height_mm": 2500,
+              "wall_half_mm": 90,
+              "status": "INFERRED"
+            },
+            "object": {
+              "id": "BATHM-shampoo-shelf-A1",
+              "type": "shelf",
+              "variant": "wet-tray",
+              "room_id": "BATH-M01",
+              "placement": {
+                "mode": "wall",
+                "host_wall_id": "WALL-BATH-M01-02",
+                "offset_mm": -53.08,
+                "elevation_mm": 1230,
+                "inset_mm": 0
+              },
+              "rotation": 0,
+              "width_mm": 380,
+              "depth_mm": 115,
+              "height_mm": 40,
+              "material_references": {
+                "body": "bath-brushed-nickel"
+              },
+              "colour": "#B9BDC0",
+              "status": "EXPLORATORY",
+              "metadata": {
+                "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+              }
+            },
+            "interior": true
+          },
+          "illustrative_three_90mm_bottles_width_reserve_mm": 110,
+          "usable_depth_assumption_mm": 95,
+          "bottle90_depth_reserve_mm": 5,
+          "load_anchor_waterproofing": false
+        },
+        {
+          "id": "BATHM-shampoo-shelf-A2",
+          "host": "WALL-BATH-M01-02",
+          "envelope_mm": [
+            380,
+            115,
+            40
+          ],
+          "elevation_mm": 1540,
+          "center": {
+            "id": "BATHM-shampoo-shelf-A2",
+            "type": "shelf",
+            "room_id": "BATH-M01",
+            "cx": 6270.0005,
+            "cy": 6354.075,
+            "w": 380,
+            "d": 115,
+            "rot": 0,
+            "bottom_mm": 1540,
+            "top_mm": 1580,
+            "host": {
+              "id": "WALL-BATH-M01-02",
+              "type": "wall",
+              "room_id": "BATH-M01",
+              "source_wall_index": 39,
+              "from": [
+                5465.175,
+                6206.575
+              ],
+              "to": [
+                7180.986,
+                6206.575
+              ],
+              "tangent": [
+                1,
+                0
+              ],
+              "inward_normal": [
+                0,
+                1
+              ],
+              "length_mm": 1715.8,
+              "height_mm": 2500,
+              "wall_half_mm": 90,
+              "status": "INFERRED"
+            },
+            "object": {
+              "id": "BATHM-shampoo-shelf-A2",
+              "type": "shelf",
+              "variant": "wet-tray",
+              "room_id": "BATH-M01",
+              "placement": {
+                "mode": "wall",
+                "host_wall_id": "WALL-BATH-M01-02",
+                "offset_mm": -53.08,
+                "elevation_mm": 1540,
+                "inset_mm": 0
+              },
+              "rotation": 0,
+              "width_mm": 380,
+              "depth_mm": 115,
+              "height_mm": 40,
+              "material_references": {
+                "body": "bath-brushed-nickel"
+              },
+              "colour": "#B9BDC0",
+              "status": "EXPLORATORY",
+              "metadata": {
+                "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+              }
+            },
+            "interior": true
+          },
+          "illustrative_three_90mm_bottles_width_reserve_mm": 110,
+          "usable_depth_assumption_mm": 95,
+          "bottle90_depth_reserve_mm": 5,
+          "load_anchor_waterproofing": false
+        }
+      ],
+      "family_towel_cabinet": {
+        "source_outer_mm": [
+          520,
+          170,
+          420
+        ],
+        "assumed_panels_mm": 18,
+        "inside_mm": [
+          484,
+          134,
+          384
+        ],
+        "two_190x120_folded_handtowel_stacks": true,
+        "bath_towel_depth180_fails_by_mm": 46,
+        "sliding_front_vs_pair260mm_hinges": "Propose no projecting front. Supplier opening/reach/substrate and cleaning remains HOLD."
+      },
+      "mirror_cabinet": {
+        "B": "600x100 external / assumed18side+18back+18front →564x64 interior, two shelves. No medicines in humid wet rooms.",
+        "A": "35deep mirror / no hidden capacity",
+        "not_vendor_capacity": true
+      },
+      "towels": "Master east dry bar: use dry standing near[6750,7540], ~310mm centre reach; exit west opening then move east. No reach-through glass. Family west hooks: stand[7600,8150],300mm centre reach; don’t mount on glass. Guest north handtowel is before the door hinge band.",
+      "hygiene": "Closed sanitary bins shown only in measured vacant corners; liner/lid/removal and mop reach need real test. Separate toothbrush/soap from WC and shower splash; never store cleaning chemicals with towels."
+    },
+    {
+      "key": "A",
+      "drawers": [
+        {
+          "id": "R1-ensuite-vanity",
+          "stroke_mm": 0,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              5680,
+              7990
+            ],
+            [
+              6280,
+              7990
+            ]
+          ],
+          "drawer": null,
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 77.353,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "R1-ensuite-vanity",
+          "stroke_mm": 250,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              6280,
+              8140
+            ],
+            [
+              5680,
+              8140
+            ],
+            [
+              5680,
+              7740
+            ],
+            [
+              6280,
+              7740
+            ]
+          ],
+          "drawer": [
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              5680,
+              8140
+            ],
+            [
+              6280,
+              8140
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 31,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "R1-ensuite-vanity",
+          "stroke_mm": 350,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              6280,
+              8040
+            ],
+            [
+              5680,
+              8040
+            ],
+            [
+              5680,
+              7640
+            ],
+            [
+              6280,
+              7640
+            ]
+          ],
+          "drawer": [
+            [
+              6280,
+              8390
+            ],
+            [
+              5680,
+              8390
+            ],
+            [
+              5680,
+              8040
+            ],
+            [
+              6280,
+              8040
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 42,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-18",
+          "stroke_mm": 0,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7156
+            ],
+            [
+              8200,
+              7156
+            ]
+          ],
+          "drawer": null,
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 302.034,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-18",
+          "stroke_mm": 250,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              8200,
+              7006
+            ],
+            [
+              8800,
+              7006
+            ],
+            [
+              8800,
+              7406
+            ],
+            [
+              8200,
+              7406
+            ]
+          ],
+          "drawer": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7006
+            ],
+            [
+              8200,
+              7006
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [
+            "starter-17"
+          ],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 464.147,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-18",
+          "stroke_mm": 350,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              8200,
+              7106
+            ],
+            [
+              8800,
+              7106
+            ],
+            [
+              8800,
+              7506
+            ],
+            [
+              8200,
+              7506
+            ]
+          ],
+          "drawer": [
+            [
+              8200,
+              6756
+            ],
+            [
+              8800,
+              6756
+            ],
+            [
+              8800,
+              7106
+            ],
+            [
+              8200,
+              7106
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [
+            "starter-17"
+          ],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 537.502,
+            "any_intersection": false,
+            "positive_overlap_samples": 0,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-26",
+          "stroke_mm": 0,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              11668.31,
+              9264.54
+            ],
+            [
+              12268.31,
+              9264.54
+            ],
+            [
+              12268.31,
+              9664.54
+            ],
+            [
+              11668.31,
+              9664.54
+            ]
+          ],
+          "drawer": null,
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 47,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-26",
+          "stroke_mm": 250,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              11668.31,
+              9514.54
+            ],
+            [
+              12268.31,
+              9514.54
+            ],
+            [
+              12268.31,
+              9914.54
+            ],
+            [
+              11668.31,
+              9914.54
+            ]
+          ],
+          "drawer": [
+            [
+              11793.31,
+              9264.54
+            ],
+            [
+              12143.31,
+              9264.54
+            ],
+            [
+              12143.31,
+              9514.54
+            ],
+            [
+              11793.31,
+              9514.54
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 48,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        },
+        {
+          "id": "starter-26",
+          "stroke_mm": 350,
+          "user_mm": [
+            600,
+            400
+          ],
+          "user": [
+            [
+              11668.31,
+              9614.54
+            ],
+            [
+              12268.31,
+              9614.54
+            ],
+            [
+              12268.31,
+              10014.54
+            ],
+            [
+              11668.31,
+              10014.54
+            ]
+          ],
+          "drawer": [
+            [
+              11793.31,
+              9264.54
+            ],
+            [
+              12143.31,
+              9264.54
+            ],
+            [
+              12143.31,
+              9614.54
+            ],
+            [
+              11793.31,
+              9614.54
+            ]
+          ],
+          "mechanism": "GENERIC_DRAWER",
+          "user_collisions": [],
+          "drawer_collisions": [],
+          "occupied_door": {
+            "min_gap_mm": 0,
+            "any_intersection": true,
+            "positive_overlap_samples": 39,
+            "samples": 91,
+            "note": "Sampled leaf rectangles only; between-angle motion, handle and hinge clearances need product-specific verification."
+          }
+        }
+      ],
+      "glassCleaning": [
+        {
+          "id": "wet-face",
+          "body": [
+            [
+              6450,
+              6630
+            ],
+            [
+              6950,
+              6630
+            ],
+            [
+              6950,
+              7130
+            ],
+            [
+              6450,
+              7130
+            ]
+          ],
+          "glass_gap_mm": 32,
+          "solid_collisions": [],
+          "shelf_shoulder_plan_collisions": []
+        },
+        {
+          "id": "dry-face",
+          "body": [
+            [
+              6450,
+              7230
+            ],
+            [
+              6950,
+              7230
+            ],
+            [
+              6950,
+              7730
+            ],
+            [
+              6450,
+              7730
+            ]
+          ],
+          "glass_gap_mm": 50,
+          "solid_collisions": [],
+          "shelf_shoulder_plan_collisions": []
+        }
+      ],
+      "handTrials": [
+        {
+          "id": "R1-ensuite-vanity",
+          "bowl_inside_assumption_mm": [
+            410,
+            300
+          ],
+          "two_hands_width_mm": 240,
+          "hands_foreaft_mm": 90,
+          "lateral_reserve_mm": 170,
+          "foreaft_reserve_mm": 210,
+          "water_test": "HOLD; no flow, actual bowl radius, spout trajectory or splash simulation"
+        },
+        {
+          "id": "starter-18",
+          "bowl_inside_assumption_mm": [
+            410,
+            300
+          ],
+          "two_hands_width_mm": 240,
+          "hands_foreaft_mm": 90,
+          "lateral_reserve_mm": 170,
+          "foreaft_reserve_mm": 210,
+          "water_test": "HOLD; no flow, actual bowl radius, spout trajectory or splash simulation"
+        },
+        {
+          "id": "starter-26",
+          "bowl_inside_assumption_mm": [
+            260,
+            90
+          ],
+          "two_hands_width_mm": 240,
+          "hands_foreaft_mm": 90,
+          "lateral_reserve_mm": 20,
+          "foreaft_reserve_mm": 0,
+          "water_test": "HOLD; no flow, actual bowl radius, spout trajectory or splash simulation"
+        }
+      ],
+      "master_shelves": [
+        {
+          "id": "BATHM-shampoo-shelf-A1",
+          "host": "WALL-BATH-M01-05",
+          "envelope_mm": [
+            380,
+            115,
+            40
+          ],
+          "elevation_mm": 1230,
+          "center": {
+            "id": "BATHM-shampoo-shelf-A1",
+            "type": "shelf",
+            "room_id": "BATH-M01",
+            "cx": 7033.486,
+            "cy": 6823.460499999999,
+            "w": 380,
+            "d": 115,
+            "rot": 90,
+            "bottom_mm": 1230,
+            "top_mm": 1270,
+            "host": {
+              "id": "WALL-BATH-M01-05",
+              "type": "wall",
+              "room_id": "BATH-M01",
+              "source_wall_index": 42,
+              "from": [
+                7180.986,
+                6206.575
+              ],
+              "to": [
+                7180.986,
+                8960.346
+              ],
+              "tangent": [
+                0,
+                1
+              ],
+              "inward_normal": [
+                -1,
+                0
+              ],
+              "length_mm": 2753.8,
+              "height_mm": 2500,
+              "wall_half_mm": 90,
+              "status": "INFERRED"
+            },
+            "object": {
+              "id": "BATHM-shampoo-shelf-A1",
+              "type": "shelf",
+              "variant": "wet-tray",
+              "room_id": "BATH-M01",
+              "placement": {
+                "mode": "wall",
+                "host_wall_id": "WALL-BATH-M01-05",
+                "offset_mm": -760,
+                "elevation_mm": 1230,
+                "inset_mm": 0
+              },
+              "rotation": 0,
+              "width_mm": 380,
+              "depth_mm": 115,
+              "height_mm": 40,
+              "material_references": {
+                "body": "bath-brushed-nickel"
+              },
+              "colour": "#B9BDC0",
+              "status": "EXPLORATORY",
+              "metadata": {
+                "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+              }
+            },
+            "interior": true
+          },
+          "illustrative_three_90mm_bottles_width_reserve_mm": 110,
+          "usable_depth_assumption_mm": 95,
+          "bottle90_depth_reserve_mm": 5,
+          "load_anchor_waterproofing": false
+        },
+        {
+          "id": "BATHM-shampoo-shelf-A2",
+          "host": "WALL-BATH-M01-05",
+          "envelope_mm": [
+            380,
+            115,
+            40
+          ],
+          "elevation_mm": 1540,
+          "center": {
+            "id": "BATHM-shampoo-shelf-A2",
+            "type": "shelf",
+            "room_id": "BATH-M01",
+            "cx": 7033.486,
+            "cy": 6823.460499999999,
+            "w": 380,
+            "d": 115,
+            "rot": 90,
+            "bottom_mm": 1540,
+            "top_mm": 1580,
+            "host": {
+              "id": "WALL-BATH-M01-05",
+              "type": "wall",
+              "room_id": "BATH-M01",
+              "source_wall_index": 42,
+              "from": [
+                7180.986,
+                6206.575
+              ],
+              "to": [
+                7180.986,
+                8960.346
+              ],
+              "tangent": [
+                0,
+                1
+              ],
+              "inward_normal": [
+                -1,
+                0
+              ],
+              "length_mm": 2753.8,
+              "height_mm": 2500,
+              "wall_half_mm": 90,
+              "status": "INFERRED"
+            },
+            "object": {
+              "id": "BATHM-shampoo-shelf-A2",
+              "type": "shelf",
+              "variant": "wet-tray",
+              "room_id": "BATH-M01",
+              "placement": {
+                "mode": "wall",
+                "host_wall_id": "WALL-BATH-M01-05",
+                "offset_mm": -760,
+                "elevation_mm": 1540,
+                "inset_mm": 0
+              },
+              "rotation": 0,
+              "width_mm": 380,
+              "depth_mm": 115,
+              "height_mm": 40,
+              "material_references": {
+                "body": "bath-brushed-nickel"
+              },
+              "colour": "#B9BDC0",
+              "status": "EXPLORATORY",
+              "metadata": {
+                "role": "Surface mounted shower shelf; waterproof fixing and SKU TBD"
+              }
+            },
+            "interior": true
+          },
+          "illustrative_three_90mm_bottles_width_reserve_mm": 110,
+          "usable_depth_assumption_mm": 95,
+          "bottle90_depth_reserve_mm": 5,
+          "load_anchor_waterproofing": false
+        }
+      ],
+      "family_towel_cabinet": {
+        "source_outer_mm": [
+          520,
+          170,
+          420
+        ],
+        "assumed_panels_mm": 18,
+        "inside_mm": [
+          484,
+          134,
+          384
+        ],
+        "two_190x120_folded_handtowel_stacks": true,
+        "bath_towel_depth180_fails_by_mm": 46,
+        "sliding_front_vs_pair260mm_hinges": "Propose no projecting front. Supplier opening/reach/substrate and cleaning remains HOLD."
+      },
+      "mirror_cabinet": {
+        "B": "600x100 external / assumed18side+18back+18front →564x64 interior, two shelves. No medicines in humid wet rooms.",
+        "A": "35deep mirror / no hidden capacity",
+        "not_vendor_capacity": true
+      },
+      "towels": "Master east dry bar: use dry standing near[6750,7540], ~310mm centre reach; exit west opening then move east. No reach-through glass. Family west hooks: stand[7600,8150],300mm centre reach; don’t mount on glass. Guest north handtowel is before the door hinge band.",
+      "hygiene": "Closed sanitary bins shown only in measured vacant corners; liner/lid/removal and mop reach need real test. Separate toothbrush/soap from WC and shower splash; never store cleaning chemicals with towels."
+    }
+  ],
+  "limits": "Independent source polygons and concept fixtures, not vendor internal dimensions, installed water flow, actual comfort or local compliance.",
+  "family_failures": {
+    "WC_facing_edge": "NORTH / coordinate y7959.592 (old PR label SOUTH)",
+    "shower_edge_to_WC_mm": 319.59200000000055,
+    "outward580_projection_excess_mm": 260.40799999999945,
+    "west_nominal_strip_mm": 778.6060000000007,
+    "west_strip_after_assumed90_finish_mm": 688.6060000000007,
+    "west_outward580_residual_mm": 198.60600000000068,
+    "west_outward580_finished_residual_mm": 108.60600000000068,
+    "not_route_width": true
+  },
+  "niche_alternative": {
+    "status": "NOT_MODELED_AS_WALL_CUT / SITE_HOLD",
+    "surface_shelves": "B retains380x115x40 master/350x115x40 family generic wet trays with sealed/removable fixings",
+    "conditional_recess": "One300x600 face opening /100 useful-depth study only, neither wall cavity nor waterproof system proven",
+    "required": "Egyptian architect/wet engineer verify wall type, structure, embedded services, substrate, full membrane continuity, water shedding, removable cleanable shelf and compatible manufacturer details. Reject unknown/shared/structural wall cutting.",
+    "capacity_not_approved": true
+  },
+  "family_ideal_hinge_limit": {
+    "final_fold_panel_overlap_mm2": 2320,
+    "status": "IDEAL_ZERO_OFFSET_KINEMATICS_ONLY / NOT A BUILDABLE GLASS STACK",
+    "required": "Supplier hinge offset, separated panel stack, stops, jamb and handles must be modeled and retested;290mm body result excludes these additions."
+  },
+  "moisture": {
+    "WIC": "Both800 and900 are splash HOLD;115.7/15.7 Y projections are not barriers. Keep WIC door closed while showering if professional ventilation/air-transfer provision allows; dry bathroom before opening. Do not use WIC as make-up air assumption or consume its unapproved storage.",
+    "drain": "Keep saved service locations. Real existing drain/trap elevation, access, capacity and falls are unknown. Prefer serviceable strainer/removable waste access if existing location permits; point-vs-linear drain is not selected. Curbless visual is not feasible construction proof.",
+    "ventilation": "Duct route, discharge shaft/exterior, backdraft/noise, extract duty and air transfer require HVAC engineer/developer survey. Timed/humidity overrun is an intent; no fan rate, hole, door undercut or circuit is approved.",
+    "lighting": "B side-facing diffused luminous strips and independent ambient source; A top strip comparison. Neutral mirror proxy has no reflected geometry and no lux/CRI/glare/IP calculation. No source ceiling drop or install coordinates."
+  },
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63"
+}

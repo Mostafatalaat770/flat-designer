@@ -1,0 +1,1665 @@
+{
+  "schema": "ApartmentSceneCaptureFrame/1",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "snapshot_sha256": "b74ca427f0cbbcc2c18f20a8f45ba3ad3f1fcd7f50981cb00908606a7501afbb",
+  "scene_revision": "scene-8011cebe",
+  "storage_revision": 55,
+  "room_id": "WC-01",
+  "camera": {
+    "position": [
+      4.202291,
+      1.5,
+      4.884341500000001
+    ],
+    "target": [
+      3.682291,
+      0.95,
+      4.2843415
+    ],
+    "fov": 70,
+    "projection_type": "perspective",
+    "coordinate_system": "Three.js metres: x=plan x minus half width; y=height; z=plan y minus half depth",
+    "aspect": 1.7777777777777777,
+    "near": 0.05,
+    "far": 300,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "viewer": {
+      "cut_height_m": 2.5,
+      "furnishings_visible": true,
+      "night": false,
+      "hour": 10,
+      "mode": "orbit",
+      "doors": [
+        {
+          "id": "OP-BR01-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-BR02-HALL",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-MBR-HALL",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-WIC-BATHM",
+          "open": true,
+          "position": 0
+        },
+        {
+          "id": "OP-HALL-BATHC",
+          "open": true,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-KIT",
+          "open": true,
+          "position": -3.141592653589793
+        },
+        {
+          "id": "OP-KIT-TERSVC",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "OP-RECP-WC",
+          "open": false,
+          "position": -1.5707963267948966
+        },
+        {
+          "id": "OP-ENT-01",
+          "open": true,
+          "position": 1.5707963267948966
+        },
+        {
+          "id": "GLZ-MBR-TER",
+          "open": true,
+          "position": 1
+        },
+        {
+          "id": "GLZ-RECP-TERMAIN",
+          "open": true,
+          "position": 1
+        }
+      ]
+    }
+  },
+  "timestamp": "2026-10-12T03:38:07.700Z",
+  "assets": {
+    "pending": 0,
+    "fallbacks": []
+  },
+  "renderer": {
+    "engine": "Three.js WebGL",
+    "revision": "160"
+  },
+  "architecture_variant": null,
+  "architecture_result": {
+    "wall_segments_hidden": 0,
+    "wall_finishes_hidden": 0,
+    "wall_segments_added": 0,
+    "wall_boxes_added": 0,
+    "canonical_ceilings_hidden": 0,
+    "merged_ceilings_added": 0,
+    "openings_hidden": 0,
+    "opening_headers_hidden": 0,
+    "opening_thresholds_hidden": 0,
+    "door_overrides": 0
+  },
+  "render_experiment": null,
+  "door_finish_result": null,
+  "kitchen_geometry": {
+    "schema": "KitchenRenderedGeometry/1",
+    "coordinates": "canonical plan X / plan Y / elevation, millimetres",
+    "counters": [
+      {
+        "source_id": "starter-20",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 8038,
+          "w": 1500,
+          "d": 600,
+          "rot": 270
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9080.999988079071,
+            7283.000004768372,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9691.999999888241,
+            8792.999995231628,
+            1100.9912637347638
+          ]
+        }
+      },
+      {
+        "source_id": "K3-corner",
+        "source_footprint": {
+          "cx": 9381,
+          "cy": 6993,
+          "w": 600,
+          "d": 590,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            9075.999992847443,
+            6697.9999940395355,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            9686.000007152557,
+            7298.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-sink-base",
+        "source_footprint": {
+          "cx": 11181,
+          "cy": 6993,
+          "w": 600,
+          "d": 610,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            10875.999992847443,
+            6687.999992847443,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            11486.000007152557,
+            7308.999999888241,
+            859.9999995529652
+          ]
+        }
+      },
+      {
+        "source_id": "K3-end-landing",
+        "source_footprint": {
+          "cx": 11781,
+          "cy": 6893,
+          "w": 600,
+          "d": 410,
+          "rot": 0
+        },
+        "generated_upper_bounds": null,
+        "generated_upper_mesh_count": 0,
+        "generated_backsplash_bounds": null,
+        "total_bounds": {
+          "min_mm": [
+            11475.999992847443,
+            6687.999997615814,
+            -7.450580569168253e-7
+          ],
+          "max_mm": [
+            12086.000007152557,
+            7108.999999888241,
+            859.9999995529652
+          ]
+        }
+      }
+    ],
+    "uppers": [
+      {
+        "source_id": "KIT-A1-upper-north",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          1800,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": -228.1,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            11220.959476158141,
+            7015.866006556511,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9420.959523841857,
+            6685.865993443489,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            11222.959500094994,
+            7022.365999806285,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-low",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          300,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": -544.2,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7079.9059940395355,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            7077.905999905005,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            7379.906005960464,
+            2179.9999940395355
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-upper-west-high",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          450,
+          330,
+          700
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 805.8,
+          "elevation_mm": 1480,
+          "inset_mm": 8
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8354.906005960464,
+            1480.0000059604645
+          ],
+          "max_mm": [
+            9409.529006556511,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9079.52899344349,
+            8352.905999905004,
+            1479.9999999869615
+          ],
+          "max_mm": [
+            9416.028999806285,
+            8804.905994039535,
+            2179.9999940395355
+          ]
+        }
+      }
+    ],
+    "hoods": [
+      {
+        "source_id": "starter-22",
+        "status": "LEGACY_HOOD_PROXY_NOT_MANUFACTURER",
+        "bounds": {
+          "min_mm": [
+            9181,
+            7594.999988079071,
+            1550.0000006705523
+          ],
+          "max_mm": [
+            9684.500000013039,
+            8195.000011920929,
+            2330.0000143051147
+          ]
+        }
+      }
+    ],
+    "backsplashes": [
+      {
+        "source_id": "KIT-A1-north-backsplash",
+        "host_wall_id": "WALL-KIT-01-02",
+        "dimensions_mm": [
+          2800,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-02",
+          "offset_mm": 0,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9149.059523841857,
+            6677.866000055879,
+            930.0000095367432
+          ],
+          "max_mm": [
+            11949.059476158141,
+            6682.865999944121,
+            1449.9999904632568
+          ]
+        }
+      },
+      {
+        "source_id": "KIT-A1-west-backsplash",
+        "host_wall_id": "WALL-KIT-01-01",
+        "dimensions_mm": [
+          1500,
+          5,
+          520
+        ],
+        "placement": {
+          "mode": "wall",
+          "host_wall_id": "WALL-KIT-01-01",
+          "offset_mm": 263.9,
+          "elevation_mm": 930,
+          "inset_mm": 0
+        },
+        "carcass_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        },
+        "rendered_bounds": {
+          "min_mm": [
+            9071.52900005588,
+            7288.005999999999,
+            930.0000095367432
+          ],
+          "max_mm": [
+            9076.528999944121,
+            8788.006,
+            1449.9999904632568
+          ]
+        }
+      }
+    ]
+  },
+  "kitchen_r6_study": null,
+  "kitchen_r6_result": null,
+  "mesh_bounds": {
+    "starter-16": {
+      "footprint_mm": [
+        900,
+        900
+      ],
+      "bounds_mm": {
+        "min": [
+          -456,
+          0,
+          -450
+        ],
+        "max": [
+          450,
+          2022,
+          450
+        ]
+      },
+      "parts": {
+        "base-visual-HOLD": [
+          {
+            "min": [
+              -450,
+              0,
+              -450
+            ],
+            "max": [
+              450,
+              35,
+              450
+            ]
+          }
+        ],
+        "fixed-north": [
+          {
+            "min": [
+              -450,
+              35,
+              -450
+            ],
+            "max": [
+              450,
+              1995,
+              -442
+            ]
+          }
+        ],
+        "west-fixed": [
+          {
+            "min": [
+              -450,
+              35,
+              130
+            ],
+            "max": [
+              -442,
+              1995,
+              450
+            ]
+          }
+        ],
+        "moving-panel": [
+          {
+            "min": [
+              -454,
+              35,
+              -160
+            ],
+            "max": [
+              -446,
+              1995,
+              130
+            ]
+          },
+          {
+            "min": [
+              -454,
+              35,
+              -450
+            ],
+            "max": [
+              -446,
+              1995,
+              -160
+            ]
+          }
+        ],
+        "hinge-visual-HOLD": [
+          {
+            "min": [
+              -456,
+              35,
+              124
+            ],
+            "max": [
+              -444,
+              1995,
+              136
+            ]
+          }
+        ]
+      },
+      "concept": {
+        "glassConcept": {
+          "mechanism": "INWARD_BIFOLD_2x290",
+          "open": false,
+          "all_products_HOLD": true
+        },
+        "fid": "starter-16",
+        "roomId": "BATH-C01"
+      }
+    },
+    "starter-18": {
+      "footprint_mm": [
+        600,
+        460
+      ],
+      "bounds_mm": {
+        "min": [
+          -300,
+          400,
+          -230
+        ],
+        "max": [
+          300,
+          1029.17,
+          233.5
+        ]
+      },
+      "parts": {
+        "case-side": [
+          {
+            "min": [
+              -300,
+              400,
+              -220
+            ],
+            "max": [
+              -282,
+              805,
+              220
+            ]
+          },
+          {
+            "min": [
+              282,
+              400,
+              -220
+            ],
+            "max": [
+              300,
+              805,
+              220
+            ]
+          }
+        ],
+        "case-back": [
+          {
+            "min": [
+              -300,
+              400,
+              -230
+            ],
+            "max": [
+              300,
+              805,
+              -212
+            ]
+          }
+        ],
+        "case-bottom": [
+          {
+            "min": [
+              -300,
+              400,
+              -220
+            ],
+            "max": [
+              300,
+              418,
+              220
+            ]
+          }
+        ],
+        "closed-front": [
+          {
+            "min": [
+              -297,
+              400,
+              208
+            ],
+            "max": [
+              297,
+              805,
+              228
+            ]
+          }
+        ],
+        "counter-side": [
+          {
+            "min": [
+              -300,
+              822,
+              -230
+            ],
+            "max": [
+              -230,
+              850,
+              230
+            ]
+          },
+          {
+            "min": [
+              230,
+              822,
+              -230
+            ],
+            "max": [
+              300,
+              850,
+              230
+            ]
+          }
+        ],
+        "counter-return": [
+          {
+            "min": [
+              -230,
+              822,
+              -230
+            ],
+            "max": [
+              230,
+              850,
+              -180
+            ]
+          },
+          {
+            "min": [
+              -230,
+              822,
+              180
+            ],
+            "max": [
+              230,
+              850,
+              230
+            ]
+          }
+        ],
+        "bowl-wall": [
+          {
+            "min": [
+              -230,
+              740,
+              -180
+            ],
+            "max": [
+              -205,
+              850,
+              180
+            ]
+          },
+          {
+            "min": [
+              205,
+              740,
+              -180
+            ],
+            "max": [
+              230,
+              850,
+              180
+            ]
+          },
+          {
+            "min": [
+              -205,
+              740,
+              -180
+            ],
+            "max": [
+              205,
+              850,
+              -150
+            ]
+          },
+          {
+            "min": [
+              -205,
+              740,
+              150
+            ],
+            "max": [
+              205,
+              850,
+              180
+            ]
+          }
+        ],
+        "bowl-bottom": [
+          {
+            "min": [
+              -205,
+              740,
+              -150
+            ],
+            "max": [
+              205,
+              752,
+              150
+            ]
+          }
+        ],
+        "waste-visual": [
+          {
+            "min": [
+              -18,
+              753,
+              -18
+            ],
+            "max": [
+              18,
+              755,
+              18
+            ]
+          }
+        ]
+      },
+      "concept": {
+        "basinConcept": {
+          "inner_mm": [
+            410,
+            300
+          ],
+          "outer_mm": [
+            460,
+            360
+          ],
+          "depth_mm": 110,
+          "not_water_tested": true
+        },
+        "fid": "starter-18",
+        "roomId": "BATH-C01"
+      }
+    },
+    "starter-26": {
+      "footprint_mm": [
+        450,
+        250
+      ],
+      "bounds_mm": {
+        "min": [
+          -225,
+          540,
+          -125
+        ],
+        "max": [
+          225,
+          1026.78,
+          128.5
+        ]
+      },
+      "parts": {
+        "case-side": [
+          {
+            "min": [
+              -225,
+              540,
+              -115
+            ],
+            "max": [
+              -207,
+              805,
+              115
+            ]
+          },
+          {
+            "min": [
+              207,
+              540,
+              -115
+            ],
+            "max": [
+              225,
+              805,
+              115
+            ]
+          }
+        ],
+        "case-back": [
+          {
+            "min": [
+              -225,
+              540,
+              -125
+            ],
+            "max": [
+              225,
+              805,
+              -107
+            ]
+          }
+        ],
+        "case-bottom": [
+          {
+            "min": [
+              -225,
+              540,
+              -115
+            ],
+            "max": [
+              225,
+              558,
+              115
+            ]
+          }
+        ],
+        "closed-front": [
+          {
+            "min": [
+              -222,
+              540,
+              103
+            ],
+            "max": [
+              222,
+              805,
+              123
+            ]
+          }
+        ],
+        "counter-side": [
+          {
+            "min": [
+              -225,
+              822,
+              -125
+            ],
+            "max": [
+              -195,
+              850,
+              125
+            ]
+          },
+          {
+            "min": [
+              195,
+              822,
+              -125
+            ],
+            "max": [
+              225,
+              850,
+              125
+            ]
+          }
+        ],
+        "counter-return": [
+          {
+            "min": [
+              -195,
+              822,
+              -125
+            ],
+            "max": [
+              195,
+              850,
+              -95
+            ]
+          },
+          {
+            "min": [
+              -195,
+              822,
+              95
+            ],
+            "max": [
+              195,
+              850,
+              125
+            ]
+          }
+        ],
+        "bowl-wall": [
+          {
+            "min": [
+              -195,
+              760,
+              -95
+            ],
+            "max": [
+              -175,
+              850,
+              95
+            ]
+          },
+          {
+            "min": [
+              175,
+              760,
+              -95
+            ],
+            "max": [
+              195,
+              850,
+              95
+            ]
+          },
+          {
+            "min": [
+              -175,
+              760,
+              -95
+            ],
+            "max": [
+              175,
+              850,
+              -75
+            ]
+          },
+          {
+            "min": [
+              -175,
+              760,
+              75
+            ],
+            "max": [
+              175,
+              850,
+              95
+            ]
+          }
+        ],
+        "bowl-bottom": [
+          {
+            "min": [
+              -175,
+              760,
+              -75
+            ],
+            "max": [
+              175,
+              772,
+              75
+            ]
+          }
+        ],
+        "waste-visual": [
+          {
+            "min": [
+              -18,
+              773,
+              -18
+            ],
+            "max": [
+              18,
+              775,
+              18
+            ]
+          }
+        ]
+      },
+      "concept": {
+        "basinConcept": {
+          "inner_mm": [
+            350,
+            150
+          ],
+          "outer_mm": [
+            390,
+            190
+          ],
+          "depth_mm": 90,
+          "not_water_tested": true
+        },
+        "fid": "starter-26",
+        "roomId": "WC-01"
+      }
+    },
+    "R1-ensuite-vanity": {
+      "footprint_mm": [
+        600,
+        460
+      ],
+      "bounds_mm": {
+        "min": [
+          -300,
+          400,
+          -230
+        ],
+        "max": [
+          300,
+          1029.17,
+          233.5
+        ]
+      },
+      "parts": {
+        "case-side": [
+          {
+            "min": [
+              -300,
+              400,
+              -220
+            ],
+            "max": [
+              -282,
+              805,
+              220
+            ]
+          },
+          {
+            "min": [
+              282,
+              400,
+              -220
+            ],
+            "max": [
+              300,
+              805,
+              220
+            ]
+          }
+        ],
+        "case-back": [
+          {
+            "min": [
+              -300,
+              400,
+              -230
+            ],
+            "max": [
+              300,
+              805,
+              -212
+            ]
+          }
+        ],
+        "case-bottom": [
+          {
+            "min": [
+              -300,
+              400,
+              -220
+            ],
+            "max": [
+              300,
+              418,
+              220
+            ]
+          }
+        ],
+        "closed-front": [
+          {
+            "min": [
+              -297,
+              400,
+              208
+            ],
+            "max": [
+              297,
+              805,
+              228
+            ]
+          }
+        ],
+        "counter-side": [
+          {
+            "min": [
+              -300,
+              822,
+              -230
+            ],
+            "max": [
+              -230,
+              850,
+              230
+            ]
+          },
+          {
+            "min": [
+              230,
+              822,
+              -230
+            ],
+            "max": [
+              300,
+              850,
+              230
+            ]
+          }
+        ],
+        "counter-return": [
+          {
+            "min": [
+              -230,
+              822,
+              -230
+            ],
+            "max": [
+              230,
+              850,
+              -180
+            ]
+          },
+          {
+            "min": [
+              -230,
+              822,
+              180
+            ],
+            "max": [
+              230,
+              850,
+              230
+            ]
+          }
+        ],
+        "bowl-wall": [
+          {
+            "min": [
+              -230,
+              740,
+              -180
+            ],
+            "max": [
+              -205,
+              850,
+              180
+            ]
+          },
+          {
+            "min": [
+              205,
+              740,
+              -180
+            ],
+            "max": [
+              230,
+              850,
+              180
+            ]
+          },
+          {
+            "min": [
+              -205,
+              740,
+              -180
+            ],
+            "max": [
+              205,
+              850,
+              -150
+            ]
+          },
+          {
+            "min": [
+              -205,
+              740,
+              150
+            ],
+            "max": [
+              205,
+              850,
+              180
+            ]
+          }
+        ],
+        "bowl-bottom": [
+          {
+            "min": [
+              -205,
+              740,
+              -150
+            ],
+            "max": [
+              205,
+              752,
+              150
+            ]
+          }
+        ],
+        "waste-visual": [
+          {
+            "min": [
+              -18,
+              753,
+              -18
+            ],
+            "max": [
+              18,
+              755,
+              18
+            ]
+          }
+        ]
+      },
+      "concept": {
+        "basinConcept": {
+          "inner_mm": [
+            410,
+            300
+          ],
+          "outer_mm": [
+            460,
+            360
+          ],
+          "depth_mm": 110,
+          "not_water_tested": true
+        },
+        "fid": "R1-ensuite-vanity",
+        "roomId": "BATH-M01"
+      }
+    }
+  },
+  "comfort_mesh": {
+    "WC-A1-mirror": {
+      "bounds_world_m": {
+        "min": [
+          3.7005999999999997,
+          1.0499999940395357,
+          3.942687499925494
+        ],
+        "max": [
+          4.2006,
+          1.8500000059604647,
+          3.994187499832362
+        ]
+      },
+      "optical": {
+        "reflective_simulation": false,
+        "illuminance": "NOT_CALCULATED",
+        "cabinet_mm": 0
+      }
+    },
+    "BATHM-A1-mirror": {
+      "bounds_world_m": {
+        "min": [
+          -2.337708511920929,
+          1.0499999880790711,
+          3.630187500167638
+        ],
+        "max": [
+          -1.737708488079071,
+          1.900000011920929,
+          3.746687500745058
+        ]
+      },
+      "optical": {
+        "reflective_simulation": false,
+        "illuminance": "NOT_CALCULATED",
+        "cabinet_mm": 100
+      }
+    },
+    "BATHC-A1-mirror": {
+      "bounds_world_m": {
+        "min": [
+          0.1820884880790718,
+          1.0499999940395357,
+          1.1889164992549421
+        ],
+        "max": [
+          0.7820885119209298,
+          1.8500000059604647,
+          1.305416499832362
+        ]
+      },
+      "optical": {
+        "reflective_simulation": false,
+        "illuminance": "NOT_CALCULATED",
+        "cabinet_mm": 100
+      }
+    },
+    "BATHM-glass-600-A1": {
+      "bounds_world_m": {
+        "min": [
+          -1.5877090119209287,
+          4.470348362317633e-10,
+          2.0463415003874306
+        ],
+        "max": [
+          -0.9877089880790708,
+          2.049999976158142,
+          2.06434149961257
+        ]
+      },
+      "optical": null
+    },
+    "BATHM-shampoo-shelf-A1": {
+      "bounds_world_m": {
+        "min": [
+          -1.9377085000521537,
+          1.2299999998137354,
+          1.1804165001937152
+        ],
+        "max": [
+          -1.5577084999478457,
+          1.2550000001862645,
+          1.2964164998062853
+        ]
+      },
+      "optical": null
+    },
+    "BATHM-shampoo-shelf-A2": {
+      "bounds_world_m": {
+        "min": [
+          -1.9377085000521537,
+          1.5399999998137355,
+          1.1804165001937152
+        ],
+        "max": [
+          -1.5577084999478457,
+          1.5650000001862645,
+          1.2964164998062853
+        ]
+      },
+      "optical": null
+    },
+    "BATHC-shampoo-shelf-A1": {
+      "bounds_world_m": {
+        "min": [
+          0.7583200001937157,
+          1.2499999998137354,
+          3.183447499947846
+        ],
+        "max": [
+          0.8743199998062855,
+          1.2750000001862645,
+          3.533447500052154
+        ]
+      },
+      "optical": null
+    },
+    "BATHC-wall-towel-cabinet-A2": {
+      "bounds_world_m": {
+        "min": [
+          -0.7387230008940697,
+          1.4800000065565109,
+          1.9078020095367427
+        ],
+        "max": [
+          -0.5627229998100102,
+          1.899999993443489,
+          2.4278019904632564
+        ]
+      },
+      "optical": null
+    }
+  },
+  "ac_mesh": {
+    "master-towel": {
+      "min": [
+        7043.999999947846,
+        1009.9999958276749,
+        7359.999992847443
+      ],
+      "max": [
+        7076.000000052154,
+        1481.000000052154,
+        7720.000007152557
+      ],
+      "dimensions": {
+        "id": "master-towel",
+        "room": "BATH-M01",
+        "kind": "bar",
+        "cx": 7060,
+        "cy": 7540,
+        "rot": 90,
+        "w": 360,
+        "d": 60,
+        "bottom": 1000,
+        "h": 500
+      },
+      "product": false
+    },
+    "master-roll": {
+      "min": [
+        7024.999999627471,
+        649.999999254942,
+        8289.99999642372
+      ],
+      "max": [
+        7075.000000372529,
+        750.0000007450582,
+        8470.000003576277
+      ],
+      "dimensions": {
+        "id": "master-roll",
+        "room": "BATH-M01",
+        "kind": "roll",
+        "cx": 7050,
+        "cy": 8380,
+        "rot": 90,
+        "w": 180,
+        "d": 70,
+        "bottom": 650,
+        "h": 150
+      },
+      "product": false
+    },
+    "master-bin": {
+      "min": [
+        6285.000002384186,
+        -5.9604643443123e-7,
+        8644.99999910593
+      ],
+      "max": [
+        6414.999997615814,
+        280.00000059604645,
+        8815.00000089407
+      ],
+      "dimensions": {
+        "id": "master-bin",
+        "room": "BATH-M01",
+        "kind": "bin",
+        "cx": 6350,
+        "cy": 8730,
+        "rot": 0,
+        "w": 130,
+        "d": 170,
+        "bottom": 0,
+        "h": 280
+      },
+      "product": false
+    },
+    "family-towel": {
+      "min": [
+        7280.000000447035,
+        1180.0000071525574,
+        8047.100001192092
+      ],
+      "max": [
+        7319.999999552965,
+        1630.0000000745058,
+        8252.899998807907
+      ],
+      "dimensions": {
+        "id": "family-towel",
+        "room": "BATH-C01",
+        "kind": "hooks",
+        "cx": 7300,
+        "cy": 8150,
+        "rot": 270,
+        "w": 220,
+        "d": 60,
+        "bottom": 1180,
+        "h": 450
+      },
+      "product": false
+    },
+    "family-handtowel": {
+      "min": [
+        8773.999999947846,
+        1160.0000047683716,
+        6740.000000596046
+      ],
+      "max": [
+        8806.000000052154,
+        1431.0000000521538,
+        6959.999999403954
+      ],
+      "dimensions": {
+        "id": "family-handtowel",
+        "room": "BATH-C01",
+        "kind": "bar",
+        "cx": 8790,
+        "cy": 6850,
+        "rot": 90,
+        "w": 220,
+        "d": 50,
+        "bottom": 1150,
+        "h": 300
+      },
+      "product": false
+    },
+    "family-roll": {
+      "min": [
+        8694.999999627471,
+        649.999999254942,
+        7670.000001788139
+      ],
+      "max": [
+        8745.000000372529,
+        750.0000007450582,
+        7829.999998211861
+      ],
+      "dimensions": {
+        "id": "family-roll",
+        "room": "BATH-C01",
+        "kind": "roll",
+        "cx": 8720,
+        "cy": 7750,
+        "rot": 90,
+        "w": 160,
+        "d": 70,
+        "bottom": 650,
+        "h": 150
+      },
+      "product": false
+    },
+    "family-bin": {
+      "min": [
+        8745.000002384186,
+        -5.9604643443123e-7,
+        7724.999997019768
+      ],
+      "max": [
+        8874.999997615814,
+        280.00000059604645,
+        7875.000002980232
+      ],
+      "dimensions": {
+        "id": "family-bin",
+        "room": "BATH-C01",
+        "kind": "bin",
+        "cx": 8810,
+        "cy": 7800,
+        "rot": 0,
+        "w": 130,
+        "d": 150,
+        "bottom": 0,
+        "h": 280
+      },
+      "product": false
+    },
+    "guest-handtowel": {
+      "min": [
+        11460.000000596046,
+        1140.0000047683716,
+        9063.999999947846
+      ],
+      "max": [
+        11679.999999403954,
+        1411.0000000521538,
+        9096.000000052154
+      ],
+      "dimensions": {
+        "id": "guest-handtowel",
+        "room": "WC-01",
+        "kind": "bar",
+        "cx": 11570,
+        "cy": 9080,
+        "rot": 0,
+        "w": 220,
+        "d": 50,
+        "bottom": 1130,
+        "h": 300
+      },
+      "product": false
+    },
+    "guest-roll": {
+      "min": [
+        10874.999999627471,
+        649.999999254942,
+        9270.00000178814
+      ],
+      "max": [
+        10925.000000372529,
+        750.0000007450582,
+        9429.99999821186
+      ],
+      "dimensions": {
+        "id": "guest-roll",
+        "room": "WC-01",
+        "kind": "roll",
+        "cx": 10900,
+        "cy": 9350,
+        "rot": 270,
+        "w": 160,
+        "d": 70,
+        "bottom": 650,
+        "h": 150
+      },
+      "product": false
+    },
+    "guest-bin": {
+      "min": [
+        10885.000002384186,
+        -5.9604643443123e-7,
+        9954.99999910593
+      ],
+      "max": [
+        11014.999997615814,
+        280.00000059604645,
+        10125.00000089407
+      ],
+      "dimensions": {
+        "id": "guest-bin",
+        "room": "WC-01",
+        "kind": "bin",
+        "cx": 10950,
+        "cy": 10040,
+        "rot": 0,
+        "w": 130,
+        "d": 170,
+        "bottom": 0,
+        "h": 280
+      },
+      "product": false
+    }
+  },
+  "curtain_mesh": null,
+  "interior_concept_ids": {},
+  "full_snapshot_sha256": "b74ca427f0cbbcc2c18f20a8f45ba3ad3f1fcd7f50981cb00908606a7501afbb",
+  "mesh_diagnostics_sha256": "4345463584dfbaba7cc4a499af6474bcf86995626586916c2b52eb44fa2677ae",
+  "frame_id": "B-guest-closed",
+  "style": "B",
+  "png": "B-guest-closed.png",
+  "png_sha256": "32413940098a1227653fbb3bd45aa1cc4ce26611755a4e8e990dbf085b68b1d1",
+  "layout_sha256": "44b32165d56ecc73ea362790b91d148a1790dd29445fd270f7c3bac0c579760e",
+  "camera_sha256": "fe202aece882b03bcc5573cd64b80f585c7c27b8de125fa4dcdfdc472e81c04a",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "external_requests": [],
+  "page_errors": [],
+  "capture_script_sha256": "032fa45b09260535385c5ddd0c8d35438fd57e174f8806031821004e9b2c776a",
+  "built_viewer_sha256": "e364441b85501457f1b9378cc600203f56b4c0b72a9af692f0f8c298fc25f1ce",
+  "proxy_limits": "Actual generic basin, glass operating states and source architecture. No water splash, face photometry, mirror reflection or product certification simulated. No walls, doors, ceilings or cloud data changed."
+}

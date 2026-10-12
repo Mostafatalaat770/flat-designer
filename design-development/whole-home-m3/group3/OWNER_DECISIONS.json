@@ -1,0 +1,41 @@
+{
+  "schema": "M3Group3Recommendation/1",
+  "scope": "Independent Issue74 design review only",
+  "source_owner_programme": {
+    "two_showers": true,
+    "bathtub": false
+  },
+  "provisional_lead": {
+    "master": "B /1450x800 + source600 fixed glass + north surface wet shelves + side face lighting + dry east towel bar",
+    "family": "B appearance /900x900 + west inward fold study, NO mechanism release; sliding vanity fronts due484mm source gap",
+    "guest": "B450x250 floating trial; must defeat real350x180 water/door test before selection"
+  },
+  "alternates": {
+    "master": "A700 glass +732 nominal opening / clay accent + top mirror task study",
+    "family": "A inward single580 leaf fails occupied500/600; keep material alternative independently",
+    "guest": "A350x180 floating specialized shallow basin trial"
+  },
+  "rejected": [
+    "Master900 automatic preference /15.7mm Y projection",
+    "Family WC-facing outward580 /260.4 projection excess",
+    "Family west outward580 /198.6 nominal strip left",
+    "Family inward580 with500 occupied proxy",
+    "Family drawer250+400 standing user againstWC",
+    "Guest two simultaneous users or opening door during handwashing",
+    "Cut niche in unknown wall",
+    "Backlight-only as face illumination evidence",
+    "Claims of curbless construction, real mirror reflection, splash simulation or legal compliance"
+  ],
+  "approvals": {
+    "owner": false,
+    "fixtures": false,
+    "mechanism": false,
+    "materials": false,
+    "electrical": false,
+    "waterproofing": false,
+    "procurement": false,
+    "construction": false,
+    "cloud": false
+  },
+  "next_independent_group": "M3 Group4 / kitchen cohesion + operating and relative electrical-lighting review, preserve R4/R5/R6 and parked appliance SKUs; live Issue41/72 own NEXT"
+}
