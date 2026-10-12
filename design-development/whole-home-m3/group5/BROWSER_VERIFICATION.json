@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "html_sha256": "df85d0afed4e2aafcc099b989c74c72f7281c1488e7cb18f0610d7d652081282",
+  "results": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "comparison_states": 21,
+      "plans": 10,
+      "zooms": 3,
+      "errors": [],
+      "external_requests": [],
+      "body_overflow": false
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "comparison_states": 21,
+      "plans": 10,
+      "zooms": 3,
+      "errors": [],
+      "external_requests": [],
+      "body_overflow": false
+    }
+  ]
+}

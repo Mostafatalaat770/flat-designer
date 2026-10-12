@@ -1,0 +1,134 @@
+{
+  "plans": [
+    {
+      "id": "TER-MBR-SOURCE",
+      "room": "TER-MBR",
+      "key": "SOURCE",
+      "state": "DEPLOYED",
+      "file": "plans/TER-MBR-SOURCE.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "occupied",
+        "diameter_assumed_mm": 500,
+        "status": "MODEL_ROUTE_FOUND"
+      }
+    },
+    {
+      "id": "TER-MBR-A",
+      "room": "TER-MBR",
+      "key": "A",
+      "state": "DEPLOYED",
+      "file": "plans/TER-MBR-A.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "occupied",
+        "diameter_assumed_mm": 500,
+        "status": "ENDPOINT_BLOCKED"
+      }
+    },
+    {
+      "id": "TER-SVC-SOURCE",
+      "room": "TER-SVC",
+      "key": "SOURCE",
+      "state": "DEPLOYED",
+      "file": "plans/TER-SVC-SOURCE.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "DEPLOYED",
+        "diameter_assumed_mm": 500,
+        "status": "MODEL_ROUTE_FOUND"
+      }
+    },
+    {
+      "id": "TER-SVC-A-DEPLOYED",
+      "room": "TER-SVC",
+      "key": "A",
+      "state": "DEPLOYED",
+      "file": "plans/TER-SVC-A-DEPLOYED.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "LOADING",
+        "diameter_assumed_mm": 500,
+        "status": "ENDPOINT_BLOCKED"
+      }
+    },
+    {
+      "id": "TER-SVC-A-FOLDED",
+      "room": "TER-SVC",
+      "key": "A",
+      "state": "FOLDED",
+      "file": "plans/TER-SVC-A-FOLDED.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "FOLDED",
+        "diameter_assumed_mm": 500,
+        "status": "MODEL_ROUTE_FOUND"
+      }
+    },
+    {
+      "id": "TER-SVC-B-DEPLOYED",
+      "room": "TER-SVC",
+      "key": "B",
+      "state": "DEPLOYED",
+      "file": "plans/TER-SVC-B-DEPLOYED.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "LOADING",
+        "diameter_assumed_mm": 500,
+        "status": "ENDPOINT_BLOCKED"
+      }
+    },
+    {
+      "id": "TER-SVC-B-FOLDED",
+      "room": "TER-SVC",
+      "key": "B",
+      "state": "FOLDED",
+      "file": "plans/TER-SVC-B-FOLDED.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "FOLDED",
+        "diameter_assumed_mm": 500,
+        "status": "MODEL_ROUTE_FOUND"
+      }
+    },
+    {
+      "id": "TER-MAIN-SOURCE",
+      "room": "TER-MAIN",
+      "key": "SOURCE",
+      "state": "DEPLOYED",
+      "file": "plans/TER-MAIN-SOURCE.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "occupied",
+        "diameter_assumed_mm": 500,
+        "status": "MODEL_ROUTE_FOUND"
+      }
+    },
+    {
+      "id": "TER-MAIN-A",
+      "room": "TER-MAIN",
+      "key": "A",
+      "state": "DEPLOYED",
+      "file": "plans/TER-MAIN-A.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "occupied",
+        "diameter_assumed_mm": 500,
+        "status": "MODEL_ROUTE_FOUND"
+      }
+    },
+    {
+      "id": "TER-MAIN-B",
+      "room": "TER-MAIN",
+      "key": "B",
+      "state": "DEPLOYED",
+      "file": "plans/TER-MAIN-B.svg",
+      "dimensions": "Source-derived model millimetres; site unverified",
+      "route": {
+        "state": "occupied",
+        "diameter_assumed_mm": 500,
+        "status": "ENDPOINT_BLOCKED"
+      }
+    }
+  ]
+}

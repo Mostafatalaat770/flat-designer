@@ -1,0 +1,15 @@
+{
+  "schema": "M3Group5Package/1",
+  "zip": "Type-B-M3-Group5-Terraces-Owner-Review.zip",
+  "zip_bytes": 23686780,
+  "zip_sha256": "14fb4416b3a27a2d94726aea8c670bc655c6410715521575335fdb29bb89a9ec",
+  "html_bytes": 17373307,
+  "html_sha256": "df85d0afed4e2aafcc099b989c74c72f7281c1488e7cb18f0610d7d652081282",
+  "archive_files": 84,
+  "embedded_terrace_PNGs": 24,
+  "embedded_prior_actual_previews": 4,
+  "raw_terrace_PNGs": 24,
+  "measured_SVGs": 10,
+  "CRC_content_manifest": "PASS",
+  "offline": true
+}

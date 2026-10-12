@@ -1,0 +1,178 @@
+{
+  "schema": "ExistingM3IntegrationInput/1",
+  "next_existing_issue": 72,
+  "owner_roadmap_issue": 41,
+  "construction_issue": 19,
+  "status": "PREPARED_INPUT / integrated room decisions and combined scenes still unapproved",
+  "home_direction": "Warm Japandi / Organic Contemporary, calm ivory/stone + olive accents + limited warm wood; private alternative textures retained, sample comparison pending",
+  "material_light_continuity": "Repeat olive as restrained accent, avoid identical beige in every room; use wipeable wet surfaces/outdoor exposure-rated samples; task/ambient/night controls independent. No common installed electrical plan claimed.",
+  "groups": [
+    {
+      "group": "Group1B",
+      "spaces": [
+        "HALL-01",
+        "RECP-01"
+      ],
+      "direction": "B2 Warm Japandi lead, six-seat dining conditional",
+      "review": "group1b/Owner-Review.html",
+      "zip": "group1b/Owner-Review-Package.zip",
+      "decisions": "group1b/DESIGN.json",
+      "storage": "Buffet assumed clear-width loss38.3%; entry shoe limits, inventory unknown"
+    },
+    {
+      "group": "Group2",
+      "spaces": [
+        "MBR-01",
+        "BR-01",
+        "BR-02",
+        "WIC-01"
+      ],
+      "direction": "B BR02 daily office/occasional guest; WIC B conditional, shared revised bedroom layouts",
+      "review": "group2/Owner-Review.html",
+      "zip": "group2/Type-B-M3-Group2-Owner-Review.zip",
+      "decisions": "group2/OWNER_DECISIONS.json",
+      "storage": "BR02 wardrobe25% outer/25.9% assumed clear width loss; master/BR01 chests41.7% assumed clear width loss; WIC shoe reserve unallocated"
+    },
+    {
+      "group": "Group3",
+      "spaces": [
+        "BATH-M01",
+        "BATH-C01",
+        "WC-01"
+      ],
+      "direction": "B warm olive/ivory/limited wood/nickel; two showers, no tub;1450×800 master lead",
+      "review": "group3/Owner-Review.html",
+      "zip": "group3/Type-B-M3-Group3-Bathrooms-Owner-Review.zip",
+      "decisions": "group3/OWNER_DECISIONS.json",
+      "storage": "Family520×170 towel cabinet134 assumed depth, hand towels only; bath towels need allocated real store; no WIC compensation"
+    },
+    {
+      "group": "Group4",
+      "spaces": [
+        "KIT-01"
+      ],
+      "direction": "R4 ivory/R5 D1/R6 L2 retained; A olive/closed upper +B full drawers conditional",
+      "review": "group4/Owner-Review.html",
+      "zip": "group4/Type-B-M3-Group4-Kitchen-Owner-Review.zip",
+      "decisions": "group4/OWNER_DECISIONS.json",
+      "storage": "A1764×294×664 upper gross344.36L; B300 open cubby gives up58.57L assumed gross closed volume; not net or additional inventory capacity; blind corner credited0"
+    },
+    {
+      "group": "Group5",
+      "spaces": [
+        "TER-MAIN",
+        "TER-MBR",
+        "TER-SVC"
+      ],
+      "direction": "Two-person main, one master corner, compact foldable drying; no ceiling or service move",
+      "review": "group5/Owner-Review.html",
+      "zip": "group5/Type-B-M3-Group5-Terraces-Owner-Review.zip",
+      "decisions": "group5/OWNER_DECISIONS.json",
+      "storage": "Portable280×280 caddy only; no weatherproof pantry/linen/chemical storage or approved closed capacity. Folded rack indoor parking unallocated"
+    }
+  ],
+  "storage": {
+    "whole_home_realistic_net_total_L": null,
+    "status": "UNRESOLVED / do not sum incompatible gross outside widths or double-credit rooms",
+    "approved_new_terrace_capacity_L": 0,
+    "inventory_needed": [
+      "Clothes, hanging lengths, fold stacks and4 shoe pairs/reserve",
+      "Servingware, family plate/cup counts, pots including handles",
+      "Bath towels/linen/bedding and guest sleep kit",
+      "Cleaning tools, wet bucket, laundry baskets and folded-rack indoor parking",
+      "Small appliances, groceries and waste/trap service"
+    ],
+    "schedule": [
+      {
+        "group": "Group1B",
+        "limits": "Buffet assumed clear-width loss38.3%; entry shoe limits, inventory unknown",
+        "net_usable_L": null
+      },
+      {
+        "group": "Group2",
+        "limits": "BR02 wardrobe25% outer/25.9% assumed clear width loss; master/BR01 chests41.7% assumed clear width loss; WIC shoe reserve unallocated",
+        "net_usable_L": null
+      },
+      {
+        "group": "Group3",
+        "limits": "Family520×170 towel cabinet134 assumed depth, hand towels only; bath towels need allocated real store; no WIC compensation",
+        "net_usable_L": null
+      },
+      {
+        "group": "Group4",
+        "limits": "A1764×294×664 upper gross344.36L; B300 open cubby gives up58.57L assumed gross closed volume; not net or additional inventory capacity; blind corner credited0",
+        "net_usable_L": null
+      },
+      {
+        "group": "Group5",
+        "limits": "Portable280×280 caddy only; no weatherproof pantry/linen/chemical storage or approved closed capacity. Folded rack indoor parking unallocated",
+        "net_usable_L": null
+      }
+    ],
+    "resolve_order": [
+      "Inventory by item, size/count/use frequency",
+      "Measure usable inner W/D/H and real opening after hardware/service deductions",
+      "Check reach/door/occupied access and store-to-use travel",
+      "Allocate each item once; show residual shortage before choices",
+      "Publish lower/upper uncertainty range only where measured inputs exist"
+    ]
+  },
+  "cross_room": [
+    {
+      "link": "Reception ↔ main terrace",
+      "holds": [
+        "G1B-H01",
+        "G1B-H02",
+        "G5-H06"
+      ],
+      "check": "B2 six-chair withdrawal, buffet/curtain stacks, half-slide entry and tea tray; no merged-scene assertion"
+    },
+    {
+      "link": "Master ↔ WIC/bath ↔ terrace",
+      "holds": [
+        "G2-H05",
+        "G2-H08",
+        "G3-H02",
+        "G3-H10",
+        "G5-H06"
+      ],
+      "check": "Blackout/AC and moisture/extraction kept independent; terrace light off after use; no outdoor plant screening certificate"
+    },
+    {
+      "link": "Kitchen ↔ service terrace",
+      "holds": [
+        "G4-H04",
+        "G4-H05",
+        "G4-H11",
+        "G5-H06",
+        "G5-H10"
+      ],
+      "check": "Door inward to kitchen; close south drawers/washer/DW before passage as existing studies require. Basket/body/real hinge trial. Washer original indoor."
+    },
+    {
+      "link": "All storage and MEP",
+      "holds": [
+        "G4-H12",
+        "G5-H12"
+      ],
+      "check": "No compensation allocation, no riser/drain/condenser move; retain all M1 intentions/site survey before fixing locations"
+    }
+  ],
+  "professional_order": [
+    "P0 survey geometry/door/glazing/levels/services",
+    "P0 guard/structure/climb/load/developer restrictions",
+    "P0 wet-service/waterproofing/electrical/ventilation releases by Egyptian professionals",
+    "P1 household inventory and source-derived net storage/occupied access",
+    "P1 real finish samples, lighting mockups, privacy and maintenance trials",
+    "Owner signs provisional directions after one combined visual book; construction release separately19"
+  ],
+  "single_visual_book": "Group5 Owner-Review includes a delivered-design visual index; next72 consolidates existing source-backed designs, no new roadmap",
+  "prior_40_holds_unchanged": true,
+  "new_12_holds_open": true,
+  "approvals": {
+    "owner": false,
+    "construction": false,
+    "procurement": false,
+    "cloud": false
+  }
+}

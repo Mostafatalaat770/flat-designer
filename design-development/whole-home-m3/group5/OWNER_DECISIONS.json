@@ -1,0 +1,100 @@
+{
+  "schema": "M3Group5OwnerDecisions/1",
+  "status": "PROVISIONAL_DESIGN_ONLY",
+  "recommendation": {
+    "main": "A two-person lounge; slender open wood/olive metal seating, warm gray stone-look round520-high table, one compact removable plant. B three-seat study is occasional and removed after use.",
+    "master": "One composition: slim chair, existing removable plant, arm-tray cup and shielded portable light. Floor stays empty; no privacy-screen promise.",
+    "service": "B narrow600×500 tower drying proxy provisionally preferred for access/one user; fold/remove after use. Actual guard/wind/load/capacity trial required. A900×450 horizontal is alternative for longer pieces with reduced access margin.",
+    "material": "Shared olive-gray metal, muted green textile, warm wood accent and warm gray stone direction; samples/UV/slip/weather suitability unknown. Original walls and guard unchanged.",
+    "lighting": "Portable shielded warm visual light; no new roof/ceiling/facade installation, lux/IP/product approval; master off after use."
+  },
+  "local_alternatives": {
+    "main": [
+      "A two lounge seats /600 round table",
+      "B three compact seats /700 round table, occasional only"
+    ],
+    "master": [
+      "single calm seating/plant composition"
+    ],
+    "service": [
+      "A horizontal900×450, folded120",
+      "B tower600×500, folded120"
+    ]
+  },
+  "rejected": [
+    "Tall1500 main plant visual weight",
+    "Lantern overlapping serving tray; compact separated final lamp",
+    "Master floor marker in circulation, moved to arm tray",
+    "Permanent third main chair with12.6mm rear band at200 pullback",
+    "Universal family capacity or wind safety from rendered drying rods",
+    "Invented roof/pergola/fixed screen/condenser/drain/outdoor washer",
+    "Assumed storage compensation for previous buffet/wardrobe/WIC losses"
+  ],
+  "owner_approved": false,
+  "construction_approved": false,
+  "procurement_approved": false,
+  "cloud_saved": false,
+  "m1_intents": [
+    {
+      "id": "TER-MBR.E1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MBR.L1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MBR.H1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MBR.F1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-SVC.E1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-SVC.L1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-SVC.H1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-SVC.F1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MAIN.E1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MAIN.L1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MAIN.H1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    },
+    {
+      "id": "TER-MAIN.F1",
+      "retained": true,
+      "placement": "RELATIVE_USE_ONLY / TBD_AS_BUILT"
+    }
+  ],
+  "next": "Existing Issue72 whole-home integration / one owner book, existing41 roadmap; no new roadmap"
+}

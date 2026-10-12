@@ -1,0 +1,1960 @@
+{
+  "checked_at_utc": "2026-10-12T09:24:34.840154+00:00",
+  "refs": {
+    "refs/heads/integration/owner-review-gates-r1-20261010": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+    "refs/heads/master": "cfb7e8dee8621280c87121b6e60f7bb908b12695",
+    "refs/tags/type-b-m3-group4-review-20261012": "d5ee78da71d97cc86b965d52534456a8d4cda7a3"
+  },
+  "workflows": {
+    "HEAD": {
+      "count": 48,
+      "push_branch_filters": 40,
+      "rows": [
+        {
+          "path": ".github/workflows/agent-check.yml",
+          "sha256": "1764924faec3725c94e1f44798646b050d8d71ee6354ed416d31edb5b736685b",
+          "events": {
+            "push": {
+              "branches": [
+                "master",
+                "agent/**"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "master"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/bathroom-a2-render.yml",
+          "sha256": "27223f8c71acfe9f9362aee95d6d054bfde3d97adf7e2561c273ab6ec0ca634e",
+          "events": {
+            "push": {
+              "branches": [
+                "design/walkin-shower-family-bath-v53-20261009"
+              ],
+              "paths": [
+                "studio-core.js",
+                "studio-scene.js",
+                "studio/renderer/builders.js",
+                "studio/renderer/walk-in-shower.test.mjs",
+                "render-snapshots/bathroom-a2-walkin-v55.json",
+                "scripts/verify-bathroom-a2-visuals.mjs",
+                ".github/workflows/bathroom-a2-render.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/bathrooms-b3-finish-jury.yml",
+          "sha256": "b4098a17bdb5e2e4d3d15953f014d9e877277ca5d6a8e95b6e837320fb7eb006",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/bathroom-finish-jury*",
+                "scripts/build-bathroom-finish-jury.mjs",
+                ".github/workflows/bathrooms-b3-finish-jury.yml",
+                "design-development/BATHROOMS_B3_DESIGN_REVIEW_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/family-shower-review.yml",
+          "sha256": "47e62fca517b2c867ae034457efefb56e1dc027aa86123c8ba591b9c2f0d2f3c",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio-core.js",
+                "studio-scene.js",
+                "studio/renderer/builders.js",
+                "studio/renderer/walk-in-shower.test.mjs",
+                "studio/analysis/family-shower-option*",
+                "scripts/build-family-shower-study.mjs",
+                ".github/workflows/family-shower-review.yml",
+                "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/guest-wc-jury.yml",
+          "sha256": "d8f3eadae30ebb9eb3b9b0762d2ee05543e7a57ddf9df02348d0654ce2844dd6",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio-core.js",
+                "studio-scene.js",
+                "studio/renderer/builders.js",
+                "studio/analysis/guest-wc-jury*",
+                "scripts/build-guest-wc-jury.mjs",
+                "design-development/GUEST_WC_COMFORT_JURY_20261010.md",
+                ".github/workflows/guest-wc-jury.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/integration-v55-review.yml",
+          "sha256": "5444e87d1836f36c1299e045dbbd8c7e8df7e25caecd5d71f04f884cbd443cca",
+          "events": {
+            "push": {
+              "branches": [
+                "master",
+                "integration/type-b-current-v55-20261009"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "master"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/kitchen-r4-webgl-review.yml",
+          "sha256": "c6eddb709f7765b7286ef171388131044d78679ffeab5f18723b50feeade5dc4",
+          "events": {
+            "push": {
+              "branches": [
+                "integration/owner-review-gates-r1-20261010"
+              ],
+              "paths": [
+                "design-development/kitchen-finish-r4/**",
+                "scripts/*kitchen-r4*",
+                "scripts/render-variants.mjs",
+                ".github/workflows/kitchen-r4-webgl-review.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/kitchen-r5-webgl-review.yml",
+          "sha256": "60cc9d9a7292d6231d05c7ab036b3da89868758baa8a873cf7a6f87349142216",
+          "events": {
+            "push": {
+              "branches": [
+                "integration/owner-review-gates-r1-20261010"
+              ],
+              "paths": [
+                "kitchen-render-truth.js",
+                "studio/renderer/builders.js",
+                "make_app.py",
+                "capture-renderer.js",
+                "scripts/*kitchen-r5*",
+                "design-development/kitchen-r5/**",
+                ".github/workflows/kitchen-r5-webgl-review.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/kitchen-r6-webgl-review.yml",
+          "sha256": "480546cd0a2dabef37ad5efbed22ffe6fefe1fb93d22d31b011e2b61a6db2982",
+          "events": {
+            "push": {
+              "branches": [
+                "integration/owner-review-gates-r1-20261010"
+              ],
+              "paths": [
+                "kitchen-r6-study.js",
+                "make_app.py",
+                "capture-renderer.js",
+                "scripts/*kitchen-r6*",
+                "scripts/render-variants.mjs",
+                "design-development/kitchen-r6/**",
+                ".github/workflows/kitchen-r6-webgl-review.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/master-detail-jury.yml",
+          "sha256": "7b847360e2faaf7285e34df460e54bbf5ca5112f8aebd840ba650e7f7844dd04",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "interior-core.js",
+                "interior-scene.js",
+                "studio/renderer/builders.js",
+                "studio/analysis/master-detail-jury*",
+                "scripts/build-master-detail-jury.mjs",
+                ".github/workflows/master-detail-jury.yml",
+                "design-development/MASTER_DETAIL_JURY_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/master-walkin-depth.yml",
+          "sha256": "e75b4682e50afa187c4346ad8c4c29e6ea8d6c14d08b1125928c3287e2cc2625",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/master-walkin-depth*",
+                "scripts/build-master-walkin-depth.mjs",
+                ".github/workflows/master-walkin-depth.yml",
+                "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/owner-kitchen-dining-review.yml",
+          "sha256": "ed455a7ca69d9d4f9cf3d7f40aa9202e8b09198894f2ef9cbeb689889041e667",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "scripts/owner-kitchen-decision.mjs",
+                "studio/analysis/kitchen-owner-compare*",
+                "render-snapshots/**",
+                "design-development/decision-registry.json",
+                ".github/workflows/owner-kitchen-dining-review.yml"
+              ]
+            },
+            "push": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "scripts/owner-kitchen-decision.mjs",
+                "studio/analysis/kitchen-owner-compare*",
+                "render-snapshots/**",
+                "design-development/decision-registry.json",
+                ".github/workflows/owner-kitchen-dining-review.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/owner-review-r1.yml",
+          "sha256": "7b0134a76e2f1eea05bf4bb484dac708e8c87ee7b77163284c148483b19d91ed",
+          "events": {
+            "push": {
+              "branches": [
+                "integration/owner-review-gates-r1-20261010"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "design/sprint6-integrated-dw-manufacturer-fit-20261010"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/p1-site-feasibility.yml",
+          "sha256": "04c7c7bea63ec96831630cd0cde92eb43c7c4d11c58623509c08778d61f5bf0a",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/p1-site-feasibility*",
+                "scripts/build-p1-site-packet.mjs",
+                ".github/workflows/p1-site-feasibility.yml",
+                "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md"
+              ]
+            },
+            "push": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/p1-site-feasibility*",
+                "scripts/build-p1-site-packet.mjs",
+                ".github/workflows/p1-site-feasibility.yml",
+                "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/reception-review-delivery.yml",
+          "sha256": "3db5d275877aec3e3c9a64ea52d118482f9bbc1e02b7cdf02c3194837f5dc799",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "design-development/reception-sprint/**",
+                "scripts/package-reception-review.mjs",
+                "scripts/export-reception-review-pdf.mjs",
+                ".github/workflows/reception-review-delivery.yml"
+              ]
+            },
+            "workflow_dispatch": {
+              "inputs": {
+                "reviewed_render_run": {
+                  "description": "Successful, visually reviewed source-locked render run",
+                  "default": "38044887863",
+                  "required": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/reception-sprint-review.yml",
+          "sha256": "872c696ed81b58324001d1112650bca7fa449989f33cd1193cfbff8a1a47af3e",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/reception-sprint*",
+                "scripts/*reception-sprint*",
+                "scripts/export-reception-review.mjs",
+                "design-development/reception-sprint/**",
+                "!design-development/reception-sprint/*.md",
+                ".github/workflows/reception-sprint-review.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/render-apartment.yml",
+          "sha256": "e135a83778057f59264c30d6956b4921c9a368d48a341d7eee97a3e720ce4982",
+          "events": {
+            "push": {
+              "branches": [
+                "**"
+              ],
+              "paths": [
+                "render-snapshots/current.json",
+                "scripts/render-snapshot.mjs",
+                ".github/workflows/render-apartment.yml",
+                "capture-renderer.js",
+                "scripts/verify-render-overlay.mjs",
+                "build_capture.mjs",
+                "make_app.py",
+                "generate_model.py",
+                "scene-decor.js",
+                "studio-core.js",
+                "studio-scene.js",
+                "interior-scene.js",
+                "interior-core.js",
+                "interior-materials.json",
+                "verify_saved_materials.mjs",
+                "studio/renderer/builders.js",
+                "studio-catalog.json"
+              ]
+            },
+            "workflow_dispatch": {
+              "inputs": {
+                "snapshot": {
+                  "description": "Snapshot JSON path",
+                  "required": false,
+                  "default": "render-snapshots/current.json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/render-k11-detail.yml",
+          "sha256": "0b858e5ac7e34b542b92937812ab341574cf6db65d339c1c2140ff4738830408",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k11-kitchen-daily-use"
+              ],
+              "paths": [
+                "design-development/k11/coffee-detail.json",
+                ".github/workflows/render-k11-detail.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/semi-open-portal-review.yml",
+          "sha256": "509adf8b7158820277d3cffb51f46164bc7e7d9885b1f434ebddcb710a38e5d9",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/semi-open-portal*",
+                "studio/analysis/portal-detail*",
+                "scripts/build-semi-open-portal.mjs",
+                "scripts/portal-detail-qa.mjs",
+                ".github/workflows/semi-open-portal-review.yml",
+                "design-development/SEMI_OPEN_PORTAL_REVIEW.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/sprint2-entry-feasibility.yml",
+          "sha256": "bfa4537c5f989ceddee35a55ebf3990e50fc3967875ba074ea7e41f61e9bdb50",
+          "events": {
+            "push": {
+              "branches": [
+                "design/sprint2-*"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "master",
+                "design/reception-sprint-implementation-20261010"
+              ],
+              "paths": [
+                "scripts/sprint2-entry-feasibility.mjs",
+                "design-development/reception-sprint2/**",
+                ".github/workflows/sprint2-entry-feasibility.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/sprint3-shoe-sku-screen.yml",
+          "sha256": "57648d407f5ebf88f9004691596b00e58511f64b054ffddabc7fd262ffbba98b",
+          "events": {
+            "push": {
+              "branches": [
+                "design/sprint3-*"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "design/sprint2-entry-operation-feasibility-20261010"
+              ],
+              "paths": [
+                "scripts/sprint3-shoe-sku-screen.mjs",
+                "design-development/reception-sprint3/**",
+                ".github/workflows/sprint3-shoe-sku-screen.yml"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/sprint4-kitchen-operation.yml",
+          "sha256": "3f17cf9cbbfc14628580904d048570e02df707d77e9d47fea5986da37ef67a34",
+          "events": {
+            "push": {
+              "branches": [
+                "design/sprint4-*"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "design/sprint3-real-shoe-storage-20261010"
+              ],
+              "paths": [
+                "scripts/sprint4-kitchen-operation.mjs",
+                "design-development/reception-sprint4/**",
+                ".github/workflows/sprint4-kitchen-operation.yml"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/sprint5-manufacturer-fit.yml",
+          "sha256": "276411f6e0093e6763b2f4ec99d2b0254e4ff457a3d1af28068ed44a8441eadc",
+          "events": {
+            "push": {
+              "branches": [
+                "design/sprint5-*"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "design/sprint4-kitchen-operation-gates-20261010"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/sprint6-bosch-dw.yml",
+          "sha256": "b30759e2e2eab0cfd5286447e91c36f3153e2cc781d53b22d1e0228addce3a70",
+          "events": {
+            "push": {
+              "branches": [
+                "design/sprint6-*"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "design/sprint5-kitchen-product-fit-firstfix-20261010"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a1.yml",
+          "sha256": "ac50913e3dc990df0a6b89c3afce16ad7c5b9ff54d31f00fcb8abbf21bfab036",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/**"
+              ],
+              "paths": [
+                ".github/workflows/verify-advisor-a1.yml",
+                "scripts/audit-advisor-01.mjs",
+                "design-development/advisor/**",
+                "design-development/k11/**",
+                "design-development/k12/**"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                ".github/workflows/verify-advisor-a1.yml",
+                "scripts/audit-advisor-01.mjs",
+                "design-development/advisor/**",
+                "design-development/k11/**",
+                "design-development/k12/**"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a10.yml",
+          "sha256": "8f1e21d1dd07aba6705d7a7ea7ac45de870d6796fcc102a26e0906a978bc4661",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a10-second-bedroom-flex-20261008"
+              ],
+              "paths": [
+                "scripts/prepare-advisor-a10-bedroom-flex.mjs",
+                ".github/workflows/verify-advisor-a10.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/prepare-advisor-a10-bedroom-flex.mjs",
+                ".github/workflows/verify-advisor-a10.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a11.yml",
+          "sha256": "9c874de0bf53ef194e33f654992003c02048e55f231e4c6bb192aa1086c40b90",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a11-master-bedroom-sleep-first-20261008"
+              ],
+              "paths": [
+                "scripts/prepare-advisor-a11-master.mjs",
+                ".github/workflows/verify-advisor-a11.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/prepare-advisor-a11-master.mjs",
+                ".github/workflows/verify-advisor-a11.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a12.yml",
+          "sha256": "ca187f478ac67a1bb5a21d894f84fca765874eaaa9e522bfcb1d46940324004b",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a12-kitchen-dining-family-sprint-20261008"
+              ],
+              "paths": [
+                "scripts/a12-kitchen-dining-sprint.mjs",
+                "studio/analysis/kitchen-dining.mjs",
+                "studio/analysis/kitchen-dining.test.mjs",
+                ".github/workflows/verify-advisor-a12.yml",
+                "review-evidence/advisor-a12/**"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a12-kitchen-dining-sprint.mjs",
+                "studio/analysis/kitchen-dining.mjs",
+                "studio/analysis/kitchen-dining.test.mjs",
+                ".github/workflows/verify-advisor-a12.yml",
+                "review-evidence/advisor-a12/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a13.yml",
+          "sha256": "d135224c807c203b542660d97513cba7fb813f3c10088f5af5f9489f7d66115d",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a13-six-seat-redistribution-20261008"
+              ],
+              "paths": [
+                "scripts/a13-six-seat-distribution.mjs",
+                ".github/workflows/verify-advisor-a13.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a13-six-seat-distribution.mjs",
+                ".github/workflows/verify-advisor-a13.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a14.yml",
+          "sha256": "284323c9c90a052974352f0484aed277d25017d2d7156add12fe5235bb537e25",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a14-dishwasher-storage-workflow-20261008"
+              ],
+              "paths": [
+                "studio/analysis/dishwasher-storage.mjs",
+                "studio/analysis/dishwasher-storage.test.mjs",
+                "scripts/a14-kitchen-unloading.mjs",
+                ".github/workflows/verify-advisor-a14.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/dishwasher-storage.mjs",
+                "studio/analysis/dishwasher-storage.test.mjs",
+                "scripts/a14-kitchen-unloading.mjs",
+                ".github/workflows/verify-advisor-a14.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a15.yml",
+          "sha256": "021b0c1f993336b5b7a407a3b803e483f50237f4cda8ec975c704a3146a04f22",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a15-whole-home-mep-first-fix-20261008"
+              ],
+              "paths": [
+                "studio/analysis/first-fix.mjs",
+                "studio/analysis/first-fix.test.mjs",
+                "scripts/a15-first-fix-audit.mjs",
+                "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+                ".github/workflows/verify-advisor-a15.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/first-fix.mjs",
+                "studio/analysis/first-fix.test.mjs",
+                "scripts/a15-first-fix-audit.mjs",
+                "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+                ".github/workflows/verify-advisor-a15.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a16.yml",
+          "sha256": "5876018dea168aea1d5372aa5bc3e1a02f36e44381feb63bf301ec282d14dd33",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a16-reception-finish-directions-20261008"
+              ],
+              "paths": [
+                "scripts/a16-prepare-finish-directions.mjs",
+                ".github/workflows/verify-advisor-a16.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a16-prepare-finish-directions.mjs",
+                ".github/workflows/verify-advisor-a16.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a17.yml",
+          "sha256": "0c242fb5514249139c62b0635e53628fd226441c3d823c27f2adeb8222303f23",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a17-family-living-view-qa-20261008"
+              ],
+              "paths": [
+                "scripts/a17-build-living-focused-views.mjs",
+                "studio/analysis/camera-coverage.mjs",
+                "studio/analysis/camera-coverage.test.mjs",
+                ".github/workflows/verify-advisor-a17.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a17-build-living-focused-views.mjs",
+                "studio/analysis/camera-coverage.mjs",
+                "studio/analysis/camera-coverage.test.mjs",
+                ".github/workflows/verify-advisor-a17.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a8.yml",
+          "sha256": "2a47daad0ad86b7a152e5f621695aca0f39e3c5211eef76a0c909100aaa240b7",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a8-private-wet-storage-20261008"
+              ],
+              "paths": [
+                ".github/workflows/verify-advisor-a8.yml",
+                "scripts/advisor-a8-private-wet-storage.mjs",
+                "review-evidence/advisor-a8/**"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                ".github/workflows/verify-advisor-a8.yml",
+                "scripts/advisor-a8-private-wet-storage.mjs",
+                "review-evidence/advisor-a8/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-foundation-phase2.yml",
+          "sha256": "9e904a71e3b2f8162db645e6fc99a201ed72dcbd101c28dd8c0b2e7abdb9b0c2",
+          "events": {
+            "push": {
+              "branches": [
+                "foundation/phase2-multi-actor-storage-20261008"
+              ],
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-phase2-reference.mjs",
+                "scripts/analyze-family-activity.mjs",
+                "design-development/advisor/cases/wic-two-person.json",
+                ".github/workflows/verify-foundation-phase2.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-phase2-reference.mjs",
+                "scripts/analyze-family-activity.mjs",
+                "design-development/advisor/cases/wic-two-person.json",
+                ".github/workflows/verify-foundation-phase2.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-home-experience.yml",
+          "sha256": "86b9e21a730f317c1bf14f2d2cd00d9b866f137c21e6f847a2073bf8b2e6c14e",
+          "events": {
+            "push": {
+              "branches": [
+                "foundation/phase3-home-experience-lab-20261008"
+              ],
+              "paths": [
+                "studio/analysis/experience.mjs",
+                "studio/analysis/experience.test.mjs",
+                "scripts/evaluate-home-experience.mjs",
+                "design-development/advisor/cases/typeb-home-experience.json",
+                ".github/workflows/verify-home-experience.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/experience.mjs",
+                "studio/analysis/experience.test.mjs",
+                "scripts/evaluate-home-experience.mjs",
+                "design-development/advisor/cases/typeb-home-experience.json",
+                ".github/workflows/verify-home-experience.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-j1.yml",
+          "sha256": "9531426cfbb56560a0204c81b054ac7f0c2a879077b00ba36c1f0c6690355698",
+          "events": {
+            "push": {
+              "branches": [
+                "design/j1-integrated-candidate"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k10.yml",
+          "sha256": "1d8a20c1d83db897c5b8cd77676ff2a3d9d1026eeba7ad5dc10d2c03e4c9cf5a",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k10-island-function"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k11.yml",
+          "sha256": "f9a478579d8e5087fb952f23e779876484309bb19fd0cb0d1c400d9ecc8af1dd",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k11-kitchen-daily-use"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "studio/**",
+                "design-development/k11/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k12.yml",
+          "sha256": "ffdad8707ea6789e01ccc5a547fd44dbbe237d589bd2b1f2ba097efd4285007f",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k12-permanent-end-prep"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "studio/**",
+                "design-development/k12/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k4.yml",
+          "sha256": "24cef737c64b64d9991d7eea2a4587abc914a85ded4ae777556b204051402b0a",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k4-render-truth"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k8.yml",
+          "sha256": "99f6b9e616bc8fcfb1ee43a2128f01cb0182559275ddbc014177161731cd2808",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k8-bound-finishes-review"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k9.yml",
+          "sha256": "b9935e80f0ed94e5e2af66f159eae6de2546fcd0796a536269583609af915650",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k9-balanced-rotated-island"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-platform-batch.yml",
+          "sha256": "5f58b0ec308971a63a39af7adaaecb4c0bfcd22e6862ac84ab4e28164ea33dfd",
+          "events": {
+            "push": {
+              "branches": [
+                "platform/batch-compare-and-verify-20261008"
+              ],
+              "paths": [
+                "scripts/render-batch-plan.mjs",
+                "scripts/render-batch-plan.test.mjs",
+                "scripts/render-variants.mjs",
+                ".github/workflows/verify-platform-batch.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/render-batch-plan.mjs",
+                "scripts/render-batch-plan.test.mjs",
+                "scripts/render-variants.mjs",
+                ".github/workflows/verify-platform-batch.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-spatial-foundation.yml",
+          "sha256": "a44a37a22f58a4354558b4748adaef7a581418217880a480d1698a8bd50bd512",
+          "events": {
+            "push": {
+              "branches": [
+                "foundation/spatial-decision-engine-20261008"
+              ],
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-reference-audit.mjs",
+                "scripts/analyze-spatial-case.mjs",
+                "design-development/advisor/cases/**",
+                "review-evidence/foundation/**",
+                ".github/workflows/verify-spatial-foundation.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-reference-audit.mjs",
+                "scripts/analyze-spatial-case.mjs",
+                "design-development/advisor/cases/**",
+                "review-evidence/foundation/**",
+                ".github/workflows/verify-spatial-foundation.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-studio-explore-mode.yml",
+          "sha256": "ea2527beec5c0523d6a9fea7293c7143f2a9c26448976191cd4da4f637245ca4",
+          "events": {
+            "push": {
+              "branches": [
+                "platform/explore-verify-interactive-workspace-20261008"
+              ],
+              "paths": [
+                "studio/app/src/explore*",
+                "studio/app/src/ExploreApp.tsx",
+                "studio/app/src/App.tsx",
+                "studio/app/explore.html",
+                "studio/app/vite.config.ts",
+                "scripts/explore-browser-smoke.mjs",
+                ".github/workflows/verify-studio-explore-mode.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/app/src/explore*",
+                "studio/app/src/ExploreApp.tsx",
+                "studio/app/src/App.tsx",
+                "studio/app/explore.html",
+                "studio/app/vite.config.ts",
+                "scripts/explore-browser-smoke.mjs",
+                ".github/workflows/verify-studio-explore-mode.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-vercel-preview.yml",
+          "sha256": "f3b603d82fc51971348a1c89820aa6441a378f8b5f1b9c9781097d7b7ceccee1",
+          "events": {
+            "push": {
+              "branches": [
+                "platform/vercel-visual-preview-20261008"
+              ],
+              "paths": [
+                "scripts/prepare-vercel-preview.mjs",
+                "vercel.json",
+                ".github/workflows/verify-vercel-preview.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/prepare-vercel-preview.mjs",
+                "vercel.json",
+                ".github/workflows/verify-vercel-preview.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/whole-home-m0.yml",
+          "sha256": "9b95f6126657aa85471ad20a36a51aa18581f8a59e90902e70796863dd6a47a2",
+          "events": {
+            "push": {
+              "branches": [
+                "integration/owner-review-gates-r1-20261010"
+              ],
+              "paths": [
+                "scripts/build-whole-home-m0.mjs",
+                "scripts/whole-home-m0.test.mjs",
+                "design-development/whole-home-m0/**",
+                ".github/workflows/whole-home-m0.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/build-whole-home-m0.mjs",
+                "scripts/whole-home-m0.test.mjs",
+                "design-development/whole-home-m0/**",
+                ".github/workflows/whole-home-m0.yml"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "origin/master": {
+      "count": 36,
+      "push_branch_filters": 30,
+      "rows": [
+        {
+          "path": ".github/workflows/agent-check.yml",
+          "sha256": "1764924faec3725c94e1f44798646b050d8d71ee6354ed416d31edb5b736685b",
+          "events": {
+            "push": {
+              "branches": [
+                "master",
+                "agent/**"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "master"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/bathroom-a2-render.yml",
+          "sha256": "27223f8c71acfe9f9362aee95d6d054bfde3d97adf7e2561c273ab6ec0ca634e",
+          "events": {
+            "push": {
+              "branches": [
+                "design/walkin-shower-family-bath-v53-20261009"
+              ],
+              "paths": [
+                "studio-core.js",
+                "studio-scene.js",
+                "studio/renderer/builders.js",
+                "studio/renderer/walk-in-shower.test.mjs",
+                "render-snapshots/bathroom-a2-walkin-v55.json",
+                "scripts/verify-bathroom-a2-visuals.mjs",
+                ".github/workflows/bathroom-a2-render.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/bathrooms-b3-finish-jury.yml",
+          "sha256": "b4098a17bdb5e2e4d3d15953f014d9e877277ca5d6a8e95b6e837320fb7eb006",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/bathroom-finish-jury*",
+                "scripts/build-bathroom-finish-jury.mjs",
+                ".github/workflows/bathrooms-b3-finish-jury.yml",
+                "design-development/BATHROOMS_B3_DESIGN_REVIEW_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/family-shower-review.yml",
+          "sha256": "47e62fca517b2c867ae034457efefb56e1dc027aa86123c8ba591b9c2f0d2f3c",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio-core.js",
+                "studio-scene.js",
+                "studio/renderer/builders.js",
+                "studio/renderer/walk-in-shower.test.mjs",
+                "studio/analysis/family-shower-option*",
+                "scripts/build-family-shower-study.mjs",
+                ".github/workflows/family-shower-review.yml",
+                "design-development/FAMILY_SHOWER_GLASS_STUDY_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/guest-wc-jury.yml",
+          "sha256": "d8f3eadae30ebb9eb3b9b0762d2ee05543e7a57ddf9df02348d0654ce2844dd6",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio-core.js",
+                "studio-scene.js",
+                "studio/renderer/builders.js",
+                "studio/analysis/guest-wc-jury*",
+                "scripts/build-guest-wc-jury.mjs",
+                "design-development/GUEST_WC_COMFORT_JURY_20261010.md",
+                ".github/workflows/guest-wc-jury.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/integration-v55-review.yml",
+          "sha256": "5444e87d1836f36c1299e045dbbd8c7e8df7e25caecd5d71f04f884cbd443cca",
+          "events": {
+            "push": {
+              "branches": [
+                "master",
+                "integration/type-b-current-v55-20261009"
+              ]
+            },
+            "pull_request": {
+              "branches": [
+                "master"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/master-detail-jury.yml",
+          "sha256": "7b847360e2faaf7285e34df460e54bbf5ca5112f8aebd840ba650e7f7844dd04",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "interior-core.js",
+                "interior-scene.js",
+                "studio/renderer/builders.js",
+                "studio/analysis/master-detail-jury*",
+                "scripts/build-master-detail-jury.mjs",
+                ".github/workflows/master-detail-jury.yml",
+                "design-development/MASTER_DETAIL_JURY_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/master-walkin-depth.yml",
+          "sha256": "e75b4682e50afa187c4346ad8c4c29e6ea8d6c14d08b1125928c3287e2cc2625",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/master-walkin-depth*",
+                "scripts/build-master-walkin-depth.mjs",
+                ".github/workflows/master-walkin-depth.yml",
+                "design-development/MASTER_WALKIN_DEPTH_SPLASH_REVIEW_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/owner-kitchen-dining-review.yml",
+          "sha256": "ed455a7ca69d9d4f9cf3d7f40aa9202e8b09198894f2ef9cbeb689889041e667",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "scripts/owner-kitchen-decision.mjs",
+                "studio/analysis/kitchen-owner-compare*",
+                "render-snapshots/**",
+                "design-development/decision-registry.json",
+                ".github/workflows/owner-kitchen-dining-review.yml"
+              ]
+            },
+            "push": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "scripts/owner-kitchen-decision.mjs",
+                "studio/analysis/kitchen-owner-compare*",
+                "render-snapshots/**",
+                "design-development/decision-registry.json",
+                ".github/workflows/owner-kitchen-dining-review.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/p1-site-feasibility.yml",
+          "sha256": "04c7c7bea63ec96831630cd0cde92eb43c7c4d11c58623509c08778d61f5bf0a",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/p1-site-feasibility*",
+                "scripts/build-p1-site-packet.mjs",
+                ".github/workflows/p1-site-feasibility.yml",
+                "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md"
+              ]
+            },
+            "push": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/p1-site-feasibility*",
+                "scripts/build-p1-site-packet.mjs",
+                ".github/workflows/p1-site-feasibility.yml",
+                "design-development/P1_SITE_FIELD_INSPECTION_RFI_20261010.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/render-apartment.yml",
+          "sha256": "e135a83778057f59264c30d6956b4921c9a368d48a341d7eee97a3e720ce4982",
+          "events": {
+            "push": {
+              "branches": [
+                "**"
+              ],
+              "paths": [
+                "render-snapshots/current.json",
+                "scripts/render-snapshot.mjs",
+                ".github/workflows/render-apartment.yml",
+                "capture-renderer.js",
+                "scripts/verify-render-overlay.mjs",
+                "build_capture.mjs",
+                "make_app.py",
+                "generate_model.py",
+                "scene-decor.js",
+                "studio-core.js",
+                "studio-scene.js",
+                "interior-scene.js",
+                "interior-core.js",
+                "interior-materials.json",
+                "verify_saved_materials.mjs",
+                "studio/renderer/builders.js",
+                "studio-catalog.json"
+              ]
+            },
+            "workflow_dispatch": {
+              "inputs": {
+                "snapshot": {
+                  "description": "Snapshot JSON path",
+                  "required": false,
+                  "default": "render-snapshots/current.json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/render-k11-detail.yml",
+          "sha256": "0b858e5ac7e34b542b92937812ab341574cf6db65d339c1c2140ff4738830408",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k11-kitchen-daily-use"
+              ],
+              "paths": [
+                "design-development/k11/coffee-detail.json",
+                ".github/workflows/render-k11-detail.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/semi-open-portal-review.yml",
+          "sha256": "509adf8b7158820277d3cffb51f46164bc7e7d9885b1f434ebddcb710a38e5d9",
+          "events": {
+            "pull_request": {
+              "branches": [
+                "master"
+              ],
+              "paths": [
+                "studio/analysis/semi-open-portal*",
+                "studio/analysis/portal-detail*",
+                "scripts/build-semi-open-portal.mjs",
+                "scripts/portal-detail-qa.mjs",
+                ".github/workflows/semi-open-portal-review.yml",
+                "design-development/SEMI_OPEN_PORTAL_REVIEW.md"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a1.yml",
+          "sha256": "ac50913e3dc990df0a6b89c3afce16ad7c5b9ff54d31f00fcb8abbf21bfab036",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/**"
+              ],
+              "paths": [
+                ".github/workflows/verify-advisor-a1.yml",
+                "scripts/audit-advisor-01.mjs",
+                "design-development/advisor/**",
+                "design-development/k11/**",
+                "design-development/k12/**"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                ".github/workflows/verify-advisor-a1.yml",
+                "scripts/audit-advisor-01.mjs",
+                "design-development/advisor/**",
+                "design-development/k11/**",
+                "design-development/k12/**"
+              ]
+            }
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a10.yml",
+          "sha256": "8f1e21d1dd07aba6705d7a7ea7ac45de870d6796fcc102a26e0906a978bc4661",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a10-second-bedroom-flex-20261008"
+              ],
+              "paths": [
+                "scripts/prepare-advisor-a10-bedroom-flex.mjs",
+                ".github/workflows/verify-advisor-a10.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/prepare-advisor-a10-bedroom-flex.mjs",
+                ".github/workflows/verify-advisor-a10.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a11.yml",
+          "sha256": "9c874de0bf53ef194e33f654992003c02048e55f231e4c6bb192aa1086c40b90",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a11-master-bedroom-sleep-first-20261008"
+              ],
+              "paths": [
+                "scripts/prepare-advisor-a11-master.mjs",
+                ".github/workflows/verify-advisor-a11.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/prepare-advisor-a11-master.mjs",
+                ".github/workflows/verify-advisor-a11.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a12.yml",
+          "sha256": "ca187f478ac67a1bb5a21d894f84fca765874eaaa9e522bfcb1d46940324004b",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a12-kitchen-dining-family-sprint-20261008"
+              ],
+              "paths": [
+                "scripts/a12-kitchen-dining-sprint.mjs",
+                "studio/analysis/kitchen-dining.mjs",
+                "studio/analysis/kitchen-dining.test.mjs",
+                ".github/workflows/verify-advisor-a12.yml",
+                "review-evidence/advisor-a12/**"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a12-kitchen-dining-sprint.mjs",
+                "studio/analysis/kitchen-dining.mjs",
+                "studio/analysis/kitchen-dining.test.mjs",
+                ".github/workflows/verify-advisor-a12.yml",
+                "review-evidence/advisor-a12/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a13.yml",
+          "sha256": "d135224c807c203b542660d97513cba7fb813f3c10088f5af5f9489f7d66115d",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a13-six-seat-redistribution-20261008"
+              ],
+              "paths": [
+                "scripts/a13-six-seat-distribution.mjs",
+                ".github/workflows/verify-advisor-a13.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a13-six-seat-distribution.mjs",
+                ".github/workflows/verify-advisor-a13.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a14.yml",
+          "sha256": "284323c9c90a052974352f0484aed277d25017d2d7156add12fe5235bb537e25",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a14-dishwasher-storage-workflow-20261008"
+              ],
+              "paths": [
+                "studio/analysis/dishwasher-storage.mjs",
+                "studio/analysis/dishwasher-storage.test.mjs",
+                "scripts/a14-kitchen-unloading.mjs",
+                ".github/workflows/verify-advisor-a14.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/dishwasher-storage.mjs",
+                "studio/analysis/dishwasher-storage.test.mjs",
+                "scripts/a14-kitchen-unloading.mjs",
+                ".github/workflows/verify-advisor-a14.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a15.yml",
+          "sha256": "021b0c1f993336b5b7a407a3b803e483f50237f4cda8ec975c704a3146a04f22",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a15-whole-home-mep-first-fix-20261008"
+              ],
+              "paths": [
+                "studio/analysis/first-fix.mjs",
+                "studio/analysis/first-fix.test.mjs",
+                "scripts/a15-first-fix-audit.mjs",
+                "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+                ".github/workflows/verify-advisor-a15.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/first-fix.mjs",
+                "studio/analysis/first-fix.test.mjs",
+                "scripts/a15-first-fix-audit.mjs",
+                "design-development/advisor/cases/typeb-wholehome-firstfix.json",
+                ".github/workflows/verify-advisor-a15.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a16.yml",
+          "sha256": "5876018dea168aea1d5372aa5bc3e1a02f36e44381feb63bf301ec282d14dd33",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a16-reception-finish-directions-20261008"
+              ],
+              "paths": [
+                "scripts/a16-prepare-finish-directions.mjs",
+                ".github/workflows/verify-advisor-a16.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a16-prepare-finish-directions.mjs",
+                ".github/workflows/verify-advisor-a16.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a17.yml",
+          "sha256": "0c242fb5514249139c62b0635e53628fd226441c3d823c27f2adeb8222303f23",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a17-family-living-view-qa-20261008"
+              ],
+              "paths": [
+                "scripts/a17-build-living-focused-views.mjs",
+                "studio/analysis/camera-coverage.mjs",
+                "studio/analysis/camera-coverage.test.mjs",
+                ".github/workflows/verify-advisor-a17.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/a17-build-living-focused-views.mjs",
+                "studio/analysis/camera-coverage.mjs",
+                "studio/analysis/camera-coverage.test.mjs",
+                ".github/workflows/verify-advisor-a17.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-advisor-a8.yml",
+          "sha256": "2a47daad0ad86b7a152e5f621695aca0f39e3c5211eef76a0c909100aaa240b7",
+          "events": {
+            "push": {
+              "branches": [
+                "advisor/a8-private-wet-storage-20261008"
+              ],
+              "paths": [
+                ".github/workflows/verify-advisor-a8.yml",
+                "scripts/advisor-a8-private-wet-storage.mjs",
+                "review-evidence/advisor-a8/**"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                ".github/workflows/verify-advisor-a8.yml",
+                "scripts/advisor-a8-private-wet-storage.mjs",
+                "review-evidence/advisor-a8/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-foundation-phase2.yml",
+          "sha256": "9e904a71e3b2f8162db645e6fc99a201ed72dcbd101c28dd8c0b2e7abdb9b0c2",
+          "events": {
+            "push": {
+              "branches": [
+                "foundation/phase2-multi-actor-storage-20261008"
+              ],
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-phase2-reference.mjs",
+                "scripts/analyze-family-activity.mjs",
+                "design-development/advisor/cases/wic-two-person.json",
+                ".github/workflows/verify-foundation-phase2.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-phase2-reference.mjs",
+                "scripts/analyze-family-activity.mjs",
+                "design-development/advisor/cases/wic-two-person.json",
+                ".github/workflows/verify-foundation-phase2.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-home-experience.yml",
+          "sha256": "86b9e21a730f317c1bf14f2d2cd00d9b866f137c21e6f847a2073bf8b2e6c14e",
+          "events": {
+            "push": {
+              "branches": [
+                "foundation/phase3-home-experience-lab-20261008"
+              ],
+              "paths": [
+                "studio/analysis/experience.mjs",
+                "studio/analysis/experience.test.mjs",
+                "scripts/evaluate-home-experience.mjs",
+                "design-development/advisor/cases/typeb-home-experience.json",
+                ".github/workflows/verify-home-experience.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/experience.mjs",
+                "studio/analysis/experience.test.mjs",
+                "scripts/evaluate-home-experience.mjs",
+                "design-development/advisor/cases/typeb-home-experience.json",
+                ".github/workflows/verify-home-experience.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-j1.yml",
+          "sha256": "9531426cfbb56560a0204c81b054ac7f0c2a879077b00ba36c1f0c6690355698",
+          "events": {
+            "push": {
+              "branches": [
+                "design/j1-integrated-candidate"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k10.yml",
+          "sha256": "1d8a20c1d83db897c5b8cd77676ff2a3d9d1026eeba7ad5dc10d2c03e4c9cf5a",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k10-island-function"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k11.yml",
+          "sha256": "f9a478579d8e5087fb952f23e779876484309bb19fd0cb0d1c400d9ecc8af1dd",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k11-kitchen-daily-use"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "studio/**",
+                "design-development/k11/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k12.yml",
+          "sha256": "ffdad8707ea6789e01ccc5a547fd44dbbe237d589bd2b1f2ba097efd4285007f",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k12-permanent-end-prep"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "studio/**",
+                "design-development/k12/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k4.yml",
+          "sha256": "24cef737c64b64d9991d7eea2a4587abc914a85ded4ae777556b204051402b0a",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k4-render-truth"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k8.yml",
+          "sha256": "99f6b9e616bc8fcfb1ee43a2128f01cb0182559275ddbc014177161731cd2808",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k8-bound-finishes-review"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-k9.yml",
+          "sha256": "b9935e80f0ed94e5e2af66f159eae6de2546fcd0796a536269583609af915650",
+          "events": {
+            "push": {
+              "branches": [
+                "design/k9-balanced-rotated-island"
+              ],
+              "paths": [
+                "*.js",
+                "*.mjs",
+                "*.py",
+                "scripts/**",
+                "render-snapshots/current.json",
+                ".github/workflows/**"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-platform-batch.yml",
+          "sha256": "5f58b0ec308971a63a39af7adaaecb4c0bfcd22e6862ac84ab4e28164ea33dfd",
+          "events": {
+            "push": {
+              "branches": [
+                "platform/batch-compare-and-verify-20261008"
+              ],
+              "paths": [
+                "scripts/render-batch-plan.mjs",
+                "scripts/render-batch-plan.test.mjs",
+                "scripts/render-variants.mjs",
+                ".github/workflows/verify-platform-batch.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/render-batch-plan.mjs",
+                "scripts/render-batch-plan.test.mjs",
+                "scripts/render-variants.mjs",
+                ".github/workflows/verify-platform-batch.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-spatial-foundation.yml",
+          "sha256": "a44a37a22f58a4354558b4748adaef7a581418217880a480d1698a8bd50bd512",
+          "events": {
+            "push": {
+              "branches": [
+                "foundation/spatial-decision-engine-20261008"
+              ],
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-reference-audit.mjs",
+                "scripts/analyze-spatial-case.mjs",
+                "design-development/advisor/cases/**",
+                "review-evidence/foundation/**",
+                ".github/workflows/verify-spatial-foundation.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/analysis/**",
+                "scripts/foundation-reference-audit.mjs",
+                "scripts/analyze-spatial-case.mjs",
+                "design-development/advisor/cases/**",
+                "review-evidence/foundation/**",
+                ".github/workflows/verify-spatial-foundation.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-studio-explore-mode.yml",
+          "sha256": "ea2527beec5c0523d6a9fea7293c7143f2a9c26448976191cd4da4f637245ca4",
+          "events": {
+            "push": {
+              "branches": [
+                "platform/explore-verify-interactive-workspace-20261008"
+              ],
+              "paths": [
+                "studio/app/src/explore*",
+                "studio/app/src/ExploreApp.tsx",
+                "studio/app/src/App.tsx",
+                "studio/app/explore.html",
+                "studio/app/vite.config.ts",
+                "scripts/explore-browser-smoke.mjs",
+                ".github/workflows/verify-studio-explore-mode.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "studio/app/src/explore*",
+                "studio/app/src/ExploreApp.tsx",
+                "studio/app/src/App.tsx",
+                "studio/app/explore.html",
+                "studio/app/vite.config.ts",
+                "scripts/explore-browser-smoke.mjs",
+                ".github/workflows/verify-studio-explore-mode.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        },
+        {
+          "path": ".github/workflows/verify-vercel-preview.yml",
+          "sha256": "f3b603d82fc51971348a1c89820aa6441a378f8b5f1b9c9781097d7b7ceccee1",
+          "events": {
+            "push": {
+              "branches": [
+                "platform/vercel-visual-preview-20261008"
+              ],
+              "paths": [
+                "scripts/prepare-vercel-preview.mjs",
+                "vercel.json",
+                ".github/workflows/verify-vercel-preview.yml"
+              ]
+            },
+            "pull_request": {
+              "paths": [
+                "scripts/prepare-vercel-preview.mjs",
+                "vercel.json",
+                ".github/workflows/verify-vercel-preview.yml"
+              ]
+            },
+            "workflow_dispatch": null
+          }
+        }
+      ]
+    }
+  },
+  "tag_only": "type-b-m3-group5-review-20261012",
+  "branch_push": false,
+  "vercel": {
+    "project": "prj_ZMTekYZ9DEa0Lp21CYMQa0A70F7T",
+    "team_slug": "mostafa-talaats-projects",
+    "latest_existing_deployment": "dpl_3pp1o5afYXjRq3e8XUmoCewqbrk1",
+    "latest_deployment_created_ms": 1791754511924,
+    "Group4_tag_SHA_deployments": 0,
+    "all_project_deployments_since_2026_10_12_0800UTC": 0,
+    "Git_trigger_evidence": "Vercel Git docs: automatic deployments for every branch push; prior two review tags observed no deployments",
+    "docs": "https://vercel.com/docs/git/vercel-for-github"
+  },
+  "constraints": {
+    "push_only_named_tag": true,
+    "branch_push": false,
+    "Actions_dispatch": false,
+    "deploy_request": false,
+    "settings_changes": false,
+    "merge": false,
+    "cloud_scene_save": false,
+    "procurement": false
+  },
+  "PR68": {
+    "draft": true,
+    "head": "8b91b69e861fabe4c292502b66af8dd2140d456d",
+    "review_tags_not_in_branch_diff": true
+  },
+  "status": "PREPUBLICATION_READ_ONLY_PASS; actual post-push results pending and must be checked"
+}

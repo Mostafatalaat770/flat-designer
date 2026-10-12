@@ -1,0 +1,37 @@
+{
+  "schema": "M3Group5BookIndex/1",
+  "embedded_terrace_frames": 24,
+  "embedded_plans": 10,
+  "prior_actual_design_previews": [
+    {
+      "group": "group1b",
+      "frame": "INTEGRATION-group1b",
+      "label": "الاستقبال والمدخل · B2",
+      "png_sha256": "e345c4d70fecc2128013041096a477b9f3d459bcefcbb505d0fec812e0e393bd",
+      "source_path": "design-development/whole-home-m3/group1b/frames/B2-living-to-dining.png"
+    },
+    {
+      "group": "group2",
+      "frame": "INTEGRATION-group2",
+      "label": "غرف النوم وWIC · B",
+      "png_sha256": "0b7bd5acca120e338bf50842bf719d6c9a0ed7abb2869ad89d82ba4537e2f0d9",
+      "source_path": "design-development/whole-home-m3/group2/frames/B-BR02-entry.png"
+    },
+    {
+      "group": "group3",
+      "frame": "INTEGRATION-group3",
+      "label": "الحمامات · B",
+      "png_sha256": "94e7c21cf721ccb2f2696c0e9c4fd738c7d8f6dae6d2b176f264471c29a46aaa",
+      "source_path": "design-development/whole-home-m3/group3/frames/B-master-wide.png"
+    },
+    {
+      "group": "group4",
+      "frame": "INTEGRATION-group4",
+      "label": "المطبخ · الترجيح المشروط",
+      "png_sha256": "bf6f4ebd47a27f697fc85c3e76921c3fef7ba9494643ecdd019971ad3a80a002",
+      "source_path": "design-development/whole-home-m3/group4/frames/RECOMMENDED-work.png"
+    }
+  ],
+  "prior_reviews_unmodified": true,
+  "status": "Existing72 integration preview, not combined approved scene"
+}

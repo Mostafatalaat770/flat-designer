@@ -1,0 +1,43 @@
+{
+  "schema": "M3Group5Design/1",
+  "checkpoint": "d5ee78da71d97cc86b965d52534456a8d4cda7a3",
+  "canonical_sha256": "734b1c36570f27baa930eec481eb109906a1f81684e6fb8f8b6a679fec2b9658",
+  "source_sha256": "ec05e4fe7c0e15b3555107da4ac5628894df7fcddb3cee996d3af2fddaa7df63",
+  "status": "PROVISIONAL / local furniture choices only",
+  "source_terrace_ceilings": 0,
+  "interior_ceiling_mm": 2500,
+  "source_services_and_architecture_immutable": true,
+  "prior_open_HOLDs": 40,
+  "options": [
+    {
+      "id": "SOURCE",
+      "scene": "scene-9cf45a73",
+      "source_geometry_checks": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      },
+      "concepts_independently_checked": "OPERATIONS.json, not part of source interior schema"
+    },
+    {
+      "id": "A",
+      "scene": "scene-d9cfe532",
+      "source_geometry_checks": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      },
+      "concepts_independently_checked": "OPERATIONS.json, not part of source interior schema"
+    },
+    {
+      "id": "B",
+      "scene": "scene-b25cd85",
+      "source_geometry_checks": {
+        "pass": 186,
+        "warning": 75,
+        "fail": 0
+      },
+      "concepts_independently_checked": "OPERATIONS.json, not part of source interior schema"
+    }
+  ]
+}

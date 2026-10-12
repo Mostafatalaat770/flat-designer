@@ -1,0 +1,37 @@
+{
+  "schema": "M3Group5Critique/1",
+  "initial_frame": "INITIAL-main-eye",
+  "final_frame": "A-main-eye",
+  "actual_capture_required": true,
+  "corrections": [
+    {
+      "problem": "1500mm broad plant dominated corner and did not establish useful neighbour screening",
+      "change": "950mm lighter branching plant; removable same360 plan footprint",
+      "evidence": "Matched INITIAL/A main-eye canvases; old mesh hook preserved"
+    },
+    {
+      "problem": "Unit error in prototype lantern offset (.17mm instead of170mm) placed lamp at tray center",
+      "change": "Compact112mm outer diameter at205mm offset;24mm tray band and39mm circular edge margin in A",
+      "evidence": "Final actual mesh bounds and tableUse; no light product approval"
+    },
+    {
+      "problem": "Master floor marker reduced walking/cleaning zone",
+      "change": "Light and cup on removable arm tray within chair envelope",
+      "evidence": "Final master-eye/night and mesh bounds; no new floor lamp"
+    },
+    {
+      "problem": "Sloping prototype rack leg mesh penetrated floor by3.96mm",
+      "change": "Leg endpoints raised12mm, rod top inset8mm; no slab change",
+      "evidence": "Final captured rack bounds, not feet/product/shop drawing approval"
+    }
+  ],
+  "retained_limitations": [
+    "Real source curtain meshes partially obscure reception view; unchanged rather than removed for a prettier image",
+    "Night image shows table mood only; dark circulation and neighbour glare need site mockup, no lighting-performance claim",
+    "B narrower drying footprint improves passage but higher frame increases wind/guard questions; not chosen product",
+    "Main source high west wall preserved, no invented panorama",
+    "No neighbour context/weather/site orientation modeled",
+    "Master one-person use; staged entry while another rises fails named approach in model",
+    "Third seat can be moved for occasional use, not a universally impossible three-person claim"
+  ]
+}
